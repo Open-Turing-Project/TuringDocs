@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateMenu</b> (<i>name</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
+      "text_content": " GUI.CreateMenu (name : string) : int\r\n",
       "mdown_content": "**GUI.CreateMenu** (*name* : **string**) : **int**"
     },
     {
@@ -13,7 +14,8 @@
         "gui_createmenu01.gif"
       ],
       "raw_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.<p>\r\nThe <i>name</i> parameter specifies the text that appears in the menu bar.</p>\n<p>\r\n\r\n</p>\n<center></center>\r\n<center><b>A Menu With an Item Selected</b></center>\n<p>\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.</p>\n<p>\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>\n<p>\r\n</p>",
-      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\nThe *name* parameter specifies the text that appears in the menu bar.\n\n\n\n\n**A Menu With an Item Selected**\n\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\n\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.\n"
+      "text_content": " Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\r\nThe name parameter specifies the text that appears in the menu bar.\r\n\r\n\r\nA Menu With an Item Selected\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.\r\n",
+      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\nThe *name* parameter specifies the text that appears in the menu bar.\n**A Menu With an Item Selected**\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired."
     },
     {
       "title": "Example",
@@ -21,7 +23,8 @@
         "        import GUI in \"%oot/lib/GUI\"\r\n        \r\n        View.Set (\"graphics:250;150,nobuttonbar\")\r\n        var first, second : int     % The menus.\r\n        var item : array 1 .. 12 of int % The menu items.\r\n        var name : array 1 .. 12 of string (20) := \r\n            init (\"Quit\", \"---\", \"A\", \"B\", \"---\", \"C\", \"D\", \r\n            \"Disable B Menu Item\", \"Enable B Menu Item\", \"---\", \r\n            \"Disable Second Menu\", \"Enable Second Menu\")\r\n        \r\n        procedure MenuSelected\r\n            for i : 1 .. 12\r\n                if item (i) = GUI.GetEventWidgetID then\r\n                    Text.Locate (maxrow, 1)\r\n                    put name (i) + \" selected               \" ..\r\n                end if\r\n            end for\r\n        end MenuSelected\r\n        \r\n        procedure DisableB\r\n            GUI.Disable (item (4))\r\n        end DisableB\r\n        \r\n        procedure EnableB\r\n            GUI.Enable (item (4))\r\n        end EnableB\r\n        \r\n        procedure DisableFirst\r\n            GUI.Disable (first)\r\n        end DisableFirst\r\n        \r\n        procedure EnableFirst\r\n            GUI.Enable (first)\r\n        end EnableFirst\r\n        \r\n        % Create the menus\r\n        first := GUI.CreateMenu (\"First\")\r\n        item (1) := GUI.CreateMenuItem (name (1), GUI.Quit)\r\n        for cnt : 2 .. 7\r\n            item (cnt) := GUI.CreateMenuItem (name (cnt), \r\n                MenuSelected)\r\n        end for\r\n        \r\n        second := GUI.CreateMenu (\"Second\")\r\n        item (8) := GUI.CreateMenuItem (name (8), DisableB)\r\n        item (9) := GUI.CreateMenuItem (name (9), EnableB)\r\n        item (10) := GUI.CreateMenuItem (name (10), MenuSelected)\r\n        item (11) := GUI.CreateMenuItem (name (11), DisableFirst)\r\n        item (12) := GUI.CreateMenuItem (name (12), EnableFirst)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.\n\n\n"
+      "text_content": " The following program creates a series of menus with menu items in them. It then disables the second menu.\r\n\r\n    ",
+      "mdown_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.\n"
     },
     {
       "title": "Execute",
@@ -36,17 +39,20 @@
     {
       "title": "Details",
       "raw_content": "When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.<p>\r\n</p>",
+      "text_content": " When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.\r\n",
       "mdown_content": "When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear."
     },
     {
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a menu as the <i>widgetID</i> parameter:<p>\r\n<b>GUI.Show</b>,<b> GUI.Hide</b>,<b> GUI.Dispose</b>,<b> GUI.Enable</b>,<b> GUI.Disable</b></p>\n<p>\r\n</p>",
-      "mdown_content": "The following GUI subprograms can be called with a menu as the *widgetID* parameter:\n**GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**\n"
+      "text_content": " The following GUI subprograms can be called with a menu as the widgetID parameter:\r\nGUI.Show, GUI.Hide, GUI.Dispose, GUI.Enable, GUI.Disable\r\n",
+      "mdown_content": "The following GUI subprograms can be called with a menu as the *widgetID* parameter:\n**GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.CreateMenu</b>, not by calling <b>CreateMenu</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.CreateMenu, not by calling CreateMenu.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**."
     },
     {
       "title": "See also",
@@ -56,6 +62,7 @@
         "gui_hidemenubar"
       ],
       "raw_content": "<b><a href=\"gui_createmenuitem_full-2.html\">GUI.CreateMenuItem</a></b> for adding items to a menu. See also <b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b> and <b><a href=\"gui_hidemenubar.html\">GUI.HideMenuBar</a></b> for showing and hiding the menu bar.<p>\r\n</p>",
+      "text_content": " GUI.CreateMenuItem for adding items to a menu. See also GUI.ShowMenuBar and GUI.HideMenuBar for showing and hiding the menu bar.\r\n",
       "mdown_content": "**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar."
     }
   ]

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "An <i>tellStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>tell</b> : <i>fileNumber</i> , <i>filePositionVar</i></font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "An *tellStatement* is:\n\n \n**tell** : *fileNumber* , *filePositionVar*"
+      "text_content": " An tellStatement is:\r\n tell : fileNumber , filePositionVar",
+      "mdown_content": "An *tellStatement* is:\n **tell** : *fileNumber* , *filePositionVar*"
     },
     {
       "title": "Description",
       "raw_content": "The <b>tell</b> statement sets <i>filePositionVar</i>, whose type must be <b>int</b>, to the current offset in bytes from the beginning of the specified file. The <i>fileNumber</i> must specify a file that is open with <b>seek</b> capability (or else a program argument file that is implicitly opened). The <b>tell</b> statement is useful for recording the file position of a certain piece of data for later access using <b>seek</b>.<p>\r\n</p>",
+      "text_content": " The tell statement sets filePositionVar, whose type must be int, to the current offset in bytes from the beginning of the specified file. The fileNumber must specify a file that is open with seek capability (or else a program argument file that is implicitly opened). The tell statement is useful for recording the file position of a certain piece of data for later access using seek.\r\n",
       "mdown_content": "The **tell** statement sets *filePositionVar*, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The *fileNumber* must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**."
     },
     {
@@ -18,6 +20,7 @@
         "        var employeeRecord :\r\n            record\r\n                name : string ( 30 )\r\n                pay : int\r\n                dept : 0 .. 9\r\n            end record\r\n        var fileNo : int\r\n        var location : int\r\n        open : fileNo, \"payroll\", write, seek\r\n        \r\n        tell : fileNo, location         % Make note of this location\r\n        write : fileNo, employeeRecord  % Write record at this location\r\n        \r\n        seek : fileNo, location     % Go back to location\r\n        read : fileNo, employeeRecord   % Read the record\r\n                            % that was previously written"
       ],
       "raw_content": "This example shows how to use <b>tell</b> to record the location of a record in a file. This location is later used by <b>seek</b> to allow the record to be read.<p>\r\n</p>",
+      "text_content": " This example shows how to use tell to record the location of a record in a file. This location is later used by seek to allow the record to be read.\r\n\r\n",
       "mdown_content": "This example shows how to use **tell** to record the location of a record in a file. This location is later used by **seek** to allow the record to be read."
     },
     {
@@ -32,6 +35,7 @@
         "put"
       ],
       "raw_content": "the <b><a href=\"read.html\">read</a></b>, <b><a href=\"write.html\">write</a></b>, <b><a href=\"open.html\">open</a></b>, <b><a href=\"close.html\">close</a></b>, <b><a href=\"seek.html\">seek</a></b>, <b><a href=\"get.html\">get</a></b> and <b><a href=\"put.html\">put</a></b> statements.<p>\r\n</p>",
+      "text_content": " the read, write, open, close, seek, get and put statements.\r\n",
       "mdown_content": "the **[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[seek.html](seek)**, **[get.html](get)** and **[put.html](put)** statements."
     }
   ]

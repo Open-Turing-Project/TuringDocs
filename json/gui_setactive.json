@@ -5,26 +5,31 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetActive</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.SetActive (widgetID : int)\r\n",
       "mdown_content": "**GUI.SetActive** (*widgetID* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Makes a text field specified by <i>widgetID </i>active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated.<p>\r\n</p>",
+      "text_content": " Makes a text field specified by widgetID active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated.\r\n",
       "mdown_content": "Makes a text field specified by *widgetID *active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated."
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.CreateTextField</b>for an example of <b>GUI.SetActive</b>.<p>\r\n</p>",
+      "text_content": " See GUI.CreateTextFieldfor an example of GUI.SetActive.\r\n",
       "mdown_content": "See **GUI.CreateTextField**for an example of **GUI.SetActive**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedures by calling <b>GUI.SetActive</b>, not by calling <b>SetActive</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.SetActive**, not by calling **SetActive**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the procedures by calling GUI.SetActive, not by calling SetActive.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.SetActive**, not by calling **SetActive**."
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextField</b>.<p>\r\n</p>",
+      "text_content": " GUI.CreateTextField.\r\n",
       "mdown_content": "**GUI.CreateTextField**."
     }
   ]

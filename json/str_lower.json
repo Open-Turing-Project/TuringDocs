@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Lower</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
+      "text_content": "Str.Lower (s : string) : string",
       "mdown_content": "**Str.Lower** (*s* : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Lower</b> function takes the string <i>s</i> and returns\r\n          a string in which all the upper case letters are converted to \r\n          lower case. For example, <tt>Str.Lower (\"ABC123def\")</tt> returns\r\n          <tt>\"abc123def\"</tt>.<p>\r\n    </p>",
-      "mdown_content": "The **Str.Lower** function takes the string *s* and returns\na string in which all the upper case letters are converted to \nlower case. For example, Str.Lower (\"ABC123def\") returns\n\"abc123def\".\n"
+      "text_content": "The Str.Lower function takes the string s and returns\r\n          a string in which all the upper case letters are converted to \r\n          lower case. For example, Str.Lower (\"ABC123def\") returns\r\n          \"abc123def\".\r\n    ",
+      "mdown_content": "The **Str.Lower** function takes the string *s* and returnsa string in which all the upper case letters are converted to lower case. For example, Str.Lower (\"ABC123def\") returns\"abc123def\"."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        var line : string\r\n        loop\r\n            put \"Enter a line of text (empty to quit): \" ..\r\n            get line : *\r\n            exit when line = \"\"\r\n            put \"The lower case version: \", Str.Lower (line)\r\n        end loop\r\n    "
       ],
       "raw_content": "This program obtains lines of text from the user and outputs the\r\n          lines converted to lower case.\r\n          <p>\r\n</p>",
-      "mdown_content": "This program obtains lines of text from the user and outputs the\nlines converted to lower case.\n"
+      "text_content": "This program obtains lines of text from the user and outputs the\r\n          lines converted to lower case.\r\n          \r\n",
+      "mdown_content": "This program obtains lines of text from the user and outputs thelines converted to lower case."
     },
     {
       "title": "Execute",
@@ -33,7 +36,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Str.Lower</b>, not by calling <b>Lower</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Str.Lower**, not by calling **Lower**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Str.Lower, not by calling Lower.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Str.Lower**, not by calling **Lower**."
     },
     {
       "title": "See also",
@@ -42,7 +46,8 @@
         "str_trim"
       ],
       "raw_content": "<b><a href=\"str_upper.html\">Str.Upper</a></b> and \r\n          <b><a href=\"str_trim.html\">Str.Trim</a></b>.<p>\r\n    </p>",
-      "mdown_content": "**[str_upper.html](Str.Upper)** and \n**[str_trim.html](Str.Trim)**.\n"
+      "text_content": "Str.Upper and \r\n          Str.Trim.\r\n    ",
+      "mdown_content": "**[str_upper.html](Str.Upper)** and **[str_trim.html](Str.Trim)**."
     }
   ]
 }

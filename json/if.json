@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "An <i>ifStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>if</b> <i>trueFalseExpn</i> <b>then</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">{ <b>elsif</b> <i>trueFalseExpn</i> <b>then</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">[ <b>else</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i> ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>if</b></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "An *ifStatement* is:\n\n \n**if** *trueFalseExpn* **then**\n \n \n*statementsAndDeclarations*\n \n{ **elsif** *trueFalseExpn* **then**\n \n \n*statementsAndDeclarations* }\n \n[ **else**\n \n \n*statementsAndDeclarations* ]\n \n**end** **if**"
+      "text_content": " An ifStatement is:\r\n if trueFalseExpn then  statementsAndDeclarations { elsif trueFalseExpn then  statementsAndDeclarations } [ else  statementsAndDeclarations ] end if",
+      "mdown_content": "An *ifStatement* is:\n **if** *trueFalseExpn* **then**  *statementsAndDeclarations* { **elsif** *trueFalseExpn* **then**  *statementsAndDeclarations* } [ **else**  *statementsAndDeclarations* ] **end** **if**"
     },
     {
       "title": "Description",
       "raw_content": "An <b>if</b> statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond <b>end</b> <b>if</b>.<p>\r\nThe expressions (the <i>trueFalseExpressions</i>) following the keyword <b>if</b> and each <b>elsif</b> are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding <b>then</b> are executed. If none of these expressions evaluates to true, the statements following <b>else</b> are executed. If no <b>else</b> is present and none of the expressions are true, no statements are executed and execution continues following the <b>end</b> <b>if</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "An **if** statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond **end** **if**.\nThe expressions (the *trueFalseExpressions*) following the keyword **if** and each **elsif** are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding **then** are executed. If none of these expressions evaluates to true, the statements following **else** are executed. If no **else** is present and none of the expressions are true, no statements are executed and execution continues following the **end** **if**.\n"
+      "text_content": " An if statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond end if.\r\nThe expressions (the trueFalseExpressions) following the keyword if and each elsif are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding then are executed. If none of these expressions evaluates to true, the statements following else are executed. If no else is present and none of the expressions are true, no statements are executed and execution continues following the end if.\r\n",
+      "mdown_content": "An **if** statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond **end** **if**.\nThe expressions (the *trueFalseExpressions*) following the keyword **if** and each **elsif** are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding **then** are executed. If none of these expressions evaluates to true, the statements following **else** are executed. If no **else** is present and none of the expressions are true, no statements are executed and execution continues following the **end** **if**."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        if mark >= 50 then\r\n            put \"You pass\"\r\n        else\r\n            put \"You fail\"\r\n        end if"
       ],
       "raw_content": "Output a message based on value of mark.<p>\r\n</p>",
+      "text_content": " Output a message based on value of mark.\r\n\r\n",
       "mdown_content": "Output a message based on value of mark."
     },
     {
@@ -26,6 +29,7 @@
         "        if mark >= 80 then\r\n            put \"A\"\r\n        elsif mark >= 70 then\r\n            put \"B\"\r\n        elsif mark >= 60 then\r\n            put \"C\"\r\n        elsif mark >= 50 then\r\n            put \"D\"\r\n        else\r\n            put \"F\"\r\n        end if"
       ],
       "raw_content": "Output A, B, C, D or F depending on mark.<p>\r\n</p>",
+      "text_content": " Output A, B, C, D or F depending on mark.\r\n\r\n",
       "mdown_content": "Output A, B, C, D or F depending on mark."
     },
     {
@@ -34,6 +38,7 @@
         "        if x < 0 then\r\n            x := - x\r\n        end if"
       ],
       "raw_content": "If <i>x </i>is negative, change its sign.<p>\r\n</p>",
+      "text_content": " If x is negative, change its sign.\r\n\r\n",
       "mdown_content": "If *x *is negative, change its sign."
     },
     {
@@ -42,6 +47,7 @@
         "        if x < 0  or x > maxx then\r\n            put \"Out of bounds!\"\r\n        end if"
       ],
       "raw_content": "If <i>x </i>is less than zero or greater than maxx, put a message.<p>\r\n</p>",
+      "text_content": " If x is less than zero or greater than maxx, put a message.\r\n\r\n",
       "mdown_content": "If *x *is less than zero or greater than maxx, put a message."
     },
     {
@@ -50,11 +56,13 @@
         "        if flag  and name = \"stop\" then\r\n            put \"Exiting routine\"\r\n            return\r\n        end if"
       ],
       "raw_content": "If the boolean <i>flag</i> is true and <i>name</i> is &#147;stop&#148;, put a message and return.<p>\r\n</p>",
+      "text_content": " If the boolean flag is true and name is stop, put a message and return.\r\n\r\n",
       "mdown_content": "If the boolean *flag* is true and *name* is stop, put a message and return."
     },
     {
       "title": "Details",
       "raw_content": "Several statements and declarations can appear after a particular <b>then</b>.<p>\r\n</p>",
+      "text_content": " Several statements and declarations can appear after a particular then.\r\n",
       "mdown_content": "Several statements and declarations can appear after a particular **then**."
     },
     {
@@ -63,6 +71,7 @@
         "case"
       ],
       "raw_content": "<b><a href=\"case.html\">case</a></b> statements for another way to select among statements.<p>\r\n</p>",
+      "text_content": " case statements for another way to select among statements.\r\n",
       "mdown_content": "**[case.html](case)** statements for another way to select among statements."
     }
   ]

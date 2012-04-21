@@ -1,8 +1,23 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Stream",
   "fileName": "streammodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprograms that deal with I/O streams. The basic I/O in Turing is done with I/O statements. However, extra functions are all part of the <b>Stream </b>unit.<p>\r\nAll routines in the <b>Stream</b> unit are exported qualified (and thus must be prefaced with \"<b>Stream.</b>\"), with the exception of <b>eof</b> which is part of the language but conceptually part of this unit and is considered to be exported unqualified.</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprograms that deal with I/O streams. The basic I/O in Turing is done with I/O statements. However, extra functions are all part of the Stream unit.\r\nAll routines in the Stream unit are exported qualified (and thus must be prefaced with \"Stream.\"), with the exception of eof which is part of the language but conceptually part of this unit and is considered to be exported unqualified.\r\n",
+      "mdown_content": "This unit contains the predefined subprograms that deal with I/O streams. The basic I/O in Turing is done with I/O statements. However, extra functions are all part of the **Stream **unit.\nAll routines in the **Stream** unit are exported qualified (and thus must be prefaced with \"**Stream.**\"), with the exception of **eof** which is part of the language but conceptually part of this unit and is considered to be exported unqualified."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "stream_eof",
+        "stream_flush",
+        "stream_flushall"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td>\n<a href=\"stream_eof.html\"><b>eof</b></a>*</td>\n<td width=\"20\">&nbsp;</td>\n<td>Determines if the end of file has been reached.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"stream_flush.html\"><b>Flush</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Flushes a specified stream.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"stream_flushall.html\"><b>FlushAll</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Flushes all open output streams.</td>\n</tr>\n</table>\n<p>\r\n* Part of the language, conceptually part of the <b>Stream</b> unit.</p>\n<p>\r\n</p>",
+      "text_content": "eof* Determines if the end of file has been reached.Flush Flushes a specified stream.FlushAll Flushes all open output streams.\r\n* Part of the language, conceptually part of the Stream unit.\r\n",
+      "mdown_content": "[stream_eof.html](**eof**)* Determines if the end of file has been reached.[stream_flush.html](**Flush**) Flushes a specified stream.[stream_flushall.html](**FlushAll**) Flushes all open output streams.\n* Part of the language, conceptually part of the **Stream** unit."
+    }
+  ]
 }

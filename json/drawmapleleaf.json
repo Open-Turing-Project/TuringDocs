@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawmapleleaf</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " drawmapleleaf (x1, y1, x2, y2, Color : int)\r\n",
       "mdown_content": "**drawmapleleaf** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
     },
     {
@@ -13,7 +14,8 @@
         "drawmapleleaf01.gif"
       ],
       "raw_content": "The <b>drawmapleleaf</b> procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i>, then the maple leaf is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **drawmapleleaf** procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2*, then the maple leaf is drawn upside down.\n\n"
+      "text_content": " The drawmapleleaf procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color. If y1 is greater than y2, then the maple leaf is drawn upside down.\r\n\r\n\r\n",
+      "mdown_content": "The **drawmapleleaf** procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2*, then the maple leaf is drawn upside down."
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "        setscreen (\"graphics\")\r\n        drawmapleleaf (0, 0, 100, 100, 1)\r\n        drawmapleleaf (150, 100, 250, 0, 2)"
       ],
       "raw_content": "This program will draw two maple leaves beside each other. The first will be in color 1 and the second maple leaf will be upside down and in color 2.<p>\r\n</p>",
+      "text_content": " This program will draw two maple leaves beside each other. The first will be in color 1 and the second maple leaf will be upside down and in color 2.\r\n\r\n    ",
       "mdown_content": "This program will draw two maple leaves beside each other. The first will be in color 1 and the second maple leaf will be upside down and in color 2."
     },
     {
@@ -36,7 +39,8 @@
     {
       "title": "Details",
       "raw_content": "The <b>drawmapleleaf</b> procedure is useful for drawing the Canadian flag.<p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **drawmapleleaf** procedure is useful for drawing the Canadian flag.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\n\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode.\n"
+      "text_content": " The drawmapleleaf procedure is useful for drawing the Canadian flag.\r\nThe meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
+      "mdown_content": "The **drawmapleleaf** procedure is useful for drawing the Canadian flag.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
     },
     {
       "title": "See also",
@@ -46,6 +50,7 @@
         "maxy"
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
+      "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
       "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures."
     }
   ]

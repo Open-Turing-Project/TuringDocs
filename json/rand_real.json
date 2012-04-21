@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Real</b> : <b>real</b><p>\r\n</p></font>",
+      "text_content": " Rand.Real : real\r\n",
       "mdown_content": "**Rand.Real** : **real**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Rand.Real </b>function returns a pseudo-random number in the range zero to one. For example, if <i>x</i> is a real number, after <i>x</i> := <b>Rand.Real</b>, <i>x</i> would have a value such as 0.729548 or 0.352879.<p>\r\n</p>",
+      "text_content": " The Rand.Real function returns a pseudo-random number in the range zero to one. For example, if x is a real number, after x := Rand.Real, x would have a value such as 0.729548 or 0.352879.\r\n",
       "mdown_content": "The **Rand.Real **function returns a pseudo-random number in the range zero to one. For example, if *x* is a real number, after *x* := **Rand.Real**, *x* would have a value such as 0.729548 or 0.352879."
     },
     {
@@ -18,17 +20,20 @@
         "        loop\r\n            if Rand.Real > 0.5 then\r\n                put \"Hi ho, hi ho\"\r\n            else\r\n                put \"It's off to work we go\"\r\n            end if\r\n        end loop"
       ],
       "raw_content": "This program repeatedly and randomly prints out <i>Hi ho</i>,<i> hi ho</i> or <i>It's off to work we go</i>.<p>\r\n</p>",
+      "text_content": " This program repeatedly and randomly prints out Hi ho, hi ho or It's off to work we go.\r\n\r\n",
       "mdown_content": "This program repeatedly and randomly prints out *Hi ho*,* hi ho* or *It's off to work we go*."
     },
     {
       "title": "Details",
       "raw_content": "The <b>Rand.Real </b>function<b> </b>sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0&lt;<i>r</i> &lt;1.<p>\r\nEach time a program runs, <b>Rand.Real</b> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <b>Rand.Set</b> procedure.</p>\n<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>Rand.Seed </b>and <b>Rand.Next</b> procedures.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Rand.Real **function** **sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<*r* <1.\nEach time a program runs, **Rand.Real** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\n\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures.\n"
+      "text_content": " The Rand.Real function sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<r <1.\r\nEach time a program runs, Rand.Real uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the Rand.Set procedure.\r\nTo use several sequences of repeatable pseudo-random number sequences, use the Rand.Seed and Rand.Next procedures.\r\n",
+      "mdown_content": "The **Rand.Real **function** **sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<*r* <1.\nEach time a program runs, **Rand.Real** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Rand.Real</b>, not by calling <b>Real</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Rand.Real**, not by calling **Real**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Rand.Real, not by calling Real.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Rand.Real**, not by calling **Real**."
     },
     {
       "title": "See also",
@@ -39,6 +44,7 @@
         "rand_next"
       ],
       "raw_content": "<b><a href=\"rand_int.html\">Rand.Int</a></b>, <b><a href=\"rand_set.html\">Rand.Set</a></b>, <b><a href=\"rand_seed.html\">Rand.Seed</a></b> and <b><a href=\"rand_next.html\">Rand.Next</a></b>.<p>\r\n</p>",
+      "text_content": " Rand.Int, Rand.Set, Rand.Seed and Rand.Next.\r\n",
       "mdown_content": "**[rand_int.html](Rand.Int)**, **[rand_set.html](Rand.Set)**, **[rand_seed.html](Rand.Seed)** and **[rand_next.html](Rand.Next)**."
     }
   ]

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.GetStyle</b> (<i>fontName</i> : <b>string</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>var</b> <i>bold</i>, <i>italic</i>, <i>underline</i> : <b>boolean</b>) : <b>string</b><p>\r\n</p></font>",
-      "mdown_content": "**Font.GetStyle** (*fontName* : **string**, \n        **var** *bold*, *italic*, *underline* : **boolean**) : **string**"
+      "text_content": " Font.GetStyle (fontName : string, \r\n        var bold, italic, underline : boolean) : string\r\n",
+      "mdown_content": "**Font.GetStyle** (*fontName* : **string**,         **var** *bold*, *italic*, *underline* : **boolean**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Font.GetStyle</b> is used to get the styles available on the system for a specified font. <i>bold</i>, <i>italic</i> and <i>underline</i> are set to <b>true</b> if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using <b>Font.StartSize</b> and <b>Font.GetSize</b>.<p>\r\n</p>",
+      "text_content": " Font.GetStyle is used to get the styles available on the system for a specified font. bold, italic and underline are set to true if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using Font.StartSize and Font.GetSize.\r\n",
       "mdown_content": "**Font.GetStyle** is used to get the styles available on the system for a specified font. *bold*, *italic* and *underline* are set to **true** if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using **Font.StartSize** and **Font.GetSize**."
     },
     {
@@ -18,7 +20,8 @@
         "        var fontName : string\r\n        var bold, italic, underline : boolean\r\n        Font.StartName\r\n        loop\r\n            fontName := Font.GetName\r\n            exit when fontName = \"\"\r\n            Font.GetStyle (fontName, bold, italic, underline)\r\n            put fontName : 30 ..\r\n            if bold then\r\n                put \"bold  \" ..\r\n            end if\r\n            if italic then\r\n                put \"italic  \" ..\r\n            end if\r\n            if underline then\r\n                put \"underline  \" ..\r\n            end if\r\n            put \"\"\r\n        end loop"
       ],
       "raw_content": "The program lists all the fonts and their styles available on the system.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "The program lists all the fonts and their styles available on the system.\n\n\n"
+      "text_content": " The program lists all the fonts and their styles available on the system.\r\n\r\n    ",
+      "mdown_content": "The program lists all the fonts and their styles available on the system.\n"
     },
     {
       "title": "Execute",
@@ -33,12 +36,14 @@
     {
       "title": "Example",
       "raw_content": "An example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Font Listing Example\">\n<param name=\"Item1\" value=\"-1,FontList.t;Font Listing Example\"></object></p>\n<p></p>",
-      "mdown_content": "An example is available that displays full information about\nthe fonts including name, styles, and point sizes.\n\n"
+      "text_content": "An example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.\r\n          \r\n            ",
+      "mdown_content": "An example is available that displays full information aboutthe fonts including name, styles, and point sizes."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.GetStyle</b>, not by calling <b>GetStyle</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.GetStyle**, not by calling **GetStyle**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.GetStyle, not by calling GetStyle.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.GetStyle**, not by calling **GetStyle**."
     }
   ]
 }

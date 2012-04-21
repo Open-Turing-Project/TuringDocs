@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.DashedLine</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>lineStyle</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Draw.DashedLine (x1, y1, x2, y2, lineStyle, Color : int)\r\n",
       "mdown_content": "**Draw.DashedLine** (*x1*, *y1*, *x2*, *y2*, *lineStyle*, *Color* : **int**)"
     },
     {
@@ -13,7 +14,8 @@
         "draw_line01.gif"
       ],
       "raw_content": "The <b>Draw.DashedLine </b>procedure is used to draw a dotted or dashed line on the screen from (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\nThere are five possible line styles:\r\ndrawSolid Draws a solid line (same as Draw.Line)\r\ndrawDash Draws a dashed line\r\ndrawDot Draws a dotted line\r\ndrawDashDot Draws a line that alternates dashes and dots\r\ndrawDashDotDot Draws a line that alternates dash and dot-dot\r\n</p>\n<center></center>",
-      "mdown_content": "The **Draw.DashedLine **procedure is used to draw a dotted or dashed line on the screen from (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.\nThere are five possible line styles:\ndrawSolid Draws a solid line (same as Draw.Line)\ndrawDash Draws a dashed line\ndrawDot Draws a dotted line\ndrawDashDot Draws a line that alternates dashes and dots\ndrawDashDotDot Draws a line that alternates dash and dot-dot\n"
+      "text_content": " The Draw.DashedLine procedure is used to draw a dotted or dashed line on the screen from (x1, y1) to (x2, y2) using the specified Color.\r\nThere are five possible line styles:\r\ndrawSolid Draws a solid line (same as Draw.Line)\r\ndrawDash Draws a dashed line\r\ndrawDot Draws a dotted line\r\ndrawDashDot Draws a line that alternates dashes and dots\r\ndrawDashDotDot Draws a line that alternates dash and dot-dot\r\n\r\n",
+      "mdown_content": "The **Draw.DashedLine **procedure is used to draw a dotted or dashed line on the screen from (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.\nThere are five possible line styles:drawSolid Draws a solid line (same as Draw.Line)drawDash Draws a dashed linedrawDot Draws a dotted linedrawDashDot Draws a line that alternates dashes and dotsdrawDashDotDot Draws a line that alternates dash and dot-dot"
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "        View.Set (\"graphics\")\r\n        % Draw a line in each of the styles.\r\n        Draw.DashedLine (0, 50, maxx, 50, drawSolid, brightred) \r\n        Draw.DashedLine (0, 100, maxx, 100, drawDash, brightred) \r\n        Draw.DashedLine (0, 150, maxx, 150, drawDot, brightred) \r\n        Draw.DashedLine (0, 200, maxx, 200, drawDashDot, brightred) \r\n        Draw.DashedLine (0, 250, maxx, 250, drawDashDotDot, brightred)"
       ],
       "raw_content": "This program draws a large X, reaching to each corner of the screen in two different colors. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (<b>maxx</b>, <b>maxy</b>) is the right top, etc.<p>\r\n</p>\n<p> \r\n</p>",
+      "text_content": " This program draws a large X, reaching to each corner of the screen in two different colors. The maxx and maxy functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (maxx, maxy) is the right top, etc.\r\n \r\n",
       "mdown_content": "This program draws a large X, reaching to each corner of the screen in two different colors. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (**maxx**, **maxy**) is the right top, etc.\n\n"
     },
     {
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\"<i> </i>mode, an error will occur.<p>\r\n</p>",
+      "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
       "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\"* *mode, an error will occur."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.DashedLine</b>, not by calling <b>DashedLine</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.DashedLine**, not by calling **DashedLine**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.DashedLine, not by calling DashedLine.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.DashedLine**, not by calling **DashedLine**."
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]

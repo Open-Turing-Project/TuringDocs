@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>compilationUnit</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\">[ <i>importList</i> ] <i>mainProgram</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>moduleDeclaration</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>monitorDeclaration</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>classDeclaration</i></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "A *compilationUnit* is one of:\n\n \n(a)\n[ *importList* ] *mainProgram*\n \n(b)\n**unit** *moduleDeclaration*\n \n(c)\n**unit** *monitorDeclaration*\n \n(d)\n**unit** *classDeclaration*"
+      "text_content": " A compilationUnit is one of:\r\n (a)[ importList ] mainProgram (b)unit moduleDeclaration (c)unit monitorDeclaration (d)unit classDeclaration",
+      "mdown_content": "A *compilationUnit* is one of:\n (a)[ *importList* ] *mainProgram* (b)**unit** *moduleDeclaration* (c)**unit** *monitorDeclaration* (d)**unit** *classDeclaration*"
     },
     {
       "title": "Description",
       "raw_content": "A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword <b>unit</b>. The unit contains the main program, a module, a monitor or a class.<p>\r\n</p>",
+      "text_content": " A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword unit. The unit contains the main program, a module, a monitor or a class.\r\n",
       "mdown_content": "A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword **unit**. The unit contains the main program, a module, a monitor or a class."
     },
     {
@@ -19,7 +21,8 @@
         "        import var stack    % Use the stack\r\n        var n : int\r\n        \r\n        stack . push ( n )\r\n        \r\n        stack . pop ( n )"
       ],
       "raw_content": "Here is stack module that is separated out into a file whose name is <i>stack</i>.<p>\r\n</p>\r\nThe main program, which is in another file, gains access to the stack by importing it. Here is the main program:<p>\r\n</p>",
-      "mdown_content": "Here is stack module that is separated out into a file whose name is *stack*.\n\nThe main program, which is in another file, gains access to the stack by importing it. Here is the main program:"
+      "text_content": " Here is stack module that is separated out into a file whose name is stack.\r\n\r\nThe main program, which is in another file, gains access to the stack by importing it. Here is the main program:\r\n\r\n",
+      "mdown_content": "Here is stack module that is separated out into a file whose name is *stack*.\nThe main program, which is in another file, gains access to the stack by importing it. Here is the main program:"
     },
     {
       "title": "Details",
@@ -27,7 +30,8 @@
         "        import var stack in \"stk.t\""
       ],
       "raw_content": "In this example, the  keyword <b>var</b> in the import list  is required because the main program causes a change in the stack, by calling <i>push</i> and <i>pop</i>. The import lists of units that are modules, monitors and classes are used to gain access to further units.<p>\r\nIf the stack were in a file with a different name, say <i>stk.t</i>, the import list would be rewritten to use an <b>in</b> clause, as follows:</p>\n<p>\r\n</p>\r\nA mainProgram is simply a program. See <b>program</b>.<p>\r\n</p>",
-      "mdown_content": "In this example, the  keyword **var** in the import list  is required because the main program causes a change in the stack, by calling *push* and *pop*. The import lists of units that are modules, monitors and classes are used to gain access to further units.\nIf the stack were in a file with a different name, say *stk.t*, the import list would be rewritten to use an **in** clause, as follows:\n\n\nA mainProgram is simply a program. See **program**."
+      "text_content": " In this example, the  keyword var in the import list  is required because the main program causes a change in the stack, by calling push and pop. The import lists of units that are modules, monitors and classes are used to gain access to further units.\r\nIf the stack were in a file with a different name, say stk.t, the import list would be rewritten to use an in clause, as follows:\r\n\r\nA mainProgram is simply a program. See program.\r\n",
+      "mdown_content": "In this example, the  keyword **var** in the import list  is required because the main program causes a change in the stack, by calling *push* and *pop*. The import lists of units that are modules, monitors and classes are used to gain access to further units.\nIf the stack were in a file with a different name, say *stk.t*, the import list would be rewritten to use an **in** clause, as follows:\nA mainProgram is simply a program. See **program**."
     },
     {
       "title": "See also",
@@ -42,6 +46,7 @@
         "implement_by"
       ],
       "raw_content": "<b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"export.html\">export</a></b> list, <b><a href=\"import.html\">import</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> list, <b><a href=\"implement.html\">implement</a></b> list and <b><a href=\"implement_by.html\">implement by</a></b> list.<p>\r\n</p>",
+      "text_content": " module, monitor and class. See also export list, import list, inherit list, implement list and implement by list.\r\n",
       "mdown_content": "**[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list."
     }
   ]

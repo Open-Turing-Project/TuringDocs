@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<b>Draw.Polygon</b> (<i>x</i>, <i>y</i>  : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>n</i> : <b>int</b>, <i>Color</i> : <b>int</b>)<p>\r\n</p>",
+      "text_content": " Draw.Polygon (x, y  : array 1 .. * of int, n : int, Color : int)\r\n",
       "mdown_content": "**Draw.Polygon** (*x*, *y*  : **array** 1 .. * **of** **int**, *n* : **int**, *Color* : **int**)"
     },
     {
@@ -13,6 +14,7 @@
         "        for i : 1 .. n - 1\r\n            Draw.Line (x (i), y(i), x (i + 1), y (i + 1), Color)\r\n        end for\r\n        Draw.Line (x (n), y (n), x (1), y (1), Color)"
       ],
       "raw_content": "The <b>Draw.Polygon</b> procedure is used to draw a polygon with <i>n</i> points. A line is drawn in <i>Color </i>from the point (<i>x</i>(1), <i>y</i>(1)) to (<i>x</i>(2), <i>y</i>(2)) to (<i>x</i>(3), <i>y</i>(3)) and so on. After drawing the line to (<i>x</i>(<i>n</i>), <i>y</i> (<i>n</i>)), a line will be drawn back to (<i>x</i>(1), <i>y</i>(1)), closing the polygon. The <b>Draw.Polygon</b> procedure is equivalent to:<p>\r\n</p>",
+      "text_content": " The Draw.Polygon procedure is used to draw a polygon with n points. A line is drawn in Color from the point (x(1), y(1)) to (x(2), y(2)) to (x(3), y(3)) and so on. After drawing the line to (x(n), y (n)), a line will be drawn back to (x(1), y(1)), closing the polygon. The Draw.Polygon procedure is equivalent to:\r\n\r\n",
       "mdown_content": "The **Draw.Polygon** procedure is used to draw a polygon with *n* points. A line is drawn in *Color *from the point (*x*(1), *y*(1)) to (*x*(2), *y*(2)) to (*x*(3), *y*(3)) and so on. After drawing the line to (*x*(*n*), *y* (*n*)), a line will be drawn back to (*x*(1), *y*(1)), closing the polygon. The **Draw.Polygon** procedure is equivalent to:"
     },
     {
@@ -21,6 +23,7 @@
         "        View.Set (\"graphics\")\r\n        var x : array 1..8 of int := init (100, 100, 135, 185, \r\n                                   220, 220, 185, 135)\r\n        var y : array 1..8 of int := init (100, 150, 185, 185,\r\n                                   150, 100, 65, 65)\r\n        Draw.Polygon (x, y, 8, brightblue)"
       ],
       "raw_content": "This program will create an octagon and display it in color 1.<p>\r\n</p>",
+      "text_content": " This program will create an octagon and display it in color 1.\r\n\r\n    ",
       "mdown_content": "This program will create an octagon and display it in color 1."
     },
     {
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The IBM PC limits <b>Draw.Polygon</b> to a maximum of 256 points.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
-      "mdown_content": "The IBM PC limits **Draw.Polygon** to a maximum of 256 points.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur.\n"
+      "text_content": " The IBM PC limits Draw.Polygon to a maximum of 256 points.\r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
+      "mdown_content": "The IBM PC limits **Draw.Polygon** to a maximum of 256 points.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Polygon</b>, not by calling <b>Polygon</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Polygon**, not by calling **Polygon**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.Polygon, not by calling Polygon.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Polygon**, not by calling **Polygon**."
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]

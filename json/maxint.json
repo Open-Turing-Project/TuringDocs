@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxint</b> : <b>int</b><p>\r\n</p></font>",
+      "text_content": " maxint : int\r\n",
       "mdown_content": "**maxint** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>maxint</b> function is used to determine the largest integer (<b>int</b>) that can be used in a program.<p>\r\n</p>",
+      "text_content": " The maxint function is used to determine the largest integer (int) that can be used in a program.\r\n",
       "mdown_content": "The **maxint** function is used to determine the largest integer (**int**) that can be used in a program."
     },
     {
@@ -18,12 +20,14 @@
         "        put \"The largest integer that can be used is \", maxint"
       ],
       "raw_content": "This program outputs the maximum integer.<p>\r\n</p>",
+      "text_content": " This program outputs the maximum integer.\r\n\r\n",
       "mdown_content": "This program outputs the maximum integer."
     },
     {
       "title": "Details",
       "raw_content": "In current Turing and OOT implementations, <b>int</b> values are stored in 4 bytes, i.e., 32 bits. This determines the maximum <b>int</b> value, which is 2**311, equaling 2147483647.<p>\r\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than <b>maxint</b>. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an <b>int</b> variable is detected as an overflow. You can use this extra value by using the <b>int4</b> type instead of <b>int</b>, but this type has no initialization checking.</p>\n<p>\r\n</p>",
-      "mdown_content": "In current Turing and OOT implementations, **int** values are stored in 4 bytes, i.e., 32 bits. This determines the maximum **int** value, which is 2**311, equaling 2147483647.\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than **maxint**. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an **int** variable is detected as an overflow. You can use this extra value by using the **int4** type instead of **int**, but this type has no initialization checking.\n"
+      "text_content": " In current Turing and OOT implementations, int values are stored in 4 bytes, i.e., 32 bits. This determines the maximum int value, which is 2**311, equaling 2147483647.\r\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than maxint. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an int variable is detected as an overflow. You can use this extra value by using the int4 type instead of int, but this type has no initialization checking.\r\n",
+      "mdown_content": "In current Turing and OOT implementations, **int** values are stored in 4 bytes, i.e., 32 bits. This determines the maximum **int** value, which is 2**311, equaling 2147483647.\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than **maxint**. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an **int** variable is detected as an overflow. You can use this extra value by using the **int4** type instead of **int**, but this type has no initialization checking."
     },
     {
       "title": "See also",
@@ -33,7 +37,8 @@
         "mathmodule"
       ],
       "raw_content": "<b><a href=\"maxnat.html\">maxnat</a></b> and <b><a href=\"minint.html\">minint</a></b>.<p>\r\nSee also OOT predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "**[maxnat.html](maxnat)** and **[minint.html](minint)**.\nSee also OOT predefined unit **[mathmodule.html](Math)**.\n"
+      "text_content": " maxnat and minint.\r\nSee also OOT predefined unit Math.\r\n",
+      "mdown_content": "**[maxnat.html](maxnat)** and **[minint.html](minint)**.\nSee also OOT predefined unit **[mathmodule.html](Math)**."
     }
   ]
 }

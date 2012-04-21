@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetTopLine</b> (<i>widgetID</i> : <b>int</b>, <i>lineNum</i> : <b>int</b>)<p></p></font>",
+      "text_content": "GUI.SetTopLine (widgetID : int, lineNum : int)\r\n    ",
       "mdown_content": "**GUI.SetTopLine** (*widgetID* : **int**, *lineNum* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetTopLine</b> procedure scrolls the text in a \r\n          text box so as to place the line number specified by\r\n\t  <i>lineNum</i> at the top of the text box (if possible).\r\n\t  This is often used to scroll the text back to the beginning\r\n\t  of the text box by assigning a value of 1 to <i>lineNum</i>.",
-      "mdown_content": "The **GUI.SetTopLine** procedure scrolls the text in a \ntext box so as to place the line number specified by\n*lineNum* at the top of the text box (if possible).\nThis is often used to scroll the text back to the beginning\nof the text box by assigning a value of 1 to *lineNum*."
+      "text_content": "The GUI.SetTopLine procedure scrolls the text in a \r\n          text box so as to place the line number specified by\r\n\t  lineNum at the top of the text box (if possible).\r\n\t  This is often used to scroll the text back to the beginning\r\n\t  of the text box by assigning a value of 1 to lineNum.\r\n    ",
+      "mdown_content": "The **GUI.SetTopLine** procedure scrolls the text in a text box so as to place the line number specified by*lineNum* at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to *lineNum*."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        import GUI\r\n\r\n        var textBox : int     % The Text Field ID.\r\n        textBox := GUI.CreateTextBoxFull (10, 10, 180, 275,\r\n            GUI.INDENT, 0)\r\n\r\n        GUI.SetBackgroundColor (gray)\r\n\r\n        % Read the file and place it in the text box.\r\n        for i : 1 .. 100\r\n            GUI.AddLine (textBox, intstr (i))\r\n        end for\r\n        GUI.SetTopLine (textBox, 50)\r\n\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "This program displays 100 lines of text in a text box, then\r\n          sets the text box to display line 50 at the top of the box.<p>\r\n</p>",
-      "mdown_content": "This program displays 100 lines of text in a text box, then\nsets the text box to display line 50 at the top of the box."
+      "text_content": "This program displays 100 lines of text in a text box, then\r\n          sets the text box to display line 50 at the top of the box.\r\n\r\n    ",
+      "mdown_content": "This program displays 100 lines of text in a text box, thensets the text box to display line 50 at the top of the box."
     },
     {
       "title": "Execute",
@@ -33,7 +36,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.SetTopLine</b>, not by calling <b>SetTopLine</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.SetTopLine**, not by calling **SetTopLine**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.SetTopLine, not by calling SetTopLine.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetTopLine**, not by calling **SetTopLine**."
     }
   ]
 }

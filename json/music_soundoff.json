@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.SoundOff</b><p>\r\n</p></font>",
+      "text_content": " Music.SoundOff\r\n",
       "mdown_content": "**Music.SoundOff**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.SoundOff </b>procedure stops any sound or music that is currently playing or is waiting to play.<p>\r\n</p>",
+      "text_content": " The Music.SoundOff procedure stops any sound or music that is currently playing or is waiting to play.\r\n",
       "mdown_content": "The **Music.SoundOff **procedure stops any sound or music that is currently playing or is waiting to play."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Music.SoundOff</b>, not by calling <b>SoundOff</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.SoundOff**, not by calling **SoundOff**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Music.SoundOff, not by calling SoundOff.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.SoundOff**, not by calling **SoundOff**."
     },
     {
       "title": "See also",
@@ -26,6 +29,7 @@
         ""
       ],
       "raw_content": "<b><a href=\"music_play.html\">Music.Play</a></b>, <b><a href=\"music_playfile.html\">Music.PlayFile</a></b>, and <b><a href=\"music_sound.html\">Music.Sound</a></b> procedures, which make sounds that can be turned off with <b><a href=\"\">Music.SoundOff</a></b>.<p>\r\n</p>",
+      "text_content": " Music.Play, Music.PlayFile, and Music.Sound procedures, which make sounds that can be turned off with Music.SoundOff.\r\n",
       "mdown_content": "**[music_play.html](Music.Play)**, **[music_playfile.html](Music.PlayFile)**, and **[music_sound.html](Music.Sound)** procedures, which make sounds that can be turned off with **[](Music.SoundOff)**."
     }
   ]

@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Draw</b> (<i>picID</i>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)<p></p></font>",
+      "text_content": "Pic.Draw (picID, x, y, mode : int)\r\n    ",
       "mdown_content": "**Pic.Draw** (*picID*, *x*, *y*, *mode* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Draw </b>is used to draw a picture on the screen. The picture \r\n          is drawn with the lower left corner at (<i>x</i>, <i>y</i>).<p>\r\n\t  The <i>mode</i> parameter has one of the following values:</p>\n<p>\r\n\t  </p>\n<table>\n<tr valign=\"top\">\n<td><i>picCopy</i></td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>This draws the picture on top of what was underneath, \r\n\t          obscuring it completely.</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td><i>picXor</i></td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>This draws the picture XORing it with the background. \r\n\t          In DOS, you can use this function to do animation. \r\n\t\t  Drawing an object on top of itself with XOR erases \r\n\t\t  it and restores the background.</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td><i>picMerge</i></td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>This draws the picture like <i>picCopy</i> except \r\n\t          that any occurrence of the background color in the \r\n\t\t  picture is not drawn to the screen. This allows you \r\n\t\t  to draw an irregularly-shaped object and draw it to \r\n\t\t  the screen.</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td><i>picUnderMerge</i></td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>This draws the picture, but only where the background \r\n\t          color was displayed underneath it. The effect of this \r\n\t\t  is to make the picture appear to be displayed behind \r\n\t\t  the background.</td>\r\n\t    </tr>\n</table>\n<p>\r\n    </p>",
-      "mdown_content": "**Pic.Draw **is used to draw a picture on the screen. The picture \nis drawn with the lower left corner at (*x*, *y*).\nThe *mode* parameter has one of the following values:\n\n\n*picCopy*\n \nThis draws the picture on top of what was underneath, \nobscuring it completely.\n*picXor*\n \nThis draws the picture XORing it with the background. \nIn DOS, you can use this function to do animation. \nDrawing an object on top of itself with XOR erases \nit and restores the background.\n*picMerge*\n \nThis draws the picture like *picCopy* except \nthat any occurrence of the background color in the \npicture is not drawn to the screen. This allows you \nto draw an irregularly-shaped object and draw it to \nthe screen.\n*picUnderMerge*\n \nThis draws the picture, but only where the background \ncolor was displayed underneath it. The effect of this \nis to make the picture appear to be displayed behind \nthe background.\n\n"
+      "text_content": "Pic.Draw is used to draw a picture on the screen. The picture \r\n          is drawn with the lower left corner at (x, y).\r\n\t  The mode parameter has one of the following values:\r\n\t  picCopy\r\n\t       \r\n\t      This draws the picture on top of what was underneath, \r\n\t          obscuring it completely.\r\n\t    picXor\r\n\t       \r\n\t      This draws the picture XORing it with the background. \r\n\t          In DOS, you can use this function to do animation. \r\n\t\t  Drawing an object on top of itself with XOR erases \r\n\t\t  it and restores the background.\r\n\t    picMerge\r\n\t       \r\n\t      This draws the picture like picCopy except \r\n\t          that any occurrence of the background color in the \r\n\t\t  picture is not drawn to the screen. This allows you \r\n\t\t  to draw an irregularly-shaped object and draw it to \r\n\t\t  the screen.\r\n\t    picUnderMerge\r\n\t       \r\n\t      This draws the picture, but only where the background \r\n\t          color was displayed underneath it. The effect of this \r\n\t\t  is to make the picture appear to be displayed behind \r\n\t\t  the background.\r\n\t    \r\n    ",
+      "mdown_content": "**Pic.Draw **is used to draw a picture on the screen. The picture is drawn with the lower left corner at (*x*, *y*).\nThe *mode* parameter has one of the following values:\n*picCopy* This draws the picture on top of what was underneath, obscuring it completely.*picXor* This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.*picMerge* This draws the picture like *picCopy* except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.*picUnderMerge* This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background."
     },
     {
       "title": "Execute",
@@ -28,7 +30,8 @@
         "pic_draw01.gif"
       ],
       "raw_content": "If the <b>Pic.Draw</b> call fails, <b>Error.Last</b> will return a \r\n          non-zero value indicating the reason for the failure. \r\n\t  <b>Error.LastMsg</b> will return a string which contains the textual \r\n\t  version of the error.<p>\r\n\t  </p>\n<center></center>\r\n\t  <center><b>Display Modes with Pic.Draw</b></center>\n<p>\r\n    </p>",
-      "mdown_content": "If the **Pic.Draw** call fails, **Error.Last** will return a \nnon-zero value indicating the reason for the failure. \n**Error.LastMsg** will return a string which contains the textual \nversion of the error.\n\n\n**Display Modes with Pic.Draw**\n\n"
+      "text_content": "If the Pic.Draw call fails, Error.Last will return a \r\n          non-zero value indicating the reason for the failure. \r\n\t  Error.LastMsg will return a string which contains the textual \r\n\t  version of the error.\r\n\t  \r\n\t  Display Modes with Pic.Draw\r\n    ",
+      "mdown_content": "If the **Pic.Draw** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n**Display Modes with Pic.Draw**"
     },
     {
       "title": "Example",
@@ -36,7 +39,8 @@
         "        var picID: int\r\n        var x, y : int\r\n        Draw.FillBox (50, 50, 150, 150, red)\r\n        Draw.FillStar (50, 50, 150, 150, green)\r\n        Draw.FillOval (100, 100, 30, 30, blue)\r\n        \r\n        picID := Pic.New (50, 50, 150, 150)\r\n        for i : 1 .. 50\r\n            x := Rand.Int (0, maxx)     % Random x\r\n            y := Rand.Int (0, maxy)     % Random y\r\n            Pic.Draw (picID, x, y, picCopy)\r\n        end for\r\n        Pic.Free (picID)"
       ],
       "raw_content": "The program draws a graphic on the screen and then repeats it 50 \r\n          times in random positions.<p>\r\n</p>",
-      "mdown_content": "The program draws a graphic on the screen and then repeats it 50 \ntimes in random positions."
+      "text_content": "The program draws a graphic on the screen and then repeats it 50 \r\n          times in random positions.\r\n\r\n    ",
+      "mdown_content": "The program draws a graphic on the screen and then repeats it 50 times in random positions."
     },
     {
       "title": "Execute",
@@ -51,7 +55,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Draw</b>, not by calling <b>Draw</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Draw**, not by calling **Draw**.\n\n"
+      "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Draw, not by calling Draw.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Draw**, not by calling **Draw**."
     },
     {
       "title": "See also",
@@ -61,7 +66,8 @@
         "pic_drawframes"
       ],
       "raw_content": "<a href=\"view_update.html\">View.Update</a> for information on how\r\n          to produce smooth animation.<p>\r\n          <a href=\"pic_drawspecial.html\">Pic.DrawSpecial</a> for information on how\r\n          to make pictures appear using special effects such as wipes and slides.</p>\n<p>\r\n          <a href=\"pic_drawframes.html\">Pic.DrawFrames</a> for information on how\r\n          to display multiple frame images such as are obtained from GIF files.\r\n    </p>",
-      "mdown_content": "[view_update.html](View.Update) for information on how\nto produce smooth animation.\n[pic_drawspecial.html](Pic.DrawSpecial) for information on how\nto make pictures appear using special effects such as wipes and slides.\n\n[pic_drawframes.html](Pic.DrawFrames) for information on how\nto display multiple frame images such as are obtained from GIF files.\n"
+      "text_content": "View.Update for information on how\r\n          to produce smooth animation.\r\n          Pic.DrawSpecial for information on how\r\n          to make pictures appear using special effects such as wipes and slides.\r\n          Pic.DrawFrames for information on how\r\n          to display multiple frame images such as are obtained from GIF files.\r\n    ",
+      "mdown_content": "[view_update.html](View.Update) for information on howto produce smooth animation.\n[pic_drawspecial.html](Pic.DrawSpecial) for information on howto make pictures appear using special effects such as wipes and slides.\n[pic_drawframes.html](Pic.DrawFrames) for information on howto display multiple frame images such as are obtained from GIF files."
     }
   ]
 }

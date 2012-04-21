@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Free</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Sprite.Free (spriteID : int)\r\n",
       "mdown_content": "**Sprite.Free** (*spriteID* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the <i>spriteID</i> after the sprite has been freed.<p>\r\n</p>",
+      "text_content": " Destroys the sprite and frees up the memory the sprite used. It is an error to use the spriteID after the sprite has been freed.\r\n",
       "mdown_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the *spriteID* after the sprite has been freed."
     },
     {
       "title": "Example",
       "raw_content": "See <b>Sprite.Animate</b> for an example of <b>Sprite.Free</b>.<p>\r\n</p>",
+      "text_content": " See Sprite.Animate for an example of Sprite.Free.\r\n",
       "mdown_content": "See **Sprite.Animate** for an example of **Sprite.Free**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.Free</b>, not by calling <b>Free</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Free**, not by calling **Free**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sprite.Free, not by calling Free.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Free**, not by calling **Free**."
     },
     {
       "title": "See also",
@@ -28,6 +32,7 @@
         "sprite_new"
       ],
       "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n</p>",
+      "text_content": " Sprite.New.\r\n",
       "mdown_content": "**[sprite_new.html](Sprite.New)**."
     }
   ]

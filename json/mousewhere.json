@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>mousewhere </b>(<b>var</b> <i>x</i>, <i>y</i>, <i>button</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " mousewhere (var x, y, button : int)\r\n",
       "mdown_content": "**mousewhere **(**var** *x*, *y*, *button* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>mousewhere</b> procedure is used to get current information about the status of the mouse. The parameters <i>x</i> and <i>y</i> are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that <i>x</i> and <i>y</i> may be set to values outside of the bounds of 0 to <b>maxx</b> and 0 to <b>maxy</b>.<p>\r\nThe parameter <i>button</i> is set depending on the current mode. In \"<i>single-button mode</i>\" (where the mouse is treated like a one-button mouse), <i>button</i> is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"<i>multi-button mode</i>\", <i>button</i><b> </b>is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if <i>button</i> has the value of 101, then it means that the left and right mouse buttons were depressed.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **mousewhere** procedure is used to get current information about the status of the mouse. The parameters *x* and *y* are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that *x* and *y* may be set to values outside of the bounds of 0 to **maxx** and 0 to **maxy**.\nThe parameter *button* is set depending on the current mode. In \"*single-button mode*\" (where the mouse is treated like a one-button mouse), *button* is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"*multi-button mode*\", *button*** **is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if *button* has the value of 101, then it means that the left and right mouse buttons were depressed.\n"
+      "text_content": " The mousewhere procedure is used to get current information about the status of the mouse. The parameters x and y are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that x and y may be set to values outside of the bounds of 0 to maxx and 0 to maxy.\r\nThe parameter button is set depending on the current mode. In \"single-button mode\" (where the mouse is treated like a one-button mouse), button is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"multi-button mode\", button is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if button has the value of 101, then it means that the left and right mouse buttons were depressed.\r\n",
+      "mdown_content": "The **mousewhere** procedure is used to get current information about the status of the mouse. The parameters *x* and *y* are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that *x* and *y* may be set to values outside of the bounds of 0 to **maxx** and 0 to **maxy**.\nThe parameter *button* is set depending on the current mode. In \"*single-button mode*\" (where the mouse is treated like a one-button mouse), *button* is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"*multi-button mode*\", *button*** **is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if *button* has the value of 101, then it means that the left and right mouse buttons were depressed."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        var x, y, button : int\r\n        loop\r\n            mousewhere (x, y, button)\r\n            locate (1, 1)\r\n            if button = 0 then\r\n                put x : 4, \"  \", y : 4, \"  button up\"\r\n            else\r\n                put x : 4, \"  \", y : 4, \"  button down\"\r\n            end if\r\n        end loop"
       ],
       "raw_content": "A program that displays the status of the mouse at the top left corner of the screen.<p>\r\n</p>",
+      "text_content": " A program that displays the status of the mouse at the top left corner of the screen.\r\n\r\n",
       "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen."
     },
     {
@@ -28,6 +31,7 @@
         "buttonchoose"
       ],
       "raw_content": "<b><a href=\"buttonmoved.html\">buttonmoved</a></b> and <b><a href=\"buttonwait.html\">buttonwait</a></b> to get mouse events saved in a queue. See also <b><a href=\"buttonchoose.html\">buttonchoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\n</p>",
+      "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
       "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\"."
     }
   ]

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.Sec</b> : <b>int</b><p>\r\n</p></font>",
+      "text_content": " Time.Sec : int\r\n",
       "mdown_content": "**Time.Sec** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.Sec</b> function returns the current date and time as a number. The returned integer is the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.<p>\r\n</p>",
+      "text_content": " The Time.Sec function returns the current date and time as a number. The returned integer is the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.\r\n",
       "mdown_content": "The **Time.Sec** function returns the current date and time as a number. The returned integer is the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970."
     },
     {
@@ -18,17 +20,20 @@
         "        put \"The number of seconds since 1970 is \", Time.Sec"
       ],
       "raw_content": "This program tells you how many seconds since 1970.<p>\r\n</p>",
+      "text_content": " This program tells you how many seconds since 1970.\r\n\r\n",
       "mdown_content": "This program tells you how many seconds since 1970."
     },
     {
       "title": "Details",
       "raw_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the <b>Time.Date </b>procedure will give incorrect results.<p>\r\nThe string form of the date can be converted to a numeric form for comparison purposes using the <b>Time.DateSec</b> function. The numeric form can be converted to a string using the <b>Time.SecDate</b> function. The numeric form of the time can be obtained using the <b>Time.Sec</b> function.</p>\n<p>\r\n</p>",
-      "mdown_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date **procedure will give incorrect results.\nThe string form of the date can be converted to a numeric form for comparison purposes using the **Time.DateSec** function. The numeric form can be converted to a string using the **Time.SecDate** function. The numeric form of the time can be obtained using the **Time.Sec** function.\n"
+      "text_content": " Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the Time.Date procedure will give incorrect results.\r\nThe string form of the date can be converted to a numeric form for comparison purposes using the Time.DateSec function. The numeric form can be converted to a string using the Time.SecDate function. The numeric form of the time can be obtained using the Time.Sec function.\r\n",
+      "mdown_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date **procedure will give incorrect results.\nThe string form of the date can be converted to a numeric form for comparison purposes using the **Time.DateSec** function. The numeric form can be converted to a string using the **Time.SecDate** function. The numeric form of the time can be obtained using the **Time.Sec** function."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.Sec</b>, not by calling <b>Sec</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.Sec**, not by calling **Sec**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.Sec, not by calling Sec.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.Sec**, not by calling **Sec**."
     },
     {
       "title": "See also",
@@ -38,6 +43,7 @@
         "time_secdate"
       ],
       "raw_content": "<b><a href=\"time_date.html\">Time.Date</a></b>, <b><a href=\"time_datesec.html\">Time.DateSec</a></b> and <b><a href=\"time_secdate.html\">Time.SecDate</a></b> functions.<p>\r\n</p>",
+      "text_content": " Time.Date, Time.DateSec and Time.SecDate functions.\r\n",
       "mdown_content": "**[time_date.html](Time.Date)**, **[time_datesec.html](Time.DateSec)** and **[time_secdate.html](Time.SecDate)** functions."
     }
   ]

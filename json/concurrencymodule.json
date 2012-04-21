@@ -1,8 +1,24 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Concurrency",
   "fileName": "concurrencymodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined procedures that deal with concurrency. It contains one predefined function, although conceptually it contains three other subprograms.<p>\r\nAll routines in the Concurrency module are exported unqualified. (This means you can call the entry points directly.)</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined procedures that deal with concurrency. It contains one predefined function, although conceptually it contains three other subprograms.\r\nAll routines in the Concurrency module are exported unqualified. (This means you can call the entry points directly.)\r\n",
+      "mdown_content": "This unit contains the predefined procedures that deal with concurrency. It contains one predefined function, although conceptually it contains three other subprograms.\nAll routines in the Concurrency module are exported unqualified. (This means you can call the entry points directly.)"
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "concurrency_empty",
+        "concurrency_getpriority",
+        "concurrency_setpriority",
+        "concurrency_simutime"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td>\n<a href=\"concurrency_empty.html\"><b>empty</b></a>*</td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns true if no processes are waiting on the condition queue.</td>\n</tr>\n<tr valign=\"top\">\n<td>\n<a href=\"concurrency_getpriority.html\"><b>getpriority</b></a>*</td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the priority of the current process.</td>\n</tr>\n<tr valign=\"top\">\n<td>\n<a href=\"concurrency_setpriority.html\"><b>setpriority</b></a>*</td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the priority of the current process.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"concurrency_simutime.html\"><b>simutime</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the number of simulated time units that have passed.</td>\n</tr>\n</table>\n<p>\r\n* Part of the language, conceptually part of the <b>Concurrency</b> unit.</p>\n<p>\r\n</p>",
+      "text_content": "empty* Returns true if no processes are waiting on the condition queue.getpriority* Returns the priority of the current process.setpriority* Sets the priority of the current process.simutime Returns the number of simulated time units that have passed.\r\n* Part of the language, conceptually part of the Concurrency unit.\r\n",
+      "mdown_content": "[concurrency_empty.html](**empty**)* Returns true if no processes are waiting on the condition queue.[concurrency_getpriority.html](**getpriority**)* Returns the priority of the current process.[concurrency_setpriority.html](**setpriority**)* Sets the priority of the current process.[concurrency_simutime.html](**simutime**) Returns the number of simulated time units that have passed.\n* Part of the language, conceptually part of the **Concurrency** unit."
+    }
+  ]
 }

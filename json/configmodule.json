@@ -1,8 +1,23 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Config",
   "fileName": "configmodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprograms that deal with getting configuration information about the machine and environment on which the program is being run. It exists in order to allow users to obtain information about the system that may only be available at run time.<p>\r\nAll routines in the Config module are exported qualified (and thus must be prefaced with \"<b>Config.</b>\").</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprograms that deal with getting configuration information about the machine and environment on which the program is being run. It exists in order to allow users to obtain information about the system that may only be available at run time.\r\nAll routines in the Config module are exported qualified (and thus must be prefaced with \"Config.\").\r\n",
+      "mdown_content": "This unit contains the predefined subprograms that deal with getting configuration information about the machine and environment on which the program is being run. It exists in order to allow users to obtain information about the system that may only be available at run time.\nAll routines in the Config module are exported qualified (and thus must be prefaced with \"**Config.**\")."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "config_display",
+        "config_lang",
+        "config_machine"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"config_display.html\"><b>Display</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the display currently attached.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"config_lang.html\"><b>Lang</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the language environment that the program is currently running within.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"config_machine.html\"><b>Machine</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the hardware on which the program is running.</td>\n</tr>\n</table>",
+      "text_content": "Display Returns information about the display currently attached.Lang Returns information about the language environment that the program is currently running within.Machine Returns information about the hardware on which the program is running.",
+      "mdown_content": "[config_display.html](**Display**) Returns information about the display currently attached.[config_lang.html](**Lang**) Returns information about the language environment that the program is currently running within.[config_machine.html](**Machine**) Returns information about the hardware on which the program is running."
+    }
+  ]
 }

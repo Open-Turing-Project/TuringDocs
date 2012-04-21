@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>min</b> ( <i>expn</i> , <i>expn</i> )<p>\r\n</p></font>",
+      "text_content": " min ( expn , expn )\r\n",
       "mdown_content": "**min** ( *expn* , *expn* )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>min</b> function is used to find the minimum of two numbers (the two <i>expn</i>'s). For example, <b>min</b> ( 5, 7 ) is 5. If both numbers are <b>int</b>, the result is <b>int</b>. If both numbers are <b>nat</b> (natural numbers), the result is <b>nat</b>. But if one or both of the numbers are <b>real</b>, the result is <b>real</b>. See also the <b>max</b> function.<p>\r\n</p>",
+      "text_content": " The min function is used to find the minimum of two numbers (the two expn's). For example, min ( 5, 7 ) is 5. If both numbers are int, the result is int. If both numbers are nat (natural numbers), the result is nat. But if one or both of the numbers are real, the result is real. See also the max function.\r\n",
       "mdown_content": "The **min** function is used to find the minimum of two numbers (the two *expn*'s). For example, **min** ( 5, 7 ) is 5. If both numbers are **int**, the result is **int**. If both numbers are **nat** (natural numbers), the result is **nat**. But if one or both of the numbers are **real**, the result is **real**. See also the **max** function."
     },
     {
@@ -18,6 +20,7 @@
         "        var x : real := 74.61\r\n        var y : real := 85.72\r\n        put min ( x, y )            % Outputs 74.61"
       ],
       "raw_content": "This program outputs 74.61.<p>\r\n</p>",
+      "text_content": " This program outputs 74.61.\r\n\r\n",
       "mdown_content": "This program outputs 74.61."
     },
     {
@@ -26,6 +29,7 @@
         "        var m, t : real\r\n        get m               % Input first number\r\n        for i : 2 .. 10         % Handle remaining 9 numbers\r\n            get t\r\n            m := min ( m, t )\r\n        end for\r\n        put \"The minimum is \", m"
       ],
       "raw_content": "This program inputs 10 numbers and outputs their minimum.<p>\r\n</p>",
+      "text_content": " This program inputs 10 numbers and outputs their minimum.\r\n\r\n",
       "mdown_content": "This program inputs 10 numbers and outputs their minimum."
     },
     {
@@ -34,6 +38,7 @@
         "mathmodule"
       ],
       "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
+      "text_content": " See also predefined unit Math.\r\n",
       "mdown_content": "See also predefined unit **[mathmodule.html](Math)**."
     }
   ]

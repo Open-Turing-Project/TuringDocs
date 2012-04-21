@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>namedType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>typeId</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>moduleId</i> . <i>typeId</i></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "A *namedType* is one of:\n\n \n(a)\n*typeId*\n \n(b)\n*moduleId* . *typeId*"
+      "text_content": " A namedType is one of:\r\n (a)typeId (b)moduleId . typeId",
+      "mdown_content": "A *namedType* is one of:\n (a)*typeId* (b)*moduleId* . *typeId*"
     },
     {
       "title": "Description",
       "raw_content": "A type can be given a name (<i>typeId</i>) and later this name can be used instead of writing out the type.<p>\r\n</p>",
+      "text_content": " A type can be given a name (typeId) and later this name can be used instead of writing out the type.\r\n",
       "mdown_content": "A type can be given a name (*typeId*) and later this name can be used instead of writing out the type."
     },
     {
@@ -18,12 +20,14 @@
         "        type phoneRecord :\r\n            record\r\n                name : string ( 20 )\r\n                phoneNumber : int\r\n                address : string ( 50 )\r\n            end record\r\n        \r\n        var oneEntry : phoneRecord\r\n        var phoneBook : array 1 .. 100 of phoneRecord"
       ],
       "raw_content": "In this example, <i>phoneRecord</i> is a named type.<p>\r\n</p>",
+      "text_content": " In this example, phoneRecord is a named type.\r\n\r\n",
       "mdown_content": "In this example, *phoneRecord* is a named type."
     },
     {
       "title": "Details",
       "raw_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.<p>\r\nArrays whose bounds are not known at compile time cannot be named.</p>\n<p>\r\n</p>",
-      "mdown_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\nArrays whose bounds are not known at compile time cannot be named.\n"
+      "text_content": " Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\r\nArrays whose bounds are not known at compile time cannot be named.\r\n",
+      "mdown_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\nArrays whose bounds are not known at compile time cannot be named."
     }
   ]
 }

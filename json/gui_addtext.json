@@ -5,16 +5,19 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.AddText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.AddText (widgetID : int, text : string)\r\n",
       "mdown_content": "**GUI.AddText** (*widgetID* : **int**, *text* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>GUI.AddText </b>adds text to the current line of the text box specified by <i>widgetID</i>. It does not add a newline after the text. It is essentially equivalent to <b>put</b> <i>text</i><b> </b>... in the text box. <b>GUI.AddLine</b><i> </i>scrolls the text box (if necessary) so that the added text is now visible. The <i>widgetID</i> parameter must be the widget id of a text box. The <i>text</i> parameter is the text to be added to the text box.<p>\r\n</p>",
+      "text_content": " GUI.AddText adds text to the current line of the text box specified by widgetID. It does not add a newline after the text. It is essentially equivalent to put text ... in the text box. GUI.AddLine scrolls the text box (if necessary) so that the added text is now visible. The widgetID parameter must be the widget id of a text box. The text parameter is the text to be added to the text box.\r\n",
       "mdown_content": "**GUI.AddText **adds text to the current line of the text box specified by *widgetID*. It does not add a newline after the text. It is essentially equivalent to **put** *text*** **... in the text box. **GUI.AddLine*** *scrolls the text box (if necessary) so that the added text is now visible. The *widgetID* parameter must be the widget id of a text box. The *text* parameter is the text to be added to the text box."
     },
     {
       "title": "Details",
       "raw_content": "To force a text box to scroll to the end of the text without adding any extra text, call <b>GUI.AddText</b> with \"\" (the null string) for the <i>text</i> parameter.<p>\r\n</p>",
+      "text_content": " To force a text box to scroll to the end of the text without adding any extra text, call GUI.AddText with \"\" (the null string) for the text parameter.\r\n",
       "mdown_content": "To force a text box to scroll to the end of the text without adding any extra text, call **GUI.AddText** with \"\" (the null string) for the *text* parameter."
     },
     {
@@ -23,7 +26,8 @@
         "        import GUI\r\n        var boxID : int := GUI.CreateTextBox (50, 50, 200, 200)\r\n        for i : 1 .. 26\r\n            GUI.AddText (boxID, intstr (i))\r\n            GUI.AddText (boxID, \" \")\r\n            GUI.AddLine (boxID, chr (64 + i))\r\n        end for\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following creates a text box and puts the numbers from 1 to 26 followed by the appropriate letter of the alphabet in it.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "The following creates a text box and puts the numbers from 1 to 26 followed by the appropriate letter of the alphabet in it.\n\n\n"
+      "text_content": " The following creates a text box and puts the numbers from 1 to 26 followed by the appropriate letter of the alphabet in it.\r\n\r\n    ",
+      "mdown_content": "The following creates a text box and puts the numbers from 1 to 26 followed by the appropriate letter of the alphabet in it.\n"
     },
     {
       "title": "Execute",
@@ -38,11 +42,13 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.AddText</b>, not by calling <b>AddText</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.AddText**, not by calling **AddText**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.AddText, not by calling AddText.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.AddText**, not by calling **AddText**."
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextBox</b>.<p>\r\n</p>",
+      "text_content": " GUI.CreateTextBox.\r\n",
       "mdown_content": "**GUI.CreateTextBox**."
     }
   ]

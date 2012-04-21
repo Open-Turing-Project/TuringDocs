@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.SetText (widgetID : int, text : string)\r\n",
       "mdown_content": "**GUI.SetText** (*widgetID* : **int**, *text* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the text of a text field specified by <i>widgetID</i> to <i>text</i>. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).<p>\r\n</p>",
+      "text_content": " Sets the text of a text field specified by widgetID to text. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).\r\n",
       "mdown_content": "Sets the text of a text field specified by *widgetID* to *text*. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text)."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetText</b>, not by calling <b>SetText</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetText, not by calling SetText.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**."
     },
     {
       "title": "Example",
@@ -23,16 +26,19 @@
         "        import GUI\r\n        \r\n        var textField, lbl : int\r\n        \r\n        procedure CheckInput (s : string)\r\n            var newString : string := \"\"\r\n            for i : 1 .. length (s)\r\n                if 'a' <= s (i) and s (i) <= 'z' then\r\n                    newString += chr (ord (s (i))  32)\r\n                else\r\n                    newString += s (i)\r\n                end if\r\n            end for\r\n            GUI.SetText (textField, newString)\r\n            GUI.SetSelection (textField, 1, 1)\r\n        end CheckInput\r\n        \r\n        textField := GUI.CreateTextField (100, 100, 200, \"\", CheckInput)\r\n        lbl := GUI.CreateLabelFull (100 + GUI.GetWidth (textField) div 2,\r\n            100 + GUI.GetHeight (textField),  \"Converts to Upper Case\", \r\n            0, 0, GUI.CENTER + GUI.BOTTOM, 0)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program converts all lower case input in the text field to upper case when the user presses ENTER.<p>\r\n</p>",
+      "text_content": " The following program converts all lower case input in the text field to upper case when the user presses ENTER.\r\n\r\n",
       "mdown_content": "The following program converts all lower case input in the text field to upper case when the user presses ENTER."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetText</b>, not by calling <b>SetText</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetText, not by calling SetText.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**."
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextField</b>.<p>\r\n</p>",
+      "text_content": " GUI.CreateTextField.\r\n",
       "mdown_content": "**GUI.CreateTextField**."
     }
   ]

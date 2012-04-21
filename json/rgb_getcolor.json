@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>RGB.GetColor</b> (<i>colorNumber</i> : <b>int</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>redComp</i>, <i>greenComp</i>, <i>blueComp</i> : <b>real</b>)</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "**RGB.GetColor** (*colorNumber* : **int**,  \n**var** *redComp*, *greenComp*, *blueComp* : **real**)"
+      "text_content": " RGB.GetColor (colorNumber : int,  var redComp, greenComp, blueComp : real)",
+      "mdown_content": "**RGB.GetColor** (*colorNumber* : **int**,  **var** *redComp*, *greenComp*, *blueComp* : **real**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>RGB.GetColor</b> procedure returns the red, green and blue components to the color associated with the <i>colorNumber</i> parameter. The red, green and blue values are normalized to be between 0 and 1. Thus color white returns 1.0 for the <i>redComp</i>, <i>greenComp</i> and <i>blueComp</i> values and color black returns 0.0 for all three.<p>\r\n</p>",
+      "text_content": " The RGB.GetColor procedure returns the red, green and blue components to the color associated with the colorNumber parameter. The red, green and blue values are normalized to be between 0 and 1. Thus color white returns 1.0 for the redComp, greenComp and blueComp values and color black returns 0.0 for all three.\r\n",
       "mdown_content": "The **RGB.GetColor** procedure returns the red, green and blue components to the color associated with the *colorNumber* parameter. The red, green and blue values are normalized to be between 0 and 1. Thus color white returns 1.0 for the *redComp*, *greenComp* and *blueComp* values and color black returns 0.0 for all three."
     },
     {
@@ -18,12 +20,14 @@
         "        put \"Color   Red     Green     Blue\"\r\n        for clr : 0 .. maxcolor\r\n            var redComp, greenComp, blueComp : int\r\n            RGB.GetColor (clr, redComp, greenComp, blueComp)\r\n            put clr : 4, \"  \", redComp : 6 : 4 , \"  \", greenComp : 6 : 4, \" \", \r\n                                        blueComp : 6 : 4\r\n        end for"
       ],
       "raw_content": "This program gets the components of all the available colors.<p>\r\n</p>\r\n<table><tr valign=\"top\">\n<td><b>Details</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>RGB.GetColour</b> is an alternate spelling for <b>RGB.GetColor</b>.</td>\n</tr></table>\n<p>\r\n</p>",
-      "mdown_content": "This program gets the components of all the available colors.\n\n**Details**\n \n\n**RGB.GetColour** is an alternate spelling for **RGB.GetColor**.\n"
+      "text_content": " This program gets the components of all the available colors.\r\n\r\nDetails RGB.GetColour is an alternate spelling for RGB.GetColor.\r\n",
+      "mdown_content": "This program gets the components of all the available colors.\n**Details** **RGB.GetColour** is an alternate spelling for **RGB.GetColor**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>RGB.GetColor</b>, not by calling <b>GetColor</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **RGB.GetColor**, not by calling **GetColor**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling RGB.GetColor, not by calling GetColor.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **RGB.GetColor**, not by calling **GetColor**."
     },
     {
       "title": "See also",
@@ -32,6 +36,7 @@
         "rgb_addcolor"
       ],
       "raw_content": "<b><a href=\"rgb_setcolor.html\">RGB.SetColor</a></b>and <b><a href=\"rgb_addcolor.html\">RGB.AddColor</a></b>.<p>\r\n</p>",
+      "text_content": " RGB.SetColorand RGB.AddColor.\r\n",
       "mdown_content": "**[rgb_setcolor.html](RGB.SetColor)**and **[rgb_addcolor.html](RGB.AddColor)**."
     }
   ]

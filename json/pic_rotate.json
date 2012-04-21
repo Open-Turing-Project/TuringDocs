@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Rotate</b> (<i>picID</i>, <i>angle</i>, <i>x</i>, <i>y</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "text_content": "Pic.Rotate (picID, angle, x, y : int) : int\r\n    ",
       "mdown_content": "**Pic.Rotate** (*picID*, *angle*, *x*, *y* : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Rotate </b>is used to create a new picture by rotating an \r\n\t  already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.<p>\r\n\t  The <i>angle</i> is specified in degrees. The rotation is done in a \r\n\t  counter-clockwise direction. The original picture is not modified by \r\n\t  the call to <b>Pic.Rotate</b> and must still be freed when no longer \r\n\t  used. The picture produced by <b>Pic.Rotate</b> may be a different \r\n\t  size than the original picture.</p>\n<p>\r\n\t  The (<i>x</i>, <i>y</i>) point is the point around which the rotation \r\n\t  is to take place and is relative to the picture being rotated. If it \r\n\t  is not important to rotate the picture in place, <i>x</i> and <i>y</i> \r\n\t  should be set to -1, which make the new picture the minimum size \r\n\t  required to fit the rotated image.</p>\n<p>\r\n    </p>",
-      "mdown_content": "**Pic.Rotate **is used to create a new picture by rotating an \nalready existing picture. Rotation can either be around a specific \npoint in the picture (often used for rotating a picure in place) or \njust a general rotation.\nThe *angle* is specified in degrees. The rotation is done in a \ncounter-clockwise direction. The original picture is not modified by \nthe call to **Pic.Rotate** and must still be freed when no longer \nused. The picture produced by **Pic.Rotate** may be a different \nsize than the original picture.\n\nThe (*x*, *y*) point is the point around which the rotation \nis to take place and is relative to the picture being rotated. If it \nis not important to rotate the picture in place, *x* and *y* \nshould be set to -1, which make the new picture the minimum size \nrequired to fit the rotated image.\n\n"
+      "text_content": "Pic.Rotate is used to create a new picture by rotating an \r\n\t  already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.\r\n\t  The angle is specified in degrees. The rotation is done in a \r\n\t  counter-clockwise direction. The original picture is not modified by \r\n\t  the call to Pic.Rotate and must still be freed when no longer \r\n\t  used. The picture produced by Pic.Rotate may be a different \r\n\t  size than the original picture.\r\n\t  The (x, y) point is the point around which the rotation \r\n\t  is to take place and is relative to the picture being rotated. If it \r\n\t  is not important to rotate the picture in place, x and y \r\n\t  should be set to -1, which make the new picture the minimum size \r\n\t  required to fit the rotated image.\r\n    ",
+      "mdown_content": "**Pic.Rotate **is used to create a new picture by rotating an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.\nThe *angle* is specified in degrees. The rotation is done in a counter-clockwise direction. The original picture is not modified by the call to **Pic.Rotate** and must still be freed when no longer used. The picture produced by **Pic.Rotate** may be a different size than the original picture.\nThe (*x*, *y*) point is the point around which the rotation is to take place and is relative to the picture being rotated. If it is not important to rotate the picture in place, *x* and *y* should be set to -1, which make the new picture the minimum size required to fit the rotated image."
     },
     {
       "title": "Details",
       "raw_content": "The <b>Pic.Rotate</b> command can fail, in which case it returns 0. \r\n          The <b>Error.LastMsg</b> function can then be used to obtain more \r\n\t  information about the failure.<p>\r\n    </p>",
-      "mdown_content": "The **Pic.Rotate** command can fail, in which case it returns 0. \nThe **Error.LastMsg** function can then be used to obtain more \ninformation about the failure.\n"
+      "text_content": "The Pic.Rotate command can fail, in which case it returns 0. \r\n          The Error.LastMsg function can then be used to obtain more \r\n\t  information about the failure.\r\n    ",
+      "mdown_content": "The **Pic.Rotate** command can fail, in which case it returns 0. The **Error.LastMsg** function can then be used to obtain more information about the failure."
     },
     {
       "title": "Details",
@@ -23,12 +26,14 @@
         "pic_rotate01.gif"
       ],
       "raw_content": "If <i>x</i> and <i>y</i> are set to a point in the picture (rather \r\n          than 1), it is possible for parts of the original picture to be \r\n\t  rotated off the left and bottom edge of the new picture. This occurs \r\n\t  because <b>Pic.Rotate</b> guarantees that the point specified by  \r\n\t  (<i>x</i>,&nbsp;<i>y</i>) in the original picture will be located at  \r\n\t  (<i>x</i>,&nbsp;<i>y</i>) in the rotated picture. You can avoid losing\r\n\t  parts of the picture by making certain there is a margin of background\r\n\t  color on the left and bottom sides of the picture.<p>\r\n\t  </p>\n<center></center>\r\n\t  As well, any pixels in the rotated picture that were not part of the \r\n\t  original picture are set to the background color.<p>\r\n    </p>",
-      "mdown_content": "If *x* and *y* are set to a point in the picture (rather \nthan 1), it is possible for parts of the original picture to be \nrotated off the left and bottom edge of the new picture. This occurs \nbecause **Pic.Rotate** guarantees that the point specified by  \n(*x*, *y*) in the original picture will be located at  \n(*x*, *y*) in the rotated picture. You can avoid losing\nparts of the picture by making certain there is a margin of background\ncolor on the left and bottom sides of the picture.\n\n\nAs well, any pixels in the rotated picture that were not part of the \noriginal picture are set to the background color.\n"
+      "text_content": "If x and y are set to a point in the picture (rather \r\n          than 1), it is possible for parts of the original picture to be \r\n\t  rotated off the left and bottom edge of the new picture. This occurs \r\n\t  because Pic.Rotate guarantees that the point specified by  \r\n\t  (x, y) in the original picture will be located at  \r\n\t  (x, y) in the rotated picture. You can avoid losing\r\n\t  parts of the picture by making certain there is a margin of background\r\n\t  color on the left and bottom sides of the picture.\r\n\t  \r\n\t  As well, any pixels in the rotated picture that were not part of the \r\n\t  original picture are set to the background color.\r\n    ",
+      "mdown_content": "If *x* and *y* are set to a point in the picture (rather than 1), it is possible for parts of the original picture to be rotated off the left and bottom edge of the new picture. This occurs because **Pic.Rotate** guarantees that the point specified by  (*x*, *y*) in the original picture will be located at  (*x*, *y*) in the rotated picture. You can avoid losingparts of the picture by making certain there is a margin of backgroundcolor on the left and bottom sides of the picture.\nAs well, any pixels in the rotated picture that were not part of the original picture are set to the background color."
     },
     {
       "title": "Details",
       "raw_content": "Rotation can be slow on older machines. Programs that are using \r\n          animation should create and store all the rotated images that may \r\n\t  be needed. Often pictures of an object at various angles are stored \r\n\t  in an array. <p>\r\n    </p>",
-      "mdown_content": "Rotation can be slow on older machines. Programs that are using \nanimation should create and store all the rotated images that may \nbe needed. Often pictures of an object at various angles are stored \nin an array. \n"
+      "text_content": "Rotation can be slow on older machines. Programs that are using \r\n          animation should create and store all the rotated images that may \r\n\t  be needed. Often pictures of an object at various angles are stored \r\n\t  in an array. \r\n    ",
+      "mdown_content": "Rotation can be slow on older machines. Programs that are using animation should create and store all the rotated images that may be needed. Often pictures of an object at various angles are stored in an array. "
     },
     {
       "title": "Example",
@@ -39,7 +44,8 @@
         "pic_rotate02.gif"
       ],
       "raw_content": "This program draws &#147;Hello&#148; on the screen rotated at 0, 45 and 90 \r\n          degrees.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from Program</b></center>\n<p>\r\n    </p>",
-      "mdown_content": "This program draws Hello on the screen rotated at 0, 45 and 90 \ndegrees.\n\n\n**Output from Program**\n\n"
+      "text_content": "This program draws Hello on the screen rotated at 0, 45 and 90 \r\n          degrees.\r\n\r\n\t  \r\n\t  Output from Program\r\n    ",
+      "mdown_content": "This program draws Hello on the screen rotated at 0, 45 and 90 degrees.\n**Output from Program**"
     },
     {
       "title": "Execute",
@@ -57,6 +63,7 @@
         "        View.Set (\"graphics:300;250,nobuttonbar\")\r\n        var pic : array 0 .. 35 of int\r\n        var f : int := Font.New (\"Serif:36\")\r\n        const CTR : int := 57\r\n        Font.Draw (\"Hello\", 5, 45, f, black)\r\n        Draw.FillOval (CTR, CTR, 3, 3, brightred)\r\n        pic (0) := Pic.New (0, 0, 115, 115)\r\n        cls\r\n        for angle : 1 .. 35\r\n            pic (angle) := Pic.Rotate (pic (0), angle * 10, CTR, CTR)\r\n        end for\r\n        \r\n        var x : int := CTR\r\n        var y : int := CTR\r\n        var dx : int := 1\r\n        var dy : int := 1\r\n        loop\r\n            for angle : 0 .. 35\r\n                Pic.Draw (pic (angle), x  - CTR, y - CTR, picCopy)\r\n                if x + dx < CTR or x + dx > maxx - CTR then\r\n                    dx := dx\r\n                end if\r\n                if y + dy < CTR or y + dy > maxy - CTR then\r\n                    dy := dy\r\n                end if\r\n                x += dx\r\n                y += dy\r\n                delay (50)\r\n            end for\r\n        end loop"
       ],
       "raw_content": "This program moves a spinning &#147;Hello&#148; around the screen, bouncing it off the edges of the output window. Notice that the original picture contains adequate space on the left and bottom sides to contain the rotation.<p>\r\n</p>",
+      "text_content": "This program moves a spinning Hello around the screen, bouncing it off the edges of the output window. Notice that the original picture contains adequate space on the left and bottom sides to contain the rotation.\r\n\r\n    ",
       "mdown_content": "This program moves a spinning Hello around the screen, bouncing it off the edges of the output window. Notice that the original picture contains adequate space on the left and bottom sides to contain the rotation."
     },
     {
@@ -72,12 +79,14 @@
     {
       "title": "Details",
       "raw_content": "Note that the rotated picture is a newly created picture. When it \r\n          is no longer needed, its memory should be released by using \r\n\t  <b>Pic.Free</b>.<p>\r\n    </p>",
-      "mdown_content": "Note that the rotated picture is a newly created picture. When it \nis no longer needed, its memory should be released by using \n**Pic.Free**.\n"
+      "text_content": "Note that the rotated picture is a newly created picture. When it \r\n          is no longer needed, its memory should be released by using \r\n\t  Pic.Free.\r\n    ",
+      "mdown_content": "Note that the rotated picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Rotate</b>, not by calling <b>Rotate</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Rotate**, not by calling **Rotate**.\n\n"
+      "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Rotate, not by calling Rotate.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Rotate**, not by calling **Rotate**."
     }
   ]
 }

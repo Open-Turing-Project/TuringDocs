@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetNullEventHandler</b> (<i>nullHandler</i> : <b>procedure</b> <i>x</i> ())<p>\r\n</p></font>",
+      "text_content": " GUI.SetNullEventHandler (nullHandler : procedure x ())\r\n",
       "mdown_content": "**GUI.SetNullEventHandler** (*nullHandler* : **procedure** *x* ())"
     },
     {
       "title": "Description",
       "raw_content": "Sets the new null event handler. The <i>nullHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there are no mouse button presses or keystrokes to be processed.<p>\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.</p>\n<p>\r\n</p>",
-      "mdown_content": "Sets the new null event handler. The *nullHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.\n"
+      "text_content": " Sets the new null event handler. The nullHandler parameter is the name of a procedure that is called every time GUI.ProcessEvent is called and there are no mouse button presses or keystrokes to be processed.\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.\r\n",
+      "mdown_content": "Sets the new null event handler. The *nullHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets."
     },
     {
       "title": "Example",
@@ -18,12 +20,14 @@
         "        import GUI\r\n        View.Set (\"graphics:220;50\")\r\n        \r\n        var oldTime : string := \"\"\r\n        var button : int\r\n        \r\n        procedure NullHandler\r\n            var newTime : string := Time.Date\r\n            newTime := newTime (11 .. *)\r\n            if newTime not= oldTime then\r\n                Text.Locate (maxrow, maxcol  9)\r\n                put newTime ..\r\n                oldTime := newTime\r\n            end if\r\n        end NullHandler\r\n        \r\n        GUI.SetNullEventHandler (NullHandler)\r\n        button := GUI.CreateButton (10, 5, 100, \"Quit\", GUI.Quit)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.<p>\r\n</p>",
+      "text_content": " The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.\r\n\r\n",
       "mdown_content": "The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetNullEventHandler</b>, not by calling <b>SetNullEventHandler</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetNullEventHandler**, not by calling **SetNullEventHandler**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetNullEventHandler, not by calling SetNullEventHandler.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetNullEventHandler**, not by calling **SetNullEventHandler**."
     },
     {
       "title": "See also",
@@ -31,6 +35,7 @@
         "gui_processevent"
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "text_content": " GUI.ProcessEvent.\r\n",
       "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
     }
   ]

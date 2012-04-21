@@ -1,8 +1,15 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "GUI",
   "fileName": "guimodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "links": [
+        "gui"
+      ],
+      "raw_content": "This unit contains the predefined subprograms for creating and using \r\n          a GUI (<b>G</b>raphical <b>U</b>ser <b>I</b>nterface). Elements of \r\n          the GUI include buttons, check boxes, text boxes, scroll bars, \r\n          menus, etc.<p>\r\n          For a general introduction to the the GUI module, see \r\n          <a href=\"gui.html\">Introduction to Graphical User Interfaces</a>.</p>\n<p>\r\n    </p>",
+      "text_content": "This unit contains the predefined subprograms for creating and using \r\n          a GUI (Graphical User Interface). Elements of \r\n          the GUI include buttons, check boxes, text boxes, scroll bars, \r\n          menus, etc.\r\n          For a general introduction to the the GUI module, see \r\n          Introduction to Graphical User Interfaces.\r\n    ",
+      "mdown_content": "This unit contains the predefined subprograms for creating and using a GUI (**G**raphical **U**ser **I**nterface). Elements of the GUI include buttons, check boxes, text boxes, scroll bars, menus, etc.\nFor a general introduction to the the GUI module, see [gui.html](Introduction to Graphical User Interfaces)."
+    }
+  ]
 }

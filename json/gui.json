@@ -5,11 +5,13 @@
     {
       "title": "",
       "raw_content": "Create a menu.",
+      "text_content": "Create a menu.\r\n  ",
       "mdown_content": "Create a menu."
     },
     {
       "title": "",
       "raw_content": "Create a menu item.",
+      "text_content": "Create a menu item.\r\n",
       "mdown_content": "Create a menu item."
     }
   ]

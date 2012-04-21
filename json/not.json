@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>not</b><p>\r\n</p></font>",
+      "text_content": " not\r\n",
       "mdown_content": "**not**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>not</b> (<i>boolean negation</i>) operator produces the opposite of a true/false value. For example, <b>not</b> (<i>x </i>&gt;<i>y</i>) is equivalent to <i>x</i> &lt;= <i>y</i>.<p>\r\n</p>",
+      "text_content": " The not (boolean negation) operator produces the opposite of a true/false value. For example, not (x >y) is equivalent to x <= y.\r\n",
       "mdown_content": "The **not** (*boolean negation*) operator produces the opposite of a true/false value. For example, **not** (*x *>*y*) is equivalent to *x* <= *y*."
     },
     {
@@ -18,12 +20,14 @@
         "        var error : boolean := false\r\n        var success : boolean\r\n        \r\n        success := not error    % success becomes the opposite of error"
       ],
       "raw_content": "<p>\r\n</p>",
+      "text_content": "\r\n\r\n",
       "mdown_content": ""
     },
     {
       "title": "Details",
       "raw_content": "The <b>not</b> operator takes <b>true</b> and produces <b>false</b> and takes <b>false</b> and produces <b>true</b>. The <b>not</b> operator can be written as ~. See also the <b>boolean</b> type, <i>prefix operators</i>, and <i>precedence </i>of operators.<p>\r\nThe <b>not</b> operator can be applied to sets.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **not** operator takes **true** and produces **false** and takes **false** and produces **true**. The **not** operator can be written as ~. See also the **boolean** type, *prefix operators*, and *precedence *of operators.\nThe **not** operator can be applied to sets.\n"
+      "text_content": " The not operator takes true and produces false and takes false and produces true. The not operator can be written as ~. See also the boolean type, prefix operators, and precedence of operators.\r\nThe not operator can be applied to sets.\r\n",
+      "mdown_content": "The **not** operator takes **true** and produces **false** and takes **false** and produces **true**. The **not** operator can be written as ~. See also the **boolean** type, *prefix operators*, and *precedence *of operators.\nThe **not** operator can be applied to sets."
     }
   ]
 }

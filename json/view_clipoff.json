@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.ClipOff</b><p>\r\n</p></font>",
+      "text_content": " View.ClipOff\r\n",
       "mdown_content": "**View.ClipOff**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.ClipOff</b> procedure turns off clipping. This means that any drawing commands can appear on the entire drawing surface (the screen or the window, depending on the system).<p>\r\nThese commands only work in \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **View.ClipOff** procedure turns off clipping. This means that any drawing commands can appear on the entire drawing surface (the screen or the window, depending on the system).\nThese commands only work in \"*graphics*\" mode.\n"
+      "text_content": " The View.ClipOff procedure turns off clipping. This means that any drawing commands can appear on the entire drawing surface (the screen or the window, depending on the system).\r\nThese commands only work in \"graphics\" mode.\r\n",
+      "mdown_content": "The **View.ClipOff** procedure turns off clipping. This means that any drawing commands can appear on the entire drawing surface (the screen or the window, depending on the system).\nThese commands only work in \"*graphics*\" mode."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>View.ClipOff</b>, not by calling <b>ClipOff</b>.</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td><b>See also</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>View.ClipAdd</b> and <b>View.ClipSet</b> functions.</td>\n</tr></table>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipOff**, not by calling **ClipOff**.\n\n\n**See also**\n \n\n**View.ClipAdd** and **View.ClipSet** functions.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling View.ClipOff, not by calling ClipOff.\r\nSee also View.ClipAdd and View.ClipSet functions.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipOff**, not by calling **ClipOff**.\n**See also** **View.ClipAdd** and **View.ClipSet** functions."
     }
   ]
 }

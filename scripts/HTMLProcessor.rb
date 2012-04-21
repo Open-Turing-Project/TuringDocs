@@ -1,13 +1,18 @@
 # Requires nokogiri to function http://http://nokogiri.org/
 require "nokogiri"
-require "pp"
+require "erb"
 require "json"
+require "fileutils"
 
 def markdownFormat(htmlStr)
 	text = htmlStr
-	text = text.gsub(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
-	text = text.gsub(/<b>(.*?)<\/b>/,'**\1**')
-	text = text.gsub(/<i>(.*?)<\/i>/,'*\1*')
+	# normal newlines and indenting mean nothing, it's HTML
+	text = text.lines.map {|l| l.chomp.lstrip}.join
+	# convert supported tags
+	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
+	text.gsub!(/<b>(.*?)<\/b>/,'**\1**')
+	text.gsub!(/<i>(.*?)<\/i>/,'*\1*')
+	text.gsub!(/<p>(.*?)<\/p>/,"\n\\1")
 	# remove html with nokogiri
 	doc = Nokogiri::HTML(text)
 	text = doc.content.to_s
@@ -69,9 +74,11 @@ def convFile(f)
 		#format the content
 		content = e.xpath("td[2]").first
 
-		unless content.content().to_s.empty?
+		textcontent = content.content().to_s
+		unless textcontent.empty?
 			html = content.to_s[4..-6].strip # The slice strips the <td> tags
 			s[:raw_content] = html
+			s[:text_content] = textcontent
 			s[:mdown_content] = markdownFormat(html) 
 		end
 		page[:sections] << s
@@ -85,11 +92,38 @@ def convFile(f)
 	page
 end
 
+$mdownTemplate = ERB.new(IO.read("scripts/mdownTemplate.erb"),0,"<>")
+def structureToMarkdown(page)
+	$mdownTemplate.result(binding) # gets the page param from the binding
+end
+# puts structureToMarkdown(convFile("html/draw_arc.html"))
+failed, total = 0,0
 Dir["html/*.html"].each do |f|
-	puts "Processing #{f}"
+	#puts "Processing #{f}"
 	datastruct = convFile(f)
+	# 404s should not exist
+	if datastruct[:title] =~ /404/
+		puts "Deleting 404 file #{f}"
+		FileUtils.rm(f)
+		next
+	end
+	# full html content is only present for normal form pages
+	normalformat = (datastruct[:htmlcontent] == nil)
+	total += 1
+	# markdown
+	if normalformat
+		markdown = structureToMarkdown(datastruct)
+		File.open("markdown/" + datastruct[:fileName] + ".md", "w") do |oFile| 
+			oFile.puts markdown
+		end
+	else
+		puts "No markdown generated for #{f}"
+		failed += 1
+	end
+	# json
 	json = JSON.pretty_generate(datastruct)
 	File.open("json/" + datastruct[:fileName] + ".json", "w") do |oFile| 
 		oFile.puts json
 	end
 end
+puts "Completed. Markdown generation failed for #{failed}/#{total}"

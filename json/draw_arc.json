@@ -5,7 +5,8 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Arc </b>(<i>x</i>, <i>y</i>,<b> </b><i>xRadius</i>, <i>yRadius</i><b> :</b> <b>int</b>, <br></font>\r\n          <table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td width=\"40\">&nbsp;</td>\r\n              <td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\r\n            </tr></table>\n<p>\r\n    </p>",
-      "mdown_content": "**Draw.Arc **(*x*, *y*,** ***xRadius*, *yRadius*** :** **int**, \n \n \n*initialAngle*, *finalAngle*, *Color* : **int**)\n\n"
+      "text_content": "Draw.Arc (x, y, xRadius, yRadius : int, \r\n           \r\n               \r\n              initialAngle, finalAngle, Color : int)\r\n            \r\n    ",
+      "mdown_content": "**Draw.Arc **(*x*, *y*,** ***xRadius*, *yRadius*** :** **int**,   *initialAngle*, *finalAngle*, *Color* : **int**)"
     },
     {
       "title": "Description",
@@ -13,7 +14,8 @@
         "draw_arc01.gif"
       ],
       "raw_content": "The <b>Draw.Arc </b>procedure is used to draw an arc whose center is \r\n          at (<i>x</i>, <i>y</i>). This is just like <b>Draw.Oval</b>, except \r\n          that you must also give two angles, <i>initialAngle </i>and \r\n          <i>finalAngle</i>, which determine where to start and stop drawing. \r\n          Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. \r\n          The horizontal and vertical distances from the center to the arc are \r\n          given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\t  </p>\n<center></center>",
-      "mdown_content": "The **Draw.Arc **procedure is used to draw an arc whose center is \nat (*x*, *y*). This is just like **Draw.Oval**, except \nthat you must also give two angles, *initialAngle *and \n*finalAngle*, which determine where to start and stop drawing. \nZero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. \nThe horizontal and vertical distances from the center to the arc are \ngiven by *xRadius *and *yRadius*.\n"
+      "text_content": "The Draw.Arc procedure is used to draw an arc whose center is \r\n          at (x, y). This is just like Draw.Oval, except \r\n          that you must also give two angles, initialAngle and \r\n          finalAngle, which determine where to start and stop drawing. \r\n          Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. \r\n          The horizontal and vertical distances from the center to the arc are \r\n          given by xRadius and yRadius.\r\n\t  \r\n    ",
+      "mdown_content": "The **Draw.Arc **procedure is used to draw an arc whose center is at (*x*, *y*). This is just like **Draw.Oval**, except that you must also give two angles, *initialAngle *and *finalAngle*, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*."
     },
     {
       "title": "Example",
@@ -21,7 +23,8 @@
         "        View.Set (\"graphics\")\r\n        const midx := maxx div 2\r\n        const midy := maxy div 2\r\n        Draw.Arc (midx, midy, midx, midy, 0, 90, 1)"
       ],
       "raw_content": "This program draws a quarter circle whose center is \r\n          (<i>midx</i>, <i>midy</i>) the center of the screen, using color \r\n          number 1. The <b>maxx</b> and <b>maxy </b>functions are used to \r\n          determine the maximum x and y values on the screen.<p>\r\n</p>",
-      "mdown_content": "This program draws a quarter circle whose center is \n(*midx*, *midy*) the center of the screen, using color \nnumber 1. The **maxx** and **maxy **functions are used to \ndetermine the maximum x and y values on the screen."
+      "text_content": "This program draws a quarter circle whose center is \r\n          (midx, midy) the center of the screen, using color \r\n          number 1. The maxx and maxy functions are used to \r\n          determine the maximum x and y values on the screen.\r\n\r\n    ",
+      "mdown_content": "This program draws a quarter circle whose center is (*midx*, *midy*) the center of the screen, using color number 1. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen."
     },
     {
       "title": "Execute",
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur<p>\r\n    </p>",
-      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur\n"
+      "text_content": "The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur\r\n    ",
+      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Draw.Arc</b>, not by calling <b>Arc</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Draw.Arc**, not by calling **Arc**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Draw.Arc, not by calling Arc.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Arc**, not by calling **Arc**."
     },
     {
       "title": "See also",
@@ -52,7 +57,8 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, \r\n      <b><a href=\"maxx.html\">maxx</a></b>, \r\n      <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in \r\n      the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n    </p>",
-      "mdown_content": "**[view_set.html](View.Set)**, \n**[maxx.html](maxx)**, \n**[maxy.html](maxy)** and the various procedures in \nthe **[drawmodule.html](Draw)** unit.\n"
+      "text_content": "View.Set, \r\n      maxx, \r\n      maxy and the various procedures in \r\n      the Draw unit.\r\n    ",
+      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]
 }

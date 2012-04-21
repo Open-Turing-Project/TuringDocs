@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\">View.<b>maxcolor</b> : <b>int</b><p>\r\n</p></font>",
+      "text_content": " View.maxcolor : int\r\n",
       "mdown_content": "View.**maxcolor** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>maxcolor</b> function is used to<b> </b>determine the maximum color number for the current mode of the screen. The alternate spelling is <b>maxcolour</b>.<p>\r\n</p>",
+      "text_content": " The maxcolor function is used to determine the maximum color number for the current mode of the screen. The alternate spelling is maxcolour.\r\n",
       "mdown_content": "The **maxcolor** function is used to** **determine the maximum color number for the current mode of the screen. The alternate spelling is **maxcolour**."
     },
     {
@@ -18,22 +20,26 @@
         "        setscreen (\"graphics\")\r\n        \r\n        put \"The maximum color number is \", View.maxcolor"
       ],
       "raw_content": "This program outputs the maximum color number.<p>\r\n</p>",
+      "text_content": " This program outputs the maximum color number.\r\n\r\n",
       "mdown_content": "This program outputs the maximum color number."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details.<p>\r\nFor IBM PC compatibles in \"<i>screen</i>\"<i> </i>mode, <b>maxcolor</b> = 15. For the default IBM PC compatible \"<i>graphics</i>\" mode (VGA), <b>maxcolor</b> = 15.</p>\n<p>\r\n</p>",
-      "mdown_content": "The screen should be in a \"*screen*\"* *or \"*graphics*\" mode. If it is not, it will automatically be set to \"*screen*\" mode. See **View.Set **for details.\nFor IBM PC compatibles in \"*screen*\"* *mode, **maxcolor** = 15. For the default IBM PC compatible \"*graphics*\" mode (VGA), **maxcolor** = 15.\n"
+      "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If it is not, it will automatically be set to \"screen\" mode. See View.Set for details.\r\nFor IBM PC compatibles in \"screen\" mode, maxcolor = 15. For the default IBM PC compatible \"graphics\" mode (VGA), maxcolor = 15.\r\n",
+      "mdown_content": "The screen should be in a \"*screen*\"* *or \"*graphics*\" mode. If it is not, it will automatically be set to \"*screen*\" mode. See **View.Set **for details.\nFor IBM PC compatibles in \"*screen*\"* *mode, **maxcolor** = 15. For the default IBM PC compatible \"*graphics*\" mode (VGA), **maxcolor** = 15."
     },
     {
       "title": "Details",
       "raw_content": "<b>View.maxcolor</b> is identical to <b>RGB.maxcolor</b>.  It is placed here for consistency with other screen information routines.<p>\r\n</p>",
+      "text_content": " View.maxcolor is identical to RGB.maxcolor.  It is placed here for consistency with other screen information routines.\r\n",
       "mdown_content": "**View.maxcolor** is identical to **RGB.maxcolor**.  It is placed here for consistency with other screen information routines."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>View.maxcolor</b>. Note that <b>RGB.maxcolor</b> is exported unqualified, so that one can call <b>maxcolor</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.maxcolor**. Note that **RGB.maxcolor** is exported unqualified, so that one can call **maxcolor**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling View.maxcolor. Note that RGB.maxcolor is exported unqualified, so that one can call maxcolor.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.maxcolor**. Note that **RGB.maxcolor** is exported unqualified, so that one can call **maxcolor**."
     },
     {
       "title": "See also",
@@ -45,6 +51,7 @@
         "color"
       ],
       "raw_content": "<b><a href=\"draw_dot.html\">Draw.Dot</a></b> for examples of the use of <b><a href=\"maxcolor.html\">maxcolor</a></b>. See the <b><a href=\"text_color.html\">Text.Color</a></b> <a href=\"procedure.html\">procedure</a> which is used for setting the currently-active <a href=\"color.html\">color</a>.<p>\r\n</p>",
+      "text_content": " Draw.Dot for examples of the use of maxcolor. See the Text.Color procedure which is used for setting the currently-active color.\r\n",
       "mdown_content": "**[draw_dot.html](Draw.Dot)** for examples of the use of **[maxcolor.html](maxcolor)**. See the **[text_color.html](Text.Color)** [procedure.html](procedure) which is used for setting the currently-active [color.html](color)."
     }
   ]

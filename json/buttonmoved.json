@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>buttonmoved</b> (<i>motion</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p></font>",
+      "text_content": " buttonmoved (motion : string) : boolean\r\n",
       "mdown_content": "**buttonmoved** (*motion* : **string**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>buttonmoved</b> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).<p>\r\nThe parameter <i>motion</i> must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, <b>buttonmoved</b> returns <b>true</b>. If the event is not in the queue, then <b>buttonmoved</b> returns <b>false</b>.</p>\n<p>\r\nIn \"<i>single-button mode</i>\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.</p>\n<p>\r\nIn \"<i>multi-button mode</i>\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **buttonmoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\nThe parameter *motion* must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, **buttonmoved** returns **true**. If the event is not in the queue, then **buttonmoved** returns **false**.\n\nIn \"*single-button mode*\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\n\nIn \"*multi-button mode*\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.\n"
+      "text_content": " The buttonmoved function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\r\nThe parameter motion must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, buttonmoved returns true. If the event is not in the queue, then buttonmoved returns false.\r\nIn \"single-button mode\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\r\nIn \"multi-button mode\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.\r\n",
+      "mdown_content": "The **buttonmoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\nThe parameter *motion* must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, **buttonmoved** returns **true**. If the event is not in the queue, then **buttonmoved** returns **false**.\nIn \"*single-button mode*\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\nIn \"*multi-button mode*\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        var circles: boolean := true\r\n        loop\r\n            var x, y, radius, clr: int\r\n            if buttonmoved (\"down\") then\r\n                var buttonnumber, buttonupdown : int\r\n                buttonwait (\"down\", x, y, buttonnumber, buttonupdown)\r\n                circles := not circles\r\n            end if\r\n            randint (x, 0, maxx)\r\n            randint (y, 0, maxy)\r\n            randint (radius, 0, 100)\r\n            randint (clr, 0, maxcolor)\r\n            if circles then\r\n                drawfilloval (x, y, radius, radius, clr)\r\n            else\r\n                drawfillbox (x, y, x + radius, y + radius, clr)\r\n            end if\r\n        end loop"
       ],
       "raw_content": "This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.<p>\r\n</p>",
+      "text_content": " This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.\r\n\r\n",
       "mdown_content": "This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two."
     },
     {
@@ -36,6 +39,7 @@
         "        var ch : string (1)\r\n        var x, y, btnnum, btnupdown : int\r\n        loop\r\n            if hasch then\r\n                getch (ch)\r\n                locate (1, 1)\r\n                put \"The character entered is a: \", ch\r\n            end if\r\n            if buttonmoved (\"down\") then\r\n                buttonwait (\"down\", x, y, btnnum, btnupdown)\r\n                locate (1, 1)\r\n                put \"The button was clicked at position: \", x, \", \",y\r\n            end if\r\n        end loop"
       ],
       "raw_content": "This is an example demonstrating how to check for both character and mouse input at the same time.<p>\r\n</p>",
+      "text_content": " This is an example demonstrating how to check for both character and mouse input at the same time.\r\n\r\n",
       "mdown_content": "This is an example demonstrating how to check for both character and mouse input at the same time."
     },
     {
@@ -51,6 +55,7 @@
     {
       "title": "Details",
       "raw_content": "<b>buttonmoved</b> can be thought of as the mouse equivalent of <b>hasch</b> in that they both check for something in a queue and both return immediately.<p>\r\n</p>",
+      "text_content": " buttonmoved can be thought of as the mouse equivalent of hasch in that they both check for something in a queue and both return immediately.\r\n",
       "mdown_content": "**buttonmoved** can be thought of as the mouse equivalent of **hasch** in that they both check for something in a queue and both return immediately."
     },
     {
@@ -61,7 +66,8 @@
         "mousemodule"
       ],
       "raw_content": "<b><a href=\"buttonwait.html\">buttonwait</a></b> to get mouse events saved in the queue. See also <b><a href=\"buttonchoose.html\">buttonchoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\nSee also predefined unit <b><a href=\"mousemodule.html\">Mouse</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\".\nSee also predefined unit **[mousemodule.html](Mouse)**.\n"
+      "text_content": " buttonwait to get mouse events saved in the queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\nSee also predefined unit Mouse.\r\n",
+      "mdown_content": "**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\".\nSee also predefined unit **[mousemodule.html](Mouse)**."
     }
   ]
 }

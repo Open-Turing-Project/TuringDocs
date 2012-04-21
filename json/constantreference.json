@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>constantReference</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>constantId</i> { <i>componentSelector</i> }</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *constantReference* is:\n\n \n*constantId* { *componentSelector* }"
+      "text_content": " A constantReference is:\r\n constantId { componentSelector }",
+      "mdown_content": "A *constantReference* is:\n *constantId* { *componentSelector* }"
     },
     {
       "title": "Description",
       "raw_content": "In a Turing program, a constant is declared and given a name (<i>constantId</i>) and then used. Each use is called a <i>constant reference</i>.<p>\r\nIf the constant is an array, record or union, its parts (<i>components</i>) can be selected using subscripts and field names (using <i>componentSelectors</i>). The form of a <i>componentSelector </i>is one of:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(a)</td>\n<td width=\"10\">&nbsp;</td>\n<td>(<i>expn</i> {, <i>expn</i>} )</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(b)</td>\n<td width=\"10\">&nbsp;</td>\n<td>. <i>fieldId</i>\n</td>\n</tr>\n</table>\n<p>\r\nForm (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a <b>record</b> or <b>union</b>. Component selectors are used in the same manner as variable references. See <i>variableReference</i> for details. See also <b>const</b> declaration and <i>explicitConstant</i>.</p>\n<p>\r\n</p>",
-      "mdown_content": "In a Turing program, a constant is declared and given a name (*constantId*) and then used. Each use is called a *constant reference*.\nIf the constant is an array, record or union, its parts (*components*) can be selected using subscripts and field names (using *componentSelectors*). The form of a *componentSelector *is one of:\n\n\n \n(a)\n \n(*expn* {, *expn*} )\n \n(b)\n \n. *fieldId*\n\n\nForm (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a **record** or **union**. Component selectors are used in the same manner as variable references. See *variableReference* for details. See also **const** declaration and *explicitConstant*.\n"
+      "text_content": " In a Turing program, a constant is declared and given a name (constantId) and then used. Each use is called a constant reference.\r\nIf the constant is an array, record or union, its parts (components) can be selected using subscripts and field names (using componentSelectors). The form of a componentSelector is one of:\r\n (a) (expn {, expn} ) (b) . fieldId\r\nForm (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a record or union. Component selectors are used in the same manner as variable references. See variableReference for details. See also const declaration and explicitConstant.\r\n",
+      "mdown_content": "In a Turing program, a constant is declared and given a name (*constantId*) and then used. Each use is called a *constant reference*.\nIf the constant is an array, record or union, its parts (*components*) can be selected using subscripts and field names (using *componentSelectors*). The form of a *componentSelector *is one of:\n (a) (*expn* {, *expn*} ) (b) . *fieldId*\nForm (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a **record** or **union**. Component selectors are used in the same manner as variable references. See *variableReference* for details. See also **const** declaration and *explicitConstant*."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        var radius : real\r\n        const pi := 3.14159     % Constant declaration\r\n        \r\n        put \"Area is: \", pi * radius **2\r\n                            % pi is a constant reference."
       ],
       "raw_content": "<p>\r\n</p>",
+      "text_content": "\r\n\r\n",
       "mdown_content": ""
     }
   ]

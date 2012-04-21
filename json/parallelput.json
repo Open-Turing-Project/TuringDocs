@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>parallelput</b> ( <i>p</i> : <b>int</b> )<p>\r\n</p></font>",
+      "text_content": " parallelput ( p : int )\r\n",
       "mdown_content": "**parallelput** ( *p* : **int** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>parallelput</b> procedure is used on a PC to set the values on the data pins on the parallel port. This port corresponds to the MS-DOS device \"LPT1\". This procedure can be used to control robots and peripherals.<p>\r\n</p>",
+      "text_content": " The parallelput procedure is used on a PC to set the values on the data pins on the parallel port. This port corresponds to the MS-DOS device \"LPT1\". This procedure can be used to control robots and peripherals.\r\n",
       "mdown_content": "The **parallelput** procedure is used on a PC to set the values on the data pins on the parallel port. This port corresponds to the MS-DOS device \"LPT1\". This procedure can be used to control robots and peripherals."
     },
     {
@@ -18,6 +20,7 @@
         "        for i : 0 .. 7\r\n            parallelput (2 ** i)    %Set data bit i on the  parallel port\r\n            put \"Data bit \", i, \"  or Pin \", i + 2, \"has just been set\"\r\n        end for"
       ],
       "raw_content": "This program sets data bit 0, data bit 1 and so on to data bit 7.<p>\r\n</p>",
+      "text_content": " This program sets data bit 0, data bit 1 and so on to data bit 7.\r\n\r\n",
       "mdown_content": "This program sets data bit 0, data bit 1 and so on to data bit 7."
     },
     {
@@ -26,7 +29,8 @@
         "parallelput01.gif"
       ],
       "raw_content": "The <b>parallelput</b> procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.<p>\r\n\r\n</p>\n<center></center>\r\nThe value sent to <b>parallelput</b> is the sum of the following:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>1</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 0</td>\n<td width=\"10\">&nbsp;</td>\n<td>16</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 4</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>2</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 1</td>\n<td width=\"10\">&nbsp;</td>\n<td>32</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 5</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>4</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 2</td>\n<td width=\"10\">&nbsp;</td>\n<td>64</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 6</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>8</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 3</td>\n<td width=\"10\">&nbsp;</td>\n<td>128</td>\n<td width=\"10\">&nbsp;</td>\n<td>Data bit 7</td>\n</tr>\n</table>\n<p>\r\nFor example, the command <b>parallelput</b> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <b>parallelput</b> must be from 0 to 255.</p>\n<p>\r\nThe <b>parallelput</b> procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string \"Hello\" to the printer). If you want to do this, open the file \"LPT1\" using the <b>open</b> statement and <b>put</b> to the file. </p>\n<p>\r\n</p>",
-      "mdown_content": "The **parallelput** procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.\n\n\n\nThe value sent to **parallelput** is the sum of the following:\n\n \n1\n \nData bit 0\n \n16\n \nData bit 4\n \n2\n \nData bit 1\n \n32\n \nData bit 5\n \n4\n \nData bit 2\n \n64\n \nData bit 6\n \n8\n \nData bit 3\n \n128\n \nData bit 7\n\nFor example, the command **parallelput** (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to **parallelput** must be from 0 to 255.\n\nThe **parallelput** procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string \"Hello\" to the printer). If you want to do this, open the file \"LPT1\" using the **open** statement and **put** to the file. \n"
+      "text_content": " The parallelput procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.\r\n\r\n\r\nThe value sent to parallelput is the sum of the following:\r\n 1 Data bit 0 16 Data bit 4 2 Data bit 1 32 Data bit 5 4 Data bit 2 64 Data bit 6 8 Data bit 3 128 Data bit 7\r\nFor example, the command parallelput (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to parallelput must be from 0 to 255.\r\nThe parallelput procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string \"Hello\" to the printer). If you want to do this, open the file \"LPT1\" using the open statement and put to the file. \r\n",
+      "mdown_content": "The **parallelput** procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.\nThe value sent to **parallelput** is the sum of the following:\n 1 Data bit 0 16 Data bit 4 2 Data bit 1 32 Data bit 5 4 Data bit 2 64 Data bit 6 8 Data bit 3 128 Data bit 7\nFor example, the command **parallelput** (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to **parallelput** must be from 0 to 255.\nThe **parallelput** procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string \"Hello\" to the printer). If you want to do this, open the file \"LPT1\" using the **open** statement and **put** to the file. "
     },
     {
       "title": "See also",
@@ -35,6 +39,7 @@
         "read"
       ],
       "raw_content": "the <b><a href=\"parallelget.html\">parallelget</a></b> function, which is used to <a href=\"read.html\">read</a> the values of pins on the parallel port.<p>\r\n</p>",
+      "text_content": " the parallelget function, which is used to read the values of pins on the parallel port.\r\n",
       "mdown_content": "the **[parallelget.html](parallelget)** function, which is used to [read.html](read) the values of pins on the parallel port."
     }
   ]

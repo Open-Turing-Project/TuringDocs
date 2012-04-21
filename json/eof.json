@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>eof</b> (<i>streamNumber</i> : <b>int</b>) : <b>boolean</b><p></p></font>",
+      "text_content": "eof (streamNumber : int) : boolean\r\n    ",
       "mdown_content": "**eof** (*streamNumber* : **int**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>eof</b> (end of file) function is used to determine if there \r\n          is any more input. It returns <b>true</b> when there are no more \r\n          characters to be read. The parameter and its parentheses are omitted \r\n          when referring to the standard input (usually this is the keyboard); \r\n          otherwise the parameter specifies the number of a stream. The stream \r\n          number has been determined (in most cases) by an <b>open</b> \r\n          statement.<p>\r\n    </p>",
-      "mdown_content": "The **eof** (end of file) function is used to determine if there \nis any more input. It returns **true** when there are no more \ncharacters to be read. The parameter and its parentheses are omitted \nwhen referring to the standard input (usually this is the keyboard); \notherwise the parameter specifies the number of a stream. The stream \nnumber has been determined (in most cases) by an **open** \nstatement.\n"
+      "text_content": "The eof (end of file) function is used to determine if there \r\n          is any more input. It returns true when there are no more \r\n          characters to be read. The parameter and its parentheses are omitted \r\n          when referring to the standard input (usually this is the keyboard); \r\n          otherwise the parameter specifies the number of a stream. The stream \r\n          number has been determined (in most cases) by an open \r\n          statement.\r\n    ",
+      "mdown_content": "The **eof** (end of file) function is used to determine if there is any more input. It returns **true** when there are no more characters to be read. The parameter and its parentheses are omitted when referring to the standard input (usually this is the keyboard); otherwise the parameter specifies the number of a stream. The stream number has been determined (in most cases) by an **open** statement."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        var line : string\r\n        var fileNumber : int\r\n        open : fileNumber, \"info\", get\r\n        loop\r\n            exit when eof (fileNumber)\r\n            get : fileNumber, line : *\r\n            put line\r\n        end loop"
       ],
       "raw_content": "This program reads and outputs all the lines in the file called \r\n          \"info\".<p>\r\n</p>",
-      "mdown_content": "This program reads and outputs all the lines in the file called \n\"info\"."
+      "text_content": "This program reads and outputs all the lines in the file called \r\n          \"info\".\r\n\r\n    ",
+      "mdown_content": "This program reads and outputs all the lines in the file called \"info\"."
     },
     {
       "title": "Execute",
@@ -33,12 +36,14 @@
     {
       "title": "Details",
       "raw_content": "See also the description of the <b>get</b> statement, which gives \r\n          more examples of the use of <b>eof</b>. See also the <b>open</b> \r\n          and <b>read</b> statements.<p>\r\n          When the input is from the keyboard, the user can signal end-of-file \r\n          by typing control-Z on a PC (or control-D on UNIX). If a program \r\n          tests for <b>eof</b> on the keyboard, and the user has not typed \r\n          control-Z (or control-D) and the user has typed no characters beyond \r\n          those that have been read, the program must wait until the next \r\n          character is typed. Once this character is typed, the program \r\n          knows whether it is at the end of the input, and returns the \r\n          corresponding <b>true</b> or <b>false</b> value for <b>eof</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "See also the description of the **get** statement, which gives \nmore examples of the use of **eof**. See also the **open** \nand **read** statements.\nWhen the input is from the keyboard, the user can signal end-of-file \nby typing control-Z on a PC (or control-D on UNIX). If a program \ntests for **eof** on the keyboard, and the user has not typed \ncontrol-Z (or control-D) and the user has typed no characters beyond \nthose that have been read, the program must wait until the next \ncharacter is typed. Once this character is typed, the program \nknows whether it is at the end of the input, and returns the \ncorresponding **true** or **false** value for **eof**.\n\n"
+      "text_content": "See also the description of the get statement, which gives \r\n          more examples of the use of eof. See also the open \r\n          and read statements.\r\n          When the input is from the keyboard, the user can signal end-of-file \r\n          by typing control-Z on a PC (or control-D on UNIX). If a program \r\n          tests for eof on the keyboard, and the user has not typed \r\n          control-Z (or control-D) and the user has typed no characters beyond \r\n          those that have been read, the program must wait until the next \r\n          character is typed. Once this character is typed, the program \r\n          knows whether it is at the end of the input, and returns the \r\n          corresponding true or false value for eof.\r\n    ",
+      "mdown_content": "See also the description of the **get** statement, which gives more examples of the use of **eof**. See also the **open** and **read** statements.\nWhen the input is from the keyboard, the user can signal end-of-file by typing control-Z on a PC (or control-D on UNIX). If a program tests for **eof** on the keyboard, and the user has not typed control-Z (or control-D) and the user has typed no characters beyond those that have been read, the program must wait until the next character is typed. Once this character is typed, the program knows whether it is at the end of the input, and returns the corresponding **true** or **false** value for **eof**."
     },
     {
       "title": "Example",
       "raw_content": "Another example is available that illustrates detecting EOF from\r\n          the keyboard.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,eof2.t;eof from Keyboard Example\"></object></p>\n<p></p>",
-      "mdown_content": "Another example is available that illustrates detecting EOF from\nthe keyboard.\n\n"
+      "text_content": "Another example is available that illustrates detecting EOF from\r\n          the keyboard.\r\n          \r\n            ",
+      "mdown_content": "Another example is available that illustrates detecting EOF fromthe keyboard."
     }
   ]
 }

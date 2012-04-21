@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>whatcolorback</b> :<i> </i><b>int</b><p>\r\n</p></font>",
+      "text_content": " whatcolorback : int\r\n",
       "mdown_content": "**whatcolorback** :* ***int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>whatcolorback</b> function is used to determine the current background color. The alternate spelling is <b>whatcolourback</b>.<p>\r\n</p>",
+      "text_content": " The whatcolorback function is used to determine the current background color. The alternate spelling is whatcolourback.\r\n",
       "mdown_content": "The **whatcolorback** function is used to determine the current background color. The alternate spelling is **whatcolourback**."
     },
     {
@@ -18,11 +20,13 @@
         "        setscreen (\"screen\")\r\n        \r\n        put \"The background of this writing\"\r\n        put  \"is in color number \", whatcolorback"
       ],
       "raw_content": "This program outputs the currently-active background color number. The background color of the message is determined by this number.<p>\r\n</p>",
+      "text_content": " This program outputs the currently-active background color number. The background color of the message is determined by this number.\r\n\r\n",
       "mdown_content": "This program outputs the currently-active background color number. The background color of the message is determined by this number."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. Beware that the meaning of background color is different in these two modes. See <b>colorback</b> for details.<p>\r\n</p>",
+      "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. Beware that the meaning of background color is different in these two modes. See colorback for details.\r\n",
       "mdown_content": "The screen should be in a \"*screen*\" or* *\"*graphics*\" mode. Beware that the meaning of background color is different in these two modes. See **colorback** for details."
     },
     {
@@ -33,7 +37,8 @@
         "textmodule"
       ],
       "raw_content": "<b><a href=\"color.html\">color</a></b> and <b><a href=\"whatcolor.html\">whatcolor</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "**[color.html](color)** and **[whatcolor.html](whatcolor)**.\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "text_content": " color and whatcolor.\r\nSee also predefined unit Text.\r\n",
+      "mdown_content": "**[color.html](color)** and **[whatcolor.html](whatcolor)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
   ]
 }

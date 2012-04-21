@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderReverse</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.SetSliderReverse (widgetID : int)\r\n",
       "mdown_content": "**GUI.SetSliderReverse** (*widgetID* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets a slider or scroll bar specified by <i>widgetID</i> into (or out of, if already into) \"reverse mode\". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location.<p>\r\n</p>",
+      "text_content": " Sets a slider or scroll bar specified by widgetID into (or out of, if already into) \"reverse mode\". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location.\r\n",
       "mdown_content": "Sets a slider or scroll bar specified by *widgetID* into (or out of, if already into) \"reverse mode\". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location."
     },
     {
@@ -18,12 +20,14 @@
         "        import GUI in \"%oot/lib/GUI\"\r\n        \r\n        View.Set (\"graphics:300;70\")\r\n        var sBar, sBarLabel, reverseSBar, reverseSBarLabel : int\r\n        \r\n        procedure SBarMoved (value : int)\r\n            GUI.SetLabel (sBarLabel, intstr (value))\r\n        end SBarMoved\r\n        \r\n        procedure ReverseSBarMoved (value : int)\r\n            GUI.SetLabel (reverseSBarLabel, intstr (value))\r\n        end ReverseSBarMoved\r\n        \r\n        sBar := GUI.CreateHorizontalScrollBar (10, 10, 250,\r\n            50, 150, 50, SBarMoved)\r\n        sBarLabel := GUI.CreateLabel (\r\n            GUI.GetX (sBar) + GUI.GetWidth (sBar) + 10, 10, \"50\")\r\n        \r\n        reverseSBar := GUI.CreateHorizontalScrollBar (10, 40, 250,\r\n            50, 150, 50, ReverseSBarMoved)\r\n        GUI.SetSliderReverse (reverseSBar)\r\n        reverseSBarLabel := GUI.CreateLabel ( GUI.GetX (reverseSBar) + \r\n            GUI.GetWidth (reverseSBar) + 10, 40, \"50\")\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program creates two sliders, one of which is reversed.<p>\r\n</p>",
+      "text_content": " The following program creates two sliders, one of which is reversed.\r\n\r\n",
       "mdown_content": "The following program creates two sliders, one of which is reversed."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSliderReverse</b>, not by calling <b>SetSliderReverse</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSliderReverse**, not by calling **SetSliderReverse**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetSliderReverse, not by calling SetSliderReverse.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSliderReverse**, not by calling **SetSliderReverse**."
     },
     {
       "title": "See also",
@@ -32,6 +36,7 @@
         "gui_createverticalslider"
       ],
       "raw_content": "<b>GUI.CreateHorizontalScrollBar</b>, <b>GUI.CreateVerticalScrollBar</b>, <b><a href=\"gui_createhorizontalslider.html\">GUI.CreateHorizontalSlider</a></b>, and <b><a href=\"gui_createverticalslider.html\">GUI.CreateVerticalSlider</a></b>.<p>\r\n</p>",
+      "text_content": " GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
       "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
     }
   ]

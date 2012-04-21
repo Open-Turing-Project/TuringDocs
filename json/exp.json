@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>exp</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
+      "text_content": " exp (r : real) : real\r\n",
       "mdown_content": "**exp** (*r* : **real**) : **real**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>exp</b> function is used to find e to the power r, where e is the natural base and r is the parameter to <b>exp</b>. For example, <b>exp</b> (0) returns 1 and <b>exp</b> (1) returns the value of e.<p>\r\n</p>",
+      "text_content": " The exp function is used to find e to the power r, where e is the natural base and r is the parameter to exp. For example, exp (0) returns 1 and exp (1) returns the value of e.\r\n",
       "mdown_content": "The **exp** function is used to find e to the power r, where e is the natural base and r is the parameter to **exp**. For example, **exp** (0) returns 1 and **exp** (1) returns the value of e."
     },
     {
@@ -18,6 +20,7 @@
         "        for i : 1 .. 100\r\n            put \"Exponential of \", i, \" is \", exp (i)\r\n        end for"
       ],
       "raw_content": "This program prints out the exponential values of 1, 2, 3, &#133; up to 100.<p>\r\n</p>",
+      "text_content": " This program prints out the exponential values of 1, 2, 3,  up to 100.\r\n\r\n",
       "mdown_content": "This program prints out the exponential values of 1, 2, 3,  up to 100."
     },
     {
@@ -27,7 +30,8 @@
         "mathmodule"
       ],
       "raw_content": "<b><a href=\"ln.html\">ln</a></b> (natural logarithm function).<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "**[ln.html](ln)** (natural logarithm function).\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "text_content": " ln (natural logarithm function).\r\nSee also predefined unit Math.\r\n",
+      "mdown_content": "**[ln.html](ln)** (natural logarithm function).\nSee also predefined unit **[mathmodule.html](Math)**."
     }
   ]
 }

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>program</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *program* is:\n\n \n*statementsAndDeclarations*"
+      "text_content": " A program is:\r\n statementsAndDeclarations",
+      "mdown_content": "A *program* is:\n *statementsAndDeclarations*"
     },
     {
       "title": "Description",
       "raw_content": "A Turing program consists of a list of statements and declarations.<p>\r\n</p>",
+      "text_content": " A Turing program consists of a list of statements and declarations.\r\n",
       "mdown_content": "A Turing program consists of a list of statements and declarations."
     },
     {
@@ -18,6 +20,7 @@
         "        put \"Alan M. Turing\""
       ],
       "raw_content": "This is a complete Turing program. It outputs <i>Alan M. Turing</i>.<p>\r\n</p>",
+      "text_content": " This is a complete Turing program. It outputs Alan M. Turing.\r\n\r\n",
       "mdown_content": "This is a complete Turing program. It outputs *Alan M. Turing*."
     },
     {
@@ -26,6 +29,7 @@
         "        var stars : string := \"*\"\r\n        loop\r\n            put stars\r\n            stars := stars + \"*\"\r\n        end loop"
       ],
       "raw_content": "This is a complete Turing program. It outputs a triangle of stars.<p>\r\n</p>",
+      "text_content": " This is a complete Turing program. It outputs a triangle of stars.\r\n\r\n",
       "mdown_content": "This is a complete Turing program. It outputs a triangle of stars."
     },
     {
@@ -34,11 +38,13 @@
         "        procedure sayItAgain ( what : string, n : int )\r\n            for i : 1 .. n\r\n                put what\r\n            end for\r\n        end sayItAgain\r\n        \r\n        sayItAgain ( \"Hello\", 1)\r\n        sayItAgain ( \"Goodbye\", 2 )"
       ],
       "raw_content": "This is a complete Turing program. It outputs <i>Hello </i>once and <i>Goodbye</i> twice.<p>\r\n</p>",
+      "text_content": " This is a complete Turing program. It outputs Hello once and Goodbye twice.\r\n\r\n",
       "mdown_content": "This is a complete Turing program. It outputs *Hello *once and *Goodbye* twice."
     },
     {
       "title": "Details",
       "raw_content": "In a program there can be many units (see <b>unit</b>), one of which is the program (called the main program), the others of which are modules, monitors and classes. The main program is optionally preceded by an <b>import</b> list, which lists the units that it uses.<p>\r\n</p>",
+      "text_content": " In a program there can be many units (see unit), one of which is the program (called the main program), the others of which are modules, monitors and classes. The main program is optionally preceded by an import list, which lists the units that it uses.\r\n",
       "mdown_content": "In a program there can be many units (see **unit**), one of which is the program (called the main program), the others of which are modules, monitors and classes. The main program is optionally preceded by an **import** list, which lists the units that it uses."
     },
     {
@@ -47,6 +53,7 @@
         "import"
       ],
       "raw_content": "<b><a href=\"import.html\">import</a></b> list.<p>\r\n</p>",
+      "text_content": " import list.\r\n",
       "mdown_content": "**[import.html](import)** list."
     }
   ]

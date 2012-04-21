@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.BytesAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "text_content": " Net.BytesAvailable (netStream : int) : int\r\n",
       "mdown_content": "**Net.BytesAvailable **(*netStream* : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the number of bytes available for reading from the net stream specified by the <i>netStream</i> parameter.<p>\r\n</p>",
+      "text_content": " Returns the number of bytes available for reading from the net stream specified by the netStream parameter.\r\n",
       "mdown_content": "Returns the number of bytes available for reading from the net stream specified by the *netStream* parameter."
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
+      "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.BytesAvailable</b>, not by calling <b>BytesAvailable</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.BytesAvailable**, not by calling **BytesAvailable**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.BytesAvailable, not by calling BytesAvailable.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.BytesAvailable**, not by calling **BytesAvailable**."
     },
     {
       "title": "See also",
@@ -30,6 +34,7 @@
         "net_tokenavailable"
       ],
       "raw_content": "<b><a href=\"net_charavailable.html\">Net.CharAvailable</a></b>, <b><a href=\"net_lineavailable.html\">Net.LineAvailable</a></b>, and <b><a href=\"net_tokenavailable.html\">Net.TokenAvailable</a></b>.<p>\r\n</p>",
+      "text_content": " Net.CharAvailable, Net.LineAvailable, and Net.TokenAvailable.\r\n",
       "mdown_content": "**[net_charavailable.html](Net.CharAvailable)**, **[net_lineavailable.html](Net.LineAvailable)**, and **[net_tokenavailable.html](Net.TokenAvailable)**."
     }
   ]

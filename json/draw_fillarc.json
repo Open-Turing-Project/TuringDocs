@@ -5,7 +5,8 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.FillArc </b>(<i>x</i>, <i>y</i>,<b> </b><i>xRadius</i>, <i>yRadius</i><b> :</b> <b>int</b>,<br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "**Draw.FillArc **(*x*, *y*,** ***xRadius*, *yRadius*** :** **int**, \n \n*initialAngle*, *finalAngle*, *Color* : **int**)"
+      "text_content": " Draw.FillArc (x, y, xRadius, yRadius : int,  initialAngle, finalAngle, Color : int)",
+      "mdown_content": "**Draw.FillArc **(*x*, *y*,** ***xRadius*, *yRadius*** :** **int**,  *initialAngle*, *finalAngle*, *Color* : **int**)"
     },
     {
       "title": "Description",
@@ -13,7 +14,8 @@
         "draw_fillarc01.gif"
       ],
       "raw_content": "The <b>Draw.FillArc </b>procedure is used to draw a filled arc whose center is at (<i>x</i>, <i>y</i>). It then fills in the pie-shaped wedge using the specified <i>Color</i>. To outline a filled arc, use <b>Draw.FillArc</b> with the <i>Color</i> parameter set to the fill color and then <b>Draw.Arc</b> with the <i>Color</i> parameter set to the border color. For <i>initialAngle </i>and <i>finalAngle</i>, which determine the edges of the wedge, zero degrees is \"three o'clock\" and 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **Draw.FillArc **procedure is used to draw a filled arc whose center is at (*x*, *y*). It then fills in the pie-shaped wedge using the specified *Color*. To outline a filled arc, use **Draw.FillArc** with the *Color* parameter set to the fill color and then **Draw.Arc** with the *Color* parameter set to the border color. For *initialAngle *and *finalAngle*, which determine the edges of the wedge, zero degrees is \"three o'clock\" and 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*.\n\n"
+      "text_content": " The Draw.FillArc procedure is used to draw a filled arc whose center is at (x, y). It then fills in the pie-shaped wedge using the specified Color. To outline a filled arc, use Draw.FillArc with the Color parameter set to the fill color and then Draw.Arc with the Color parameter set to the border color. For initialAngle and finalAngle, which determine the edges of the wedge, zero degrees is \"three o'clock\" and 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by xRadius and yRadius.\r\n\r\n\r\n",
+      "mdown_content": "The **Draw.FillArc **procedure is used to draw a filled arc whose center is at (*x*, *y*). It then fills in the pie-shaped wedge using the specified *Color*. To outline a filled arc, use **Draw.FillArc** with the *Color* parameter set to the fill color and then **Draw.Arc** with the *Color* parameter set to the border color. For *initialAngle *and *finalAngle*, which determine the edges of the wedge, zero degrees is \"three o'clock\" and 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*."
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "        View.Set (\"graphics\")\r\n        const midx := maxx div 2\r\n        Draw.FillArc (midx, 0, maxy, maxy, 0, 180, brightred)"
       ],
       "raw_content": "This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (<i>midx</i>,0) the bottom center of the screen, in bright red. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen.<p>\r\n</p>",
+      "text_content": " This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (midx,0) the bottom center of the screen, in bright red. The maxx and maxy functions are used to determine the maximum x and y values on the screen.\r\n\r\n    ",
       "mdown_content": "This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (*midx*,0) the bottom center of the screen, in bright red. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen."
     },
     {
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.<p>\r\n</p>",
+      "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
       "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.FillArc</b>, not by calling <b>FillArc</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.FillArc**, not by calling **FillArc**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.FillArc, not by calling FillArc.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.FillArc**, not by calling **FillArc**."
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]

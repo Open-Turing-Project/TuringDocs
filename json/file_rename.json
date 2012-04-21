@@ -5,16 +5,19 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Rename</b> (<i>srcPathName</i>, <i>destName</i> : <b>string</b>)<p>\r\n</p></font>",
+      "text_content": " File.Rename (srcPathName, destName : string)\r\n",
       "mdown_content": "**File.Rename** (*srcPathName*, *destName* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Copy</b> renames a file or directory named by the <i>srcPathName</i> parameter to the <i>destName</i> parameter. The <i>destName</i> parameter must be a name only. In other words <b>File.Rename</b> can't move a file between different directories.<p>\r\n</p>",
+      "text_content": " File.Copy renames a file or directory named by the srcPathName parameter to the destName parameter. The destName parameter must be a name only. In other words File.Rename can't move a file between different directories.\r\n",
       "mdown_content": "**File.Copy** renames a file or directory named by the *srcPathName* parameter to the *destName* parameter. The *destName* parameter must be a name only. In other words **File.Rename** can't move a file between different directories."
     },
     {
       "title": "Details",
       "raw_content": "If the <b>File.Rename </b>call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "text_content": " If the File.Rename call fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
       "mdown_content": "If the **File.Rename **call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
@@ -23,17 +26,20 @@
         "        File.Rename (\"/usr/west/example\", \"testcase\")\r\n        if Error.Last = eNoError then\r\n            put \"File renamed\"\r\n        else\r\n            put \"Did not rename the file.\"\r\n            put \"Error: \", Error.LastMsg\r\n        end if"
       ],
       "raw_content": "This program renames the file \"<i>/usr/west/example</i>\" to \"<i>testcase</i>\"<p>\r\n</p>",
+      "text_content": " This program renames the file \"/usr/west/example\" to \"testcase\"\r\n\r\n  ",
       "mdown_content": "This program renames the file \"*/usr/west/example*\" to \"*testcase*\""
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, renames it to a different name using <b>File.Rename</b>, \r\n        checks the existence of both files using <b>File.Exists</b> and then \r\n        deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Rename.t;File.Rename Example\"></object></p>\n<p></p>",
-      "mdown_content": "An example program is available that creates a file in the current \ndirectory, renames it to a different name using **File.Rename**, \nchecks the existence of both files using **File.Exists** and then \ndeletes the file using **File.Delete**.\n\n"
+      "text_content": "An example program is available that creates a file in the current \r\n        directory, renames it to a different name using File.Rename, \r\n        checks the existence of both files using File.Exists and then \r\n        deletes the file using File.Delete.\r\n        \r\n          ",
+      "mdown_content": "An example program is available that creates a file in the current directory, renames it to a different name using **File.Rename**, checks the existence of both files using **File.Exists** and then deletes the file using **File.Delete**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Rename</b>, not by calling <b>Rename</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Rename**, not by calling **Rename**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling File.Rename, not by calling Rename.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Rename**, not by calling **Rename**."
     }
   ]
 }

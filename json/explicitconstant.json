@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "An <i>explicitConstant</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>explicitStringConstant</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\"><i>% e</i>.<i>g</i>.<i>: </i>\"<i>Hello world</i>\"</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>explicitIntegerConstant</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\">% e.g.: 25</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>explicitRealConstant</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\">% e.g.: 51.8</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>explicitTrueFalseConstant</i> % e.g.: <b>true</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(e)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>explicitCharConstant</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\">% e.g.: 'Hi' </font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "An *explicitConstant* is one of:\n\n \n(a)\n*explicitStringConstant*\n \n*% e*.*g*.*: *\"*Hello world*\"\n \n(b)\n*explicitIntegerConstant*\n \n% e.g.: 25\n \n(c)\n*explicitRealConstant*\n \n% e.g.: 51.8\n \n(d)\n*explicitTrueFalseConstant* % e.g.: **true**\n \n(e)\n*explicitCharConstant*\n \n% e.g.: 'Hi' "
+      "text_content": " An explicitConstant is one of:\r\n (a)explicitStringConstant % e.g.: \"Hello world\" (b)explicitIntegerConstant % e.g.: 25 (c)explicitRealConstant % e.g.: 51.8 (d)explicitTrueFalseConstant % e.g.: true (e)explicitCharConstant % e.g.: 'Hi' ",
+      "mdown_content": "An *explicitConstant* is one of:\n (a)*explicitStringConstant* *% e*.*g*.*: *\"*Hello world*\" (b)*explicitIntegerConstant* % e.g.: 25 (c)*explicitRealConstant* % e.g.: 51.8 (d)*explicitTrueFalseConstant* % e.g.: **true** (e)*explicitCharConstant* % e.g.: 'Hi' "
     },
     {
       "title": "Description",
       "raw_content": "An <i>explicitConstant </i>gives its value directly. For example, the value of the explicit constant 25 is twenty-five.<p>\r\n</p>",
+      "text_content": " An explicitConstant gives its value directly. For example, the value of the explicit constant 25 is twenty-five.\r\n",
       "mdown_content": "An *explicitConstant *gives its value directly. For example, the value of the explicit constant 25 is twenty-five."
     },
     {
@@ -18,11 +20,13 @@
         "        put \"Hello world\"\r\n        var diameter : real\r\n        const pi := 3.14159\r\n        diameter := pi * r ** 2\r\n        var x := diameter"
       ],
       "raw_content": "In the following, the explicit constants are \"Hello world\", 3.14159 and 2. Note that <i>pi </i>is a <i>named </i>constant rather than an explicit constant.<p>\r\n</p>",
+      "text_content": " In the following, the explicit constants are \"Hello world\", 3.14159 and 2. Note that pi is a named constant rather than an explicit constant.\r\n\r\n",
       "mdown_content": "In the following, the explicit constants are \"Hello world\", 3.14159 and 2. Note that *pi *is a *named *constant rather than an explicit constant."
     },
     {
       "title": "Details",
       "raw_content": "In some programming languages, <i>explicit constants </i>are called <i>literals</i> or <i>literal values</i>, because they literally (explicitly) give their values.<p>\r\n</p>",
+      "text_content": " In some programming languages, explicit constants are called literals or literal values, because they literally (explicitly) give their values.\r\n",
       "mdown_content": "In some programming languages, *explicit constants *are called *literals* or *literal values*, because they literally (explicitly) give their values."
     },
     {
@@ -36,6 +40,7 @@
         "enumeratedvalue"
       ],
       "raw_content": "<i><a href=\"explicitstringconstant.html\">explicitStringConstant</a></i>, <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i>, <i><a href=\"explicitrealconstant.html\">explicitRealConstant</a></i>, <i><a href=\"explicittruefalseconstant.html\">explicitTrueFalseConstant</a></i> and <i><a href=\"explicitcharconstant.html\">explicitCharConstant</a></i>. See also <i><a href=\"enumeratedvalue.html\">enumeratedValue</a></i>.<p>\r\n</p>",
+      "text_content": " explicitStringConstant, explicitIntegerConstant, explicitRealConstant, explicitTrueFalseConstant and explicitCharConstant. See also enumeratedValue.\r\n",
       "mdown_content": "*[explicitstringconstant.html](explicitStringConstant)*, *[explicitintegerconstant.html](explicitIntegerConstant)*, *[explicitrealconstant.html](explicitRealConstant)*, *[explicittruefalseconstant.html](explicitTrueFalseConstant)* and *[explicitcharconstant.html](explicitCharConstant)*. See also *[enumeratedvalue.html](enumeratedValue)*."
     }
   ]

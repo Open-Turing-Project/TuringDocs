@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Int</b> (<i>low</i>,<i> high</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "text_content": " Rand.Int (low, high : int) : int\r\n",
       "mdown_content": "**Rand.Int** (*low*,* high* : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Rand.Int </b>statement is used to create a pseudo-random integer in the range <i>low</i> to <i>high</i>, inclusive. For example, if <i>i</i> is an integer, after <i>i:=</i><b>Rand.Int </b>(<i>i</i>,1, 10), <i>i</i> would have a value such as 7 or 2 or 10.<p>\r\n</p>",
+      "text_content": " The Rand.Int statement is used to create a pseudo-random integer in the range low to high, inclusive. For example, if i is an integer, after i:=Rand.Int (i,1, 10), i would have a value such as 7 or 2 or 10.\r\n",
       "mdown_content": "The **Rand.Int **statement is used to create a pseudo-random integer in the range *low* to *high*, inclusive. For example, if *i* is an integer, after *i:=***Rand.Int **(*i*,1, 10), *i* would have a value such as 7 or 2 or 10."
     },
     {
@@ -18,17 +20,20 @@
         "        loop\r\n            put \"Rolled \", Rand.Int (1, 6)\r\n        end loop"
       ],
       "raw_content": "This program simulates the repeated rolling of a six sided die.<p>\r\n</p>",
+      "text_content": " This program simulates the repeated rolling of a six sided die.\r\n\r\n",
       "mdown_content": "This program simulates the repeated rolling of a six sided die."
     },
     {
       "title": "Details",
       "raw_content": "The <b>Rand.Int </b>statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range <i>low</i> =<i>i</i> = <i>high</i>. It is required that <i>low</i> = <i>high</i>.<p>\r\nEach time a program runs, <b>Rand.Int</b> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <b>Rand.Set</b> procedure.</p>\n<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>Rand.Seed </b>and <b>Rand.Next</b> procedures.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Rand.Int **statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range *low* =*i* = *high*. It is required that *low* = *high*.\nEach time a program runs, **Rand.Int** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\n\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures.\n"
+      "text_content": " The Rand.Int statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range low =i = high. It is required that low = high.\r\nEach time a program runs, Rand.Int uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the Rand.Set procedure.\r\nTo use several sequences of repeatable pseudo-random number sequences, use the Rand.Seed and Rand.Next procedures.\r\n",
+      "mdown_content": "The **Rand.Int **statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range *low* =*i* = *high*. It is required that *low* = *high*.\nEach time a program runs, **Rand.Int** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Rand.Int</b>, not by calling <b>Int</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Rand.Int**, not by calling **Int**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Rand.Int, not by calling Int.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Rand.Int**, not by calling **Int**."
     },
     {
       "title": "See also",
@@ -39,6 +44,7 @@
         "rand_next"
       ],
       "raw_content": "<b><a href=\"rand_real.html\">Rand.Real</a></b>, <b><a href=\"rand_set.html\">Rand.Set</a></b>, <b><a href=\"rand_seed.html\">Rand.Seed</a></b> and <b><a href=\"rand_next.html\">Rand.Next</a></b>.<p>\r\n</p>",
+      "text_content": " Rand.Real, Rand.Set, Rand.Seed and Rand.Next.\r\n",
       "mdown_content": "**[rand_real.html](Rand.Real)**, **[rand_set.html](Rand.Set)**, **[rand_seed.html](Rand.Seed)** and **[rand_next.html](Rand.Next)**."
     }
   ]

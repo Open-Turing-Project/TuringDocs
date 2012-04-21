@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>A</i> <b>xor</b> <i>B</i><p>\r\n</p></font>",
+      "text_content": " A xor B\r\n",
       "mdown_content": "*A* **xor** *B*"
     },
     {
       "title": "Description",
       "raw_content": "When applied to set values, <b>xor</b> (symmetric difference) yields a set which includes element <i>e</i> if and only if <i>e</i> is contained in exactly one of the operands. When applied to non-negative integer values, <b>xor</b> yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands <i>A</i> and <i>B </i>are evaluated.<p>\r\n</p>",
+      "text_content": " When applied to set values, xor (symmetric difference) yields a set which includes element e if and only if e is contained in exactly one of the operands. When applied to non-negative integer values, xor yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands A and B are evaluated.\r\n",
       "mdown_content": "When applied to set values, **xor** (symmetric difference) yields a set which includes element *e* if and only if *e* is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands *A* and *B *are evaluated."
     },
     {
@@ -18,6 +20,7 @@
         "        type status : enum (ready, sending, repeating)\r\n        type statusSet : set of status\r\n        var s1, s2, s3 : statusSet\r\n        s1 := statusSet ( status.read, status.sending )\r\n        s2 := statusSet ( status.read, status.repeating )\r\n        \r\n        s3 := s1 xor s2     % Same as (s1 + s2) - (s1 * s2)"
       ],
       "raw_content": "Status <i>s3</i> will contain elements that are in <i>s1</i> or <i>s2</i> but not both. Here <b>xor</b> is a set operator. See <b>enum</b> and <b>set</b> types for explanations of these types.<p>\r\n</p>",
+      "text_content": " Status s3 will contain elements that are in s1 or s2 but not both. Here xor is a set operator. See enum and set types for explanations of these types.\r\n\r\n",
       "mdown_content": "Status *s3* will contain elements that are in *s1* or *s2* but not both. Here **xor** is a set operator. See **enum** and **set** types for explanations of these types."
     },
     {
@@ -26,11 +29,13 @@
         "        var n1, n2, n3 : nat\r\n        \r\n        n3 := n1 xor n2"
       ],
       "raw_content": "Each bit of natural number <i>n3</i> will be 1 if exactly one of the corresponding bits of <i>n1</i> and <i>n2</i> are 1. For example, if <i>n1</i> = 2#110 (6) and <i>n2</i> = 2#010 (2), <i>n3</i> will be set to 2#100 (4). Here <b>xor</b> is an integer operator.<p>\r\n</p>",
+      "text_content": " Each bit of natural number n3 will be 1 if exactly one of the corresponding bits of n1 and n2 are 1. For example, if n1 = 2#110 (6) and n2 = 2#010 (2), n3 will be set to 2#100 (4). Here xor is an integer operator.\r\n\r\n",
       "mdown_content": "Each bit of natural number *n3* will be 1 if exactly one of the corresponding bits of *n1* and *n2* are 1. For example, if *n1* = 2#110 (6) and *n2* = 2#010 (2), *n3* will be set to 2#100 (4). Here **xor** is an integer operator."
     },
     {
       "title": "Details",
       "raw_content": "The <b>xor</b> operator is not a short circuit operator; in other words, both of its operands are always evaluated. The precedence of <b>xor</b> is the same as that of plus (+).<p>\r\n</p>",
+      "text_content": " The xor operator is not a short circuit operator; in other words, both of its operands are always evaluated. The precedence of xor is the same as that of plus (+).\r\n",
       "mdown_content": "The **xor** operator is not a short circuit operator; in other words, both of its operands are always evaluated. The precedence of **xor** is the same as that of plus (+)."
     },
     {
@@ -40,6 +45,7 @@
         "explicitintegerconstant"
       ],
       "raw_content": "<b><a href=\"set.html\">set</a></b>. See also <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> which describes values such as 2<b>#</b>110.<p>\r\n</p>",
+      "text_content": " set. See also explicitIntegerConstant which describes values such as 2#110.\r\n",
       "mdown_content": "**[set.html](set)**. See also *[explicitintegerconstant.html](explicitIntegerConstant)* which describes values such as 2**#**110."
     }
   ]

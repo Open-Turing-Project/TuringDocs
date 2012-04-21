@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.HideWindow</b> (<i>window</i> : <b>int</b>)<p></p></font>",
+      "text_content": "GUI.HideWindow (window : int)\r\n    ",
       "mdown_content": "**GUI.HideWindow** (*window* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Hides a window with widgets in it. This procedure makes certain \r\n          that the GUI Library recognizes that the window no longer visible. \r\n\t  This procedure will call <i>Window.Hide</i>, so there is no need \r\n\t  for the user to do so.<p>\r\n    </p>",
-      "mdown_content": "Hides a window with widgets in it. This procedure makes certain \nthat the GUI Library recognizes that the window no longer visible. \nThis procedure will call *Window.Hide*, so there is no need \nfor the user to do so.\n"
+      "text_content": "Hides a window with widgets in it. This procedure makes certain \r\n          that the GUI Library recognizes that the window no longer visible. \r\n\t  This procedure will call Window.Hide, so there is no need \r\n\t  for the user to do so.\r\n    ",
+      "mdown_content": "Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call *Window.Hide*, so there is no need for the user to do so."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        import GUI\r\n\r\n        var windowA, windowB : int\r\n        var buttonA, buttonB, buttonQuit : int\r\n\tvar backToMainA, backToMainB : int\r\n\r\n        procedure ShowWindowA\r\n            GUI.HideWindow (defWinID)\r\n            GUI.ShowWindow (windowA)\r\n        end ShowWindowA\r\n\r\n        procedure ShowWindowB\r\n            GUI.HideWindow (defWinID)\r\n            GUI.ShowWindow (windowB)\r\n        end ShowWindowB\r\n\r\n        procedure ShowMain\r\n            GUI.HideWindow (Window.GetActive)\r\n            GUI.ShowWindow (defWinID)\r\n        end ShowMain\r\n\r\n        View.Set (\"graphics:280;100,nobuttonbar\")\r\n        % Place the buttons in the main window\r\n        buttonA := GUI.CreateButton (10, 10, 0, \"Show Window A\", ShowWindowA)\r\n        buttonB := GUI.CreateButton (150, 10, 0, \"Show Window B\", ShowWindowB)\r\n        buttonQuit := GUI.CreateButton (100, 60, 0, \"Quit\", GUI.Quit)\r\n\r\n        windowA := Window.Open  (\"title:Window A,graphics:150;100,position:bottom;left\")\r\n        backToMainA := GUI.CreateButton (20, 20, 0, \"Back to Main\", ShowMain)\r\n        Window.Hide (windowA)\r\n        windowB := Window.Open  (\"title:Window B,graphics:150;100,position:bottom;right\")\r\n        backToMainB := GUI.CreateButton (20, 20, 0, \"Back to Main\", ShowMain)\r\n        Window.Hide (windowB)\r\n\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop\r\n"
       ],
       "raw_content": "The program opens up a window with two buttons. If the button \r\n          labelled \"Close and Open\" is pressed, the window is closed and \r\n\t  a new window with two buttons is opened in a random location on \r\n\t  the screen.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "The program opens up a window with two buttons. If the button \nlabelled \"Close and Open\" is pressed, the window is closed and \na new window with two buttons is opened in a random location on \nthe screen.\n\n\n"
+      "text_content": "The program opens up a window with two buttons. If the button \r\n          labelled \"Close and Open\" is pressed, the window is closed and \r\n\t  a new window with two buttons is opened in a random location on \r\n\t  the screen.\r\n\r\n    ",
+      "mdown_content": "The program opens up a window with two buttons. If the button labelled \"Close and Open\" is pressed, the window is closed and a new window with two buttons is opened in a random location on the screen.\n"
     },
     {
       "title": "Execute",
@@ -33,7 +36,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.HideWindow</b>, not by calling <b>HideWindow</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.HideWindow**, not by calling **HideWindow**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.HideWindow, not by calling HideWindow.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.HideWindow**, not by calling **HideWindow**."
     },
     {
       "title": "See also",
@@ -42,7 +46,8 @@
         "gui_closewindow"
       ],
       "raw_content": "<b><a href=\"gui_showwindow.html\">GUI.ShowWindow</a></b>\r\n          for showing a window with widgets in it.\r\n\t  See also <b><a href=\"gui_closewindow.html\">GUI.CloseWindow</a></b>\r\n\t  for closing a window with widgets in it.<p>\r\n    </p>",
-      "mdown_content": "**[gui_showwindow.html](GUI.ShowWindow)**\nfor showing a window with widgets in it.\nSee also **[gui_closewindow.html](GUI.CloseWindow)**\nfor closing a window with widgets in it.\n"
+      "text_content": "GUI.ShowWindow\r\n          for showing a window with widgets in it.\r\n\t  See also GUI.CloseWindow\r\n\t  for closing a window with widgets in it.\r\n    ",
+      "mdown_content": "**[gui_showwindow.html](GUI.ShowWindow)**for showing a window with widgets in it.See also **[gui_closewindow.html](GUI.CloseWindow)**for closing a window with widgets in it."
     }
   ]
 }

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetPosition</b> (<i>windowID</i> : <b>int</b>, <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Window.SetPosition (windowID : int, x, y : int)\r\n",
       "mdown_content": "**Window.SetPosition** (*windowID* : **int**, *x*, *y* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.SetPosition</b> procedure moves the location of the specified execution window on the screen. <i>x</i> and <i>y</i> specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
+      "text_content": " The Window.SetPosition procedure moves the location of the specified execution window on the screen. x and y specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.\r\n",
       "mdown_content": "The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. *x* and *y* specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen."
     },
     {
@@ -18,12 +20,14 @@
         "        % Constants for windows\r\n        const titleBarHeight : int := 21\r\n        const windowEdgeSize : int := 13\r\n        \r\n        % Calculate the actual size of a window\r\n        var windowWidth : int := maxx + windowEdgeSize\r\n        var windowHeight : int := maxy + windowEdgeSize + titleBarHeight\r\n        \r\n        % Get the screen size\r\n        var screenWidth : int := Config.Display (cdScreenWidth)\r\n        var screenHeight : int := Config.Display (cdScreenHeight)\r\n        \r\n        % Open the window\r\n        var winID1 : int := Window.Open (\"title:Upper Right\")\r\n        Window.SetPosition (winID1, screenWidth  windowWidth,                   screenHeight  windowHeight)\r\n        \r\n        var winID2 : int := Window.Open (\"title:Upper Left\")\r\n        Window.SetPosition (winID2, 0, screenHeight  windowHeight)\r\n        \r\n        var winID3 : int := Window.Open (\"title:Lower Left\")\r\n        Window.SetPosition (winID3, 0, 0)\r\n        \r\n        var winID4 : int := Window.Open (\"title:Lower Right\")\r\n        Window.SetPosition (winID4, screenWidth  windowWidth, 0)\r\n        "
       ],
       "raw_content": "The following program opens four windows, one at each corner of the screen.<p>\r\n</p>",
+      "text_content": " The following program opens four windows, one at each corner of the screen.\r\n\r\n",
       "mdown_content": "The following program opens four windows, one at each corner of the screen."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.SetPosition</b>, not by calling <b>SetPosition</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.SetPosition**, not by calling **SetPosition**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.SetPosition, not by calling SetPosition.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.SetPosition**, not by calling **SetPosition**."
     },
     {
       "title": "See also",
@@ -32,6 +36,7 @@
         "config_display"
       ],
       "raw_content": "<b><a href=\"window_getposition.html\">Window.GetPosition</a></b> to get the current window position and <b><a href=\"config_display.html\">Config.Display</a></b> to get the size of the screen.<p>\r\n</p>",
+      "text_content": " Window.GetPosition to get the current window position and Config.Display to get the size of the screen.\r\n",
       "mdown_content": "**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen."
     }
   ]

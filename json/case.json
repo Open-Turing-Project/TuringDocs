@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>caseStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>case</b> <i>expn</i> <b>of</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">{ <b>label</b> <i>compileTimeExpn </i>{, <i>compileTimeExpn </i>} :</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\"><i>statementsAndDeclarations</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">[ <b>label</b> :</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\"><i>statementsAndDeclarations</i> ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>case</b></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "A *caseStatement* is:\n\n \n**case** *expn* **of**\n \n \n{ **label** *compileTimeExpn *{, *compileTimeExpn *} :\n \n \n \n*statementsAndDeclarations* }\n \n \n[ **label** :\n \n \n \n*statementsAndDeclarations* ]\n \n**end** **case**"
+      "text_content": " A caseStatement is:\r\n case expn of  { label compileTimeExpn {, compileTimeExpn } :   statementsAndDeclarations }  [ label :   statementsAndDeclarations ] end case",
+      "mdown_content": "A *caseStatement* is:\n **case** *expn* **of**  { **label** *compileTimeExpn *{, *compileTimeExpn *} :   *statementsAndDeclarations* }  [ **label** :   *statementsAndDeclarations* ] **end** **case**"
     },
     {
       "title": "Description",
       "raw_content": "A <b>case</b> statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond <b>end</b> <b>case</b>.<p>\r\nThe expression (<i>expn</i>) following the keyword <b>case</b> is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final <b>label</b> with no expression, that alternative is selected.</p>\n<p>\r\n</p>",
-      "mdown_content": "A **case** statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond **end** **case**.\nThe expression (*expn*) following the keyword **case** is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final **label** with no expression, that alternative is selected.\n"
+      "text_content": " A case statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond end case.\r\nThe expression (expn) following the keyword case is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final label with no expression, that alternative is selected.\r\n",
+      "mdown_content": "A **case** statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond **end** **case**.\nThe expression (*expn*) following the keyword **case** is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final **label** with no expression, that alternative is selected."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        case mark of\r\n            label 9, 10 :   put \"Excellent\"\r\n            label 7, 8 :        put \"Good\"\r\n            label 6 :       put \"Fair\"\r\n            label :     put \"Poor\"\r\n        end case"
       ],
       "raw_content": "Output a message based on value of mark.<p>\r\n</p>",
+      "text_content": " Output a message based on value of mark.\r\n\r\n",
       "mdown_content": "Output a message based on value of mark."
     },
     {
@@ -36,6 +39,7 @@
         "        case name of\r\n            label \"horse\", \"cow\" :  put \"Farm animal\"\r\n            label \"tiger\", \"lion\" : put \"Jungle animal\"\r\n            label \"cat\", \"dog\" :    put \"Pet\"\r\n            label :         put \"Unknown animal\"\r\n        end case"
       ],
       "raw_content": "Output a message based on value of name.<p>\r\n</p>",
+      "text_content": " Output a message based on value of name.\r\n\r\n",
       "mdown_content": "Output a message based on value of name."
     },
     {
@@ -51,7 +55,8 @@
     {
       "title": "Details",
       "raw_content": "The case expression is required to match one of the labels. If it does not, there must be a final <b>label</b> with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, <b>char</b>, <b>boolean</b>, an <b>enum</b> type or strings.<p>\r\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.</p>\n<p>\r\n</p>",
-      "mdown_content": "The case expression is required to match one of the labels. If it does not, there must be a final **label** with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, **char**, **boolean**, an **enum** type or strings.\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.\n"
+      "text_content": " The case expression is required to match one of the labels. If it does not, there must be a final label with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, char, boolean, an enum type or strings.\r\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.\r\n",
+      "mdown_content": "The case expression is required to match one of the labels. If it does not, there must be a final **label** with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, **char**, **boolean**, an **enum** type or strings.\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label."
     }
   ]
 }

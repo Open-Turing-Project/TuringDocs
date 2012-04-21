@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>skip</b><p>\r\n</p></font>",
+      "text_content": " skip\r\n",
       "mdown_content": "**skip**"
     },
     {
       "title": "Description",
       "raw_content": "Using <b>skip</b> as an input item in a <b>get</b> statement causes the current input to be skipped until a non-whitespace token is encountered. Whitespace includes all blanks, tabs, form feeds and newlines.<p>\r\n</p>",
+      "text_content": " Using skip as an input item in a get statement causes the current input to be skipped until a non-whitespace token is encountered. Whitespace includes all blanks, tabs, form feeds and newlines.\r\n",
       "mdown_content": "Using **skip** as an input item in a **get** statement causes the current input to be skipped until a non-whitespace token is encountered. Whitespace includes all blanks, tabs, form feeds and newlines."
     },
     {
@@ -18,11 +20,13 @@
         "        loop\r\n            get skip            % This is line now redundant\r\n            exit when eof\r\n            get \r\n            \r\n        end loop"
       ],
       "raw_content": "The <b>skip</b> input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in <i><b>get</b> s</i> but not in <i><b>get</b> s:*</i> or <i><b>get</b> s:3</i>, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so <b>skip</b> was required. The form of an input loop that used <b>skip</b> was as follows:<p>\r\n</p>",
+      "text_content": " The skip input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in get s but not in get s:* or get s:3, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so skip was required. The form of an input loop that used skip was as follows:\r\n\r\n",
       "mdown_content": "The **skip** input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in ***get** s* but not in ***get** s:** or ***get** s:3*, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so **skip** was required. The form of an input loop that used **skip** was as follows:"
     },
     {
       "title": "Details",
       "raw_content": "The <b>skip</b> bypasses all whitespace characters including any trailing newlines and blank lines. By skipping these characters, a true end-of-file condition was detected. Otherwise, the end-of-file could have been hidden by any whitespace following the last input item. With the change in Turing, the line <b>get</b> <b>skip</b> is no longer needed (although it still works correctly).<p>\r\n</p>",
+      "text_content": " The skip bypasses all whitespace characters including any trailing newlines and blank lines. By skipping these characters, a true end-of-file condition was detected. Otherwise, the end-of-file could have been hidden by any whitespace following the last input item. With the change in Turing, the line get skip is no longer needed (although it still works correctly).\r\n",
       "mdown_content": "The **skip** bypasses all whitespace characters including any trailing newlines and blank lines. By skipping these characters, a true end-of-file condition was detected. Otherwise, the end-of-file could have been hidden by any whitespace following the last input item. With the change in Turing, the line **get** **skip** is no longer needed (although it still works correctly)."
     },
     {
@@ -31,11 +35,13 @@
         "        var i : int\r\n        var line : string\r\n        loop\r\n            get i, skip, line:*\r\n            \r\n        end loop"
       ],
       "raw_content": "The <b>skip</b> can also be used to correctly identify the start of a long string (usually to be read in <i>line</i> or <i>counted</i> mode). Here, it skips the whitespace and trailing newline as follows:<p>\r\n</p>",
+      "text_content": " The skip can also be used to correctly identify the start of a long string (usually to be read in line or counted mode). Here, it skips the whitespace and trailing newline as follows:\r\n\r\n",
       "mdown_content": "The **skip** can also be used to correctly identify the start of a long string (usually to be read in *line* or *counted* mode). Here, it skips the whitespace and trailing newline as follows:"
     },
     {
       "title": "Details",
       "raw_content": "The first item in the <b>get</b> statement reads an integer by skipping all whitespace and reading digits until whitespace is encountered. The input stream is then left with the whitespace as the next input character. The <b>skip</b> then skips past the whitespace, effectively beginning the next input at the next non-whitespace character. This truncates leading blanks and has another, potentially more important, effect. If the integer is the last data on a line and the string is on a following line, the <b>skip</b> is necessary to avoid setting <i>line</i> to a null string value.<p>\r\n</p>",
+      "text_content": " The first item in the get statement reads an integer by skipping all whitespace and reading digits until whitespace is encountered. The input stream is then left with the whitespace as the next input character. The skip then skips past the whitespace, effectively beginning the next input at the next non-whitespace character. This truncates leading blanks and has another, potentially more important, effect. If the integer is the last data on a line and the string is on a following line, the skip is necessary to avoid setting line to a null string value.\r\n",
       "mdown_content": "The first item in the **get** statement reads an integer by skipping all whitespace and reading digits until whitespace is encountered. The input stream is then left with the whitespace as the next input character. The **skip** then skips past the whitespace, effectively beginning the next input at the next non-whitespace character. This truncates leading blanks and has another, potentially more important, effect. If the integer is the last data on a line and the string is on a following line, the **skip** is necessary to avoid setting *line* to a null string value."
     },
     {
@@ -47,6 +53,7 @@
         "statement"
       ],
       "raw_content": "<b><a href=\"get.html\">get</a></b> <a href=\"statement.html\">statement</a> and <b><a href=\"loop.html\">loop</a></b> <a href=\"statement.html\">statement</a>.<p>\r\n</p>",
+      "text_content": " get statement and loop statement.\r\n",
       "mdown_content": "**[get.html](get)** [statement.html](statement) and **[loop.html](loop)** [statement.html](statement)."
     }
   ]

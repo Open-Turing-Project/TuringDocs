@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>flexible array</b> <i>indexType</i> { , <i>indexType</i> } <b>of</b> <i>typeSpec</i><p>\r\n</p></font>",
+      "text_content": " flexible array indexType { , indexType } of typeSpec\r\n",
       "mdown_content": "**flexible array** *indexType* { , *indexType* } **of** *typeSpec*"
     },
     {
@@ -13,12 +14,14 @@
         "        new name , newUpper1 {,newUpper2}"
       ],
       "raw_content": "The <b>flexible</b> keyword allows an array to be resized using <b>new</b> at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:<p>\r\n</p>\r\nThe existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).<p>\r\nAdditionally, the upper bound (both in the declaration and the <b>new</b> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <b>new</b>.</p>\n<p>\r\nIn the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.</p>\n<p>\r\nCurrently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;<b>*</b>&#148; as the upper bound.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **flexible** keyword allows an array to be resized using **new** at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:\n\nThe existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).\nAdditionally, the upper bound (both in the declaration and the **new** statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another **new**.\n\nIn the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.\n\nCurrently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with ***** as the upper bound.\n"
+      "text_content": " The flexible keyword allows an array to be resized using new at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:\r\n\r\nThe existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).\r\nAdditionally, the upper bound (both in the declaration and the new statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another new.\r\nIn the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.\r\nCurrently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with * as the upper bound.\r\n",
+      "mdown_content": "The **flexible** keyword allows an array to be resized using **new** at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:\nThe existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).\nAdditionally, the upper bound (both in the declaration and the **new** statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another **new**.\nIn the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.\nCurrently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with ***** as the upper bound."
     },
     {
       "title": "Example",
       "raw_content": "See <b>array</b> for an example of <b>flexible</b>.<p>\r\n    </p>",
-      "mdown_content": "See **array** for an example of **flexible**.\n"
+      "text_content": " See array for an example of flexible.\r\n    ",
+      "mdown_content": "See **array** for an example of **flexible**."
     },
     {
       "title": "Execute",
@@ -37,6 +40,7 @@
         "new"
       ],
       "raw_content": "<b><a href=\"array.html\">array</a></b> and <b><a href=\"new.html\">new</a></b>.<p>\r\n</p>",
+      "text_content": " array and new.\r\n",
       "mdown_content": "**[array.html](array)** and **[new.html](new)**."
     }
   ]

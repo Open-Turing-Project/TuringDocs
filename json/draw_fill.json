@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Fill</b> (<i>x</i>, <i>y</i> <b>:</b> <b>int</b>, <i>fillColor</i>,<b> </b><i>borderColor</i> <b>: int</b>)<p>\r\n</p></font>",
+      "text_content": " Draw.Fill (x, y : int, fillColor, borderColor : int)\r\n",
       "mdown_content": "**Draw.Fill** (*x*, *y* **:** **int**, *fillColor*,** ***borderColor* **: int**)"
     },
     {
@@ -13,7 +14,8 @@
         "draw_fill01.gif"
       ],
       "raw_content": "The <b>Draw.Fill </b>procedure is used to color in a figure that is on the screen. Starting at (<i>x</i>, <i>y</i>), the figure is filled with <i>fillColor</i> to a surrounding border whose color is <i>borderColor</i>.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (*x*, *y*), the figure is filled with *fillColor* to a surrounding border whose color is *borderColor*.\n\n"
+      "text_content": " The Draw.Fill procedure is used to color in a figure that is on the screen. Starting at (x, y), the figure is filled with fillColor to a surrounding border whose color is borderColor.\r\n\r\n\r\n",
+      "mdown_content": "The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (*x*, *y*), the figure is filled with *fillColor* to a surrounding border whose color is *borderColor*."
     },
     {
       "title": "Example",
@@ -21,7 +23,8 @@
         "        View.Set (\"graphics\")\r\n        const midx := maxx div 2\r\n        const midy := maxy div 2\r\n        Draw.Oval (midx, midy, 10, 10, brightgreen)\r\n        Draw.Fill (midx, midy, red, brightgreen)"
       ],
       "raw_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen.<p>\r\n</p>\n<p>\r\n</p>",
-      "mdown_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen.\n\n"
+      "text_content": " This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The maxx and maxy functions are used to determine the maximum x and y values on the screen.\r\n\r\n",
+      "mdown_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen.\n"
     },
     {
       "title": "Execute",
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.<p>\r\n</p>",
+      "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
       "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Fill</b>, not by calling <b>Fill.</b></p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Fill**, not by calling **Fill.**\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.Fill, not by calling Fill.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Fill**, not by calling **Fill.**"
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.GetPosition</b> (<i>windowID</i> : <b>int</b>, <b>var</b> <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Window.GetPosition (windowID : int, var x, y : int)\r\n",
       "mdown_content": "**Window.GetPosition** (*windowID* : **int**, **var** *x*, *y* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.GetPosition</b> procedure returns the location of the specified execution window on the screen in the <i>x</i> and <i>y</i> parameters. The <i>x</i> and <i>y</i> parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
+      "text_content": " The Window.GetPosition procedure returns the location of the specified execution window on the screen in the x and y parameters. The x and y parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.\r\n",
       "mdown_content": "The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the *x* and *y* parameters. The *x* and *y* parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen."
     },
     {
@@ -18,12 +20,14 @@
         "        % Constants for windows\r\n        const titleBarHeight : int := 21\r\n        const windowEdgeSize : int := 13\r\n        \r\n        % Calculate the actual size of a window\r\n        var windowWidth : int := maxx + windowEdgeSize\r\n        var windowHeight : int := maxy + windowEdgeSize + titleBarHeight\r\n        \r\n        % Get the screen size\r\n        var screenWidth : int := Config.Display (cdScreenWidth)\r\n        var screenHeight : int := Config.Display (cdScreenHeight)\r\n        \r\n        % Open the window\r\n        var winID : int := Window.Open (\"title:Upper Right\")\r\n        Window.SetPosition (winID, screenWidth  windowWidth,                    screenHeight  windowHeight)\r\n        \r\n        % Return the current position\r\n        var windowXPosition, windowYPosition : int\r\n        Window.GetPosition (winID, windowXPosition, windowYPosition)\r\n        put \"Window located at \", windowXPosition, \",\", windowYPosition"
       ],
       "raw_content": "The following program outputs the current position of the run window.<p>\r\n</p>",
+      "text_content": " The following program outputs the current position of the run window.\r\n\r\n",
       "mdown_content": "The following program outputs the current position of the run window."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.GetPosition</b>, not by calling <b>GetPosition</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.GetPosition, not by calling GetPosition.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**."
     },
     {
       "title": "See also",
@@ -33,6 +37,7 @@
         "config_display"
       ],
       "raw_content": "<b><a href=\"window_setposition.html\">Window.SetPosition</a></b> to <a href=\"set.html\">set</a> the current window position and <b><a href=\"config_display.html\">Config.Display</a></b> to get the size of the screen.<p>\r\n</p>",
+      "text_content": " Window.SetPosition to set the current window position and Config.Display to get the size of the screen.\r\n",
       "mdown_content": "**[window_setposition.html](Window.SetPosition)** to [set.html](set) the current window position and **[config_display.html](Config.Display)** to get the size of the screen."
     }
   ]

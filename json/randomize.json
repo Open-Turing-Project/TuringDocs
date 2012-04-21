@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randomize</b><p>\r\n</p></font>",
+      "text_content": " randomize\r\n",
       "mdown_content": "**randomize**"
     },
     {
       "title": "Description",
       "raw_content": "This procedure is obsolete. It was originally used to produce a different sequence of random numbers each time a program executed. With current versions of Turing, the random number sequence is &#147;randomized&#148; each time a Turing program is executed, eliminating the need for this procedure.<p>\r\nTo reset the random number sequence and thus allow for a predetermined sequence of pseudo-random numbers, use <b>Rand.Set</b>. </p>\n<p>\r\n</p>",
-      "mdown_content": "This procedure is obsolete. It was originally used to produce a different sequence of random numbers each time a program executed. With current versions of Turing, the random number sequence is randomized each time a Turing program is executed, eliminating the need for this procedure.\nTo reset the random number sequence and thus allow for a predetermined sequence of pseudo-random numbers, use **Rand.Set**. \n"
+      "text_content": " This procedure is obsolete. It was originally used to produce a different sequence of random numbers each time a program executed. With current versions of Turing, the random number sequence is randomized each time a Turing program is executed, eliminating the need for this procedure.\r\nTo reset the random number sequence and thus allow for a predetermined sequence of pseudo-random numbers, use Rand.Set. \r\n",
+      "mdown_content": "This procedure is obsolete. It was originally used to produce a different sequence of random numbers each time a program executed. With current versions of Turing, the random number sequence is randomized each time a Turing program is executed, eliminating the need for this procedure.\nTo reset the random number sequence and thus allow for a predetermined sequence of pseudo-random numbers, use **Rand.Set**. "
     },
     {
       "title": "See also",
@@ -22,7 +24,8 @@
         "randmodule"
       ],
       "raw_content": "<b><a href=\"randint.html\">randint</a></b>, <b><a href=\"rand.html\">rand</a></b>, <b><a href=\"randseed.html\">randseed</a></b> and <b><a href=\"randnext.html\">randnext</a></b>.<p>\r\nSee also predefined unit <b><a href=\"randmodule.html\">Rand</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "**[randint.html](randint)**, **[rand.html](rand)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\nSee also predefined unit **[randmodule.html](Rand)**.\n"
+      "text_content": " randint, rand, randseed and randnext.\r\nSee also predefined unit Rand.\r\n",
+      "mdown_content": "**[randint.html](randint)**, **[rand.html](rand)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\nSee also predefined unit **[randmodule.html](Rand)**."
     }
   ]
 }

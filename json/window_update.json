@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Update</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Window.Update (windowID : int)\r\n",
       "mdown_content": "**Window.Update** (*windowID* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Update</b> procedure updates a specified Run window from an offscreen bitmap. It is used with the command <b>View.Set</b>(\"offscreenonly\") which prevents the Run window from being updated until the <b>Window.Update</b> command is given.<p>\r\nThis command is identical to the <b>View.Update</b> command except that it updates the specified window. It should be used when doing animation with more than one window.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Window.Update** procedure updates a specified Run window from an offscreen bitmap. It is used with the command **View.Set**(\"offscreenonly\") which prevents the Run window from being updated until the **Window.Update** command is given.\nThis command is identical to the **View.Update** command except that it updates the specified window. It should be used when doing animation with more than one window.\n"
+      "text_content": " The Window.Update procedure updates a specified Run window from an offscreen bitmap. It is used with the command View.Set(\"offscreenonly\") which prevents the Run window from being updated until the Window.Update command is given.\r\nThis command is identical to the View.Update command except that it updates the specified window. It should be used when doing animation with more than one window.\r\n",
+      "mdown_content": "The **Window.Update** procedure updates a specified Run window from an offscreen bitmap. It is used with the command **View.Set**(\"offscreenonly\") which prevents the Run window from being updated until the **Window.Update** command is given.\nThis command is identical to the **View.Update** command except that it updates the specified window. It should be used when doing animation with more than one window."
     },
     {
       "title": "See also",
@@ -18,7 +20,8 @@
         "view_update"
       ],
       "raw_content": "<b><a href=\"view_update.html\">View.Update</a></b> for information on flicker-free animation.<p>\r\n</p>\n<p>\r\n</p>",
-      "mdown_content": "**[view_update.html](View.Update)** for information on flicker-free animation.\n\n"
+      "text_content": " View.Update for information on flicker-free animation.\r\n\r\n",
+      "mdown_content": "**[view_update.html](View.Update)** for information on flicker-free animation.\n"
     }
   ]
 }

@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>variableReference</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>variableId</i> { <i>componentSelector</i> }</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *variableReference* is:\n\n \n*variableId* { *componentSelector* }"
+      "text_content": " A variableReference is:\r\n variableId { componentSelector }",
+      "mdown_content": "A *variableReference* is:\n *variableId* { *componentSelector* }"
     },
     {
       "title": "Description",
       "raw_content": "In a Turing program, a variable is declared and given a name (<i>variableId</i>) and then used. Each use is called a <i>variable reference</i>.<p>\r\nIf the variable is an array, collection, record or union, its parts (<i>components</i>) can be selected using subscripts and field names (using <i>componentSelectors</i>). The form of a <i>componentSelector </i>is one of:\\</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(a)</td>\n<td width=\"10\">&nbsp;</td>\n<td>( <i>expn</i> {, <i>expn</i>} )</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(b)</td>\n<td width=\"10\">&nbsp;</td>\n<td>. <i>fieldId</i>\n</td>\n</tr>\n</table>\n<p>\r\nForm (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.</p>\n<p>\r\n</p>",
-      "mdown_content": "In a Turing program, a variable is declared and given a name (*variableId*) and then used. Each use is called a *variable reference*.\nIf the variable is an array, collection, record or union, its parts (*components*) can be selected using subscripts and field names (using *componentSelectors*). The form of a *componentSelector *is one of:\\\n\n\n \n(a)\n \n( *expn* {, *expn*} )\n \n(b)\n \n. *fieldId*\n\n\nForm (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.\n"
+      "text_content": " In a Turing program, a variable is declared and given a name (variableId) and then used. Each use is called a variable reference.\r\nIf the variable is an array, collection, record or union, its parts (components) can be selected using subscripts and field names (using componentSelectors). The form of a componentSelector is one of:\\\r\n (a) ( expn {, expn} ) (b) . fieldId\r\nForm (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.\r\n",
+      "mdown_content": "In a Turing program, a variable is declared and given a name (*variableId*) and then used. Each use is called a *variable reference*.\nIf the variable is an array, collection, record or union, its parts (*components*) can be selected using subscripts and field names (using *componentSelectors*). The form of a *componentSelector *is one of:\\\n (a) ( *expn* {, *expn*} ) (b) . *fieldId*\nForm (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union."
     },
     {
       "title": "Example",
@@ -18,11 +20,13 @@
         "        var k : int\r\n        var a : array 1 .. 100 of real\r\n        var r :\r\n            record\r\n                name : string ( 20 )\r\n                phone : string ( 8 )\r\n            end record\r\n        \r\n        k := 5\r\n        a ( k ) := 3.14159\r\n        r . name := \"Steve Cook\""
       ],
       "raw_content": "Following the declarations of <i>k</i>,<i> a </i>and <i>r</i>, each of <i>k</i>,<i> a </i>(<i>k</i>) and <i>r</i>.<i>name </i>are variable references.<p>\r\n</p>",
+      "text_content": " Following the declarations of k, a and r, each of k, a (k) and r.name are variable references.\r\n\r\n",
       "mdown_content": "Following the declarations of *k*,* a *and *r*, each of *k*,* a *(*k*) and *r*.*name *are variable references."
     },
     {
       "title": "Details",
       "raw_content": "A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the <b>record</b> type. See also <i>constantReference</i> and <b>var</b> declaration.<p>\r\n</p>",
+      "text_content": " A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the record type. See also constantReference and var declaration.\r\n",
       "mdown_content": "A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the **record** type. See also *constantReference* and **var** declaration."
     }
   ]

@@ -1,8 +1,39 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Draw",
   "fileName": "drawmodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprograms that deal with drawing pixel graphics to the screen.<p>\r\nAll routines in the <b>Draw</b> unit are exported qualified (and thus must be prefaced with \"<b>Draw.</b>\").</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprograms that deal with drawing pixel graphics to the screen.\r\nAll routines in the Draw unit are exported qualified (and thus must be prefaced with \"Draw.\").\r\n",
+      "mdown_content": "This unit contains the predefined subprograms that deal with drawing pixel graphics to the screen.\nAll routines in the **Draw** unit are exported qualified (and thus must be prefaced with \"**Draw.**\")."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "draw_cls",
+        "draw_dot",
+        "draw_line",
+        "draw_dashedline",
+        "draw_thickline",
+        "draw_box",
+        "draw_fillbox",
+        "draw_oval",
+        "draw_filloval",
+        "draw_arc",
+        "draw_fillarc",
+        "draw_polygon",
+        "draw_fillpolygon",
+        "draw_mapleleaf",
+        "draw_fillmapleleaf",
+        "draw_star",
+        "draw_fillstar",
+        "draw_fill",
+        "draw_text"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"draw_cls.html\"><b>Cls</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Clears the screen to color 0.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_dot.html\"><b>Dot</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a dot.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_line.html\"><b>Line</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a line.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_dashedline.html\"><b>DashedLine</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a dashed or dotted line.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_thickline.html\"><b>ThickLine</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a thick line.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_box.html\"><b>Box</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a box.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fillbox.html\"><b>FillBox</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled box.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_oval.html\"><b>Oval</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws an oval.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_filloval.html\"><b>FillOval</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled oval.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_arc.html\"><b>Arc</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws an arc.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fillarc.html\"><b>FillArc</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled arc or a wedge.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_polygon.html\"><b>Polygon</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a polygon.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fillpolygon.html\"><b>FillPolygon</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled polygon.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_mapleleaf.html\"><b>MapleLeaf</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a maple leaf.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fillmapleleaf.html\"><b>FillMapleLeaf</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled maple leaf.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_star.html\"><b>Star</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a star.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fillstar.html\"><b>FillStar</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws a filled star.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_fill.html\"><b>Fill</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Does a flood fill.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"draw_text.html\"><b>Text</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Draws text as graphics</td>\n</tr>\n</table>",
+      "text_content": "Cls Clears the screen to color 0.Dot Draws a dot.Line Draws a line.DashedLine Draws a dashed or dotted line.ThickLine Draws a thick line.Box Draws a box.FillBox Draws a filled box.Oval Draws an oval.FillOval Draws a filled oval.Arc Draws an arc.FillArc Draws a filled arc or a wedge.Polygon Draws a polygon.FillPolygon Draws a filled polygon.MapleLeaf Draws a maple leaf.FillMapleLeaf Draws a filled maple leaf.Star Draws a star.FillStar Draws a filled star.Fill Does a flood fill.Text Draws text as graphics",
+      "mdown_content": "[draw_cls.html](**Cls**) Clears the screen to color 0.[draw_dot.html](**Dot**) Draws a dot.[draw_line.html](**Line**) Draws a line.[draw_dashedline.html](**DashedLine**) Draws a dashed or dotted line.[draw_thickline.html](**ThickLine**) Draws a thick line.[draw_box.html](**Box**) Draws a box.[draw_fillbox.html](**FillBox**) Draws a filled box.[draw_oval.html](**Oval**) Draws an oval.[draw_filloval.html](**FillOval**) Draws a filled oval.[draw_arc.html](**Arc**) Draws an arc.[draw_fillarc.html](**FillArc**) Draws a filled arc or a wedge.[draw_polygon.html](**Polygon**) Draws a polygon.[draw_fillpolygon.html](**FillPolygon**) Draws a filled polygon.[draw_mapleleaf.html](**MapleLeaf**) Draws a maple leaf.[draw_fillmapleleaf.html](**FillMapleLeaf**) Draws a filled maple leaf.[draw_star.html](**Star**) Draws a star.[draw_fillstar.html](**FillStar**) Draws a filled star.[draw_fill.html](**Fill**) Does a flood fill.[draw_text.html](**Text**) Draws text as graphics"
+    }
+  ]
 }

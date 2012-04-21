@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>returnStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>return</b></font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *returnStatement* is:\n\n \n**return**"
+      "text_content": " A returnStatement is:\r\n return",
+      "mdown_content": "A *returnStatement* is:\n **return**"
     },
     {
       "title": "Description",
       "raw_content": "A <b>return</b> statement terminates the <b>procedure</b> (or main program) in which it appears. Ordinarily, a procedure (or main program) terminates by reaching its end; the <b>return</b> statement is used to cause early termination.<p>\r\n</p>",
+      "text_content": " A return statement terminates the procedure (or main program) in which it appears. Ordinarily, a procedure (or main program) terminates by reaching its end; the return statement is used to cause early termination.\r\n",
       "mdown_content": "A **return** statement terminates the **procedure** (or main program) in which it appears. Ordinarily, a procedure (or main program) terminates by reaching its end; the **return** statement is used to cause early termination."
     },
     {
@@ -18,11 +20,13 @@
         "        procedure double\r\n            if errorHasOccurred then\r\n                return  % Terminate this procedure\r\n            end if\r\n             handle usual case in this procedure \r\n        end double"
       ],
       "raw_content": "This procedure takes no action if the <i>errorHasOccurred </i>flag has been set to true.<p>\r\n</p>",
+      "text_content": " This procedure takes no action if the errorHasOccurred flag has been set to true.\r\n\r\n",
       "mdown_content": "This procedure takes no action if the *errorHasOccurred *flag has been set to true."
     },
     {
       "title": "Details",
       "raw_content": "A <b>return</b> must not appear as a statement in (the outermost level of) a module, nor can it appear in a <b>function</b>.<p>\r\n</p>",
+      "text_content": " A return must not appear as a statement in (the outermost level of) a module, nor can it appear in a function.\r\n",
       "mdown_content": "A **return** must not appear as a statement in (the outermost level of) a module, nor can it appear in a **function**."
     }
   ]

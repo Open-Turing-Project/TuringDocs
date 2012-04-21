@@ -1,8 +1,22 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "PC",
   "fileName": "pcmodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.<p>\r\nAll routines in the <b>PC</b> unit are exported qualified (and thus must be prefaced with \"<b>PC.</b>\").</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.\r\nAll routines in the PC unit are exported qualified (and thus must be prefaced with \"PC.\").\r\n",
+      "mdown_content": "This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.\nAll routines in the **PC** unit are exported qualified (and thus must be prefaced with \"**PC.**\")."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "pc_parallelget",
+        "pc_parallelput"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"pc_parallelget.html\"><b>ParallelGet</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the value of the pins set on the parallel port.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"pc_parallelput.html\"><b>ParallelPut</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the values of the pins on the parallel port.</td>\n</tr>\n</table>",
+      "text_content": "ParallelGet Returns the value of the pins set on the parallel port.ParallelPut Sets the values of the pins on the parallel port.",
+      "mdown_content": "[pc_parallelget.html](**ParallelGet**) Returns the value of the pins set on the parallel port.[pc_parallelput.html](**ParallelPut**) Sets the values of the pins on the parallel port."
+    }
+  ]
 }

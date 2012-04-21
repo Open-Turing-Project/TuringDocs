@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetBackgroundColor</b> (<i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.SetBackgroundColor (Color : int)\r\n",
       "mdown_content": "**GUI.SetBackgroundColor** (*Color* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Changes the background colour of the currently-selected window to the color specified by <i>Color</i>. This does <i>not</i> change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.<p>\r\nFor indented and extended items, the background color is assumed to be set to <i>gray</i>.</p>\n<p>\r\nThe alternate spelling is <b>GUI.SetBackgroundColour</b></p>\n<p>\r\n</p>",
-      "mdown_content": "Changes the background colour of the currently-selected window to the color specified by *Color*. This does *not* change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.\nFor indented and extended items, the background color is assumed to be set to *gray*.\n\nThe alternate spelling is **GUI.SetBackgroundColour**\n"
+      "text_content": " Changes the background colour of the currently-selected window to the color specified by Color. This does not change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.\r\nFor indented and extended items, the background color is assumed to be set to gray.\r\nThe alternate spelling is GUI.SetBackgroundColour\r\n",
+      "mdown_content": "Changes the background colour of the currently-selected window to the color specified by *Color*. This does *not* change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.\nFor indented and extended items, the background color is assumed to be set to *gray*.\nThe alternate spelling is **GUI.SetBackgroundColour**"
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.CreateFrame </b>for an example of <b>GUI.SetBackgroundColour</b>.<p>\r\n</p>",
+      "text_content": " See GUI.CreateFrame for an example of GUI.SetBackgroundColour.\r\n",
       "mdown_content": "See **GUI.CreateFrame **for an example of **GUI.SetBackgroundColour**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedures by calling <b>GUI.SetBackgroundColor</b>, not by calling <b>SetBackgroundColor</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.SetBackgroundColor**, not by calling **SetBackgroundColor**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the procedures by calling GUI.SetBackgroundColor, not by calling SetBackgroundColor.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.SetBackgroundColor**, not by calling **SetBackgroundColor**."
     }
   ]
 }

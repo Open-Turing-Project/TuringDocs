@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>nil</b> [ (<i>collectionOrClassId</i> ) ]<p>\r\n</p></font>",
+      "text_content": " nil [ (collectionOrClassId ) ]\r\n",
       "mdown_content": "**nil** [ (*collectionOrClassId* ) ]"
     },
     {
       "title": "Description",
       "raw_content": "The <b>nil</b> pointer does not locate any element (object). Pointers locate items in collections, classes and types. The <i>collectionOrClassId</i> is optional.<p>\r\nThis <b>nil</b> pointer is distinct from pointers to actual elements, and it can be compared to these pointers. It is also distinct from the uninitialized pointer value.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **nil** pointer does not locate any element (object). Pointers locate items in collections, classes and types. The *collectionOrClassId* is optional.\nThis **nil** pointer is distinct from pointers to actual elements, and it can be compared to these pointers. It is also distinct from the uninitialized pointer value.\n"
+      "text_content": " The nil pointer does not locate any element (object). Pointers locate items in collections, classes and types. The collectionOrClassId is optional.\r\nThis nil pointer is distinct from pointers to actual elements, and it can be compared to these pointers. It is also distinct from the uninitialized pointer value.\r\n",
+      "mdown_content": "The **nil** pointer does not locate any element (object). Pointers locate items in collections, classes and types. The *collectionOrClassId* is optional.\nThis **nil** pointer is distinct from pointers to actual elements, and it can be compared to these pointers. It is also distinct from the uninitialized pointer value."
     },
     {
       "title": "Example",
@@ -18,12 +20,14 @@
         "        var c : collection of\r\n            record\r\n                name : string ( 50 )\r\n                next : pointer to c\r\n            end record\r\n        var first : pointer to c := nil ( c )"
       ],
       "raw_content": "In this example, the pointer called <i>first</i> is set to the nil pointer of collection <i>c</i>, that is, to <b>nil</b>(c).<p>\r\n</p>",
+      "text_content": " In this example, the pointer called first is set to the nil pointer of collection c, that is, to nil(c).\r\n\r\n",
       "mdown_content": "In this example, the pointer called *first* is set to the nil pointer of collection *c*, that is, to **nil**(c)."
     },
     {
       "title": "Details",
       "raw_content": "See also collection, class and pointer. When nil is written without the <i>collectionOrClassId</i>, it can be assigned to a pointer to any collection, class or type.<p>\r\nThe type of <b>nil</b> without the <i>collectionOrClassId</i> is effectively a pointer to <i>everyClass</i>, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.</p>\n<p>\r\nTuring allows you to write <b>nil</b> (<i>id</i>) after a forward declaration of <i>id</i> (the name of a collection, class or type) before (and after) the resolution of the <i>id</i>.</p>\n<p>\r\n</p>",
-      "mdown_content": "See also collection, class and pointer. When nil is written without the *collectionOrClassId*, it can be assigned to a pointer to any collection, class or type.\nThe type of **nil** without the *collectionOrClassId* is effectively a pointer to *everyClass*, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.\n\nTuring allows you to write **nil** (*id*) after a forward declaration of *id* (the name of a collection, class or type) before (and after) the resolution of the *id*.\n"
+      "text_content": " See also collection, class and pointer. When nil is written without the collectionOrClassId, it can be assigned to a pointer to any collection, class or type.\r\nThe type of nil without the collectionOrClassId is effectively a pointer to everyClass, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.\r\nTuring allows you to write nil (id) after a forward declaration of id (the name of a collection, class or type) before (and after) the resolution of the id.\r\n",
+      "mdown_content": "See also collection, class and pointer. When nil is written without the *collectionOrClassId*, it can be assigned to a pointer to any collection, class or type.\nThe type of **nil** without the *collectionOrClassId* is effectively a pointer to *everyClass*, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.\nTuring allows you to write **nil** (*id*) after a forward declaration of *id* (the name of a collection, class or type) before (and after) the resolution of the *id*."
     }
   ]
 }

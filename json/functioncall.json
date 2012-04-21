@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>functionCall</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>functionId</i> [ ( [ <i>expn </i>{ , <i>expn</i> } ] ) ]</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *functionCall* is:\n\n \n*functionId* [ ( [ *expn *{ , *expn* } ] ) ]"
+      "text_content": " A functionCall is:\r\n functionId [ ( [ expn { , expn } ] ) ]",
+      "mdown_content": "A *functionCall* is:\n *functionId* [ ( [ *expn *{ , *expn* } ] ) ]"
     },
     {
       "title": "Description",
       "raw_content": "A function call is an expression that calls (invokes or activates) a <b>function</b>. If the function has parameters, a parenthesized list of expressions (<i>expns</i>) must follow the function's name (<i>functionId</i>).<p>\r\n</p>",
+      "text_content": " A function call is an expression that calls (invokes or activates) a function. If the function has parameters, a parenthesized list of expressions (expns) must follow the function's name (functionId).\r\n",
       "mdown_content": "A function call is an expression that calls (invokes or activates) a **function**. If the function has parameters, a parenthesized list of expressions (*expns*) must follow the function's name (*functionId*)."
     },
     {
@@ -18,6 +20,7 @@
         "        function firstWord ( str : string ): string\r\n            for i : 1 .. length ( str )\r\n                if str ( i ) = \" \" then\r\n                    result str ( 1 .. i - 1)\r\n                end if\r\n            end for\r\n        end firstWord\r\n        \r\n        put \"The first word is: \", firstWord (\"Henry Hudson\")   \r\n                        % The output is Henry."
       ],
       "raw_content": "This function takes a string containing a blank and returns the first word in the string (all the characters up to the first blank).<p>\r\n</p>",
+      "text_content": " This function takes a string containing a blank and returns the first word in the string (all the characters up to the first blank).\r\n\r\n",
       "mdown_content": "This function takes a string containing a blank and returns the first word in the string (all the characters up to the first blank)."
     },
     {
@@ -27,7 +30,8 @@
         "        (a) classId ( p ) . functionId [ ( [ expn {, expn } ] ) ]\r\n        (b) p -> functionId [ ( [ expn {, expn } ] ) ]"
       ],
       "raw_content": "The parameter declared in the header of a function, is a <i>formal</i> parameter, for example, <i>str </i>above is a formal parameter. Each expression in the call is an <i>actual</i> parameter, for example, <i>sample</i> above is an actual parameter.<p>\r\nEach actual parameter passed to its non-<b>var</b> formal parameter must be assignable to that parameter (see <i>assignability </i>for details). See also <i>functionDeclaration</i> and <i>procedureDeclaration</i>.</p>\n<p>\r\nIn this explanation of <i>functionCall</i>, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the <i>functionCall </i>is:</p>\n<p>\r\n</p>\r\nIn other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the <i>functionCall </i>is one of:<p>\r\n</p>\r\nIn these <i>p</i> must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).<p>\r\n</p>",
-      "mdown_content": "The parameter declared in the header of a function, is a *formal* parameter, for example, *str *above is a formal parameter. Each expression in the call is an *actual* parameter, for example, *sample* above is an actual parameter.\nEach actual parameter passed to its non-**var** formal parameter must be assignable to that parameter (see *assignability *for details). See also *functionDeclaration* and *procedureDeclaration*.\n\nIn this explanation of *functionCall*, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the *functionCall *is:\n\n\nIn other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the *functionCall *is one of:\n\nIn these *p* must be a pointer value that locates an object in the class. Form (b) is a short form for form (a)."
+      "text_content": " The parameter declared in the header of a function, is a formal parameter, for example, str above is a formal parameter. Each expression in the call is an actual parameter, for example, sample above is an actual parameter.\r\nEach actual parameter passed to its non-var formal parameter must be assignable to that parameter (see assignability for details). See also functionDeclaration and procedureDeclaration.\r\nIn this explanation of functionCall, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the functionCall is:\r\n\r\nIn other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the functionCall is one of:\r\n\r\nIn these p must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).\r\n",
+      "mdown_content": "The parameter declared in the header of a function, is a *formal* parameter, for example, *str *above is a formal parameter. Each expression in the call is an *actual* parameter, for example, *sample* above is an actual parameter.\nEach actual parameter passed to its non-**var** formal parameter must be assignable to that parameter (see *assignability *for details). See also *functionDeclaration* and *procedureDeclaration*.\nIn this explanation of *functionCall*, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the *functionCall *is:\nIn other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the *functionCall *is one of:\nIn these *p* must be a pointer value that locates an object in the class. Form (b) is a short form for form (a)."
     },
     {
       "title": "See also",
@@ -35,6 +39,7 @@
         "class"
       ],
       "raw_content": "<b><a href=\"class.html\">class</a></b>.<p>\r\n</p>",
+      "text_content": " class.\r\n",
       "mdown_content": "**[class.html](class)**."
     }
   ]

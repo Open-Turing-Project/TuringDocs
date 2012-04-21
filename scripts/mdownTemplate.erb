@@ -1,0 +1,21 @@
+<%
+# Template to format the documentation in markdown format 
+%>
+#<%= page[:title] %>
+<% page[:sections].each do |sect| %>
+<%# Don't add empty sections %>
+<% if sect[:mdown_content] || sect[:images] || sect[:code] %>
+
+##<%= sect[:title] %>
+<%= sect[:mdown_content] || "" %>
+
+<%# Add all the images %>
+<% (sect[:images] || []).each do |image| %>
+![Doc image](<%= image %>)
+<% end %>
+<%# Add code blocks %>
+<% (sect[:code] || []).each do |code| %>
+<%= code %>
+<% end %>
+<% end %>
+<% end %>

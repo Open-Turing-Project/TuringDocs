@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetColor</b> (<i>widgetID</i> : <b>int</b>, <i>clrNumber</i> : <b>int</b>)<p></p></font>",
+      "text_content": "GUI.SetColor (widgetID : int, clrNumber : int)\r\n    ",
       "mdown_content": "**GUI.SetColor** (*widgetID* : **int**, *clrNumber* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetColor</b> procedure is used buttons to change the\r\n          color of a button.  The color is specified by the <i>clrNumber</i>\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by <i>clrNumber</i>, so in general you should use\r\n          brighter colors for buttons.<p>\r\n    </p>",
-      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change the\ncolor of a button.  The color is specified by the *clrNumber*\nparameter.  The edges of the button are a darker version of the \ncolor specified by *clrNumber*, so in general you should use\nbrighter colors for buttons.\n"
+      "text_content": "The GUI.SetColor procedure is used buttons to change the\r\n          color of a button.  The color is specified by the clrNumber\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by clrNumber, so in general you should use\r\n          brighter colors for buttons.\r\n    ",
+      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the *clrNumber*parameter.  The edges of the button are a darker version of the color specified by *clrNumber*, so in general you should usebrighter colors for buttons."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        import GUI\r\n\r\n        procedure DoNothing\r\n        end DoNothing\r\n\r\n        var b1 := GUI.CreateButton (100, 100, 0, \"Push Me\", DoNothing)\r\n        GUI.SetColor (b1, brightred)\r\n        var b2 := GUI.CreateButton (100, 140, 0, \"Push Me\", DoNothing)\r\n        GUI.SetColor (b2, brightgreen)\r\n        var b3 := GUI.CreateButton (100, 180, 0, \"Push Me\", DoNothing)\r\n        GUI.SetColor (b3, brightblue)\r\n\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "This program displays three buttons with different colors.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "This program displays three buttons with different colors.\n\n\n"
+      "text_content": "This program displays three buttons with different colors.\r\n\r\n    ",
+      "mdown_content": "This program displays three buttons with different colors.\n"
     },
     {
       "title": "Execute",
@@ -33,7 +36,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.SetColor</b>, not by calling <b>SetColor</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.SetColor**, not by calling **SetColor**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.SetColor, not by calling SetColor.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetColor**, not by calling **SetColor**."
     }
   ]
 }

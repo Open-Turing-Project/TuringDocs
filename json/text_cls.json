@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.Cls</b><p>\r\n</p></font>",
+      "text_content": " Text.Cls\r\n",
       "mdown_content": "**Text.Cls**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.Cls </b>(clear screen) procedure is used to blank the screen to the text background color. The cursor is set to the top left (to row 1, column 1).<p>\r\n</p>",
+      "text_content": " The Text.Cls (clear screen) procedure is used to blank the screen to the text background color. The cursor is set to the top left (to row 1, column 1).\r\n",
       "mdown_content": "The **Text.Cls **(clear screen) procedure is used to blank the screen to the text background color. The cursor is set to the top left (to row 1, column 1)."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or \"<i>graphics</i>\" mode. If the screen mode has not been set, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details.<p>\r\n</p>",
+      "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If the screen mode has not been set, it will automatically be set to \"screen\" mode. See View.Set for details.\r\n",
       "mdown_content": "The screen should be in a \"*screen*\" or \"*graphics*\" mode. If the screen mode has not been set, it will automatically be set to \"*screen*\" mode. See **View.Set **for details."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.Cls</b>, not by calling <b>Cls</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.Cls**, not by calling **Cls**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Text.Cls, not by calling Cls.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.Cls**, not by calling **Cls**."
     }
   ]
 }

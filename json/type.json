@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>typeDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>type</b> <i>id</i> : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>type</b> <i>id</i> : <b>forward</b></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "A *typeDeclaration* is one of:\n\n \n(a)\n**type** *id* : *typeSpec*\n \n(b)\n**type** *id* : **forward**"
+      "text_content": " A typeDeclaration is one of:\r\n (a)type id : typeSpec (b)type id : forward",
+      "mdown_content": "A *typeDeclaration* is one of:\n (a)**type** *id* : *typeSpec* (b)**type** *id* : **forward**"
     },
     {
       "title": "Description",
       "raw_content": "A type declaration gives a name to a type. This name can be used in place of the type.<p>\r\n</p>",
+      "text_content": " A type declaration gives a name to a type. This name can be used in place of the type.\r\n",
       "mdown_content": "A type declaration gives a name to a type. This name can be used in place of the type."
     },
     {
@@ -18,12 +20,14 @@
         "        type nameType : string ( 30 )\r\n        type range : 0 .. 150\r\n        type entry :\r\n            record\r\n                name : nameType\r\n                age : int\r\n            end record"
       ],
       "raw_content": "<p>\r\n</p>",
+      "text_content": "\r\n\r\n",
       "mdown_content": ""
     },
     {
       "title": "Details",
       "raw_content": "The keyword <b>pervasive</b> can be inserted just after <b>type</b>. When this is done, the type is visible inside all subconstructs of the type scope. Without <b>pervasive</b>, the type is not visible inside modules, monitors and classes unless explicitly imported. Pervasive types need not be imported. You can abbreviate <b>pervasive</b> as an asterisk (<b>*</b>).<p>\r\nA <b>forward</b> type allows pointers to be declared to the <b>type</b> before the type is <i>resolved</i>. To resolve a <b>type</b>, you must follow a <b>forward</b> with a declaration of the same name and in the same scope. This type declaration must include a <i>typeSpec</i>.</p>\n<p>\r\n</p>",
-      "mdown_content": "The keyword **pervasive** can be inserted just after **type**. When this is done, the type is visible inside all subconstructs of the type scope. Without **pervasive**, the type is not visible inside modules, monitors and classes unless explicitly imported. Pervasive types need not be imported. You can abbreviate **pervasive** as an asterisk (*****).\nA **forward** type allows pointers to be declared to the **type** before the type is *resolved*. To resolve a **type**, you must follow a **forward** with a declaration of the same name and in the same scope. This type declaration must include a *typeSpec*.\n"
+      "text_content": " The keyword pervasive can be inserted just after type. When this is done, the type is visible inside all subconstructs of the type scope. Without pervasive, the type is not visible inside modules, monitors and classes unless explicitly imported. Pervasive types need not be imported. You can abbreviate pervasive as an asterisk (*).\r\nA forward type allows pointers to be declared to the type before the type is resolved. To resolve a type, you must follow a forward with a declaration of the same name and in the same scope. This type declaration must include a typeSpec.\r\n",
+      "mdown_content": "The keyword **pervasive** can be inserted just after **type**. When this is done, the type is visible inside all subconstructs of the type scope. Without **pervasive**, the type is not visible inside modules, monitors and classes unless explicitly imported. Pervasive types need not be imported. You can abbreviate **pervasive** as an asterisk (*****).\nA **forward** type allows pointers to be declared to the **type** before the type is *resolved*. To resolve a **type**, you must follow a **forward** with a declaration of the same name and in the same scope. This type declaration must include a *typeSpec*."
     }
   ]
 }

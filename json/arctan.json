@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>arctan</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
+      "text_content": " arctan (r : real) : real\r\n",
       "mdown_content": "**arctan** (*r* : **real**) : **real**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>arctan</b> function is used to find the arc tangent of a value. The result is given in radians. For example, <b>arctan</b> (1) is <font face=\"symbol\">p</font> / 4.<p>\r\n</p>",
+      "text_content": " The arctan function is used to find the arc tangent of a value. The result is given in radians. For example, arctan (1) is p / 4.\r\n",
       "mdown_content": "The **arctan** function is used to find the arc tangent of a value. The result is given in radians. For example, **arctan** (1) is p / 4."
     },
     {
@@ -18,6 +20,7 @@
         "        for i : 0 .. 12\r\n            const arg := i / 4\r\n            put \"Arc tangent of \", arg, \" is \",\r\n                arctan (arg), \" radians\"\r\n        end for"
       ],
       "raw_content": "This program prints out the arctangent of 0 through 3 in radians.<p>\r\n</p>",
+      "text_content": " This program prints out the arctangent of 0 through 3 in radians.\r\n\r\n",
       "mdown_content": "This program prints out the arctangent of 0 through 3 in radians."
     },
     {
@@ -39,7 +42,8 @@
         "mathmodule"
       ],
       "raw_content": "the <b><a href=\"arcsin.html\">arcsin</a></b> and <b><a href=\"arccos.html\">arccos</a></b> functions for calculating arcsine and arccosine<p>\r\nthe <b><a href=\"arctand.html\">arctand</a></b> function which finds the arc tangent of a value with the result given in degrees. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "the **[arcsin.html](arcsin)** and **[arccos.html](arccos)** functions for calculating arcsine and arccosine\nthe **[arctand.html](arctand)** function which finds the arc tangent of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "text_content": "the arcsin and arccos functions for calculating arcsine and arccosine\r\nthe arctand function which finds the arc tangent of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
+      "mdown_content": "the **[arcsin.html](arcsin)** and **[arccos.html](arccos)** functions for calculating arcsine and arccosine\nthe **[arctand.html](arctand)** function which finds the arc tangent of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
     }
   ]
 }

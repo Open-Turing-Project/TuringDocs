@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>lower</b> (<i>reference</i> [ , <i>dimension</i> ] ) : <b>int</b><p>\r\n</p></font>",
+      "text_content": " lower (reference [ , dimension ] ) : int\r\n",
       "mdown_content": "**lower** (*reference* [ , *dimension* ] ) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>lower</b> attribute is used to find the lower bound of an array, string, <b>char</b>(<i>n</i>) or non-opaque subrange type. Since the lower bound is necessarily known at compile time, <b>lower</b> is rarely used.<p>\r\n</p>",
+      "text_content": " The lower attribute is used to find the lower bound of an array, string, char(n) or non-opaque subrange type. Since the lower bound is necessarily known at compile time, lower is rarely used.\r\n",
       "mdown_content": "The **lower** attribute is used to find the lower bound of an array, string, **char**(*n*) or non-opaque subrange type. Since the lower bound is necessarily known at compile time, **lower** is rarely used."
     },
     {
@@ -19,6 +21,7 @@
         "upper"
       ],
       "raw_content": "<b><a href=\"upper.html\">upper</a></b> which finds the <a href=\"upper.html\">upper</a> bound.<p>\r\n</p>",
+      "text_content": " upper which finds the upper bound.\r\n",
       "mdown_content": "**[upper.html](upper)** which finds the [upper.html](upper) bound."
     }
   ]

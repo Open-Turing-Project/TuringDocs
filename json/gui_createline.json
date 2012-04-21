@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateLine</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>kind</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "text_content": "GUI.CreateLine (x1, y1, x2, y2, kind : int) : int\r\n    ",
       "mdown_content": "**GUI.CreateLine** (*x1*, *y1*, *x2*, *y2*, *kind* : **int**) : **int**"
     },
     {
@@ -13,7 +14,8 @@
         "gui_createline01.gif"
       ],
       "raw_content": "Creates a line and returns the line's widget ID.<p>\r\n\t  Lines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements. </p>\n<p>\r\n\t  </p>\n<center></center>\r\n\t  <center><b>Three Types of Lines</b></center>\n<p>\r\n\t  Lines are passive widgets, meaning that they do not respond to button clicks or keystrokes.</p>\n<p>\r\n\t  The <i>x1</i> and <i>y1</i> parameters specify one end-point of the line and the <i>x2</i> and <i>y2</i> parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The <i>kind</i> parameter specifies the type of line. This is one of 0, <i>GUI.LINE</i>, <i>GUI.INDENT</i> or <i>GUI.EXDENT</i>. A <i>kind</i> of 0 is the default and is the same as <i>GUI.LINE</i>. </p>\n<p>\r\n\t  <i>GUI.INDENT</i> and <i>GUI.EXDENT</i> only display properly if the background colour has been set to <i>gray</i> using <b>GUI.SetBackgroundColor</b>. <i>GUI.INDENT</i> makes the line appear indented or recessed. <i>GUI.EXDENT</i> makes the line appear to stand out from the window.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Creates a line and returns the line's widget ID.\nLines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements. \n\n\n\n**Three Types of Lines**\n\nLines are passive widgets, meaning that they do not respond to button clicks or keystrokes.\n\nThe *x1* and *y1* parameters specify one end-point of the line and the *x2* and *y2* parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The *kind* parameter specifies the type of line. This is one of 0, *GUI.LINE*, *GUI.INDENT* or *GUI.EXDENT*. A *kind* of 0 is the default and is the same as *GUI.LINE*. \n\n*GUI.INDENT* and *GUI.EXDENT* only display properly if the background colour has been set to *gray* using **GUI.SetBackgroundColor**. *GUI.INDENT* makes the line appear indented or recessed. *GUI.EXDENT* makes the line appear to stand out from the window.\n\n"
+      "text_content": "Creates a line and returns the line's widget ID.\r\n\t  Lines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements. \r\n\t  \r\n\t  Three Types of Lines\r\n\t  Lines are passive widgets, meaning that they do not respond to button clicks or keystrokes.\r\n\t  The x1 and y1 parameters specify one end-point of the line and the x2 and y2 parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The kind parameter specifies the type of line. This is one of 0, GUI.LINE, GUI.INDENT or GUI.EXDENT. A kind of 0 is the default and is the same as GUI.LINE. \r\n\t  GUI.INDENT and GUI.EXDENT only display properly if the background colour has been set to gray using GUI.SetBackgroundColor. GUI.INDENT makes the line appear indented or recessed. GUI.EXDENT makes the line appear to stand out from the window.\r\n    ",
+      "mdown_content": "Creates a line and returns the line's widget ID.\nLines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements. \n**Three Types of Lines**\nLines are passive widgets, meaning that they do not respond to button clicks or keystrokes.\nThe *x1* and *y1* parameters specify one end-point of the line and the *x2* and *y2* parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The *kind* parameter specifies the type of line. This is one of 0, *GUI.LINE*, *GUI.INDENT* or *GUI.EXDENT*. A *kind* of 0 is the default and is the same as *GUI.LINE*. \n*GUI.INDENT* and *GUI.EXDENT* only display properly if the background colour has been set to *gray* using **GUI.SetBackgroundColor**. *GUI.INDENT* makes the line appear indented or recessed. *GUI.EXDENT* makes the line appear to stand out from the window."
     },
     {
       "title": "Example",
@@ -21,7 +23,8 @@
         "        import GUI\r\n        View.Set (\"graphics:180;100,nobuttonbar\") \r\n        GUI.SetBackgroundColor (gray)\r\n        var line, indentLine, exdentLine : int\r\n        var lineLabel, indentLabel, exdentLabel : int\r\n        \r\n        line := GUI.CreateLine (30, 20, 30, 90, 0)\r\n        indentLine := GUI.CreateLine (90, 20, 90, 90, GUI.INDENT)\r\n        exdentLine := GUI.CreateLine (150, 20, 150, 90, GUI.EXDENT)% Label the lines.\r\n        lineLabel := GUI.CreateLabelFull (30, 15, \"Line\", 0, 0,\r\n            GUI.CENTER + GUI.TOP, 0)\r\n        indentLabel := GUI.CreateLabelFull (90, 15, \"Indent\", 0, 0, \r\n            GUI.CENTER + GUI.TOP, 0)\r\n        exdentLabel := GUI.CreateLabelFull (150, 15, \"Exdent\", 0, 0, \r\n            GUI.CENTER + GUI.TOP, 0)"
       ],
       "raw_content": "The following program draws three lines with three labels in the window.<p>\r\n</p>\n<p>\r\n    </p>",
-      "mdown_content": "The following program draws three lines with three labels in the window.\n\n\n"
+      "text_content": "The following program draws three lines with three labels in the window.\r\n\r\n    ",
+      "mdown_content": "The following program draws three lines with three labels in the window.\n"
     },
     {
       "title": "Execute",
@@ -36,17 +39,20 @@
     {
       "title": "Details",
       "raw_content": "When <b>GUI.CreateLine</b><i> </i>is called, the newly created line will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>\r\n  \t  A line widget is a passive widget and cannot be enabled or disabled.</p>\n<p>\r\n    </p>",
-      "mdown_content": "When **GUI.CreateLine*** *is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. \nA line widget is a passive widget and cannot be enabled or disabled.\n\n"
+      "text_content": "When GUI.CreateLine is called, the newly created line will be displayed immediately unless GUI.DisplayWhenCreated has been called with the display parameter set to false. \r\n  \t  A line widget is a passive widget and cannot be enabled or disabled.\r\n    ",
+      "mdown_content": "When **GUI.CreateLine*** *is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. \nA line widget is a passive widget and cannot be enabled or disabled."
     },
     {
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a line as the <i>widgetID</i> parameter:<p>\r\n          </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\n<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,\r\n\t\t  <b>GUI.GetX</b>, <b>GUI.GetY</b>, <b>GUI.GetWidth</b>,\r\n\t\t  <b>GUI.GetHeight</b>, <b>GUI.SetPosition</b>, \r\n\t\t  <b>GUI.SetSize</b>, <b>GUI.SetPositionAndSize</b>\n</td>\r\n\t    </tr></table>\n<p>\r\n    </p>",
-      "mdown_content": "The following GUI subprograms can be called with a line as the *widgetID* parameter:\n\n \n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,\n**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,\n**GUI.GetHeight**, **GUI.SetPosition**, \n**GUI.SetSize**, **GUI.SetPositionAndSize**\n\n\n"
+      "text_content": "The following GUI subprograms can be called with a line as the widgetID parameter:\r\n           \r\n              GUI.Show, GUI.Hide, GUI.Dispose,\r\n\t\t  GUI.GetX, GUI.GetY, GUI.GetWidth,\r\n\t\t  GUI.GetHeight, GUI.SetPosition, \r\n\t\t  GUI.SetSize, GUI.SetPositionAndSize\r\n\t    \r\n    ",
+      "mdown_content": "The following GUI subprograms can be called with a line as the *widgetID* parameter:\n **GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling <b>GUI.CreateLine</b>, not by calling <b>CreateLine</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateLine**, not by calling **CreateLine**.\n\n"
+      "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling GUI.CreateLine, not by calling CreateLine.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateLine**, not by calling **CreateLine**."
     }
   ]
 }

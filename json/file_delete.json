@@ -5,16 +5,19 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Delete</b> (<i>filePathName</i> : <b>string</b>)<p>\r\n</p></font>",
+      "text_content": " File.Delete (filePathName : string)\r\n",
       "mdown_content": "**File.Delete** (*filePathName* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Delete</b> is used to delete the file specified by the parameter <i>filePathName</i>. This is the equivalent of doing a <b>del</b> in DOS or <b>rm</b> in UNIX.<p>\r\n</p>",
+      "text_content": " File.Delete is used to delete the file specified by the parameter filePathName. This is the equivalent of doing a del in DOS or rm in UNIX.\r\n",
       "mdown_content": "**File.Delete** is used to delete the file specified by the parameter *filePathName*. This is the equivalent of doing a **del** in DOS or **rm** in UNIX."
     },
     {
       "title": "Details",
       "raw_content": "If the <b>File.Delete</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "text_content": " If the File.Delete call fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
       "mdown_content": "If the **File.Delete** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
@@ -23,17 +26,20 @@
         "        File.Delete (\"information\")\r\n        if Error.Last = eNoError then\r\n            put \"File delete\"\r\n        else\r\n            put \"Did not delete the file.\"\r\n            put \"Error: \", Error.LastMsg\r\n        end if"
       ],
       "raw_content": "This program deletes the file called <i>information</i>.<p>\r\n</p>",
+      "text_content": " This program deletes the file called information.\r\n\r\n  ",
       "mdown_content": "This program deletes the file called *information*."
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, and then deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Delete.t;File.Delete Example\"></object></p>\n<p></p>",
-      "mdown_content": "An example program is available that creates a file in the current \ndirectory, and then deletes the file using **File.Delete**.\n\n"
+      "text_content": "An example program is available that creates a file in the current \r\n        directory, and then deletes the file using File.Delete.\r\n        \r\n          ",
+      "mdown_content": "An example program is available that creates a file in the current directory, and then deletes the file using **File.Delete**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Delete</b>, not by calling <b>File</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Delete**, not by calling **File**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling File.Delete, not by calling File.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Delete**, not by calling **File**."
     }
   ]
 }

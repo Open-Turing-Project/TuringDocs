@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileStop</b><p></p></font>",
+      "text_content": "Music.PlayFileStop\r\n    ",
       "mdown_content": "**Music.PlayFileStop**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.PlayFileStop</b> procedure is used to to stop all \r\n          music files currently playing. This includes processes that are\r\n\t  executing the <b>Music.PlayFile</b> procedure (they exit immediately\r\n\t  and start executing the next statement in the process), and the\r\n\t  <b>Music.PlayFileReturn</b> and <b>Music.PlayFileLoop</b>\r\n\t  statements, which simply stop playing the music.<p>\r\n    </p>",
-      "mdown_content": "The **Music.PlayFileStop** procedure is used to to stop all \nmusic files currently playing. This includes processes that are\nexecuting the **Music.PlayFile** procedure (they exit immediately\nand start executing the next statement in the process), and the\n**Music.PlayFileReturn** and **Music.PlayFileLoop**\nstatements, which simply stop playing the music.\n"
+      "text_content": "The Music.PlayFileStop procedure is used to to stop all \r\n          music files currently playing. This includes processes that are\r\n\t  executing the Music.PlayFile procedure (they exit immediately\r\n\t  and start executing the next statement in the process), and the\r\n\t  Music.PlayFileReturn and Music.PlayFileLoop\r\n\t  statements, which simply stop playing the music.\r\n    ",
+      "mdown_content": "The **Music.PlayFileStop** procedure is used to to stop all music files currently playing. This includes processes that areexecuting the **Music.PlayFile** procedure (they exit immediatelyand start executing the next statement in the process), and the**Music.PlayFileReturn** and **Music.PlayFileLoop**statements, which simply stop playing the music."
     },
     {
       "title": "Details",
       "raw_content": "In Turing, a program will not halt execution until all processes \r\n          have terminated. This means that if you are playing background \r\n\t  music, the program will not terminate, even if execution returns \r\n\t  from the main program unless the background music is halted.<p>\r\n    </p>",
-      "mdown_content": "In Turing, a program will not halt execution until all processes \nhave terminated. This means that if you are playing background \nmusic, the program will not terminate, even if execution returns \nfrom the main program unless the background music is halted.\n"
+      "text_content": "In Turing, a program will not halt execution until all processes \r\n          have terminated. This means that if you are playing background \r\n\t  music, the program will not terminate, even if execution returns \r\n\t  from the main program unless the background music is halted.\r\n    ",
+      "mdown_content": "In Turing, a program will not halt execution until all processes have terminated. This means that if you are playing background music, the program will not terminate, even if execution returns from the main program unless the background music is halted."
     },
     {
       "title": "Example",
@@ -23,7 +26,8 @@
         "        var finished : boolean := false\r\n\r\n\t% Loop playing background music until 'finished' is true.\r\n        process BackgroundMusic\r\n            loop\r\n                exit when finished\r\n                Music.PlayFile (\"background.mid\")\r\n            end loop\r\n        end BackgroundMusic\r\n        \r\n        fork BackgroundMusic    % Start the background music\r\n        Time.Delay (30000)  % Wait for 30 seconds\r\n        \r\n        % Stop the background music.\r\n        finished := true        % The flag must be set first\r\n        Music.PlayFileStop  % Music.PlayFile will return immediately\r\n        "
       ],
       "raw_content": "This program plays the background music for 30 seconds and then \r\n          terminates. Note that it is important to set the flag \r\n\t  (<i>finished</i>) before calling <b>Music.PlayFileStop</b>. \r\n\t  If <b>Music.PlayFileStop</b> comes first, it is possible for \r\n\t  the process to return from <b>Music.PlayFile</b>, loop around, \r\n\t  skip over the <b>exit when</b>, and call <b>Music.PlayFile</b> \r\n\t  again before the <i>finished</i> flag is set.<p>\r\n</p>",
-      "mdown_content": "This program plays the background music for 30 seconds and then \nterminates. Note that it is important to set the flag \n(*finished*) before calling **Music.PlayFileStop**. \nIf **Music.PlayFileStop** comes first, it is possible for \nthe process to return from **Music.PlayFile**, loop around, \nskip over the **exit when**, and call **Music.PlayFile** \nagain before the *finished* flag is set."
+      "text_content": "This program plays the background music for 30 seconds and then \r\n          terminates. Note that it is important to set the flag \r\n\t  (finished) before calling Music.PlayFileStop. \r\n\t  If Music.PlayFileStop comes first, it is possible for \r\n\t  the process to return from Music.PlayFile, loop around, \r\n\t  skip over the exit when, and call Music.PlayFile \r\n\t  again before the finished flag is set.\r\n\r\n    ",
+      "mdown_content": "This program plays the background music for 30 seconds and then terminates. Note that it is important to set the flag (*finished*) before calling **Music.PlayFileStop**. If **Music.PlayFileStop** comes first, it is possible for the process to return from **Music.PlayFile**, loop around, skip over the **exit when**, and call **Music.PlayFile** again before the *finished* flag is set."
     },
     {
       "title": "Execute",
@@ -41,12 +45,14 @@
         "music_playfile"
       ],
       "raw_content": "<b><a href=\"music_playfile.html\">Music.PlayFile</a></b> for playing \r\n\t  music files and a larger example.<p>\r\n    </p>",
-      "mdown_content": "**[music_playfile.html](Music.PlayFile)** for playing \nmusic files and a larger example.\n"
+      "text_content": "Music.PlayFile for playing \r\n\t  music files and a larger example.\r\n    ",
+      "mdown_content": "**[music_playfile.html](Music.PlayFile)** for playing music files and a larger example."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Music.PlayFileStop</b>, not by calling <b>PlayFileStop</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Music.PlayFileStop**, not by calling **PlayFileStop**.\n\n"
+      "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Music.PlayFileStop, not by calling PlayFileStop.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.PlayFileStop**, not by calling **PlayFileStop**."
     }
   ]
 }

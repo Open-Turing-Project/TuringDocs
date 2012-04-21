@@ -5,21 +5,25 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.ScreenSave</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p>\r\n</p></font>",
+      "text_content": " Pic.ScreenSave (x1, y1, x2, y2 : int, fileName : string)\r\n",
       "mdown_content": "**Pic.ScreenSave** (*x1*, *y1*, *x2*, *y2* : **int**, *fileName* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.ScreenSave </b>saves a portion of the screen into a file in a format specified by the file name.<p>\r\nThe picture saved to the file is the portion of the screen defined by the rectangle (<i>x1</i>, <i>y1</i>) - (<i>x2</i>, <i>y2</i>).</p>\n<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>BMP files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr></table>\n<p>\r\n</p>",
-      "mdown_content": "**Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.\nThe picture saved to the file is the portion of the screen defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*).\n\nThe *fileName*parameter must give the format of the file:\n\n\n \nBMP files\n \n\"BMP:filename\" or \"filename.BMP\"\n"
+      "text_content": " Pic.ScreenSave saves a portion of the screen into a file in a format specified by the file name.\r\nThe picture saved to the file is the portion of the screen defined by the rectangle (x1, y1) - (x2, y2).\r\nThe fileNameparameter must give the format of the file:\r\n BMP files \"BMP:filename\" or \"filename.BMP\"\r\n",
+      "mdown_content": "**Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.\nThe picture saved to the file is the portion of the screen defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*).\nThe *fileName*parameter must give the format of the file:\n BMP files \"BMP:filename\" or \"filename.BMP\""
     },
     {
       "title": "Details",
       "raw_content": "Various versions of Turing can save different formats of files. Turing 4.1 for Windows can save BMP. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement saving of GIF pictures until the patents expire in June 2004.<p>\r\n</p>",
+      "text_content": " Various versions of Turing can save different formats of files. Turing 4.1 for Windows can save BMP. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement saving of GIF pictures until the patents expire in June 2004.\r\n",
       "mdown_content": "Various versions of Turing can save different formats of files. Turing 4.1 for Windows can save BMP. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement saving of GIF pictures until the patents expire in June 2004."
     },
     {
       "title": "Details",
       "raw_content": "If the <b>Pic.ScreenSave</b> fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "text_content": " If the Pic.ScreenSave fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
       "mdown_content": "If the **Pic.ScreenSave** fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
@@ -28,12 +32,14 @@
         "        Draw.FillBox (50, 50, 150, 150, red)\r\n        Draw.FillStar (50, 50, 150, 150, green)\r\n        Draw.FillOval (100, 100, 50, 50, blue)\r\n        \r\n        picID := Pic.ScreenSave (50, 50, 150, 150, \"PICT:draw\")"
       ],
       "raw_content": "The program draws a graphic and saves it as a PICT file called <i>draw</i>.<p>\r\n</p>",
+      "text_content": " The program draws a graphic and saves it as a PICT file called draw.\r\n\r\n",
       "mdown_content": "The program draws a graphic and saves it as a PICT file called *draw*."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Pic.ScreenSave</b>, not by calling <b>ScreenSave</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.ScreenSave**, not by calling **ScreenSave**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Pic.ScreenSave, not by calling ScreenSave.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.ScreenSave**, not by calling **ScreenSave**."
     }
   ]
 }

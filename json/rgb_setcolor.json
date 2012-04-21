@@ -5,7 +5,8 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>RGB.SetColor</b> (<i>colorNumber</i>: <b>int</b>,<br></font>\r\n      <table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n          <td colspan=\"8\"><font size=\"+1\"><i>redComp</i>, <i>greenComp</i>, <i>blueComp</i> : <b>real</b>)</font></td>\r\n        </tr></table>\n<p>\r\n    </p>",
-      "mdown_content": "**RGB.SetColor** (*colorNumber*: **int**,\n \n*redComp*, *greenComp*, *blueComp* : **real**)\n\n"
+      "text_content": "RGB.SetColor (colorNumber: int,\r\n       \r\n          redComp, greenComp, blueComp : real)\r\n        \r\n    ",
+      "mdown_content": "**RGB.SetColor** (*colorNumber*: **int**, *redComp*, *greenComp*, *blueComp* : **real**)"
     },
     {
       "title": "Description",
@@ -13,7 +14,8 @@
         "        RGB.SetColor (colorNumber, 1.0, 0.0, 0.0)"
       ],
       "raw_content": "The <b>RGB.SetColor</b> function sets the red, green and blue \r\n        components of the color associated with the <i>colorNumber</i> \r\n        parameter. The red, green and blue values must normalized to be between \r\n        0 and 1. Thus to set the color associated with the <i>colorNumber</i> \r\n        parameter to pure red, you would call:<p>\r\n</p>\r\n        It is wise to use <b>Error.Last</b> and <b>Error.LastMsg</b> to check \r\n        to see if the color change is successful.<p>\r\n    </p>",
-      "mdown_content": "The **RGB.SetColor** function sets the red, green and blue \ncomponents of the color associated with the *colorNumber* \nparameter. The red, green and blue values must normalized to be between \n0 and 1. Thus to set the color associated with the *colorNumber* \nparameter to pure red, you would call:\n\nIt is wise to use **Error.Last** and **Error.LastMsg** to check \nto see if the color change is successful.\n"
+      "text_content": "The RGB.SetColor function sets the red, green and blue \r\n        components of the color associated with the colorNumber \r\n        parameter. The red, green and blue values must normalized to be between \r\n        0 and 1. Thus to set the color associated with the colorNumber \r\n        parameter to pure red, you would call:\r\n\r\n        It is wise to use Error.Last and Error.LastMsg to check \r\n        to see if the color change is successful.\r\n    ",
+      "mdown_content": "The **RGB.SetColor** function sets the red, green and blue components of the color associated with the *colorNumber* parameter. The red, green and blue values must normalized to be between 0 and 1. Thus to set the color associated with the *colorNumber* parameter to pure red, you would call:\nIt is wise to use **Error.Last** and **Error.LastMsg** to check to see if the color change is successful."
     },
     {
       "title": "Example",
@@ -21,12 +23,14 @@
         "        for clr : 0 .. maxcolor\r\n             if not RGB.SetColor (clr, clr / maxcolor, 0, 0) then\r\n                put \"Color set failed on color number \", clr\r\n                exit\r\n            end if\r\n        end for"
       ],
       "raw_content": "This program sets all the available colors to shades of red<p>\r\n</p>\r\n          <table><tr valign=\"top\">\n<td><b>Details</b></td>\r\n              <td width=\"10\">&nbsp;</td>\r\n              <td>\n<b>RGB.SetColour</b> is an alternate spelling for \r\n                  <b>RGB.SetColor</b>.</td>\r\n            </tr></table>\n<p>\r\n      </p>\n<",
-      "mdown_content": "This program sets all the available colors to shades of red\n\n**Details**\n \n\n**RGB.SetColour** is an alternate spelling for \n**RGB.SetColor**.\n\n"
+      "text_content": "This program sets all the available colors to shades of red\r\n\r\n          Details\r\n               \r\n              RGB.SetColour is an alternate spelling for \r\n                  RGB.SetColor.\r\n            \r\n      ",
+      "mdown_content": "This program sets all the available colors to shades of red\n**Details** **RGB.SetColour** is an alternate spelling for **RGB.SetColor**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>RGB.SetColor</b>, not by calling <b>SetColor</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**RGB.SetColor**, not by calling **SetColor**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          RGB.SetColor, not by calling SetColor.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **RGB.SetColor**, not by calling **SetColor**."
     },
     {
       "title": "See also",
@@ -35,7 +39,8 @@
         "rgb_addcolor"
       ],
       "raw_content": "<b><a href=\"rgb_getcolor.html\">RGB.GetColor</a></b>and \r\n          <b><a href=\"rgb_addcolor.html\">RGB.AddColor</a></b>.<p>\r\n  </p>",
-      "mdown_content": "**[rgb_getcolor.html](RGB.GetColor)**and \n**[rgb_addcolor.html](RGB.AddColor)**.\n"
+      "text_content": "RGB.GetColorand \r\n          RGB.AddColor.\r\n  ",
+      "mdown_content": "**[rgb_getcolor.html](RGB.GetColor)**and **[rgb_addcolor.html](RGB.AddColor)**."
     }
   ]
 }

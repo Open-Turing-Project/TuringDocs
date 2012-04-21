@@ -5,27 +5,32 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.FileNew</b> (<i>fileName</i> : <b>string</b>) : <b>int</b><p></p></font>",
+      "text_content": "Pic.FileNew (fileName : string) : int\r\n    ",
       "mdown_content": "**Pic.FileNew** (*fileName* : **string**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.FileNew </b>is used to obtain a picture from a file. The \r\n          <b>Pic.FileNew</b> procedure allocates the memory for the picture, \r\n\t  which can be very large for pictures of large areas. The memory is \r\n\t  freed up when the program calls <b>Pic.Free</b> with the picture ID. \r\n\t  The picture can be used with the <b>Pic.Draw</b> and \r\n\t  <b>Pic.Save</b>.<p>\r\n          The <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n          </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>GIF files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"GIF:filename\" or \"filename.GIF\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>JPG files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"JPG:filename\" or \"filename.JPG\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>BMP files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"BMP:filename\" or \"filename.BMP\"</td>\r\n\t    </tr>\n</table>\n<p>\r\n    </p>",
-      "mdown_content": "**Pic.FileNew **is used to obtain a picture from a file. The \n**Pic.FileNew** procedure allocates the memory for the picture, \nwhich can be very large for pictures of large areas. The memory is \nfreed up when the program calls **Pic.Free** with the picture ID. \nThe picture can be used with the **Pic.Draw** and \n**Pic.Save**.\nThe *fileName*parameter must give the format of the file:\n\n\n \nGIF files\n \n\"GIF:filename\" or \"filename.GIF\"\n \nJPG files\n \n\"JPG:filename\" or \"filename.JPG\"\n \nBMP files\n \n\"BMP:filename\" or \"filename.BMP\"\n\n"
+      "text_content": "Pic.FileNew is used to obtain a picture from a file. The \r\n          Pic.FileNew procedure allocates the memory for the picture, \r\n\t  which can be very large for pictures of large areas. The memory is \r\n\t  freed up when the program calls Pic.Free with the picture ID. \r\n\t  The picture can be used with the Pic.Draw and \r\n\t  Pic.Save.\r\n          The fileNameparameter must give the format of the file:\r\n           \r\n\t      GIF files\r\n\t       \r\n\t      \"GIF:filename\" or \"filename.GIF\"\r\n\t     \r\n\t      JPG files\r\n\t       \r\n\t      \"JPG:filename\" or \"filename.JPG\"\r\n\t     \r\n\t      BMP files\r\n\t       \r\n\t      \"BMP:filename\" or \"filename.BMP\"\r\n\t    \r\n    ",
+      "mdown_content": "**Pic.FileNew **is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.\nThe *fileName*parameter must give the format of the file:\n GIF files \"GIF:filename\" or \"filename.GIF\" JPG files \"JPG:filename\" or \"filename.JPG\" BMP files \"BMP:filename\" or \"filename.BMP\""
     },
     {
       "title": "Details",
       "raw_content": "Various versions of Turing can convert different formats of files. \r\n          Turing 4.1 for Windows can load BMP, GIF and JPG files.<p>\r\n    </p>",
-      "mdown_content": "Various versions of Turing can convert different formats of files. \nTuring 4.1 for Windows can load BMP, GIF and JPG files.\n"
+      "text_content": "Various versions of Turing can convert different formats of files. \r\n          Turing 4.1 for Windows can load BMP, GIF and JPG files.\r\n    ",
+      "mdown_content": "Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP, GIF and JPG files."
     },
     {
       "title": "Details",
       "raw_content": "For, multi-frame GIF files (GIF files that have several frames or\r\n          pictures and are used for animation), <b>Pic.FileNew</b> will only\r\n          load the first frame.  See the <b>Pic.FileNewFrames</b> and\r\n          <b>Pic.Frame</b> for information on loading and displaying\r\n          a multi-frame GIF file.",
-      "mdown_content": "For, multi-frame GIF files (GIF files that have several frames or\npictures and are used for animation), **Pic.FileNew** will only\nload the first frame.  See the **Pic.FileNewFrames** and\n**Pic.Frame** for information on loading and displaying\na multi-frame GIF file."
+      "text_content": "For, multi-frame GIF files (GIF files that have several frames or\r\n          pictures and are used for animation), Pic.FileNew will only\r\n          load the first frame.  See the Pic.FileNewFrames and\r\n          Pic.Frame for information on loading and displaying\r\n          a multi-frame GIF file.\r\n    ",
+      "mdown_content": "For, multi-frame GIF files (GIF files that have several frames orpictures and are used for animation), **Pic.FileNew** will onlyload the first frame.  See the **Pic.FileNewFrames** and**Pic.Frame** for information on loading and displayinga multi-frame GIF file."
     },
     {
       "title": "Details",
       "raw_content": "If the <b>Pic.FileNew</b> call fails, then it returns 0. Also \r\n          <b>Error.Last</b> will return a non-zero value indicating the \r\n\t  reason for the failure. <b>Error.LastMsg</b> will return a string \r\n\t  which contains the textual version of the error.<p>\r\n    </p>",
-      "mdown_content": "If the **Pic.FileNew** call fails, then it returns 0. Also \n**Error.Last** will return a non-zero value indicating the \nreason for the failure. **Error.LastMsg** will return a string \nwhich contains the textual version of the error.\n"
+      "text_content": "If the Pic.FileNew call fails, then it returns 0. Also \r\n          Error.Last will return a non-zero value indicating the \r\n\t  reason for the failure. Error.LastMsg will return a string \r\n\t  which contains the textual version of the error.\r\n    ",
+      "mdown_content": "If the **Pic.FileNew** call fails, then it returns 0. Also **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
       "title": "Example",
@@ -33,7 +38,8 @@
         "        var picID: int\r\n        var x, y : int\r\n        \r\n        picID := Pic.FileNew (\"mypic.bmp\")\r\n        for i : 1 .. 50\r\n            x := Rand.Int (0, maxx)     % Random x\r\n            y := Rand.Int (0, maxy)     % Random y\r\n            Pic.Draw (picID, x, y, picCopy)\r\n        end for\r\n        Pic.Free (picID)"
       ],
       "raw_content": "The program reads a graphic from the file <i>mypic.bmp</i> and then \r\n          draws it 50 times.<p>\r\n</p>",
-      "mdown_content": "The program reads a graphic from the file *mypic.bmp* and then \ndraws it 50 times."
+      "text_content": "The program reads a graphic from the file mypic.bmp and then \r\n          draws it 50 times.\r\n\r\n    ",
+      "mdown_content": "The program reads a graphic from the file *mypic.bmp* and then draws it 50 times."
     },
     {
       "title": "Execute",
@@ -48,7 +54,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>Pic.FileNew</b>, not by calling <b>FileNew</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.FileNew**, not by calling **FileNew**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  Pic.FileNew, not by calling FileNew.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.FileNew**, not by calling **FileNew**."
     }
   ]
 }

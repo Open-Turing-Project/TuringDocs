@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.DelaySinceLast</b> ( <i>duration</i> : <b>int</b> )<p></p></font>",
+      "text_content": "Time.DelaySinceLast ( duration : int )\r\n    ",
       "mdown_content": "**Time.DelaySinceLast** ( *duration* : **int** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.DelaySinceLast</b> procedure is used to cause the \r\n          program to pause for a given time since the last call to \r\n          <b>Time.DelaySinceLast</b>. The time duration is in milliseconds.<p>\r\n    </p>",
-      "mdown_content": "The **Time.DelaySinceLast** procedure is used to cause the \nprogram to pause for a given time since the last call to \n**Time.DelaySinceLast**. The time duration is in milliseconds.\n"
+      "text_content": "The Time.DelaySinceLast procedure is used to cause the \r\n          program to pause for a given time since the last call to \r\n          Time.DelaySinceLast. The time duration is in milliseconds.\r\n    ",
+      "mdown_content": "The **Time.DelaySinceLast** procedure is used to cause the program to pause for a given time since the last call to **Time.DelaySinceLast**. The time duration is in milliseconds."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        var t : int := Time.Elapsed\r\n        put \"Starting now, count to 100,000\"\r\n        for i : 1 .. 100000\r\n            put i ..\r\n            locate (whatrow, 1)\r\n        end for\r\n        put \"Finished counting to 100,000\"\r\n        \r\n        put \"Elapsed time: \", Time.Elapsed - t, \" milliseconds\"\r\n        Time.DelaySinceLast (10000)\r\n        put \"Elapsed time: \", Time.Elapsed - t, \" milliseconds\"\r\n    "
       ],
       "raw_content": "This program outputs from 1 to 100,000, then outputs how long it \r\n          took to do this (in milliseconds). It then calls <b>Time.DelaySinceLast</b>\r\n          to wait until 10 seconds has passed since the beginning of the\r\n          program (regardless of how long it took to execute the loop). Finally\r\n          it outputs how many milliseconds has passed since the program started.\r\n          This should be close to 10,000 milliseconds.<p>\r\n</p>",
-      "mdown_content": "This program outputs from 1 to 100,000, then outputs how long it \ntook to do this (in milliseconds). It then calls **Time.DelaySinceLast**\nto wait until 10 seconds has passed since the beginning of the\nprogram (regardless of how long it took to execute the loop). Finally\nit outputs how many milliseconds has passed since the program started.\nThis should be close to 10,000 milliseconds."
+      "text_content": "This program outputs from 1 to 100,000, then outputs how long it \r\n          took to do this (in milliseconds). It then calls Time.DelaySinceLast\r\n          to wait until 10 seconds has passed since the beginning of the\r\n          program (regardless of how long it took to execute the loop). Finally\r\n          it outputs how many milliseconds has passed since the program started.\r\n          This should be close to 10,000 milliseconds.\r\n",
+      "mdown_content": "This program outputs from 1 to 100,000, then outputs how long it took to do this (in milliseconds). It then calls **Time.DelaySinceLast**to wait until 10 seconds has passed since the beginning of theprogram (regardless of how long it took to execute the loop). Finallyit outputs how many milliseconds has passed since the program started.This should be close to 10,000 milliseconds."
     },
     {
       "title": "Execute",
@@ -33,12 +36,14 @@
     {
       "title": "Details",
       "raw_content": "The <b>Time.DelaySinceLast</b> is usually used to time a process so \r\n          that it operates on the same speed no matter what the machine. For \r\n          example, in the above example, the program will alwyas take 10 \r\n          seconds to execute, regardless of the speed of the machine (up to \r\n          a point). Fast machines will spend little time in the <b>for</b>\r\n          loop and longer waiting to return from <b>Time.DelaySinceLast</b>.\r\n          Slower machines will take longer to execute the loop and will \r\n          consequently wait less time before returning from \r\n          <b>Time.DelaySinceLast</b>.<p>\r\n          The <b>Time.DelaySinceLast</b> procedure is often used to time the \r\n          speed of animation in games.</p>\n<p>\r\n          Note that this only works up to a point. On a very slow machine, the\r\n          <b>for</b> loop may take longer than 10 seconds to execute, in which\r\n          case the call to <b>Time.DelaySinceLast</b> will return instantly.</p>\n<p>\r\n    </p>",
-      "mdown_content": "The **Time.DelaySinceLast** is usually used to time a process so \nthat it operates on the same speed no matter what the machine. For \nexample, in the above example, the program will alwyas take 10 \nseconds to execute, regardless of the speed of the machine (up to \na point). Fast machines will spend little time in the **for**\nloop and longer waiting to return from **Time.DelaySinceLast**.\nSlower machines will take longer to execute the loop and will \nconsequently wait less time before returning from \n**Time.DelaySinceLast**.\nThe **Time.DelaySinceLast** procedure is often used to time the \nspeed of animation in games.\n\nNote that this only works up to a point. On a very slow machine, the\n**for** loop may take longer than 10 seconds to execute, in which\ncase the call to **Time.DelaySinceLast** will return instantly.\n\n"
+      "text_content": "The Time.DelaySinceLast is usually used to time a process so \r\n          that it operates on the same speed no matter what the machine. For \r\n          example, in the above example, the program will alwyas take 10 \r\n          seconds to execute, regardless of the speed of the machine (up to \r\n          a point). Fast machines will spend little time in the for\r\n          loop and longer waiting to return from Time.DelaySinceLast.\r\n          Slower machines will take longer to execute the loop and will \r\n          consequently wait less time before returning from \r\n          Time.DelaySinceLast.\r\n          The Time.DelaySinceLast procedure is often used to time the \r\n          speed of animation in games.\r\n          Note that this only works up to a point. On a very slow machine, the\r\n          for loop may take longer than 10 seconds to execute, in which\r\n          case the call to Time.DelaySinceLast will return instantly.\r\n    ",
+      "mdown_content": "The **Time.DelaySinceLast** is usually used to time a process so that it operates on the same speed no matter what the machine. For example, in the above example, the program will alwyas take 10 seconds to execute, regardless of the speed of the machine (up to a point). Fast machines will spend little time in the **for**loop and longer waiting to return from **Time.DelaySinceLast**.Slower machines will take longer to execute the loop and will consequently wait less time before returning from **Time.DelaySinceLast**.\nThe **Time.DelaySinceLast** procedure is often used to time the speed of animation in games.\nNote that this only works up to a point. On a very slow machine, the**for** loop may take longer than 10 seconds to execute, in whichcase the call to **Time.DelaySinceLast** will return instantly."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Time.DelaySinceLast</b>, not by calling <b>DelaySinceLast</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Time.DelaySinceLast**, not by calling **DelaySinceLast**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Time.DelaySinceLast, not by calling DelaySinceLast.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.DelaySinceLast**, not by calling **DelaySinceLast**."
     },
     {
       "title": "See also",
@@ -47,7 +52,8 @@
         "time_elapsedcpu"
       ],
       "raw_content": "<b><a href=\"time_elapsed.html\">Time.Elapsed</a></b> and <b><a href=\"time_elapsedcpu.html\">Time.ElapsedCPU</a></b>.<p>\r\n    </p>",
-      "mdown_content": "**[time_elapsed.html](Time.Elapsed)** and **[time_elapsedcpu.html](Time.ElapsedCPU)**.\n"
+      "text_content": "Time.Elapsed and Time.ElapsedCPU.\r\n    ",
+      "mdown_content": "**[time_elapsed.html](Time.Elapsed)** and **[time_elapsedcpu.html](Time.ElapsedCPU)**."
     }
   ]
 }

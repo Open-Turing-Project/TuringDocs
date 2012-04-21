@@ -5,7 +5,8 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawarc</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i> : <b>int</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "**drawarc** (*x*, *y*, *xRadius*, *yRadius* : **int**,  \n \n*initialAngle*, *finalAngle*, *Color* : **int**)"
+      "text_content": " drawarc (x, y, xRadius, yRadius : int,   initialAngle, finalAngle, Color : int)",
+      "mdown_content": "**drawarc** (*x*, *y*, *xRadius*, *yRadius* : **int**,   *initialAngle*, *finalAngle*, *Color* : **int**)"
     },
     {
       "title": "Description",
@@ -13,7 +14,8 @@
         "drawarc01.gif"
       ],
       "raw_content": "The <b>drawarc</b> procedure is used to draw an arc whose center is at (<i>x</i>, <i>y</i>). This is just like <b>drawoval</b>, except that you must also give two angles, <i>initialAngle </i>and <i>finalAngle</i>, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **drawarc** procedure is used to draw an arc whose center is at (*x*, *y*). This is just like **drawoval**, except that you must also give two angles, *initialAngle *and *finalAngle*, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*.\n\n"
+      "text_content": " The drawarc procedure is used to draw an arc whose center is at (x, y). This is just like drawoval, except that you must also give two angles, initialAngle and finalAngle, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by xRadius and yRadius.\r\n\r\n\r\n",
+      "mdown_content": "The **drawarc** procedure is used to draw an arc whose center is at (*x*, *y*). This is just like **drawoval**, except that you must also give two angles, *initialAngle *and *finalAngle*, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*."
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "        setscreen (\"graphics\")\r\n        const midx := maxx div 2\r\n        drawarc (midx, 0, maxy, maxy, 0, 180, 1)"
       ],
       "raw_content": "This program draws a semicircle (actually, an approximation to a semicircle) whose center is (<i>midx</i>,0) the bottom center of the screen, using color number 1. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen.<p>\r\n</p>",
+      "text_content": " This program draws a semicircle (actually, an approximation to a semicircle) whose center is (midx,0) the bottom center of the screen, using color number 1. The maxx and maxy functions are used to determine the maximum x and y values on the screen.\r\n\r\n    ",
       "mdown_content": "This program draws a semicircle (actually, an approximation to a semicircle) whose center is (*midx*,0) the bottom center of the screen, using color number 1. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen."
     },
     {
@@ -36,7 +39,8 @@
     {
       "title": "Details",
       "raw_content": "The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
-      "mdown_content": "The meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode.\n"
+      "text_content": " The meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
+      "mdown_content": "The meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
     },
     {
       "title": "See also",
@@ -46,6 +50,7 @@
         "maxy"
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
+      "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
       "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures."
     }
   ]

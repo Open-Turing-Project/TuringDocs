@@ -1,8 +1,35 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Text",
   "fileName": "textmodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprograms that handle character (text) output on the screen (i.e. output using <b>put</b>).<p>\r\nAll routines in the <b>Text</b> unit are exported qualified (and thus must be prefaced with \"<b>Text.</b>\") with the exception of <b>maxrow</b> and <b>maxcol</b> which are exported unqualified.</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprograms that handle character (text) output on the screen (i.e. output using put).\r\nAll routines in the Text unit are exported qualified (and thus must be prefaced with \"Text.\") with the exception of maxrow and maxcol which are exported unqualified.\r\n",
+      "mdown_content": "This unit contains the predefined subprograms that handle character (text) output on the screen (i.e. output using **put**).\nAll routines in the **Text** unit are exported qualified (and thus must be prefaced with \"**Text.**\") with the exception of **maxrow** and **maxcol** which are exported unqualified."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "text_cls",
+        "text_color",
+        "text_colour",
+        "text_colorback",
+        "text_colourback",
+        "text_locate",
+        "text_locatexy",
+        "text_maxcol",
+        "text_maxrow",
+        "text_whatrow",
+        "text_whatcol",
+        "text_whatcolor",
+        "text_whatcolour",
+        "text_whatcolorback",
+        "text_whatcolourback"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"text_cls.html\"><b>Cls</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Clears the screen to the text background color.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_color.html\"><b>Color</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the text color used by <b>put</b>.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_colour.html\"><b>Colour</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the text color used by <b>put</b>.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_colorback.html\"><b>ColorBack</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the text background color used by <b>put</b>.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_colourback.html\"><b>ColourBack</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the text background color used by <b>put</b>.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_locate.html\"><b>Locate</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Moves the cursor to the specified row and column.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_locatexy.html\"><b>LocateXY</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Moves the cursor to the cursor location closest to a specified pixel position.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_maxcol.html\"><b>maxcol</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>The number of columns on the screen (exported unqualified).</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_maxrow.html\"><b>maxrow</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>The number of rows on the screen (exported unqualified).</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatrow.html\"><b>WhatRow</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current cursor row.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatcol.html\"><b>WhatCol</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current cursor column.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatcolor.html\"><b>WhatColor</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current text color.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatcolour.html\"><b>WhatColour</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current text color.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatcolorback.html\"><b>WhatColorBack</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current text background color.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"text_whatcolourback.html\"><b>WhatColourBack</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the current text background color.</td>\n</tr>\n</table>",
+      "text_content": "Cls Clears the screen to the text background color.Color Sets the text color used by put.Colour Sets the text color used by put.ColorBack Sets the text background color used by put.ColourBack Sets the text background color used by put.Locate Moves the cursor to the specified row and column.LocateXY Moves the cursor to the cursor location closest to a specified pixel position.maxcol The number of columns on the screen (exported unqualified).maxrow The number of rows on the screen (exported unqualified).WhatRow Returns the current cursor row.WhatCol Returns the current cursor column.WhatColor Returns the current text color.WhatColour Returns the current text color.WhatColorBack Returns the current text background color.WhatColourBack Returns the current text background color.",
+      "mdown_content": "[text_cls.html](**Cls**) Clears the screen to the text background color.[text_color.html](**Color**) Sets the text color used by **put**.[text_colour.html](**Colour**) Sets the text color used by **put**.[text_colorback.html](**ColorBack**) Sets the text background color used by **put**.[text_colourback.html](**ColourBack**) Sets the text background color used by **put**.[text_locate.html](**Locate**) Moves the cursor to the specified row and column.[text_locatexy.html](**LocateXY**) Moves the cursor to the cursor location closest to a specified pixel position.[text_maxcol.html](**maxcol**) The number of columns on the screen (exported unqualified).[text_maxrow.html](**maxrow**) The number of rows on the screen (exported unqualified).[text_whatrow.html](**WhatRow**) Returns the current cursor row.[text_whatcol.html](**WhatCol**) Returns the current cursor column.[text_whatcolor.html](**WhatColor**) Returns the current text color.[text_whatcolour.html](**WhatColour**) Returns the current text color.[text_whatcolorback.html](**WhatColorBack**) Returns the current text background color.[text_whatcolourback.html](**WhatColourBack**) Returns the current text background color."
+    }
+  ]
 }

@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.HostAddressFromName </b>( <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>hostName</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
-      "mdown_content": "**Net.HostAddressFromName **( \n    *hostName* : **string**) : **string**"
+      "text_content": " Net.HostAddressFromName ( \r\n    hostName : string) : string\r\n",
+      "mdown_content": "**Net.HostAddressFromName **(     *hostName* : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "Returns<b> </b>the numeric TCP/IP address of the machine whose hostname is specified by the <i>hostName</i> parameter.<p>\r\n</p>",
+      "text_content": " Returns the numeric TCP/IP address of the machine whose hostname is specified by the hostName parameter.\r\n",
       "mdown_content": "Returns** **the numeric TCP/IP address of the machine whose hostname is specified by the *hostName* parameter."
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
+      "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
     },
     {
       "title": "Example",
@@ -23,12 +26,14 @@
         "        var hostName : string := \"www.holtsoft.com\"\r\n        put \"The machine address of \", hostName , \" is \", \r\n            Net.HostAddressFromName (hostName)"
       ],
       "raw_content": "The following program prints out the hostname of the current machine.<p>\r\n</p>",
+      "text_content": " The following program prints out the hostname of the current machine.\r\n\r\n",
       "mdown_content": "The following program prints out the hostname of the current machine."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.HostAddressFromName</b>, not by calling <b>HostAddressFromName</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.HostAddressFromName**, not by calling **HostAddressFromName**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.HostAddressFromName, not by calling HostAddressFromName.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.HostAddressFromName**, not by calling **HostAddressFromName**."
     },
     {
       "title": "See also",
@@ -36,6 +41,7 @@
         "net_hostnamefromaddress"
       ],
       "raw_content": "<b><a href=\"net_hostnamefromaddress.html\">Net.HostNameFromAddress</a></b>.<p>\r\n</p>",
+      "text_content": " Net.HostNameFromAddress.\r\n",
       "mdown_content": "**[net_hostnamefromaddress.html](Net.HostNameFromAddress)**."
     }
   ]

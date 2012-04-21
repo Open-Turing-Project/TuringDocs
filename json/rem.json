@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>rem</b><p>\r\n</p></font>",
+      "text_content": " rem\r\n",
       "mdown_content": "**rem**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>rem</b> (<i>remainder</i>] operator produces the remainder of one number divided by  another. For example, 7 <b>rem</b> 2 produces 1 and -12 <b>rem</b> 5 produces -2.<p>\r\n</p>",
+      "text_content": " The rem (remainder] operator produces the remainder of one number divided by  another. For example, 7 rem 2 produces 1 and -12 rem 5 produces -2.\r\n",
       "mdown_content": "The **rem** (*remainder*] operator produces the remainder of one number divided by  another. For example, 7 **rem** 2 produces 1 and -12 **rem** 5 produces -2."
     },
     {
@@ -18,6 +20,7 @@
         "        var eggCount : int\r\n        get eggCount\r\n        put \"You have \", eggCount div 12, \" dozen eggs\"\r\n        put \"You have \", eggCount rem 12, \" left over\""
       ],
       "raw_content": "In this example, <i>eggCount</i> is the total number of eggs. The first <b>put</b> statement determines how many dozen eggs there are. The second <b>put</b> statement determines how many extra eggs there are beyond the last dozen.<p>\r\n</p>",
+      "text_content": " In this example, eggCount is the total number of eggs. The first put statement determines how many dozen eggs there are. The second put statement determines how many extra eggs there are beyond the last dozen.\r\n\r\n",
       "mdown_content": "In this example, *eggCount* is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen."
     },
     {
@@ -29,6 +32,7 @@
         "div"
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"mod.html\">mod</a></b> and <b><a href=\"div.html\">div</a></b> operators.<p>\r\n</p>",
+      "text_content": " infix operators, precedence of operators and the mod and div operators.\r\n",
       "mdown_content": "*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[mod.html](mod)** and **[div.html](div)** operators."
     }
   ]

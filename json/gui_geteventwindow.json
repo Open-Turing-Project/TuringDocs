@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetEventWindow</b> : <b>int</b><p>\r\n</p></font>",
+      "text_content": " GUI.GetEventWindow : int\r\n",
       "mdown_content": "**GUI.GetEventWindow** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an <i>action procedure</i> or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.<p>\r\nThis function is commonly used when several windows share the same layout. The same buttons in each window point to the same <i>action procedures</i>. To determine which button was actually pressed, the function is called to get the window.</p>\n<p>\r\n</p>",
-      "mdown_content": "Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an *action procedure* or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.\nThis function is commonly used when several windows share the same layout. The same buttons in each window point to the same *action procedures*. To determine which button was actually pressed, the function is called to get the window.\n"
+      "text_content": " Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an action procedure or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.\r\nThis function is commonly used when several windows share the same layout. The same buttons in each window point to the same action procedures. To determine which button was actually pressed, the function is called to get the window.\r\n",
+      "mdown_content": "Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an *action procedure* or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.\nThis function is commonly used when several windows share the same layout. The same buttons in each window point to the same *action procedures*. To determine which button was actually pressed, the function is called to get the window."
     },
     {
       "title": "Example",
@@ -18,12 +20,14 @@
         "        import GUI in \"%oot/lib/GUI\" \r\n        \r\n        procedure DrawStar\r\n            var windowID : int := GUI.GetEventWindow\r\n            Window.Select (windowID)\r\n            Draw.FillStar (25, 40, 175, 190, Rand.Int (10, 15))\r\n        end DrawStar\r\n        \r\n        for i : 0 .. 3\r\n            var window : int := Window.Open (\"graphics:200;200\") \r\n            % Place window above task bar, across from previous one.\r\n            Window.SetPosition (window, 220 * i, 27) \r\n            var button : int := GUI.CreateButton (5, 5, 190, \"Draw Star\", \r\n                DrawStar) \r\n        end for\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window.<p>\r\n</p>",
+      "text_content": " The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window.\r\n\r\n",
       "mdown_content": "The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetEventWindow</b>, not by calling <b>GetEventWindow</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventWindow**, not by calling **GetEventWindow**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.GetEventWindow, not by calling GetEventWindow.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventWindow**, not by calling **GetEventWindow**."
     },
     {
       "title": "See also",
@@ -31,6 +35,7 @@
         "gui_processevent"
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "text_content": " GUI.ProcessEvent.\r\n",
       "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
     }
   ]

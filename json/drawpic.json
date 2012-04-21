@@ -5,17 +5,20 @@
     {
       "title": "Syntax",
       "raw_content": "<b>drawpic</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>picmode</i> : <b>int</b>)<p>\r\n    </p>",
-      "mdown_content": "**drawpic** (*x*, *y* : **int**, *buffer* : **array** 1 .. * **of** **int**, *picmode* : **int**)\n"
+      "text_content": "drawpic (x, y : int, buffer : array 1 .. * of int, picmode : int)\r\n    ",
+      "mdown_content": "**drawpic** (*x*, *y* : **int**, *buffer* : **array** 1 .. * **of** **int**, *picmode* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>drawpic</b> procedure is used to copy of a rectangular picture \r\n          onto the screen. The left bottom of the picture is placed at \r\n          (<i>x</i>, <i>y</i>). In the common case, the buffer was initialized \r\n          by calling <b>takepic</b>. The values of <i>picmode</i> are:<p>\r\n          </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>0:  Copy actual picture on screen.</td>\r\n            </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>1:  Copy picture by XORing it onto the screen.</td>\r\n            </tr>\n</table>\n<p>\r\n\t  XORing a picture onto the screen twice leaves the screen as it was  \r\n\t  (this is a convenient way to move images for animation). XORing a \r\n\t  picture onto a background effectively superimposes the picture onto \r\n\t  the background.</p>\n<p>\r\n    </p>",
-      "mdown_content": "The **drawpic** procedure is used to copy of a rectangular picture \nonto the screen. The left bottom of the picture is placed at \n(*x*, *y*). In the common case, the buffer was initialized \nby calling **takepic**. The values of *picmode* are:\n\n \n0:  Copy actual picture on screen.\n \n1:  Copy picture by XORing it onto the screen.\n\nXORing a picture onto the screen twice leaves the screen as it was  \n(this is a convenient way to move images for animation). XORing a \npicture onto a background effectively superimposes the picture onto \nthe background.\n\n"
+      "text_content": "The drawpic procedure is used to copy of a rectangular picture \r\n          onto the screen. The left bottom of the picture is placed at \r\n          (x, y). In the common case, the buffer was initialized \r\n          by calling takepic. The values of picmode are:\r\n           \r\n              0:  Copy actual picture on screen.\r\n             \r\n              1:  Copy picture by XORing it onto the screen.\r\n            \r\n\t  XORing a picture onto the screen twice leaves the screen as it was  \r\n\t  (this is a convenient way to move images for animation). XORing a \r\n\t  picture onto a background effectively superimposes the picture onto \r\n\t  the background.\r\n    ",
+      "mdown_content": "The **drawpic** procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (*x*, *y*). In the common case, the buffer was initialized by calling **takepic**. The values of *picmode* are:\n 0:  Copy actual picture on screen. 1:  Copy picture by XORing it onto the screen.\nXORing a picture onto the screen twice leaves the screen as it was  (this is a convenient way to move images for animation). XORing a picture onto a background effectively superimposes the picture onto the background."
     },
     {
       "title": "Details",
       "raw_content": "See <b>takepic</b> for an example of the use of <b>drawpic</b> and \r\n          for further information about buffers for drawing pictures.<p>\r\n          The screen must be in a \"<i>graphics</i>\" mode. See the \r\n          <b>setscreen</b> procedure for details. If the screen is not in a \r\n          \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n    </p>",
-      "mdown_content": "See **takepic** for an example of the use of **drawpic** and \nfor further information about buffers for drawing pictures.\nThe screen must be in a \"*graphics*\" mode. See the \n**setscreen** procedure for details. If the screen is not in a \n\"*graphics*\" mode, an error will occur.\n\n"
+      "text_content": "See takepic for an example of the use of drawpic and \r\n          for further information about buffers for drawing pictures.\r\n          The screen must be in a \"graphics\" mode. See the \r\n          setscreen procedure for details. If the screen is not in a \r\n          \"graphics\" mode, an error will occur.\r\n    ",
+      "mdown_content": "See **takepic** for an example of the use of **drawpic** and for further information about buffers for drawing pictures.\nThe screen must be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
     },
     {
       "title": "Details",
@@ -26,7 +29,8 @@
         "picmodule"
       ],
       "raw_content": "The <b>drawpic</b>, <b>takepic</b>, and <b>sizepic</b> subprograms\r\n          have been made obsolete by the subprograms \r\n          <b><a href=\"pic_draw.html\">Pic.Draw</a></b> and\r\n          <b><a href=\"pic_new.html\">Pic.New</a></b> of the \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module.  Users are \r\n          strongly suggested to use those routines instead. The \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module also contains \r\n          subprograms to load images from files.<p>\r\n    </p>",
-      "mdown_content": "The **drawpic**, **takepic**, and **sizepic** subprograms\nhave been made obsolete by the subprograms \n**[pic_draw.html](Pic.Draw)** and\n**[pic_new.html](Pic.New)** of the \n**[picmodule.html](Pic)** module.  Users are \nstrongly suggested to use those routines instead. The \n**[picmodule.html](Pic)** module also contains \nsubprograms to load images from files.\n"
+      "text_content": "The drawpic, takepic, and sizepic subprograms\r\n          have been made obsolete by the subprograms \r\n          Pic.Draw and\r\n          Pic.New of the \r\n          Pic module.  Users are \r\n          strongly suggested to use those routines instead. The \r\n          Pic module also contains \r\n          subprograms to load images from files.\r\n    ",
+      "mdown_content": "The **drawpic**, **takepic**, and **sizepic** subprogramshave been made obsolete by the subprograms **[pic_draw.html](Pic.Draw)** and**[pic_new.html](Pic.New)** of the **[picmodule.html](Pic)** module.  Users are strongly suggested to use those routines instead. The **[picmodule.html](Pic)** module also contains subprograms to load images from files."
     },
     {
       "title": "See also",
@@ -40,7 +44,8 @@
         "picmodule"
       ],
       "raw_content": "<b><a href=\"takepic.html\">takepic</a></b> and \r\n          <b><a href=\"sizepic.html\">sizepic</a></b>. See also \r\n          <b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b> and the various \r\n          <b>draw&#133;</b> procedures.<p>\r\n          See also predefined unit <b><a href=\"drawmodule.html\">Draw</a></b> and \r\n          <b><a href=\"picmodule.html\">Pic</a></b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "**[takepic.html](takepic)** and \n**[sizepic.html](sizepic)**. See also \n**[setscreen.html](setscreen)**, \n**[maxx.html](maxx)**, \n**[maxy.html](maxy)** and the various \n**draw** procedures.\nSee also predefined unit **[drawmodule.html](Draw)** and \n**[picmodule.html](Pic)**.\n\n"
+      "text_content": "takepic and \r\n          sizepic. See also \r\n          setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures.\r\n          See also predefined unit Draw and \r\n          Pic.\r\n    ",
+      "mdown_content": "**[takepic.html](takepic)** and **[sizepic.html](sizepic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures.\nSee also predefined unit **[drawmodule.html](Draw)** and **[picmodule.html](Pic)**."
     }
   ]
 }

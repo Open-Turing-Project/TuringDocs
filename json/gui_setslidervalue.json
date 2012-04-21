@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderValue</b> (<i>widgetID</i>, <i>value</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " GUI.SetSliderValue (widgetID, value : int)\r\n",
       "mdown_content": "**GUI.SetSliderValue** (*widgetID*, *value* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the value of a slider or scroll bar specified by <i>widgetID</i> to <i>value</i>. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's <i>action procedure</i> with the new value.<p>\r\n</p>",
+      "text_content": " Sets the value of a slider or scroll bar specified by widgetID to value. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's action procedure with the new value.\r\n",
       "mdown_content": "Sets the value of a slider or scroll bar specified by *widgetID* to *value*. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's *action procedure* with the new value."
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.SetScrollAmount </b>for an example of <b>GUI.SetSliderValue</b>.<p>\r\n</p>",
+      "text_content": " See GUI.SetScrollAmount for an example of GUI.SetSliderValue.\r\n",
       "mdown_content": "See **GUI.SetScrollAmount **for an example of **GUI.SetSliderValue**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSliderValue</b>, not by calling <b>SetSliderValue</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSliderValue**, not by calling **SetSliderValue**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetSliderValue, not by calling SetSliderValue.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSliderValue**, not by calling **SetSliderValue**."
     },
     {
       "title": "See also",
@@ -31,6 +35,7 @@
         "gui_createverticalslider"
       ],
       "raw_content": "<b><a href=\"gui_getslidervalue.html\">GUI.GetSliderValue</a> </b>for reading a slider <a href=\"or.html\">or</a> scroll bar's value. See also <b>GUI.CreateHorizontalScrollBar</b>, <b>GUI.CreateVerticalScrollBar</b>, <b><a href=\"gui_createhorizontalslider.html\">GUI.CreateHorizontalSlider</a></b>, and <b><a href=\"gui_createverticalslider.html\">GUI.CreateVerticalSlider</a></b>.<p>\r\n</p>",
+      "text_content": " GUI.GetSliderValue for reading a slider or scroll bar's value. See also GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
       "mdown_content": "**[gui_getslidervalue.html](GUI.GetSliderValue) **for reading a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
     }
   ]

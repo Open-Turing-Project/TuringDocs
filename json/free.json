@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "A <i>freeStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>free</b> [ <i>collectionOrClassId</i>, ] <i>pointerVariableReference</i></font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "A *freeStatement* is:\n\n \n**free** [ *collectionOrClassId*, ] *pointerVariableReference*"
+      "text_content": " A freeStatement is:\r\n free [ collectionOrClassId, ] pointerVariableReference",
+      "mdown_content": "A *freeStatement* is:\n **free** [ *collectionOrClassId*, ] *pointerVariableReference*"
     },
     {
       "title": "Description",
       "raw_content": "A <b>free</b> statement destroys (deallocates) an element that has been allocated by a <b>new</b> statement.<p>\r\n</p>",
+      "text_content": " A free statement destroys (deallocates) an element that has been allocated by a new statement.\r\n",
       "mdown_content": "A **free** statement destroys (deallocates) an element that has been allocated by a **new** statement."
     },
     {
@@ -18,12 +20,14 @@
         "        var list : collection of\r\n            record\r\n                contents : string ( 10 )\r\n                next : pointer to list\r\n                            % Short form: next : ^ list\r\n            end record\r\n        var first : pointer to list % Short form: var next : ^ list\r\n        new list, first\r\n                % Allocate an element of list; place its location in first\r\n                % Short form: new first\r\n        \r\n        free list, first    % Deallocate the element of list located by first\r\n                    % Short form: free first"
       ],
       "raw_content": "Using a collection, declare a list of records and allocate one of these records. Then deallocate the record.<p>\r\n</p>",
+      "text_content": " Using a collection, declare a list of records and allocate one of these records. Then deallocate the record.\r\n\r\n",
       "mdown_content": "Using a collection, declare a list of records and allocate one of these records. Then deallocate the record."
     },
     {
       "title": "Details",
       "raw_content": "The <b>free</b> statement sets the pointer variable to the <b>nil</b> value. See the <b>new</b> statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the <i>collectionOrClassId </i>in the <b>free</b> statement must be omitted.<p>\r\nAn imported class can have one of its objects destroyed (by the <b>free</b> statement) only if the class is imported <b>var</b>.</p>\n<p>\r\nThe <i>collectionOrClassId</i> is optional in the <b>free</b> statement.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the *collectionOrClassId *in the **free** statement must be omitted.\nAn imported class can have one of its objects destroyed (by the **free** statement) only if the class is imported **var**.\n\nThe *collectionOrClassId* is optional in the **free** statement.\n"
+      "text_content": " The free statement sets the pointer variable to the nil value. See the new statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the collectionOrClassId in the free statement must be omitted.\r\nAn imported class can have one of its objects destroyed (by the free statement) only if the class is imported var.\r\nThe collectionOrClassId is optional in the free statement.\r\n",
+      "mdown_content": "The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the *collectionOrClassId *in the **free** statement must be omitted.\nAn imported class can have one of its objects destroyed (by the **free** statement) only if the class is imported **var**.\nThe *collectionOrClassId* is optional in the **free** statement."
     },
     {
       "title": "See also",
@@ -36,6 +40,7 @@
         "nil"
       ],
       "raw_content": "<b><a href=\"class.html\">class</a></b> and <b><a href=\"collection.html\">collection</a></b> declarations, the <b><a href=\"pointer.html\">pointer</a></b> type, the <b><a href=\"new.html\">new</a></b> <a href=\"statement.html\">statement</a> and the <b><a href=\"nil.html\">nil</a></b> value.<p>\r\n</p>",
+      "text_content": " class and collection declarations, the pointer type, the new statement and the nil value.\r\n",
       "mdown_content": "**[class.html](class)** and **[collection.html](collection)** declarations, the **[pointer.html](pointer)** type, the **[new.html](new)** [statement.html](statement) and the **[nil.html](nil)** value."
     }
   ]

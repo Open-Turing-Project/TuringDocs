@@ -5,27 +5,32 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.SetHeight</b> (<i>spriteID</i>, <i>newHeight</i> : <b>int</b>)<p></p></font>",
+      "text_content": "Sprite.SetHeight (spriteID, newHeight : int)\r\n    ",
       "mdown_content": "**Sprite.SetHeight** (*spriteID*, *newHeight* : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the height of the sprite specified by <i>spriteID</i> to the \r\n          value specified by <i>newHeight</i>.<p>\r\n          The height of a sprite determines which sprite appears above another \r\n          when they overlap. The \"higher\" sprite (the one with the greater \r\n          height) will appear on top of the sprite with the lower height, even \r\n          if the lower sprite is drawn second.</p>\n<p>\r\n          The background (i.e. any non-sprite) is considered to be in height 0. \r\n          Sprites with a negative height will appear \"behind\" the background. \r\n          Note that if two sprites have the same height, the one drawn last \r\n          will appear above the first one.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Sets the height of the sprite specified by *spriteID* to the \nvalue specified by *newHeight*.\nThe height of a sprite determines which sprite appears above another \nwhen they overlap. The \"higher\" sprite (the one with the greater \nheight) will appear on top of the sprite with the lower height, even \nif the lower sprite is drawn second.\n\nThe background (i.e. any non-sprite) is considered to be in height 0. \nSprites with a negative height will appear \"behind\" the background. \nNote that if two sprites have the same height, the one drawn last \nwill appear above the first one.\n\n"
+      "text_content": "Sets the height of the sprite specified by spriteID to the \r\n          value specified by newHeight.\r\n          The height of a sprite determines which sprite appears above another \r\n          when they overlap. The \"higher\" sprite (the one with the greater \r\n          height) will appear on top of the sprite with the lower height, even \r\n          if the lower sprite is drawn second.\r\n          The background (i.e. any non-sprite) is considered to be in height 0. \r\n          Sprites with a negative height will appear \"behind\" the background. \r\n          Note that if two sprites have the same height, the one drawn last \r\n          will appear above the first one.\r\n    ",
+      "mdown_content": "Sets the height of the sprite specified by *spriteID* to the value specified by *newHeight*.\nThe height of a sprite determines which sprite appears above another when they overlap. The \"higher\" sprite (the one with the greater height) will appear on top of the sprite with the lower height, even if the lower sprite is drawn second.\nThe background (i.e. any non-sprite) is considered to be in height 0. Sprites with a negative height will appear \"behind\" the background. Note that if two sprites have the same height, the one drawn last will appear above the first one."
     },
     {
       "title": "Example",
       "raw_content": "See <b>Sprite.Hide</b> for an example of <b>Sprite.SetHeight</b>.<p>\r\n    </p>",
-      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.SetHeight**.\n"
+      "text_content": "See Sprite.Hide for an example of Sprite.SetHeight.\r\n    ",
+      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.SetHeight**."
     },
     {
       "title": "Details",
       "raw_content": "It should be noted that a lot more computation must be done to \r\n           display sprites with a negative height.  If you are on a slower\r\n           machine and performance is not sufficient, consider trying to\r\n           eliminate the use of sprites moving behind the background.<p>\r\n    </p>",
-      "mdown_content": "It should be noted that a lot more computation must be done to \ndisplay sprites with a negative height.  If you are on a slower\nmachine and performance is not sufficient, consider trying to\neliminate the use of sprites moving behind the background.\n"
+      "text_content": "It should be noted that a lot more computation must be done to \r\n           display sprites with a negative height.  If you are on a slower\r\n           machine and performance is not sufficient, consider trying to\r\n           eliminate the use of sprites moving behind the background.\r\n    ",
+      "mdown_content": "It should be noted that a lot more computation must be done to display sprites with a negative height.  If you are on a slowermachine and performance is not sufficient, consider trying toeliminate the use of sprites moving behind the background."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Sprite.SetPosition</b>, not by calling <b>SetPosition</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Sprite.SetPosition**, not by calling **SetPosition**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Sprite.SetPosition, not by calling SetPosition.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.SetPosition**, not by calling **SetPosition**."
     },
     {
       "title": "See also",
@@ -33,7 +38,8 @@
         "sprite_new"
       ],
       "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n    </p>",
-      "mdown_content": "**[sprite_new.html](Sprite.New)**.\n"
+      "text_content": "Sprite.New.\r\n    ",
+      "mdown_content": "**[sprite_new.html](Sprite.New)**."
     }
   ]
 }

@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.TripMsg</b> (<i>errorCode</i> : <b>int</b>, <i>errorMessage</i> : <b>string</b>)<p></p></font>",
+      "text_content": "Error.TripMsg (errorCode : int, errorMessage : string)\r\n    ",
       "mdown_content": "**Error.TripMsg** (*errorCode* : **int**, *errorMessage* : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.TripMsg</b> is a procedure that sets the error number and\r\n          error message that is returned by <b>Error.Last</b> and \r\n          <b>Error.LastMsg</b>. It does not halt the program.<p>\r\n          You can find a list of constants for the legal error codes in the \r\n          module <b>ErrorNum</b>. Any call to <b>Error.TripMsg</b> should use a \r\n          constant found in the <b>ErrorNum</b> module or zero, if the error\r\n          code is not relevant (i.e. only the error message is relevant).</p>\n<p>\r\n    </p>",
-      "mdown_content": "**Error.TripMsg** is a procedure that sets the error number and\nerror message that is returned by **Error.Last** and \n**Error.LastMsg**. It does not halt the program.\nYou can find a list of constants for the legal error codes in the \nmodule **ErrorNum**. Any call to **Error.TripMsg** should use a \nconstant found in the **ErrorNum** module or zero, if the error\ncode is not relevant (i.e. only the error message is relevant).\n\n"
+      "text_content": "Error.TripMsg is a procedure that sets the error number and\r\n          error message that is returned by Error.Last and \r\n          Error.LastMsg. It does not halt the program.\r\n          You can find a list of constants for the legal error codes in the \r\n          module ErrorNum. Any call to Error.TripMsg should use a \r\n          constant found in the ErrorNum module or zero, if the error\r\n          code is not relevant (i.e. only the error message is relevant).\r\n    ",
+      "mdown_content": "**Error.TripMsg** is a procedure that sets the error number anderror message that is returned by **Error.Last** and **Error.LastMsg**. It does not halt the program.\nYou can find a list of constants for the legal error codes in the module **ErrorNum**. Any call to **Error.TripMsg** should use a constant found in the **ErrorNum** module or zero, if the errorcode is not relevant (i.e. only the error message is relevant)."
     },
     {
       "title": "Example",
@@ -18,7 +20,8 @@
         "        Error.TripMsg (eFsysFileNotFound, \"File *really* not found\")\r\n        put \"Error code = \", Error.Last\r\n        put \"Error message = \", Error.LastMsg"
       ],
       "raw_content": "This program sets an error code. The program outputs 201 for the error\r\n          number and \"File *really* not found\" for the message.<p>\r\n</p>",
-      "mdown_content": "This program sets an error code. The program outputs 201 for the error\nnumber and \"File *really* not found\" for the message."
+      "text_content": "This program sets an error code. The program outputs 201 for the error\r\n          number and \"File *really* not found\" for the message.\r\n\r\n    ",
+      "mdown_content": "This program sets an error code. The program outputs 201 for the errornumber and \"File *really* not found\" for the message."
     },
     {
       "title": "Execute",
@@ -30,12 +33,14 @@
         }
       ],
       "raw_content": "<p>\r\n    </p>",
-      "mdown_content": "\n"
+      "text_content": "\r\n    ",
+      "mdown_content": ""
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Error.TripMsg</b>, not by calling <b>TripMsg</b>.</p>\n<p>\r\n    </p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Error.TripMsg**, not by calling **TripMsg**.\n\n"
+      "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Error.TripMsg, not by calling TripMsg.\r\n    ",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.TripMsg**, not by calling **TripMsg**."
     }
   ]
 }

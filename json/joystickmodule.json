@@ -1,8 +1,22 @@
 {
-  "title": "404: Could not find keyword",
+  "title": "Joystick",
   "fileName": "joystickmodule",
   "sections": [
-
-  ],
-  "htmlcontent": "\n<h1>Keyword not found!</h1>\n<p>\nThe turing keyword could not be found in the online turing doc.<br><a href=\"index-2.html\">You can view the online turing doc here.</a>\n</p>\n"
+    {
+      "title": "Description",
+      "raw_content": "This unit contains the predefined subprogram that deal with reading the joystick in a Turing program. The routines allow you to get the current joystick position and whether either one of the two buttons are pressed. <p>\r\nAll routines in the Joystick module are exported qualified (and thus must be prefaced with \"<b>Joystick.</b>\"). All the constants are exported unqualified and thus do not need the <b>Joystick</b> prefix.</p>\n<p>\r\n</p>",
+      "text_content": " This unit contains the predefined subprogram that deal with reading the joystick in a Turing program. The routines allow you to get the current joystick position and whether either one of the two buttons are pressed. \r\nAll routines in the Joystick module are exported qualified (and thus must be prefaced with \"Joystick.\"). All the constants are exported unqualified and thus do not need the Joystick prefix.\r\n",
+      "mdown_content": "This unit contains the predefined subprogram that deal with reading the joystick in a Turing program. The routines allow you to get the current joystick position and whether either one of the two buttons are pressed. \nAll routines in the Joystick module are exported qualified (and thus must be prefaced with \"**Joystick.**\"). All the constants are exported unqualified and thus do not need the **Joystick** prefix."
+    },
+    {
+      "title": "Entry Points",
+      "links": [
+        "joystick_joystick",
+        "joystick_getinfo"
+      ],
+      "raw_content": "<table>\n<tr valign=\"top\">\n<td>\n<a href=\"joystick_joystick.html\"><b>joystick</b></a><b>1</b>, <b>joystick2</b>\n</td>\n<td width=\"20\">&nbsp;</td>\n<td>joystick name contants (exported unqualified)</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"joystick_getinfo.html\"><b>GetInfo</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Reads the current value of a joystick and status of the joystick buttons.</td>\n</tr>\n</table>",
+      "text_content": "joystick1, joystick2 joystick name contants (exported unqualified)GetInfo Reads the current value of a joystick and status of the joystick buttons.",
+      "mdown_content": "[joystick_joystick.html](**joystick**)**1**, **joystick2** joystick name contants (exported unqualified)[joystick_getinfo.html](**GetInfo**) Reads the current value of a joystick and status of the joystick buttons."
+    }
+  ]
 }

@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>tand</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
+      "text_content": " tand ( r : real ) : real\r\n",
       "mdown_content": "**tand** ( *r* : **real** ) : **real**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>tand</b> function is used to find the tangent of an angle given in degrees. For example, <b>tand</b> (45) is 1.<p>\r\n</p>",
+      "text_content": " The tand function is used to find the tangent of an angle given in degrees. For example, tand (45) is 1.\r\n",
       "mdown_content": "The **tand** function is used to find the tangent of an angle given in degrees. For example, **tand** (45) is 1."
     },
     {
@@ -18,6 +20,7 @@
         "        for i : 0 .. 12\r\n            const angle := i * 30\r\n            put \"Tan of \", angle, \" is \", tand ( angle )\r\n        end for"
       ],
       "raw_content": "This program prints out the tangent of 0, 30, 60, 90, up to 360 degrees.<p>\r\n</p>",
+      "text_content": " This program prints out the tangent of 0, 30, 60, 90, up to 360 degrees.\r\n\r\n",
       "mdown_content": "This program prints out the tangent of 0, 30, 60, 90, up to 360 degrees."
     },
     {
@@ -33,7 +36,8 @@
     {
       "title": "Details",
       "raw_content": "An argument to <b>tan</b> of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically <font face=\"symbol\">&yen;</font>. \r\n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)",
-      "mdown_content": "An argument to **tan** of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically ¥. \n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)"
+      "text_content": "An argument to tan of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically ¥. \r\n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)",
+      "mdown_content": "An argument to **tan** of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically ¥. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)"
     },
     {
       "title": "See also",
@@ -44,7 +48,8 @@
         "mathmodule"
       ],
       "raw_content": "the <b><a href=\"sind.html\">sind</a></b> and <b><a href=\"cosd.html\">cosd</a></b> functions for calculating sine and cosine.<p>\r\nthe <b><a href=\"tan.html\">tan</a></b> function which finds the tangent of an angle given in radians. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "the **[sind.html](sind)** and **[cosd.html](cosd)** functions for calculating sine and cosine.\nthe **[tan.html](tan)** function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "text_content": "the sind and cosd functions for calculating sine and cosine.\r\nthe tan function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
+      "mdown_content": "the **[sind.html](sind)** and **[cosd.html](cosd)** functions for calculating sine and cosine.\nthe **[tan.html](tan)** function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
     }
   ]
 }

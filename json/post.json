@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "An <i>postAssertion</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>post</b> <i>trueFalseExpn</i></font></td>\n</tr></table>\n<p></p>",
-      "mdown_content": "An *postAssertion* is:\n\n \n**post** *trueFalseExpn*"
+      "text_content": " An postAssertion is:\r\n post trueFalseExpn",
+      "mdown_content": "An *postAssertion* is:\n **post** *trueFalseExpn*"
     },
     {
       "title": "Description",
       "raw_content": "A <b>post</b> assertion is a special form of an <b>assert</b> statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the <i>trueFalseExpn</i>. After the body has executed and just before the procedure or function returns, the <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b> statements and <b>procedure</b> and <b>function</b> declarations for more details. See also <b>pre</b> and <b>invariant</b> assertions.<p>\r\n</p>",
+      "text_content": " A post assertion is a special form of an assert statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the trueFalseExpn. After the body has executed and just before the procedure or function returns, the trueFalseExpn is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See assert statements and procedure and function declarations for more details. See also pre and invariant assertions.\r\n",
       "mdown_content": "A **post** assertion is a special form of an **assert** statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the *trueFalseExpn*. After the body has executed and just before the procedure or function returns, the *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **pre** and **invariant** assertions."
     },
     {
@@ -18,11 +20,13 @@
         "        function intSqrt ( i : int) answer : int\r\n            pre i >= 0\r\n            post abs ( answer - sqrt ( i ) ) <= 1\r\n             statements to approximate square root\r\n        end intSqrt"
       ],
       "raw_content": "This function is supposed to produce an integer approximation of the square root of integer <i>i</i>. The post condition requires that this result, which is called <i>answer</i>, must be within a distance of 1 from the corresponding <b>real</b> number square root.<p>\r\n</p>",
+      "text_content": " This function is supposed to produce an integer approximation of the square root of integer i. The post condition requires that this result, which is called answer, must be within a distance of 1 from the corresponding real number square root.\r\n\r\n",
       "mdown_content": "This function is supposed to produce an integer approximation of the square root of integer *i*. The post condition requires that this result, which is called *answer*, must be within a distance of 1 from the corresponding **real** number square root."
     },
     {
       "title": "Details",
       "raw_content": "A <b>post</b> assertion can also be used in a module, monitor, class or process declaration to make sure that the initialization satisfies its requirements. <p>\r\n</p>",
+      "text_content": " A post assertion can also be used in a module, monitor, class or process declaration to make sure that the initialization satisfies its requirements. \r\n",
       "mdown_content": "A **post** assertion can also be used in a module, monitor, class or process declaration to make sure that the initialization satisfies its requirements. "
     },
     {
@@ -32,6 +36,7 @@
         "process"
       ],
       "raw_content": "<b><a href=\"module.html\">module</a></b> and <b><a href=\"process.html\">process</a></b>.<p>\r\n</p>",
+      "text_content": " module and process.\r\n",
       "mdown_content": "**[module.html](module)** and **[process.html](process)**."
     }
   ]

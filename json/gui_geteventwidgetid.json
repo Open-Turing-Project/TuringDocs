@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetEventWidgetID</b> : <b>int</b><p>\r\n</p></font>",
+      "text_content": " GUI.GetEventWidgetID : int\r\n",
       "mdown_content": "**GUI.GetEventWidgetID** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an <i>action procedure</i>, as it will return 1 when there is no event that activated a widget being processed.<p>\r\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.</p>\n<p>\r\n</p>",
-      "mdown_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an *action procedure*, as it will return 1 when there is no event that activated a widget being processed.\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.\n"
+      "text_content": " Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an action procedure, as it will return 1 when there is no event that activated a widget being processed.\r\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.\r\n",
+      "mdown_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an *action procedure*, as it will return 1 when there is no event that activated a widget being processed.\nThis function is used when a several buttons use the same action procedure to determine which button was pressed."
     },
     {
       "title": "Example",
@@ -18,12 +20,14 @@
         "        import GUI in \"%oot/lib/GUI\" \r\n        View.Set (\"graphics:150;210\") \r\n        \r\n        var buttonNames : array 1 .. 5 of string := init (\"Red\", \"Green\",\r\n            \"Blue\", \"Yellow\", \"Purple\")\r\n        var buttons : array 1 .. 5 of int\r\n        \r\n        procedure ButtonPush\r\n            for i : 1 .. 5\r\n                if GUI.GetEventWidgetID = buttons (i) then\r\n                    Text.Locate (1, 1)\r\n                    put buttonNames (i), \" selected\"\r\n                end if\r\n            end for\r\n        end ButtonPush\r\n        for i : 1 .. 5\r\n            buttons (i) := GUI.CreateButton (10, 210  40 * i, 110, \r\n                buttonNames (i), ButtonPush)\r\n        end for\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
       ],
       "raw_content": "The following program prints a message stating which button was selected.<p>\r\n</p>",
+      "text_content": " The following program prints a message stating which button was selected.\r\n\r\n",
       "mdown_content": "The following program prints a message stating which button was selected."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetEventWidgetID</b>, not by calling <b>GetEventWidgetID</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventWidgetID**, not by calling **GetEventWidgetID**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.GetEventWidgetID, not by calling GetEventWidgetID.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventWidgetID**, not by calling **GetEventWidgetID**."
     },
     {
       "title": "See also",
@@ -31,6 +35,7 @@
         "gui_processevent"
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "text_content": " GUI.ProcessEvent.\r\n",
       "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
     }
   ]

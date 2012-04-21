@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>repeat</b> ( <i>s</i> : <b>string</b>, <i>i</i> : <b>int</b> ) : <b>string</b><p>\r\n</p></font>",
+      "text_content": " repeat ( s : string, i : int ) : string\r\n",
       "mdown_content": "**repeat** ( *s* : **string**, *i* : **int** ) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>repeat</b> function returns <i>i </i>copies of string <i>s </i>catenated together. For example, <b>repeat</b> (\"X\", 4) is <i>XXXX</i>.<p>\r\n</p>",
+      "text_content": " The repeat function returns i copies of string s catenated together. For example, repeat (\"X\", 4) is XXXX.\r\n",
       "mdown_content": "The **repeat** function returns *i *copies of string *s *catenated together. For example, **repeat** (\"X\", 4) is *XXXX*."
     },
     {
@@ -18,6 +20,7 @@
         "        var word : string := \"Ho\"\r\n        put repeat ( word, 3 )"
       ],
       "raw_content": "This program outputs <i>HoHoHo</i>.<p>\r\n</p>",
+      "text_content": " This program outputs HoHoHo.\r\n\r\n",
       "mdown_content": "This program outputs *HoHoHo*."
     },
     {
@@ -26,6 +29,7 @@
         "        put repeat (\" \", 20), x"
       ],
       "raw_content": "If <i>i</i> is less than or equal to zero, the null string \"\" is returned. The <b>repeat</b> function is often used for spacing of output. For example, this statement skips 20 blanks before outputting <i>x</i>.<p>\r\n</p>",
+      "text_content": " If i is less than or equal to zero, the null string \"\" is returned. The repeat function is often used for spacing of output. For example, this statement skips 20 blanks before outputting x.\r\n\r\n",
       "mdown_content": "If *i* is less than or equal to zero, the null string \"\" is returned. The **repeat** function is often used for spacing of output. For example, this statement skips 20 blanks before outputting *x*."
     }
   ]

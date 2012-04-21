@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Mouse.ButtonMoved</b> (<i>motion</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p></font>",
+      "text_content": " Mouse.ButtonMoved (motion : string) : boolean\r\n",
       "mdown_content": "**Mouse.ButtonMoved** (*motion* : **string**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Mouse.ButtonMoved</b> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).<p>\r\nThe parameter <i>motion</i> must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, <b>Mouse.ButtonMoved</b> returns <b>true</b>. If the event is not in the queue, then <b>Mouse.ButtonMoved</b> returns <b>false</b>.</p>\n<p>\r\nIn \"<i>single-button mode</i>\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.</p>\n<p>\r\nIn \"<i>multi-button mode</i>\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Mouse.ButtonMoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\nThe parameter *motion* must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, **Mouse.ButtonMoved** returns **true**. If the event is not in the queue, then **Mouse.ButtonMoved** returns **false**.\n\nIn \"*single-button mode*\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\n\nIn \"*multi-button mode*\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.\n"
+      "text_content": " The Mouse.ButtonMoved function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\r\nThe parameter motion must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, Mouse.ButtonMoved returns true. If the event is not in the queue, then Mouse.ButtonMoved returns false.\r\nIn \"single-button mode\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\r\nIn \"multi-button mode\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.\r\n",
+      "mdown_content": "The **Mouse.ButtonMoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either \"up\", \"down\", \"updown\" or \"downup\" events (although the \"downup\" and \"updown\" are the same event).\nThe parameter *motion* must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, **Mouse.ButtonMoved** returns **true**. If the event is not in the queue, then **Mouse.ButtonMoved** returns **false**.\nIn \"*single-button mode*\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\nIn \"*multi-button mode*\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        var circles: boolean := true\r\n        loop\r\n            var x, y, radius, clr: int\r\n            if Mouse.ButtonMoved (\"down\") then\r\n                var buttonnumber, buttonupdown : int\r\n                Mouse.ButtonWait (\"down\", x, y, buttonnumber, \r\n                                        buttonupdown)\r\n                circles := not circles\r\n            end if\r\n            x := Rand.Int (0, maxx)\r\n            y := Rand.Int (0, maxy)\r\n            radius := Rand.Int (0, 100)\r\n            clr := Rand.Int (0, maxcolor)\r\n            if circles then\r\n                Draw.FillOval (x, y, radius, radius, clr)\r\n            else\r\n                Draw.FillBox (x, y, x + radius, y + radius, clr)\r\n            end if\r\n        end loop"
       ],
       "raw_content": "This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.<p>\r\n</p>",
+      "text_content": " This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.\r\n\r\n",
       "mdown_content": "This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two."
     },
     {
@@ -26,17 +29,20 @@
         "        var ch : string (1)\r\n        var x, y, btnnum, btnupdown : int\r\n        loop\r\n            if hasch then\r\n                getch (ch)\r\n                Text.Locate (1, 1)\r\n                put \"The character entered is a: \", ch\r\n            end if\r\n            if Mouse.ButtonMoved (\"down\") then\r\n                Mouse.ButtonWait (\"down\", x, y, btnnum, btnupdown)\r\n                Text.Locate (1, 1)\r\n                put \"The button was clicked at position: \", x, \", \",y\r\n            end if\r\n        end loop"
       ],
       "raw_content": "This is an example demonstrating how to check for both character and mouse input at the same time.<p>\r\n</p>",
+      "text_content": " This is an example demonstrating how to check for both character and mouse input at the same time.\r\n\r\n",
       "mdown_content": "This is an example demonstrating how to check for both character and mouse input at the same time."
     },
     {
       "title": "Details",
       "raw_content": "<b>Mouse.ButtonMoved</b> can be thought of as the mouse equivalent of <b>hasch</b> in that they both check for something in a queue and both return immediately.<p>\r\n</p>",
+      "text_content": " Mouse.ButtonMoved can be thought of as the mouse equivalent of hasch in that they both check for something in a queue and both return immediately.\r\n",
       "mdown_content": "**Mouse.ButtonMoved** can be thought of as the mouse equivalent of **hasch** in that they both check for something in a queue and both return immediately."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Mouse.ButtonMoved</b>, not by calling <b>ButtonMoved</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Mouse.ButtonMoved**, not by calling **ButtonMoved**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Mouse.ButtonMoved, not by calling ButtonMoved.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Mouse.ButtonMoved**, not by calling **ButtonMoved**."
     },
     {
       "title": "See also",
@@ -45,6 +51,7 @@
         "mouse_buttonchoose"
       ],
       "raw_content": "<b><a href=\"\">Mouse.ButtonMoved</a></b> to get mouse events saved in the queue. See also <b><a href=\"mouse_buttonchoose.html\">Mouse.ButtonChoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\n</p>",
+      "text_content": " Mouse.ButtonMoved to get mouse events saved in the queue. See also Mouse.ButtonChoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
       "mdown_content": "**[](Mouse.ButtonMoved)** to get mouse events saved in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\"."
     }
   ]

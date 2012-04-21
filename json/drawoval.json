@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawoval</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " drawoval (x, y, xRadius, yRadius, Color : int)\r\n",
       "mdown_content": "**drawoval** (*x*, *y*, *xRadius*, *yRadius*, *Color* : **int**)"
     },
     {
@@ -13,7 +14,8 @@
         "drawoval01.gif"
       ],
       "raw_content": "The <b>drawoval</b> procedure is used to draw an oval whose center is at (<i>x</i>, <i>y</i>). The horizontal and vertical distances from the center to the oval are given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **drawoval** procedure is used to draw an oval whose center is at (*x*, *y*). The horizontal and vertical distances from the center to the oval are given by *xRadius *and *yRadius*.\n\n"
+      "text_content": " The drawoval procedure is used to draw an oval whose center is at (x, y). The horizontal and vertical distances from the center to the oval are given by xRadius and yRadius.\r\n\r\n\r\n",
+      "mdown_content": "The **drawoval** procedure is used to draw an oval whose center is at (*x*, *y*). The horizontal and vertical distances from the center to the oval are given by *xRadius *and *yRadius*."
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "            setscreen (\"graphics\")\r\n            const midx := maxx div 2\r\n            const midy := maxy div 2\r\n            drawoval (midx, midy, midx, midy, 1)"
       ],
       "raw_content": "This program draws a large oval that just touches each edge of the screen using color number 1. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<i>midx</i>, <i>midy</i>), which is the middle of the screen.<p>\r\n</p>",
+      "text_content": " This program draws a large oval that just touches each edge of the screen using color number 1. The maxx and maxy functions are used to determine the maximum x and y values on the screen. The center of the oval is at (midx, midy), which is the middle of the screen.\r\n\r\n    ",
       "mdown_content": "This program draws a large oval that just touches each edge of the screen using color number 1. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The center of the oval is at (*midx*, *midy*), which is the middle of the screen."
     },
     {
@@ -36,7 +39,8 @@
     {
       "title": "Details",
       "raw_content": "Ideally, a circle is drawn when <i>xRadius</i> = <i>yRadius</i>. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.<p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
-      "mdown_content": "Ideally, a circle is drawn when *xRadius* = *yRadius*. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\n\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode.\n"
+      "text_content": " Ideally, a circle is drawn when xRadius = yRadius. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\r\nThe meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
+      "mdown_content": "Ideally, a circle is drawn when *xRadius* = *yRadius*. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
     },
     {
       "title": "See also",
@@ -46,6 +50,7 @@
         "maxy"
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
+      "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
       "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures."
     }
   ]

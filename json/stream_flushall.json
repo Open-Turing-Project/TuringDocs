@@ -5,22 +5,26 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Stream.FlushAll</b><p>\r\n</p></font>",
+      "text_content": " Stream.FlushAll\r\n",
       "mdown_content": "**Stream.FlushAll**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Stream.FlushAll</b> procedure is used to flush any buffered output in any open file. <p>\r\n</p>",
+      "text_content": " The Stream.FlushAll procedure is used to flush any buffered output in any open file. \r\n",
       "mdown_content": "The **Stream.FlushAll** procedure is used to flush any buffered output in any open file. "
     },
     {
       "title": "Details",
       "raw_content": "Turing automatically flushes any buffered output when a stream is closed. Turing also automatically closes any open files when execution is terminated.<p>\r\n</p>",
+      "text_content": " Turing automatically flushes any buffered output when a stream is closed. Turing also automatically closes any open files when execution is terminated.\r\n",
       "mdown_content": "Turing automatically flushes any buffered output when a stream is closed. Turing also automatically closes any open files when execution is terminated."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Stream.FlushAll</b>, not by calling <b>FlushAll</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Stream.FlushAll**, not by calling **FlushAll**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Stream.FlushAll, not by calling FlushAll.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Stream.FlushAll**, not by calling **FlushAll**."
     }
   ]
 }

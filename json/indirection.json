@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>targetType</i> <b>@</b> ( <i>expn</i> )<p>\r\n</p></font>",
+      "text_content": " targetType @ ( expn )\r\n",
       "mdown_content": "*targetType* **@** ( *expn* )"
     },
     {
       "title": "Description",
       "raw_content": "The indirection operator @ is used to access values that lie at absolute machine addresses in the computer's memory. This is dangerous and implementation-dependent and can cause arbitrary corruption of data and programs.<p>\r\n</p>",
+      "text_content": " The indirection operator @ is used to access values that lie at absolute machine addresses in the computer's memory. This is dangerous and implementation-dependent and can cause arbitrary corruption of data and programs.\r\n",
       "mdown_content": "The indirection operator @ is used to access values that lie at absolute machine addresses in the computer's memory. This is dangerous and implementation-dependent and can cause arbitrary corruption of data and programs."
     },
     {
@@ -18,6 +20,7 @@
         "        var b : nat1            % One byte natural number\r\n        b := nat1 @ (246)\r\n        nat1 @ (246) := 0"
       ],
       "raw_content": "Copy the byte value at memory location 246 into <i>b </i>and then set that memory byte to zero.<p>\r\n</p>",
+      "text_content": " Copy the byte value at memory location 246 into b and then set that memory byte to zero.\r\n\r\n",
       "mdown_content": "Copy the byte value at memory location 246 into *b *and then set that memory byte to zero."
     },
     {
@@ -26,7 +29,8 @@
         "        (a) [ id . ] typeId\r\n        (b) int, int1, int2 or int4\r\n        (c) nat, nat1, nat2 or nat4\r\n        (d) boolean\r\n        (e) char [ ( numberOfCharacters ) ]\r\n        (f) string [ ( maximumLength ) ]\r\n        (g) addressint"
       ],
       "raw_content": "The form of <i>targetType</i> must be one of:<p>\r\n</p>\r\nIn form (a) the beginning identifier <i>id</i> must be the name of a module, monitor or class that exports the <i>typeId</i>. Each of <i>numberOfCharacters</i> and <i>maximumLength</i> must be compile time integer expressions. These are the same target types as in type cheats.<p>\r\nThe indirection operator @ takes an integer as an address. This value must fit in the range of <b>addressint</b>. See <b>addressint</b>. See also <b>pointer</b> types and the ^ operator (which accesses objects located by pointers).</p>\n<p>\r\n</p>",
-      "mdown_content": "The form of *targetType* must be one of:\n\nIn form (a) the beginning identifier *id* must be the name of a module, monitor or class that exports the *typeId*. Each of *numberOfCharacters* and *maximumLength* must be compile time integer expressions. These are the same target types as in type cheats.\nThe indirection operator @ takes an integer as an address. This value must fit in the range of **addressint**. See **addressint**. See also **pointer** types and the ^ operator (which accesses objects located by pointers).\n"
+      "text_content": " The form of targetType must be one of:\r\n\r\nIn form (a) the beginning identifier id must be the name of a module, monitor or class that exports the typeId. Each of numberOfCharacters and maximumLength must be compile time integer expressions. These are the same target types as in type cheats.\r\nThe indirection operator @ takes an integer as an address. This value must fit in the range of addressint. See addressint. See also pointer types and the ^ operator (which accesses objects located by pointers).\r\n",
+      "mdown_content": "The form of *targetType* must be one of:\nIn form (a) the beginning identifier *id* must be the name of a module, monitor or class that exports the *typeId*. Each of *numberOfCharacters* and *maximumLength* must be compile time integer expressions. These are the same target types as in type cheats.\nThe indirection operator @ takes an integer as an address. This value must fit in the range of **addressint**. See **addressint**. See also **pointer** types and the ^ operator (which accesses objects located by pointers)."
     },
     {
       "title": "See also",
@@ -35,6 +39,7 @@
         "explicitintegerconstant"
       ],
       "raw_content": "<b><a href=\"cheat.html\">cheat</a></b>. See also <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> (which explains how to write hexadecimal constants, which are often used for addresses).<p>\r\n</p>",
+      "text_content": " cheat. See also explicitIntegerConstant (which explains how to write hexadecimal constants, which are often used for addresses).\r\n",
       "mdown_content": "**[cheat.html](cheat)**. See also *[explicitintegerconstant.html](explicitIntegerConstant)* (which explains how to write hexadecimal constants, which are often used for addresses)."
     }
   ]

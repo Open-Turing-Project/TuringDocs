@@ -5,11 +5,13 @@
     {
       "title": "Syntax",
       "raw_content": "An <i>indexType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>subrangeType</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>enumeratedType</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>namedType</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\"><i>% Which is a subrange or enumerated type</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>char</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(e)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>boolean</b></font></td>\n</tr>\n</table>\n<p></p>",
-      "mdown_content": "An *indexType* is one of:\n\n \n(a)\n*subrangeType*\n \n(b)\n*enumeratedType*\n \n(c)\n*namedType*\n \n*% Which is a subrange or enumerated type*\n \n(d)\n**char**\n \n(e)\n**boolean**"
+      "text_content": " An indexType is one of:\r\n (a)subrangeType (b)enumeratedType (c)namedType % Which is a subrange or enumerated type (d)char (e)boolean",
+      "mdown_content": "An *indexType* is one of:\n (a)*subrangeType* (b)*enumeratedType* (c)*namedType* *% Which is a subrange or enumerated type* (d)**char** (e)**boolean**"
     },
     {
       "title": "Description",
       "raw_content": "An index type defines a range of values that can be used as an <b>array</b> subscript, as a case selector, as a selector (tag) for a <b>union</b> type, or as the base type of a <b>set</b> type.<p>\r\n</p>",
+      "text_content": " An index type defines a range of values that can be used as an array subscript, as a case selector, as a selector (tag) for a union type, or as the base type of a set type.\r\n",
       "mdown_content": "An index type defines a range of values that can be used as an **array** subscript, as a case selector, as a selector (tag) for a **union** type, or as the base type of a **set** type."
     },
     {
@@ -18,6 +20,7 @@
         "        var z : array 1 .. 9 of real    % 0..9 is an index type\r\n        type smallSet : set of 0 .. 2   % 0..2 is an index type"
       ],
       "raw_content": "<p>\r\n</p>",
+      "text_content": "\r\n\r\n",
       "mdown_content": ""
     }
   ]

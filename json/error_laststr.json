@@ -5,12 +5,14 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.LastStr</b> : <b>string</b><p>\r\n</p></font>",
+      "text_content": " Error.LastStr : string\r\n",
       "mdown_content": "**Error.LastStr** : **string**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.LastStr</b> is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string \"eDrawClrNumTooLarge\" for using a color greater than <b>maxcolor</b> in a <b>Draw</b> command). If there is no error then it returns the empty string. If there is an error, you can use <b>Error.Last</b> to obtain the actual error code.<p>\r\nThe fact that <b>Error.LastStr</b> is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. <b>Error.LastStr</b> also returns a number of error codes for warning messages. For example, if a user specifies a number larger than <b>maxcolor</b> for the <i>color</i> parameter of the <b>Draw.Line</b> procedure, the line is still drawn, only in color <b>maxcolor</b>. However, <b>Error.LastStr</b> will return a string version of the error code that indicates that the color was out of range.</p>\n<p>\r\nYou can take a look at the error constants defined by looking at the unit <b>ErrorNum</b> which contains all defined error codes.</p>\n<p>\r\n</p>",
-      "mdown_content": "**Error.LastStr** is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string \"eDrawClrNumTooLarge\" for using a color greater than **maxcolor** in a **Draw** command). If there is no error then it returns the empty string. If there is an error, you can use **Error.Last** to obtain the actual error code.\nThe fact that **Error.LastStr** is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. **Error.LastStr** also returns a number of error codes for warning messages. For example, if a user specifies a number larger than **maxcolor** for the *color* parameter of the **Draw.Line** procedure, the line is still drawn, only in color **maxcolor**. However, **Error.LastStr** will return a string version of the error code that indicates that the color was out of range.\n\nYou can take a look at the error constants defined by looking at the unit **ErrorNum** which contains all defined error codes.\n"
+      "text_content": " Error.LastStr is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string \"eDrawClrNumTooLarge\" for using a color greater than maxcolor in a Draw command). If there is no error then it returns the empty string. If there is an error, you can use Error.Last to obtain the actual error code.\r\nThe fact that Error.LastStr is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. Error.LastStr also returns a number of error codes for warning messages. For example, if a user specifies a number larger than maxcolor for the color parameter of the Draw.Line procedure, the line is still drawn, only in color maxcolor. However, Error.LastStr will return a string version of the error code that indicates that the color was out of range.\r\nYou can take a look at the error constants defined by looking at the unit ErrorNum which contains all defined error codes.\r\n",
+      "mdown_content": "**Error.LastStr** is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string \"eDrawClrNumTooLarge\" for using a color greater than **maxcolor** in a **Draw** command). If there is no error then it returns the empty string. If there is an error, you can use **Error.Last** to obtain the actual error code.\nThe fact that **Error.LastStr** is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. **Error.LastStr** also returns a number of error codes for warning messages. For example, if a user specifies a number larger than **maxcolor** for the *color* parameter of the **Draw.Line** procedure, the line is still drawn, only in color **maxcolor**. However, **Error.LastStr** will return a string version of the error code that indicates that the color was out of range.\nYou can take a look at the error constants defined by looking at the unit **ErrorNum** which contains all defined error codes."
     },
     {
       "title": "Example",
@@ -18,6 +20,7 @@
         "        Dir.Create (\"testdata/information\")\r\n        if Error.Last = eNoError then\r\n            put \"Directory created\"\r\n        else\r\n            put \"Did not create the directory.\"\r\n            put \"Error Number: \", Error.Last\r\n            put \"Error Constant: \", Error.LastStr\r\n        end if"
       ],
       "raw_content": "This program creates the directory called <i>information</i>. If the creation fails, it prints out the error number and an error message.<p>\r\n</p>",
+      "text_content": " This program creates the directory called information. If the creation fails, it prints out the error number and an error message.\r\n\r\n",
       "mdown_content": "This program creates the directory called *information*. If the creation fails, it prints out the error number and an error message."
     },
     {
@@ -33,7 +36,8 @@
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Error.LastStr</b>, not by calling <b>LastStr</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.LastStr**, not by calling **LastStr**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Error.LastStr, not by calling LastStr.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.LastStr**, not by calling **LastStr**."
     }
   ]
 }

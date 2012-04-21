@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Dot</b> (<i>x</i>, <i>y</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Draw.Dot (x, y, Color : int)\r\n",
       "mdown_content": "**Draw.Dot** (*x*, *y*, *Color* : **int**)"
     },
     {
@@ -13,7 +14,8 @@
         "draw_dot01.gif"
       ],
       "raw_content": "The <b>Draw.Dot </b>procedure is used to color the dot (pixel) at location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **Draw.Dot **procedure is used to color the dot (pixel) at location (*x*, *y*) using the specified *Color*.\n\n"
+      "text_content": " The Draw.Dot procedure is used to color the dot (pixel) at location (x, y) using the specified Color.\r\n\r\n\r\n",
+      "mdown_content": "The **Draw.Dot **procedure is used to color the dot (pixel) at location (*x*, *y*) using the specified *Color*."
     },
     {
       "title": "Example",
@@ -21,7 +23,8 @@
         "        View.Set (\"graphics\")\r\n        var x, y, c : int\r\n        loop\r\n            x := Rand.Int (0, maxx)     % Random x\r\n            y := Rand.Int (0, maxy)     % Random y\r\n            c := Rand.Int (0, maxcolor) % Random color\r\n            Draw.Dot (x, y, c)\r\n        end loop"
       ],
       "raw_content": "This program randomly draws dots with random colors. The <b>maxx</b>, <b>maxy</b> and <b>maxcolor</b> functions give the maximum x, y and color values.<p>\r\n</p>\n<p>\r\n</p>",
-      "mdown_content": "This program randomly draws dots with random colors. The **maxx**, **maxy** and **maxcolor** functions give the maximum x, y and color values.\n\n"
+      "text_content": " This program randomly draws dots with random colors. The maxx, maxy and maxcolor functions give the maximum x, y and color values.\r\n\r\n",
+      "mdown_content": "This program randomly draws dots with random colors. The **maxx**, **maxy** and **maxcolor** functions give the maximum x, y and color values.\n"
     },
     {
       "title": "Execute",
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur. See <b>View.Set </b>for details.<p>\r\n</p>",
+      "text_content": " The screen must be in a \"graphics\" mode. If the screen is not in a \"graphics\" mode, an error will occur. See View.Set for details.\r\n",
       "mdown_content": "The screen must be in a \"*graphics*\" mode. If the screen is not in a \"*graphics*\" mode, an error will occur. See **View.Set **for details."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Dot</b>, not by calling <b>Dot</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Dot**, not by calling **Dot**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.Dot, not by calling Dot.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Dot**, not by calling **Dot**."
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]

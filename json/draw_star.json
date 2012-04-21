@@ -5,6 +5,7 @@
     {
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Star </b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "text_content": " Draw.Star (x1, y1, x2, y2, Color : int)\r\n",
       "mdown_content": "**Draw.Star **(*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
     },
     {
@@ -13,7 +14,8 @@
         "draw_star01.gif"
       ],
       "raw_content": "The <b>Draw.Star </b>procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i> then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
-      "mdown_content": "The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2* then the star is drawn upside down.\n\n"
+      "text_content": " The Draw.Star procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color. If y1 is greater than y2 then the star is drawn upside down.\r\n\r\n\r\n",
+      "mdown_content": "The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2* then the star is drawn upside down."
     },
     {
       "title": "Example",
@@ -21,6 +23,7 @@
         "        View.Set (\"graphics\")\r\n        Draw.Star (0, 0, 100, 100, brightred)\r\n        Draw.Star (150, 100, 250, 0, brightblue)"
       ],
       "raw_content": "This program will draw two stars beside each other. The first star will be in color 1 and the second star will be upside down and in color 2.<p>\r\n</p>",
+      "text_content": " This program will draw two stars beside each other. The first star will be in color 1 and the second star will be upside down and in color 2.\r\n\r\n    ",
       "mdown_content": "This program will draw two stars beside each other. The first star will be in color 1 and the second star will be upside down and in color 2."
     },
     {
@@ -36,12 +39,14 @@
     {
       "title": "Details",
       "raw_content": "The <b>Draw.Star</b> procedure is useful for drawing the American flag.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
-      "mdown_content": "The **Draw.Star** procedure is useful for drawing the American flag.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur.\n"
+      "text_content": " The Draw.Star procedure is useful for drawing the American flag.\r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
+      "mdown_content": "The **Draw.Star** procedure is useful for drawing the American flag.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Star</b>, not by calling <b>Star</b>.</p>\n<p>\r\n</p>",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Star**, not by calling **Star**.\n"
+      "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.Star, not by calling Star.\r\n",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Star**, not by calling **Star**."
     },
     {
       "title": "See also",
@@ -52,6 +57,7 @@
         "drawmodule"
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
   ]
