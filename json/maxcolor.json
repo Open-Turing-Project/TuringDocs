@@ -42,5 +42,8 @@
       "text_content": " drawdot and palette for examples of the use of maxcolor. See the color procedure which is used for setting the currently active color.\r\n",
       "mdown_content": "**[drawdot.html](drawdot)** and **palette** for examples of the use of **[](maxcolor)**. See the **[color.html](color)** [procedure.html](procedure) which is used for setting the currently active [color.html](color)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

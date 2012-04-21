@@ -1,0 +1,28 @@
+<h1>delay</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>delay</strong> (<em>duration</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>delay</strong> statement is used to cause the program to pause for a given time. The time duration is in milliseconds.</p>
+
+<h2>Example</h2>
+
+<p>This program prints the integers 1 to 10 with a second delay between each.</p>
+
+<pre><code>    for i : 1 .. 10
+        put i
+        delay (1000)    % Pause for 1 second
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>On Apple Macintoshes, the hardware resolution of duration is in units of 17 milliseconds (1/60th of a second). For example, <strong>delay</strong>(500) will delay the program by about half a second, but may be off by as much as 17 milliseconds.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="sound">sound.html</a></strong>, <strong><a href="clock">clock.html</a></strong>, <strong><a href="sysclock">sysclock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong>, <strong><a href="time">time.html</a></strong> and <strong><a href="date">date.html</a></strong> statements.
+See also predefined unit <strong><a href="Time">timemodule.html</a></strong>.</p>

@@ -1,0 +1,52 @@
+<h1>Pic.FileNewFrames</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Pic.FileNewFrames</strong> (<em>pathName</em> : <strong>string</strong>, <strong>var</strong> <em>picIDs</em> : <strong>array</strong> 1 .. * <strong>of int</strong>, <strong>var</strong> <em>delayTime</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Pic.FileNewFrames</strong> loads multiple pictures stored in a singlemultiframe GIF image file into an array of integers.</p>
+
+<h2>Details</h2>
+
+<p>GIF files can contain multiple frames (pictures).  Animated GIFs function by displaying each frame in the GIF one after another with a delay between them.  This delay can also be specified in the GIF file.
+<strong>Pic.FileNewFrames</strong> reads the series of frames from the multiframe GIF file, and turns each frame into a picture.  Thepicture is then assigned to an element in the <em>picIDs</em> array.If the array is not large enough, then an error occurs and nopictures are loaded.
+<strong>Pic.FileNewFrames</strong> also reads the delay specified in the GIF file and sets <em>delayTime</em> to the delay in milliseconds.  Note that many multiple frame GIF files do not specify a delay, in which case <em>delayTime</em> will be set to 0.
+In order to determine the number of frames in multiple frame GIFfile, you must use the <strong><a href="Pic.Frames">pic_frames.html</a></strong>function.  This returns a number that can be used to declare thearray that will be passed to <strong>Pic.FileNewFrames</strong>.
+<strong>var</strong> <em>numFrames</em> = <strong>Pic.Frames</strong> ("mypic.gif")<strong>var</strong> <em>pics</em> : <strong>array</strong> 1 .. <em>numFrames</em> <strong>of int</strong><strong>var</strong> <em>delayTime</em> : <strong>int</strong><strong>Pic.FileNewFrames</strong> ("mypic.gif", <em>pics</em>, <em>delayTime</em>)
+The frames can be sequentially displayed using either <strong>Pic.DrawFrames</strong> or <strong>Pic.DrawFramesBack</strong> which display the images one at a time. (<strong>Pic.DrawFrames</strong> returns once all the images have been displayed, <strong>Pic.DrawFramesBack</strong> returns immediately allowing the program to continue execution while the frames are being displayed.</p>
+
+<h2>Details</h2>
+
+<p>GIF files can have a transparent color.  This color will be added tothe color palette, if not already present.  Thus you may notice that<strong>maxcolor</strong> changes after calling <strong>Pic.FileNew</strong> or<strong>Pic.FileNewFrames</strong>.  The GIF image will be be displayed withoutthe transparent color if <em>mode</em> parameter in any of the <strong>Pic.Draw...</strong> procedures is set to <em>picMerge</em>.</p>
+
+<h2>Details</h2>
+
+<p>Each picture is in the array has been allocated by the system andshould be freed separately once the program is finished with thepictures.  Failing to do so can use up the system's memory.</p>
+
+<h2>Example</h2>
+
+<p>The program loads a multiple frame GIF called "globe.gif" and displays it.</p>
+
+<pre><code>    % Determine the number of frames in "globe.gif"
+    % Create the original picture
+    var numFrames := Pic.Frames ("globe.gif")
+    % Load the picture
+    var delayTime : int
+    var pics : array 1 .. numFrames of int
+
+Pic.FileNewFrames ("globe.gif", pics, delayTime)
+Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Pic.FileNewFrames</strong>, not by calling <strong>FileNewFrames</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Pic.Frames">pic_frames.html</a></strong> for information on howto determine the number of frames in a GIF image.
+<strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> for information onhow to sequentially display the images stored in array of pictures.
+<strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> for information on how to sequentially display the images stored in array of pictures while continuing to execute the program.</p>

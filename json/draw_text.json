@@ -82,5 +82,8 @@
       "text_content": "Font module for more information about selecting the font to \r\n          be displayed.\r\n    ",
       "mdown_content": "**Font** module for more information about selecting the font to be displayed."
     }
+  ],
+  "dependencies": [
+
   ]
 }

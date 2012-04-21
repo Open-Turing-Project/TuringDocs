@@ -1,0 +1,31 @@
+<h1>Net.WaitForConnection</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Net.WaitForConnection</strong> (<em>port</em> : <strong>int</strong>, <strong>var </strong><em>netAddr</em> : <strong>string</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Listens for a connection at the port specified by the <em>port</em> parameter. When another program connects to the port, then the function returns. The address of the connecting machine is specified in the <em>netAddr</em> parameter and the <strong>Net.WaitForConnection </strong>returns a network stream descriptor which can be used with the <strong>put</strong>, <strong>get</strong>, <strong>read</strong>, and <strong>write</strong> statements and <strong>eof</strong> function to send and receive data to the connecting program. It is also the parameter used for the <strong>Net.CloseConnection</strong>, <strong>Net.BytesAvailable</strong>, <strong>Net.CharAvailable</strong>, <strong>Net.LineAvailable</strong>, and <strong>Net.TokenAvailable</strong> functions.
+In OOT, the connection to a port is made with the <strong>Net.OpenConnection</strong> function.
+The <em>netAddr</em> parameter is a string specifying the net address of the machine that connected to the port. It is the machines numerical address.
+In general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.
+The program will wait for indefinitely for a connection to made to the port.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
+It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+
+<h2>Example</h2>
+
+<p>See <strong>Net.OpenConnection</strong> for an example of <strong>Net.WaitForConnection</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Net.WaitForConnection</strong>, not by calling <strong>WaitForConnection</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Net.OpenConnection">net_openconnection.html</a></strong> and <strong><a href="Net.CloseConnection">net_closeconnection.html</a></strong>.</p>

@@ -62,5 +62,8 @@
       "text_content": " GUI.GetEventWidgetID, GUI.GetEventTime, and GUI.GetEventWindow for obtaining information about an event in an action procedure. See also GUI.SetMouseEventHandler, GUI.SetKeyEventHandler and GUI.SetNullEventHandler for handling mouse, keyboard an d null events in the event loop. See also GUI.Quit for information on exitting the event loop.\r\n",
       "mdown_content": "**[gui_geteventwidgetid.html](GUI.GetEventWidgetID)**, **[gui_geteventtime.html](GUI.GetEventTime)**, and **[gui_geteventwindow.html](GUI.GetEventWindow)** for obtaining information about an event in an *action [procedure.html](procedure)*. See also **[gui_setmouseeventhandler.html](GUI.SetMouseEventHandler)**, **[gui_setkeyeventhandler.html](GUI.SetKeyEventHandler)** and **[gui_setnulleventhandler.html](GUI.SetNullEventHandler)** for handling mouse, keyboard an d null events in the *event [loop.html](loop)*. See also **[gui_quit.html](GUI.Quit)** for information on exitting the *event [loop.html](loop)*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

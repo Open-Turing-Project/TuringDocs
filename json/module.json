@@ -63,5 +63,8 @@
       "text_content": " unit, monitor and class. See also export list, import list, implement list, implement by list, inherit list and deferred subprogram.\r\n",
       "mdown_content": "**[unit.html](unit)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** list, i**mplement by** list, **[inherit.html](inherit)** list and **[deferred.html](deferred)** subprogram."
     }
+  ],
+  "dependencies": [
+
   ]
 }

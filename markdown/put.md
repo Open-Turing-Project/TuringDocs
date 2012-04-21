@@ -5,11 +5,17 @@
 A *putStatement* is:
  **put** [ : *fileNumber* , ] *putItem* { , *putItem* } [ .. ]
 
+
+
 ##Description
 The **put** statement outputs each of the *putItems*. Usually, a new line is started in the output after the final *putItem*. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.
 Ordinarily, the output goes to the screen. However, if the *fileNumber *is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.
 
+
+
 ##Example
+
+
 
             var n : int := 5
             put "Alice owes me $", n
@@ -17,6 +23,8 @@ Ordinarily, the output goes to the screen. However, if the *fileNumber *is prese
                     % Note that no extra space is
                     % output before an integer such as n.
 ##Example
+
+
 
         Statement           Output      Notes
         
@@ -36,18 +44,26 @@ Ordinarily, the output goes to the screen. However, if the *fileNumber *is prese
 ##Example
 A single blank line is output this way:
 This **put** statement is sometimes used to close off a line that has been output piece by piece using **put** with dot-dot.
+
+
         put ""  % Output null string then new line
 ##Details
 The general form of a *putItem* is one of:
  (a) *expn* [:*widthExpn* [:*fractionWidth* [:*exponentWidth* ] ] ] (b)  **skip**
 See the above examples for uses of *widthExpn*, *fractionWidth* and *exponentWidth*. For the exact meaning of these three widths, see the definitions of the functions *realstr*, *frealstr* and *erealstr*. The **skip** item is used to end the current output line and start a new line.
 
+
+
 ##Details
 The **put** semantics allow put's of enum values. The values printed are the element names themselves, case sensitive. For example:
+
+
         type colors : enum ( red, green, blue )
         var c : colors := colors . red
         put c       % outputs "red" (without the quotes)
 ##Details
 The **put** semantics allow put's of **boolean** values. The values printed are either true or false (without the quotes). For example:
+
+
         var c : boolean := true or false
         put c       % outputs "true" (without the quotes)

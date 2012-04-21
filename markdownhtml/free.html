@@ -1,0 +1,39 @@
+<h1>free</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>freeStatement</em> is:
+<strong>free</strong> [ <em>collectionOrClassId</em>, ] <em>pointerVariableReference</em></p>
+
+<h2>Description</h2>
+
+<p>A <strong>free</strong> statement destroys (deallocates) an element that has been allocated by a <strong>new</strong> statement.</p>
+
+<h2>Example</h2>
+
+<p>Using a collection, declare a list of records and allocate one of these records. Then deallocate the record.</p>
+
+<pre><code>    var list : collection of
+        record
+            contents : string ( 10 )
+            next : pointer to list
+                        % Short form: next : ^ list
+        end record
+    var first : pointer to list % Short form: var next : ^ list
+    new list, first
+            % Allocate an element of list; place its location in first
+            % Short form: new first
+    &#133;
+    free list, first    % Deallocate the element of list located by first
+                % Short form: free first
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>free</strong> statement sets the pointer variable to the <strong>nil</strong> value. See the <strong>new</strong> statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the <em>collectionOrClassId </em>in the <strong>free</strong> statement must be omitted.
+An imported class can have one of its objects destroyed (by the <strong>free</strong> statement) only if the class is imported <strong>var</strong>.
+The <em>collectionOrClassId</em> is optional in the <strong>free</strong> statement.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="class">class.html</a></strong> and <strong><a href="collection">collection.html</a></strong> declarations, the <strong><a href="pointer">pointer.html</a></strong> type, the <strong><a href="new">new.html</a></strong> <a href="statement">statement.html</a> and the <strong><a href="nil">nil.html</a></strong> value.</p>

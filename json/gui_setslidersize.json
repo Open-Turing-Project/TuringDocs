@@ -36,5 +36,8 @@
       "text_content": " GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
       "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

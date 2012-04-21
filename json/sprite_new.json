@@ -41,5 +41,8 @@
       "text_content": "Sprite.SetHeight, \r\n\t  Sprite.SetPosition, \r\n\t  Sprite.Show and \r\n\t  Sprite.Free.\r\n    ",
       "mdown_content": "**[sprite_setheight.html](Sprite.SetHeight)**, **[sprite_setposition.html](Sprite.SetPosition)**, **[sprite_show.html](Sprite.Show)** and **[sprite_free.html](Sprite.Free)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

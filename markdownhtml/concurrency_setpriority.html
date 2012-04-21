@@ -1,0 +1,18 @@
+<h1>Concurrency.setpriority</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>setpriority</strong> (<em>p</em> : <strong>nat</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>setpriority</strong> procedure is used to set the priority of a process in a concurrent program.  This priority cannot  be counted on to guarantee critical access to shared variables.  A smaller value of <em>p</em> means increased speed.  The argument to <strong>setpriority</strong> may be limited to the range 0 to 2**15 - 1.</p>
+
+<h2>Status</h2>
+
+<p>Part of the language and only conceptually part of the <strong>Concurrency</strong> unit.
+This means that you can only call the function by calling <strong>setpriority</strong>, not by calling <strong>Concurrency.setpriority</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="getpriority">getpriority.html</a>, <a href="fork">fork.html</a> </strong>and <strong><a href="monitor">monitor.html</a></strong>.</p>

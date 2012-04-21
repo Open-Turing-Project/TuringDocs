@@ -132,5 +132,8 @@
       "text_content": " init to initialize arrays, flexible to declare resizable arrays and indexType to specify the index of an array.\r\n",
       "mdown_content": "**[init.html](init)** to initialize arrays, **[flexible.html](flexible)** to declare resizable arrays and *[indextype.html](indexType)* to specify the index of an array."
     }
+  ],
+  "dependencies": [
+
   ]
 }

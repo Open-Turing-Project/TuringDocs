@@ -1,0 +1,25 @@
+<h1>drawpic</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawpic</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>buffer</em> : <strong>array</strong> 1 .. * <strong>of</strong> <strong>int</strong>, <em>picmode</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawpic</strong> procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (<em>x</em>, <em>y</em>). In the common case, the buffer was initialized by calling <strong>takepic</strong>. The values of <em>picmode</em> are:
+0:  Copy actual picture on screen.1:  Copy picture by XORing it onto the screen.
+XORing a picture onto the screen twice leaves the screen as it was  (this is a convenient way to move images for animation). XORing a picture onto a background effectively superimposes the picture onto the background.</p>
+
+<h2>Details</h2>
+
+<p>See <strong>takepic</strong> for an example of the use of <strong>drawpic</strong> and for further information about buffers for drawing pictures.
+The screen must be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>drawpic</strong>, <strong>takepic</strong>, and <strong>sizepic</strong> subprogramshave been made obsolete by the subprograms <strong><a href="Pic.Draw">pic_draw.html</a></strong> and<strong><a href="Pic.New">pic_new.html</a></strong> of the <strong><a href="Pic">picmodule.html</a></strong> module.  Users are strongly suggested to use those routines instead. The <strong><a href="Pic">picmodule.html</a></strong> module also contains subprograms to load images from files.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="takepic">takepic.html</a></strong> and <strong><a href="sizepic">sizepic.html</a></strong>. See also <strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.
+See also predefined unit <strong><a href="Draw">drawmodule.html</a></strong> and <strong><a href="Pic">picmodule.html</a></strong>.</p>

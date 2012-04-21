@@ -1,0 +1,27 @@
+<h1>time</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>time</strong> ( <strong>var</strong><em> t</em>  : <strong>string</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>time</strong> statement is used to determine the current time of day. Variable <em>t </em>is assigned a string in the format "<em>hh:mm:ss</em>". For example, if the time is two minutes and 47 seconds after nine A.M., <em>t </em>will be set to "<em>09:02:47</em>". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string "<em>23:30:00</em>".</p>
+
+<h2>Example</h2>
+
+<p>This program greets you and tells you the time of day.</p>
+
+<pre><code>    var timeOfDay : string
+    time ( timeOfDay )
+    put "Greetings!!  The time is ", timeOfDay
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system. In this case, the <strong>time</strong> procedure will give incorrect results.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="delay">delay.html</a></strong>, <strong><a href="clock">clock.html</a></strong>, <strong><a href="sysclock">sysclock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong> and <strong><a href="date">date.html</a></strong> statements.
+See also predefined unit <strong><a href="Time">timemodule.html</a></strong>.</p>

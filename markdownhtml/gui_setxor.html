@@ -1,0 +1,50 @@
+<h1>GUI.SetXOR</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetXOR</strong> (<em>widgetID</em> : <strong>int</strong>, <em>xor</em> : <strong>boolean</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Sets the "xor mode" of the canvas specified by <em>widgetID</em>. If the <em>xor</em> parmeter is set to <strong>true</strong>, the canvas is set to <em>xor mode</em>. When in <em>xor mode</em>, all the <em>Draw</em>... procedures of a canvas are treated as if the <strong>View.Set</strong> ("xor") statement had been executed before the <em>Draw</em> procedure.</p>
+
+<h2>Example</h2>
+
+<p>See <strong>GUI.SetDisplayWhenCreated</strong> for an example of <strong>GUI.Show</strong>.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+    View.Set ("graphics:400;300")
+    var canvas1, label1, canvas2, label2 : int
+    canvas1 := GUI.CreateCanvas (10, 20, maxx div 2  20, maxy  30)
+    label1 := GUI.CreateLabelFull (10, 2, "XOR", maxx div 2  20, 0,
+        GUI.CENTER, 0)
+    canvas2 := GUI.CreateCanvas (maxx div 2 + 10, 20, 
+        maxx div 2  20, maxy  30)
+    label2 := GUI.CreateLabelFull (maxx div 2 + 10, 2, "Normal", 
+        maxx div 2  20, 0, GUI.CENTER, 0)
+
+    GUI.SetXOR (canvas1, true)
+    for i : 1 .. 20
+        var x : int := Rand.Int (0, maxx div 2  20)
+        var y : int := Rand.Int (0, maxy  20)
+        var c : int := Rand.Int (1, 15)
+        GUI.DrawFillStar (canvas1, x  20, y  20, x + 20, y + 20, c)
+    end for
+
+    GUI.SetXOR (canvas2, false)
+    for i : 1 .. 20
+        var x : int := Rand.Int (0, maxx div 2  20)
+        var y : int := Rand.Int (0, maxy  20)
+        var c : int := Rand.Int (1, 15)
+        GUI.DrawFillStar (canvas2, x  20, y  20, x + 20, y + 20, c)
+    end for
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetXOR</strong>, not by calling <strong>SetXOR</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.CreateCanvas</strong>.</p>

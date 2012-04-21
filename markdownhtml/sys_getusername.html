@@ -1,0 +1,28 @@
+<h1>Sys.GetUserName</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sys.GetUserName</strong> : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Sys.GetUserName </strong>function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs a greeting to the user .</p>
+
+<pre><code>    var computerName, userName : string
+    computerName := Sys.GetComputerName
+    userName := Sys.GetUserName
+    put "Hello ", userName, " on ", computerName
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sys.GetUserName</strong>, not by calling<strong> GetUserName</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sys.GetComputerName">sys_getcomputername.html</a></strong> to obtain the name of the computer.</p>

@@ -1,0 +1,29 @@
+<h1>post</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>postAssertion</em> is:
+<strong>post</strong> <em>trueFalseExpn</em></p>
+
+<h2>Description</h2>
+
+<p>A <strong>post</strong> assertion is a special form of an <strong>assert</strong> statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the <em>trueFalseExpn</em>. After the body has executed and just before the procedure or function returns, the <em>trueFalseExpn </em>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <strong>assert</strong> statements and <strong>procedure</strong> and <strong>function</strong> declarations for more details. See also <strong>pre</strong> and <strong>invariant</strong> assertions.</p>
+
+<h2>Example</h2>
+
+<p>This function is supposed to produce an integer approximation of the square root of integer <em>i</em>. The post condition requires that this result, which is called <em>answer</em>, must be within a distance of 1 from the corresponding <strong>real</strong> number square root.</p>
+
+<pre><code>    function intSqrt ( i : int) answer : int
+        pre i &gt;= 0
+        post abs ( answer - sqrt ( i ) ) &lt;= 1
+        &#133; statements to approximate square root&#133;
+    end intSqrt
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A <strong>post</strong> assertion can also be used in a module, monitor, class or process declaration to make sure that the initialization satisfies its requirements.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="module">module.html</a></strong> and <strong><a href="process">process.html</a></strong>.</p>

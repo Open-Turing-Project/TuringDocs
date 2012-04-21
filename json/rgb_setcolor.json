@@ -42,5 +42,8 @@
       "text_content": "RGB.GetColorand \r\n          RGB.AddColor.\r\n  ",
       "mdown_content": "**[rgb_getcolor.html](RGB.GetColor)**and **[rgb_addcolor.html](RGB.AddColor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -4,12 +4,18 @@
 ##Syntax
 **Font.StartSize** (*fontName*, *fontStyle* : **string**)
 
+
+
 ##Description
 **Font.StartSize** is used to start a listing of all the sizes for a particular font name and style. 
 The *fontName* parameter should be an actual font name (as opposed to the default names of serif, etc). You can get a list of the font names by using the **Font.StartName** and **Font.GetName** subprograms. The *fontStyle* parameter should be in the same format as would appear in the **Font.New** procedure.
 
+
+
 ##Example
 The program lists all the fonts, styles and sizes available on the system.
+
+
         var fontName : string
         var bold, italic, underline : boolean
         var size : int
@@ -41,3 +47,5 @@ The program lists all the fonts, styles and sizes available on the system.
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Font.StartSize**, not by calling **StartSize**.
+
+

@@ -41,5 +41,8 @@
       "text_content": " var declaration, const declaration, procedure declaration, function declaration, subprogram header and export list for uses of pervasive.\r\n",
       "mdown_content": "**[var.html](var)** [declaration.html](declaration), **[const.html](const)** [declaration.html](declaration), **[procedure.html](procedure)** [declaration.html](declaration), **[function.html](function)** [declaration.html](declaration), **subprogram** header and **[export.html](export)** list for uses of **[](pervasive)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

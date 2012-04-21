@@ -1,0 +1,41 @@
+<h1>File.Exists</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.Exists</strong> (<em>pathName</em> : <strong>string</strong>) : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>File.Exists </strong>returns <strong>true</strong> if a file by the name of <em>pathName</em> exists. It will return <strong>false</strong> if <em>pathName</em> is a directory.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>File.Exists</strong> returns <strong>false</strong>, you can examine <strong>Error.Last</strong> or <strong>Error.LastMsg</strong> for more information (i.e. whether the path failed or the file was simply not found).</p>
+
+<h2>Example</h2>
+
+<p>This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.</p>
+
+<pre><code>    var pathName : string
+    var choice : string
+    loop
+        put "Enter file name to write results to" ..
+        get pathName
+        if File.Exists (pathName) then
+            put "Overwrite ", pathName, "?" ..
+            get choice
+            exit when choice = "y"
+        else
+            exit
+        end if
+    end loop
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>An example program is available that creates a file in the current directory, tests for its existence using <strong>File.Exists</strong> and deletes the file using <strong>File.Delete</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.Exists</strong>, not by calling <strong>Exists</strong>.</p>

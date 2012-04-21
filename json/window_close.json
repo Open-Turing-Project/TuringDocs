@@ -45,5 +45,8 @@
       "text_content": " Window.Open and Window.Select.\r\n",
       "mdown_content": "**[window_open.html](Window.Open)** and **[window_select.html](Window.Select)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -40,5 +40,8 @@
       "text_content": " View.Set for the syntax of startUpString. See also Window.Select and Window.SetActive.\r\n",
       "mdown_content": "**[view_set.html](View.Set) **for the syntax of *startUpString*. See also **[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

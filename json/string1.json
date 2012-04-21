@@ -42,5 +42,8 @@
       "text_content": " explicitStringConstants for exact rules for writing string values such as \"Nancy\". See also char(n) and char types.\r\n",
       "mdown_content": "*explicitStringConstants* for exact rules for writing string values such as \"Nancy\". See also **[char.html](char)**(*n*) and **[char.html](char)** types."
     }
+  ],
+  "dependencies": [
+
   ]
 }

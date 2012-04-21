@@ -1,0 +1,48 @@
+<h1>boolean</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>boolean</strong> type is used for values that are either <strong>true</strong> or <strong>false</strong>. These true-false values can be combined by various operators such as <strong>or</strong> and <strong>and</strong>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var success : boolean := false
+    var continuing := true      % The type is boolean
+    &#133;
+    success := mark &gt;= 60
+    continuing := success and continuing
+    if continuing then &#133;
+</code></pre>
+
+<h2>Details</h2>
+
+<p>This type is named after the British mathematician, George Boole, who formulated laws of logic.
+The operators for <strong>true</strong> and <strong>false</strong> are <strong>and</strong>, <strong>or</strong>,<em> </em><strong>xor</strong>, =<strong>></strong>, and <strong>not</strong>. For two true/false values <em>A</em> and <em>B</em>, these operators are defined as follows:
+<em>A</em> <strong>and</strong> <em>B</em> is true when both are true<em>A</em> <strong>or</strong> <em>B</em> is true when either or both are true<em>A</em> <strong>xor</strong> <em>B</em> is true when either but not both are true<em>A</em> =<strong>></strong> <em>B</em> (A implies B) is true when both are true or when A is false<strong>not</strong> <em>A</em> is true when A is false
+The <strong>and</strong> operator has higher precedence than <strong>or</strong>, so <em>A</em> <strong>or</strong> <em>B</em> <strong>and</strong> <em>C</em> means <em>A</em> <strong>or</strong> (<em>B</em> <strong>and</strong> <em>C</em>).
+The operators <strong>or</strong>, <strong>and</strong> and =<strong>></strong> are short circuit operators. For example, if <em>A</em> is true in <em>A</em> <strong>or</strong> <em>B</em>, <em>B </em>is not evaluated.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>boolean</strong> type can be used as an index to an array.</p>
+
+<h2>Example</h2>
+
+<p>Declaration of an array with <strong>boolean</strong> index.</p>
+
+<pre><code>    var a : array boolean of int
+    a (false) := 10
+    a (true) := 20
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>put</strong> and <strong>get</strong> semantics allow put's and get's of boolean values. <strong>true</strong> values will be output as "true" and <strong>false</strong> values will be output as "false". The only legal input values are "true" and "false", which are case sensitive.</p>
+
+<h2>See also</h2>
+
+<p><em><a href="explicitTrueFalseConstant">explicittruefalseconstant.html</a></em> (which discusses the values <strong><a href="true">true.html</a></strong> and <strong><a href="false">false.html</a></strong>), <em><a href="precedence">precedence.html</a></em> and <em><a href="expn">expn.html</a> </em>(expression).</p>

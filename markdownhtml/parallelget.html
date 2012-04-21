@@ -1,0 +1,31 @@
+<h1>parallelget</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>parallelget</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>parallelget</strong> procedure is used on a PC to read the value of certain pins on the parallel port. This port corresponds to the MS-DOS device "LPT1". This procedure can be used to control robots and peripherals.</p>
+
+<h2>Example</h2>
+
+<p>This program reads and prints the values of the five data pins of the PC's parallel port.</p>
+
+<pre><code>    const val : int := parallelget  % Read in the set of pin values
+    put "Pin 10 is: ", (val div 64) mod 2
+    put "Pin 11 is: ", (val div 128) mod 2
+    put "Pin 12 is: ", (val div 32) mod 2
+    put "Pin 13 is: ", (val div 16) mod 2
+    put "Pin 15 is: ", (val div 8) mod 2
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The five pins that are used for parallel input are pins 10-15. The <strong>parallelget</strong> procedure returns the sum of
+64 Pin 10 high128Pin 11 high 32 Pin 12 high 16 Pin 13 high 8 Pin 15 high
+The <strong>mod</strong> and <strong>div</strong> operators can be used to determine which pins are high or low.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="parallelput">parallelput.html</a></strong> <a href="procedure">procedure.html</a> for a diagram of the pins. That <a href="procedure">procedure.html</a> is used to <a href="set">set.html</a> the values on the parallel port.</p>

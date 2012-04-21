@@ -1,0 +1,70 @@
+<h1>Mouse.ButtonMoved</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Mouse.ButtonMoved</strong> (<em>motion</em> : <strong>string</strong>) : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Mouse.ButtonMoved</strong> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).
+The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>Mouse.ButtonMoved</strong> returns <strong>true</strong>. If the event is not in the queue, then <strong>Mouse.ButtonMoved</strong> returns <strong>false</strong>.
+In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
+
+<h2>Example</h2>
+
+<p>This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.</p>
+
+<pre><code>    var circles: boolean := true
+    loop
+        var x, y, radius, clr: int
+        if Mouse.ButtonMoved ("down") then
+            var buttonnumber, buttonupdown : int
+            Mouse.ButtonWait ("down", x, y, buttonnumber, 
+                                    buttonupdown)
+            circles := not circles
+        end if
+        x := Rand.Int (0, maxx)
+        y := Rand.Int (0, maxy)
+        radius := Rand.Int (0, 100)
+        clr := Rand.Int (0, maxcolor)
+        if circles then
+            Draw.FillOval (x, y, radius, radius, clr)
+        else
+            Draw.FillBox (x, y, x + radius, y + radius, clr)
+        end if
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This is an example demonstrating how to check for both character and mouse input at the same time.</p>
+
+<pre><code>    var ch : string (1)
+    var x, y, btnnum, btnupdown : int
+    loop
+        if hasch then
+            getch (ch)
+            Text.Locate (1, 1)
+            put "The character entered is a: ", ch
+        end if
+        if Mouse.ButtonMoved ("down") then
+            Mouse.ButtonWait ("down", x, y, btnnum, btnupdown)
+            Text.Locate (1, 1)
+            put "The button was clicked at position: ", x, ", ",y
+        end if
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p><strong>Mouse.ButtonMoved</strong> can be thought of as the mouse equivalent of <strong>hasch</strong> in that they both check for something in a queue and both return immediately.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Mouse.ButtonMoved</strong>, not by calling <strong>ButtonMoved</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Mouse.ButtonMoved"></a></strong> to get mouse events saved in the queue. See also <strong><a href="Mouse.ButtonChoose">mouse_buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".</p>

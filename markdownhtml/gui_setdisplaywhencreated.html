@@ -1,0 +1,44 @@
+<h1>GUI.SetDisplayWhenCreated</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetDisplayWhenCreated</strong> (<em>display</em> : <strong>boolean</strong>)</p>
+
+<h2>Description</h2>
+
+<p>By default, whenever a widget is created with a <em>GUI.Create&#133;</em> procedure, the widget instantly appears. Sometimes, this is not the desired behaviour. For example, if several widgets are to occupy the same location with only one being displayed at a time, then it is desirable not to have the widget appear when first created.
+If a widget is not displayed when created, then <em>GUI.Show</em> must be called to make the widget visible.
+If the <em>display</em> parameter is <strong>true</strong>, then widgets are displayed immediately upon creation. If the <em>display</em> parameter is set to <strong>false</strong>, then the widget is not made visible on creation and <em>GUI.Show</em> must be called to display the widget.</p>
+
+<h2>Example</h2>
+
+<p>The following program toggles the visiblility of the frame when the button is pushed. The frame starts out invisible.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI" 
+    View.Set ("graphics:150;100") 
+
+    var visible : boolean := false
+    var button, frame : int
+
+    procedure Toggle
+        if visible then
+            GUI.Hide (frame)
+        else
+            GUI.Show (frame)
+        end if
+        visible := not visible
+    end Toggle
+
+    button := GUI.CreateButton (25, 40, 0, "Toggle Frame", Toggle)
+    GUI.SetDisplayWhenCreated (false)
+    frame := GUI.CreateFrame (10, 10, 140, 90, 0)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetDisplayWhenCreated</strong>, not by calling <strong>SetDisplayWhenCreated</strong>.</p>

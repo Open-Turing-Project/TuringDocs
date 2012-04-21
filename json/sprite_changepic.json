@@ -38,5 +38,8 @@
       "text_content": " Sprite.New.\r\n",
       "mdown_content": "**[sprite_new.html](Sprite.New)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

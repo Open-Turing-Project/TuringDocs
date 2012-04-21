@@ -1,0 +1,39 @@
+<h1>result</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>resultStatement</em> is:
+<strong>result</strong> <em>expn</em></p>
+
+<h2>Description</h2>
+
+<p>A <strong>result</strong> statement, which must appear only in a <strong>function</strong>, is used to provide the value of the function.</p>
+
+<h2>Example</h2>
+
+<p>This function doubles its parameter.</p>
+
+<pre><code>    function double ( x : real ) : real
+        result 2 * x
+    end double
+    put double ( 5.3 )      % This outputs 10.6
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This function finds the position of a name in a list.</p>
+
+<pre><code>    function find ( a : array 1 .. 100 of string ) : int
+        for i : 1 .. 100
+            if a ( i ) = name then
+                result i
+            end if
+        end for
+    end find
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The execution of a <strong>result</strong> statement computes the value of the expression (<em>expn</em>) and terminates the function, returning the value as the value of the function.
+The expression must be assignable to the result type of the function, for example, in <em>double</em>, 2<strong>x* is assignable to </strong>real<strong>. (See the <em>assignmentStatement</em> for the definition of assignable.)
+A function must terminate by executing a </strong>result** statement and not by reaching the end of the function.</p>

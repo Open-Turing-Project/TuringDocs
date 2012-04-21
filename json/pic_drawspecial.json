@@ -88,5 +88,16 @@
       "text_content": "Pic.Draw for information on the meaning\r\n          of the mode argument.\r\n          Pic.DrawSpecialBack for \r\n          information on how to continue executing the program while a special\r\n          effect is occurring.  This allows one to produce several special\r\n          effects at once.\r\n    ",
       "mdown_content": "**[pic_draw.html](Pic.Draw)** for information on the meaningof the *mode* argument.\n**[pic_drawspecialback.html](Pic.DrawSpecialBack)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once."
     }
+  ],
+  "dependencies": [
+    "pic_drawspecial01.gif",
+    "pic_drawspecial05.gif",
+    "pic_drawspecial06.gif",
+    "pic_drawspecial02.gif",
+    "pic_drawspecial07.gif",
+    "pic_drawspecial08.gif",
+    "pic_drawspecial09.gif",
+    "pic_drawspecial03.gif",
+    "pic_drawspecial04.gif"
   ]
 }

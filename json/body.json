@@ -59,5 +59,8 @@
       "text_content": " class, forward and implement by\r\n",
       "mdown_content": "**[class.html](class)**, **[forward.html](forward)** and **[implement_by.html](implement by)**"
     }
+  ],
+  "dependencies": [
+
   ]
 }

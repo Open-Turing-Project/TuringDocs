@@ -1,0 +1,26 @@
+<h1>maxint</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>maxint</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>maxint</strong> function is used to determine the largest integer (<strong>int</strong>) that can be used in a program.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the maximum integer.</p>
+
+<pre><code>    put "The largest integer that can be used is ", maxint
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In current Turing and OOT implementations, <strong>int</strong> values are stored in 4 bytes, i.e., 32 bits. This determines the maximum <strong>int</strong> value, which is 2<strong>311, equaling 2147483647.
+There is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than </strong>maxint<strong>. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an </strong>int<strong> variable is detected as an overflow. You can use this extra value by using the </strong>int4<strong> type instead of </strong>int**, but this type has no initialization checking.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="maxnat">maxnat.html</a></strong> and <strong><a href="minint">minint.html</a></strong>.
+See also OOT predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

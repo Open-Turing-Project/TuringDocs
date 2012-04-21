@@ -65,5 +65,8 @@
       "text_content": " GUI.CreateMenuItem for adding items to a menu. See also GUI.ShowMenuBar and GUI.HideMenuBar for showing and hiding the menu bar.\r\n",
       "mdown_content": "**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar."
     }
+  ],
+  "dependencies": [
+    "gui_createmenu01.gif"
   ]
 }

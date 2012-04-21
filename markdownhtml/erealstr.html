@@ -1,0 +1,21 @@
+<h1>erealstr</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>erealstr</strong> (<em>r </em>: <strong>real</strong>, <em>width</em>, <em>fractionWidth</em>, <em>exponentWidth</em> : <strong>int</strong>) :<strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>erealstr</strong> function is used to convert a <strong>real</strong> number to a string; for example, <strong>erealstr</strong> (2.5e1, 10, 3, 2)="<em>b2</em>.<em>500e+01</em>" where <em>b</em> represents a blank. The string (including exponent) is an approximation to <em>r</em>, padded on the left with blanks as necessary to a length of <em>width</em>.
+The <em>width</em> must be a non-negative <strong>int</strong> value. If the <em>width</em> parameter is not large enough to represent the value of <em>r</em>, it is implicitly increased as needed.
+The <em>fractionWidth</em> parameter is the non-negative number of fractional digits to be displayed. The displayed value is rounded to the nearest decimal equivalent with this accuracy. In the case of a tie, the value is rounded to the larger of the two values.
+The <em>exponentWidth</em> parameter must be non-negative and give the number of exponent digits to be displayed. If <em>exponentWidth</em> is not large enough to represent the exponent, more space is used as needed. The string returned by <em>erealstr</em> is of the form:
+where <em>sign</em> is a plus or minus sign. The leftmost digit is non-zero, unless all the digits are zeros.
+The <strong>erealstr</strong> function approximates the inverse of <strong>strreal</strong>, although round-off errors keep these from being exact inverses.</p>
+
+<pre><code>    {blank}[-]digit.{digit}e sign digit {digit}
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="frealstr">frealstr.html</a></strong>, <strong><a href="realstr">realstr.html</a></strong>, <strong><a href="strreal">strreal.html</a></strong>, <strong><a href="intstr">intstr.html</a></strong> and <strong><a href="strint">strint.html</a></strong> functions.</p>

@@ -34,5 +34,8 @@
       "text_content": " condition and signal. See also monitor and fork. See also empty. See also pause.\r\n",
       "mdown_content": "**[condition.html](condition)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

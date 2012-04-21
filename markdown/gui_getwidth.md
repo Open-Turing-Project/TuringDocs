@@ -4,13 +4,19 @@
 ##Syntax
 **GUI.GetWidth **(*widgetID* : **int**) : **int**
 
+
+
 ##Description
 Returns the actual width of a widget. Note that this may be different from the width specified in the *Create* call (especially since some widgets do not specify a width. The GUI module determines the actual width).
 This function is used in conjunction with **GUI.GetX**, **GUI.GetY*** *and* ***GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)
 The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.
 
+
+
 ##Example
 The following procedure draws a red box around the widget specified by *widgetID*.
+
+
         import GUI in "%oot/lib/GUI"
         procedure BoxWidget (widgetID : int)
             var x, y, width, height : int
@@ -28,5 +34,9 @@ The following procedure draws a red box around the widget specified by *widgetID
 Exported qualified.
 This means that you can only call the function by calling **GUI.GetWidth**, not by calling **GetWidth**.
 
+
+
 ##See also
 **GUI.GetX**, **GUI.GetY**, and **[gui_getheight.html](GUI.GetHeight)**.
+
+

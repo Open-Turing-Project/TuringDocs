@@ -1,0 +1,35 @@
+<h1>Draw.FillMapleLeaf</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.FillMapleLeaf</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.FillMapleLeaf </strong>procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) and filled using the specified <em>Color</em>. To get a maple leaf outlined in a different color, use <strong>Draw.FillMapleLeaf</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>Draw.MapleLeaf</strong>  with the <em>Color</em> parameter set to the border color. If <em>y1</em> is greater than <em>y2</em>, then the mapleleaf is drawn upside down.</p>
+
+<p><img src="draw_fillmapleleaf01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program will draw two maple leaves beside each other. The first will be outlined in black and filled in brightred. The second maple leaf will be upside down and both filled and outlined in green.</p>
+
+<pre><code>    View.Set ("graphics")
+    Draw.FillMapleLeaf (0, 0, 100, 100, brightred)
+    Draw.MapleLeaf (0, 0, 100, 100, black)
+    Draw.FillMapleLeaf (150, 100, 250, 0, green)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>Draw.FillMapleLeaf</strong> procedure is useful for drawing the Canadian flag.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.FillMapleLeaf</strong>, not by calling <strong>FillMapleLeaf</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

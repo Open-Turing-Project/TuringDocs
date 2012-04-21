@@ -23,5 +23,8 @@
       "text_content": " This program uses an invariant in a for loop. The invariant uses the function nameInList to specify that a key has not yet been found in an array of names.\r\n\r\n",
       "mdown_content": "This program uses an invariant in a **for** loop. The invariant uses the function *nameInList *to specify that a key has not yet been found in an array of names."
     }
+  ],
+  "dependencies": [
+
   ]
 }

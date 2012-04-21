@@ -1,0 +1,42 @@
+<h1>color</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>color</strong> (<em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>color</strong> procedure is used to change the currently active color. This is the color of characters that are to be <strong>put</strong> on the screen. The alternate spelling is <strong>colour</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the message "Bravo" three times, each in a different color.</p>
+
+<pre><code>    setscreen ("graphics")
+    for i : 1 .. 3
+        color (i)
+        put "Bravo"
+    end for
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program prints out a message. The color of each letter is different from the preceding letter. For letter number <em>i</em> the color number is <em>i </em>mod maxcolor + 1. This cycles repeatedly through all the available colors.</p>
+
+<pre><code>    setscreen ("graphics")
+    const message := "Happy New Year!!"
+    for i : 1 .. length (message)
+        color (i  mod maxcolor + 1)
+        put message (i) ..
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>See <strong>maxcolor</strong> for the number of colors available in the various "<em>graphics</em>"<em> </em>modes. The background color that text appears upon can be set using the <strong>colorback</strong> procedure.
+The screen must be in a "<em>graphics</em>" mode to use the <strong>color</strong> procedure. See <strong>setscreen</strong> for details.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="colorback">colorback.html</a></strong>, <strong><a href="whatcolor">whatcolor.html</a></strong> and <strong><a href="maxcolor">maxcolor.html</a></strong>.
+See also predefined unit <strong><a href="Text">textmodule.html</a></strong>.</p>

@@ -45,5 +45,8 @@
       "text_content": " Draw.Dot for an example of the use of maxx and for a diagram illustrating x and y positions. \r\n",
       "mdown_content": "**[draw_dot.html](Draw.Dot)** for an example of the use of **[maxx.html](maxx)** and for a diagram illustrating x and y positions. "
     }
+  ],
+  "dependencies": [
+
   ]
 }

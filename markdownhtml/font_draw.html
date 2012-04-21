@@ -1,0 +1,55 @@
+<h1>Font.Draw</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Font.Draw</strong> (<em>txtStr</em> : <strong>string</strong>, <em>x</em>, <em>y</em>, <em>fontID</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Font.Draw </strong>is used to actually draw text in a specified font. The <em>textStr</em> parameter contains the string to be drawn. The <em>x</em> and <em>y</em> parameters are the location of the lower left hand corner of the text to be displayed. The <em>fontID</em> parameter is the number of the font in which the text is to be drawn. The <em>Color</em> parameter is used to specify the color in which the text is to appear.
+Note that the text that appears is completely unrelated to the text that appears using <strong>put</strong>. <strong>Font.Draw</strong> is a graphics command and thus does not use or affect the cursor location.
+The text drawn by the <strong>Font.Draw</strong> procedure does not erase the background.</p>
+
+<h2>Details</h2>
+
+<p>If <strong>Font.Draw</strong> is passed an invalid font ID, a fatal error occurs. If the <strong>Font.Draw</strong> call fails for other (non-fatal) reasons, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>The program prints out several phrases in a variety of fonts.</p>
+
+<pre><code>    var font1, font2, font3, font4 : int
+    font1 := Font.New ("serif:12")
+    assert font1 &gt; 0
+    font2 := Font.New ("sans serif:18:bold")
+    assert font2 &gt; 0
+    font3 := Font.New ("mono:9")
+    assert font3 &gt; 0
+    font4 := Font.New ("Palatino:24:bold,italic")
+    assert font4 &gt; 0
+    Font.Draw ("This is in a serif font", 50, 30, font1, red)
+    Font.Draw ("This is in a sans serif font", 50, 80, font2, brightblue)
+    Font.Draw ("This is in a mono font", 50, 130, font3, colorfg)
+    Font.Draw ("This is in Palatino (if available)", 50, 180, font4, green)
+    Font.Free (font1)
+    Font.Free (font2)
+    Font.Free (font3)
+    Font.Free (font4)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>To use the same font as is used by the <strong>put</strong> statement, use <strong>defFontID</strong> for the font number.  This font does not have to be created or freed by the user, and allows a program to quickly place text in any location on the screen.</p>
+
+<h2>Example</h2>
+
+<p>The program draws two strings in the default font (<strong>defFontID</strong>).</p>
+
+<pre><code>    Font.Draw ("Drawing Here", 100, 120, defFontID, brightred)
+    Font.Draw ("and Here", 180, 90, defFontID, brightgreen)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Font.Draw</strong>, not by calling <strong>Draw</strong>.</p>

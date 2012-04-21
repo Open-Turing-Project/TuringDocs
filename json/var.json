@@ -47,5 +47,8 @@
       "text_content": " collection, bind, procedure and function declarations, parameter declarations, export lists and import lists for other uses of the keyword var.\r\n",
       "mdown_content": "**[collection.html](collection)**, **[bind.html](bind)**, **[procedure.html](procedure)** and **[function.html](function)** declarations, parameter declarations, **[export.html](export)** lists and **[import.html](import)** lists for other uses of the keyword **[](var)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

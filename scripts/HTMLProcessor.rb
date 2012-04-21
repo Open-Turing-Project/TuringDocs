@@ -1,5 +1,13 @@
-# Requires nokogiri to function http://http://nokogiri.org/
+# The Turing Documentation Parser
+# By Tristan Hume
+# parses the turing html documentation into a variety of formats.
+
+# Requires nokogiri and rdiscount to function 
+# http://http://nokogiri.org/
+# sudo gem install rdiscount nokogiri
 require "nokogiri"
+require "rdiscount"
+
 require "erb"
 require "json"
 require "fileutils"
@@ -29,6 +37,8 @@ def convFile(f)
 	page[:title] = doc.xpath("/html/head/title/text()").to_s
 	page[:fileName] = f.split("/").last.split(".")[0]
 	page[:sections] = []
+	# files this page relies on. Should be copied to the final directory
+	page[:dependencies] = [] 
 	doc.xpath("/html/body/table[2]/tr[@valign=\"top\"]").each do |e|
 		s = {}
 		s[:title] = e.xpath("td[1]/b/text()").to_s.gsub("&nbsp;","").chomp
@@ -61,6 +71,7 @@ def convFile(f)
 			file = o["src"]
 			s[:images] ||= []
 			s[:images] << file
+			page[:dependencies] << file
 			o.remove # remove it from the content, we have processed it
 		end
 
@@ -92,6 +103,21 @@ def convFile(f)
 	page
 end
 
+# converts unicode characters to HTML escapes
+def entities(str)
+	begin
+		return str.unpack("U*").collect do |s| 
+			str = (s > 127 ? "&##{s};" : s.chr) 
+			# there are tons of these and they do nothing
+			str = "" if s == 160
+			str
+		end.join("")
+	rescue
+		puts "UTF-8 encoding failed on file"
+		return str
+	end
+end
+
 $mdownTemplate = ERB.new(IO.read("scripts/mdownTemplate.erb"),0,"<>")
 def structureToMarkdown(page)
 	$mdownTemplate.result(binding) # gets the page param from the binding
@@ -115,6 +141,14 @@ Dir["html/*.html"].each do |f|
 		markdown = structureToMarkdown(datastruct)
 		File.open("markdown/" + datastruct[:fileName] + ".md", "w") do |oFile| 
 			oFile.puts markdown
+		end
+		# Now format it to html
+		html = entities(RDiscount.new(markdown).to_html)
+		# copy the necessary images
+		images = datastruct[:dependencies].map {|s| "html/#{s}"}
+		FileUtils.cp images, "markdownhtml/"
+		File.open("markdownhtml/" + datastruct[:fileName] + ".html", "w") do |oFile| 
+			oFile.puts html
 		end
 	else
 		puts "No markdown generated for #{f}"

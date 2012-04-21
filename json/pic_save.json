@@ -51,5 +51,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Pic.Save, not by calling Save.\r\n  ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Save**, not by calling **Save**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

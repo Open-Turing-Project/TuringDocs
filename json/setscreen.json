@@ -46,5 +46,8 @@
       "text_content": "the Draw module, \r\n          the draw subprograms and the \r\n          View.Update procedure \r\n          for doing smooth animation. See also \r\n          View.Set for further setscreen \r\n          options including positioning the output window on the screen.\r\n    ",
       "mdown_content": "the **[drawmodule.html](Draw)** module, the **draw** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen."
     }
+  ],
+  "dependencies": [
+
   ]
 }

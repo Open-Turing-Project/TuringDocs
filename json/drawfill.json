@@ -53,5 +53,8 @@
       "text_content": " setscreen, maxx, maxy and the various draw procedures. \r\n",
       "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures. "
     }
+  ],
+  "dependencies": [
+    "drawfill01.gif"
   ]
 }

@@ -54,5 +54,8 @@
       "text_content": " sound, clock, sysclock, wallclock, time and date statements.\r\nSee also predefined unit Time.\r\n",
       "mdown_content": "**[sound.html](sound)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)**, **[time.html](time)** and **[date.html](date)** statements.\nSee also predefined unit **[timemodule.html](Time)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

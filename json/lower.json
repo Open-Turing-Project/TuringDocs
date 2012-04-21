@@ -24,5 +24,8 @@
       "text_content": " upper which finds the upper bound.\r\n",
       "mdown_content": "**[upper.html](upper)** which finds the [upper.html](upper) bound."
     }
+  ],
+  "dependencies": [
+
   ]
 }

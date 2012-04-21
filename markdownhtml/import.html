@@ -1,0 +1,50 @@
+<h1>import</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>importList</em> is:
+<strong>import</strong> [ <em>howImport</em> ] <em>importItem</em> {, [<em>howImport</em>] <em>importItem</em> }</p>
+
+<h2>Description</h2>
+
+<p>An <strong>import</strong> list is used to specify those items that a procedure, function, module, monitor, or a class uses from outside of itself. Note that a function or procedure is not allowed to have an import list and thus automatically imports whichever functions or procedures are used by the function or procedure. The compiler determines the list automatically by looking to see what items are actually used.</p>
+
+<h2>Example</h2>
+
+<p>In this example, the type <em>T </em>is imported into the <em>stack </em><strong>module</strong> and used as the type that can be pushed onto or popped off the stack. Since no other items are imported, the only identifiers from outside of <em>stack </em>that can be used in it must be predefined, such as <strong>sqrt</strong>, or declared to be <strong>pervasive</strong>.</p>
+
+<pre><code>    type T : string
+    &#133;
+    module stack
+        import T
+        export push, pop
+        var top : int := 0
+        var contents : array 1..100 of T
+        procedure push &#133; end push
+        procedure pop &#133; end pop
+    end stack
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <em>importItem </em>is one of<em>:</em>
+(a) <em>id</em>(b) <em>id </em><strong>in</strong><em> fileName</em>
+The second form is used in OOT when the list is the import list  for a separate <strong>unit</strong> (or the main program), and the imported item is in a file whose name is different from the item's name, for example:
+The <em>fileName</em> must be an explicit character string. See also <strong>unit</strong>.
+Parentheses are allowed around the items in an import lists, as in:
+There are various ways to import items, as determined by <em>howImport</em>. The form of <em>howImport</em> is one of:
+(a) <strong>var</strong>(b) <strong>const</strong>(c) <strong>forward</strong>
+Commonly the <em>howImport </em>is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a <em>howImport</em> is imported read-write. A read-only symbol that is imported without a <em>howImport</em> is imported read-only.
+If the <em>importItem </em>is <strong>forward</strong>, the import list is part of a <strong>forward</strong> procedure or function declaration and the imported item is itself necessarily a procedure or function. See <strong>forward</strong> declarations for details and an example.
+If the <strong>import</strong> list of a <strong>module</strong>, <strong>monitor</strong> or <strong>class</strong> is omitted, the implementation assumes that the list is <strong>import</strong>( ), meaning that no items are imported. For example, a <strong>module</strong> must explicitly import any global identifiers that are not predefined or <strong>pervasive</strong>.
+Circular (recursive) imports are not allowed. For example, if unit <em>A</em> imports <em>B</em> then <em>B</em> cannot import <em>A</em>. However, circular usage of separately compiled units is possible by separating the units into interfaces and bodies and having the bodies import the interfaces. For example, if <em>C</em> is the parent class of <em>D</em>, <em>D</em> can import <em>C</em>, but not vice versa.
+In an expansion (or implementation), the import list of the expansion augments the import list of the parent.
+An overriding subprogram (in an expansion) ignores the import list of the target subprogram and uses its own import list.
+Turing initializes modules and monitors  in order of importation. Initialization begins with the main program, which first initializes its imports in the order given in its <strong>import</strong> list, and then initializes itself.</p>
+
+<pre><code>    import ledger in "newledg.t"        import ( ledger in "newledg.t" )
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="unit">unit.html</a></strong>, <strong><a href="module">module.html</a></strong>, <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="class">class.html</a></strong>. See also <strong><a href="export">export.html</a></strong> list, <strong><a href="inherit">inherit.html</a></strong> clause, <strong><a href="implement">implement.html</a></strong> clause and <strong><a href="implement%20by">implement_by.html</a></strong> clause.</p>

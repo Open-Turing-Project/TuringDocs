@@ -1,0 +1,37 @@
+<h1>Font.Sizes</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Font.Sizes</strong> (<em>fontID</em> : <strong>int</strong>, <strong>var</strong> <em>height</em>, <em>ascent</em>, <em>descent</em>, <em>internalLeading</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Font.Sizes </strong>is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.</p>
+
+<p><img src="font_sizes01.gif" alt="Doc image" /></p>
+
+<h2>Details</h2>
+
+<p>If <strong>Font.Sizes</strong> is passed an invalid font ID, a fatal error occurs. If the <strong>Font.Sizes</strong> call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>The program gets information about 24pt Bold Italic Palatino.</p>
+
+<pre><code>    var fontID, height, ascent, descent, internalLeading,  : int
+    var externalLeading: int
+    fontID := Font.New ("Palatino:24:bold,italic")
+    Font.Sizes (fontID, height, ascent, descent, internalLeading)
+    externalLeading := height  ascent  descent
+    put "The height of the font is ", height, " pixels"
+    put "The ascent of the font is ", ascent, " pixels"
+    put "The descent of the font is ", descent, " pixels"
+    put "The internal leading of the font is ", internalLeading, " pixels"
+    put "The external leading of the font is ", externalLeading, " pixels"
+    Font.Free (fontID)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Font.Sizes</strong>, not by calling <strong>Sizes</strong>.</p>

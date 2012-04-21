@@ -1,0 +1,65 @@
+<h1>inherit</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>inheritClause </em>is:
+<strong>inherit</strong> <em>inheritItem</em></p>
+
+<h2>Description</h2>
+
+<p>An <strong>inherit</strong> clause specifies that the class containing the clause is to be an expansion of another class. This expansion is called <em>inheritance</em>. The class containing the clause gains access to (inherits) all the declarations inside the target item. Expansions are used to add new declarations and exports and to support <em>polymorphism</em> (overriding subprograms).</p>
+
+<h2>Example</h2>
+
+<p>Here is an example of a stack class. Following it, we show another class, called <em>stackWithDepth</em>, that inherits <em>stack</em> by adding a function called <em>depth</em>.
+Next comes an expansion, which inherits the internal declarations of the stack class and adds the <em>depth</em> function.</p>
+
+<pre><code>    class stack
+        export push, pop
+
+        var top : int := 0
+        var contents : array 1 .. 100 of string
+
+        procedure push ( s : string )
+            top := top + 1
+            contents (top ) := s
+        end push
+
+        procedure pop ( var s : string )
+            s := contents ( top )
+            top := top - 1
+        end pop
+    end stack        class stackWithDepth
+        inherit stack
+        export depth
+        function depth : int
+            result top
+        end push
+    end stackWithDepth
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Objects of the inherited class <em>stackWithDepth</em> are like objects of the parent class <em>stack</em>, except there is an additional exported function named <em>depth</em>.
+An <em>inheritItem</em> is one of:
+(a) <em>id</em>(b) <em>id</em> <strong>in</strong> <em>fileName</em>
+The second form is used when the inherit clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, for example:
+The <em>fileName</em> must be an explicit character string, e.g., "<em>newledg.t</em>". Parentheses are allowed around the item in an inherit clause, as in:
+There is a special form of <strong>inherit</strong> clause, called an <strong>implement</strong> <strong>clause</strong>, that is used to separate an interface from an implementation. Modules and monitors, as well as classes, use these clauses. See <strong>implement</strong> clause and <strong>implement</strong> <strong>by</strong> clause.
+If class <em>D</em> inherits class <em>C</em>, we say that <em>C </em>is the <em>parent</em> and <em>D </em>is the <em>child</em>. Class <em>B</em> is said to be an <em>ancestor</em> of class <em>D </em>(and <em>D</em> is the <em>descendant</em> of <em>B</em>) if <em>B</em> and <em>D</em> are the same class, or if <em>B</em> is the parent of <em>D</em>, or if <em>B</em> is the parent of the parent of <em>D</em>, etc. We write this as follows:
+If <em>B</em> is an ancestor of <em>D</em> but not the same as <em>D</em>, we say <em>B</em> is a <em>strict</em> ancestor of <em>D</em>. We write this as:
+We also use the notations <em>D</em> >= <em>B</em>, <em>D</em> > <em>B</em> and <em>D</em> = <em>B</em> with the obvious meanings. All of these notations can be used in a program. Their main use is in conjunction with <strong>objectclass</strong>, which determines the class of an object located by a pointer. For example, if <em>p</em> is declared to be a pointer to a <em>stack</em>, we can write the following to see if <em>p </em>currently locates an object with the <em>depth</em> operation:
+A pointer that locates an object created as class <em>E</em> can be assigned to a pointer to class <em>B</em>, only if <em>B</em> is an ancestor of <em>E</em>. For example, a pointer to an object that is a <em>stackWithDepth</em> can be assigned to a pointer to <em>stack</em>, but not vice versa. The pointer <strong>nil</strong> can be assigned to any pointer variable, but the value <strong>nil</strong>(<em>C</em>) can only be assigned to a pointer to an ancestor of C.
+An object (located by a pointer) can be assigned to another object only if they were created as objects of the same class. However, assignment of objects that are monitors or that contain dynamic arrays or collections is not allowed.
+Circular (recursive) inherits are not allowed. For example, if unit <em>B</em> inherits <em>A</em> then <em>A</em> cannot inherit <em>B</em>. Only one item is allowed in an inherit clause; in other words, Turing supports <em>single</em> inheritance but not <em>multiple</em> inheritance.
+See <strong>implement</strong> clause for a special kind of expansion that separates a module, monitor or class' interface from its implementation. See <strong>class</strong> for an example of polymorphism, in which an inheriting class overrides subprograms of its parent class.
+The initialization of a module, a monitor or an object is immediately preceded by the initialization of the item that it inherits or implements (if any). Correspondingly, if the item has an <strong>implement</strong> <strong>by</strong> clause, the implementation is initialized immediately after the initialization of the current item.
+Within a class <em>C</em>, with ancestor <em>B</em>, you can force a call to exported subprogram <em>p</em> using the form <em>C.p</em> (or<em> B.p</em>). This calls the subprogram declared in <em>C</em> (or in <em>B</em> in the case of <em>B.p</em>), regardless of the actual class of the object and any overriding of <em>p</em>. This is similar to the notation <em>C</em>::<em>p</em> of the C++ language. This notation can only be used inside class <em>C</em>.</p>
+
+<pre><code>    inherit ledger in "newledg.t"        inherit ( ledger in "newledg.t" )        B &lt;= D      % B is an ancestor of D        B &lt; D       % B is a strict ancestor of D        % Does the object located by p have the depth operation
+    if stackWithDepth &lt;= objectclass(p) then
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="unit">unit.html</a></strong>, <strong><a href="module">module.html</a></strong>, <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="class">class.html</a></strong>. See also <strong><a href="export">export.html</a></strong> list, <strong><a href="import">import.html</a></strong> list, <strong><a href="implement">implement.html</a></strong> clause, <strong><a href="implement%20by">implement_by.html</a></strong> clause and <strong><a href="deferred">deferred.html</a></strong> subprogram. See also <strong><a href="objectclass">objectclass.html</a></strong>.</p>

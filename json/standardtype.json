@@ -32,5 +32,8 @@
       "text_content": " int, real, string and boolean. See also nat, intn, natn, realn, char, char(n)\r\n",
       "mdown_content": "**[int.html](int)**, **[real.html](real)**, **[string1.html](string)** and **[boolean.html](boolean)**. See also **[nat.html](nat)**, **[int.html](int)*n***, **[nat.html](nat)*n***, **[real.html](real)*n***, **[char.html](char)**, **[char.html](char)**(*n*)"
     }
+  ],
+  "dependencies": [
+
   ]
 }

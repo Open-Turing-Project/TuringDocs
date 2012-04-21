@@ -49,5 +49,8 @@
       "text_content": "Str.Upper and \r\n          Str.Trim.\r\n    ",
       "mdown_content": "**[str_upper.html](Str.Upper)** and **[str_trim.html](Str.Trim)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -45,5 +45,8 @@
       "text_content": " Text.Color and Text.WhatColor.\r\n",
       "mdown_content": "**[text_color.html](Text.Color) **and **[text_whatcolor.html](Text.WhatColor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

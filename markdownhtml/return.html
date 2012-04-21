@@ -1,0 +1,26 @@
+<h1>return</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>returnStatement</em> is:
+<strong>return</strong></p>
+
+<h2>Description</h2>
+
+<p>A <strong>return</strong> statement terminates the <strong>procedure</strong> (or main program) in which it appears. Ordinarily, a procedure (or main program) terminates by reaching its end; the <strong>return</strong> statement is used to cause early termination.</p>
+
+<h2>Example</h2>
+
+<p>This procedure takes no action if the <em>errorHasOccurred </em>flag has been set to true.</p>
+
+<pre><code>    procedure double
+        if errorHasOccurred then
+            return  % Terminate this procedure
+        end if
+        &#133; handle usual case in this procedure &#133;
+    end double
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A <strong>return</strong> must not appear as a statement in (the outermost level of) a module, nor can it appear in a <strong>function</strong>.</p>

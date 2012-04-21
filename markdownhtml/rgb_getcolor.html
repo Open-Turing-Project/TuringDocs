@@ -1,0 +1,32 @@
+<h1>RGB.GetColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>RGB.GetColor</strong> (<em>colorNumber</em> : <strong>int</strong>, <strong>var</strong> <em>redComp</em>, <em>greenComp</em>, <em>blueComp</em> : <strong>real</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>RGB.GetColor</strong> procedure returns the red, green and blue components to the color associated with the <em>colorNumber</em> parameter. The red, green and blue values are normalized to be between 0 and 1. Thus color white returns 1.0 for the <em>redComp</em>, <em>greenComp</em> and <em>blueComp</em> values and color black returns 0.0 for all three.</p>
+
+<h2>Example</h2>
+
+<p>This program gets the components of all the available colors.
+<strong>Details</strong><strong>RGB.GetColour</strong> is an alternate spelling for <strong>RGB.GetColor</strong>.</p>
+
+<pre><code>    put "Color   Red     Green     Blue"
+    for clr : 0 .. maxcolor
+        var redComp, greenComp, blueComp : int
+        RGB.GetColor (clr, redComp, greenComp, blueComp)
+        put clr : 4, "  ", redComp : 6 : 4 , "  ", greenComp : 6 : 4, " ", 
+                                    blueComp : 6 : 4
+    end for
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>RGB.GetColor</strong>, not by calling <strong>GetColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="RGB.SetColor">rgb_setcolor.html</a></strong>and <strong><a href="RGB.AddColor">rgb_addcolor.html</a></strong>.</p>

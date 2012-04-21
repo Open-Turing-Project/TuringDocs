@@ -4,11 +4,17 @@
 ##Syntax
 **Window.Close **(*windowID* : **int**)
 
+
+
 ##Description
 The **Window.Close ** procedure closes the window specified by the *windowID* parameter.
 
+
+
 ##Example
 The following program opens a window, makes it active and then closes the window after getting a keystroke from the user.
+
+
         % Open the window
         var winID : int
         winID := Window.Open ("position:300;300,graphics:200;200")
@@ -28,9 +34,15 @@ The following program opens a window, makes it active and then closes the window
 ##Details
 If a window is selected (i.e. output is going to that window) when it is closed, the main **Run** window becomes the selected window.
 
+
+
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Window.Close**, not by calling **Close**.
 
+
+
 ##See also
 **[window_open.html](Window.Open)** and **[window_select.html](Window.Select)**.
+
+

@@ -1,0 +1,41 @@
+<h1>Pic.Flip</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Pic.Flip</strong> (<em>picID</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Pic.Flip</strong> is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears &#147;upside-down&#148;.</p>
+
+<h2>Details</h2>
+
+<p>Note that the upside-down picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.</p>
+
+<h2>Example</h2>
+
+<p>The program loads a picture from a file, flips it and then draws the original and the upside-down image side by side in a window after resizing the window to fit the two pictures.
+<strong>Output from the Program</strong></p>
+
+<p><img src="pic_flip01.gif" alt="Doc image" /></p>
+
+<pre><code>    % Get the original picture
+    var pic, newPic, width, height : int
+    pic := Pic.FileNew ("lighthouse.jpg")
+    newPic := Pic.Flip (pic)
+    width := Pic.Width (pic)
+    height := Pic.Height (pic)
+
+    % Draw the two images: original and flipped
+    View.Set ("graphics:" + intstr (2 * width + 30) + ";" + 
+        intstr (height + 25) + ",nobuttonbar")
+    Pic.Draw (pic, 10, 20, picCopy)
+    Draw.Text ("Original", 50, 5, defFontID, black)
+    Pic.Draw (newPic, 20 + Pic.Width (pic), 20, picCopy)
+    Draw.Text ("Flipped", 60 + Pic.Width (pic), 5, defFontID, black) 
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Pic.Flip</strong>, not by calling <strong>Flip</strong>.</p>

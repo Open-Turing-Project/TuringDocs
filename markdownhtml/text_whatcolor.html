@@ -1,0 +1,31 @@
+<h1>Text.WhatColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Text.WhatColor</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Text.WhatColor</strong> function is used to<strong> </strong>determine the current text (foreground) color, ie., the color used for characters that are output using <strong>put</strong>. The alternate spelling is <strong>Text.WhatColour</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the currently-active color number. The  message is also given in the currently-active color.</p>
+
+<pre><code>    View.Set ("graphics")
+    &#133;
+    put "This writing is in color number ", Text.WhatColor
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>"<em> </em>or "<em>graphics</em>" mode. See <strong>View.Set </strong>for details.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Text.WhatColor</strong>, not by calling <strong>WhatColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="Text.Color">text_color.html</a></strong> <a href="procedure">procedure.html</a>, which is used to <a href="set">set.html</a> the <a href="color">color.html</a>. See also <strong><a href="Text.ColorBack">text_colorback.html</a></strong> and <strong><a href="Text.WhatColorBack">text_whatcolorback.html</a></strong>.</p>

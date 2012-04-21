@@ -1,0 +1,34 @@
+<h1>succ</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>succ</strong> ( <em>expn</em> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>succ</strong> function accepts an integer, character or an enumerated value and returns the integer plus one, the next character, or the next value in the enumeration. For example, <strong>succ</strong> (7) is 8.</p>
+
+<h2>Example</h2>
+
+<p>This part of a Turing program fills up array <em>a </em>with the enumerated values <em>green</em>,<em> yellow</em>,<em> red</em>,<em> green</em>,<em> yellow</em>,<em> red</em>,<em> </em>etc.</p>
+
+<pre><code>    type colors : enum ( green, yellow, red  )
+    var a : array 1 .. 100 of colors
+    var c : colors := colors .green
+    for i : 1 .. 100
+        a ( i ) := c
+        if c = colors . red then
+            c := colors . green
+        else
+            c := succ ( c )
+        end if
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>You cannot  apply <strong>succ</strong> to the last value of an enumeration.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="pred">pred.html</a></strong>, <strong><a href="lower">lower.html</a></strong> and <strong><a href="upper">upper.html</a></strong> functions.</p>

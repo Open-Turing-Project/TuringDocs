@@ -1,0 +1,25 @@
+<h1>cosd</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>cosd</strong> (<em>r</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>cosd</strong> function is used to find the cosine of an angle given in degrees. For example, <strong>cosd</strong> (0) is 1.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the cosine of 30, 60, 90, up to 360 degrees.</p>
+
+<pre><code>    for i : 1 .. 12
+        const angle := i * 30
+        put "Cos of ", angle, " is ", cosd (angle)
+    end for
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="sind">sind.html</a></strong> and <strong><a href="tand">tand.html</a></strong> functions for calculating sine and tangent.
+the <strong><a href="cos">cos.html</a></strong> function which finds the cosine of an angle given in radians. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

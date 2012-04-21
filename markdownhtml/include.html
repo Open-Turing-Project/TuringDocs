@@ -1,0 +1,65 @@
+<h1>include</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>includeConstruct</em> is:
+<strong>include</strong> <em>fileName</em></p>
+
+<h2>Description</h2>
+
+<p>An <strong>include</strong> is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as "stdstuff".</p>
+
+<h2>Example</h2>
+
+<p>On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <em>arrows</em> contains definitions of these values:
+These definitions can be included in any program in the following manner:</p>
+
+<pre><code>    const upArrow := 200
+    const downArrow := 208
+    const rightArrow := 205
+    const leftArrow := 203        include "arrows"
+    &#133;
+    var ch : string ( 1 )
+    getch ( ch )                % Read one character
+    case ord ( ch ) of
+        label upArrow :
+            &#133;handle up arrow&#133;
+        label downArrow :
+            &#133;handle down arrow&#133;
+        label rightArrow :
+            &#133;handle right arrow&#133;
+        label leftArrow :
+            &#133;handle left arrow&#133;
+        label :
+            &#133;handle any other key&#133;
+    end case
+</code></pre>
+
+<h2>Details</h2>
+
+<p>An include file can itself contain <strong>include</strong> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.
+It is common to save procedures, functions and modules in separate files. The files are collected together using <strong>include</strong>.</p>
+
+<h2>Details</h2>
+
+<p>If the filename in the <strong>include</strong> statement starts with a "%", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.</p>
+
+<h2>Example</h2>
+
+<p>If the system directory is set to "C:\TURING", then the line
+will include the file "C:\TURING\SORTING.T" in the program.</p>
+
+<pre><code>    include "%sorting.t"
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Under OOT, there are several system directories available. The "%oot" directory is the directory where all the OOT system files are located. The "%home" directory is the user's home directory.</p>
+
+<h2>Example</h2>
+
+<p>If the oot directory is set to "/usr/local/lib/oot" then the line
+will include the file "/usr/local/lib/oot/teacher/sorting.t" in the program.</p>
+
+<pre><code>    include "%oot/teacher/sorting.t"
+</code></pre>

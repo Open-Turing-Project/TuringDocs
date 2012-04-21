@@ -1,0 +1,32 @@
+<h1>Text.WhatCol</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Text.WhatCol</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Text.WhatCol</strong> function is used to<strong> </strong>determine the cursor position's column.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs <em>The current row is 5</em>,<em> the current column is 15</em>.</p>
+
+<pre><code>    Text.Locate  ( 5, 10 )
+    put "12345"..
+    put "The current row is", Text.WhatRow
+    put "The current column is", Text.WhatCol
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>" or<em> </em>"<em>graphics</em>" mode. <strong>Text.WhatCol</strong> functions properly even if the cursor is invisible.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Text.WhatCol</strong> , not by calling <strong>WhatCol</strong> .</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="Text.WhatRow">text_whatrow.html</a> </strong>function, which is used to determine the cursor row. See also the <strong><a href="Text.Locate">text_locate.html</a></strong>, <strong><a href="Text.maxrow">text_maxrow.html</a></strong> and <strong><a href="Text.maxcol">text_maxcol.html</a> </strong><a href="procedure">procedure.html</a>.</p>

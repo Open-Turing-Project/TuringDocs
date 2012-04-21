@@ -45,5 +45,8 @@
       "text_content": " exp (the exponentiation function).\r\nSee also predefined unit Math.\r\n",
       "mdown_content": "**[exp.html](exp)** (the exponentiation function).\nSee also predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

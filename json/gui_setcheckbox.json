@@ -32,5 +32,8 @@
       "text_content": " GUI.CreateCheckBox.\r\n",
       "mdown_content": "**GUI.CreateCheckBox**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

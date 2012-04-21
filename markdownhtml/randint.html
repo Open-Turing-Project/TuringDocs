@@ -1,0 +1,30 @@
+<h1>randint</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>randint</strong> ( <strong>var</strong> <em>i</em> : <strong>int</strong>, <em>low</em>,<em> high</em> : <strong>int</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>randint</strong> statement is used to create a pseudo-random integer in the range <em>low</em> to <em>high</em>, inclusive. For example, if <em>i</em> is an integer, after <strong>randint</strong>(<em>i</em>,1, 10), <em>i</em> would have a value such as 7 or 2 or 10.</p>
+
+<h2>Example</h2>
+
+<p>This program simulates the repeated rolling of a six sided die.</p>
+
+<pre><code>    var roll : int
+    loop
+        randint ( i, 1, 6 )
+        put "Rolled ", i
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>randint</strong> statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range <em>low</em> =<em>i</em> = <em>high</em>. It is required that <em>low</em> = <em>high</em>.
+Each time a program runs, <strong>randint</strong> uses the same pseudo-random number sequence. To get a different sequence (actually, to start the sequence at a different point), use the <strong>randomize</strong> procedure.
+To use several sequences of repeatable pseudo-random number sequences, use the <strong>randseed</strong> and <strong>randnext</strong> procedures.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="rand">rand.html</a></strong>, <strong><a href="randomize">randomize.html</a></strong>, <strong><a href="randseed">randseed.html</a></strong> and <strong><a href="randnext">randnext.html</a></strong>.</p>

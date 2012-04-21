@@ -47,5 +47,8 @@
       "text_content": " objectclass, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\r\nSee also class. See also export list, import list, inherit list, implement list and implement by list.\r\n",
       "mdown_content": "**[objectclass.html](objectclass)**, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\nSee also **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list."
     }
+  ],
+  "dependencies": [
+
   ]
 }

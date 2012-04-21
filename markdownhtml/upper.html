@@ -1,0 +1,24 @@
+<h1>upper</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>upper</strong> ( <em>reference</em> [ , <em>dimension</em> ] ) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>upper</strong> attribute is used to find the upper bound of an array, string, <strong>char</strong>(<em>n</em>) or non-opaque subrange type. (See <strong>lower</strong> for finding the lower bound.)</p>
+
+<h2>Example</h2>
+
+<p>In a procedure, see if the bound of array parameter <em>a</em> is large enough that  it can be subscripted by <em>i</em>. If it is large enough, it is set <em>a</em>(<em>i</em>) to zero.</p>
+
+<pre><code>    procedure test ( var a : array 1 .. * of real )
+        if i &lt;= upper ( a ) then
+            a ( i ) := 0.0
+        end if
+    end test
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In a similar way, if <em>s</em> is a string, its upper bound (not length!) is given by <strong>upper</strong> (<em>s</em>). If an array has more than one dimension, as in <strong>var</strong> <em>b</em> : <strong>array</strong> 1..10, 1 .. 60 <strong>of</strong> <strong>int</strong>, you must specify the dimension. For example, <strong>upper</strong> (<em>b</em>, 2) returns 60.</p>

@@ -5,12 +5,18 @@
 An *inheritClause *is:
  **inherit** *inheritItem*
 
+
+
 ##Description
 An **inherit** clause specifies that the class containing the clause is to be an expansion of another class. This expansion is called *inheritance*. The class containing the clause gains access to (inherits) all the declarations inside the target item. Expansions are used to add new declarations and exports and to support *polymorphism* (overriding subprograms).
+
+
 
 ##Example
 Here is an example of a stack class. Following it, we show another class, called *stackWithDepth*, that inherits *stack* by adding a function called *depth*.
 Next comes an expansion, which inherits the internal declarations of the stack class and adds the *depth* function.
+
+
         class stack
             export push, pop
         
@@ -49,7 +55,11 @@ Circular (recursive) inherits are not allowed. For example, if unit *B* inherits
 See **implement** clause for a special kind of expansion that separates a module, monitor or class' interface from its implementation. See **class** for an example of polymorphism, in which an inheriting class overrides subprograms of its parent class.
 The initialization of a module, a monitor or an object is immediately preceded by the initialization of the item that it inherits or implements (if any). Correspondingly, if the item has an **implement** **by** clause, the implementation is initialized immediately after the initialization of the current item.
 Within a class *C*, with ancestor *B*, you can force a call to exported subprogram *p* using the form *C.p* (or* B.p*). This calls the subprogram declared in *C* (or in *B* in the case of *B.p*), regardless of the actual class of the object and any overriding of *p*. This is similar to the notation *C*::*p* of the C++ language. This notation can only be used inside class *C*.
+
+
         inherit ledger in "newledg.t"        inherit ( ledger in "newledg.t" )        B <= D      % B is an ancestor of D        B < D       % B is a strict ancestor of D        % Does the object located by p have the depth operation
         if stackWithDepth <= objectclass(p) then
 ##See also
 **[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** clause, **[implement_by.html](implement by)** clause and **[deferred.html](deferred)** subprogram. See also **[objectclass.html](objectclass)**.
+
+

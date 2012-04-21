@@ -1,0 +1,42 @@
+<h1>GUI.SetPositionAndSize</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetPositionAndSize</strong> (<em>widgetID</em>, <em>x</em>,<em> y</em> : <strong>int</strong>, <em>width</em>, <em>height</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Changes the position and size of the widget specified by <em>widgetID </em>simultaneously. The <em>x</em>, <em>y</em>, <em>width</em> and <em>height</em> parameters have the same meaning as in the <strong>GUI.Create</strong> function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the <em>width</em> or <em>height</em> parameter may be ignored.
+<strong>GUI.SetPositionAndSize</strong> works the same way as the <strong>GUI.SetPosition</strong> and <strong>GUI.SetSize</strong> procedures.</p>
+
+<h2>Example</h2>
+
+<p>The following program moves and resizes the button every time the button is pressed.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var button, minWidth, minHeight  : int
+
+    procedure MoveButton
+        var newX, newY, newWidth, newHeight  : int
+        newWidth := max (minWidth, Rand.Int (0, 200))
+        newHeight := max (minHeight, Rand.Int (0, 100))
+        newX := Rand.Int (0, maxx  newWidth)
+        newY := Rand.Int (0, maxy  newHeight)
+        GUI.SetPositionAndSize (button, newX, newY, 
+            newWidth, newHeight)
+    end MoveButton
+
+    button := GUI.CreateButton (100, 100, 0, "Move Button", 
+        MoveButton)
+    minHeight := GUI.GetHeight (button)
+    minWidth := GUI.GetWidth (button)
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetPositionAndSize</strong>, not by calling <strong>SetPositionAndSize</strong>.</p>

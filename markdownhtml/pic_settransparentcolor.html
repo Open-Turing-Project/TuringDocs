@@ -1,0 +1,44 @@
+<h1>Pic.SetTransparentColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Pic.SetTransparentColor</strong> (<em>colorNumber</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Pic.SetTransparentColor</strong> procedure sets the color in the picture that should be considered transparent when the picture is drawn using the picMerge or picUnderMerge modes. If no color is specified, then the default background color (<strong>colorbg</strong>, usually <strong>white</strong>) is used as the transparent color.</p>
+
+<h2>Details</h2>
+
+<p>This call is often used when displaying images that were originally stored as GIFs and translated into another format. Many GIFs have a transparent color that can be non-white. To use this call, you must know the color number that represents the color in the image that is to be transparent.</p>
+
+<h2>Example</h2>
+
+<p>This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red).</p>
+
+<pre><code>    var pic1 : int := Pic.FileNew ("airplane.bmp")
+    var pic2 : int := Pic.FileNew ("airplane.bmp")
+    Pic.SetTransparentColor (pic2, brightred)
+    setscreen ("offscreenonly")
+    for x : 100 .. maxx - 100
+        cls
+        put "The lower image has the transparent color set to bright red"
+        Pic.Draw (pic1, x, 150, picMerge)
+        Pic.Draw (pic2, x, 50, picMerge)
+        View.Update
+        delay (5)
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p><strong>Pic.SetTransparentColour</strong> is an alternate spelling for <strong>Pic.SetTransparentColor</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Pic.SetTransparentColor</strong>, not by calling <strong>SetTransparentColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Pic.Draw">pic_draw.html</a></strong> and <strong><a href="Pic.FileNew">pic_filenew.html</a></strong>.</p>

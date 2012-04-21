@@ -5,11 +5,17 @@
 A *forkStatement* is:
  **fork*** processId* [ ( [ *expn* { , *expn* } ] ) ]   [ : *reference* [ , *expn* [ , *reference* ] ] ]
 
+
+
 ##Description
 A **fork** activates (starts the concurrent execution of) a process declaration. If the process has parameters, a parenthesized list of expressions (*expns*) must follow the process'  name (*processId*).
 
+
+
 ##Example
 This program initiates (forks) two concurrent processes, one of which repeatedly outputs Hi and the other Ho. The resulting output is an unpredictable sequence of Hi's and Ho's, as *greetings* executes twice concurrently, one instance with its *word* set to Hi and the other with its *word* set to Ho.
+
+
         process greetings ( word : string )
             loop
                 put word
@@ -23,4 +29,6 @@ See **procedure** declaration for details about parameters. The first optional *
 The optional *expn* specifies the number of bytes for the process' stack; this overrides the optionally given stack size in the **process** declaration. The second optional *reference* must be a variable reference with the type **addressint**. See **addressint**. This variable is set to identify the process activation. This reference has the implementation-dependent meaning of locating the process' internal descriptor.
 In this explanation of the **fork** statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the **fork*** *statement* *is:
 In other words, the module's name and a dot must precede the process' name.
+
+
         fork moduleId . procedureId [ ( expn {, expn } ) ] 

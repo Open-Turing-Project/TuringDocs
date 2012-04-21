@@ -69,5 +69,8 @@
       "text_content": "sizepic and \r\n          drawpic. See also \r\n          setscreen, \r\n          maxx, \r\n          maxy, \r\n          drawdot, \r\n          drawline, \r\n          drawbox, and \r\n          drawoval.\r\n          See also predefined unit Pic.\r\n    ",
       "mdown_content": "**[sizepic.html](sizepic)** and **[drawpic.html](drawpic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)**, **[drawdot.html](drawdot)**, **[drawline.html](drawline)**, **[drawbox.html](drawbox)**, and **[drawoval.html](drawoval)**.\nSee also predefined unit **[picmodule.html](Pic)**."
     }
+  ],
+  "dependencies": [
+    "takepic01.gif"
   ]
 }

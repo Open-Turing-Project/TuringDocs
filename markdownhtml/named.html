@@ -1,0 +1,30 @@
+<h1>named</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>namedType</em> is one of:
+(a)<em>typeId</em>(b)<em>moduleId</em> . <em>typeId</em></p>
+
+<h2>Description</h2>
+
+<p>A type can be given a name (<em>typeId</em>) and later this name can be used instead of writing out the type.</p>
+
+<h2>Example</h2>
+
+<p>In this example, <em>phoneRecord</em> is a named type.</p>
+
+<pre><code>    type phoneRecord :
+        record
+            name : string ( 20 )
+            phoneNumber : int
+            address : string ( 50 )
+        end record
+    &#133;
+    var oneEntry : phoneRecord
+    var phoneBook : array 1 .. 100 of phoneRecord
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.
+Arrays whose bounds are not known at compile time cannot be named.</p>

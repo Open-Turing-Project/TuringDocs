@@ -5,11 +5,17 @@
 A conditionDeclaration is:
  **var** *id *{ , *id *} : [ **array** *indexType* {, *indexType* } **of** ]  [ *conditionOption* ] **condition**
 
+
+
 ##Description
 A condition is essentially a queue of sleeping processes. It is used in a concurrent program to allow processes to block themselves (by the **wait** statement) and later to be awakened (by the **signal** statement). A condition variable, which can occur only inside a monitor (a special kind of module that handles concurrency) or monitor class, is used by the **wait** and **signal** statements for putting processes to sleep and later waking them up.
 
+
+
 ##Example
 The processes use this monitor to gain exclusive access to a resource. A process wanting to use the resource calls the *request* entry point and is blocked until the resource is free. When the process is finished with the resource, it calls the *release* entry point. This monitor is essentially a binary *semaphore* in which the semaphore's *P* operation is the *request* and the *V* is the *release*.
+
+
         monitor resource
             export request, release
         
@@ -52,5 +58,9 @@ Conditions cannot be named as types, cannot be contained in records, unions or c
 There is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.
 Note that *conditionOption* must precede the keyword **condition**.
 
+
+
 ##See also
 **[wait.html](wait)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**.
+
+

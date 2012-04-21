@@ -42,5 +42,8 @@
       "text_content": " the parallelget function, which is used to read the values of pins on the parallel port.\r\n",
       "mdown_content": "the **[parallelget.html](parallelget)** function, which is used to [read.html](read) the values of pins on the parallel port."
     }
+  ],
+  "dependencies": [
+    "parallelput01.gif"
   ]
 }

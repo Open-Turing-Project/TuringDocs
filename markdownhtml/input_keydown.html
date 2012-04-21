@@ -1,0 +1,74 @@
+<h1>Input.KeyDown</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Input.KeyDown</strong> (<strong>var</strong> <em>chars</em> : <strong>array char of boolean</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Input.Keydown</strong> procedure allows a program to read which keys are currently being pressed. This procedure is different from <strong>getch</strong> in that it allows a program to detect when a user presses and releases a button. As such, it is not to be used in conjunction with <strong>getch</strong>.
+The procedure can be used in games where an action takes place while a key is depressed.</p>
+
+<h2>Example</h2>
+
+<p>Determine if the T key is pressed. Note that we check for the lower case letter.</p>
+
+<pre><code>    var chars : array char of boolean
+    Input.KeyDown (chars)
+    if chars ('t') then
+        put "The T key is pressed"
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <strong>true.</strong> For example, the <em>a</em> key is pressed is <em>chars</em> ('a') is <strong>true</strong>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <strong>Input.KeyDown</strong> would register Shift and 'a' as pressed, but not 'A'.
+A full list of all the possible characters that can be set with Input.KeyDown can be found in the <strong>Key Codes</strong> appendix.</p>
+
+<h2>Details</h2>
+
+<p>The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <strong>true.</strong> For example, the <em>a</em> key is pressed is <em>chars</em> ('a') is <strong>true</strong>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <strong>Input.KeyDown</strong> would register Shift and 'a' as pressed, but not 'A'.</p>
+
+<h2>Details</h2>
+
+<p>The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot &#147;hog the keyboard&#148; by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys.</p>
+
+<h2>Example</h2>
+
+<p>The program reads the keyboard and displays a message while the arrow keys are pressed. It can detect up to all four arrow keys pressed at once.</p>
+
+<pre><code>    var chars : array char of boolean
+    loop
+        Input.KeyDown (chars)
+        locate (1, 1)
+        if chars (KEY_UP_ARROW) then
+            put "Up Arrow Pressed  " ..
+        else
+            put "                  " ..
+        end if
+        if chars (KEY_RIGHT_ARROW) then
+            put "Right Arrow Pressed  " ..
+        else
+            put "                     " ..
+        end if
+        if chars (KEY_LEFT_ARROW) then
+            put "Left Arrow Pressed  " ..
+        else
+            put "                    " ..
+        end if
+        if chars (KEY_DOWN_ARROW) then
+            put "Down Arrow Pressed  " ..
+        else
+            put "                  " ..
+        end if
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Another example is available that checks for all possible keys.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Input.KeyDown</strong>, not by calling <strong>KeyDown</strong>.</p>

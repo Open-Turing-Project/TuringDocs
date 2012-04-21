@@ -65,5 +65,8 @@
       "text_content": "GUI.SelectRadio for \r\n          selecting a picture radio button in a program. See also \r\n          GUI.CreatePictureButton \r\n          and GUI.CreateRadioButton \r\n          for information on picture buttons and radio buttons.\r\n    ",
       "mdown_content": "**[gui_selectradio.html](GUI.SelectRadio)** for selecting a picture radio button in a program. See also **[gui_createpicturebutton_full.html](GUI.CreatePictureButton)** and **[gui_createradiobutton_full.html](GUI.CreateRadioButton)** for information on picture buttons and radio buttons."
     }
+  ],
+  "dependencies": [
+    "gui_createpictureradiobutton_full01.gif"
   ]
 }

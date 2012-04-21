@@ -35,5 +35,8 @@
       "text_content": " Sprite.Hide.\r\n",
       "mdown_content": "**[sprite_hide.html](Sprite.Hide)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

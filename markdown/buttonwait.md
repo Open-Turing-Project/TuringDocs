@@ -4,6 +4,8 @@
 ##Syntax
 **buttonwait** (*motion* : **string**,  **var** *x*, *y*, *buttonnumber*, *buttonupdown* : **int**)
 
+
+
 ##Description
 The **buttonwait** procedure gets information about a mouse event and removes it from the queue.
 The parameter *motion* must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonwait** returns instantly. If there isn't such an event, **buttonwait** waits until there is one and then returns (much like **getch** handles keystrokes).
@@ -11,8 +13,12 @@ In "*single-button mode*" (where the mouse is treated like a one-button mouse), 
 In "*multi-button mode*", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
 The parameters *x* and *y* are set to the position of the mouse cursor when the button was pressed. The parameter *buttonnumber* is set to 1 when in "*single-button mode*". In  "*multi-button mode*", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter *buttonupdown* is set to 1, if a button was pressed and 0 if a button was released. 
 
+
+
 ##Example
 This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.
+
+
         var x, y, buttonnumber, buttonupdown, buttons : int
         var nx, ny : int
         loop
@@ -31,8 +37,12 @@ This program draws lines. It starts a line where the user presses down and conti
 ##Example
 In the previous example, when the mouse moves, the line is erased by drawing it in white. This erases anything thatthe line was drawn on top of, including previous lines. A more complete example involving the clicking and dragging of filled rectangles using the mouse is available. In this example, the background is fully restored when the rectangle is moved by using "xor".
 
+
+
 ##Example
 This is an example demonstrating how to check for both character and mouse input at the same time.
+
+
         var ch : string (1)
         var x, y, btnnum, btnupdown : int
         loop
@@ -50,6 +60,10 @@ This is an example demonstrating how to check for both character and mouse input
 ##Details
 **buttonwait **can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
 
+
+
 ##See also
 **[](buttonwait)** to see if an appropriate event is in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "*single-button mode*" and "*multi-button mode*".
 See also predefined unit **[mousemodule.html](Mouse)**.
+
+

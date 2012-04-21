@@ -1,0 +1,29 @@
+<h1>takepic</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>takepic</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>int</strong>, <strong>var</strong> <em>buffer</em> : <strong>array</strong> 1 .. * <strong>of</strong> <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>takepic</strong> procedure is used to record the pixel values in a rectangle, with left bottom and right corners of (<em>x1</em>, <em>y1</em>) and (<em>x2</em>, <em>y2</em>), in the buffer array. This requires a sufficiently-large buffer (see <strong>sizepic</strong> ). The <strong>drawpic</strong> procedure is used to make copies of the recorded rectangle on the screen.</p>
+
+<h2>Example</h2>
+
+<p>After drawing a happy face, this program copies the face to a new location.</p>
+
+<p><img src="takepic01.gif" alt="Doc image" /></p>
+
+<h2>Details</h2>
+
+<p>The integer values that <strong>takepic</strong> places in the buffer can be read or written (using the <strong>read</strong> and <strong>write</strong> statements). Unfortunately, if a value happens to be the pattern used to represent the uninitialized value (the largest negative number the hardware can represent) assignment (by:=) and <strong>put</strong> of the individual integer values in the buffer will fail.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>drawpic</strong>, <strong>takepic</strong>, and <strong>sizepic</strong> subprogramshave been made obsolete by the subprograms <strong><a href="Pic.Draw">pic_draw.html</a></strong> and<strong><a href="Pic.New">pic_new.html</a></strong> of the <strong><a href="Pic">picmodule.html</a></strong> module.  Users are strongly suggested to use those routines instead. The <strong><a href="Pic">picmodule.html</a></strong> module also contains subprograms to load images from files.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="sizepic">sizepic.html</a></strong> and <strong><a href="drawpic">drawpic.html</a></strong>. See also <strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong>, <strong><a href="drawdot">drawdot.html</a></strong>, <strong><a href="drawline">drawline.html</a></strong>, <strong><a href="drawbox">drawbox.html</a></strong>, and <strong><a href="drawoval">drawoval.html</a></strong>.
+See also predefined unit <strong><a href="Pic">picmodule.html</a></strong>.</p>

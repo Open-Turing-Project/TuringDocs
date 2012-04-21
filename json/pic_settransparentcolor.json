@@ -61,5 +61,8 @@
       "text_content": "Pic.Draw and \r\n          Pic.FileNew.\r\n    ",
       "mdown_content": "**[pic_draw.html](Pic.Draw)** and **[pic_filenew.html](Pic.FileNew)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

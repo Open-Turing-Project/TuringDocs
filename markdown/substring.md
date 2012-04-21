@@ -5,10 +5,16 @@
 A *substring *is one of:
  (a)*stringReference* ( *leftPosition* .. *rightPosition* ) (b)*stringReference* ( *charPosition* )
 
+
+
 ##Description
 A substring selects a part of another string. In form (a) the substring starts at the left position and runs to the right position. In form (b), the substring is only a single character. Turing support substrings of **char**(*n*) values.
 
+
+
 ##Example
+
+
 
         var word : string := "bring"
         put word (2 .. 4)       % Outputs rin
@@ -26,5 +32,9 @@ This specifically allows null substrings such as *word *(1, 0) in which *rightPo
 Note that substrings are not assignable. For example, if *s* is a string, the statement *s *(3) := "a" is illegal in Turing.
 Turing supports substrings of **char**(*n*) values. See **char**(*n*). If a substring of **char**(*n*) value *t* has two operands, as in *t*(2..77), the result type of this operation is a **string**. If the substring has one operand, as in *t*(7), this becomes, in effect,  a subscript into an array of characters. The result is a reference to a **char**, which can be assigned to or passed to a **var** parameter.
 
+
+
 ##See also
 **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(*n*), *[explicitstringconstant.html](explicitStringConstant)*, *[explicitcharconstant.html](explicitCharConstant)*, catenation and **[length.html](length)**.
+
+

@@ -1,0 +1,70 @@
+<h1>View.Set</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>View.Set</strong> ( <em>s</em> : <strong>string</strong> )</p>
+
+<h2>Example</h2>
+
+<p>Here are example uses of the <strong>View.Set</strong> procedure. In many cases, these will appear as the first statement of the program. However, they can appear any place in a program.</p>
+
+<pre><code>    View.Set ("graphics")       % Switch to graphics mode
+    View.Set ("screen")     % Switch to screen mode
+    View.Set ("nocursor")       % Turn off cursor
+    View.Set ("noecho")     % Do not echo keystrokes
+</code></pre>
+
+<h2>Description</h2>
+
+<p>The <strong>View.Set</strong> statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to <strong>View.Set</strong> is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho". <strong>View.Set</strong> affects the active window.</p>
+
+<h2>Details</h2>
+
+<p>There are two window modes, <strong>text</strong> and <strong>graphics</strong>.
+<strong>text</strong> mode does not allow any graphics whatsoever (including cursor positioning, etc.). Only <strong>put</strong> and <strong>get</strong> are allowed. Any output that scrolls off the top of the window is preserved and can viewed or printed later.
+<strong>graphics</strong> mode allows character graphics and pixel graphics commands such and <strong>Text.Locate</strong> and <strong>Draw.Box</strong>.
+The default graphics mode is defined in the Turing preferences. It is good practice to set the desired mode so that the program will function properly regardless of thedefault graphics mode. Note that if the user prints the output window, in <strong>text</strong> mode, all output sent to the window is printed. In <strong>graphics</strong> mode, only the current output of the window is printed. If the user saves the output window, a <strong>text</strong> mode window will produce a text file containing all the output sent to the window. A <strong>graphics</strong> window will produce a BMP graphics file containing the current contents of the window.</p>
+
+<h2>Details</h2>
+
+<p>Where the options to <strong>View.Set</strong> are mutually exclusive, they are listed here with the default underlined. Here are the options:
+"<strong>cursor</strong>", "<strong>nocursor</strong>" - Causes the cursor to be shown (or hidden). The cursor is only displayed when the program is awaiting input.
+"<strong>echo</strong>", "<strong>noecho</strong>" - Causes (or suppresses) echoing of characters that are typed. Echoing is commonly turned off in interactive programs to keep typed characters from being echoed at inappropriate places on the screen.
+"<strong>noxor</strong>", "<strong>xor</strong>" - <strong>noxor</strong> mode means that all drawing is done normally. In <strong>xor</strong> mode, all pixel graphics are drawn XOR'ed on the background (with the exception of the <strong>Pic</strong> routines, where the drawing mode is specified). The most important property of an XOR'ed object is that it can be erased and the background restored by XOR'ing the object on top of itself.
+"<strong>msdos</strong>", "<strong>nomsdos</strong>" - Causes the window to use theMS-DOS character set (with line drawing characters) instead of theWindows ANSI character set.  The "<strong>nomsdos</strong>" option causes thewindow to use the Windows ANSI character set.  Note that the "<strong>msdos</strong>" option only works if the Windows font (usually Courier New) supports it.
+"<strong>visible</strong>",<strong> </strong>"<strong>invisible</strong>", "<strong>popup</strong>" - Causes the active window to become visible (invisible or, for popup, invisible until input or output occurs in the window).
+"<strong>title:&lt;<em>text</em>></strong>" - Causes the title of the active window to be set to <strong>&lt;<em>text</em>></strong>.
+"<strong>position:&lt;<em>x</em>>;&lt;<em>y</em>></strong>" - Causes the position of the upper left corner of the active window to be set to (<strong><em>x</em></strong>, <strong><em>y</em></strong>). The <x> parameter can also be one of: &#147;left&#148;, &#147;center&#148;, &#147;center&#148; or &#147;right&#148;, in which case the window will be placed on the left, center or right side of the screen. The <y> parameter can also be one of: &#147;top&#148;, &#147;middle&#148;, &#147;truemiddle&#148;, or &#147;bottom&#148; in which case the window will be placed at the top, middle about 1/3 from the top, middle or bottom of the screen. Note that when a window is supposed to be centered in the middle of the screen, &#147;middle&#148; usually looks better than &#147;truemiddle&#148;.
+"<strong>nooffscreenonly</strong>", "<strong>offscreenonly</strong>"  Causes or (suppresses) output from being sent to the visible window. When the <strong>offscreenonly</strong> option is active, any text and graphics output is drawn to the offscreen buffer that is maintained for every Run window but not drawn to the screen. <strong>View.Update</strong> is then used to copy the entire contents of the offscreen buffer to the Run window. By allowing numerous drawing commands to be sent to the offscreen buffer and then updating the window at one time, it is possible to get smoother animation.
+"<strong>buttonbar</strong>", "<strong>nobuttonbar</strong>"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.
+"<strong>text</strong>",<strong> </strong>"<strong>screen</strong>",<strong> </strong>"<strong>graphics</strong>"<strong> - </strong>Sets window to the given mode and always erases the screen, even when already in the requested mode.
+The <strong>text</strong> mode can have a modifier in the form "text:&lt;<em>rows</em>>;&lt;<em>cols</em>>". This sets the window to be &lt;<em>rows</em>> by &lt;<em>cols</em>> of text in size.
+The <strong>screen</strong> mode actually sets the window to <strong>graphics</strong> mode. It can have a modifier in the form "screen:&lt;<em>rows</em>>;&lt;<em>cols</em>>". This sets the window to be &lt;<em>rows</em>> by &lt;<em>cols</em>> of text in size.
+The <strong>graphics</strong> mode can have a modifier in the form "graphics:&lt;<em>width</em>>;&lt;<em>height</em>>". This sets the window to be &lt;<em>width</em>> by &lt;<em>height</em>> pixels in size.
+To set a window to the maximum size available on the screen, you can use &#147;max&#148; for the &lt;<em>width</em>>, &lt;<em>height</em>>, &lt;<em>rows</em>> or &lt;<em>columns</em>> parameters. If the window requested is larger than will fit on the screen, the window will fill the entire screen and scroll bars will be added to the output window to allow the window user to see the rest of the window.</p>
+
+<h2>Example</h2>
+
+<p>This program creates a graphics window that is 300 pixels by 100 pixels.
+This program outputs the square roots for the first 200 numbers. The user can inspect all the output and print the values after the program has finished execution
+This program creates a window without a button bar at the top that is sized to fit the screen. It then draws an &#147;X&#148; in red in the window.
+This program resizes the window to 200x200, moves the output window to the bottom-left of the screen and hides the button bar. It then sets the window title to &#147;Bottom Left Window&#148; and outputs the word &#147;Hello&#148;.</p>
+
+<pre><code>    View.Set ("graphics:300;100")        View.Set ("text")
+    for value : 1 .. 200
+        put value : 3, "   ", sqrt (value)
+    end for        View.Set ("graphics:max;max,nobuttonbar")
+    Draw.Line (0, 0, maxx, maxy, red)
+    Draw.Line (maxx, 0, 0, maxy, red)        View.Set ("graphics:200;200,position:bottom;left,nobuttonbar")
+    View.Set ("title:Bottom Left Window")
+    put "Hello"
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong> for further information.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>View.Set</strong>, not by calling <strong>Set</strong>.</p>

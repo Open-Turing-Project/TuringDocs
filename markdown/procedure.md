@@ -5,10 +5,16 @@
 A *procedureDeclaration* is:
  **procedure** *id* [(*paramDeclaration* {, *paramDeclaration* })]  *statementsAndDeclarations* **end** *id*
 
+
+
 ##Description
 A procedure declaration creates (but does not run) a new procedure. The name of the procedure (*id*) is given in two places, just after **procedure** and just after **end**.
 
+
+
 ##Example
+
+
 
         procedure greetings
             put "Hello world"
@@ -37,6 +43,8 @@ Only parameters declared using **var** may be changed in the procedure, for exam
 Procedures and functions cannot be declared inside other procedures and functions.
 The syntax of a *procedureDeclaration* presented above has been simplified by leaving out the optional **import** list, **pre** condition, **init** clause, **post** condition and exception handler. The full syntax* *is
 A procedure must be declared before being called. To allow for mutually recursive procedures, there are **forward** declarations of procedures with later declaration of each procedure **body**. See **forward** and **body** declarations for explanations.
+
+
         procedure [ pervasive ] id
             [ ( [ paramDeclaration {,paramDeclaration } ] ) ]
             [ : deviceSpecification ]
@@ -48,3 +56,5 @@ A procedure must be declared before being called. To allow for mutually recursiv
         end id
 ##See also
 **[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and *exceptionHandler* for explanations of these features. See **[pervasive.html](pervasive)** for information on **[pervasive.html](pervasive)** procedures. See **exceptionHandler**. The optional *deviceSpecification *is used only in procedures declared in monitors and is used to create an *interrupt handling [](procedure)*. See **[monitor.html](monitor)** for details.
+
+

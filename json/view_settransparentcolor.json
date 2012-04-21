@@ -60,5 +60,8 @@
       "text_content": "Pic.SetTransparentColor.\r\n    ",
       "mdown_content": "**[pic_settransparentcolor.html](Pic.SetTransparentColor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

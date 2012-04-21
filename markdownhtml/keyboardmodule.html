@@ -1,0 +1,22 @@
+<h1>Keyboard</h1>
+
+<h2>Description</h2>
+
+<p>This unit contains all the constants representing both the characters and their ordinal values for all possible keystrokes that can be read by Turing.
+Constants beginning with &#147;KEY<em>&#148; are <strong>char</strong> values. These are the values returned by <strong>getch</strong> and used as an index into the<strong> Input.KeyDown</strong> array. The constants that the constants KEY_KEYPAD_5, KEY_SHIFT, KEY_CTRL and KEY_ALT can only be used in conjunction with <strong>Input.KeyDown</strong>. The <strong>getch</strong> and <strong>getchar</strong> subprograms do not return these values. All other constants with with SHIFT, CTRL and ALT as part of the name cannot be checked for in the <strong>Input.KeyDown </strong>array.
+Constants beginning with &#147;ORD</em>&#148;  are <strong>int</strong> values and represent the ordinal values (values returned by the <strong>ord</strong> function) for all the possible keystrokes.
+Here is a list of most of the constants
+KEY_F1 .. KEY_F12 KEY_CTRL_A .. KEY_CTRL_ZKEY_SHIFT_F1 .. KEY_SHIFT_F12KEY_ALT_A .. KEY_ALT_ZKEY_CTRL_F1 .. KEY_CTRL_F12KEY_ALT_1 .. KEY_ALT_0
+KEY_ALT_F1 .. KEY_ALT_F12
+KEY_HOMEKEY_CTRL_HOMEKEY_UP_ARROWKEY_CTRL_UP_ARROWKEY_PGUPKEY_CTRL_PGUPKEY_LEFT_ARROWKEY_CTRL_LEFT_ARROWKEY_RIGHT_ARROWKEY_CTRL_RIGHT_ARROWKEY_ENDKEY_CTRL_ENDKEY_DOWN_ARROWKEY_CTRL_DOWN_ARROWKEY_PGDNKEY_CTRL_PGDNKEY_INSERTKEY_CTRL_INSERTKEY_DELETEKEY_CTRL_DELETEKEY_BACKSPACEKEY_KEYPAD_5 <em>KEY_TABKEY_SHIFT </em>KEY_ENTERKEY_CTRL <em>KEY_ESCKEY_ALT </em>KEY_CTRL_OPEN_BRACKETKEY_CTRL_BACKSLASHKEY_CTRL_CLOSE_BRACKETKEY_CTRL_CARETKEY_CTRL_UNDERSCOREKEY_CTRL_BACKSPACEKEY_ALT_MINUSKEY_ALT_EQUALSKEY_BACK_TABKEY_SHIFT_TAB</p>
+
+<p>Above constants with &#147;ORD<em>&#148; instead of  &#147;KEY</em>&#148;
+ORD_A .. ORD_Z ORD_0 .. ORD_9ORD_LOWER_A .. ORD_LOWER_Z ORD_SPACEORD_EXCALAMATION_MARKORD_QUOTATION_MARKORD_HAS_MARKORD_DOLLAR_SIGNORD_PERCENT_SIGNORD_AMPERSANDORD_SINGLE_QUOTEORD_OPEN_PARENTHESISORD_CLOSE_PARENTHESISORD_ASTERISKORD_PLUSORD_COMMAORD_MINUSORD_PERIODORD_DOTORD_SLASHORD_COLONORD_SEMICOLONORD_LESS_THANORD_EQUALSORD_GREATER_THANORD_QUESTION_MARKORD_AT_SIGNORD_OPEN_BRACKETORD_BACKSLASHORD_CLOSE_BRACKETORD_CARETORD_UNDERSCOREORD_APOSTROPHEORD_OPEN_BRACEORD_BARORD_CLOSE_BRACEORD_TILDE</p>
+
+<p>Characters marked with an asterisk (*) are keys that can only be detected using<strong> Input.KeyDown</strong>.</p>
+
+<p>All constants in the Keyboard module are exported unqualified. (This means you can use the constants directly without having to use the qualifier "<strong>Keyboard.</strong>".)</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="getch">getch.html</a></strong>, <strong><a href="getchar">getchar.html</a></strong>, and <strong><a href="Input.KeyDown">input_keydown.html</a></strong>.</p>

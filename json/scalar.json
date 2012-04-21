@@ -20,5 +20,8 @@
       "text_content": " In current Turing implementations scalar types are directly represented in 1, 2, 4 or 8 bytes in a computer's memory. This implies that they can be efficiently passed by value.\r\n",
       "mdown_content": "In current Turing implementations scalar types are directly represented in 1, 2, 4 or 8 bytes in a computer's memory. This implies that they can be efficiently passed by value."
     }
+  ],
+  "dependencies": [
+
   ]
 }

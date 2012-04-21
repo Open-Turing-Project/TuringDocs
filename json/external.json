@@ -56,5 +56,8 @@
       "text_content": " Declare drawcircle to be a procedure that is externally known as circle.\r\n\r\n",
       "mdown_content": "Declare *drawcircle* to be a procedure that is externally known as *circle*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

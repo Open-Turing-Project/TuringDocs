@@ -55,5 +55,8 @@
       "text_content": " unit, module, monitor and class. See also import list, inherit clause, implement clause, implement by clause and deferred subprogram.\r\n",
       "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[import.html](import)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause, **[implement.html](implement)** **by** clause and **[deferred.html](deferred)** subprogram."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -53,5 +53,8 @@
       "text_content": "Sprite.New, \r\n          Sprite.SetPosition and \r\n          Sprite.ChangePic.\r\n    ",
       "mdown_content": "**[sprite_new.html](Sprite.New)**, **[sprite_setposition.html](Sprite.SetPosition)** and **[sprite_changepic.html](Sprite.ChangePic)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

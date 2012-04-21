@@ -48,5 +48,8 @@
       "text_content": " substrings (for separating a strings into parts), repeat (for making repeated catenations), string type, length, and index (to determine where one string is located inside another).\r\nSee also string, char, char(n), explicitStringConstant, explicitCharConstant, substring and length.\r\n",
       "mdown_content": "*substrings* (for separating a strings into parts), **[repeat.html](repeat)*** *(for making repeated catenations), **[string1.html](string)*** *type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).\nSee also **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(*n*), *[explicitstringconstant.html](explicitStringConstant),* *[explicitcharconstant.html](explicitCharConstant),* [substring.html](substring) and **[length.html](length)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

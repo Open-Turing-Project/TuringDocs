@@ -1,0 +1,51 @@
+<h1>GUI.SetSelection</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetSelection</strong> (<em>widgetID</em>, <em>fromSel</em>, <em>toSel</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Sets the selected text in the text field specified by <em>widgetID</em>. The value of the <em>fromSel</em> and <em>toSel</em> parameters indicate the characters where the selection will begin and end. For example, if the text was "Hello there", setting <em>fromSel</em> to 2 and <em>toSel</em> to 5 would select "ell". Setting <em>fromSel</em> and <em>toSel</em> to 1 automatically selects the entire text.
+The <em>fromSel</em> parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <em>fromSel</em> and <em>toSel</em> selects the entire text.
+The <em>toSel</em> parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <em>fromSel</em> and <em>toSel</em> selects the entire text.</p>
+
+<h2>Example</h2>
+
+<p>The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var textField, lbl : int
+
+    procedure CheckInput (s : string)
+        for i : 1 .. length (s)
+            if (s (i) &lt; 'a' or 'z' &lt; s (i)) and s (i) not= ' ' then
+                GUI.SetSelection (textField, i, i + 1)
+                return
+            end if
+        end for
+        GUI.Quit
+    end CheckInput
+
+    textField := GUI.CreateTextField (100, 100, 200, "", CheckInput)
+    lbl := GUI.CreateLabelFull (100 + GUI.GetWidth (textField) div 2,
+        100 + GUI.GetHeight (textField), 
+        "Only Allows Lower Case Letters", 0, 0, 
+        GUI.CENTER + GUI.BOTTOM, 0)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+
+    GUI.SetLabel (lbl, "Program Finished!")
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetSelection</strong>, not by calling <strong>SetSelection</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.CreateTextField</strong>.</p>

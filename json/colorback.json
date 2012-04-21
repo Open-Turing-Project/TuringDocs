@@ -94,5 +94,8 @@
       "text_content": " color and whatcolorback.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "**[color.html](color)** and **[whatcolorback.html](whatcolorback)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

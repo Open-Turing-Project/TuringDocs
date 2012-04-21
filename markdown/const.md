@@ -5,10 +5,16 @@
 A *constantDeclaration* is:
  **const** *id* [ : *typeSpec* ] := *initializingValue*
 
+
+
 ##Description
 A const declaration creates a name *id* for a value.
 
+
+
 ##Example
+
+
 
         const c := 3
         const s := "Hello"      % The type of s is string
@@ -25,4 +31,6 @@ When the typeSpec is omitted, the variable's type is taken to be the (root) type
 The keyword **pervasive** can be inserted just after **const**. When this is done, the constant is visible inside all subconstructs of the constant's scope. Without **pervasive**, the constant is not visible inside modules, monitors or classes unless explicitly imported. Pervasive constants need not be imported. You can abbreviate **pervasive** as an asterisk (*****).
 You can also optionally use the **register** keyword to request that the constant be placed in a machine register. The syntax for constantDeclaration is actually:
 In the current (2002) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the **register** keyword is ignored. See also **register** for restrictions on the use of register constants.
+
+
         const [pervasive] [register] id [ : typeSpec ] := initializingValue

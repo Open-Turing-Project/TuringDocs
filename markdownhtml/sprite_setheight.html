@@ -1,0 +1,28 @@
+<h1>Sprite.SetHeight</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sprite.SetHeight</strong> (<em>spriteID</em>, <em>newHeight</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Sets the height of the sprite specified by <em>spriteID</em> to the value specified by <em>newHeight</em>.
+The height of a sprite determines which sprite appears above another when they overlap. The "higher" sprite (the one with the greater height) will appear on top of the sprite with the lower height, even if the lower sprite is drawn second.
+The background (i.e. any non-sprite) is considered to be in height 0. Sprites with a negative height will appear "behind" the background. Note that if two sprites have the same height, the one drawn last will appear above the first one.</p>
+
+<h2>Example</h2>
+
+<p>See <strong>Sprite.Hide</strong> for an example of <strong>Sprite.SetHeight</strong>.</p>
+
+<h2>Details</h2>
+
+<p>It should be noted that a lot more computation must be done to display sprites with a negative height.  If you are on a slowermachine and performance is not sufficient, consider trying toeliminate the use of sprites moving behind the background.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sprite.SetPosition</strong>, not by calling <strong>SetPosition</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sprite.New">sprite_new.html</a></strong>.</p>

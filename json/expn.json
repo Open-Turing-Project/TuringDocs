@@ -45,5 +45,8 @@
       "text_content": " precedence of operators, as well as the int, real, string and boolean types.\r\n",
       "mdown_content": "*[precedence.html](precedence) *of operators, as well as the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)** and **[boolean.html](boolean)** types."
     }
+  ],
+  "dependencies": [
+
   ]
 }

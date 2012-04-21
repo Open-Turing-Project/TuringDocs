@@ -41,5 +41,8 @@
       "text_content": " hasch (has character) which is used to see if a character has been typed but not yet read.\r\nSee also predefined unit Input.\r\n",
       "mdown_content": "**[hasch.html](hasch)** (has character) which is used to see if a character has been typed but [not.html](not) yet [read.html](read).\nSee also predefined unit **[inputmodule.html](Input)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

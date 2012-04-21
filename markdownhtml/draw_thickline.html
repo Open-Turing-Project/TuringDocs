@@ -1,0 +1,35 @@
+<h1>Draw.ThickLine</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.ThickLine</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>lineWidth</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.ThickLine </strong>procedure is used to draw a line on the screen from (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) using the specified <em>Color</em>.</p>
+
+<p><img src="draw_line01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a large X, reaching to each corner of the screen in two different colors. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (<strong>maxx</strong>, <strong>maxy</strong>) is the right top, etc.</p>
+
+<pre><code>    View.Set ("graphics")
+    % First draw a line of 5 pixel width from the left bottom to right top
+    Draw.ThickLine (0, 0, maxx, maxy, 5, brightred) 
+    % Now draw a line of 5 pixel width from the left top to right bottom
+    Draw.ThickLine (0, maxy, maxx, 0, 5, brightgreen)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen must be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>"<em> </em>mode, an error will occur.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.ThickLine</strong>, not by calling <strong>ThickLine</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

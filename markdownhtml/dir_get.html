@@ -1,0 +1,34 @@
+<h1>Dir.Get</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Dir.Get</strong> (<em>streamNumber</em> : <strong>int</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Dir.Get</strong> is part of a series of four subprograms that help users get directory listings. <strong>Dir.Get</strong> is used to get the file names in the directory. Each time the function is called, it returns the next file name in the directory. The names are not sorted. When there are no more file names in the directory, <strong>Dir.Get</strong> returns the empty string.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>Dir.Get</strong> call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>This program prints a listing of all the files in the directory <em>datafiles</em>.</p>
+
+<pre><code>    var streamNumber : int
+    var fileName : string
+    streamNumber := Dir.Open ("datafiles")
+    assert streamNumber &gt; 0
+    loop
+        fileName := Dir.Get (streamNumber)
+        exit when fileName = ""
+        put fileName
+    end loop
+    Dir.Close (streamNumber)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Dir.Get</strong>, not by calling <strong>Get</strong>.</p>

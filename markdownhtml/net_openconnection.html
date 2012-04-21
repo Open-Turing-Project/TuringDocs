@@ -1,0 +1,99 @@
+<h1>Net.OpenConnection</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Net.OpenConnection</strong> (<em>netAddr</em> : <strong>string</strong>, <em>port</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Attempts to open a connection to port specified by the <em>port</em> parameter on the machine specified by <em>netAddr</em> parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the <strong>Net.WaitForConnection</strong> function.
+If successful, <strong>Net.OpenConnection</strong> returns a network stream descriptor which can be used with the <strong>put</strong>, <strong>get</strong>, <strong>read</strong>, and <strong>write</strong> statements and <strong>eof</strong> function to send and receive data to the listening program. It is also the parameter used for the <strong>Net.CloseConnection</strong>, <strong>Net.BytesAvailable</strong>, <strong>Net.CharAvailable</strong>, <strong>Net.LineAvailable</strong>, and <strong>Net.TokenAvailable</strong> functions.
+The <em>netAddr</em> parameter is a string specifying the net address of the machine to be connected to. This can either be the full hostname or the numerical address.
+In general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.
+The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
+It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+
+<h2>Example</h2>
+
+<p>The following program implements a "Chat" program. One user runs the program on their machine as a server, which waits for another machine to connect to it. The second user specifies the machine to connect to and then connects. The two can then type at each other.</p>
+
+<pre><code>    % The "Chat" program
+    const chatPort : int := 5055
+    var choice : int
+    loop
+        put "Enter 1 to run chat server"
+        put "Enter 2 to run chat session"
+        put "Choice: " ..
+        get choice
+        exit when choice = 1 or choice = 2
+    end loop
+    var netStream : int
+    var netAddress : string
+
+    if choice = 1 then
+        netStream := Net.WaitForConnection (chatPort, netAddress)
+    else
+        put "Enter the address to connect to: " ..
+        get netAddress
+        netStream := Net.OpenConnection (netAddress, chatPort)
+        if netStream &lt;= 0 then
+            put "Unable to connect to ", netAddress
+            return
+        end if
+    end if
+    Draw.Cls
+    put "Connected to ", netAddress
+
+    var localRow : int := 2
+    var localCol : int := 1
+    var remoteRow := maxrow div 2
+    var remoteCol : int := 1
+    var ch : char
+
+    View.Set ("noecho")
+    loop
+        if hasch then
+            ch := getchar
+            put : netStream, ch
+            if ch = '\n' then
+                localRow := localRow mod (maxrow div 2) + 1
+                localCol := 1
+                Text.Locate (localRow, localCol)
+                put "" % Clear to end of line
+                Text.Locate (localRow, localCol)
+            else
+                Text.Locate (localRow, localCol)
+                put ch ..
+                localCol += 1
+            end if
+        end if
+
+        if Net.CharAvailable (netStream) then
+            get : netStream, ch
+            if ch = '\n' then
+                remoteRow := remoteRow mod (maxrow div 2) +
+                    1 + (maxrow div 2)
+                remoteCol := 1
+                Text.Locate (remoteRow, remoteCol)            put ""  % Clear to end of line
+                Text.Locate (remoteRow, remoteCol)
+            else
+                Text.Locate (remoteRow, remoteCol)
+                put ch ..
+                remoteCol += 1
+            end if
+        end if
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Net.OpenConnection</strong>, not by calling <strong>OpenConnection</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Net.WaitForConnection">net_waitforconnection.html</a></strong> and <strong><a href="Net.CloseConnection">net_closeconnection.html</a></strong>.</p>

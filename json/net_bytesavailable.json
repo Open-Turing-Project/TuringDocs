@@ -37,5 +37,8 @@
       "text_content": " Net.CharAvailable, Net.LineAvailable, and Net.TokenAvailable.\r\n",
       "mdown_content": "**[net_charavailable.html](Net.CharAvailable)**, **[net_lineavailable.html](Net.LineAvailable)**, and **[net_tokenavailable.html](Net.TokenAvailable)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

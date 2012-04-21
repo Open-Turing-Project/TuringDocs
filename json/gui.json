@@ -14,5 +14,8 @@
       "text_content": "Create a menu item.\r\n",
       "mdown_content": "Create a menu item."
     }
+  ],
+  "dependencies": [
+
   ]
 }

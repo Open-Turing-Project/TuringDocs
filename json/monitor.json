@@ -69,5 +69,8 @@
       "text_content": " unit, module and class. See also export list, import list, implement list, implement by list and deferred subprogram.\r\n",
       "mdown_content": "**[unit.html](unit)**, **[module.html](module)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** list, **[implement_by.html](implement by)** list and **[deferred.html](deferred)** subprogram."
     }
+  ],
+  "dependencies": [
+
   ]
 }

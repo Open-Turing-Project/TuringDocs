@@ -1,0 +1,26 @@
+<h1>arccos</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>arccos</strong> (<em>r</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>arccos</strong> function is used to find the arc cosine of a value. The result is given in radians. For example, <strong>arccos</strong> (0.5) is p / 3.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the arccosine of -1 through 1 in radians.</p>
+
+<pre><code>    for i : -4 .. 4
+        const arg := i / 4
+        put "Arc cosine of ", arg, " is ",
+            arccos (arg), " radians"
+    end for
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="arcsin">arcsin.html</a></strong> and <strong><a href="arctan">arctan.html</a></strong> functions for calculating arcsine and arctangent.
+the <strong><a href="arccosd">arccosd.html</a></strong> function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

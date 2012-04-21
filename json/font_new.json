@@ -48,5 +48,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Font.New, not by calling New.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.New**, not by calling **New**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

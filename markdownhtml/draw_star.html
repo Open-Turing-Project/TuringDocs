@@ -1,0 +1,34 @@
+<h1>Draw.Star</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.Star </strong>(<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.Star </strong>procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) using the specified <em>Color</em>. If <em>y1</em> is greater than <em>y2</em> then the star is drawn upside down.</p>
+
+<p><img src="draw_star01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program will draw two stars beside each other. The first star will be in color 1 and the second star will be upside down and in color 2.</p>
+
+<pre><code>    View.Set ("graphics")
+    Draw.Star (0, 0, 100, 100, brightred)
+    Draw.Star (150, 100, 250, 0, brightblue)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>Draw.Star</strong> procedure is useful for drawing the American flag.
+The screen must be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.Star</strong>, not by calling <strong>Star</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

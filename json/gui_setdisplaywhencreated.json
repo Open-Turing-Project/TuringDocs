@@ -29,5 +29,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetDisplayWhenCreated, not by calling SetDisplayWhenCreated.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetDisplayWhenCreated**, not by calling **SetDisplayWhenCreated**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

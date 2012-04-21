@@ -40,5 +40,8 @@
       "text_content": " succ, lower and upper functions.\r\n",
       "mdown_content": "**[succ.html](succ)**, **[lower.html](lower)** and **[upper.html](upper)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

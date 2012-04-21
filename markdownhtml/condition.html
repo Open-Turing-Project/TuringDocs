@@ -1,0 +1,63 @@
+<h1>condition</h1>
+
+<h2>Syntax</h2>
+
+<p>A conditionDeclaration is:
+<strong>var</strong> <em>id </em>{ , <em>id </em>} : [ <strong>array</strong> <em>indexType</em> {, <em>indexType</em> } <strong>of</strong> ][ <em>conditionOption</em> ] <strong>condition</strong></p>
+
+<h2>Description</h2>
+
+<p>A condition is essentially a queue of sleeping processes. It is used in a concurrent program to allow processes to block themselves (by the <strong>wait</strong> statement) and later to be awakened (by the <strong>signal</strong> statement). A condition variable, which can occur only inside a monitor (a special kind of module that handles concurrency) or monitor class, is used by the <strong>wait</strong> and <strong>signal</strong> statements for putting processes to sleep and later waking them up.</p>
+
+<h2>Example</h2>
+
+<p>The processes use this monitor to gain exclusive access to a resource. A process wanting to use the resource calls the <em>request</em> entry point and is blocked until the resource is free. When the process is finished with the resource, it calls the <em>release</em> entry point. This monitor is essentially a binary <em>semaphore</em> in which the semaphore's <em>P</em> operation is the <em>request</em> and the <em>V</em> is the <em>release</em>.</p>
+
+<pre><code>    monitor resource
+        export request, release
+
+        var available : boolean := true
+        var nowAvailable : condition
+
+        procedure request
+            if not available then
+                wait nowAvailable   % Go to sleep
+            end if
+            assert available
+            available := false      % Allocate resource
+        end request
+
+        procedure release
+            assert not available    % Resource is allocated
+            available := true       % Free the resource
+            signal nowAvailable % Wake up one process
+                            % If any are sleeping
+        end release
+
+    end resource
+    process worker
+        loop
+            &#133;
+            resource.request        % Block until available
+            &#133; use resource &#133;
+            resource.release
+        end loop
+    end worker
+
+    fork worker             % Activate one worker
+    fork worker             % Activate another worker
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A <em>conditionOption </em>is one of:
+(a)<strong>priority</strong>(b)<strong>deferred</strong>(c)<strong>timeout</strong>
+The <strong>priority</strong> option requires that the corresponding <strong>wait</strong> statements include priorities. Options (b) and (c) declare <em>deferred</em> conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an <em>immediate</em> (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or <strong>timeout</strong>).
+A <strong>timeout</strong> option means the signaling is deferred and that an extra parameter to the <strong>wait</strong> statement must give a <em>timeout</em> <em>interval</em>. If a process waits longer than its interval, it is automatically signaled. Beware that the <em>empty</em> function can be non-repeatable when applied to timeout conditions. For example, <strong>empty</strong>(<em>c</em>)<em> </em>may not be equal to <strong>empty</strong>(<em>c</em>) in a single expression. In the current (1999) version of Turing, the time for time outs is measured in simulation time rather than real time. See the <strong>pause</strong> statement.
+Conditions cannot be named as types, cannot be contained in records, unions or collections and cannot be declared in statements (such as <strong>begin</strong> or <strong>loop</strong>) or in subprograms. They can only be declared in monitors and monitor classes.
+There is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.
+Note that <em>conditionOption</em> must precede the keyword <strong>condition</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="wait">wait.html</a></strong> and <strong><a href="signal">signal.html</a></strong>. See also <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="fork">fork.html</a></strong>. See also <strong><a href="empty">empty.html</a></strong>. See also <strong><a href="pause">pause.html</a></strong>.</p>

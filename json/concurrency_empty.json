@@ -33,5 +33,8 @@
       "text_content": " condition, wait, signal, fork and monitor.\r\n",
       "mdown_content": "**[condition.html](condition)**, **[wait.html](wait)**, **[signal.html](signal)**, **[fork.html](fork)** and **[monitor.html](monitor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

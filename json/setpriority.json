@@ -26,5 +26,8 @@
       "text_content": " getpriority, fork and monitor.\r\nSee also predefined unit Concurrency.\r\n",
       "mdown_content": "**[getpriority.html](getpriority)**, **[fork.html](fork)** and **[monitor.html](monitor)**.\nSee also predefined unit **[concurrencymodule.html](Concurrency)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -40,5 +40,8 @@
       "text_content": " Time.Sec, Time.Date and Time.SecDate functions.\r\n",
       "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_secdate.html](Time.SecDate)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

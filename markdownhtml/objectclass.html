@@ -1,0 +1,31 @@
+<h1>objectclass</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>objectclass</strong> ( <em>pointerExpn</em> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>objectclass</strong> attribute is used to find the class of an object located by a pointer. The <em>pointerExpn</em> must be an expression that is a pointer to a class.</p>
+
+<h2>Example</h2>
+
+<p>See <strong>class</strong> for an example of classes and inheritance, in which a class called <em>TextFile</em> is inherited by a class called <em>Device</em>. The <em>Device</em> class adds a new exported procedure called <em>ioCtl</em>. In the present example, <strong>objectclass</strong> is used to test to make sure that the <em>textFilePtr</em> currently locates an object that was created as a <em>Device</em> (or as a descendant of <em>Device</em>). The notation <em>Device(textFilePtr) </em>converts the pointer to be a pointer to a <em>Device </em>so that <em>ioCtl </em>can be called.</p>
+
+<pre><code>    var textFilePtr : ^ TextFile
+    &#133;
+    if objectclass ( textFilePtr ) &gt;= Device then
+        % Can safely treat object as a Device
+        Device ( textFilePtr ) . ioCtl
+        &#133;
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>This example uses the class comparison operator >= which means "is a descendant of". See <strong>class</strong>.
+You can only use <strong>objectclass</strong>  in class comparisons. In particular, <strong>objectclass</strong> cannot be used to declare pointers. For example, this:
+is not allowed.</p>
+
+<pre><code>    var p : ^objectclass (q)
+</code></pre>

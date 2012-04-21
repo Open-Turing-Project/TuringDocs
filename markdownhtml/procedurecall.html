@@ -1,0 +1,43 @@
+<h1>procedureCall</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>procedureCall</em> is:
+<em>procedureId</em> [ ( [ <em>expn</em> { , <em>expn</em> } ] ) ]</p>
+
+<h2>Description</h2>
+
+<p>A procedure call is a statement that calls (invokes or activates) a <strong>procedure</strong>. If the procedure has parameters, a parenthesized list of expressions (<em>expns</em>) must follow the procedure's name (<em>procedureId</em>).</p>
+
+<h2>Example</h2>
+
+<pre><code>    procedure greet
+        put "Hello"
+    end greet
+
+    greet       % This is a call to the greet procedure
+
+    procedure times ( var i : int, factor : int)
+        i := factor * i
+    end times
+
+    var j : int
+    times ( j, 4 )      % Multiply j by 4
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A parameter declared in the header of a procedure is a <em>formal</em> parameter. For example, <em>i </em>and <em>factor</em> above are formal parameters. Each expression in the call is an <em>actual</em> parameter. For example, <em>j </em>and 4 above are actual parameters.
+If a formal parameter is declared using <strong>var</strong>, then the expression passed to that parameter must be a variable reference (so its value can potentially be changed by the procedure). This means, for example, that it would be illegal to pass <em>j</em>+3 as the first parameter to <em>times</em>. The variable reference and the formal parameter must have equivalent types (see <em>equivalence</em> for details).
+Each actual parameter passed to a non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability </em>for details). See also <em>procedureDeclaration</em>.
+In this explanation of <em>procedureCall</em>, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor <em>M </em>from which it has been exported, the syntax of the <em>procedureCall </em>is:
+In other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the <em>procedureCall </em>is one of:
+In these, <em>p</em> must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
+
+<pre><code>    M . procedureId [ ( [ expn {, expn } ] ) ]        (a) classId (p) . procedureId [ ( [ expn {, expn } ] ) ]
+    (b) p -&gt; procedureId [ ( [ expn {, expn } ] ) ]
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="class">class.html</a></strong>.</p>

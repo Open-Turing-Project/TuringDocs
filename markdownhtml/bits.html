@@ -1,0 +1,40 @@
+<h1>bits</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>bits</strong> (<em>expn</em>, <em>subrange</em>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>bits</strong><em> </em>operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;</p>
+
+<h2>Example</h2>
+
+<p>Set bits 2 and 1 (third and second from the right) in the variable <em>d</em> to be 01. We first set <em>b</em> to be the bit string 1100.</p>
+
+<pre><code>    type T12 : 1 .. 2           % Use to specify bit range
+    var d : nat2 := 2#1100      % Two byte natural number
+    % At this point bits(d, T12) = 2#10
+    bits (d, T12) := 2#01
+    % At this point d = 2#1010
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Set bit 7 in variable <em>n</em> to be 1. As a result, <em>n</em> will equal 2#10000000.</p>
+
+<pre><code>    var n : nat1 := 0       % A one byte variable set to zero
+    bits (n, 7) := 1        % n now contains the pattern 10000000
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The form of <em>subrange</em> must be one of:
+(a)<em>typeSpec</em><em>% Subrange type</em>(b)<em>compileTimeIntegerExpression</em>
+In form (a) the subrange type specifies a range from <em>L</em> to <em>M</em> (for <em>least</em> and <em>most</em> significant). This is a little confusing because the subrange is written <em>L</em> .. <em>M</em> with <em>L</em> on the left and <em>M</em> on the right, but in a number, the least significant bit is on the right and the most significant is on the left. The subrange type can be either the name of a type, for example <em>T12</em>, or an explicit subrange, for example 3 .. 7. The values in the explicit subrange must be compile time values.
+Form (b) represents the range <em>n</em> .. <em>n</em> where <em>n</em> is the non-negative value of the expression. In other words, both <em>L</em> and <em>M</em> equal <em>n</em>. The expression can be any non-negative integer value or natural number value.
+If the expression <em>expn</em> is a variable reference, the <strong>bits</strong> operation can be assigned to, but cannot be passed to, a <strong>var</strong> parameter. For example, in the above, <strong>bits</strong> (<em>d</em>, <em>T12</em>) has the value 2#01 assigned to it. For this assignment to be allowed, the expression <em>expn</em> must be a natural number type (<strong>nat</strong>, <strong>nat1</strong>, <strong>nat2</strong> or <strong>nat4</strong>).</p>
+
+<h2>See also</h2>
+
+<p><em><a href="explicitIntegerConstant">explicitintegerconstant.html</a></em> (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: <strong><a href="ord">ord.html</a></strong>, <strong><a href="chr">chr.html</a></strong>, <strong><a href="intstr">intstr.html</a></strong>, <strong><a href="strint">strint.html</a></strong>, <strong><a href="natstr">natstr.html</a></strong>, and <strong><a href="strnat">strnat.html</a></strong>. See also <strong><a href="shr">shr.html</a></strong> and <strong><a href="shl">shl.html</a></strong> (shift right and left).</p>

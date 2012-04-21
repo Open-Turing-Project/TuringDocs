@@ -48,5 +48,8 @@
       "text_content": " PC.ParallelGet function, which is used to read the values of pins on the parallel port.\r\n",
       "mdown_content": "**[pc_parallelget.html](PC.ParallelGet) **function, which is used to [read.html](read) the values of pins on the parallel port."
     }
+  ],
+  "dependencies": [
+    "pc_parallelput01.gif"
   ]
 }

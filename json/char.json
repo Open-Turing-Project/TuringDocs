@@ -71,5 +71,8 @@
       "text_content": " string and char(n) for related types. See ord and chr functions for conversion from and to ASCII values. See explicitCharConstant for information on special characters like caret (^) and backslash (\\).\r\n",
       "mdown_content": "**[string1.html](string)** and **[char_n.html](char(*n*))** for related types. See **[ord.html](ord)** and **[chr.html](chr)** functions for conversion from and to ASCII values. See *[explicitcharconstant.html](explicitCharConstant)* for information on special characters like caret (^) and backslash (\\)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

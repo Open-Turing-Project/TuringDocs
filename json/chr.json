@@ -47,5 +47,8 @@
       "text_content": "ord, \r\n\t  intstr and \r\n\t  strint functions.\r\n    ",
       "mdown_content": "**[ord.html](ord)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

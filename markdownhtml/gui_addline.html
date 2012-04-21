@@ -1,0 +1,32 @@
+<h1>GUI.AddLine</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.AddLine</strong> (<em>widgetID</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>GUI.AddLine </strong>adds text and a newline to the current line of the text box specified by <em>widgetID</em>. It is essentially equivalent to <strong>put</strong> <em>text</em> in the text box. <strong>GUI.AddLine s</strong>crolls the text box (if necessary) so that the added text is now visible. The <em>widgetID</em> parameter must be the widget id of a text box. The <em>text</em> parameter is the text to be added to the text box.</p>
+
+<h2>Example</h2>
+
+<p>The following creates a text box and puts the numbers from 1 to 25 in it.</p>
+
+<pre><code>    import GUI
+    var boxID : int := GUI.CreateTextBox (50, 50, 200, 200)
+    for i : 1 .. 25
+        GUI.AddLine (boxID, intstr (i))
+    end for
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.AddLine</strong>, not by calling <strong>AddLine</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.CreateTextBox</strong>.</p>

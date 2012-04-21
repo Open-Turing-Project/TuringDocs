@@ -35,5 +35,8 @@
       "text_content": " GUI.CreateHorizontalScrollBar and GUI.CreateVerticalScrollBar\r\n",
       "mdown_content": "**GUI.CreateHorizontalScrollBar** and **GUI.CreateVerticalScrollBar**"
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -32,5 +32,8 @@
       "text_content": " This example uses the class comparison operator >= which means \"is a descendant of\". See class.\r\nYou can only use objectclass  in class comparisons. In particular, objectclass cannot be used to declare pointers. For example, this: \r\n\r\nis not allowed.\r\n",
       "mdown_content": "This example uses the class comparison operator >= which means \"is a descendant of\". See **class**.\nYou can only use **objectclass**  in class comparisons. In particular, **objectclass** cannot be used to declare pointers. For example, this: \nis not allowed."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,34 @@
+<h1>Net.LineAvailable</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Net.LineAvailable </strong>(<em>netStream</em> : <strong>int</strong>) : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns <strong>true</strong> if a line of input is waiting to be read from the net stream specified by the <em>netStream</em> parameter. If <strong>Net.LineAvailable</strong> returns <strong>true</strong>, then a line of input can be read from the stream without blocking.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
+It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+
+<h2>Example</h2>
+
+<p>The following program fragment reads a character from <em>netStream</em> only if there is one waiting to be read.</p>
+
+<pre><code>    if Net.LineAvailable (netStream) then
+        var line : string
+        get : netStream, line : *
+        put line
+    end if
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Net.LineAvailable</strong>, not by calling <strong>LineAvailable</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Net.BytesAvailable">net_bytesavailable.html</a></strong>, <strong><a href="Net.CharAvailable">net_charavailable.html</a></strong>, and <strong><a href="Net.TokenAvailable">net_tokenavailable.html</a></strong>.</p>

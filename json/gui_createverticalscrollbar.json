@@ -80,5 +80,8 @@
       "text_content": "GUI.GetSliderValue and \r\n          GUI.SetSliderValue \r\n          for reading and setting the value of a scroll bar, \r\n          GUI.SetSliderMinMax \r\n          for changing the minimum and maximum values of a scroll bar, and \r\n          GUI.SetScrollAmount \r\n          for changing the scrolling increments and thumb size of a scroll bar. \r\n          See also GUI.SetSliderSize\r\n          for setting the length of a scroll bar and \r\n          GUI.SetSliderReverse \r\n          for reversing the sense of a scroll bar.\r\n    ",
       "mdown_content": "**[gui_getslidervalue.html](GUI.GetSliderValue)** and **[gui_setslidervalue.html](GUI.SetSliderValue)** for reading and setting the value of a scroll bar, **[gui_setsliderminmax.html](GUI.SetSliderMinMax)** for changing the minimum and maximum values of a scroll bar, and **[gui_setscrollamount.html](GUI.SetScrollAmount)** for changing the scrolling increments and thumb size of a scroll bar. See also **[gui_setslidersize.html](GUI.SetSliderSize)**for setting the length of a scroll bar and **[gui_setsliderreverse.html](GUI.SetSliderReverse)** for reversing the sense of a scroll bar."
     }
+  ],
+  "dependencies": [
+    "gui_createverticalscrollbar_full01.gif"
   ]
 }

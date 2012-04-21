@@ -35,5 +35,8 @@
       "text_content": " Part of the language and only conceptually part of the Stream unit. \r\nThis means that you can only call the function by calling eof, not by calling Stream.eof.\r\n",
       "mdown_content": "Part of the language and only conceptually part of the **Stream** unit. \nThis means that you can only call the function by calling **eof**, not by calling **Stream.eof**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

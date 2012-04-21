@@ -41,5 +41,8 @@
       "text_content": " int, maxint (the largest integer value), nat (positive values  only) and intn (n-byte integers). See also intstr and natstr which convert integer and natural number values to corresponding character strings in any base, for example intstr (4, 0, 2) = \"100\".\r\n",
       "mdown_content": "**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)*n*** (***n*****-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr) **(4, 0, 2) = \"100\"."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -4,11 +4,17 @@
 ##Syntax
 **GUI.ClearText** (*widgetID* : **int**)
 
+
+
 ##Description
 Clears all the text in a text box specified by *widgetID*. The *widgetID* parameter must be the widget id of a text box.
 
+
+
 ##Example
 The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. 
+
+
 
         import GUI
         var boxID, buttonID, start : int
@@ -32,5 +38,9 @@ The program lists 25 numbers in a text box. Every time the button is pressed, it
 Exported qualified.
 This means that you can only call the function by calling **GUI.ClearText**, not by calling **ClearText**.
 
+
+
 ##See also
 **GUI.CreateTextBox**.
+
+

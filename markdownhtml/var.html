@@ -1,0 +1,35 @@
+<h1>var</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>variableDeclaration</em> is one of:
+(a)<strong>var</strong> <em>id</em> { ,<em>id</em> } [ :<em>typeSpec</em>] [:=<em>initializingValue</em>](b)<em>collectionDeclaration</em></p>
+
+<h2>Description</h2>
+
+<p>A variable declaration creates a new variable (or variables). Only form (a) will be explained here. See <em>collectionDeclaration </em>for explanation of form (b). The <em>typeSpec </em>of form (a) can be omitted only if the initializing value is present.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var j, k : int := 1     % j and k are assigned value 1
+    var t := "Sample"       % The type of t is string
+    var v : array 1 .. 3 of string ( 6 ) :=
+            init ( "George", "Fred", "Alice" )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The initializing value, if present, must be an expression or else a list of items separated by commas inside <strong>init</strong> ( &#133; ). The syntax of <em>initializingValue </em>is one of:
+(a)expn(b)<strong>init</strong> ( initializingValue {, initializingValue } )
+Each <strong>init</strong> ( &#133; ) corresponds to an array, record or union value that is being initialized. These must be nested for initialization of nested types.
+If the <em>typeSpec</em> is omitted, the variable's type is taken to be the (root) type of the initializing expression, for example, <strong>int</strong> or <strong>string</strong>. The <em>typeSpec</em> cannot be omitted for dynamic arrays or when the initializing value is of the form <strong>init</strong> ( &#133; ). The values inside <strong>init</strong> ( &#133; ) must be known at compile time.
+The keyword <strong>pervasive</strong> can be inserted just after <strong>var</strong>. When this is done, the variable is visible inside all subconstructs of the variable's scope. Without <strong>pervasive</strong>, the variable is not visible inside modules unless explicitly imported. Pervasive variables need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (<strong><strong>*).
+OOT extends Turing in the following way. OOT changes form (a) to allow the optional use of the </strong>register</strong> keyword to request that the variable be placed in a machine register. The OOT syntax for form (a) is actually:
+In the current (1994) OOT implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See <strong>register</strong> for restrictions on the use of register variables.</p>
+
+<pre><code>    var [pervasive] [register] id { , id } [ : typeSpec ] [ := initializingValue ]
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="collection">collection.html</a></strong>, <strong><a href="bind">bind.html</a></strong>, <strong><a href="procedure">procedure.html</a></strong> and <strong><a href="function">function.html</a></strong> declarations, parameter declarations, <strong><a href="export">export.html</a></strong> lists and <strong><a href="import">import.html</a></strong> lists for other uses of the keyword <strong><a href="var"></a></strong>.</p>

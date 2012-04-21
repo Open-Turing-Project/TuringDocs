@@ -30,5 +30,8 @@
       "text_content": " frealstr, realstr, strreal, intstr and strint functions.\r\n",
       "mdown_content": "**[frealstr.html](frealstr)**, **[realstr.html](realstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

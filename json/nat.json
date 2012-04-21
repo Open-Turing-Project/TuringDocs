@@ -48,5 +48,8 @@
       "text_content": " maxnat, int, natn, intn, natstr, strnat and natreal.\r\n",
       "mdown_content": "**[maxnat.html](maxnat)**, **[int.html](int)**, **[](nat)***n*, **[int.html](int)***n*, **[natstr.html](natstr)**, **[strnat.html](strnat)** and **[natreal.html](natreal)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

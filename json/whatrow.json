@@ -44,5 +44,8 @@
       "text_content": " the whatcol function, which is used to set the determine the cursor column. See also the locate, maxrow and maxcol procedure.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "the **[whatcol.html](whatcol)** function, which is used to [set.html](set) the determine the cursor column. See also the **[locate.html](locate)**, **[maxrow.html](maxrow)** and **[maxcol.html](maxcol)** [procedure.html](procedure).\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

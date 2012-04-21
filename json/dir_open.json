@@ -45,5 +45,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Dir.Open, not by calling Open.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Open**, not by calling **Open**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

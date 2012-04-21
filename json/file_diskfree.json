@@ -45,5 +45,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          File.DiskFree, not by calling DiskFree.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.DiskFree**, not by calling **DiskFree**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

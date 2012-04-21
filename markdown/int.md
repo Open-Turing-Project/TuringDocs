@@ -4,10 +4,16 @@
 ##Syntax
 **int**
 
+
+
 ##Description
 The **int** (integer) type has the values  2, 1, 0, 1, 2  Integers can be combined by various operators such as addition (+) and multiplication (*). Integers can also be combined with **real** numbers, in which case the result is generally a real number. An integer can always be assigned to a real variable, with implicit conversion to **real**.
 
+
+
 ##Example
+
+
 
         var counter, i : int
         var j : int := 9
@@ -21,5 +27,9 @@ Pseudo-random sequences of integers can be generated using **randint**. See **ra
 In current implementations of Turing, the range of integers is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2**31 - 1. See **maxint**. This range exists because integers are stored in 4 bytes. The remaining negative value, -2147483648 records uninitialization. The types **int1**, **int2** and **int4** specify integers that fit into 1, 2 or 4 bytes. The **int***n* types (**int1**, **int2** and **int4**) are not checked for initialization and allow all their bit patterns as numbers.
 The natural number type **nat*** *allows only the non-negative values: 0,1,2,3, Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.
 
+
+
 ##See also
 **[nat.html](nat)** and **[](int)***n*.
+
+

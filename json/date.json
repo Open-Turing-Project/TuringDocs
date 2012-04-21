@@ -53,5 +53,8 @@
       "text_content": " delay, clock, sysclock, wallclock and time statements. \r\nSee also predefined unit Time.\r\n",
       "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[time.html](time)** statements. \nSee also predefined unit **[timemodule.html](Time)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

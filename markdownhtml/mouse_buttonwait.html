@@ -1,0 +1,67 @@
+<h1>Mouse.ButtonWait</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Mouse.ButtonWait </strong>(<em>motion</em> : <strong>string</strong>, <strong>var</strong> <em>x</em>, <em>y</em>, <em>buttonNumber</em>, <em>buttonUpDown</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Mouse.ButtonWait</strong> procedure gets information about a mouse event and removes it from the queue.
+The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>Mouse.ButtonWait</strong> returns<strong> </strong>instantly. If there isn't such an event, <strong>Mouse.ButtonWait</strong> waits until there is one and then returns (much like <strong>getch</strong> handles keystrokes).
+In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+The parameters <em>x</em> and <em>y</em> are set to the position of the mouse cursor when the button was pressed. The parameter <em>buttonnumber</em> is set to 1 when in "<em>single-button mode</em>". In  "<em>multi-button mode</em>", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <em>buttonupdown</em> is set to 1, if a button was pressed and 0 if a button was released.</p>
+
+<h2>Example</h2>
+
+<p>This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.</p>
+
+<pre><code>    var x, y, btnNumber, btnUpDown, buttons : int
+    var nx, ny : int
+    loop
+        Mouse.ButtonWait ("down", x, y, btnNumber, btnUpDown)
+        nx := x
+        ny := y
+        loop
+            Draw.Line (x, y, nx, ny, 0) % Erase previous line
+            exit when Mouse.ButtonMoved ("up")
+            Mouse.Where (nx, ny, buttons)
+            Draw.Line (x, y, nx, ny, 1) % Draw line to position
+        end loop
+        Mouse.ButtonWait ("up", nx, ny, btnNumber, btnUpDown)
+        Draw.Line (x, y, nx, ny, 2) % Draw line to final position
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This is an example demonstrating how to check for both character and mouse input at the same time.</p>
+
+<pre><code>    var ch : string (1)
+    var x, y, btnNum, btnUpDown : int
+    loop
+        if hasch then
+            getch (ch)
+            Text.Locate (1, 1)
+            put "The character entered is a: ", ch
+        end if
+        if Mouse.ButtonMoved ("down") then
+            Mouse.ButtonWait ("down", x, y, btnNum, btnUpDown)
+            Text.Locate (1, 1)
+            put "The button was clicked at position: ", x, ", ",y
+        end if
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p><strong>Mouse.ButtonWait </strong>can be thought of as the mouse equivalent of <strong>getch</strong> in that they both read something in a queue and both wait until they get the thing they're looking for.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Mouse.ButtonWait</strong>, not by calling <strong>ButtonWait</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Mouse.ButtonWait"></a></strong> to see if an appropriate event is in the queue. See also <strong><a href="Mouse.ButtonChoose">mouse_buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".</p>

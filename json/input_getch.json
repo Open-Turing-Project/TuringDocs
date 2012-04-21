@@ -47,5 +47,8 @@
       "text_content": " hasch (has character) procedure which is used to see if a character has been typed but not yet read.\r\n",
       "mdown_content": "**[hasch.html](hasch) **(has character) [procedure.html](procedure) which is used to see if a character has been typed but [not.html](not) yet [read.html](read)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

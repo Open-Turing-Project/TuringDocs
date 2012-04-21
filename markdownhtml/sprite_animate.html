@@ -1,0 +1,40 @@
+<h1>Sprite.Animate</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sprite.Animate</strong> (<em>spriteID</em>, <em>picID, x</em>, <em>y</em> : <strong>int</strong>,<em>centered</em> : <strong>boolean</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Moves the sprite specified by <em>spriteID</em> to the location specified by (<em>x, y</em>). If <em>centered</em> is <strong>true</strong>, then the sprite is centered on (<em>x, y</em>). Otherwise (<em>x, y</em>) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
+A simple example of the <strong>Sprite.Animate</strong> procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.</p>
+
+<h2>Example</h2>
+
+<p>Here is a program that loads a series of images from an animatedGIF file called "mypic.gif".  It works by loading the images fromthe GIF file into an array (see <strong><a href="Pic.FileNewFrames">pic_filenewframes.html</a></strong> formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.</p>
+
+<pre><code>    var numFrames := Pic.Frames ("mypic.gif")
+    % Load the picture
+    var delayTime : int
+    var pics : array 1 .. numFrames of int
+Pic.FileNewFrames ("mypic.gif", pics, delayTime)
+
+    var sprite: int
+    sprite:= Sprite.New (pics (1))
+    Sprite.SetPosition (sprite, 0, 100, false)
+    Sprite.Show (sprite)
+    for x : 8 .. maxx by 8
+        Sprite.Animate (sprite, pics ((x div 8) mod numFrames + 1), x, 100, false)
+        delay (40)    % Stop sprite from moving too quickly
+    end for
+    Sprite.Free (sprite)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sprite.Animate</strong>, not by calling <strong>Animate</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sprite.New">sprite_new.html</a></strong>, <strong><a href="Sprite.SetPosition">sprite_setposition.html</a></strong> and <strong><a href="Sprite.ChangePic">sprite_changepic.html</a></strong>.</p>

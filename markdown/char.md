@@ -4,11 +4,17 @@
 ##Syntax
 **char**
 
+
+
 ##Description
 Each variable whose type is a **char** contains a single character, such as the letter *A*, the digit *3* or the special character &.
 
+
+
 ##Example
 Count characters until a period is found. Character *c* is read using a **get** statement and is compared to the explicit character constant '.'.
+
+
         var c : char
         var counter := 0
         loop
@@ -20,6 +26,8 @@ Count characters until a period is found. Character *c* is read using a **get** 
         put counter, " characters before the period"
 ##Example
 Count capital letters. This example illustrates the use of the **char** type as the subscript type for the *frequency* array, the use of character variable *c* as a subscript, and the use of *d* as a **for** counter that ranges across the letters A to Z.
+
+
         var frequency : array 'A' .. 'Z' of nat
         for d : 'A' .. 'Z'
             frequency (d) := 0
@@ -48,5 +56,9 @@ There are 256 **char** values, corresponding to the distinct patterns in an 8-bi
 The **ord** and **chr** functions convert between the **char** values and their corresponding numeric representation in a byte. See **ord** and **chr**.
 In general, you can freely intermix the values of the types **char**, **char**(*n*) and **string**. This means that catenation (+), comparisons, **length** and substrings can be applied to any of these types. See **char**(*n*) for details about conversions between **char**, **char**(*n*) and **string**.
 
+
+
 ##See also
 **[string1.html](string)** and **[char_n.html](char(*n*))** for related types. See **[ord.html](ord)** and **[chr.html](chr)** functions for conversion from and to ASCII values. See *[explicitcharconstant.html](explicitCharConstant)* for information on special characters like caret (^) and backslash (\).
+
+

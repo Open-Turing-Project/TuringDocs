@@ -1,0 +1,48 @@
+<h1>process</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>processDeclaration</em> is:
+<strong>process</strong> <em>id</em> [ ( [ <em>paramDeclaration</em> {,<em>paramDeclaration</em> } ] )]<em>statementsAndDeclarations</em><strong>end</strong> <em>id</em></p>
+
+<h2>Description</h2>
+
+<p>A process declaration is much like a procedure declaration, but is activated by a <strong>fork</strong> statement rather than by a call. The <strong>fork</strong> statement starts concurrent (parallel) execution of the process while the statements following the <strong>fork</strong> continue to execute.</p>
+
+<h2>Example</h2>
+
+<p>This program initiates (forks) two concurrent processes, one of which repeatedly outputs <em>Hi</em> and the other <em>Ho</em>. The resulting output is an unpredictable sequence of <em>Hi</em>'s and <em>Ho</em>'s as <em>greetings</em> executes twice concurrently, one instance with <em>word</em> set to <em>Hi</em> and the other with <em>word</em> set to <em>Ho</em>.</p>
+
+<pre><code>    process greetings ( word : string )
+        loop
+            put word
+        end loop
+    end greetings
+
+    fork greetings ( "Hi" )
+    fork greetings ( "Ho" )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>process</strong> declaration creates a template for a process (a concurrent activity), which is activated by a <strong>fork</strong> statement.
+A process declaration can appear wherever a module declaration is allowed except that a process declaration is not allowed in a class. The declarations and statements in a process declaration are the same as those in a procedure.
+See <em>paramDeclaration</em> for details about parameters. There is an anomaly in parameters to processes, that can lead to errors. In particular, non-<strong>var</strong> parameters that are non-scalars (such as strings and arrays) are passed by reference. The result is that the target of the reference may change value while the process is executing, which in turn means that the seemingly constant parameter is not really constant. For example, if the string variable <em>s</em> were passed to the <em>greetings</em> process and subsequently changed, the value of <em>greetings</em>' formal parameter would change.
+The syntax of a <em>processDeclaration</em> presented above has been simplified by leaving out the optional stack size (<em>compileTimeExpn</em>), <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler.
+The full syntax<em> </em>is:
+See <strong>pervasive</strong> for information on <strong>pervasive</strong> processes. The optional <em>compileTimeExpn </em>following the parameter list (if any) is used to specify the number of bytes for the process' stack.</p>
+
+<pre><code>    process [ pervasive ] id
+            [ ( [ paramDeclaration {,paramDeclaration } ] )]
+            [ : compileTimeExpn ]
+        [ pre trueFalseExpn ]
+        [ init id := expn {, id := expn } ]
+        [ post trueFalseExpn ]
+        [ exceptionHandler ]
+        statementsAndDeclarations
+    end id
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="import">import.html</a></strong> list, <strong><a href="pre">pre.html</a></strong> <a href="condition">condition.html</a>, <strong><a href="init">init.html</a></strong> clause, <strong><a href="post">post.html</a></strong> <a href="condition">condition.html</a> and <em>exceptionHandler</em> for explanations of these additional features.</p>

@@ -40,5 +40,8 @@
       "text_content": " setscreen and drawdot.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "**[setscreen.html](setscreen)** and **[drawdot.html](drawdot)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

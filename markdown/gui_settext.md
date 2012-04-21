@@ -4,15 +4,23 @@
 ##Syntax
 **GUI.SetText** (*widgetID* : **int**, *text* : **string**)
 
+
+
 ##Description
 Sets the text of a text field specified by *widgetID* to *text*. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).
+
+
 
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.
 
+
+
 ##Example
 The following program converts all lower case input in the text field to upper case when the user presses ENTER.
+
+
         import GUI
         
         var textField, lbl : int
@@ -42,5 +50,9 @@ The following program converts all lower case input in the text field to upper c
 Exported qualified.
 This means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.
 
+
+
 ##See also
 **GUI.CreateTextField**.
+
+

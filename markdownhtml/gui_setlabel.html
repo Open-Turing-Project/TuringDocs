@@ -1,0 +1,46 @@
+<h1>GUI.SetLabel</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetLabel</strong> (<em>widgetID</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Changes the text of a widget specified by <em>widgetID</em> to <em>text</em>. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the <em>widgetID</em> parameter.
+In most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original <em>width</em> specified and the new text.</p>
+
+<h2>Example</h2>
+
+<p>The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to "Quit", the button assumes a width of 100 again.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+    View.Set ("graphics:220;50")
+
+    var short : boolean := true
+    var button : int
+
+    procedure KeyHandler (ch : char)
+        if short then
+            GUI.SetLabel (button, "Press This Button to Quit")
+        else
+            GUI.SetLabel (button, "Quit")
+        end if
+        short := not short
+    end KeyHandler
+
+    GUI.SetKeyEventHandler (KeyHandler)
+    button := GUI.CreateButton (10, 5, 100, "Quit", GUI.Quit)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetLabel</strong>, not by calling <strong>SetLabel</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.CreateButton</strong>, <strong>GUI.CreateCheckBox</strong>, <strong>GUI.CreateRadioButton</strong>, <strong>GUI.CreateLabel</strong>, and <strong><a href="GUI.CreateLabelledFrame">gui_createlabelledframe.html</a></strong>.</p>

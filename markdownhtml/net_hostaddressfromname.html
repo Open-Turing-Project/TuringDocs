@@ -1,0 +1,32 @@
+<h1>Net.HostAddressFromName</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Net.HostAddressFromName </strong>( <em>hostName</em> : <strong>string</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns<strong> </strong>the numeric TCP/IP address of the machine whose hostname is specified by the <em>hostName</em> parameter.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
+It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+
+<h2>Example</h2>
+
+<p>The following program prints out the hostname of the current machine.</p>
+
+<pre><code>    var hostName : string := "www.holtsoft.com"
+    put "The machine address of ", hostName , " is ", 
+        Net.HostAddressFromName (hostName)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Net.HostAddressFromName</strong>, not by calling <strong>HostAddressFromName</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Net.HostNameFromAddress">net_hostnamefromaddress.html</a></strong>.</p>

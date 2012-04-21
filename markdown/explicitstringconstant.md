@@ -4,8 +4,12 @@
 ##Syntax
 An *explicitStringConstant* is a sequence of characters surrounded by quotation marks.
 
+
+
 ##Example
 In the following, the explicit string constants are "Hello world", "" and "273 O'Reilly Ave.".
+
+
         var name : string := "Hello world"
         name := ""      % Null string, containing zero characters
         var address : string := "273 O'Reilly Ave."
@@ -22,3 +26,5 @@ However if *c *is the question mark, as in '^?', the bits are not turned off.
 Explicit string constants cannot cross line boundaries. To represent a string that is longer than a line, break it into two or more strings on separate lines and use catenation (+) to join the individual strings.
 An explicit string constant can contain at most 255 characters (this is in implementation constraint).
 String values are not allowed to contain characters with the code values of 0 or 128; these character values are called *eos *(end of string) and *uninitchar* (uninitialized character). These are reserved by the implementation to mark the end of a string value and to see if a string variable has been initialized.
+
+

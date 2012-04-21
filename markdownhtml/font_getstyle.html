@@ -1,0 +1,43 @@
+<h1>Font.GetStyle</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Font.GetStyle</strong> (<em>fontName</em> : <strong>string</strong>, <strong>var</strong> <em>bold</em>, <em>italic</em>, <em>underline</em> : <strong>boolean</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Font.GetStyle</strong> is used to get the styles available on the system for a specified font. <em>bold</em>, <em>italic</em> and <em>underline</em> are set to <strong>true</strong> if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using <strong>Font.StartSize</strong> and <strong>Font.GetSize</strong>.</p>
+
+<h2>Example</h2>
+
+<p>The program lists all the fonts and their styles available on the system.</p>
+
+<pre><code>    var fontName : string
+    var bold, italic, underline : boolean
+    Font.StartName
+    loop
+        fontName := Font.GetName
+        exit when fontName = ""
+        Font.GetStyle (fontName, bold, italic, underline)
+        put fontName : 30 ..
+        if bold then
+            put "bold  " ..
+        end if
+        if italic then
+            put "italic  " ..
+        end if
+        if underline then
+            put "underline  " ..
+        end if
+        put ""
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>An example is available that displays full information aboutthe fonts including name, styles, and point sizes.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Font.GetStyle</strong>, not by calling <strong>GetStyle</strong>.</p>

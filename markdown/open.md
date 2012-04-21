@@ -5,12 +5,18 @@
 An *openStatement* is one of:
  (a)**open** : *fileNumberVar*, *fileName*, *ioCapability*      { , *ioCapability* } (b)**open** : *fileNumberVar*, *argNum*, *ioCapability*      { , *ioCapability* }
 
+
+
 ##Description
 The **open** statement connects the program to a file so the program can perform operations such as **read** on the file. In form (a), the **open** statement translates a *fileName*, such as "Master", to a file number such as 5. Form (b), which is less-commonly used, opens a file whose name is given by a program argument. This is described below.
 The **read** statement uses the file number, not the file name, to access the file. When the program is finished using the file, it disconnects from the file using the **close** statement. Each *ioCapability* is the name of an operation, such as **read**, that is to be performed on the file.
 
+
+
 ##Example
 This programs illustrates how to open, read and then close a file.
+
+
         var fileName : string := "Master"   % Name of file
         var fileNo : int                % Number of file
         var inputVariable : string ( 100 )
@@ -35,6 +41,8 @@ The operating system standard files (error, output and input) are accessed using
 To append to a file, the file must be opened with the **mod** and **seek** capability and then there must be a seek to the end of file. For example:
 There is an older and still acceptable version of **open** that has this syntax:
 The *mode* must be "r" (for **get**) or "w " (for **put**).
+
+
         e.g. open : f, "C:\\STUDENTS\\SMITH\\ACCT.DAT", put        prog.x infile outfile        var streamnumber : int
         open : streamnumber, "myfile", put, mod, seek
         seek : streamnumber, *
@@ -44,6 +52,10 @@ The path name specified in the open statement and elsewhere can always be in UNI
 On the Macintosh, they would have the form:
 Note that in addition to the UNIX path format, on the PC, you can always use standard PC path notation and on the Macintosh, you can use standard Macintosh path notation. On the Macintosh volume, directory and file names can have spaces in them.
 All routines (such as the File and Dir module routines) will return files names in UNIX format, regardless of the machine the program is run on.
+
+
             a:/dir1/dir2/filename            /volume name/directory1/directory2/file name
 ##See also
 **[close.html](close)**, **[get.html](get)**, **[put.html](put)**, **[read.html](read)**, **[write.html](write)**, **[seek.html](seek)** and **[tell.html](tell)** statements.
+
+

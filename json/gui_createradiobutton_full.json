@@ -64,5 +64,8 @@
       "text_content": "GUI.SelectRadio for \r\n          selecting a radio button in a program. \r\n          See also GUI.SetLabel for \r\n          changing the radio button's text.\r\n    ",
       "mdown_content": "**[gui_selectradio.html](GUI.SelectRadio)** for selecting a radio button in a program. See also **[gui_setlabel.html](GUI.SetLabel)** for changing the radio button's text."
     }
+  ],
+  "dependencies": [
+    "gui_createradiobutton_full01.gif"
   ]
 }

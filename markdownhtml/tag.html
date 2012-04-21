@@ -1,0 +1,36 @@
+<h1>tag</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>tagStatement</em> is:
+<strong>tag</strong> <em>unionVariableReference</em> , <em>expn</em></p>
+
+<h2>Description</h2>
+
+<p>A <strong>tag</strong> statement is a special-purpose assignment that is used for changing the tag of a <strong>union</strong> variable.</p>
+
+<h2>Example</h2>
+
+<p>In this example, the tag field of <strong>union</strong> variable <em>v</em> is set to be <em>passenger</em>,<em> </em>thereby activating the <em>passenger</em> field of <em>v</em>.</p>
+
+<pre><code>    type vehicleInfo :
+        union kind : passenger .. recreational
+            label passenger :
+                cylinders : 1..16
+            label farm :
+                farmClass : string ( 10 )
+            label : % No fields for "otherwise" clause
+        end union
+    var v : vehicleInfo
+    &#133;
+    tag v, passenger        % Activate passenger part
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A <strong>tag</strong> statement is the only way to modify the tag field of a <strong>union</strong> variable (other than by assigning an entire union value to the union variable).
+You cannot  access a particular set of fields of a <strong>union</strong> unless the tag is set to match the corresponding label value.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="union">union.html</a></strong> types.</p>

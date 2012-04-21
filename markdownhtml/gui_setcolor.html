@@ -1,0 +1,35 @@
+<h1>GUI.SetColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetColor</strong> (<em>widgetID</em> : <strong>int</strong>, <em>clrNumber</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>GUI.SetColor</strong> procedure is used buttons to change thecolor of a button.  The color is specified by the <em>clrNumber</em>parameter.  The edges of the button are a darker version of the color specified by <em>clrNumber</em>, so in general you should usebrighter colors for buttons.</p>
+
+<h2>Example</h2>
+
+<p>This program displays three buttons with different colors.</p>
+
+<pre><code>    import GUI
+
+    procedure DoNothing
+    end DoNothing
+
+    var b1 := GUI.CreateButton (100, 100, 0, "Push Me", DoNothing)
+    GUI.SetColor (b1, brightred)
+    var b2 := GUI.CreateButton (100, 140, 0, "Push Me", DoNothing)
+    GUI.SetColor (b2, brightgreen)
+    var b3 := GUI.CreateButton (100, 180, 0, "Push Me", DoNothing)
+    GUI.SetColor (b3, brightblue)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetColor</strong>, not by calling <strong>SetColor</strong>.</p>

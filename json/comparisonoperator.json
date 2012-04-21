@@ -31,5 +31,8 @@
       "text_content": " See also infix operators and precedence of operators. See also the int, real, string, set, boolean and enum types. See also string comparison.\r\n",
       "mdown_content": "See also *[infix.html](infix)* operators and *[precedence.html](precedence)* of operators. See also the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)**, **[set.html](set)**, **[boolean.html](boolean)** and **[enum.html](enum)** types. See also **[string1.html](string)** comparison."
     }
+  ],
+  "dependencies": [
+
   ]
 }

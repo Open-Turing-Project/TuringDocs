@@ -38,5 +38,8 @@
       "text_content": " GUI.GetX, GUI.GetY, and GUI.GetHeight.\r\n",
       "mdown_content": "**GUI.GetX**, **GUI.GetY**, and **[gui_getheight.html](GUI.GetHeight)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,48 @@
+<h1>GUI.SetKeyEventHandler</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetKeyEventHandler</strong> (<em>keyEventHandler</em> : <strong>procedure</strong> <em>x</em> (<em>ch</em> : <strong>char</strong>))</p>
+
+<h2>Description</h2>
+
+<p>Sets the new default keystroke event handler. The <em>keyEventHandler</em> parameter is the name of a procedure that is called every time <strong>GUI.ProcessEvent</strong> is called and there is a keystroke which is not handled by any widget. The <em>ch</em> parameter in the <em>keyEventHandler</em> is the keystroke typed by the user.
+This procedure is often used to allow for more than one shortcut character for a given button.</p>
+
+<h2>Example</h2>
+
+<p>The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER.</p>
+
+<pre><code>    import GUI
+    View.Set ("graphics:220;200")
+    procedure DrawStar
+        Draw.FillStar (25, 40, 175, 190, Rand.Int (10, 15))
+    end DrawStar
+
+    procedure KeyHandler (ch : char)
+        if ch = 'q' or ch = '^Q' then
+            Draw.Cls
+            GUI.Quit
+        elsif ch = 'd' or ch = '^d' or ch = 'S' or ch = 's' or ch = '^s' then
+            DrawStar
+        end if
+    end KeyHandler
+
+    GUI.SetKeyEventHandler (KeyHandler)
+    var button : int := GUI.CreateButtonFull (5, 5, 100, "Draw Star",
+        DrawStar, 0, 'D', true)
+    var quitButton : int := GUI.CreateButtonFull (115, 5, 100, "Quit", 
+        GUI.Quit, 0, 'Q', false)
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetKeyEventHandler</strong>, not by calling <strong>SetKeyEventHandler</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.ProcessEvent">gui_processevent.html</a></strong>.</p>

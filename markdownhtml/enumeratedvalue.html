@@ -1,0 +1,27 @@
+<h1>enumeratedValue</h1>
+
+<h2>Syntax</h2>
+
+<p>An enumeratedValue is:
+<em>enumeratedTypeId</em> . <em>enumeratedId</em></p>
+
+<h2>Description</h2>
+
+<p>The values of an enumerated type are written as the type name (<em>enumeratedTypeId</em>) followed by a dot followed by one of the enumerated values of the type (<em>enumeratedId</em>).</p>
+
+<h2>Example</h2>
+
+<p>In this example, <em>color</em>.<em>red</em> is an <em>enumeratedValue</em>.</p>
+
+<pre><code>    type color : enum (red, green, blue)
+    var c : color := color . red
+    var d : color := succ (c)       % d becomes green
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The above description has been simplified by ignoring the possibility that the <strong>enum</strong> type can be exported from a <strong>module</strong>. If this is the case, each use of one of the enumerated values outside of module <em>M</em> must be preceded by the module name and a dot, as in <em>M</em>.<em>color</em>.<em>red</em>.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="enum">enum.html</a></strong> type and <em><a href="explicitConstant">explicitconstant.html</a></em>.</p>

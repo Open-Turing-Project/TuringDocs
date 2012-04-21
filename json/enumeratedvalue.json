@@ -39,5 +39,8 @@
       "text_content": " the enum type and explicitConstant.\r\n",
       "mdown_content": "the **[enum.html](enum)** type and *[explicitconstant.html](explicitConstant)*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

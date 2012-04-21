@@ -47,5 +47,8 @@
       "text_content": "takepic and \r\n          sizepic. See also \r\n          setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures.\r\n          See also predefined unit Draw and \r\n          Pic.\r\n    ",
       "mdown_content": "**[takepic.html](takepic)** and **[sizepic.html](sizepic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures.\nSee also predefined unit **[drawmodule.html](Draw)** and **[picmodule.html](Pic)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

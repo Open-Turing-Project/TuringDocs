@@ -1,0 +1,35 @@
+<h1>Draw.Fill</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.Fill</strong> (<em>x</em>, <em>y</em> <strong>:</strong> <strong>int</strong>, <em>fillColor</em>,<strong> </strong><em>borderColor</em> <strong>: int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.Fill </strong>procedure is used to color in a figure that is on the screen. Starting at (<em>x</em>, <em>y</em>), the figure is filled with <em>fillColor</em> to a surrounding border whose color is <em>borderColor</em>.</p>
+
+<p><img src="draw_fill01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen.</p>
+
+<pre><code>    View.Set ("graphics")
+    const midx := maxx div 2
+    const midy := maxy div 2
+    Draw.Oval (midx, midy, 10, 10, brightgreen)
+    Draw.Fill (midx, midy, red, brightgreen)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen must be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.Fill</strong>, not by calling <strong>Fill.</strong></p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

@@ -1,0 +1,40 @@
+<h1>Input.getchar</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>getchar</strong> : <strong>char</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>getchar</strong> function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned.</p>
+
+<h2>Example</h2>
+
+<p>This program contains a procedure called <em>getKey </em>which causes the program to wait until a key is pressed.</p>
+
+<pre><code>    View.Set ("graphics")
+
+    procedure getKey
+        var ch : char
+        ch := getchar
+    end getKey
+
+    for i : 1 .. 1000
+        put i : 4, " Pause till a key is pressed"
+        getKey
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>"<em> </em>or "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in one of these modes, it will automatically be set to "<em>screen</em>" mode.
+Some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by <strong>getch</strong> as special values. See Appendix D for these values.</p>
+
+<h2>Status</h2>
+
+<p>Exported unqualified.
+This means that you can call the function by calling <strong>getchar</strong> or by calling <strong>Input.getchar</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="hasch">hasch.html</a> </strong>(has character) <a href="procedure">procedure.html</a> which is used to see if a character has been typed but <a href="not">not.html</a> yet <a href="read">read.html</a>.</p>

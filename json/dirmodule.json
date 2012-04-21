@@ -40,5 +40,8 @@
       "text_content": " File unit for more explanation of the different ways of specifying a path name of a file or directory under the different operating systems.\r\n",
       "mdown_content": "[filemodule.html](**File**) unit for more explanation of the different ways of specifying a path name of a file or directory under the different operating systems."
     }
+  ],
+  "dependencies": [
+
   ]
 }

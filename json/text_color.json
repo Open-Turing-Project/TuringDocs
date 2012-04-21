@@ -55,5 +55,8 @@
       "text_content": " Text.ColorBack, Text.WhatColor, Text.WhatChar and View.maxcolor.\r\n",
       "mdown_content": "**[text_colorback.html](Text.ColorBack)**, **[text_whatcolor.html](Text.WhatColor)**, **Text.WhatChar** and **[view_maxcolor.html](View.maxcolor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

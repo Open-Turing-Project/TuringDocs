@@ -38,5 +38,8 @@
       "text_content": " GUI.SetSliderValue for setting a slider or scroll bar's value. See also GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
       "mdown_content": "**[gui_setslidervalue.html](GUI.SetSliderValue) **for setting a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

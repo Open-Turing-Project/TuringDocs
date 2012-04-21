@@ -5,11 +5,17 @@
 A *subprogramType* is:
  *subprogramHeader*
 
+
+
 ##Description
 A variable or constant can contain a reference to a subprogram. The type of the variable or constant is a *subprogramType*. See also *subprogramHeader*.
 
+
+
 ##Example
 In the following *t* is a subprogram type, and *u* is a variable of type *t* initialized to refer to procedure *rnd*.
+
+
         procedure rnd ( var i : int, x : real)
             i := round ( x )
         end rnd
@@ -27,3 +33,5 @@ If *v* is a variable or constant that refers to a subprogram, *v *can be called,
 A reference to a subprogram, rather that the code of the subprogram, is contained in a variable *v* whose type is a subprogram type. This implies that **addr** (*v*) is the address of the reference to subprogram, rather than the address of the subprogram. The address of the code is given by #*v*. See **cheat** for an explanation of the # operator.
 You cannot assign a reference to a subprogram exported from a class. This restriction exists because  these subprograms are meaningless without an accompanying reference to an object.
 Many potential uses of subprogram variables are better programmed using classes and overriding exported subprograms. See **class**.
+
+

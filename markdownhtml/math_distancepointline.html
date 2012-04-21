@@ -1,0 +1,39 @@
+<h1>Math.DistancePointLine</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Math.DistancePointLine</strong> (<em>xp</em>, <em>yp</em>, <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Math.DistancePointLine </strong>is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (<em>xp</em>, <em>yp</em>) is the locationbetween the point. (<em>x1</em>, <em>y1</em>) and (<em>x2</em>, <em>y2</em>) are the end points of the line segment.</p>
+
+<h2>Details</h2>
+
+<p>The parameters to <strong>Math.DistancePointLine</strong> are real, but you can pass integer variables and constants. The parametersare in the same order as the subprogram name (that is point, then line).</p>
+
+<h2>Example</h2>
+
+<p>This progam draws a line segment and a circle with radius 75 on the screen and outputs whether they touch.</p>
+
+<pre><code>    var xp, yp, x1, y1, x2, y2 : int
+    const RADIUS : int := 75
+    xp := Rand.Int (RADIUS, maxx - RADIUS)
+    yp := Rand.Int (RADIUS, maxy - RADIUS)
+    x1 := Rand.Int (0, maxx)
+    y1 := Rand.Int (0, maxy)
+    x2 := Rand.Int (0, maxx)
+    y2 := Rand.Int (0, maxy)
+    Draw.FillOval (xp, yp, RADIUS, RADIUS, brightred)
+    Draw.Line (x1, y1, x2, y2, brightgreen)
+    if Math.DistancePointLine (xp, yp, x1, y1, x2, y2) &lt; RADIUSthen
+        put "The circle touches the line"
+    else
+        put "The circle does not touch the line"
+    end if
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Math.DistancePointLine</strong>, not by calling <strong>DistancePointLine</strong>.</p>

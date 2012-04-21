@@ -39,5 +39,8 @@
       "text_content": " View.ClipAdd and View.ClipOff functions.\r\n",
       "mdown_content": "**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff) **functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

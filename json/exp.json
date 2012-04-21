@@ -33,5 +33,8 @@
       "text_content": " ln (natural logarithm function).\r\nSee also predefined unit Math.\r\n",
       "mdown_content": "**[ln.html](ln)** (natural logarithm function).\nSee also predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

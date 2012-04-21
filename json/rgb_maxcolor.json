@@ -48,5 +48,8 @@
       "text_content": " Draw.Dot for examples of the use of maxcolor. See the Text.Color procedure which is used for setting the currently-active color.\r\n",
       "mdown_content": "**[draw_dot.html](Draw.Dot)** for examples of the use of **[maxcolor.html](maxcolor)**. See the **[text_color.html](Text.Color)** [procedure.html](procedure) which is used for setting the currently-active [color.html](color)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

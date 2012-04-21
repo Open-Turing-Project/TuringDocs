@@ -45,5 +45,8 @@
       "text_content": "Another example is available that illustrates detecting EOF from\r\n          the keyboard.\r\n          \r\n            ",
       "mdown_content": "Another example is available that illustrates detecting EOF fromthe keyboard."
     }
+  ],
+  "dependencies": [
+
   ]
 }

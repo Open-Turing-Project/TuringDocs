@@ -42,5 +42,8 @@
       "text_content": "GUI.ProcessEvent.\r\n          See also GUI.ResetQuit\r\n\t  for resetting the \"quit\" flag, so that a second event loop\r\n\t  can be used in the same program.\r\n    ",
       "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.See also [gui_resetquit.html](GUI.ResetQuit)for resetting the \"quit\" flag, so that a second event loopcan be used in the same program."
     }
+  ],
+  "dependencies": [
+
   ]
 }

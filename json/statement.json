@@ -32,5 +32,8 @@
       "text_content": " You can use a result statement only in a function. You can use a return statement only to terminate a procedure or the main program (but not to terminate the initialization of a module). See also result and return.\r\nThere are a number of predefined procedures, such as drawline, which are not listed as statements above. These are considered  procedure calls, which is one form of statement.\r\n",
       "mdown_content": "You can use a **result** statement only in a function. You can use a **return** statement only to terminate a procedure or the main program (but not to terminate the initialization of a module). See also **result** and **return**.\nThere are a number of predefined procedures, such as *drawline*, which are not listed as statements above. These are considered  procedure calls, which is one form of statement."
     }
+  ],
+  "dependencies": [
+
   ]
 }

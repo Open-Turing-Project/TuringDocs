@@ -1,0 +1,54 @@
+<h1>export</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>exportList</em> is:
+<strong>export</strong> [ <em>howExport</em> ] <em>id</em>  {, [ <em>howExport</em> ] <em>id</em> }</p>
+
+<h2>Description</h2>
+
+<p>An <strong>export</strong> list is used to specify those items declared in a module, monitor or class that can be used outside of it. Items that are declared inside a module, monitor or class but not exported cannot be accessed outside of it.</p>
+
+<h2>Example</h2>
+
+<p>In this example, the procedures names <em>pop</em> and <em>push</em> are exported from the <em>stack</em> module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word <em>stack</em> and a dot must precede the use of these names. Since <em>top </em>and <em>contents</em> were not exported, they can be accessed only from inside the module.</p>
+
+<pre><code>    module stack
+        export push, pop
+        var top : int := 0
+        var contents : array 1..100 of string
+        procedure push &#133; end push
+        procedure pop &#133; end pop
+    end stack
+
+    stack . push ("Harvey")
+    var name : string
+    stack . pop (name)      % This sets name to Harvey
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:
+The following syntax specifies that each exported identifier can optionally be preceded by the keywords <strong>var</strong>, <strong>unqualified</strong>, <strong>pervasive</strong> and <strong>opaque</strong>. Of these, only <strong>opaque</strong> is available in Turing proper.
+The form of <em>howExport</em> is:
+{ <em>exportMethod</em> }
+The form of <em>exportMethod</em> is one of:
+(a)<strong>var</strong>(b)<strong>unqualified</strong>(c)<strong>pervasive</strong>(d)<strong>opaque</strong>
+The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name </em>is exported <strong>var</strong> from module <em>M</em>,<em> name </em>can be changed from outside of <em>M</em> by <em>M.name </em>:= "<em>Surprise!</em>".
+The keyword <strong>unqualified</strong> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <em>M</em> exports procedure <em>p</em> unqualified, a call to <em>p</em> outside of <em>M</em> can be simply <em>p</em> instead of the usual <em>M.p</em>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <strong>unqualified</strong> can be abbreviated to ~. which is pronounced as "not dot".
+The keyword <strong>pervasive</strong>, which is only meaningful if <strong>unqualified</strong> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.
+The keyword <strong>opaque</strong>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <strong>module</strong> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.
+Exported subprograms are considered to be <strong>deferred</strong>, meaning that expansions are allowed to override these subprograms. See also <strong>deferred</strong> subprograms. These can be overridden using the keyword <strong>body</strong> before the resolving subprogram body.
+A class cannot export items from its parent or it parent's ancestors. All exported item must be declared in the current class.</p>
+
+<pre><code>    export (push, pop)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>You can export <strong>all</strong> from a module, monitor or a class. This means that every sibmle that is legal to export is exported. You may also qualify the all, as in <strong>export opaque unqualified pervasive all</strong> where the qualifiers are added to each export item (if it makes sense).
+If <strong>all</strong> is specified as the export item, no other item may be specified. Also, and <strong>all</strong> export affects only the module, monitor or class that it is given in. Any inheriting or implementing module, monitor or class does not export <strong>all</strong> unless they also specify it.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="unit">unit.html</a></strong>, <strong><a href="module">module.html</a></strong>, <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="class">class.html</a></strong>. See also <strong><a href="import">import.html</a></strong> list, <strong><a href="inherit">inherit.html</a></strong> clause, <strong><a href="implement">implement.html</a></strong> clause, <strong><a href="implement">implement.html</a></strong> <strong>by</strong> clause and <strong><a href="deferred">deferred.html</a></strong> subprogram.</p>

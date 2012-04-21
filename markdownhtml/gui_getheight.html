@@ -1,0 +1,40 @@
+<h1>GUI.GetHeight</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.GetHeight</strong> (<em>widgetID</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns the actual height of a widget. Note that this may be different from the height specified in the <em>Create</em> call (especially since many widgets do not specify a height. The GUI module determines the actual height).
+This function is used in conjunction with <strong>GUI.GetX</strong>, <strong>GUI.GetY</strong><em> </em>and<em> </em><strong>GUI.GetWidth</strong> to determine the bounds of a widget. The entire widget should always fit in the box (<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>) - (<strong>GUI.GetX</strong> + <strong>GUI.GetWidth</strong>  1, <strong>GUI.GetY</strong> + <strong>GUI.GetHeight</strong>  1)
+The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>
+
+<h2>Example</h2>
+
+<p>The following procedure draws a red box around the widget specified by <em>widgetID</em>.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    procedure BoxWidget (widgetID : int)
+        var x, y, width, height : int
+        x := GUI.GetX (widgetID)
+        y := GUI.GetY (widgetID)
+        width := GUI.GetWidth (widgetID)
+        height := GUI.GetHeight (widgetID)
+        Draw.Box (x  1, x  1, x + width, y + height, red)
+        Draw.Box (x  2, x  2, x + width + 1, y + height + 1, red)
+    end BoxWidget
+
+    var title : int := GUI.CreateLabel (20, 20, "Frame This!")
+    BoxWidget (title)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.GetHeight</strong>, not by calling <strong>GetHeight</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, and <strong><a href="GUI.GetWidth">gui_getwidth.html</a></strong>.</p>

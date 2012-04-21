@@ -4,12 +4,18 @@
 ##Syntax
 **Sprite.Animate** (*spriteID*, *picID, x*, *y* : **int**,    *centered* : **boolean**)
 
+
+
 ##Description
 Moves the sprite specified by *spriteID* to the location specified by (*x, y*). If *centered* is **true**, then the sprite is centered on (*x, y*). Otherwise (*x, y*) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
 A simple example of the **Sprite.Animate** procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.
 
+
+
 ##Example
 Here is a program that loads a series of images from an animatedGIF file called "mypic.gif".  It works by loading the images fromthe GIF file into an array (see **[pic_filenewframes.html](Pic.FileNewFrames)** formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.
+
+
 
         var numFrames := Pic.Frames ("mypic.gif")
         % Load the picture
@@ -30,5 +36,9 @@ Here is a program that loads a series of images from an animatedGIF file called 
 Exported qualified.
 This means that you can only call the function by calling **Sprite.Animate**, not by calling **Animate**.
 
+
+
 ##See also
 **[sprite_new.html](Sprite.New)**, **[sprite_setposition.html](Sprite.SetPosition)** and **[sprite_changepic.html](Sprite.ChangePic)**.
+
+

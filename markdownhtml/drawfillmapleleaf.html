@@ -1,0 +1,31 @@
+<h1>drawfillmapleleaf</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawfillmapleleaf</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawfillmapleleaf</strong> procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) and filled using the specified <em>Color</em>. To get a maple leaf outlined in a different color, use <strong>drawfillmapleleaf</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>drawmapleleaf</strong>  with the <em>Color</em> parameter set to the border color. If <em>y1</em> is greater than <em>y2</em>, then the maple leaf is drawn upside down.</p>
+
+<p><img src="drawfillmapleleaf01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program will draw two maple leaves beside each other. The first will be outlined in color 1 and filled in color 2. The second maple leaf will be upside down and both filled and outlined in color 3.</p>
+
+<pre><code>    setscreen ("graphics")
+    drawfillmapleleaf (0, 0, 100, 100, 1)
+    drawmapleleaf (0, 0, 100, 100, 2)
+    drawfillmapleleaf (150, 100, 250, 0, 3)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>drawfillmapleleaf</strong> procedure is useful for drawing the Canadian flag.
+The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

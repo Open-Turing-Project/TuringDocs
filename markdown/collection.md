@@ -5,11 +5,17 @@
 A *collectionDeclaration* is one of:
  (a)**var** *id *{ , *id *} : **collection** **of** *typeSpec* (b)**var** *id *{ , *id *} : **collection** **of** **forward** *typeId*
 
+
+
 ##Description
 A collection declaration creates a new collection (or collections). A collection can be thought of as an array whose elements are dynamically created (by **new**) and deleted (by **free**). Elements of a collection are referred to by the collection's name subscripted by a pointer. See also **new**, **free** and **pointer**.
 
+
+
 ##Example
 Create a collection that will represent a binary tree.
+
+
         var tree : collection of
             record
                 name : string (10)
@@ -28,3 +34,5 @@ The same short forms for classes can be also used for collections. These include
 The syntax of a *collectionDeclaration* presented above has been simplified by leaving out **unchecked** collections. With this feature, a *collectionDeclaration* is one of:
  (a) **var** *id *{ , *id *} : [ **unchecked** ] **collection** **of** *typeSpec* (b)* ***var** *id *{ , *id *} : [ **unchecked** ] **collection** **of** **forward** *typeId*
 When **unchecked** is specified, the checking to verify that pointers actually locate elements is removed. This checking is done using a "time stamp" attached to each element and  pointer, and making sure that these match with each other. When **unchecked** is specified, the execution is dangerous, but faster and smaller, and the pointers become simply machine addresses (as in C).
+
+

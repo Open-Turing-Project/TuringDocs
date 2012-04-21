@@ -1,0 +1,19 @@
+<h1>wait</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>waitStatement</em> is:
+<strong>wait</strong> <em>variableReference</em> [ , <em>expn</em> ]</p>
+
+<h2>Description</h2>
+
+<p>The <strong>wait</strong> statement is used in a concurrent program to cause the executing process to be blocked (to go to sleep) until it is awakened by a <strong>signal</strong> statement. The statement can only be used inside a monitor (a special kind of module that handles concurrency). A <strong>wait</strong> statement operates on a <strong>condition</strong> variable (the <em>variableReference</em>), which is essentially a queue of sleeping processes. See <strong>condition</strong> for an example of a <strong>wait</strong> statement.</p>
+
+<h2>Details</h2>
+
+<p>A <strong>wait</strong> statement for a priority condition must include the optional <em>expn</em>,. This expression must be a non-negative <strong>int</strong> value which is used to order processes waiting for the condition, low numbers first.
+A <strong>wait</strong> statement for a <strong>timeout</strong> condition must include the optional <em>expn</em>, which must be a non-negative <strong>int</strong> value which gives the <em>timeout interval</em>. <em>A </em>process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="condition">condition.html</a></strong> and <strong><a href="signal">signal.html</a></strong>. See also <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="fork">fork.html</a></strong>. See also <strong><a href="empty">empty.html</a></strong>. See also <strong><a href="pause">pause.html</a></strong>.</p>

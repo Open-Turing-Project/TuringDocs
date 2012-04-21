@@ -7,3 +7,5 @@ An identifier must start with a letter (large or small) or an underscore ( _ ) a
 Every character in a name is significant in distinguishing one name from another.
 By convention, words that make up an identifier are capitalized (except the first one), as in *incomeTax* and *justInTime*.
 An item in a Turing program cannot be given the same name as a keyword such as **get** or as a reserved word such as **index**. See Appendix A for a list of keywords and reserved words. As well, there are some identifiers that are used by the Turing error recovery procedures and are thus unavailable for use as identifiers. Specifically, they are: *endif*, *elseif*, *endloop* and *endfor*.
+
+

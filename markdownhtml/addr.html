@@ -1,0 +1,26 @@
+<h1>addr</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>addr</strong> (<em>reference</em>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>addr</strong> attribute is used to find the integer address of a variable or non scalar constant. This is implementation-dependent. This address may be used in an indirection operation <strong>@</strong>.</p>
+
+<h2>Example</h2>
+
+<p>Set <em>a</em> to be the address of <em>x</em>.</p>
+
+<pre><code>    var x : real
+    var a : addressint := addr (x)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The value of the address produced by <strong>addr</strong> is of type <strong>addressint</strong>, an integer type whose range is that of the underlying memory addresses.
+The concept of an address is implementation-dependent. For example, an optimizing compiler could determine that a variable does not require space because the program could be computed without the variable with no change in output. However, in most implementations, types have a predictable size and variables of that type occupy that number of bytes in memory.</p>
+
+<h2>See also</h2>
+
+<p>the <a href="indirection%20operator%20@">indirection.html</a>, <strong><a href="cheat">cheat.html</a></strong>, <em><a href="explicitIntegerConstant">explicitintegerconstant.html</a> </em>(how to write hexadecimal constants), and <strong><a href="pointer">pointer.html</a></strong> type (in particular unchecked pointer type). See also <strong><a href="sizeof">sizeof.html</a></strong>, which returns the size of a variable.</p>

@@ -1,0 +1,35 @@
+<h1>File.Delete</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.Delete</strong> (<em>filePathName</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>File.Delete</strong> is used to delete the file specified by the parameter <em>filePathName</em>. This is the equivalent of doing a <strong>del</strong> in DOS or <strong>rm</strong> in UNIX.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>File.Delete</strong> call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>This program deletes the file called <em>information</em>.</p>
+
+<pre><code>    File.Delete ("information")
+    if Error.Last = eNoError then
+        put "File delete"
+    else
+        put "Did not delete the file."
+        put "Error: ", Error.LastMsg
+    end if
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>An example program is available that creates a file in the current directory, and then deletes the file using <strong>File.Delete</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.Delete</strong>, not by calling <strong>File</strong>.</p>

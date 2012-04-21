@@ -1,0 +1,34 @@
+<h1>Draw.Arc</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.Arc </strong>(<em>x</em>, <em>y</em>,<strong> </strong><em>xRadius</em>, <em>yRadius</em><strong> :</strong> <strong>int</strong>, <em>initialAngle</em>, <em>finalAngle</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.Arc </strong>procedure is used to draw an arc whose center is at (<em>x</em>, <em>y</em>). This is just like <strong>Draw.Oval</strong>, except that you must also give two angles, <em>initialAngle </em>and <em>finalAngle</em>, which determine where to start and stop drawing. Zero degrees is "three o'clock", 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <em>xRadius </em>and <em>yRadius</em>.</p>
+
+<p><img src="draw_arc01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a quarter circle whose center is (<em>midx</em>, <em>midy</em>) the center of the screen, using color number 1. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen.</p>
+
+<pre><code>    View.Set ("graphics")
+    const midx := maxx div 2
+    const midy := maxy div 2
+    Draw.Arc (midx, midy, midx, midy, 0, 90, 1)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen must be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.Arc</strong>, not by calling <strong>Arc</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

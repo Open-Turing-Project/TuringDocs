@@ -18,5 +18,8 @@
       "text_content": " An implement-by clause is used to specify that a module, monitor or class C is to be automatically implemented by the implementByItem. C is called the interface and the implementByItem, which must contain an implement clause, is called the implementation. See implement clause for details and an example.\r\nThe implement-by clause can only be used in a unit. See unit for the definition of a unit.\r\nAn implementByItem is one of:\r\n (a) id (b) id in fileName\r\nThe second form is used when the implement-by clause is for a separate unit and the imported item is in a file whose name is different from the item's name, as in:\r\n\r\nThe fileName must be an explicit character string, e.g., \"ledgbod.t\". See also unit. Parentheses are allowed around the items in an implement-by clauses, as in:\r\n\r\n",
       "mdown_content": "An implement-by clause is used to specify that a module, monitor or class *C *is to be automatically implemented by the *implementByItem*. *C* is called the *interface* and the *implementByItem*, which must contain an implement clause, is called the *implementation*. See **implement** clause for details and an example.\nThe implement-by clause can only be used in a **unit**. See **unit** for the definition of a unit.\nAn implementByItem is one of:\n (a) *id* (b) *id* **in** *fileName*\nThe second form is used when the implement-by clause is for a separate **unit** and the imported item is in a file whose name is different from the item's name, as in:\nThe fileName must be an explicit character string, e.g., \"ledgbod.t\". See also **unit**. Parentheses are allowed around the items in an **implement-by** clauses, as in:"
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -16,5 +16,9 @@ The pointer following operator ^ is applied before subscripting, subprogram call
  ^*a*(*i*) ^*r.y* ^*p*->*x*
 Use parentheses to force ^ to apply to more of the reference. For example, in ^(a(i)), the ^ applies to a(i).
 
+
+
 ##See also
 *[infix.html](infix)* and *[prefix.html](prefix) *operators. See the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)**, **[boolean.html](boolean)**, **[set.html](set)**, **[enum.html](enum)**, **[char.html](char)** and **[char.html](char)**(*n*) types.
+
+

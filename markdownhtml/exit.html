@@ -1,0 +1,26 @@
+<h1>exit</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>exitStatement</em> is one of:
+(a)<strong>exit</strong> <strong>when</strong> trueFalseExpn(b)<strong>exit</strong></p>
+
+<h2>Description</h2>
+
+<p>An <strong>exit</strong> statement is used to stop the execution of a <strong>loop</strong> or <strong>for</strong> statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond <strong>end</strong> <strong>loop</strong> or <strong>end</strong> <strong>for</strong>. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as <strong>if</strong>.</p>
+
+<h2>Example</h2>
+
+<p>Input names until finding Jones.</p>
+
+<pre><code>    var name : string
+    loop
+        get name
+        exit when name = "Jones"
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Exit statements must occur only inside <strong>loop</strong> or <strong>for</strong> statements. An exit takes you out of the closest surrounding <strong>loop</strong> or <strong>for</strong>. The only other ways to terminate a <strong>loop</strong> or <strong>for</strong> is by <strong>return</strong> (in a procedure or in the main program, in which case the entire procedure or main program is terminated) or by <strong>result</strong> (in a function, in which case the entire function is terminated and a result value must be supplied).
+The form "<strong>exit</strong> <strong>when</strong> <em>trueFalseExpn</em>" is equivalent to "<strong>if</strong> <em>trueFalseExpn </em><strong>then</strong> <strong>exit</strong> <strong>end</strong> <strong>if</strong>".</p>

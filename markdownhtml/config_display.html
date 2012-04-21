@@ -1,0 +1,38 @@
+<h1>Config.Display</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Config.Display</strong> (<em>displayCode</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Config.Display</strong> returns information about the display (or displays) attached to the computer. The parameter <em>displayCode</em> determines what sort of information is passed back. <em>displayCode</em> has a number of possible values, all summarized by a set of predefined constants.
+At the time of this writing, the following constants were defined:
+<em>cdScreenHeight</em>return the height of the screen in pixels.<em>cdScreenWidth</em>return the width of the screen in pixels.<em>cdMaxNumColors</em>return the maximum number of colors supported by the display.<em>cdMaxNumColours</em>return the maximum number of colors supported by the display.</p>
+
+<h2>Example</h2>
+
+<p>This program prints the screen width and height.</p>
+
+<pre><code>    const width : int := Config.Display (cdScreenWidth)
+    const height: int := Config.Display (cdScreenHeight)
+    put "The screen width is ", width, "  the screen height is ", height
+</code></pre>
+
+<h2>Details</h2>
+
+<p>On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call <strong>Config.Display</strong> with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays.</p>
+
+<h2>Example</h2>
+
+<p>This program prints the screen width and height of the second display on a Macintosh.</p>
+
+<pre><code>    const width : int := Config.Display (cdScreenWidth + 1)
+    const height: int := Config.Display (cdScreenHeight + 1)
+    put "The second display size is ", width, "  x ", height
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Config.Display</strong>, not by calling <strong>Display</strong>.</p>

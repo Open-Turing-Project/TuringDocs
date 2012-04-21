@@ -36,5 +36,8 @@
       "text_content": " GUI.ShowMenuBar. See also GUI.CreateMenu.\r\n",
       "mdown_content": "**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

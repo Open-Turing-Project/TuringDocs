@@ -1,0 +1,37 @@
+<h1>Time.SecStr</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Time.SecStr</strong> (<em>timeInSecs</em> : <strong>int</strong>, <em>formatString</em> : <strong>string</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Time.SecStr</strong> function is used to convert the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string.
+If <em>timeInSecs</em> is incorrect or can't be interpreted, then <strong>Time.SecStr</strong> will return the empty string and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> will be set to the appropriate error.</p>
+
+<h2>Detailsn</h2>
+
+<p>The <em>formatString</em> parameter specifies how the output stringwill look. The formatString consists of different letters specifyingthe different formats and spaces or commas between these letters. The different letters can be combined to provide different date formats.
+Here are the letters:
+<strong>a</strong>Abbreviated weekday name<strong>A</strong>Full weekday name<strong>b</strong>Abbreviated month name<strong>B</strong>Full month name<strong>c</strong>Date and time representation appropriate for locale<strong>d</strong>Day of month as decimal number (01 - 31)<strong>H</strong>Hour in 24-hour format (00 - 23)<strong>I</strong>Hour in 12-hour format (01 - 12)<strong>j</strong>Day of year as decimal number (001 - 366)<strong>m</strong>Month as decimal number (01 - 12)<strong>M</strong>Minute as decimal number (00 - 59)<strong>p</strong>Current locale&#146;s A.M./P.M. indicator for 12-hour clock<strong>S</strong>Second as decimal number (00 - 59)<strong>U</strong>Week of year as decimal number, with Sunday as first day of week (00 - 53)<strong>w</strong>Weekday as decimal number (0 - 6; Sunday is 0)<strong>W</strong>Week of year as decimal number, with Monday as first day of week (00 - 53)<strong>x</strong>Date representation for current locale<strong>X</strong>Time representation for current locale<strong>y</strong>Year without century, as decimal number (00 - 99)<strong>Y</strong>Year with century, as decimal number<strong>z,Z</strong>Time-zone name</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the current date and the day number in the year.Example output: <strong>Thursday November 13, 2003 is day number 317 of 2003</strong></p>
+
+<pre><code>    put Time.SecStr (Time.Sec, "A B d, Y"), " is day number ",
+        Time.SecStr (Time.Sec, "j"), " of ", Time.SecStr (Time.Sec, "Y")
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>This example demonstrates each of the formatting letters.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Time.SecStr</strong>, not by calling <strong>SecStr</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Time.Sec">time_sec.html</a></strong> and <strong><a href="Time.SecParts">time_secparts.html</a></strong> functions.</p>

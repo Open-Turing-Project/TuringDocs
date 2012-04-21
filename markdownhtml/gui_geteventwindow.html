@@ -1,0 +1,44 @@
+<h1>GUI.GetEventWindow</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.GetEventWindow</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an <em>action procedure</em> or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.
+This function is commonly used when several windows share the same layout. The same buttons in each window point to the same <em>action procedures</em>. To determine which button was actually pressed, the function is called to get the window.</p>
+
+<h2>Example</h2>
+
+<p>The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI" 
+
+    procedure DrawStar
+        var windowID : int := GUI.GetEventWindow
+        Window.Select (windowID)
+        Draw.FillStar (25, 40, 175, 190, Rand.Int (10, 15))
+    end DrawStar
+
+    for i : 0 .. 3
+        var window : int := Window.Open ("graphics:200;200") 
+        % Place window above task bar, across from previous one.
+        Window.SetPosition (window, 220 * i, 27) 
+        var button : int := GUI.CreateButton (5, 5, 190, "Draw Star", 
+            DrawStar) 
+    end for
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.GetEventWindow</strong>, not by calling <strong>GetEventWindow</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.ProcessEvent">gui_processevent.html</a></strong>.</p>

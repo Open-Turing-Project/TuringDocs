@@ -1,0 +1,33 @@
+<h1>Rand.Int</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Rand.Int</strong> (<em>low</em>,<em> high</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Rand.Int </strong>statement is used to create a pseudo-random integer in the range <em>low</em> to <em>high</em>, inclusive. For example, if <em>i</em> is an integer, after <em>i:=</em><strong>Rand.Int </strong>(<em>i</em>,1, 10), <em>i</em> would have a value such as 7 or 2 or 10.</p>
+
+<h2>Example</h2>
+
+<p>This program simulates the repeated rolling of a six sided die.</p>
+
+<pre><code>    loop
+        put "Rolled ", Rand.Int (1, 6)
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>Rand.Int </strong>statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range <em>low</em> =<em>i</em> = <em>high</em>. It is required that <em>low</em> = <em>high</em>.
+Each time a program runs, <strong>Rand.Int</strong> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <strong>Rand.Set</strong> procedure.
+To use several sequences of repeatable pseudo-random number sequences, use the <strong>Rand.Seed </strong>and <strong>Rand.Next</strong> procedures.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Rand.Int</strong>, not by calling <strong>Int</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Rand.Real">rand_real.html</a></strong>, <strong><a href="Rand.Set">rand_set.html</a></strong>, <strong><a href="Rand.Seed">rand_seed.html</a></strong> and <strong><a href="Rand.Next">rand_next.html</a></strong>.</p>

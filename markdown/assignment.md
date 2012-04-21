@@ -5,10 +5,16 @@
 An *assignmentStatement* is:
  *variableReference* := *expn*
 
+
+
 ##Description
 An assignment statement calculates the value of the expression (*expn*) and assigns that value to the variable (*variableReference*).
 
+
+
 ##Example
+
+
 
         var i : int
         i := 24         % Variable i becomes 24
@@ -26,3 +32,5 @@ can be shortened to
  *i* += 1
 In Turing, there are short forms for combining +, = and * with assignment. For example, *i* *= 2 doubles *i*.
 There are also short forms to allow any binary operator to be combined with assignment. For example, *i* **shl**= 2 shifts *i* by 2 to the left.
+
+

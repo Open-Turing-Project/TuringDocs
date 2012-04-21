@@ -45,5 +45,8 @@
       "text_content": " Net.OpenConnection and Net.WaitForConnection.\r\n",
       "mdown_content": "**[net_openconnection.html](Net.OpenConnection)** and **[net_waitforconnection.html](Net.WaitForConnection)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

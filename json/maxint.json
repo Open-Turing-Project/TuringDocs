@@ -40,5 +40,8 @@
       "text_content": " maxnat and minint.\r\nSee also OOT predefined unit Math.\r\n",
       "mdown_content": "**[maxnat.html](maxnat)** and **[minint.html](minint)**.\nSee also OOT predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

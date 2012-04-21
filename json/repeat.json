@@ -32,5 +32,8 @@
       "text_content": " If i is less than or equal to zero, the null string \"\" is returned. The repeat function is often used for spacing of output. For example, this statement skips 20 blanks before outputting x.\r\n\r\n",
       "mdown_content": "If *i* is less than or equal to zero, the null string \"\" is returned. The **repeat** function is often used for spacing of output. For example, this statement skips 20 blanks before outputting *x*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

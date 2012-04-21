@@ -4,12 +4,18 @@
 ##Syntax
 **GUI.ResetQuit**
 
+
+
 ##Description
 The **GUI.ResetQuit** procedure resets the "quitting" flag thatis set by the **GUI.Quit** program. The **GUI.ResetQuit**can be used whenever you want to have a program that exitsfrom the main processing loop, does some work, and then reenters the processing loop.
 Without **GUI.ResetQuit**, the program will exit the secondloop immediately because **GUI.ProcessEvent** will return**true**.
 
+
+
 ##Example
 This program allows the user to select the color thatstars are to be drawn in.  When the user presses the button,the program exits the first event loop and draws the stars.Before creating another button and entering a second eventloop, it calls **GUI.ResetQuit**.
+
+
 
         import GUI
         var radio : array 1 .. 4 of int
@@ -77,3 +83,5 @@ This program allows the user to select the color thatstars are to be drawn in.  
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **GUI.ResetQuit**, not by calling **ResetQuit**.
+
+

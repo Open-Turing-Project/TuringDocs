@@ -43,5 +43,8 @@
       "text_content": " explicitStringConstant, explicitIntegerConstant, explicitRealConstant, explicitTrueFalseConstant and explicitCharConstant. See also enumeratedValue.\r\n",
       "mdown_content": "*[explicitstringconstant.html](explicitStringConstant)*, *[explicitintegerconstant.html](explicitIntegerConstant)*, *[explicitrealconstant.html](explicitRealConstant)*, *[explicittruefalseconstant.html](explicitTrueFalseConstant)* and *[explicitcharconstant.html](explicitCharConstant)*. See also *[enumeratedvalue.html](enumeratedValue)*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,40 @@
+<h1>RGB.AddColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>RGB.AddColor</strong> (<em>redComp</em>, <em>greenComp</em>, <em>blueComp</em> : <strong>real</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>RGB.AddColor</strong> function attempts to create a new color with the red, green and blue components specified. If successful, the function returns a new color number (usually one greater than <strong>maxcolor</strong>)<strong> </strong>and<strong> maxcolor </strong>is updated by adding 1 to it. If it is unsuccessful, the function returns 1 and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> can be used to determine the cause of the problem.
+The red, green and blue values must normalized to be between 0 and 1. Thus to add the pure red to the color palette, you would call:
+<em>newColor</em> would be set to the color added, or 1 if the attempt to add a color failed.</p>
+
+<pre><code>    newColor := RGB.AddColor (1.0, 0.0, 0.0)
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program adds a palette of 16 blues to the end of the color palette.
+<strong>Details</strong><strong>RGB.AddColour</strong> is an alternate spelling for <strong>RGB.AddColor</strong>.</p>
+
+<pre><code>    var clr : int
+    for blueShade : 0 .. 15
+         clr = RGB.AddColor (0, 0, blueShade / 15)
+         if clr = 1 then
+            put "Color add failed on shade number ", blueShade
+            exit
+        else
+            put "Added color number ", clr
+        end if
+    end for
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>RGB.AddColor</strong>, not by calling <strong>AddColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="RGB.GetColor">rgb_getcolor.html</a></strong>and <strong><a href="RGB.SetColor">rgb_setcolor.html</a></strong>.</p>

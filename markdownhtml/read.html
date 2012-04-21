@@ -1,0 +1,43 @@
+<h1>read</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>readStatement</em> is:
+<strong>read</strong> : <em>fileNumber</em> [ : <em>status</em> ] , <em>readItem</em> { ,<em>readItem</em> }</p>
+
+<h2>Description</h2>
+
+<p>The <strong>read</strong> statement inputs each of the <em>readItems</em> from the specified file. These items are input directly using the <em>binary</em> format that they have on the file. In other words, the items are not in source (ASCII or EBCDIC) format. In the common case, these items have been output to the file using the <strong>write</strong> statement.
+By contrast, the <strong>get</strong> and <strong>put</strong> statements use source format, which a person can read using an ordinary text editor.</p>
+
+<h2>Example</h2>
+
+<p>This example shows how to input a complete employee record using a <strong>read</strong> statement.</p>
+
+<pre><code>    var employeeRecord :
+        record
+            name : string ( 30 )
+            pay : int
+            dept : 0 .. 9
+        end record
+    var fileNo : int
+    open : fileNo, "payroll", read
+    &#133;
+    read : fileNo, employeeRecord
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <em>fileNumber</em> must specify a file that is open with <strong>read</strong> capability (or a program argument file that is implicitly opened).
+The optional <em>status</em> is an <strong>int</strong> variable that is set to implementation-dependent information about the <strong>read</strong>. If <em>status</em> is returned as zero, the read was successful. Otherwise <em>status</em> gives information about the incomplete or failed <strong>read</strong> (which is not documented here). You commonly use <em>status </em>when you are reading a record or array from a file and you are not sure if the entire item exists on the file. If it does not exist, the <strong>read</strong> will fail part way through, but your program can continue and diagnose the problem by inspecting <em>status</em>.
+A <em>readItem</em> is:
+Each <em>readItem</em> specifies a variable to be read in internal form. The optional <em>requestedSize</em> is an integer value giving the number of bytes of data to be read. The <em>requestedSize</em> should be less than or equal to the size of the item's internal form in memory (else a warning message is issued). If no <em>requestedSize</em> is given, the size of the item in memory is used. The optional <em>actualSize</em> is an <strong>int</strong> variable that is set to the number of bytes actually read.
+An array, record or union may be read and written as a whole.
+It is dangerous to read into pointer variables, as this allows the possibility of creating incorrect addresses in the pointers. It is also dangerous to read more bytes than are in the <em>readItem</em>.</p>
+
+<pre><code>    variableReference [ : requestedSize [ : actualSize ] ]
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="write">write.html</a></strong>, <strong><a href="open">open.html</a></strong>, <strong><a href="close">close.html</a></strong>, <strong><a href="seek">seek.html</a></strong>, <strong><a href="tell">tell.html</a></strong>, <strong><a href="get">get.html</a></strong> and <strong><a href="put">put.html</a></strong> statements.</p>

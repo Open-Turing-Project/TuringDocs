@@ -1,0 +1,36 @@
+<h1>tell</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>tellStatement</em> is:
+<strong>tell</strong> : <em>fileNumber</em> , <em>filePositionVar</em></p>
+
+<h2>Description</h2>
+
+<p>The <strong>tell</strong> statement sets <em>filePositionVar</em>, whose type must be <strong>int</strong>, to the current offset in bytes from the beginning of the specified file. The <em>fileNumber</em> must specify a file that is open with <strong>seek</strong> capability (or else a program argument file that is implicitly opened). The <strong>tell</strong> statement is useful for recording the file position of a certain piece of data for later access using <strong>seek</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This example shows how to use <strong>tell</strong> to record the location of a record in a file. This location is later used by <strong>seek</strong> to allow the record to be read.</p>
+
+<pre><code>    var employeeRecord :
+        record
+            name : string ( 30 )
+            pay : int
+            dept : 0 .. 9
+        end record
+    var fileNo : int
+    var location : int
+    open : fileNo, "payroll", write, seek
+    &#133;
+    tell : fileNo, location         % Make note of this location
+    write : fileNo, employeeRecord  % Write record at this location
+    &#133;
+    seek : fileNo, location     % Go back to location
+    read : fileNo, employeeRecord   % Read the record
+                        % that was previously written
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="read">read.html</a></strong>, <strong><a href="write">write.html</a></strong>, <strong><a href="open">open.html</a></strong>, <strong><a href="close">close.html</a></strong>, <strong><a href="seek">seek.html</a></strong>, <strong><a href="get">get.html</a></strong> and <strong><a href="put">put.html</a></strong> statements.</p>

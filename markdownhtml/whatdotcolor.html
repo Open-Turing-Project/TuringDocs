@@ -1,0 +1,41 @@
+<h1>whatdotcolor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>whatdotcolor</strong> ( <em>x</em>, <em>y</em> : <strong>int</strong> ) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>whatdotcolor</strong> function is used to determine the color number of the specified pixel. The alternate spelling is <strong>whatdotcolour</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.</p>
+
+<pre><code>    setscreen ( "graphics" )
+    var x, y : int := 0
+    var dx, dx : int := 1
+    loop
+        if whatdotcolor ( x, y ) not= 0 then
+            sound ( 400, 50 )
+        end if
+        drawdot ( x, y, 1 )
+        x := x + dx
+        y := y + dy
+        if x = 0 or x = maxx then
+            dx := -dx
+        end if
+        if y = 0 or y = maxy then
+            dy := -dy
+        end if
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a"<em>graphics</em>" mode. If is not set to "<em>graphics</em>"<em>  </em>mode,  it will automatically be set to "<em>graphics</em>" mode. See <strong>setscreen</strong> for details.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="drawdot">drawdot.html</a></strong>, which is used for setting the <a href="color">color.html</a> of a pixel. See also <strong><a href="maxx">maxx.html</a></strong> and <strong><a href="maxy">maxy.html</a></strong>, which are used to determine the number of pixels on the screen. See also <strong><a href="sound">sound.html</a></strong>, which causes the computer to make a <a href="sound">sound.html</a>.
+See also predefined unit <strong><a href="View">viewmodule.html</a></strong>.</p>

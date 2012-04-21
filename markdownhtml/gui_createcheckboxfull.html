@@ -1,0 +1,69 @@
+<h1>GUI.CreateCheckBox[Full]</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CreateCheckBox</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>filled</em> : <strong>boolean</strong>)) : <strong>int</strong>
+<strong>GUI.CreateCheckBoxFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>filled</em> : <strong>boolean</strong>), <em>alignment</em> : <strong>int</strong>, <em>shortcut</em> : <strong>char</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Creates a check box (with accompanying text) and returns the check box's widget ID.
+The check box widget is used to implement a check box that can be set or unset. When you click on a check box, the status of the check box flips from set to unset and back again and the check box's <em>action procedure</em> is called with the new status as a parameter. If a check box is given a short cut, then entering the keystroke will cause the check box to change status and the <em>action procedure</em> to be called. The new status will be displayed immediately.
+<strong>Two Check Boxes</strong>
+The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the check box (unless <em>alignment</em> is set to <em>GUI.RIGHT</em>, in which case they specify the lower-right corner of the check box). The <em>text</em> parameter specifies the text (or label) beside the check box. The <em>actionProc</em> parameter is the name of a procedure that is called when the status of the check box changes. The <em>actionProc</em>procedure must have one boolean parameter which is the new status of the check box. In <strong>GUI.CreateCheckBox</strong>, the check box's text is always to the right of the actual check box. In <strong>GUI.CreateCheckBoxFull</strong>, the text can be set to the right or left of the check box with the <em>alignment</em> parameter.
+For <strong>GUI.CreateCheckBoxFull</strong>, the <em>alignment</em> parameter specifies the position of the check box in relation to the text as well as the meaning of the <em>x</em> and <em>y</em> parameters. The <em>alignment</em> parameter is one of 0, <em>GUI.LEFT</em>, or <em>GUI.RIGHT</em>. An <em>alignment</em> of 0 is the default and is the same as <em>GUI.LEFT</em>. <em>GUI.LEFT</em> means the actual box in the check box appears to the left of the check box's label and (<em>x</em>, <em>y</em>) specifies the lower-left corner. An <em>alignment</em> of <em>GUI.RIGHT</em> means that the actual box appears to the right of the check box's label and (<em>x</em>, <em>y</em>) specifies the lower-right corner of the check box. The <em>shortcut </em>parameter is the keystroke to be used as the button's shortcut. The <em>default</em> parameter is a boolean indicating whether the button should be the default button. If there is already a default button, and <em>default</em> is set to true, then this button becomes the new default button.
+A check box's size is not specified during creation. It is determined based on the size of the text. Instead the user specifies the lower-left corner of the check box (or the lower-right if the check box is right justified).</p>
+
+<p><img src="gui_createcheckbox_full01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>The following program creates two buttons, one which draws a random circle on the screen and one which quits the program</p>
+
+<pre><code>    import GUI
+
+    procedure DoNothing (status : boolean)
+    end DoNothing 
+
+    View.Set ("graphics:300;100,nobuttonbar")
+    var cb1 : int := GUI.CreateCheckBox (10, 10, "Check Box 1",
+        DoNothing)
+    var cb2 : int := GUI.CreateCheckBoxFull (200, 10, "Check Box 2",
+        DoNothing, GUI.RIGHT, '2')
+    GUI.SetCheckBox (cb2, true)
+    var quitBtn : int := GUI.CreateButton (230, 10, 0, "Quit", GUI.Quit)
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+    var cb1Status : boolean := GUI.GetCheckBox (cb1)
+    var cb2Status : boolean := GUI.GetCheckBox (cb2)
+    if cb1Status then
+        put "Check box 1: filled"
+    else
+        put "Check box 1: empty"
+    end if
+    if cb2Status then
+        put "Check box 2: filled"
+    else
+        put "Check box 2: empty"
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>When <strong>GUI.CreateButton</strong><em> </em>or<em> </em><strong>GUI.CreateButtonFull</strong> is called, the newly created check box will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
+When a check box is not enabled, the label beside the check box is grayed out and the check box no longer responds to any mouse clicks or keystrokes until the check box is enabled again.</p>
+
+<h2>Details</h2>
+
+<p>The following GUI subprograms can be called with a check box as the <em>widgetID</em> parameter:
+<strong>GUI.Show</strong>,<strong> GUI.Hide</strong>,<strong> GUI.Enable</strong>,<strong> GUI.Disable</strong>,<strong> GUI.Dispose</strong>,<strong> GUI.GetX</strong>,<strong> GUI.GetY</strong>,<strong> GUI.GetWidth</strong>,<strong> GUI.GetHeight</strong>,<strong> GUI.SetPosition</strong>,<strong> GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong>,<strong> GUI.SetLabel</strong>,<strong> GUI.GetCheckBox</strong>,<strong> GUI.SetCheckBox</strong></p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CreateCheckBox</strong>, not by calling <strong>CreateCheckBox</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.SetLabel">gui_setlabel.html</a></strong> for changing the chec box's text and <strong><a href="GUI.GetCheckBox">gui_getcheckbox.html</a></strong> and <strong><a href="GUI.SetCheckBox">gui_setcheckbox.html</a></strong> for reading and setting the check box's state.</p>

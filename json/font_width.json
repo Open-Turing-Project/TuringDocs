@@ -45,5 +45,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.Width, not by calling Width.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Width**, not by calling **Width**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

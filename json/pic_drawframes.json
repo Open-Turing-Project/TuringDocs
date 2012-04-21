@@ -68,5 +68,8 @@
       "text_content": "Pic.Frames for information on how\r\n          to determine the number of frames in a GIF image.\r\n          Pic.FileNewFrames for information\r\n          on how to load a GIF image with multiple frames into an array of \r\n          ints.\r\n          Pic.DrawFramesBack for \r\n          information on how to sequentially display the images stored in array \r\n          of pictures while continuing to execute the program.\r\n    ",
       "mdown_content": "**[pic_frames.html](Pic.Frames)** for information on howto determine the number of frames in a GIF image.\n**[pic_filenewframes.html](Pic.FileNewFrames)** for informationon how to load a GIF image with multiple frames into an array of **int**s.\n**[pic_drawframesback.html](Pic.DrawFramesBack)** for information on how to sequentially display the images stored in array of pictures while continuing to execute the program."
     }
+  ],
+  "dependencies": [
+
   ]
 }

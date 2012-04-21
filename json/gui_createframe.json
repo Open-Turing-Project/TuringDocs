@@ -54,5 +54,8 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling GUI.CreateFrame, not by calling CreateFrame.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateFrame**, not by calling **CreateFrame**."
     }
+  ],
+  "dependencies": [
+    "gui_createframe01.gif"
   ]
 }

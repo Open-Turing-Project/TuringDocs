@@ -26,5 +26,8 @@
       "text_content": " infix and prefix operators. See the int, real, string, boolean, set, enum, char and char(n) types.\r\n",
       "mdown_content": "*[infix.html](infix)* and *[prefix.html](prefix) *operators. See the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)**, **[boolean.html](boolean)**, **[set.html](set)**, **[enum.html](enum)**, **[char.html](char)** and **[char.html](char)**(*n*) types."
     }
+  ],
+  "dependencies": [
+
   ]
 }

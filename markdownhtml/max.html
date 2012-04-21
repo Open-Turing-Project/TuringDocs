@@ -1,0 +1,35 @@
+<h1>max</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>max</strong> ( <em>expn</em> , <em>expn</em> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>max</strong> function is used to find the maximum of two numbers (the two <em>expn</em>'s). For example, <strong>max</strong> ( 5, 7 ) is 7. If both numbers are <strong>int</strong>, the result is <strong>int</strong>. If both numbers are <strong>nat</strong> (natural numbers), the result is <strong>nat</strong>. But if one or both of the numbers are <strong>real</strong>, the result is <strong>real</strong>. See also the <strong>min</strong> function.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs 85.72.</p>
+
+<pre><code>    var x : real := 74.61
+    var y : real := 85.72
+    put max ( x, y )        % Outputs 85.72
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program inputs 10 numbers and outputs their maximum.</p>
+
+<pre><code>    var m, t : real
+    get m           % Input first number
+    for i : 2 .. 10     % Handle remaining 9 numbers
+        get t
+        m := max ( m, t )
+    end for
+    put "The maximum is ", m
+</code></pre>
+
+<h2>See also</h2>
+
+<p>See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

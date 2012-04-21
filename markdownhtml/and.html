@@ -1,0 +1,35 @@
+<h1>and</h1>
+
+<h2>Syntax</h2>
+
+<p><em>A</em> <strong>and</strong> <em>B</em></p>
+
+<h2>Description</h2>
+
+<p>The <strong>and</strong> (boolean) operator yields a result of true if, and only if, both operands are true. The <strong>and</strong> operator is a short circuit operator. For example, if <em>A</em> is false in <em>A </em><strong>and</strong><em> B</em> then <em>B </em>is not evaluated.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var success : boolean := false
+    var continuing := true      % The type is boolean
+    &#133;
+    continuing := continuing and success
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <em>continuing</em> variable is set to <strong>true</strong> if, and only if, both <em>continuing</em> and <em>success</em> are <strong>true</strong>. Since Turing uses short circuit operators, once <em>continuing</em> is <strong>false</strong>, <em>success</em> will not be looked at.
+The <strong>and</strong> operator can also be applied to natural numbers. The result is the natural number that is the bit-wise <strong>and</strong> of the operands. See <strong>nat</strong> (natural number).</p>
+
+<h2>Example</h2>
+
+<p>This masks out the everything but the lower two bytes of <em>number</em>.</p>
+
+<pre><code>    var number : nat := 16#ABCD
+    var mask : nat := 16#FF
+    put number and mask     % Outputs 205 (CD16)
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="boolean">boolean.html</a></strong> (which discusses true/false values), <em><a href="explicitTrueFalseConstant">explicittruefalseconstant.html</a></em> (which discusses the values <strong><a href="true">true.html</a></strong> and <strong><a href="false">false.html</a></strong>), <em><a href="precedence">precedence.html</a></em> and <em><a href="expn">expn.html</a></em> (expression).</p>

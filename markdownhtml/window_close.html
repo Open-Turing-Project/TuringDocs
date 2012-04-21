@@ -1,0 +1,44 @@
+<h1>Window.Close</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Window.Close </strong>(<em>windowID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Window.Close </strong> procedure closes the window specified by the <em>windowID</em> parameter.</p>
+
+<h2>Example</h2>
+
+<p>The following program opens a window, makes it active and then closes the window after getting a keystroke from the user.</p>
+
+<pre><code>    % Open the window
+    var winID : int
+    winID := Window.Open ("position:300;300,graphics:200;200")
+
+    % Draw the random ovals in the box
+    var x, y, clr : int
+    for : 1 .. 20
+        x := Rand.Int (0, maxx)     % Random x
+        y := Rand.Int (0, maxy)     % Random y
+        clr := Rand.Int (0, maxcolor)   % Random color
+        Draw.FillOval (x, y, 30, 30, clr)
+    end for
+
+    var ch : char := getchar            % Wait for input
+
+    Window.Close (winID)            % Close the window
+</code></pre>
+
+<h2>Details</h2>
+
+<p>If a window is selected (i.e. output is going to that window) when it is closed, the main <strong>Run</strong> window becomes the selected window.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Window.Close</strong>, not by calling <strong>Close</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Window.Open">window_open.html</a></strong> and <strong><a href="Window.Select">window_select.html</a></strong>.</p>

@@ -1,0 +1,35 @@
+<h1>GUI.GetMenuBarHeight</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.GetMenuBarHeight</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar.</p>
+
+<h2>Example</h2>
+
+<p>The following program draws a red box in the window just belowe the menu bar.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var menu : int := GUI.CreateMenu ("File")
+    var item : int := GUI.CreateMenuItem ("Quit", GUI.Quit)
+
+    Draw.FillBox (0, 0, maxx, maxy  GUI.GetMenuBarHeight  2, 
+        brightred)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.GetMenuBarHeight</strong>, not by calling <strong>GetMenuBarHeight</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.CreateMenu">gui_createmenu.html</a></strong>.</p>

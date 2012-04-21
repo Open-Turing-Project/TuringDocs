@@ -38,5 +38,8 @@
       "text_content": " The execution of a result statement computes the value of the expression (expn) and terminates the function, returning the value as the value of the function.\r\nThe expression must be assignable to the result type of the function, for example, in double, 2*x is assignable to real. (See the assignmentStatement for the definition of assignable.)\r\nA function must terminate by executing a result statement and not by reaching the end of the function.\r\n",
       "mdown_content": "The execution of a **result** statement computes the value of the expression (*expn*) and terminates the function, returning the value as the value of the function.\nThe expression must be assignable to the result type of the function, for example, in *double*, 2**x* is assignable to **real**. (See the *assignmentStatement* for the definition of assignable.)\nA function must terminate by executing a **result** statement and not by reaching the end of the function."
     }
+  ],
+  "dependencies": [
+
   ]
 }

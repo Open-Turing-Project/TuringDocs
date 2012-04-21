@@ -29,5 +29,8 @@
       "text_content": " In a record, id's of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each typeSpec.\r\nAny array contained in a record must have bounds that are known at compile time.\r\nThe notation > can be used to access record fields. For example, if p is a pointer to phoneRecord, p>name locates the name field. See pointer.\r\n",
       "mdown_content": "In a record, *id'*s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each *typeSpec*.\nAny array contained in a record must have bounds that are known at compile time.\nThe notation > can be used to access record fields. For example, if *p* is a pointer to *phoneRecord*, *p*>*name* locates the *name* field. See **pointer**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

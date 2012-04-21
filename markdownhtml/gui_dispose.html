@@ -1,0 +1,35 @@
+<h1>GUI.Dispose</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.Dispose</strong> (<em>widgetID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Eliminates the widget specified by <em>widgetID</em>.
+If the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the <em>Hide</em> method and then the <em>Show</em> method when you want to use it again.</p>
+
+<h2>Example</h2>
+
+<p>The following program waits for the Quit button to be pressed. When it is, the Quit button is deleted and a message is displayed in the center of the screen.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI" 
+    View.Set ("graphics:150;100") 
+
+    var button, message : int
+
+    button := GUI.CreateButton (20, 40, 0, "Quit", GUI.Quit)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+
+    GUI.Dispose (button)
+    message := GUI.CreateLabelFull (0, 0, "Done", maxx, maxy, 
+        GUI.CENTER + GUI.MIDDLE, 0)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the procedure by calling <strong>GUI.Dispose</strong> , not by calling <strong>Dispose</strong> .</p>

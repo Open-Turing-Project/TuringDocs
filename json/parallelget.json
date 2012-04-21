@@ -41,5 +41,8 @@
       "text_content": " the parallelput procedure for a diagram of the pins. That procedure is used to set the values on the parallel port.\r\n",
       "mdown_content": "the **[parallelput.html](parallelput)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port."
     }
+  ],
+  "dependencies": [
+
   ]
 }

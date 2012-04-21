@@ -5,12 +5,18 @@
 A *moduleDeclaration* is:
  **module** *id*  [ **implement** *implementItem *]  [ **implement** **by** *implementByItem *]  [ **import** [ **var** ] *importItem*      {,* *[ **var** ]* importItem* } ]  [ **export** [ *howExport* ] *id* {,[*howExport* ]* id* }]  *statementsAndDeclarations* **end** *id*
 
+
+
 ##Description
 A module declaration creates a package of variables, constants, types, subprograms, etc. The name of the module (*id*) is given in two places, just after **module** and just after **end**. Items declared inside the module can be accessed outside of the module only if they are exported. Items from outside the module that are to be used in the module need to be imported (unless they are predefined or pervasive).
+
+
 
 ##Example
 This module implements a stack of strings.
 Outside of the *stack* module, the procedures *push* and *pop* can be called using the notation *stack.push *and *stack.pop*. This access is allowed because *push* and *pop* are *exported* from the module. Other items declared in the module (*top* and *contents*) cannot be accessed from outside because they are not exported.
+
+
         module stack            % Implements a LIFO list of strings
             export push, pop
         
@@ -42,8 +48,12 @@ A class is essentially a template for creating individual modules (objects). See
 The **opaque** keyword is used (only) in export lists to precede exported type names that have declarations in the module. Outside of the module, the type will be distinct from all others types. This means, for example, that if the opaque type is a record, its fields cannot be accessed outside of the module. Opaque types are used to guarantee that certain items are inspected and manipulated in only one place, namely, inside the module. These types are sometimes called *abstract data types*. See also **export** lists, which also describes **unqualified** and **pervasive** exports.
 **Implement** and i**mplement-by** lists are used to separate a module's interface from its body. This allows only a part of a module (its interface) to be visible to its users (its importers), while hiding its implementation. See **implement** and **implement** **by** lists.
 
+
+
 ##Example
 Use an **opaque** type to implement complex arithmetic.
+
+
         module complex
             export opaque value, constant, add,
                              other operations 
@@ -77,6 +87,8 @@ Use an **opaque** type to implement complex arithmetic.
 Module declarations can be nested inside other modules but cannot be nested inside procedures or functions. A module must not contain a **bind** as one of its (outermost) declarations. A **return** statement cannot be used as one of the (outermost) statements in a module.
 The syntax of a *moduleDeclaration* presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses; the full syntax* *is:
 The true/false expression in the **pre** and **post** clauses must be true when initialization reaches each of them. After that, these have no effect. The true/false expression in the **invariant** must be true any time the module is exited (when finishing initialization or when returning from an external call to an exported subprogram) or called (via an exported subprogram). These clauses (**pre**,**post** and **invariant**) are not inherited by expansions. For example, if module *B *inherits *A*,* *the subprograms of *B* are bound by *B*'s clauses and not by *A*'s.
+
+
         module id
             [ implement implementItem ]
             [ implement by implementByItem ]
@@ -90,3 +102,5 @@ The true/false expression in the **pre** and **post** clauses must be true when 
         end id
 ##See also
 **[unit.html](unit)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** list, i**mplement by** list, **[inherit.html](inherit)** list and **[deferred.html](deferred)** subprogram.
+
+

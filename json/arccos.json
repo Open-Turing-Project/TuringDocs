@@ -45,5 +45,8 @@
       "text_content": "the arcsin and arctan functions for calculating arcsine and arctangent.\r\nthe arccosd function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
       "mdown_content": "the **[arcsin.html](arcsin)** and **[arctan.html](arctan)** functions for calculating arcsine and arctangent.\nthe **[arccosd.html](arccosd)** function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

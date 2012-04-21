@@ -1,0 +1,29 @@
+<h1>explicitStringConstant</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>explicitStringConstant</em> is a sequence of characters surrounded by quotation marks.</p>
+
+<h2>Example</h2>
+
+<p>In the following, the explicit string constants are "Hello world", "" and "273 O'Reilly Ave.".</p>
+
+<pre><code>    var name : string := "Hello world"
+    name := ""      % Null string, containing zero characters
+    var address : string := "273 O'Reilly Ave."
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Within an explicit string constant (and within an explicit character constant), the back slash \ is used to represent certain other characters as follows:
+\"quotation mark character\n or \Nend of line character\t or \Ttab character\f or \Fform feed character\r or \Rreturn character\b or \Bbackspace character\e or \Eescape character\d or \Ddelete character\backslash character
+For example, <strong>put</strong> "<em>One\nTwo</em>" will output <em>One</em> on one line and <em>Two</em> on the next. In an explicit character constant (which is surrounded by single quotes, as in <em>'John'</em>), the backslash is not required before a double quote ", but it is required before a single quote ', as in these two constants:
+<em>'John said </em>"<em>Hello</em>"<em> to you'</em><em>'Don\'t cry'</em>.
+You can use the caret ^ to specify ASCII control characters, for example:
+'<sup>H'ASCII</sup> backspace character
+The caret specifies that the top three bits of the character are set to zero. For any character <em>c</em>, the following is true:
+'<sup>c'</sup> = chr (ord ('c') &amp; 2#11111)
+However if <em>c </em>is the question mark, as in '<sup>?',</sup> the bits are not turned off.
+Explicit string constants cannot cross line boundaries. To represent a string that is longer than a line, break it into two or more strings on separate lines and use catenation (+) to join the individual strings.
+An explicit string constant can contain at most 255 characters (this is in implementation constraint).
+String values are not allowed to contain characters with the code values of 0 or 128; these character values are called <em>eos </em>(end of string) and <em>uninitchar</em> (uninitialized character). These are reserved by the implementation to mark the end of a string value and to see if a string variable has been initialized.</p>

@@ -1,0 +1,32 @@
+<h1>Text.WhatColorBack</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Text.WhatColorBack</strong> :<em> </em><strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Text.WhatColorBack</strong> function is used to<strong> </strong>determine the current text background color. The alternate spelling is <strong>whatcolourback</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the currently-active background color number. The background color of the message is determined by this number.</p>
+
+<pre><code>    View.Set ("screen")
+    &#133;
+    put "The background of this writing"
+    put  "is in color number ", Text.WhatColorBack
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>" or<em> </em>"<em>graphics</em>" mode. Beware that the meaning of background color is different in these two modes. See <strong>Text.ColorBack </strong>for details.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Text.WhatColorBack</strong>, not by calling <strong>WhatColorBack</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Text.Color">text_color.html</a> </strong>and <strong><a href="Text.WhatColor">text_whatcolor.html</a></strong>.</p>

@@ -5,11 +5,17 @@
 An *preAssertion *is:
  **pre** *trueFalseExpn*
 
+
+
 ##Description
 A **pre** assertion is a special form of an **assert** statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the *trueFalseExpn*. The *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **post** and **invariant** assertions.
 
+
+
 ##Example
 This function computes the average of *n values*. Its **pre** condition requires that *n* must be strictly positive, to avoid the possibility of dividing by zero when computing the average.
+
+
         function average ( a : array 1 .. * of real, n : int) : real
             pre n > 0
             var sum : real := 0
@@ -21,5 +27,9 @@ This function computes the average of *n values*. Its **pre** condition requires
 ##Details
 A **pre** assertion can also be used in a **module**, **monitor**, **class** or **process** declaration to make sure that requirements for initialization are met.
 
+
+
 ##See also
 **[module.html](module)** and **[process.html](process)**.
+
+

@@ -38,5 +38,8 @@
       "text_content": " Sprite.Show.\r\n",
       "mdown_content": "**[sprite_show.html](Sprite.Show)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

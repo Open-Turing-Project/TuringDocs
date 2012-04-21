@@ -4,14 +4,22 @@
 ##Syntax
 **play** ( *music* : **string** )
 
+
+
 ##Description
 The **play** procedure is used to sound musical notes on the computer.
 
+
+
 ##Example
 This program sounds the first three notes of the C scale.
+
+
         play ( "cde" )
 ##Example
 This program plays from middle C to one octave above middle C and down again in 8th notes.
+
+
         play ( "8cdefgab>c" )
         play ( "<bagfedc" )
 ##Details
@@ -19,6 +27,10 @@ The **play** procedure takes strings containing characters that specify notes, r
 Under some systems such as UNIX, the **play** procedure may have no effect.
 The current (1999) implementation does not support play.
 
+
+
 ##See also
 the **[playdone.html](playdone)** function, which is used to see if a note has finished sounding. See also the **[sound.html](sound)** [procedure.html](procedure), which makes a [sound.html](sound) of a given frequency (Hertz) and duration (milliseconds).
 See also predefined unit **[musicmodule.html](Music)**.
+
+

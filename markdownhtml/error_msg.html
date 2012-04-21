@@ -1,0 +1,21 @@
+<h1>Error.Msg</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Error.Msg</strong> (<em>errorCode</em> : <strong>int</strong>): <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Error.Msg</strong> is a function that returns the error message related to a specified error code. If the error code is <em>eNoError</em>, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the error message associated with <em>eFsysFileNotFound</em> (&#147;File not found&#148;).</p>
+
+<pre><code>    put Error.Msg (eFsysFileNotFound)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Error.Msg</strong>, not by calling <strong>Msg</strong>.</p>

@@ -1,0 +1,36 @@
+<h1>getch</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>getch</strong> ( <strong>var</strong> <em>ch</em> : <strong>string</strong> ( 1 ) )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>getch</strong> procedure is used to input a single character without waiting for the end of a line. The parameter <em>ch</em> is set to the next character in the keyboard buffer (the oldest not-yet-read character).</p>
+
+<h2>Example</h2>
+
+<p>This program contains a procedure called <em>getKey </em>which causes the program to wait until a key is pressed.</p>
+
+<pre><code>    setscreen ("graphics")
+
+    procedure getKey
+        var ch : string (1)
+        getch (ch)
+    end getKey
+
+    for i : 1 .. 1000
+        put i : 4, " Pause till a key is pressed"
+        getKey
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>"<em> </em>or "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in one of these modes, it will automatically be set to "<em>screen</em>" mode.
+On IBM PC's some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by <strong>getch</strong> as their "scan code" with 128 added to them, unless the scan code already has a value of 128 or greater. This provides a unique value for every key on the keyboard. See Appendix D for these codes.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="hasch">hasch.html</a></strong> (has character) which is used to see if a character has been typed but <a href="not">not.html</a> yet <a href="read">read.html</a>.
+See also predefined unit <strong><a href="Input">inputmodule.html</a></strong>.</p>

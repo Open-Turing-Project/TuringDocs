@@ -59,5 +59,8 @@
       "text_content": " nargs, fetcharg and getenv functions.\r\nSee also predefined unit Sys.\r\n",
       "mdown_content": "**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)** functions.\nSee also predefined unit **[sysmodule.html](Sys)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

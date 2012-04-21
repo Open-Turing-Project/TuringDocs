@@ -1,0 +1,41 @@
+<h1>File.DiskFree</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.DiskFree</strong> (<em>pathName</em> : <strong>string</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>File.DiskFree</strong> gets the number of bytes for the disk upon which <em>pathName</em> resides. The <em>pathName</em> parameter can specify either a file or a directory. If it is the empty string, then <strong>File.DiskFree</strong> returns the number of bytes of free disk space on the disk upon which the execution directory resides.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>File.DiskFree</strong> call fails, then it returns -1. Also <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.
+If there is more than 2,147,483,647 bytes free on a disk, the <strong>File.DiskFree</strong> function returns 2,147,483,647.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the amount of space on the <em>A: </em>drive on a PC and in the execution directory.</p>
+
+<pre><code>    var bytesFree : int
+    bytesFree := File.DiskFree ("A:\\")
+    if bytesFree = -1 then
+        put "Can't get free space on drive A:."
+        put "Error: ", Error.LastMsg
+    else
+        put "There are ", bytesFree , " bytes free on drive A:" 
+    end if
+
+    bytesFree := File.DiskFree (".")
+    if bytesFree = -1 then
+        put "Can't get free space on default directory."
+        put "Error: ", Error.LastMsg
+    else
+        put "There are ", bytesFree , " bytes free on the default dir" 
+    end if
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.DiskFree</strong>, not by calling <strong>DiskFree</strong>.</p>

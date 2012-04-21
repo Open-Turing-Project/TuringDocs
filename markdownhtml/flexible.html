@@ -1,0 +1,24 @@
+<h1>flexible</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>flexible array</strong> <em>indexType</em> { , <em>indexType</em> } <strong>of</strong> <em>typeSpec</em></p>
+
+<h2>Description</h2>
+
+<p>The <strong>flexible</strong> keyword allows an array to be resized using <strong>new</strong> at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:
+The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).
+Additionally, the upper bound (both in the declaration and the <strong>new</strong> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <strong>new</strong>.
+In the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.
+Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;*****&#148; as the upper bound.</p>
+
+<pre><code>    new name , newUpper1 {,newUpper2}
+</code></pre>
+
+<h2>Example</h2>
+
+<p>See <strong>array</strong> for an example of <strong>flexible</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="array">array.html</a></strong> and <strong><a href="new">new.html</a></strong>.</p>

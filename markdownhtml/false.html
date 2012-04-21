@@ -1,0 +1,26 @@
+<h1>false</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>false</strong></p>
+
+<h2>Description</h2>
+
+<p>A <strong>boolean</strong> (<strong>true</strong>/<strong>false</strong>) variable can be either <strong>true</strong> or <strong>false</strong> (see <strong>boolean</strong> type).</p>
+
+<h2>Example</h2>
+
+<pre><code>    var found : boolean := false
+    var word : int
+    for i : 1 .. 10
+        get word
+        found := found or word = "gold"
+    end for
+    if found = true then
+        put "Found 'gold' in the ten words"
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The line <strong>if</strong> <em>found</em>=<strong>true</strong> <strong>then</strong> can be simplified to <strong>if</strong> <em>found </em><strong>then</strong> with no change to the meaning of the program.</p>

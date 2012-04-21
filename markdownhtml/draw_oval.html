@@ -1,0 +1,35 @@
+<h1>Draw.Oval</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.Oval</strong> (<em>x</em>, <em>y</em>, <em>xRadius</em>, <em>yRadius</em>, <em>Color</em> :<strong> int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.Oval </strong>procedure is used to draw an oval whose center is at (<em>x</em>, <em>y</em>). The horizontal and vertical distances from the center to the oval are given by <em>xRadius </em>and <em>yRadius</em>.</p>
+
+<p><img src="draw_oval01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a large oval that just touches each edge of the screen in magenta. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<em>midx</em>, <em>midy</em>), which is the middle of the screen.</p>
+
+<pre><code>    View.Set ("graphics")
+    const midx := maxx div 2
+    const midy := maxy div 2
+    Draw.Oval (midx, midy, midx, midy, magenta)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Ideally, a circle is drawn when <em>xRadius</em> = <em>yRadius</em>. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.
+The screen must be in a "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.Oval</strong>, not by calling <strong>Oval</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

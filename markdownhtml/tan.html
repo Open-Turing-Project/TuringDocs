@@ -1,0 +1,29 @@
+<h1>tan</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>tan</strong> ( <em>r</em> : <strong>real</strong> ) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>tan</strong> function is used to find the tangent of an angle given in radians. For example, <strong>tan</strong> (p/4) is 0.5.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians.</p>
+
+<pre><code>    for i : 0 .. 12
+        const angle := i * Math.PI / 6
+        put "Tangent of ", angle, " is ", tan ( angle )
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>An argument to <strong>tan</strong> of p/2, 3*p/2, etc. may result in an overflow (and halt of the program) as the result is technically &#165;. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="sin">sin.html</a></strong> and <strong><a href="cos">cos.html</a></strong> functions for calculating sine and cosine.
+the <strong><a href="tand">tand.html</a></strong> function which finds the tangent of an angle given in degrees. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

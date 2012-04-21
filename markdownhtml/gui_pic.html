@@ -1,0 +1,26 @@
+<h1>GUI.Pic...</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.PicDraw</strong> (<em>widgetID</em> : <strong>int</strong>, <em>picID</em>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>)
+<strong>GUI.PicNew</strong> (<em>widgetID</em> : <strong>int</strong>, <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>int</strong> ) : <strong>int</strong>
+<strong>GUI.PicScreenLoad</strong> (<em>widgetID</em> : <strong>int</strong>, <em>fileName</em> : <strong>string</strong>,<em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>)
+<strong>GUI.PicScreenSave</strong> (<em>widgetID</em> : <strong>int</strong>, <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>int</strong>,<em>fileName</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Performs a <em>Pic</em>&#133; command to the canvas specified by <em>widgetID</em>.
+All of these routines are essentially the same as the similarly-named procedures in the <em>Pic</em> module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface.</p>
+
+<h2>Example</h2>
+
+<p>See the <em>ScrollPic</em> program in <strong>GUI.CreateHorizontalScrollBarFull </strong>for an example of <strong>GUI.PicDraw</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the procedures by calling <strong>GUI.Pic&#133;</strong>, not by calling <strong>Pic&#133;</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong>GUI.CreateCanvas</strong>.</p>

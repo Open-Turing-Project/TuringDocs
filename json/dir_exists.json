@@ -29,5 +29,8 @@
       "text_content": "The following program determines if the directory \"d:/usr/west\" exists, and outputs an error message if it does not.\r\n",
       "mdown_content": "The following program determines if the directory \"d:/usr/west\" exists, and outputs an error message if it does not."
     }
+  ],
+  "dependencies": [
+
   ]
 }

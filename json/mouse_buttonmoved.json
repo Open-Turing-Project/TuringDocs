@@ -54,5 +54,8 @@
       "text_content": " Mouse.ButtonMoved to get mouse events saved in the queue. See also Mouse.ButtonChoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
       "mdown_content": "**[](Mouse.ButtonMoved)** to get mouse events saved in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\"."
     }
+  ],
+  "dependencies": [
+
   ]
 }

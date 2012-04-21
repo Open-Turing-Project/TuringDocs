@@ -1,0 +1,52 @@
+<h1>Pic.Blur</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Pic.Blur</strong> (<em>picID</em>, <em>blurAmount</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Pic.Blur</strong> is used to create a new picture by blurring anexisting picture. The resulting picture is created by mixing pixelsin a picture with pixels adjacent to it.  As the <em>blurAmount</em>increases, the image grows more and more blurry.</p>
+
+<h2>Details</h2>
+
+<p>Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.
+Note that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when <em>blurAmount</em> is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.</p>
+
+<h2>Example</h2>
+
+<p>The program creates a picture and then progressively blurs it.<strong>Output at start</strong>
+<strong>After several loops</strong></p>
+
+<p><img src="pic_blur01.gif" alt="Doc image" />
+<img src="pic_blur02.gif" alt="Doc image" /></p>
+
+<pre><code>    View.Set ("graphics:270;120,nobuttonbar")
+    % Create the original picture
+    var f := Font.New ("serif:60:bold,italic,noantialias")
+Font.Draw ("Turing", 10, 30, f, red)
+    Draw.FillStar (70, 80, 90, 100, brightgreen)
+    Draw.FillBox (240, 5, 270, 35, brightblue)
+
+    var oldPic : int
+    oldPic := Pic.New (0, 0, maxx, maxy)
+    loop
+            var newPic : int
+            % Create the new picture by blurring the old picture
+        newPic := Pic.Blur (oldPic, 10)
+        % Free the old picture so we don't run out of memory
+        Pic.Free (oldPic)
+            Pic.Draw (newPic, 0, 0, picCopy)
+            delay (300)
+            oldPic := newPic
+    end loop
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>By precalculating and saving the results of the blurred picture, youcan produce a visual effect where an object seems to come into focus.The program below blurs an image, saving each step.  It then draws the images in reverse order, making it appear as if the imageis becoming successively sharper.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Pic.Blur</strong>, not by calling <strong>Blur</strong>.</p>

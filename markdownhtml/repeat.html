@@ -1,0 +1,24 @@
+<h1>repeat</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>repeat</strong> ( <em>s</em> : <strong>string</strong>, <em>i</em> : <strong>int</strong> ) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>repeat</strong> function returns <em>i </em>copies of string <em>s </em>catenated together. For example, <strong>repeat</strong> ("X", 4) is <em>XXXX</em>.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs <em>HoHoHo</em>.</p>
+
+<pre><code>    var word : string := "Ho"
+    put repeat ( word, 3 )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>If <em>i</em> is less than or equal to zero, the null string "" is returned. The <strong>repeat</strong> function is often used for spacing of output. For example, this statement skips 20 blanks before outputting <em>x</em>.</p>
+
+<pre><code>    put repeat (" ", 20), x
+</code></pre>

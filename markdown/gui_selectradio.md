@@ -4,11 +4,17 @@
 ##Syntax
 **GUI.SelectRadio** (*widgetID* : **int**)
 
+
+
 ##Description
 Selects a radio button specified by *widgetID*. The previously-selected radio button is "de-selected". The *action procedure* of the radio button is called.
 
+
+
 ##Example
 The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected.
+
+
         import GUI in "%oot/lib/GUI" 
         View.Set ("graphics:350;110") 
         
@@ -51,5 +57,9 @@ The following program creates siz radio buttons. Selecting one of the buttons ca
 Exported qualified.
 This means that you can only call the procedures by calling **GUI.SelectRadio**, not by calling **SelectRadio**.
 
+
+
 ##See also
 **GUI.CreateRadioButton** and **GUI.CreatePictureRadioButton**.
+
+

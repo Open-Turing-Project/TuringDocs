@@ -1,0 +1,43 @@
+<h1>setscreen</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>setscreen</strong> ( <em>s</em> : <strong>string</strong> )</p>
+
+<h2>Example</h2>
+
+<p>Here are example uses of the <strong>setscreen</strong> procedure. In many cases, these will appear as the first statement of the program. They can, however,  appear any place in a program.</p>
+
+<pre><code>    setscreen ( "graphics" )            % Enter graphics mode
+    setscreen ( "graphics:400;300" )    % Change window to 400x300
+    setscreen ( "nocursor" )            % Turn off cursor
+    setscreen ( "noecho" )          % Do not echo keys
+</code></pre>
+
+<h2>Description</h2>
+
+<p>The <strong>setscreen</strong> statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to <strong>setscreen</strong> is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho".</p>
+
+<h2>Details</h2>
+
+<p>Users should look at <strong>View.Set</strong> in order to find out the implementation specified details of <strong>setscreen</strong> on their systems.
+There are two screen modes, <strong>text</strong> and <strong>graphics</strong>. In <strong>text</strong> mode, output to the window is only allowed using <strong>put</strong> and <strong>get</strong>. Attempting to use graphics or moving the cursor using <strong>locate</strong> will result in an error. However, a window in <strong>text</strong> mode will keep all text output sent to it. Any output that scrolls off the edge of the window can be read by adjusting the scroll bars of the window. Printing a <strong>text</strong> output window prints all the output sent to the window, not just the output currently visible in the window. Programs often use <strong>text</strong> mode when they are displaying large amounts of text data that the user may wish to view or print later. Saving the contents of a <strong>text</strong> output window creates a text file containing all the output sent to the window.
+In <strong>graphics</strong> mode, a program can use both <strong>put</strong> and <strong>get</strong>, <strong>locate</strong> and graphics commands to send output to the window. However, any output that scrolls off the window is lost. Printing the window outputs the current contents of the window. Saving a <strong>graphics</strong> output window saves the current contents of the window as a BMP file.
+Where the options to <strong>setscreen</strong> are mutually exclusive, they are listed here with the default underlined. Here are the options:
+"<strong>graphics</strong>", "<strong>text</strong>",  Sets the mode of the window to the given mode. A size can for the window can be specified at the same time. If the window mode or size changes, then the window will be cleared.
+To specify the size of a window in <strong>graphics</strong> mode, the <strong>graphics</strong> can have a modifier in the form "graphics:&lt;<em>width</em>>;&lt;<em>height</em>>". This sets the window to be &lt;<em>width</em>> pixels by &lt;<em>height</em>> pixels in size. The maximum size of a window is the size of the screen.
+To specify the size of a window in <strong>text</strong> mode, the <strong>text</strong> can have a modifier in the form "text:&lt;<em>rows</em>>;&lt;<em>columns</em>>". This sets the window to be &lt;<em>rows</em>> text lines in height by &lt;<em>columns</em>> characters in width. The maximum size of a window is the size of the screen.
+To set a window to the maximum size available on the screen, you can use "max" for the &lt;<em>width</em>>, &lt;<em>height</em>>, &lt;<em>rows</em>> or &lt;<em>columns</em>> parameters.
+"<strong>cursor</strong>", "<strong>nocursor</strong>"  Causes the cursor to be shown (or hidden). The cursor only appears when the program is waiting for keyboard input from the user.
+"<strong>echo</strong>", "<strong>noecho</strong>"  Causes (or suppresses) echoing of characters that are typed. Echoing is commonly turned off in interactive programs to keep typed characters from being echoed at inappropriate places on the screen.
+"<strong>nooffscreenonly</strong>", "<strong>offscreenonly</strong>"  Causes or (suppresses) output from being sent to the visible window. When the <strong>offscreenonly</strong> option is active, any text and graphics output is drawn to the offscreen buffer that is maintained for every Run window but not drawn to the screen. <strong>View.Update</strong> is then used to copy the entire contents of the offscreen buffer to the Run window. By allowing numerous drawing commands to be sent to the offscreen buffer and then updating the window at one time, it is possible to get smoother animation.
+"<strong>msdos</strong>", "<strong>nomsdos</strong>"  Causes the window to use theMS-DOS character set (with line drawing characters) instead of theWindows ANSI character set.  The "<strong>nomsdos</strong>" option causes thewindow to use the Windows ANSI character set.  Note that the "<strong>msdos</strong>" option only works if the Windows font (usually Courier New) supports it.
+"<strong>buttonbar</strong>", "<strong>nobuttonbar</strong>"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.</p>
+
+<h2>Example</h2>
+
+<p>This program creates a graphics window that is 300 pixels by 100 pixels.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="Draw">drawmodule.html</a></strong> module, the <strong>draw&#133;</strong> subprograms and the <strong><a href="View.Update">view_update.html</a></strong> procedure for doing smooth animation. See also <strong><a href="View.Set">view_set.html</a></strong> for further setscreen options including positioning the output window on the screen.</p>

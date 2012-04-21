@@ -1,0 +1,30 @@
+<h1>int</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>int</strong> (integer) type has the values &#133; 2, 1, 0, 1, 2 &#133; Integers can be combined by various operators such as addition (+) and multiplication (*). Integers can also be combined with <strong>real</strong> numbers, in which case the result is generally a real number. An integer can always be assigned to a real variable, with implicit conversion to <strong>real</strong>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var counter, i : int
+    var j : int := 9
+    var tax := 0        % The type is implicitly int because 0 is an integer
+</code></pre>
+
+<h2>Details</h2>
+
+<p>See also <em>explicitIntegerConstant</em>. The <strong>real</strong> type is used instead of <strong>int</strong> when values have fractional parts as in 16.837. See the <strong>real</strong> type for details.
+The operators on integers are +, -, * (multiply), <strong>div</strong> (truncating integer division), <strong>mod</strong> (integer remainder), <strong> (exponentiation), as well as comparisons (+, </strong>not=<strong>, >, >=, &lt;, &lt;=). The operators </strong>and<strong>, </strong>or<strong> and </strong>xor<strong> can be applied to non-negative integer values. The bit-wise boolean result is produced as an integer (actually, as a natural number). The </strong>shr<strong> (shift right) and </strong>shl<strong> (shift left) operators are also introduced.
+Real numbers can be converted to integers using </strong>ceil<strong> (ceiling), </strong>floor<strong>, and </strong>round<strong><em> </em>(see descriptions of these functions). Integers can be converted to real numbers using </strong>intreal<strong>, but in practice this is rarely used, because an integer value used in place of a real value will be automatically converted to real.
+Integers can be converted to strings and back using </strong>intstr<strong> and </strong>strint<strong>. Integers can be converted to corresponding ASCII (or EBCDIC) characters using </strong>chr<strong> and </strong>ord<strong>. See the descriptions of these functions.
+Pseudo-random sequences of integers can be generated using </strong>randint<strong>. See </strong>randint<strong>.
+In current implementations of Turing, the range of integers is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2</strong>31 - 1. See <strong>maxint</strong>. This range exists because integers are stored in 4 bytes. The remaining negative value, -2147483648 records uninitialization. The types <strong>int1</strong>, <strong>int2</strong> and <strong>int4</strong> specify integers that fit into 1, 2 or 4 bytes. The <strong>int</strong><em>n</em> types (<strong>int1</strong>, <strong>int2</strong> and <strong>int4</strong>) are not checked for initialization and allow all their bit patterns as numbers.
+The natural number type <strong>nat</strong><em> </em>allows only the non-negative values: 0,1,2,3,&#133; Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="nat">nat.html</a></strong> and <strong><a href="int"></a></strong><em>n</em>.</p>

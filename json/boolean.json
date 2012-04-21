@@ -63,5 +63,8 @@
       "text_content": " explicitTrueFalseConstant (which discusses the values true and false), precedence and expn (expression).\r\n",
       "mdown_content": "*[explicittruefalseconstant.html](explicitTrueFalseConstant)* (which discusses the values **[true.html](true)** and **[false.html](false)**), *[precedence.html](precedence)* and *[expn.html](expn) *(expression)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

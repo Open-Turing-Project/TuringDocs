@@ -1,0 +1,36 @@
+<h1>GUI.SetPosition</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetPosition</strong> (<em>widgetID</em>, <em>x</em>, <em>y</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Moves a widget specified by <em>widgetID </em>to the location (<em>x</em>, <em>y</em>). If the widget is visible, it is moved immediately to the new location. If the widget is hidden, it will appear at the new location when the <em>Show</em> procedure is called. Note that the <em>x</em> and <em>y</em> specified here are the same as in the <em>Create</em> method. For example, if you had specified a check box to be right justified in the <em>CreateCheckBoxFull</em> function, then (<em>x</em>, <em>y</em>) in a call to <em>SetPosition</em> would specify the lower-right corner as opposed to the lower-left corner.</p>
+
+<h2>Example</h2>
+
+<p>The following program moves the button every time the button is pressed.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var button : int
+
+    procedure MoveButton
+        var newX, newY : int
+        newX := Rand.Int (0, maxx  GUI.GetWidth (button))
+        newY := Rand.Int (0, maxy  GUI.GetHeight (button))
+        GUI.SetPosition (button, newX, newY)
+    end MoveButton
+
+    button := GUI.CreateButton (100, 100, 0, "Move Button", 
+        MoveButton)
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetPosition</strong>, not by calling <strong>SetPosition</strong>.</p>

@@ -1,0 +1,40 @@
+<h1>Sprite.ChangePic</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sprite.ChangePic</strong> (<em>spriteID</em>, <em>picID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Changes the picture associated with a sprite while maintaining the sprites height and visibility status. A typical use <strong>Sprite.ChangePic</strong> would be to animate a sprite that stays in position.</p>
+
+<h2>Example</h2>
+
+<p>Here is a program that t that loads six images from files <em>Pic1.bmp<strong> </strong></em>through<em><strong> </strong>Pic6.bmp</em> and then displays them sequentially in the center of the screen.</p>
+
+<pre><code>    var pics : array 0 .. 5 of int
+    var sprite: int
+    for i : 1 .. 6
+        pics (i  1) := Pic.FileNew ("Pic" + intstr (i) + ".bmp")
+        if Error.Last not= 0 then
+            put "Error loading image: ", Error.LastMsg
+            return
+        end if
+    end for
+    figure := Sprite.New (pics (0))
+    Sprite.SetPosition (sprite, maxx div 2, maxy div 2, true)
+    Sprite.Show (sprite)
+    for i : 1 .. 100
+        Sprite.ChangePic (sprite, pics (i mod 6))
+    end for
+    Sprite.Free (sprite)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sprite.ChangePic</strong>, not by calling <strong>ChangePic</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sprite.New">sprite_new.html</a></strong>.</p>

@@ -5,10 +5,16 @@
 A *functionDeclaration* is:
  **function** *id *[ ( [*paramDeclaration *{, *paramDeclaration* } ] ) ]       : *typeSpec*  *statementsAndDeclarations* **end** *id*
 
+
+
 ##Description
 A function declaration creates (but does not run) a new function. The name of the function (*id*) is given in two places, just after **function** and just after **end**.
 
+
+
 ##Example
+
+
 
         function doubleIt ( x : real ) : real
             result 2.0 * x
@@ -26,6 +32,8 @@ The syntax of a *functionDeclaration* presented above has been simplified by lea
 The *resultId* is the name of the result of the function and can be used only in the **post** condition.
 A function must be declared before being called; to allow for mutually recursive procedures and functions, there are **forward** declarations with later declaration of the procedure or function **body**. See **forward** and **body** declarations for explanations.
 You declare parameterless functions using an empty parameter list. When this is done, a call to the function must include an empty parameter list.
+
+
         function [ pervasive ] id
             [ ( [ paramDeclaration {,paramDeclaration } ] ) ] 
                 [ resultId ] : typeSpec
@@ -38,3 +46,5 @@ You declare parameterless functions using an empty parameter list. When this is 
 ##See also
 **[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and *exceptionHandler* for explanations of these additional features.
 See also **[pervasive.html](pervasive)**. 
+
+

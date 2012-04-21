@@ -26,5 +26,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Sprite.SetFrameRate, not by calling SetFrameRate.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.SetFrameRate**, not by calling **SetFrameRate**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

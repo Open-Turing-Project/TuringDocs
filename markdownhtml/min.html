@@ -1,0 +1,35 @@
+<h1>min</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>min</strong> ( <em>expn</em> , <em>expn</em> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>min</strong> function is used to find the minimum of two numbers (the two <em>expn</em>'s). For example, <strong>min</strong> ( 5, 7 ) is 5. If both numbers are <strong>int</strong>, the result is <strong>int</strong>. If both numbers are <strong>nat</strong> (natural numbers), the result is <strong>nat</strong>. But if one or both of the numbers are <strong>real</strong>, the result is <strong>real</strong>. See also the <strong>max</strong> function.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs 74.61.</p>
+
+<pre><code>    var x : real := 74.61
+    var y : real := 85.72
+    put min ( x, y )            % Outputs 74.61
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program inputs 10 numbers and outputs their minimum.</p>
+
+<pre><code>    var m, t : real
+    get m               % Input first number
+    for i : 2 .. 10         % Handle remaining 9 numbers
+        get t
+        m := min ( m, t )
+    end for
+    put "The minimum is ", m
+</code></pre>
+
+<h2>See also</h2>
+
+<p>See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

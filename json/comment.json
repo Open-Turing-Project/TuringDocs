@@ -23,5 +23,8 @@
       "text_content": " In the BASIC language, comments are called remarks and start with the keyword REM. In Pascal, comments are bracketed by (* and *).\r\n",
       "mdown_content": "In the BASIC language, comments are called *remarks *and start with the keyword REM. In Pascal, comments are bracketed by (* and *)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

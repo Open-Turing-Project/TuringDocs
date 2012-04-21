@@ -99,5 +99,8 @@
       "text_content": " module, monitor and unit. See also import list, export list, implement list, implement by list, and inherit list. See also deferred subprogram. See also anyclass and objectclass.\r\n",
       "mdown_content": "**[module.html](module)**, **[monitor.html](monitor)** and **[unit.html](unit)**. See also **[import.html](import)** list, **[export.html](export)** list, **[implement.html](implement)** list, **[implement_by.html](implement by)** list, and **[inherit.html](inherit)** list. See also **[deferred.html](deferred)** subprogram. See also **[anyclass.html](anyclass)** and **[objectclass.html](objectclass)**."
     }
+  ],
+  "dependencies": [
+    "class01.gif"
   ]
 }

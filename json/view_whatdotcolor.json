@@ -62,5 +62,8 @@
       "text_content": "Draw.Dot, which is used for setting \r\n          the color of a pixel. See also maxx and \r\n\t  maxy, which are used to determine the \r\n\t  number of pixels on the screen.\r\n    ",
       "mdown_content": "**[draw_dot.html](Draw.Dot)**, which is used for setting the color of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen."
     }
+  ],
+  "dependencies": [
+
   ]
 }

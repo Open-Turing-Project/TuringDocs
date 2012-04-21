@@ -1,0 +1,28 @@
+<h1>Time.Delay</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Time.Delay</strong> ( <em>duration</em> : <strong>int</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Time.Delay </strong>procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.</p>
+
+<h2>Example</h2>
+
+<p>This program prints the integers 1 to 10 with a second delay between each.</p>
+
+<pre><code>    for i : 1 .. 10
+        put i
+        Time.Delay ( 1000 ) % Pause for 1 second
+    end for
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Time.Delay</strong>, not by calling <strong>Delay</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Time.Elapsed">time_elapsed.html</a></strong> and <strong><a href="Time.ElapsedCPU">time_elapsedcpu.html</a></strong>.</p>

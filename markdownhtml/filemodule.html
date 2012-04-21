@@ -1,0 +1,25 @@
+<h1>File</h1>
+
+<h2>Description</h2>
+
+<p>This unit contains the predefined subprograms that deal with file manipulation on a whole-file basis (as opposed to manipulating the data in the file using <strong>open</strong> and <strong>close</strong>, etc.). These routines allow you to rename, copy and delete files, as well as get information about a file and get the free space on disk available for a file.
+All routines in the File module are exported qualified (and thus must be prefaced with "<strong>File.</strong>").</p>
+
+<h2>Entry Points</h2>
+
+<p><a href="**Exists**">file_exists.html</a>Returns whether a file exists.<a href="**FullPath**">file_fullpath.html</a>Returns the full absolute path name of a file.<a href="**Parent**">file_parent.html</a>Returns the parent directory of a file or directory.<a href="**Status**">file_status.html</a>Gets information about a file such as size, modification date, etc.<a href="**Copy**">file_copy.html</a>Copies a file to another location.<a href="**Rename**">file_rename.html</a>Renames a file or directory.<a href="**Delete**">file_delete.html</a>Deletes a file.<a href="**DiskFree**">file_diskfree.html</a>Gets the free space on the disk upon which a file or directory resides.</p>
+
+<h2>Details</h2>
+
+<p>On the PC, a path name of a file or a directory can use either the forward slash or backward slash to separate directory names. The drive must be followed by a colon. Thus the following are legal path names:
+On the Macintosh, a path name of a file or directory can use the standard Macintosh format of Volume Name:Directory Name:Directory Name:File Name or the Unix format of /Volume Name/Directory Name/Directory Name/File Name.  Note that the names can have spaces in them.
+On UNIX systems, the path name must correspond to the UNIX standard of using a forward slash between parts of the path.
+In general, you can achieve the greatest portability by using the UNIX standard for use in path names, as all Turing systems support it.</p>
+
+<pre><code>    x:\students\west\example.t
+    c:/turing/test.t
+    /west/binary.t  (uses the default drive).
+            HSA:Applications:Turing Files:example.t
+    /HSA/Applications/Turing Files/example.t
+            /export/home/west/turing/example.t
+</code></pre>

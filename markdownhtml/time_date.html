@@ -1,0 +1,34 @@
+<h1>Time.Date</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Time.Date</strong> : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Time.Date</strong> function returns the current date and time as a string. The returned string in the format "<em>dd mmm yy hh:mm:ss</em>", where <em>mmm</em> is the first 3 characters of the month, e.g., "<em>Apr</em>". For example, if the date is Christmas 1989 at 9:02:37 in the morning, <strong>Time.Date</strong> will return "<em>25 Dec 89 09:02:37</em>". Twenty-four hour time is used, so eleven thirty at night the same day would return "<em>25 Dec 89 23:30:00</em>"</p>
+
+<h2>Example</h2>
+
+<p>This program greets you and tells you the date and time.</p>
+
+<pre><code>    var theDateTime, theDate, theTime : string
+    theDateTime := Time.Date
+    theDate := theDateTime (1 .. 9)
+    theTime := theDateTime (11 .. *)
+    put "Greetings!!  The date and time today is ", Time.Date
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the <strong>Time.Date </strong>procedure will give incorrect results.
+The string form of the date can be converted to a numeric form for comparison purposes using the <strong>Time.DateSec</strong> function. The numeric form can be converted to a string using the <strong>Time.SecDate</strong> function. The numeric form of the time can be obtained using the <strong>Time.Sec</strong> function.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Time.Date</strong>, not by calling <strong>Date</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Time.Sec">time_sec.html</a></strong>, <strong><a href="Time.DateSec">time_datesec.html</a></strong> and <strong><a href="Time.SecDate">time_secdate.html</a></strong> functions.</p>

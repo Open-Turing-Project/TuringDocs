@@ -5,6 +5,8 @@
 An *infixOperator* is one of:
  (a)**+** *% Integer and real addition; set union;*    *% string catenation* (b)- *% Integer and real subtraction; set difference* (c)***** *% Integer and real multiplication; set intersection* (d)**/** *% Real division* (e)**div** *% Truncating integer division* (f)**mod** *% Modulo* (g)**rem** *% Remainder*  (h)****** *% Integer and real exponentiation* (i)**<** *% Less than* (j)**>** *% Greater than* (k)= *% Equal* (l)**<**= *% Less than or equal; subset* (m)**>**= *% Greater than or equal; superset* (n)**not=** *% Not equal* (o)**and** *% And (boolean conjunction)* (p)**or** *% Or (boolean disjunction)* (q)=**>** *% Boolean implication* (r)**in** *% Member of set* (s)**not** **in** *% Not member of set* (t)**shr** *% Shift right* (u)**shl** *% Shift left* (v)**xor** *% Exclusive OR*
 
+
+
 ##Description
 An *infix operator* is placed between two values or *operands* to produce a third value. For example, the result of 5 + 7 is 12. In some cases the meaning of the operator is determined by its operands. For example, in "pine" + "apple", the + operator means string catenation while in 5 + 7 it means integer addition. There are also *prefix operators* (-, + and **not**), which are placed in front of a single value. See *prefix operator*.
 In expressions with several operators, such as 3 + 4 * 5, the *precedence *rules determine the order in which the operation is done  (see *precedence *for a listing of these rules). In this example, the multiplication is done before the addition, so the expression is equivalent to 3 + (4 * 5).
@@ -16,3 +18,5 @@ Strings are manipulated using catenation (+) as well as substring expressions (s
 The operators to combine true/false values are **and**, **or**, and => (implication), as well as equality (= and **not=**). See also the **boolean** type.
 The set operators are union (+), intersection (*), set difference (-), subset (<=), superset (>=), and membership (**in** and **not** **in**). See also the **set** type.
 The **shr** (shift right), **shl** (shift left) and **xor** (exclusive OR) operators accept and produce natural numbers. See **shr**, **shl**, and **xor**.
+
+

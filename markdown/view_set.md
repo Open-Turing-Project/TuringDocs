@@ -4,8 +4,12 @@
 ##Syntax
 **View.Set** ( *s* : **string** )
 
+
+
 ##Example
 Here are example uses of the **View.Set** procedure. In many cases, these will appear as the first statement of the program. However, they can appear any place in a program.
+
+
         View.Set ("graphics")       % Switch to graphics mode
         View.Set ("screen")     % Switch to screen mode
         View.Set ("nocursor")       % Turn off cursor
@@ -13,11 +17,15 @@ Here are example uses of the **View.Set** procedure. In many cases, these will a
 ##Description
 The **View.Set** statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to **View.Set** is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho". **View.Set** affects the active window.
 
+
+
 ##Details
 There are two window modes, **text** and **graphics**.
 **text** mode does not allow any graphics whatsoever (including cursor positioning, etc.). Only **put** and **get** are allowed. Any output that scrolls off the top of the window is preserved and can viewed or printed later.
 **graphics** mode allows character graphics and pixel graphics commands such and **Text.Locate** and **Draw.Box**.
 The default graphics mode is defined in the Turing preferences. It is good practice to set the desired mode so that the program will function properly regardless of thedefault graphics mode. Note that if the user prints the output window, in **text** mode, all output sent to the window is printed. In **graphics** mode, only the current output of the window is printed. If the user saves the output window, a **text** mode window will produce a text file containing all the output sent to the window. A **graphics** window will produce a BMP graphics file containing the current contents of the window.
+
+
 
 ##Details
 Where the options to **View.Set** are mutually exclusive, they are listed here with the default underlined. Here are the options: 
@@ -36,11 +44,15 @@ The **screen** mode actually sets the window to **graphics** mode. It can have a
 The **graphics** mode can have a modifier in the form "graphics:<*width*>;<*height*>". This sets the window to be <*width*> by <*height*> pixels in size.
 To set a window to the maximum size available on the screen, you can use max for the <*width*>, <*height*>, <*rows*> or <*columns*> parameters. If the window requested is larger than will fit on the screen, the window will fill the entire screen and scroll bars will be added to the output window to allow the window user to see the rest of the window.
 
+
+
 ##Example
 This program creates a graphics window that is 300 pixels by 100 pixels.
 This program outputs the square roots for the first 200 numbers. The user can inspect all the output and print the values after the program has finished execution
 This program creates a window without a button bar at the top that is sized to fit the screen. It then draws an X in red in the window.
 This program resizes the window to 200x200, moves the output window to the bottom-left of the screen and hides the button bar. It then sets the window title to Bottom Left Window and outputs the word Hello.
+
+
         View.Set ("graphics:300;100")        View.Set ("text")
         for value : 1 .. 200
             put value : 3, "   ", sqrt (value)
@@ -52,6 +64,10 @@ This program resizes the window to 200x200, moves the output window to the botto
 ##See also
 **[setscreen.html](setscreen)** for further information. 
 
+
+
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **View.Set**, not by calling **Set**.
+
+

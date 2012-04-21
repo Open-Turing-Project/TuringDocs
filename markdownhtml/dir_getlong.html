@@ -1,0 +1,76 @@
+<h1>Dir.GetLong</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Dir.GetLong</strong> (<em>streamNumber</em> : <strong>int</strong>, <strong>var</strong> <em>entryName</em> : <strong>string</strong>,  <strong>var</strong> <em>size</em>, <em>attribute</em>, <em>fileTime</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Dir.GetLong</strong> is part of a series of four subprograms that help users get directory listings. <strong>Dir.GetLong</strong> is used to get the names and assorted information of the files in the directory. Each time the function is called, it returns the name and information of the next file in the directory. The names are not sorted. When there are no more file names in the directory, <strong>Dir.GetLong</strong> returns the empty string in the <em>entryName</em> parameter.
+The <em>size</em> parameter is the size of the file in bytes. The <em>attribute</em> parameter has its individual bits set as follows (the individual bits can be extracted using the <strong>bits</strong> operator):
+Bit 0  <em>attrDir</em>   set to 1 if entry is a directory.
+Bit 1  <em>attrRead</em>  set to 1 if the program can read the file.
+Bit 2  <em>attrWrite</em>  set to 1 if the program can write the file.
+Bit 3  <em>attrExecute</em>  set to 1 if the program can execute the file.
+Bit 4  <em>attrHidden</em>  set to 1 if the entry if a hidden file (PC, Mac).
+Bit 5  <em>attrSystem</em>  set to 1 if the entry is a system file (PC only).
+Bit 6  <em>attrVolume</em>  set to 1 if the entry is a volume name (PC only).
+Bit 7  <em>attrArchive</em>  set to 1 if the entry has archive bit set (PC only).
+The <em>attr...</em> constants are defined in the <strong>Dir</strong> unit. They correspond to the values of <em>attribute</em> if a specified bit is set.  For example, <em>attrSystem</em> is the value of the <em>attribute</em> parameter if bit 5 is set to 1. You can <strong>and</strong> or <strong>or </strong>these constants to get combinations of specific file attributes.
+The <em>fileTime</em> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <strong>Time.SecDate</strong></p>
+
+<h2>Details</h2>
+
+<p>If the <strong>Dir.GetLong</strong> call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>This program prints a listing of all the files in the directory <em>datafiles</em>.</p>
+
+<pre><code>    var streamNumber : int
+    var fileName : string
+    var size, attribute, fileTime : int
+    streamNumber := Dir.Open ("datafiles")
+    assert streamNumber &gt; 0
+    loop
+        Dir.GetLong (streamNumber, fileName, size, attribute, fileTime)
+        exit when fileName = ""
+        put fileName, "  ", Time.SecDate (fileTime)
+    end loop
+    Dir.Close (streamNumber)
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program prints a listing of the attributes of all the files in the current directory.</p>
+
+<pre><code>    var streamNumber : int
+    var fileName : string
+    var size, attribute, fileTime : int
+    streamNumber := Dir.Open (Dir.Current)
+    assert streamNumber &gt; 0
+    loop
+        Dir.GetLong (streamNumber, fileName, size, attribute, fileTime)
+        exit when fileName = ""
+        put fileName, "  "..
+        if (attribute and attrDir) not= 0 then
+            put "Directory  "..
+        end if
+        if (attribute and attrRead) not= 0 then
+            put "Readable  "..
+        end if
+        if (attribute and attrWrite) not= 0 then
+            put "Writeable  "..
+        end if
+        if (attribute and attrExecute) not= 0 then
+            put "Executable  "..
+        end if
+        put ""
+    end loop
+    Dir.Close (streamNumber)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Dir.GetLong</strong>, not by calling <strong>GetLong</strong>.</p>

@@ -32,5 +32,8 @@
       "text_content": " Rand.Seed, Rand.Int, Rand.Real and Rand.Next.\r\n",
       "mdown_content": "**[rand_seed.html](Rand.Seed)**, **[rand_int.html](Rand.Int)**, **[rand_real.html](Rand.Real)** and **[](Rand.Next)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,44 @@
+<h1>Music.PlayFileStop</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Music.PlayFileStop</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Music.PlayFileStop</strong> procedure is used to to stop all music files currently playing. This includes processes that areexecuting the <strong>Music.PlayFile</strong> procedure (they exit immediatelyand start executing the next statement in the process), and the<strong>Music.PlayFileReturn</strong> and <strong>Music.PlayFileLoop</strong>statements, which simply stop playing the music.</p>
+
+<h2>Details</h2>
+
+<p>In Turing, a program will not halt execution until all processes have terminated. This means that if you are playing background music, the program will not terminate, even if execution returns from the main program unless the background music is halted.</p>
+
+<h2>Example</h2>
+
+<p>This program plays the background music for 30 seconds and then terminates. Note that it is important to set the flag (<em>finished</em>) before calling <strong>Music.PlayFileStop</strong>. If <strong>Music.PlayFileStop</strong> comes first, it is possible for the process to return from <strong>Music.PlayFile</strong>, loop around, skip over the <strong>exit when</strong>, and call <strong>Music.PlayFile</strong> again before the <em>finished</em> flag is set.</p>
+
+<pre><code>    var finished : boolean := false
+
+% Loop playing background music until 'finished' is true.
+    process BackgroundMusic
+        loop
+            exit when finished
+            Music.PlayFile ("background.mid")
+        end loop
+    end BackgroundMusic
+
+    fork BackgroundMusic    % Start the background music
+    Time.Delay (30000)  % Wait for 30 seconds
+
+    % Stop the background music.
+    finished := true        % The flag must be set first
+    Music.PlayFileStop  % Music.PlayFile will return immediately
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="Music.PlayFile">music_playfile.html</a></strong> for playing music files and a larger example.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Music.PlayFileStop</strong>, not by calling <strong>PlayFileStop</strong>.</p>

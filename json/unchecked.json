@@ -41,5 +41,8 @@
       "text_content": " In the above example, the unchecked keyword requests that all checking, in particular, array bounds checking for array a, are to be omitted. The disabling lasts from the occurrence of the keyword unchecked to the end of the surrounding construct, in this case, until end for. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of checked to the end of the surrounding construct.\r\nIn the current (1999) implementation, the use of unchecked to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking.\r\n",
       "mdown_content": "In the above example, the **unchecked** keyword requests that all checking, in particular, array bounds checking for array *a*, are to be omitted. The disabling lasts from the occurrence of the keyword **unchecked** to the end of the surrounding construct, in this case, until **end** **for**. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of **checked** to the end of the surrounding construct.\nIn the current (1999) implementation, the use of **unchecked** to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking."
     }
+  ],
+  "dependencies": [
+
   ]
 }

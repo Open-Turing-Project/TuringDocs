@@ -69,5 +69,8 @@
       "text_content": "View.Update for information on how\r\n          to produce smooth animation.\r\n          Pic.DrawSpecial for information on how\r\n          to make pictures appear using special effects such as wipes and slides.\r\n          Pic.DrawFrames for information on how\r\n          to display multiple frame images such as are obtained from GIF files.\r\n    ",
       "mdown_content": "[view_update.html](View.Update) for information on howto produce smooth animation.\n[pic_drawspecial.html](Pic.DrawSpecial) for information on howto make pictures appear using special effects such as wipes and slides.\n[pic_drawframes.html](Pic.DrawFrames) for information on howto display multiple frame images such as are obtained from GIF files."
     }
+  ],
+  "dependencies": [
+    "pic_draw01.gif"
   ]
 }

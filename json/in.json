@@ -40,5 +40,8 @@
       "text_content": " the set type, infix operators, and precedence of operators.\r\n",
       "mdown_content": "the **[set.html](set)** type, *[infix.html](infix) operators*, and *[precedence.html](precedence) *of operators."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -4,14 +4,20 @@
 ##Syntax
 **setscreen** ( *s* : **string** )
 
+
+
 ##Example
 Here are example uses of the **setscreen** procedure. In many cases, these will appear as the first statement of the program. They can, however,  appear any place in a program.
+
+
         setscreen ( "graphics" )            % Enter graphics mode
         setscreen ( "graphics:400;300" )    % Change window to 400x300
         setscreen ( "nocursor" )            % Turn off cursor
         setscreen ( "noecho" )          % Do not echo keys
 ##Description
 The **setscreen** statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to **setscreen** is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho".
+
+
 
 ##Details
 Users should look at **View.Set** in order to find out the implementation specified details of **setscreen** on their systems.
@@ -28,8 +34,14 @@ To set a window to the maximum size available on the screen, you can use "max" f
 "**msdos**", "**nomsdos**"  Causes the window to use theMS-DOS character set (with line drawing characters) instead of theWindows ANSI character set.  The "**nomsdos**" option causes thewindow to use the Windows ANSI character set.  Note that the "**msdos**" option only works if the Windows font (usually Courier New) supports it.
 "**buttonbar**", "**nobuttonbar**"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.
 
+
+
 ##Example
 This program creates a graphics window that is 300 pixels by 100 pixels.
 
+
+
 ##See also
 the **[drawmodule.html](Draw)** module, the **draw** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen.
+
+

@@ -4,13 +4,19 @@
 ##Syntax
 **Time.SecParts **(*sec* : **int**, **var** *year*, *month*, *day*,    *dayOfWeek*, *hour*, *minute*, *second* : **int**)
 
+
+
 ##Description
 The **Time.SecParts** function is used to** **convert a single number form of the time (the number of seconds since 00:00:00 GMT Jan 1, 1970) into a date with numeric component parts.
 The *dayOfWeek* parameter is 1 for Monday, 2 for Tuesday through 7 for Sunday.
 If the *sec* parameter doesn't make any sense or can't be interpreted, then **Time.PartsSec** will set all the **var** parameters to  1 and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.
 
+
+
 ##Example
 This program returns the current day of the week.
+
+
         var year, month, day, dayOfWeek, hour, minute, second : int
         Time.SecParts (Time.Sec, year, month, day, dayOfWeek, 
                                 hour, minute, second )
@@ -21,3 +27,5 @@ This program returns the current day of the week.
 Exported qualified.
 This means that you can only call the function by calling **Time.SecParts** , not by calling **SecParts** .
 **See also** **Time.PartsSec**, **Time.Date** and **Time.Sec** functions.
+
+

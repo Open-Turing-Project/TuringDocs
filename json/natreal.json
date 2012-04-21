@@ -27,5 +27,8 @@
       "text_content": " nat. See also the intreal, floor, ceil and round functions.\r\n",
       "mdown_content": "**[nat.html](nat)**. See also the **[intreal.html](intreal)**, **[floor.html](floor)**, **[ceil.html](ceil)** and **[round.html](round)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

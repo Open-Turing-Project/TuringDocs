@@ -4,7 +4,11 @@
 ##Description
 Two types are *equivalent* to each other if they are essentially the same types (the exact rules are given below). When a variable is passed to a **var** formal parameter, the types of the variable and the formal parameter must be equivalent because they are effectively the same variable. When an expression is assigned to a variable, their types must be equivalent, except for special cases. For example, Turing allows you to assign an integer expression to a **real** variable (see *assignability *for details).
 
+
+
 ##Example
+
+
 
         var j : int
         
@@ -32,3 +36,5 @@ Two types are defined to be *equivalent *if they are:
 Each separate instance of a record, union or enumerated type (written out using one of the keywords **record**, **union** or **enum**) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.
 Opaque type *T*, exported from a module, monitor or class *M* as **opaque**, is a special case of equivalence. Outside of *M* this type is written *M*.*T*, and is considered to be distinct from all other types. By contrast, if type *U *is exported non-**opaque**, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type *M*.*T* outside of *M* if the item is declared using the type identifier *T*. Outside of *M*, the **opaque** type can be assigned, but not compared.
 It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in *i*,* j: ***int** instead of *i: ***int**,* j: ***int**.
+
+

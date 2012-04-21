@@ -47,5 +47,8 @@
       "text_content": " module, monitor and class. See also export list, import list, inherit list, implement list and implement by list.\r\n",
       "mdown_content": "**[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list."
     }
+  ],
+  "dependencies": [
+
   ]
 }

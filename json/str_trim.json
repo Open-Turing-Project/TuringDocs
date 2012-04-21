@@ -49,5 +49,8 @@
       "text_content": "Str.Lower and \r\n          Str.Upper.\r\n    ",
       "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_upper.html](Str.Upper)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

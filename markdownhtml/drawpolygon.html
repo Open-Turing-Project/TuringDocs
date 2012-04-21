@@ -1,0 +1,37 @@
+<h1>drawpolygon</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawpolygon</strong> (<em>x</em>, <em>y</em>  : <strong>array</strong> 1 .. * <strong>of</strong> <strong>int</strong>, <em>n</em> : <strong>int</strong>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawpolygon</strong> procedure is used to draw a polygon with <em>n</em> points. A line is drawn in <em>Color </em>from the point (<em>x</em>(1), <em>y</em>(1)) to (<em>x</em>(2), <em>y</em>(2)) to (<em>x</em>(3), <em>y</em>(3)) and so on. After drawing the line to (<em>x</em>(<em>n</em>), <em>y</em> (<em>n</em>)), a line will be drawn back to (<em>x</em>(1), <em>y</em>(1)), closing the polygon. The <strong>drawpolygon</strong> procedure is equivalent to:</p>
+
+<pre><code>    for i : 1 .. n - 1
+        drawline (x (i), y(i), x (i + 1), y (i + 1), Color)
+    end for
+    drawline (x (n), y (n), x (1), y (1), Color)
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program will create an octagon and display it in color 1.</p>
+
+<pre><code>    setscreen ("graphics")
+    var x : array 1..8 of int := init (100, 100, 135, 185, 
+                               220, 220, 185, 135)
+    var y : array 1..8 of int := init (100, 150, 185, 185,
+                               150, 100, 65, 65)
+    drawpolygon (x, y, 8, 1)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The IBM PC limits <strong>drawpolygon</strong> to a maximum of 256 points.
+The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

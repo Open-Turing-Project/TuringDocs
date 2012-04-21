@@ -4,11 +4,17 @@
 ##Syntax
 **GUI.SetColor** (*widgetID* : **int**, *clrNumber* : **int**)
 
+
+
 ##Description
 The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the *clrNumber*parameter.  The edges of the button are a darker version of the color specified by *clrNumber*, so in general you should usebrighter colors for buttons.
 
+
+
 ##Example
 This program displays three buttons with different colors.
+
+
 
         import GUI
 
@@ -28,3 +34,5 @@ This program displays three buttons with different colors.
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **GUI.SetColor**, not by calling **SetColor**.
+
+

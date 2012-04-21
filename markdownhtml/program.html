@@ -1,0 +1,50 @@
+<h1>program</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>program</em> is:
+<em>statementsAndDeclarations</em></p>
+
+<h2>Description</h2>
+
+<p>A Turing program consists of a list of statements and declarations.</p>
+
+<h2>Example</h2>
+
+<p>This is a complete Turing program. It outputs <em>Alan M. Turing</em>.</p>
+
+<pre><code>    put "Alan M. Turing"
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This is a complete Turing program. It outputs a triangle of stars.</p>
+
+<pre><code>    var stars : string := "*"
+    loop
+        put stars
+        stars := stars + "*"
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This is a complete Turing program. It outputs <em>Hello </em>once and <em>Goodbye</em> twice.</p>
+
+<pre><code>    procedure sayItAgain ( what : string, n : int )
+        for i : 1 .. n
+            put what
+        end for
+    end sayItAgain
+
+    sayItAgain ( "Hello", 1)
+    sayItAgain ( "Goodbye", 2 )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In a program there can be many units (see <strong>unit</strong>), one of which is the program (called the main program), the others of which are modules, monitors and classes. The main program is optionally preceded by an <strong>import</strong> list, which lists the units that it uses.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="import">import.html</a></strong> list.</p>

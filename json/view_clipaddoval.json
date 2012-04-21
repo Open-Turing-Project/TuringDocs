@@ -59,5 +59,8 @@
       "text_content": "View.ClipSet, \r\n          View.ClipAdd and \r\n          View.ClipOff \r\n          functions.",
       "mdown_content": "[view_clipset-2.html](**View.ClipSet**), [view_clipadd-2.html](**View.ClipAdd**) and [view_clipoff-2.html](**View.ClipOff**) functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

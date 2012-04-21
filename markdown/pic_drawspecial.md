@@ -4,6 +4,8 @@
 ##Syntax
 **Pic.DrawSpecial** (*picID*, *x*, *y*, *mode*, *transition*, *duration*  : **int**)
 
+
+
 ##Description
 **Pic.DrawSpecial** is used to draw a picture on the screen with aspecial effect such as a wipe, a slide, or a fade-in. The picture is drawn with the lower left corner at (*x*, *y*). The *duration* specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
 The *mode* parameter is the same as in **Pic.New** and has one of the following values:
@@ -27,6 +29,7 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, a
 **picFadeIn - half way through transition**
 *picBlend*This transition is somewhat different because it doesn't takeany time to execute.  Instead, *picBlend* causes thenew image to be blended with the background.  The *picBlend* constant can be used by itself, in which case,the final image is 70% the new image, 30% the old image.  Youcan also add a number from 1 to 100 to *picBlend*, in which case, the blend is whatever was added from (1-100) ofthe new image over top of the old image.  (i.e. a transitionof *picBlend* + 15 would display an image that is composed of 15% the new image and 85% the old image.)
 **picBlend - red star blended with blue circle**
+
 ![Doc image](pic_drawspecial01.gif)
 ![Doc image](pic_drawspecial05.gif)
 ![Doc image](pic_drawspecial06.gif)
@@ -37,16 +40,23 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, a
 ![Doc image](pic_drawspecial03.gif)
 ![Doc image](pic_drawspecial04.gif)
 
+
 ##Details
 The **Pic.DrawSpecial** requires a moderately fast machine to operate successfully (Pentium III or higher). The *picFadeIn*and *picBlend* transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the *Display* control panel from the *Start* menu.  You can also use the
       **Config.Display** (**cdNumMaxColors**)
 function to determine the bit-depth of the display (anything **over** 256 colors will produce acceptable results).
 
+
+
 ##Details
 If the **Pic.DrawSpecial** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
+
+
 ##Example
 The program draws a blue star on the screen, then a red circle, thenproceeds to have to have the two replace each other with a variety oftransitions.
+
+
 
         var redID, blueID: int
         var x, y : int
@@ -66,10 +76,16 @@ The program draws a blue star on the screen, then a red circle, thenproceeds to 
 ##Execute
 The following program demonstrates each of the different special effects, first using pictures containing text, then picturesloaded from photographs, then both at once.
 
+
+
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Pic.DrawSpecial**, not by calling **DrawSpecial**.
 
+
+
 ##See also
 **[pic_draw.html](Pic.Draw)** for information on the meaningof the *mode* argument.
 **[pic_drawspecialback.html](Pic.DrawSpecialBack)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once.
+
+

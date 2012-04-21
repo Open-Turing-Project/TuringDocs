@@ -1,0 +1,38 @@
+<h1>Music.Sound</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Music.Sound</strong> ( <em>frequency</em>, <em>duration</em> : <strong>int </strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Music.Sound </strong>statement is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so <strong>Music.Sound</strong>(440, 1000) plays middle A for one second.
+Sounds are produced synchronously on a per process basis. This means that when a process executes a <strong>Music.Sound</strong> or <strong>Music.Play</strong> command, it stops until the command is finished. However, other processes will continue executing.</p>
+
+<h2>Example</h2>
+
+<p>This program plays a siren sound in the background.</p>
+
+<pre><code>    process siren
+        loop
+            for i : 100 .. 3000 by 100
+                Music.Sound ( i, 50 )   % Sound note
+            end for
+            for decreasing i : 2900 .. 200 by 100
+                Music.Sound ( i, 50 )   % Sound note
+            end for
+        end loop
+    end siren
+
+    fork siren
+    &#133; the rest of the program goes here while the siren continues &#133;
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Music.Sound</strong>, not by calling <strong>Sound</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Music.Play">music_play.html</a></strong> statement, which plays notes based on musical notation. For example, <strong><a href="Music.Play">music_play.html</a></strong>("8C") plays an eighth note of middle C.</p>

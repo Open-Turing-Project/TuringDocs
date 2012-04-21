@@ -1,0 +1,31 @@
+<h1>Str.Lower</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Str.Lower</strong> (<em>s</em> : <strong>string</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Str.Lower</strong> function takes the string <em>s</em> and returnsa string in which all the upper case letters are converted to lower case. For example, Str.Lower ("ABC123def") returns"abc123def".</p>
+
+<h2>Example</h2>
+
+<p>This program obtains lines of text from the user and outputs thelines converted to lower case.</p>
+
+<pre><code>    var line : string
+    loop
+        put "Enter a line of text (empty to quit): " ..
+        get line : *
+        exit when line = ""
+        put "The lower case version: ", Str.Lower (line)
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Str.Lower</strong>, not by calling <strong>Lower</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Str.Upper">str_upper.html</a></strong> and <strong><a href="Str.Trim">str_trim.html</a></strong>.</p>

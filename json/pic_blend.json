@@ -48,5 +48,8 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Blend, not by calling Blend.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Blend**, not by calling **Blend**."
     }
+  ],
+  "dependencies": [
+    "pic_blend01.gif"
   ]
 }

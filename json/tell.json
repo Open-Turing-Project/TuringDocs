@@ -38,5 +38,8 @@
       "text_content": " the read, write, open, close, seek, get and put statements.\r\n",
       "mdown_content": "the **[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[seek.html](seek)**, **[get.html](get)** and **[put.html](put)** statements."
     }
+  ],
+  "dependencies": [
+
   ]
 }

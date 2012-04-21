@@ -1,0 +1,32 @@
+<h1>RGB.maxcolor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>maxcolor</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>maxcolor</strong> function is used to<strong> </strong>determine the maximum color number for the current mode of the screen. The alternate spelling is <strong>maxcolour</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the maximum color number.</p>
+
+<pre><code>    setscreen ("graphics")
+    &#133;
+    put "The maximum color number is ", maxcolor
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>screen</em>"<em> </em>or "<em>graphics</em>" mode. If it is not, it will automatically be set to "<em>screen</em>" mode. See <strong>View.Set </strong>for details.
+For IBM PC compatibles in "<em>screen</em>"<em> </em>mode, <strong>maxcolor</strong> = 15. For the default IBM PC compatible "<em>graphics</em>" mode (CGA), <strong>maxcolor</strong> = 3.</p>
+
+<h2>Status</h2>
+
+<p>Exported unqualified.
+This means that you can call the function by calling <strong>maxcolor</strong> or by calling <strong>RGB.maxcolor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Draw.Dot">draw_dot.html</a></strong> for examples of the use of <strong><a href="maxcolor">maxcolor.html</a></strong>. See the <strong><a href="Text.Color">text_color.html</a></strong> <a href="procedure">procedure.html</a> which is used for setting the currently-active <a href="color">color.html</a>.</p>

@@ -1,0 +1,26 @@
+<h1>arctand</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>arctand</strong> (<em>r</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>arctand</strong> function is used to find the arc tangent of an angle given in degrees. For example, <strong>arctand</strong> (0) is 0.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the arctangent of values from 0 to 3 in degrees.</p>
+
+<pre><code>    for i : 0 .. 12
+        const arg := i / 4
+        put "Arc tangent of ", arg, " is ",
+            arctand (arg), " degrees"
+    end for
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="arcsind">arcsind.html</a></strong> and <strong><a href="arccosd">arccosd.html</a></strong> functions for calculating arcsine and arccosine
+the <strong><a href="arctan">arctan.html</a></strong> function which finds the arc tangent of a value with the result given in radians. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

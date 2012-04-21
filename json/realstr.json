@@ -27,5 +27,8 @@
       "text_content": " the erealstr, frealstr, strreal, intstr and strint functions.\r\n",
       "mdown_content": "the **[erealstr.html](erealstr)**, **[frealstr.html](frealstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

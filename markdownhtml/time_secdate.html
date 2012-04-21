@@ -1,0 +1,30 @@
+<h1>Time.SecDate</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Time.SecDate</strong> (<em>timeInSecs</em> : <strong>int</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Time.SecDate</strong> function is used to<strong> </strong>convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string.
+If <em>timeInSecs </em>is incorrect or can't be interpreted, then <strong>Time.SecDate</strong> will return the empty string and <strong>Error.Last </strong>and<strong> Error.LastMsg</strong> will be set to the appropriate error.</p>
+
+<h2>Example</h2>
+
+<p>This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form.</p>
+
+<pre><code>    var timeInSecs : int := Time.Sec
+    var theDateTime: string
+    theDateTime := Time.SecDate (timeInSecs)
+    put "The number of seconds since 1970 is ", timeInSecs 
+    put "Greetings!!  The date and time today is ", theDateTime
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Time.SecDate</strong>, not by calling <strong>SecDate</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Time.Sec">time_sec.html</a></strong>, <strong><a href="Time.Date">time_date.html</a></strong> and <strong><a href="Time.DateSec">time_datesec.html</a></strong> functions.</p>

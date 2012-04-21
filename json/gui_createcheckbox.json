@@ -65,5 +65,8 @@
       "text_content": "GUI.SetLabel for changing the chec box's text and GUI.GetCheckBox and GUI.SetCheckBox for reading and setting the check box's state.\r\n    ",
       "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the chec box's text and **[gui_getcheckbox.html](GUI.GetCheckBox)** and **[gui_setcheckbox.html](GUI.SetCheckBox)** for reading and setting the check box's state."
     }
+  ],
+  "dependencies": [
+    "gui_createcheckbox_full01.gif"
   ]
 }

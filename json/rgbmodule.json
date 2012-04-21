@@ -40,5 +40,8 @@
       "text_content": "GetColorGetColour\r\n\t       \r\n\t      Gets the current red, green and blue values of a specified color number.\r\n\t    SetColorSetColour\r\n\t       \r\n\t      Sets the red, green and blue values of a specified color number.\r\n\t    AddColorAddColour\r\n\t       \r\n\t      Creates a new color number with a specified red, green and blue value.\r\n\t    ",
       "mdown_content": "[rgb_getcolor.html](**GetColor**)[rgb_getcolor.html](**GetColour**) Gets the current red, green and blue values of a specified color number.[rgb_setcolor.html](**SetColor**)[rgb_setcolor.html](**SetColour**) Sets the red, green and blue values of a specified color number.[rgb_addcolor.html](**AddColor**)[rgb_addcolor.html](**AddColour**) Creates a new color number with a specified red, green and blue value."
     }
+  ],
+  "dependencies": [
+
   ]
 }

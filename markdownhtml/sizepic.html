@@ -1,0 +1,29 @@
+<h1>sizepic</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>sizepic</strong> ( <em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>sizepic</strong> function is used to determine the size buffer needed to record a picture from the screen (see description of <strong>takepic</strong> ). This gives the minimum number of elements of the int array used by <strong>takepic</strong>. The buffer is used by <strong>drawpic</strong> to make copies of the picture on the screen.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs the size of array needed to hold a picture with left bottom corner at x=10, y=20 and right top corner at x=50, y=60.</p>
+
+<pre><code>    setscreen ("graphics")
+    &#133;
+    put "The size of the array needs to be",
+        sizepic ( 10, 20, 50, 60 )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>See <strong>takepic</strong> for an example of the use of <strong>sizepic</strong> and for further information about buffers for drawing pictures.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="drawpic">drawpic.html</a></strong>. See also <strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong>, <strong><a href="drawdot">drawdot.html</a></strong>, <strong><a href="drawline">drawline.html</a></strong>, <strong><a href="drawbox">drawbox.html</a></strong>, and <strong><a href="drawoval">drawoval.html</a></strong>.
+See also predefined unit <strong><a href="Pic">picmodule.html</a></strong>.</p>

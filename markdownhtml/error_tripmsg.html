@@ -1,0 +1,26 @@
+<h1>Error.TripMsg</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Error.TripMsg</strong> (<em>errorCode</em> : <strong>int</strong>, <em>errorMessage</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Error.TripMsg</strong> is a procedure that sets the error number anderror message that is returned by <strong>Error.Last</strong> and <strong>Error.LastMsg</strong>. It does not halt the program.
+You can find a list of constants for the legal error codes in the module <strong>ErrorNum</strong>. Any call to <strong>Error.TripMsg</strong> should use a constant found in the <strong>ErrorNum</strong> module or zero, if the errorcode is not relevant (i.e. only the error message is relevant).</p>
+
+<h2>Example</h2>
+
+<p>This program sets an error code. The program outputs 201 for the errornumber and "File <em>really</em> not found" for the message.</p>
+
+<pre><code>    Error.TripMsg (eFsysFileNotFound, "File *really* not found")
+    put "Error code = ", Error.Last
+    put "Error message = ", Error.LastMsg
+</code></pre>
+
+<h2>Execute</h2>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Error.TripMsg</strong>, not by calling <strong>TripMsg</strong>.</p>

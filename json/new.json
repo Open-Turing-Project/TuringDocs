@@ -84,5 +84,8 @@
       "text_content": " class and collection declarations, pointer type, free statement, nil value and implement by list.\r\nFor flexible arrays, see also array and flexible.\r\n",
       "mdown_content": "**[class.html](class)** and **[collection.html](collection)** declarations, **[pointer.html](pointer)** type, **[free.html](free)** [statement.html](statement), **[nil.html](nil)** value and **[implement_by.html](implement by)** list.\nFor [flexible.html](flexible) arrays, see also **[array.html](array)** and **[flexible.html](flexible)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

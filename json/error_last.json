@@ -39,5 +39,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Error.Last, not by calling Last.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.Last**, not by calling **Last**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

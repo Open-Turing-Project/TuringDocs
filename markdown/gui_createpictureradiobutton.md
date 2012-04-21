@@ -5,6 +5,8 @@
 **GUI.CreatePictureRadioButton** (*x*, *y*, *picture* : **int**,    *joinID* : **int**, *actionProc* : **procedure** *x* ()):**int**
 **GUI.CreatePictureRadioButtonFull** (*x*, *y* : **int**,    *picture, joinID* : **int**, *actionProc* : **procedure** *x* (), *width*,*height* : **int**,    *shortcut* : **char**, *mergePic* : **boolean**) : **int**
 
+
+
 ##Description
 Creates a picture radio button and returns the button's widget ID. 
 Picture radio buttons behave like picture buttons (see **GUI.CreatePictureButton**) except that they have the "radio" property. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected. 
@@ -14,10 +16,14 @@ A radio group is created by first creating a single radio button. To add another
 The picture must be created by the program beforehand using **Pic.New** or **Pic.FileNew**. The resulting picture can then be used as a parameter to **GUI.CreatePictureButton***.* In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library. 
 The *x* and *y* parameters specify the lower-left corner of the picture radio button. If these are both 1 and *joinID* is not zero, then the button will be placed directly below the previous picture radio button in the group. The *picture* parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a **Pic.New** or **Pic.FileNew** call. Do not call **Pic.Free** for this picture ID until the button has been disposed of by calling **GUI.Dispose**. The *joinID* parameter specifies a member of the radio group that this widget should join. A *joinID* of 0 sepecifies this radio button is not a member of any group. The *actionProc* parameter specifies the name of a procedure that is called when the picture button is pressed.
 For **GUI.CreatePictureRadioButtonFull**, the *width* and *height* parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the **GUI.GetWidth** and **GUI.GetHeight** functions. If *width* and *height* are larger than the picture, the picture is centered in the button. The *shortCut*parameter is the keystroke to be used as the button's shortcut. The *mergePic* parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for *CreatePictureRadioButton*.
+
 ![Doc image](gui_createpictureradiobutton_full01.gif)
+
 
 ##Example
 The following program creates and displays for picture radio buttons.
+
+
 
         import GUI
         View.Set ("graphics:150;200,nobuttonbar") 
@@ -102,13 +108,21 @@ The following program creates and displays for picture radio buttons.
 When **GUI.CreatePictureRadioButton** or **GUI.CreatePictureRadioButtonFull*** *is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. 
 When a picture radio button is not enabled, the picture radio button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
+
+
 ##Details
 The following GUI subprograms can be called with a picture radio button as the *widgetID* parameter:
  **GUI.Show**,** GUI.Hide**,** GUI.Enable**,** GUI.Disable**,** GUI.Dispose**,** GUI.GetX**,** GUI.GetY**,** GUI.GetWidth**,** GUI.GetHeight**,** GUI.SetPosition**,** GUI.SetSize**,** GUI.SetPositionAndSize**, **GUI.SelectRadio**
+
+
 
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **GUI.CreatePictureRadioButton**, not by calling **CreatePictureRadioButton**.
 
+
+
 ##See also
 **[gui_selectradio.html](GUI.SelectRadio)** for selecting a picture radio button in a program. See also **[gui_createpicturebutton_full.html](GUI.CreatePictureButton)** and **[gui_createradiobutton_full.html](GUI.CreateRadioButton)** for information on picture buttons and radio buttons.
+
+

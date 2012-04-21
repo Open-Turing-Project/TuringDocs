@@ -1,0 +1,12 @@
+<h1>Limits</h1>
+
+<h2>Description</h2>
+
+<p>This unit contains constants and functions used in determining the mathematical accuracy of the language.
+All routines in the Limits module are exported qualified (and thus must be prefaced with "<strong>Limits.</strong>") except <strong>maxint</strong>, <strong>maxnat</strong>, <strong>minint</strong> and <strong>minnat</strong>, which are exported unqualified (this means you can call those entry points directly).</p>
+
+<h2>Entry Points</h2>
+
+<p><a href="**DefaultFW**">limits_defaultfw.html</a>Default fraction width used in printing using the "put" statement.<a href="**DefaultEW**">limits_defaultew.html</a>Default exponent width used in printing using the "put" statement.<a href="**minint**">limits_minint.html</a>The minimum integer in Turing (exported unqualified).<a href="**maxint**">limits_maxint.html</a>The maximum integer in Turing (exported unqualified).<a href="**minnat**">limits_minnat.html</a>The minimum natural number in Turing (exported unqualified).<a href="**maxnat**">limits_maxnat.html</a>The maximum natural number in Turing (exported unqualified).
+<strong>Real numbers are represented in Turing  as:</strong><strong>f * (radix </strong> e)   or  0<strong><strong>where for non-zero f:</strong></strong>(1 / radix) &lt;= abs (f) and abs (f) &lt; 1.0<strong><strong>minexp &lt;= e and e &lt;= maxexp</strong>.
+</strong>Radix<strong>The "radix" (usually 2).</strong>NumDigits<strong>The number of radix digits in f.</strong>MinExp<strong>"minexp" (the smallest exponent allowed).</strong>MaxExp<strong>"maxexp" (the largest exponent allowed).</strong>GetExp<strong>Function that returns the value of "e".</strong>SetExp<strong>Procedure that sets the value of "e".</strong>Rreb**The relative round-off error bound.</p>

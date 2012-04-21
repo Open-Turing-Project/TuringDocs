@@ -44,5 +44,8 @@
       "text_content": " drawdot, which is used for setting the color of a pixel. See also maxx and maxy, which are used to determine the number of pixels on the screen. See also sound, which causes the computer to make a sound.\r\nSee also predefined unit View.\r\n",
       "mdown_content": "**[drawdot.html](drawdot)**, which is used for setting the [color.html](color) of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen. See also **[sound.html](sound)**, which causes the computer to make a [sound.html](sound).\nSee also predefined unit **[viewmodule.html](View)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -29,5 +29,8 @@
       "text_content": " The not operator takes true and produces false and takes false and produces true. The not operator can be written as ~. See also the boolean type, prefix operators, and precedence of operators.\r\nThe not operator can be applied to sets.\r\n",
       "mdown_content": "The **not** operator takes **true** and produces **false** and takes **false** and produces **true**. The **not** operator can be written as ~. See also the **boolean** type, *prefix operators*, and *precedence *of operators.\nThe **not** operator can be applied to sets."
     }
+  ],
+  "dependencies": [
+
   ]
 }

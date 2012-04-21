@@ -1,0 +1,29 @@
+<h1>drawarc</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawarc</strong> (<em>x</em>, <em>y</em>, <em>xRadius</em>, <em>yRadius</em> : <strong>int</strong>, <em>initialAngle</em>, <em>finalAngle</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawarc</strong> procedure is used to draw an arc whose center is at (<em>x</em>, <em>y</em>). This is just like <strong>drawoval</strong>, except that you must also give two angles, <em>initialAngle </em>and <em>finalAngle</em>, which determine where to start and stop drawing. Zero degrees is "three o'clock", 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <em>xRadius </em>and <em>yRadius</em>.</p>
+
+<p><img src="drawarc01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a semicircle (actually, an approximation to a semicircle) whose center is (<em>midx</em>,0) the bottom center of the screen, using color number 1. The <strong>maxx</strong> and <strong>maxy</strong> functions are used to determine the maximum x and y values on the screen.</p>
+
+<pre><code>    setscreen ("graphics")
+    const midx := maxx div 2
+    drawarc (midx, 0, maxy, maxy, 0, 180, 1)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

@@ -39,5 +39,8 @@
       "text_content": " Window.GetPosition to get the current window position and Config.Display to get the size of the screen.\r\n",
       "mdown_content": "**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen."
     }
+  ],
+  "dependencies": [
+
   ]
 }

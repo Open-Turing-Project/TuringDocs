@@ -4,10 +4,16 @@
 ##Syntax
 **false**
 
+
+
 ##Description
 A **boolean** (**true**/**false**) variable can be either **true** or **false** (see **boolean** type).
 
+
+
 ##Example
+
+
 
         var found : boolean := false
         var word : int
@@ -20,3 +26,5 @@ A **boolean** (**true**/**false**) variable can be either **true** or **false** 
         end if
 ##Details
 The line **if** *found*=**true** **then** can be simplified to **if** *found ***then** with no change to the meaning of the program.
+
+

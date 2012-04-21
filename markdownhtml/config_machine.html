@@ -1,0 +1,27 @@
+<h1>Config.Machine</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Config.Machine</strong> (<em>machineCode</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Config.Machine</strong> returns information about the machine that the program is currently running on. The parameter <em>machineCode</em> determines what sort of information is passed back. <em>machineCode</em> has a number of possible values, all summarized by a set of predefined constants.
+At the time of this writing, the following constants were defined:
+<em>cmProcessor</em>return an encoding of the processor number.<em>cmFPU</em>return 1 if there is an FPU installed, 0 if not.<em>cmOS</em>return the current version number of the operating system (e.g. 6.07 = 607).</p>
+
+<h2>Example</h2>
+
+<p>This program prints whether the machine has an FPU or not.</p>
+
+<pre><code>    if Config.Machine (cmFPU) = 1 then
+        put "The machine has an FPU installed"
+    else
+        put "The machine does not have an FPU installed"
+    end if
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Config.Machine</strong>, not by calling <strong>Machine</strong>.</p>

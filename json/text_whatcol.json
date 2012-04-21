@@ -48,5 +48,8 @@
       "text_content": " the Text.WhatRow function, which is used to determine the cursor row. See also the Text.Locate, Text.maxrow and Text.maxcol procedure.\r\n",
       "mdown_content": "the **[text_whatrow.html](Text.WhatRow) **function, which is used to determine the cursor row. See also the **[text_locate.html](Text.Locate)**, **[text_maxrow.html](Text.maxrow)** and **[text_maxcol.html](Text.maxcol) **[procedure.html](procedure)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

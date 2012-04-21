@@ -27,5 +27,8 @@
       "text_content": " the chr, ord, intstr and strint functions.\r\n",
       "mdown_content": "the **[chr.html](chr)**, **[ord.html](ord)**, **[intstr.html](intstr)** **[and.html](and)** **[strint.html](strint)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

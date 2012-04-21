@@ -80,5 +80,8 @@
       "text_content": "Pic.Draw for information on the meaning\r\n          of the mode argument.\r\n          Pic.DrawSpecial for \r\n          information on how to draw special effects and wait for completion\r\n          of the effect.\r\n    ",
       "mdown_content": "**[pic_draw.html](Pic.Draw)** for information on the meaningof the *mode* argument.\n**[pic_drawspecial.html](Pic.DrawSpecial)** for information on how to draw special effects and wait for completionof the effect."
     }
+  ],
+  "dependencies": [
+
   ]
 }

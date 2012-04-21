@@ -5,10 +5,16 @@
 A *paramDeclaration* is one of:
  (a)[ **var** ] *id* {, *id* } : *typeSpec* (b)*subprogramHeader*
 
+
+
 ##Description
 A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also **procedure*** *and* ***function*** *declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.
 
+
+
 ##Example
+
+
 
         procedure putTitle ( title : string )
             % The parameter declaration is: title : string
@@ -27,8 +33,12 @@ Parameters declared **var** are passed by reference, which means that a pointer 
 The upper bound of an array or string that is a formal parameter may be specified as an asterisk (*****), as is done above for parameter *s* in procedure *x*. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called *dynamic* parameters.
 The names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.
 
+
+
 ##Example
 Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also *subprogramHeader*.
+
+
         function findZero ( function f ( x : real) : real,
                         left, right, accuracy : real ) : real
             pre sign ( f ( left ) ) not= sign ( f ( right)) )
@@ -50,6 +60,8 @@ Find the zero of function f. This example illustrates form (b), which is a param
         end findZero
 ##Details
 Form (b) of *paramDeclaration *is used to specify formal parameters that are themselves procedures or functions. For example, in the *findZero* function, *f* is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the *findZero* function can be replaced by the following with no change in the action. The names *g* and *x* serve no purpose, except as place holders in the declaration of *f*.
+
+
         function findZero ( f : function g ( x : real) : real,
                         left, right, accuracy : real ) : real
 ##Details
@@ -57,9 +69,13 @@ Parameters that are declared non **var** should, in principle, be constant. Unfo
 You can also optionally use the **register** keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the **register** keyword. The syntax for form (a) is actually:
 In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the **register** keyword is ignored. See **register** for restrictions on the use of register parameters.
 The optional keyword **cheat** means that the parameter has a type cheat. See **cheat**. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.
+
+
         [ var ] [ register ] id {, id } : [ cheat ] typeSpec
 ##Example
 This procedure outputs the values of *n* bytes starting at the address of formal parameter *a*, using a parameter type cheat.
+
+
         procedure dump (a : cheat array 0 .. 10000 of nat1, n : int )
             for i : 0 .. n - 1
                 put i, a ( i ) : 4

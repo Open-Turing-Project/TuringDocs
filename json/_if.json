@@ -23,5 +23,8 @@
       "text_content": " A pair of declarations is chosen if both stats and debug are set, otherwise the put statement is selected. The selected part becomes part of the program and the other parts are ignored.\r\n\r\n",
       "mdown_content": "A pair of declarations is chosen if both *stats* and *debug* are set, otherwise the **put** statement is selected. The selected part becomes part of the program and the other parts are ignored."
     }
+  ],
+  "dependencies": [
+
   ]
 }

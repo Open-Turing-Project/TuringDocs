@@ -49,5 +49,8 @@
       "text_content": "Str.Lower and \r\n          Str.Trim.\r\n    ",
       "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_trim.html](Str.Trim)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

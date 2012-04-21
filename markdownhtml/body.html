@@ -1,0 +1,52 @@
+<h1>body</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>bodyDeclaration</em> is one of:
+(a)<strong>body</strong> <strong>procedure</strong> <em>procedureId</em><em>statementsAndDeclarations</em><strong>end</strong> <em>procedureId</em>(b)<strong>body</strong> <strong>function</strong> <em>functionId</em><em>statementsAndDeclarations</em><strong>end</strong> <em>functionId</em>(c)<strong>body procedure</strong> <em>id</em> [(<em>paramDeclaration</em>{, <em>paramDeclaration</em> })]<em>statementsAndDeclarations</em><strong>end</strong> <em>id</em>(d)<strong>body function</strong> <em>id </em>[ ( [<em>paramDeclaration </em>{,<em>paramDeclaration</em> } ]) ] : <em>typeSpec</em><em>statementsAndDeclarations</em><strong>end</strong> <em>id</em></p>
+
+<h2>Description</h2>
+
+<p>A body declaration is used to resolve either a forward subprogram or a deferred subprogram.
+You declare a procedure or function <strong>forward</strong> when you want to define its header but not its body. This is the case when one procedure or function calls another, which in turn calls the first. This situation is called <em>mutual recursion</em>. The use of <strong>forward</strong> is necessary in this case because every item must be declared before it can be used. The <strong>forward</strong> declaration must be followed by  a <strong>body</strong> declaration for the same procedure or function. For details, see <strong>forward</strong> declarations.
+When a procedure or function in a class is declared to be <strong>deferred</strong> (or simply exported from the class), it can be resolved or <em>overridden</em> afterward by giving its body further down in that class or in descendant classes. The overriding procedure must use the keyword <strong>body</strong>. See <strong>class</strong> or "<strong>implement</strong> <strong>by</strong>" for examples.</p>
+
+<h2>Details</h2>
+
+<p>You can specify the parameter and return values of the subprogram in the <strong>body</strong> declaration. However, the names and types of the parameters and return values must match the initial declaration exactly, or a warning results and the parameter list and return values from the <strong>body</strong> declaration are ignored.</p>
+
+<h2>Example</h2>
+
+<p>The example given here is part of a complete Turing program that includes an explanation of <strong>forward</strong> declarations.</p>
+
+<pre><code>    var token : string
+    forward procedure expn (var eValue : real)
+        import forward term, var token
+    &#133; other declarations appear here &#133;
+    body procedure expn
+        var nextValue : real
+        term (eValue)               % Evaluate t
+        loop                        % Evaluate { + t}
+            exit when token not= "+"
+            get token
+            term (nextValue)
+            eValue := eValue + nextValue
+        end loop
+    end expn
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The syntax of a <em>bodyDeclaration</em> presented above has been simplified by omitting the optional result identifier, <strong>import</strong> list, <strong>pre</strong> and <strong>post</strong> condition and <strong>init</strong> clause. See <strong>procedure</strong> and <strong>function</strong> declarations for descriptions of these omissions.
+The "function" or "procedure" token in the declaration is now optional. In other words the following code fragment is legal</p>
+
+<pre><code>    forward procedure p
+    &#133;
+    body  p
+    &#133;
+    end p
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="class">class.html</a></strong>, <strong><a href="forward">forward.html</a></strong> and <strong><a href="implement%20by">implement_by.html</a></strong></p>

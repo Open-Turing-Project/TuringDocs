@@ -65,5 +65,8 @@
       "text_content": " This procedure outputs the values of n bytes starting at the address of formal parameter a, using a parameter type cheat.\r\n\r\n",
       "mdown_content": "This procedure outputs the values of *n* bytes starting at the address of formal parameter *a*, using a parameter type cheat."
     }
+  ],
+  "dependencies": [
+
   ]
 }

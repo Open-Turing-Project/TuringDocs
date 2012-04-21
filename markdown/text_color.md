@@ -4,11 +4,17 @@
 ##Syntax
 **Text.Color** ( *Color* : **int** )
 
+
+
 ##Description
 The **Text.Color** procedure is used to change the currently-active color. This is the color of characters that are to be **put** on the screen. The alternate spelling is **Text.Colour**.
 
+
+
 ##Example
 This program prints out the message "Bravo" three times, each in a different color.
+
+
         View.Set ( "graphics" )
         for i : 1 .. 3
             Text.Color ( i )
@@ -16,6 +22,8 @@ This program prints out the message "Bravo" three times, each in a different col
         end for
 ##Example
 This program prints out a message. The color of each letter is different from the preceding letter. For letter number *i* the color number is *i *mod maxcolor + 1. This cycles repeatedly through all the available colors.
+
+
         View.Set ( "screen" )
         const message := "Happy New Year!!"
         for i : 1 .. length ( message )
@@ -27,9 +35,15 @@ In "*screen*" mode on the IBM PC, the color specified can actually range from 0 
 See **View.Set** for the number of colors available in the various "*graphics*"* *modes.
 The screen should be in a "*screen*" or "*graphics*" mode. If the screen mode has not been set, it will automatically be set to "*screen*" mode. See **View.Set **for details.
 
+
+
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Text.Color**, not by calling **Color**.
 
+
+
 ##See also
 **[text_colorback.html](Text.ColorBack)**, **[text_whatcolor.html](Text.WhatColor)**, **Text.WhatChar** and **[view_maxcolor.html](View.maxcolor)**.
+
+

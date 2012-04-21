@@ -1,0 +1,40 @@
+<h1>init</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>init</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>init</strong> (initialization) keyword is used for two different purposes in Turing. The most common is for initializing arrays, records and unions. The less common is for recording parameter values in subprograms for later use in <strong>post</strong> conditions.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var mensNames : array 1 .. 3 of string :=
+        init ( "Tom", "Dick", "Harry" )
+    put mensNames ( 2 )             % This outputs Dick
+    var names : array 1 .. 2, 1 .. 3 of string :=
+        init ( "Tom", "Dick", "Harry",
+             "Alice", "Barbara", "Cathy")
+    put names ( 2, 1 )  % This outputs Alice
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The order of initializing values for multi-dimensional arrays is based on varying the right subscripts (indexes) most rapidly. This is called <em>row major order</em>. Initialization of records and unions is analogous to initializing arrays. Values are listed in the order in which they appear in the type. See <strong>array</strong>, <strong>record</strong>, and <strong>union</strong> types.</p>
+
+<h2>Example</h2>
+
+<p>This procedure is supposed to set integer variable <em>i</em> to an integer approximation of its square root. The <strong>init</strong> clause records the initial value of <em>i </em>as <em>j </em>so it can be used in the <strong>post</strong> condition to make sure that the approximation is sufficiently accurate. The name <em>j </em>can be used only in the post condition and nowhere else in the procedure.</p>
+
+<pre><code>    procedure intSqrt ( var i : int )
+        pre i &gt;= 0
+        init j := i
+        post abs ( i - sqrt ( j ) ) &lt;= 1
+        &#133; statements to approximate square root&#133;
+    end intSqrt
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="pre">pre.html</a></strong> and <strong><a href="post">post.html</a></strong> assertions and <strong><a href="procedure">procedure.html</a></strong> and <strong><a href="process">process.html</a></strong> declarations.</p>

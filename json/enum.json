@@ -47,5 +47,8 @@
       "text_content": " The \"put\" and \"get\" statement semantics have been expanded to allow put's and get's of enum values. The values printed and input are the element names themselves, case sensitive. For example, for\r\n\r\n",
       "mdown_content": "The \"put\" and \"get\" statement semantics have been expanded to allow put's and get's of enum values. The values printed and input are the element names themselves, case sensitive. For example, for"
     }
+  ],
+  "dependencies": [
+
   ]
 }

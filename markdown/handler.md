@@ -5,11 +5,17 @@
 A *exceptionHandler* is:
  **handler** ( *id *)  *statementsAndDeclarations* **end** **handler**
 
+
+
 ##Description
 An exception handler  is an optional block of statements and declarations in a subprogram (or process). It is activated when the program (or process) fails. This occurs, for example when dividing by zero.
 
+
+
 ##Example
 This program parses the input stream using a stack. If the stack overflows (its top exceeds its maximum), a **quit** statement in the *push* procedure aborts the parsing and gives control to the exception handler in the *parse* procedure. The *parse* procedure calls *parseExpn* which calls *push*. If *push* overflows the stack, it executes a **quit** and control is passed to the exception handler in the *parse *procedure. The interrupted procedures (*parseExpn* and *push*) are terminated and their local variables are deleted.
+
+
         const stackOverflow := 500
         const maxTop := 100
         var top : 0 .. maxTop := 0
@@ -46,6 +52,8 @@ Programming with exception handlers easily leads to incomprehensible software, d
 Without exception handling, a program executes according to the language definition or else is aborted. If an exception handler is active, instead of aborting, control is given to the handler. The *quitNumber* for a system-detected failure is implementation-dependent. There is a file "*%exceptions*"* *which lists these numbers. The user program can simulate a system exception by doing a **quit** with the corresponding number.
 If the user turns off checking  explicitly, the system may not detect failures. In some cases the failure may yield incorrect data or arbitrary behavior.
 Some exceptions are unpredictable or implementation-dependent. For example, in *x* := 24 div *i* + 24 / *i*, if *i* is zero, the exception could be either an integer or a real division by zero, because the order or evaluation is implementation-dependent.
+
+
         procedure [ pervasive ] id
             [ ( [ paramDeclaration {,paramDeclaration } ] ) ]
             [ import [ [var] id {, [var] id } ] ]

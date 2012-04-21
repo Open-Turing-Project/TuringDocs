@@ -1,0 +1,18 @@
+<h1>Concurrency.empty</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>empty</strong> (<em>variableReference</em>) : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>empty</strong> function is used in a concurrent program.  It returns <strong>true</strong> if the <em>variableReference</em>, which must be a condition variable, has no processes waiting for it.  Processes join the queue of a condition variable by executing the <strong>wait</strong> statement, and are awakened by the <strong>signal</strong> statement.</p>
+
+<h2>Status</h2>
+
+<p>Part of the language and only conceptually part of the <strong>Concurrency</strong> unit.
+This means that you can only call the function by calling <strong>empty</strong>, not by calling <strong>Concurrency.empty</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="condition">condition.html</a></strong>, <strong><a href="wait">wait.html</a></strong>, <strong><a href="signal">signal.html</a></strong>, <strong><a href="fork">fork.html</a></strong> and <strong><a href="monitor">monitor.html</a></strong>.</p>

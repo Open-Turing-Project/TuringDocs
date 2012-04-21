@@ -33,5 +33,8 @@
       "text_content": " If the pattern (patt) does not appear in the string (s), index returns 0 (zero). For example, here is an if statement that checks to see if string s contains a blank:\r\n\r\nThe index is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an if statement that checks to see if ch, which is declared using var ch : string (1), is a digit:\r\n\r\nIf a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, index (\"pingpong\", \"ng\") returns 3.\r\nIf patt is the null string, the result is 1.\r\n",
       "mdown_content": "If the pattern (*patt*) does not appear in the string (*s*), **index** returns 0 (zero). For example, here is an **if** statement that checks to see if string *s* contains a blank:\nThe **index** is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an **if** statement that checks to see if *ch*,* *which is declared using **var** *ch *: **string** (1), is a digit:\nIf a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, **index** (\"pingpong\", \"ng\") returns 3.\nIf *patt* is the null string, the result is 1."
     }
+  ],
+  "dependencies": [
+
   ]
 }

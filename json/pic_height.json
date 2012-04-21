@@ -52,5 +52,8 @@
       "text_content": "Pic.Width to obtain a picture's \r\n          width and Pic.FileNew to load \r\n\t  a picture from a graphics file.\r\n    ",
       "mdown_content": "**[pic_width.html](Pic.Width)** to obtain a picture's width and **[pic_filenew.html](Pic.FileNew)** to load a picture from a graphics file."
     }
+  ],
+  "dependencies": [
+    "pic_height01.gif"
   ]
 }

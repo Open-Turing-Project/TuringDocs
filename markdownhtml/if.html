@@ -1,0 +1,75 @@
+<h1>if</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>ifStatement</em> is:
+<strong>if</strong> <em>trueFalseExpn</em> <strong>then</strong><em>statementsAndDeclarations</em>{ <strong>elsif</strong> <em>trueFalseExpn</em> <strong>then</strong><em>statementsAndDeclarations</em> }[ <strong>else</strong><em>statementsAndDeclarations</em> ]<strong>end</strong> <strong>if</strong></p>
+
+<h2>Description</h2>
+
+<p>An <strong>if</strong> statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond <strong>end</strong> <strong>if</strong>.
+The expressions (the <em>trueFalseExpressions</em>) following the keyword <strong>if</strong> and each <strong>elsif</strong> are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding <strong>then</strong> are executed. If none of these expressions evaluates to true, the statements following <strong>else</strong> are executed. If no <strong>else</strong> is present and none of the expressions are true, no statements are executed and execution continues following the <strong>end</strong> <strong>if</strong>.</p>
+
+<h2>Example</h2>
+
+<p>Output a message based on value of mark.</p>
+
+<pre><code>    if mark &gt;= 50 then
+        put "You pass"
+    else
+        put "You fail"
+    end if
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Output A, B, C, D or F depending on mark.</p>
+
+<pre><code>    if mark &gt;= 80 then
+        put "A"
+    elsif mark &gt;= 70 then
+        put "B"
+    elsif mark &gt;= 60 then
+        put "C"
+    elsif mark &gt;= 50 then
+        put "D"
+    else
+        put "F"
+    end if
+</code></pre>
+
+<h2>Example</h2>
+
+<p>If <em>x </em>is negative, change its sign.</p>
+
+<pre><code>    if x &lt; 0 then
+        x := - x
+    end if
+</code></pre>
+
+<h2>Example</h2>
+
+<p>If <em>x </em>is less than zero or greater than maxx, put a message.</p>
+
+<pre><code>    if x &lt; 0  or x &gt; maxx then
+        put "Out of bounds!"
+    end if
+</code></pre>
+
+<h2>Example</h2>
+
+<p>If the boolean <em>flag</em> is true and <em>name</em> is &#147;stop&#148;, put a message and return.</p>
+
+<pre><code>    if flag  and name = "stop" then
+        put "Exiting routine"
+        return
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Several statements and declarations can appear after a particular <strong>then</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="case">case.html</a></strong> statements for another way to select among statements.</p>

@@ -60,5 +60,8 @@
       "text_content": "View.Set, \r\n      maxx, \r\n      maxy and the various procedures in \r\n      the Draw unit.\r\n    ",
       "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
     }
+  ],
+  "dependencies": [
+    "draw_arc01.gif"
   ]
 }

@@ -5,10 +5,16 @@
 A *declaration* is one of:
  (a)*variableDeclaration* (b)*constantDeclaration* (c)*typeDeclaration* (d)*bindDeclaration* (e)*procedureDeclaration* (f)*functionDeclaration* (g)*moduleDeclaration* (h)*classDeclaration* (i)*processDeclaration* (j)*monitorDeclaration* (k)*conditionDeclaration*
 
+
+
 ##Description
 A *declaration* creates a new name (or names) for a variable, constant, type, procedure, function, module, class, process, monitor, or condition. These names are called *identifiers*,* *where *id* is the abbreviation for *identifier*.
 
+
+
 ##Example
+
+
 
         var width : int         % Variable declaration
         const pi := 3.14159     % Constant declaration
@@ -23,3 +29,5 @@ The effect of a declaration (its *scope*) lasts to the end of the construct in w
 A name must be declared before it can be used; this is called the *DBU *(*Declaration Before Use*) rule. The exceptions to this rule use the keyword **forward**, as in **import** lists and in **collection** declarations.
 A *declaration* can appear any place a *statement* can appear. This differs from the Pascal language, in which declarations are allowed only at the beginning of the program or at the beginning of a procedure or function. Each declaration can optionally be followed by a semicolon (;).
 There are certain restrictions on the placement of declarations. Procedures and functions cannot be declared inside other procedures and functions nor inside statements (for example, not inside an **if** statement). A **bind** declaration cannot appear at the outer level of either the main program or a module. A **condition** declaration can appear only inside a monitor. Processes cannot be declared inside procedures, functions, monitors or classes. Classes cannot be declared inside classes. However, modules and monitors can be declared inside classes and vice versa. Monitors can be declared inside modules, not vice versa.
+
+

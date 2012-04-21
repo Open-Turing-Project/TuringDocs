@@ -1,0 +1,38 @@
+<h1>Pic.ScreenLoad</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Pic.ScreenLoad</strong> (<em>fileName</em> : <strong>string</strong>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Pic.ScreenLoad </strong>displays a picture from a file straight to the screen.
+The <em>fileName</em>parameter must give the format of the file:
+JPG files"JPG:filename" or "filename.JPG"BMP files"BMP:filename" or "filename.BMP"
+The <em>x</em> and <em>y</em> parameters set the lower left hand corner of the picture.
+The <em>mode</em> parameter has one of the following values:
+<em>picCopy</em>This draws the picture on top of what was underneath, obscuring it completely.<em>picXOR</em>This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.<em>picMerge</em>This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.<em>picUnderMerge</em>This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
+
+<h2>Details</h2>
+
+<p>Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP files and JPG files. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement importation of GIF pictures until the patents expire in June 2004.</p>
+
+<h2>Details</h2>
+
+<p>At the time of writing, MacOOT supported only PICT files. Consult the release notes to find out which file formats are currently supported.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>Pic.ScreenLoad</strong> fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>The program displays a picture on the screen from the PCX file <em>mypic.BMP</em>.</p>
+
+<pre><code>    Pic.ScreenLoad ("mypic.bmp", 0, 0, picCopy)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Pic.ScreenLoad</strong>, not by calling <strong>ScreenLoad</strong>.</p>

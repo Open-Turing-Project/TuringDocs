@@ -1,0 +1,34 @@
+<h1>anyclass</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>anyclass</strong></p>
+
+<h2>Description</h2>
+
+<p>There is a predefined class called <strong>anyclass</strong>, which is the root of the expansion tree. All classes that do not have <strong>inherit</strong> lists are considered to be expansions of <strong>anyclass</strong>. The main purpose of <strong>anyclass</strong> is to allow pointers that can locate objects of any class.</p>
+
+<h2>Example</h2>
+
+<p>Here is the declaration of a pointer <em>p </em>that can locate an object of any class.
+Assuming <em>stack</em> is a class, this creates a <em>stack</em> object and places its location in <em>q </em>and <em>p</em>. The compiler will not allow a call to <em>stack</em>'s exported subprograms using <em>p</em> directly, as in:
+An assignment from <em>p</em> to <em>q</em> is legal, as in:
+This implies a run time check to make sure that <em>p</em> locates an object that is a <em>stack</em> (or a descendant of a <em>stack</em>).
+Here is a way to call a subprogram exported from <em>stack</em> using <em>p</em>:
+This checks to see that <em>p</em> locates a <em>stack</em> object (or a descendant) before calling the <em>stack</em> operation <em>push</em>.</p>
+
+<pre><code>    var p : pointer to anyclass     % Short form: var p : ^ anyclass
+    var q : pointer to stack        % Short form: var q : ^ stack
+    new q               % Create a stack object
+    p := q              % Legal because p's class
+                        % is an ancestor of q's class        p -&gt; push (14)      % ILLEGAL!  anyclass has no operations        q := p  % Checks that p locates a stack object (or descendant)        stack (p) . push (14)   % Checks that p locates a stack object
+</code></pre>
+
+<h2>Details</h2>
+
+<p>It is legal to create objects of the class called <strong>anyclass</strong>, but this is not of much use, because there is nothing you can do with these objects (they have no operations). It is legal to assign these objects to other objects of the same class (<strong>anyclass</strong>), although this accomplishes nothing.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="objectclass">objectclass.html</a></strong>, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.
+See also <strong><a href="class">class.html</a></strong>. See also <strong><a href="export">export.html</a></strong> list, <strong><a href="import">import.html</a></strong> list, <strong><a href="inherit">inherit.html</a></strong> list, <strong><a href="implement">implement.html</a></strong> list and <strong><a href="implement%20by">implement_by.html</a></strong> list.</p>

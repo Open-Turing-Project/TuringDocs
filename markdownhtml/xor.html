@@ -1,0 +1,39 @@
+<h1>xor</h1>
+
+<h2>Syntax</h2>
+
+<p><em>A</em> <strong>xor</strong> <em>B</em></p>
+
+<h2>Description</h2>
+
+<p>When applied to set values, <strong>xor</strong> (symmetric difference) yields a set which includes element <em>e</em> if and only if <em>e</em> is contained in exactly one of the operands. When applied to non-negative integer values, <strong>xor</strong> yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands <em>A</em> and <em>B </em>are evaluated.</p>
+
+<h2>Example</h2>
+
+<p>Status <em>s3</em> will contain elements that are in <em>s1</em> or <em>s2</em> but not both. Here <strong>xor</strong> is a set operator. See <strong>enum</strong> and <strong>set</strong> types for explanations of these types.</p>
+
+<pre><code>    type status : enum (ready, sending, repeating)
+    type statusSet : set of status
+    var s1, s2, s3 : statusSet
+    s1 := statusSet ( status.read, status.sending )
+    s2 := statusSet ( status.read, status.repeating )
+    &#133;
+    s3 := s1 xor s2     % Same as (s1 + s2) - (s1 * s2)
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Each bit of natural number <em>n3</em> will be 1 if exactly one of the corresponding bits of <em>n1</em> and <em>n2</em> are 1. For example, if <em>n1</em> = 2#110 (6) and <em>n2</em> = 2#010 (2), <em>n3</em> will be set to 2#100 (4). Here <strong>xor</strong> is an integer operator.</p>
+
+<pre><code>    var n1, n2, n3 : nat
+    &#133;
+    n3 := n1 xor n2
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>xor</strong> operator is not a short circuit operator; in other words, both of its operands are always evaluated. The precedence of <strong>xor</strong> is the same as that of plus (+).</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="set">set.html</a></strong>. See also <em><a href="explicitIntegerConstant">explicitintegerconstant.html</a></em> which describes values such as 2<strong>#</strong>110.</p>

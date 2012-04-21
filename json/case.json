@@ -58,5 +58,8 @@
       "text_content": " The case expression is required to match one of the labels. If it does not, there must be a final label with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, char, boolean, an enum type or strings.\r\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.\r\n",
       "mdown_content": "The case expression is required to match one of the labels. If it does not, there must be a final **label** with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, **char**, **boolean**, an **enum** type or strings.\nNote that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label."
     }
+  ],
+  "dependencies": [
+
   ]
 }

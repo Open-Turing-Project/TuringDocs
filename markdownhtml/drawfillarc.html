@@ -1,0 +1,30 @@
+<h1>drawfillarc</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawfillarc</strong> (<em>x</em>, <em>y</em>, <em>xRadius</em>, <em>yRadius</em> : <strong>int</strong>,<em>initialAngle</em>, <em>finalAngle</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawfillarc</strong> procedure is used to draw a filled arc whose center is at (<em>x</em>, <em>y</em>). It then fills in the pie-shaped wedge using the specified <em>Color</em>. To outline a filled arc, use <strong>drawfillarc</strong> with the <em>Color</em> parameter set to the fill color and then <strong>drawarc</strong> with the <em>Color</em> parameter set to the border color. For <em>initialAngle </em>and <em>finalAngle</em>, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <em>xRadius </em>and <em>yRadius</em>.</p>
+
+<p><img src="drawfillarc01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (<em>midx</em>,0), the bottom center of the screen, using color number 1. The <strong>maxx</strong> and <strong>maxy</strong> functions are used to determine the maximum x and y values on the screen.</p>
+
+<pre><code>    setscreen ("graphics")
+    const midx := maxx div 2
+    drawfillarc (midx, 0, maxy, maxy, 0, 180, 1)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>On the PC, <strong>drawfillarc</strong>  fills the pie-shaped wedge by using a "flood" fill and is thus subject to all the conditions of a flood fill.
+The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

@@ -45,5 +45,8 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.New, not by calling New.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.New**, not by calling **New**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,26 @@
+<h1>sign</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>sign</strong> ( <em>r</em> : <strong>real</strong> ) : -1 .. 1</p>
+
+<h2>Description</h2>
+
+<p>The <strong>sign</strong> function is used to determine whether a number is positive, zero or negative. It returns 1 if <em>r</em> > 0, 0 if <em>r</em> = 0, and -1 if <em>r</em> &lt; 0. For example, <strong>sign</strong> (5) is 1 and <strong>sign</strong> (-23) is -1.</p>
+
+<h2>Example</h2>
+
+<p>This program reads in numbers and determines if they are positive, zero or negative:</p>
+
+<pre><code>    var x : real
+    get x
+    case sign ( x ) of
+        label 1 : put "Positive"
+        label 0 : put "Zero"
+        label -1 : put "Negative"
+    end case
+</code></pre>
+
+<h2>See also</h2>
+
+<p>See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

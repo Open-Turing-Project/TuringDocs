@@ -1,0 +1,37 @@
+<h1>Rand.Real</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Rand.Real</strong> : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Rand.Real </strong>function returns a pseudo-random number in the range zero to one. For example, if <em>x</em> is a real number, after <em>x</em> := <strong>Rand.Real</strong>, <em>x</em> would have a value such as 0.729548 or 0.352879.</p>
+
+<h2>Example</h2>
+
+<p>This program repeatedly and randomly prints out <em>Hi ho</em>,<em> hi ho</em> or <em>It's off to work we go</em>.</p>
+
+<pre><code>    loop
+        if Rand.Real &gt; 0.5 then
+            put "Hi ho, hi ho"
+        else
+            put "It's off to work we go"
+        end if
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>Rand.Real </strong>function<strong> </strong>sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0&lt;<em>r</em> &lt;1.
+Each time a program runs, <strong>Rand.Real</strong> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <strong>Rand.Set</strong> procedure.
+To use several sequences of repeatable pseudo-random number sequences, use the <strong>Rand.Seed </strong>and <strong>Rand.Next</strong> procedures.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Rand.Real</strong>, not by calling <strong>Real</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Rand.Int">rand_int.html</a></strong>, <strong><a href="Rand.Set">rand_set.html</a></strong>, <strong><a href="Rand.Seed">rand_seed.html</a></strong> and <strong><a href="Rand.Next">rand_next.html</a></strong>.</p>

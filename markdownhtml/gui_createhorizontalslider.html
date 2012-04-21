@@ -1,0 +1,57 @@
+<h1>GUI.CreateHorizontalSlider</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CreateHorizontalSlider</strong> (<em>x</em>, <em>y</em>, <em>length</em> : <strong>int</strong>,<em>min</em>, <em>max</em>, <em>start</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>value</em> : <strong>int</strong>)) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Creates a horizontal (left-right) slider and returns the slider's widget ID.
+A slider is a widget that allows the user to set a continuous set of values. It has a real-life equivalent in things such as a stereo volume control.
+<strong>A Horizontal Slider</strong>
+To control a slider, the user clicks on the slider box and drags it back and forth. Every time the value changes, a procedure is called with the new value as a parameter.
+The range of values that the slider will give is determined by the <em>min</em> and <em>max</em> parameters in the <em>Create</em> call. The left side of the slider represents the minimum value, while the right represents the maximum value.
+The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the slider track. This means that the slider actually extends above and below this point (and slightly to the left of it to take into account the rounded end of the track). The <em>length</em> parameter specifies the length of the track in pixels. (You can use <strong>GUI.GetX</strong><em>, </em><strong>GetY</strong><em>, </em><strong>GetWidth</strong>, and <strong>GetHeight</strong> to get the exact dimensions of the slider.) The <em>min</em> and <em>max</em> parameters are the minimum and maximum values returned by the slider. The <em>start</em> parameter is the initial value of the slider and should be between <em>min</em> and <em>max</em> inclusive. The <em>actionProc </em>parameter<em> </em>is the name of a procedure that is called when the value of the slider is changed. The parameter to the <em>action procedure </em>is the current value of the slider.</p>
+
+<p><img src="gui_createhorizontalslider01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>The following program creates a horizontal slider. Whenever the slider's value is changed, a message is displayed in the window.</p>
+
+<pre><code>    import GUI 
+
+    View.Set ("graphics:300;60,nobuttonbar") 
+    var slider : int
+    procedure SliderMoved (value : int)
+        Text.Locate (2, 3)
+        put "Horizontal Slider: ", value : 4
+    end SliderMoved 
+
+    slider := GUI.CreateHorizontalSlider (10, 10, 250,
+        50, 150, 50, SliderMoved )
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In some instances, you will want the the minimum and maximum values of the slider to be reversed (right is minimum). In that case, call the <strong>GUI.SetSliderReverse</strong> procedure to flip the values of the slider.
+Sliders always have a fixed height (for horizontal sliders) or width (for vertical sliders).
+When <strong>GUI.CreateHorizontalSlider</strong>or <strong>GUI.CreateHorizontalSliderFull</strong><em> </em>is called, the newly created slider will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
+When a slider is not enabled, the appearance does not change. However, the slider no longer responds to any mouse clicks until it is enabled again.</p>
+
+<h2>Details</h2>
+
+<p>The following GUI subprograms can be called with a slider as the <em>widgetID</em> parameter:
+<strong>GUI.Show</strong>,<strong> GUI.Hide</strong>,<strong> GUI.Enable</strong>,<strong> GUI.Disable</strong>,<strong> GUI.Dispose</strong>, <strong> GUI.GetX</strong>,<strong> GUI.GetY</strong>,<strong> GUI.GetWidth</strong>,<strong> GUI.GetHeight</strong>,<strong> GUI.SetPosition</strong>,<strong> GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong>,<strong> GUI.GetSliderValue</strong>,<strong> GUI.SetSliderValue</strong>,<strong> GUI.SetSliderMinMax</strong>,<strong> GUI.SetSliderSize</strong>,<strong> GUI.SetSliderReverse</strong></p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CreateHorizontalSlider</strong>, not by calling <strong>CreateHorizontalSlider</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.GetSliderValue">gui_getslidervalue.html</a></strong> and <strong><a href="GUI.SetSliderValue">gui_setslidervalue.html</a> </strong>for reading and setting the value of a slider, <strong><a href="GUI.SetSliderMinMax">gui_setsliderminmax.html</a></strong> for changing the minimum and maximum values of a slider. See also <strong><a href="GUI.SetSliderSize">gui_setslidersize.html</a> </strong>for setting the length of a slider and <strong><a href="GUI.SetSliderReverse">gui_setsliderreverse.html</a></strong> for reversing the sense of a slider.</p>

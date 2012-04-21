@@ -29,5 +29,8 @@
       "text_content": " chr, ord and strnat functions. See also the intstr and strint functions. See also explicitIntegerConstant for the way to write values in base 2 and base 16 in a program.\r\n",
       "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)** and **[strnat.html](strnat)** functions. See also the **[intstr.html](intstr)** and **[strint.html](strint)** functions. See also *[explicitintegerconstant.html](explicitIntegerConstant)* for the way to write values in base 2 and base 16 in a [program.html](program)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

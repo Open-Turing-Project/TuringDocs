@@ -1,0 +1,42 @@
+<h1>deferred</h1>
+
+<h2>Syntax</h2>
+
+<p>A deferredDeclaration is:
+<strong>deferred</strong> subprogramHeader</p>
+
+<h2>Description</h2>
+
+<p>A procedure or function is declared to be <strong>deferred</strong> when you want to be able to override the subprogram in an expansion. The procedure or function must be in a module, monitor or class.</p>
+
+<h2>Example</h2>
+
+<p>The <em>display</em> procedure is deferred in this class of stacks to allow various ways of graphically displaying the stack on the screen:
+An expansion to the <em>stack</em> class can give a body for <em>display</em>, as in:
+The following creates a stack that can be displayed and displays it:</p>
+
+<pre><code>    class stack
+        export push, pop
+        &#133; local declarations &#133;
+        &#133; declarations of the push and pop procedures &#133;
+        deferred procedure display (howbig : int)
+    end stack        class stackWithSimpleDisplay
+        body procedure display      % (howbig : int)
+               &#133; graphically display the stack on the screen &#133;
+        end display
+    end stackWithSimpleDisplay        var p : ^stackWithSimpleDisplay
+    new p
+    &#133;
+    p -&gt; display (25)       % Display the stack on the screen
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A deferred procedure is <em>resolved</em> by giving its body. This can be done in the scope (<strong>module</strong>, <strong>monitor</strong> or <strong>class</strong>) containing the <strong>deferred</strong> declaration (following the <strong>deferred</strong> declaration) or in any expansion of that scope. Only one resolution per scope is allowed. Unresolved subprograms can be called, but they immediately abort.
+All exported subprograms are implicitly deferred and can be overridden in expansions.
+During initialization of a <strong>module</strong>, <strong>monitor</strong> or <strong>object</strong> of a <strong>class</strong>, deferred subprograms (including exported subprograms) cannot be called. This restriction prevents accessing an object before it is fully initialized.
+A <strong>deferred</strong> declaration must not appear in the main program.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="module">module.html</a></strong>, <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="class">class.html</a></strong>. See also <strong><a href="export">export.html</a></strong> list, <strong><a href="import">import.html</a></strong> list, <strong><a href="inherit">inherit.html</a></strong> list, <strong><a href="implement">implement.html</a></strong> list and <strong><a href="implement%20by">implement_by.html</a></strong> list.</p>

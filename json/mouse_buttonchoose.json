@@ -40,5 +40,8 @@
       "text_content": " Mouse.ButtonMoved and Mouse.ButtonWait to get mouse events saved in a queue. See also Mouse.Where to get the current status of mouse button(s).\r\n",
       "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_where.html](Mouse.Where)** to get the current status of mouse button(s)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

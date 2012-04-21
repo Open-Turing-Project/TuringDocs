@@ -1,0 +1,33 @@
+<h1>Rand.Set</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Rand.Set </strong>(<em>seed</em> : <strong>nat4</strong>)</p>
+
+<h2>Description</h2>
+
+<p>This procedure sets the seed for sequences of pseudo-random numbers produced by <strong>Rand.Real</strong> and <strong>Rand.Int</strong>. This allows identical executions of the same program to produce identical results.</p>
+
+<h2>Example</h2>
+
+<p>This program simulates the repeated rolling of a six sided die. Each time the program runs, the same sequence of rolls occurs.</p>
+
+<pre><code>    Rand.Set (16#1234ABCD)
+    loop
+        put "Rolled ", Rand.Int (1, 6)
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>If <strong>Rand.Reset </strong>and<strong> Rand.Set </strong>are not used, each time a program runs <strong>Rand.Real</strong> and <strong>Rand.Int </strong>use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use <strong>Rand.Reset</strong> or <strong>Rand.Set</strong>.
+To use several sequences of repeatable pseudo-random number sequences, use the <strong>Rand.Seed </strong>and <strong>Rand.Next</strong> procedures.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Rand.Set</strong>, not by calling <strong>Set</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Rand.Reset">rand_reset.html</a></strong>, <strong><a href="Rand.Int">rand_int.html</a></strong>, <strong><a href="Rand.Real">rand_real.html</a></strong>, <strong><a href="Rand.Seed">rand_seed.html</a></strong> and <strong><a href="Rand.Next">rand_next.html</a></strong>.</p>

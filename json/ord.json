@@ -25,5 +25,8 @@
       "text_content": " chr, intstr and strint functions.\r\n",
       "mdown_content": "**[chr.html](chr)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

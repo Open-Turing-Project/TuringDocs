@@ -4,10 +4,16 @@
 ##Syntax
 **nat**
 
+
+
 ##Description
 The **nat** (natural number) type has the values 0, 1, 2, 3  Natural numbers can be combined by various operators, such as addition (+) and multiplication (*). Natural numbers can be combined with integers (type **int**), in which case the result is an integer. Natural numbers can also be combined with **real** numbers, in which case the result is generally a real number. Natural numbers can always be assigned to real variables, with implicit conversion to **real**.
 
+
+
 ##Example
+
+
 
         var counter : nat
         var j : nat := 9
@@ -23,6 +29,10 @@ We can safely compute *n* + *natOne* because both operands have type **nat**.
 Natural numbers can be converted to real numbers using **natreal**, but in practice this is rarely used, because a natural value used in place of a real value will be automatically converted to real.
 Natural numbers can be converted to strings and back using **natstr** and **strnat**.
 In the C language, a natural number is said to be "unsigned".
+
+
         var tax := 0    % The type is int        const natOne : nat := 1
 ##See also
 **[maxnat.html](maxnat)**, **[int.html](int)**, **[](nat)***n*, **[int.html](int)***n*, **[natstr.html](natstr)**, **[strnat.html](strnat)** and **[natreal.html](natreal)**.
+
+

@@ -49,5 +49,8 @@
       "text_content": "GUI.ShowWindow\r\n          for showing a window with widgets in it.\r\n\t  See also GUI.CloseWindow\r\n\t  for closing a window with widgets in it.\r\n    ",
       "mdown_content": "**[gui_showwindow.html](GUI.ShowWindow)**for showing a window with widgets in it.See also **[gui_closewindow.html](GUI.CloseWindow)**for closing a window with widgets in it."
     }
+  ],
+  "dependencies": [
+
   ]
 }

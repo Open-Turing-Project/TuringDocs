@@ -47,5 +47,8 @@
       "text_content": " import list, pre condition, init clause, post condition and exceptionHandler for explanations of these additional features.\r\nSee also pervasive. \r\n",
       "mdown_content": "**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and *exceptionHandler* for explanations of these additional features.\nSee also **[pervasive.html](pervasive)**. "
     }
+  ],
+  "dependencies": [
+
   ]
 }

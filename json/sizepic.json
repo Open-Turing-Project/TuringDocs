@@ -46,5 +46,8 @@
       "text_content": " drawpic. See also setscreen, maxx, maxy, drawdot, drawline, drawbox, and drawoval.\r\nSee also predefined unit Pic.\r\n",
       "mdown_content": "**[drawpic.html](drawpic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)**, **[drawdot.html](drawdot)**, **[drawline.html](drawline)**, **[drawbox.html](drawbox)**, and **[drawoval.html](drawoval)**.\nSee also predefined unit **[picmodule.html](Pic)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

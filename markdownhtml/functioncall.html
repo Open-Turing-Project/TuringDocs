@@ -1,0 +1,42 @@
+<h1>functionCall</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>functionCall</em> is:
+<em>functionId</em> [ ( [ <em>expn </em>{ , <em>expn</em> } ] ) ]</p>
+
+<h2>Description</h2>
+
+<p>A function call is an expression that calls (invokes or activates) a <strong>function</strong>. If the function has parameters, a parenthesized list of expressions (<em>expns</em>) must follow the function's name (<em>functionId</em>).</p>
+
+<h2>Example</h2>
+
+<p>This function takes a string containing a blank and returns the first word in the string (all the characters up to the first blank).</p>
+
+<pre><code>    function firstWord ( str : string ): string
+        for i : 1 .. length ( str )
+            if str ( i ) = " " then
+                result str ( 1 .. i - 1)
+            end if
+        end for
+    end firstWord
+
+    put "The first word is: ", firstWord ("Henry Hudson")   
+                    % The output is Henry.
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The parameter declared in the header of a function, is a <em>formal</em> parameter, for example, <em>str </em>above is a formal parameter. Each expression in the call is an <em>actual</em> parameter, for example, <em>sample</em> above is an actual parameter.
+Each actual parameter passed to its non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability </em>for details). See also <em>functionDeclaration</em> and <em>procedureDeclaration</em>.
+In this explanation of <em>functionCall</em>, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the <em>functionCall </em>is:
+In other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the <em>functionCall </em>is one of:
+In these <em>p</em> must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
+
+<pre><code>    moduleId . functionId [ ( expn {, expn } ) ]        (a) classId ( p ) . functionId [ ( [ expn {, expn } ] ) ]
+    (b) p -&gt; functionId [ ( [ expn {, expn } ] ) ]
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="class">class.html</a></strong>.</p>

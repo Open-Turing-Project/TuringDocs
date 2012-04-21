@@ -29,5 +29,8 @@
       "text_content": " A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the record type. See also constantReference and var declaration.\r\n",
       "mdown_content": "A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the **record** type. See also *constantReference* and **var** declaration."
     }
+  ],
+  "dependencies": [
+
   ]
 }

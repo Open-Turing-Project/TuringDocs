@@ -1,0 +1,33 @@
+<h1>record</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>recordType</em> is:
+<strong>record</strong><em>id</em> {, <em>id</em> } : <em>typeSpec</em>{ <em>id</em> {, <em>id</em> } : <em>typeSpec</em> }<strong>end</strong> <strong>record</strong></p>
+
+<h2>Description</h2>
+
+<p>Each value of a record type consists of fields, one field for each name (<em>id</em>) declared inside the record. In the following example, the fields are <em>name</em>,<em> phoneNumber</em> and <em>address</em>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    type phoneRecord :
+        record
+            name : string ( 20 )
+            phoneNumber : int
+            address : string ( 50 )
+        end record
+    &#133;
+    var oneEntry : phoneRecord
+    var phoneBook : array 1 .. 100 of phoneRecord
+    var i : int
+    oneEntry .name := "Turing, Alan"
+    &#133;
+    phoneBook ( i ) := oneEntry % Assign whole record
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In a record, <em>id'</em>s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each <em>typeSpec</em>.
+Any array contained in a record must have bounds that are known at compile time.
+The notation > can be used to access record fields. For example, if <em>p</em> is a pointer to <em>phoneRecord</em>, <em>p</em>><em>name</em> locates the <em>name</em> field. See <strong>pointer</strong>.</p>

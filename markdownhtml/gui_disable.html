@@ -1,0 +1,65 @@
+<h1>GUI.Disable</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.Disable</strong> (<em>widgetID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Disables a widget specified by <em>widgetID</em>.
+Used in conjunction with <strong>GUI.Enable</strong> to enable and disable widgets.
+Disabled widgets generally are "grayed out" to visually depict their disabled status.
+Disabled widgets do not respond to keystrokes or mouse clicks.</p>
+
+<h2>Example</h2>
+
+<p>The three color radio buttons are enabled only when the color check box is selected.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI" 
+    View.Set ("graphics:100;100") 
+
+    var colorCheckBox, redRadio, greenRadio, blueRadio : int
+
+    procedure DoNothing
+    end DoNothing
+
+    procedure ColorCheckBoxProc (filled : boolean)
+        if filled then
+            GUI.Enable (redRadio)
+            GUI.Enable (greenRadio)
+            GUI.Enable (blueRadio)
+        else
+            GUI.Disable (redRadio)
+            GUI.Disable (greenRadio)
+            GUI.Disable (blueRadio)
+        end if
+    end ColorCheckBoxProc
+
+    colorCheckBox := GUI.CreateCheckBox (10, 80,
+        "Use Color", ColorCheckBoxProc)
+    redRadio := GUI.CreateRadioButton (33, 60, "Red", 0, DoNothing)
+    greenRadio := GUI.CreateRadioButton (1, 1, "Green", 
+        redRadio, DoNothing)
+    blueRadio := GUI.CreateRadioButton (1, 1, "Blue", 
+        greenRadio, DoNothing)
+    ColorCheckBoxProc (false)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The following types of widgets can be enabled or disabled:
+Buttons, Check Boxes, Radio Buttons, Picture Buttons,
+Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the procedure by calling <strong>GUI.Disable</strong>, not by calling <strong>Disable</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.Enable">gui_enable.html</a></strong>.</p>

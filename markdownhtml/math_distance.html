@@ -1,0 +1,37 @@
+<h1>Math.Distance</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Math.Distance</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Math.Distance </strong>is used to calculate the distance between two points.(<em>x1</em>, <em>y1</em>) is the location of the first point, and (<em>x2</em>, <em>y2</em>) is the location of the second point.</p>
+
+<h2>Details</h2>
+
+<p>The parameters to <strong>Math.Distance</strong> are real, but you can pass integer variables and constants.</p>
+
+<h2>Example</h2>
+
+<p>This progam draws two circles with radius 75 on the screen and outputs whether they touch.</p>
+
+<pre><code>    var x1, y1, x2, y2 : int
+    const RADIUS : int := 75
+    x1 := Rand.Int (RADIUS, maxx - RADIUS)
+    y1 := Rand.Int (RADIUS, maxy - RADIUS)
+    x2 := Rand.Int (RADIUS, maxx - RADIUS)
+    y2 := Rand.Int (RADIUS, maxy - RADIUS)
+    Draw.FillOval (x1, y1, RADIUS, RADIUS, brightred)
+    Draw.FillOval (x2, y2, RADIUS, RADIUS, brightgreen)
+    if Math.Distance (x1, y1, x2, y2) &lt; RADIUS * 2 then
+        put "The two circles touch"
+    else
+        put "The two circles do not touch"
+    end if
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Math.Distance</strong>, not by calling <strong>Distance</strong>.</p>

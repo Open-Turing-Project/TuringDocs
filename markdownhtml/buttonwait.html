@@ -1,0 +1,67 @@
+<h1>buttonwait</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>buttonwait</strong> (<em>motion</em> : <strong>string</strong>, <strong>var</strong> <em>x</em>, <em>y</em>, <em>buttonnumber</em>, <em>buttonupdown</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>buttonwait</strong> procedure gets information about a mouse event and removes it from the queue.
+The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>buttonwait</strong> returns instantly. If there isn't such an event, <strong>buttonwait</strong> waits until there is one and then returns (much like <strong>getch</strong> handles keystrokes).
+In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+The parameters <em>x</em> and <em>y</em> are set to the position of the mouse cursor when the button was pressed. The parameter <em>buttonnumber</em> is set to 1 when in "<em>single-button mode</em>". In  "<em>multi-button mode</em>", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <em>buttonupdown</em> is set to 1, if a button was pressed and 0 if a button was released.</p>
+
+<h2>Example</h2>
+
+<p>This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.</p>
+
+<pre><code>    var x, y, buttonnumber, buttonupdown, buttons : int
+    var nx, ny : int
+    loop
+        buttonwait ("down", x, y, buttonnumber, buttonupdown)
+        nx := x
+        ny := y
+        loop
+            drawline (x, y, nx, ny, 0)  % Erase previous line
+            exit when buttonmoved ("up")
+            mousewhere (nx, ny, buttons)
+            drawline (x, y, nx, ny, 1)  % Draw line to position
+        end loop
+        buttonwait ("up", nx, ny, buttonnumber, buttonupdown)
+        drawline (x, y, nx, ny, 2)  % Draw line to final position
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>In the previous example, when the mouse moves, the line is erased by drawing it in white. This erases anything thatthe line was drawn on top of, including previous lines. A more complete example involving the clicking and dragging of filled rectangles using the mouse is available. In this example, the background is fully restored when the rectangle is moved by using "xor".</p>
+
+<h2>Example</h2>
+
+<p>This is an example demonstrating how to check for both character and mouse input at the same time.</p>
+
+<pre><code>    var ch : string (1)
+    var x, y, btnnum, btnupdown : int
+    loop
+        if hasch then
+            getch (ch)
+            locate (1, 1)
+            put "The character entered is a: ", ch
+        end if
+        if buttonmoved ("down") then
+            buttonwait ("down", x, y, btnnum, btnupdown)
+            locate (1, 1)
+            put "The button was clicked at position: ", x, ", ",y
+        end if
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p><strong>buttonwait </strong>can be thought of as the mouse equivalent of <strong>getch</strong> in that they both read something in a queue and both wait until they get the thing they're looking for.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="buttonwait"></a></strong> to see if an appropriate event is in the queue. See also <strong><a href="buttonchoose">buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".
+See also predefined unit <strong><a href="Mouse">mousemodule.html</a></strong>.</p>

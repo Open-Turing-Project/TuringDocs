@@ -51,5 +51,8 @@
       "text_content": " the playdone function, which is used to see if a note has finished sounding. See also the sound procedure, which makes a sound of a given frequency (Hertz) and duration (milliseconds).\r\nSee also predefined unit Music.\r\n",
       "mdown_content": "the **[playdone.html](playdone)** function, which is used to see if a note has finished sounding. See also the **[sound.html](sound)** [procedure.html](procedure), which makes a [sound.html](sound) of a given frequency (Hertz) and duration (milliseconds).\nSee also predefined unit **[musicmodule.html](Music)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

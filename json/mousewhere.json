@@ -34,5 +34,8 @@
       "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
       "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\"."
     }
+  ],
+  "dependencies": [
+
   ]
 }

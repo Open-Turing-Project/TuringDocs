@@ -4,7 +4,11 @@
 ##Description
 A value, such as 24, is assignable to a variable, such as *i*, if certain rules are followed. These rules, given in detail below, are called the *assignability *rules. They must be followed in assignment statements as well as when passing values to non-**var** parameters.
 
+
+
 ##Example
+
+
 
         var i : int
         i := 24         % 24 is assignable to i
@@ -38,3 +42,5 @@ When a subrange variable, such as *width*, is used as an expression, for example
 Turing's assignability rule applies to characters and strings in this way. A **char** value can be assigned (or passed to an non **var** parameter) with automatic conversion to a **char**(1) variable and vice versa. String values of length 1 can be assigned to **char** variables. Character, that is **char**, values can be assigned to string variables, yielding a string of length 1. String values of length *n* are assignable with automatic conversion to **char**(*n*) variables. Values of type **char**(*n*) can be assigned with automatic conversion to **string** variables.
 Turing's assignability rule applies to pointers to classes in this way. A pointer that locates an object created as class *E*, can be assigned to a pointer to class *B* only if *B* is an ancestor of (or the same as) *E*. For example, a pointer to an object that is a *stackWithDepth* can be assigned to a pointer to *stack*, where *stackWithDepth* is a child of *stack*, but not vice versa. The pointer **nil** can be assigned to any pointer variable, but the value **nil**(*C*) can only be assigned to a pointer to an ancestor of C.
 Objects of classes can be assigned to each other only if both were created as the same class.
+
+

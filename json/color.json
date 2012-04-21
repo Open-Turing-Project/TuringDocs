@@ -70,5 +70,8 @@
       "text_content": " colorback, whatcolor and maxcolor.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "**[colorback.html](colorback)**, **[whatcolor.html](whatcolor)** and **[maxcolor.html](maxcolor)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

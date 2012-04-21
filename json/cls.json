@@ -29,5 +29,8 @@
       "text_content": " See also predefined unit Text.\r\n",
       "mdown_content": "See also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

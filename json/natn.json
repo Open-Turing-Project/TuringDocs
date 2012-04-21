@@ -40,5 +40,8 @@
       "text_content": " the intn types which are n byte integer values. See also nat and int.\r\n",
       "mdown_content": "the **[int.html](int)*n**** *types which are *n* byte integer values. See also **[nat.html](nat)** and **[int.html](int)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

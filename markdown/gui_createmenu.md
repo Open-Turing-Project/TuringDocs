@@ -4,16 +4,22 @@
 ##Syntax
 **GUI.CreateMenu** (*name* : **string**) : **int**
 
+
+
 ##Description
 Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.
 The *name* parameter specifies the text that appears in the menu bar.
 **A Menu With an Item Selected**
 Menus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.
 As of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.
+
 ![Doc image](gui_createmenu01.gif)
+
 
 ##Example
 The following program creates a series of menus with menu items in them. It then disables the second menu.
+
+
 
         import GUI in "%oot/lib/GUI"
         
@@ -71,13 +77,21 @@ The following program creates a series of menus with menu items in them. It then
 ##Details
 When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.
 
+
+
 ##Details
 The following GUI subprograms can be called with a menu as the *widgetID* parameter:
 **GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**
+
+
 
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**.
 
+
+
 ##See also
 **[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar.
+
+

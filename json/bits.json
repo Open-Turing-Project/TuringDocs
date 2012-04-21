@@ -55,5 +55,8 @@
       "text_content": " explicitIntegerConstant (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: ord, chr, intstr, strint, natstr, and strnat. See also shr and shl (shift right and left).\r\n",
       "mdown_content": "*[explicitintegerconstant.html](explicitIntegerConstant)* (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord.html](ord)**, **[chr.html](chr)**, **[intstr.html](intstr)**, **[strint.html](strint)**, **[natstr.html](natstr)**, and **[strnat.html](strnat)**. See also **[shr.html](shr)** and **[shl.html](shl)** (shift right and left)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

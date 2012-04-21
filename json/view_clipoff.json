@@ -20,5 +20,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling View.ClipOff, not by calling ClipOff.\r\nSee also View.ClipAdd and View.ClipSet functions.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipOff**, not by calling **ClipOff**.\n**See also** **View.ClipAdd** and **View.ClipSet** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

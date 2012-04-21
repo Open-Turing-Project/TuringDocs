@@ -1,0 +1,49 @@
+<h1>View.ClipAddOval</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>View.ClipAddOval</strong> (<em>x</em>, <em>y</em>, <em>xradius</em>, <em>yradius</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>View.ClipAddOval</strong> procedure adds another oval specified by (<em>x</em>, <em>y</em>) and <em>xradius</em> and <em>yradius</em>) to the clipping region. If no clipping region has been specified, then the oval becomes the complete clipping region.
+A clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the oval will not appear.
+To set the initial clipping, or remove the old region and replace it with a new rectangle, use <strong>View.ClipSet</strong>. To set the clipping region back to the entire screen or window, use <strong>View.ClipOff</strong>.
+These commands only work in "<em>graphics</em>" mode.</p>
+
+<h2>Example</h2>
+
+<p>This program sets the clipping region to five circles and then draws random squares. The squares will only appear (or partially appear) in the ovals.</p>
+
+<pre><code>    const c1 : int := maxy div 4
+    const c2 : int := 3* maxy div 4
+    const radius : int := maxy div 4
+    View.ClipAddOval (c1, c1, radius, radius)
+    View.ClipAddOval (c1, c2, radius, radius)
+    View.ClipAddOval (c2, c1, radius, radius)
+    View.ClipAddOval (c2, c2, radius, radius)
+
+    % Draw the random squares in the box
+    var x, y, clr : int
+    loop
+        x := Rand.Int (0, maxx - 30)     % Random x
+        y := Rand.Int (0, maxy - 30)     % Random y
+        clr := Rand.Int (0, maxcolor)    % Random color
+        Draw.FillBox (x, y, x + 30, y + 30, clr)
+    end loop
+</code></pre>
+
+<h2>Execute</h2>
+
+<h2>Execute</h2>
+
+<p>By combining animation using <strong>View.Update</strong> and <strong>View.ClipAddOval</strong>, you can achieve a moving spotlight effect.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>View.ClipAddOval</strong>, not by calling <strong>ClipAddOval</strong>.</p>
+
+<h2>See also</h2>
+
+<p><a href="**View.ClipSet**">view_clipset-2.html</a>, <a href="**View.ClipAdd**">view_clipadd-2.html</a> and <a href="**View.ClipOff**">view_clipoff-2.html</a> functions.</p>

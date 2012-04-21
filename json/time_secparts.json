@@ -29,5 +29,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.SecParts , not by calling SecParts .\r\nSee also Time.PartsSec, Time.Date and Time.Sec functions.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.SecParts** , not by calling **SecParts** .\n**See also** **Time.PartsSec**, **Time.Date** and **Time.Sec** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

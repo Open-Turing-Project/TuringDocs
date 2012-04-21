@@ -1,0 +1,52 @@
+<h1>GUI.CreateFrame</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CreateFrame</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>kind</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Creates a frame and returns the frame's widget ID.
+A frame is a box drawn around other GUI widgets to make the window look better and help organize the GUI elements.
+<strong>Three Types of Frames With a Label in Each Frame</strong>
+Frames are the only GUI widgets that can have other widgets placed within them. Frames are passive widgets, meaning that they do not respond to button clicks or keystrokes.
+The <em>x1</em> and <em>y1</em> parameters specify the lower-left corner of the frame and the <em>x2</em> and <em>y2</em> parameters specify the upper-right corner of the frame. The <em>kind</em> parameter specifies the type of frame. This is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em>, or <em>GUI.EXDENT</em>. A <em>kind</em> of 0 is the default and is the same as <em>GUI.LINE</em>.
+<em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the contents frame appear indented or recessed. <em>GUI.EXDENT</em> makes the contents of the frame appear to stand out from the window.</p>
+
+<p><img src="gui_createframe01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>The following program draws three frames in the window and draws a label in each one.</p>
+
+<pre><code>    import GUI 
+    View.Set ("graphics:250;90,nobuttonbar") 
+    GUI.SetBackgroundColor (gray)
+    var lineFrame, indentFrame, exdentFrame : int
+    var lineLabel, indentLabel, exdentLabel : int
+    lineFrame := GUI.CreateFrame (10, 10, 80, 70, 0) 
+    indentFrame := GUI.CreateFrame (90, 10, 160, 70, GUI.INDENT) 
+    exdentFrame := GUI.CreateFrame (170, 10, 240, 70, GUI.EXDENT)
+    % Label the lines.
+    lineLabel := GUI.CreateLabelFull (10, 10, "Line", 70, 60,
+        GUI.CENTER + GUI.MIDDLE, 0)
+    indentLabel := GUI.CreateLabelFull (90, 10, "Indent", 70, 60, 
+        GUI.CENTER + GUI.MIDDLE, 0)
+    exdentLabel := GUI.CreateLabelFull (170, 10, "Exdent", 70, 60, 
+        GUI.CENTER + GUI.MIDDLE, 0)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>When <strong>GUI.CreateFrame</strong> is called, the newly created frame will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
+A frame widget is a passive widget and cannot be enabled or disabled.</p>
+
+<h2>Details</h2>
+
+<p>The following GUI subprograms can be called with a frame as the <em>widgetID</em> parameter:
+<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong></p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CreateFrame</strong>, not by calling <strong>CreateFrame</strong>.</p>

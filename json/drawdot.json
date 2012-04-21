@@ -72,5 +72,8 @@
       "text_content": "setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures. \r\n    ",
       "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures. "
     }
+  ],
+  "dependencies": [
+    "drawdot01.gif"
   ]
 }

@@ -1,0 +1,45 @@
+<h1>quit</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>quitStatement</em> is:
+<strong>quit</strong> [ <em>guiltyParty</em> ] [ : <em>quitReason</em> ]</p>
+
+<h2>Description</h2>
+
+<p>The <strong>quit</strong> statement causes a program (or concurrent process) to fail. The failure (called an <em>exception</em>) either aborts the program (or process) or causes control to be passed to an exception handler.</p>
+
+<h2>Example</h2>
+
+<p>In the <em>inputLines</em> procedure, halt the program if end of file is encountered before the string "stop" is read. Note that a <strong>return</strong> statement in the procedure would terminate the procedure but not the entire program.</p>
+
+<pre><code>    var line : array 1 .. 50 of string
+
+    procedure inputLines
+        var i : int := 0
+        loop
+            if eof then
+                put "Missing 'stop' in input"
+                quit        % Halt entire program
+            end if
+            i := i + 1
+            get line ( i )
+            exit when line ( i ) = "stop"
+        end loop
+    end inputLines
+
+    inputLines
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In the simple case, the optional <em>guiltyParty</em> and <em>quitReason</em> are omitted. The <em>guiltyParty </em>option is used to specify the position of failure. See <em>exceptionHandler</em> for an example of a <strong>quit</strong> statement used in conjunction with a handler. A handler, which is located at the beginning of a subprogram body, is given control when a <strong>quit</strong> is executed or a failure, such as division by zero, occurs in the subprogram.
+The <em>guiltyParty</em> option is used to designate the location of the failure, for example, to tell the debugger what line is considered to be the location of the failure. A <em>guiltyParty</em> is one of:
+(a)&lt;(b)>
+If <em>guiltyParty</em> is omitted, the failure is considered to occur at the <strong>quit</strong> statement. If it is &lt;, the failure is considered to occur at the call to the present subprogram. For example, if the present subprogram implements square root <em>sqrt</em> and is passed a negative argument, it can use &lt; to specify that the caller provided a faulty argument. If <em>guiltyParty</em> is >, this means the failure has already occurred and is being passed on to the next handler or to the system. To summarize, the three possibilities for designating the location of the failure are:
+(a)&lt;Caller is cause of failure(b)>The exception being handled is the cause.(c)(omitted <em>guiltyParty</em>)  The present <strong>quit</strong> is the cause.
+The <em>quitReason</em> is an integer expression which is used to identify the kind of failure. If it is omitted, a default value is chosen in the following manner. If <em>guiltyParty</em> is omitted or is &lt;, the default is 1. If <em>guiltyParty</em> is > and an exception handler is active, the default is the <em>quitReason</em> of the exception being handled. If no exception is being handled, the default is 1. In the case of program abortion, the implementation may pass the <em>quitReason</em> to the operating system or programming environment.</p>
+
+<h2>See also</h2>
+
+<p><em>exceptionHandler</em>, <strong><a href="return">return.html</a></strong> and <strong><a href="result">result.html</a></strong>.</p>

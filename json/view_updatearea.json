@@ -79,5 +79,8 @@
       "text_content": "View.Set for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options. \r\n          View.Update for procedure to\r\n          update the entire screen at one time.\r\n    ",
       "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" and \"nooffscreenonly\" options. \n**[view_update.html](View.Update)** for procedure toupdate the entire screen at one time."
     }
+  ],
+  "dependencies": [
+
   ]
 }

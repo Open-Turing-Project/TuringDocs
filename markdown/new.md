@@ -5,11 +5,17 @@
 A *newStatement* is:
  **new** [ *collectionOrClassId* , ] *pointerVariableReference*
 
+
+
 ##Description
 A **new** statement creates (allocates) a new element and assigns its location to the pointer variable. This element can be an object of a collection or class or a value of a type. If the *collectionOrClassId* is omitted, the choice of element is determined by the type of the pointer. For example, if the pointer is to class *C*, an object of class *C* will be allocated.
 
+
+
 ##Example
 Using a collection, declare a list of records and allocate one record.
+
+
         var list : collection of
             record
                 contents : string ( 10 )
@@ -19,6 +25,8 @@ Using a collection, declare a list of records and allocate one record.
         new list, first         % Short form: new first
 ##Example
 Using a class, create an object of that class. The object is located by the *start* pointer. 
+
+
         class node
             export var next, var name
             name : string (25)
@@ -28,6 +36,8 @@ Using a class, create an object of that class. The object is located by the *sta
         new node, start         % Short form: new start
 ##Example
 Using a record type, declare a list of records and allocate one record. 
+
+
         type item:
             record
                 contents : string ( 10 )
@@ -44,6 +54,8 @@ If the pointer locates class *C *and *C* contains an **implement** **by** list, 
 The form **new** *p*  is a short form for **new** *C*, *p *when *C* is the class or collection given in *p*'s type.
 If *p* is a pointer to class *C* and *C* has a descendant (expansion) class *D*, a **new** statement can be used to allocate an object of type *D*, as in:
 If D has an **implement** **by** clause, the expansion is created.
+
+
         new D, p    % Allocates an object of class D
 ##Details
 The **new** statement can also be used to resize a **flexible array**. If an array has been declared flexible using the syntax .
@@ -52,10 +64,16 @@ The existing array entries will retain their values, except that any index made 
 Additionally, the upper bound (both in the declaration and the **new** statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another **new**.
 In the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.
 Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with "***"** as the upper bound.
+
+
         var name : flexible array indexType { , indexType } of typeSpec        new name , newUpper1 {,newUpper2}
 ##Example
 See **array** for an example of **flexible arrays**.
 
+
+
 ##See also
 **[class.html](class)** and **[collection.html](collection)** declarations, **[pointer.html](pointer)** type, **[free.html](free)** [statement.html](statement), **[nil.html](nil)** value and **[implement_by.html](implement by)** list.
 For [flexible.html](flexible) arrays, see also **[array.html](array)** and **[flexible.html](flexible)**.
+
+

@@ -1,0 +1,50 @@
+<h1>View.WhatDotColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>View.W</strong><strong>hatDotColor</strong> ( <em>x</em>, <em>y</em> : <strong>int</strong> ) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>View.WhatDotColor</strong> function is used to determine the color number of the specified pixel. The alternate spelling is <strong>View.WhatDotColour</strong>.</p>
+
+<h2>Example</h2>
+
+<p>This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.</p>
+
+<pre><code>    View.Set ( "graphics" )
+    var x, y : int := 0
+    var dx, dx : int := 1
+    loop
+        if View.WhatDotColor ( x, y ) not= 0 and
+            View.WhatDotColor ( x, y ) not= brightred then
+            Draw.FillOval (x, y, 10, 10, brightred)
+        end if
+        Draw.Dot ( x, y, 1 )
+        x := x + dx
+        y := y + dy
+        if x = 0 or x = maxx then
+            dx := -dx
+        end if
+        if y = 0 or y = maxy then
+            dy := -dy
+        end if
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Another example illustrates the use of <strong>View.WhatDotColor</strong> to determine the color of pixels in a window painted with multi-colorblocks. The actual color number appears in the block. The colorof the dot under the mouse cursor appears in the upper-leftcorner of the window.  Note that you can also place the mousecursor over the black text indicating the color number.</p>
+
+<h2>Details</h2>
+
+<p>The screen should be in a"<em>graphics</em>" mode. If is not set to "<em>graphics</em>"<em>  </em>mode,  it will automatically be set to "<em>graphics</em>" mode. See <strong>View.Set </strong>for details.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>View.WhatDotColor</strong>, not by calling <strong>WhatDotColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Draw.Dot">draw_dot.html</a></strong>, which is used for setting the color of a pixel. See also <strong><a href="maxx">maxx.html</a></strong> and <strong><a href="maxy">maxy.html</a></strong>, which are used to determine the number of pixels on the screen.</p>

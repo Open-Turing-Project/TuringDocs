@@ -1,0 +1,14 @@
+<h1>Font</h1>
+
+<h2>Description</h2>
+
+<p>This unit contains the predefined subprograms that deal with fonts. Using these routines, you can display text in a selected font name, size and style on the screen. Note that output in a particular font is treated as graphics output.
+All routines in the Font module are exported qualified (and thus must be prefaced with "<strong>Font</strong>.").</p>
+
+<h2>Details</h2>
+
+<p>There is a default font. You can draw in and obtain information about the default font by passing <em>fontDefaultID</em> to <strong>Font.Draw</strong>, <strong>Font.Width</strong> and <strong>Font.Sizes</strong>. The default font is the same font as is used by <strong>put</strong> in the output window.</p>
+
+<h2>Entry Points</h2>
+
+<p><a href="**New**">font_new.html</a>Selects a particular font name, size and style for a new font.<a href="**Free**">font_free.html</a>Frees up the font created by using <strong>New</strong>.<a href="**Draw**">font_draw.html</a>Draws text in a given font.<a href="**Width**">font_width.html</a>Gets the width in pixels of a particular piece of text in a specified font.<a href="**Sizes**">font_sizes.html</a>Gets the height and various leadings of a specified font.<a href="**Name**">font_name.html</a>Returns the name of the specified font.<a href="**StartName**">font_startname.html</a>Prepares to list all available fonts,<a href="**GetName**">font_getname.html</a>Gets the next font name.<a href="**GetStyle**">font_getstyle.html</a>Gets all the available styles for a specified font.<a href="**StartSize**">font_startsize.html</a>Prepares to list all available sizes for a specified font and style.<a href="**GetSize**">font_getsize.html</a>Gets the next font size.</p>

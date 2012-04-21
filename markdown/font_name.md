@@ -4,11 +4,17 @@
 ##Syntax
 **Font.Name** (*fontID* : **int**) *fontName* : **string**
 
+
+
 ##Description
 **Font.Name** is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts serif, sans serif and mono.
 
+
+
 ##Example
 The program prints out the fonts used for serif, sans serif and mono.
+
+
 
         var serifFont, sansSerifFont, monoFont : int
         serifFont := Font.New ("serif:12")
@@ -26,3 +32,5 @@ The program prints out the fonts used for serif, sans serif and mono
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Font.Name**, not by calling **Name**.
+
+

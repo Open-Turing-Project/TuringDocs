@@ -1,0 +1,32 @@
+<h1>sound</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>sound</strong> ( <em>frequency</em>, <em>duration</em> : <strong>int</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>sound</strong> procedure is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so <strong>sound</strong>(440, 1000) plays middle A for one second.</p>
+
+<h2>Example</h2>
+
+<p>This program sounds the frequencies 100, 200 up to 1000 each for half a second.</p>
+
+<pre><code>    for i : 1 .. 10
+        put i
+        sound ( 100 * i, 500 )  % Sound note for 1/2 second
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>On IBM PC compatibles, the hardware resolution of duration is in units of 55 milliseconds. For example, <strong>sound</strong>(440, 500) will delay the program by about half a second, but may be off by as much as 55 milliseconds.</p>
+
+<h2>Details</h2>
+
+<p>The <strong>sound</strong> procedure does not currently work under MacOOT.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="play">play.html</a></strong> <a href="statement">statement.html</a>, which plays notes based on musical notation. For example, <strong><a href="play">play.html</a></strong>("8C") plays an eighth note of middle C. See also the <strong><a href="delay">delay.html</a></strong>, <strong><a href="clock">clock.html</a></strong>, <strong><a href="sysclock">sysclock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong>, <strong><a href="time">time.html</a></strong> and <strong><a href="date">date.html</a></strong> statements.
+See also predefined unit <strong><a href="Music">musicmodule.html</a></strong>.</p>

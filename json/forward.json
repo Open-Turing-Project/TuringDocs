@@ -49,5 +49,8 @@
       "text_content": " collection and type declarations.\r\n",
       "mdown_content": "**[collection.html](collection)** and **[type.html](type)** declarations."
     }
+  ],
+  "dependencies": [
+
   ]
 }

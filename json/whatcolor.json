@@ -44,5 +44,8 @@
       "text_content": " the color procedure, which is used to set the color. See also colorback and whatcolorback.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "the **[color.html](color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[colorback.html](colorback)** and **[whatcolorback.html](whatcolorback)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

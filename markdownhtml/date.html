@@ -1,0 +1,27 @@
+<h1>date</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>date</strong> (<strong>var</strong> <em>d</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>date</strong> statement is used to determine the current date. Variable <em>d </em>is assigned a string in the format "<em>dd mmm yy</em>", where <em>mmm</em> is the first 3 characters of the month, e.g., "<em>Apr</em>". For example, if the date is Christmas 2002, <em>d </em>will be set to "<em>25 Dec 02</em>".</p>
+
+<h2>Example</h2>
+
+<p>This program greets you and tells you the date.</p>
+
+<pre><code>    var today : string
+    date (today)
+    put "Greetings!!  The date today is ", today
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Be warned that Turing gets the date from the operating system. If the date is is not correctly set in the operating system, then the <strong>date</strong> procedure will give incorrect results.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="delay">delay.html</a></strong>, <strong><a href="clock">clock.html</a></strong>, <strong><a href="sysclock">sysclock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong> and <strong><a href="time">time.html</a></strong> statements.
+See also predefined unit <strong><a href="Time">timemodule.html</a></strong>.</p>

@@ -1,0 +1,57 @@
+<h1>GUI.CloseWindow</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CloseWindow</strong> (<em>window</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Closes a window with widgets in it. This procedure automatically disposes of any widgets in the window and makes certain that the GUI Library recognizes that the window no longer exists. This procedure will call <em>Window.Close</em>, so there is no need for the user to do so.</p>
+
+<h2>Example</h2>
+
+<p>The program opens up a window with two buttons. If the button labelled "Close and Open" is pressed, the window is closed and a new window with two buttons is opened in a random location on the screen.</p>
+
+<pre><code>    import GUI
+
+    const screenWidth : int := Config.Display (cdScreenWidth)
+    const screenHeight : int := Config.Display (cdScreenHeight)
+    const titleBarHeight : int := 32
+    const windowEdgeSize : int := 13
+    const windowWidth : int := 150
+    const windowHeight : int := 100
+    var windowID, windowNumber, closeButton, quitButton : int := 0
+
+    procedure CloseAndOpen
+        if windowID not= 0 then
+            GUI.CloseWindow (windowID)
+        end if
+        windowNumber += 1
+        var xPos : int := Rand.Int (0, screenWidth - windowWidth -
+            windowEdgeSize)
+        var yPos : int := Rand.Int (0, screenHeight - windowHeight - 
+            titleBarHeight)
+        windowID := Window.Open ("title:Window #" + 
+            intstr (windowNumber) + ",graphics:" + 
+            intstr (windowWidth) + ";" + intstr (windowHeight) +
+            ",position:" + intstr (xPos) + ";" + intstr (yPos))
+        closeButton := GUI.CreateButton (10, 60, 130, 
+            "Close And Open", CloseAndOpen)
+        quitButton := GUI.CreateButton (10, 10, 130, "Quit", GUI.Quit)
+    end CloseAndOpen
+
+    CloseAndOpen
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+    GUI.CloseWindow (windowID)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CloseWindow</strong>, not by calling <strong>CloseWindow</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.ShowWindow">gui_showwindow.html</a></strong> and<strong><a href="GUI.HideWindow">gui_hidewindow.html</a></strong>, for showing and hiding windows with widgets in them.</p>

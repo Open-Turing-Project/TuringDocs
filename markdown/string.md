@@ -5,10 +5,16 @@
 A *stringComparison* is one of:
  (a)*stringExpn* = *stringExpn* (b)*stringExpn* **not=** *stringExpn* (c)*stringExpn* **>** *stringExpn* (d)*stringExpn* **<** *stringExpn* (e)*stringExpn* **>**= *stringExpn* (f)*stringExpn* **<**= *stringExpn*
 
+
+
 ##Description
 Strings (*stringExpns*) can be compared for equality (= and **not=**) and for ordering (>, <, >= and <=).
 
+
+
 ##Example
+
+
 
         var name : string := "Nancy"
         var licenceNumber : string ( 6 )
@@ -19,3 +25,5 @@ Ordering among strings is essentially alphabetic order. String *S* is considered
 *S *> *T* (*S* comes after *T *) means the same thing as *T *< *S*. *S *>= *T *means the same thing as *S *> *T ***or** *S *= *T*. *S *<= *T* means the same thing as *S *< *T ***or** *S*=*T*.
 ASCII gives the ordering among individual characters. It specifies, among other things, that letter capital *L*  comes alphabetically before capital letter *M* and similarly for small (lower case) letters.
 On IBM mainframe computers, the EBCDIC specification of characters may be used instead of ASCII.
+
+

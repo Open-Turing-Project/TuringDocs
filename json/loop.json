@@ -41,5 +41,8 @@
       "text_content": " A loop statement can contain more than one exit, or none at all (in which case it is an infinite loop). When the exit when is at the beginning of the loop, the loop works like Pascal's do while; when at the end, the loop works like Pascal's repeat until.\r\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\r\n\r\nThis clause is equivalent to: assert trueFalseExpn.\r\n",
       "mdown_content": "A **loop** statement can contain more than one **exit**, or none at all (in which case it is an infinite loop). When the **exit** **when** is at the beginning of the loop, the loop works like Pascal's **do** **while**; when at the end, the loop works like Pascal's **repeat** **until**.\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\nThis clause is equivalent to: **assert** *trueFalseExpn*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

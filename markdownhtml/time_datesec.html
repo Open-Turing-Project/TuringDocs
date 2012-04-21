@@ -1,0 +1,36 @@
+<h1>Time.DateSec</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Time.DateSec</strong> (<em>dateString</em> : <strong>string</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Time.DateSec</strong> function is used to<strong> </strong>convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.
+The function can also convert just the date ("<em>dd mmm yy</em>"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("<em>hh:mm:ss</em>"), in which case it returns the number of seconds that have passed since midnight of that day.
+If the format is incorrect or can't be interpreted, then <strong>Time.DateSec</strong> will return 1 and <strong>Error.Last </strong>and<strong> Error.LastMsg</strong> will be set to the appropriate error.</p>
+
+<h2>Example</h2>
+
+<p>This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.</p>
+
+<pre><code>    var theDateTime, theDate, theTime : string
+    theDateTime := Time.Date
+    theDate := theDateTime (1 .. 9)
+    theTime := theDateTime (11 .. *)
+    put "The number of seconds from 00:00:00 GMT Jan 1, 1970",
+        "from midnight ", theDate, "is ", Time.DateSec (theDate)
+    put "The number of seconds from midnight to ", theTime "is ", 
+        Time.DateSec (theTime)
+    put "The number of seconds from 00:00:00 GMT Jan 1, 1970",
+        "from ", theDateTime, "is ", Time.DateSec (theDateTime)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Time.DateSec</strong>, not by calling <strong>DateSec</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Time.Sec">time_sec.html</a></strong>, <strong><a href="Time.Date">time_date.html</a></strong> and <strong><a href="Time.SecDate">time_secdate.html</a></strong> functions.</p>

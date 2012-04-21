@@ -1,0 +1,28 @@
+<h1>Sys.GetComputerName</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sys.GetComputerName</strong> : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Sys.GetComputerName </strong>function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs a greeting to the user .</p>
+
+<pre><code>    var computerName, userName : string
+    computerName := Sys.GetComputerName
+    userName := Sys.GetUserName
+    put "Hello ", userName, " on ", computerName
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sys. GetComputerName</strong>, not by calling <strong>GetComputerName</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sys.GetUserName">sys_getusername.html</a></strong> to obtain the user name of the user currently logged in.</p>

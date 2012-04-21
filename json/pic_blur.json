@@ -55,5 +55,9 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Blur, not by calling Blur.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Blur**, not by calling **Blur**."
     }
+  ],
+  "dependencies": [
+    "pic_blur01.gif",
+    "pic_blur02.gif"
   ]
 }

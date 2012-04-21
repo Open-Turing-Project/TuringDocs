@@ -42,5 +42,8 @@
       "text_content": " the indirection operator @, cheat, explicitIntegerConstant (how to write hexadecimal constants), and pointer type (in particular unchecked pointer type). See also addr, which returns the address of a variable.\r\n",
       "mdown_content": "the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable."
     }
+  ],
+  "dependencies": [
+
   ]
 }

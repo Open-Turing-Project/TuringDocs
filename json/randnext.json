@@ -26,5 +26,8 @@
       "text_content": " randseed, randint, rand and randnext.\r\n",
       "mdown_content": "**[randseed.html](randseed)**, **[randint.html](randint)**, **[rand.html](rand)** and **[](randnext)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

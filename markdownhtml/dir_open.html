@@ -1,0 +1,34 @@
+<h1>Dir.Open</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Dir.Open</strong> (<em>directoryPathName</em> : <strong>string</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Dir.Open</strong> is part of a series of four subprograms that help users get directory listings. <strong>Dir.Open</strong> returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the <strong>Dir.Get</strong> and <strong>Dir.GetLong</strong> subprograms. After getting the listing, the user should call <strong>Dir.Close</strong>.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>Dir.Open</strong> call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>This program prints a listing of all the files in the current directory.</p>
+
+<pre><code>    var streamNumber : int
+    var fileName : string
+    streamNumber := Dir.Open (Dir.Current)
+    assert streamNumber &gt; 0
+    loop
+        fileName := Dir.Get (streamNumber)
+        exit when fileName = ""
+        put fileName
+    end loop
+    Dir.Close (streamNumber)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Dir.Open</strong>, not by calling <strong>Open</strong>.</p>

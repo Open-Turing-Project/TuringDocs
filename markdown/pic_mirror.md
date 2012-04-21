@@ -4,16 +4,24 @@
 ##Syntax
 **Pic.Mirror** (*picID* : **int**) : **int**
 
+
+
 ##Description
 **Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a mirror image. 
+
+
 
 ##Details
 Note that the mirror-imaged picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
 
+
+
 ##Example
 The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.
 **Output from the Program**
+
 ![Doc image](pic_mirror01.gif)
+
         View.Set ("graphics:210;125,nobuttonbar")
         
         % Get the original picture
@@ -35,3 +43,5 @@ The program draws a crescent on the screen, takes a picture of it and then creat
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Pic.Mirror**, not by calling **Mirror**.
+
+

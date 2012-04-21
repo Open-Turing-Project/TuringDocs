@@ -65,5 +65,8 @@
       "text_content": "Pic.FileNewFrames for information\r\n          on how to load a GIF image with multiple frames into an array of \r\n          ints.\r\n          Pic.DrawFrames for information on\r\n          how to sequentially display the images stored in array of pictures.\r\n          Pic.DrawFramesBack for \r\n          information on how to sequentially display the images stored in array \r\n          of pictures while continuing to execute the program.\r\n    ",
       "mdown_content": "**[pic_filenewframes.html](Pic.FileNewFrames)** for informationon how to load a GIF image with multiple frames into an array of **int**s.\n**[pic_drawframes.html](Pic.DrawFrames)** for information onhow to sequentially display the images stored in array of pictures.\n**[pic_drawframesback.html](Pic.DrawFramesBack)** for information on how to sequentially display the images stored in array of pictures while continuing to execute the program."
     }
+  ],
+  "dependencies": [
+
   ]
 }

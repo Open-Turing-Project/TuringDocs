@@ -1,0 +1,29 @@
+<h1>fetcharg</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>fetcharg</strong> ( <em>i </em>: <strong>int</strong> ) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>fetcharg</strong> function is used to access the <em>i</em>-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
+:r file1 file2
+then <strong>fetcharg</strong>(2) will return "file2". If a program called <em>prog.x </em>is run under UNIX using this command:
+prog.x file1 file2
+the value of <strong>fetcharg</strong>(2) will similarly be "file2".
+The <strong>nargs</strong> function, which gives the number of arguments passed to the program, is usually used together with the <strong>fetcharg</strong> function. Parameter <em>i</em> passed to <strong>fetcharg</strong> must be in the range 0 .. <strong>nargs</strong>.
+The 0-th argument is the name of the running program.</p>
+
+<h2>Example</h2>
+
+<p>This program lists its own name and its arguments.</p>
+
+<pre><code>    put "The name of this program is : ", fetcharg ( 0 )
+    for i : 1 .. nargs
+        put "Argument ", i, " is ", fetcharg ( i )
+    end for
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="nargs">nargs.html</a></strong></p>

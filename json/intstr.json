@@ -31,5 +31,8 @@
       "text_content": " chr, ord and strint functions. See also the natstr and strnat functions. See also explicitIntegerConstants for the way to write non base 10 values in a program.\r\n",
       "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)** and **[strint.html](strint)** functions. See also the **[natstr.html](natstr)** and **[strnat.html](strnat)** functions. See also *explicitIntegerConstants* for the way to write non base 10 values in a [program.html](program)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

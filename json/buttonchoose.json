@@ -45,5 +45,8 @@
       "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also mousewhere to get the current status of mouse button(s).\r\nSee also predefined unit Mouse.\r\n",
       "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[mousewhere.html](mousewhere)** to get the current status of mouse button(s).\nSee also predefined unit **[mousemodule.html](Mouse)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

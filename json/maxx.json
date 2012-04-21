@@ -39,5 +39,8 @@
       "text_content": " drawdot for an example of the use of maxx and for a diagram illustrating x and y positions. \r\n",
       "mdown_content": "**[drawdot.html](drawdot)** for an example of the use of **[](maxx)** and for a diagram illustrating x and y positions. "
     }
+  ],
+  "dependencies": [
+
   ]
 }

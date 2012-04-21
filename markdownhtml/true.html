@@ -1,0 +1,26 @@
+<h1>true</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>true</strong></p>
+
+<h2>Description</h2>
+
+<p>A <strong>boolean</strong> (true/false) variable can be either <strong>true</strong> or <strong>false</strong> (see <strong>boolean</strong> type).</p>
+
+<h2>Example</h2>
+
+<pre><code>    var passed : boolean := true
+    var mark : int
+    for i : 1 .. 10
+        get mark
+        passed := passed and mark &gt;= 60
+    end for
+    if passed = true then
+        put "You passed all ten subjects"
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The line <strong>if</strong> <em>passed</em>=<strong>true</strong> <strong>then</strong> can be simplified to <strong>if</strong> <em>passed </em><strong>then</strong> with no change to the meaning of the program.</p>

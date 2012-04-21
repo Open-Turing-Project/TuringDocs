@@ -1,0 +1,29 @@
+<h1>playdone</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>playdone</strong> : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>playdone</strong> function is used to determine when notes played by the <strong>play</strong> procedure have finished sounding.</p>
+
+<h2>Example</h2>
+
+<p>This program sounds the first three notes of the C scale and outputs "All done" as soon as they are finished. Without the loop, the message would come out before the notes are finished.</p>
+
+<pre><code>    play ( "cde" )
+    loop
+        exit when playdone
+    end loop
+    put "All done"
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Under some systems such as UNIX, the <strong>playdone</strong> procedure may be meaningless.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="play">play.html</a></strong> <a href="procedure">procedure.html</a>. See also the <strong><a href="sound">sound.html</a></strong> <a href="procedure">procedure.html</a> which makes a <a href="sound">sound.html</a> of a given frequency (Hertz) and duration (milliseconds).
+See also predefined unit <strong><a href="Music">musicmodule.html</a></strong>.</p>

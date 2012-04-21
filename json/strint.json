@@ -29,5 +29,8 @@
       "text_content": " chr, ord, intstr and strnat functions.\r\n",
       "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)**, **[intstr.html](intstr)** and **[strnat.html](strnat)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

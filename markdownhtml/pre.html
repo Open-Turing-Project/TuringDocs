@@ -1,0 +1,32 @@
+<h1>pre</h1>
+
+<h2>Syntax</h2>
+
+<p>An <em>preAssertion </em>is:
+<strong>pre</strong> <em>trueFalseExpn</em></p>
+
+<h2>Description</h2>
+
+<p>A <strong>pre</strong> assertion is a special form of an <strong>assert</strong> statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the <em>trueFalseExpn</em>. The <em>trueFalseExpn </em>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <strong>assert</strong> statements and <strong>procedure</strong> and <strong>function</strong> declarations for more details. See also <strong>post</strong> and <strong>invariant</strong> assertions.</p>
+
+<h2>Example</h2>
+
+<p>This function computes the average of <em>n values</em>. Its <strong>pre</strong> condition requires that <em>n</em> must be strictly positive, to avoid the possibility of dividing by zero when computing the average.</p>
+
+<pre><code>    function average ( a : array 1 .. * of real, n : int) : real
+        pre n &gt; 0
+        var sum : real := 0
+        for i : 1 .. n
+            sum := sum + a ( i )
+        end for
+        result sum / n
+    end average
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A <strong>pre</strong> assertion can also be used in a <strong>module</strong>, <strong>monitor</strong>, <strong>class</strong> or <strong>process</strong> declaration to make sure that requirements for initialization are met.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="module">module.html</a></strong> and <strong><a href="process">process.html</a></strong>.</p>

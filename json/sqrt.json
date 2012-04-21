@@ -38,5 +38,8 @@
       "text_content": " See also predefined unit Math.\r\n",
       "mdown_content": "See also predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

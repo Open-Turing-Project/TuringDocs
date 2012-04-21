@@ -43,5 +43,8 @@
       "text_content": " class and collection declarations, the pointer type, the new statement and the nil value.\r\n",
       "mdown_content": "**[class.html](class)** and **[collection.html](collection)** declarations, the **[pointer.html](pointer)** type, the **[new.html](new)** [statement.html](statement) and the **[nil.html](nil)** value."
     }
+  ],
+  "dependencies": [
+
   ]
 }

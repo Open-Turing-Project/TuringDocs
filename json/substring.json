@@ -43,5 +43,8 @@
       "text_content": " string, char, char(n), explicitStringConstant, explicitCharConstant, catenation and length.\r\n",
       "mdown_content": "**[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(*n*), *[explicitstringconstant.html](explicitStringConstant)*, *[explicitcharconstant.html](explicitCharConstant)*, catenation and **[length.html](length)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,70 @@
+<h1>forward</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>forwardDeclaration</em> is:
+<strong>forward</strong> <em>subprogramHeader</em>[ <strong>import</strong> <em>importItem</em> {, <em>importItem</em> } ]</p>
+
+<h2>Description</h2>
+
+<p>A procedure or function is declared to be <strong>forward</strong> when you want to define its header but not its body. This is the case when one procedure or function calls another, which in turn calls the first; this situation is called <em>mutual recursion</em>. The use of <strong>forward</strong> is necessary in this case, because every item must be declared before it can be used.</p>
+
+<h2>Example</h2>
+
+<p>This example program evaluates an input expression <em>e</em> of the form <em>t</em> { + <em>t </em>} where t is of the form <em>p</em> { * <em>p </em>} and <em>p </em>is of the form (<em>e </em>) or an explicit real expression. For example, the value of 1.5 + 3.0 * (0.5 + 1.5) halt is 7.5.</p>
+
+<pre><code>    var token : string
+
+    forward procedure expn ( var eValue : real )
+
+    forward procedure term ( var tValue : real )
+
+    forward procedure primary ( var pValue: real )
+
+    body procedure expn
+        var nextValue : real
+        term ( eValue )         % Evaluate t
+        loop                    % Evaluate { + t}
+            exit when token not= "+"
+            get token
+            term ( nextValue )
+            eValue := eValue + nextValue
+        end loop
+    end expn
+
+    body procedure term
+        var nextValue : real
+        primary (tValue )       % Evaluate p
+        loop                    % Evaluate { * p}
+            exit when token not= "*"
+            get token
+            primary ( nextValue )
+            tValue := tValue * nextValue
+        end loop
+    end term
+    body procedure primary
+        if token = "(" then
+            get token
+            expn ( pValue )     % Evaluate (e)
+            assert token = ")"
+        else                    % Evaluate "explicit real"
+            pValue := strreal ( token )
+        end if
+        get token
+    end primary
+
+    get token               % Start by reading first token
+    var answer : real
+    expn ( answer )         % Scan and evaluate input expression
+    put "Answer is ", answer
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Following a <strong>forward</strong> procedure or function declaration, the <strong>body</strong> of the procedure must be given at the same level (in the same sequence of statements and declarations as the <strong>forward</strong> declaration). This is the only use of the keyword <strong>body</strong>. See also <strong>body</strong>.
+Any procedure or function that is declared using <strong>forward</strong> requires an <strong>import</strong> list. In this list, imported procedures or functions that have not yet appeared must be listed as <strong>forward</strong>. For example, the import list for <em>expn </em>is <strong>import</strong> <strong>forward</strong> <em>term</em> &#133; Before a procedure or function can be called, before its body appears, and before it can be passed as a parameter, its header as well as headers of procedures or functions imported directly or indirectly by it must have appeared.
+The keyword <strong>forward</strong> is also used in <strong>collection</strong> and <strong>type</strong> declarations.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="collection">collection.html</a></strong> and <strong><a href="type">type.html</a></strong> declarations.</p>

@@ -45,5 +45,8 @@
       "text_content": " View.Set and Draw.Dot.\r\n",
       "mdown_content": "**[view_set.html](View.Set) **and **[draw_dot.html](Draw.Dot)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

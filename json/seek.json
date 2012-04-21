@@ -41,5 +41,8 @@
       "text_content": " read, write, open, close, tell, get and put statements. Another example use of seek is given with the explanation of the tell statement.\r\n",
       "mdown_content": "**[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[tell.html](tell)**, **[get.html](get)** and **[put.html](put)** statements. Another example use of **[](seek)** is given with the explanation of the **[tell.html](tell)** [statement.html](statement)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

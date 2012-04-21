@@ -20,17 +20,27 @@
 **GUI.DrawStar** (*widgetID*, *x1*, *y1*, *x2*, *y2*, *Color* : **int** )
 **GUI.DrawText** (*widgetID* : **int**, *textStr* : **string**,     *x*, *y* : **int**, *fontID*, *Color* : **int**)
 
+
+
 ##Description
 Performs a *Draw* command to the canvas specified by *widgetID*.
 All of these routines are essentially the same as the similarly-named procedures in the *Draw* module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. If the canvas is in "xor mode", all the drawing will be done with "xor" set. (See **View.Set*** *for more information about "xor".)
 The *widgetID* must specify a canvas widget.
 
+
+
 ##Example
 See **GUI.CreateCanvas** for an example of **GUI.DrawFillOval**.
+
+
 
 ##Status
 Exported qualified.
 This means that you can only call the procedures by calling **GUI.Draw**, not by calling **Draw**.
 
+
+
 ##See also
 **GUI.CreateCanvas**.
+
+

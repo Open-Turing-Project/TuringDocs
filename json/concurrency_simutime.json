@@ -45,5 +45,8 @@
       "text_content": " Exported unqualified.\r\nThis means that you can call the function by calling simutime or by calling Concurrency.simutime.\r\n",
       "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **simutime** or by calling **Concurrency.simutime**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

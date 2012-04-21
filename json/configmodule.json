@@ -19,5 +19,8 @@
       "text_content": "Display Returns information about the display currently attached.Lang Returns information about the language environment that the program is currently running within.Machine Returns information about the hardware on which the program is running.",
       "mdown_content": "[config_display.html](**Display**) Returns information about the display currently attached.[config_lang.html](**Lang**) Returns information about the language environment that the program is currently running within.[config_machine.html](**Machine**) Returns information about the hardware on which the program is running."
     }
+  ],
+  "dependencies": [
+
   ]
 }

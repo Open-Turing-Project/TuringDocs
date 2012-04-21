@@ -1,0 +1,26 @@
+<h1>typeSpec</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>typeSpec</em> (type specification) is one of:
+(a)<strong>int</strong>(b)<strong>real</strong>(c)<strong>boolean</strong>(d)<em>stringType</em><em>% Example: <strong>string</strong> ( 20 )</em>(e)<em>subrangeType</em><em>% Example: 1 </em>..<em> 150</em>(f)<em>enumeratedType</em><em>% Example: <strong>enum</strong> ( red</em>,<em> green</em>,<em> blue )</em>(g)<em>arrayType</em><em>% Example: <strong>array</strong> 1 </em>..<em> 150 <strong>of</strong> <strong>real</strong></em>(h)<em>setType</em><em>% Example: <strong>set</strong> <strong>of</strong> 1 </em>..<em> 10</em>(i)<em>recordType</em><em>% Example: <strong>record</strong> &#133; <strong>end</strong> <strong>record</strong></em>(j)<em>unionType</em><em>% Example: <strong>union</strong> &#133; <strong>end</strong> <strong>union</strong></em>(k)<em>pointerType</em><em>% Example: <strong>pointer</strong> <strong>to</strong> collectionVar</em>(l)<em>namedType</em><em>% Example: colorRange</em>(m)<strong>nat</strong><em>% natural number</em>(n)<strong>int</strong><em>n</em><em>% n-byte integer (n=1</em>,<em> 2</em>,<em> 4)</em>(o)<strong>nat</strong><em>n</em><em>% n-byte natural (n= 1</em>,<em> 2</em>,<em> 4)</em>(p)<strong>real</strong><em>n</em><em>% n-byte real (n=4</em>,<em> 8)</em>(q)<strong>char</strong><em>% single character</em>(r)<strong>char</strong>(<em>n</em>)<em>% n characters</em>(s)<em>subprogramType</em></p>
+
+<h2>Description</h2>
+
+<p>A type specification determines the allowed values for a variable or constant. For example, if variable <em>x</em> is an integer (its <em>typeSpec</em> is <strong>int</strong>), the possible values for <em>x</em> are numbers such as -15, 0, 3 and 348207. If <em>x</em> is a real number (its <em>typeSpec</em> is <strong>real</strong>), then its possible values include 7.8, -35.0, and 15e12. If <em>x </em>is a <strong>boolean</strong>, its possible values are <strong>true</strong> and <strong>false</strong>. If <em>x </em>is a <strong>string</strong>, its possible values include <em>Hello</em> and <em>Good-bye</em>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var numberOfSides : int
+    var x, y : real
+    type range : 0 .. 150   % The typeSpec here is 0 .. 150
+    type entry :            % Here is a record typeSpec
+        record
+            name : string ( 25 )
+            age : range
+        end record
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="int">int.html</a></strong>, <strong><a href="real">real.html</a></strong>, <strong><a href="boolean">boolean.html</a></strong>, <strong><a href="string">string1.html</a></strong>, <em><a href="subrangeType">subrangetype.html</a></em>, <strong><a href="enum">enum.html</a></strong>, <strong><a href="array">array.html</a></strong>, <strong><a href="set">set.html</a></strong>, <strong><a href="record">record.html</a></strong>, <strong><a href="union">union.html</a></strong>, <strong><a href="pointer">pointer.html</a></strong>, <a href="named">named.html</a>,<strong> <a href="nat">nat.html</a></strong>, <strong><a href="int">int.html</a><em>n</em></strong>, <strong><a href="nat">nat.html</a><em>n</em></strong>, <strong><a href="real">real.html</a><em>n</em></strong>, <strong><a href="char">char.html</a></strong>, and <strong><a href="char">char.html</a></strong>(<em>n</em>) types.</p>

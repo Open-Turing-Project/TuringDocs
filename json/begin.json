@@ -29,5 +29,8 @@
       "text_content": " In Pascal programs, begin statements are quite common because they are required for grouping two or more statements, for example, to group the statements that follow then. This is not necessary in Turing as where ever you can write a single statement, you can also write several statements.\r\n",
       "mdown_content": "In Pascal programs, **begin** statements are quite common because they are required for grouping two or more statements, for example, to group the statements that follow **then**. This is not necessary in Turing as where ever you can write a single statement, you can also write several statements."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,34 @@
+<h1>variableReference</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>variableReference</em> is:
+<em>variableId</em> { <em>componentSelector</em> }</p>
+
+<h2>Description</h2>
+
+<p>In a Turing program, a variable is declared and given a name (<em>variableId</em>) and then used. Each use is called a <em>variable reference</em>.
+If the variable is an array, collection, record or union, its parts (<em>components</em>) can be selected using subscripts and field names (using <em>componentSelectors</em>). The form of a <em>componentSelector </em>is one of:\
+(a)( <em>expn</em> {, <em>expn</em>} )(b). <em>fieldId</em>
+Form (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.</p>
+
+<h2>Example</h2>
+
+<p>Following the declarations of <em>k</em>,<em> a </em>and <em>r</em>, each of <em>k</em>,<em> a </em>(<em>k</em>) and <em>r</em>.<em>name </em>are variable references.</p>
+
+<pre><code>    var k : int
+    var a : array 1 .. 100 of real
+    var r :
+        record
+            name : string ( 20 )
+            phone : string ( 8 )
+        end record
+    &#133;
+    k := 5
+    a ( k ) := 3.14159
+    r . name := "Steve Cook"
+</code></pre>
+
+<h2>Details</h2>
+
+<p>A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the <strong>record</strong> type. See also <em>constantReference</em> and <strong>var</strong> declaration.</p>

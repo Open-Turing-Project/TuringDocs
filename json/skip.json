@@ -29,5 +29,8 @@
       "text_content": " Using skip is equivalent to outputting the newline character \"\\n\".\r\n",
       "mdown_content": "Using **skip** is equivalent to outputting the newline character \"\\n\"."
     }
+  ],
+  "dependencies": [
+
   ]
 }

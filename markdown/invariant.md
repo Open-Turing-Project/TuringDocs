@@ -5,11 +5,17 @@
 An *invariantAssertion* is:
  **invariant** *trueFalseExpn*
 
+
+
 ##Description
 An **invariant** assertion is a special form of an **assert** statement that is used only in **loop** and **for** statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the *trueFalseExpn*. The *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert**, **loop** and **for** statements and the **module** declarations for more details.
 
+
+
 ##Example
 This program uses an invariant in a **for** loop. The invariant uses the function *nameInList *to specify that a key has not yet been found in an array of names.
+
+
         var name : array 1 .. 100 of string
         var key : string
          input name and key 

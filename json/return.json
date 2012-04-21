@@ -29,5 +29,8 @@
       "text_content": " A return must not appear as a statement in (the outermost level of) a module, nor can it appear in a function.\r\n",
       "mdown_content": "A **return** must not appear as a statement in (the outermost level of) a module, nor can it appear in a **function**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

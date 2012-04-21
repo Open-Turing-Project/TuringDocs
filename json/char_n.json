@@ -39,5 +39,8 @@
       "text_content": " the char type which is much like char(1). See also the string type.\r\n",
       "mdown_content": "the **[char.html](char)** type which is much like **char**(1). See also the **[string1.html](string)** type."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -32,5 +32,8 @@
       "text_content": " The form of membersOfSet is one of:\r\n\r\nThe empty set is written, for example, as smallInt (). The full set is written as smallInt (all), so smallInt (all) = smallInt (0,1,2). See also the set type.\r\nThe syntax of setConstructor as given above has been simplified by ignoring the fact that set types can be exported from modules. When a set type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as m.smallSet(1,2), where m is the module name.\r\n",
       "mdown_content": "The form of *membersOfSet* is one of:\nThe empty set is written, for example, as *smallInt *(). The full set is written as *smallInt *(**all**), so *smallInt *(**all**) = *smallInt *(0,1,2). See also the **set** type.\nThe syntax of *setConstructor* as given above has been simplified by ignoring the fact that **set** types can be exported from modules. When a **set** type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as *m.smallSet*(1,2), where *m* is the module name."
     }
+  ],
+  "dependencies": [
+
   ]
 }

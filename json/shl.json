@@ -42,5 +42,8 @@
       "text_content": " shr (shift right), or, and and xor, which also are bit manipulation operators that act on non-negative values. See also explicitIntegerConstant which describes values such as 2#1100.\r\n",
       "mdown_content": "**[shr.html](shr)** (shift right), **[or.html](or)**, **[and.html](and)** and **[xor.html](xor)**, which also are bit manipulation operators that act on non-negative values. See also **[explicitintegerconstant.html](explicitIntegerConstant)** which describes values such as 2#1100."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,22 @@
+<h1>begin</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>beginStatement</em> is:
+<strong>begin</strong><em>statementsAndDeclarations</em><strong>end</strong></p>
+
+<h2>Description</h2>
+
+<p>A <strong>begin</strong> statement limits the scope of declarations made within it to the confines of the <strong>begin/end</strong> block. In Turing, <strong>begin</strong> is rarely used, because declarations can appear wherever statements can appear, and because every structured statement such as <strong>if</strong> ends with an explicit <strong>end</strong>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    begin
+        var bigArray : array 1 .. 2000 of real
+        &#133; bigArray will exist only inside this begin statement&#133;
+    end
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In Pascal programs, <strong>begin</strong> statements are quite common because they are required for grouping two or more statements, for example, to group the statements that follow <strong>then</strong>. This is not necessary in Turing as where ever you can write a single statement, you can also write several statements.</p>

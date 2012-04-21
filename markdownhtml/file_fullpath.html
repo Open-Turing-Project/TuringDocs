@@ -1,0 +1,31 @@
+<h1>File.FullPath</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.FullPath</strong> (<em>pathName</em>) : <strong>string</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>File.FullPath </strong>returns a string representing the full absolute path name in Turing format (forward slashes) of the path thatis passed to the function. The path name passed in does not have to describe an existing file or directory.</p>
+
+<h2>Details</h2>
+
+<p>The full path name will be in Turing format and include the drive name (for example "d:/turing/examples/games/SpaceGame.t")</p>
+
+<h2>Example</h2>
+
+<p>This program obtains a path from the user and then outputs a full path name based on the path.</p>
+
+<pre><code>    var pathName : string
+    get pathName
+put "Full path = ", File.FullPath (pathName)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of <strong>File.FullPath</strong>, <strong>File.Parent</strong>, <strong>File.Exists</strong>, and <strong>Dir.Exists</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.FullPath</strong>, not by calling <strong>FullPath</strong>.</p>

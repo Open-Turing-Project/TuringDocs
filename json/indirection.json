@@ -42,5 +42,8 @@
       "text_content": " cheat. See also explicitIntegerConstant (which explains how to write hexadecimal constants, which are often used for addresses).\r\n",
       "mdown_content": "**[cheat.html](cheat)**. See also *[explicitintegerconstant.html](explicitIntegerConstant)* (which explains how to write hexadecimal constants, which are often used for addresses)."
     }
+  ],
+  "dependencies": [
+
   ]
 }

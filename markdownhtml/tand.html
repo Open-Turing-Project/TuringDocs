@@ -1,0 +1,29 @@
+<h1>tand</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>tand</strong> ( <em>r</em> : <strong>real</strong> ) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>tand</strong> function is used to find the tangent of an angle given in degrees. For example, <strong>tand</strong> (45) is 1.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the tangent of 0, 30, 60, 90, up to 360 degrees.</p>
+
+<pre><code>    for i : 0 .. 12
+        const angle := i * 30
+        put "Tan of ", angle, " is ", tand ( angle )
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>An argument to <strong>tan</strong> of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically &#165;. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="sind">sind.html</a></strong> and <strong><a href="cosd">cosd.html</a></strong> functions for calculating sine and cosine.
+the <strong><a href="tan">tan.html</a></strong> function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

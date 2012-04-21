@@ -1,0 +1,30 @@
+<h1>drawmapleleaf</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawmapleleaf</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawmapleleaf</strong> procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) using the specified <em>Color</em>. If <em>y1</em> is greater than <em>y2</em>, then the maple leaf is drawn upside down.</p>
+
+<p><img src="drawmapleleaf01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program will draw two maple leaves beside each other. The first will be in color 1 and the second maple leaf will be upside down and in color 2.</p>
+
+<pre><code>    setscreen ("graphics")
+    drawmapleleaf (0, 0, 100, 100, 1)
+    drawmapleleaf (150, 100, 250, 0, 2)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The <strong>drawmapleleaf</strong> procedure is useful for drawing the Canadian flag.
+The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

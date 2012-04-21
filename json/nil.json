@@ -29,5 +29,8 @@
       "text_content": " See also collection, class and pointer. When nil is written without the collectionOrClassId, it can be assigned to a pointer to any collection, class or type.\r\nThe type of nil without the collectionOrClassId is effectively a pointer to everyClass, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.\r\nTuring allows you to write nil (id) after a forward declaration of id (the name of a collection, class or type) before (and after) the resolution of the id.\r\n",
       "mdown_content": "See also collection, class and pointer. When nil is written without the *collectionOrClassId*, it can be assigned to a pointer to any collection, class or type.\nThe type of **nil** without the *collectionOrClassId* is effectively a pointer to *everyClass*, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.\nTuring allows you to write **nil** (*id*) after a forward declaration of *id* (the name of a collection, class or type) before (and after) the resolution of the *id*."
     }
+  ],
+  "dependencies": [
+
   ]
 }

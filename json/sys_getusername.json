@@ -38,5 +38,8 @@
       "text_content": " Sys.GetComputerName to obtain the name of the computer.\r\n",
       "mdown_content": "**[sys_getcomputername.html](Sys.GetComputerName)** to obtain the name of the computer."
     }
+  ],
+  "dependencies": [
+
   ]
 }

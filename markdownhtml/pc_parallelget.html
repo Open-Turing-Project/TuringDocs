@@ -1,0 +1,37 @@
+<h1>PC.ParallelGet</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>PC.ParallelGet</strong> (<em>port</em> : <strong>int</strong>) : <strong>nat1</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>PC.ParallelGet</strong> function is used to read the value of certain pins on a parallel port. The port is specified with the <em>port</em> parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.</p>
+
+<h2>Example</h2>
+
+<p>This program reads and prints the values of the five data pins of the PC's parallel port.</p>
+
+<pre><code>    % Read in the set of pin values from LPT1
+    const val : int := PC.ParallelGet (1)   
+    put "Pin 10 is: ", (val div 64) mod 2
+    put "Pin 11 is: ", (val div 128) mod 2
+    put "Pin 12 is: ", (val div 32) mod 2
+    put "Pin 13 is: ", (val div 16) mod 2
+    put "Pin 15 is: ", (val div 8) mod 2
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The five pins that are used for parallel input are pins 10-15. The <strong>PC.ParallelGet </strong>procedure returns the sum of
+64 Pin 10 high128Pin 11 high 32 Pin 12 high 16 Pin 13 high 8 Pin 15 high
+The <strong>mod</strong> and <strong>div</strong> operators can be used to determine which pins are high or low.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>PC.ParallelGet</strong>, not by calling <strong>ParallelGet</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="PC.ParallelPut">pc_parallelput.html</a></strong> <a href="procedure">procedure.html</a> for a diagram of the pins. That <a href="procedure">procedure.html</a> is used to <a href="set">set.html</a> the values on the parallel port.</p>

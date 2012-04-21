@@ -1,0 +1,23 @@
+<h1>Window.SetActive</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Window.SetActive</strong> (<em>windowID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Window.SetActive</strong> procedure activates the window specified by the <em>windowID</em> parameter.
+An active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.</p>
+
+<h2>Details</h2>
+
+<p>In general, it is unwise to change the active window. If the user is working on another program at the same time the program is running and the program executes the <strong>Window.SetActive</strong> procedure, she or he will suddenly be returned to OOT without warning.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Window.SetActive</strong>, not by calling <strong>SetActive</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Window.GetActive">window_getactive.html</a></strong> and <strong><a href="Window.Select">window_select.html</a>.</strong></p>

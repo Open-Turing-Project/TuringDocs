@@ -4,11 +4,17 @@
 ##Syntax
 **Time.DelaySinceLast** ( *duration* : **int** )
 
+
+
 ##Description
 The **Time.DelaySinceLast** procedure is used to cause the program to pause for a given time since the last call to **Time.DelaySinceLast**. The time duration is in milliseconds.
 
+
+
 ##Example
 This program outputs from 1 to 100,000, then outputs how long it took to do this (in milliseconds). It then calls **Time.DelaySinceLast**to wait until 10 seconds has passed since the beginning of theprogram (regardless of how long it took to execute the loop). Finallyit outputs how many milliseconds has passed since the program started.This should be close to 10,000 milliseconds.
+
+
         var t : int := Time.Elapsed
         put "Starting now, count to 100,000"
         for i : 1 .. 100000
@@ -26,9 +32,15 @@ The **Time.DelaySinceLast** is usually used to time a process so that it operate
 The **Time.DelaySinceLast** procedure is often used to time the speed of animation in games.
 Note that this only works up to a point. On a very slow machine, the**for** loop may take longer than 10 seconds to execute, in whichcase the call to **Time.DelaySinceLast** will return instantly.
 
+
+
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **Time.DelaySinceLast**, not by calling **DelaySinceLast**.
 
+
+
 ##See also
 **[time_elapsed.html](Time.Elapsed)** and **[time_elapsedcpu.html](Time.ElapsedCPU)**.
+
+

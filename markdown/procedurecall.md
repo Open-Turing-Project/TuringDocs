@@ -5,10 +5,16 @@
 A *procedureCall* is:
  *procedureId* [ ( [ *expn* { , *expn* } ] ) ]
 
+
+
 ##Description
 A procedure call is a statement that calls (invokes or activates) a **procedure**. If the procedure has parameters, a parenthesized list of expressions (*expns*) must follow the procedure's name (*procedureId*).
 
+
+
 ##Example
+
+
 
         procedure greet
             put "Hello"
@@ -29,7 +35,11 @@ Each actual parameter passed to a non-**var** formal parameter must be assignabl
 In this explanation of *procedureCall*, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor *M *from which it has been exported, the syntax of the *procedureCall *is:
 In other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the *procedureCall *is one of:
 In these, *p* must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).
+
+
         M . procedureId [ ( [ expn {, expn } ] ) ]        (a) classId (p) . procedureId [ ( [ expn {, expn } ] ) ]
         (b) p -> procedureId [ ( [ expn {, expn } ] ) ]
 ##See also
 **[class.html](class)**.
+
+

@@ -20,5 +20,8 @@
       "text_content": "empty* Returns true if no processes are waiting on the condition queue.getpriority* Returns the priority of the current process.setpriority* Sets the priority of the current process.simutime Returns the number of simulated time units that have passed.\r\n* Part of the language, conceptually part of the Concurrency unit.\r\n",
       "mdown_content": "[concurrency_empty.html](**empty**)* Returns true if no processes are waiting on the condition queue.[concurrency_getpriority.html](**getpriority**)* Returns the priority of the current process.[concurrency_setpriority.html](**setpriority**)* Sets the priority of the current process.[concurrency_simutime.html](**simutime**) Returns the number of simulated time units that have passed.\n* Part of the language, conceptually part of the **Concurrency** unit."
     }
+  ],
+  "dependencies": [
+
   ]
 }

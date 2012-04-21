@@ -49,5 +49,8 @@
       "text_content": " unit, module, monitor and class. See also export list, inherit clause, implement clause and implement by clause.\r\n",
       "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause and **[implement_by.html](implement by)** clause."
     }
+  ],
+  "dependencies": [
+
   ]
 }

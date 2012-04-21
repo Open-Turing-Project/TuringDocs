@@ -19,5 +19,8 @@
       "text_content": " getch, getchar, and Input.KeyDown.\r\n",
       "mdown_content": "**[getch.html](getch)**, **[getchar.html](getchar)**, and **[input_keydown.html](Input.KeyDown)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

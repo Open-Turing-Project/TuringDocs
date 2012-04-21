@@ -1,0 +1,24 @@
+<h1>Error.Halt</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Error.Halt</strong> (<em>errorMessage</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Error.Halt</strong> is a procedure that immediately halts execution ofthe program and shows the specified error message on the line in theprogram that calls <strong>Error.Halt</strong>.
+This procedure is useful for allowing a quick halt to a programwhile indicating an error condition.</p>
+
+<h2>Example</h2>
+
+<p>This program halts on the first line with an error message stating"Execution terminated by the program."</p>
+
+<pre><code>    Error.Halt ("Execution terminated by the program.")
+</code></pre>
+
+<h2>Execute</h2>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Error.Halt</strong>, not by calling <strong>Halt</strong>.</p>

@@ -1,0 +1,40 @@
+<h1>case</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>caseStatement</em> is:
+<strong>case</strong> <em>expn</em> <strong>of</strong>{ <strong>label</strong> <em>compileTimeExpn </em>{, <em>compileTimeExpn </em>} :<em>statementsAndDeclarations</em> }[ <strong>label</strong> :<em>statementsAndDeclarations</em> ]<strong>end</strong> <strong>case</strong></p>
+
+<h2>Description</h2>
+
+<p>A <strong>case</strong> statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond <strong>end</strong> <strong>case</strong>.
+The expression (<em>expn</em>) following the keyword <strong>case</strong> is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final <strong>label</strong> with no expression, that alternative is selected.</p>
+
+<h2>Example</h2>
+
+<p>Output a message based on value of mark.</p>
+
+<pre><code>    case mark of
+        label 9, 10 :   put "Excellent"
+        label 7, 8 :        put "Good"
+        label 6 :       put "Fair"
+        label :     put "Poor"
+    end case
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Output a message based on value of name.</p>
+
+<pre><code>    case name of
+        label "horse", "cow" :  put "Farm animal"
+        label "tiger", "lion" : put "Jungle animal"
+        label "cat", "dog" :    put "Pet"
+        label :         put "Unknown animal"
+    end case
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The case expression is required to match one of the labels. If it does not, there must be a final <strong>label</strong> with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, <strong>char</strong>, <strong>boolean</strong>, an <strong>enum</strong> type or strings.
+Note that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.</p>

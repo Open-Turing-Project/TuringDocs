@@ -40,5 +40,8 @@
       "text_content": " the pred, lower and upper functions.\r\n",
       "mdown_content": "the **[pred.html](pred)**, **[lower.html](lower)** and **[upper.html](upper)** functions."
     }
+  ],
+  "dependencies": [
+
   ]
 }

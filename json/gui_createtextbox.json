@@ -67,5 +67,8 @@
       "text_content": "GUI.AddLine, \r\n          GUI.AddText \r\n          for adding text to the text box.\r\n\t  See also GUI.SetTopLine\r\n\t  to set the top line of text in the text box.\r\n\t  See also GUI.SetScrollOnAdd\r\n\t  to set stop the text box from scrolling when text \r\n\t  is added to the text box.\r\n\t  See also GUI.ClearText \r\n\t  for clearing the text box.\r\n    ",
       "mdown_content": "**[gui_addline.html](GUI.AddLine)**, **[gui_addtext.html](GUI.AddText)** for adding text to the text box.See also **[gui_settopline.html](GUI.SetTopLine)**to set the top line of text in the text box.See also **[gui_setscrollonadd.html](GUI.SetScrollOnAdd)**to set stop the text box from scrolling when text is added to the text box.See also **[gui_cleartext.html](GUI.ClearText)** for clearing the text box."
     }
+  ],
+  "dependencies": [
+    "gui_createtextbox_full01.gif"
   ]
 }

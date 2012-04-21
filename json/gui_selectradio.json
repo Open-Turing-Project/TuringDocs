@@ -35,5 +35,8 @@
       "text_content": " GUI.CreateRadioButton and GUI.CreatePictureRadioButton.\r\n",
       "mdown_content": "**GUI.CreateRadioButton** and **GUI.CreatePictureRadioButton**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

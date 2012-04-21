@@ -1,0 +1,24 @@
+<h1>sysclock</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>sysclock</strong> ( <strong>var</strong> <em>c</em> : <strong>int</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>sysclock</strong> statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable <em>c </em>is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where <strong>sysclock</strong> returns the same value as <strong>clock</strong>.</p>
+
+<h2>Example</h2>
+
+<p>On a UNIX system, this program tells you how much time it has used.</p>
+
+<pre><code>    var timeUsed : int
+    sysclock ( timeUsed )
+    put "This program has used ", timeUsed,
+            " milliseconds of CPU time"
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="delay">delay.html</a></strong>, <strong><a href="time">time.html</a></strong>, <strong><a href="clock">clock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong> and <strong><a href="date">date.html</a></strong> statements.
+See also predefined unit <strong><a href="Time">timemodule.html</a></strong>.</p>

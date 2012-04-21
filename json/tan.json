@@ -51,5 +51,8 @@
       "text_content": "the sin and cos functions for calculating sine and cosine.\r\nthe tand function which finds the tangent of an angle given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
       "mdown_content": "the **[sin.html](sin)** and **[cos.html](cos)** functions for calculating sine and cosine.\nthe **[tand.html](tand)** function which finds the tangent of an angle given in degrees. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

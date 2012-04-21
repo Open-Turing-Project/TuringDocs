@@ -1,0 +1,33 @@
+<h1>Concurrency.simutime</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>simutime</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>simutime </strong>function returns the number of simulated time units that have passed since program execution began.</p>
+
+<h2>Details</h2>
+
+<p>Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely faster than "pause" time.</p>
+
+<h2>Example</h2>
+
+<p>This prints out the simulated time passing between two processes. This will print out <em>3, 5, 6, 9, 10, 12, 15, 15, 18, 20, 21, ...</em></p>
+
+<pre><code>    process p (t : int)
+        loop
+            pause t
+            put simutime
+        end loop
+    end p
+
+    fork p (3)
+    fork p (5)
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported unqualified.
+This means that you can call the function by calling <strong>simutime</strong> or by calling <strong>Concurrency.simutime</strong>.</p>

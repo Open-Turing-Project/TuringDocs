@@ -39,5 +39,8 @@
       "text_content": " Pic.Height to obtain a picture's height and Pic.FileNew to load a picture from a graphics file.\r\n",
       "mdown_content": "**[pic_height.html](Pic.Height)** to obtain a picture's height and **[pic_filenew.html](Pic.FileNew)** to load a picture from a graphics file."
     }
+  ],
+  "dependencies": [
+
   ]
 }

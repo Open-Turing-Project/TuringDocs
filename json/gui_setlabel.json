@@ -38,5 +38,8 @@
       "text_content": " GUI.CreateButton, GUI.CreateCheckBox, GUI.CreateRadioButton, GUI.CreateLabel, and GUI.CreateLabelledFrame.\r\n",
       "mdown_content": "**GUI.CreateButton**, **GUI.CreateCheckBox**, **GUI.CreateRadioButton**, **GUI.CreateLabel**, and **[gui_createlabelledframe.html](GUI.CreateLabelledFrame)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

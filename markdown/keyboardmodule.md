@@ -17,5 +17,9 @@ Characters marked with an asterisk (*) are keys that can only be detected using*
 
 All constants in the Keyboard module are exported unqualified. (This means you can use the constants directly without having to use the qualifier "**Keyboard.**".)
 
+
+
 ##See also
 **[getch.html](getch)**, **[getchar.html](getchar)**, and **[input_keydown.html](Input.KeyDown)**.
+
+

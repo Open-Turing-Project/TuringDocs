@@ -22,5 +22,8 @@
       "text_content": "\r\n        Lower Convert a string to lower case.Upper Convert a string to upper case.Trim Remove leading and trailing blanks.index Finds a specified string in another string.length Returns the length of a string.repeat Creates a string by repeating a specified string a number of times.\r\n        ",
       "mdown_content": "[str_lower.html](**Lower**) Convert a string to lower case.[str_upper.html](**Upper**) Convert a string to upper case.[str_trim.html](**Trim**) Remove leading and trailing blanks.[index.html](**index**) Finds a specified string in another string.[length.html](**length**) Returns the length of a string.[repeat.html](**repeat**) Creates a string by repeating a specified string a number of times."
     }
+  ],
+  "dependencies": [
+
   ]
 }

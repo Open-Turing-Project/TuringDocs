@@ -1,0 +1,70 @@
+<h1>GUI.Alert[2,3,Full]</h1>
+
+<h2>Syntax</h2>
+
+<p>One of four procedures:
+<strong>GUI.Alert</strong> (<em>title</em>, <em>msg</em> : <strong>string</strong>)<strong>GUI.Alert2</strong> (<em>title</em>, <em>msg1</em>, <em>msg2</em> : <strong>string</strong>)<strong>GUI.Alert3</strong> (<em>title</em>, <em>msg</em>1, <em>msg2</em>, <em>msg3</em> : <strong>string</strong>)<strong>GUI.AlertFull</strong> (<em>title</em> : <strong>string,</strong> <em>msg</em> : <strong>array</strong> 1 .. * <strong>of string</strong>, <em>button</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Displays a dialog box with the string specified by <em>msg</em> in it. There is a single button labelled <em>OK</em> which dismisses the dialog and resumes execution. The <em>title</em> parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.
+The <strong>GUI.Alert2</strong> and <strong>GUI.Alert3</strong> procedures allow the user to specify a two or three line message respectively. The <strong>GUI.AlertFull</strong> procedure allows the user to specify any number of lines of text in the string array specified by <em>msg</em> as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.
+<strong>Note</strong>: This function is <strong>not</strong> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
+
+<h2>Example</h2>
+
+<p>The following program asks the user for the name of a file puts up an alert dialog box if it fails.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var fileName : string
+    var streamNumber : int
+
+    loop
+        fileName := GUI.SaveFile ("Save As")
+        open : streamNumber, fileName, put
+        exit when streamNumber &gt; 0
+        GUI.Alert ("Open Failure", "\"" + fileName + 
+            "\" could not be opened")
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>The following program asks the user for the name of a file puts up a more complete alert dialog box if it fails.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI"
+
+    var fileName : string
+    var streamNumber : int
+    loop
+        fileName := GUI.SaveFile ("Save As")
+        open : streamNumber, fileName, put
+        exit when streamNumber &gt; 0
+        GUI.Alert2 ("Open Failure", 
+            "\"" + fileName + "\" could not be opened.",
+            "Reason: " + Error.LastMsg)
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>The following program fragment displays an alert with four lines of text and a button that says "Abort".</p>
+
+<pre><code>    var message : array 1 .. 10 of string
+    for i : 1 .. 10
+        message (i) := ""
+    end for
+    &#133;
+    message (1) := "The program must now quit"
+    message (2) := "becasue of an unrecoverable error."
+    message (3) := "A Read Error occurred while reading"
+    message (4) := "file \"" + fileName + "\"."
+    message (5) := Error.LastMsg
+    GUI.AlertFull ("Error", message, "Abort")
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.Alert</strong>, not by calling <strong>Alert</strong>.</p>

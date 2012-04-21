@@ -1,0 +1,32 @@
+<h1>File.Parent</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.Parent</strong> (<em>pathName</em> : <strong>string</strong>) : <strong>string</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>File.Parent </strong>returns a string representing the parent directory in Turing format (forward slashes) of the path passed asa parameter. The path name passed in does not have to describe an existing file or directory.Attempting to obtain the parent directory of a root directory (for example "c:/") will return the sameroot directory and will set the value returned by <strong>Error.Last</strong> to a non-zero value.</p>
+
+<h2>Example</h2>
+
+<p>This program obtains a path from the user and then lists all the parent directories until it reaches the root directory.</p>
+
+<pre><code>    var pathName : string
+    put "Enter a path: " ..
+    get pathName
+    loop
+        pathName := File.Parent (pathName)
+        exit when Error.Last not= eNoError
+        put pathName
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of <strong>File.FullPath</strong>, <strong>File.Parent</strong>, <strong>File.Exists</strong>, and <strong>Dir.Exists</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.Parent</strong>, not by calling <strong>Parent</strong>.</p>

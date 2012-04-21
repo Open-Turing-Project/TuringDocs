@@ -1,0 +1,34 @@
+<h1>fork</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>forkStatement</em> is:
+<strong>fork</strong><em> processId</em> [ ( [ <em>expn</em> { , <em>expn</em> } ] ) ][ : <em>reference</em> [ , <em>expn</em> [ , <em>reference</em> ] ] ]</p>
+
+<h2>Description</h2>
+
+<p>A <strong>fork</strong> activates (starts the concurrent execution of) a process declaration. If the process has parameters, a parenthesized list of expressions (<em>expns</em>) must follow the process'  name (<em>processId</em>).</p>
+
+<h2>Example</h2>
+
+<p>This program initiates (forks) two concurrent processes, one of which repeatedly outputs Hi and the other Ho. The resulting output is an unpredictable sequence of Hi's and Ho's, as <em>greetings</em> executes twice concurrently, one instance with its <em>word</em> set to Hi and the other with its <em>word</em> set to Ho.</p>
+
+<pre><code>    process greetings ( word : string )
+        loop
+            put word
+        end loop
+    end greetings
+
+    fork greetings ( "Hi" )
+    fork greetings ( "Ho" )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>See <strong>procedure</strong> declaration for details about parameters. The first optional <em>reference</em> in the <strong>fork</strong> statement must be a <strong>boolean</strong> variable reference. The <strong>fork</strong> sets this to <strong>true</strong> if the process is actually activated. If this fails to occur (probably because stack space could not be allocated), this <em>reference</em> is set to <strong>false</strong>. If the <strong>fork</strong> fails but this reference is omitted, an exception occurs. See exception handlers.
+The optional <em>expn</em> specifies the number of bytes for the process' stack; this overrides the optionally given stack size in the <strong>process</strong> declaration. The second optional <em>reference</em> must be a variable reference with the type <strong>addressint</strong>. See <strong>addressint</strong>. This variable is set to identify the process activation. This reference has the implementation-dependent meaning of locating the process' internal descriptor.
+In this explanation of the <strong>fork</strong> statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the <strong>fork</strong><em> </em>statement<em> </em>is:
+In other words, the module's name and a dot must precede the process' name.</p>
+
+<pre><code>    fork moduleId . procedureId [ ( expn {, expn } ) ] &#133;
+</code></pre>

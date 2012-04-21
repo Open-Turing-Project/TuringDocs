@@ -40,5 +40,8 @@
       "text_content": " color and whatcolor.\r\nSee also predefined unit Text.\r\n",
       "mdown_content": "**[color.html](color)** and **[whatcolor.html](whatcolor)**.\nSee also predefined unit **[textmodule.html](Text)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

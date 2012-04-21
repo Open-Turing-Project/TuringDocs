@@ -67,5 +67,8 @@
       "text_content": "GUI.GetSliderValue and \r\n          GUI.SetSliderValue \r\n          for reading and setting the value of a slider, \r\n          GUI.SetSliderMinMax \r\n          for changing the minimum and maximum values of a slider. \r\n          See also GUI.SetSliderSize\r\n          for setting the length of a slider and \r\n          GUI.SetSliderReverse \r\n          for reversing the sense of a slider.\r\n    ",
       "mdown_content": "**[gui_getslidervalue.html](GUI.GetSliderValue)** and **[gui_setslidervalue.html](GUI.SetSliderValue)** for reading and setting the value of a slider, **[gui_setsliderminmax.html](GUI.SetSliderMinMax)** for changing the minimum and maximum values of a slider. See also **[gui_setslidersize.html](GUI.SetSliderSize)**for setting the length of a slider and **[gui_setsliderreverse.html](GUI.SetSliderReverse)** for reversing the sense of a slider."
     }
+  ],
+  "dependencies": [
+    "gui_createverticalslider01.gif"
   ]
 }

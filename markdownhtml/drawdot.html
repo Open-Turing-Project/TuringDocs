@@ -1,0 +1,58 @@
+<h1>drawdot</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawdot</strong> (<em>x</em>, <em>y</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawdot</strong> procedure is used to color the dot (pixel) at location (<em>x</em>, <em>y</em>) using the specified <em>Color</em>.</p>
+
+<p><img src="drawdot01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program randomly draws dots with random colors. The <strong>maxx</strong>, <strong>maxy</strong> and <strong>maxcolor</strong> functions give the maximum x, y and color values.</p>
+
+<pre><code>    setscreen ("graphics")
+    var x, y, c : int
+    loop
+        randint (x, 0, maxx)        % Random x
+        randint (y, 0, maxy)        % Random y
+        randint (c, 0, maxcolor)    % Random color
+        drawdot (x, y, c)
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen should be in a "<em>graphics</em>" mode. If the screen is not in a "<em>graphics</em>" mode,  it will automatically be set to "<em>graphics</em>" mode. See <strong>setscreen</strong> for details.</p>
+
+<h2>Example</h2>
+
+<p>This program draws a line of dots that bounce off the &#147;sides&#148; of the screen. It also demonstrates that you can use real coordinates tostore position (<em>x</em>, <em>y</em>), as long as you convert the coordinates to <strong>int</strong> values using <strong>round</strong> in the <strong>drawdot</strong> call.</p>
+
+<pre><code>    var x, y : real
+    var dx, dy : real
+    var clr : int := 1
+    x := Rand.Int (1, maxx - 1)
+    y := Rand.Int (1, maxy - 1)
+    dx := Rand.Real - 0.5
+    dy := Rand.Real - 0.5
+    loop
+        drawdot (round (x), round (y), clr)
+        clr := (clr + 1) mod maxcolor
+        x := x + dx
+        y := y + dy
+        if x &lt;= 0 or x &gt;= maxx then
+            dx := -dx
+        end if
+        if y &lt;= 0 or y &gt;= maxy then
+            dy := -dy
+        end if
+    end loop
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

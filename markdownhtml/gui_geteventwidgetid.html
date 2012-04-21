@@ -1,0 +1,47 @@
+<h1>GUI.GetEventWidgetID</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.GetEventWidgetID</strong> : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an <em>action procedure</em>, as it will return 1 when there is no event that activated a widget being processed.
+This function is used when a several buttons use the same action procedure to determine which button was pressed.</p>
+
+<h2>Example</h2>
+
+<p>The following program prints a message stating which button was selected.</p>
+
+<pre><code>    import GUI in "%oot/lib/GUI" 
+    View.Set ("graphics:150;210") 
+
+    var buttonNames : array 1 .. 5 of string := init ("Red", "Green",
+        "Blue", "Yellow", "Purple")
+    var buttons : array 1 .. 5 of int
+
+    procedure ButtonPush
+        for i : 1 .. 5
+            if GUI.GetEventWidgetID = buttons (i) then
+                Text.Locate (1, 1)
+                put buttonNames (i), " selected"
+            end if
+        end for
+    end ButtonPush
+    for i : 1 .. 5
+        buttons (i) := GUI.CreateButton (10, 210  40 * i, 110, 
+            buttonNames (i), ButtonPush)
+    end for
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.GetEventWidgetID</strong>, not by calling <strong>GetEventWidgetID</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.ProcessEvent">gui_processevent.html</a></strong>.</p>

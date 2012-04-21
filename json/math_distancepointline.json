@@ -45,5 +45,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Math.DistancePointLine, not by calling DistancePointLine.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Math.DistancePointLine**, not by calling **DistancePointLine**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

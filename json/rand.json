@@ -42,5 +42,8 @@
       "text_content": " randint, randomize, randseed and randnext.\r\nSee also predefined unit Rand.\r\n",
       "mdown_content": "**[randint.html](randint)**, **[randomize.html](randomize)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\nSee also predefined unit **[randmodule.html](Rand)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

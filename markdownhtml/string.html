@@ -1,0 +1,25 @@
+<h1>string</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>stringComparison</em> is one of:
+(a)<em>stringExpn</em> = <em>stringExpn</em>(b)<em>stringExpn</em> <strong>not=</strong> <em>stringExpn</em>(c)<em>stringExpn</em> <strong>></strong> <em>stringExpn</em>(d)<em>stringExpn</em> <strong>&lt;</strong> <em>stringExpn</em>(e)<em>stringExpn</em> <strong>></strong>= <em>stringExpn</em>(f)<em>stringExpn</em> <strong>&lt;</strong>= <em>stringExpn</em></p>
+
+<h2>Description</h2>
+
+<p>Strings (<em>stringExpns</em>) can be compared for equality (= and <strong>not=</strong>) and for ordering (>, &lt;, >= and &lt;=).</p>
+
+<h2>Example</h2>
+
+<pre><code>    var name : string := "Nancy"
+    var licenceNumber : string ( 6 )
+    licenceNumber := "175AJN"
+</code></pre>
+
+<h2>Details</h2>
+
+<p>Two strings are considered to be equal (=) if they have the same length and are made up, character by character, of the same characters. If they differ,  they are considered to be unequal (<strong>not=</strong>).
+Ordering among strings is essentially alphabetic order. String <em>S</em> is considered to come before string <em>T</em>, that is <em>S</em> <strong>&lt;</strong> <em>T</em>, if the two are identical up to a certain position and after that position, either the next character of <em>S</em> comes before the next character of <em>T</em>, or else there are no more characters in <em>S</em> while <em>T</em> contains more characters.
+<em>S </em>> <em>T</em> (<em>S</em> comes after <em>T </em>) means the same thing as <em>T </em>&lt; <em>S</em>. <em>S </em>>= <em>T </em>means the same thing as <em>S </em>> <em>T </em><strong>or</strong> <em>S </em>= <em>T</em>. <em>S </em>&lt;= <em>T</em> means the same thing as <em>S </em>&lt; <em>T </em><strong>or</strong> <em>S</em>=<em>T</em>.
+ASCII gives the ordering among individual characters. It specifies, among other things, that letter capital <em>L</em>  comes alphabetically before capital letter <em>M</em> and similarly for small (lower case) letters.
+On IBM mainframe computers, the EBCDIC specification of characters may be used instead of ASCII.</p>

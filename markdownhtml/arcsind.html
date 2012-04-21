@@ -1,0 +1,26 @@
+<h1>arcsind</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>arcsind</strong> (<em>r</em> : <strong>real</strong>) : <strong>real</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>arcsind</strong> function is used to find the arc sine of an angle given in degrees. For example, <strong>arcsind</strong> (0.5) is 30.</p>
+
+<h2>Example</h2>
+
+<p>This program prints out the arcsine of values from -1 to 1 in degrees.</p>
+
+<pre><code>    for i : -4 .. 4
+        const arg := i / 4
+        put "Arc sine of ", arg, " is ",
+            arcsind (arg), " degrees"
+    end for
+</code></pre>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="arccosd">arccosd.html</a></strong> and <strong><a href="arctand">arctand.html</a></strong> functions for calculating arccosine and arctangent
+the <strong><a href="arcsin">arcsin.html</a></strong> function which finds the arc sine of a value with the result given in radians. (2p radians are the same as 360 degrees.)
+See also predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

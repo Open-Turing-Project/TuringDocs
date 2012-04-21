@@ -1,0 +1,23 @@
+<h1>GUI.Show</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.Show</strong> (<em>widgetID</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>Shows a widget specified by <em>widgetID</em>. Used in conjunction with <strong>GUI.Hide</strong> to show and hide widgets. Hidden widgets cannot get events (i.e. respond to keystrokes or mouse clicks). If an active text field (see text field) is hidden, then any keystrokes in the window will be ignored.
+In most cases where a widget is to appear, then disappear, then appear again, it is advised to create the widget once and hide it until it is to appear, whereupon <strong>GUI.Show</strong> is called. When the user is finished with the widget, the widget is hidden using <strong>GUI.Hide</strong>. This saves the overhead of creating and disposing of the same widget several times.</p>
+
+<h2>Example</h2>
+
+<p>See <strong>GUI.SetDisplayWhenCreated</strong> for an example of <strong>GUI.Show</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.Show</strong>, not by calling <strong>Show</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.Hide">gui_hide.html</a></strong>.</p>

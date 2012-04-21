@@ -41,5 +41,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          File.Copy, not by calling Copy.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Copy**, not by calling **Copy**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

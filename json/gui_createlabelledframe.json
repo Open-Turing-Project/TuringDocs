@@ -63,5 +63,8 @@
       "text_content": "GUI.SetLabel for changing the frame's text.\r\n    ",
       "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the frame's text."
     }
+  ],
+  "dependencies": [
+    "gui_createlabelledframe01.gif"
   ]
 }

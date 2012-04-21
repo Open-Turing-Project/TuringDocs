@@ -4,11 +4,17 @@
 ##Syntax
 **GUI.SetXOR** (*widgetID* : **int**, *xor* : **boolean**)
 
+
+
 ##Description
 Sets the "xor mode" of the canvas specified by *widgetID*. If the *xor* parmeter is set to **true**, the canvas is set to *xor mode*. When in *xor mode*, all the *Draw*... procedures of a canvas are treated as if the **View.Set** ("xor") statement had been executed before the *Draw* procedure.
 
+
+
 ##Example
 See **GUI.SetDisplayWhenCreated** for an example of **GUI.Show**.
+
+
         import GUI in "%oot/lib/GUI"
         View.Set ("graphics:400;300")
         var canvas1, label1, canvas2, label2 : int
@@ -39,5 +45,9 @@ See **GUI.SetDisplayWhenCreated** for an example of **GUI.Show**.
 Exported qualified.
 This means that you can only call the function by calling **GUI.SetXOR**, not by calling **SetXOR**.
 
+
+
 ##See also
 **GUI.CreateCanvas**.
+
+

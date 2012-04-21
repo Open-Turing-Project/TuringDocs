@@ -1,0 +1,46 @@
+<h1>GUI.Quit</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.Quit</strong></p>
+
+<h2>Description</h2>
+
+<p>This procedure causes <strong>GUI.ProcessEvent</strong> to return <strong>true</strong>. If the program is structured properly with a
+at the end of the program, then the program will exit the loop after finishing the current <em>action procedure</em>. This procedure is usually called from the <em>action procedure</em> of a Quit button or Exit menu item.</p>
+
+<pre><code>    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Here is program that does nothing but wait for the user to press the quit button or type the letter 'Q', 'q', 'X', or 'x'.</p>
+
+<pre><code>    import GUI
+
+    procedure KeyHandler (ch : char)
+        if ch = 'Q' or ch = 'q' or ch = 'X' or ch = 'x' then
+            GUI.Quit
+        end if
+    end KeyHandler
+
+    var quitButton : int := GUI.CreateButton (10, 10, 0, "Quit", GUI.Quit)
+    GUI.SetKeyEventHandler (KeyHandler)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+
+    put "Done!"
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the procedures by calling <strong>GUI.Quit</strong>, not by calling <strong>Quit</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.ProcessEvent">gui_processevent.html</a></strong>.See also <a href="GUI.ResetQuit">gui_resetquit.html</a>for resetting the "quit" flag, so that a second event loopcan be used in the same program.</p>

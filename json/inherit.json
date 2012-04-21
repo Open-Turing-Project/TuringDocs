@@ -55,5 +55,8 @@
       "text_content": " unit, module, monitor and class. See also export list, import list, implement clause, implement by clause and deferred subprogram. See also objectclass.\r\n",
       "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** clause, **[implement_by.html](implement by)** clause and **[deferred.html](deferred)** subprogram. See also **[objectclass.html](objectclass)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

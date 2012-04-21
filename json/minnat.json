@@ -40,5 +40,8 @@
       "text_content": " minint and maxnat.\r\nSee also predefined unit Limits.\r\n",
       "mdown_content": "**[minint.html](minint)** and **[maxnat.html](maxnat)**.\nSee also predefined unit **[limitsmodule.html](Limits)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

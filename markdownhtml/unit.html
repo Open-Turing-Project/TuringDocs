@@ -1,0 +1,52 @@
+<h1>unit</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>compilationUnit</em> is one of:
+(a)[ <em>importList</em> ] <em>mainProgram</em>(b)<strong>unit</strong> <em>moduleDeclaration</em>(c)<strong>unit</strong> <em>monitorDeclaration</em>(d)<strong>unit</strong> <em>classDeclaration</em></p>
+
+<h2>Description</h2>
+
+<p>A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword <strong>unit</strong>. The unit contains the main program, a module, a monitor or a class.</p>
+
+<h2>Example</h2>
+
+<p>Here is stack module that is separated out into a file whose name is <em>stack</em>.
+The main program, which is in another file, gains access to the stack by importing it. Here is the main program:</p>
+
+<pre><code>    unit        % The keyword unit begins each separate file
+    module stack
+        export push, pop
+
+        var top : int := 0
+        var contents : array 1 .. 100 of int
+
+        procedure push ( i : int )
+            top += 1
+            contents ( top ) := i
+        end push
+
+        procedure pop ( i : int )
+            i := contents ( top )
+            top -= 1
+        end pop
+    end stack        import var stack    % Use the stack
+    var n : int
+    &#133;
+    stack . push ( n )
+    &#133;
+    stack . pop ( n )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In this example, the  keyword <strong>var</strong> in the import list  is required because the main program causes a change in the stack, by calling <em>push</em> and <em>pop</em>. The import lists of units that are modules, monitors and classes are used to gain access to further units.
+If the stack were in a file with a different name, say <em>stk.t</em>, the import list would be rewritten to use an <strong>in</strong> clause, as follows:
+A mainProgram is simply a program. See <strong>program</strong>.</p>
+
+<pre><code>    import var stack in "stk.t"
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="module">module.html</a></strong>, <strong><a href="monitor">monitor.html</a></strong> and <strong><a href="class">class.html</a></strong>. See also <strong><a href="export">export.html</a></strong> list, <strong><a href="import">import.html</a></strong> list, <strong><a href="inherit">inherit.html</a></strong> list, <strong><a href="implement">implement.html</a></strong> list and <strong><a href="implement%20by">implement_by.html</a></strong> list.</p>

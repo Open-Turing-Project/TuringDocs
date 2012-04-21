@@ -50,5 +50,8 @@
       "text_content": " import list, pre condition, init clause, post condition and exceptionHandler for explanations of these features. See pervasive for information on pervasive procedures. See exceptionHandler. The optional deviceSpecification is used only in procedures declared in monitors and is used to create an interrupt handling procedure. See monitor for details.\r\n",
       "mdown_content": "**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and *exceptionHandler* for explanations of these features. See **[pervasive.html](pervasive)** for information on **[pervasive.html](pervasive)** procedures. See **exceptionHandler**. The optional *deviceSpecification *is used only in procedures declared in monitors and is used to create an *interrupt handling [](procedure)*. See **[monitor.html](monitor)** for details."
     }
+  ],
+  "dependencies": [
+
   ]
 }

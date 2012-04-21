@@ -1,0 +1,35 @@
+<h1>Mouse.Where</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Mouse.Where </strong>(<strong>var</strong> <em>x</em>, <em>y</em>, <em>button</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Mouse.Where</strong> procedure is used to get current information about the status of the mouse. The parameters <em>x</em> and <em>y</em> are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that <em>x</em> and <em>y</em> may be set to values outside of the bounds of 0 to <strong>maxx</strong> and 0 to <strong>maxy</strong>.
+The parameter <em>button</em> is set depending on the current mode. In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), <em>button</em> is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In "<em>multi-button mode</em>", <em>button</em><strong> </strong>is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if <em>button</em> has the value of 101, then it means that the left and right mouse buttons were depressed.</p>
+
+<h2>Example</h2>
+
+<p>A program that displays the status of the mouse at the top left corner of the screen.</p>
+
+<pre><code>    var x, y, button : int
+    loop
+        Mouse.Where (x, y, button)
+        Text.Locate (1, 1)
+        if button = 0 then
+            put x : 4, "  ", y : 4, "  button up"
+        else
+            put x : 4, "  ", y : 4, "  button down"
+        end if
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Mouse.Where</strong>, not by calling <strong>Where</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Mouse.ButtonMoved">mouse_buttonmoved.html</a></strong> and <strong><a href="Mouse.ButtonWait">mouse_buttonwait.html</a></strong> to get mouse events saved in a queue. See also <strong><a href="Mouse.ButtonChoose">mouse_buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".</p>

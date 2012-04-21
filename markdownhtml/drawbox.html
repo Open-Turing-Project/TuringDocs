@@ -1,0 +1,28 @@
+<h1>drawbox</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>drawbox</strong> (<em>x1</em>, <em>y1</em>, <em>x2</em>, <em>y2</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>drawbox</strong> procedure is used to draw a box on the screen with bottom left and top right corners of (<em>x1</em>, <em>y1</em>) to (<em>x2</em>, <em>y2</em>) using the specified <em>Color</em>.</p>
+
+<p><img src="drawbox01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program draws a large box, reaching to each corner of the screen using color number 1. The <strong>maxx</strong> and <strong>maxy</strong> functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (<strong>maxx</strong>, <strong>maxy</strong>) is the right top.</p>
+
+<pre><code>    setscreen ("graphics")
+    drawbox (0, 0, maxx, maxy, 1)
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
+The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>

@@ -1,0 +1,40 @@
+<h1>Music.Play</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Music.Play</strong> ( <em>music</em> : <strong>string</strong> )</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Music.Play</strong> procedure is used to sound musical notes on the computer.
+Sounds are produced synchronously on a per process basis. This means that when a process executes a <strong>Music.Sound</strong> or <strong>Music.Play</strong> command, it stops until the command is finished. However, other processes will continue to executing.</p>
+
+<h2>Example</h2>
+
+<p>This program sounds the first three notes of the C scale.</p>
+
+<pre><code>    Music.Play ( "cde" )
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program plays from middle C to one octave above middle C and down again in 8th notes.</p>
+
+<pre><code>    Music.Play ( "8cdefgab&gt;c" )
+    Music.Play ( "&lt;bagfedc" )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The syntax of the play string may be enhanced in the future.
+The <strong>Music.Play</strong> procedure takes strings containing characters that specify notes, rests, sharps, flats and duration. The notes are the letters a to g (or A to G). A rest is p (for pause). A sharp is <strong>+</strong> and a flat is <strong>-</strong>. The durations are 1(wholenote), 2(halfnote), 4(quarternote), 8(eightnote) and 6(sixteenthnote). The character > raises to the next octave and &lt; lowers. For example, this is the way to play C and then C sharp one octave above middle C with a rest between them, all in sixteenth notes:  <strong>Music.Play</strong>(">6cpc+"). Blanks can be used for readability and are ignored by <strong>Music.Play</strong>.
+The <strong>Music.Play</strong> procedure requires that the machine have a sound card in order to play tones.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Music.Play</strong>, not by calling <strong>Play</strong>.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="Music.Sound">music_sound.html</a></strong> procedure, which makes a sound of a given frequency (Hertz) and duration (milliseconds).</p>

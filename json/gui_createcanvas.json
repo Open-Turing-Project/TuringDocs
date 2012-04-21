@@ -66,5 +66,8 @@
       "text_content": "GUI.Draw, \r\n          GUI.FontDraw,\r\n          GUI.Pic, and \r\n          GUI.SetXOR for drawing on a canvas.\r\n    ",
       "mdown_content": "**[gui_draw.html](GUI.Draw)**, **[gui_fontdraw.html](GUI.FontDraw)**,**[gui_pic.html](GUI.Pic)**, and **[gui_setxor.html](GUI.SetXOR)** for drawing on a canvas."
     }
+  ],
+  "dependencies": [
+    "gui_createcanvas_full01.gif"
   ]
 }

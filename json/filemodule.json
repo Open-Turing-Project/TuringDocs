@@ -35,5 +35,8 @@
       "text_content": " On the PC, a path name of a file or a directory can use either the forward slash or backward slash to separate directory names. The drive must be followed by a colon. Thus the following are legal path names:\r\n\r\nOn the Macintosh, a path name of a file or directory can use the standard Macintosh format of Volume Name:Directory Name:Directory Name:File Name or the Unix format of /Volume Name/Directory Name/Directory Name/File Name.  Note that the names can have spaces in them.\r\n\r\nOn UNIX systems, the path name must correspond to the UNIX standard of using a forward slash between parts of the path.\r\n\r\nIn general, you can achieve the greatest portability by using the UNIX standard for use in path names, as all Turing systems support it.\r\n\r\n",
       "mdown_content": "On the PC, a path name of a file or a directory can use either the forward slash or backward slash to separate directory names. The drive must be followed by a colon. Thus the following are legal path names:\nOn the Macintosh, a path name of a file or directory can use the standard Macintosh format of Volume Name:Directory Name:Directory Name:File Name or the Unix format of /Volume Name/Directory Name/Directory Name/File Name.  Note that the names can have spaces in them.\nOn UNIX systems, the path name must correspond to the UNIX standard of using a forward slash between parts of the path.\nIn general, you can achieve the greatest portability by using the UNIX standard for use in path names, as all Turing systems support it.\n"
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,31 @@
+<h1>setConstructor</h1>
+
+<h2>Syntax</h2>
+
+<p>A <em>setConstructor</em> is:
+<em>setTypeId</em> ( <em>membersOfSet</em> )</p>
+
+<h2>Description</h2>
+
+<p>Each value of a <strong>set</strong> type consists of a set of elements. In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a <em>set constructor</em> consisting of the name of the set type (<em>setTypeId</em>) followed by a parenthesized list of elements.</p>
+
+<h2>Example</h2>
+
+<p>The <em>smallSet </em>type is declared so that it can contain any and all of the values 0, 1 and 2. Variable <em>s</em> is initialized to be the set containing 1 and 2. The set {0,1} is written in this Turing example as <em>smallInt</em> (0,1).</p>
+
+<pre><code>    type smallSet : set of 0 .. 2
+    var s : smallSet := smallSet ( 0, 1 )
+    &#133;
+    if 2 in s then &#133;
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The form of <em>membersOfSet</em> is one of:
+The empty set is written, for example, as <em>smallInt </em>(). The full set is written as <em>smallInt </em>(<strong>all</strong>), so <em>smallInt </em>(<strong>all</strong>) = <em>smallInt </em>(0,1,2). See also the <strong>set</strong> type.
+The syntax of <em>setConstructor</em> as given above has been simplified by ignoring the fact that <strong>set</strong> types can be exported from modules. When a <strong>set</strong> type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as <em>m.smallSet</em>(1,2), where <em>m</em> is the module name.</p>
+
+<pre><code>    (a) expn { , expn}  % List of members of set
+    (b) all         % All member of index type of set
+    (c)             % Nothing, meaning the empty set
+</code></pre>

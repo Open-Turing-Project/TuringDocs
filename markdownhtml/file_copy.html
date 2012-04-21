@@ -1,0 +1,37 @@
+<h1>File.Copy</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.Copy</strong> (<em>srcPathName</em>, <em>destPathName</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>File.Copy</strong> copies a file named by the <em>srcPathName</em> parameter to the file named by the <em>destPathName</em> parameter. The copy can be between different disks or file systems.</p>
+
+<h2>Details</h2>
+
+<p>The source file name must be an actual file. This procedure will not copy directories.
+If the <strong>File.Copy </strong>call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.
+Note that you can use either forward or backward slashes to separatecomponents in a path. If you use backward slashes, you must doublethem in a string literal.  (i.e.  "d:\west\example.t")</p>
+
+<h2>Example</h2>
+
+<p>This program copies the file "<em>d:\west\example.dat</em>" to "<em>new_example.t</em>". in the current directory.</p>
+
+<pre><code>    File.Copy ("d:/west/example.dat", "new_example.t")
+    if Error.Last = eNoError then
+        put "File copied"
+    else
+        put "Did not copy the file."
+        put "Error: ", Error.LastMsg
+    end if
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>An example program is available that copies a file to the current directory using <strong>File.Copy</strong>, displays its contents to the run window, and then deletes the file using <strong>File.Delete</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.Copy</strong>, not by calling <strong>Copy</strong>.</p>

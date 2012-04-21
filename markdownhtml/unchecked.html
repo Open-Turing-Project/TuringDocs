@@ -1,0 +1,36 @@
+<h1>unchecked</h1>
+
+<h2>Description</h2>
+
+<p>OOT adds the concept of "unchecked" to Turing. Here, you can request that certain run time tests, which take place by default, can be eliminated. This  makes the program more efficient  at the risk of unreliability.</p>
+
+<h2>Example</h2>
+
+<p>Declare <em>p</em> to be an unchecked pointer to an integer (see <strong>pointers</strong> for details). Pointer <em>p </em>will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.</p>
+
+<pre><code>    var p : unchecked ^ int
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Declare <em>C</em> to be an unchecked collection of records of type <em>R</em> (see <strong>collections</strong> for details). Pointers to <em>C</em> will be unchecked.</p>
+
+<pre><code>    var C : unchecked collection of R
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Remove checking from the body of a loop.</p>
+
+<pre><code>    for i : 1 .. 500
+        unchecked
+        if a ( i ) = key then
+            exit
+        end if
+    end for
+</code></pre>
+
+<h2>Details</h2>
+
+<p>In the above example, the <strong>unchecked</strong> keyword requests that all checking, in particular, array bounds checking for array <em>a</em>, are to be omitted. The disabling lasts from the occurrence of the keyword <strong>unchecked</strong> to the end of the surrounding construct, in this case, until <strong>end</strong> <strong>for</strong>. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of <strong>checked</strong> to the end of the surrounding construct.
+In the current (1999) implementation, the use of <strong>unchecked</strong> to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking.</p>

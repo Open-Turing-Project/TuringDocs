@@ -39,5 +39,8 @@
       "text_content": " Time.Elapsed and Time.ElapsedCPU.\r\n",
       "mdown_content": "**[time_elapsed.html](Time.Elapsed)** and **[time_elapsedcpu.html](Time.ElapsedCPU)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -51,5 +51,8 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling GUI.CreateMenuItem, not by calling CreateMenuItem.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateMenuItem**, not by calling **CreateMenuItem**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -73,5 +73,8 @@
       "text_content": "GUI.GetText and \r\n          GUI.SetText for \r\n\t  reading and setting the text in the text field. \r\n\t  See also GUI.SetEchoChar \r\n\t  for setting the character echoed when the user enters a\r\n\t  character in a text field (often used for entering passwords). \r\n\t  See also GUI.SetSelection for setting the selected area of the text. \r\n\t  See also GUI.SetActive for making the text field active.\r\n    ",
       "mdown_content": "**[gui_gettext.html](GUI.GetText)** and **[gui_settext.html](GUI.SetText)** for reading and setting the text in the text field. See also **[gui_setechochar.html](GUI.SetEchoChar)** for setting the character echoed when the user enters acharacter in a text field (often used for entering passwords). See also **[gui_setselection.html](GUI.SetSelection)** for setting the selected area of the text. See also **[gui_setactive.html](GUI.SetActive)** for making the text field active."
     }
+  ],
+  "dependencies": [
+    "gui_createtextfield_full01.gif"
   ]
 }

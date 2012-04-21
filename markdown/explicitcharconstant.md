@@ -4,8 +4,12 @@
 ##Syntax
 An *explicitCharConstant* is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.
 
+
+
 ##Example
 In the following, the explicit character constants are 'H' and 'Hi'.
+
+
         var c : char := 'H'
         var d : char (2) := 'Hi'
 ##Details
@@ -14,6 +18,8 @@ The backslash \ is used in explicit string and char(n) constants to specify spec
 Explicit character constants cannot cross line boundaries. To represent a constant that is longer than a line, break it into two or more strings on separate lines and use + (catenation) to join the individual strings. See **catenation**.
 An explicit character constant may be limited in length by the implementation. We recommend that this limitation be at least 32767.
 Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called *eos *for end of string) and 128 (called *uninitchar*, used as the uninitialized string value).
+
+
         var c := 'H'        % Type is char
         var d := 'Hi'   % Type is char (2)
         var e := "H"    % Type is string

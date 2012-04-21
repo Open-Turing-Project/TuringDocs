@@ -1,0 +1,27 @@
+<h1>in</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>in</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>in</strong> operator determines if an element is in a set.</p>
+
+<h2>Example</h2>
+
+<pre><code>    type rankSet : set of 0 .. 10
+    var rankings : rankSet := rankSet ( 0 )  % The set {0}
+    &#133;
+    if 5 in rankings then &#133;     % Is 5 in the rankings set?
+</code></pre>
+
+<h2>Description</h2>
+
+<p>The <strong>not</strong> <strong>in</strong> operator is exactly the opposite of <strong>in</strong>. For example, 7 <strong>not</strong> <strong>in</strong> <em>rankings</em> means the same as <strong>not</strong> (7 <strong>in</strong> <em>rankings</em>).
+The element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.
+The keyword <strong>in</strong> is also used in lists such as <strong>import</strong> lists. See <strong>import</strong> list.</p>
+
+<h2>See also</h2>
+
+<p>the <strong><a href="set">set.html</a></strong> type, <em><a href="infix">infix.html</a> operators</em>, and <em><a href="precedence">precedence.html</a> </em>of operators.</p>

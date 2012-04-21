@@ -29,5 +29,8 @@
       "text_content": " Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\r\nArrays whose bounds are not known at compile time cannot be named.\r\n",
       "mdown_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\nArrays whose bounds are not known at compile time cannot be named."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -67,5 +67,8 @@
       "text_content": "View.Set for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options.\r\n          View.UpdateArea for updating\r\n          part of the window at a time.\r\n    ",
       "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" and \"nooffscreenonly\" options.\n**[view_updatearea.html](View.UpdateArea)** for updatingpart of the window at a time."
     }
+  ],
+  "dependencies": [
+
   ]
 }

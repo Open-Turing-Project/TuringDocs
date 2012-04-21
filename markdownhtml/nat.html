@@ -1,0 +1,36 @@
+<h1>nat</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>nat</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>nat</strong> (natural number) type has the values 0, 1, 2, 3 &#133; Natural numbers can be combined by various operators, such as addition (+) and multiplication (*). Natural numbers can be combined with integers (type <strong>int</strong>), in which case the result is an integer. Natural numbers can also be combined with <strong>real</strong> numbers, in which case the result is generally a real number. Natural numbers can always be assigned to real variables, with implicit conversion to <strong>real</strong>.</p>
+
+<h2>Example</h2>
+
+<pre><code>    var counter : nat
+    var j : nat := 9
+</code></pre>
+
+<h2>Details</h2>
+
+<p>See also <em>explicitIntegerConstant</em>. The <strong>nat</strong> type is used instead of <strong>int</strong> when the values are known to be non-negative.
+The Turing operators on natural numbers are the same as those for integers: +, -, * (multiply), <strong>div</strong> (truncating integer division), <strong>mod</strong> (integer remainder), <strong> (exponentiation), as well as comparisons (+, </strong>not=<strong>, >, >=, &lt;, &lt;=). The operators </strong>and<strong>, </strong>or<strong> and </strong>xor<strong> to be applied to natural number values. The bit-wise boolean result is produced as a natural number. The </strong>shr<strong> (shift right) and </strong>shl<strong> (shift left) operators are also introduced.
+In the current implementation, the range of natural numbers is from 0 to 4294967294. In other words, the maximum value of a natural number is 2</strong>32 - 2. This range exists because natural numbers are stored in 4 bytes. The types <strong>nat1</strong>, <strong>nat2</strong> and <strong>nat4</strong> specify natural numbers that fit into 1, 2 or 4 bytes.
+Explicit constants such as 213 and 0 are considered to be integers. As a result the type of <em>tax</em> in this declaration is <strong>int</strong>:
+Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.
+When integer and natural numbers are combined using a binary operator such as +, the result is an integer. This means, for example, that if <em>counter</em> is a natural number, <em>counter </em>+ 1 is considered to be an integer. As long as the result fits into the range that is the intersection of the ranges of <strong>int</strong> and <strong>nat</strong>, the result will be as expected. Anomalies occur when the result is (or would be) greater than the largest integer (<strong>maxint</strong>=2147483647). For example, if natural number <em>n</em> is greater than <strong>maxint</strong>, the expression <em>n</em> + 1 will overflow, because its result is an <strong>int</strong> (because 1 is an <strong>int</strong>). To avoid this problem, you must be careful that both operands are natural numbers.
+Suppose we have this declaration:
+We can safely compute <em>n</em> + <em>natOne</em> because both operands have type <strong>nat</strong>.
+Natural numbers can be converted to real numbers using <strong>natreal</strong>, but in practice this is rarely used, because a natural value used in place of a real value will be automatically converted to real.
+Natural numbers can be converted to strings and back using <strong>natstr</strong> and <strong>strnat</strong>.
+In the C language, a natural number is said to be "unsigned".</p>
+
+<pre><code>    var tax := 0    % The type is int        const natOne : nat := 1
+</code></pre>
+
+<h2>See also</h2>
+
+<p><strong><a href="maxnat">maxnat.html</a></strong>, <strong><a href="int">int.html</a></strong>, <strong><a href="nat"></a></strong><em>n</em>, <strong><a href="int">int.html</a></strong><em>n</em>, <strong><a href="natstr">natstr.html</a></strong>, <strong><a href="strnat">strnat.html</a></strong> and <strong><a href="natreal">natreal.html</a></strong>.</p>

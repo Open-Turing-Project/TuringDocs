@@ -4,11 +4,17 @@
 ##Syntax
 **system** ( *command* : **string**, **var** *ret* : **int** )
 
+
+
 ##Description
 The **system** statement is used to execute the shell (operating system) *command*, as if it were typed at the terminal. The return code is in *ret*. A return code of 0 (zero) means no detected errors. A return code of 127 means the command processor could not be accessed. A return code of 126 means the command processor did not have room to run on the PC.
 
+
+
 ##Example
 This program creates a directory listing when run under DOS on an IBM PC compatible computer. The same program will run under UNIX by changing "*dir*" to "*ls*".
+
+
         var success : int
         system ( "dir", success )
         if success not= 0 then
@@ -25,9 +31,13 @@ When the **system** procedure is used, the executing program usually remains in 
 To chain another program, one prepends "chain:" to the start *command*.
 Note that this command is "hazardous". Specifically, if you call it from Turing (as opposed to a program compiled with TComp) and you have not saved your source file, **you** **will** **lose** **it!**  Turing will be removed from memory without any warning when the **system** procedure is executed. Likewise any open files will be closed instantly. This means there is a danger if all files were not properly closed before the **system** procedure was called. 
 The "chain:" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.
+
+
         i.e.    system ("chain:myprog.exe", retCode)
 ##Example
 This program uses chaining to launch one of several possible programs based on user choice. It gives an error if for some reason the **system** command fails to work. It assumes that c:\chemistry.exe, c:\math.exe, c:\english.exe and c:\history.exe already exist.
+
+
         var choice, success : int
         put "Enter the subject (1-4): "..
         get choice
@@ -54,6 +64,10 @@ This program uses chaining to launch one of several possible programs based on u
 Here are the possible errors under PC-Turing
  -1 Not enough memory to load COMMAND.COM -2 Not enough memory to run command -3 Argument list greater than 128 bytes or environment info  is greater than 32k -4 Couldn't find COMMAND.COM -5 COMMAND.COM corrupt -6 -noshell option is selected, the system procedure is  disallowed
 
+
+
 ##See also
 **[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)** functions.
 See also predefined unit **[sysmodule.html](Sys)**.
+
+

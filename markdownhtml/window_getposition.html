@@ -1,0 +1,44 @@
+<h1>Window.GetPosition</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Window.GetPosition</strong> (<em>windowID</em> : <strong>int</strong>, <strong>var</strong> <em>x</em>, <em>y</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Window.GetPosition</strong> procedure returns the location of the specified execution window on the screen in the <em>x</em> and <em>y</em> parameters. The <em>x</em> and <em>y</em> parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.</p>
+
+<h2>Example</h2>
+
+<p>The following program outputs the current position of the run window.</p>
+
+<pre><code>    % Constants for windows
+    const titleBarHeight : int := 21
+    const windowEdgeSize : int := 13
+
+    % Calculate the actual size of a window
+    var windowWidth : int := maxx + windowEdgeSize
+    var windowHeight : int := maxy + windowEdgeSize + titleBarHeight
+
+    % Get the screen size
+    var screenWidth : int := Config.Display (cdScreenWidth)
+    var screenHeight : int := Config.Display (cdScreenHeight)
+
+    % Open the window
+    var winID : int := Window.Open ("title:Upper Right")
+    Window.SetPosition (winID, screenWidth  windowWidth,                    screenHeight  windowHeight)
+
+    % Return the current position
+    var windowXPosition, windowYPosition : int
+    Window.GetPosition (winID, windowXPosition, windowYPosition)
+    put "Window located at ", windowXPosition, ",", windowYPosition
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Window.GetPosition</strong>, not by calling <strong>GetPosition</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Window.SetPosition">window_setposition.html</a></strong> to <a href="set">set.html</a> the current window position and <strong><a href="Config.Display">config_display.html</a></strong> to get the size of the screen.</p>

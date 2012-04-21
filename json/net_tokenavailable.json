@@ -46,5 +46,8 @@
       "text_content": " Net.BytesAvailable, Net.CharAvailable, and Net.LineAvailable.\r\n",
       "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_charavailable.html](Net.CharAvailable)**, and **[net_lineavailable.html](Net.LineAvailable)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

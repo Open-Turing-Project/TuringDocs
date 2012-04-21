@@ -4,11 +4,17 @@
 ##Syntax
 **Sprite.ChangePic** (*spriteID*, *picID* : **int**)
 
+
+
 ##Description
 Changes the picture associated with a sprite while maintaining the sprites height and visibility status. A typical use **Sprite.ChangePic** would be to animate a sprite that stays in position.
 
+
+
 ##Example
 Here is a program that t that loads six images from files *Pic1.bmp** ***through*** **Pic6.bmp* and then displays them sequentially in the center of the screen.
+
+
         var pics : array 0 .. 5 of int
         var sprite: int
         for i : 1 .. 6
@@ -29,5 +35,9 @@ Here is a program that t that loads six images from files *Pic1.bmp** ***through
 Exported qualified.
 This means that you can only call the function by calling **Sprite.ChangePic**, not by calling **ChangePic**.
 
+
+
 ##See also
 **[sprite_new.html](Sprite.New)**.
+
+

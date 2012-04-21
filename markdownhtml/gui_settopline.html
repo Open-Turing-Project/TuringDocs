@@ -1,0 +1,37 @@
+<h1>GUI.SetTopLine</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.SetTopLine</strong> (<em>widgetID</em> : <strong>int</strong>, <em>lineNum</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>GUI.SetTopLine</strong> procedure scrolls the text in a text box so as to place the line number specified by<em>lineNum</em> at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to <em>lineNum</em>.</p>
+
+<h2>Example</h2>
+
+<p>This program displays 100 lines of text in a text box, thensets the text box to display line 50 at the top of the box.</p>
+
+<pre><code>    import GUI
+
+    var textBox : int     % The Text Field ID.
+    textBox := GUI.CreateTextBoxFull (10, 10, 180, 275,
+        GUI.INDENT, 0)
+
+    GUI.SetBackgroundColor (gray)
+
+    % Read the file and place it in the text box.
+    for i : 1 .. 100
+        GUI.AddLine (textBox, intstr (i))
+    end for
+    GUI.SetTopLine (textBox, 50)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.SetTopLine</strong>, not by calling <strong>SetTopLine</strong>.</p>

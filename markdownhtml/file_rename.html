@@ -1,0 +1,35 @@
+<h1>File.Rename</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>File.Rename</strong> (<em>srcPathName</em>, <em>destName</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>File.Copy</strong> renames a file or directory named by the <em>srcPathName</em> parameter to the <em>destName</em> parameter. The <em>destName</em> parameter must be a name only. In other words <strong>File.Rename</strong> can't move a file between different directories.</p>
+
+<h2>Details</h2>
+
+<p>If the <strong>File.Rename </strong>call fails, then <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
+
+<h2>Example</h2>
+
+<p>This program renames the file "<em>/usr/west/example</em>" to "<em>testcase</em>"</p>
+
+<pre><code>    File.Rename ("/usr/west/example", "testcase")
+    if Error.Last = eNoError then
+        put "File renamed"
+    else
+        put "Did not rename the file."
+        put "Error: ", Error.LastMsg
+    end if
+</code></pre>
+
+<h2>Execute</h2>
+
+<p>An example program is available that creates a file in the current directory, renames it to a different name using <strong>File.Rename</strong>, checks the existence of both files using <strong>File.Exists</strong> and then deletes the file using <strong>File.Delete</strong>.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>File.Rename</strong>, not by calling <strong>Rename</strong>.</p>

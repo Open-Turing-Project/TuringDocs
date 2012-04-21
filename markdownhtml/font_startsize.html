@@ -1,0 +1,49 @@
+<h1>Font.StartSize</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Font.StartSize</strong> (<em>fontName</em>, <em>fontStyle</em> : <strong>string</strong>)</p>
+
+<h2>Description</h2>
+
+<p><strong>Font.StartSize</strong> is used to start a listing of all the sizes for a particular font name and style.
+The <em>fontName</em> parameter should be an actual font name (as opposed to the default names of &#147;serif&#148;, etc). You can get a list of the font names by using the <strong>Font.StartName</strong> and <strong>Font.GetName</strong> subprograms. The <em>fontStyle</em> parameter should be in the same format as would appear in the <strong>Font.New</strong> procedure.</p>
+
+<h2>Example</h2>
+
+<p>The program lists all the fonts, styles and sizes available on the system.</p>
+
+<pre><code>    var fontName : string
+    var bold, italic, underline : boolean
+    var size : int
+    var styles : array boolean, boolean, boolean of string := 
+        init ("", "underline", "italic", "italic, underline", "bold",           
+                     "bold,underline", "bold,italic", "bold,italic,underline")
+    Font.StartName
+    loop
+        fontName := Font.GetName
+        exit when fontName = ""
+        Font.GetStyle (fontName, bold, italic, underline)
+        for b : false .. bold
+            for i : false .. italic
+                for u : false .. underline
+                    put fontName : 30, styles (b, i, u) : 22 ..
+                    Font.StartSize (fontName, styles (b, i, u) )
+                    loop
+                        size := Font.GetSize
+                        exit when size = 0
+                        if size = -1 then put "scalable  " ..
+                        else put size, " " ..
+                        end if
+                    end loop 
+                    put ""
+                end for
+            end for
+        end for
+    end loop
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Font.StartSize</strong>, not by calling <strong>StartSize</strong>.</p>

@@ -42,5 +42,8 @@
       "text_content": " Net.OpenConnection and Net.CloseConnection.\r\n",
       "mdown_content": "**[net_openconnection.html](Net.OpenConnection)** and **[net_closeconnection.html](Net.CloseConnection)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

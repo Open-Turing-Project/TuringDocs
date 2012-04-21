@@ -3,6 +3,8 @@
 
 ##Syntax
 A *unionType* is:
+
+
         union [ id ] : indexType of
             label labelExpn { , labelExpn } :
                         { id {, id } : typeSpec }
@@ -13,8 +15,12 @@ A *unionType* is:
 ##Description
 A union type (also called a variant record) is like a record in which there is a run time choice among sets of accessible fields. This choice is made by the **tag** statement, which deletes the current set of fields and activates a new set.
 
+
+
 ##Example
 This union type keeps track of various information about a vehicle, depending on the kind of vehicle.
+
+
         const passenger := 0
         const farm  := 1
         const recreational  := 2
@@ -37,5 +43,9 @@ In a union, *id'*s of fields, including the tag, must be distinct. However, thes
 Any array contained in a union must have bounds that are known at compile time.
 The notation > can be used to access union fields. For example, if *p* is a pointer to *vehicleRecord*, *p*>*farmClass* locates the *farmClass* field.
 
+
+
 ##See also
 **[pointer.html](pointer)**.
+
+

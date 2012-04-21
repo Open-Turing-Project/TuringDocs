@@ -29,5 +29,8 @@
       "text_content": " In a similar way, if s is a string, its upper bound (not length!) is given by upper (s). If an array has more than one dimension, as in var b : array 1..10, 1 .. 60 of int, you must specify the dimension. For example, upper (b, 2) returns 60.\r\n",
       "mdown_content": "In a similar way, if *s* is a string, its upper bound (not length!) is given by **upper** (*s*). If an array has more than one dimension, as in **var** *b* : **array** 1..10, 1 .. 60 **of** **int**, you must specify the dimension. For example, **upper** (*b*, 2) returns 60."
     }
+  ],
+  "dependencies": [
+
   ]
 }

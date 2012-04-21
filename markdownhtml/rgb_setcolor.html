@@ -1,0 +1,35 @@
+<h1>RGB.SetColor</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>RGB.SetColor</strong> (<em>colorNumber</em>: <strong>int</strong>,<em>redComp</em>, <em>greenComp</em>, <em>blueComp</em> : <strong>real</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>RGB.SetColor</strong> function sets the red, green and blue components of the color associated with the <em>colorNumber</em> parameter. The red, green and blue values must normalized to be between 0 and 1. Thus to set the color associated with the <em>colorNumber</em> parameter to pure red, you would call:
+It is wise to use <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> to check to see if the color change is successful.</p>
+
+<pre><code>    RGB.SetColor (colorNumber, 1.0, 0.0, 0.0)
+</code></pre>
+
+<h2>Example</h2>
+
+<p>This program sets all the available colors to shades of red
+<strong>Details</strong><strong>RGB.SetColour</strong> is an alternate spelling for <strong>RGB.SetColor</strong>.</p>
+
+<pre><code>    for clr : 0 .. maxcolor
+         if not RGB.SetColor (clr, clr / maxcolor, 0, 0) then
+            put "Color set failed on color number ", clr
+            exit
+        end if
+    end for
+</code></pre>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>RGB.SetColor</strong>, not by calling <strong>SetColor</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="RGB.GetColor">rgb_getcolor.html</a></strong>and <strong><a href="RGB.AddColor">rgb_addcolor.html</a></strong>.</p>

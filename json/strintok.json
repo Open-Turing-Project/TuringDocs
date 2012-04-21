@@ -23,5 +23,8 @@
       "text_content": " strint function that does the actual conversion.\r\n",
       "mdown_content": "**[strint.html](strint)** function that does the actual conversion."
     }
+  ],
+  "dependencies": [
+
   ]
 }

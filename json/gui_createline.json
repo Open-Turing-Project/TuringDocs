@@ -54,5 +54,8 @@
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling GUI.CreateLine, not by calling CreateLine.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateLine**, not by calling **CreateLine**."
     }
+  ],
+  "dependencies": [
+    "gui_createline01.gif"
   ]
 }

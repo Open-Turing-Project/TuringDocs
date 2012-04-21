@@ -21,5 +21,8 @@
       "text_content": " module declarations for an example of an opaque type used to implement complex arithmetic. See also equivalence of types for the definition of the type matching rules for opaque types.\r\n",
       "mdown_content": "**[module.html](module)** declarations for an example of an [](opaque) type used to [implement.html](implement) complex arithmetic. See also *[equivalence.html](equivalence) *of types for the definition of the type matching rules for [](opaque) types."
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -45,5 +45,8 @@
       "text_content": " getch and getchar.\r\n",
       "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

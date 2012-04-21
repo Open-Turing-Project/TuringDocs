@@ -49,5 +49,8 @@
       "text_content": " int, real, boolean, string, subrangeType, enum, array, set, record, union, pointer, named, nat, intn, natn, realn, char, and char(n) types.\r\n",
       "mdown_content": "**[int.html](int)**, **[real.html](real)**, **[boolean.html](boolean)**, **[string1.html](string)**, *[subrangetype.html](subrangeType)*, **[enum.html](enum)**, **[array.html](array)**, **[set.html](set)**, **[record.html](record)**, **[union.html](union)**, **[pointer.html](pointer)**, [named.html](named),** [nat.html](nat)**, **[int.html](int)*n***, **[nat.html](nat)*n***, **[real.html](real)*n***, **[char.html](char)**, and **[char.html](char)**(*n*) types."
     }
+  ],
+  "dependencies": [
+
   ]
 }

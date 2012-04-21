@@ -42,5 +42,8 @@
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Error.Halt, not by calling Halt.\r\n    ",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.Halt**, not by calling **Halt**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

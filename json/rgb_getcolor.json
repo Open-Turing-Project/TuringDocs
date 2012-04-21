@@ -39,5 +39,8 @@
       "text_content": " RGB.SetColorand RGB.AddColor.\r\n",
       "mdown_content": "**[rgb_setcolor.html](RGB.SetColor)**and **[rgb_addcolor.html](RGB.AddColor)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

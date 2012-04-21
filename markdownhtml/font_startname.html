@@ -1,0 +1,31 @@
+<h1>Font.StartName</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Font.StartName</strong></p>
+
+<h2>Description</h2>
+
+<p><strong>Font.StartName</strong> is used to start the listing of all the fonts available on the system. This procedure is called before making calls to <strong>Font.GetName</strong> to get the name of the fonts available. Once the name of a font is known, it's possible to list the available styles (using <strong>Font.GetStyle</strong>) and the available sizes (using <strong>Font.StartSize</strong> and <strong>Font.GetSize</strong>).</p>
+
+<h2>Example</h2>
+
+<p>The program lists all the fonts available on the system.</p>
+
+<pre><code>    var fontName : string
+    Font.StartName
+    loop
+        fontName := Font.GetName
+        exit when fontName = ""
+        put fontName
+    end loop
+</code></pre>
+
+<h2>Example</h2>
+
+<p>Another example is available that displays full information aboutthe fonts including name, styles, and point sizes.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Font.StartName</strong>, not by calling <strong>StartName</strong>.</p>

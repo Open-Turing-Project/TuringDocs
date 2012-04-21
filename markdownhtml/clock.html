@@ -1,0 +1,27 @@
+<h1>clock</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>clock</strong><em> </em>(<strong>var</strong><em> c </em>: <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>clock</strong> statement is used to determine the amount of time since a program (process) started running. Variable <em>c </em>is assigned the number of milliseconds since the program started running.</p>
+
+<h2>Example</h2>
+
+<p>This program tells you how much time it has used.</p>
+
+<pre><code>    var timeRunning : int
+    clock (timeRunning)
+    put "This program has run ", timeRunning, " milliseconds"
+</code></pre>
+
+<h2>Details</h2>
+
+<p>On Apple Macintoshes, the hardware resolution of duration is in units of 17 milliseconds (1/60-th of a second).</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="delay">delay.html</a></strong>, <strong><a href="time">time.html</a></strong>, <strong><a href="sysclock">sysclock.html</a></strong>, <strong><a href="wallclock">wallclock.html</a></strong> and <strong><a href="date">date.html</a></strong> statements.
+See also predefined unit <strong><a href="Time">timemodule.html</a></strong>.</p>

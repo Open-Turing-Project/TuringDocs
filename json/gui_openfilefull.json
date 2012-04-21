@@ -44,5 +44,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.OpenFileFull, not by calling OpenFileFull.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.OpenFileFull**, not by calling **OpenFileFull**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

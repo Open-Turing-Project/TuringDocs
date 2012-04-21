@@ -49,5 +49,8 @@
       "text_content": "GUI.HideWindow\r\n          for hiding a window with widgets in it.\r\n\t  See also GUI.CloseWindow\r\n\t  for closing a window with widgets in it.\r\n    ",
       "mdown_content": "**[gui_hidewindow.html](GUI.HideWindow)**for hiding a window with widgets in it.See also **[gui_closewindow.html](GUI.CloseWindow)**for closing a window with widgets in it."
     }
+  ],
+  "dependencies": [
+
   ]
 }

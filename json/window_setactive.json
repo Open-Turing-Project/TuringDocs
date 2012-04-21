@@ -36,5 +36,8 @@
       "text_content": " Window.GetActive and Window.Select.\r\n",
       "mdown_content": "**[window_getactive.html](Window.GetActive)** and **[window_select.html](Window.Select).**"
     }
+  ],
+  "dependencies": [
+
   ]
 }

@@ -1,0 +1,123 @@
+<h1>GUI.CreatePictureRadioButton[Full]</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CreatePictureRadioButton</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,<em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()):<strong>int</strong>
+<strong>GUI.CreatePictureRadioButtonFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>,<em>picture, joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>width</em>,<em>height</em> : <strong>int</strong>,<em>shortcut</em> : <strong>char</strong>, <em>mergePic</em> : <strong>boolean</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Creates a picture radio button and returns the button's widget ID.
+Picture radio buttons behave like picture buttons (see <strong>GUI.CreatePictureButton</strong>) except that they have the "radio" property. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected.
+A common example is the buttons on a paint program that indicate the current shape being painted. The maple leaf button is currently selected. If the star button is selected by the user, the maple leaf button becomes unselected. For picture buttons, the selected button appears depressed.
+<strong>Four Picture Radio Buttons with the Maple Leaf Seledcted</strong>
+A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <em>joinID</em> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <em>joinID</em> parameter.
+The picture must be created by the program beforehand using <strong>Pic.New</strong> or <strong>Pic.FileNew</strong>. The resulting picture can then be used as a parameter to <strong>GUI.CreatePictureButton</strong><em>.</em> In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library.
+The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture radio button. If these are both 1 and <em>joinID</em> is not zero, then the button will be placed directly below the previous picture radio button in the group. The <em>picture</em> parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>joinID</em> parameter specifies a member of the radio group that this widget should join. A <em>joinID</em> of 0 sepecifies this radio button is not a member of any group. The <em>actionProc</em> parameter specifies the name of a procedure that is called when the picture button is pressed.
+For <strong>GUI.CreatePictureRadioButtonFull</strong>, the <em>width</em> and <em>height</em> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> functions. If <em>width</em> and <em>height</em> are larger than the picture, the picture is centered in the button. The <em>shortCut</em>parameter is the keystroke to be used as the button's shortcut. The <em>mergePic</em> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for <em>CreatePictureRadioButton</em>.</p>
+
+<p><img src="gui_createpictureradiobutton_full01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>The following program creates and displays for picture radio buttons.</p>
+
+<pre><code>    import GUI
+    View.Set ("graphics:150;200,nobuttonbar") 
+
+    const size : int := 25   % The buttons size.
+    const border : int := 3
+
+    var starButton, mapleButton, circleButton, squareButton : int
+    var starPic, mapleLeafPic, circlePic, squarePic : int
+
+    procedure StarPressed
+        Text.Locate (1, 1)
+        put "Star Pressed    "
+    end StarPressed
+    procedure MaplePressed
+        Text.Locate (1, 1)
+        put "Maple Pressed "
+    end MaplePressed
+
+    procedure CirclePressed
+        Text.Locate (1, 1)
+        put "Circle Pressed"
+    end CirclePressed
+
+    procedure SquarePressed
+        Text.Locate (1, 1)
+        put "Square Pressed"
+    end SquarePressed
+
+    % Create the pictures.
+    % The star.
+    Draw.Star (border, border, border + size, border + size, black)
+    Draw.Star (border + 1, border + 1, border + size - 1,
+        border + size - 1, black)
+    Draw.FillStar (border + 2, border + 2, border + size - 2,
+        border + size - 2, brightred)
+    starPic := Pic.New (0, 0, 2 * border + size, 2 * border + size)
+
+    % The mapleleaf.
+    Draw.FillBox (border, border, border + size, border + size, white)
+    Draw.MapleLeaf (border, border, border + size, border + size, black)
+    Draw.MapleLeaf (border + 1, border + 1, border + size - 1,
+        border + size - 1, black)
+    Draw.FillMapleLeaf (border + 2, border + 2, border + size - 2,
+        border + size - 2, brightred)
+    mapleLeafPic := Pic.New (0, 0, 2 * border + size, 2 * border + size)
+
+    % The circle.
+    const radius : int := size div 2
+    Draw.FillBox (border, border, border + size, border + size, white)
+    Draw.Oval (border + radius, border + radius, radius, radius, black)
+    Draw.Oval (border + radius, border + radius, radius - 1, radius - 1,
+        black)
+    Draw.FillOval (border + radius, border + radius, radius - 2,
+        radius - 2, brightred)
+    circlePic := Pic.New (0, 0, 2 * border + size, 2 * border + size)
+
+    % The square.
+    Draw.FillBox (border, border, border + size, border + size, white)
+    Draw.Box (border, border, border + size, border + size, black)
+    Draw.Box (border + 1, border + 1, border + size - 1,
+        border + size - 1, black)
+    Draw.FillBox (border + 2, border + 2, border + size - 2,
+        border + size - 2, brightred)
+    squarePic := Pic.New (0, 0, 2 * border + size, 2 * border + size)
+
+    % Create the picture buttons.
+    Draw.Cls
+    starButton := GUI. CreatePictureRadioButton (10, maxy  80, 
+        starPic, 0, StarPressed)
+    mapleButton := GUI. CreatePictureRadioButton (-1, -1, 
+        mapleLeafPic, starButton, MaplePressed)
+    circleButton := GUI.CreatePictureRadioButton (-1, -1, 
+        circlePic, mapleButton, CirclePressed)
+    squareButton := GUI.CreatePictureRadioButton (-1, -1, 
+        squarePic, circleButton, SquarePressed)
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>When <strong>GUI.CreatePictureRadioButton</strong> or <strong>GUI.CreatePictureRadioButtonFull</strong><em> </em>is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
+When a picture radio button is not enabled, the picture radio button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.</p>
+
+<h2>Details</h2>
+
+<p>The following GUI subprograms can be called with a picture radio button as the <em>widgetID</em> parameter:
+<strong>GUI.Show</strong>,<strong> GUI.Hide</strong>,<strong> GUI.Enable</strong>,<strong> GUI.Disable</strong>,<strong> GUI.Dispose</strong>,<strong> GUI.GetX</strong>,<strong> GUI.GetY</strong>,<strong> GUI.GetWidth</strong>,<strong> GUI.GetHeight</strong>,<strong> GUI.SetPosition</strong>,<strong> GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong>, <strong>GUI.SelectRadio</strong></p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CreatePictureRadioButton</strong>, not by calling <strong>CreatePictureRadioButton</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.SelectRadio">gui_selectradio.html</a></strong> for selecting a picture radio button in a program. See also <strong><a href="GUI.CreatePictureButton">gui_createpicturebutton_full.html</a></strong> and <strong><a href="GUI.CreateRadioButton">gui_createradiobutton_full.html</a></strong> for information on picture buttons and radio buttons.</p>

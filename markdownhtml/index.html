@@ -1,0 +1,27 @@
+<h1>index</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>index</strong> (<em>s </em>, <em>patt</em> : <strong>string</strong> ) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>index</strong> function is used to find the position of <em>patt </em>within string <em>s</em>. For example, <strong>index</strong> ( "chair", "air" ) is 3.</p>
+
+<h2>Example</h2>
+
+<p>This program outputs 2, because "ill" is a substring of "willing", starting at the second character of "willing".</p>
+
+<pre><code>    var word : string := "willing"
+    put index ( word, "ill" )
+</code></pre>
+
+<h2>Details</h2>
+
+<p>If the pattern (<em>patt</em>) does not appear in the string (<em>s</em>), <strong>index</strong> returns 0 (zero). For example, here is an <strong>if</strong> statement that checks to see if string <em>s</em> contains a blank:
+The <strong>index</strong> is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an <strong>if</strong> statement that checks to see if <em>ch</em>,<em> </em>which is declared using <strong>var</strong> <em>ch </em>: <strong>string</strong> (1), is a digit:
+If a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, <strong>index</strong> ("pingpong", "ng") returns 3.
+If <em>patt</em> is the null string, the result is 1.</p>
+
+<pre><code>    if index ( s, " " ) not= 0 then &#133;        if index ( "0123456789", ch) not= 0 then &#133;
+</code></pre>

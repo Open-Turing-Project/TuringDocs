@@ -1,0 +1,79 @@
+<h1>GUI.CreateTextBox[Full]</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>GUI.CreateTextBox</strong> (<em>x</em>, <em>y</em>, <em>width</em>, <em>height</em> : <strong>int</strong>) : <strong>int</strong>
+<strong>GUI.CreateTextBoxFull</strong> (<em>x</em>, <em>y</em>, <em>width</em>, <em>height</em> : <strong>int</strong>,<em>border</em>, <em>fontID</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<h2>Description</h2>
+
+<p>Creates a text box and returns the text box's widget ID.
+A text box is a box used for displaying text. It has scroll bars that activate when text appears outside the border of the text box. The user cannot directly select, edit or modify the text in the text box.
+The <em>x</em> and<em> y</em> parameters specify the lower-left corner of the area in which the text will be drawn. The <em>width</em> and <em>height</em> parameters specify the width and height of the text drawing area The text box border is just outside the text drawing area. Because of this, <strong>GUI.GetX</strong> and <strong>GUI.GetY</strong> will return a value slightly smaller than <em>x</em> and <em>y</em> and <strong>GUI.GetWidth</strong><em> </em>and <strong>GUI.GetHeight</strong> will return values slightly larger than <em>width</em> and <em>height</em>.
+For <strong>GUI.CreateTextBox</strong>, the border around the text box is always a line. For <strong>GUI.CreateTextBoxFull</strong>, the type of border is specified by the <em>border</em> parameter. The <em>border</em> parameter is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em>, or <em>GUI.EXDENT</em>. A border of 0 is the default and is the same as <em>GUI.LINE</em>. <em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the text box appear indented or recessed. <em>GUI.EXDENT</em> makes the text box appear to stand out from the window. The <em>fontID</em> parameter specifies the font ID of the font to be used in the text box. The font ID is received from a <em>Font.New</em> call. Do not call <em>Font.Free</em> for this font ID until the label has been disposed of by calling <strong>GUI.Dispose</strong>.
+By using the <em>fondID</em> parameter, text boxes can have any size or typeface.
+<strong>A text box displaying the contents of a file.</strong></p>
+
+<p><img src="gui_createtextbox_full01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>The following program displays the contents of a file in a text box.</p>
+
+<pre><code>    import GUI 
+    View.Set ("graphics:300;300") 
+
+    const fileNameToBeViewed : string := "TextBxs.DEM"
+    var textBox : int       % The Text Field ID.
+    var title : int     % The label for the title.
+    var f : int         % The stream number of the file.
+    var line : string       % Lines to be read from the file.
+
+    % Open the file.
+    open : f, fileNameToBeViewed, get
+    if f = 0 then
+        put "Unable to open " + fileNameToBeViewed + " : ", Error.LastMsg
+        return
+    end if
+
+    % Set background color to gray for indented text box.
+    GUI.SetBackgroundColor (gray)
+
+    % Create the title label and text box.
+    title := GUI.CreateLabelFull (20, 280, fileNameToBeViewed, 250, 0, 
+        GUI.CENTER, 0)
+    textBox := GUI.CreateTextBoxFull (10, 10, 280, 265, 
+        GUI.INDENT, 0)
+
+    % Read the file and place it in the text box.
+    loop
+        exit when eof (f)
+        get : f, line : *
+        GUI.AddLine (textBox, line)
+    end loop
+
+    close : f   % Close the file.
+
+    loop
+        exit when GUI.ProcessEvent
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>When <strong>GUI.CreateTextBox </strong>or <strong>GUI.CreateTextBoxFull</strong><em> </em>is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
+A text box widget is a passive widget and cannot be enabled or disabled.</p>
+
+<h2>Details</h2>
+
+<p>The following GUI subprograms can be called with a text box as the <em>widgetID</em> parameter:
+<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>,<strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong>,<strong>GUI.AddLine</strong>, <strong>GUI.AddText</strong>, <strong>GUI.ClearText</strong>, <strong>GUI.SetTopLine</strong>, <strong>GUI.SetScrollOnAdd</strong></p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>GUI.CreateTextBox</strong>, not by calling <strong>CreateTextBox</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="GUI.AddLine">gui_addline.html</a></strong>, <strong><a href="GUI.AddText">gui_addtext.html</a></strong> for adding text to the text box.See also <strong><a href="GUI.SetTopLine">gui_settopline.html</a></strong>to set the top line of text in the text box.See also <strong><a href="GUI.SetScrollOnAdd">gui_setscrollonadd.html</a></strong>to set stop the text box from scrolling when text is added to the text box.See also <strong><a href="GUI.ClearText">gui_cleartext.html</a></strong> for clearing the text box.</p>

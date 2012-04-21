@@ -32,5 +32,8 @@
       "text_content": " View.Set for a complete list of the options available with Window.Set. See Window.Open for how to create a new window.\r\n",
       "mdown_content": "**[view_set.html](View.Set)** for a complete list of the options available with** [](Window.Set)**. See **[window_open.html](Window.Open)** for how to create a [new.html](new) window."
     }
+  ],
+  "dependencies": [
+
   ]
 }

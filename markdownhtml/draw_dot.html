@@ -1,0 +1,38 @@
+<h1>Draw.Dot</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Draw.Dot</strong> (<em>x</em>, <em>y</em>, <em>Color</em> : <strong>int</strong>)</p>
+
+<h2>Description</h2>
+
+<p>The <strong>Draw.Dot </strong>procedure is used to color the dot (pixel) at location (<em>x</em>, <em>y</em>) using the specified <em>Color</em>.</p>
+
+<p><img src="draw_dot01.gif" alt="Doc image" /></p>
+
+<h2>Example</h2>
+
+<p>This program randomly draws dots with random colors. The <strong>maxx</strong>, <strong>maxy</strong> and <strong>maxcolor</strong> functions give the maximum x, y and color values.</p>
+
+<pre><code>    View.Set ("graphics")
+    var x, y, c : int
+    loop
+        x := Rand.Int (0, maxx)     % Random x
+        y := Rand.Int (0, maxy)     % Random y
+        c := Rand.Int (0, maxcolor) % Random color
+        Draw.Dot (x, y, c)
+    end loop
+</code></pre>
+
+<h2>Details</h2>
+
+<p>The screen must be in a "<em>graphics</em>" mode. If the screen is not in a "<em>graphics</em>" mode, an error will occur. See <strong>View.Set </strong>for details.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Draw.Dot</strong>, not by calling <strong>Dot</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="View.Set">view_set.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various procedures in the <strong><a href="Draw">drawmodule.html</a></strong> unit.</p>

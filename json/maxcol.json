@@ -40,5 +40,8 @@
       "text_content": " locate procedure for an example of the use of maxcol.\r\n",
       "mdown_content": "**[locate.html](locate)** [procedure.html](procedure) for an example of the use of **[](maxcol)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

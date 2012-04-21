@@ -69,5 +69,8 @@
       "text_content": " buttonwait to get mouse events saved in the queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\nSee also predefined unit Mouse.\r\n",
       "mdown_content": "**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\".\nSee also predefined unit **[mousemodule.html](Mouse)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

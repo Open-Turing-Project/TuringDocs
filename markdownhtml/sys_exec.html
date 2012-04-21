@@ -1,0 +1,36 @@
+<h1>Sys.Exec</h1>
+
+<h2>Syntax</h2>
+
+<p><strong>Sys.Exec</strong> ( <em>command</em> : <strong>string</strong> ) : <strong>boolean</strong></p>
+
+<h2>Description</h2>
+
+<p>The <strong>Sys.Exec</strong> function<strong> </strong>is used to<strong> </strong>execute an application or more often, open a data file with its associated application. <strong>Sys.Exec</strong> can be used to launch such programs as the Internet Browser by specifying a URL. <strong>Sys.Exec</strong> launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)</p>
+
+<h2>Example</h2>
+
+<p>This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player.</p>
+
+<pre><code>    if not Sys.Exec ("http://www.holtsoft.com/turing/support") then
+        put "The Sys.Exec call failed"
+        put "Error: ", Error.LastMsg
+    end if
+    if not Sys.Exec ("skate.avi") then
+        put "The Sys.Exec call failed"
+        put "Error: ", Error.LastMsg
+    end if
+</code></pre>
+
+<h2>Details</h2>
+
+<p>When the <strong>Sys.Exec</strong> procedure is used, the executing program continues execution immediately while the launched application is running.</p>
+
+<h2>Status</h2>
+
+<p>Exported qualified.
+This means that you can only call the function by calling <strong>Sys.Exec</strong>, not by calling <strong>Exec</strong>.</p>
+
+<h2>See also</h2>
+
+<p><strong><a href="Sys.Nargs">sys_nargs.html</a></strong>, <strong><a href="Sys.FetchArg">sys_fetcharg.html</a></strong> and <strong><a href="Sys.GetEnv">sys_getenv.html</a></strong> functions.</p>

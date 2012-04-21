@@ -23,5 +23,8 @@
       "text_content": " strreal function that does the actual conversion.\r\n",
       "mdown_content": "**[strreal.html](strreal)** function that does the actual conversion."
     }
+  ],
+  "dependencies": [
+
   ]
 }

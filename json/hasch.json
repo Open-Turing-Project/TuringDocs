@@ -54,5 +54,8 @@
       "text_content": "getch and \r\n          getchar.\r\n          See also the Input.Flush\r\n          command for flushing the keyboard buffer.\r\n          See also predefined unit Input.\r\n    ",
       "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**.\nSee also the [input_flush.html](**Input.Flush**)command for flushing the keyboard buffer.\nSee also predefined unit **[inputmodule.html](Input)**."
     }
+  ],
+  "dependencies": [
+
   ]
 }

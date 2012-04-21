@@ -48,5 +48,8 @@
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.Sizes, not by calling Sizes.\r\n",
       "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Sizes**, not by calling **Sizes**."
     }
+  ],
+  "dependencies": [
+    "font_sizes01.gif"
   ]
 }
