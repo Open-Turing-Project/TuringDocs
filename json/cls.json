@@ -1,0 +1,29 @@
+{
+  "title": "cls",
+  "fileName": "cls",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>cls</b><p>\r\n</p></font>",
+      "mdown_content": "**cls**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>cls</b> (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1).<p>\r\n</p>",
+      "mdown_content": "The **cls** (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1)."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The entire output window is set to the current text background color (as set by <b>colorback</b> or <b>Text.ColorBack</b>).<p>\r\nThe output window must be in \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
+      "mdown_content": "The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).\nThe output window must be in \"*graphics*\" mode. See **setscreen** for details.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "textmodule"
+      ],
+      "raw_content": "See also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.<p>\r\n</p>",
+      "mdown_content": "See also predefined unit **[textmodule.html](Text)**."
+    }
+  ]
+}

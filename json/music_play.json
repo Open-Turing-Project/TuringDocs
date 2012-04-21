@@ -1,0 +1,60 @@
+{
+  "title": "Music.Play",
+  "fileName": "music_play",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Music.Play</b> ( <i>music</i> : <b>string</b> )<p></p></font>",
+      "mdown_content": "**Music.Play** ( *music* : **string** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Music.Play</b> procedure is used to sound musical notes on \r\n          the computer.<p>\r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a <b>Music.Sound</b> or <b>Music.Play</b> \r\n\t  command, it stops until the command is finished. However, other \r\n\t  processes will continue to executing.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **Music.Play** procedure is used to sound musical notes on \nthe computer.\nSounds are produced synchronously on a per process basis. This means \nthat when a process executes a **Music.Sound** or **Music.Play** \ncommand, it stops until the command is finished. However, other \nprocesses will continue to executing.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Music.Play ( \"cde\" )"
+      ],
+      "raw_content": "This program sounds the first three notes of the C scale.<p>\r\n</p>",
+      "mdown_content": "This program sounds the first three notes of the C scale."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Music.Play ( \"8cdefgab>c\" )\r\n        Music.Play ( \"<bagfedc\" )"
+      ],
+      "raw_content": "This program plays from middle C to one octave above \r\n          middle C and down again in 8th notes.<p>\r\n</p>",
+      "mdown_content": "This program plays from middle C to one octave above \nmiddle C and down again in 8th notes."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Music.Play Example",
+          "file": "Music.Play.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The syntax of the play string may be enhanced in the future.<p>\r\n\t  The <b>Music.Play</b> procedure takes strings containing characters \r\n\t  that specify notes, rests, sharps, flats and duration. The notes are \r\n\t  the letters a to g (or A to G). A rest is p (for pause). A sharp is \r\n\t  <b>+</b> and a flat is <b>-</b>. The durations are \r\n\t  1&nbsp;(whole&nbsp;note), 2&nbsp;(half&nbsp;note), \r\n\t  4&nbsp;(quarter&nbsp;note), 8&nbsp;(eight&nbsp;note) and \r\n\t  6&nbsp;(sixteenth&nbsp;note). The character &gt; raises to the next \r\n\t  octave and &lt; lowers. For example, this is the way to play C and \r\n\t  then C sharp one octave above middle C with a rest between them, \r\n\t  all in sixteenth notes:  <b>Music.Play</b>(\"&gt;6cpc+\"). Blanks can \r\n\t  be used for readability and are ignored by <b>Music.Play</b>.</p>\n<p>\r\n\t  The <b>Music.Play</b> procedure requires that the machine have a sound \r\n\t  card in order to play tones.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The syntax of the play string may be enhanced in the future.\nThe **Music.Play** procedure takes strings containing characters \nthat specify notes, rests, sharps, flats and duration. The notes are \nthe letters a to g (or A to G). A rest is p (for pause). A sharp is \n**+** and a flat is **-**. The durations are \n1 (whole note), 2 (half note), \n4 (quarter note), 8 (eight note) and \n6 (sixteenth note). The character > raises to the next \noctave and < lowers. For example, this is the way to play C and \nthen C sharp one octave above middle C with a rest between them, \nall in sixteenth notes:  **Music.Play**(\">6cpc+\"). Blanks can \nbe used for readability and are ignored by **Music.Play**.\n\nThe **Music.Play** procedure requires that the machine have a sound \ncard in order to play tones.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Music.Play</b>, not by calling <b>Play</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Music.Play**, not by calling **Play**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "music_sound"
+      ],
+      "raw_content": "the <b><a href=\"music_sound.html\">Music.Sound</a></b> procedure, which makes a \r\n          sound of a given frequency (Hertz) and duration (milliseconds).<p>\r\n    </p>",
+      "mdown_content": "the **[music_sound.html](Music.Sound)** procedure, which makes a \nsound of a given frequency (Hertz) and duration (milliseconds).\n"
+    }
+  ]
+}

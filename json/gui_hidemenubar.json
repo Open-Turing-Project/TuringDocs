@@ -1,0 +1,35 @@
+{
+  "title": "GUI.HideMenuBar",
+  "fileName": "gui_hidemenubar",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.HideMenuBar</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.HideMenuBar**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)<p>\r\n</p>",
+      "mdown_content": "Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>GUI.SetMouseEventHandler</b> for an example of <b>GUI.HideMenuBar</b>.<p>\r\n</p>",
+      "mdown_content": "See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.HideMenuBar</b>, not by calling <b>HideMenuBar</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.HideMenuBar**, not by calling **HideMenuBar**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_showmenubar",
+        "gui_createmenu"
+      ],
+      "raw_content": "<b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b>. See also <b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**."
+    }
+  ]
+}

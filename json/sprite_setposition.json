@@ -1,0 +1,34 @@
+{
+  "title": "Sprite.SetPosition",
+  "fileName": "sprite_setposition",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.SetPosition</b> (<i>spriteID</i>, <i>x</i>, <i>y</i> : <b>int</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>centered</i> : <b>boolean</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Sprite.SetPosition** (*spriteID*, *x*, *y* : **int**, \n    *centered* : **boolean**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Moves the sprite specified by <i>spriteID</i> to the location specified by (<i>x, y</i>). If <i>centered</i> is <b>true</b>, then the sprite is centered on (<i>x, y</i>). Otherwise (<i>x, y</i>) specifies the lower-left corner of the sprite.<p>\r\n</p>",
+      "mdown_content": "Moves the sprite specified by *spriteID* to the location specified by (*x, y*). If *centered* is **true**, then the sprite is centered on (*x, y*). Otherwise (*x, y*) specifies the lower-left corner of the sprite."
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>Sprite.Hide</b> for an example of <b>Sprite.SetPosition</b>.<p>\r\n</p>",
+      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.SetPosition**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.SetPosition</b>, not by calling <b>SetPosition</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.SetPosition**, not by calling **SetPosition**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_new"
+      ],
+      "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[sprite_new.html](Sprite.New)**."
+    }
+  ]
+}

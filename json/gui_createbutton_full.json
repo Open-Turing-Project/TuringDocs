@@ -1,0 +1,62 @@
+{
+  "title": "GUI.CreateButton[Full]",
+  "fileName": "gui_createbutton_full",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.CreateButton</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n \t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>\r\n          <b>GUI.CreateButtonFull</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>height</i> : <b>int</b>, <i>shortcut</i> : <b>char</b>, <i>default</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
+      "mdown_content": "**GUI.CreateButton** (*x*, *y*, *width* : **int**, *text* : **string**,\n    *actionProc* : **procedure** *x* ()) : **int**\n**GUI.CreateButtonFull** (*x*, *y*, *width* : **int**, *text* : **string**,\n    *actionProc* : **procedure** *x* (), *height* : **int**, *shortcut* : **char**, *default* : **boolean**) : **int**"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "gui_createbutton_full01.gif"
+      ],
+      "raw_content": "Creates a button and returns the button's widget ID.<p>\r\n          The button widget is used to implement a textual button. When you \r\n          click on a button, the button's <i>action procedure</i> is called. \r\n          If a button is given a short cut, then entering the keystroke will \r\n          cause the <i>action procedure</i> to be called. It will not visibly \r\n          cause the button to depress.</p>\n<p>\r\n\t  </p>\n<center></center>\r\n          <center><b>Two Buttons</b></center>\n<p>\r\n          The <i>x</i> and <i>y</i> parameters specify the lower-left corner \r\n          of the button. The <i>width</i> parameter specifies the width of the \r\n          button. If <i>width</i> is less than the size necessary to display \r\n          the button, the button is automatically enlarged to fit the text. \r\n          The <i>text</i> parameter specifies the text to appear in the button. \r\n          The <i>actionProc</i> parameter is the name of a procedure that is \r\n          called when the button is pressed.</p>\n<p>\r\n          For <b>GUI.CreateButtonFull</b>, the <i>height</i> parameter \r\n          specifies the height of the button. If <i>height</i> is less \r\n          than the size necessary to display the button, the button is \r\n          automatically enlarged to fit the text. The <i>shortcut</i> \r\n          parameter is the keystroke to be used as the button's shortcut. \r\n          The <i>default</i> parameter is a boolean indicating whether the \r\n          button should be the default button. If there is already a default \r\n          button, and <i>default</i> is set to true, then this button becomes \r\n          the new default button.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Creates a button and returns the button's widget ID.\nThe button widget is used to implement a textual button. When you \nclick on a button, the button's *action procedure* is called. \nIf a button is given a short cut, then entering the keystroke will \ncause the *action procedure* to be called. It will not visibly \ncause the button to depress.\n\n\n\n**Two Buttons**\n\nThe *x* and *y* parameters specify the lower-left corner \nof the button. The *width* parameter specifies the width of the \nbutton. If *width* is less than the size necessary to display \nthe button, the button is automatically enlarged to fit the text. \nThe *text* parameter specifies the text to appear in the button. \nThe *actionProc* parameter is the name of a procedure that is \ncalled when the button is pressed.\n\nFor **GUI.CreateButtonFull**, the *height* parameter \nspecifies the height of the button. If *height* is less \nthan the size necessary to display the button, the button is \nautomatically enlarged to fit the text. The *shortcut* \nparameter is the keystroke to be used as the button's shortcut. \nThe *default* parameter is a boolean indicating whether the \nbutton should be the default button. If there is already a default \nbutton, and *default* is set to true, then this button becomes \nthe new default button.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        \r\n        procedure DrawRandomCircle\r\n            var r : int := Rand.Int (20, 50)\r\n            var x : int := Rand.Int (r, maxx - r)\r\n            var y : int := Rand.Int (r, maxy - r)\r\n            var c : int := Rand.Int (0, maxcolor)\r\n            Draw.FillOval (x, y, r, r, c)\r\n            % In case we drew over the buttons, redraw them.\r\n            GUI.Refresh\r\n        end DrawRandomCircle\r\n        \r\n        View.Set (\"graphics:300;200,nobuttonbar \")\r\n        var draw : int := GUI.CreateButtonFull (50, 10, 0, \"Draw Circle\",\r\n            DrawRandomCircle, 0, '^D', true)\r\n        var quitBtn : int := GUI.CreateButton (200, 10, 0, \"Quit\", GUI.Quit)\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "The following program creates two buttons, one which draws a random \r\n        circle on the screen and one which quits the program.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The following program creates two buttons, one which draws a random \ncircle on the screen and one which quits the program.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.CreateButtonFull Example",
+          "file": "GUI.CreateButtonFull.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "When <b>GUI.CreateButton</b> or <b>GUI.CreateButtonFull</b> is \r\n          called, the newly created button will be displayed immediately \r\n          unless <b>GUI.DisplayWhenCreated</b> has been called with the \r\n          <i>display</i> parameter set to false. <p>\r\n          If a button's width or height is set to zero (or not specified \r\n          at all), then the button is shaped to fit the text.</p>\n<p>\r\n          A button can be the default button for a window. The default button \r\n          is drawn with a thicker border around it. If the user presses ENTER \r\n          in a window with a default button, the default button's \r\n          <i>action procedure</i> is called.</p>\n<p>\r\n          When a button is not enabled, the text in the button is grayed out \r\n          and the button no longer responds to any mouse clicks or keystrokes \r\n          until the button is enabled again.</p>\n<p>\r\n    </p>",
+      "mdown_content": "When **GUI.CreateButton** or **GUI.CreateButtonFull** is \ncalled, the newly created button will be displayed immediately \nunless **GUI.DisplayWhenCreated** has been called with the \n*display* parameter set to false. \nIf a button's width or height is set to zero (or not specified \nat all), then the button is shaped to fit the text.\n\nA button can be the default button for a window. The default button \nis drawn with a thicker border around it. If the user presses ENTER \nin a window with a default button, the default button's \n*action procedure* is called.\n\nWhen a button is not enabled, the text in the button is grayed out \nand the button no longer responds to any mouse clicks or keystrokes \nuntil the button is enabled again.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The following GUI subprograms can be called with a button as the \r\n          <i>widgetID</i> parameter:<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>\n<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Enable</b>, \r\n\t          <b>GUI.Disable</b>, <b>GUI.Dispose</b>, <b>GUI.GetX</b>,\r\n\t          <b>GUI.GetY</b>, <b>GUI.GetWidth</b>, <b>GUI.GetHeight</b>,\r\n\t          <b>GUI.SetPosition</b>, <b>GUI.SetSize</b>,\r\n\t          <b>GUI.SetPositionAndSize</b>, <b>GUI.SetLabel</b>,\r\n\t          <b>GUI.SetDefault</b>\n</td>\r\n\t    </tr></table>\n<p>\r\n    </p>",
+      "mdown_content": "The following GUI subprograms can be called with a button as the \n*widgetID* parameter:\n\n \n\n**GUI.Show**, **GUI.Hide**, **GUI.Enable**, \n**GUI.Disable**, **GUI.Dispose**, **GUI.GetX**,\n**GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**,\n**GUI.SetPosition**, **GUI.SetSize**,\n**GUI.SetPositionAndSize**, **GUI.SetLabel**,\n**GUI.SetDefault**\n\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>GUI.CreateButton</b>, not by calling <b>CreateButton</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.CreateButton**, not by calling **CreateButton**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_setlabel",
+        "gui_setdefault",
+        "gui_setcolor"
+      ],
+      "raw_content": "<b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for changing \r\n          the button's text, \r\n          <b><a href=\"gui_setdefault.html\">GUI.SetDefault</a></b> for setting \r\n          the default button in a window and\r\n          <b><a href=\"gui_setcolor.html\">GUI.SetColor</a></b> for setting \r\n          the button's color.<p>\r\n    </p>",
+      "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing \nthe button's text, \n**[gui_setdefault.html](GUI.SetDefault)** for setting \nthe default button in a window and\n**[gui_setcolor.html](GUI.SetColor)** for setting \nthe button's color.\n"
+    }
+  ]
+}

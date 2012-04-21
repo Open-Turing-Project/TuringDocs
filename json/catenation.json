@@ -1,0 +1,47 @@
+{
+  "title": "catenation (+)",
+  "fileName": "catenation",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>catenation </i>is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>stringExpn</i> <b>+</b> <i>stringExpn</i></font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "A *catenation *is:\n\n \n*stringExpn* **+** *stringExpn*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Two strings (<i>stringExpns</i>), <b>char</b> or <b>char</b>(<i>n</i>) values can be joined together (catenated) using the + operator. <p>\r\n</p>",
+      "mdown_content": "Two strings (*stringExpns*), **char** or **char**(*n*) values can be joined together (catenated) using the + operator. "
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var lastName, wholeName : string\r\n        lastName := \"Austere\"\r\n        wholeName := \"Nancy\" + \"  \" + lastName\r\n                % The three strings Nancy, a blank and Austere\r\n                % catenated together to make the string\r\n                % \"Nancy  Austere\". This string becomes the\r\n                % value of wholeName"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "The length of a string catenation is limited to 255 characters.<p>\r\nCatenation is sometimes called <i>concatenation</i>.</p>\n<p>\r\nCatenation can also be applied to <b>char</b> and <b>char</b>(<i>n</i>) values. See <b>char</b> and <b>char</b>(<i>n</i>). If either operand, <i>s</i> or <i>t</i> in <i>s</i> + <i>t</i>, is a <b>string</b> or a dynamic <b>char</b>(<i>n</i>) (length not known at compile time), the result type is <b>string</b>. Otherwise (when both <i>s</i> and <i>t</i> are <b>char</b> or non-dynamic <b>char</b>(<i>n</i>)) the result type is <b>char</b>(<i>n</i>).</p>\n<p>\r\nThe result of catenation is considered to be a compile time value if both operands are compile time values.</p>\n<p>\r\nIf both operands have the type <b>char</b> or <b>char</b>(<i>n</i>) neither of which is a dynamic <b>char</b>(<i>n</i>), the result is of type <b>char</b>(<i>n</i>), which is also of a non dynamic type. This allows the creation of very long <b>char</b>(<i>n</i>) values that can effectively span line boundaries using catenation to join lines. If either operand is a dynamic type or a string type, the catenation produces a string, whose length is limited to 255 characters.</p>\n<p>\r\n</p>",
+      "mdown_content": "The length of a string catenation is limited to 255 characters.\nCatenation is sometimes called *concatenation*.\n\nCatenation can also be applied to **char** and **char**(*n*) values. See **char** and **char**(*n*). If either operand, *s* or *t* in *s* + *t*, is a **string** or a dynamic **char**(*n*) (length not known at compile time), the result type is **string**. Otherwise (when both *s* and *t* are **char** or non-dynamic **char**(*n*)) the result type is **char**(*n*).\n\nThe result of catenation is considered to be a compile time value if both operands are compile time values.\n\nIf both operands have the type **char** or **char**(*n*) neither of which is a dynamic **char**(*n*), the result is of type **char**(*n*), which is also of a non dynamic type. This allows the creation of very long **char**(*n*) values that can effectively span line boundaries using catenation to join lines. If either operand is a dynamic type or a string type, the catenation produces a string, whose length is limited to 255 characters.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "repeat",
+        "string1",
+        "length",
+        "index",
+        "string1",
+        "char",
+        "char",
+        "explicitstringconstant",
+        "explicitcharconstant",
+        "substring",
+        "length"
+      ],
+      "raw_content": "<i>substrings</i> (for separating a strings into parts), <b><a href=\"repeat.html\">repeat</a></b><i> </i>(for making repeated catenations), <b><a href=\"string1.html\">string</a></b><i> </i>type, <b><a href=\"length.html\">length</a></b>, and <b><a href=\"index.html\">index</a></b> (to determine where one string is located inside another).<p>\r\nSee also <b><a href=\"string1.html\">string</a></b>, <b><a href=\"char.html\">char</a></b>, <b><a href=\"char.html\">char</a></b>(<i>n</i>), <i><a href=\"explicitstringconstant.html\">explicitStringConstant</a>,</i> <i><a href=\"explicitcharconstant.html\">explicitCharConstant</a>,</i> <a href=\"substring.html\">substring</a> and <b><a href=\"length.html\">length</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "*substrings* (for separating a strings into parts), **[repeat.html](repeat)*** *(for making repeated catenations), **[string1.html](string)*** *type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).\nSee also **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(*n*), *[explicitstringconstant.html](explicitStringConstant),* *[explicitcharconstant.html](explicitCharConstant),* [substring.html](substring) and **[length.html](length)**.\n"
+    }
+  ]
+}

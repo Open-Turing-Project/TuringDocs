@@ -1,0 +1,48 @@
+{
+  "title": "Str.Upper",
+  "fileName": "str_upper",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Str.Upper</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
+      "mdown_content": "**Str.Upper** (*s* : **string**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Str.Upper</b> function takes the string <i>s</i> and returns\r\n          a string in which all the lower case letters are converted to \r\n          upper case. For example, <tt>Str.Upper (\"ABC123def\")</tt> returns\r\n          <tt>\"ABC123DEF\"</tt>.<p>\r\n    </p>",
+      "mdown_content": "The **Str.Upper** function takes the string *s* and returns\na string in which all the lower case letters are converted to \nupper case. For example, Str.Upper (\"ABC123def\") returns\n\"ABC123DEF\".\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var line : string\r\n        loop\r\n            put \"Enter a line of text (empty to quit): \" ..\r\n            get line : *\r\n            exit when line = \"\"\r\n            put \"The upper case version: \", Str.Upper (line)\r\n        end loop\r\n    "
+      ],
+      "raw_content": "This program obtains lines of text from the user and outputs the\r\n          lines converted to upper case.\r\n          <p>\r\n</p>",
+      "mdown_content": "This program obtains lines of text from the user and outputs the\nlines converted to upper case.\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Str.Upper Example",
+          "file": "Str.Upper.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Str.Upper</b>, not by calling <b>Upper</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Str.Upper**, not by calling **Upper**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "str_lower",
+        "str_trim"
+      ],
+      "raw_content": "<b><a href=\"str_lower.html\">Str.Lower</a></b> and \r\n          <b><a href=\"str_trim.html\">Str.Trim</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[str_lower.html](Str.Lower)** and \n**[str_trim.html](Str.Trim)**.\n"
+    }
+  ]
+}

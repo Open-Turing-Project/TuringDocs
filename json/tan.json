@@ -1,0 +1,50 @@
+{
+  "title": "tan",
+  "fileName": "tan",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>tan</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
+      "mdown_content": "**tan** ( *r* : **real** ) : **real**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>tan</b> function is used to find the tangent of an angle given in radians. For example, <b>tan</b> (<font face=\"symbol\">p</font>/4) is 0.5.<p>\r\n</p>",
+      "mdown_content": "The **tan** function is used to find the tangent of an angle given in radians. For example, **tan** (p/4) is 0.5."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 0 .. 12\r\n            const angle := i * Math.PI / 6\r\n            put \"Tangent of \", angle, \" is \", tan ( angle )\r\n        end for"
+      ],
+      "raw_content": "This program prints out the tangent of 0, <font face=\"symbol\">p</font>/6, 2<font face=\"symbol\">p</font>/6, 3<font face=\"symbol\">p</font>/6, up to 12<font face=\"symbol\">p</font>/6 radians.<p>\r\n</p>",
+      "mdown_content": "This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "tan Example",
+          "file": "tan.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "An argument to <b>tan</b> of <font face=\"symbol\">p</font>/2, 3*<font face=\"symbol\">p</font>/2, etc. may result in an overflow (and halt of the program) as the result is technically <font face=\"symbol\">&yen;</font>. \r\n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)",
+      "mdown_content": "An argument to **tan** of p/2, 3*p/2, etc. may result in an overflow (and halt of the program) as the result is technically ¥. \n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sin",
+        "cos",
+        "tand",
+        "mathmodule"
+      ],
+      "raw_content": "the <b><a href=\"sin.html\">sin</a></b> and <b><a href=\"cos.html\">cos</a></b> functions for calculating sine and cosine.<p>\r\nthe <b><a href=\"tand.html\">tand</a></b> function which finds the tangent of an angle given in degrees. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "the **[sin.html](sin)** and **[cos.html](cos)** functions for calculating sine and cosine.\nthe **[tand.html](tand)** function which finds the tangent of an angle given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+    }
+  ]
+}

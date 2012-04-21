@@ -1,0 +1,41 @@
+{
+  "title": "Error.Halt",
+  "fileName": "error_halt",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Error.Halt</b> (<i>errorMessage</i> : <b>string</b>)<p></p></font>",
+      "mdown_content": "**Error.Halt** (*errorMessage* : **string**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Error.Halt</b> is a procedure that immediately halts execution of\r\n          the program and shows the specified error message on the line in the\r\n          program that calls <b>Error.Halt</b>.<p>\r\n          This procedure is useful for allowing a quick halt to a program\r\n          while indicating an error condition.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**Error.Halt** is a procedure that immediately halts execution of\nthe program and shows the specified error message on the line in the\nprogram that calls **Error.Halt**.\nThis procedure is useful for allowing a quick halt to a program\nwhile indicating an error condition.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Error.Halt (\"Execution terminated by the program.\")"
+      ],
+      "raw_content": "This program halts on the first line with an error message stating\r\n          \"Execution terminated by the program.\"<p>\r\n</p>",
+      "mdown_content": "This program halts on the first line with an error message stating\n\"Execution terminated by the program.\""
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Error.Halt Example",
+          "file": "Error.Halt.t"
+        }
+      ],
+      "raw_content": "<p>\r\n    </p>",
+      "mdown_content": "\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Error.Halt</b>, not by calling <b>Halt</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Error.Halt**, not by calling **Halt**.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Pic.Blend",
+  "fileName": "pic_blend",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Blend</b> (<i>picID1</i>, <i>picID2</i>, <i>pct</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Pic.Blend** (*picID1*, *picID2*, *pct* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Blend</b> is used to create a new picture by blending two\r\n          identically sized pictures. The resulting picture is created by\r\n          taking <i>pct</i> % of the first picture and adding it to\r\n          (100 - <i>pct</i>) % of the second picture.<p>\r\n    </p>",
+      "mdown_content": "**Pic.Blend** is used to create a new picture by blending two\nidentically sized pictures. The resulting picture is created by\ntaking *pct* % of the first picture and adding it to\n(100 - *pct*) % of the second picture.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "Note that the blended picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using <b>Pic.Free</b>.<p>\r\n\t  Note that if <i>pct</i> is 100, then the resulting picture will\r\n\t  be identical to <i>picID1</i>.  if <i>pct</i> is 0, then the \r\n\t  resulting picture will be identical to <i>picID2</i>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Note that the blended picture is a newly created picture. \nWhen it is no longer needed, its memory should be released by \nusing **Pic.Free**.\nNote that if *pct* is 100, then the resulting picture will\nbe identical to *picID1*.  if *pct* is 0, then the \nresulting picture will be identical to *picID2*.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"graphics:340;140,nobuttonbar\")\r\n        % Create the original pictures\r\n        var pic1, pic2, picBlended : int\r\n        Draw.FillBox (0, 0, 100, 100, brightred)\r\n        Draw.FillOval (50, 50, 50, 50, brightblue)\r\n        pic1 := Pic.New (0, 0, 100, 100)\r\n        cls\r\n        Draw.FillStar (10, 10, 90, 90, brightgreen)\r\n        Draw.FillMapleLeaf(10, 10, 90, 90, brightred)\r\n        pic2 := Pic.New (0, 0, 100, 100)\r\n        cls\r\n        % Create new picture by blending 30% from pic1, 70% from pic2\r\n        picBlended := Pic.Blend (pic1, pic2, 30)\r\n        % Draw the three images\r\n        Pic.Draw (pic1, 10, 10, picCopy)\r\n        Pic.Draw (pic2, 120, 10, picCopy)\r\n        Pic.Draw (picBlended, 230, 10, picCopy)\r\n        "
+      ],
+      "images": [
+        "pic_blend01.gif"
+      ],
+      "raw_content": "The program creates two identically sized pictures, blends them\r\n          together and displays all three pictures.  You can vary the\r\n          blend percentage to obtain different results.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
+      "mdown_content": "The program creates two identically sized pictures, blends them\ntogether and displays all three pictures.  You can vary the\nblend percentage to obtain different results.\n\n\n**Output from the Program**\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Pic.Blend Example",
+          "file": "Pic.Blend.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Blend</b>, not by calling <b>Blend</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Blend**, not by calling **Blend**.\n\n"
+    }
+  ]
+}

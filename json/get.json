@@ -1,0 +1,141 @@
+{
+  "title": "get",
+  "fileName": "get",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>getStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>get</b> [ : <i>streamNumber</i> , ] <i>getItem</i> { , <i>getItem</i> }</font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "A *getStatement* is:\n\n \n**get** [ : *streamNumber* , ] *getItem* { , *getItem* }"
+    },
+    {
+      "title": "Description",
+      "code": [
+        "        (a) variableReference\r\n        (b) skip\r\n        (c) variableReference : *\r\n        (d) variableReference : widthExpn"
+      ],
+      "raw_content": "The <b>get</b> statement inputs each of the <i>getItems</i>. Ordinarily, the output comes from the keyboard. However, if the <i>streamNumber </i>is present, the input comes from the file specified by the stream number (see the <b>open</b> statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.<p>\r\nThe syntax of a <i>getItem</i> is one of:</p>\n<p>\r\n</p>\r\nThese items are used to support three kinds of input:<p>\r\n(1) token and character oriented input: supported by forms (a) and (b),</p>\n<p>\r\n(2) line oriented input: supported by form (c), and</p>\n<p>\r\n(3) character oriented input: supported by form (d).</p>\n<p>\r\nExamples of these will be given, followed by detailed explanations.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **get** statement inputs each of the *getItems*. Ordinarily, the output comes from the keyboard. However, if the *streamNumber *is present, the input comes from the file specified by the stream number (see the **open** statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.\nThe syntax of a *getItem* is one of:\n\n\nThese items are used to support three kinds of input:\n(1) token and character oriented input: supported by forms (a) and (b),\n\n(2) line oriented input: supported by form (c), and\n\n(3) character oriented input: supported by form (d).\n\nExamples of these will be given, followed by detailed explanations.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var name, title : string\r\n        var weight : real\r\n        get name        % If input is Alice, it is input into name\r\n        get title       % If input is \"A lady\", A lady is input\r\n        var weight      % If input is 9.62, it is input into weight"
+      ],
+      "raw_content": "Token-oriented input.<p>\r\n</p>",
+      "mdown_content": "Token-oriented input."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var query : string\r\n        get query : *   % Entire line is input into query"
+      ],
+      "raw_content": "Line-oriented input.<p>\r\n</p>",
+      "mdown_content": "Line-oriented input."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var code : string\r\n        get code : 2        % Next 2 characters are input into code."
+      ],
+      "raw_content": "Character-oriented input.<p>\r\n</p>",
+      "mdown_content": "Character-oriented input."
+    },
+    {
+      "title": "Details",
+      "raw_content": "A <i>token</i> is a sequence of characters surrounded by <i>white space</i>, where <i>white space </i>is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the <i>variableReference</i> in form (a) is a string, integer, real, <b>int</b><i>n</i>, <b>nat</b><i>n</i>, or <b>real</b><i>n</i>. Turing<i> </i>skips white space, reads a token into the <i>variableReference</i>, and then skips white space (stopping at the beginning of the next line). <p>\r\nIf the <i>variableReference</i> is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving <i>name </i>and <i>title</i> above. If the <i>variableReference</i> is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving <i>weight</i> above.</p>\n<p>\r\nWhen the input is coming from the keyboard, no input is done until Return is typed. The line that is input may contain more than one token. Any tokens that are not input by one <b>get</b> statement will remain to be input by the next <b>get</b> statement.</p>\n<p>\r\nTuring has been modified so that token-oriented input now also skips white space following the token, but does not skip beyond the beginning of the next line. This change implies that  form (b) is usually not needed, as <b>skip</b> was used to skip white space after the token.</p>\n<p>\r\nForm (a) supports <b>char</b> and <b>char</b>(<i>n</i>). If the type is <b>char</b>, exactly one character is read, with no skipping of white space before or after. This character may be, for example, a blank or a carriage return. If the type is <b>char</b>(<i>n</i>), exactly <i>n</i> characters are read, with no skipping of white space.</p>\n<p>\r\n</p>",
+      "mdown_content": "A *token* is a sequence of characters surrounded by *white space*, where *white space *is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the *variableReference* in form (a) is a string, integer, real, **int***n*, **nat***n*, or **real***n*. Turing* *skips white space, reads a token into the *variableReference*, and then skips white space (stopping at the beginning of the next line). \nIf the *variableReference* is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving *name *and *title* above. If the *variableReference* is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving *weight* above.\n\nWhen the input is coming from the keyboard, no input is done until Return is typed. The line that is input may contain more than one token. Any tokens that are not input by one **get** statement will remain to be input by the next **get** statement.\n\nTuring has been modified so that token-oriented input now also skips white space following the token, but does not skip beyond the beginning of the next line. This change implies that  form (b) is usually not needed, as **skip** was used to skip white space after the token.\n\nForm (a) supports **char** and **char**(*n*). If the type is **char**, exactly one character is read, with no skipping of white space before or after. This character may be, for example, a blank or a carriage return. If the type is **char**(*n*), exactly *n* characters are read, with no skipping of white space.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var c : char\r\n        var d : char ( 3 )\r\n        get c           % Read one character.\r\n        get d           % Read three characters"
+      ],
+      "raw_content": "Inputting <b>char</b> and <b>char</b>(<i>n</i>) types using form (a). The statement <i>get c:1</i> is not legal, because length specification is not allowed with character variables.<p>\r\n</p>",
+      "mdown_content": "Inputting **char** and **char**(*n*) types using form (a). The statement *get c:1* is not legal, because length specification is not allowed with character variables."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Form (a) supports enumerated types. If the type is an enumerated type, then the token read in must be one of the elements of the enumerated type.<p>\r\n</p>",
+      "mdown_content": "Form (a) supports enumerated types. If the type is an enumerated type, then the token read in must be one of the elements of the enumerated type."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type colors : enum (red, blue, green)\r\n        var c : colors\r\n        get c           % Read one of red, green or blue"
+      ],
+      "raw_content": "Inputting an enumerated type using form (a). The statement <i>get c:1</i> is not legal, because length specification is not allowed with enumerated variables.<p>\r\n</p>",
+      "mdown_content": "Inputting an enumerated type using form (a). The statement *get c:1* is not legal, because length specification is not allowed with enumerated variables."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Form (a) supports <b>boolean</b>. If the type is an <b>boolean</b> type, then the token read in must be one of \"true\" or \"false\"<p>\r\n</p>",
+      "mdown_content": "Form (a) supports **boolean**. If the type is an **boolean** type, then the token read in must be one of \"true\" or \"false\""
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var tf : boolean\r\n        get tf          % Read one of true or false"
+      ],
+      "raw_content": "Inputting a <b>boolean</b> type using form (a). The statement <i>get c:1</i> is not legal, because length specification is not allowed with <b>boolean</b> variable.<p>\r\n</p>",
+      "mdown_content": "Inputting a **boolean** type using form (a). The statement *get c:1* is not legal, because length specification is not allowed with **boolean** variable."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In form (b) of <i>getItem</i>, <b>skip</b> causes white space in the input to be skipped until non-white space (a token) or the end-of-file is reached. This is used when the program needs to determine if there are more tokens to be input. To determine if there are more tokens to be read, the program should first <b>skip</b> over any possible white space (such as a final new line character) and then test to see if <b>eof</b> (end-of-file) is true. This is illustrated in this example:<p>\r\n</p>",
+      "mdown_content": "In form (b) of *getItem*, **skip** causes white space in the input to be skipped until non-white space (a token) or the end-of-file is reached. This is used when the program needs to determine if there are more tokens to be input. To determine if there are more tokens to be read, the program should first **skip** over any possible white space (such as a final new line character) and then test to see if **eof** (end-of-file) is true. This is illustrated in this example:"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var word : string\r\n        loop\r\n            get skip        % Skip over any white space\r\n            exit when eof   % Are there more characters?\r\n            get word        % Input next token\r\n            put word        % Output the token\r\n        end loop"
+      ],
+      "raw_content": "Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the <b>get</b> <b>skip</b> line can be omitted. This omission is possible because the line <b>get</b><i> word</i> now automatically skips white space following the input value, up to the beginning of the next line.<p>\r\n</p>\r\nIn the above and the next example, if the input has been redirected so that it is from a file, <b>eof</b> becomes true exactly when there are no more characters to be read. If the input is coming from the keyboard, you can signal <b>eof</b> by typing control-Z (on a PC) or control-D (on UNIX).<p>\r\n</p>",
+      "mdown_content": "Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the **get** **skip** line can be omitted. This omission is possible because the line **get*** word* now automatically skips white space following the input value, up to the beginning of the next line.\n\nIn the above and the next example, if the input has been redirected so that it is from a file, **eof** becomes true exactly when there are no more characters to be read. If the input is coming from the keyboard, you can signal **eof** by typing control-Z (on a PC) or control-D (on UNIX)."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In form (c) of <i>getItem</i>, the <i>variableReference </i>is followed by :<b>*</b> which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.<p>\r\n</p>",
+      "mdown_content": "In form (c) of *getItem*, the *variableReference *is followed by :***** which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var line : string\r\n        loop\r\n            exit when eof   % Are there more characters?\r\n            get line : *    % Read entire line\r\n            put line\r\n        end loop"
+      ],
+      "raw_content": "Using line-oriented input, input and then output all lines.<p>\r\n</p>",
+      "mdown_content": "Using line-oriented input, input and then output all lines."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        : widthExpn "
+      ],
+      "raw_content": "In form (d) of <i>getItem</i>, the <i>variableReference </i>is followed by<p>\r\n</p>\r\nwhich specifies character-oriented input. This form causes the specified number (<i>widthExpn</i>) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the <i>variableReference </i>(this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with <b>string</b> and <b>char</b>(<i>n</i>) variables, but not with <b>char</b>, <b>int</b> or any other type.<p>\r\n</p>",
+      "mdown_content": "In form (d) of *getItem*, the *variableReference *is followed by\n\nwhich specifies character-oriented input. This form causes the specified number (*widthExpn*) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the *variableReference *(this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with **string** and **char**(*n*) variables, but not with **char**, **int** or any other type."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var ch : string ( 1 )\r\n        loop\r\n            exit when eof   % Are there more characters?\r\n            get ch : 1      % Read one character\r\n            put ch ..       % Output the character, which\r\n                        % may be a new line character\r\n        end loop"
+      ],
+      "raw_content": "Using character-oriented input, input and then output all characters.<p>\r\n</p>",
+      "mdown_content": "Using character-oriented input, input and then output all characters."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var d : char ( 3 ) := 'abc'\r\n        get d : 2           % Read two character (replace 'ab')"
+      ],
+      "raw_content": "Using character-oriented input, input two characters.<p>\r\n</p>",
+      "mdown_content": "Using character-oriented input, input two characters."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "read",
+        "statement"
+      ],
+      "raw_content": "<b><a href=\"read.html\">read</a></b> <a href=\"statement.html\">statement</a>, which provides binary file input.<p>\r\n</p>",
+      "mdown_content": "**[read.html](read)** [statement.html](statement), which provides binary file input."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Sys.GetPid",
+  "fileName": "sys_getpid",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sys.GetPid</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Sys.GetPid** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Sys.GetPid </b>function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the <b>fork</b> statement, that are independent of the operating systems tasks.<p>\r\nUnder UNIX, the number is used, for example, for creating a unique name of a file. </p>\n<p>\r\n</p>",
+      "mdown_content": "The **Sys.GetPid **function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.\nUnder UNIX, the number is used, for example, for creating a unique name of a file. \n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.GetPid</b>, not by calling <b>GetPid</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetPid**, not by calling **GetPid**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sys_nargs",
+        "sys_fetcharg",
+        "sys_getenv"
+      ],
+      "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b>, <b><a href=\"sys_fetcharg.html\">Sys.FetchArg</a></b> and <b><a href=\"sys_getenv.html\">Sys.GetEnv</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**, **[sys_fetcharg.html](Sys.FetchArg)** and **[sys_getenv.html](Sys.GetEnv)**."
+    }
+  ]
+}

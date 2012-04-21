@@ -1,0 +1,42 @@
+{
+  "title": "Net.LocalAddress",
+  "fileName": "net_localaddress",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Net.LocalAddress</b> : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**Net.LocalAddress** : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns<b> </b>the TCP/IP numeric address of the machine the program is running on. The numeric address is of the form <i>xxx</i>.<i>yyy</i>.<i>zzz</i>.<i>www</i> where each segment is a number from 0 to 255.<p>\r\n</p>",
+      "mdown_content": "Returns** **the TCP/IP numeric address of the machine the program is running on. The numeric address is of the form *xxx*.*yyy*.*zzz*.*www* where each segment is a number from 0 to 255."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put \"Your machine address is \", Net.LocalAddress"
+      ],
+      "raw_content": "The following program prints out the TCP/IP numeric address of the current machine.<p>\r\n</p>",
+      "mdown_content": "The following program prints out the TCP/IP numeric address of the current machine."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.LocalAddress</b>, not by calling <b>LocalAddress</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.LocalAddress**, not by calling **LocalAddress**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "net_localname"
+      ],
+      "raw_content": "<b><a href=\"net_localname.html\">Net.LocalName</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[net_localname.html](Net.LocalName)**."
+    }
+  ]
+}

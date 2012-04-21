@@ -1,0 +1,37 @@
+{
+  "title": "GUI.GetWidth",
+  "fileName": "gui_getwidth",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetWidth </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetWidth **(*widgetID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the actual width of a widget. Note that this may be different from the width specified in the <i>Create</i> call (especially since some widgets do not specify a width. The GUI module determines the actual width).<p>\r\nThis function is used in conjunction with <b>GUI.GetX</b>, <b>GUI.GetY</b><i> </i>and<i> </i><b>GUI.GetHeight</b> to determine the bounds of a widget. The entire widget should always fit in the box (<b>GUI.GetX</b>, <b>GUI.GetY</b>) - (<b>GUI.GetX</b> + <b>GUI.GetWidth</b>  1, <b>GUI.GetY</b> + <b>GUI.GetHeight</b>  1)</p>\n<p>\r\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>\n<p>\r\n</p>",
+      "mdown_content": "Returns the actual width of a widget. Note that this may be different from the width specified in the *Create* call (especially since some widgets do not specify a width. The GUI module determines the actual width).\nThis function is used in conjunction with **GUI.GetX**, **GUI.GetY*** *and* ***GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)\n\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        procedure BoxWidget (widgetID : int)\r\n            var x, y, width, height : int\r\n            x := GUI.GetX (widgetID)\r\n            y := GUI.GetY (widgetID)\r\n            width := GUI.GetWidth (widgetID)\r\n            height := GUI.GetHeight (widgetID)\r\n            Draw.Box (x  1, x  1, x + width, y + height, red)\r\n            Draw.Box (x  2, x  2, x + width + 1, y + height + 1, red)\r\n        end BoxWidget\r\n        \r\n        var title : int := GUI.CreateLabel (20, 20, \"Frame This!\")\r\n        BoxWidget (title)"
+      ],
+      "raw_content": "The following procedure draws a red box around the widget specified by <i>widgetID</i>.<p>\r\n</p>",
+      "mdown_content": "The following procedure draws a red box around the widget specified by *widgetID*."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetWidth</b>, not by calling <b>GetWidth</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetWidth**, not by calling **GetWidth**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_getheight"
+      ],
+      "raw_content": "<b>GUI.GetX</b>, <b>GUI.GetY</b>, and <b><a href=\"gui_getheight.html\">GUI.GetHeight</a></b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.GetX**, **GUI.GetY**, and **[gui_getheight.html](GUI.GetHeight)**."
+    }
+  ]
+}

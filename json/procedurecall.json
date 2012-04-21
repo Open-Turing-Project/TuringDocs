@@ -1,0 +1,41 @@
+{
+  "title": "procedureCall",
+  "fileName": "procedurecall",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>procedureCall</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>procedureId</i> [ ( [ <i>expn</i> { , <i>expn</i> } ] ) ]</font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "A *procedureCall* is:\n\n \n*procedureId* [ ( [ *expn* { , *expn* } ] ) ]"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A procedure call is a statement that calls (invokes or activates) a <b>procedure</b>. If the procedure has parameters, a parenthesized list of expressions (<i>expns</i>) must follow the procedure's name (<i>procedureId</i>).<p>\r\n</p>",
+      "mdown_content": "A procedure call is a statement that calls (invokes or activates) a **procedure**. If the procedure has parameters, a parenthesized list of expressions (*expns*) must follow the procedure's name (*procedureId*)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        procedure greet\r\n            put \"Hello\"\r\n        end greet\r\n        \r\n        greet       % This is a call to the greet procedure\r\n        \r\n        procedure times ( var i : int, factor : int)\r\n            i := factor * i\r\n        end times\r\n        \r\n        var j : int\r\n        times ( j, 4 )      % Multiply j by 4"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        M . procedureId [ ( [ expn {, expn } ] ) ]",
+        "        (a) classId (p) . procedureId [ ( [ expn {, expn } ] ) ]\r\n        (b) p -> procedureId [ ( [ expn {, expn } ] ) ]"
+      ],
+      "raw_content": "A parameter declared in the header of a procedure is a <i>formal</i> parameter. For example, <i>i </i>and <i>factor</i> above are formal parameters. Each expression in the call is an <i>actual</i> parameter. For example, <i>j </i>and 4 above are actual parameters.<p>\r\nIf a formal parameter is declared using <b>var</b>, then the expression passed to that parameter must be a variable reference (so its value can potentially be changed by the procedure). This means, for example, that it would be illegal to pass <i>j</i>+3 as the first parameter to <i>times</i>. The variable reference and the formal parameter must have equivalent types (see <i>equivalence</i> for details).</p>\n<p>\r\nEach actual parameter passed to a non-<b>var</b> formal parameter must be assignable to that parameter (see <i>assignability </i>for details). See also <i>procedureDeclaration</i>.</p>\n<p>\r\nIn this explanation of <i>procedureCall</i>, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor <i>M </i>from which it has been exported, the syntax of the <i>procedureCall </i>is:</p>\n<p>\r\n</p>\r\nIn other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the <i>procedureCall </i>is one of:<p>\r\n</p>\r\nIn these, <i>p</i> must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).<p>\r\n</p>",
+      "mdown_content": "A parameter declared in the header of a procedure is a *formal* parameter. For example, *i *and *factor* above are formal parameters. Each expression in the call is an *actual* parameter. For example, *j *and 4 above are actual parameters.\nIf a formal parameter is declared using **var**, then the expression passed to that parameter must be a variable reference (so its value can potentially be changed by the procedure). This means, for example, that it would be illegal to pass *j*+3 as the first parameter to *times*. The variable reference and the formal parameter must have equivalent types (see *equivalence* for details).\n\nEach actual parameter passed to a non-**var** formal parameter must be assignable to that parameter (see *assignability *for details). See also *procedureDeclaration*.\n\nIn this explanation of *procedureCall*, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor *M *from which it has been exported, the syntax of the *procedureCall *is:\n\n\nIn other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the *procedureCall *is one of:\n\nIn these, *p* must the a pointer value that locates an object in the class. Form (b) is a short form for form (a)."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "class"
+      ],
+      "raw_content": "<b><a href=\"class.html\">class</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[class.html](class)**."
+    }
+  ]
+}

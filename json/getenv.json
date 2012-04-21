@@ -1,0 +1,32 @@
+{
+  "title": "getenv",
+  "fileName": "getenv",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>getenv</b> ( <i>symbol</i> : <b>string</b> ) : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**getenv** ( *symbol* : **string** ) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>getenv</b> function is used to access the environment string whose name is <i>symbol</i>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <b>nargs</b> and <b>fetcharg</b> functions.<p>\r\n</p>",
+      "mdown_content": "The **getenv** function is used to access the environment string whose name is *symbol*. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **nargs** and **fetcharg** functions."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const userLevel : string\r\n        userLevel := getenv (\"USERLEVEL\")\r\n            if userLevel = \"NOVICE\" then\r\n                       % put a set of instructions\r\n        end if"
+      ],
+      "raw_content": "On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command <b>SET</b> <b>USERLEVEL</b> = <b>NOVICE</b> in the <b>autoexec.bat</b> file or in any batch file.<p>\r\n</p>",
+      "mdown_content": "On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command **SET** **USERLEVEL** = **NOVICE** in the **autoexec.bat** file or in any batch file."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sysmodule"
+      ],
+      "raw_content": "See also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.<p>\r\n</p>",
+      "mdown_content": "See also predefined unit **[sysmodule.html](Sys)**."
+    }
+  ]
+}

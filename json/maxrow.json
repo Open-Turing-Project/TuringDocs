@@ -1,0 +1,39 @@
+{
+  "title": "maxrow",
+  "fileName": "maxrow",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>maxrow</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**maxrow** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>maxrow</b> function is used to determine the number of rows on the screen.<p>\r\n</p>",
+      "mdown_content": "The **maxrow** function is used to determine the number of rows on the screen."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put \"Number of rows on the screen is \", maxrow"
+      ],
+      "raw_content": "This program outputs the maximum row number.<p>\r\n</p>",
+      "mdown_content": "This program outputs the maximum row number."
+    },
+    {
+      "title": "Details",
+      "raw_content": "For IBM PC compatibles, <b>maxrow</b> = 25. For many UNIX dumb terminals, <b>maxrow</b> = 24. <p>\r\n</p>",
+      "mdown_content": "For IBM PC compatibles, **maxrow** = 25. For many UNIX dumb terminals, **maxrow** = 24. "
+    },
+    {
+      "title": "See also",
+      "links": [
+        "locate",
+        "procedure",
+        ""
+      ],
+      "raw_content": "<b><a href=\"locate.html\">locate</a></b> <a href=\"procedure.html\">procedure</a> for an example of the use of <b><a href=\"\">maxrow</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[locate.html](locate)** [procedure.html](procedure) for an example of the use of **[](maxrow)**."
+    }
+  ]
+}

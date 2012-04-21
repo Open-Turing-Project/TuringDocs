@@ -1,0 +1,39 @@
+{
+  "title": "Time.DateSec",
+  "fileName": "time_datesec",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Time.DateSec</b> (<i>dateString</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Time.DateSec** (*dateString* : **string**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.DateSec</b> function is used to<b> </b>convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>\r\nThe function can also convert just the date (\"<i>dd mmm yy</i>\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"<i>hh:mm:ss</i>\"), in which case it returns the number of seconds that have passed since midnight of that day.</p>\n<p>\r\nIf the format is incorrect or can't be interpreted, then <b>Time.DateSec</b> will return 1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Time.DateSec** function is used to** **convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.\nThe function can also convert just the date (\"*dd mmm yy*\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"*hh:mm:ss*\"), in which case it returns the number of seconds that have passed since midnight of that day.\n\nIf the format is incorrect or can't be interpreted, then **Time.DateSec** will return 1 and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var theDateTime, theDate, theTime : string\r\n        theDateTime := Time.Date\r\n        theDate := theDateTime (1 .. 9)\r\n        theTime := theDateTime (11 .. *)\r\n        put \"The number of seconds from 00:00:00 GMT Jan 1, 1970\",\r\n            \"from midnight \", theDate, \"is \", Time.DateSec (theDate)\r\n        put \"The number of seconds from midnight to \", theTime \"is \", \r\n            Time.DateSec (theTime)\r\n        put \"The number of seconds from 00:00:00 GMT Jan 1, 1970\",\r\n            \"from \", theDateTime, \"is \", Time.DateSec (theDateTime)"
+      ],
+      "raw_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>\r\n</p>",
+      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.DateSec</b>, not by calling <b>DateSec</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.DateSec**, not by calling **DateSec**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_sec",
+        "time_date",
+        "time_secdate"
+      ],
+      "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b>, <b><a href=\"time_date.html\">Time.Date</a></b> and <b><a href=\"time_secdate.html\">Time.SecDate</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_secdate.html](Time.SecDate)** functions."
+    }
+  ]
+}

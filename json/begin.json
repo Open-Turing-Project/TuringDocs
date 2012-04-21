@@ -1,0 +1,29 @@
+{
+  "title": "begin",
+  "fileName": "begin",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>beginStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>begin</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *beginStatement* is:\n\n \n**begin**\n \n \n*statementsAndDeclarations*\n \n**end**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A <b>begin</b> statement limits the scope of declarations made within it to the confines of the <b>begin/end</b> block. In Turing, <b>begin</b> is rarely used, because declarations can appear wherever statements can appear, and because every structured statement such as <b>if</b> ends with an explicit <b>end</b>.<p>\r\n</p>",
+      "mdown_content": "A **begin** statement limits the scope of declarations made within it to the confines of the **begin/end** block. In Turing, **begin** is rarely used, because declarations can appear wherever statements can appear, and because every structured statement such as **if** ends with an explicit **end**."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        begin\r\n            var bigArray : array 1 .. 2000 of real\r\n             bigArray will exist only inside this begin statement\r\n        end"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "In Pascal programs, <b>begin</b> statements are quite common because they are required for grouping two or more statements, for example, to group the statements that follow <b>then</b>. This is not necessary in Turing as where ever you can write a single statement, you can also write several statements.<p>\r\n</p>",
+      "mdown_content": "In Pascal programs, **begin** statements are quite common because they are required for grouping two or more statements, for example, to group the statements that follow **then**. This is not necessary in Turing as where ever you can write a single statement, you can also write several statements."
+    }
+  ]
+}

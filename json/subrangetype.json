@@ -1,0 +1,29 @@
+{
+  "title": "subrangeType",
+  "fileName": "subrangetype",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>subrangeType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>expn</i> .. <i>expn</i></font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "A *subrangeType* is:\n\n \n*expn* .. *expn*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A subrange type defines a set of values, for example, the subrange 1 .. 4 consists of 1, 2, 3 and 4.<p>\r\n</p>",
+      "mdown_content": "A subrange type defines a set of values, for example, the subrange 1 .. 4 consists of 1, 2, 3 and 4."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var i : 1 .. 10         % i can be 1, 2  up to 10\r\n        type xRange : 0 .. 319      % Define integer subrange\r\n        var pixels : array xRange of int\r\n                            % Array elements are\r\n                            % numbered 0, 1,  319\r\n        for k : xRange          % k ranges from 0 to 319\r\n            pixels ( k ) := 0\r\n        end for"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "A subrange must contain at least one element. In other words, the second expression (<i>expn</i>) must be at least as large as the first expression.<p>\r\nThe lower bound of a subrange must be known at compile time. The upper bound is allowed to be a run time value only in one situation and that is when it gives the upper bound of an array being declared in a variable declaration, in other words when declaring a <i>dynamic</i> array.</p>\n<p>\r\nSubranges are usually a subset of the integers, as in 1 .. 10. You can also have subranges of enumerated types and characters (the <b>char</b> type).</p>\n<p>\r\nYou can apply <b>lower</b> and <b>upper</b> to subrange types.</p>\n<p>\r\n</p>",
+      "mdown_content": "A subrange must contain at least one element. In other words, the second expression (*expn*) must be at least as large as the first expression.\nThe lower bound of a subrange must be known at compile time. The upper bound is allowed to be a run time value only in one situation and that is when it gives the upper bound of an array being declared in a variable declaration, in other words when declaring a *dynamic* array.\n\nSubranges are usually a subset of the integers, as in 1 .. 10. You can also have subranges of enumerated types and characters (the **char** type).\n\nYou can apply **lower** and **upper** to subrange types.\n"
+    }
+  ]
+}

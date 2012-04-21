@@ -1,0 +1,43 @@
+{
+  "title": "whatrow",
+  "fileName": "whatrow",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>whatrow</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**whatrow** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>whatrow</b> function is used to determine the cursor position's row.<p>\r\n</p>",
+      "mdown_content": "The **whatrow** function is used to determine the cursor position's row."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        locate  ( 5, 10 )\r\n        put \"12345\"..\r\n        put \"The current row is\", whatrow\r\n        put \"The current column is\", whatcol"
+      ],
+      "raw_content": "This program outputs <i>The current row is 5</i>,<i> the current column is 15</i>.<p>\r\n</p>",
+      "mdown_content": "This program outputs *The current row is 5*,* the current column is 15*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. <b>whatrow</b> functions properly even if the cursor is invisible.<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\" or* *\"*graphics*\" mode. **whatrow** functions properly even if the cursor is invisible."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "whatcol",
+        "set",
+        "locate",
+        "maxrow",
+        "maxcol",
+        "procedure",
+        "textmodule"
+      ],
+      "raw_content": "the <b><a href=\"whatcol.html\">whatcol</a></b> function, which is used to <a href=\"set.html\">set</a> the determine the cursor column. See also the <b><a href=\"locate.html\">locate</a></b>, <b><a href=\"maxrow.html\">maxrow</a></b> and <b><a href=\"maxcol.html\">maxcol</a></b> <a href=\"procedure.html\">procedure</a>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "the **[whatcol.html](whatcol)** function, which is used to [set.html](set) the determine the cursor column. See also the **[locate.html](locate)**, **[maxrow.html](maxrow)** and **[maxcol.html](maxcol)** [procedure.html](procedure).\nSee also predefined unit **[textmodule.html](Text)**.\n"
+    }
+  ]
+}

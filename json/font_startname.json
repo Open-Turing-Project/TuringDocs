@@ -1,0 +1,44 @@
+{
+  "title": "Font.StartName",
+  "fileName": "font_startname",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.StartName</b><p>\r\n</p></font>",
+      "mdown_content": "**Font.StartName**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Font.StartName</b> is used to start the listing of all the fonts available on the system. This procedure is called before making calls to <b>Font.GetName</b> to get the name of the fonts available. Once the name of a font is known, it's possible to list the available styles (using <b>Font.GetStyle</b>) and the available sizes (using <b>Font.StartSize</b> and <b>Font.GetSize</b>).<p>\r\n</p>",
+      "mdown_content": "**Font.StartName** is used to start the listing of all the fonts available on the system. This procedure is called before making calls to **Font.GetName** to get the name of the fonts available. Once the name of a font is known, it's possible to list the available styles (using **Font.GetStyle**) and the available sizes (using **Font.StartSize** and **Font.GetSize**)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var fontName : string\r\n        Font.StartName\r\n        loop\r\n            fontName := Font.GetName\r\n            exit when fontName = \"\"\r\n            put fontName\r\n        end loop"
+      ],
+      "raw_content": "The program lists all the fonts available on the system.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The program lists all the fonts available on the system.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.GetName Example",
+          "file": "Font.GetName.t"
+        }
+      ]
+    },
+    {
+      "title": "Example",
+      "raw_content": "Another example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Font Listing Example\">\n<param name=\"Item1\" value=\"-1,FontList.t;Font Listing Example\"></object></p>\n<p></p>",
+      "mdown_content": "Another example is available that displays full information about\nthe fonts including name, styles, and point sizes.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.StartName</b>, not by calling <b>StartName</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.StartName**, not by calling **StartName**.\n"
+    }
+  ]
+}

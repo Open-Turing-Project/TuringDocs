@@ -1,0 +1,30 @@
+{
+  "title": "floor",
+  "fileName": "floor",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>floor</b> ( <i>r</i> : <b>real</b> ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**floor** ( *r* : **real** ) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the largest integer that is less than or equal to <i>r</i>.<p>\r\n</p>",
+      "mdown_content": "Returns the largest integer that is less than or equal to *r*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>floor</b> function is used to convert a <b>real</b> number to an integer. The result is the largest integer that is less than or equal to <i>r</i>. In other words, the <b>floor</b> function rounds down to the nearest integer. For example, <b>floor</b> (3) is 3, <b>floor</b> (2.75) is 2 and <b>floor</b> (-8.43) is -9.<p>\r\n</p>",
+      "mdown_content": "The **floor** function is used to convert a **real** number to an integer. The result is the largest integer that is less than or equal to *r*. In other words, the **floor** function rounds down to the nearest integer. For example, **floor** (3) is 3, **floor** (2.75) is 2 and **floor** (-8.43) is -9."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "ceil",
+        "round"
+      ],
+      "raw_content": "<b><a href=\"ceil.html\">ceil</a></b> and <b><a href=\"round.html\">round</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[ceil.html](ceil)** and **[round.html](round)** functions."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Input.hasch",
+  "fileName": "input_hasch",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>hasch</b> : <b>boolean</b><p>\r\n</p></font>",
+      "mdown_content": "**hasch** : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>hasch</b> procedure is used to determine if there is a character that has been typed but not yet been read.<p>\r\n</p>",
+      "mdown_content": "The **hasch** procedure is used to determine if there is a character that has been typed but not yet been read."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        procedure flush\r\n            var ch : string ( 1 )\r\n            loop\r\n                exit when not hasch\r\n                getch ( ch )    % Discard this character\r\n            end loop\r\n        end flush"
+      ],
+      "raw_content": "The <i>flush </i>procedure gets rid of any characters that have been typed but not yet read.<p>\r\n</p>",
+      "mdown_content": "The *flush *procedure gets rid of any characters that have been typed but not yet read."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to \"<i>screen</i>\" mode.<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\"* *or \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"*screen*\" mode."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported unqualified.<p>\r\nThis means that you can call the function by calling <b>hasch</b> or by calling <b>Input.hasch</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **hasch** or by calling **Input.hasch**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "getch",
+        "getchar"
+      ],
+      "raw_content": "<b><a href=\"getch.html\">getch</a></b> and <b><a href=\"getchar.html\">getchar</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**."
+    }
+  ]
+}

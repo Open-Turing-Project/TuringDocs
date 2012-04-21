@@ -1,0 +1,53 @@
+{
+  "title": "delay",
+  "fileName": "delay",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>delay</b> (<i>duration</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**delay** (*duration* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>delay</b> statement is used to cause the program to pause for a given time. The time duration is in milliseconds.<p>\r\n</p>",
+      "mdown_content": "The **delay** statement is used to cause the program to pause for a given time. The time duration is in milliseconds."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 10\r\n            put i\r\n            delay (1000)    % Pause for 1 second\r\n        end for"
+      ],
+      "raw_content": "This program prints the integers 1 to 10 with a second delay between each.<p>\r\n</p>",
+      "mdown_content": "This program prints the integers 1 to 10 with a second delay between each."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "delay Example",
+          "file": "delay.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "On Apple Macintoshes, the hardware resolution of duration is in units of 17 milliseconds (1/60th of a second). For example, <b>delay</b>(500) will delay the program by about half a second, but may be off by as much as 17 milliseconds.<p>\r\n</p>",
+      "mdown_content": "On Apple Macintoshes, the hardware resolution of duration is in units of 17 milliseconds (1/60th of a second). For example, **delay**(500) will delay the program by about half a second, but may be off by as much as 17 milliseconds."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sound",
+        "clock",
+        "sysclock",
+        "wallclock",
+        "time",
+        "date",
+        "timemodule"
+      ],
+      "raw_content": "<b><a href=\"sound.html\">sound</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b>, <b><a href=\"time.html\">time</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[sound.html](sound)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)**, **[time.html](time)** and **[date.html](date)** statements.\nSee also predefined unit **[timemodule.html](Time)**.\n"
+    }
+  ]
+}

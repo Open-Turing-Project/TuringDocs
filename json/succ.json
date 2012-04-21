@@ -1,0 +1,39 @@
+{
+  "title": "succ",
+  "fileName": "succ",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>succ</b> ( <i>expn</i> )<p>\r\n</p></font>",
+      "mdown_content": "**succ** ( *expn* )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>succ</b> function accepts an integer, character or an enumerated value and returns the integer plus one, the next character, or the next value in the enumeration. For example, <b>succ</b> (7) is 8. <p>\r\n</p>",
+      "mdown_content": "The **succ** function accepts an integer, character or an enumerated value and returns the integer plus one, the next character, or the next value in the enumeration. For example, **succ** (7) is 8. "
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type colors : enum ( green, yellow, red  )\r\n        var a : array 1 .. 100 of colors\r\n        var c : colors := colors .green\r\n        for i : 1 .. 100\r\n            a ( i ) := c\r\n            if c = colors . red then\r\n                c := colors . green\r\n            else\r\n                c := succ ( c )\r\n            end if\r\n        end for"
+      ],
+      "raw_content": "This part of a Turing program fills up array <i>a </i>with the enumerated values <i>green</i>,<i> yellow</i>,<i> red</i>,<i> green</i>,<i> yellow</i>,<i> red</i>,<i> </i>etc.<p>\r\n</p>",
+      "mdown_content": "This part of a Turing program fills up array *a *with the enumerated values *green*,* yellow*,* red*,* green*,* yellow*,* red*,* *etc."
+    },
+    {
+      "title": "Details",
+      "raw_content": "You cannot  apply <b>succ</b> to the last value of an enumeration.<p>\r\n</p>",
+      "mdown_content": "You cannot  apply **succ** to the last value of an enumeration."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "pred",
+        "lower",
+        "upper"
+      ],
+      "raw_content": "the <b><a href=\"pred.html\">pred</a></b>, <b><a href=\"lower.html\">lower</a></b> and <b><a href=\"upper.html\">upper</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "the **[pred.html](pred)**, **[lower.html](lower)** and **[upper.html](upper)** functions."
+    }
+  ]
+}

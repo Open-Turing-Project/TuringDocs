@@ -1,0 +1,43 @@
+{
+  "title": "Net.OpenConnection",
+  "fileName": "net_openconnection",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Net.OpenConnection</b> (<i>netAddr</i> : <b>string</b>, <br><i>port</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Net.OpenConnection** (*netAddr* : **string**, *port* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Attempts to open a connection to port specified by the <i>port</i> parameter on the machine specified by <i>netAddr</i> parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the <b>Net.WaitForConnection</b> function.<p>\r\nIf successful, <b>Net.OpenConnection</b> returns a network stream descriptor which can be used with the <b>put</b>, <b>get</b>, <b>read</b>, and <b>write</b> statements and <b>eof</b> function to send and receive data to the listening program. It is also the parameter used for the <b>Net.CloseConnection</b>, <b>Net.BytesAvailable</b>, <b>Net.CharAvailable</b>, <b>Net.LineAvailable</b>, and <b>Net.TokenAvailable</b> functions.</p>\n<p>\r\nThe <i>netAddr</i> parameter is a string specifying the net address of the machine to be connected to. This can either be the full hostname or the numerical address.</p>\n<p>\r\nIn general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.</p>\n<p>\r\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>\n<p>\r\n</p>",
+      "mdown_content": "Attempts to open a connection to port specified by the *port* parameter on the machine specified by *netAddr* parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the **Net.WaitForConnection** function.\nIf successful, **Net.OpenConnection** returns a network stream descriptor which can be used with the **put**, **get**, **read**, and **write** statements and **eof** function to send and receive data to the listening program. It is also the parameter used for the **Net.CloseConnection**, **Net.BytesAvailable**, **Net.CharAvailable**, **Net.LineAvailable**, and **Net.TokenAvailable** functions.\n\nThe *netAddr* parameter is a string specifying the net address of the machine to be connected to. This can either be the full hostname or the numerical address.\n\nIn general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.\n\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        % The \"Chat\" program\r\n        const chatPort : int := 5055\r\n        var choice : int\r\n        loop\r\n            put \"Enter 1 to run chat server\"\r\n            put \"Enter 2 to run chat session\"\r\n            put \"Choice: \" ..\r\n            get choice\r\n            exit when choice = 1 or choice = 2\r\n        end loop\r\n        var netStream : int\r\n        var netAddress : string\r\n        \r\n        if choice = 1 then\r\n            netStream := Net.WaitForConnection (chatPort, netAddress)\r\n        else\r\n            put \"Enter the address to connect to: \" ..\r\n            get netAddress\r\n            netStream := Net.OpenConnection (netAddress, chatPort)\r\n            if netStream <= 0 then\r\n                put \"Unable to connect to \", netAddress\r\n                return\r\n            end if\r\n        end if\r\n        Draw.Cls\r\n        put \"Connected to \", netAddress\r\n        \r\n        var localRow : int := 2\r\n        var localCol : int := 1\r\n        var remoteRow := maxrow div 2\r\n        var remoteCol : int := 1\r\n        var ch : char\r\n        \r\n        View.Set (\"noecho\")\r\n        loop\r\n            if hasch then\r\n                ch := getchar\r\n                put : netStream, ch\r\n                if ch = '\\n' then\r\n                    localRow := localRow mod (maxrow div 2) + 1\r\n                    localCol := 1\r\n                    Text.Locate (localRow, localCol)\r\n                    put \"\" % Clear to end of line\r\n                    Text.Locate (localRow, localCol)\r\n                else\r\n                    Text.Locate (localRow, localCol)\r\n                    put ch ..\r\n                    localCol += 1\r\n                end if\r\n            end if\r\n        \r\n            if Net.CharAvailable (netStream) then\r\n                get : netStream, ch\r\n                if ch = '\\n' then\r\n                    remoteRow := remoteRow mod (maxrow div 2) +\r\n                        1 + (maxrow div 2)\r\n                    remoteCol := 1\r\n                    Text.Locate (remoteRow, remoteCol)            put \"\"  % Clear to end of line\r\n                    Text.Locate (remoteRow, remoteCol)\r\n                else\r\n                    Text.Locate (remoteRow, remoteCol)\r\n                    put ch ..\r\n                    remoteCol += 1\r\n                end if\r\n            end if\r\n        end loop"
+      ],
+      "raw_content": "The following program implements a \"Chat\" program. One user runs the program on their machine as a server, which waits for another machine to connect to it. The second user specifies the machine to connect to and then connects. The two can then type at each other.<p>\r\n</p>",
+      "mdown_content": "The following program implements a \"Chat\" program. One user runs the program on their machine as a server, which waits for another machine to connect to it. The second user specifies the machine to connect to and then connects. The two can then type at each other."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.OpenConnection</b>, not by calling <b>OpenConnection</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.OpenConnection**, not by calling **OpenConnection**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "net_waitforconnection",
+        "net_closeconnection"
+      ],
+      "raw_content": "<b><a href=\"net_waitforconnection.html\">Net.WaitForConnection</a></b> and <b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[net_waitforconnection.html](Net.WaitForConnection)** and **[net_closeconnection.html](Net.CloseConnection)**."
+    }
+  ]
+}

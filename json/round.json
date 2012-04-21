@@ -1,0 +1,25 @@
+{
+  "title": "round",
+  "fileName": "round",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>round</b> ( <i>r</i> : <b>real</b> ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**round** ( *r* : **real** ) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>round</b> function is used to convert a <b>real</b> number to an integer. The result is the nearest integer to <i>r</i>. In the case of a tie, the numerically larger value is returned. For example, <b>round</b> (3) is 3, <b>round</b> (2.85) is 3 and <b>round</b> (-8.43) is -8.<p>\r\n</p>",
+      "mdown_content": "The **round** function is used to convert a **real** number to an integer. The result is the nearest integer to *r*. In the case of a tie, the numerically larger value is returned. For example, **round** (3) is 3, **round** (2.85) is 3 and **round** (-8.43) is -8."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "floor",
+        "ceil"
+      ],
+      "raw_content": "the <b><a href=\"floor.html\">floor</a></b> and <b><a href=\"ceil.html\">ceil</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "the **[floor.html](floor)** and **[ceil.html](ceil)** functions."
+    }
+  ]
+}

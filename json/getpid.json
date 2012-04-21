@@ -1,0 +1,27 @@
+{
+  "title": "getpid",
+  "fileName": "getpid",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>getpid</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**getpid** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>getpid</b> function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the <b>fork</b> statement, that are independent of the operating systems tasks.<p>\r\nUnder UNIX, the number is used, for example, for creating a unique name of a file. </p>\n<p>\r\n</p>",
+      "mdown_content": "The **getpid** function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.\nUnder UNIX, the number is used, for example, for creating a unique name of a file. \n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "nargs",
+        "fetcharg",
+        "getenv",
+        "sysmodule"
+      ],
+      "raw_content": "<b><a href=\"nargs.html\">nargs</a></b>, <b><a href=\"fetcharg.html\">fetcharg</a></b> and <b><a href=\"getenv.html\">getenv</a></b>.<p>\r\nSee also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)**.\nSee also predefined unit **[sysmodule.html](Sys)**.\n"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "File.DiskFree",
+  "fileName": "file_diskfree",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>File.DiskFree</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**File.DiskFree** (*pathName* : **string**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>File.DiskFree</b> gets the number of bytes for the disk upon \r\n          which <i>pathName</i> resides. The <i>pathName</i> parameter can \r\n          specify either a file or a directory. If it is the empty string, \r\n          then <b>File.DiskFree</b> returns the number of bytes of free \r\n          disk space on the disk upon which the execution directory resides.<p>\r\n    </p>",
+      "mdown_content": "**File.DiskFree** gets the number of bytes for the disk upon \nwhich *pathName* resides. The *pathName* parameter can \nspecify either a file or a directory. If it is the empty string, \nthen **File.DiskFree** returns the number of bytes of free \ndisk space on the disk upon which the execution directory resides.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>File.DiskFree</b> call fails, then it returns -1. \r\n          Also <b>Error.Last</b> will return a non-zero value indicating \r\n          the reason for the failure. <b>Error.LastMsg</b> will return a \r\n          string which contains the textual version of the error.<p>\r\n          If there is more than 2,147,483,647 bytes free on a disk, \r\n          the <b>File.DiskFree</b> function returns 2,147,483,647.</p>\n<p>\r\n    </p>",
+      "mdown_content": "If the **File.DiskFree** call fails, then it returns -1. \nAlso **Error.Last** will return a non-zero value indicating \nthe reason for the failure. **Error.LastMsg** will return a \nstring which contains the textual version of the error.\nIf there is more than 2,147,483,647 bytes free on a disk, \nthe **File.DiskFree** function returns 2,147,483,647.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var bytesFree : int\r\n        bytesFree := File.DiskFree (\"A:\\\\\")\r\n        if bytesFree = -1 then\r\n            put \"Can't get free space on drive A:.\"\r\n            put \"Error: \", Error.LastMsg\r\n        else\r\n            put \"There are \", bytesFree , \" bytes free on drive A:\" \r\n        end if\r\n        \r\n        bytesFree := File.DiskFree (\".\")\r\n        if bytesFree = -1 then\r\n            put \"Can't get free space on default directory.\"\r\n            put \"Error: \", Error.LastMsg\r\n        else\r\n            put \"There are \", bytesFree , \" bytes free on the default dir\" \r\n        end if"
+      ],
+      "raw_content": "This program prints out the amount of space on the <i>A: </i>drive \r\n          on a PC and in the execution directory.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "This program prints out the amount of space on the *A: *drive \non a PC and in the execution directory.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "File.DiskFree Example",
+          "file": "File.DiskFree.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>File.DiskFree</b>, not by calling <b>DiskFree</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**File.DiskFree**, not by calling **DiskFree**.\n\n"
+    }
+  ]
+}

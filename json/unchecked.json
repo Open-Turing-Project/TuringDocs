@@ -1,0 +1,40 @@
+{
+  "title": "unchecked",
+  "fileName": "unchecked",
+  "sections": [
+    {
+      "title": "Description",
+      "raw_content": "OOT adds the concept of \"unchecked\" to Turing. Here, you can request that certain run time tests, which take place by default, can be eliminated. This  makes the program more efficient  at the risk of unreliability.<p>\r\n</p>",
+      "mdown_content": "OOT adds the concept of \"unchecked\" to Turing. Here, you can request that certain run time tests, which take place by default, can be eliminated. This  makes the program more efficient  at the risk of unreliability."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var p : unchecked ^ int"
+      ],
+      "raw_content": "Declare <i>p</i> to be an unchecked pointer to an integer (see <b>pointers</b> for details). Pointer <i>p </i>will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.<p>\r\n</p>",
+      "mdown_content": "Declare *p* to be an unchecked pointer to an integer (see **pointers** for details). Pointer *p *will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var C : unchecked collection of R"
+      ],
+      "raw_content": "Declare <i>C</i> to be an unchecked collection of records of type <i>R</i> (see <b>collections</b> for details). Pointers to <i>C</i> will be unchecked.<p>\r\n</p>",
+      "mdown_content": "Declare *C* to be an unchecked collection of records of type *R* (see **collections** for details). Pointers to *C* will be unchecked."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 500\r\n            unchecked\r\n            if a ( i ) = key then\r\n                exit\r\n            end if\r\n        end for"
+      ],
+      "raw_content": "Remove checking from the body of a loop.<p>\r\n</p>",
+      "mdown_content": "Remove checking from the body of a loop."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In the above example, the <b>unchecked</b> keyword requests that all checking, in particular, array bounds checking for array <i>a</i>, are to be omitted. The disabling lasts from the occurrence of the keyword <b>unchecked</b> to the end of the surrounding construct, in this case, until <b>end</b> <b>for</b>. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of <b>checked</b> to the end of the surrounding construct.<p>\r\nIn the current (1999) implementation, the use of <b>unchecked</b> to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking.</p>\n<p>\r\n</p>",
+      "mdown_content": "In the above example, the **unchecked** keyword requests that all checking, in particular, array bounds checking for array *a*, are to be omitted. The disabling lasts from the occurrence of the keyword **unchecked** to the end of the surrounding construct, in this case, until **end** **for**. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of **checked** to the end of the surrounding construct.\nIn the current (1999) implementation, the use of **unchecked** to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking.\n"
+    }
+  ]
+}

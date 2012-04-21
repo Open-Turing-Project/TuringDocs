@@ -1,0 +1,27 @@
+{
+  "title": "getpriority",
+  "fileName": "getpriority",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>getpriority</b> : <b>nat</b><p>\r\n</p></font>",
+      "mdown_content": "**getpriority** : **nat**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>getpriority</b> function returns the priority of an executing <b>process</b> in a concurrent program. A smaller value means a faster speed.<p>\r\n</p>",
+      "mdown_content": "The **getpriority** function returns the priority of an executing **process** in a concurrent program. A smaller value means a faster speed."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setpriority",
+        "fork",
+        "monitor",
+        "concurrencymodule"
+      ],
+      "raw_content": "<b><a href=\"setpriority.html\">setpriority</a></b>, <b><a href=\"fork.html\">fork</a></b> and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\nSee also predefined unit <b><a href=\"concurrencymodule.html\">Concurrency</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[setpriority.html](setpriority)**, **[fork.html](fork)** and **[monitor.html](monitor)**.\nSee also predefined unit **[concurrencymodule.html](Concurrency)**.\n"
+    }
+  ]
+}

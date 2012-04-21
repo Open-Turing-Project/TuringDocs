@@ -1,0 +1,56 @@
+{
+  "title": "include",
+  "fileName": "include",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An <i>includeConstruct</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>include</b> <i>fileName</i></font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "An *includeConstruct* is:\n\n \n**include** *fileName*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "An <b>include</b> is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\".<p>\r\n</p>",
+      "mdown_content": "An **include** is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\"."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const upArrow := 200\r\n        const downArrow := 208\r\n        const rightArrow := 205\r\n        const leftArrow := 203",
+        "        include \"arrows\"\r\n        \r\n        var ch : string ( 1 )\r\n        getch ( ch )                % Read one character\r\n        case ord ( ch ) of\r\n            label upArrow :\r\n                handle up arrow\r\n            label downArrow :\r\n                handle down arrow\r\n            label rightArrow :\r\n                handle right arrow\r\n            label leftArrow :\r\n                handle left arrow\r\n            label :\r\n                handle any other key\r\n        end case"
+      ],
+      "raw_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <i>arrows</i> contains definitions of these values:<p>\r\n</p>\r\nThese definitions can be included in any program in the following manner:<p>\r\n</p>",
+      "mdown_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called *arrows* contains definitions of these values:\n\nThese definitions can be included in any program in the following manner:"
+    },
+    {
+      "title": "Details",
+      "raw_content": "An include file can itself contain <b>include</b> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.<p>\r\nIt is common to save procedures, functions and modules in separate files. The files are collected together using <b>include</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "An include file can itself contain **include** constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.\nIt is common to save procedures, functions and modules in separate files. The files are collected together using **include**.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the filename in the <b>include</b> statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.<p>\r\n</p>",
+      "mdown_content": "If the filename in the **include** statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        include \"%sorting.t\""
+      ],
+      "raw_content": "If the system directory is set to \"C:\\TURING\", then the line<p>\r\n</p>\r\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. <p>\r\n</p>",
+      "mdown_content": "If the system directory is set to \"C:\\TURING\", then the line\n\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. "
+    },
+    {
+      "title": "Details",
+      "raw_content": "Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory.<p>\r\n</p>",
+      "mdown_content": "Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        include \"%oot/teacher/sorting.t\""
+      ],
+      "raw_content": "If the oot directory is set to \"/usr/local/lib/oot\" then the line<p>\r\n</p>\r\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. <p>\r\n</p>",
+      "mdown_content": "If the oot directory is set to \"/usr/local/lib/oot\" then the line\n\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. "
+    }
+  ]
+}

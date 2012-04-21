@@ -1,0 +1,81 @@
+{
+  "title": "for",
+  "fileName": "for",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>forStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>for</b> [<b>decreasing</b>] [<i>id</i> ] : <i>first</i> .. <i>last</i> [<b>by</b> <i>increment</i>]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>for</b></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *forStatement* is:\n\n \n**for** [**decreasing**] [*id* ] : *first* .. *last* [**by** *increment*]\n \n \n*statementsAndDeclarations*\n \n**end** **for**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The statements and declarations in a <b>for</b> statement are repeatedly executed. In the first iteration, the identifier is assigned the value of <i>first</i>. With each additional iteration, the identifier increases by 1 (or by <i>increment</i>, if the <b>by</b> clause is present). The loop stops executing when adding 1 (or <i>increment)</i> to the identifier would cause the identifier to exceed <i>last</i>. <i>first</i> and <i>last</i> must be integer values (or else enumerated or <b>char</b> values). If you specify <b>decreasing</b>, then the identifier decreases by 1 (or by <i>increment</i>) each time through.<p>\r\n<i>Increment</i> must be a positive integer value. When the <b>by</b> clause is present, the <b>for</b> loop terminates as soon as the identifier would become greater than <i>last</i>, unless <b>decreasing</b> is present. If <b>decreasing</b> is present, the loop terminates when the identifier would become less than <i>last</i>.</p>\n<p>\r\n</p>",
+      "mdown_content": "The statements and declarations in a **for** statement are repeatedly executed. In the first iteration, the identifier is assigned the value of *first*. With each additional iteration, the identifier increases by 1 (or by *increment*, if the **by** clause is present). The loop stops executing when adding 1 (or *increment)* to the identifier would cause the identifier to exceed *last*. *first* and *last* must be integer values (or else enumerated or **char** values). If you specify **decreasing**, then the identifier decreases by 1 (or by *increment*) each time through.\n*Increment* must be a positive integer value. When the **by** clause is present, the **for** loop terminates as soon as the identifier would become greater than *last*, unless **decreasing** is present. If **decreasing** is present, the loop terminates when the identifier would become less than *last*.\n"
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        for i : 1 .. maxint"
+      ],
+      "raw_content": "The identifier is checked before it is added to (or subtracted from). This means that the loop<p>\r\n</p>\r\nwill not cause an overflow.<p>\r\n</p>",
+      "mdown_content": "The identifier is checked before it is added to (or subtracted from). This means that the loop\n\nwill not cause an overflow."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 10\r\n            put i\r\n        end for"
+      ],
+      "raw_content": "Output 1, 2, 3 to 10.<p>\r\n</p>",
+      "mdown_content": "Output 1, 2, 3 to 10."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 10 by 2\r\n            put i\r\n        end for"
+      ],
+      "raw_content": "Output 1, 3, 5, 7 and 9.<p>\r\n</p>",
+      "mdown_content": "Output 1, 3, 5, 7 and 9."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for decreasing j : 10 .. 1\r\n            put j\r\n        end for"
+      ],
+      "raw_content": "Output 10, 9, 8, down to 1.<p>\r\n</p>",
+      "mdown_content": "Output 10, 9, 8, down to 1."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for decreasing j : 10 .. 1 by 4\r\n            put j\r\n        end for"
+      ],
+      "raw_content": "Output 10, 6, and 2.<p>\r\n</p>",
+      "mdown_content": "Output 10, 6, and 2."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for j : 1 .. 10 by 20\r\n            put j\r\n        end for"
+      ],
+      "raw_content": "Output 1.<p>\r\n</p>",
+      "mdown_content": "Output 1."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for j : 5 .. 2\r\n            put j\r\n        end for"
+      ],
+      "raw_content": "Output nothing.<p>\r\n</p>",
+      "mdown_content": "Output nothing."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        type dozen : 1..12",
+        "        invariant trueFalseExpn"
+      ],
+      "raw_content": "The <b>for</b> statement declares the counting identifier (a separate declaration should not be given for <i>i</i> or <i>j</i>). The scope of this identifier is restricted to the <b>for</b> statement.<p>\r\nIf <i>first </i>is a value beyond <i>last</i>, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or <i>increment</i> if the <b>by</b> clause is present. Executing an <b>exit</b> statement inside a <b>for</b> statement causes a jump to just beyond <b>end</b> <b>for</b>. You are not allowed to change the counting variable (for example, you are not allowed to write <i>i</i> := 10).</p>\n<p>\r\nThe counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.</p>\n<p>\r\nIf <b>decreasing</b> is not present, <i>first</i> .. <i>last</i> can be replaced by the name of a subrange type, for example by <i>dozen</i>, declared by:</p>\n<p>\r\n</p>\r\nProcedures, functions and modules cannot be declared inside a <b>for</b> statement. Just preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:<p>\r\n</p>\r\nThis clause is equivalent to: <b>assert</b> <i>trueFalseExpn</i>.<p>\r\n</p>",
+      "mdown_content": "The **for** statement declares the counting identifier (a separate declaration should not be given for *i* or *j*). The scope of this identifier is restricted to the **for** statement.\nIf *first *is a value beyond *last*, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or *increment* if the **by** clause is present. Executing an **exit** statement inside a **for** statement causes a jump to just beyond **end** **for**. You are not allowed to change the counting variable (for example, you are not allowed to write *i* := 10).\n\nThe counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.\n\nIf **decreasing** is not present, *first* .. *last* can be replaced by the name of a subrange type, for example by *dozen*, declared by:\n\n\nProcedures, functions and modules cannot be declared inside a **for** statement. Just preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\n\nThis clause is equivalent to: **assert** *trueFalseExpn*."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Time.SecDate",
+  "fileName": "time_secdate",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Time.SecDate</b> (<i>timeInSecs</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**Time.SecDate** (*timeInSecs* : **int**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.SecDate</b> function is used to<b> </b>convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. <p>\r\nIf <i>timeInSecs </i>is incorrect or can't be interpreted, then <b>Time.SecDate</b> will return the empty string and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Time.SecDate** function is used to** **convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \nIf *timeInSecs *is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var timeInSecs : int := Time.Sec\r\n        var theDateTime: string\r\n        theDateTime := Time.SecDate (timeInSecs)\r\n        put \"The number of seconds since 1970 is \", timeInSecs \r\n        put \"Greetings!!  The date and time today is \", theDateTime"
+      ],
+      "raw_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form.<p>\r\n</p>",
+      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.SecDate</b>, not by calling <b>SecDate</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.SecDate**, not by calling **SecDate**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_sec",
+        "time_date",
+        "time_datesec"
+      ],
+      "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b>, <b><a href=\"time_date.html\">Time.Date</a></b> and <b><a href=\"time_datesec.html\">Time.DateSec</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_datesec.html](Time.DateSec)** functions."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "objectclass",
+  "fileName": "objectclass",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>objectclass</b> ( <i>pointerExpn</i> )<p>\r\n</p></font>",
+      "mdown_content": "**objectclass** ( *pointerExpn* )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>objectclass</b> attribute is used to find the class of an object located by a pointer. The <i>pointerExpn</i> must be an expression that is a pointer to a class.<p>\r\n</p>",
+      "mdown_content": "The **objectclass** attribute is used to find the class of an object located by a pointer. The *pointerExpn* must be an expression that is a pointer to a class."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var textFilePtr : ^ TextFile\r\n        \r\n        if objectclass ( textFilePtr ) >= Device then\r\n            % Can safely treat object as a Device\r\n            Device ( textFilePtr ) . ioCtl\r\n            \r\n        end if"
+      ],
+      "raw_content": "See <b>class</b> for an example of classes and inheritance, in which a class called <i>TextFile</i> is inherited by a class called <i>Device</i>. The <i>Device</i> class adds a new exported procedure called <i>ioCtl</i>. In the present example, <b>objectclass</b> is used to test to make sure that the <i>textFilePtr</i> currently locates an object that was created as a <i>Device</i> (or as a descendant of <i>Device</i>). The notation <i>Device(textFilePtr) </i>converts the pointer to be a pointer to a <i>Device </i>so that <i>ioCtl </i>can be called.<p>\r\n</p>",
+      "mdown_content": "See **class** for an example of classes and inheritance, in which a class called *TextFile* is inherited by a class called *Device*. The *Device* class adds a new exported procedure called *ioCtl*. In the present example, **objectclass** is used to test to make sure that the *textFilePtr* currently locates an object that was created as a *Device* (or as a descendant of *Device*). The notation *Device(textFilePtr) *converts the pointer to be a pointer to a *Device *so that *ioCtl *can be called."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        var p : ^objectclass (q)"
+      ],
+      "raw_content": "This example uses the class comparison operator &gt;= which means \"is a descendant of\". See <b>class</b>.<p>\r\nYou can only use <b>objectclass</b>  in class comparisons. In particular, <b>objectclass</b> cannot be used to declare pointers. For example, this: </p>\n<p>\r\n</p>\r\nis not allowed.<p>\r\n</p>",
+      "mdown_content": "This example uses the class comparison operator >= which means \"is a descendant of\". See **class**.\nYou can only use **objectclass**  in class comparisons. In particular, **objectclass** cannot be used to declare pointers. For example, this: \n\n\nis not allowed."
+    }
+  ]
+}

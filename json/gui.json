@@ -1,0 +1,16 @@
+{
+  "title": "The GUI Module",
+  "fileName": "gui",
+  "sections": [
+    {
+      "title": "",
+      "raw_content": "Create a menu.",
+      "mdown_content": "Create a menu."
+    },
+    {
+      "title": "",
+      "raw_content": "Create a menu item.",
+      "mdown_content": "Create a menu item."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Dir.Create",
+  "fileName": "dir_create",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Dir.Create</b> (<i>directoryPathName</i> : <b>string</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Dir.Create** (*directoryPathName* : **string**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Dir.Create</b> is used to create the directory specified by the parameter <i>directoryPathName</i>. This is the equivalent of doing a <b>mkdir</b> in DOS or UNIX. On the Macintosh, it creates a folder.<p>\r\n</p>",
+      "mdown_content": "**Dir.Create** is used to create the directory specified by the parameter *directoryPathName*. This is the equivalent of doing a **mkdir** in DOS or UNIX. On the Macintosh, it creates a folder."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>Dir.Create</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If the **Dir.Create** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Dir.Create (\"information\")\r\n        if Error.Last = eNoError  then\r\n            put \"Directory created\"\r\n        else\r\n            put \"Did not create the directory.\"\r\n            put \"Error: \", Error.LastMsg\r\n        end if"
+      ],
+      "raw_content": "This program creates the directory called <i>information</i>.<p>\r\n</p>",
+      "mdown_content": "This program creates the directory called *information*."
+    },
+    {
+      "title": "Example",
+      "raw_content": "An example demonstrating the use of several of the <b>Dir</b> subprograms\r\n      is available. In this example, a directory is created, a file is written\r\n      to the directory, an attempt is made to delete the directory, the file is\r\n      deleted, and then the directory is deleted.<p>\r\n      This example demonstrates the use of <b>Dir.Change</b>, \r\n      <b>Dir.Current</b>, <b>Dir.Create</b>, and <b>Dir.Delete</b>.</p>\n<p>\r\n      <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n        <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,Dir.t;Dir Subprogams Example\"></object></p>\n<p>\r\n</p>",
+      "mdown_content": "An example demonstrating the use of several of the **Dir** subprograms\nis available. In this example, a directory is created, a file is written\nto the directory, an attempt is made to delete the directory, the file is\ndeleted, and then the directory is deleted.\nThis example demonstrates the use of **Dir.Change**, \n**Dir.Current**, **Dir.Create**, and **Dir.Delete**.\n\n\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Dir.Create</b>, not by calling <b>Create</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Create**, not by calling **Create**.\n"
+    }
+  ]
+}

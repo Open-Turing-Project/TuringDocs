@@ -1,0 +1,45 @@
+{
+  "title": "process",
+  "fileName": "process",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>processDeclaration</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>process</b> <i>id</i> [ ( [ <i>paramDeclaration</i> {,<i>paramDeclaration</i> } ] )]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <i>id</i></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *processDeclaration* is:\n\n \n**process** *id* [ ( [ *paramDeclaration* {,*paramDeclaration* } ] )]\n \n \n*statementsAndDeclarations*\n \n**end** *id*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A process declaration is much like a procedure declaration, but is activated by a <b>fork</b> statement rather than by a call. The <b>fork</b> statement starts concurrent (parallel) execution of the process while the statements following the <b>fork</b> continue to execute.<p>\r\n</p>",
+      "mdown_content": "A process declaration is much like a procedure declaration, but is activated by a **fork** statement rather than by a call. The **fork** statement starts concurrent (parallel) execution of the process while the statements following the **fork** continue to execute."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        process greetings ( word : string )\r\n            loop\r\n                put word\r\n            end loop\r\n        end greetings\r\n        \r\n        fork greetings ( \"Hi\" )\r\n        fork greetings ( \"Ho\" )"
+      ],
+      "raw_content": "This program initiates (forks) two concurrent processes, one of which repeatedly outputs <i>Hi</i> and the other <i>Ho</i>. The resulting output is an unpredictable sequence of <i>Hi</i>'s and <i>Ho</i>'s as <i>greetings</i> executes twice concurrently, one instance with <i>word</i> set to <i>Hi</i> and the other with <i>word</i> set to <i>Ho</i>.<p>\r\n</p>",
+      "mdown_content": "This program initiates (forks) two concurrent processes, one of which repeatedly outputs *Hi* and the other *Ho*. The resulting output is an unpredictable sequence of *Hi*'s and *Ho*'s as *greetings* executes twice concurrently, one instance with *word* set to *Hi* and the other with *word* set to *Ho*."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        process [ pervasive ] id\r\n                [ ( [ paramDeclaration {,paramDeclaration } ] )]\r\n                [ : compileTimeExpn ]\r\n            [ pre trueFalseExpn ]\r\n            [ init id := expn {, id := expn } ]\r\n            [ post trueFalseExpn ]\r\n            [ exceptionHandler ]\r\n            statementsAndDeclarations\r\n        end id"
+      ],
+      "raw_content": "The <b>process</b> declaration creates a template for a process (a concurrent activity), which is activated by a <b>fork</b> statement.<p>\r\nA process declaration can appear wherever a module declaration is allowed except that a process declaration is not allowed in a class. The declarations and statements in a process declaration are the same as those in a procedure.</p>\n<p>\r\nSee <i>paramDeclaration</i> for details about parameters. There is an anomaly in parameters to processes, that can lead to errors. In particular, non-<b>var</b> parameters that are non-scalars (such as strings and arrays) are passed by reference. The result is that the target of the reference may change value while the process is executing, which in turn means that the seemingly constant parameter is not really constant. For example, if the string variable <i>s</i> were passed to the <i>greetings</i> process and subsequently changed, the value of <i>greetings</i>' formal parameter would change.</p>\n<p>\r\nThe syntax of a <i>processDeclaration</i> presented above has been simplified by leaving out the optional stack size (<i>compileTimeExpn</i>), <b>import</b> list, <b>pre</b> condition, <b>init</b> clause, <b>post</b> condition and exception handler. </p>\n<p>\r\nThe full syntax<i> </i>is:</p>\n<p>\r\n</p>\r\nSee <b>pervasive</b> for information on <b>pervasive</b> processes. The optional <i>compileTimeExpn </i>following the parameter list (if any) is used to specify the number of bytes for the process' stack.<p>\r\n</p>",
+      "mdown_content": "The **process** declaration creates a template for a process (a concurrent activity), which is activated by a **fork** statement.\nA process declaration can appear wherever a module declaration is allowed except that a process declaration is not allowed in a class. The declarations and statements in a process declaration are the same as those in a procedure.\n\nSee *paramDeclaration* for details about parameters. There is an anomaly in parameters to processes, that can lead to errors. In particular, non-**var** parameters that are non-scalars (such as strings and arrays) are passed by reference. The result is that the target of the reference may change value while the process is executing, which in turn means that the seemingly constant parameter is not really constant. For example, if the string variable *s* were passed to the *greetings* process and subsequently changed, the value of *greetings*' formal parameter would change.\n\nThe syntax of a *processDeclaration* presented above has been simplified by leaving out the optional stack size (*compileTimeExpn*), **import** list, **pre** condition, **init** clause, **post** condition and exception handler. \n\nThe full syntax* *is:\n\n\nSee **pervasive** for information on **pervasive** processes. The optional *compileTimeExpn *following the parameter list (if any) is used to specify the number of bytes for the process' stack."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "import",
+        "pre",
+        "condition",
+        "init",
+        "post",
+        "condition"
+      ],
+      "raw_content": "<b><a href=\"import.html\">import</a></b> list, <b><a href=\"pre.html\">pre</a></b> <a href=\"condition.html\">condition</a>, <b><a href=\"init.html\">init</a></b> clause, <b><a href=\"post.html\">post</a></b> <a href=\"condition.html\">condition</a> and <i>exceptionHandler</i> for explanations of these additional features.<p>\r\n</p>",
+      "mdown_content": "**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and *exceptionHandler* for explanations of these additional features."
+    }
+  ]
+}

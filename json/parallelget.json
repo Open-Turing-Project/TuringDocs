@@ -1,0 +1,40 @@
+{
+  "title": "parallelget",
+  "fileName": "parallelget",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>parallelget</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**parallelget** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>parallelget</b> procedure is used on a PC to read the value of certain pins on the parallel port. This port corresponds to the MS-DOS device \"LPT1\". This procedure can be used to control robots and peripherals.<p>\r\n</p>",
+      "mdown_content": "The **parallelget** procedure is used on a PC to read the value of certain pins on the parallel port. This port corresponds to the MS-DOS device \"LPT1\". This procedure can be used to control robots and peripherals."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const val : int := parallelget  % Read in the set of pin values\r\n        put \"Pin 10 is: \", (val div 64) mod 2\r\n        put \"Pin 11 is: \", (val div 128) mod 2\r\n        put \"Pin 12 is: \", (val div 32) mod 2\r\n        put \"Pin 13 is: \", (val div 16) mod 2\r\n        put \"Pin 15 is: \", (val div 8) mod 2"
+      ],
+      "raw_content": "This program reads and prints the values of the five data pins of the PC's parallel port.<p>\r\n</p>",
+      "mdown_content": "This program reads and prints the values of the five data pins of the PC's parallel port."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The five pins that are used for parallel input are pins 10-15. The <b>parallelget</b> procedure returns the sum of <p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>64 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 10 high</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>128</td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 11 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>32 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 12 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>16 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 13 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>8 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 15 high</td>\n</tr>\n</table>\n<p>\r\nThe <b>mod</b> and <b>div</b> operators can be used to determine which pins are high or low. </p>\n<p>\r\n</p>",
+      "mdown_content": "The five pins that are used for parallel input are pins 10-15. The **parallelget** procedure returns the sum of \n\n \n64 \n \nPin 10 high\n \n128\n \nPin 11 high \n \n32 \n \nPin 12 high \n \n16 \n \nPin 13 high \n \n8 \n \nPin 15 high\n\nThe **mod** and **div** operators can be used to determine which pins are high or low. \n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "parallelput",
+        "procedure",
+        "procedure",
+        "set"
+      ],
+      "raw_content": "the <b><a href=\"parallelput.html\">parallelput</a></b> <a href=\"procedure.html\">procedure</a> for a diagram of the pins. That <a href=\"procedure.html\">procedure</a> is used to <a href=\"set.html\">set</a> the values on the parallel port.<p>\r\n</p>",
+      "mdown_content": "the **[parallelput.html](parallelput)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port."
+    }
+  ]
+}

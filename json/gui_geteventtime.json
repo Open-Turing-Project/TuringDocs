@@ -1,0 +1,37 @@
+{
+  "title": "GUI.GetEventTime",
+  "fileName": "gui_geteventtime",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetEventTime</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetEventTime** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the time in milliseconds when the event (mouse button or keystroke) took place. This value is the same value as <i>Time.Elapsed</i> returns if called when the event was processed. This function should only be called in an <i>action procedure</i> or in a default mouse, keystroke, or null event handler, as it will return 1 when there is no event being processed.<p>\r\nThis event can be used as a timer for various functions such as determining whether a single click or a double click of the mouse button took place or for timing keyboard input.</p>\n<p>\r\n</p>",
+      "mdown_content": "Returns the time in milliseconds when the event (mouse button or keystroke) took place. This value is the same value as *Time.Elapsed* returns if called when the event was processed. This function should only be called in an *action procedure* or in a default mouse, keystroke, or null event handler, as it will return 1 when there is no event being processed.\nThis event can be used as a timer for various functions such as determining whether a single click or a double click of the mouse button took place or for timing keyboard input.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\" \r\n        View.Set (\"graphics:300;100\") \r\n        \r\n        var startTime, startButton, finishButton : int\r\n        \r\n        procedure Start\r\n            startTime := GUI.GetEventTime\r\n        end Start\r\n        \r\n        procedure Finish\r\n            Text.Locate (1, 1)\r\n            put \"The time between button pressed is \", \r\n                GUI.GetEventTime  startTime, \" msecs\"\r\n            GUI.Quit\r\n        end Finish\r\n        \r\n        startButton := GUI.CreateButton (10, 10, 110, \"Click First\", Start)\r\n        finishButton := GUI.CreateButton (180, 10, 110, \"Click Second\", Finish)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "The following program times the interval between two button presses.<p>\r\n</p>",
+      "mdown_content": "The following program times the interval between two button presses."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetEventTime</b> , not by calling <b>GetEventTime</b> .</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventTime** , not by calling **GetEventTime** .\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_processevent"
+      ],
+      "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+    }
+  ]
+}

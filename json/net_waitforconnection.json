@@ -1,0 +1,40 @@
+{
+  "title": "Net.WaitForConnection",
+  "fileName": "net_waitforconnection",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Net.WaitForConnection</b> (<i>port</i> : <b>int</b>, <br><b>var </b><i>netAddr</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Net.WaitForConnection** (*port* : **int**, **var ***netAddr* : **string**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Listens for a connection at the port specified by the <i>port</i> parameter. When another program connects to the port, then the function returns. The address of the connecting machine is specified in the <i>netAddr</i> parameter and the <b>Net.WaitForConnection </b>returns a network stream descriptor which can be used with the <b>put</b>, <b>get</b>, <b>read</b>, and <b>write</b> statements and <b>eof</b> function to send and receive data to the connecting program. It is also the parameter used for the <b>Net.CloseConnection</b>, <b>Net.BytesAvailable</b>, <b>Net.CharAvailable</b>, <b>Net.LineAvailable</b>, and <b>Net.TokenAvailable</b> functions.<p>\r\nIn OOT, the connection to a port is made with the <b>Net.OpenConnection</b> function.</p>\n<p>\r\nThe <i>netAddr</i> parameter is a string specifying the net address of the machine that connected to the port. It is the machines numerical address.</p>\n<p>\r\nIn general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.</p>\n<p>\r\nThe program will wait for indefinitely for a connection to made to the port.</p>\n<p>\r\n</p>",
+      "mdown_content": "Listens for a connection at the port specified by the *port* parameter. When another program connects to the port, then the function returns. The address of the connecting machine is specified in the *netAddr* parameter and the **Net.WaitForConnection **returns a network stream descriptor which can be used with the **put**, **get**, **read**, and **write** statements and **eof** function to send and receive data to the connecting program. It is also the parameter used for the **Net.CloseConnection**, **Net.BytesAvailable**, **Net.CharAvailable**, **Net.LineAvailable**, and **Net.TokenAvailable** functions.\nIn OOT, the connection to a port is made with the **Net.OpenConnection** function.\n\nThe *netAddr* parameter is a string specifying the net address of the machine that connected to the port. It is the machines numerical address.\n\nIn general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.\n\nThe program will wait for indefinitely for a connection to made to the port.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>Net.OpenConnection</b> for an example of <b>Net.WaitForConnection</b>.<p>\r\n</p>",
+      "mdown_content": "See **Net.OpenConnection** for an example of **Net.WaitForConnection**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.WaitForConnection</b>, not by calling <b>WaitForConnection</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.WaitForConnection**, not by calling **WaitForConnection**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "net_openconnection",
+        "net_closeconnection"
+      ],
+      "raw_content": "<b><a href=\"net_openconnection.html\">Net.OpenConnection</a></b> and <b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[net_openconnection.html](Net.OpenConnection)** and **[net_closeconnection.html](Net.CloseConnection)**."
+    }
+  ]
+}

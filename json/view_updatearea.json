@@ -1,0 +1,73 @@
+{
+  "title": "View.UpdateArea",
+  "fileName": "view_updatearea",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>View.UpdateArea</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>)<p></p></font>",
+      "mdown_content": "**View.UpdateArea** (*x1*, *y1*, *x2*, *y2*)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>View.UpdateArea</b> procedure updates a rectanglular area \r\n          Run window, specified by (<i>x1</i>, <i>y1</i>) - \r\n          (<i>x2</i>, <i>y2</i>) from the offscreen bitmap. It is used with \r\n          the command <b>View.Set</b>&nbsp;(\"offscreenonly\") which prevents the \r\n          Run window from being updated until the <b>View.UpdateArea</b> \r\n          or <b>View.Update</b> command is given.<p>\r\n          Because the entire screen is not updated each time, the animation can\r\n          be much faster, especially on slow machines.  This procedure does \r\n          take more effort to use than <b>View.Update</b> as it requires the \r\n          programmer to calculate which portion of the screen must be updated.\r\n    </p>",
+      "mdown_content": "The **View.UpdateArea** procedure updates a rectanglular area \nRun window, specified by (*x1*, *y1*) - \n(*x2*, *y2*) from the offscreen bitmap. It is used with \nthe command **View.Set** (\"offscreenonly\") which prevents the \nRun window from being updated until the **View.UpdateArea** \nor **View.Update** command is given.\nBecause the entire screen is not updated each time, the animation can\nbe much faster, especially on slow machines.  This procedure does \ntake more effort to use than **View.Update** as it requires the \nprogrammer to calculate which portion of the screen must be updated.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"offscreenonly\")\r\n        var SIZE : int := 50\r\n        loop\r\n            for x : 0 .. maxx - SIZE\r\n                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, brightgreen)\r\n                View.UpdateArea (x - 1, 100, x + SIZE, 100 + SIZE)\r\n                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, colorbg)\r\n            end for\r\n            for decreasing x : maxx - SIZE .. 0\r\n                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, brightgreen)\r\n                View.UpdateArea (x, 100, x + SIZE + 1, 100 + SIZE)\r\n                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, colorbg)\r\n            end for\r\n        end loop"
+      ],
+      "raw_content": "This program moves a star back and forth across the screen. To\r\n          compare the speed up <b>View.UpdateArea</b> with <b>View.Update</b>,\r\n          replace the calls to <b>View.UpdateArea</b> with <b>View.Update</b>.<p>\r\n</p>",
+      "mdown_content": "This program moves a star back and forth across the screen. To\ncompare the speed up **View.UpdateArea** with **View.Update**,\nreplace the calls to **View.UpdateArea** with **View.Update**."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "View.UpdateArea Example",
+          "file": "View.UpdateArea.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the entire screen is being updated each time through the animation\r\n          loop (for example if the background image is changing), then use\r\n          <b>View.Update</b> instead.<p>\r\n          When using <b>View.UpdateArea</b>, it is important to correctly \r\n          calculate the region to be updated. This region must not only contain\r\n          the item being drawn, but also any area where the background should\r\n          be replaced. For example, in the program above, the area updated \r\n          included the one pixel to the left of the star when the star was\r\n          moving right-ward and one pixel to the right of the star when the star\r\n          was moving left-ward.</p>\n<p>\r\n    </p>",
+      "mdown_content": "If the entire screen is being updated each time through the animation\nloop (for example if the background image is changing), then use\n**View.Update** instead.\nWhen using **View.UpdateArea**, it is important to correctly \ncalculate the region to be updated. This region must not only contain\nthe item being drawn, but also any area where the background should\nbe replaced. For example, in the program above, the area updated \nincluded the one pixel to the left of the star when the star was\nmoving right-ward and one pixel to the right of the star when the star\nwas moving left-ward.\n\n"
+    },
+    {
+      "title": "Execute",
+      "raw_content": "Here is an example program that allows you to compare the speed of\r\n          animation using <b>View.Update</b> with <b>View.UpdateArea</b>. The\r\n          program animates an object on a background of stars. Pressing any key\r\n          switches between the two calls.<p>\r\n      \t  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Compare Animation Speed Program\">\n<param name=\"Item1\" value=\"-1,CompareAnimationSpeed.t;Compare Animation Speed Example\"></object></p>\n<p></p>",
+      "mdown_content": "Here is an example program that allows you to compare the speed of\nanimation using **View.Update** with **View.UpdateArea**. The\nprogram animates an object on a background of stars. Pressing any key\nswitches between the two calls.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "All Turing Run windows have both an onscreen visible window and an \r\n          offscreen window. Whenever any output is sent to the screen, both \r\n          the onscreen window and the offscreen window are updated. When the \r\n          Run window needs to be updated (for example when another window is \r\n          moved over top of it and then removed), Turing copies the offscreen \r\n          window onto the onscreen window.<p>\r\n          When the <b>View.Set</b>&nbsp;(\"offscreenonly\") command is given, Turing \r\n          no longer draws to the onscreen window when any drawing command is \r\n          given. However, it does update the offscreen window. When the \r\n          <b>View.Update</b> command is given, the entire offscreen window \r\n          is copied to the onscreen window.</p>\n<p>\r\n          This can be used to provide smooth, flicker-free animation. Animated \r\n          objects flicker when the object being animated disappears from the \r\n          onscreen window for a period of time. By using \r\n          <b>View.Set</b>&nbsp;(\"offscreenonly\") / <b>View.Update</b>, the onscreen \r\n          window is never blank. Instead, the offscreen window drawn over top \r\n          off the on screen window, replacing it. This means that the on-screen\r\n          window is never blanked out, eliminating the flickering found in \r\n          the animation.</p>\n<p>\r\n    </p>",
+      "mdown_content": "All Turing Run windows have both an onscreen visible window and an \noffscreen window. Whenever any output is sent to the screen, both \nthe onscreen window and the offscreen window are updated. When the \nRun window needs to be updated (for example when another window is \nmoved over top of it and then removed), Turing copies the offscreen \nwindow onto the onscreen window.\nWhen the **View.Set** (\"offscreenonly\") command is given, Turing \nno longer draws to the onscreen window when any drawing command is \ngiven. However, it does update the offscreen window. When the \n**View.Update** command is given, the entire offscreen window \nis copied to the onscreen window.\n\nThis can be used to provide smooth, flicker-free animation. Animated \nobjects flicker when the object being animated disappears from the \nonscreen window for a period of time. By using \n**View.Set** (\"offscreenonly\") / **View.Update**, the onscreen \nwindow is never blank. Instead, the offscreen window drawn over top \noff the on screen window, replacing it. This means that the on-screen\nwindow is never blanked out, eliminating the flickering found in \nthe animation.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "It's very easy to forget that no output will appear in the Run \r\n          window when using <b>View.UpdateArea</b>. Remember to use \r\n          <b>View.Set</b>(\"nooffscreenonly\") to turn off this feature \r\n          sending output for debugging purposes.<p>\r\n    </p>",
+      "mdown_content": "It's very easy to forget that no output will appear in the Run \nwindow when using **View.UpdateArea**. Remember to use \n**View.Set**(\"nooffscreenonly\") to turn off this feature \nsending output for debugging purposes.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "<b>View.UpdateArea</b> should not be used in conjunction with the \r\n          <b>Sprite </b>module. Sprites can be considered a limited version \r\n          of this technique. <b>View.UpdateArea</b> also works well when the \r\n          entire background is changing.<p>\r\n    </p>",
+      "mdown_content": "**View.UpdateArea** should not be used in conjunction with the \n**Sprite **module. Sprites can be considered a limited version \nof this technique. **View.UpdateArea** also works well when the \nentire background is changing.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.UpdateArea</b>, not by calling <b>UpdateArea</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**View.UpdateArea**, not by calling **UpdateArea**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_set",
+        "view_update"
+      ],
+      "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b> for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options. <p>\r\n          <b><a href=\"view_update.html\">View.Update</a></b> for procedure to\r\n          update the entire screen at one time.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" \nand \"nooffscreenonly\" options. \n**[view_update.html](View.Update)** for procedure to\nupdate the entire screen at one time.\n\n"
+    }
+  ]
+}

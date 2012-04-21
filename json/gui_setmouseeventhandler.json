@@ -1,0 +1,37 @@
+{
+  "title": "GUI.SetMouseEventHandler",
+  "fileName": "gui_setmouseeventhandler",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.SetMouseEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>mouseEventHandler</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : <b>int</b>))<p>\r\n</p></font>",
+      "mdown_content": "**GUI.SetMouseEventHandler** (\n    *mouseEventHandler* : **procedure** *x* (*mx*, *my* : **int**))"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Sets the new default mouse event handler. The <i>mouseEventHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there is a mouse button down which is not handled by any widget. The <i>mx</i> and <i>my</i> parameters in the <i>mouseEventHandler</i> are the location of mouse when the button was pressed.<p>\r\nThis procedure is used by programs to allow for mouse input in a program that uses widgets.</p>\n<p>\r\n</p>",
+      "mdown_content": "Sets the new default mouse event handler. The *mouseEventHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The *mx* and *my* parameters in the *mouseEventHandler* are the location of mouse when the button was pressed.\nThis procedure is used by programs to allow for mouse input in a program that uses widgets.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        \r\n        var starX, starY, starColor : array 1 .. 100 of int\r\n        var numStars : int := 0\r\n        var menuVisible : boolean := true\r\n        \r\n        procedure DrawStar (i : int)\r\n            if menuVisible then\r\n                View.ClipSet (0, 0, maxx, \r\n                    maxy  GUI.GetMenuBarHeight)\r\n            end if\r\n            Draw.FillStar (starX (i)  20, starY (i)  20, starX (i) + 20,\r\n                starY (i) + 20, starColor (i))    View.ClipOff\r\n        end DrawStar\r\n        \r\n        procedure Redraw\r\n            for i : 1 .. numStars\r\n                DrawStar (i)\r\n            end for\r\n            Text.Locate (maxrow, 1)\r\n            put \"Press any key to toggle menu bar\" ..\r\n        end Redraw\r\n        \r\n        procedure KeyHandler (ch : char)\r\n            if menuVisible then\r\n                GUI.HideMenuBar    else\r\n                GUI.ShowMenuBar\r\n            end if\r\n            menuVisible := not menuVisible\r\n            Redraw\r\n        end KeyHandler\r\n        \r\n        procedure MouseHandler (x, y : int)\r\n            if numStars = 100 then\r\n                Text.Locate (maxrow, 1)\r\n                put \"Maximum number of stars exceeded!\" ..\r\n                return\r\n            end if\r\n            numStars += 1\r\n            starX (numStars) := x\r\n            starY (numStars) := y\r\n            starColor (numStars) := Rand.Int (9, 15)\r\n            DrawStar (numStars)\r\n        end MouseHandler\r\n        \r\n        var menu : int := GUI.CreateMenu (\"File\")\r\n        var menuItem : int := GUI.CreateMenuItemFull (\"Quit\", \r\n            GUI.Quit, '^Q', false)\r\n        GUI.SetKeyEventHandler (KeyHandler)\r\n        GUI.SetMouseEventHandler (MouseHandler)\r\n        Redraw\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "This is a program that allows the user to place stars on the screen. The menu bar allows the user to quit the program at any time. The user can also toggle the appearance of the menu bar by pressing any key.<p>\r\n</p>\r\n<p>\r\n</p>",
+      "mdown_content": "This is a program that allows the user to place stars on the screen. The menu bar allows the user to quit the program at any time. The user can also toggle the appearance of the menu bar by pressing any key.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetMouseEventHandler</b>, not by calling <b>SetMouseEventHandler</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetMouseEventHandler**, not by calling **SetMouseEventHandler**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_processevent"
+      ],
+      "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+    }
+  ]
+}

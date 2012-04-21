@@ -1,0 +1,37 @@
+{
+  "title": "Draw.Cls",
+  "fileName": "draw_cls",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Draw.Cls</b><p>\r\n</p></font>",
+      "mdown_content": "**Draw.Cls**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Draw.Cls</b> (clear screen) procedure is used to blank the output window The cursor is set to the top left (to row 1, column 1).<p>\r\n</p>",
+      "mdown_content": "The **Draw.Cls** (clear screen) procedure is used to blank the output window The cursor is set to the top left (to row 1, column 1)."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Draw.Cls</b> procedure sets all pixels in the output window to color 0. In this way it differs from the <b>cls</b> and <b>Text.Cls</b> procedures which set the screen to the text background color.<p>\r\nThe screen must be in \"<i>graphics</i>\" mode. See <b>View.Set</b> for details.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Draw.Cls** procedure sets all pixels in the output window to color 0. In this way it differs from the **cls** and **Text.Cls** procedures which set the screen to the text background color.\nThe screen must be in \"*graphics*\" mode. See **View.Set** for details.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Cls</b>, not by calling <b>Cls</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Cls**, not by calling **Cls**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_set",
+        "maxx",
+        "maxy",
+        "drawmodule"
+      ],
+      "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
+    }
+  ]
+}

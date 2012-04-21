@@ -1,0 +1,26 @@
+{
+  "title": "Stream.Flush",
+  "fileName": "stream_flush",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Stream.Flush</b> ( <i>streamNumber</i> <b>: int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**Stream.Flush** ( *streamNumber* **: int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Stream.Flush</b> procedure is used to flush any buffered output associated with the <i>streamNumber</i> parameter. <p>\r\n</p>",
+      "mdown_content": "The **Stream.Flush** procedure is used to flush any buffered output associated with the *streamNumber* parameter. "
+    },
+    {
+      "title": "Details",
+      "raw_content": "Turing automatically flushes any buffered output when a stream is closed. Turing also automatically closes any open files when execution is terminated.<p>\r\n</p>",
+      "mdown_content": "Turing automatically flushes any buffered output when a stream is closed. Turing also automatically closes any open files when execution is terminated."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Stream.Flush</b>, not by calling <b>Flush</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Stream.Flush**, not by calling **Flush**.\n"
+    }
+  ]
+}

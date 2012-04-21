@@ -1,0 +1,44 @@
+{
+  "title": "Font.Width",
+  "fileName": "font_width",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.Width</b> (<i>txtStr</i> : <b>string</b>, <i>fontID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Font.Width** (*txtStr* : **string**, *fontID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Font.Width </b>is used to obtain the width in pixels that a specified string will take to draw in a specified font. The <i>textStr</i> parameter is the string. The <i>fontID</i> parameter is the font in which the string would be drawn.<p>\r\n</p>",
+      "mdown_content": "**Font.Width **is used to obtain the width in pixels that a specified string will take to draw in a specified font. The *textStr* parameter is the string. The *fontID* parameter is the font in which the string would be drawn."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If <b>Font.Width</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Width</b> call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If **Font.Width** is passed an invalid font ID, a fatal error occurs. If the **Font.Width** call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const testString := \"Test String\"\r\n        var width, fontID : int\r\n        fontID := Font.New (\"Palatino:24:Bold\")\r\n        width := Font.Width (testString, fontID)\r\n        put \"The width of \\\"\" + testString + \"\\\" is \", width, \" pixels\"\r\n        Font.Draw (testString, 100, 100, fontID, black)\r\n        Draw.Line (100, 50, 100, 150, brightred)\r\n        Draw.Line (100 + width, 50, 100 + width, 150, brightred)\r\n        Font.Free (fontID)"
+      ],
+      "raw_content": "The program gets information about 24pt Bold Palatino.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The program gets information about 24pt Bold Palatino.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.Width Example",
+          "file": "Font.Width.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.Width</b>, not by calling <b>Width</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Width**, not by calling **Width**.\n"
+    }
+  ]
+}

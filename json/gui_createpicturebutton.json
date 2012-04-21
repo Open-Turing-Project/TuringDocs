@@ -1,0 +1,52 @@
+{
+  "title": "GUI.CreatePictureButton[Full]",
+  "fileName": "gui_createpicturebutton",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.CreatePictureButton</b> (<i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> x ()) : <b>int</b><p>\r\n\t  <b>GUI.CreatePictureButtonFull</b> (<i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> x (), <i>width</i>, <i>height</i> : <b>int</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>shortcut</i> : <b>char</b>, <i>mergePic</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
+      "mdown_content": "**GUI.CreatePictureButton** (*x*, *y*, *picture* : **int**,\n    *actionProc* : **procedure** x ()) : **int**\n**GUI.CreatePictureButtonFull** (*x*, *y*, *picture* : **int**,\n    *actionProc* : **procedure** x (), *width*, *height* : **int**, \n    *shortcut* : **char**, *mergePic* : **boolean**) : **int**"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "gui_createpicturebutton_full01.gif"
+      ],
+      "raw_content": "Creates a picture button and returns the button's widget ID. <p>\r\n\t  Picture buttons behave like buttons (see <b>GUI.CreateButton</b>) except that instead of text on the button, a picture specified by the user is displayed on the button. The picture button widget responds to mouse clicks and keystrokes in the same manner as a regular button widget. </p>\n<p>\r\n\t  The picture must be created by the program beforehand using <b>Pic.New</b> or <b>Pic.FileNew</b>. The resulting picture can then be used as a parameter to <b>GUI.CreatePictureButton</b><i>.</i> In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library. </p>\n<p>\r\n\t  The <i>x</i> and <i>y</i> parameters specify the lower-left corner of the picture button. The <i>picture</i> parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a <b>Pic.New</b> or <b>Pic.FileNew</b> call. Do not call <b>Pic.Free</b> for this picture ID until the button has been disposed of by calling <b>GUI.Dispose</b>. The <i>actionProc</i> parameter specifies the name of a procedure that is called when the picture button is pressed.</p>\n<p>\r\n\t  For <b>GUI.CreatePictureButtonFull</b>, the <i>width</i> and <i>height</i> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <b>GUI.GetWidth</b> and <b>GUI.GetHeight</b> functions. If <i>width</i> and <i>height</i> are larger than the picture, the picture is centered in the button. The <i>shortCut</i>parameter is the keystroke to be used as the button's shortcut. The <i>mergePic</i> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for <i>CreatePictureButton</i>.</p>\n<p>\r\n\t  </p>\n<center></center>\r\n\t  <center>\n<b>Two Picture Buttons</b> </center>\n<p>\r\n    </p>",
+      "mdown_content": "Creates a picture button and returns the button's widget ID. \nPicture buttons behave like buttons (see **GUI.CreateButton**) except that instead of text on the button, a picture specified by the user is displayed on the button. The picture button widget responds to mouse clicks and keystrokes in the same manner as a regular button widget. \n\nThe picture must be created by the program beforehand using **Pic.New** or **Pic.FileNew**. The resulting picture can then be used as a parameter to **GUI.CreatePictureButton***.* In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library. \n\nThe *x* and *y* parameters specify the lower-left corner of the picture button. The *picture* parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a **Pic.New** or **Pic.FileNew** call. Do not call **Pic.Free** for this picture ID until the button has been disposed of by calling **GUI.Dispose**. The *actionProc* parameter specifies the name of a procedure that is called when the picture button is pressed.\n\nFor **GUI.CreatePictureButtonFull**, the *width* and *height* parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the **GUI.GetWidth** and **GUI.GetHeight** functions. If *width* and *height* are larger than the picture, the picture is centered in the button. The *shortCut*parameter is the keystroke to be used as the button's shortcut. The *mergePic* parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for *CreatePictureButton*.\n\n\n\n\n**Two Picture Buttons** \n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        View.Set (\"graphics:100;70\") \r\n        \r\n        const size : int := 25   % The buttons size.\r\n        const border : int := 3\r\n        \r\n        var starButton, mapleButton, starPic, mapleLeafPic : int\r\n        \r\n        procedure StarPressed\r\n            Text.Locate (1, 1)\r\n            put \"Star Pressed    \"\r\n        end StarPressed\r\n        \r\n        procedure MaplePressed\r\n            Text.Locate (1, 1)\r\n            put \"Maple Pressed \"\r\n        end MaplePressed\r\n        \r\n        % Create the pictures.\r\n        % The star.\r\n        Draw.Star (border, border, border + size, border + size, black)\r\n        Draw.Star (border + 1, border + 1, border + size - 1,\r\n            border + size - 1, black)\r\n        Draw.FillStar (border + 2, border + 2, border + size - 2,\r\n            border + size - 2, brightred)\r\n        starPic := Pic.New (0, 0, 2 * border + size, 2 * border + size)\r\n        \r\n        % The mapleleaf.\r\n        Draw.FillBox (border, border, border + size, border + size, white)\r\n        Draw.MapleLeaf (border, border, border + size, border + size, black)\r\n        Draw.MapleLeaf (border + 1, border + 1, border + size - 1,\r\n            border + size - 1, black)\r\n        Draw.FillMapleLeaf (border + 2, border + 2, border + size - 2,\r\n            border + size - 2, brightred)\r\n        mapleLeafPic := Pic.New (0, 0, 2 * border + size, 2 * border + size)\r\n        \r\n        % Create the picture buttons.\r\n        Draw.Cls\r\n        starButton := GUI.CreatePictureButton (10, 10, starPic, StarPressed)\r\n        mapleButton := GUI.CreatePictureButton (55, 10, mapleLeafPic, \r\n            MaplePressed)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "The following program displays five picture buttons which output a message when pressed.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The following program displays five picture buttons which output a message when pressed.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.CreatePictureButton Example",
+          "file": "GUI.CreatePictureButton.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "When <b>GUI.CreatePictureButton</b> or <b>GUI.CreatePictureButtonFull</b><i> </i>is called, the newly created picture will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>\r\nWhen a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.</p>\n<p>\r\n</p>",
+      "mdown_content": "When **GUI.CreatePictureButton** or **GUI.CreatePictureButtonFull*** *is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. \nWhen a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The following GUI subprograms can be called with a picture button as the <i>widgetID</i> parameter:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<b>GUI.Show</b>,<b> GUI.Hide</b>,<b> GUI.Enable</b>,<b> GUI.Disable</b>,<b> GUI.Dispose</b>,<b> GUI.GetX</b>,<b> GUI.GetY</b>,<b> GUI.GetWidth</b>,<b> GUI.GetHeight</b>, <b>GUI.SetPosition</b>,<b> GUI.SetSize</b>,<b> GUI.SetPositionAndSize</b>\n</td>\n</tr></table>\n<p>\r\n</p>",
+      "mdown_content": "The following GUI subprograms can be called with a picture button as the *widgetID* parameter:\n\n \n\n**GUI.Show**,** GUI.Hide**,** GUI.Enable**,** GUI.Disable**,** GUI.Dispose**,** GUI.GetX**,** GUI.GetY**,** GUI.GetWidth**,** GUI.GetHeight**, **GUI.SetPosition**,** GUI.SetSize**,** GUI.SetPositionAndSize**\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.CreatePictureButton</b>, not by calling <b>CreatePictureButton</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreatePictureButton**, not by calling **CreatePictureButton**.\n"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "View.SetTransparentColor",
+  "fileName": "view_settransparentcolor",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>View.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
+      "mdown_content": "**View.SetTransparentColor** (*colorNumber* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>View.SetTransparentColor</b> procedure sets the color in the \r\n          Run window that should be considered transparent when a picture is \r\n          drawn on the window using the <tt>picUnderMerge</tt> mode. \r\n          If no color is specified, then the default background color \r\n          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent \r\n          color. You can change this background color using <b>RGB.SetColor</b>\r\n          on color 0.<p>\r\n    </p>",
+      "mdown_content": "The **View.SetTransparentColor** procedure sets the color in the \nRun window that should be considered transparent when a picture is \ndrawn on the window using the picUnderMerge mode. \nIf no color is specified, then the default background color \n(**colorbg**, usually **white**) is used as the transparent \ncolor. You can change this background color using **RGB.SetColor**\non color 0.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "This call is often used when you want the Run window to have a\r\n          background color other than color 0.<p>\r\n    </p>",
+      "mdown_content": "This call is often used when you want the Run window to have a\nbackground color other than color 0.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const SIZE : int := 20\r\n        procedure DrawCheckerBoard\r\n            cls\r\n            for x : 0 .. maxx by SIZE\r\n                for y : 0 .. maxy by SIZE\r\n                    if ((x + y) div SIZE) mod 2 = 0 then\r\n                        Draw.FillBox (x, y, x + SIZE, y + SIZE, brightgreen)\r\n                    end if\r\n                end for\r\n            end for\r\n        end DrawCheckerBoard\r\n\r\n        var pic : int := Pic.FileNew (\"data files/airplane.bmp\")\r\n        Pic.SetTransparentColor (pic, brightred)\r\n        RGB.SetColor (0, 1., 0., 0.)\r\n        DrawCheckerBoard\r\n        Pic.Draw (pic, 100, 100, picUnderMerge)\r\n        View.SetTransparentColor (brightgreen)\r\n        Pic.Draw (pic, 400, 100, picUnderMerge)"
+      ],
+      "raw_content": "This program displays two images loaded from the same file. In the \r\n          second image,the transparent color has been set to bright red (that\r\n          is, the parts of the image that are meant to be transparent are in\r\n          bright red).\r\n          <p>\r\n</p>",
+      "mdown_content": "This program displays two images loaded from the same file. In the \nsecond image,the transparent color has been set to bright red (that\nis, the parts of the image that are meant to be transparent are in\nbright red).\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "View.SetTransparentColor Example",
+          "file": "View.SetTransparentColor.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "<b>View.SetTransparentColour</b> is an alternate spelling for \r\n          <b>View.SetTransparentColor</b>.<p></p>",
+      "mdown_content": "**View.SetTransparentColour** is an alternate spelling for \n**View.SetTransparentColor**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.SetTransparentColor</b>, not by calling \r\n          <b>SetTransparentColor</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**View.SetTransparentColor**, not by calling \n**SetTransparentColor**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "pic_settransparentcolor"
+      ],
+      "raw_content": "<b><a href=\"pic_settransparentcolor.html\">Pic.SetTransparentColor</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[pic_settransparentcolor.html](Pic.SetTransparentColor)**.\n"
+    }
+  ]
+}

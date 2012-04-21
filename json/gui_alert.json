@@ -1,0 +1,45 @@
+{
+  "title": "GUI.Alert[2,3,Full]",
+  "fileName": "gui_alert",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "One of four procedures:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>GUI.Alert</b> (<i>title</i>, <i>msg</i> : <b>string</b>)</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>GUI.Alert2</b> (<i>title</i>, <i>msg1</i>, <i>msg2</i> : <b>string</b>)</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>GUI.Alert3</b> (<i>title</i>, <i>msg</i>1, <i>msg2</i>, <i>msg3</i> : <b>string</b>)</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>GUI.AlertFull</b> (<i>title</i> : <b>string,</b> </font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>msg</i> : <b>array</b> 1 .. * <b>of string</b>, <i>button</i> : <b>string</b>)</font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "One of four procedures:\n\n \n**GUI.Alert** (*title*, *msg* : **string**)\n \n**GUI.Alert2** (*title*, *msg1*, *msg2* : **string**)\n \n**GUI.Alert3** (*title*, *msg*1, *msg2*, *msg3* : **string**)\n \n**GUI.AlertFull** (*title* : **string,** \n \n \n*msg* : **array** 1 .. * **of string**, *button* : **string**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Displays a dialog box with the string specified by <i>msg</i> in it. There is a single button labelled <i>OK</i> which dismisses the dialog and resumes execution. The <i>title</i> parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.<p>\r\nThe <b>GUI.Alert2</b> and <b>GUI.Alert3</b> procedures allow the user to specify a two or three line message respectively. The <b>GUI.AlertFull</b> procedure allows the user to specify any number of lines of text in the string array specified by <i>msg</i> as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.</p>\n<p>\r\n<b>Note</b>: This function is <b>not</b> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.</p>\n<p>\r\n</p>",
+      "mdown_content": "Displays a dialog box with the string specified by *msg* in it. There is a single button labelled *OK* which dismisses the dialog and resumes execution. The *title* parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.\nThe **GUI.Alert2** and **GUI.Alert3** procedures allow the user to specify a two or three line message respectively. The **GUI.AlertFull** procedure allows the user to specify any number of lines of text in the string array specified by *msg* as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.\n\n**Note**: This function is **not** available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        \r\n        var fileName : string\r\n        var streamNumber : int\r\n        \r\n        loop\r\n            fileName := GUI.SaveFile (\"Save As\")\r\n            open : streamNumber, fileName, put\r\n            exit when streamNumber > 0\r\n            GUI.Alert (\"Open Failure\", \"\\\"\" + fileName + \r\n                \"\\\" could not be opened\")\r\n        end loop\r\n        "
+      ],
+      "raw_content": "The following program asks the user for the name of a file puts up an alert dialog box if it fails.<p>\r\n</p>",
+      "mdown_content": "The following program asks the user for the name of a file puts up an alert dialog box if it fails."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        \r\n        var fileName : string\r\n        var streamNumber : int\r\n        loop\r\n            fileName := GUI.SaveFile (\"Save As\")\r\n            open : streamNumber, fileName, put\r\n            exit when streamNumber > 0\r\n            GUI.Alert2 (\"Open Failure\", \r\n                \"\\\"\" + fileName + \"\\\" could not be opened.\",\r\n                \"Reason: \" + Error.LastMsg)\r\n        end loop"
+      ],
+      "raw_content": "The following program asks the user for the name of a file puts up a more complete alert dialog box if it fails.<p>\r\n</p>",
+      "mdown_content": "The following program asks the user for the name of a file puts up a more complete alert dialog box if it fails."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var message : array 1 .. 10 of string\r\n        for i : 1 .. 10\r\n            message (i) := \"\"\r\n        end for\r\n        \r\n        message (1) := \"The program must now quit\"\r\n        message (2) := \"becasue of an unrecoverable error.\"\r\n        message (3) := \"A Read Error occurred while reading\"\r\n        message (4) := \"file \\\"\" + fileName + \"\\\".\"\r\n        message (5) := Error.LastMsg\r\n        GUI.AlertFull (\"Error\", message, \"Abort\")"
+      ],
+      "raw_content": "The following program fragment displays an alert with four lines of text and a button that says \"Abort\".<p>\r\n</p>",
+      "mdown_content": "The following program fragment displays an alert with four lines of text and a button that says \"Abort\"."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.Alert</b>, not by calling <b>Alert</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.Alert**, not by calling **Alert**.\n"
+    }
+  ]
+}

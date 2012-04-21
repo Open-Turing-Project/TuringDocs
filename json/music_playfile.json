@@ -1,0 +1,95 @@
+{
+  "title": "Music.PlayFile",
+  "fileName": "music_playfile",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Music.PlayFile</b> ( <i>fileName</i> : <b>string</b> )<p></p></font>",
+      "mdown_content": "**Music.PlayFile** ( *fileName* : **string** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Music.PlayFile</b> procedure is used to play a file of music. \r\n          The file must be in one of the acceptable formats and the machine, \r\n\t  must have the appropriate hardware.<p>\r\n\t  The <i>fileName</i> parameter must give the format of the file:</p>\n<p>\r\n\t  </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>WAV files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"WAV:filename\" or \"filename.WAV\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>MP3 files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"MP3:filename\" or \"filename.MP3\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>MIDI files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"MIDI:filename\" or \"filename.MIDI\"</td>\r\n\t    </tr>\n</table>\n<p>\r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a <b>Music.Sound</b>, <b>Music.Play</b> \r\n\t  or <b>Music.PlayFile </b>command, it stops until the command is \r\n\t  finished. However, other processes will continue executing.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **Music.PlayFile** procedure is used to play a file of music. \nThe file must be in one of the acceptable formats and the machine, \nmust have the appropriate hardware.\nThe *fileName* parameter must give the format of the file:\n\n\n \nWAV files\n \n\"WAV:filename\" or \"filename.WAV\"\n \nMP3 files\n \n\"MP3:filename\" or \"filename.MP3\"\n \nMIDI files\n \n\"MIDI:filename\" or \"filename.MIDI\"\n\nSounds are produced synchronously on a per process basis. This means \nthat when a process executes a **Music.Sound**, **Music.Play** \nor **Music.PlayFile **command, it stops until the command is \nfinished. However, other processes will continue executing.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "To play music while performing any other activity, the call to \r\n          <b>Music.PlayFile</b> must be executed in its own <b>process</b>. \r\n\t  The process is then called using the <b>fork</b> command. When a \r\n\t  <b>fork</b> command is given, execution starts on the process (like \r\n\t  a procedure call) <i>and</i> continues following the <b>fork</b> \r\n\t  command <i>at the same time</i>.<p>\r\n    </p>",
+      "mdown_content": "To play music while performing any other activity, the call to \n**Music.PlayFile** must be executed in its own **process**. \nThe process is then called using the **fork** command. When a \n**fork** command is given, execution starts on the process (like \na procedure call) *and* continues following the **fork** \ncommand *at the same time*.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        process DoMusic\r\n            loop\r\n                Music.PlayFile (\"branden3.wav\")\r\n            end loop\r\n        end DoMusic\r\n        \r\n        fork DoMusic\r\n        var x, y, clr : int\r\n        loop\r\n            x := Rand.Int (0, maxx)\r\n            y := Rand.Int (0, maxy)\r\n            clr := Rand.Int (0, maxcolor)\r\n            Draw.FillOval (x, y, 30, 30, clr)\r\n        end loop"
+      ],
+      "raw_content": "This program plays the music in the file \"<i>branden3.wav</i>\" \r\n\t  while drawing ovals on the screen.<p>\r\n</p>",
+      "mdown_content": "This program plays the music in the file \"*branden3.wav*\" \nwhile drawing ovals on the screen."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Music.PlayFile Example",
+          "file": "Music.PlayFile.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "To play a sound file requires that the computer be equipped \r\n\t  with a sound card and speakers.<p>\r\n    </p>",
+      "mdown_content": "To play a sound file requires that the computer be equipped \nwith a sound card and speakers.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The Turing 4.1 software can play files in the following audio \r\n          formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 \r\n\t  files (.mp3). In general, MIDI files are the most efficient and \r\n\t  thus are the preferred form for longer music pieces like background \r\n\t  music. WAVE files can record anything, not just music, so are often \r\n\t  used for sound effects.<p>\r\n    </p>",
+      "mdown_content": "The Turing 4.1 software can play files in the following audio \nformats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 \nfiles (.mp3). In general, MIDI files are the most efficient and \nthus are the preferred form for longer music pieces like background \nmusic. WAVE files can record anything, not just music, so are often \nused for sound effects.\n"
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        Music.PlayFile (\"cd\")       % Play the entire CD\r\n        Music.PlayFile (\"cd:3\")     % Play the third track on the CD\r\n        "
+      ],
+      "raw_content": "The Turing 4.1 software can also play music on a compact disk. \r\n          To play the complete contents of the compact disk, the filename \r\n\t  is &#147;cd&#148;. To play a single track from a compact disk, the filename \r\n\t  is &#147;cd:[track&nbsp;number]&#148;.<p>\r\n</p>",
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. \nTo play the complete contents of the compact disk, the filename \nis cd. To play a single track from a compact disk, the filename \nis cd:[track number]."
+    },
+    {
+      "title": "Details",
+      "raw_content": "On the PC, different formats of music can play simultaneously. This \r\n\t  means that a program might use a MIDI file as a background soundtrack \r\n\t  and then use WAVE files for individual sound effects. The sound \r\n\t  effects would not interfere with the background music. Playing a \r\n\t  second music file with the same format as an already playing piece \r\n\t  immediately halts the first piece and starts the second.  This can \r\n\t  be used to stop a single type of music by playing a short silent \r\n\t  piece of music.<p>\r\n    </p>",
+      "mdown_content": "On the PC, different formats of music can play simultaneously. This \nmeans that a program might use a MIDI file as a background soundtrack \nand then use WAVE files for individual sound effects. The sound \neffects would not interfere with the background music. Playing a \nsecond music file with the same format as an already playing piece \nimmediately halts the first piece and starts the second.  This can \nbe used to stop a single type of music by playing a short silent \npiece of music.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const STAR_SIZE : int := 80\r\n        var pic, x, y, dx, dy : int\r\n        var finished : boolean := false\r\n        \r\n        % Play sound effect once.\r\n        process Boing\r\n            Music.PlayFile (\"boing.wav\")\r\n        end Boing\r\n        \r\n        % Loop playing background music until 'finished' is true.\r\n        process BackgroundMusic\r\n            loop\r\n                exit when finished\r\n                Music.PlayFile (\"background.mid\")\r\n            end loop\r\n        end BackgroundMusic\r\n        \r\n        % Get the original picture\r\n        Draw.FillStar (3, 3, STAR_SIZE - 3, STAR_SIZE - 3, brightred)\r\n        pic := Pic.New (0, 0, STAR_SIZE, STAR_SIZE)\r\n        cls\r\n        \r\n        % Set the initial location and direction of movement\r\n        x := Rand.Int (0, maxx - STAR_SIZE)\r\n        y := Rand.Int (0, maxy - STAR_SIZE)\r\n        dx := 1\r\n        dy := 1\r\n        \r\n        fork BackgroundMusic    % Start background music playing\r\n        \r\n        loop\r\n            if x + dx < 0 or x + dx > maxx - STAR_SIZE then\r\n                dx := -dx\r\n                fork Boing\r\n            end if\r\n            if y + dy < 0 or y + dy > maxy - STAR_SIZE then\r\n                dy := -dy\r\n                fork Boing\r\n            end if\r\n            x += dx\r\n            y += dy\r\n            Pic.Draw (pic, x, y, picCopy)\r\n            exit when hasch\r\n            Time.Delay (5)\r\n        end loop\r\n        \r\n        % Stop the background music.\r\n        finished := true\r\n        Music.PlayFileStop"
+      ],
+      "raw_content": "This program bounces a maple leaf around the screen with background \r\n\t  music and a sound effect when the maple leaf hits an edge. When the \r\n\t  user presses any key, the program immediately exits.<p>\r\n</p>",
+      "mdown_content": "This program bounces a maple leaf around the screen with background \nmusic and a sound effect when the maple leaf hits an edge. When the \nuser presses any key, the program immediately exits."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Music.PlayFile Example",
+          "file": "Music.PlayFile2.t"
+        }
+      ]
+    },
+    {
+      "title": "See also",
+      "links": [
+        "music_playfilestop",
+        "music_playfilereturn",
+        "music_playfileloop"
+      ],
+      "raw_content": "<b><a href=\"music_playfilestop.html\">Music.PlayFileStop</a></b> to \r\n          halt a music file that is current playing, \r\n\t  <b><a href=\"music_playfilereturn.html\">Music.PlayFileReturn</a></b> for\r\n\t  a procedure that starts a music file playing and returns immediately\r\n\t  (meaning that you do not need to use <b>process</b> and <b>fork</b>\r\n\t  statements), and <b><a href=\"music_playfileloop.html\">Music.PlayFileLoop</a></b>\r\n\t  that starts a music file playing continuously until it is stopped \r\n\t  without the use of <b>process</b> or <b>fork</b>.<p>\r\n    </p>",
+      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to \nhalt a music file that is current playing, \n**[music_playfilereturn.html](Music.PlayFileReturn)** for\na procedure that starts a music file playing and returns immediately\n(meaning that you do not need to use **process** and **fork**\nstatements), and **[music_playfileloop.html](Music.PlayFileLoop)**\nthat starts a music file playing continuously until it is stopped \nwithout the use of **process** or **fork**.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Music.PlayFile</b>, not by calling <b>PlayFile</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Music.PlayFile**, not by calling **PlayFile**.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Sprite.Show",
+  "fileName": "sprite_show",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.Show</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Sprite.Show** (*spriteID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Displays a previously hidden sprite. <b>Sprite.Show</b> has no effect if the sprite is already visible.<p>\r\n</p>",
+      "mdown_content": "Displays a previously hidden sprite. **Sprite.Show** has no effect if the sprite is already visible."
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>Sprite.Hide</b> for an example of <b>Sprite.Show</b>.<p>\r\n</p>",
+      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.Show**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.Show</b>, not by calling <b>Show</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Show**, not by calling **Show**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_hide"
+      ],
+      "raw_content": "<b><a href=\"sprite_hide.html\">Sprite.Hide</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[sprite_hide.html](Sprite.Hide)**."
+    }
+  ]
+}

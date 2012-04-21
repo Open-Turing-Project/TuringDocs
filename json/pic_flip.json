@@ -1,0 +1,47 @@
+{
+  "title": "Pic.Flip",
+  "fileName": "pic_flip",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Flip</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Pic.Flip** (*picID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Flip</b> is used to create a new picture by flipping the \r\n          picture vertically. The resulting picture is exactly the same size \r\n\t  as the original, except it appears &#147;upside-down&#148;. <p>\r\n    </p>",
+      "mdown_content": "**Pic.Flip** is used to create a new picture by flipping the \npicture vertically. The resulting picture is exactly the same size \nas the original, except it appears upside-down. \n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "Note that the upside-down picture is a newly created picture. When \r\n          it is no longer needed, its memory should be released by using \r\n\t  <b>Pic.Free</b>.<p>\r\n    </p>",
+      "mdown_content": "Note that the upside-down picture is a newly created picture. When \nit is no longer needed, its memory should be released by using \n**Pic.Free**.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        % Get the original picture\r\n        var pic, newPic, width, height : int\r\n        pic := Pic.FileNew (\"lighthouse.jpg\")\r\n        newPic := Pic.Flip (pic)\r\n        width := Pic.Width (pic)\r\n        height := Pic.Height (pic)\r\n        \r\n        % Draw the two images: original and flipped\r\n        View.Set (\"graphics:\" + intstr (2 * width + 30) + \";\" + \r\n            intstr (height + 25) + \",nobuttonbar\")\r\n        Pic.Draw (pic, 10, 20, picCopy)\r\n        Draw.Text (\"Original\", 50, 5, defFontID, black)\r\n        Pic.Draw (newPic, 20 + Pic.Width (pic), 20, picCopy)\r\n        Draw.Text (\"Flipped\", 60 + Pic.Width (pic), 5, defFontID, black) \r\n        "
+      ],
+      "images": [
+        "pic_flip01.gif"
+      ],
+      "raw_content": "The program loads a picture from a file, flips it and then draws \r\n          the original and the upside-down image side by side in a window \r\n\t  after resizing the window to fit the two pictures.<p>\r\n</p>\r\n          <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
+      "mdown_content": "The program loads a picture from a file, flips it and then draws \nthe original and the upside-down image side by side in a window \nafter resizing the window to fit the two pictures.\n\n\n**Output from the Program**\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Pic.Flip Example",
+          "file": "Pic.Flip.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Flip</b>, not by calling <b>Flip</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Flip**, not by calling **Flip**.\n\n"
+    }
+  ]
+}

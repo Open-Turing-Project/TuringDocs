@@ -1,0 +1,34 @@
+{
+  "title": "GUI.GetVersion",
+  "fileName": "gui_getversion",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetVersion</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetVersion** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the current version of the GUI Procedure Library. Because the GUI Procedure Library is expected to grow, new versions will probably be made available at our web site <b>http://www.holtsoft.com/turing</b>. If you wish to use features that do not appear in earlier versions of the library, you can have your program check that the current available version meets the programs needs. <b>GUI.GetVersion </b>returns an integer from 100 - 999 and is read as 1.00 to 9.99.<p>\r\n</p>",
+      "mdown_content": "Returns the current version of the GUI Procedure Library. Because the GUI Procedure Library is expected to grow, new versions will probably be made available at our web site **http://www.holtsoft.com/turing**. If you wish to use features that do not appear in earlier versions of the library, you can have your program check that the current available version meets the programs needs. **GUI.GetVersion **returns an integer from 100 - 999 and is read as 1.00 to 9.99."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        if GUI.GetVersion < 110 then\r\n            put \"You must update to at least version 1.1 of the\"\r\n            put \"GUI Procedure Library to use this program.\"\r\n            return\r\n        end if"
+      ],
+      "raw_content": "The following program fragment immediately exits if OOT does not support version 1.1 of the GUI Procedure Library<p>\r\n</p>",
+      "mdown_content": "The following program fragment immediately exits if OOT does not support version 1.1 of the GUI Procedure Library"
+    },
+    {
+      "title": "Details",
+      "raw_content": "In version 1.00 (shipped with MacOOT 1.5), <b>GUI.GetVersion </b>did not exist.<p>\r\n</p>",
+      "mdown_content": "In version 1.00 (shipped with MacOOT 1.5), **GUI.GetVersion **did not exist."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetVersion</b>, not by calling <b>GetVersion</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetVersion**, not by calling **GetVersion**.\n"
+    }
+  ]
+}

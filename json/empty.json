@@ -1,0 +1,29 @@
+{
+  "title": "empty",
+  "fileName": "empty",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>empty</b> (<i>variableReference</i>) : <b>boolean</b><p>\r\n</p></font>",
+      "mdown_content": "**empty** (*variableReference*) : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>empty</b> function is used in a concurrent program. It returns <b>true</b> if the <i>variableReference</i>, which must be a condition variable, has no processes waiting for it. Processes join the queue of a condition variable by executing the <b>wait</b> statement, and are awakened by the <b>signal</b> statement.<p>\r\n</p>",
+      "mdown_content": "The **empty** function is used in a concurrent program. It returns **true** if the *variableReference*, which must be a condition variable, has no processes waiting for it. Processes join the queue of a condition variable by executing the **wait** statement, and are awakened by the **signal** statement."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "condition",
+        "wait",
+        "signal",
+        "fork",
+        "monitor",
+        "concurrencymodule"
+      ],
+      "raw_content": "<b><a href=\"condition.html\">condition</a></b>, <b><a href=\"wait.html\">wait</a></b>, <b><a href=\"signal.html\">signal</a></b>, <b><a href=\"fork.html\">fork</a></b> and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\nSee also predefined unit <b><a href=\"concurrencymodule.html\">Concurrency</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[condition.html](condition)**, **[wait.html](wait)**, **[signal.html](signal)**, **[fork.html](fork)** and **[monitor.html](monitor)**.\nSee also predefined unit **[concurrencymodule.html](Concurrency)**.\n"
+    }
+  ]
+}

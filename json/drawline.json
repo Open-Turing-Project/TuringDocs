@@ -1,0 +1,52 @@
+{
+  "title": "drawline",
+  "fileName": "drawline",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>drawline</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**drawline** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "drawline01.gif"
+      ],
+      "raw_content": "The <b>drawline</b> procedure is used to draw a line on the screen from (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center></center>",
+      "mdown_content": "The **drawline** procedure is used to draw a line on the screen from (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"graphics\")\r\n        % First draw a line from the left bottom to right top\r\n        drawline (0, 0, maxx, maxy, 1) \r\n        % Now draw a line from the left top to right bottom\r\n        drawline (0, maxy, maxx, 0, 1)"
+      ],
+      "raw_content": "This program draws a large X, reaching to each corner of the screen using color number 1. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (<b>maxx</b>, <b>maxy</b>) is the right top, etc.<p>\r\n</p>",
+      "mdown_content": "This program draws a large X, reaching to each corner of the screen using color number 1. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (**maxx**, **maxy**) is the right top, etc."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "drawline Example",
+          "file": "drawline.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\"<i> </i>mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
+      "mdown_content": "The meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\"* *mode, it will automatically be set to \"*graphics*\" mode.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setscreen",
+        "maxx",
+        "maxy"
+      ],
+      "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "index",
+  "fileName": "index",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>index</b> (<i>s </i>, <i>patt</i> : <b>string</b> ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**index** (*s *, *patt* : **string** ) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>index</b> function is used to find the position of <i>patt </i>within string <i>s</i>. For example, <b>index</b> ( \"chair\", \"air\" ) is 3.<p>\r\n</p>",
+      "mdown_content": "The **index** function is used to find the position of *patt *within string *s*. For example, **index** ( \"chair\", \"air\" ) is 3."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var word : string := \"willing\"\r\n        put index ( word, \"ill\" )"
+      ],
+      "raw_content": "This program outputs 2, because \"ill\" is a substring of \"willing\", starting at the second character of \"willing\".<p>\r\n</p>",
+      "mdown_content": "This program outputs 2, because \"ill\" is a substring of \"willing\", starting at the second character of \"willing\"."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        if index ( s, \" \" ) not= 0 then ",
+        "        if index ( \"0123456789\", ch) not= 0 then "
+      ],
+      "raw_content": "If the pattern (<i>patt</i>) does not appear in the string (<i>s</i>), <b>index</b> returns 0 (zero). For example, here is an <b>if</b> statement that checks to see if string <i>s</i> contains a blank:<p>\r\n</p>\r\nThe <b>index</b> is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an <b>if</b> statement that checks to see if <i>ch</i>,<i> </i>which is declared using <b>var</b> <i>ch </i>: <b>string</b> (1), is a digit:<p>\r\n</p>\r\nIf a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, <b>index</b> (\"pingpong\", \"ng\") returns 3.<p>\r\nIf <i>patt</i> is the null string, the result is 1.</p>\n<p>\r\n</p>",
+      "mdown_content": "If the pattern (*patt*) does not appear in the string (*s*), **index** returns 0 (zero). For example, here is an **if** statement that checks to see if string *s* contains a blank:\n\nThe **index** is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an **if** statement that checks to see if *ch*,* *which is declared using **var** *ch *: **string** (1), is a digit:\n\nIf a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, **index** (\"pingpong\", \"ng\") returns 3.\nIf *patt* is the null string, the result is 1.\n"
+    }
+  ]
+}

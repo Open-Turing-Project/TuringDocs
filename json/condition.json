@@ -1,0 +1,52 @@
+{
+  "title": "condition",
+  "fileName": "condition",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A conditionDeclaration is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>id </i>{ , <i>id </i>} : [ <b>array</b> <i>indexType</i> {, <i>indexType</i> } <b>of</b> ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">[ <i>conditionOption</i> ] <b>condition</b></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A conditionDeclaration is:\n\n \n**var** *id *{ , *id *} : [ **array** *indexType* {, *indexType* } **of** ]\n \n \n[ *conditionOption* ] **condition**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A condition is essentially a queue of sleeping processes. It is used in a concurrent program to allow processes to block themselves (by the <b>wait</b> statement) and later to be awakened (by the <b>signal</b> statement). A condition variable, which can occur only inside a monitor (a special kind of module that handles concurrency) or monitor class, is used by the <b>wait</b> and <b>signal</b> statements for putting processes to sleep and later waking them up.<p>\r\n</p>",
+      "mdown_content": "A condition is essentially a queue of sleeping processes. It is used in a concurrent program to allow processes to block themselves (by the **wait** statement) and later to be awakened (by the **signal** statement). A condition variable, which can occur only inside a monitor (a special kind of module that handles concurrency) or monitor class, is used by the **wait** and **signal** statements for putting processes to sleep and later waking them up."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        monitor resource\r\n            export request, release\r\n        \r\n            var available : boolean := true\r\n            var nowAvailable : condition\r\n        \r\n            procedure request\r\n                if not available then\r\n                    wait nowAvailable   % Go to sleep\r\n                end if\r\n                assert available\r\n                available := false      % Allocate resource\r\n            end request\r\n        \r\n            procedure release\r\n                assert not available    % Resource is allocated\r\n                available := true       % Free the resource\r\n                signal nowAvailable % Wake up one process\r\n                                % If any are sleeping\r\n            end release\r\n        \r\n        end resource\r\n        process worker\r\n            loop\r\n                \r\n                resource.request        % Block until available\r\n                 use resource \r\n                resource.release\r\n            end loop\r\n        end worker\r\n        \r\n        fork worker             % Activate one worker\r\n        fork worker             % Activate another worker"
+      ],
+      "raw_content": "The processes use this monitor to gain exclusive access to a resource. A process wanting to use the resource calls the <i>request</i> entry point and is blocked until the resource is free. When the process is finished with the resource, it calls the <i>release</i> entry point. This monitor is essentially a binary <i>semaphore</i> in which the semaphore's <i>P</i> operation is the <i>request</i> and the <i>V</i> is the <i>release</i>.<p>\r\n</p>",
+      "mdown_content": "The processes use this monitor to gain exclusive access to a resource. A process wanting to use the resource calls the *request* entry point and is blocked until the resource is free. When the process is finished with the resource, it calls the *release* entry point. This monitor is essentially a binary *semaphore* in which the semaphore's *P* operation is the *request* and the *V* is the *release*."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "condition Data Type Example",
+          "file": "condition.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "A <i>conditionOption </i>is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(a)</td>\n<td width=\"10\">&nbsp;</td>\n<td><b>priority</b></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(b)</td>\n<td width=\"10\">&nbsp;</td>\n<td><b>deferred</b></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(c)</td>\n<td width=\"10\">&nbsp;</td>\n<td><b>timeout</b></td>\n</tr>\n</table>\n<p>\r\nThe <b>priority</b> option requires that the corresponding <b>wait</b> statements include priorities. Options (b) and (c) declare <i>deferred</i> conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an <i>immediate</i> (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or <b>timeout</b>).</p>\n<p>\r\nA <b>timeout</b> option means the signaling is deferred and that an extra parameter to the <b>wait</b> statement must give a <i>timeout</i> <i>interval</i>. If a process waits longer than its interval, it is automatically signaled. Beware that the <i>empty</i> function can be non-repeatable when applied to timeout conditions. For example, <b>empty</b>(<i>c</i>)<i> </i>may not be equal to <b>empty</b>(<i>c</i>) in a single expression. In the current (1999) version of Turing, the time for time outs is measured in simulation time rather than real time. See the <b>pause</b> statement.</p>\n<p>\r\nConditions cannot be named as types, cannot be contained in records, unions or collections and cannot be declared in statements (such as <b>begin</b> or <b>loop</b>) or in subprograms. They can only be declared in monitors and monitor classes.</p>\n<p>\r\nThere is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.</p>\n<p>\r\nNote that <i>conditionOption</i> must precede the keyword <b>condition</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "A *conditionOption *is one of:\n\n \n(a)\n \n**priority**\n \n(b)\n \n**deferred**\n \n(c)\n \n**timeout**\n\nThe **priority** option requires that the corresponding **wait** statements include priorities. Options (b) and (c) declare *deferred* conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an *immediate* (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or **timeout**).\n\nA **timeout** option means the signaling is deferred and that an extra parameter to the **wait** statement must give a *timeout* *interval*. If a process waits longer than its interval, it is automatically signaled. Beware that the *empty* function can be non-repeatable when applied to timeout conditions. For example, **empty**(*c*)* *may not be equal to **empty**(*c*) in a single expression. In the current (1999) version of Turing, the time for time outs is measured in simulation time rather than real time. See the **pause** statement.\n\nConditions cannot be named as types, cannot be contained in records, unions or collections and cannot be declared in statements (such as **begin** or **loop**) or in subprograms. They can only be declared in monitors and monitor classes.\n\nThere is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.\n\nNote that *conditionOption* must precede the keyword **condition**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "wait",
+        "signal",
+        "monitor",
+        "fork",
+        "empty",
+        "pause"
+      ],
+      "raw_content": "<b><a href=\"wait.html\">wait</a></b> and <b><a href=\"signal.html\">signal</a></b>. See also <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"fork.html\">fork</a></b>. See also <b><a href=\"empty.html\">empty</a></b>. See also <b><a href=\"pause.html\">pause</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[wait.html](wait)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**."
+    }
+  ]
+}

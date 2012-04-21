@@ -1,0 +1,40 @@
+{
+  "title": "Sprite.New",
+  "fileName": "sprite_new",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.New</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Sprite.New** (*picID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "links": [
+        "pic_settransparentcolor"
+      ],
+      "raw_content": "Creates a new sprite from a picture specified by <i>picID</i>. The \r\n          sprite starts invisible and should be given a <i>depth</i> using \r\n          <b>Sprite.SetHeight</b> and a position, given <b>Sprite.SetPosition</b> \r\n          before being made visible using <b>Sprite.Show</b>. When you are \r\n          finished using the sprite, the sprite should be freed using \r\n          <b>Sprite.Free</b>.\r\n          <p>\r\n          Sprites work best when they are of moderate size. Large sprites will \r\n          cause flashing when moved across the screen.\r\n          </p>\n<p>\r\n          Anything that is is color 0 in the picture will not appear when the \r\n          sprite is drawn. In other words, color 0 is transparent. (This is by\r\n          default. You can set the transparent color for a sprite by setting\r\n          the picture's transparent colour using\r\n          <b><a href=\"pic_settransparentcolor.html\">Pic.SetTransparentColor</a></b>.\r\n          </p>\n<p>\r\n    </p>",
+      "mdown_content": "Creates a new sprite from a picture specified by *picID*. The \nsprite starts invisible and should be given a *depth* using \n**Sprite.SetHeight** and a position, given **Sprite.SetPosition** \nbefore being made visible using **Sprite.Show**. When you are \nfinished using the sprite, the sprite should be freed using \n**Sprite.Free**.\n\nSprites work best when they are of moderate size. Large sprites will \ncause flashing when moved across the screen.\n\n\nAnything that is is color 0 in the picture will not appear when the \nsprite is drawn. In other words, color 0 is transparent. (This is by\ndefault. You can set the transparent color for a sprite by setting\nthe picture's transparent colour using\n**[pic_settransparentcolor.html](Pic.SetTransparentColor)**.\n\n\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>Sprite.Animate</b> for an example of <b>Sprite.New</b>.<p>\r\n    </p>",
+      "mdown_content": "See **Sprite.Animate** for an example of **Sprite.New**.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>Sprite.New</b>, not by calling <b>New</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Sprite.New**, not by calling **New**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_setheight",
+        "sprite_setposition",
+        "sprite_show",
+        "sprite_free"
+      ],
+      "raw_content": "<b><a href=\"sprite_setheight.html\">Sprite.SetHeight</a></b>, \r\n\t  <b><a href=\"sprite_setposition.html\">Sprite.SetPosition</a></b>, \r\n\t  <b><a href=\"sprite_show.html\">Sprite.Show</a></b> and \r\n\t  <b><a href=\"sprite_free.html\">Sprite.Free</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[sprite_setheight.html](Sprite.SetHeight)**, \n**[sprite_setposition.html](Sprite.SetPosition)**, \n**[sprite_show.html](Sprite.Show)** and \n**[sprite_free.html](Sprite.Free)**.\n"
+    }
+  ]
+}

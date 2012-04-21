@@ -1,0 +1,53 @@
+{
+  "title": "external",
+  "fileName": "external",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An <i>externalDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">(a) <b>external</b> [ <i>overrideName</i> ] <i>subprogramHeader</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">(b) <b>external</b> [ <i>addressSpec</i> ] <b>var</b> <i>id</i> [ : <i>typeSpec</i> ] [ :=<i>expn</i> ]</font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "An *externalDeclaration* is one of:\n\n \n(a) **external** [ *overrideName* ] *subprogramHeader*\n \n(b) **external** [ *addressSpec* ] **var** *id* [ : *typeSpec* ] [ :=*expn* ]"
+    },
+    {
+      "title": "Description",
+      "raw_content": "An external declaration is used to access variables or subprograms that are written in other languages or which require special linkage. This feature is implementation-dependent and dangerous and may cause arbitrary data or program corruption. From an interpretive environment such as Turing, this provides linkage to items that are part of the Turing system. For compiled versions of Turing, the linkage would be by means of a standard, operating system-specific linkage editor.<p>\r\n</p>",
+      "mdown_content": "An external declaration is used to access variables or subprograms that are written in other languages or which require special linkage. This feature is implementation-dependent and dangerous and may cause arbitrary data or program corruption. From an interpretive environment such as Turing, this provides linkage to items that are part of the Turing system. For compiled versions of Turing, the linkage would be by means of a standard, operating system-specific linkage editor."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In form (a) the optional <i>overrideName</i> must be an explicit string constant, such as \"<i>printf</i>\". If it is omitted, the external name is the name in the <i>subprogramHeader</i>. See <i>subprogramHeader</i>.<p>\r\nThe current implementation does not support form (b). This form is documented here in case a future version supports it. The <i>addressSpec </i>is a compile time expression (its value must fit in the range of the <b>addressint</b> type) or is a compile time string value. If the <i>addressSpec</i> is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of <i>typeSpec</i> or <i>expn</i> must be present.</p>\n<p>\r\nDeclaring variables at absolute addresses is useful for device management in computer architectures with memory mapped device registers. External variables declared to be <b>int</b> or <b>nat</b> will by default be checked for initialization. To avoid this check, declare them to be <b>int4</b> or <b>nat4</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "In form (a) the optional *overrideName* must be an explicit string constant, such as \"*printf*\". If it is omitted, the external name is the name in the *subprogramHeader*. See *subprogramHeader*.\nThe current implementation does not support form (b). This form is documented here in case a future version supports it. The *addressSpec *is a compile time expression (its value must fit in the range of the **addressint** type) or is a compile time string value. If the *addressSpec* is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of *typeSpec* or *expn* must be present.\n\nDeclaring variables at absolute addresses is useful for device management in computer architectures with memory mapped device registers. External variables declared to be **int** or **nat** will by default be checked for initialization. To avoid this check, declare them to be **int4** or **nat4**.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        external 16#9001 var ttyData : char\r\n        ttyData := 'A'  % Character A is assigned to hex location 9001"
+      ],
+      "raw_content": "Place variable <i>ttyData</i> at hexadecimal location 9001 and assign it the character A.<p>\r\n</p>",
+      "mdown_content": "Place variable *ttyData* at hexadecimal location 9001 and assign it the character A."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        external var ERRFLAG : int\r\n        if ERRFLAG = 0 then "
+      ],
+      "raw_content": "Access an external integer variable named ERRFLAG.<p>\r\n</p>",
+      "mdown_content": "Access an external integer variable named ERRFLAG."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        external \"x\" var y : int"
+      ],
+      "raw_content": "Access an integer variable which is called <i>y</i> in this program but is called <i>x</i> externally.<p>\r\n</p>",
+      "mdown_content": "Access an integer variable which is called *y* in this program but is called *x* externally."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        external \"circle\" procedure drawcircle (x, y, r, Color : int)"
+      ],
+      "raw_content": "Declare <i>drawcircle</i> to be a procedure that is externally known as <i>circle</i>.<p>\r\n</p>",
+      "mdown_content": "Declare *drawcircle* to be a procedure that is externally known as *circle*."
+    }
+  ]
+}

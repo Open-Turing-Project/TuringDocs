@@ -1,0 +1,29 @@
+{
+  "title": "Config.Lang",
+  "fileName": "config_lang",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Config.Lang</b> (<i>langCode</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Config.Lang** (*langCode* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Config.Lang</b> returns information about the language and the limitations of the implementation that the program is currently running. The parameter <i>langCode</i> determines what sort of information is passed back. <i>langCode</i> has a number of possible values, all summarized by a set of predefined constants.<p>\r\nAt the time of this writing, the following constants were defined:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td><i>clRelease</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the current release number of the environment (e.g. 4.02 = 400).</td>\n</tr>\n<tr valign=\"top\">\n<td><i>clLanguageVersion</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the current version number of the language (e.g. 1.81 = 181).</td>\n</tr>\n<tr valign=\"top\">\n<td><i>clMaxNumStreams</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the maximum number of I/O streams (used by the <b>open</b> and <b>close</b> statements) that can be opened at once.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>clMaxNumDirStreams</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the maximum number of directory streams that can be opened at once.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>clMaxNumRunTimeArgs</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the maximum number of run-time arguments.</td>\n</tr>\n</table>\n<p>\r\n</p>",
+      "mdown_content": "**Config.Lang** returns information about the language and the limitations of the implementation that the program is currently running. The parameter *langCode* determines what sort of information is passed back. *langCode* has a number of possible values, all summarized by a set of predefined constants.\nAt the time of this writing, the following constants were defined:\n\n\n*clRelease*\n \nreturn the current release number of the environment (e.g. 4.02 = 400).\n*clLanguageVersion*\n \nreturn the current version number of the language (e.g. 1.81 = 181).\n*clMaxNumStreams*\n \nreturn the maximum number of I/O streams (used by the **open** and **close** statements) that can be opened at once.\n*clMaxNumDirStreams*\n \nreturn the maximum number of directory streams that can be opened at once.\n*clMaxNumRunTimeArgs*\n \nreturn the maximum number of run-time arguments.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const version : int := Config.Lang (clLanguageVersion)\r\n        put \"The language version number is \", version"
+      ],
+      "raw_content": "This program prints the current environment version.<p>\r\n</p>",
+      "mdown_content": "This program prints the current environment version."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Config.Lang</b>, not by calling <b>Lang</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Config.Lang**, not by calling **Lang**.\n"
+    }
+  ]
+}

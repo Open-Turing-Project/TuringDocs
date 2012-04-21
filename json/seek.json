@@ -1,0 +1,41 @@
+{
+  "title": "seek",
+  "fileName": "seek",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>seekStatement</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>seek</b> : <i>fileNumber </i>, <i>filePosition</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>seek</b> : <i>fileNumber</i> , *</font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *seekStatement* is one of:\n\n \n(a)\n**seek** : *fileNumber *, *filePosition*\n \n(b)\n**seek** : *fileNumber* , *"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Random access of both source (ASCII or EBCDIC) and internal form (binary) files is provided by the <b>seek</b> and <b>tell</b> statements. The <b>seek</b> statement repositions the specified file so that the next input/output operation will begin at the specified point (<i>filePosition</i>) in the file.<p>\r\nThe <i>fileNumber</i> must specify a file that is open with <b>seek</b> capability. The <i>filePosition</i> is a non-negative integer offset in bytes from the beginning of the file. Usually, this is a number returned by the <b>tell</b> statement. (The first position in the file is position zero.)</p>\n<p>\r\nForm (b) specifies that the next operation is to begin at the position immediately following the current end of the file. A <i>filePosition</i> of zero specifies that the next operation is to start at the beginning of the file. Seeking to a position beyond the current end of the file and then writing, automatically fills the intervening positions with the internal representation of zero.</p>\n<p>\r\n</p>",
+      "mdown_content": "Random access of both source (ASCII or EBCDIC) and internal form (binary) files is provided by the **seek** and **tell** statements. The **seek** statement repositions the specified file so that the next input/output operation will begin at the specified point (*filePosition*) in the file.\nThe *fileNumber* must specify a file that is open with **seek** capability. The *filePosition* is a non-negative integer offset in bytes from the beginning of the file. Usually, this is a number returned by the **tell** statement. (The first position in the file is position zero.)\n\nForm (b) specifies that the next operation is to begin at the position immediately following the current end of the file. A *filePosition* of zero specifies that the next operation is to start at the beginning of the file. Seeking to a position beyond the current end of the file and then writing, automatically fills the intervening positions with the internal representation of zero.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var employeeRecord :\r\n            record\r\n                name : string ( 30 )\r\n                pay : int\r\n            end record\r\n        var fileNo : int\r\n        open : fileNo, \"payroll\", write, seek, mod\r\n        seek : fileNo, *        % Seek to the end of the file\r\n        write : fileNo, employeeRecord\r\n                        % This record is added to the end of the file"
+      ],
+      "raw_content": "This example shows how to use <b>seek</b> to append to the end of a file.<p>\r\n</p>",
+      "mdown_content": "This example shows how to use **seek** to append to the end of a file."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "read",
+        "write",
+        "open",
+        "close",
+        "tell",
+        "get",
+        "put",
+        "",
+        "tell",
+        "statement"
+      ],
+      "raw_content": "<b><a href=\"read.html\">read</a></b>, <b><a href=\"write.html\">write</a></b>, <b><a href=\"open.html\">open</a></b>, <b><a href=\"close.html\">close</a></b>, <b><a href=\"tell.html\">tell</a></b>, <b><a href=\"get.html\">get</a></b> and <b><a href=\"put.html\">put</a></b> statements. Another example use of <b><a href=\"\">seek</a></b> is given with the explanation of the <b><a href=\"tell.html\">tell</a></b> <a href=\"statement.html\">statement</a>.<p>\r\n</p>",
+      "mdown_content": "**[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[tell.html](tell)**, **[get.html](get)** and **[put.html](put)** statements. Another example use of **[](seek)** is given with the explanation of the **[tell.html](tell)** [statement.html](statement)."
+    }
+  ]
+}

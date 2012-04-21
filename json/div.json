@@ -1,0 +1,44 @@
+{
+  "title": "div",
+  "fileName": "div",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>div</b><p>\r\n</p></font>",
+      "mdown_content": "**div**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>div</b> operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 <b>div</b> 2 produces 3 and -7 <b>div</b> 2 produces -3.<p>\r\n</p>",
+      "mdown_content": "The **div** operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 **div** 2 produces 3 and -7 **div** 2 produces -3."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var eggCount : int\r\n        get eggCount\r\n        put \"You have \", eggCount div 12, \" dozen eggs\"\r\n        put \"You have \", eggCount mod 12, \" left over\""
+      ],
+      "raw_content": "In this example, <i>eggCount</i> is the total number of eggs. The first <b>put</b> statement determines how many dozen eggs there are. The second <b>put</b> statement determines how many extra eggs there are beyond the last dozen.<p>\r\n</p>",
+      "mdown_content": "In this example, *eggCount* is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "div Example",
+          "file": "div.t"
+        }
+      ]
+    },
+    {
+      "title": "See also",
+      "links": [
+        "infix",
+        "precedence",
+        "mod"
+      ],
+      "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"mod.html\">mod</a></b> operator.<p>\r\n</p>",
+      "mdown_content": "*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[mod.html](mod)** operator."
+    }
+  ]
+}

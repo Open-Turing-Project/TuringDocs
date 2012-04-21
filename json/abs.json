@@ -1,0 +1,47 @@
+{
+  "title": "abs",
+  "fileName": "abs",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>abs</b> (<i>expn</i>)<p>\r\n</p></font>",
+      "mdown_content": "**abs** (*expn*)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>abs</b> function is used to find the absolute value of a number (the <i>expn</i>). For example, <b>abs</b> (-23) is 23.<p>\r\n</p>",
+      "mdown_content": "The **abs** function is used to find the absolute value of a number (the *expn*). For example, **abs** (-23) is 23."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var x : real := -9.83\r\n        put abs (x) % Outputs 9.83"
+      ],
+      "raw_content": "This program outputs 9.83.<p>\r\n</p>",
+      "mdown_content": "This program outputs 9.83."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "abs Example",
+          "file": "abs.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>abs</b> function accepts numbers that are either <b>int</b>'s or <b>real</b>'s. The type of the result is the same type as the accepted number. The <b>abs</b> function is often used to see if one number <i>x</i> is within a given distance <i>d </i>of another number <i>y</i>; for example:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<b>if</b> <b>abs</b> (<i>x</i> - <i>y</i>) <b>&lt;</b>= <i>d</i> <b>then</b> &#133;</td>\n</tr></table>\n<p>\r\n</p>",
+      "mdown_content": "The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number *x* is within a given distance *d *of another number *y*; for example:\n\n \n\n**if** **abs** (*x* - *y*) **<**= *d* **then** \n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "mathmodule"
+      ],
+      "raw_content": "predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
+      "mdown_content": "predefined unit **[mathmodule.html](Math)**."
+    }
+  ]
+}

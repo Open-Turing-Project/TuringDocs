@@ -1,0 +1,43 @@
+{
+  "title": "Text.Locate",
+  "fileName": "text_locate",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Text.Locate</b> ( <i>row</i>, <i>column</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**Text.Locate** ( *row*, *column* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Text.Locate</b> procedure is used to<b> </b>move the cursor so that the next output from <b>put</b> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.<p>\r\n</p>",
+      "mdown_content": "The **Text.Locate** procedure is used to** **move the cursor so that the next output from **put** will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"screen\")\r\n        var row, column, colr : int\r\n        loop\r\n            row := Rand.Int (1, maxrow)\r\n            column := Rand.Int (1, maxcol)\r\n            colr := Rand.Int (0, maxcolor)\r\n            Text.Color (colr)\r\n            Text.Locate (row, column )\r\n            put \"*\" ..  % Use dot-dot to avoid clearing end of line\r\n        end loop"
+      ],
+      "raw_content": "This program outputs stars of random colors to random locations on the screen. The variable <i>colr </i>is purposely spelled differently from the word <i>color </i>to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <b>maxrow</b>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.<p>\r\n</p>",
+      "mdown_content": "This program outputs stars of random colors to random locations on the screen. The variable *colr *is purposely spelled differently from the word *color *to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Text.Locate</b> procedure is used to locate the next output based on row and column positions. See also the <b>Text.LocateXY </b>procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.<p>\r\nThe screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to\"<i>screen</i>\" mode.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Text.Locate** procedure is used to locate the next output based on row and column positions. See also the **Text.LocateXY **procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.\nThe screen should be in a \"*screen*\"* *or \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to\"*screen*\" mode.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.Locate</b> , not by calling <b>Locate</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.Locate** , not by calling **Locate**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_set",
+        "draw_dot"
+      ],
+      "raw_content": "<b><a href=\"view_set.html\">View.Set</a> </b>and <b><a href=\"draw_dot.html\">Draw.Dot</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[view_set.html](View.Set) **and **[draw_dot.html](Draw.Dot)**."
+    }
+  ]
+}

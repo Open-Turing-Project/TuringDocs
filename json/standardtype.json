@@ -1,0 +1,33 @@
+{
+  "title": "standardType",
+  "fileName": "standardtype",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>standardType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>real</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>string</b> [ ( <i>maximumLength</i> ) ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>boolean</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(e)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% natural number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(f)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int</b><i>n</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% n-byte integer (n=1</i>,<i> 2</i>,<i> 4)</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(g)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat</b><i>n</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% n-byte natural (n= 1</i>,<i> 2</i>,<i> 4)</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(h)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>real</b><i>n</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\"><i>% n-byte real (n=4</i>,<i> 8)</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(i)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>char</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% single character</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(j)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>char</b>(<i>n</i>)</font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\"><i>% n characters</i></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *standardType* is one of:\n\n \n(a)\n**int**\n \n(b)\n**real**\n \n(c)\n**string** [ ( *maximumLength* ) ]\n \n(d)\n**boolean**\n \n(e)\n**nat**\n \n \n*% natural number*\n \n(f)\n**int***n*\n \n \n*% n-byte integer (n=1*,* 2*,* 4)*\n \n(g)\n**nat***n*\n \n \n*% n-byte natural (n= 1*,* 2*,* 4)*\n \n(h)\n**real***n*\n \n*% n-byte real (n=4*,* 8)*\n \n(i)\n**char**\n \n \n*% single character*\n \n(j)\n**char**(*n*)\n \n*% n characters*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The standard types can be used throughout a program. They should not be included in an <b>import</b> list.<p>\r\n</p>",
+      "mdown_content": "The standard types can be used throughout a program. They should not be included in an **import** list."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "int",
+        "real",
+        "string1",
+        "boolean",
+        "nat",
+        "int",
+        "nat",
+        "real",
+        "char",
+        "char"
+      ],
+      "raw_content": "<b><a href=\"int.html\">int</a></b>, <b><a href=\"real.html\">real</a></b>, <b><a href=\"string1.html\">string</a></b> and <b><a href=\"boolean.html\">boolean</a></b>. See also <b><a href=\"nat.html\">nat</a></b>, <b><a href=\"int.html\">int</a><i>n</i></b>, <b><a href=\"nat.html\">nat</a><i>n</i></b>, <b><a href=\"real.html\">real</a><i>n</i></b>, <b><a href=\"char.html\">char</a></b>, <b><a href=\"char.html\">char</a></b>(<i>n</i>)<p>\r\n</p>",
+      "mdown_content": "**[int.html](int)**, **[real.html](real)**, **[string1.html](string)** and **[boolean.html](boolean)**. See also **[nat.html](nat)**, **[int.html](int)*n***, **[nat.html](nat)*n***, **[real.html](real)*n***, **[char.html](char)**, **[char.html](char)**(*n*)"
+    }
+  ]
+}

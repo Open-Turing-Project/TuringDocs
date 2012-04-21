@@ -1,0 +1,43 @@
+{
+  "title": "View.maxx",
+  "fileName": "view_maxx",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>maxx</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**maxx** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>maxx</b> function is used to<b> </b>determine the maximum value of x for the current graphics mode.<p>\r\n</p>",
+      "mdown_content": "The **maxx** function is used to** **determine the maximum value of x for the current graphics mode."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"graphics\")\r\n        \r\n        put \"The maximum x value is \", maxx"
+      ],
+      "raw_content": "This program outputs the maximum x value.<p>\r\n</p>",
+      "mdown_content": "This program outputs the maximum x value."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>graphics</i>\" mode. See <b>setscreen </b>for details.<p>\r\nFor the default IBM PC compatible graphics mode (CGA), <b>maxx</b> = 319.</p>\n<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*graphics*\" mode. If it is not, it will automatically be set to \"*graphics*\" mode. See **setscreen **for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxx** = 319.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported unqualified.<p>\r\nThis means that you can call the function by calling <b>maxx</b> or by calling <b>View.maxx</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **maxx** or by calling **View.maxx**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "draw_dot",
+        "maxx"
+      ],
+      "raw_content": "<b><a href=\"draw_dot.html\">Draw.Dot</a></b> for an example of the use of <b><a href=\"maxx.html\">maxx</a></b> and for a diagram illustrating x and y positions. <p>\r\n</p>",
+      "mdown_content": "**[draw_dot.html](Draw.Dot)** for an example of the use of **[maxx.html](maxx)** and for a diagram illustrating x and y positions. "
+    }
+  ]
+}

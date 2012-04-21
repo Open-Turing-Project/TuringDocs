@@ -1,0 +1,56 @@
+{
+  "title": "View.ClipAddOval",
+  "fileName": "view_clipaddoval",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>View.ClipAddOval</b> (<i>x</i>, <i>y</i>, <i>xradius</i>, <i>yradius</i> : <b>int</b>)<p></p></font>",
+      "mdown_content": "**View.ClipAddOval** (*x*, *y*, *xradius*, *yradius* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>View.ClipAddOval</b> procedure adds another oval specified by \r\n          (<i>x</i>, <i>y</i>) and <i>xradius</i> and <i>yradius</i>) to the \r\n          clipping region. If no clipping region has been specified, then the \r\n          oval becomes the complete clipping region.<p>\r\n          A clipping region is the region that the output will appear in. If \r\n          the rectangle is specified as the clipping region, any drawing done \r\n          outside the oval will not appear.</p>\n<p>\r\n          To set the initial clipping, or remove the old region and replace it \r\n          with a new rectangle, use <b>View.ClipSet</b>. To set the clipping \r\n          region back to the entire screen or window, use <b>View.ClipOff</b>.</p>\n<p>\r\n          These commands only work in \"<i>graphics</i>\" mode.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **View.ClipAddOval** procedure adds another oval specified by \n(*x*, *y*) and *xradius* and *yradius*) to the \nclipping region. If no clipping region has been specified, then the \noval becomes the complete clipping region.\nA clipping region is the region that the output will appear in. If \nthe rectangle is specified as the clipping region, any drawing done \noutside the oval will not appear.\n\nTo set the initial clipping, or remove the old region and replace it \nwith a new rectangle, use **View.ClipSet**. To set the clipping \nregion back to the entire screen or window, use **View.ClipOff**.\n\nThese commands only work in \"*graphics*\" mode.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const c1 : int := maxy div 4\r\n        const c2 : int := 3* maxy div 4\r\n        const radius : int := maxy div 4\r\n        View.ClipAddOval (c1, c1, radius, radius)\r\n        View.ClipAddOval (c1, c2, radius, radius)\r\n        View.ClipAddOval (c2, c1, radius, radius)\r\n        View.ClipAddOval (c2, c2, radius, radius)\r\n\r\n        % Draw the random squares in the box\r\n        var x, y, clr : int\r\n        loop\r\n            x := Rand.Int (0, maxx - 30)     % Random x\r\n            y := Rand.Int (0, maxy - 30)     % Random y\r\n            clr := Rand.Int (0, maxcolor)    % Random color\r\n            Draw.FillBox (x, y, x + 30, y + 30, clr)\r\n        end loop"
+      ],
+      "raw_content": "This program sets the clipping region to five circles and then draws \r\n          random squares. The squares will only appear (or partially appear) \r\n          in the ovals.<p>\r\n</p>",
+      "mdown_content": "This program sets the clipping region to five circles and then draws \nrandom squares. The squares will only appear (or partially appear) \nin the ovals."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "View.ClipAddOval Example",
+          "file": "View.ClipAddOval.t"
+        }
+      ],
+      "raw_content": "<p>\r\n    </p>",
+      "mdown_content": "\n"
+    },
+    {
+      "title": "Execute",
+      "raw_content": "By combining animation using <b>View.Update</b> and \r\n          <b>View.ClipAddOval</b>, you can achieve a moving spotlight effect.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch SpotLight Example\">\n<param name=\"Item1\" value=\"-1,SpotLight.t;View.Moving SpotLight Example\"></object></p>\n<p>\r\n    </p>",
+      "mdown_content": "By combining animation using **View.Update** and \n**View.ClipAddOval**, you can achieve a moving spotlight effect.\n\n\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.ClipAddOval</b>, not by calling <b>ClipAddOval</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**View.ClipAddOval**, not by calling **ClipAddOval**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_clipset-2",
+        "view_clipadd-2",
+        "view_clipoff-2"
+      ],
+      "raw_content": "<a href=\"view_clipset-2.html\"><b>View.ClipSet</b></a>, \r\n          <a href=\"view_clipadd-2.html\"><b>View.ClipAdd</b></a> and \r\n          <a href=\"view_clipoff-2.html\"><b>View.ClipOff</b></a> \r\n          functions.",
+      "mdown_content": "[view_clipset-2.html](**View.ClipSet**), \n[view_clipadd-2.html](**View.ClipAdd**) and \n[view_clipoff-2.html](**View.ClipOff**) \nfunctions."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "takepic",
+  "fileName": "takepic",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<b>takepic</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <b>var</b> <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>)<p>\r\n    </p>",
+      "mdown_content": "**takepic** (*x1*, *y1*, *x2*, *y2* : **int**, **var** *buffer* : **array** 1 .. * **of** **int**)\n"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>takepic</b> procedure is used to record the pixel values in a \r\n          rectangle, with left bottom and right corners of (<i>x1</i>, \r\n          <i>y1</i>) and (<i>x2</i>, <i>y2</i>), in the buffer array. This \r\n          requires a sufficiently-large buffer (see <b>sizepic</b> ). \r\n          The <b>drawpic</b> procedure is used to make copies of the recorded \r\n          rectangle on the screen.<p>\r\n    </p>",
+      "mdown_content": "The **takepic** procedure is used to record the pixel values in a \nrectangle, with left bottom and right corners of (*x1*, \n*y1*) and (*x2*, *y2*), in the buffer array. This \nrequires a sufficiently-large buffer (see **sizepic** ). \nThe **drawpic** procedure is used to make copies of the recorded \nrectangle on the screen.\n"
+    },
+    {
+      "title": "Example",
+      "images": [
+        "takepic01.gif"
+      ],
+      "raw_content": "After drawing a happy face, this program copies the face to a new \r\n          location.<p>\r\n\t  </p>\n<center></center>",
+      "mdown_content": "After drawing a happy face, this program copies the face to a new \nlocation.\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "takepic/drawpic/sizepic Example",
+          "file": "takepic.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The integer values that <b>takepic</b> places in the buffer can be \r\n          read or written (using the <b>read</b> and <b>write</b> statements). \r\n          Unfortunately, if a value happens to be the pattern used to represent \r\n          the uninitialized value (the largest negative number the hardware can \r\n          represent) assignment (by:=) and <b>put</b> of the individual integer \r\n          values in the buffer will fail.<p>\r\n          The screen should be in a \"<i>graphics</i>\" mode. See the \r\n          <b>setscreen</b> procedure for details. If the screen is not in a \r\n          \"<i>graphics</i>\" mode, it will automatically be set to \r\n          \"<i>graphics</i>\" mode.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The integer values that **takepic** places in the buffer can be \nread or written (using the **read** and **write** statements). \nUnfortunately, if a value happens to be the pattern used to represent \nthe uninitialized value (the largest negative number the hardware can \nrepresent) assignment (by:=) and **put** of the individual integer \nvalues in the buffer will fail.\nThe screen should be in a \"*graphics*\" mode. See the \n**setscreen** procedure for details. If the screen is not in a \n\"*graphics*\" mode, it will automatically be set to \n\"*graphics*\" mode.\n\n"
+    },
+    {
+      "title": "Details",
+      "links": [
+        "pic_draw",
+        "pic_new",
+        "picmodule",
+        "picmodule"
+      ],
+      "raw_content": "The <b>drawpic</b>, <b>takepic</b>, and <b>sizepic</b> subprograms\r\n          have been made obsolete by the subprograms \r\n          <b><a href=\"pic_draw.html\">Pic.Draw</a></b> and\r\n          <b><a href=\"pic_new.html\">Pic.New</a></b> of the \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module.  Users are \r\n          strongly suggested to use those routines instead. The \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module also contains \r\n          subprograms to load images from files.<p>\r\n    </p>",
+      "mdown_content": "The **drawpic**, **takepic**, and **sizepic** subprograms\nhave been made obsolete by the subprograms \n**[pic_draw.html](Pic.Draw)** and\n**[pic_new.html](Pic.New)** of the \n**[picmodule.html](Pic)** module.  Users are \nstrongly suggested to use those routines instead. The \n**[picmodule.html](Pic)** module also contains \nsubprograms to load images from files.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sizepic",
+        "drawpic",
+        "setscreen",
+        "maxx",
+        "maxy",
+        "drawdot",
+        "drawline",
+        "drawbox",
+        "drawoval",
+        "picmodule"
+      ],
+      "raw_content": "<b><a href=\"sizepic.html\">sizepic</a></b> and \r\n          <b><a href=\"drawpic.html\">drawpic</a></b>. See also \r\n          <b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b>, \r\n          <b><a href=\"drawdot.html\">drawdot</a></b>, \r\n          <b><a href=\"drawline.html\">drawline</a></b>, \r\n          <b><a href=\"drawbox.html\">drawbox</a></b>, and \r\n          <b><a href=\"drawoval.html\">drawoval</a></b>.<p>\r\n          See also predefined unit <b><a href=\"picmodule.html\">Pic</a></b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**[sizepic.html](sizepic)** and \n**[drawpic.html](drawpic)**. See also \n**[setscreen.html](setscreen)**, \n**[maxx.html](maxx)**, \n**[maxy.html](maxy)**, \n**[drawdot.html](drawdot)**, \n**[drawline.html](drawline)**, \n**[drawbox.html](drawbox)**, and \n**[drawoval.html](drawoval)**.\nSee also predefined unit **[picmodule.html](Pic)**.\n\n"
+    }
+  ]
+}

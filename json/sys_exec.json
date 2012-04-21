@@ -1,0 +1,44 @@
+{
+  "title": "Sys.Exec",
+  "fileName": "sys_exec",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sys.Exec</b> ( <i>command</i> : <b>string</b> ) : <b>boolean</b><p>\r\n</p></font>",
+      "mdown_content": "**Sys.Exec** ( *command* : **string** ) : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Sys.Exec</b> function<b> </b>is used to<b> </b>execute an application or more often, open a data file with its associated application. <b>Sys.Exec</b> can be used to launch such programs as the Internet Browser by specifying a URL. <b>Sys.Exec</b> launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)<p>\r\n</p>",
+      "mdown_content": "The **Sys.Exec** function** **is used to** **execute an application or more often, open a data file with its associated application. **Sys.Exec** can be used to launch such programs as the Internet Browser by specifying a URL. **Sys.Exec** launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        if not Sys.Exec (\"http://www.holtsoft.com/turing/support\") then\r\n            put \"The Sys.Exec call failed\"\r\n            put \"Error: \", Error.LastMsg\r\n        end if\r\n        if not Sys.Exec (\"skate.avi\") then\r\n            put \"The Sys.Exec call failed\"\r\n            put \"Error: \", Error.LastMsg\r\n        end if"
+      ],
+      "raw_content": "This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player.<p>\r\n</p>",
+      "mdown_content": "This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player."
+    },
+    {
+      "title": "Details",
+      "raw_content": "When the <b>Sys.Exec</b> procedure is used, the executing program continues execution immediately while the launched application is running. <p>\r\n</p>",
+      "mdown_content": "When the **Sys.Exec** procedure is used, the executing program continues execution immediately while the launched application is running. "
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.Exec</b>, not by calling <b>Exec</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.Exec**, not by calling **Exec**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sys_nargs",
+        "sys_fetcharg",
+        "sys_getenv"
+      ],
+      "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b>, <b><a href=\"sys_fetcharg.html\">Sys.FetchArg</a></b> and <b><a href=\"sys_getenv.html\">Sys.GetEnv</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**, **[sys_fetcharg.html](Sys.FetchArg)** and **[sys_getenv.html](Sys.GetEnv)** functions."
+    }
+  ]
+}

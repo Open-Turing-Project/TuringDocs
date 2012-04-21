@@ -1,0 +1,37 @@
+{
+  "title": "Sprite.ChangePic",
+  "fileName": "sprite_changepic",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.ChangePic</b> (<i>spriteID</i>, <i>picID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Sprite.ChangePic** (*spriteID*, *picID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Changes the picture associated with a sprite while maintaining the sprites height and visibility status. A typical use <b>Sprite.ChangePic</b> would be to animate a sprite that stays in position.<p>\r\n</p>",
+      "mdown_content": "Changes the picture associated with a sprite while maintaining the sprites height and visibility status. A typical use **Sprite.ChangePic** would be to animate a sprite that stays in position."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pics : array 0 .. 5 of int\r\n        var sprite: int\r\n        for i : 1 .. 6\r\n            pics (i  1) := Pic.FileNew (\"Pic\" + intstr (i) + \".bmp\")\r\n            if Error.Last not= 0 then\r\n                put \"Error loading image: \", Error.LastMsg\r\n                return\r\n            end if\r\n        end for\r\n        figure := Sprite.New (pics (0))\r\n        Sprite.SetPosition (sprite, maxx div 2, maxy div 2, true)\r\n        Sprite.Show (sprite)\r\n        for i : 1 .. 100\r\n            Sprite.ChangePic (sprite, pics (i mod 6))\r\n        end for\r\n        Sprite.Free (sprite)"
+      ],
+      "raw_content": "Here is a program that t that loads six images from files <i>Pic1.bmp<b> </b></i>through<i><b> </b>Pic6.bmp</i> and then displays them sequentially in the center of the screen.<p>\r\n</p>",
+      "mdown_content": "Here is a program that t that loads six images from files *Pic1.bmp** ***through*** **Pic6.bmp* and then displays them sequentially in the center of the screen."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.ChangePic</b>, not by calling <b>ChangePic</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.ChangePic**, not by calling **ChangePic**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_new"
+      ],
+      "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[sprite_new.html](Sprite.New)**."
+    }
+  ]
+}

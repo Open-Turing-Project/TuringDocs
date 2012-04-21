@@ -1,0 +1,31 @@
+{
+  "title": "GUI.GetScrollBarWidth",
+  "fileName": "gui_getscrollbarwidth",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetScrollBarWidth</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetScrollBarWidth** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the width of a scroll bar. Useful when placing a scroll bar widget beneath or beside another widget or object.<p>\r\n</p>",
+      "mdown_content": "Returns the width of a scroll bar. Useful when placing a scroll bar widget beneath or beside another widget or object."
+    },
+    {
+      "title": "Example",
+      "raw_content": "See the <i>ScrollPic</i> program in <b>GUI.CreateHorizontalScrollBarFull </b>for an example of <b>GUI.GetScrollBarWidth</b>.<p>\r\n</p>",
+      "mdown_content": "See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetScrollBarWidth**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetScrollBarWidth</b>, not by calling <b>GetScrollBarWidth</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetScrollBarWidth**, not by calling **GetScrollBarWidth**.\n"
+    },
+    {
+      "title": "See also",
+      "raw_content": "<b>GUI.CreateHorizontalScrollBar</b> and <b>GUI.CreateVerticalScrollBar</b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.CreateHorizontalScrollBar** and **GUI.CreateVerticalScrollBar**."
+    }
+  ]
+}

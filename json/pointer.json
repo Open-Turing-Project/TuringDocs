@@ -1,0 +1,11 @@
+{
+  "title": "pointer",
+  "fileName": "pointer",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "width=\"10\">&nbsp;<",
+      "mdown_content": "width=\"10\"> "
+    }
+  ]
+}

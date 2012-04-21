@@ -1,0 +1,63 @@
+{
+  "title": "View.Update",
+  "fileName": "view_update",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>View.Update</b><p></p></font>",
+      "mdown_content": "**View.Update**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>View.Update</b> procedure updates a Run window from an \r\n          offscreen bitmap. It is used with the command \r\n          <b>View.Set</b>&nbsp;(\"offscreenonly\") which prevents the Run window from \r\n          being updated until the <b>View.Update</b> command is given.<p>\r\n    </p>",
+      "mdown_content": "The **View.Update** procedure updates a Run window from an \noffscreen bitmap. It is used with the command \n**View.Set** (\"offscreenonly\") which prevents the Run window from \nbeing updated until the **View.Update** command is given.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        % Place some circles around the screen\r\n        const RADIUS : int := 30\r\n        const NUM_BALLS : int := 20\r\n        var x, y, dx, dy, clr : array 1 .. NUM_BALLS of int\r\n        for i : 1 .. NUM_BALLS\r\n            x (i) := Rand.Int (RADIUS, maxx - RADIUS)\r\n            y (i) := Rand.Int (RADIUS, maxy - RADIUS)\r\n            dx (i) := Rand.Int (-3, 3)\r\n            dy (i) := Rand.Int (-3, 3)\r\n            clr (i) := Rand.Int (1, 15)\r\n        end for\r\n        \r\n        % Now, any drawing to the screen won't appear until a \r\n        % View.Update is given.\r\n        View.Set (\"offscreenonly\")\r\n        loop\r\n            cls % Clear the offscreen window\r\n            for i : 1 .. NUM_BALLS\r\n                if x (i) + dx (i) < RADIUS or \r\n                        x (i) + dx (i) > maxx - RADIUS then\r\n                    dx (i) := -dx (i)\r\n                end if\r\n                if y (i) + dy (i) < RADIUS or \r\n                        y (i) + dy (i) > maxy - RADIUS then\r\n                    dy (i) := -dy (i)\r\n                end if\r\n                x (i) := x (i) + dx (i)\r\n                y (i) := y (i) + dy (i)\r\n                Draw.FillOval (x (i), y (i), RADIUS, RADIUS, clr (i))\r\n            end for\r\n            % All the circles have been drawn.  Now update the screen.\r\n            View.Update\r\n            Time.Delay (5)\r\n        end loop"
+      ],
+      "raw_content": "This program displays 30 circles bouncing around the screen. To see\r\n          the effect without <b>View.Update</b>, comment out the line\r\n          <b>View.Set</b>&nbsp;(\"offscreenonly\")<p>\r\n</p>",
+      "mdown_content": "This program displays 30 circles bouncing around the screen. To see\nthe effect without **View.Update**, comment out the line\n**View.Set** (\"offscreenonly\")"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "View.Update Example",
+          "file": "View.Update.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "All Turing Run windows have both an onscreen visible window and an \r\n          offscreen window. Whenever any output is sent to the screen, both \r\n          the onscreen window and the offscreen window are updated. When the \r\n          Run window needs to be updated (for example when another window is \r\n          moved over top of it and then removed), Turing copies the offscreen \r\n          window onto the onscreen window.<p>\r\n          When the <b>View.Set</b>&nbsp;(\"offscreenonly\") command is given, Turing \r\n          no longer draws to the onscreen window when any drawing command is \r\n          given. However, it does update the offscreen window. When the \r\n          <b>View.Update</b> command is given, the entire offscreen window \r\n          is copied to the onscreen window.</p>\n<p>\r\n          This can be used to provide smooth, flicker-free animation. Animated \r\n          objects flicker when the object being animated disappears from the \r\n          onscreen window for a period of time. By using \r\n          <b>View.Set</b>&nbsp;(\"offscreenonly\") / <b>View.Update</b>, the onscreen \r\n          window is never blank. Instead, the offscreen window drawn over top \r\n          off the on screen window, replacing it. This means that the on-screen\r\n          window is never blanked out, eliminating the flickering found in \r\n          the animation.</p>\n<p>\r\n    </p>",
+      "mdown_content": "All Turing Run windows have both an onscreen visible window and an \noffscreen window. Whenever any output is sent to the screen, both \nthe onscreen window and the offscreen window are updated. When the \nRun window needs to be updated (for example when another window is \nmoved over top of it and then removed), Turing copies the offscreen \nwindow onto the onscreen window.\nWhen the **View.Set** (\"offscreenonly\") command is given, Turing \nno longer draws to the onscreen window when any drawing command is \ngiven. However, it does update the offscreen window. When the \n**View.Update** command is given, the entire offscreen window \nis copied to the onscreen window.\n\nThis can be used to provide smooth, flicker-free animation. Animated \nobjects flicker when the object being animated disappears from the \nonscreen window for a period of time. By using \n**View.Set** (\"offscreenonly\") / **View.Update**, the onscreen \nwindow is never blank. Instead, the offscreen window drawn over top \noff the on screen window, replacing it. This means that the on-screen\nwindow is never blanked out, eliminating the flickering found in \nthe animation.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "It's very easy to forget that no output will appear in the Run window \r\n          when using <b>View.Update</b>. Remember to use \r\n          <b>View.Set</b>(\"nooffscreenonly\") to turn off this feature sending \r\n          output for debugging purposes.<p>\r\n    </p>",
+      "mdown_content": "It's very easy to forget that no output will appear in the Run window \nwhen using **View.Update**. Remember to use \n**View.Set**(\"nooffscreenonly\") to turn off this feature sending \noutput for debugging purposes.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "<b>View.Update</b> should not be used in conjunction with the \r\n          <b>Sprite </b>module. Sprites can be considered a limited version \r\n          of this technique. <b>View.Update</b> also works well when the entire \r\n          background is changing.<p>\r\n    </p>",
+      "mdown_content": "**View.Update** should not be used in conjunction with the \n**Sprite **module. Sprites can be considered a limited version \nof this technique. **View.Update** also works well when the entire \nbackground is changing.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.Update</b>, not by calling <b>Update</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**View.Update**, not by calling **Update**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_set",
+        "view_updatearea"
+      ],
+      "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b> for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options.<p>\r\n          <b><a href=\"view_updatearea.html\">View.UpdateArea</a></b> for updating\r\n          part of the window at a time.\r\n    </p>",
+      "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" \nand \"nooffscreenonly\" options.\n**[view_updatearea.html](View.UpdateArea)** for updating\npart of the window at a time.\n"
+    }
+  ]
+}

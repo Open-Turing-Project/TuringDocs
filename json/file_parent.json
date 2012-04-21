@@ -1,0 +1,44 @@
+{
+  "title": "File.Parent",
+  "fileName": "file_parent",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<b>File.Parent</b> (<i>pathName</i> : <b>string</b>) : <b>string</b><p>\r\n</p>",
+      "mdown_content": "**File.Parent** (*pathName* : **string**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>File.Parent </b>returns a string representing the parent directory in Turing format (forward slashes) of the path passed as\r\na parameter. The path name passed in does not have to describe an existing file or directory.<br>\r\nAttempting to obtain the parent directory of a root directory (for example \"c:/\") will return the same\r\nroot directory and will set the value returned by <b>Error.Last</b> to a non-zero value.",
+      "mdown_content": "**File.Parent **returns a string representing the parent directory in Turing format (forward slashes) of the path passed as\na parameter. The path name passed in does not have to describe an existing file or directory.\nAttempting to obtain the parent directory of a root directory (for example \"c:/\") will return the same\nroot directory and will set the value returned by **Error.Last** to a non-zero value."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pathName : string\r\n        put \"Enter a path: \" ..\r\n        get pathName\r\n        loop\r\n            pathName := File.Parent (pathName)\r\n            exit when Error.Last not= eNoError\r\n            put pathName\r\n        end loop"
+      ],
+      "raw_content": "This program obtains a path from the user and then lists all the parent directories until it reaches the root directory.<p>\r\n</p>",
+      "mdown_content": "This program obtains a path from the user and then lists all the parent directories until it reaches the root directory."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "File.Parent Example",
+          "file": "File.Parent.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of <b>File.FullPath</b>, <b>File.Parent</b>, <b>File.Exists</b>, and <b>Dir.Exists</b>.<p>\r\n  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n  <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,TestPathName.t;Path Name Testing Example\"></object></p>\n<p></p>",
+      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\nThis program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Parent</b>, not by calling <b>Parent</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Parent**, not by calling **Parent**.\n"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "enum",
+  "fileName": "enum",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An <i>enumeratedType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>enum</b> (<i>id </i>{ , <i>id </i>} )</font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "An *enumeratedType* is:\n\n \n**enum** (*id *{ , *id *} )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The values of an enumerated type are distinct and increasing. They can be thought of as the values 0, 1, 2 and so on, but arithmetic is not allowed with these values.<p>\r\n</p>",
+      "mdown_content": "The values of an enumerated type are distinct and increasing. They can be thought of as the values 0, 1, 2 and so on, but arithmetic is not allowed with these values."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type color : enum (red, green, blue)\r\n        var c : color := color . red\r\n        var d : color := succ (c)       % d becomes green"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, <i>color</i>.<i>red</i>. Enumerated values can be compared for equality and for ordering. The <b>succ</b> and <b>pred</b> functions can be used to find the value following or preceding a given enumerated value. The <b>ord</b> function can be used to find the enumeration position of a value, for example, <b>ord</b> (<i>color</i>.<i>red</i>) is 0.<p>\r\nEnumerated types cannot be combined with integers or with other enumerated types.</p>\n<p>\r\n</p>",
+      "mdown_content": "Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, *color*.*red*. Enumerated values can be compared for equality and for ordering. The **succ** and **pred** functions can be used to find the value following or preceding a given enumerated value. The **ord** function can be used to find the enumeration position of a value, for example, **ord** (*color*.*red*) is 0.\nEnumerated types cannot be combined with integers or with other enumerated types.\n"
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        var a : array enum (red, green, blue) of int"
+      ],
+      "raw_content": "It is illegal to declare an \"anonymous\" enum. The only legal declaration for an enum is in a type declaration. For example, the following is now illegal:<p>\r\n</p>\r\nGiven that there is no (easy) way of generating an enum value without it being a named type, this should not impact any but the most bizarre code.<p>\r\n</p>",
+      "mdown_content": "It is illegal to declare an \"anonymous\" enum. The only legal declaration for an enum is in a type declaration. For example, the following is now illegal:\n\nGiven that there is no (easy) way of generating an enum value without it being a named type, this should not impact any but the most bizarre code."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        type colors : enum (red, green, blue)\r\n        var c : colors := colors . red\r\n        put c       % outputs \"red\" (without the quotes)"
+      ],
+      "raw_content": "The \"put\" and \"get\" statement semantics have been expanded to allow put's and get's of enum values. The values printed and input are the element names themselves, case sensitive. For example, for<p>\r\n</p>",
+      "mdown_content": "The \"put\" and \"get\" statement semantics have been expanded to allow put's and get's of enum values. The values printed and input are the element names themselves, case sensitive. For example, for"
+    }
+  ]
+}

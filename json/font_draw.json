@@ -1,0 +1,67 @@
+{
+  "title": "Font.Draw",
+  "fileName": "font_draw",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.Draw</b> (<i>txtStr</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
+      "mdown_content": "**Font.Draw** (*txtStr* : **string**, *x*, *y*, *fontID*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Font.Draw </b>is used to actually draw text in a specified font. \r\n          The <i>textStr</i> parameter contains the string to be drawn. The \r\n          <i>x</i> and <i>y</i> parameters are the location of the lower left \r\n          hand corner of the text to be displayed. The <i>fontID</i> parameter \r\n          is the number of the font in which the text is to be drawn. The \r\n          <i>Color</i> parameter is used to specify the color in which the \r\n          text is to appear.<p>\r\n          Note that the text that appears is completely unrelated to the text \r\n          that appears using <b>put</b>. <b>Font.Draw</b> is a graphics command \r\n          and thus does not use or affect the cursor location.</p>\n<p>\r\n          The text drawn by the <b>Font.Draw</b> procedure does not erase the \r\n          background.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**Font.Draw **is used to actually draw text in a specified font. \nThe *textStr* parameter contains the string to be drawn. The \n*x* and *y* parameters are the location of the lower left \nhand corner of the text to be displayed. The *fontID* parameter \nis the number of the font in which the text is to be drawn. The \n*Color* parameter is used to specify the color in which the \ntext is to appear.\nNote that the text that appears is completely unrelated to the text \nthat appears using **put**. **Font.Draw** is a graphics command \nand thus does not use or affect the cursor location.\n\nThe text drawn by the **Font.Draw** procedure does not erase the \nbackground.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If <b>Font.Draw</b> is passed an invalid font ID, a fatal error \r\n          occurs. If the <b>Font.Draw</b> call fails for other (non-fatal) \r\n          reasons, then <b>Error.Last</b> will return a non-zero value \r\n          indicating the reason for the failure. <b>Error.LastMsg</b> will \r\n          return a string which contains the textual version of the error.<p>\r\n    </p>",
+      "mdown_content": "If **Font.Draw** is passed an invalid font ID, a fatal error \noccurs. If the **Font.Draw** call fails for other (non-fatal) \nreasons, then **Error.Last** will return a non-zero value \nindicating the reason for the failure. **Error.LastMsg** will \nreturn a string which contains the textual version of the error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var font1, font2, font3, font4 : int\r\n        font1 := Font.New (\"serif:12\")\r\n        assert font1 > 0\r\n        font2 := Font.New (\"sans serif:18:bold\")\r\n        assert font2 > 0\r\n        font3 := Font.New (\"mono:9\")\r\n        assert font3 > 0\r\n        font4 := Font.New (\"Palatino:24:bold,italic\")\r\n        assert font4 > 0\r\n        Font.Draw (\"This is in a serif font\", 50, 30, font1, red)\r\n        Font.Draw (\"This is in a sans serif font\", 50, 80, font2, brightblue)\r\n        Font.Draw (\"This is in a mono font\", 50, 130, font3, colorfg)\r\n        Font.Draw (\"This is in Palatino (if available)\", 50, 180, font4, green)\r\n        Font.Free (font1)\r\n        Font.Free (font2)\r\n        Font.Free (font3)\r\n        Font.Free (font4)"
+      ],
+      "raw_content": "The program prints out several phrases in a variety of fonts.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The program prints out several phrases in a variety of fonts.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.Draw Example",
+          "file": "Font.Draw.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "To use the same font as is used by the <b>put</b> statement, use \r\n          <b>defFontID</b> for the font number.  This font does not have to \r\n          be created or freed by the user, and allows a program to quickly \r\n          place text in any location on the screen.",
+      "mdown_content": "To use the same font as is used by the **put** statement, use \n**defFontID** for the font number.  This font does not have to \nbe created or freed by the user, and allows a program to quickly \nplace text in any location on the screen."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Font.Draw (\"Drawing Here\", 100, 120, defFontID, brightred)\r\n        Font.Draw (\"and Here\", 180, 90, defFontID, brightgreen)"
+      ],
+      "raw_content": "The program draws two strings in the default font (<b>defFontID</b>).<p>\r\n</p>",
+      "mdown_content": "The program draws two strings in the default font (**defFontID**)."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.Draw with defFontID Example",
+          "file": "Font.Draw2.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Font.Draw</b>, not by calling <b>Draw</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Font.Draw**, not by calling **Draw**.\n\n"
+    }
+  ]
+}

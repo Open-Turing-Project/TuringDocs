@@ -1,0 +1,41 @@
+{
+  "title": "addr",
+  "fileName": "addr",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>addr</b> (<i>reference</i>)<p>\r\n</p></font>",
+      "mdown_content": "**addr** (*reference*)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>addr</b> attribute is used to find the integer address of a variable or non scalar constant. This is implementation-dependent. This address may be used in an indirection operation <b>@</b>.<p>\r\n</p>",
+      "mdown_content": "The **addr** attribute is used to find the integer address of a variable or non scalar constant. This is implementation-dependent. This address may be used in an indirection operation **@**."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var x : real\r\n        var a : addressint := addr (x)"
+      ],
+      "raw_content": "Set <i>a</i> to be the address of <i>x</i>.<p>\r\n</p>",
+      "mdown_content": "Set *a* to be the address of *x*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The value of the address produced by <b>addr</b> is of type <b>addressint</b>, an integer type whose range is that of the underlying memory addresses.<p>\r\nThe concept of an address is implementation-dependent. For example, an optimizing compiler could determine that a variable does not require space because the program could be computed without the variable with no change in output. However, in most implementations, types have a predictable size and variables of that type occupy that number of bytes in memory.</p>\n<p>\r\n</p>",
+      "mdown_content": "The value of the address produced by **addr** is of type **addressint**, an integer type whose range is that of the underlying memory addresses.\nThe concept of an address is implementation-dependent. For example, an optimizing compiler could determine that a variable does not require space because the program could be computed without the variable with no change in output. However, in most implementations, types have a predictable size and variables of that type occupy that number of bytes in memory.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "indirection",
+        "cheat",
+        "explicitintegerconstant",
+        "pointer",
+        "sizeof"
+      ],
+      "raw_content": "the <a href=\"indirection.html\">indirection operator @</a>, <b><a href=\"cheat.html\">cheat</a></b>, <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a> </i>(how to write hexadecimal constants), and <b><a href=\"pointer.html\">pointer</a></b> type (in particular unchecked pointer type). See also <b><a href=\"sizeof.html\">sizeof</a></b>, which returns the size of a variable.<p>\r\n</p>",
+      "mdown_content": "the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[sizeof.html](sizeof)**, which returns the size of a variable."
+    }
+  ]
+}

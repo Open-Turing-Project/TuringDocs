@@ -1,0 +1,30 @@
+{
+  "title": "strint",
+  "fileName": "strint",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>strint</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**strint** ( *s* : **string** [ , *base* : **int** ] ) : **int**"
+    },
+    {
+      "title": "Description",
+      "code": [
+        "        strint ( intstr ( i ) ) = i."
+      ],
+      "raw_content": "The <b>strint</b> function is used to convert a string to an integer. The integer is equivalent to string <i>s</i>. The number <i>base </i>parameter<i> </i>is optional, for example, <b>strint</b> (\"47\") = 47. In Turing proper, the <i>base</i> is not allowed and is assumed to be 10.<p>\r\nString <i>s</i> must consist of a possibly null sequence of blanks, then an optional plus or minus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c &#133; (alternately A, B, C &#133;) which represent the digit values 10, 11, 12 &#133; The <i>base</i>, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, <b>strint </b>(\"FF\", 16) = 255.</p>\n<p>\r\nThe <b>intstr</b> function is the inverse of <b>strint</b>, so for any integer <i>i</i>, </p>\n<p>\r\n</p>",
+      "mdown_content": "The **strint** function is used to convert a string to an integer. The integer is equivalent to string *s*. The number *base *parameter* *is optional, for example, **strint** (\"47\") = 47. In Turing proper, the *base* is not allowed and is assumed to be 10.\nString *s* must consist of a possibly null sequence of blanks, then an optional plus or minus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c  (alternately A, B, C ) which represent the digit values 10, 11, 12  The *base*, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, **strint **(\"FF\", 16) = 255.\n\nThe **intstr** function is the inverse of **strint**, so for any integer *i*, \n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "chr",
+        "ord",
+        "intstr",
+        "strnat"
+      ],
+      "raw_content": "<b><a href=\"chr.html\">chr</a></b>, <b><a href=\"ord.html\">ord</a></b>, <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strnat.html\">strnat</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)**, **[intstr.html](intstr)** and **[strnat.html](strnat)** functions."
+    }
+  ]
+}

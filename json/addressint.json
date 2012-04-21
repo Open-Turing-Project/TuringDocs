@@ -1,0 +1,41 @@
+{
+  "title": "addressint",
+  "fileName": "addressint",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>addressint</b><p>\r\n</p></font>",
+      "mdown_content": "**addressint**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>addressint</b> (address integer) type is an integer type whose range of value is the same as that of the underlying computer. This range is, by its nature, implementation-dependent. On 32-bit architectures, it is commonly the same range as <b>nat4</b> (4-byte natural number).<p>\r\n</p>",
+      "mdown_content": "The **addressint** (address integer) type is an integer type whose range of value is the same as that of the underlying computer. This range is, by its nature, implementation-dependent. On 32-bit architectures, it is commonly the same range as **nat4** (4-byte natural number)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type r :\r\n            record\r\n                i : int\r\n                c28 : char (28)\r\n                c11 : char (11)\r\n            end record\r\n        var a : addressint      % An integer\r\n                           % a is assigned an integer value\r\n        r @ (a) . c28 (7) := 'B'        % Use indirection operator @"
+      ],
+      "raw_content": "Record <i>r</i> contains three fields, one of which has type <b>char</b>(28). Variable <i>a</i> is an integer whose range of values is the same as the addresses of the underlying computer. This assigns <i>B</i> to the seventh character of a record of type <i>r</i> which is assumed to be located at absolute address <i>a</i>.<p>\r\n</p>",
+      "mdown_content": "Record *r* contains three fields, one of which has type **char**(28). Variable *a* is an integer whose range of values is the same as the addresses of the underlying computer. This assigns *B* to the seventh character of a record of type *r* which is assumed to be located at absolute address *a*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Although <b>addressint</b> is called an integer type, it is commonly equivalent to a natural type such as <b>nat4</b> (for 32-bit machines).<p>\r\nBe careful not to confuse <b>addressint</b> with pointer types. In low level languages such as assembler and C, addresses and pointers are the same. In Turing, however, a pointer is a high level concept that is more abstract than a machine address. A Turing pointer is a reference to an object, and the representation of this reference depends upon the implementation. In current Turing implementations, pointers (which are by default checked) are represented as a time stamp (a unique number) together with an address. The time stamp is used to make sure that the pointer actually locates an object. There are also <b>unchecked</b> pointers. An <b>unchecked</b> pointer's internal representation is a machine address. You can use type cheats (a dangerous feature) to translate between <b>addressint</b> and unchecked pointers. This is meaningful in current implementations.</p>\n<p>\r\n</p>",
+      "mdown_content": "Although **addressint** is called an integer type, it is commonly equivalent to a natural type such as **nat4** (for 32-bit machines).\nBe careful not to confuse **addressint** with pointer types. In low level languages such as assembler and C, addresses and pointers are the same. In Turing, however, a pointer is a high level concept that is more abstract than a machine address. A Turing pointer is a reference to an object, and the representation of this reference depends upon the implementation. In current Turing implementations, pointers (which are by default checked) are represented as a time stamp (a unique number) together with an address. The time stamp is used to make sure that the pointer actually locates an object. There are also **unchecked** pointers. An **unchecked** pointer's internal representation is a machine address. You can use type cheats (a dangerous feature) to translate between **addressint** and unchecked pointers. This is meaningful in current implementations.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "indirection",
+        "cheat",
+        "explicitintegerconstant",
+        "pointer",
+        "addr"
+      ],
+      "raw_content": "the <a href=\"indirection.html\">indirection operator @</a>, <b><a href=\"cheat.html\">cheat</a></b>, <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a> </i>(how to write hexadecimal constants), and <b><a href=\"pointer.html\">pointer</a></b> type (in particular unchecked pointer type). See also <b><a href=\"addr.html\">addr</a></b>, which returns the address of a variable.<p>\r\n</p>",
+      "mdown_content": "the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable."
+    }
+  ]
+}

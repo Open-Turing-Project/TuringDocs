@@ -1,0 +1,39 @@
+{
+  "title": "GUI.ResetQuit",
+  "fileName": "gui_resetquit",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.ResetQuit</b><p></p></font>",
+      "mdown_content": "**GUI.ResetQuit**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>GUI.ResetQuit</b> procedure resets the \"quitting\" flag that\r\n          is set by the <b>GUI.Quit</b> program. The <b>GUI.ResetQuit</b>\r\n\t  can be used whenever you want to have a program that exits\r\n\t  from the main processing loop, does some work, and then \r\n\t  reenters the processing loop.<p>\r\n\t  Without <b>GUI.ResetQuit</b>, the program will exit the second\r\n\t  loop immediately because <b>GUI.ProcessEvent</b> will return\r\n\t  <b>true</b>.\r\n    </p>",
+      "mdown_content": "The **GUI.ResetQuit** procedure resets the \"quitting\" flag that\nis set by the **GUI.Quit** program. The **GUI.ResetQuit**\ncan be used whenever you want to have a program that exits\nfrom the main processing loop, does some work, and then \nreenters the processing loop.\nWithout **GUI.ResetQuit**, the program will exit the second\nloop immediately because **GUI.ProcessEvent** will return\n**true**.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        var radio : array 1 .. 4 of int\r\n        var button : int\r\n        var starColor : int := red\r\n\r\n        % Action procedures for the radio buttons\r\n        procedure Red\r\n            starColor := brightred\r\n        end Red\r\n\r\n        procedure Green\r\n            starColor := brightgreen\r\n        end Green\r\n\r\n        procedure Blue\r\n            starColor := brightblue\r\n        end Blue\r\n\r\n        procedure Cyan\r\n            starColor := brightcyan\r\n        end Cyan\r\n\r\n        % Create the radio buttons\r\n        radio (1) := GUI.CreateRadioButton (15, maxy - 35, \"Red\", 0, Red)\r\n        radio (2) := GUI.CreateRadioButton (-1, -1, \"Green\", radio (1), Red)\r\n        radio (3) := GUI.CreateRadioButton (-1, -1, \"Blue\", radio (2), Blue)\r\n        radio (4) := GUI.CreateRadioButton (-1, -1, \"Cyan\", radio (3), Cyan)\r\n\r\n        % Create the push button\r\n        button := GUI.CreateButton (100, maxy - 70, 0, \"Draw Stars\", GUI.Quit)\r\n\r\n        % Process events until the \"Draw Stars\" button is pressed\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop\r\n\r\n        % Dispose of all the radio buttons and the push button\r\n        for i : 1 .. 4\r\n            GUI.Dispose (radio (i))\r\n        end for\r\n        GUI.Dispose (button)\r\n\r\n        % Draw a bunch of stars - No more handling of events or widgets\r\n        for i : 1 .. 100\r\n            var x : int := Rand.Int (0, maxx - 20)\r\n            var y : int := Rand.Int (0, maxy - 20)\r\n            Draw.FillStar (x, y, x + 20, y + 20, starColor)\r\n        end for\r\n\r\n        % Create a new button\r\n        button := GUI.CreateButton (300, 10, 0, \"Quit\", GUI.Quit)\r\n\r\n        % Reset the quit flag. Without this statement, the loop following would\r\n        % exit immediately because the quit flag was set in the previous loop\r\n        GUI.ResetQuit\r\n\r\n        % Process events until the \"Quit\" button is pressed\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop\r\n\r\n        % Close the window\r\n        GUI.CloseWindow (defWinID)"
+      ],
+      "raw_content": "This program allows the user to select the color that\r\n          stars are to be drawn in.  When the user presses the button,\r\n\t  the program exits the first event loop and draws the stars.\r\n\t  Before creating another button and entering a second event\r\n\t  loop, it calls <b>GUI.ResetQuit</b>.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "This program allows the user to select the color that\nstars are to be drawn in.  When the user presses the button,\nthe program exits the first event loop and draws the stars.\nBefore creating another button and entering a second event\nloop, it calls **GUI.ResetQuit**.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.ResetQuit Example",
+          "file": "GUI.ResetQuit.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.ResetQuit</b>, not by calling <b>ResetQuit</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.ResetQuit**, not by calling **ResetQuit**.\n\n"
+    }
+  ]
+}

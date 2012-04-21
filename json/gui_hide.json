@@ -1,0 +1,34 @@
+{
+  "title": "GUI.Hide",
+  "fileName": "gui_hide",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.Hide</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**GUI.Hide** (*widgetID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Hides a widget specified by <i>widgetID</i>. Used in conjunction with <i>Show</i> to hide and show widgets. Hidden widgets cannot get events (i.e. respond to keystrokes or mouse clicks). If an active text field (see text field) is hidden, then any keystrokes in the window will be ignored.<p>\r\nIn most cases where a widget is to appear, then disappear, then appear again, it is advised to create the widget once and hide it until it is to appear, whereupon <b>GUI.Show</b> is called. When the user is finished with the widget, the widget is hidden using <b>GUI.Hide</b>. This saves the overhead of creating and disposing of the same widget several times.</p>\n<p>\r\n</p>",
+      "mdown_content": "Hides a widget specified by *widgetID*. Used in conjunction with *Show* to hide and show widgets. Hidden widgets cannot get events (i.e. respond to keystrokes or mouse clicks). If an active text field (see text field) is hidden, then any keystrokes in the window will be ignored.\nIn most cases where a widget is to appear, then disappear, then appear again, it is advised to create the widget once and hide it until it is to appear, whereupon **GUI.Show** is called. When the user is finished with the widget, the widget is hidden using **GUI.Hide**. This saves the overhead of creating and disposing of the same widget several times.\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>GUI.SetDisplayWhenCreated</b> for an example of <b>GUI.Hide</b>.<p>\r\n</p>",
+      "mdown_content": "See **GUI.SetDisplayWhenCreated** for an example of **GUI.Hide**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.Hide</b>, not by calling <b>Hide</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.Hide**, not by calling **Hide**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_show"
+      ],
+      "raw_content": "<b><a href=\"gui_show.html\">GUI.Show</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_show.html](GUI.Show)**."
+    }
+  ]
+}

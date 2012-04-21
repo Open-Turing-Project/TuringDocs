@@ -1,0 +1,53 @@
+{
+  "title": "implement",
+  "fileName": "implement",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An <i>implementClause</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>implement</b> <i>implementItem</i></font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "An *implementClause* is:\n\n \n**implement** *implementItem*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "An <b>implement</b> clause is used to specify that the module, monitor or class containing the clause is to be the implementation of another module, monitor or class. This implementation is a special kind of expansion. The <b>module</b>, <b>monitor</b> or <b>class</b> containing the clause gains access to (inherits) all the declarations inside the target item. See <b>inherit</b> clause for rules about expansions, which are also rules for implementations.<p>\r\nThe <b>implement</b> clause can only be used in a <b>unit</b>. See <b>unit</b> for the definition of a unit.</p>\n<p>\r\n</p>",
+      "mdown_content": "An **implement** clause is used to specify that the module, monitor or class containing the clause is to be the implementation of another module, monitor or class. This implementation is a special kind of expansion. The **module**, **monitor** or **class** containing the clause gains access to (inherits) all the declarations inside the target item. See **inherit** clause for rules about expansions, which are also rules for implementations.\nThe **implement** clause can only be used in a **unit**. See **unit** for the definition of a unit.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        module stack                % Interface\r\n            implement by stackBody\r\n                                % stackBody has implementation\r\n            export push, pop\r\n            deferred procedure push ( s : string )\r\n            deferred procedure pop ( var s : string )\r\n        end stack",
+        "        module stackBody        % Implementation\r\n            implement stack     % stack has interface\r\n            var top : int := 0\r\n            var contents : array 1 .. 100 of string\r\n        \r\n            body procedure push % ( s : string )\r\n                top := top + 1\r\n                contents ( top ) := s\r\n            end push\r\n        \r\n            body procedure pop      % ( var s : string )\r\n                s := contents ( top )\r\n                top := top - 1\r\n            end pop\r\n        end stackBody"
+      ],
+      "raw_content": "Here is a <i>stack</i> module which defers all of its exported subprograms. This module is an interface but not an implementation. Following <i>stack</i> is the <i>stackBody </i>module that implements the <i>stack</i> module, giving the bodies for <i>stack</i>'s subprograms. Any call to <i>stack's</i> <i>push</i> or <i>pop</i> procedures, such as <i>stack</i>.<i>push(</i>\"Ed\"<i>)</i>, will actually call the procedures given in <i>stackBody</i>.<p>\r\n</p>\r\nNext comes the expansion which gives the bodies for the deferred procedures <i>push</i> and <i>pop</i>. The <i>stackBody </i>body also adds declarations for the <i>top</i> and <i>contents</i> variables.<p>\r\n</p>",
+      "mdown_content": "Here is a *stack* module which defers all of its exported subprograms. This module is an interface but not an implementation. Following *stack* is the *stackBody *module that implements the *stack* module, giving the bodies for *stack*'s subprograms. Any call to *stack's* *push* or *pop* procedures, such as *stack*.*push(*\"Ed\"*)*, will actually call the procedures given in *stackBody*.\n\nNext comes the expansion which gives the bodies for the deferred procedures *push* and *pop*. The *stackBody *body also adds declarations for the *top* and *contents* variables."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        implement ledger in \"ledg.t\"",
+        "        implement ( ledger in \"ledg.t\" )",
+        "        var p : ^ C",
+        "        new p   % Creates object of class D",
+        "        new E, p"
+      ],
+      "raw_content": "Module, monitor or class <i>D</i> can be in <i>C'</i>s implement-by clause if, and only if, <i>C</i> is in <i>D'</i>s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.<p>\r\nAn <i>implementItem</i> is one of<i>:</i></p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(a) <i>id</i>\n</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(b) <i>id</i> <b>in</b> <i>fileName</i>\n</td>\n</tr>\n</table>\n<p>\r\nThe second form is used when the implement clause is for a separate <b>unit</b> and the imported item is in a file whose name is different from the item's name, as in:</p>\n<p>\r\n</p>\r\nThe <i>fileName</i> must be an explicit character string, e.g., \"ledg.t\". See also <b>unit</b>. Parentheses are allowed around the items in <b>implement</b> clauses, as in:<p>\r\n</p>\r\nThere is no restriction on the declarations that an interface may contain. In particular, an interface (any module, monitor or class containing an implement-by clause), can contain subprogram bodies and variable declarations, exactly as is the case in expansions. This is different from languages such as C++ in which there are strict rules limiting what you can put in an interface.<p>\r\nEven though <i>D</i> contains an <b>implement</b> clause, <i>D</i> can also contain an implement-by clause, which implies further implementation by further automatic expansion.</p>\n<p>\r\nSuppose class <i>D</i> is in class <i>C</i>'s implement-by clause and that <i>p</i> is a pointer to class <i>C</i>:</p>\n<p>\r\n</p>\r\nEven though <i>C</i> is implemented by <i>D</i>, <i>p</i> remains a pointer to class <i>C</i>. Each creation of an object of class <i>C</i> actually creates an object of type <i>D</i>, for example:<p>\r\n</p>\r\nClass <i>D</i>, which implements <i>C</i>,<i> </i>could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class <i>E</i> inherits <i>C</i>,<i> </i>this expansion does not include <i>D</i>.<p>\r\nIf the <b>new</b> statement contains an explicit class name <i>E </i>that is a descendant of <i>C</i> (but not actually C), as in</p>\n<p>\r\n</p>\r\nthe object of the explicit class is created. If <i>E</i> has an implement-by clause, the expansion is created.<p>\r\n</p>",
+      "mdown_content": "Module, monitor or class *D* can be in *C'*s implement-by clause if, and only if, *C* is in *D'*s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.\nAn *implementItem* is one of*:*\n\n\n \n(a) *id*\n\n \n(b) *id* **in** *fileName*\n\n\nThe second form is used when the implement clause is for a separate **unit** and the imported item is in a file whose name is different from the item's name, as in:\n\n\nThe *fileName* must be an explicit character string, e.g., \"ledg.t\". See also **unit**. Parentheses are allowed around the items in **implement** clauses, as in:\n\nThere is no restriction on the declarations that an interface may contain. In particular, an interface (any module, monitor or class containing an implement-by clause), can contain subprogram bodies and variable declarations, exactly as is the case in expansions. This is different from languages such as C++ in which there are strict rules limiting what you can put in an interface.\nEven though *D* contains an **implement** clause, *D* can also contain an implement-by clause, which implies further implementation by further automatic expansion.\n\nSuppose class *D* is in class *C*'s implement-by clause and that *p* is a pointer to class *C*:\n\n\nEven though *C* is implemented by *D*, *p* remains a pointer to class *C*. Each creation of an object of class *C* actually creates an object of type *D*, for example:\n\nClass *D*, which implements *C*,* *could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class *E* inherits *C*,* *this expansion does not include *D*.\nIf the **new** statement contains an explicit class name *E *that is a descendant of *C* (but not actually C), as in\n\n\nthe object of the explicit class is created. If *E* has an implement-by clause, the expansion is created."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "unit",
+        "module",
+        "monitor",
+        "class",
+        "implement_by",
+        "inherit",
+        "export",
+        "import",
+        "deferred"
+      ],
+      "raw_content": "<b><a href=\"unit.html\">unit</a></b>, <b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"implement_by.html\">implement by</a></b> clause, <b><a href=\"inherit.html\">inherit</a></b> clause, <b><a href=\"export.html\">export</a></b> list, and <b><a href=\"import.html\">import</a></b> list. See also <b><a href=\"deferred.html\">deferred</a></b> subprograms.<p>\r\n</p>",
+      "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[implement_by.html](implement by)** clause, **[inherit.html](inherit)** clause, **[export.html](export)** list, and **[import.html](import)** list. See also **[deferred.html](deferred)** subprograms."
+    }
+  ]
+}

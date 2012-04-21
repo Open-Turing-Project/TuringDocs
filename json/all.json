@@ -1,0 +1,32 @@
+{
+  "title": "all",
+  "fileName": "all",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><i>setTypeName</i> (<b>all</b>)<p>\r\n</p></font>",
+      "mdown_content": "*setTypeName* (**all**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Given a set type named <i>S</i>,<i> </i>the set of all of the possible elements of <i>S</i> is written <i>S </i>(<b>all</b>).<p>\r\n</p>",
+      "mdown_content": "Given a set type named *S*,* *the set of all of the possible elements of *S* is written *S *(**all**)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type smallSet : set of 0 .. 2\r\n        var x : smallSet := smallSet (all)\r\n                        % Set x contains elements 0, 1 and 2"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "See also",
+      "links": [
+        "set"
+      ],
+      "raw_content": "<b><a href=\"set.html\">set</a></b> type for details about sets.<p>\r\n</p>",
+      "mdown_content": "**[set.html](set)** type for details about sets."
+    }
+  ]
+}

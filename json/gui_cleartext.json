@@ -1,0 +1,44 @@
+{
+  "title": "GUI.ClearText",
+  "fileName": "gui_cleartext",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.ClearText</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**GUI.ClearText** (*widgetID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Clears all the text in a text box specified by <i>widgetID</i>. The <i>widgetID</i> parameter must be the widget id of a text box.<p>\r\n</p>",
+      "mdown_content": "Clears all the text in a text box specified by *widgetID*. The *widgetID* parameter must be the widget id of a text box."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        var boxID, buttonID, start : int\r\n        start := 1\r\n        \r\n        procedure PrintTwentyFive\r\n            GUI.ClearText (boxID)\r\n            for i : start .. start + 24\r\n                GUI.AddLine (boxID, intstr (i))\r\n            end for\r\n            start += 25\r\n        end PrintTwentyFive\r\n        \r\n        boxID := GUI.CreateTextBox (50, 50, 200, 200)\r\n        buttonID := GUI.CreateButton (50, 5, 0, \"Next 25\", PrintTwentyFive)\r\n        PrintTwentyFive\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. <p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. \n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.ClearText Example",
+          "file": "GUI.ClearText.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.ClearText</b>, not by calling <b>ClearText</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.ClearText**, not by calling **ClearText**.\n"
+    },
+    {
+      "title": "See also",
+      "raw_content": "<b>GUI.CreateTextBox</b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.CreateTextBox**."
+    }
+  ]
+}

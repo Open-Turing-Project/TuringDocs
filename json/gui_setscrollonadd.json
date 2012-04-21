@@ -1,0 +1,39 @@
+{
+  "title": "GUI.SetScrollOnAdd",
+  "fileName": "gui_setscrollonadd",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.SetScrollOnAdd</b> (<i>widgetID</i> : <b>int</b>, <i>scrollOnAdd</i> : <b>boolean</b>)<p></p></font>",
+      "mdown_content": "**GUI.SetScrollOnAdd** (*widgetID* : **int**, *scrollOnAdd* : **boolean**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>GUI.SetScrollOnAdd</b> procedure allows you to specify\r\n          whether a text box scrolls to the bottom of the text when\r\n\t  new text is added (the default behaviour). By calling this\r\n\t  procedure with <i>scrollOnAdd</i> set to <b>false</b>, the \r\n\t  text box will not scroll unless the user manipulates the\r\n\t  text box's scroll bars.",
+      "mdown_content": "The **GUI.SetScrollOnAdd** procedure allows you to specify\nwhether a text box scrolls to the bottom of the text when\nnew text is added (the default behaviour). By calling this\nprocedure with *scrollOnAdd* set to **false**, the \ntext box will not scroll unless the user manipulates the\ntext box's scroll bars."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI \r\n        View.Set (\"graphics:300;300\") \r\n        \r\n        const fileNameToBeViewed : string := \"TextBxs.DEM\"\r\n        var textBox : int       % The Text Field ID.\r\n        var title : int     % The label for the title.\r\n        var f : int         % The stream number of the file.\r\n        var line : string       % Lines to be read from the file.\r\n        \r\n        % Open the file.\r\n        open : f, fileNameToBeViewed, get\r\n        if f = 0 then\r\n            put \"Unable to open \" + fileNameToBeViewed + \" : \", Error.LastMsg\r\n            return\r\n        end if\r\n        \r\n        % Set background color to gray for indented text box.\r\n        GUI.SetBackgroundColor (gray)\r\n        \r\n        % Create the title label and text box.\r\n        title := GUI.CreateLabelFull (20, 280, fileNameToBeViewed, 250, 0, \r\n            GUI.CENTER, 0)\r\n        textBox := GUI.CreateTextBoxFull (10, 10, 280, 265, \r\n            GUI.INDENT, 0)\r\n        \r\n\tGUI.SetScrollOnAdd (textBox, false)\r\n\r\n        % Read the file and place it in the text box.\r\n        loop\r\n            exit when eof (f)\r\n            get : f, line : *\r\n            GUI.AddLine (textBox, line)\r\n        end loop\r\n        \r\n        close : f   % Close the file.\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "This program displays the contents of a file in a text box.\r\n          After the file is displayed, the top line in the text box will\r\n\t  be the first line in the file.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "This program displays the contents of a file in a text box.\nAfter the file is displayed, the top line in the text box will\nbe the first line in the file.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.SetScrollOnAdd Example",
+          "file": "GUI.SetScrollOnAdd.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.SetScrollOnAdd</b>, not by calling <b>SetScrollOnAdd</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.SetScrollOnAdd**, not by calling **SetScrollOnAdd**.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "fork",
+  "fileName": "fork",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>forkStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>fork</b><i> processId</i> [ ( [ <i>expn</i> { , <i>expn</i> } ] ) ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\">[ : <i>reference</i> [ , <i>expn</i> [ , <i>reference</i> ] ] ]</font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *forkStatement* is:\n\n \n**fork*** processId* [ ( [ *expn* { , *expn* } ] ) ]\n \n \n \n[ : *reference* [ , *expn* [ , *reference* ] ] ]"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A <b>fork</b> activates (starts the concurrent execution of) a process declaration. If the process has parameters, a parenthesized list of expressions (<i>expns</i>) must follow the process'  name (<i>processId</i>).<p>\r\n</p>",
+      "mdown_content": "A **fork** activates (starts the concurrent execution of) a process declaration. If the process has parameters, a parenthesized list of expressions (*expns*) must follow the process'  name (*processId*)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        process greetings ( word : string )\r\n            loop\r\n                put word\r\n            end loop\r\n        end greetings\r\n        \r\n        fork greetings ( \"Hi\" )\r\n        fork greetings ( \"Ho\" )"
+      ],
+      "raw_content": "This program initiates (forks) two concurrent processes, one of which repeatedly outputs Hi and the other Ho. The resulting output is an unpredictable sequence of Hi's and Ho's, as <i>greetings</i> executes twice concurrently, one instance with its <i>word</i> set to Hi and the other with its <i>word</i> set to Ho.<p>\r\n</p>",
+      "mdown_content": "This program initiates (forks) two concurrent processes, one of which repeatedly outputs Hi and the other Ho. The resulting output is an unpredictable sequence of Hi's and Ho's, as *greetings* executes twice concurrently, one instance with its *word* set to Hi and the other with its *word* set to Ho."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        fork moduleId . procedureId [ ( expn {, expn } ) ] "
+      ],
+      "raw_content": "See <b>procedure</b> declaration for details about parameters. The first optional <i>reference</i> in the <b>fork</b> statement must be a <b>boolean</b> variable reference. The <b>fork</b> sets this to <b>true</b> if the process is actually activated. If this fails to occur (probably because stack space could not be allocated), this <i>reference</i> is set to <b>false</b>. If the <b>fork</b> fails but this reference is omitted, an exception occurs. See exception handlers.<p>\r\nThe optional <i>expn</i> specifies the number of bytes for the process' stack; this overrides the optionally given stack size in the <b>process</b> declaration. The second optional <i>reference</i> must be a variable reference with the type <b>addressint</b>. See <b>addressint</b>. This variable is set to identify the process activation. This reference has the implementation-dependent meaning of locating the process' internal descriptor.</p>\n<p>\r\nIn this explanation of the <b>fork</b> statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the <b>fork</b><i> </i>statement<i> </i>is:</p>\n<p>\r\n</p>\r\nIn other words, the module's name and a dot must precede the process' name.<p>\r\n</p>",
+      "mdown_content": "See **procedure** declaration for details about parameters. The first optional *reference* in the **fork** statement must be a **boolean** variable reference. The **fork** sets this to **true** if the process is actually activated. If this fails to occur (probably because stack space could not be allocated), this *reference* is set to **false**. If the **fork** fails but this reference is omitted, an exception occurs. See exception handlers.\nThe optional *expn* specifies the number of bytes for the process' stack; this overrides the optionally given stack size in the **process** declaration. The second optional *reference* must be a variable reference with the type **addressint**. See **addressint**. This variable is set to identify the process activation. This reference has the implementation-dependent meaning of locating the process' internal descriptor.\n\nIn this explanation of the **fork** statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the **fork*** *statement* *is:\n\n\nIn other words, the module's name and a dot must precede the process' name."
+    }
+  ]
+}

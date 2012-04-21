@@ -1,0 +1,28 @@
+{
+  "title": "natreal",
+  "fileName": "natreal",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>natreal</b> ( <i>n</i> : <b>nat</b> ) : <b>real</b><p>\r\n</p></font>",
+      "mdown_content": "**natreal** ( *n* : **nat** ) : **real**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>natreal</b> function is used to convert a natural number to a <b>real</b> number. This function is rarely used, because in Turing, a natural number can be used anyplace a <b>real</b> value is required. When this is done, the <b>natreal</b> function is implicitly called to do the conversion from <b>nat</b> to <b>real</b>. The <b>natreal</b> function is similar to <b>intreal</b>, except that <b>natreal</b> handles values that are larger than <b>int</b> values and does not handle negative values.<p>\r\n</p>",
+      "mdown_content": "The **natreal** function is used to convert a natural number to a **real** number. This function is rarely used, because in Turing, a natural number can be used anyplace a **real** value is required. When this is done, the **natreal** function is implicitly called to do the conversion from **nat** to **real**. The **natreal** function is similar to **intreal**, except that **natreal** handles values that are larger than **int** values and does not handle negative values."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "nat",
+        "intreal",
+        "floor",
+        "ceil",
+        "round"
+      ],
+      "raw_content": "<b><a href=\"nat.html\">nat</a></b>. See also the <b><a href=\"intreal.html\">intreal</a></b>, <b><a href=\"floor.html\">floor</a></b>, <b><a href=\"ceil.html\">ceil</a></b> and <b><a href=\"round.html\">round</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[nat.html](nat)**. See also the **[intreal.html](intreal)**, **[floor.html](floor)**, **[ceil.html](ceil)** and **[round.html](round)** functions."
+    }
+  ]
+}

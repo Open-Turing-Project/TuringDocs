@@ -1,0 +1,48 @@
+{
+  "title": "Str.Trim",
+  "fileName": "str_trim",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Str.Trim</b> (<i>str</i> : <b>string</b>) : <b>string</b><p></p></font>",
+      "mdown_content": "**Str.Trim** (*str* : **string**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Str.Trim</b> function takes the string <i>str</i> and returns\r\n          a string in all the leading and trailing spaces (the spaces at the\r\n          beginning and the end) are deleted. For example, \r\n          <tt>Str.Trim (\"   This is a test \")</tt> returns\r\n          <tt>\"This is a test\"</tt>. If <i>str</i> only has spaces in it, then\r\n          <b>Str.Trim</b> will return an empty string.<p>\r\n    </p>",
+      "mdown_content": "The **Str.Trim** function takes the string *str* and returns\na string in all the leading and trailing spaces (the spaces at the\nbeginning and the end) are deleted. For example, \nStr.Trim (\"   This is a test \") returns\n\"This is a test\". If *str* only has spaces in it, then\n**Str.Trim** will return an empty string.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var line : string\r\n        loop\r\n            put \"Enter a non-empty line of text: \" ..\r\n            get line : *\r\n            exit when Str.Trim (line) not= \"\"\r\n        end loop\r\n        put \"You entered \", line\r\n    "
+      ],
+      "raw_content": "This program obtains input from the user until the user enters a line\r\n      with non-whitespace characters in it.",
+      "mdown_content": "This program obtains input from the user until the user enters a line\nwith non-whitespace characters in it."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Str.Trim Example",
+          "file": "Str.Trim.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Str.Trim</b>, not by calling <b>Trim</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Str.Trim**, not by calling **Trim**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "str_lower",
+        "str_upper"
+      ],
+      "raw_content": "<b><a href=\"str_lower.html\">Str.Lower</a></b> and \r\n          <b><a href=\"str_upper.html\">Str.Upper</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[str_lower.html](Str.Lower)** and \n**[str_upper.html](Str.Upper)**.\n"
+    }
+  ]
+}

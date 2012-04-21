@@ -1,0 +1,39 @@
+{
+  "title": "GUI.Enable",
+  "fileName": "gui_enable",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.Enable</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**GUI.Enable** (*widgetID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Enables a disabled widget specified by <i>widgetID</i>. <p>\r\nUsed in conjunction with <b>GUI.Disable</b> to enable and disable widgets. </p>\n<p>\r\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.</p>\n<p>\r\nDisabled widgets do not respond to keystrokes or mouse clicks.</p>\n<p>\r\n</p>",
+      "mdown_content": "Enables a disabled widget specified by *widgetID*. \nUsed in conjunction with **GUI.Disable** to enable and disable widgets. \n\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\n\nDisabled widgets do not respond to keystrokes or mouse clicks.\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>GUI.Disable</b> for an example of <b>GUI.Enable</b>.<p>\r\n</p>",
+      "mdown_content": "See **GUI.Disable** for an example of **GUI.Enable**."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The following types of widgets can be enabled or disabled:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>Buttons, Check Boxes, Radio Buttons, Picture Buttons,<br>\n</td>\n</tr></table>\n<p>\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,<br>\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>\n<p>\r\n</p>",
+      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n \nButtons, Check Boxes, Radio Buttons, Picture Buttons,\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedure by calling <b>GUI.Enable</b>, not by calling <b>Enable</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the procedure by calling **GUI.Enable**, not by calling **Enable**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_disable"
+      ],
+      "raw_content": "<b><a href=\"gui_disable.html\">GUI.Disable</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_disable.html](GUI.Disable)**."
+    }
+  ]
+}

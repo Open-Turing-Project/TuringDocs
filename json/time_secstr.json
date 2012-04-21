@@ -1,0 +1,58 @@
+{
+  "title": "Time.SecStr",
+  "fileName": "time_secstr",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Time.SecStr</b> (<i>timeInSecs</i> : <b>int</b>, <i>formatString</i> : <b>string</b>) : <b>string</b><p></p></font>",
+      "mdown_content": "**Time.SecStr** (*timeInSecs* : **int**, *formatString* : **string**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.SecStr</b> function is used to convert the number of \r\n          seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string.<p>\r\n          If <i>timeInSecs</i> is incorrect or can't be interpreted, then \r\n          <b>Time.SecStr</b> will return the empty string and <b>Error.Last</b> \r\n          and <b>Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **Time.SecStr** function is used to convert the number of \nseconds since 00:00:00 GMT Jan 1, 1970 into a date and time string.\nIf *timeInSecs* is incorrect or can't be interpreted, then \n**Time.SecStr** will return the empty string and **Error.Last** \nand **Error.LastMsg** will be set to the appropriate error.\n\n"
+    },
+    {
+      "title": "Detailsn",
+      "raw_content": "The <i>formatString</i> parameter specifies how the output string\r\n          will look. The formatString consists of different letters specifying\r\n          the different formats and spaces or commas between these letters. \r\n          The different letters can be combined to provide different date \r\n          formats.<p>\r\n          &nbsp;&nbsp;&nbsp;Here are the letters:</p>\n<p>\r\n          </p>\n<table border=\"1\">\n<tr>\n<td align=\"center\"><b>a</b></td>\n<td>&nbsp;Abbreviated weekday name\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>A</b></td>\n<td>&nbsp;Full weekday name\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>b</b></td>\n<td>&nbsp;Abbreviated month name\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>B</b></td>\n<td>&nbsp;Full month name\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>c</b></td>\n<td>&nbsp;Date and time representation appropriate for locale\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>d</b></td>\n<td>&nbsp;Day of month as decimal number (01 - 31)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>H</b></td>\n<td>&nbsp;Hour in 24-hour format (00 - 23)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>I</b></td>\n<td>&nbsp;Hour in 12-hour format (01 - 12)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>j</b></td>\n<td>&nbsp;Day of year as decimal number (001 - 366)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>m</b></td>\n<td>&nbsp;Month as decimal number (01 - 12)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>M</b></td>\n<td>&nbsp;Minute as decimal number (00 - 59)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>p</b></td>\n<td>&nbsp;Current locale&#146;s A.M./P.M. indicator for 12-hour clock\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>S</b></td>\n<td>&nbsp;Second as decimal number (00 - 59)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>U</b></td>\n<td>&nbsp;Week of year as decimal number, with Sunday as first day of week (00 - 53)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>w</b></td>\n<td>&nbsp;Weekday as decimal number (0 - 6; Sunday is 0)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>W</b></td>\n<td>&nbsp;Week of year as decimal number, with Monday as first day of week (00 - 53)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>x</b></td>\n<td>&nbsp;Date representation for current locale\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>X</b></td>\n<td>&nbsp;Time representation for current locale\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>y</b></td>\n<td>&nbsp;Year without century, as decimal number (00 - 99)\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>Y</b></td>\n<td>&nbsp;Year with century, as decimal number\r\n            </td>\n</tr>\n<tr>\n<td align=\"center\"><b>&nbsp;z,Z&nbsp;</b></td>\n<td>&nbsp;Time-zone name\r\n          </td>\n</tr>\n</table>\n<p>\r\n    </p>",
+      "mdown_content": "The *formatString* parameter specifies how the output string\nwill look. The formatString consists of different letters specifying\nthe different formats and spaces or commas between these letters. \nThe different letters can be combined to provide different date \nformats.\n   Here are the letters:\n\n\n**a**\n Abbreviated weekday name\n\n**A**\n Full weekday name\n\n**b**\n Abbreviated month name\n\n**B**\n Full month name\n\n**c**\n Date and time representation appropriate for locale\n\n**d**\n Day of month as decimal number (01 - 31)\n\n**H**\n Hour in 24-hour format (00 - 23)\n\n**I**\n Hour in 12-hour format (01 - 12)\n\n**j**\n Day of year as decimal number (001 - 366)\n\n**m**\n Month as decimal number (01 - 12)\n\n**M**\n Minute as decimal number (00 - 59)\n\n**p**\n Current locales A.M./P.M. indicator for 12-hour clock\n\n**S**\n Second as decimal number (00 - 59)\n\n**U**\n Week of year as decimal number, with Sunday as first day of week (00 - 53)\n\n**w**\n Weekday as decimal number (0 - 6; Sunday is 0)\n\n**W**\n Week of year as decimal number, with Monday as first day of week (00 - 53)\n\n**x**\n Date representation for current locale\n\n**X**\n Time representation for current locale\n\n**y**\n Year without century, as decimal number (00 - 99)\n\n**Y**\n Year with century, as decimal number\n\n** z,Z **\n Time-zone name\n\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put Time.SecStr (Time.Sec, \"A B d, Y\"), \" is day number \",\r\n            Time.SecStr (Time.Sec, \"j\"), \" of \", Time.SecStr (Time.Sec, \"Y\")"
+      ],
+      "raw_content": "This program outputs the current date and the day number in the year.<br>\r\n          Example output: <b><tt>Thursday November 13, 2003 is day number 317 of 2003</tt></b><p>\r\n</p>",
+      "mdown_content": "This program outputs the current date and the day number in the year.\nExample output: **Thursday November 13, 2003 is day number 317 of 2003**"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Time.SecStr Example",
+          "file": "Time.SecStr.t"
+        }
+      ]
+    },
+    {
+      "title": "Execute",
+      "raw_content": "This example demonstrates each of the formatting letters.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Time.SecStr Formatting Letters Program\">\n<param name=\"Item1\" value=\"-1,Time.SecStr2.t;Time.SecStr2 Example\"></object></p>\n<p></p>",
+      "mdown_content": "This example demonstrates each of the formatting letters.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling <b>Time.SecStr</b>, not by calling <b>SecStr</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.SecStr**, not by calling **SecStr**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_sec",
+        "time_secparts"
+      ],
+      "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b> and <b><a href=\"time_secparts.html\">Time.SecParts</a></b> functions.<p>\r\n    </p>",
+      "mdown_content": "**[time_sec.html](Time.Sec)** and **[time_secparts.html](Time.SecParts)** functions.\n"
+    }
+  ]
+}

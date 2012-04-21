@@ -1,0 +1,52 @@
+{
+  "title": "drawfillbox",
+  "fileName": "drawfillbox",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>drawfillbox</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**drawfillbox** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "drawfillbox01.gif"
+      ],
+      "raw_content": "The <b>drawfillbox</b> procedure is used to draw a filled box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) filled using the specified <i>Color</i>. To get a box outlined in a different color, use <b>drawfillbox</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawbox</b>  with the <i>Color</i> parameter set to the border color.<p>\r\n\r\n</p>\n<center></center>",
+      "mdown_content": "The **drawfillbox** procedure is used to draw a filled box on the screen with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) filled using the specified *Color*. To get a box outlined in a different color, use **drawfillbox** with the *Color* parameter set to the fill color and then call **drawbox**  with the *Color* parameter set to the border color.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"graphics\")\r\n        drawfillbox (0, 0, maxx, maxy div 2, 1)\r\n        drawbox (0, 0, maxx, maxy div 2, 2)"
+      ],
+      "raw_content": "This program will fill the bottom half of the screen with color 1 and then outline it in color 2. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (<b>maxx</b>, <b>maxy</b>) is the right top.<p>\r\n</p>",
+      "mdown_content": "This program will fill the bottom half of the screen with color 1 and then outline it in color 2. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (**maxx**, **maxy**) is the right top."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "drawfillbox Example",
+          "file": "drawfillbox.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
+      "mdown_content": "The meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setscreen",
+        "maxx",
+        "maxy"
+      ],
+      "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures. <p>\r\n</p>",
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures. "
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "GUI.SetSelection",
+  "fileName": "gui_setselection",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.SetSelection</b> (<i>widgetID</i>, <i>fromSel</i>, <i>toSel</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**GUI.SetSelection** (*widgetID*, *fromSel*, *toSel* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Sets the selected text in the text field specified by <i>widgetID</i>. The value of the <i>fromSel</i> and <i>toSel</i> parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting <i>fromSel</i> to 2 and <i>toSel</i> to 5 would select \"ell\". Setting <i>fromSel</i> and <i>toSel</i> to 1 automatically selects the entire text.<p>\r\nThe <i>fromSel</i> parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <i>fromSel</i> and <i>toSel</i> selects the entire text.</p>\n<p>\r\nThe <i>toSel</i> parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <i>fromSel</i> and <i>toSel</i> selects the entire text.</p>\n<p>\r\n</p>",
+      "mdown_content": "Sets the selected text in the text field specified by *widgetID*. The value of the *fromSel* and *toSel* parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting *fromSel* to 2 and *toSel* to 5 would select \"ell\". Setting *fromSel* and *toSel* to 1 automatically selects the entire text.\nThe *fromSel* parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both *fromSel* and *toSel* selects the entire text.\n\nThe *toSel* parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both *fromSel* and *toSel* selects the entire text.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        \r\n        var textField, lbl : int\r\n        \r\n        procedure CheckInput (s : string)\r\n            for i : 1 .. length (s)\r\n                if (s (i) < 'a' or 'z' < s (i)) and s (i) not= ' ' then\r\n                    GUI.SetSelection (textField, i, i + 1)\r\n                    return\r\n                end if\r\n            end for\r\n            GUI.Quit\r\n        end CheckInput\r\n        \r\n        textField := GUI.CreateTextField (100, 100, 200, \"\", CheckInput)\r\n        lbl := GUI.CreateLabelFull (100 + GUI.GetWidth (textField) div 2,\r\n            100 + GUI.GetHeight (textField), \r\n            \"Only Allows Lower Case Letters\", 0, 0, \r\n            GUI.CENTER + GUI.BOTTOM, 0)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop\r\n        \r\n        GUI.SetLabel (lbl, \"Program Finished!\")"
+      ],
+      "raw_content": "The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates.<p>\r\n</p>",
+      "mdown_content": "The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSelection</b>, not by calling <b>SetSelection</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSelection**, not by calling **SetSelection**.\n"
+    },
+    {
+      "title": "See also",
+      "raw_content": "<b>GUI.CreateTextField</b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.CreateTextField**."
+    }
+  ]
+}

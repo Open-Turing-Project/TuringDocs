@@ -1,0 +1,29 @@
+{
+  "title": "skip",
+  "fileName": "skip",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>skip</b><p>\r\n</p></font>",
+      "mdown_content": "**skip**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Using <b>skip</b> as an output item in a <b>put</b> statement causes the current output line to be ended and a new line to be started.<p>\r\n</p>",
+      "mdown_content": "Using **skip** as an output item in a **put** statement causes the current output line to be ended and a new line to be started."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put \"To be\", skip, \"Or not to be\""
+      ],
+      "raw_content": "This example, <i>To be</i> is output on one line and <i>Or not to be</i> on the next.<p>\r\n</p>",
+      "mdown_content": "This example, *To be* is output on one line and *Or not to be* on the next."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Using <b>skip</b> is equivalent to outputting the newline character \"\\n\".<p>\r\n</p>",
+      "mdown_content": "Using **skip** is equivalent to outputting the newline character \"\\n\"."
+    }
+  ]
+}

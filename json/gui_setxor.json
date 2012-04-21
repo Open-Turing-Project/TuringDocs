@@ -1,0 +1,34 @@
+{
+  "title": "GUI.SetXOR",
+  "fileName": "gui_setxor",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.SetXOR</b> (<i>widgetID</i> : <b>int</b>, <i>xor</i> : <b>boolean</b>)<p>\r\n</p></font>",
+      "mdown_content": "**GUI.SetXOR** (*widgetID* : **int**, *xor* : **boolean**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Sets the \"xor mode\" of the canvas specified by <i>widgetID</i>. If the <i>xor</i> parmeter is set to <b>true</b>, the canvas is set to <i>xor mode</i>. When in <i>xor mode</i>, all the <i>Draw</i>... procedures of a canvas are treated as if the <b>View.Set</b> (\"xor\") statement had been executed before the <i>Draw</i> procedure.<p>\r\n</p>",
+      "mdown_content": "Sets the \"xor mode\" of the canvas specified by *widgetID*. If the *xor* parmeter is set to **true**, the canvas is set to *xor mode*. When in *xor mode*, all the *Draw*... procedures of a canvas are treated as if the **View.Set** (\"xor\") statement had been executed before the *Draw* procedure."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        View.Set (\"graphics:400;300\")\r\n        var canvas1, label1, canvas2, label2 : int\r\n        canvas1 := GUI.CreateCanvas (10, 20, maxx div 2  20, maxy  30)\r\n        label1 := GUI.CreateLabelFull (10, 2, \"XOR\", maxx div 2  20, 0,\r\n            GUI.CENTER, 0)\r\n        canvas2 := GUI.CreateCanvas (maxx div 2 + 10, 20, \r\n            maxx div 2  20, maxy  30)\r\n        label2 := GUI.CreateLabelFull (maxx div 2 + 10, 2, \"Normal\", \r\n            maxx div 2  20, 0, GUI.CENTER, 0)\r\n        \r\n        GUI.SetXOR (canvas1, true)\r\n        for i : 1 .. 20\r\n            var x : int := Rand.Int (0, maxx div 2  20)\r\n            var y : int := Rand.Int (0, maxy  20)\r\n            var c : int := Rand.Int (1, 15)\r\n            GUI.DrawFillStar (canvas1, x  20, y  20, x + 20, y + 20, c)\r\n        end for\r\n        \r\n        GUI.SetXOR (canvas2, false)\r\n        for i : 1 .. 20\r\n            var x : int := Rand.Int (0, maxx div 2  20)\r\n            var y : int := Rand.Int (0, maxy  20)\r\n            var c : int := Rand.Int (1, 15)\r\n            GUI.DrawFillStar (canvas2, x  20, y  20, x + 20, y + 20, c)\r\n        end for"
+      ],
+      "raw_content": "See <b>GUI.SetDisplayWhenCreated</b> for an example of <b>GUI.Show</b>.<p>\r\n</p>",
+      "mdown_content": "See **GUI.SetDisplayWhenCreated** for an example of **GUI.Show**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetXOR</b>, not by calling <b>SetXOR</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetXOR**, not by calling **SetXOR**.\n"
+    },
+    {
+      "title": "See also",
+      "raw_content": "<b>GUI.CreateCanvas</b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.CreateCanvas**."
+    }
+  ]
+}

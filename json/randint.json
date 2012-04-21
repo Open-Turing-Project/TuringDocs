@@ -1,0 +1,40 @@
+{
+  "title": "randint",
+  "fileName": "randint",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>randint</b> ( <b>var</b> <i>i</i> : <b>int</b>, <i>low</i>,<i> high</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**randint** ( **var** *i* : **int**, *low*,* high* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>randint</b> statement is used to create a pseudo-random integer in the range <i>low</i> to <i>high</i>, inclusive. For example, if <i>i</i> is an integer, after <b>randint</b>(<i>i</i>,1, 10), <i>i</i> would have a value such as 7 or 2 or 10.<p>\r\n</p>",
+      "mdown_content": "The **randint** statement is used to create a pseudo-random integer in the range *low* to *high*, inclusive. For example, if *i* is an integer, after **randint**(*i*,1, 10), *i* would have a value such as 7 or 2 or 10."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var roll : int\r\n        loop\r\n            randint ( i, 1, 6 )\r\n            put \"Rolled \", i\r\n        end loop"
+      ],
+      "raw_content": "This program simulates the repeated rolling of a six sided die.<p>\r\n</p>",
+      "mdown_content": "This program simulates the repeated rolling of a six sided die."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>randint</b> statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range <i>low</i> =<i>i</i> = <i>high</i>. It is required that <i>low</i> = <i>high</i>.<p>\r\nEach time a program runs, <b>randint</b> uses the same pseudo-random number sequence. To get a different sequence (actually, to start the sequence at a different point), use the <b>randomize</b> procedure.</p>\n<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>randseed</b> and <b>randnext</b> procedures.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **randint** statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range *low* =*i* = *high*. It is required that *low* = *high*.\nEach time a program runs, **randint** uses the same pseudo-random number sequence. To get a different sequence (actually, to start the sequence at a different point), use the **randomize** procedure.\n\nTo use several sequences of repeatable pseudo-random number sequences, use the **randseed** and **randnext** procedures.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "rand",
+        "randomize",
+        "randseed",
+        "randnext"
+      ],
+      "raw_content": "<b><a href=\"rand.html\">rand</a></b>, <b><a href=\"randomize.html\">randomize</a></b>, <b><a href=\"randseed.html\">randseed</a></b> and <b><a href=\"randnext.html\">randnext</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[rand.html](rand)**, **[randomize.html](randomize)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Time.Delay",
+  "fileName": "time_delay",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Time.Delay</b> ( <i>duration</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**Time.Delay** ( *duration* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.Delay </b>procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.<p>\r\n</p>",
+      "mdown_content": "The **Time.Delay **procedure is used to cause the program to pause for a given time. The time duration is in milliseconds."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 10\r\n            put i\r\n            Time.Delay ( 1000 ) % Pause for 1 second\r\n        end for"
+      ],
+      "raw_content": "This program prints the integers 1 to 10 with a second delay between each.<p>\r\n</p>",
+      "mdown_content": "This program prints the integers 1 to 10 with a second delay between each."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.Delay</b>, not by calling <b>Delay</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.Delay**, not by calling **Delay**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_elapsed",
+        "time_elapsedcpu"
+      ],
+      "raw_content": "<b><a href=\"time_elapsed.html\">Time.Elapsed</a></b> and <b><a href=\"time_elapsedcpu.html\">Time.ElapsedCPU</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[time_elapsed.html](Time.Elapsed)** and **[time_elapsedcpu.html](Time.ElapsedCPU)**."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "GUI.SetKeyEventHandler",
+  "fileName": "gui_setkeyeventhandler",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.SetKeyEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>keyEventHandler</i> : <b>procedure</b> <i>x</i> (<i>ch</i> : <b>char</b>))<p>\r\n</p></font>",
+      "mdown_content": "**GUI.SetKeyEventHandler** (\n    *keyEventHandler* : **procedure** *x* (*ch* : **char**))"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Sets the new default keystroke event handler. The <i>keyEventHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there is a keystroke which is not handled by any widget. The <i>ch</i> parameter in the <i>keyEventHandler</i> is the keystroke typed by the user.<p>\r\nThis procedure is often used to allow for more than one shortcut character for a given button.</p>\n<p>\r\n</p>",
+      "mdown_content": "Sets the new default keystroke event handler. The *keyEventHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a keystroke which is not handled by any widget. The *ch* parameter in the *keyEventHandler* is the keystroke typed by the user.\nThis procedure is often used to allow for more than one shortcut character for a given button.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        View.Set (\"graphics:220;200\")\r\n        procedure DrawStar\r\n            Draw.FillStar (25, 40, 175, 190, Rand.Int (10, 15))\r\n        end DrawStar\r\n        \r\n        procedure KeyHandler (ch : char)\r\n            if ch = 'q' or ch = '^Q' then\r\n                Draw.Cls\r\n                GUI.Quit\r\n            elsif ch = 'd' or ch = '^d' or ch = 'S' or ch = 's' or ch = '^s' then\r\n                DrawStar\r\n            end if\r\n        end KeyHandler\r\n        \r\n        GUI.SetKeyEventHandler (KeyHandler)\r\n        var button : int := GUI.CreateButtonFull (5, 5, 100, \"Draw Star\",\r\n            DrawStar, 0, 'D', true)\r\n        var quitButton : int := GUI.CreateButtonFull (115, 5, 100, \"Quit\", \r\n            GUI.Quit, 0, 'Q', false)\r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER.<p>\r\n</p>",
+      "mdown_content": "The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetKeyEventHandler</b>, not by calling <b>SetKeyEventHandler</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetKeyEventHandler**, not by calling **SetKeyEventHandler**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_processevent"
+      ],
+      "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+    }
+  ]
+}

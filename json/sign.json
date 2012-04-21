@@ -1,0 +1,32 @@
+{
+  "title": "sign",
+  "fileName": "sign",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>sign</b> ( <i>r</i> : <b>real</b> ) : -1 .. 1<p>\r\n</p></font>",
+      "mdown_content": "**sign** ( *r* : **real** ) : -1 .. 1"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>sign</b> function is used to determine whether a number is positive, zero or negative. It returns 1 if <i>r</i> &gt; 0, 0 if <i>r</i> = 0, and -1 if <i>r</i> &lt; 0. For example, <b>sign</b> (5) is 1 and <b>sign</b> (-23) is -1.<p>\r\n</p>",
+      "mdown_content": "The **sign** function is used to determine whether a number is positive, zero or negative. It returns 1 if *r* > 0, 0 if *r* = 0, and -1 if *r* < 0. For example, **sign** (5) is 1 and **sign** (-23) is -1."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var x : real\r\n        get x\r\n        case sign ( x ) of\r\n            label 1 : put \"Positive\"\r\n            label 0 : put \"Zero\"\r\n            label -1 : put \"Negative\"\r\n        end case"
+      ],
+      "raw_content": "This program reads in numbers and determines if they are positive, zero or negative:<p>\r\n</p>",
+      "mdown_content": "This program reads in numbers and determines if they are positive, zero or negative:"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "mathmodule"
+      ],
+      "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
+      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**."
+    }
+  ]
+}

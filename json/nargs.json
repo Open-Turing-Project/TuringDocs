@@ -1,0 +1,29 @@
+{
+  "title": "nargs",
+  "fileName": "nargs",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>nargs</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**nargs** : **int**"
+    },
+    {
+      "title": "Description",
+      "code": [
+        "        :r file1 file2",
+        "        prog.x file1 file2"
+      ],
+      "raw_content": "The <b>nargs</b>  function is used to determine the number of arguments that have been passed to a program from the command line. For example, if the program is run from the Turing environment using<p>\r\n</p>\r\nthen <b>nargs</b> will return 2. If a program called <i>prog.x </i>is run under UNIX using this command:<p>\r\n</p>\r\nthe value of <b>nargs</b> will similarly be 2.<p>\r\nThe <b>nargs</b> function is usually used together with the <b>fetcharg</b> function to access the arguments that have been passed to the program. </p>\n<p>\r\n</p>",
+      "mdown_content": "The **nargs**  function is used to determine the number of arguments that have been passed to a program from the command line. For example, if the program is run from the Turing environment using\n\nthen **nargs** will return 2. If a program called *prog.x *is run under UNIX using this command:\n\nthe value of **nargs** will similarly be 2.\nThe **nargs** function is usually used together with the **fetcharg** function to access the arguments that have been passed to the program. \n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "fetcharg",
+        ""
+      ],
+      "raw_content": "<b><a href=\"fetcharg.html\">fetcharg</a></b> for an example of the use of <b><a href=\"\">nargs</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[fetcharg.html](fetcharg)** for an example of the use of **[](nargs)**."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Text.WhatColor",
+  "fileName": "text_whatcolor",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Text.WhatColor</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Text.WhatColor** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Text.WhatColor</b> function is used to<b> </b>determine the current text (foreground) color, ie., the color used for characters that are output using <b>put</b>. The alternate spelling is <b>Text.WhatColour</b>.<p>\r\n</p>",
+      "mdown_content": "The **Text.WhatColor** function is used to** **determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"graphics\")\r\n        \r\n        put \"This writing is in color number \", Text.WhatColor"
+      ],
+      "raw_content": "This program outputs the currently-active color number. The  message is also given in the currently-active color.<p>\r\n</p>",
+      "mdown_content": "This program outputs the currently-active color number. The  message is also given in the currently-active color."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See <b>View.Set </b>for details.<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\"* *or \"*graphics*\" mode. See **View.Set **for details."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.WhatColor</b>, not by calling <b>WhatColor</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.WhatColor**, not by calling **WhatColor**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "text_color",
+        "procedure",
+        "set",
+        "color",
+        "text_colorback",
+        "text_whatcolorback"
+      ],
+      "raw_content": "the <b><a href=\"text_color.html\">Text.Color</a></b> <a href=\"procedure.html\">procedure</a>, which is used to <a href=\"set.html\">set</a> the <a href=\"color.html\">color</a>. See also <b><a href=\"text_colorback.html\">Text.ColorBack</a></b> and <b><a href=\"text_whatcolorback.html\">Text.WhatColorBack</a></b>.<p>\r\n</p>",
+      "mdown_content": "the **[text_color.html](Text.Color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[text_colorback.html](Text.ColorBack)** and **[text_whatcolorback.html](Text.WhatColorBack)**."
+    }
+  ]
+}

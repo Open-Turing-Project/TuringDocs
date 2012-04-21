@@ -1,0 +1,37 @@
+{
+  "title": "assert",
+  "fileName": "assert",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>assert</b> <i>trueFalseExpn</i><p>\r\n</p></font>",
+      "mdown_content": "**assert** *trueFalseExpn*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "An <b>assert</b> statement is used to make sure that a certain requirement is met. This requirement is given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.<p>\r\n</p>",
+      "mdown_content": "An **assert** statement is used to make sure that a certain requirement is met. This requirement is given by the *trueFalseExpn*. The *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        assert n > 0"
+      ],
+      "raw_content": "Make sure that <i>n</i> is positive.<p>\r\n</p>",
+      "mdown_content": "Make sure that *n* is positive."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var fileNumber : int\r\n        open : fileNumber, \"textFile\", read\r\n        assert fileNumber > 0"
+      ],
+      "raw_content": "This program assumes that the <i>textFile </i>exists and can be opened, in other words, that the <b>open</b> will set the <i>fileNumber </i>to a positive stream number. If this is not true, the programmer wants the program halted immediately.<p>\r\n</p>",
+      "mdown_content": "This program assumes that the *textFile *exists and can be opened, in other words, that the **open** will set the *fileNumber *to a positive stream number. If this is not true, the programmer wants the program halted immediately."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In some Turing systems, checking can be turned off. If checking is turned off, <b>assert</b> statements may be ignored and as a result never cause termination.<p>\r\n</p>",
+      "mdown_content": "In some Turing systems, checking can be turned off. If checking is turned off, **assert** statements may be ignored and as a result never cause termination."
+    }
+  ]
+}

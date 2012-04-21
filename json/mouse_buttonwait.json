@@ -1,0 +1,51 @@
+{
+  "title": "Mouse.ButtonWait",
+  "fileName": "mouse_buttonwait",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Mouse.ButtonWait </b>(<i>motion</i> : <b>string</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>x</i>, <i>y</i>, <i>buttonNumber</i>, <i>buttonUpDown</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "**Mouse.ButtonWait **(*motion* : **string**,  \n**var** *x*, *y*, *buttonNumber*, *buttonUpDown* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Mouse.ButtonWait</b> procedure gets information about a mouse event and removes it from the queue.<p>\r\nThe parameter <i>motion</i> must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, <b>Mouse.ButtonWait</b> returns<b> </b>instantly. If there isn't such an event, <b>Mouse.ButtonWait</b> waits until there is one and then returns (much like <b>getch</b> handles keystrokes).</p>\n<p>\r\nIn \"<i>single-button mode</i>\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.</p>\n<p>\r\nIn \"<i>multi-button mode</i>\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.</p>\n<p>\r\nThe parameters <i>x</i> and <i>y</i> are set to the position of the mouse cursor when the button was pressed. The parameter <i>buttonnumber</i> is set to 1 when in \"<i>single-button mode</i>\". In  \"<i>multi-button mode</i>\", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <i>buttonupdown</i> is set to 1, if a button was pressed and 0 if a button was released. </p>\n<p>\r\n</p>",
+      "mdown_content": "The **Mouse.ButtonWait** procedure gets information about a mouse event and removes it from the queue.\nThe parameter *motion* must be one of \"up\", \"down\", \"updown\" or \"downup\". If an event of the type requested is in the queue, **Mouse.ButtonWait** returns** **instantly. If there isn't such an event, **Mouse.ButtonWait** waits until there is one and then returns (much like **getch** handles keystrokes).\n\nIn \"*single-button mode*\" (where the mouse is treated like a one-button mouse), a \"down\" event occurs whenever all the buttons are up and a button is pressed. An \"up\" event takes place when the last button is released so that no buttons remain pressed.\n\nIn \"*multi-button mode*\", a \"down\" event occurs whenever any button is pressed, and an \"up\" event occurs whenever any button is released.\n\nThe parameters *x* and *y* are set to the position of the mouse cursor when the button was pressed. The parameter *buttonnumber* is set to 1 when in \"*single-button mode*\". In  \"*multi-button mode*\", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter *buttonupdown* is set to 1, if a button was pressed and 0 if a button was released. \n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var x, y, btnNumber, btnUpDown, buttons : int\r\n        var nx, ny : int\r\n        loop\r\n            Mouse.ButtonWait (\"down\", x, y, btnNumber, btnUpDown)\r\n            nx := x\r\n            ny := y\r\n            loop\r\n                Draw.Line (x, y, nx, ny, 0) % Erase previous line\r\n                exit when Mouse.ButtonMoved (\"up\")\r\n                Mouse.Where (nx, ny, buttons)\r\n                Draw.Line (x, y, nx, ny, 1) % Draw line to position\r\n            end loop\r\n            Mouse.ButtonWait (\"up\", nx, ny, btnNumber, btnUpDown)\r\n            Draw.Line (x, y, nx, ny, 2) % Draw line to final position\r\n        end loop"
+      ],
+      "raw_content": "This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.<p>\r\n</p>",
+      "mdown_content": "This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var ch : string (1)\r\n        var x, y, btnNum, btnUpDown : int\r\n        loop\r\n            if hasch then\r\n                getch (ch)\r\n                Text.Locate (1, 1)\r\n                put \"The character entered is a: \", ch\r\n            end if\r\n            if Mouse.ButtonMoved (\"down\") then\r\n                Mouse.ButtonWait (\"down\", x, y, btnNum, btnUpDown)\r\n                Text.Locate (1, 1)\r\n                put \"The button was clicked at position: \", x, \", \",y\r\n            end if\r\n        end loop"
+      ],
+      "raw_content": "This is an example demonstrating how to check for both character and mouse input at the same time.<p>\r\n</p>",
+      "mdown_content": "This is an example demonstrating how to check for both character and mouse input at the same time."
+    },
+    {
+      "title": "Details",
+      "raw_content": "<b>Mouse.ButtonWait </b>can be thought of as the mouse equivalent of <b>getch</b> in that they both read something in a queue and both wait until they get the thing they're looking for.<p>\r\n</p>",
+      "mdown_content": "**Mouse.ButtonWait **can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Mouse.ButtonWait</b>, not by calling <b>ButtonWait</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Mouse.ButtonWait**, not by calling **ButtonWait**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "",
+        "mouse_buttonchoose"
+      ],
+      "raw_content": "<b><a href=\"\">Mouse.ButtonWait</a></b> to see if an appropriate event is in the queue. See also <b><a href=\"mouse_buttonchoose.html\">Mouse.ButtonChoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\n</p>",
+      "mdown_content": "**[](Mouse.ButtonWait)** to see if an appropriate event is in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between \"*single-button mode*\" and \"*multi-button mode*\"."
+    }
+  ]
+}

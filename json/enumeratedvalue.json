@@ -1,0 +1,38 @@
+{
+  "title": "enumeratedValue",
+  "fileName": "enumeratedvalue",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An enumeratedValue is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>enumeratedTypeId</i> . <i>enumeratedId</i></font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "An enumeratedValue is:\n\n \n*enumeratedTypeId* . *enumeratedId*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The values of an enumerated type are written as the type name (<i>enumeratedTypeId</i>) followed by a dot followed by one of the enumerated values of the type (<i>enumeratedId</i>).<p>\r\n</p>",
+      "mdown_content": "The values of an enumerated type are written as the type name (*enumeratedTypeId*) followed by a dot followed by one of the enumerated values of the type (*enumeratedId*)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type color : enum (red, green, blue)\r\n        var c : color := color . red\r\n        var d : color := succ (c)       % d becomes green"
+      ],
+      "raw_content": "In this example, <i>color</i>.<i>red</i> is an <i>enumeratedValue</i>.<p>\r\n</p>",
+      "mdown_content": "In this example, *color*.*red* is an *enumeratedValue*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The above description has been simplified by ignoring the possibility that the <b>enum</b> type can be exported from a <b>module</b>. If this is the case, each use of one of the enumerated values outside of module <i>M</i> must be preceded by the module name and a dot, as in <i>M</i>.<i>color</i>.<i>red</i>.<p>\r\n</p>",
+      "mdown_content": "The above description has been simplified by ignoring the possibility that the **enum** type can be exported from a **module**. If this is the case, each use of one of the enumerated values outside of module *M* must be preceded by the module name and a dot, as in *M*.*color*.*red*."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "enum",
+        "explicitconstant"
+      ],
+      "raw_content": "the <b><a href=\"enum.html\">enum</a></b> type and <i><a href=\"explicitconstant.html\">explicitConstant</a></i>.<p>\r\n</p>",
+      "mdown_content": "the **[enum.html](enum)** type and *[explicitconstant.html](explicitConstant)*."
+    }
+  ]
+}

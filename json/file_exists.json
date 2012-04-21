@@ -1,0 +1,39 @@
+{
+  "title": "File.Exists",
+  "fileName": "file_exists",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<b>File.Exists</b> (<i>pathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p>",
+      "mdown_content": "**File.Exists** (*pathName* : **string**) : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>File.Exists </b>returns <b>true</b> if a file by the name of <i>pathName</i> exists. It will return <b>false</b> if <i>pathName</i> is a directory.<p>\r\n</p>",
+      "mdown_content": "**File.Exists **returns **true** if a file by the name of *pathName* exists. It will return **false** if *pathName* is a directory."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>File.Exists</b> returns <b>false</b>, you can examine <b>Error.Last</b> or <b>Error.LastMsg</b> for more information (i.e. whether the path failed or the file was simply not found).<p>\r\n</p>",
+      "mdown_content": "If the **File.Exists** returns **false**, you can examine **Error.Last** or **Error.LastMsg** for more information (i.e. whether the path failed or the file was simply not found)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pathName : string\r\n        var choice : string\r\n        loop\r\n            put \"Enter file name to write results to\" ..\r\n            get pathName\r\n            if File.Exists (pathName) then\r\n                put \"Overwrite \", pathName, \"?\" ..\r\n                get choice\r\n                exit when choice = \"y\"\r\n            else\r\n                exit\r\n            end if\r\n        end loop"
+      ],
+      "raw_content": "This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.<p>\r\n</p>",
+      "mdown_content": "This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten."
+    },
+    {
+      "title": "Execute",
+      "raw_content": "An example program is available that creates a file in the current \r\n        directory, tests for its existence using <b>File.Exists</b> and \r\n        deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Exists.t;File.Exists Example\"></object></p>\n<p></p>",
+      "mdown_content": "An example program is available that creates a file in the current \ndirectory, tests for its existence using **File.Exists** and \ndeletes the file using **File.Delete**.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Exists</b>, not by calling <b>Exists</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Exists**, not by calling **Exists**.\n"
+    }
+  ]
+}

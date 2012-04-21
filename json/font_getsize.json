@@ -1,0 +1,31 @@
+{
+  "title": "Font.GetSize",
+  "fileName": "font_getsize",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.GetSize</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Font.GetSize** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Font.GetSize</b> is used to get the next size in the list of available font sizes for a particular font name and style. <p>\r\n<b>Font.StartSize</b> must be called before any calls to <b>Font.GetSize</b>. After that, <b>Font.GetSize</b> returns the list of sizes, one per call. When there are no more sizes, <b>Font.GetSize</b> returns 0.</p>\n<p>\r\nSome fonts are &#147;scalable&#148;. This means that the computer can scale the fonts to fit any given size. (Under Microsoft Windows and the Apple Macintosh, TrueType and PostScript fonts are scalable with the appropriate utilities.) In this case, <b>Font.GetSize</b> returns -1.</p>\n<p>\r\n</p>",
+      "mdown_content": "**Font.GetSize** is used to get the next size in the list of available font sizes for a particular font name and style. \n**Font.StartSize** must be called before any calls to **Font.GetSize**. After that, **Font.GetSize** returns the list of sizes, one per call. When there are no more sizes, **Font.GetSize** returns 0.\n\nSome fonts are scalable. This means that the computer can scale the fonts to fit any given size. (Under Microsoft Windows and the Apple Macintosh, TrueType and PostScript fonts are scalable with the appropriate utilities.) In this case, **Font.GetSize** returns -1.\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>Font.StartSize</b> for a program that lists all the fonts, styles and sizes available on the system.<p>\r\n    </p>",
+      "mdown_content": "See **Font.StartSize** for a program that lists all the fonts, styles and sizes available on the system.\n"
+    },
+    {
+      "title": "Example",
+      "raw_content": "An example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Font Listing Example\">\n<param name=\"Item1\" value=\"-1,FontList.t;Font Listing Example\"></object></p>\n<p></p>",
+      "mdown_content": "An example is available that displays full information about\nthe fonts including name, styles, and point sizes.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.GetSize</b>, not by calling <b>GetSize</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.GetSize**, not by calling **GetSize**.\n"
+    }
+  ]
+}

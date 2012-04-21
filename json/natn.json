@@ -1,0 +1,39 @@
+{
+  "title": "natn",
+  "fileName": "natn",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat1</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 1-byte natural number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat2</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 2-byte natural number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat4</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 4-byte natural number</i></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "\n\n \n(a)\n**nat1**\n \n \n*% 1-byte natural number*\n \n(b)\n**nat2**\n \n \n*% 2-byte natural number*\n \n(c)\n**nat4**\n \n \n*% 4-byte natural number*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>nat<i>n</i></b> (<i>n</i>-byte natural number) types are machine-dependent  types that occupy a specified number of bytes. By contrast, the <b>nat</b> type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).<p>\r\n</p>",
+      "mdown_content": "The **nat*n*** (*n*-byte natural number) types are machine-dependent  types that occupy a specified number of bytes. By contrast, the **nat** type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var counter1 : nat1     % Range is 0 .. 255\r\n        var counter2 : nat2     % Range is 0 .. 65536\r\n        var counter4 : nat4     % Range is 0 .. 4294967295"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "In Turing, the range of the <b>nat</b> is 0 to 4294967294, which means that the <b>nat4</b> type allows one more value, 4294967295. This extra value is used in <b>nat</b> to represent the state of being uninitialized. The <b>nat<i>n</i></b> types allow use of all possible values that fit into <i>n</i> bytes and thereby eliminates checking for initialization.<p>\r\nThe <b>nat<i>n</i></b> types are like the C language types <i>short unsigned</i>, <i>unsigned</i>, and <i>long unsigned</i>, except that the number of bytes occupied by the C types depends on the particular C compiler.</p>\n<p>\r\n</p>",
+      "mdown_content": "In Turing, the range of the **nat** is 0 to 4294967294, which means that the **nat4** type allows one more value, 4294967295. This extra value is used in **nat** to represent the state of being uninitialized. The **nat*n*** types allow use of all possible values that fit into *n* bytes and thereby eliminates checking for initialization.\nThe **nat*n*** types are like the C language types *short unsigned*, *unsigned*, and *long unsigned*, except that the number of bytes occupied by the C types depends on the particular C compiler.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "int",
+        "nat",
+        "int"
+      ],
+      "raw_content": "the <b><a href=\"int.html\">int</a><i>n</i></b><i> </i>types which are <i>n</i> byte integer values. See also <b><a href=\"nat.html\">nat</a></b> and <b><a href=\"int.html\">int</a></b>.<p>\r\n</p>",
+      "mdown_content": "the **[int.html](int)*n**** *types which are *n* byte integer values. See also **[nat.html](nat)** and **[int.html](int)**."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "Font.New",
+  "fileName": "font_new",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.New</b> (<i>fontSelectStr</i> : <b>string</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Font.New** (*fontSelectStr* : **string**) : **int**"
+    },
+    {
+      "title": "Description",
+      "code": [
+        "        example fontID := Font.New (\"Ariel:18x12:Italic\")"
+      ],
+      "raw_content": "<b>Font.New </b>is used to obtain a font for drawing. The \r\n          <i>fontSelectStr</i>parameter specifies the name, size and \r\n          style of the font. <b>Font.New</b> returns a font identifier \r\n          which is then used by the <b>Font.Draw</b> procedure to draw \r\n          text in the selected font.<p>\r\n          The format for the <i>fontSelectStr</i>parameter is \r\n          \"<i>Family</i>:<i>Size</i>:<i>Style</i>\". Each element is separated \r\n          by a colon. The \":<i>Style</i>\" is optional. If left out, the text \r\n          appears in the standard face for the font.</p>\n<p>\r\n          <i>Family</i> is the name of the font, such as \"Times\", \"Helvetica\", \r\n          etc. The name must match an existing font on the system. Because \r\n          one does not necessarily know which fonts will be available and \r\n          names for the same font change between different systems \r\n          (i.e Times, Times-Roman, etc.), Turing defines three family names \r\n          that will be mapped as closely as possible to fonts that exist on \r\n          the system.</p>\n<p>\r\n          </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\"serif\" is used for a serifed body font. This will usually \r\n                  be mapped to Times-Roman.\r\n            </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\"sans serif\" is used for a non-serifed display font. This \r\n                  will usually be mapped to Arial.</td>\r\n            </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\"mono\" is used for a mono spaced font. This will usually be \r\n                  mapped to Courier.</td>\r\n            </tr>\n</table>\n<p>\r\n          <i>Size</i> is the point size in which the text should appear. If \r\n          the number is larger or smaller than can be created on a given \r\n          system, the system will return the font of the largest or smallest \r\n          size available and set <b>Error.Last</b>.</p>\n<p>\r\n          Under Turing, the <i>size</i> parameter may also have the form \r\n          <i>height </i>x <i>width</i> where <i>height</i> and <i>width</i> \r\n          are the pixel height and width desired. What is returned is the \r\n          font scaled in order to fit into the <i>width</i> and <i>height</i> \r\n          requested. The font name must be a scaleable font for this to \r\n          succeed.</p>\n<p>\r\n          </p>\r\n          <i>Style</i> is the font style in which the text should appear. It \r\n          can be one of \"bold\", \"italic\" or \"underline\". You can also have \r\n          \"bold,italic\" and any other combination.<p>\r\n    </p>",
+      "mdown_content": "**Font.New **is used to obtain a font for drawing. The \n*fontSelectStr*parameter specifies the name, size and \nstyle of the font. **Font.New** returns a font identifier \nwhich is then used by the **Font.Draw** procedure to draw \ntext in the selected font.\nThe format for the *fontSelectStr*parameter is \n\"*Family*:*Size*:*Style*\". Each element is separated \nby a colon. The \":*Style*\" is optional. If left out, the text \nappears in the standard face for the font.\n\n*Family* is the name of the font, such as \"Times\", \"Helvetica\", \netc. The name must match an existing font on the system. Because \none does not necessarily know which fonts will be available and \nnames for the same font change between different systems \n(i.e Times, Times-Roman, etc.), Turing defines three family names \nthat will be mapped as closely as possible to fonts that exist on \nthe system.\n\n\n \n\"serif\" is used for a serifed body font. This will usually \nbe mapped to Times-Roman.\n\n \n\"sans serif\" is used for a non-serifed display font. This \nwill usually be mapped to Arial.\n \n\"mono\" is used for a mono spaced font. This will usually be \nmapped to Courier.\n\n*Size* is the point size in which the text should appear. If \nthe number is larger or smaller than can be created on a given \nsystem, the system will return the font of the largest or smallest \nsize available and set **Error.Last**.\n\nUnder Turing, the *size* parameter may also have the form \n*height *x *width* where *height* and *width* \nare the pixel height and width desired. What is returned is the \nfont scaled in order to fit into the *width* and *height* \nrequested. The font name must be a scaleable font for this to \nsucceed.\n\n\n*Style* is the font style in which the text should appear. It \ncan be one of \"bold\", \"italic\" or \"underline\". You can also have \n\"bold,italic\" and any other combination.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>Font.New</b> call fails, then it returns 0. Also \r\n          <b>Error.Last</b> will return a non-zero value indicating the \r\n          reason for the failure. <b>Error.LastMsg</b> will return a \r\n          string which contains the textual version of the error.<p>\r\n          It is quite possible for <b>Error.Last</b> to be set, even if \r\n          the call succeeds. <b>Font.New</b> will report success even if \r\n          unable to successfully match the requested font with the available \r\n          resources. A font will be set that matches as closely as possible \r\n          the requested font and <b>Last.Error</b> will be set to indicate \r\n          that some substitutions were required.</p>\n<p>\r\n    </p>",
+      "mdown_content": "If the **Font.New** call fails, then it returns 0. Also \n**Error.Last** will return a non-zero value indicating the \nreason for the failure. **Error.LastMsg** will return a \nstring which contains the textual version of the error.\nIt is quite possible for **Error.Last** to be set, even if \nthe call succeeds. **Font.New** will report success even if \nunable to successfully match the requested font with the available \nresources. A font will be set that matches as closely as possible \nthe requested font and **Last.Error** will be set to indicate \nthat some substitutions were required.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var font1, font2, font3, font4 : int\r\n        font1 := Font.New (\"serif:12\")\r\n        font2 := Font.New (\"sans serif:18:bold\")\r\n        font3 := Font.New (\"mono:9\")\r\n        font4 := Font.New (\"Palatino:24:Bold,Italic\")\r\n        assert font1 > 0 and font2 > 0 and font3 > 0 and font4 > 0\r\n        Font.Draw (\"This is in a serif font\", 50, 30, font1, red)\r\n        Font.Draw (\"This is in a sans serif font\", 50, 80, font2, brightblue)\r\n        Font.Draw (\"This is in a mono font\", 50, 130, font3, colorfg)\r\n        Font.Draw (\"This is in Palatino (if available)\", 50, 180, font4, green)\r\n        Font.Free (font1)\r\n        Font.Free (font2)\r\n        Font.Free (font3)\r\n        Font.Free (font4)"
+      ],
+      "raw_content": "The program prints out several phrases in a variety of fonts.<p>\r\n</p>",
+      "mdown_content": "The program prints out several phrases in a variety of fonts."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.Draw Example",
+          "file": "Font.Draw.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Font.New</b>, not by calling <b>New</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Font.New**, not by calling **New**.\n\n"
+    }
+  ]
+}

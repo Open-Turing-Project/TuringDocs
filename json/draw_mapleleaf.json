@@ -1,0 +1,58 @@
+{
+  "title": "Draw.MapleLeaf",
+  "fileName": "draw_mapleleaf",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Draw.MapleLeaf</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Draw.MapleLeaf** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "draw_mapleleaf01.gif"
+      ],
+      "raw_content": "The <b>Draw.MapleLeaf </b>procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i>, then the maple leaf is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
+      "mdown_content": "The **Draw.MapleLeaf **procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2*, then the maple leaf is drawn upside down.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"graphics\")\r\n        Draw.MapleLeaf (0, 0, 100, 100, red)\r\n        Draw.MapleLeaf (150, 100, 250, 0, yellow)"
+      ],
+      "raw_content": "This program will draw two maple leaves beside each other. The first will be in red and the second maple leaf will be upside down and in yellow.<p>\r\n</p>",
+      "mdown_content": "This program will draw two maple leaves beside each other. The first will be in red and the second maple leaf will be upside down and in yellow."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Draw.MapleLeaf Example",
+          "file": "Draw.MapleLeaf.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>Draw.MapleLeaf</b> procedure is useful for drawing the Canadian flag.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Draw.MapleLeaf** procedure is useful for drawing the Canadian flag.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.MapleLeaf</b>, not by calling <b>MapleLeaf</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.MapleLeaf**, not by calling **MapleLeaf**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "view_set",
+        "maxx",
+        "maxy",
+        "drawmodule"
+      ],
+      "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
+      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
+    }
+  ]
+}

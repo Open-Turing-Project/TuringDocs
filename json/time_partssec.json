@@ -1,0 +1,39 @@
+{
+  "title": "Time.PartsSec",
+  "fileName": "time_partssec",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<b>Time.PartsSec</b> (<i>year</i>, <i>month</i>, <i>day</i>, <i>hour</i>, <i>minute</i>, <i>second</i> : <b>int</b>) : <b>int</b><p>\r\n</p>",
+      "mdown_content": "**Time.PartsSec** (*year*, *month*, *day*, *hour*, *minute*, *second* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.PartsSec</b> function is used to<b> </b>convert the numeric parts of a date (specifically the year, month, day, hour, minute and second) into the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date specified by the parts.<p>\r\nThe function can also convert a time without a date (year, month and day are all 0), in which case it returns the number of seconds that have passed since midnight of the current day.</p>\n<p>\r\nIf the numbers don't make any sense or can't be interpreted, then <b>Time.PartsSec</b> will return 1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Time.PartsSec** function is used to** **convert the numeric parts of a date (specifically the year, month, day, hour, minute and second) into the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date specified by the parts.\nThe function can also convert a time without a date (year, month and day are all 0), in which case it returns the number of seconds that have passed since midnight of the current day.\n\nIf the numbers don't make any sense or can't be interpreted, then **Time.PartsSec** will return 1 and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put \"The number of seconds from 00:00:00 GMT Jan 1, 1970\",\r\n            \"is \", Time.PartsSec (1989, 12, 25, 9, 27, 0)"
+      ],
+      "raw_content": "This program gives the number of seconds between 00:00:00 GMT Jan 1, 1970 and 9:27 in the morning, Christmas Day, 1989).<p>\r\n</p>",
+      "mdown_content": "This program gives the number of seconds between 00:00:00 GMT Jan 1, 1970 and 9:27 in the morning, Christmas Day, 1989)."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.PartsSec</b>, not by calling <b>PartsSec</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.PartsSec**, not by calling **PartsSec**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_secparts",
+        "time_date",
+        "time_sec"
+      ],
+      "raw_content": "<b><a href=\"time_secparts.html\">Time.SecParts</a></b>, <b><a href=\"time_date.html\">Time.Date</a></b> and <b><a href=\"time_sec.html\">Time.Sec</a></b> functions.<p>\r\n</p>",
+      "mdown_content": "**[time_secparts.html](Time.SecParts)**, **[time_date.html](Time.Date)** and **[time_sec.html](Time.Sec)** functions."
+    }
+  ]
+}

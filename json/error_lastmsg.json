@@ -1,0 +1,39 @@
+{
+  "title": "Error.LastMsg",
+  "fileName": "error_lastmsg",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Error.LastMsg</b> : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**Error.LastMsg** : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Error.LastMsg</b> is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use <b>Error.Last</b> to obtain the error code.<p>\r\nThe fact that <b>Error.LastMsg</b> is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. <b>Error.LastMsg</b> also returns a number of warning messages. For example, if a user specifies a number larger than <b>maxcolor</b> for the <i>color</i> parameter of the <b>Draw.Line</b> procedure, the line is still drawn, only in color <b>maxcolor</b>. However, <b>Error.LastMsg</b> will return a message that indicates that the color was out of range</p>\n<p>\r\n</p>",
+      "mdown_content": "**Error.LastMsg** is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use **Error.Last** to obtain the error code.\nThe fact that **Error.LastMsg** is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. **Error.LastMsg** also returns a number of warning messages. For example, if a user specifies a number larger than **maxcolor** for the *color* parameter of the **Draw.Line** procedure, the line is still drawn, only in color **maxcolor**. However, **Error.LastMsg** will return a message that indicates that the color was out of range\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Dir.Create (\"testdata/information\")\r\n        if Error.Last = eNoError then\r\n            put \"Directory created\"\r\n        else\r\n            put \"Did not create the directory.\"\r\n            put \"Error Number: \", Error.Last\r\n            put \"Error Message: \", Error.LastMsg\r\n        end if"
+      ],
+      "raw_content": "This program creates the directory called <i>information</i>. If the creation fails, it prints out the error number and an error message.<p>\r\n</p>",
+      "mdown_content": "This program creates the directory called *information*. If the creation fails, it prints out the error number and an error message."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Error.LastMsg Example",
+          "file": "Error.LastMsg.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Error.LastMsg</b>, not by calling <b>LastMsg</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.LastMsg**, not by calling **LastMsg**.\n"
+    }
+  ]
+}

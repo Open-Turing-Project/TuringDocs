@@ -1,0 +1,56 @@
+{
+  "title": "system",
+  "fileName": "system",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>system</b> ( <i>command</i> : <b>string</b>, <b>var</b> <i>ret</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**system** ( *command* : **string**, **var** *ret* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>system</b> statement is used to execute the shell (operating system) <i>command</i>, as if it were typed at the terminal. The return code is in <i>ret</i>. A return code of 0 (zero) means no detected errors. A return code of 127 means the command processor could not be accessed. A return code of 126 means the command processor did not have room to run on the PC.<p>\r\n</p>",
+      "mdown_content": "The **system** statement is used to execute the shell (operating system) *command*, as if it were typed at the terminal. The return code is in *ret*. A return code of 0 (zero) means no detected errors. A return code of 127 means the command processor could not be accessed. A return code of 126 means the command processor did not have room to run on the PC."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var success : int\r\n        system ( \"dir\", success )\r\n        if success not= 0 then\r\n            if success= 127 then\r\n                put \"Sorry, can't find 'command.com'\"\r\n            elsif success = 126 then\r\n                put \"Sorry, no room to run 'dir'\"\r\n            else\r\n                put \"Sorry, 'dir' did not work\"\r\n            end if\r\n        end if"
+      ],
+      "raw_content": "This program creates a directory listing when run under DOS on an IBM PC compatible computer. The same program will run under UNIX by changing \"<i>dir</i>\" to \"<i>ls</i>\".<p>\r\n</p>",
+      "mdown_content": "This program creates a directory listing when run under DOS on an IBM PC compatible computer. The same program will run under UNIX by changing \"*dir*\" to \"*ls*\"."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        i.e.    system (\"chain:myprog.exe\", retCode)"
+      ],
+      "raw_content": "When the <b>system</b> procedure is used, the executing program usually remains in memory while the system command is executing, and once execution of the system command is finished, control returns to the original program. However, on the PC, there is variant of the <b>system</b> procedure that allows \"chaining\". This means that when the system command is executed, the originally running program is \"thrown away\" (i.e. removed from memory). When the executed program terminates, one is returned to DOS.<p>\r\nTo chain another program, one prepends \"chain:\" to the start <i>command</i>.</p>\n<p>\r\n</p>\r\nNote that this command is \"hazardous\". Specifically, if you call it from Turing (as opposed to a program compiled with TComp) and you have not saved your source file, <b>you</b> <b>will</b> <b>lose</b> <b>it!</b>  Turing will be removed from memory without any warning when the <b>system</b> procedure is executed. Likewise any open files will be closed instantly. This means there is a danger if all files were not properly closed before the <b>system</b> procedure was called. <p>\r\nThe \"chain:\" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.</p>\n<p>\r\n</p>",
+      "mdown_content": "When the **system** procedure is used, the executing program usually remains in memory while the system command is executing, and once execution of the system command is finished, control returns to the original program. However, on the PC, there is variant of the **system** procedure that allows \"chaining\". This means that when the system command is executed, the originally running program is \"thrown away\" (i.e. removed from memory). When the executed program terminates, one is returned to DOS.\nTo chain another program, one prepends \"chain:\" to the start *command*.\n\n\nNote that this command is \"hazardous\". Specifically, if you call it from Turing (as opposed to a program compiled with TComp) and you have not saved your source file, **you** **will** **lose** **it!**  Turing will be removed from memory without any warning when the **system** procedure is executed. Likewise any open files will be closed instantly. This means there is a danger if all files were not properly closed before the **system** procedure was called. \nThe \"chain:\" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var choice, success : int\r\n        put \"Enter the subject (1-4): \"..\r\n        get choice\r\n        var command : string\r\n        case choice of\r\n            % Note the use of the double backslash in the file name. This\r\n            % is because the backslash is a special character in Turing (as\r\n            % in \\t for tab and \\n for a newline). To get a single backslash, \r\n            % one uses \\\\.\r\n            label 1 :   command := \"c:\\\\chemistry.exe\"\r\n            label 2 :   command := \"c:\\\\math.exe\"\r\n            label 3 :   command := \"c:\\\\english.exe\"\r\n            label 4 :   command := \"c:\\\\history.exe\"\r\n            label :     put \"Choice must be from 1-4.\"\r\n                    assert false    % Wasn't a 1-4. Terminate.\r\n        end case\r\n        system ( \"chain:\" + command, success)\r\n        % If I reach this line, the system command failed and one should give\r\n        % an error message.\r\n        put \"System called failed.\"\r\n        put \"Program \\\"\", command, \"\\\"  couldn't be run.\"\r\n        assert false    % Terminate the program"
+      ],
+      "raw_content": "This program uses chaining to launch one of several possible programs based on user choice. It gives an error if for some reason the <b>system</b> command fails to work. It assumes that c:\\chemistry.exe, c:\\math.exe, c:\\english.exe and c:\\history.exe already exist.<p>\r\n</p>",
+      "mdown_content": "This program uses chaining to launch one of several possible programs based on user choice. It gives an error if for some reason the **system** command fails to work. It assumes that c:\\chemistry.exe, c:\\math.exe, c:\\english.exe and c:\\history.exe already exist."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Here are the possible errors under PC-Turing<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-1</td>\n<td width=\"10\">&nbsp;</td>\n<td>Not enough memory to load COMMAND.COM</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-2</td>\n<td width=\"10\">&nbsp;</td>\n<td>Not enough memory to run command</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-3</td>\n<td width=\"10\">&nbsp;</td>\n<td>Argument list greater than 128 bytes or environment info<br>\n</td>\n</tr>\n</table>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td>is greater than 32k</td>\n</tr></table>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-4</td>\n<td width=\"10\">&nbsp;</td>\n<td>Couldn't find COMMAND.COM</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-5</td>\n<td width=\"10\">&nbsp;</td>\n<td>COMMAND.COM corrupt</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>-6</td>\n<td width=\"10\">&nbsp;</td>\n<td>-noshell option is selected, the system procedure is<br>\n</td>\n</tr>\n</table>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td>disallowed</td>\n</tr></table>\n<p>\r\n</p>",
+      "mdown_content": "Here are the possible errors under PC-Turing\n\n \n-1\n \nNot enough memory to load COMMAND.COM\n \n-2\n \nNot enough memory to run command\n \n-3\n \nArgument list greater than 128 bytes or environment info\n \n \nis greater than 32k\n \n-4\n \nCouldn't find COMMAND.COM\n \n-5\n \nCOMMAND.COM corrupt\n \n-6\n \n-noshell option is selected, the system procedure is\n \n \ndisallowed\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "nargs",
+        "fetcharg",
+        "getenv",
+        "sysmodule"
+      ],
+      "raw_content": "<b><a href=\"nargs.html\">nargs</a></b>, <b><a href=\"fetcharg.html\">fetcharg</a></b> and <b><a href=\"getenv.html\">getenv</a></b> functions.<p>\r\nSee also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)** functions.\nSee also predefined unit **[sysmodule.html](Sys)**.\n"
+    }
+  ]
+}

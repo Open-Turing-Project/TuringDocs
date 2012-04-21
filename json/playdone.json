@@ -1,0 +1,42 @@
+{
+  "title": "playdone",
+  "fileName": "playdone",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>playdone</b> : <b>boolean</b><p>\r\n</p></font>",
+      "mdown_content": "**playdone** : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>playdone</b> function is used to determine when notes played by the <b>play</b> procedure have finished sounding.<p>\r\n</p>",
+      "mdown_content": "The **playdone** function is used to determine when notes played by the **play** procedure have finished sounding."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        play ( \"cde\" )\r\n        loop\r\n            exit when playdone\r\n        end loop\r\n        put \"All done\""
+      ],
+      "raw_content": "This program sounds the first three notes of the C scale and outputs \"All done\" as soon as they are finished. Without the loop, the message would come out before the notes are finished.<p>\r\n</p>",
+      "mdown_content": "This program sounds the first three notes of the C scale and outputs \"All done\" as soon as they are finished. Without the loop, the message would come out before the notes are finished."
+    },
+    {
+      "title": "Details",
+      "raw_content": "Under some systems such as UNIX, the <b>playdone</b> procedure may be meaningless.<p>\r\n</p>",
+      "mdown_content": "Under some systems such as UNIX, the **playdone** procedure may be meaningless."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "play",
+        "procedure",
+        "sound",
+        "procedure",
+        "sound",
+        "musicmodule"
+      ],
+      "raw_content": "the <b><a href=\"play.html\">play</a></b> <a href=\"procedure.html\">procedure</a>. See also the <b><a href=\"sound.html\">sound</a></b> <a href=\"procedure.html\">procedure</a> which makes a <a href=\"sound.html\">sound</a> of a given frequency (Hertz) and duration (milliseconds).<p>\r\nSee also predefined unit <b><a href=\"musicmodule.html\">Music</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "the **[play.html](play)** [procedure.html](procedure). See also the **[sound.html](sound)** [procedure.html](procedure) which makes a [sound.html](sound) of a given frequency (Hertz) and duration (milliseconds).\nSee also predefined unit **[musicmodule.html](Music)**.\n"
+    }
+  ]
+}

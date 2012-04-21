@@ -1,0 +1,41 @@
+{
+  "title": "pervasive",
+  "fileName": "pervasive",
+  "sections": [
+    {
+      "title": "Description",
+      "raw_content": "When a variable, constant, type or subprogram is declared, you can specify that it is to be <b>pervasive</b>, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword <b>pervasive</b> can be abbreviated as an asterisk (*).<p>\r\n</p>",
+      "mdown_content": "When a variable, constant, type or subprogram is declared, you can specify that it is to be **pervasive**, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword **pervasive** can be abbreviated as an asterisk (*)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pervasive counter : int % Short form: var * count : int\r\n        const * maxCounter : int := 100\r\n        procedure * p ( x : real )\r\n            \r\n        end p"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "The keyword <b>pervasive</b> is also used in <b>export</b> lists along with the keyword <b>unqualified</b>. See <b>export</b> list for details.<p>\r\n</p>",
+      "mdown_content": "The keyword **pervasive** is also used in **export** lists along with the keyword **unqualified**. See **export** list for details."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "var",
+        "declaration",
+        "const",
+        "declaration",
+        "procedure",
+        "declaration",
+        "function",
+        "declaration",
+        "export",
+        ""
+      ],
+      "raw_content": "<b><a href=\"var.html\">var</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"const.html\">const</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"procedure.html\">procedure</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"function.html\">function</a></b> <a href=\"declaration.html\">declaration</a>, <b>subprogram</b> header and <b><a href=\"export.html\">export</a></b> list for uses of <b><a href=\"\">pervasive</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[var.html](var)** [declaration.html](declaration), **[const.html](const)** [declaration.html](declaration), **[procedure.html](procedure)** [declaration.html](declaration), **[function.html](function)** [declaration.html](declaration), **subprogram** header and **[export.html](export)** list for uses of **[](pervasive)**."
+    }
+  ]
+}

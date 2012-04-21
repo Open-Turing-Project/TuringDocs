@@ -1,0 +1,43 @@
+{
+  "title": "Text.ColorBack",
+  "fileName": "text_colorback",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Text.ColorBack</b> ( <i>Color</i> :<i> </i><b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**Text.ColorBack** ( *Color* :* ***int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Text.ColorBack</b> procedure is used to<b> </b>change the current text background color. The alternate spelling is <b>Text.ColourBack</b>.<p>\r\nThe <b>Text.ColorBack</b> procedure sets the text background color to the specified color. This is the color that surrounds characters when they are <b>put</b> onto the screen. On an IBM PC in \"<i>screen</i>\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, <b>Text.ColorBack</b>(1) turns on highlighting and <b>Text.ColorBack</b>(0) turns it off. On other systems, this procedure may have no effect.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Text.ColorBack** procedure is used to** **change the current text background color. The alternate spelling is **Text.ColourBack**.\nThe **Text.ColorBack** procedure sets the text background color to the specified color. This is the color that surrounds characters when they are **put** onto the screen. On an IBM PC in \"*screen*\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, **Text.ColorBack**(1) turns on highlighting and **Text.ColorBack**(0) turns it off. On other systems, this procedure may have no effect.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set ( \"screen\" )\r\n        \r\n        Text.ColorBack ( red )\r\n        put \"Greetings\""
+      ],
+      "raw_content": "Since this program is in \"<i>screen</i>\"<i> </i>mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red.<p>\r\n</p>",
+      "mdown_content": "Since this program is in \"*screen*\"* *mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\" or \"<i>graphics</i>\" mode. If the screen mode has not been set, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details <p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\" or \"*graphics*\" mode. If the screen mode has not been set, it will automatically be set to \"*screen*\" mode. See **View.Set **for details "
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.ColorBack</b> , not by calling <b>ColorBack</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.ColorBack** , not by calling **ColorBack**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "text_color",
+        "text_whatcolorback"
+      ],
+      "raw_content": "<b><a href=\"text_color.html\">Text.Color</a></b> and <b><a href=\"text_whatcolorback.html\">Text.WhatColorBack</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[text_color.html](Text.Color)** and **[text_whatcolorback.html](Text.WhatColorBack)**."
+    }
+  ]
+}

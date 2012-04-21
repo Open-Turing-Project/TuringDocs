@@ -1,0 +1,51 @@
+{
+  "title": "Pic.Height",
+  "fileName": "pic_height",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Height</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Pic.Height** (*picID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Height </b>returns the width in pixels of the picture \r\n\t  represented by <i>picID</i>.<p>\r\n\t  This function is often used in conjunction with <b>Pic.Width</b> \r\n\t  to obtain the dimensions of a picture loaded using \r\n\t  <b>Pic.FileNew</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**Pic.Height **returns the width in pixels of the picture \nrepresented by *picID*.\nThis function is often used in conjunction with **Pic.Width** \nto obtain the dimensions of a picture loaded using \n**Pic.FileNew**.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pic : int := Pic.FileNew (\"lighthouse.jpg\")\r\n        var width : int := Pic.Width (pic)\r\n        var height : int := Pic.Height (pic)\r\n        var x, y : int := 0\r\n        loop\r\n            exit when y > maxy\r\n            loop\r\n                exit when x > maxx\r\n                Pic.Draw (pic, x, y, picCopy)\r\n                x := x + width\r\n            end loop\r\n            x := 0\r\n            y := y + height\r\n        end loop\r\n        "
+      ],
+      "images": [
+        "pic_height01.gif"
+      ],
+      "raw_content": "The program draws loads a picture from the file <i>lighthouse.jpg</i> \r\n          and proceeds to tile the entire run window with copies of the \r\n\t  picture.<p>\r\n</p>\r\n          <center></center>\r\n\t  <center><b>Output of Example Program</b></center>\n<p>\r\n    </p>",
+      "mdown_content": "The program draws loads a picture from the file *lighthouse.jpg* \nand proceeds to tile the entire run window with copies of the \npicture.\n\n\n**Output of Example Program**\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Pic.Height Example",
+          "file": "Pic.Height.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Height</b>, not by calling <b>Height</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Height**, not by calling **Height**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "pic_width",
+        "pic_filenew"
+      ],
+      "raw_content": "<b><a href=\"pic_width.html\">Pic.Width</a></b> to obtain a picture's \r\n          width and <b><a href=\"pic_filenew.html\">Pic.FileNew</a></b> to load \r\n\t  a picture from a graphics file.<p>\r\n    </p>",
+      "mdown_content": "**[pic_width.html](Pic.Width)** to obtain a picture's \nwidth and **[pic_filenew.html](Pic.FileNew)** to load \na picture from a graphics file.\n"
+    }
+  ]
+}

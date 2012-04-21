@@ -1,0 +1,35 @@
+{
+  "title": "Window.Show",
+  "fileName": "window_show",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Window.Show</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Window.Show** (*windowID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Window.Show</b> procedure makes the specified window appear if it was invisible. <p>\r\nTo make a window disappear after it's visible, you use <b>Window.Hide.</b></p>\n<p>\r\n</p>",
+      "mdown_content": "The **Window.Show** procedure makes the specified window appear if it was invisible. \nTo make a window disappear after it's visible, you use **Window.Hide.**\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.<p>\r\n</p>",
+      "mdown_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.Show</b>, not by calling <b>Show</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.Show**, not by calling **Show**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "window_select",
+        "window_setactive"
+      ],
+      "raw_content": "<b><a href=\"window_select.html\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>\n<p>\r\n</p>",
+      "mdown_content": "**[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n\n"
+    }
+  ]
+}

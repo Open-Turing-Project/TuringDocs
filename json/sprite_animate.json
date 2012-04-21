@@ -1,0 +1,52 @@
+{
+  "title": "Sprite.Animate",
+  "fileName": "sprite_animate",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.Animate</b> (<i>spriteID</i>, <i>picID, x</i>, <i>y</i> : <b>int</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>centered</i> : <b>boolean</b>)</font><p>\r\n    </p>",
+      "mdown_content": "**Sprite.Animate** (*spriteID*, *picID, x*, *y* : **int**,\n    *centered* : **boolean**)\n"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Moves the sprite specified by <i>spriteID</i> to the location \r\n      \t  specified by (<i>x, y</i>). If <i>centered</i> is <b>true</b>, \r\n      \t  then the sprite is centered on (<i>x, y</i>). Otherwise (<i>x, y</i>) \r\n      \t  specifies the lower-left corner of the sprite. At the same time, it \r\n      \t  changes the picture associated with the sprite.<p>\r\n          A simple example of the <b>Sprite.Animate</b> procedure would be of a \r\n          man walking. The picture associated with the sprite would constantly \r\n          change as the figure was walking. At the same time, the location of \r\n          the figure would also change.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Moves the sprite specified by *spriteID* to the location \nspecified by (*x, y*). If *centered* is **true**, \nthen the sprite is centered on (*x, y*). Otherwise (*x, y*) \nspecifies the lower-left corner of the sprite. At the same time, it \nchanges the picture associated with the sprite.\nA simple example of the **Sprite.Animate** procedure would be of a \nman walking. The picture associated with the sprite would constantly \nchange as the figure was walking. At the same time, the location of \nthe figure would also change.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var numFrames := Pic.Frames (\"mypic.gif\")\r\n        % Load the picture\r\n        var delayTime : int\r\n        var pics : array 1 .. numFrames of int\r\n\tPic.FileNewFrames (\"mypic.gif\", pics, delayTime)\r\n\r\n        var sprite: int\r\n        sprite:= Sprite.New (pics (1))\r\n        Sprite.SetPosition (sprite, 0, 100, false)\r\n        Sprite.Show (sprite)\r\n        for x : 8 .. maxx by 8\r\n            Sprite.Animate (sprite, pics ((x div 8) mod numFrames + 1), x, 100, false)\r\n    \t    delay (40)    % Stop sprite from moving too quickly\r\n        end for\r\n        Sprite.Free (sprite)"
+      ],
+      "links": [
+        "pic_filenewframes"
+      ],
+      "raw_content": "Here is a program that loads a series of images from an animated\r\n          GIF file called \"mypic.gif\".  It works by loading the images from\r\n          the GIF file into an array (see \r\n          <b><a href=\"pic_filenewframes.html\">Pic.FileNewFrames</a></b> for\r\n          more information) and then displays the images sequentially on the \r\n          screen, moving the image eight pixels each time.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "Here is a program that loads a series of images from an animated\nGIF file called \"mypic.gif\".  It works by loading the images from\nthe GIF file into an array (see \n**[pic_filenewframes.html](Pic.FileNewFrames)** for\nmore information) and then displays the images sequentially on the \nscreen, moving the image eight pixels each time.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Sprite Example",
+          "file": "Sprite.Animate.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Sprite.Animate</b>, not by calling <b>Animate</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Sprite.Animate**, not by calling **Animate**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_new",
+        "sprite_setposition",
+        "sprite_changepic"
+      ],
+      "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>, \r\n          <b><a href=\"sprite_setposition.html\">Sprite.SetPosition</a></b> and \r\n          <b><a href=\"sprite_changepic.html\">Sprite.ChangePic</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[sprite_new.html](Sprite.New)**, \n**[sprite_setposition.html](Sprite.SetPosition)** and \n**[sprite_changepic.html](Sprite.ChangePic)**.\n"
+    }
+  ]
+}

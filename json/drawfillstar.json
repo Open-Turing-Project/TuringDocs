@@ -1,0 +1,52 @@
+{
+  "title": "drawfillstar",
+  "fileName": "drawfillstar",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>drawfillstar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**drawfillstar** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "drawfillstar01.gif"
+      ],
+      "raw_content": "The <b>drawfillstar</b> procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a star outlined in a different color, use <b>drawfillstar</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawstar</b> with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
+      "mdown_content": "The **drawfillstar** procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) and filled using the specified *Color*. To get a star outlined in a different color, use **drawfillstar** with the *Color* parameter set to the fill color and then call **drawstar** with the *Color* parameter set to the border color. If *y1* is greater than *y2*, then the star is drawn upside down.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"graphics\")\r\n        drawfillstar (0, 0, 100, 100, 1)\r\n        drawstar (0, 0, 100, 100, 2)\r\n        drawfillstar (150, 100, 250, 0, 3)"
+      ],
+      "raw_content": "This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3.<p>\r\n</p>",
+      "mdown_content": "This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "drawfillstar Example",
+          "file": "drawfillstar.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>drawfillstar</b> procedure is useful for drawing the American flag.<p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **drawfillstar** procedure is useful for drawing the American flag.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\n\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setscreen",
+        "maxx",
+        "maxy"
+      ],
+      "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures. <p>\r\n</p>",
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures. "
+    }
+  ]
+}

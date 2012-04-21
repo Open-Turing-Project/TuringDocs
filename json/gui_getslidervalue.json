@@ -1,0 +1,37 @@
+{
+  "title": "GUI.GetSliderValue",
+  "fileName": "gui_getslidervalue",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetSliderValue</b> (<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetSliderValue** (*widgetID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the current value of a slider or scroll bar specified by <i>widgetID</i>. The <i>widgetID</i> must specify either scroll bar or a slider (horizontal or vertical).<p>\r\n</p>",
+      "mdown_content": "Returns the current value of a slider or scroll bar specified by *widgetID*. The *widgetID* must specify either scroll bar or a slider (horizontal or vertical)."
+    },
+    {
+      "title": "Example",
+      "raw_content": "See the <i>ScrollPic</i> program in <b>GUI.CreateHorizontalScrollBarFull </b>for an example of <b>GUI.GetSliderValue</b>.<p>\r\n</p>",
+      "mdown_content": "See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetSliderValue**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetSliderValue</b>, not by calling <b>GetSliderValue</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetSliderValue**, not by calling **GetSliderValue**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_setslidervalue",
+        "or",
+        "gui_createhorizontalslider",
+        "gui_createverticalslider"
+      ],
+      "raw_content": "<b><a href=\"gui_setslidervalue.html\">GUI.SetSliderValue</a> </b>for setting a slider <a href=\"or.html\">or</a> scroll bar's value. See also <b>GUI.CreateHorizontalScrollBar</b>, <b>GUI.CreateVerticalScrollBar</b>, <b><a href=\"gui_createhorizontalslider.html\">GUI.CreateHorizontalSlider</a></b>, and <b><a href=\"gui_createverticalslider.html\">GUI.CreateVerticalSlider</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[gui_setslidervalue.html](GUI.SetSliderValue) **for setting a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
+    }
+  ]
+}

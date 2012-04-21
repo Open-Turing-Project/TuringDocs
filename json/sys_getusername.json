@@ -1,0 +1,37 @@
+{
+  "title": "Sys.GetUserName",
+  "fileName": "sys_getusername",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sys.GetUserName</b> : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**Sys.GetUserName** : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Sys.GetUserName </b>function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.<p>\r\n</p>",
+      "mdown_content": "The **Sys.GetUserName **function is used to determine the name of the current user. It returns Unknown if a name could not be determined."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var computerName, userName : string\r\n        computerName := Sys.GetComputerName\r\n        userName := Sys.GetUserName\r\n        put \"Hello \", userName, \" on \", computerName"
+      ],
+      "raw_content": "This program outputs a greeting to the user .<p>\r\n</p>",
+      "mdown_content": "This program outputs a greeting to the user ."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.GetUserName</b>, not by calling<b> GetUserName</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetUserName**, not by calling** GetUserName**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sys_getcomputername"
+      ],
+      "raw_content": "<b><a href=\"sys_getcomputername.html\">Sys.GetComputerName</a></b> to obtain the name of the computer.<p>\r\n</p>",
+      "mdown_content": "**[sys_getcomputername.html](Sys.GetComputerName)** to obtain the name of the computer."
+    }
+  ]
+}

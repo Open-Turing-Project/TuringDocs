@@ -1,0 +1,61 @@
+{
+  "title": "put",
+  "fileName": "put",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>putStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>put</b> [ : <i>fileNumber</i> , ] <i>putItem</i> { , <i>putItem</i> } [ .. ]</font></td>\n</tr></table>\n<p></p>",
+      "mdown_content": "A *putStatement* is:\n\n \n**put** [ : *fileNumber* , ] *putItem* { , *putItem* } [ .. ]"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>put</b> statement outputs each of the <i>putItems</i>. Usually, a new line is started in the output after the final <i>putItem</i>. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.<p>\r\nOrdinarily, the output goes to the screen. However, if the <i>fileNumber </i>is present, the output goes to the file specified by the file number (see the <b>open</b> statement for details). Also, output can be redirected from the screen to a file, in which case all <b>put</b> statements without a file number are sent to the file instead of the screen.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **put** statement outputs each of the *putItems*. Usually, a new line is started in the output after the final *putItem*. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.\nOrdinarily, the output goes to the screen. However, if the *fileNumber *is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "            var n : int := 5\r\n            put \"Alice owes me $\", n\r\n                    % Output is: Alice owes me $5\r\n                    % Note that no extra space is\r\n                    % output before an integer such as n."
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Statement           Output      Notes\r\n        \r\n        put 24          24\r\n        put 1/10            0.1     % Trailing zeros omitted\r\n        put 100/10          10      % Decimal point omitted\r\n        put 5/3         1.666667    % 6 fraction digits\r\n        put sqrt (2)            1.414214    % 6 fraction digits\r\n        put 4.86 * 10**9        4.86e9  % Exponent for = 1e6\r\n        put 121 : 5         bb121   % Width 5; b is blank\r\n        put 1.37 : 6 : 3        b1.370  % Fraction width of 3\r\n        put 1.37 : 11 : 3 : 2   bb1.370e+00% Exponent width of 2\r\n        put \"Say \\\"Hello\\\"\" Say \"Hello\"\r\n        put \"XX\" : 4, \"Y\"       XXbbY   % Blank shown as b\r\n        put true and false  false       % Put out a boolean value\r\n        put 1 < 2           true        % Put out a boolean value"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        put \"\"  % Output null string then new line"
+      ],
+      "raw_content": "A single blank line is output this way:<p>\r\n</p>\r\nThis <b>put</b> statement is sometimes used to close off a line that has been output piece by piece using <b>put</b> with dot-dot.<p>\r\n</p>",
+      "mdown_content": "A single blank line is output this way:\n\nThis **put** statement is sometimes used to close off a line that has been output piece by piece using **put** with dot-dot."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The general form of a <i>putItem</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(a)</td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<i>expn</i> [:<i>widthExpn</i> [:<i>fractionWidth</i> [:<i>exponentWidth</i> ] ] ]</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>(b) </td>\n<td width=\"10\">&nbsp;</td>\n<td><b>skip</b></td>\n</tr>\n</table>\n<p>\r\nSee the above examples for uses of <i>widthExpn</i>, <i>fractionWidth</i> and <i>exponentWidth</i>. For the exact meaning of these three widths, see the definitions of the functions <i>realstr</i>, <i>frealstr</i> and <i>erealstr</i>. The <b>skip</b> item is used to end the current output line and start a new line.</p>\n<p>\r\n</p>",
+      "mdown_content": "The general form of a *putItem* is one of:\n\n \n(a)\n \n\n*expn* [:*widthExpn* [:*fractionWidth* [:*exponentWidth* ] ] ]\n \n(b) \n \n**skip**\n\nSee the above examples for uses of *widthExpn*, *fractionWidth* and *exponentWidth*. For the exact meaning of these three widths, see the definitions of the functions *realstr*, *frealstr* and *erealstr*. The **skip** item is used to end the current output line and start a new line.\n"
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        type colors : enum ( red, green, blue )\r\n        var c : colors := colors . red\r\n        put c       % outputs \"red\" (without the quotes)"
+      ],
+      "raw_content": "The <b>put</b> semantics allow put's of enum values. The values printed are the element names themselves, case sensitive. For example:<p>\r\n</p>",
+      "mdown_content": "The **put** semantics allow put's of enum values. The values printed are the element names themselves, case sensitive. For example:"
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        var c : boolean := true or false\r\n        put c       % outputs \"true\" (without the quotes)"
+      ],
+      "raw_content": "The <b>put</b> semantics allow put's of <b>boolean</b> values. The values printed are either &#147;true&#148; or &#147;false&#148; (without the quotes). For example:<p>\r\n</p>",
+      "mdown_content": "The **put** semantics allow put's of **boolean** values. The values printed are either true or false (without the quotes). For example:"
+    }
+  ]
+}

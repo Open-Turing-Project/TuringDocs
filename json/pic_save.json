@@ -1,0 +1,48 @@
+{
+  "title": "Pic.Save",
+  "fileName": "pic_save",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Save</b> (<i>picID</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p></p></font>",
+      "mdown_content": "**Pic.Save** (*picID* : **int**, *fileName* : **string**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Save </b>is used to save  a picture on the screen to a file.<p>\r\n\t  The <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>BMP files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr></table>\n<p>\r\n    </p>",
+      "mdown_content": "**Pic.Save **is used to save  a picture on the screen to a file.\nThe *fileName*parameter must give the format of the file:\n\n\n \nBMP files\n \n\"BMP:filename\" or \"filename.BMP\"\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "Various versions of Turing can save different formats of files. \r\n          Turing 4.1 for Windows can save only BMP format files, as they are\r\n          loss-less and can handle 24-bit depth images.<p>\r\n    </p>",
+      "mdown_content": "Various versions of Turing can save different formats of files. \nTuring 4.1 for Windows can save only BMP format files, as they are\nloss-less and can handle 24-bit depth images.\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If <b>Pic.Save</b> is passed an invalid picture ID, a fatal error \r\n          occurs. If the <b>Pic.Save</b> call fails for other (non-fatal) \r\n          reasons, <b>Error.Last</b> will return a non-zero value indicating \r\n          the reason for the failure. <b>Error.LastMsg</b> will return a \r\n          string which contains the textual version of the error.<p>\r\n    </p>",
+      "mdown_content": "If **Pic.Save** is passed an invalid picture ID, a fatal error \noccurs. If the **Pic.Save** call fails for other (non-fatal) \nreasons, **Error.Last** will return a non-zero value indicating \nthe reason for the failure. **Error.LastMsg** will return a \nstring which contains the textual version of the error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var picID: int\r\n        var x, y : int\r\n        Draw.FillBox (50, 50, 150, 150, red)\r\n        Draw.FillStar (50, 50, 150, 150, green)\r\n        Draw.FillOval (100, 100, 50, 50, blue)\r\n        \r\n        picID := Pic.New (50, 50, 150, 150)\r\n        Pic.Save (picID, \"BMP:mypic.dat\")\r\n        Pic.Free (picID)"
+      ],
+      "raw_content": "The program draws a graphic on the screen and then saves it as \r\n          a BMP file.<p>\r\n</p>",
+      "mdown_content": "The program draws a graphic on the screen and then saves it as \na BMP file."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        % Program to save a picture in mypic.bmp\r\n        var picID: int\r\n        var x, y : int\r\n        Draw.FillBox (50, 50, 150, 150, red)\r\n        Draw.FillStar (50, 50, 150, 150, green)\r\n        Draw.FillOval (100, 100, 50, 50, blue)\r\n        picID := Pic.New (50, 50, 150, 150)\r\n        Pic.Save (picID, \"mypic.bmp\")\r\n        Pic.Free (picID)",
+        "        % Program to load the picture back again and draw 50 copies\r\n        var picID: int\r\n        var x, y : int\r\n        \r\n        picID := Pic.FileNew (\"mypic.bmp\")\r\n        for i : 1 .. 50\r\n            x := Rand.Int (0, maxx)     % Random x\r\n            y := Rand.Int (0, maxy)     % Random y\r\n            Pic.Draw (picID, x, y, picCopy)\r\n        end for\r\n        Pic.Free (picID)"
+      ],
+      "raw_content": "The following two programs save and load a file in BMP format.<p>\r\n</p>\r\n<p>\r\n</p>",
+      "mdown_content": "The following two programs save and load a file in BMP format.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Pic.Save</b>, not by calling <b>Save</b>.</p>\n<p>\r\n  </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Save**, not by calling **Save**.\n\n"
+    }
+  ]
+}

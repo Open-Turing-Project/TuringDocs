@@ -1,0 +1,23 @@
+{
+  "title": "opaque",
+  "fileName": "opaque",
+  "sections": [
+    {
+      "title": "Description",
+      "raw_content": "When a type <i>T</i> is exported from module, monitor or class <i>M</i> using the keyword <b>opaque</b>, the type <i>M.T</i> is distinct from all other types. Opaque types are used to guarantee that updates to values of the type are done within <i>M</i>.<p>\r\n</p>",
+      "mdown_content": "When a type *T* is exported from module, monitor or class *M* using the keyword **opaque**, the type *M.T* is distinct from all other types. Opaque types are used to guarantee that updates to values of the type are done within *M*."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "module",
+        "",
+        "implement",
+        "equivalence",
+        ""
+      ],
+      "raw_content": "<b><a href=\"module.html\">module</a></b> declarations for an example of an <a href=\"\">opaque</a> type used to <a href=\"implement.html\">implement</a> complex arithmetic. See also <i><a href=\"equivalence.html\">equivalence</a> </i>of types for the definition of the type matching rules for <a href=\"\">opaque</a> types.<p>\r\n</p>",
+      "mdown_content": "**[module.html](module)** declarations for an example of an [](opaque) type used to [implement.html](implement) complex arithmetic. See also *[equivalence.html](equivalence) *of types for the definition of the type matching rules for [](opaque) types."
+    }
+  ]
+}

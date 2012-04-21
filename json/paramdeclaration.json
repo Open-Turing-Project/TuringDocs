@@ -1,0 +1,61 @@
+{
+  "title": "paramDeclaration",
+  "fileName": "paramdeclaration",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "A <i>paramDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\">[ <b>var</b> ] <i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>subprogramHeader</i></font></td>\n</tr>\n</table>\n<p></p>",
+      "mdown_content": "A *paramDeclaration* is one of:\n\n \n(a)\n[ **var** ] *id* {, *id* } : *typeSpec*\n \n(b)\n*subprogramHeader*"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <b>procedure</b><i> </i>and<i> </i><b>function</b><i> </i>declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.<p>\r\n</p>",
+      "mdown_content": "A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also **procedure*** *and* ***function*** *declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        procedure putTitle ( title : string )\r\n            % The parameter declaration is: title : string\r\n            put title\r\n        end putTitle\r\n        \r\n        procedure x (var s : array 1 .. * of string (*))\r\n            % Set each element of s to the null string\r\n            for i : 1 .. upper ( s )\r\n                s ( i ) := \"\"\r\n            end for\r\n        end x"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "Parameters to a procedure may be declared using <b>var</b>, which means that the parameter can be changed inside the procedure. For example, <i>s</i> is changed in the <i>x</i> procedure. If a parameter is declared without <b>var</b>, it cannot be changed. (This differs from Pascal, where non-<b>var</b> parameters can be changed.)  Parameters to functions cannot be declared to be <b>var</b>.<p>\r\nParameters declared <b>var</b> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <i>p</i> ( <i>a</i> (<i>i</i>)), in which array element <i>a</i>(<i>i</i>) is passed to procedure <i>p</i>, a change to <i>i </i>in <i>p </i>does not change the element referred to by <i>p</i>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <b>char</b> type) parameter is passed by reference whether or not it is declared <b>var</b>. In all other cases (scalar non-<b>var</b> parameters) the parameter is passed by value (the actual value is copied to the procedure).</p>\n<p>\r\nThe upper bound of an array or string that is a formal parameter may be specified as an asterisk (<b>*</b>), as is done above for parameter <i>s</i> in procedure <i>x</i>. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called <i>dynamic</i> parameters.</p>\n<p>\r\nThe names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.</p>\n<p>\r\n</p>",
+      "mdown_content": "Parameters to a procedure may be declared using **var**, which means that the parameter can be changed inside the procedure. For example, *s* is changed in the *x* procedure. If a parameter is declared without **var**, it cannot be changed. (This differs from Pascal, where non-**var** parameters can be changed.)  Parameters to functions cannot be declared to be **var**.\nParameters declared **var** are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call *p* ( *a* (*i*)), in which array element *a*(*i*) is passed to procedure *p*, a change to *i *in *p *does not change the element referred to by *p*'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the **char** type) parameter is passed by reference whether or not it is declared **var**. In all other cases (scalar non-**var** parameters) the parameter is passed by value (the actual value is copied to the procedure).\n\nThe upper bound of an array or string that is a formal parameter may be specified as an asterisk (*****), as is done above for parameter *s* in procedure *x*. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called *dynamic* parameters.\n\nThe names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        function findZero ( function f ( x : real) : real,\r\n                        left, right, accuracy : real ) : real\r\n            pre sign ( f ( left ) ) not= sign ( f ( right)) )\r\n                    and accuracy > 0\r\n            var L : real := left\r\n            var R : real := right\r\n            var M : real\r\n            const signLeft := sign ( f ( left ) )\r\n            loop\r\n                M := ( R + L) / 2\r\n                exit when abs ( R - L ) <= accuracy\r\n                if signLeft =sign ( f ( M ) ) then\r\n                    L := M\r\n                else\r\n                    R := M\r\n                end if\r\n            end loop\r\n            result M\r\n        end findZero"
+      ],
+      "raw_content": "Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also <i>subprogramHeader</i>.<p>\r\n</p>",
+      "mdown_content": "Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also *subprogramHeader*."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        function findZero ( f : function g ( x : real) : real,\r\n                        left, right, accuracy : real ) : real"
+      ],
+      "raw_content": "Form (b) of <i>paramDeclaration </i>is used to specify formal parameters that are themselves procedures or functions. For example, in the <i>findZero</i> function, <i>f</i> is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the <i>findZero</i> function can be replaced by the following with no change in the action. The names <i>g</i> and <i>x</i> serve no purpose, except as place holders in the declaration of <i>f</i>.<p>\r\n</p>",
+      "mdown_content": "Form (b) of *paramDeclaration *is used to specify formal parameters that are themselves procedures or functions. For example, in the *findZero* function, *f* is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the *findZero* function can be replaced by the following with no change in the action. The names *g* and *x* serve no purpose, except as place holders in the declaration of *f*."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        [ var ] [ register ] id {, id } : [ cheat ] typeSpec"
+      ],
+      "raw_content": "Parameters that are declared non <b>var</b> should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.<p>\r\nYou can also optionally use the <b>register</b> keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the <b>register</b> keyword. The syntax for form (a) is actually:</p>\n<p>\r\n</p>\r\nIn the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <b>register</b> keyword is ignored. See <b>register</b> for restrictions on the use of register parameters.<p>\r\nThe optional keyword <b>cheat</b> means that the parameter has a type cheat. See <b>cheat</b>. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.</p>\n<p>\r\n</p>",
+      "mdown_content": "Parameters that are declared non **var** should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.\nYou can also optionally use the **register** keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the **register** keyword. The syntax for form (a) is actually:\n\n\nIn the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the **register** keyword is ignored. See **register** for restrictions on the use of register parameters.\nThe optional keyword **cheat** means that the parameter has a type cheat. See **cheat**. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        procedure dump (a : cheat array 0 .. 10000 of nat1, n : int )\r\n            for i : 0 .. n - 1\r\n                put i, a ( i ) : 4\r\n            end for\r\n        end dump\r\n        \r\n        var s : string := \"abc\"\r\n        dump ( s, 5 )       % Dumps 5 bytes, starting with \"abc\""
+      ],
+      "raw_content": "This procedure outputs the values of <i>n</i> bytes starting at the address of formal parameter <i>a</i>, using a parameter type cheat.<p>\r\n</p>",
+      "mdown_content": "This procedure outputs the values of *n* bytes starting at the address of formal parameter *a*, using a parameter type cheat."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Dir.Get",
+  "fileName": "dir_get",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Dir.Get</b> (<i>streamNumber</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
+      "mdown_content": "**Dir.Get** (*streamNumber* : **int**) : **string**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Dir.Get</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Get</b> is used to get the file names in the directory. Each time the function is called, it returns the next file name in the directory. The names are not sorted. When there are no more file names in the directory, <b>Dir.Get</b> returns the empty string.<p>\r\n</p>",
+      "mdown_content": "**Dir.Get** is part of a series of four subprograms that help users get directory listings. **Dir.Get** is used to get the file names in the directory. Each time the function is called, it returns the next file name in the directory. The names are not sorted. When there are no more file names in the directory, **Dir.Get** returns the empty string."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>Dir.Get</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If the **Dir.Get** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var streamNumber : int\r\n        var fileName : string\r\n        streamNumber := Dir.Open (\"datafiles\")\r\n        assert streamNumber > 0\r\n        loop\r\n            fileName := Dir.Get (streamNumber)\r\n            exit when fileName = \"\"\r\n            put fileName\r\n        end loop\r\n        Dir.Close (streamNumber)"
+      ],
+      "raw_content": "This program prints a listing of all the files in the directory <i>datafiles</i>.<p>\r\n</p>",
+      "mdown_content": "This program prints a listing of all the files in the directory *datafiles*."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Directory Listing Example",
+          "file": "DirectoryListing.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Dir.Get</b>, not by calling <b>Get</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Get**, not by calling **Get**.\n"
+    }
+  ]
+}

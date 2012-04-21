@@ -1,0 +1,45 @@
+{
+  "title": "Input.getchar",
+  "fileName": "input_getchar",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>getchar</b> : <b>char</b><p>\r\n</p></font>",
+      "mdown_content": "**getchar** : **char**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>getchar</b> function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned.<p>\r\n</p>",
+      "mdown_content": "The **getchar** function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"graphics\")\r\n        \r\n        procedure getKey\r\n            var ch : char\r\n            ch := getchar\r\n        end getKey\r\n        \r\n        for i : 1 .. 1000\r\n            put i : 4, \" Pause till a key is pressed\"\r\n            getKey\r\n        end for"
+      ],
+      "raw_content": "This program contains a procedure called <i>getKey </i>which causes the program to wait until a key is pressed.<p>\r\n</p>",
+      "mdown_content": "This program contains a procedure called *getKey *which causes the program to wait until a key is pressed."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to \"<i>screen</i>\" mode.<p>\r\nSome keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by <b>getch</b> as special values. See Appendix D for these values.</p>\n<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\"* *or \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"*screen*\" mode.\nSome keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by **getch** as special values. See Appendix D for these values.\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported unqualified.<p>\r\nThis means that you can call the function by calling <b>getchar</b> or by calling <b>Input.getchar</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **getchar** or by calling **Input.getchar**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "hasch",
+        "procedure",
+        "not",
+        "read"
+      ],
+      "raw_content": "<b><a href=\"hasch.html\">hasch</a> </b>(has character) <a href=\"procedure.html\">procedure</a> which is used to see if a character has been typed but <a href=\"not.html\">not</a> yet <a href=\"read.html\">read</a>.<p>\r\n</p>",
+      "mdown_content": "**[hasch.html](hasch) **(has character) [procedure.html](procedure) which is used to see if a character has been typed but [not.html](not) yet [read.html](read)."
+    }
+  ]
+}

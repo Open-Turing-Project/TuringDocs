@@ -1,0 +1,51 @@
+{
+  "title": "sound",
+  "fileName": "sound",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**sound** ( *frequency*, *duration* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>sound</b> procedure is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so <b>sound</b>(440, 1000) plays middle A for one second.<p>\r\n</p>",
+      "mdown_content": "The **sound** procedure is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so **sound**(440, 1000) plays middle A for one second."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 10\r\n            put i\r\n            sound ( 100 * i, 500 )  % Sound note for 1/2 second\r\n        end for"
+      ],
+      "raw_content": "This program sounds the frequencies 100, 200 up to 1000 each for half a second.<p>\r\n</p>",
+      "mdown_content": "This program sounds the frequencies 100, 200 up to 1000 each for half a second."
+    },
+    {
+      "title": "Details",
+      "raw_content": "On IBM PC compatibles, the hardware resolution of duration is in units of 55 milliseconds. For example, <b>sound</b>(440, 500) will delay the program by about half a second, but may be off by as much as 55 milliseconds.<p>\r\n</p>",
+      "mdown_content": "On IBM PC compatibles, the hardware resolution of duration is in units of 55 milliseconds. For example, **sound**(440, 500) will delay the program by about half a second, but may be off by as much as 55 milliseconds."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>sound</b> procedure does not currently work under MacOOT.<p>\r\n</p>",
+      "mdown_content": "The **sound** procedure does not currently work under MacOOT."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "play",
+        "statement",
+        "play",
+        "delay",
+        "clock",
+        "sysclock",
+        "wallclock",
+        "time",
+        "date",
+        "musicmodule"
+      ],
+      "raw_content": "<b><a href=\"play.html\">play</a></b> <a href=\"statement.html\">statement</a>, which plays notes based on musical notation. For example, <b><a href=\"play.html\">play</a></b>(\"8C\") plays an eighth note of middle C. See also the <b><a href=\"delay.html\">delay</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b>, <b><a href=\"time.html\">time</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"musicmodule.html\">Music</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[play.html](play)** [statement.html](statement), which plays notes based on musical notation. For example, **[play.html](play)**(\"8C\") plays an eighth note of middle C. See also the **[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)**, **[time.html](time)** and **[date.html](date)** statements.\nSee also predefined unit **[musicmodule.html](Music)**.\n"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Window.GetActive",
+  "fileName": "window_getactive",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Window.GetActive</b> : <b>int</b><p></p></font>",
+      "mdown_content": "**Window.GetActive** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Window.GetActive</b> function returns the window ID of the \r\n          active window. If the active window is a Turing run window, then\r\n\t  <b>Window.GetActive</b> returns <b>defWinID</b> (which is -1) if \r\n\t  the window is the default run window, or whatever number was \r\n\t  returned from <b>Window.Open</b> for any other run window. \r\n\t  If the active window is not a run window, then it returns -5 \r\n\t  and sets <b>Error.Last</b> and <b>Error.LastMsg</b> to indicate \r\n\t  the fact.<p>\r\n\t  An active window is defined as the window that has the input focus. \r\n\t  This means that any typing will be sent to the active window. Under \r\n\t  most systems an active window is indicated by a change in the \r\n\t  appearance of the window.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **Window.GetActive** function returns the window ID of the \nactive window. If the active window is a Turing run window, then\n**Window.GetActive** returns **defWinID** (which is -1) if \nthe window is the default run window, or whatever number was \nreturned from **Window.Open** for any other run window. \nIf the active window is not a run window, then it returns -5 \nand sets **Error.Last** and **Error.LastMsg** to indicate \nthe fact.\nAn active window is defined as the window that has the input focus. \nThis means that any typing will be sent to the active window. Under \nmost systems an active window is indicated by a change in the \nappearance of the window.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling <b>Window.GetActive</b>, not by calling <b>GetActive</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.GetActive**, not by calling **GetActive**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "window_setactive"
+      ],
+      "raw_content": "<b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[window_setactive.html](Window.SetActive)**.\n"
+    }
+  ]
+}

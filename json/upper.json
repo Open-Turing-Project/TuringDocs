@@ -1,0 +1,29 @@
+{
+  "title": "upper",
+  "fileName": "upper",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>upper</b> ( <i>reference</i> [ , <i>dimension</i> ] ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**upper** ( *reference* [ , *dimension* ] ) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>upper</b> attribute is used to find the upper bound of an array, string, <b>char</b>(<i>n</i>) or non-opaque subrange type. (See <b>lower</b> for finding the lower bound.)<p>\r\n</p>",
+      "mdown_content": "The **upper** attribute is used to find the upper bound of an array, string, **char**(*n*) or non-opaque subrange type. (See **lower** for finding the lower bound.)"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        procedure test ( var a : array 1 .. * of real )\r\n            if i <= upper ( a ) then\r\n                a ( i ) := 0.0\r\n            end if\r\n        end test"
+      ],
+      "raw_content": "In a procedure, see if the bound of array parameter <i>a</i> is large enough that  it can be subscripted by <i>i</i>. If it is large enough, it is set <i>a</i>(<i>i</i>) to zero.<p>\r\n</p>",
+      "mdown_content": "In a procedure, see if the bound of array parameter *a* is large enough that  it can be subscripted by *i*. If it is large enough, it is set *a*(*i*) to zero."
+    },
+    {
+      "title": "Details",
+      "raw_content": "In a similar way, if <i>s</i> is a string, its upper bound (not length!) is given by <b>upper</b> (<i>s</i>). If an array has more than one dimension, as in <b>var</b> <i>b</i> : <b>array</b> 1..10, 1 .. 60 <b>of</b> <b>int</b>, you must specify the dimension. For example, <b>upper</b> (<i>b</i>, 2) returns 60.<p>\r\n</p>",
+      "mdown_content": "In a similar way, if *s* is a string, its upper bound (not length!) is given by **upper** (*s*). If an array has more than one dimension, as in **var** *b* : **array** 1..10, 1 .. 60 **of** **int**, you must specify the dimension. For example, **upper** (*b*, 2) returns 60."
+    }
+  ]
+}

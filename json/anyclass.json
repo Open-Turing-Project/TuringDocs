@@ -1,0 +1,46 @@
+{
+  "title": "anyclass",
+  "fileName": "anyclass",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>anyclass</b><p>\r\n</p></font>",
+      "mdown_content": "**anyclass**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "There is a predefined class called <b>anyclass</b>, which is the root of the expansion tree. All classes that do not have <b>inherit</b> lists are considered to be expansions of <b>anyclass</b>. The main purpose of <b>anyclass</b> is to allow pointers that can locate objects of any class.<p>\r\n</p>",
+      "mdown_content": "There is a predefined class called **anyclass**, which is the root of the expansion tree. All classes that do not have **inherit** lists are considered to be expansions of **anyclass**. The main purpose of **anyclass** is to allow pointers that can locate objects of any class."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var p : pointer to anyclass     % Short form: var p : ^ anyclass\r\n        var q : pointer to stack        % Short form: var q : ^ stack\r\n        new q               % Create a stack object\r\n        p := q              % Legal because p's class\r\n                            % is an ancestor of q's class",
+        "        p -> push (14)      % ILLEGAL!  anyclass has no operations",
+        "        q := p  % Checks that p locates a stack object (or descendant)",
+        "        stack (p) . push (14)   % Checks that p locates a stack object"
+      ],
+      "raw_content": "Here is the declaration of a pointer <i>p </i>that can locate an object of any class.<p>\r\n</p>\r\nAssuming <i>stack</i> is a class, this creates a <i>stack</i> object and places its location in <i>q </i>and <i>p</i>. The compiler will not allow a call to <i>stack</i>'s exported subprograms using <i>p</i> directly, as in:<p>\r\n</p>\r\nAn assignment from <i>p</i> to <i>q</i> is legal, as in:<p>\r\n</p>\r\nThis implies a run time check to make sure that <i>p</i> locates an object that is a <i>stack</i> (or a descendant of a <i>stack</i>).<p>\r\nHere is a way to call a subprogram exported from <i>stack</i> using <i>p</i>:</p>\n<p>\r\n</p>\r\nThis checks to see that <i>p</i> locates a <i>stack</i> object (or a descendant) before calling the <i>stack</i> operation <i>push</i>.<p>\r\n</p>",
+      "mdown_content": "Here is the declaration of a pointer *p *that can locate an object of any class.\n\nAssuming *stack* is a class, this creates a *stack* object and places its location in *q *and *p*. The compiler will not allow a call to *stack*'s exported subprograms using *p* directly, as in:\n\nAn assignment from *p* to *q* is legal, as in:\n\nThis implies a run time check to make sure that *p* locates an object that is a *stack* (or a descendant of a *stack*).\nHere is a way to call a subprogram exported from *stack* using *p*:\n\n\nThis checks to see that *p* locates a *stack* object (or a descendant) before calling the *stack* operation *push*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "It is legal to create objects of the class called <b>anyclass</b>, but this is not of much use, because there is nothing you can do with these objects (they have no operations). It is legal to assign these objects to other objects of the same class (<b>anyclass</b>), although this accomplishes nothing.<p>\r\n</p>",
+      "mdown_content": "It is legal to create objects of the class called **anyclass**, but this is not of much use, because there is nothing you can do with these objects (they have no operations). It is legal to assign these objects to other objects of the same class (**anyclass**), although this accomplishes nothing."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "objectclass",
+        "class",
+        "export",
+        "import",
+        "inherit",
+        "implement",
+        "implement_by"
+      ],
+      "raw_content": "<b><a href=\"objectclass.html\">objectclass</a></b>, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.<p>\r\nSee also <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"export.html\">export</a></b> list, <b><a href=\"import.html\">import</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> list, <b><a href=\"implement.html\">implement</a></b> list and <b><a href=\"implement_by.html\">implement by</a></b> list.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[objectclass.html](objectclass)**, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\nSee also **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list.\n"
+    }
+  ]
+}

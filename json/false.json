@@ -1,0 +1,29 @@
+{
+  "title": "false",
+  "fileName": "false",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>false</b><p>\r\n</p></font>",
+      "mdown_content": "**false**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "A <b>boolean</b> (<b>true</b>/<b>false</b>) variable can be either <b>true</b> or <b>false</b> (see <b>boolean</b> type).<p>\r\n</p>",
+      "mdown_content": "A **boolean** (**true**/**false**) variable can be either **true** or **false** (see **boolean** type)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var found : boolean := false\r\n        var word : int\r\n        for i : 1 .. 10\r\n            get word\r\n            found := found or word = \"gold\"\r\n        end for\r\n        if found = true then\r\n            put \"Found 'gold' in the ten words\"\r\n        end if"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "The line <b>if</b> <i>found</i>=<b>true</b> <b>then</b> can be simplified to <b>if</b> <i>found </i><b>then</b> with no change to the meaning of the program.<p>\r\n</p>",
+      "mdown_content": "The line **if** *found*=**true** **then** can be simplified to **if** *found ***then** with no change to the meaning of the program."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "GUI.Get{X,Y}",
+  "fileName": "gui_getx",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetX </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n          <b>GUI.GetY </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b></p>\n<p></p></font>",
+      "mdown_content": "**GUI.GetX **(*widgetID* : **int**) : **int**\n**GUI.GetY **(*widgetID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the x coordinate of the left edge of a widget. Note that \r\n          this may be different from the x coordinate specified in the \r\n          widget's <i>Create</i> call. For example, if a radio button is \r\n          created with right justification, the x coordinate in the \r\n          <i>Create</i> method specifies the right edge while <b>GUI.GetX</b> \r\n          will return the x coordinate of the left edge.<p>\r\n\t  This function is used in conjunction with <b>GUI.GetWidth</b> and \r\n\t  <b>GUI.GetHeight</b> to determine the bounds of a widget. The entire \r\n\t  widget should always fit in the box \r\n\t  (<b>GUI.GetX</b>,&nbsp;<b>GUI.GetY</b>) - \r\n\t  (<b>GUI.GetX</b>&nbsp;+&nbsp;<b>GUI.GetWidth</b> - 1, \r\n\t  <b>GUI.GetY</b>&nbsp;+&nbsp;<b>GUI.GetHeight</b> - 1)</p>\n<p>\r\n          The position and size of a widget is known only after it has been \r\n          drawn to the screen. Attempting to get the location or dimesions of \r\n          the widget may cause an uninitialized variable error.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Returns the x coordinate of the left edge of a widget. Note that \nthis may be different from the x coordinate specified in the \nwidget's *Create* call. For example, if a radio button is \ncreated with right justification, the x coordinate in the \n*Create* method specifies the right edge while **GUI.GetX** \nwill return the x coordinate of the left edge.\nThis function is used in conjunction with **GUI.GetWidth** and \n**GUI.GetHeight** to determine the bounds of a widget. The entire \nwidget should always fit in the box \n(**GUI.GetX**, **GUI.GetY**) - \n(**GUI.GetX** + **GUI.GetWidth** - 1, \n**GUI.GetY** + **GUI.GetHeight** - 1)\n\nThe position and size of a widget is known only after it has been \ndrawn to the screen. Attempting to get the location or dimesions of \nthe widget may cause an uninitialized variable error.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI in \"%oot/lib/GUI\"\r\n        procedure BoxWidget (widgetID : int)\r\n            var x, y, width, height : int\r\n            x := GUI.GetX (widgetID)\r\n            y := GUI.GetY (widgetID)\r\n            width := GUI.GetWidth (widgetID)\r\n            height := GUI.GetHeight (widgetID)\r\n            Draw.Box (x  1, x  1, x + width, y + height, red)\r\n            Draw.Box (x  2, x  2, x + width + 1, y + height + 1, red)\r\n        end BoxWidget\r\n        \r\n        var title : int := GUI.CreateLabel (20, 20, \"Frame This!\")\r\n        BoxWidget (title)"
+      ],
+      "raw_content": "The following procedure draws a red box around the widget specified \r\n          by <i>widgetID</i>.<p>\r\n</p>",
+      "mdown_content": "The following procedure draws a red box around the widget specified \nby *widgetID*."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>GUI.GetX</b>, not by calling <b>GetX</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**GUI.GetX**, not by calling **GetX**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_getheight",
+        "gui_getwidth"
+      ],
+      "raw_content": "<b><a href=\"gui_getheight.html\">GUI.GetHeight</a></b> and \r\n          <b><a href=\"gui_getwidth.html\">GUI.GetWidth</a></b>.<p>\r\n    </p>",
+      "mdown_content": "**[gui_getheight.html](GUI.GetHeight)** and \n**[gui_getwidth.html](GUI.GetWidth)**.\n"
+    }
+  ]
+}

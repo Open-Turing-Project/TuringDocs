@@ -1,0 +1,37 @@
+{
+  "title": "Sprite.Hide",
+  "fileName": "sprite_hide",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Sprite.Hide</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Sprite.Hide** (*spriteID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Hides a previously visible sprite. <b>Sprite.Hide</b> has no effect if the sprite is already invisible.<p>\r\n</p>",
+      "mdown_content": "Hides a previously visible sprite. **Sprite.Hide** has no effect if the sprite is already invisible."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var pic, sprite, x, y, dx, dy, radius : array 1 .. 6 of int\r\n        var visible : array 1 .. 6 of boolean\r\n        \r\n        setscreen (\"nocursor\")\r\n        \r\n        % Create all the sprites.\r\n        for i : 1 .. 6\r\n            radius (i) := Rand.Int (10, 25)\r\n            Draw.FillOval (25, 25, radius (i), radius (i), 8 + i)\r\n            Font.Draw (intstr (i), 20, 20, 0, black)\r\n            pic (i) := Pic.New (0, 0, 50, 50)\r\n            Draw.FillBox (0, 0, 50, 50, 0)\r\n            x (i) := Rand.Int (radius (i), maxx  radius (i))\r\n            y (i) := Rand.Int (radius (i), maxy  radius (i))\r\n            dx (i) := Rand.Int (3, 3)\r\n            dy (i) := Rand.Int (3, 3)\r\n            sprite (i) := Sprite.New (pic (i))\r\n            Sprite.SetPosition (sprite (i), x (i), y (i), true)\r\n            Sprite.SetHeight (sprite (i), i)\r\n            visible (i) := false\r\n        end for\r\n        \r\n        % Now move all the sprites around the screen.\r\n        loop\r\n            for i : 1 .. 6\r\n                if x (i) + dx (i) < radius (i) or\r\n                        x (i) + dx (i) > maxx  radius (i) then\r\n                    dx (i) := dx (i)\r\n                end if\r\n                x (i) := x (i) + dx (i)\r\n                if y (i) + dy (i) < radius (i) or\r\n                        y (i) + dx (i) > maxy  radius (i) then\r\n                    dy (i) := dy (i)\r\n                end if\r\n                y (i) := y (i) + dy (i)\r\n            end for\r\n            for i : 1 .. 6\r\n                var near : boolean := false\r\n                if (x (i) < 50) or (x (i) > maxx  50) or\r\n                        (y (i) < 50) or (y (i) > maxy  50) then\r\n                    near := true\r\n                end if\r\n                if not near then\r\n                    for j : 1 .. 6\r\n                        if i not= j then\r\n                            if sqrt ( (x (i)  x (j)) ** 2 +\r\n                                (y (i)  y (j)) ** 2) < 100 then\r\n                                near := true\r\n                                exit\r\n                            end if\r\n                        end if\r\n                    end for\r\n                end if\r\n                if near and not visible (i) then\r\n                    Sprite.Show (sprite (i))\r\n                    visible (i) := true\r\n                elsif not near and visible (i) then\r\n                    Sprite.Hide (sprite (i))\r\n                    visible (i) := false\r\n                end if\r\n                Sprite.SetPosition (sprite (i), x (i), y (i), true)\r\n            end for\r\n            Time.Delay (40)\r\n            exit when hasch\r\n        end loop\r\n        for i : 1 .. 6\r\n            Sprite.Free (sprite (i))\r\n        end for"
+      ],
+      "raw_content": "The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden.<p>\r\n</p>",
+      "mdown_content": "The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.Hide</b>, not by calling <b>Hide</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Hide**, not by calling **Hide**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "sprite_show"
+      ],
+      "raw_content": "<b><a href=\"sprite_show.html\">Sprite.Show</a></b>.<p>\r\n</p>",
+      "mdown_content": "**[sprite_show.html](Sprite.Show)**."
+    }
+  ]
+}

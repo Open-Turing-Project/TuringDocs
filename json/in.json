@@ -1,0 +1,39 @@
+{
+  "title": "in",
+  "fileName": "in",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>in</b><p>\r\n</p></font>",
+      "mdown_content": "**in**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>in</b> operator determines if an element is in a set.<p>\r\n</p>",
+      "mdown_content": "The **in** operator determines if an element is in a set."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        type rankSet : set of 0 .. 10\r\n        var rankings : rankSet := rankSet ( 0 )  % The set {0}\r\n        \r\n        if 5 in rankings then      % Is 5 in the rankings set?"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>not</b> <b>in</b> operator is exactly the opposite of <b>in</b>. For example, 7 <b>not</b> <b>in</b> <i>rankings</i> means the same as <b>not</b> (7 <b>in</b> <i>rankings</i>).<p>\r\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.</p>\n<p>\r\nThe keyword <b>in</b> is also used in lists such as <b>import</b> lists. See <b>import</b> list.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **not** **in** operator is exactly the opposite of **in**. For example, 7 **not** **in** *rankings* means the same as **not** (7 **in** *rankings*).\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.\n\nThe keyword **in** is also used in lists such as **import** lists. See **import** list.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "set",
+        "infix",
+        "precedence"
+      ],
+      "raw_content": "the <b><a href=\"set.html\">set</a></b> type, <i><a href=\"infix.html\">infix</a> operators</i>, and <i><a href=\"precedence.html\">precedence</a> </i>of operators.<p>\r\n</p>",
+      "mdown_content": "the **[set.html](set)** type, *[infix.html](infix) operators*, and *[precedence.html](precedence) *of operators."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Text.WhatCol",
+  "fileName": "text_whatcol",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Text.WhatCol</b> : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Text.WhatCol** : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Text.WhatCol</b> function is used to<b> </b>determine the cursor position's column.<p>\r\n</p>",
+      "mdown_content": "The **Text.WhatCol** function is used to** **determine the cursor position's column."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Text.Locate  ( 5, 10 )\r\n        put \"12345\"..\r\n        put \"The current row is\", Text.WhatRow\r\n        put \"The current column is\", Text.WhatCol"
+      ],
+      "raw_content": "This program outputs <i>The current row is 5</i>,<i> the current column is 15</i>.<p>\r\n</p>",
+      "mdown_content": "This program outputs *The current row is 5*,* the current column is 15*."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. <b>Text.WhatCol</b> functions properly even if the cursor is invisible.<p>\r\n</p>",
+      "mdown_content": "The screen should be in a \"*screen*\" or* *\"*graphics*\" mode. **Text.WhatCol** functions properly even if the cursor is invisible."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.WhatCol</b> , not by calling <b>WhatCol</b> .</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.WhatCol** , not by calling **WhatCol** .\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "text_whatrow",
+        "text_locate",
+        "text_maxrow",
+        "text_maxcol",
+        "procedure"
+      ],
+      "raw_content": "the <b><a href=\"text_whatrow.html\">Text.WhatRow</a> </b>function, which is used to determine the cursor row. See also the <b><a href=\"text_locate.html\">Text.Locate</a></b>, <b><a href=\"text_maxrow.html\">Text.maxrow</a></b> and <b><a href=\"text_maxcol.html\">Text.maxcol</a> </b><a href=\"procedure.html\">procedure</a>.<p>\r\n</p>",
+      "mdown_content": "the **[text_whatrow.html](Text.WhatRow) **function, which is used to determine the cursor row. See also the **[text_locate.html](Text.Locate)**, **[text_maxrow.html](Text.maxrow)** and **[text_maxcol.html](Text.maxcol) **[procedure.html](procedure)."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "",
+  "fileName": "pic_free",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Free</b> (<i>picID</i> : <b>int</b>)<p></p></font>",
+      "mdown_content": "**Pic.Free** (*picID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Free </b>is used to release the memory allocated by \r\n          <b>Pic.New</b>. It frees up the memory allocated to the parameter \r\n\t  <i>picID</i>. This means that <i>picID</i> can not be used in a \r\n\t  <b>Draw.Pic</b> or <b>Draw.Save</b> procedure after <b>Pic.Free</b> \r\n\t  is called.<p>\r\n\t  Turing has a limited number of pictures that are available at any\r\n\t  one time (approximately 1,000). A program that continuously allocates \r\n\t  pictures (using <b>Pic.New</b> or <b>Pic.FileNew</b>) will eventually \r\n\t  fail if it does not free the pictures using <b>Pic.Free</b>. As well,\r\n\t  if a program allocates hundreds of pictures and does not\r\n\t  free any of them, the memory devoted to the pictures will \r\n\t  not be freed and eventually the program may exhaust the memory on \r\n\t  the machine.</p>\n<p>\r\n    </p>",
+      "mdown_content": "**Pic.Free **is used to release the memory allocated by \n**Pic.New**. It frees up the memory allocated to the parameter \n*picID*. This means that *picID* can not be used in a \n**Draw.Pic** or **Draw.Save** procedure after **Pic.Free** \nis called.\nTuring has a limited number of pictures that are available at any\none time (approximately 1,000). A program that continuously allocates \npictures (using **Pic.New** or **Pic.FileNew**) will eventually \nfail if it does not free the pictures using **Pic.Free**. As well,\nif a program allocates hundreds of pictures and does not\nfree any of them, the memory devoted to the pictures will \nnot be freed and eventually the program may exhaust the memory on \nthe machine.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If <b>Pic.Free</b> is passed an invalid picture ID, a fatal error \r\n          occurs. If the <b>Pic.Free</b> call fails for other (non-fatal) \r\n\t  reasons, <b>Error.Last</b> will return a non-zero value indicating \r\n\t  the reason for the failure. <b>Error.LastMsg</b> will return a string \r\n\t  which contains the textual version of the error.<p>\r\n    </p>",
+      "mdown_content": "If **Pic.Free** is passed an invalid picture ID, a fatal error \noccurs. If the **Pic.Free** call fails for other (non-fatal) \nreasons, **Error.Last** will return a non-zero value indicating \nthe reason for the failure. **Error.LastMsg** will return a string \nwhich contains the textual version of the error.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var picID, bgID : int\r\n        var x, y, c, direction : int\r\n\r\n        % Create the picture being moved\r\n        Draw.FillBox (50, 50, 150, 150, brightred)\r\n        Draw.FillStar (50, 50, 150, 150, brightgreen)\r\n        Draw.FillOval (100, 100, 30, 30, brightblue)\r\n        picID := Pic.New (50, 50, 150, 150)\r\n\r\n        % Create a background\r\n        for i : 1 .. 1000\r\n            x := Rand.Int (0, maxx)\r\n            y := Rand.Int (0, maxy)\r\n            c := Rand.Int (9, 15)    % Use bright colors\r\n            Draw.FillBox (x, y, x + 30, y + 30, c)\r\n        end for\r\n\r\n        x := 1\r\n        y := 100\r\n        direction := 1\r\n        % Main loop\r\n        loop\r\n            % Take a picture of the background \r\n            bgID := Pic.New (x, y, x + 100, y + 100)\r\n            Pic.Draw (picID, x, y, picCopy)     % Draw the picture\r\n            delay (20)                          % Delay 20 milliseconds\r\n            Pic.Draw (bgID, x, y, picCopy)      % Draw the background over the picture\r\n            Pic.Free (bgID)                     % Free the background\r\n            if x <= 0 or (x + 100) >= maxx then\r\n                direction := -direction\r\n            end if\r\n            x += direction\r\n        end loop"
+      ],
+      "links": [
+        "view_update"
+      ],
+      "raw_content": "The program animates a picture moving across a background.  Each\r\n          time the picture is about to move to a new location, a picture of\r\n\t  the background at that location is taken. When the picture is to be\r\n\t  moved to the next location, the background picture is drawn over top\r\n\t  of the picture, thus \"erasing\" it. The <b>Pic.Free</b> command frees \r\n\t  up each background picture once it is no longer in use. Without it,\r\n\t  the program would use up all the picture identifiers and crash after\r\n\t  one or two moves across the window.<p>\r\n\t  The animation in the example flickers slightly. See \r\n\t  <a href=\"view_update.html\">View.Update</a> for information on \r\n\t  how to produce flicker-free animation.</p>\n<p>\r\n</p>",
+      "mdown_content": "The program animates a picture moving across a background.  Each\ntime the picture is about to move to a new location, a picture of\nthe background at that location is taken. When the picture is to be\nmoved to the next location, the background picture is drawn over top\nof the picture, thus \"erasing\" it. The **Pic.Free** command frees \nup each background picture once it is no longer in use. Without it,\nthe program would use up all the picture identifiers and crash after\none or two moves across the window.\nThe animation in the example flickers slightly. See \n[view_update.html](View.Update) for information on \nhow to produce flicker-free animation.\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Pic.Free Example",
+          "file": "Pic.Free.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Free</b>, not by calling <b>Free</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Free**, not by calling **Free**.\n\n"
+    }
+  ]
+}

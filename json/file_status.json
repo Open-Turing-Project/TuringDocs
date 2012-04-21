@@ -1,0 +1,49 @@
+{
+  "title": "File.Status",
+  "fileName": "file_status",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<b>File.Status</b> (<i>pathName</i> : <b>string</b>, <b>var</b> <i>size</i>, <i>attribute</i>, <i>fileTime</i> : <b>int</b>)<p>\r\n</p>",
+      "mdown_content": "**File.Status** (*pathName* : **string**, **var** *size*, *attribute*, *fileTime* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>File.Status </b>is used to get assorted information about a file or directory. When the function is called with a specified <i>pathName</i>, it returns the information about the file in the other parameters.<p>\r\nThe <i>size</i> parameter is the size of the file in bytes. </p>\n<p>\r\nThe <i>attribute</i> parameter has its individual bits set as exactly as the <i>attribute</i> parameter in <b>Dir.GetLong</b> subprogram does. See <b>Dir.GetLong</b> for the list of attribute constants.</p>\n<p>\r\nThe <i>fileTime</i> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <b>Time.SecDate.</b></p>\n<p>\r\n</p>",
+      "mdown_content": "**File.Status **is used to get assorted information about a file or directory. When the function is called with a specified *pathName*, it returns the information about the file in the other parameters.\nThe *size* parameter is the size of the file in bytes. \n\nThe *attribute* parameter has its individual bits set as exactly as the *attribute* parameter in **Dir.GetLong** subprogram does. See **Dir.GetLong** for the list of attribute constants.\n\nThe *fileTime* is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate.**\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>File.Status</b> call fails, <i>size</i>, <i>attribute</i> and <i>fileTime</i> are all set to 1. <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If the **File.Status** call fails, *size*, *attribute* and *fileTime* are all set to 1. **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const pathName : string := \"c:/windows/notepad.exe\"\r\n        var size, attribute, fileTime : int\r\n        File.Status (pathName, size, attribute, fileTime )\r\n        if Error.Last = eNoError then\r\n            put \"      Name: \", File.FullPath (pathName)\r\n            put \"   Created: \", Time.SecDate (fileTime)\r\n            put \"      Size: \", size, \" bytes\"\r\n            put \"Attributes: \" ..\r\n            if (attribute and ootAttrDir) not= 0 then\r\n                put \"Directory \" ..\r\n            else\r\n                put \"\" ..\r\n            end if\r\n            if (attribute and ootAttrRead) not= 0 then\r\n                put \"Readable \" ..\r\n            else\r\n                put \"\" ..\r\n            end if\r\n            if (attribute and ootAttrWrite) not= 0 then\r\n                put \"Writable \" ..\r\n            else\r\n                put \"\" ..\r\n            end if\r\n            if (attribute and ootAttrExecute) not= 0 then\r\n                put \"Executable\", skip\r\n            else\r\n                put skip\r\n            end if\r\n        else\r\n            put \"Unable to get file information\"\r\n            put \"Error: \", Error.LastMsg, skip\r\n        end if"
+      ],
+      "raw_content": "This program prints information about the NotePad.exe application in Windows found\r\n     at \"<i>c:\\windows\\notepad.exe</i>\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"<p>\r\n</p>\n<p>\r\n</p>",
+      "mdown_content": "This program prints information about the NotePad.exe application in Windows found\nat \"*c:\\windows\\notepad.exe*\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "File.Status Example",
+          "file": "File.Status.t"
+        }
+      ]
+    },
+    {
+      "title": "Execute",
+      "raw_content": "Another example program is available that uses <b>File.Status</b> to \r\n        determine the status of several files and directories.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Status2.t;File.Status Example\"></object></p>\n<p></p>",
+      "mdown_content": "Another example program is available that uses **File.Status** to \ndetermine the status of several files and directories.\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Status</b>, not by calling <b>Status</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Status**, not by calling **Status**.\n"
+    }
+  ]
+}

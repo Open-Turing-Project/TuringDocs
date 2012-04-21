@@ -1,0 +1,39 @@
+{
+  "title": "locate",
+  "fileName": "locate",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>locate</b> ( <i>row</i>, <i>column</i> : <b>int</b> )<p>\r\n</p></font>",
+      "mdown_content": "**locate** ( *row*, *column* : **int** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>locate</b> procedure is used to move the cursor so that the next output from <b>put</b> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.<p>\r\n</p>",
+      "mdown_content": "The **locate** procedure is used to move the cursor so that the next output from **put** will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"screen\")\r\n        var row, column, colr : int\r\n        loop\r\n            randint ( row, 1, maxrow - 1)\r\n            randint ( column, 1, maxcol)\r\n            randint (colr, 0, maxcolor)\r\n            color (colr)\r\n            locate (row, column )\r\n            put \"*\" ..  % Use dot-dot to avoid clearing end of line\r\n        end loop"
+      ],
+      "raw_content": "This program outputs stars of random colors to random locations on the screen. The variable <i>colr </i>is purposely spelled differently from the word <i>color </i>to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <b>maxrow</b>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.<p>\r\n</p>",
+      "mdown_content": "This program outputs stars of random colors to random locations on the screen. The variable *colr *is purposely spelled differently from the word *color *to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The <b>locate</b> procedure is used to locate the next output based on row and column positions. See also the <b>locatexy</b> procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.<p>\r\nThe screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to\"<i>screen</i>\" mode.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **locate** procedure is used to locate the next output based on row and column positions. See also the **locatexy** procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.\nThe screen should be in a \"*screen*\"* *or \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in one of these modes, it will automatically be set to\"*screen*\" mode.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setscreen",
+        "drawdot",
+        "textmodule"
+      ],
+      "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b> and <b><a href=\"drawdot.html\">drawdot</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "**[setscreen.html](setscreen)** and **[drawdot.html](drawdot)**.\nSee also predefined unit **[textmodule.html](Text)**.\n"
+    }
+  ]
+}

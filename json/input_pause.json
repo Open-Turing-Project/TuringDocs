@@ -1,0 +1,39 @@
+{
+  "title": "Input.Pause",
+  "fileName": "input_pause",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Input.Pause</b><p></p></font>",
+      "mdown_content": "**Input.Pause**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Input.Pause</b> procedure simply waits for a key to be \r\n          pressed and then returns. It echoes the key pressed if <b>echo</b> \r\n          mode is set. (See <b>View.Set</b> for setting <b>echo</b> mode)<p>\r\n          This subprogram helps avoid having to declare a variable declaration \r\n          and then make a call to <b>getch</b>or <b>getchar</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "The **Input.Pause** procedure simply waits for a key to be \npressed and then returns. It echoes the key pressed if **echo** \nmode is set. (See **View.Set** for setting **echo** mode)\nThis subprogram helps avoid having to declare a variable declaration \nand then make a call to **getch**or **getchar**.\n\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var f : int\r\n        var line : string\r\n        open : f, \"data.txt\", get\r\n        loop\r\n            exit when eof (f)\r\n            get : f, line : *\r\n            put name\r\n            Input.Pause\r\n        end loop\r\n        close : f"
+      ],
+      "raw_content": "This program pauses after every name read from the file.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "This program pauses after every name read from the file.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Input.Pause Example",
+          "file": "Input.Pause.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Input.Pause</b>, not by calling <b>Pause</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Input.Pause**, not by calling **Pause**.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "title": "Music.PlayFileReturn",
+  "fileName": "music_playfilereturn",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Music.PlayFileReturn</b> ( <i>fileName</i> : <b>string</b> )<p>\r\n</p></font>",
+      "mdown_content": "**Music.PlayFileReturn** ( *fileName* : **string** )"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Music.PlayFileReturn</b> procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>WAV files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"WAV:filename\" or \"filename.WAV\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MP3 files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MP3:filename\" or \"filename.MP3\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MIDI files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MIDI:filename\" or \"filename.MIDI\"</td>\n</tr>\n</table>\n<p>\r\nUnlike <b>Music.PlayFile</b>, the <b>Music.PlayFileReturn</b> procedure should not be called in a \r\nseparate process. Instead, the procedure returns immediately. This makes <b>Music.PlayFileReturn</b>\r\neasier to use, but makes it unsuitable for playing a set of files sequentially.</p>\n<p>\r\n</p>",
+      "mdown_content": "The **Music.PlayFileReturn** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe *fileName*parameter must give the format of the file:\n\n\n \nWAV files\n \n\"WAV:filename\" or \"filename.WAV\"\n \nMP3 files\n \n\"MP3:filename\" or \"filename.MP3\"\n \nMIDI files\n \n\"MIDI:filename\" or \"filename.MIDI\"\n\nUnlike **Music.PlayFile**, the **Music.PlayFileReturn** procedure should not be called in a \nseparate process. Instead, the procedure returns immediately. This makes **Music.PlayFileReturn**\neasier to use, but makes it unsuitable for playing a set of files sequentially.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        Music.PlayFileReturn (\"branden3.wav\")\r\n        var x, y, clr : int\r\n        loop\r\n            x := Rand.Int (0, maxx)\r\n            y := Rand.Int (0, maxy)\r\n            clr := Rand.Int (0, maxcolor)\r\n            Draw.FillOval (x, y, 30, 30, clr)\r\n            exit when hasch\r\n        end loop\r\n        Music.PlayFileStop"
+      ],
+      "raw_content": "This program plays the music in the file \"<i>branden3.wav</i>\" once while drawing ovals on the screen.\r\nIf the music has not finished when the user presses a key, it is halted using <b>Music.PlayFileStop</b><p>\r\n</p>",
+      "mdown_content": "This program plays the music in the file \"*branden3.wav*\" once while drawing ovals on the screen.\nIf the music has not finished when the user presses a key, it is halted using **Music.PlayFileStop**"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Music.PlayFileReturn Example",
+          "file": "Music.PlayFileReturn.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "To play a sound file requires that the computer be equipped with a sound card and speakers.<p>\r\n</p>",
+      "mdown_content": "To play a sound file requires that the computer be equipped with a sound card and speakers."
+    },
+    {
+      "title": "Details",
+      "raw_content": "The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects.<p>\r\n</p>",
+      "mdown_content": "The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        Music.PlayFileReturn (\"cd\")       % Play the entire CD\r\n        Music.PlayFileReturn (\"cd:3\")     % Play the third track on the CD\r\n        "
+      ],
+      "raw_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.<p>\r\n</p>",
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number]."
+    },
+    {
+      "title": "Details",
+      "raw_content": "On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music.<p>\r\n</p>",
+      "mdown_content": "On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        const STAR_SIZE : int := 80\r\n        var pic, x, y, dx, dy : int\r\n        \r\n        % Get the original picture\r\n        Draw.FillStar (3, 3, STAR_SIZE - 3, STAR_SIZE - 3, brightred)\r\n        pic := Pic.New (0, 0, STAR_SIZE, STAR_SIZE)\r\n        cls\r\n        \r\n        % Set the initial location and direction of movement\r\n        x := Rand.Int (0, maxx - STAR_SIZE)\r\n        y := Rand.Int (0, maxy - STAR_SIZE)\r\n        dx := 1\r\n        dy := 1\r\n        \r\n        Music.PlayFileLoop (\"background.mid\") % Start background music playing\r\n        \r\n        loop\r\n            if x + dx < 0 or x + dx > maxx - STAR_SIZE then\r\n                dx := -dx\r\n                Music.PlayFileReturn (\"boing.wav\")\r\n            end if\r\n            if y + dy < 0 or y + dy > maxy - STAR_SIZE then\r\n                dy := -dy\r\n                Music.PlayFileReturn (\"boing.wav\")\r\n            end if\r\n            x += dx\r\n            y += dy\r\n            Pic.Draw (pic, x, y, picCopy)\r\n            exit when hasch\r\n            Time.Delay (5)\r\n        end loop\r\n        \r\n        % Stop the background music.\r\n        Music.PlayFileStop"
+      ],
+      "raw_content": "This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits.<p>\r\n</p>",
+      "mdown_content": "This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "MIDI and WAVE File Example",
+          "file": "MusicAndSound.t"
+        }
+      ]
+    },
+    {
+      "title": "See also",
+      "links": [
+        "music_playfilestop"
+      ],
+      "raw_content": "<b><a href=\"music_playfilestop.html\">Music.PlayFileStop</a></b> to halt a music file that is current playing.<p>\r\n</p>",
+      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to halt a music file that is current playing."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Music.PlayFileReturn</b>, not by calling <b>PlayFileReturn</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.PlayFileReturn**, not by calling **PlayFileReturn**.\n"
+    }
+  ]
+}

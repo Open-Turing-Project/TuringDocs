@@ -1,0 +1,52 @@
+{
+  "title": "GUI.CreatePicture",
+  "fileName": "gui_createpicture",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.CreatePicture</b> ( <i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>mergePic</i> : <b>boolean</b> ) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.CreatePicture** ( *x*, *y*, *picture* : **int**, \n    *mergePic* : **boolean** ) : **int**"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "gui_createpicture01.gif"
+      ],
+      "raw_content": "Creates a picture and returns the picture's widget ID. <p>\r\nThe picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.</p>\n<p>\r\nThe <i>x</i> and <i>y</i> parameters specify the lower-left corner of the picture. The <i>picture</i> parameter specifies the picture ID of the picture. The picture ID is received from a <b>Pic.New</b> or <b>Pic.FileNew</b> call. Do not call <b>Pic.Free</b> for this picture ID until the button has been disposed of by calling <b>GUI.Dispose</b>. The <i>mergePic</i> parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window. </p>\n<p>\r\nA picture widget is a passive widget and cannot be enabled or disabled.</p>\n<p>\r\n\r\n</p>\n<center></center>\r\n<center><b>Two Pictures</b></center>\n<p>\r\n</p>",
+      "mdown_content": "Creates a picture and returns the picture's widget ID. \nThe picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.\n\nThe *x* and *y* parameters specify the lower-left corner of the picture. The *picture* parameter specifies the picture ID of the picture. The picture ID is received from a **Pic.New** or **Pic.FileNew** call. Do not call **Pic.Free** for this picture ID until the button has been disposed of by calling **GUI.Dispose**. The *mergePic* parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window. \n\nA picture widget is a passive widget and cannot be enabled or disabled.\n\n\n\n\n**Two Pictures**\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI \r\n        View.Set (\"graphics:230;135,nobuttonbar\") \r\n        \r\n        % We'll need to create a picture for our Picture widget. Normally \r\n        % an external file (and Pic.FileNew) would be used.\r\n        Draw.FillOval (50, 50, 50, 50, blue)\r\n        Draw.FillBox (17, 17, 83, 83, brightred)\r\n        Draw.FillStar (17, 17, 83, 83, brightgreen)\r\n        Draw.FillMapleLeaf (37, 37, 63, 63, brightpurple)\r\n        var pic : int := Pic.New (0, 0, 100, 100)\r\n        var picture1, picture2 : int\r\n        var label1, label2 : int\r\n        \r\n        GUI.SetBackgroundColor (gray)\r\n        \r\n        label1 := GUI.CreateLabel (15, 5, \"Picture (no merge)\")\r\n        picture1 := GUI.CreatePicture (10, 25, pic, false)\r\n        \r\n        label2 := GUI.CreateLabel (135, 5, \"Picture (merge)\")\r\n        picture2 := GUI.CreatePicture (120, 25, pic, true)"
+      ],
+      "raw_content": "The following program draws two pictures, merged and not merged.<p>\r\n</p>\n<p>\r\n    </p>",
+      "mdown_content": "The following program draws two pictures, merged and not merged.\n\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "GUI.CreatePicture Example",
+          "file": "GUI.CreatePicture.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "When <b>GUI.CreatePicture</b><i> </i>is called, the newly created picture will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>\r\nA picture widget is a passive widget and cannot be enabled or disabled.</p>\n<p>\r\n    </p>",
+      "mdown_content": "When **GUI.CreatePicture*** *is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. \nA picture widget is a passive widget and cannot be enabled or disabled.\n\n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "The following GUI subprograms can be called with a picture as the <i>widgetID</i> parameter:<p>\r\n          </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\n<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,\r\n\t\t  <b>GUI.GetX</b>, <b>GUI.GetY</b>, <b>GUI.GetWidth</b>,\r\n\t\t  <b>GUI.GetHeight</b>, <b>GUI.SetPosition</b>, \r\n\t\t  <b>GUI.SetSize</b>, <b>GUI.SetPositionAndSize</b><p></p>\n</td>\r\n\t    </tr></table>\n<p>\r\n</p>",
+      "mdown_content": "The following GUI subprograms can be called with a picture as the *widgetID* parameter:\n\n \n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,\n**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,\n**GUI.GetHeight**, **GUI.SetPosition**, \n**GUI.SetSize**, **GUI.SetPositionAndSize**\n\n"
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.CreatePicture</b>, not by calling <b>CreatePicture</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreatePicture**, not by calling **CreatePicture**.\n"
+    }
+  ]
+}

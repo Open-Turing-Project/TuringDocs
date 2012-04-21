@@ -1,0 +1,38 @@
+{
+  "title": "Time.ElapsedCPU",
+  "fileName": "time_elapsedcpu",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Time.ElapsedCPU </b>: <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Time.ElapsedCPU **: **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>Time.ElapsedCPU </b>function is used on a multitasking system such as UNIX to<b> </b>determine the amount of time that has been used by this program (process). The number of central processor milliseconds assigned to this program is returned. This is of little use on a personal computer, where <b>Time.ElapsedCPU </b>returns the same value as <b>Time.Elapsed</b>.<p>\r\n</p>",
+      "mdown_content": "The **Time.ElapsedCPU **function is used on a multitasking system such as UNIX to** **determine the amount of time that has been used by this program (process). The number of central processor milliseconds assigned to this program is returned. This is of little use on a personal computer, where **Time.ElapsedCPU **returns the same value as **Time.Elapsed**."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var timeUsed : int\r\n        timeUsed := Time.ElapsedCPU\r\n        put \"This program has used \", timeUsed,\r\n                \" milliseconds of CPU time\""
+      ],
+      "raw_content": "On a UNIX system, this program tells you how much time it has used.<p>\r\n</p>",
+      "mdown_content": "On a UNIX system, this program tells you how much time it has used."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.ElapsedCPU</b>, not by calling <b>ElapsedCPU</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.ElapsedCPU**, not by calling **ElapsedCPU**.\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "time_elapsed",
+        "time_delay"
+      ],
+      "raw_content": "<b><a href=\"time_elapsed.html\">Time.Elapsed</a> </b>and <b><a href=\"time_delay.html\">Time.Delay</a></b> subprograms.<p>\r\n</p>",
+      "mdown_content": "**[time_elapsed.html](Time.Elapsed) **and **[time_delay.html](Time.Delay)** subprograms."
+    }
+  ]
+}

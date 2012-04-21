@@ -1,0 +1,45 @@
+{
+  "title": "sind",
+  "fileName": "sind",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>sind</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
+      "mdown_content": "**sind** ( *r* : **real** ) : **real**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "The <b>sind</b> function is used to find the sine of an angle given in degrees. For example, <b>sind</b> (0) is 0.<p>\r\n</p>",
+      "mdown_content": "The **sind** function is used to find the sine of an angle given in degrees. For example, **sind** (0) is 0."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 12\r\n            const angle := i * 30\r\n            put \"Sin of \", angle, \" is \", sind ( angle )\r\n        end for"
+      ],
+      "raw_content": "This program prints out the sine of 30, 60, 90, up to 360 degrees.<p>\r\n</p>",
+      "mdown_content": "This program prints out the sine of 30, 60, 90, up to 360 degrees."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "sind Example",
+          "file": "sind.t"
+        }
+      ]
+    },
+    {
+      "title": "See also",
+      "links": [
+        "cosd",
+        "tand",
+        "sin",
+        "mathmodule"
+      ],
+      "raw_content": "the <b><a href=\"cosd.html\">cosd</a></b> and <b><a href=\"tand.html\">tand</a></b> functions for calculating cosine and tangent.<p>\r\nthe <b><a href=\"sin.html\">sin</a></b> function which finds the sine of an angle given in radians. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "the **[cosd.html](cosd)** and **[tand.html](tand)** functions for calculating cosine and tangent.\nthe **[sin.html](sin)** function which finds the sine of an angle given in radians. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+    }
+  ]
+}

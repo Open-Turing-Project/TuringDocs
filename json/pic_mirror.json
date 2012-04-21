@@ -1,0 +1,47 @@
+{
+  "title": "Pic.Mirror",
+  "fileName": "pic_mirror",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Pic.Mirror</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
+      "mdown_content": "**Pic.Mirror** (*picID* : **int**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Pic.Mirror</b> is used to create a new picture by flipping the \r\n          picture horizontally. The resulting picture is exactly the same size \r\n\t  as the original, except it appears as a &#147;mirror image&#148;. <p>\r\n    </p>",
+      "mdown_content": "**Pic.Mirror** is used to create a new picture by flipping the \npicture horizontally. The resulting picture is exactly the same size \nas the original, except it appears as a mirror image. \n"
+    },
+    {
+      "title": "Details",
+      "raw_content": "Note that the mirror-imaged picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using <b>Pic.Free</b>.<p>\r\n    </p>",
+      "mdown_content": "Note that the mirror-imaged picture is a newly created picture. \nWhen it is no longer needed, its memory should be released by \nusing **Pic.Free**.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        View.Set (\"graphics:210;125,nobuttonbar\")\r\n        \r\n        % Get the original picture\r\n        var pic, newPic : int\r\n        Draw.FillOval (50, 50, 50, 50, brightred)\r\n        Draw.FillOval (70, 50, 50, 50, colorbg)\r\n        Draw.Text (\"BLUE\", 40, 60, defFontID, brightblue)\r\n        Draw.Text (\"MOON\", 40, 40, defFontID, brightblue)\r\n        pic := Pic.New (0, 0, 100, 100)\r\n        newPic := Pic. Mirror (pic)\r\n        cls\r\n        \r\n        % Draw the two images: original and flipped\r\n        Pic.Draw (pic, 10, 20, picCopy)\r\n        Draw.Text (\"Original\", 10, 5, defFontID, black) \r\n        Pic.Draw (newPic, 110, 20, picCopy)\r\n        Draw.Text (\"Flipped\", 140, 5, defFontID, black) \r\n        "
+      ],
+      "images": [
+        "pic_mirror01.gif"
+      ],
+      "raw_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
+      "mdown_content": "The program draws a crescent on the screen, takes a picture of \nit and then creates a second picture by mirror-imaging the \ncrescent. It then draws both the original picture and the \nmirror-imaged version.\n\n\n**Output from the Program**\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Pic.Mirror Example",
+          "file": "Pic.Mirror.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Mirror</b>, not by calling <b>Mirror</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling \n**Pic.Mirror**, not by calling **Mirror**.\n\n"
+    }
+  ]
+}

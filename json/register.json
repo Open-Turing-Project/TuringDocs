@@ -1,0 +1,24 @@
+{
+  "title": "register",
+  "fileName": "register",
+  "sections": [
+    {
+      "title": "Description",
+      "raw_content": "When a variable, constant or parameter is declared, you can request that the item be placed in a machine register. This should be done only for programs requiring considerable efficiency.<p>\r\n</p>",
+      "mdown_content": "When a variable, constant or parameter is declared, you can request that the item be placed in a machine register. This should be done only for programs requiring considerable efficiency."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var register counter : int\r\n        const register maxCounter : int := 100\r\n        procedure p ( register x : real )\r\n            \r\n        end p"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    },
+    {
+      "title": "Details",
+      "raw_content": "Items can be requested to be in registers only if they are local to a subprogram (not global variables, declared in the main program, a module, monitor or class). Items requested to be in registers cannot be bound to, passed to reference parameters, have their address taken by <b>addr</b>, or  have certain type cheats applied to them (since a machine register has no address).<p>\r\nThe request to use a register may be ignored. For example, the current (1999) interpretive implementation uses pseudo-code, which has no machine registers, and so ignores the <b>register</b> keyword. For the syntax of using this keyword, see <b>var</b> declaration, <b>const</b> declaration and <b>paramDeclaration</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Items can be requested to be in registers only if they are local to a subprogram (not global variables, declared in the main program, a module, monitor or class). Items requested to be in registers cannot be bound to, passed to reference parameters, have their address taken by **addr**, or  have certain type cheats applied to them (since a machine register has no address).\nThe request to use a register may be ignored. For example, the current (1999) interpretive implementation uses pseudo-code, which has no machine registers, and so ignores the **register** keyword. For the syntax of using this keyword, see **var** declaration, **const** declaration and **paramDeclaration**.\n"
+    }
+  ]
+}

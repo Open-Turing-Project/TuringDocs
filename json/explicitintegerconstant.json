@@ -1,0 +1,41 @@
+{
+  "title": "explicitIntegerConstant",
+  "fileName": "explicitintegerconstant",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "An <i>explicitIntegerConstant</i> is a sequence of one or more decimal digits (0 to 9) optionally preceded by a plus or minus sign. This is an alternate form that specifies a number base (such as base 2 or base 16).<p>\r\n</p>",
+      "mdown_content": "An *explicitIntegerConstant* is a sequence of one or more decimal digits (0 to 9) optionally preceded by a plus or minus sign. This is an alternate form that specifies a number base (such as base 2 or base 16)."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var count : int := 0\r\n        const height := 115\r\n        \r\n        count := height - 5"
+      ],
+      "raw_content": "In the following, the explicit integer constants are 0, 115 and 5.<p>\r\n</p>",
+      "mdown_content": "In the following, the explicit integer constants are 0, 115 and 5."
+    },
+    {
+      "title": "Details",
+      "code": [
+        "        const maxnat1 := 16#FF      % Largest 1-byte natural number\r\n        const maxint2 := 16#7FFF    % Largest 2-byte integer"
+      ],
+      "raw_content": "In current implementations of Turing, the range of the <b>int</b> (<b>integer</b>) type is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2**31 - 1. This is the range that fits into four bytes, with one pattern left over (the largest negative 4-byte number) to represent the uninitialized value. See <b>maxint</b>.<p>\r\nValues can be written in base 2 or 16 or any other base in the range 2 to 36 (36 because there are 10 digits and 26 letters). This form begins with the base, such as 16, then #, and then the value written in that base, for example, 16#A has the value 10. The letters a, b, c &#133; represent the digit values 10, 11, 12 &#133; Capital letters A, B, C &#133; can be used instead of lower case. Here are some examples.</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>2#1</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 1</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 2)</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>2#11</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 3</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 2)</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>16#a</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 10</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 16)</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>16#FF</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 255</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 16)</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>16#FFFF</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 32767</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 16)</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>8#10</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>= 8</td>\n<td width=\"10\">&nbsp;</td>\n<td width=\"10\">&nbsp;</td>\n<td>(Base 8)</td>\n</tr>\n</table>\n<p>\r\nHere is an example of using these:</p>\n<p>\r\n</p>\r\nYou should be careful to avoid confusion about patterns such as 16#FFFF. It is tempting to think that this is the value 1, because the bit pattern (2-byte two's complement internal representation) for 1 is the same as the bit pattern for 16#FFFF = 32767. However, the value (as opposed to the internal representation) of 1 and 32767 are different.<p>\r\n</p>",
+      "mdown_content": "In current implementations of Turing, the range of the **int** (**integer**) type is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2**31 - 1. This is the range that fits into four bytes, with one pattern left over (the largest negative 4-byte number) to represent the uninitialized value. See **maxint**.\nValues can be written in base 2 or 16 or any other base in the range 2 to 36 (36 because there are 10 digits and 26 letters). This form begins with the base, such as 16, then #, and then the value written in that base, for example, 16#A has the value 10. The letters a, b, c  represent the digit values 10, 11, 12  Capital letters A, B, C  can be used instead of lower case. Here are some examples.\n\n\n \n2#1\n \n \n= 1\n \n \n(Base 2)\n \n2#11\n \n \n= 3\n \n \n(Base 2)\n \n16#a\n \n \n= 10\n \n \n(Base 16)\n \n16#FF\n \n \n= 255\n \n \n(Base 16)\n \n16#FFFF\n \n= 32767\n \n(Base 16)\n \n8#10\n \n \n= 8\n \n \n(Base 8)\n\nHere is an example of using these:\n\n\nYou should be careful to avoid confusion about patterns such as 16#FFFF. It is tempting to think that this is the value 1, because the bit pattern (2-byte two's complement internal representation) for 1 is the same as the bit pattern for 16#FFFF = 32767. However, the value (as opposed to the internal representation) of 1 and 32767 are different."
+    },
+    {
+      "title": "See also",
+      "links": [
+        "int",
+        "maxint",
+        "nat",
+        "int",
+        "intstr",
+        "natstr",
+        "intstr"
+      ],
+      "raw_content": "<b><a href=\"int.html\">int</a></b>, <b><a href=\"maxint.html\">maxint</a></b> (the largest integer value), <b><a href=\"nat.html\">nat</a></b> (positive values  only) and <b><a href=\"int.html\">int</a><i>n</i></b> (<i><b>n</b></i><b>-</b>byte integers). See also <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"natstr.html\">natstr</a></b> which convert integer and natural number values to corresponding character strings in any base, for example <b><a href=\"intstr.html\">intstr</a> </b>(4, 0, 2) = \"100\".<p>\r\n</p>",
+      "mdown_content": "**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)*n*** (***n*****-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr) **(4, 0, 2) = \"100\"."
+    }
+  ]
+}

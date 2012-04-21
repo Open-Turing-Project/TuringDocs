@@ -1,0 +1,44 @@
+{
+  "title": "Dir.Open",
+  "fileName": "dir_open",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Dir.Open</b> (<i>directoryPathName</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
+      "mdown_content": "**Dir.Open** (*directoryPathName* : **string**) : **int**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Dir.Open</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Open</b> returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the <b>Dir.Get</b> and <b>Dir.GetLong</b> subprograms. After getting the listing, the user should call <b>Dir.Close</b>.<p>\r\n</p>",
+      "mdown_content": "**Dir.Open** is part of a series of four subprograms that help users get directory listings. **Dir.Open** returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the **Dir.Get** and **Dir.GetLong** subprograms. After getting the listing, the user should call **Dir.Close**."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If the <b>Dir.Open</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If the **Dir.Open** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var streamNumber : int\r\n        var fileName : string\r\n        streamNumber := Dir.Open (Dir.Current)\r\n        assert streamNumber > 0\r\n        loop\r\n            fileName := Dir.Get (streamNumber)\r\n            exit when fileName = \"\"\r\n            put fileName\r\n        end loop\r\n        Dir.Close (streamNumber)"
+      ],
+      "raw_content": "This program prints a listing of all the files in the current directory.<p>\r\n</p>",
+      "mdown_content": "This program prints a listing of all the files in the current directory."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Directory Listing Example",
+          "file": "DirectoryListing.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Dir.Open</b>, not by calling <b>Open</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Open**, not by calling **Open**.\n"
+    }
+  ]
+}

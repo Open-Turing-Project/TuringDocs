@@ -1,0 +1,70 @@
+{
+  "title": "drawdot",
+  "fileName": "drawdot",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>drawdot</b> (<i>x</i>, <i>y</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
+      "mdown_content": "**drawdot** (*x*, *y*, *Color* : **int**)"
+    },
+    {
+      "title": "Description",
+      "images": [
+        "drawdot01.gif"
+      ],
+      "raw_content": "The <b>drawdot</b> procedure is used to color the dot (pixel) at \r\n          location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>\r\n\t\t</p>\n<center></center>",
+      "mdown_content": "The **drawdot** procedure is used to color the dot (pixel) at \nlocation (*x*, *y*) using the specified *Color*.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        setscreen (\"graphics\")\r\n        var x, y, c : int\r\n        loop\r\n            randint (x, 0, maxx)        % Random x\r\n            randint (y, 0, maxy)        % Random y\r\n            randint (c, 0, maxcolor)    % Random color\r\n            drawdot (x, y, c)\r\n        end loop"
+      ],
+      "raw_content": "This program randomly draws dots with random colors. The <b>maxx</b>, \r\n          <b>maxy</b> and <b>maxcolor</b> functions give the maximum x, y and \r\n          color values.<p>\r\n</p>",
+      "mdown_content": "This program randomly draws dots with random colors. The **maxx**, \n**maxy** and **maxcolor** functions give the maximum x, y and \ncolor values."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "drawdot Example",
+          "file": "drawdot.t"
+        }
+      ]
+    },
+    {
+      "title": "Details",
+      "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If the screen is \r\n          not in a \"<i>graphics</i>\" mode,  it will automatically be set to \r\n          \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.<p>\r\n    </p>",
+      "mdown_content": "The screen should be in a \"*graphics*\" mode. If the screen is \nnot in a \"*graphics*\" mode,  it will automatically be set to \n\"*graphics*\" mode. See **setscreen** for details.\n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var x, y : real\r\n        var dx, dy : real\r\n        var clr : int := 1\r\n        x := Rand.Int (1, maxx - 1)\r\n        y := Rand.Int (1, maxy - 1)\r\n        dx := Rand.Real - 0.5\r\n        dy := Rand.Real - 0.5\r\n        loop\r\n            drawdot (round (x), round (y), clr)\r\n            clr := (clr + 1) mod maxcolor\r\n            x := x + dx\r\n            y := y + dy\r\n            if x <= 0 or x >= maxx then\r\n                dx := -dx\r\n            end if\r\n            if y <= 0 or y >= maxy then\r\n                dy := -dy\r\n            end if\r\n        end loop"
+      ],
+      "raw_content": "This program draws a line of dots that bounce off the &#147;sides&#148; of the \r\n          screen. It also demonstrates that you can use real coordinates to\r\n          store position (<i>x</i>, <i>y</i>), as long as you convert the \r\n          coordinates to <b>int</b> values using <b>round</b> in the \r\n          <b>drawdot</b> call.<p>\r\n</p>",
+      "mdown_content": "This program draws a line of dots that bounce off the sides of the \nscreen. It also demonstrates that you can use real coordinates to\nstore position (*x*, *y*), as long as you convert the \ncoordinates to **int** values using **round** in the \n**drawdot** call."
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "drawdot Example",
+          "file": "drawdot2.t"
+        }
+      ]
+    },
+    {
+      "title": "See also",
+      "links": [
+        "setscreen",
+        "maxx",
+        "maxy"
+      ],
+      "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b> and the various \r\n          <b>draw&#133;</b> procedures. <p>\r\n    </p>",
+      "mdown_content": "**[setscreen.html](setscreen)**, \n**[maxx.html](maxx)**, \n**[maxy.html](maxy)** and the various \n**draw** procedures. \n"
+    }
+  ]
+}

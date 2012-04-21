@@ -1,0 +1,41 @@
+{
+  "title": "GUI.Quit",
+  "fileName": "gui_quit",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.Quit</b><p></p></font>",
+      "mdown_content": "**GUI.Quit**"
+    },
+    {
+      "title": "Description",
+      "code": [
+        "        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop"
+      ],
+      "raw_content": "This procedure causes <b>GUI.ProcessEvent</b> to return <b>true</b>. \r\n          If the program is structured properly with a<p>\r\n</p>\r\n          at the end of the program, then the program will exit the loop after \r\n\t  finishing the current <i>action procedure</i>. This procedure is \r\n\t  usually called from the <i>action procedure</i> of a Quit button \r\n\t  or Exit menu item. <p>\r\n    </p>",
+      "mdown_content": "This procedure causes **GUI.ProcessEvent** to return **true**. \nIf the program is structured properly with a\n\nat the end of the program, then the program will exit the loop after \nfinishing the current *action procedure*. This procedure is \nusually called from the *action procedure* of a Quit button \nor Exit menu item. \n"
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        import GUI\r\n        \r\n        procedure KeyHandler (ch : char)\r\n            if ch = 'Q' or ch = 'q' or ch = 'X' or ch = 'x' then\r\n                GUI.Quit\r\n            end if\r\n        end KeyHandler\r\n        \r\n        var quitButton : int := GUI.CreateButton (10, 10, 0, \"Quit\", GUI.Quit)\r\n        GUI.SetKeyEventHandler (KeyHandler)\r\n        \r\n        loop\r\n            exit when GUI.ProcessEvent\r\n        end loop\r\n        \r\n        put \"Done!\""
+      ],
+      "raw_content": "Here is program that does nothing but wait for the user to press \r\n          the quit button or type the letter 'Q', 'q', 'X', or 'x'.<p>\r\n</p>",
+      "mdown_content": "Here is program that does nothing but wait for the user to press \nthe quit button or type the letter 'Q', 'q', 'X', or 'x'."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the procedures by calling \r\n\t  <b>GUI.Quit</b>, not by calling <b>Quit</b>.</p>\n<p>\r\n    </p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling \n**GUI.Quit**, not by calling **Quit**.\n\n"
+    },
+    {
+      "title": "See also",
+      "links": [
+        "gui_processevent",
+        "gui_resetquit"
+      ],
+      "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.\r\n          See also <a href=\"gui_resetquit.html\">GUI.ResetQuit</a>\r\n\t  for resetting the \"quit\" flag, so that a second event loop\r\n\t  can be used in the same program.<p>\r\n    </p>",
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\nSee also [gui_resetquit.html](GUI.ResetQuit)\nfor resetting the \"quit\" flag, so that a second event loop\ncan be used in the same program.\n"
+    }
+  ]
+}

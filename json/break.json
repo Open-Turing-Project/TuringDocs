@@ -1,0 +1,24 @@
+{
+  "title": "break",
+  "fileName": "break",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>break</b><p>\r\n</p></font>",
+      "mdown_content": "**break**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "On systems with a debugger, the environment \"pauses\" when execution reaches the <b>break</b> statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc.<p>\r\n</p>",
+      "mdown_content": "On systems with a debugger, the environment \"pauses\" when execution reaches the **break** statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        for i : 1 .. 100\r\n            put i\r\n            break\r\n        end for"
+      ],
+      "raw_content": "<p>\r\n</p>",
+      "mdown_content": ""
+    }
+  ]
+}

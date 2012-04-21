@@ -1,0 +1,31 @@
+{
+  "title": "GUI.GetCheckBox",
+  "fileName": "gui_getcheckbox",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>GUI.GetCheckBox</b> (<i>widgetID</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
+      "mdown_content": "**GUI.GetCheckBox** (*widgetID* : **int**) : **boolean**"
+    },
+    {
+      "title": "Description",
+      "raw_content": "Returns the status of the check box specified by <i>widgetID</i>. If the check box is set (has an X in it), <i>GetCheckBox</i> returns true, otherwise it returns false.<p>\r\n</p>",
+      "mdown_content": "Returns the status of the check box specified by *widgetID*. If the check box is set (has an X in it), *GetCheckBox* returns true, otherwise it returns false."
+    },
+    {
+      "title": "Example",
+      "raw_content": "See <b>GUI.CreateCheckBox </b>for an example of <b>GUI.GetCheckBox</b>.<p>\r\n</p>",
+      "mdown_content": "See **GUI.CreateCheckBox **for an example of **GUI.GetCheckBox**."
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetCheckBox</b>, not by calling <b>GetCheckBox</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetCheckBox**, not by calling **GetCheckBox**.\n"
+    },
+    {
+      "title": "See also",
+      "raw_content": "<b>GUI.CreateCheckBox</b>.<p>\r\n</p>",
+      "mdown_content": "**GUI.CreateCheckBox**."
+    }
+  ]
+}

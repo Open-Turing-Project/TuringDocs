@@ -1,0 +1,44 @@
+{
+  "title": "Font.Free",
+  "fileName": "font_free",
+  "sections": [
+    {
+      "title": "Syntax",
+      "raw_content": "<font size=\"+1\"><b>Font.Free</b> (<i>fontID</i> : <b>int</b>)<p>\r\n</p></font>",
+      "mdown_content": "**Font.Free** (*fontID* : **int**)"
+    },
+    {
+      "title": "Description",
+      "raw_content": "<b>Font.Free </b>is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a <b>Font.Free</b> for every <b>Font.New</b>, the number of simultaneously defined fonts is kept to a minimum.<p>\r\n</p>",
+      "mdown_content": "**Font.Free **is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a **Font.Free** for every **Font.New**, the number of simultaneously defined fonts is kept to a minimum."
+    },
+    {
+      "title": "Details",
+      "raw_content": "If <b>Font.Free</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Free</b> call fails for other (non-fatal) reasons, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
+      "mdown_content": "If **Font.Free** is passed an invalid font ID, a fatal error occurs. If the **Font.Free** call fails for other (non-fatal) reasons, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+    },
+    {
+      "title": "Example",
+      "code": [
+        "        var font1, font2, font3, font4 : int\r\n        font1 := Font.New (\"serif:12\")\r\n        assert font1 > 0\r\n        font2 := Font.New (\"sans serif:18:bold\")\r\n        assert font2 > 0\r\n        font3 := Font.New (\"mono:9\")\r\n        assert font3 > 0\r\n        font4 := Font.New (\"Palatino:24:Bold,Italic\")\r\n        assert font4 > 0\r\n        Font.Draw (\"This is in a serif font\", 50, 30, font1, red)\r\n        Font.Draw (\"This is in a sans serif font\", 50, 80, font2, brightblue)\r\n        Font.Draw (\"This is in a mono font\", 50, 130, font3, colorfg)\r\n        Font.Draw (\"This is in Palatino (if available)\", 50, 180, font4, green)\r\n        Font.Free (font1)\r\n        Font.Free (font2)\r\n        Font.Free (font3)\r\n        Font.Free (font4)"
+      ],
+      "raw_content": "The program prints out several phrases in a variety of fonts.<p>\r\n</p>\n<p>\r\n</p>",
+      "mdown_content": "The program prints out several phrases in a variety of fonts.\n\n"
+    },
+    {
+      "title": "Execute",
+      "executables": [
+        {
+          "buttontext": "Launch Example Program",
+          "name": "Font.Free Example",
+          "file": "Font.Draw.t"
+        }
+      ]
+    },
+    {
+      "title": "Status",
+      "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.Free</b>, not by calling <b>Free</b>.</p>\n<p>\r\n</p>",
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Free**, not by calling **Free**.\n"
+    }
+  ]
+}
