@@ -2,12 +2,12 @@
 #View.UpdateArea
 
 ##Syntax
-**View.UpdateArea** (*x1*, *y1*, *x2*, *y2*)
+**View.UpdateArea** (_x1_, _y1_, _x2_, _y2_)
 
 
 
 ##Description
-The **View.UpdateArea** procedure updates a rectanglular area Run window, specified by (*x1*, *y1*) - (*x2*, *y2*) from the offscreen bitmap. It is used with the command **View.Set** ("offscreenonly") which prevents the Run window from being updated until the **View.UpdateArea** or **View.Update** command is given.
+The **View.UpdateArea** procedure updates a rectanglular area Run window, specified by (_x1_, _y1_) - (_x2_, _y2_) from the offscreen bitmap. It is used with the command **View.Set** ("offscreenonly") which prevents the Run window from being updated until the **View.UpdateArea** or **View.Update** command is given.
 Because the entire screen is not updated each time, the animation canbe much faster, especially on slow machines.  This procedure does take more effort to use than **View.Update** as it requires the programmer to calculate which portion of the screen must be updated.
 
 
@@ -41,10 +41,11 @@ Here is an example program that allows you to compare the speed ofanimation usin
 
 
 
+
 ##Details
 All Turing Run windows have both an onscreen visible window and an offscreen window. Whenever any output is sent to the screen, both the onscreen window and the offscreen window are updated. When the Run window needs to be updated (for example when another window is moved over top of it and then removed), Turing copies the offscreen window onto the onscreen window.
-When the **View.Set** ("offscreenonly") command is given, Turing no longer draws to the onscreen window when any drawing command is given. However, it does update the offscreen window. When the **View.Update** command is given, the entire offscreen window is copied to the onscreen window.
-This can be used to provide smooth, flicker-free animation. Animated objects flicker when the object being animated disappears from the onscreen window for a period of time. By using **View.Set** ("offscreenonly") / **View.Update**, the onscreen window is never blank. Instead, the offscreen window drawn over top off the on screen window, replacing it. This means that the on-screenwindow is never blanked out, eliminating the flickering found in the animation.
+When the **View.Set** ("offscreenonly") command is given, Turing no longer draws to the onscreen window when any drawing command is given. However, it does update the offscreen window. When the **View.Update** command is given, the entire offscreen window is copied to the onscreen window.
+This can be used to provide smooth, flicker-free animation. Animated objects flicker when the object being animated disappears from the onscreen window for a period of time. By using **View.Set** ("offscreenonly") / **View.Update**, the onscreen window is never blank. Instead, the offscreen window drawn over top off the on screen window, replacing it. This means that the on-screenwindow is never blanked out, eliminating the flickering found in the animation.
 
 
 

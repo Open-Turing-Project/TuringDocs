@@ -2,7 +2,8 @@
 
 <h2>Syntax</h2>
 
-<p><strong>RGB.SetColor</strong> (<em>colorNumber</em>: <strong>int</strong>,<em>redComp</em>, <em>greenComp</em>, <em>blueComp</em> : <strong>real</strong>)</p>
+<p><strong>RGB.SetColor</strong> (<em>colorNumber</em>: <strong>int</strong>,
+<em>redComp</em>, <em>greenComp</em>, <em>blueComp</em> : <strong>real</strong>)</p>
 
 <h2>Description</h2>
 
@@ -14,8 +15,11 @@ It is wise to use <strong>Error.Last</strong> and <strong>Error.LastMsg</strong>
 
 <h2>Example</h2>
 
-<p>This program sets all the available colors to shades of red
-<strong>Details</strong><strong>RGB.SetColour</strong> is an alternate spelling for <strong>RGB.SetColor</strong>.</p>
+<p>This program sets all the available colors to shades of red</p>
+
+<p><strong>Details</strong> <strong>RGB.SetColour</strong> is an alternate spelling for <strong>RGB.SetColor</strong>.</p>
+
+<p>&lt;</p>
 
 <pre><code>    for clr : 0 .. maxcolor
          if not RGB.SetColor (clr, clr / maxcolor, 0, 0) then

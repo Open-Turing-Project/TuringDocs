@@ -2,12 +2,12 @@
 #Math.DistancePointLine
 
 ##Syntax
-**Math.DistancePointLine** (*xp*, *yp*, *x1*, *y1*, *x2*, *y2* : **real**) : **real**
+**Math.DistancePointLine** (_xp_, _yp_, _x1_, _y1_, _x2_, _y2_ : **real**) : **real**
 
 
 
 ##Description
-**Math.DistancePointLine **is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (*xp*, *yp*) is the locationbetween the point. (*x1*, *y1*) and (*x2*, *y2*) are the end points of the line segment.
+**Math.DistancePointLine **is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment.
 
 
 

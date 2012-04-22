@@ -2,7 +2,7 @@
 #arccos
 
 ##Syntax
-**arccos** (*r* : **real**) : **real**
+**arccos** (_r_ : **real**) : **real**
 
 
 

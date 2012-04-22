@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>setpriority</b> (<i>p</i> : <b>nat</b>)<p>\r\n</p></font>",
       "text_content": " setpriority (p : nat)\r\n",
-      "mdown_content": "**setpriority** (*p* : **nat**)"
+      "mdown_content": "**setpriority** (_p_ : **nat**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>setpriority</b> procedure is used to set the priority of a process in a concurrent program.  This priority cannot  be counted on to guarantee critical access to shared variables.  A smaller value of <i>p</i> means increased speed.  The argument to <b>setpriority</b> may be limited to the range 0 to <br>\r\n2**15 - 1.<p>\r\n</p>",
       "text_content": " The setpriority procedure is used to set the priority of a process in a concurrent program.  This priority cannot  be counted on to guarantee critical access to shared variables.  A smaller value of p means increased speed.  The argument to setpriority may be limited to the range 0 to \r\n2**15 - 1.\r\n",
-      "mdown_content": "The **setpriority** procedure is used to set the priority of a process in a concurrent program.  This priority cannot  be counted on to guarantee critical access to shared variables.  A smaller value of *p* means increased speed.  The argument to **setpriority** may be limited to the range 0 to 2**15 - 1."
+      "mdown_content": "The **setpriority** procedure is used to set the priority of a process in a concurrent program.  This priority cannot  be counted on to guarantee critical access to shared variables.  A smaller value of _p_ means increased speed.  The argument to **setpriority** may be limited to the range 0 to 2**15 - 1."
     },
     {
       "title": "Status",

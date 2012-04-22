@@ -2,12 +2,12 @@
 #abs
 
 ##Syntax
-**abs** (*expn*)
+**abs** (_expn_)
 
 
 
 ##Description
-The **abs** function is used to find the absolute value of a number (the *expn*). For example, **abs** (-23) is 23.
+The **abs** function is used to find the absolute value of a number (the _expn_). For example, **abs** (-23) is 23.
 
 
 
@@ -18,8 +18,10 @@ This program outputs 9.83.
         var x : real := -9.83
         put abs (x) % Outputs 9.83
 ##Details
-The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number *x* is within a given distance *d *of another number *y*; for example:
- **if** **abs** (*x* - *y*) **<**= *d* **then** 
+The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number _x_ is within a given distance _d _of another number _y_; for example:
+
+
+
 
 
 

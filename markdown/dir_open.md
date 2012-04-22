@@ -2,7 +2,7 @@
 #Dir.Open
 
 ##Syntax
-**Dir.Open** (*directoryPathName* : **string**) : **int**
+**Dir.Open** (_directoryPathName_ : **string**) : **int**
 
 
 

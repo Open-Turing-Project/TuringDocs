@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Hide</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Hide (windowID : int)\r\n",
-      "mdown_content": "**Window.Hide** (*windowID* : **int**)"
+      "mdown_content": "**Window.Hide** (_windowID_ : **int**)"
     },
     {
       "title": "Description",

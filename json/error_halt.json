@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Halt</b> (<i>errorMessage</i> : <b>string</b>)<p></p></font>",
       "text_content": "Error.Halt (errorMessage : string)\r\n    ",
-      "mdown_content": "**Error.Halt** (*errorMessage* : **string**)"
+      "mdown_content": "**Error.Halt** (_errorMessage_ : **string**)"
     },
     {
       "title": "Description",

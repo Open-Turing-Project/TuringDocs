@@ -2,12 +2,12 @@
 #Sprite.SetPosition
 
 ##Syntax
-**Sprite.SetPosition** (*spriteID*, *x*, *y* : **int**,     *centered* : **boolean**)
+**Sprite.SetPosition** (_spriteID_, _x_, _y_ : **int**,     _centered_ : **boolean**)
 
 
 
 ##Description
-Moves the sprite specified by *spriteID* to the location specified by (*x, y*). If *centered* is **true**, then the sprite is centered on (*x, y*). Otherwise (*x, y*) specifies the lower-left corner of the sprite.
+Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite.
 
 
 

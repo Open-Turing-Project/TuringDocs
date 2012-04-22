@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Save</b> (<i>picID</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p></p></font>",
       "text_content": "Pic.Save (picID : int, fileName : string)\r\n    ",
-      "mdown_content": "**Pic.Save** (*picID* : **int**, *fileName* : **string**)"
+      "mdown_content": "**Pic.Save** (_picID_ : **int**, _fileName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Save </b>is used to save  a picture on the screen to a file.<p>\r\n\t  The <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>BMP files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr></table>\n<p>\r\n    </p>",
       "text_content": "Pic.Save is used to save  a picture on the screen to a file.\r\n\t  The fileNameparameter must give the format of the file:\r\n\t   \r\n\t      BMP files\r\n\t       \r\n\t      \"BMP:filename\" or \"filename.BMP\"\r\n    ",
-      "mdown_content": "**Pic.Save **is used to save  a picture on the screen to a file.\nThe *fileName*parameter must give the format of the file:\n BMP files \"BMP:filename\" or \"filename.BMP\""
+      "mdown_content": "**Pic.Save **is used to save  a picture on the screen to a file.\nThe _fileName_parameter must give the format of the file:\n\n\n"
     },
     {
       "title": "Details",

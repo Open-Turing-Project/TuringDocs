@@ -2,7 +2,7 @@
 #Net.CloseConnection
 
 ##Syntax
-**Net.CloseConnection** (*netStream* : **int**)
+**Net.CloseConnection** (_netStream_ : **int**)
 
 
 
@@ -18,7 +18,7 @@ It is possible for Firewalls to interfere with the actions of the **Net** module
 
 
 ##Example
-The following program fragment connects to port 5300 on the machine specified by *netAddress*, sends the work OK to it and closes the connection.
+The following program fragment connects to port 5300 on the machine specified by _netAddress_, sends the work OK to it and closes the connection.
 
 
         netStream := Net.OpenConnection (netAddress, chatPort)

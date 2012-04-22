@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Open</b> (<i>directoryPathName</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Dir.Open (directoryPathName : string) : int\r\n",
-      "mdown_content": "**Dir.Open** (*directoryPathName* : **string**) : **int**"
+      "mdown_content": "**Dir.Open** (_directoryPathName_ : **string**) : **int**"
     },
     {
       "title": "Description",

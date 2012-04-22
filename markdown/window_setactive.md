@@ -2,12 +2,12 @@
 #Window.SetActive
 
 ##Syntax
-**Window.SetActive** (*windowID* : **int**)
+**Window.SetActive** (_windowID_ : **int**)
 
 
 
 ##Description
-The **Window.SetActive** procedure activates the window specified by the *windowID* parameter.
+The **Window.SetActive** procedure activates the window specified by the _windowID_ parameter.
 An active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.
 
 

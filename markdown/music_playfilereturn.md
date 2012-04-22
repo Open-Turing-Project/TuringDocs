@@ -2,20 +2,24 @@
 #Music.PlayFileReturn
 
 ##Syntax
-**Music.PlayFileReturn** ( *fileName* : **string** )
+**Music.PlayFileReturn** ( _fileName_ : **string** )
 
 
 
 ##Description
 The **Music.PlayFileReturn** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.
-The *fileName*parameter must give the format of the file:
- WAV files "WAV:filename" or "filename.WAV" MP3 files "MP3:filename" or "filename.MP3" MIDI files "MIDI:filename" or "filename.MIDI"
+The _fileName_parameter must give the format of the file:
+
+
+
+
+
 Unlike **Music.PlayFile**, the **Music.PlayFileReturn** procedure should not be called in a separate process. Instead, the procedure returns immediately. This makes **Music.PlayFileReturn**easier to use, but makes it unsuitable for playing a set of files sequentially.
 
 
 
 ##Example
-This program plays the music in the file "*branden3.wav*" once while drawing ovals on the screen.If the music has not finished when the user presses a key, it is halted using **Music.PlayFileStop**
+This program plays the music in the file "_branden3.wav_" once while drawing ovals on the screen.If the music has not finished when the user presses a key, it is halted using **Music.PlayFileStop**
 
 
         Music.PlayFileReturn ("branden3.wav")
@@ -39,7 +43,7 @@ The Turing 4.1 software can play files in the following audio formats: WAVE (.wa
 
 
 ##Details
-The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].
+The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.
 
 
         Music.PlayFileReturn ("cd")       % Play the entire CD

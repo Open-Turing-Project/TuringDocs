@@ -2,20 +2,25 @@
 #Pic.Draw
 
 ##Syntax
-**Pic.Draw** (*picID*, *x*, *y*, *mode* : **int**)
+**Pic.Draw** (_picID_, _x_, _y_, _mode_ : **int**)
 
 
 
 ##Description
-**Pic.Draw **is used to draw a picture on the screen. The picture is drawn with the lower left corner at (*x*, *y*).
-The *mode* parameter has one of the following values:
-*picCopy* This draws the picture on top of what was underneath, obscuring it completely.*picXor* This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.*picMerge* This draws the picture like *picCopy* except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.*picUnderMerge* This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
+**Pic.Draw **is used to draw a picture on the screen. The picture is drawn with the lower left corner at (_x_, _y_).
+The _mode_ parameter has one of the following values:
+
+_picCopy_ This draws the picture on top of what was underneath, obscuring it completely.
+_picXor_ This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
+_picMerge_ This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
+_picUnderMerge_ This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
+
 
 
 
 ##Details
 If the **Pic.Draw** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
-**Display Modes with Pic.Draw**
+
 
 ![Doc image](pic_draw01.gif)
 

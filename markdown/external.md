@@ -2,8 +2,11 @@
 #external
 
 ##Syntax
-An *externalDeclaration* is one of:
- (a) **external** [ *overrideName* ] *subprogramHeader* (b) **external** [ *addressSpec* ] **var** *id* [ : *typeSpec* ] [ :=*expn* ]
+An _externalDeclaration_ is one of:
+
+(a) **external** [ _overrideName_ ] _subprogramHeader_
+(b) **external** [ _addressSpec_ ] **var** _id_ [ : _typeSpec_ ] [ :=_expn_ ]
+
 
 
 
@@ -13,14 +16,14 @@ An external declaration is used to access variables or subprograms that are writ
 
 
 ##Details
-In form (a) the optional *overrideName* must be an explicit string constant, such as "*printf*". If it is omitted, the external name is the name in the *subprogramHeader*. See *subprogramHeader*.
-The current implementation does not support form (b). This form is documented here in case a future version supports it. The *addressSpec *is a compile time expression (its value must fit in the range of the **addressint** type) or is a compile time string value. If the *addressSpec* is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of *typeSpec* or *expn* must be present.
+In form (a) the optional _overrideName_ must be an explicit string constant, such as "_printf_". If it is omitted, the external name is the name in the _subprogramHeader_. See _subprogramHeader_.
+The current implementation does not support form (b). This form is documented here in case a future version supports it. The _addressSpec _is a compile time expression (its value must fit in the range of the **addressint** type) or is a compile time string value. If the _addressSpec_ is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of _typeSpec_ or _expn_ must be present.
 Declaring variables at absolute addresses is useful for device management in computer architectures with memory mapped device registers. External variables declared to be **int** or **nat** will by default be checked for initialization. To avoid this check, declare them to be **int4** or **nat4**.
 
 
 
 ##Example
-Place variable *ttyData* at hexadecimal location 9001 and assign it the character A.
+Place variable _ttyData_ at hexadecimal location 9001 and assign it the character A.
 
 
         external 16#9001 var ttyData : char
@@ -32,12 +35,12 @@ Access an external integer variable named ERRFLAG.
         external var ERRFLAG : int
         if ERRFLAG = 0 then 
 ##Example
-Access an integer variable which is called *y* in this program but is called *x* externally.
+Access an integer variable which is called _y_ in this program but is called _x_ externally.
 
 
         external "x" var y : int
 ##Example
-Declare *drawcircle* to be a procedure that is externally known as *circle*.
+Declare _drawcircle_ to be a procedure that is externally known as _circle_.
 
 
         external "circle" procedure drawcircle (x, y, r, Color : int)

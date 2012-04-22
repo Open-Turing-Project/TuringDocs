@@ -2,12 +2,12 @@
 #Pic.SetTransparentColor
 
 ##Syntax
-**Pic.SetTransparentColor** (*colorNumber* : **int**)
+**Pic.SetTransparentColor** (_colorNumber_ : **int**)
 
 
 
 ##Description
-The **Pic.SetTransparentColor** procedure sets the color in the picture that should be considered transparent when the picture is drawn using the picMerge or picUnderMerge modes. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color.
+The **Pic.SetTransparentColor** procedure sets the color in the picture that should be considered transparent when the picture is drawn using the `picMerge` or `picUnderMerge` modes. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color.
 
 
 

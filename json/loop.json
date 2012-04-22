@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>loopStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>loop</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>loop</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A loopStatement is:\r\n loop  statementsAndDeclarations end loop",
-      "mdown_content": "A *loopStatement* is:\n **loop**  *statementsAndDeclarations* **end** **loop**"
+      "mdown_content": "A _loopStatement_ is:\n\n**loop**\n_statementsAndDeclarations_\n**end** **loop**\n"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "A <b>loop</b> statement can contain more than one <b>exit</b>, or none at all (in which case it is an infinite loop). When the <b>exit</b> <b>when</b> is at the beginning of the loop, the loop works like Pascal's <b>do</b> <b>while</b>; when at the end, the loop works like Pascal's <b>repeat</b> <b>until</b>.<p>\r\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:</p>\n<p>\r\n</p>\r\nThis clause is equivalent to: <b>assert</b> <i>trueFalseExpn</i>.<p>\r\n</p>",
       "text_content": " A loop statement can contain more than one exit, or none at all (in which case it is an infinite loop). When the exit when is at the beginning of the loop, the loop works like Pascal's do while; when at the end, the loop works like Pascal's repeat until.\r\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\r\n\r\nThis clause is equivalent to: assert trueFalseExpn.\r\n",
-      "mdown_content": "A **loop** statement can contain more than one **exit**, or none at all (in which case it is an infinite loop). When the **exit** **when** is at the beginning of the loop, the loop works like Pascal's **do** **while**; when at the end, the loop works like Pascal's **repeat** **until**.\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\nThis clause is equivalent to: **assert** *trueFalseExpn*."
+      "mdown_content": "A **loop** statement can contain more than one **exit**, or none at all (in which case it is an infinite loop). When the **exit** **when** is at the beginning of the loop, the loop works like Pascal's **do** **while**; when at the end, the loop works like Pascal's **repeat** **until**.\nJust preceding the statements and declarations, you are allowed to write an \"invariant clause\" of the form:\nThis clause is equivalent to: **assert** _trueFalseExpn_."
     }
   ],
   "dependencies": [

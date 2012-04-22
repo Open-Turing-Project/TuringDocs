@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<b>Draw.FillPolygon</b> (<i>x</i>, <i>y</i>  : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>n</i> : <b>int</b>, <i>Color</i> : <b>int</b>)<p>\r\n</p>",
       "text_content": " Draw.FillPolygon (x, y  : array 1 .. * of int, n : int, Color : int)\r\n",
-      "mdown_content": "**Draw.FillPolygon** (*x*, *y*  : **array** 1 .. * **of** **int**, *n* : **int**, *Color* : **int**)"
+      "mdown_content": "**Draw.FillPolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Draw.FillPolygon</b> procedure is used to draw a filled polygon with <i>n</i> points. The polygon is described by the points (<i>x</i>(1), <i>y</i>(1)) to (<i>x</i>(2), <i>y</i>(2)) to (<i>x</i>(3), <i>y</i>(3)) and so on to (<i>x</i>(<i>n</i>), <i>y</i> (<i>n</i>)). The polygon will be drawn and filled with <i>Color</i>. <p>\r\nTo get an polygon outlined in a different color, use <b>Draw.FillPolygon </b>with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Polygon</b> with the <i>Color</i> parameter set to the border color.</p>\n<p>\r\n</p>",
       "text_content": " The Draw.FillPolygon procedure is used to draw a filled polygon with n points. The polygon is described by the points (x(1), y(1)) to (x(2), y(2)) to (x(3), y(3)) and so on to (x(n), y (n)). The polygon will be drawn and filled with Color. \r\nTo get an polygon outlined in a different color, use Draw.FillPolygon with the Color parameter set to the fill color and then call Draw.Polygon with the Color parameter set to the border color.\r\n",
-      "mdown_content": "The **Draw.FillPolygon** procedure is used to draw a filled polygon with *n* points. The polygon is described by the points (*x*(1), *y*(1)) to (*x*(2), *y*(2)) to (*x*(3), *y*(3)) and so on to (*x*(*n*), *y* (*n*)). The polygon will be drawn and filled with *Color*. \nTo get an polygon outlined in a different color, use **Draw.FillPolygon **with the *Color* parameter set to the fill color and then call **Draw.Polygon** with the *Color* parameter set to the border color."
+      "mdown_content": "The **Draw.FillPolygon** procedure is used to draw a filled polygon with _n_ points. The polygon is described by the points (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on to (_x_(_n_), _y_ (_n_)). The polygon will be drawn and filled with _Color_. \nTo get an polygon outlined in a different color, use **Draw.FillPolygon **with the _Color_ parameter set to the fill color and then call **Draw.Polygon** with the _Color_ parameter set to the border color."
     },
     {
       "title": "Example",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "The PC allows a maximum of 256 points. As well, <b>Draw.FillPolygon  </b>can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. <p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
       "text_content": " The PC allows a maximum of 256 points. As well, Draw.FillPolygon  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The PC allows a maximum of 256 points. As well, **Draw.FillPolygon  **can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
+      "mdown_content": "The PC allows a maximum of 256 points. As well, **Draw.FillPolygon  **can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \nThe screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
     },
     {
       "title": "Status",

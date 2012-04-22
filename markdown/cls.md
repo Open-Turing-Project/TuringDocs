@@ -13,7 +13,7 @@ The **cls** (clear screen) procedure is used to blank the output window. The cur
 
 ##Details
 The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).
-The output window must be in "*graphics*" mode. See **setscreen** for details.
+The output window must be in "_graphics_" mode. See **setscreen** for details.
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Set </b>(<i>seed</i> : <b>nat4</b>)<p>\r\n</p></font>",
       "text_content": " Rand.Set (seed : nat4)\r\n",
-      "mdown_content": "**Rand.Set **(*seed* : **nat4**)"
+      "mdown_content": "**Rand.Set **(_seed_ : **nat4**)"
     },
     {
       "title": "Description",

@@ -8,7 +8,12 @@ All routines in the Concurrency module are exported unqualified. (This means you
 
 
 ##Entry Points
-[concurrency_empty.html](**empty**)* Returns true if no processes are waiting on the condition queue.[concurrency_getpriority.html](**getpriority**)* Returns the priority of the current process.[concurrency_setpriority.html](**setpriority**)* Sets the priority of the current process.[concurrency_simutime.html](**simutime**) Returns the number of simulated time units that have passed.
+
+[concurrency_empty.html](**empty**)* Returns true if no processes are waiting on the condition queue.
+[concurrency_getpriority.html](**getpriority**)* Returns the priority of the current process.
+[concurrency_setpriority.html](**setpriority**)* Sets the priority of the current process.
+[concurrency_simutime.html](**simutime**) Returns the number of simulated time units that have passed.
+
 * Part of the language, conceptually part of the **Concurrency** unit.
 
 

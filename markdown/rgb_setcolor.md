@@ -2,19 +2,24 @@
 #RGB.SetColor
 
 ##Syntax
-**RGB.SetColor** (*colorNumber*: **int**, *redComp*, *greenComp*, *blueComp* : **real**)
+**RGB.SetColor** (_colorNumber_: **int**,
+_redComp_, _greenComp_, _blueComp_ : **real**)
+
 
 
 
 ##Description
-The **RGB.SetColor** function sets the red, green and blue components of the color associated with the *colorNumber* parameter. The red, green and blue values must normalized to be between 0 and 1. Thus to set the color associated with the *colorNumber* parameter to pure red, you would call:
+The **RGB.SetColor** function sets the red, green and blue components of the color associated with the _colorNumber_ parameter. The red, green and blue values must normalized to be between 0 and 1. Thus to set the color associated with the _colorNumber_ parameter to pure red, you would call:
 It is wise to use **Error.Last** and **Error.LastMsg** to check to see if the color change is successful.
 
 
         RGB.SetColor (colorNumber, 1.0, 0.0, 0.0)
 ##Example
 This program sets all the available colors to shades of red
-**Details** **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.
+
+**Details** **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.
+
+<
 
 
         for clr : 0 .. maxcolor

@@ -17,7 +17,7 @@ Simulated time only passes when all process are either paused or waiting. This s
 
 
 ##Example
-This prints out the simulated time passing between two processes. This will print out *3*,* 5*,* 6*,* 9*,* 10*,* 12*,* 15*,* 15*,* 18*,* 20*,* 21*,* *
+This prints out the simulated time passing between two processes. This will print out _3_,_ 5_,_ 6_,_ 9_,_ 10_,_ 12_,_ 15_,_ 15_,_ 18_,_ 20_,_ 21_,_ &#133;_
 
 
         process p (t : int)

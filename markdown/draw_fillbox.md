@@ -2,12 +2,12 @@
 #Draw.FillBox
 
 ##Syntax
-**Draw.FillBox** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)
+**Draw.FillBox** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.FillBox **procedure is used to draw a filled box on the screen with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) filled using the specified *Color*. To get a box outlined in a different color, use **Draw.FillBox** with the *Color* parameter set to the fill color and then call **Draw.Box**  with the *Color* parameter set to the border color.
+The **Draw.FillBox **procedure is used to draw a filled box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) filled using the specified _Color_. To get a box outlined in a different color, use **Draw.FillBox** with the _Color_ parameter set to the fill color and then call **Draw.Box**  with the _Color_ parameter set to the border color.
 
 ![Doc image](draw_fillbox01.gif)
 
@@ -20,7 +20,7 @@ This program will fill the bottom half of the screen with color 1 and then outli
         Draw.FillBox (0, 0, maxx, maxy div 2, 1)
         Draw.Box (0, 0, maxx, maxy div 2, 2)
 ##Details
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 

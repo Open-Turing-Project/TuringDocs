@@ -2,14 +2,18 @@
 #Pic.FileNew
 
 ##Syntax
-**Pic.FileNew** (*fileName* : **string**) : **int**
+**Pic.FileNew** (_fileName_ : **string**) : **int**
 
 
 
 ##Description
 **Pic.FileNew **is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.
-The *fileName*parameter must give the format of the file:
- GIF files "GIF:filename" or "filename.GIF" JPG files "JPG:filename" or "filename.JPG" BMP files "BMP:filename" or "filename.BMP"
+The _fileName_parameter must give the format of the file:
+
+
+
+
+
 
 
 
@@ -29,7 +33,7 @@ If the **Pic.FileNew** call fails, then it returns 0. Also **Error.Last** will r
 
 
 ##Example
-The program reads a graphic from the file *mypic.bmp* and then draws it 50 times.
+The program reads a graphic from the file _mypic.bmp_ and then draws it 50 times.
 
 
         var picID: int

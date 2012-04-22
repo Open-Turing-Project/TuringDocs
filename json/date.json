@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>date</b> (<b>var</b> <i>d</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " date (var d : string)\r\n",
-      "mdown_content": "**date** (**var** *d* : **string**)"
+      "mdown_content": "**date** (**var** _d_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>date</b> statement is used to determine the current date. Variable <i>d </i>is assigned a string in the format \"<i>dd mmm yy</i>\", where <i>mmm</i> is the first 3 characters of the month, e.g., \"<i>Apr</i>\". For example, if the date is Christmas 2002, <i>d </i>will be set to \"<i>25 Dec 02</i>\".<p>\r\n</p>",
       "text_content": " The date statement is used to determine the current date. Variable d is assigned a string in the format \"dd mmm yy\", where mmm is the first 3 characters of the month, e.g., \"Apr\". For example, if the date is Christmas 2002, d will be set to \"25 Dec 02\".\r\n",
-      "mdown_content": "The **date** statement is used to determine the current date. Variable *d *is assigned a string in the format \"*dd mmm yy*\", where *mmm* is the first 3 characters of the month, e.g., \"*Apr*\". For example, if the date is Christmas 2002, *d *will be set to \"*25 Dec 02*\"."
+      "mdown_content": "The **date** statement is used to determine the current date. Variable _d _is assigned a string in the format \"_dd mmm yy_\", where _mmm_ is the first 3 characters of the month, e.g., \"_Apr_\". For example, if the date is Christmas 2002, _d _will be set to \"_25 Dec 02_\"."
     },
     {
       "title": "Example",

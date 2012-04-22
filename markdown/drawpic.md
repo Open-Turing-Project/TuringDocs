@@ -2,20 +2,23 @@
 #drawpic
 
 ##Syntax
-**drawpic** (*x*, *y* : **int**, *buffer* : **array** 1 .. * **of** **int**, *picmode* : **int**)
+**drawpic** (_x_, _y_ : **int**, _buffer_ : **array** 1 .. * **of** **int**, _picmode_ : **int**)
 
 
 
 ##Description
-The **drawpic** procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (*x*, *y*). In the common case, the buffer was initialized by calling **takepic**. The values of *picmode* are:
- 0:  Copy actual picture on screen. 1:  Copy picture by XORing it onto the screen.
+The **drawpic** procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (_x_, _y_). In the common case, the buffer was initialized by calling **takepic**. The values of _picmode_ are:
+
+
+
+
 XORing a picture onto the screen twice leaves the screen as it was  (this is a convenient way to move images for animation). XORing a picture onto a background effectively superimposes the picture onto the background.
 
 
 
 ##Details
 See **takepic** for an example of the use of **drawpic** and for further information about buffers for drawing pictures.
-The screen must be in a "*graphics*" mode. See the **setscreen** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 
@@ -25,7 +28,7 @@ The **drawpic**, **takepic**, and **sizepic** subprogramshave been made obsolete
 
 
 ##See also
-**[takepic.html](takepic)** and **[sizepic.html](sizepic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures.
+**[takepic.html](takepic)** and **[sizepic.html](sizepic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.
 See also predefined unit **[drawmodule.html](Draw)** and **[picmodule.html](Pic)**.
 
 

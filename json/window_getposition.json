@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.GetPosition</b> (<i>windowID</i> : <b>int</b>, <b>var</b> <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.GetPosition (windowID : int, var x, y : int)\r\n",
-      "mdown_content": "**Window.GetPosition** (*windowID* : **int**, **var** *x*, *y* : **int**)"
+      "mdown_content": "**Window.GetPosition** (_windowID_ : **int**, **var** _x_, _y_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.GetPosition</b> procedure returns the location of the specified execution window on the screen in the <i>x</i> and <i>y</i> parameters. The <i>x</i> and <i>y</i> parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
       "text_content": " The Window.GetPosition procedure returns the location of the specified execution window on the screen in the x and y parameters. The x and y parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.\r\n",
-      "mdown_content": "The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the *x* and *y* parameters. The *x* and *y* parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen."
+      "mdown_content": "The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the _x_ and _y_ parameters. The _x_ and _y_ parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen."
     },
     {
       "title": "Example",

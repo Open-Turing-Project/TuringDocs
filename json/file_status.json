@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<b>File.Status</b> (<i>pathName</i> : <b>string</b>, <b>var</b> <i>size</i>, <i>attribute</i>, <i>fileTime</i> : <b>int</b>)<p>\r\n</p>",
       "text_content": " File.Status (pathName : string, var size, attribute, fileTime : int)\r\n",
-      "mdown_content": "**File.Status** (*pathName* : **string**, **var** *size*, *attribute*, *fileTime* : **int**)"
+      "mdown_content": "**File.Status** (_pathName_ : **string**, **var** _size_, _attribute_, _fileTime_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Status </b>is used to get assorted information about a file or directory. When the function is called with a specified <i>pathName</i>, it returns the information about the file in the other parameters.<p>\r\nThe <i>size</i> parameter is the size of the file in bytes. </p>\n<p>\r\nThe <i>attribute</i> parameter has its individual bits set as exactly as the <i>attribute</i> parameter in <b>Dir.GetLong</b> subprogram does. See <b>Dir.GetLong</b> for the list of attribute constants.</p>\n<p>\r\nThe <i>fileTime</i> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <b>Time.SecDate.</b></p>\n<p>\r\n</p>",
       "text_content": " File.Status is used to get assorted information about a file or directory. When the function is called with a specified pathName, it returns the information about the file in the other parameters.\r\nThe size parameter is the size of the file in bytes. \r\nThe attribute parameter has its individual bits set as exactly as the attribute parameter in Dir.GetLong subprogram does. See Dir.GetLong for the list of attribute constants.\r\nThe fileTime is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use Time.SecDate.\r\n",
-      "mdown_content": "**File.Status **is used to get assorted information about a file or directory. When the function is called with a specified *pathName*, it returns the information about the file in the other parameters.\nThe *size* parameter is the size of the file in bytes. \nThe *attribute* parameter has its individual bits set as exactly as the *attribute* parameter in **Dir.GetLong** subprogram does. See **Dir.GetLong** for the list of attribute constants.\nThe *fileTime* is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate.**"
+      "mdown_content": "**File.Status **is used to get assorted information about a file or directory. When the function is called with a specified _pathName_, it returns the information about the file in the other parameters.\nThe _size_ parameter is the size of the file in bytes. \nThe _attribute_ parameter has its individual bits set as exactly as the _attribute_ parameter in **Dir.GetLong** subprogram does. See **Dir.GetLong** for the list of attribute constants.\nThe _fileTime_ is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate.**"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>File.Status</b> call fails, <i>size</i>, <i>attribute</i> and <i>fileTime</i> are all set to 1. <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If the File.Status call fails, size, attribute and fileTime are all set to 1. Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If the **File.Status** call fails, *size*, *attribute* and *fileTime* are all set to 1. **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If the **File.Status** call fails, _size_, _attribute_ and _fileTime_ are all set to 1. **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program prints information about the NotePad.exe application in Windows found\r\n     at \"<i>c:\\windows\\notepad.exe</i>\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"<p>\r\n</p>\n<p>\r\n</p>",
       "text_content": " This program prints information about the NotePad.exe application in Windows found\r\n     at \"c:\\windows\\notepad.exe\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"\r\n\r\n",
-      "mdown_content": "This program prints information about the NotePad.exe application in Windows foundat \"*c:\\windows\\notepad.exe*\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"\n"
+      "mdown_content": "This program prints information about the NotePad.exe application in Windows foundat \"_c:\\windows\\notepad.exe_\". (Note on some systems, this will be \"c:\\winnt\\notepade.exe\"\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Execute",
       "raw_content": "Another example program is available that uses <b>File.Status</b> to \r\n        determine the status of several files and directories.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Status2.t;File.Status Example\"></object></p>\n<p></p>",
       "text_content": "Another example program is available that uses File.Status to \r\n        determine the status of several files and directories.\r\n        \r\n          ",
-      "mdown_content": "Another example program is available that uses **File.Status** to determine the status of several files and directories."
+      "mdown_content": "Another example program is available that uses **File.Status** to determine the status of several files and directories.\n"
     },
     {
       "title": "Status",

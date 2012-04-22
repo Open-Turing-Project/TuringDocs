@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs <i>The current row is 5</i>,<i> the current column is 15</i>.<p>\r\n</p>",
       "text_content": " This program outputs The current row is 5, the current column is 15.\r\n\r\n",
-      "mdown_content": "This program outputs *The current row is 5*,* the current column is 15*."
+      "mdown_content": "This program outputs _The current row is 5_,_ the current column is 15_."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. <b>whatcol</b> functions properly even if the cursor is invisible.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. whatcol functions properly even if the cursor is invisible.\r\n",
-      "mdown_content": "The screen should be in a \"*screen*\" or* *\"*graphics*\" mode. **whatcol** functions properly even if the cursor is invisible."
+      "mdown_content": "The screen should be in a \"_screen_\" or_ _\"_graphics_\" mode. **whatcol** functions properly even if the cursor is invisible."
     },
     {
       "title": "See also",

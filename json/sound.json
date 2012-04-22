@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " sound ( frequency, duration : int )\r\n",
-      "mdown_content": "**sound** ( *frequency*, *duration* : **int** )"
+      "mdown_content": "**sound** ( _frequency_, _duration_ : **int** )"
     },
     {
       "title": "Description",

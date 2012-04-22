@@ -2,14 +2,14 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreateHorizontalSlider</strong> (<em>x</em>, <em>y</em>, <em>length</em> : <strong>int</strong>,<em>min</em>, <em>max</em>, <em>start</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>value</em> : <strong>int</strong>)) : <strong>int</strong></p>
+<p><strong>GUI.CreateHorizontalSlider</strong> (<em>x</em>, <em>y</em>, <em>length</em> : <strong>int</strong>,    <em>min</em>, <em>max</em>, <em>start</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>value</em> : <strong>int</strong>)) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a horizontal (left-right) slider and returns the slider's widget ID.
-A slider is a widget that allows the user to set a continuous set of values. It has a real-life equivalent in things such as a stereo volume control.
-<strong>A Horizontal Slider</strong>
-To control a slider, the user clicks on the slider box and drags it back and forth. Every time the value changes, a procedure is called with the new value as a parameter.
+A slider is a widget that allows the user to set a continuous set of values. It has a real-life equivalent in things such as a stereo volume control.</p>
+
+<p>To control a slider, the user clicks on the slider box and drags it back and forth. Every time the value changes, a procedure is called with the new value as a parameter.
 The range of values that the slider will give is determined by the <em>min</em> and <em>max</em> parameters in the <em>Create</em> call. The left side of the slider represents the minimum value, while the right represents the maximum value.
 The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the slider track. This means that the slider actually extends above and below this point (and slightly to the left of it to take into account the rounded end of the track). The <em>length</em> parameter specifies the length of the track in pixels. (You can use <strong>GUI.GetX</strong><em>, </em><strong>GetY</strong><em>, </em><strong>GetWidth</strong>, and <strong>GetHeight</strong> to get the exact dimensions of the slider.) The <em>min</em> and <em>max</em> parameters are the minimum and maximum values returned by the slider. The <em>start</em> parameter is the initial value of the slider and should be between <em>min</em> and <em>max</em> inclusive. The <em>actionProc </em>parameter<em> </em>is the name of a procedure that is called when the value of the slider is changed. The parameter to the <em>action procedure </em>is the current value of the slider.</p>
 
@@ -44,8 +44,7 @@ When a slider is not enabled, the appearance does not change. However, the slide
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a slider as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>,<strong> GUI.Hide</strong>,<strong> GUI.Enable</strong>,<strong> GUI.Disable</strong>,<strong> GUI.Dispose</strong>, <strong> GUI.GetX</strong>,<strong> GUI.GetY</strong>,<strong> GUI.GetWidth</strong>,<strong> GUI.GetHeight</strong>,<strong> GUI.SetPosition</strong>,<strong> GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong>,<strong> GUI.GetSliderValue</strong>,<strong> GUI.SetSliderValue</strong>,<strong> GUI.SetSliderMinMax</strong>,<strong> GUI.SetSliderSize</strong>,<strong> GUI.SetSliderReverse</strong></p>
+<p>The following GUI subprograms can be called with a slider as the <em>widgetID</em> parameter:</p>
 
 <h2>Status</h2>
 

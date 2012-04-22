@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetXOR</b> (<i>widgetID</i> : <b>int</b>, <i>xor</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetXOR (widgetID : int, xor : boolean)\r\n",
-      "mdown_content": "**GUI.SetXOR** (*widgetID* : **int**, *xor* : **boolean**)"
+      "mdown_content": "**GUI.SetXOR** (_widgetID_ : **int**, _xor_ : **boolean**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the \"xor mode\" of the canvas specified by <i>widgetID</i>. If the <i>xor</i> parmeter is set to <b>true</b>, the canvas is set to <i>xor mode</i>. When in <i>xor mode</i>, all the <i>Draw</i>... procedures of a canvas are treated as if the <b>View.Set</b> (\"xor\") statement had been executed before the <i>Draw</i> procedure.<p>\r\n</p>",
       "text_content": " Sets the \"xor mode\" of the canvas specified by widgetID. If the xor parmeter is set to true, the canvas is set to xor mode. When in xor mode, all the Draw... procedures of a canvas are treated as if the View.Set (\"xor\") statement had been executed before the Draw procedure.\r\n",
-      "mdown_content": "Sets the \"xor mode\" of the canvas specified by *widgetID*. If the *xor* parmeter is set to **true**, the canvas is set to *xor mode*. When in *xor mode*, all the *Draw*... procedures of a canvas are treated as if the **View.Set** (\"xor\") statement had been executed before the *Draw* procedure."
+      "mdown_content": "Sets the \"xor mode\" of the canvas specified by _widgetID_. If the _xor_ parmeter is set to **true**, the canvas is set to _xor mode_. When in _xor mode_, all the _Draw_... procedures of a canvas are treated as if the **View.Set** (\"xor\") statement had been executed before the _Draw_ procedure."
     },
     {
       "title": "Example",

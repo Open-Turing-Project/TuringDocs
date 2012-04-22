@@ -2,11 +2,12 @@
 
 <h2>Syntax</h2>
 
-<p><strong>Pic.DrawFrames</strong> (<em>picIds</em> : <strong>array</strong> 1 .. * <strong>of int</strong>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>,  <em>numFrames</em>, <em>delayBetweenFrames</em> : <strong>int</strong>, <em>eraseAfter</em> : <strong>boolean</strong>)</p>
+<p><strong>Pic.DrawFrames</strong> (<em>picIds</em> : <strong>array</strong> 1 .. * <strong>of int</strong>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>,
+<em>numFrames</em>, <em>delayBetweenFrames</em> : <strong>int</strong>, <em>eraseAfter</em> : <strong>boolean</strong>)</p>
 
 <h2>Description</h2>
 
-<p><strong>Pic.DrawFrames</strong> is used to draw a set of pictures stored inan array of <strong>int</strong>s.  The pictures are displayed one at a time,and there is a delay of <em>delayBetweenFrames</em> millisecondsbetween frames. The <em>x</em>, <em>y</em>, and <em>mode</em> parametersare the same as in <strong><a href="Pic.Draw">pic_draw.html</a></strong>. The<em>numFrames</em> parameter specifies the number of frames to bedrawn (the <em>picIds</em> array must be at least this big).  The<em>eraseAfter</em> parameter specifies whether the last frame of theanimation should be left on the Run window when the call finishes.  If <em>eraseAfter</em> is set to <strong>true</strong>, then the background is restored after the last picture has been drawn and <em>delayBetweenFrames</em> milliseconds has passed.</p>
+<p><strong>Pic.DrawFrames</strong> is used to draw a set of pictures stored inan array of <strong>int</strong>s.  The pictures are displayed one at a time,and there is a delay of <em>delayBetweenFrames</em> millisecondsbetween frames. The <em>x</em>, <em>y</em>, and <em>mode</em> parametersare the same as in <strong><a href="Pic.Draw">pic_draw.html</a></strong>. The_numFrames<em> parameter specifies the number of frames to bedrawn (the </em>picIds<em> array must be at least this big).  The_eraseAfter</em> parameter specifies whether the last frame of theanimation should be left on the Run window when the call finishes.  If <em>eraseAfter</em> is set to <strong>true</strong>, then the background is restored after the last picture has been drawn and <em>delayBetweenFrames</em> milliseconds has passed.</p>
 
 <h2>Details</h2>
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Lower</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Lower (s : string) : string",
-      "mdown_content": "**Str.Lower** (*s* : **string**) : **string**"
+      "mdown_content": "**Str.Lower** (_s_ : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Lower</b> function takes the string <i>s</i> and returns\r\n          a string in which all the upper case letters are converted to \r\n          lower case. For example, <tt>Str.Lower (\"ABC123def\")</tt> returns\r\n          <tt>\"abc123def\"</tt>.<p>\r\n    </p>",
       "text_content": "The Str.Lower function takes the string s and returns\r\n          a string in which all the upper case letters are converted to \r\n          lower case. For example, Str.Lower (\"ABC123def\") returns\r\n          \"abc123def\".\r\n    ",
-      "mdown_content": "The **Str.Lower** function takes the string *s* and returnsa string in which all the upper case letters are converted to lower case. For example, Str.Lower (\"ABC123def\") returns\"abc123def\"."
+      "mdown_content": "The **Str.Lower** function takes the string _s_ and returnsa string in which all the upper case letters are converted to lower case. For example, `Str.Lower (\"ABC123def\")` returns`\"abc123def\"`."
     },
     {
       "title": "Example",

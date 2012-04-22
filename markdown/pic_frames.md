@@ -2,7 +2,7 @@
 #Pic.Frames
 
 ##Syntax
-**Pic.Frames** (*pathName* : **string**) : **int**
+**Pic.Frames** (_pathName_ : **string**) : **int**
 
 
 

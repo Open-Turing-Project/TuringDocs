@@ -2,22 +2,22 @@
 #assert
 
 ##Syntax
-**assert** *trueFalseExpn*
+**assert** _trueFalseExpn_
 
 
 
 ##Description
-An **assert** statement is used to make sure that a certain requirement is met. This requirement is given by the *trueFalseExpn*. The *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.
+An **assert** statement is used to make sure that a certain requirement is met. This requirement is given by the _trueFalseExpn_. The _trueFalseExpn _is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.
 
 
 
 ##Example
-Make sure that *n* is positive.
+Make sure that _n_ is positive.
 
 
         assert n > 0
 ##Example
-This program assumes that the *textFile *exists and can be opened, in other words, that the **open** will set the *fileNumber *to a positive stream number. If this is not true, the programmer wants the program halted immediately.
+This program assumes that the _textFile _exists and can be opened, in other words, that the **open** will set the _fileNumber _to a positive stream number. If this is not true, the programmer wants the program halted immediately.
 
 
         var fileNumber : int

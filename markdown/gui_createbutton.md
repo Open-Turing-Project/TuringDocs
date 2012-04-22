@@ -2,17 +2,17 @@
 #GUI.CreateButton[Full]
 
 ##Syntax
-**GUI.CreateButton** (*x*, *y*, *width* : **int**, *text* : **string**,    *actionProc* : **procedure** *x* ()) : **int**
-**GUI.CreateButtonFull** (*x*, *y*, *width* : **int**, *text* : **string**,    *actionProc* : **procedure** *x* (), *height* : **int**, *shortcut* : **char**, *default* : **boolean**) : **int**
+**GUI.CreateButton** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ ()) : **int**
+**GUI.CreateButtonFull** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (), _height_ : **int**, _shortcut_ : **char**, _default_ : **boolean**) : **int**
 
 
 
 ##Description
 Creates a button and returns the button's widget ID.
-The button widget is used to implement a textual button. When you click on a button, the button's *action procedure* is called. If a button is given a short cut, then entering the keystroke will cause the *action procedure* to be called. It will not visibly cause the button to depress.
-**Two Buttons**
-The *x* and *y* parameters specify the lower-left corner of the button. The *width* parameter specifies the width of the button. If *width* is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The *text* parameter specifies the text to appear in the button. The *actionProc* parameter is the name of a procedure that is called when the button is pressed.
-For **GUI.CreateButtonFull**, the *height* parameter specifies the height of the button. If *height* is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The *shortcut* parameter is the keystroke to be used as the button's shortcut. The *default* parameter is a boolean indicating whether the button should be the default button. If there is already a default button, and *default* is set to true, then this button becomes the new default button.
+The button widget is used to implement a textual button. When you click on a button, the button's _action procedure_ is called. If a button is given a short cut, then entering the keystroke will cause the _action procedure_ to be called. It will not visibly cause the button to depress.
+
+The _x_ and _y_ parameters specify the lower-left corner of the button. The _width_ parameter specifies the width of the button. If _width_ is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The _text_ parameter specifies the text to appear in the button. The _actionProc_ parameter is the name of a procedure that is called when the button is pressed.
+For **GUI.CreateButtonFull**, the _height_ parameter specifies the height of the button. If _height_ is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The _shortcut_ parameter is the keystroke to be used as the button's shortcut. The _default_ parameter is a boolean indicating whether the button should be the default button. If there is already a default button, and _default_ is set to true, then this button becomes the new default button.
 
 ![Doc image](gui_createbutton_full01.gif)
 
@@ -42,16 +42,18 @@ The following program creates two buttons, one which draws a random circle on th
             exit when GUI.ProcessEvent
         end loop
 ##Details
-When **GUI.CreateButton** or **GUI.CreateButtonFull** is called, the newly created button will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. 
+When **GUI.CreateButton** or **GUI.CreateButtonFull** is called, the newly created button will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 If a button's width or height is set to zero (or not specified at all), then the button is shaped to fit the text.
-A button can be the default button for a window. The default button is drawn with a thicker border around it. If the user presses ENTER in a window with a default button, the default button's *action procedure* is called.
+A button can be the default button for a window. The default button is drawn with a thicker border around it. If the user presses ENTER in a window with a default button, the default button's _action procedure_ is called.
 When a button is not enabled, the text in the button is grayed out and the button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 
 
 ##Details
-The following GUI subprograms can be called with a button as the *widgetID* parameter:
- **GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**,**GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**,**GUI.SetPosition**, **GUI.SetSize**,**GUI.SetPositionAndSize**, **GUI.SetLabel**,**GUI.SetDefault**
+The following GUI subprograms can be called with a button as the _widgetID_ parameter:
+
+
+
 
 
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Stream.Flush</b> ( <i>streamNumber</i> <b>: int</b> )<p>\r\n</p></font>",
       "text_content": " Stream.Flush ( streamNumber : int )\r\n",
-      "mdown_content": "**Stream.Flush** ( *streamNumber* **: int** )"
+      "mdown_content": "**Stream.Flush** ( _streamNumber_ **: int** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Stream.Flush</b> procedure is used to flush any buffered output associated with the <i>streamNumber</i> parameter. <p>\r\n</p>",
       "text_content": " The Stream.Flush procedure is used to flush any buffered output associated with the streamNumber parameter. \r\n",
-      "mdown_content": "The **Stream.Flush** procedure is used to flush any buffered output associated with the *streamNumber* parameter. "
+      "mdown_content": "The **Stream.Flush** procedure is used to flush any buffered output associated with the _streamNumber_ parameter. "
     },
     {
       "title": "Details",

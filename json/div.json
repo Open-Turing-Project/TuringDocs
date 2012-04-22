@@ -21,7 +21,7 @@
       ],
       "raw_content": "In this example, <i>eggCount</i> is the total number of eggs. The first <b>put</b> statement determines how many dozen eggs there are. The second <b>put</b> statement determines how many extra eggs there are beyond the last dozen.<p>\r\n</p>",
       "text_content": " In this example, eggCount is the total number of eggs. The first put statement determines how many dozen eggs there are. The second put statement determines how many extra eggs there are beyond the last dozen.\r\n\r\n",
-      "mdown_content": "In this example, *eggCount* is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen."
+      "mdown_content": "In this example, _eggCount_ is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen."
     },
     {
       "title": "Execute",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"mod.html\">mod</a></b> operator.<p>\r\n</p>",
       "text_content": " infix operators, precedence of operators and the mod operator.\r\n",
-      "mdown_content": "*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[mod.html](mod)** operator."
+      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[mod.html](mod)** operator."
     }
   ],
   "dependencies": [

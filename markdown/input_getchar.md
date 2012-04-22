@@ -12,7 +12,7 @@ The **getchar** function is used to input a single character without waiting for
 
 
 ##Example
-This program contains a procedure called *getKey *which causes the program to wait until a key is pressed.
+This program contains a procedure called _getKey _which causes the program to wait until a key is pressed.
 
 
         View.Set ("graphics")
@@ -27,7 +27,7 @@ This program contains a procedure called *getKey *which causes the program to wa
             getKey
         end for
 ##Details
-The screen should be in a "*screen*"* *or "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to "*screen*" mode.
+The screen should be in a "_screen_"_ _or "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to "_screen_" mode.
 Some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by **getch** as special values. See Appendix D for these values.
 
 

@@ -2,7 +2,7 @@
 #Time.PartsSec
 
 ##Syntax
-**Time.PartsSec** (*year*, *month*, *day*, *hour*, *minute*, *second* : **int**) : **int**
+**Time.PartsSec** (_year_, _month_, _day_, _hour_, _minute_, _second_ : **int**) : **int**
 
 
 

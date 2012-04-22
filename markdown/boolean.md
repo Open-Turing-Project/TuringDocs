@@ -23,10 +23,16 @@ The **boolean** type is used for values that are either **true** or **false**. T
         if continuing then 
 ##Details
 This type is named after the British mathematician, George Boole, who formulated laws of logic.
-The operators for **true** and **false** are **and**, **or**,* ***xor**, =**>**, and **not**. For two true/false values *A* and *B*, these operators are defined as follows:
- *A* **and** *B* is true when both are true *A* **or** *B* is true when either or both are true *A* **xor** *B* is true when either but not both are true *A* =**>** *B* (A implies B) is true when both are true or when A is false **not** *A* is true when A is false
-The **and** operator has higher precedence than **or**, so *A* **or** *B* **and** *C* means *A* **or** (*B* **and** *C*).
-The operators **or**, **and** and =**>** are short circuit operators. For example, if *A* is true in *A* **or** *B*, *B *is not evaluated.
+The operators for **true** and **false** are **and**, **or**,_ _**xor**, =**>**, and **not**. For two true/false values _A_ and _B_, these operators are defined as follows:
+
+
+
+
+
+
+
+The **and** operator has higher precedence than **or**, so _A_ **or** _B_ **and** _C_ means _A_ **or** (_B_ **and** _C_).
+The operators **or**, **and** and =**>** are short circuit operators. For example, if _A_ is true in _A_ **or** _B_, _B _is not evaluated.
 
 
 
@@ -48,6 +54,6 @@ The **put** and **get** semantics allow put's and get's of boolean values. **tru
 
 
 ##See also
-*[explicittruefalseconstant.html](explicitTrueFalseConstant)* (which discusses the values **[true.html](true)** and **[false.html](false)**), *[precedence.html](precedence)* and *[expn.html](expn) *(expression).
+_[explicittruefalseconstant.html](explicitTrueFalseConstant)_ (which discusses the values **[true.html](true)** and **[false.html](false)**), _[precedence.html](precedence)_ and _[expn.html](expn) _(expression).
 
 

@@ -2,8 +2,10 @@
 #free
 
 ##Syntax
-A *freeStatement* is:
- **free** [ *collectionOrClassId*, ] *pointerVariableReference*
+A _freeStatement_ is:
+
+**free** [ _collectionOrClassId_, ] _pointerVariableReference_
+
 
 
 
@@ -30,9 +32,9 @@ Using a collection, declare a list of records and allocate one of these records.
         free list, first    % Deallocate the element of list located by first
                     % Short form: free first
 ##Details
-The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the *collectionOrClassId *in the **free** statement must be omitted.
+The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the _collectionOrClassId _in the **free** statement must be omitted.
 An imported class can have one of its objects destroyed (by the **free** statement) only if the class is imported **var**.
-The *collectionOrClassId* is optional in the **free** statement.
+The _collectionOrClassId_ is optional in the **free** statement.
 
 
 

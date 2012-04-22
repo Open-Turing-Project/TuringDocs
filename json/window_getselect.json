@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Window.GetSelect</b> function returns the window ID of the \r\n          selected window. If the select window is the main (default) run \r\n\t  window, then it returns <i>defWinID</i> (which is -1).<p>\r\n          A selected window is defined as the window that output will be sent \r\n\t  to. It can be invisible. When a program starts execution, the selected \r\n\t  window is the main <b>Run</b> window.</p>\n<p>\r\n    </p>",
       "text_content": "The Window.GetSelect function returns the window ID of the \r\n          selected window. If the select window is the main (default) run \r\n\t  window, then it returns defWinID (which is -1).\r\n          A selected window is defined as the window that output will be sent \r\n\t  to. It can be invisible. When a program starts execution, the selected \r\n\t  window is the main Run window.\r\n    ",
-      "mdown_content": "The **Window.GetSelect** function returns the window ID of the selected window. If the select window is the main (default) run window, then it returns *defWinID* (which is -1).\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main **Run** window."
+      "mdown_content": "The **Window.GetSelect** function returns the window ID of the selected window. If the select window is the main (default) run window, then it returns _defWinID_ (which is -1).\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main **Run** window."
     },
     {
       "title": "Status",

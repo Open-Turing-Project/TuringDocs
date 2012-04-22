@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>addr</b> (<i>reference</i>)<p>\r\n</p></font>",
       "text_content": " addr (reference)\r\n",
-      "mdown_content": "**addr** (*reference*)"
+      "mdown_content": "**addr** (_reference_)"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "Set <i>a</i> to be the address of <i>x</i>.<p>\r\n</p>",
       "text_content": " Set a to be the address of x.\r\n\r\n",
-      "mdown_content": "Set *a* to be the address of *x*."
+      "mdown_content": "Set _a_ to be the address of _x_."
     },
     {
       "title": "Details",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "the <a href=\"indirection.html\">indirection operator @</a>, <b><a href=\"cheat.html\">cheat</a></b>, <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a> </i>(how to write hexadecimal constants), and <b><a href=\"pointer.html\">pointer</a></b> type (in particular unchecked pointer type). See also <b><a href=\"sizeof.html\">sizeof</a></b>, which returns the size of a variable.<p>\r\n</p>",
       "text_content": " the indirection operator @, cheat, explicitIntegerConstant (how to write hexadecimal constants), and pointer type (in particular unchecked pointer type). See also sizeof, which returns the size of a variable.\r\n",
-      "mdown_content": "the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[sizeof.html](sizeof)**, which returns the size of a variable."
+      "mdown_content": "the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant) _(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[sizeof.html](sizeof)**, which returns the size of a variable."
     }
   ],
   "dependencies": [

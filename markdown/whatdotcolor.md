@@ -2,7 +2,7 @@
 #whatdotcolor
 
 ##Syntax
-**whatdotcolor** ( *x*, *y* : **int** ) : **int**
+**whatdotcolor** ( _x_, _y_ : **int** ) : **int**
 
 
 
@@ -33,7 +33,7 @@ This program draws a line which bounces off the edges of the screen and makes a 
             end if
         end loop
 ##Details
-The screen should be in a"*graphics*" mode. If is not set to "*graphics*"*  *mode,  it will automatically be set to "*graphics*" mode. See **setscreen** for details.
+The screen should be in a"_graphics_" mode. If is not set to "_graphics_"_  _mode,  it will automatically be set to "_graphics_" mode. See **setscreen** for details.
 
 
 

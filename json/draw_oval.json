@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Oval</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i>, <i>Color</i> :<b> int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.Oval (x, y, xRadius, yRadius, Color : int)\r\n",
-      "mdown_content": "**Draw.Oval** (*x*, *y*, *xRadius*, *yRadius*, *Color* :** int**)"
+      "mdown_content": "**Draw.Oval** (_x_, _y_, _xRadius_, _yRadius_, _Color_ :** int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Oval </b>procedure is used to draw an oval whose center is at (<i>x</i>, <i>y</i>). The horizontal and vertical distances from the center to the oval are given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Oval procedure is used to draw an oval whose center is at (x, y). The horizontal and vertical distances from the center to the oval are given by xRadius and yRadius.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Oval **procedure is used to draw an oval whose center is at (*x*, *y*). The horizontal and vertical distances from the center to the oval are given by *xRadius *and *yRadius*."
+      "mdown_content": "The **Draw.Oval **procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius _and _yRadius_."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program draws a large oval that just touches each edge of the screen in magenta. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<i>midx</i>, <i>midy</i>), which is the middle of the screen.<p>\r\n</p>",
       "text_content": " This program draws a large oval that just touches each edge of the screen in magenta. The maxx and maxy functions are used to determine the maximum x and y values on the screen. The center of the oval is at (midx, midy), which is the middle of the screen.\r\n\r\n    ",
-      "mdown_content": "This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The center of the oval is at (*midx*, *midy*), which is the middle of the screen."
+      "mdown_content": "This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The center of the oval is at (_midx_, _midy_), which is the middle of the screen."
     },
     {
       "title": "Execute",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "Ideally, a circle is drawn when <i>xRadius</i> = <i>yRadius</i>. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
       "text_content": " Ideally, a circle is drawn when xRadius = yRadius. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "Ideally, a circle is drawn when *xRadius* = *yRadius*. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
+      "mdown_content": "Ideally, a circle is drawn when _xRadius_ = _yRadius_. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.\nThe screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
     },
     {
       "title": "Status",

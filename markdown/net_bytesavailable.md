@@ -2,12 +2,12 @@
 #Net.BytesAvailable
 
 ##Syntax
-**Net.BytesAvailable **(*netStream* : **int**) : **int**
+**Net.BytesAvailable **(_netStream_ : **int**) : **int**
 
 
 
 ##Description
-Returns the number of bytes available for reading from the net stream specified by the *netStream* parameter.
+Returns the number of bytes available for reading from the net stream specified by the _netStream_ parameter.
 
 
 

@@ -2,7 +2,9 @@
 #Pic.DrawFramesBack
 
 ##Syntax
-**Pic.DrawFramesBack** (*picIds* : **array** 1 .. * **of int**, *x*, *y*, *mode* : **int**,    *numFrames*, *delayBetweenFrames* : **int**, *eraseAfter* : **boolean**)
+**Pic.DrawFramesBack** (_picIds_ : **array** 1 .. * **of int**, _x_, _y_, _mode_ : **int**,
+_numFrames_, _delayBetweenFrames_ : **int**, _eraseAfter_ : **boolean**)
+
 
 
 
@@ -15,7 +17,7 @@ For example, this procedure is necessary if you want to have two sets of frames 
 ##Details
 If you are wish to have several sets of images displayed at the same time, you must use **Pic.DrawFramesBack** to display each setof images but the last and then use **Pic.DrawFrames** to displaythe last set so that Turing will wait until they are completed before continuing execution.
 If you want to draw the same set of frames continuously, do not use**Pic.DrawFramesBack**.
-**for** *i* : 1 .. 20    **Pic.DrawFrames** (*pics*, 10, 10, *picCopy*, 10, 50, **false**)    % Do not use Pic.DrawFramesBack in the previous statement**end for**
+`**for** _i_ : 1 .. 20    % Do not use Pic.DrawFramesBack in the previous statement**end for**`
 If you do, Turing will attempt to run each of the calls at the sametime, and the animation will appear to only run once.
 
 

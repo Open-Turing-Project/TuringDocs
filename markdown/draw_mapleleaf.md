@@ -2,12 +2,12 @@
 #Draw.MapleLeaf
 
 ##Syntax
-**Draw.MapleLeaf** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)
+**Draw.MapleLeaf** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.MapleLeaf **procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2*, then the maple leaf is drawn upside down.
+The **Draw.MapleLeaf **procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_, then the maple leaf is drawn upside down.
 
 ![Doc image](draw_mapleleaf01.gif)
 
@@ -21,7 +21,7 @@ This program will draw two maple leaves beside each other. The first will be in 
         Draw.MapleLeaf (150, 100, 250, 0, yellow)
 ##Details
 The **Draw.MapleLeaf** procedure is useful for drawing the Canadian flag.
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 

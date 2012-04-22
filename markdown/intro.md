@@ -1,8 +1,20 @@
-{
-  "title": "Turing Help",
-  "fileName": "intro",
-  "sections": [
+#Turing Help
+##What's New in Turing 4.1
+- Turing 4.1 has added support for **[spritemodule.html](sprites)** and **[pic_drawspecial.html](special effects)**.  Find out all the details **[whatsnew41.html](here)**.
+##Turing Language
+Help for the Turing language is broken down into several parts.A complete list of Turing language elements,  predefined modules, and predefined subprograms in alphabetical order
+- [lang_elements.html](Listing of Turing language elements)
+- [basic_predef.html](Listing of all basic (non-module) predefined subprograms in Turingbroken down by topic)
+- [module_predef.html](Listing of all predefined modules and their subprogramsbroken down by module)
+- Appendices- [keywords.html](Predefined Keywords and Names)
+- [operators.html](Turing Operators)
+- [filestatements.html](File Statements)
+- [control.html](Control Constructs)
+- [keycodes.html](Keystroke Codes - The character codes returned by getch and getchar)
+- [characters.html](Run Window Character Set)
 
-  ],
-  "htmlcontent": "\r\n    <h1>Turing Help</h1>\r\n    <h2>What's New in Turing 4.1</h2>\r\n    <ul><li>Turing 4.1 has added support for \r\n          <b><a href=\"spritemodule.html\">sprites</a></b> and \r\n          <b><a href=\"pic_drawspecial.html\">special effects</a></b>.  \r\n          Find out all the details <b><a href=\"whatsnew41.html\">here</a></b>.\r\n    </li></ul>\n<h2>Turing Language</h2>\r\n    Help for the Turing language is broken down into several parts.\r\n    <ul>\n<li>\n<a href=\"all_elements.html\">\r\n            Complete alphabetical list\r\n          </a>\r\n          <br>\r\n          A complete list of Turing language elements,  \r\n          predefined modules, and predefined subprograms in \r\n          alphabetical order\r\n      </li>\n<li>\n<a href=\"lang_elements.html\">\r\n            Listing of Turing language elements\r\n          </a>\r\n      </li>\n<li>\n<a href=\"basic_predef.html\">\r\n            Listing of all basic (non-module) predefined subprograms in Turing\r\n            broken down by topic\r\n          </a>\r\n      </li>\n<li>\n<a href=\"module_predef.html\">\r\n            Listing of all predefined modules and their subprograms\r\n            broken down by module\r\n          </a>\r\n      </li>\n<li>Appendices\r\n          <ul>\n<li>\n<a href=\"keywords.html\">\r\n                  Predefined Keywords and Names\r\n                </a>\r\n            </li>\n<li>\n<a href=\"operators.html\">\r\n                  Turing Operators\r\n                </a>\r\n            </li>\n<li>\n<a href=\"filestatements.html\">\r\n                  File Statements\r\n                </a>\r\n            </li>\n<li>\n<a href=\"control.html\">\r\n                  Control Constructs\r\n                </a>\r\n            </li>\n<li>\n<a href=\"keycodes.html\">\r\n                  Keystroke Codes - The character codes returned by \r\n                  getch and getchar\r\n                </a>\r\n            </li>\n<li>\n<a href=\"characters.html\">\r\n                  Run Window Character Set\r\n                </a>\r\n          </li>\n</ul>\n</li>\n</ul>\n<p>\r\n    </p>\n<h2>Turing Environment</h2>\r\n    Help for the Turing environment consists of\r\n    <ul>\n<li>\n<a href=\"turing_quick_admin.html\">\r\n            Turing Teacher/Administrator Getting Started Guide\r\n          </a>\r\n          <br>\r\n          The minimal information needed to effectively administer Turing in\r\n          a classroom situation.\r\n      </li>\n<li>\n<a href=\"turing_admin.html\">\r\n            Turing Teacher/Administrator Complete Guide\r\n          </a>\r\n          <br>\r\n          A guide to all the administrative issues that teachers all likely to\r\n          face using Turing in a classroom situation.\r\n      </li>\n<li>\n<a href=\"turing_debugger.html\">\r\n            Turing Debugger Guide\r\n          </a>\r\n          <br>\r\n          A guide to using the Debugging features in Turing 4.0.\r\n    </li>\n</ul>\n"
-}
+
+##Turing Environment
+Help for the Turing environment consists ofThe minimal information needed to effectively administer Turing ina classroom situation.
+- [turing_admin.html](Turing Teacher/Administrator Complete Guide)A guide to all the administrative issues that teachers all likely toface using Turing in a classroom situation.
+- [turing_debugger.html](Turing Debugger Guide)A guide to using the Debugging features in Turing 4.0.

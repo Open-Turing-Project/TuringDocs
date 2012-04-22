@@ -2,12 +2,12 @@
 #Sys.GetEnv
 
 ##Syntax
-**Sys.GetEnv** ( *symbol* : **string** ) : **string**
+**Sys.GetEnv** ( _symbol_ : **string** ) : **string**
 
 
 
 ##Description
-The **Sys.GetEnv **function is used to** **access the environment string whose name is *symbol*. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **Sys.Nargs** and **Sys.FetchArg** functions.
+The **Sys.GetEnv **function is used to** **access the environment string whose name is _symbol_. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **Sys.Nargs** and **Sys.FetchArg** functions.
 
 
 

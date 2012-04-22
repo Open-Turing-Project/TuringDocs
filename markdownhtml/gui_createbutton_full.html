@@ -2,15 +2,15 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreateButton</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong>
-<strong>GUI.CreateButtonFull</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>height</em> : <strong>int</strong>, <em>shortcut</em> : <strong>char</strong>, <em>default</em> : <strong>boolean</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreateButton</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,    <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong>
+<strong>GUI.CreateButtonFull</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,    <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>height</em> : <strong>int</strong>, <em>shortcut</em> : <strong>char</strong>, <em>default</em> : <strong>boolean</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a button and returns the button's widget ID.
-The button widget is used to implement a textual button. When you click on a button, the button's <em>action procedure</em> is called. If a button is given a short cut, then entering the keystroke will cause the <em>action procedure</em> to be called. It will not visibly cause the button to depress.
-<strong>Two Buttons</strong>
-The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the button. The <em>width</em> parameter specifies the width of the button. If <em>width</em> is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The <em>text</em> parameter specifies the text to appear in the button. The <em>actionProc</em> parameter is the name of a procedure that is called when the button is pressed.
+The button widget is used to implement a textual button. When you click on a button, the button's <em>action procedure</em> is called. If a button is given a short cut, then entering the keystroke will cause the <em>action procedure</em> to be called. It will not visibly cause the button to depress.</p>
+
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the button. The <em>width</em> parameter specifies the width of the button. If <em>width</em> is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The <em>text</em> parameter specifies the text to appear in the button. The <em>actionProc</em> parameter is the name of a procedure that is called when the button is pressed.
 For <strong>GUI.CreateButtonFull</strong>, the <em>height</em> parameter specifies the height of the button. If <em>height</em> is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The <em>shortcut</em> parameter is the keystroke to be used as the button's shortcut. The <em>default</em> parameter is a boolean indicating whether the button should be the default button. If there is already a default button, and <em>default</em> is set to true, then this button becomes the new default button.</p>
 
 <p><img src="gui_createbutton_full01.gif" alt="Doc image" /></p>
@@ -49,8 +49,7 @@ When a button is not enabled, the text in the button is grayed out and the butto
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a button as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Enable</strong>, <strong>GUI.Disable</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.GetX</strong>,<strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>, <strong>GUI.GetHeight</strong>,<strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>,<strong>GUI.SetPositionAndSize</strong>, <strong>GUI.SetLabel</strong>,<strong>GUI.SetDefault</strong></p>
+<p>The following GUI subprograms can be called with a button as the <em>widgetID</em> parameter:</p>
 
 <h2>Status</h2>
 

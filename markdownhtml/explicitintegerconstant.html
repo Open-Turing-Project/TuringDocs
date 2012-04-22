@@ -17,9 +17,16 @@
 <h2>Details</h2>
 
 <p>In current implementations of Turing, the range of the <strong>int</strong> (<strong>integer</strong>) type is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2<strong>31 - 1. This is the range that fits into four bytes, with one pattern left over (the largest negative 4-byte number) to represent the uninitialized value. See </strong>maxint**.
-Values can be written in base 2 or 16 or any other base in the range 2 to 36 (36 because there are 10 digits and 26 letters). This form begins with the base, such as 16, then #, and then the value written in that base, for example, 16#A has the value 10. The letters a, b, c &#133; represent the digit values 10, 11, 12 &#133; Capital letters A, B, C &#133; can be used instead of lower case. Here are some examples.
-2#1= 1(Base 2)2#11= 3(Base 2)16#a= 10(Base 16)16#FF= 255(Base 16)16#FFFF= 32767(Base 16)8#10= 8(Base 8)
-Here is an example of using these:
+Values can be written in base 2 or 16 or any other base in the range 2 to 36 (36 because there are 10 digits and 26 letters). This form begins with the base, such as 16, then #, and then the value written in that base, for example, 16#A has the value 10. The letters a, b, c &#133; represent the digit values 10, 11, 12 &#133; Capital letters A, B, C &#133; can be used instead of lower case. Here are some examples.</p>
+
+<p>= 1<br/>
+= 3<br/>
+= 10<br/>
+= 255</p>
+
+<p>= 8</p>
+
+<p>Here is an example of using these:
 You should be careful to avoid confusion about patterns such as 16#FFFF. It is tempting to think that this is the value 1, because the bit pattern (2-byte two's complement internal representation) for 1 is the same as the bit pattern for 16#FFFF = 32767. However, the value (as opposed to the internal representation) of 1 and 32767 are different.</p>
 
 <pre><code>    const maxnat1 := 16#FF      % Largest 1-byte natural number
@@ -28,4 +35,4 @@ You should be careful to avoid confusion about patterns such as 16#FFFF. It is t
 
 <h2>See also</h2>
 
-<p><strong><a href="int">int.html</a></strong>, <strong><a href="maxint">maxint.html</a></strong> (the largest integer value), <strong><a href="nat">nat.html</a></strong> (positive values  only) and <strong><a href="int">int.html</a><em>n</em></strong> (<strong><em>n</em></strong><strong>-</strong>byte integers). See also <strong><a href="intstr">intstr.html</a></strong> and <strong><a href="natstr">natstr.html</a></strong> which convert integer and natural number values to corresponding character strings in any base, for example <strong><a href="intstr">intstr.html</a> </strong>(4, 0, 2) = "100".</p>
+<p><strong><a href="int">int.html</a></strong>, <strong><a href="maxint">maxint.html</a></strong> (the largest integer value), <strong><a href="nat">nat.html</a></strong> (positive values  only) and <strong><a href="int">int.html</a><em>n</em></strong> (<em><strong>n</strong></em><strong>-</strong>byte integers). See also <strong><a href="intstr">intstr.html</a></strong> and <strong><a href="natstr">natstr.html</a></strong> which convert integer and natural number values to corresponding character strings in any base, for example <strong><a href="intstr">intstr.html</a> </strong>(4, 0, 2) = "100".</p>

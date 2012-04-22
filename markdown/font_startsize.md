@@ -2,13 +2,13 @@
 #Font.StartSize
 
 ##Syntax
-**Font.StartSize** (*fontName*, *fontStyle* : **string**)
+**Font.StartSize** (_fontName_, _fontStyle_ : **string**)
 
 
 
 ##Description
 **Font.StartSize** is used to start a listing of all the sizes for a particular font name and style. 
-The *fontName* parameter should be an actual font name (as opposed to the default names of serif, etc). You can get a list of the font names by using the **Font.StartName** and **Font.GetName** subprograms. The *fontStyle* parameter should be in the same format as would appear in the **Font.New** procedure.
+The _fontName_ parameter should be an actual font name (as opposed to the default names of &#147;serif&#148;, etc). You can get a list of the font names by using the **Font.StartName** and **Font.GetName** subprograms. The _fontStyle_ parameter should be in the same format as would appear in the **Font.New** procedure.
 
 
 

@@ -2,12 +2,12 @@
 #GUI.Disable
 
 ##Syntax
-**GUI.Disable** (*widgetID* : **int**)
+**GUI.Disable** (_widgetID_ : **int**)
 
 
 
 ##Description
-Disables a widget specified by *widgetID*. 
+Disables a widget specified by _widgetID_. 
 Used in conjunction with **GUI.Enable** to enable and disable widgets. 
 Disabled widgets generally are "grayed out" to visually depict their disabled status.
 Disabled widgets do not respond to keystrokes or mouse clicks.
@@ -52,7 +52,9 @@ The three color radio buttons are enabled only when the color check box is selec
         end loop
 ##Details
 The following types of widgets can be enabled or disabled:
- Buttons, Check Boxes, Radio Buttons, Picture Buttons,
+
+
+
 Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders
 
 

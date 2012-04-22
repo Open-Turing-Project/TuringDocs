@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>constantDeclaration</em> is:
-<strong>const</strong> <em>id</em> [ : <em>typeSpec</em> ] := <em>initializingValue</em></p>
+<p>A <em>constantDeclaration</em> is:</p>
+
+<p><strong>const</strong> <em>id</em> [ : <em>typeSpec</em> ] := <em>initializingValue</em></p>
 
 <h2>Description</h2>
 
@@ -22,12 +23,12 @@
 
 <h2>Details</h2>
 
-<p>The initializing value can be an arbitrary value or else a list of items separated by commas inside <strong>init</strong> (&#133;). The syntax of <em>initializingValue </em>is:
-a.<em>expn</em>b.<strong>init</strong> (initializingValue, initializingValue)
-Each <strong>init</strong> (&#133;) corresponds to an array, record or union value that is being initialized. These must be nested for initialization of nested types. In the Pascal language, constants must have values known at compile time; Turing has no such restriction.
+<p>The initializing value can be an arbitrary value or else a list of items separated by commas inside <strong>init</strong> (&#133;). The syntax of <em>initializingValue </em>is:</p>
+
+<p>Each <strong>init</strong> (&#133;) corresponds to an array, record or union value that is being initialized. These must be nested for initialization of nested types. In the Pascal language, constants must have values known at compile time; Turing has no such restriction.
 When the typeSpec is omitted, the variable's type is taken to be the (root) type of the initializing expression, for example, <strong>int</strong> or <strong>string</strong>. The typeSpec cannot be omitted for dynamic arrays or when the initializing value is of the form <strong>init</strong> (&#133;). The values inside <strong>init</strong> (&#133;) must be known at compile time.
-The keyword <strong>pervasive</strong> can be inserted just after <strong>const</strong>. When this is done, the constant is visible inside all subconstructs of the constant's scope. Without <strong>pervasive</strong>, the constant is not visible inside modules, monitors or classes unless explicitly imported. Pervasive constants need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (<strong><strong>*).
-You can also optionally use the </strong>register</strong> keyword to request that the constant be placed in a machine register. The syntax for constantDeclaration is actually:
+The keyword <strong>pervasive</strong> can be inserted just after <strong>const</strong>. When this is done, the constant is visible inside all subconstructs of the constant's scope. Without <strong>pervasive</strong>, the constant is not visible inside modules, monitors or classes unless explicitly imported. Pervasive constants need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (<strong>*</strong>).
+You can also optionally use the <strong>register</strong> keyword to request that the constant be placed in a machine register. The syntax for constantDeclaration is actually:
 In the current (2002) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See also <strong>register</strong> for restrictions on the use of register constants.</p>
 
 <pre><code>    const [pervasive] [register] id [ : typeSpec ] := initializingValue

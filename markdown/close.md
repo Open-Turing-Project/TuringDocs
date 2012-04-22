@@ -2,13 +2,15 @@
 #close
 
 ##Syntax
-A *closeStatement* is:
- **close** : *fileNumber*
+A _closeStatement_ is:
+
+**close** : _fileNumber_
+
 
 
 
 ##Description
-In Turing, files are read and written using a *fileNumber*. In most cases, this number is given a value using the **open** statement, which translates a file name, such as "Master", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement.
+In Turing, files are read and written using a _fileNumber_. In most cases, this number is given a value using the **open** statement, which translates a file name, such as "Master", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement.
 
 
 

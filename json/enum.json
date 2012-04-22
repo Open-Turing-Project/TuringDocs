@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>enumeratedType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>enum</b> (<i>id </i>{ , <i>id </i>} )</font></td>\n</tr></table>\n<p></p>",
       "text_content": " An enumeratedType is:\r\n enum (id { , id } )",
-      "mdown_content": "An *enumeratedType* is:\n **enum** (*id *{ , *id *} )"
+      "mdown_content": "An _enumeratedType_ is:\n\n**enum** (_id _{ , _id _} )\n"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, <i>color</i>.<i>red</i>. Enumerated values can be compared for equality and for ordering. The <b>succ</b> and <b>pred</b> functions can be used to find the value following or preceding a given enumerated value. The <b>ord</b> function can be used to find the enumeration position of a value, for example, <b>ord</b> (<i>color</i>.<i>red</i>) is 0.<p>\r\nEnumerated types cannot be combined with integers or with other enumerated types.</p>\n<p>\r\n</p>",
       "text_content": " Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, color.red. Enumerated values can be compared for equality and for ordering. The succ and pred functions can be used to find the value following or preceding a given enumerated value. The ord function can be used to find the enumeration position of a value, for example, ord (color.red) is 0.\r\nEnumerated types cannot be combined with integers or with other enumerated types.\r\n",
-      "mdown_content": "Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, *color*.*red*. Enumerated values can be compared for equality and for ordering. The **succ** and **pred** functions can be used to find the value following or preceding a given enumerated value. The **ord** function can be used to find the enumeration position of a value, for example, **ord** (*color*.*red*) is 0.\nEnumerated types cannot be combined with integers or with other enumerated types."
+      "mdown_content": "Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, _color_._red_. Enumerated values can be compared for equality and for ordering. The **succ** and **pred** functions can be used to find the value following or preceding a given enumerated value. The **ord** function can be used to find the enumeration position of a value, for example, **ord** (_color_._red_) is 0.\nEnumerated types cannot be combined with integers or with other enumerated types."
     },
     {
       "title": "Details",

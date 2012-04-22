@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.LineAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.LineAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.LineAvailable **(*netStream* : **int**) : **boolean**"
+      "mdown_content": "**Net.LineAvailable **(_netStream_ : **int**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "Returns <b>true</b> if a line of input is waiting to be read from the net stream specified by the <i>netStream</i> parameter. If <b>Net.LineAvailable</b> returns <b>true</b>, then a line of input can be read from the stream without blocking.<p>\r\n</p>",
       "text_content": " Returns true if a line of input is waiting to be read from the net stream specified by the netStream parameter. If Net.LineAvailable returns true, then a line of input can be read from the stream without blocking.\r\n",
-      "mdown_content": "Returns **true** if a line of input is waiting to be read from the net stream specified by the *netStream* parameter. If **Net.LineAvailable** returns **true**, then a line of input can be read from the stream without blocking."
+      "mdown_content": "Returns **true** if a line of input is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.LineAvailable** returns **true**, then a line of input can be read from the stream without blocking."
     },
     {
       "title": "Details",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "The following program fragment reads a character from <i>netStream</i> only if there is one waiting to be read.<p>\r\n</p>",
       "text_content": " The following program fragment reads a character from netStream only if there is one waiting to be read.\r\n\r\n",
-      "mdown_content": "The following program fragment reads a character from *netStream* only if there is one waiting to be read."
+      "mdown_content": "The following program fragment reads a character from _netStream_ only if there is one waiting to be read."
     },
     {
       "title": "Status",

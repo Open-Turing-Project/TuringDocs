@@ -2,7 +2,7 @@
 #tan
 
 ##Syntax
-**tan** ( *r* : **real** ) : **real**
+**tan** ( _r_ : **real** ) : **real**
 
 
 
@@ -12,7 +12,7 @@ The **tan** function is used to find the tangent of an angle given in radians. F
 
 
 ##Example
-This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians.
+This program prints out the tangent of 0, pppp/6 radians.
 
 
         for i : 0 .. 12
@@ -20,7 +20,7 @@ This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians.
             put "Tangent of ", angle, " is ", tan ( angle )
         end for
 ##Details
-An argument to **tan** of p/2, 3*p/2, etc. may result in an overflow (and halt of the program) as the result is technically ¥. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)
+An argument to **tan** of pp&yen;. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)
 
 
 

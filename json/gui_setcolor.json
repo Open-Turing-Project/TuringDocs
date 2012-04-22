@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetColor</b> (<i>widgetID</i> : <b>int</b>, <i>clrNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.SetColor (widgetID : int, clrNumber : int)\r\n    ",
-      "mdown_content": "**GUI.SetColor** (*widgetID* : **int**, *clrNumber* : **int**)"
+      "mdown_content": "**GUI.SetColor** (_widgetID_ : **int**, _clrNumber_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetColor</b> procedure is used buttons to change the\r\n          color of a button.  The color is specified by the <i>clrNumber</i>\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by <i>clrNumber</i>, so in general you should use\r\n          brighter colors for buttons.<p>\r\n    </p>",
       "text_content": "The GUI.SetColor procedure is used buttons to change the\r\n          color of a button.  The color is specified by the clrNumber\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by clrNumber, so in general you should use\r\n          brighter colors for buttons.\r\n    ",
-      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the *clrNumber*parameter.  The edges of the button are a darker version of the color specified by *clrNumber*, so in general you should usebrighter colors for buttons."
+      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the _clrNumber_parameter.  The edges of the button are a darker version of the color specified by _clrNumber_, so in general you should usebrighter colors for buttons."
     },
     {
       "title": "Example",

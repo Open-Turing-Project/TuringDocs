@@ -2,7 +2,7 @@
 #sound
 
 ##Syntax
-**sound** ( *frequency*, *duration* : **int** )
+**sound** ( _frequency_, _duration_ : **int** )
 
 
 

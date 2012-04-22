@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Sys.GetComputerName **function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns No Name if a name could not be determined.
+The **Sys.GetComputerName **function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined.
 
 
 

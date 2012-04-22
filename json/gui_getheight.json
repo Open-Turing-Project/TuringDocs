@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetHeight</b> (<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetHeight (widgetID : int) : int\r\n",
-      "mdown_content": "**GUI.GetHeight** (*widgetID* : **int**) : **int**"
+      "mdown_content": "**GUI.GetHeight** (_widgetID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the actual height of a widget. Note that this may be different from the height specified in the <i>Create</i> call (especially since many widgets do not specify a height. The GUI module determines the actual height).<p>\r\nThis function is used in conjunction with <b>GUI.GetX</b>, <b>GUI.GetY</b><i> </i>and<i> </i><b>GUI.GetWidth</b> to determine the bounds of a widget. The entire widget should always fit in the box (<b>GUI.GetX</b>, <b>GUI.GetY</b>) - (<b>GUI.GetX</b> + <b>GUI.GetWidth</b>  1, <b>GUI.GetY</b> + <b>GUI.GetHeight</b>  1)</p>\n<p>\r\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>\n<p>\r\n</p>",
       "text_content": " Returns the actual height of a widget. Note that this may be different from the height specified in the Create call (especially since many widgets do not specify a height. The GUI module determines the actual height).\r\nThis function is used in conjunction with GUI.GetX, GUI.GetY and GUI.GetWidth to determine the bounds of a widget. The entire widget should always fit in the box (GUI.GetX, GUI.GetY) - (GUI.GetX + GUI.GetWidth  1, GUI.GetY + GUI.GetHeight  1)\r\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.\r\n",
-      "mdown_content": "Returns the actual height of a widget. Note that this may be different from the height specified in the *Create* call (especially since many widgets do not specify a height. The GUI module determines the actual height).\nThis function is used in conjunction with **GUI.GetX**, **GUI.GetY*** *and* ***GUI.GetWidth** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error."
+      "mdown_content": "Returns the actual height of a widget. Note that this may be different from the height specified in the _Create_ call (especially since many widgets do not specify a height. The GUI module determines the actual height).\nThis function is used in conjunction with **GUI.GetX**, **GUI.GetY**_ _and_ _**GUI.GetWidth** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The following procedure draws a red box around the widget specified by <i>widgetID</i>.<p>\r\n</p>",
       "text_content": " The following procedure draws a red box around the widget specified by widgetID.\r\n\r\n",
-      "mdown_content": "The following procedure draws a red box around the widget specified by *widgetID*."
+      "mdown_content": "The following procedure draws a red box around the widget specified by _widgetID_."
     },
     {
       "title": "Status",

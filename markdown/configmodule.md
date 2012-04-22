@@ -8,6 +8,9 @@ All routines in the Config module are exported qualified (and thus must be prefa
 
 
 ##Entry Points
-[config_display.html](**Display**) Returns information about the display currently attached.[config_lang.html](**Lang**) Returns information about the language environment that the program is currently running within.[config_machine.html](**Machine**) Returns information about the hardware on which the program is running.
+
+[config_display.html](**Display**) Returns information about the display currently attached.
+[config_lang.html](**Lang**) Returns information about the language environment that the program is currently running within.
+[config_machine.html](**Machine**) Returns information about the hardware on which the program is running.
 
 

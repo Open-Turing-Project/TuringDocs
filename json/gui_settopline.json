@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetTopLine</b> (<i>widgetID</i> : <b>int</b>, <i>lineNum</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.SetTopLine (widgetID : int, lineNum : int)\r\n    ",
-      "mdown_content": "**GUI.SetTopLine** (*widgetID* : **int**, *lineNum* : **int**)"
+      "mdown_content": "**GUI.SetTopLine** (_widgetID_ : **int**, _lineNum_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetTopLine</b> procedure scrolls the text in a \r\n          text box so as to place the line number specified by\r\n\t  <i>lineNum</i> at the top of the text box (if possible).\r\n\t  This is often used to scroll the text back to the beginning\r\n\t  of the text box by assigning a value of 1 to <i>lineNum</i>.",
       "text_content": "The GUI.SetTopLine procedure scrolls the text in a \r\n          text box so as to place the line number specified by\r\n\t  lineNum at the top of the text box (if possible).\r\n\t  This is often used to scroll the text back to the beginning\r\n\t  of the text box by assigning a value of 1 to lineNum.\r\n    ",
-      "mdown_content": "The **GUI.SetTopLine** procedure scrolls the text in a text box so as to place the line number specified by*lineNum* at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to *lineNum*."
+      "mdown_content": "The **GUI.SetTopLine** procedure scrolls the text in a text box so as to place the line number specified by_lineNum_ at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to _lineNum_."
     },
     {
       "title": "Example",

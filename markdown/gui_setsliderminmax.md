@@ -2,12 +2,12 @@
 #GUI.SetSliderMinMax
 
 ##Syntax
-**GUI.SetSliderMinMax** (*widgetID*, *min*, *max* : **int**)
+**GUI.SetSliderMinMax** (_widgetID_, _min_, _max_ : **int**)
 
 
 
 ##Description
-Sets the minimum and maximum values of the slider or scroll bar specified by *widgetID*. The *min* parameter specifies the new minimum value of the slider or scroll bar. The *max* parameter specifies the new maximum value of the slider or scroll bar. The *max* parameter must be greater than the *min* parameter.
+Sets the minimum and maximum values of the slider or scroll bar specified by _widgetID_. The _min_ parameter specifies the new minimum value of the slider or scroll bar. The _max_ parameter specifies the new maximum value of the slider or scroll bar. The _max_ parameter must be greater than the _min_ parameter.
 **GUI.SetSliderMinMax** redraws the thumb to take into account the new minimum and maximum. If the current value of the slider is outside the new minimum/maximum, then the value is adjusted appropriately.
 
 

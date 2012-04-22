@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>A</i> <b>and</b> <i>B</i><p>\r\n</p></font>",
       "text_content": " A and B\r\n",
-      "mdown_content": "*A* **and** *B*"
+      "mdown_content": "_A_ **and** _B_"
     },
     {
       "title": "Description",
       "raw_content": "The <b>and</b> (boolean) operator yields a result of true if, and only if, both operands are true. The <b>and</b> operator is a short circuit operator. For example, if <i>A</i> is false in <i>A </i><b>and</b><i> B</i> then <i>B </i>is not evaluated.<p>\r\n</p>",
       "text_content": " The and (boolean) operator yields a result of true if, and only if, both operands are true. The and operator is a short circuit operator. For example, if A is false in A and B then B is not evaluated.\r\n",
-      "mdown_content": "The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if *A* is false in *A ***and*** B* then *B *is not evaluated."
+      "mdown_content": "The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if _A_ is false in _A _**and**_ B_ then _B _is not evaluated."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The <i>continuing</i> variable is set to <b>true</b> if, and only if, both <i>continuing</i> and <i>success</i> are <b>true</b>. Since Turing uses short circuit operators, once <i>continuing</i> is <b>false</b>, <i>success</i> will not be looked at.<p>\r\nThe <b>and</b> operator can also be applied to natural numbers. The result is the natural number that is the bit-wise <b>and</b> of the operands. See <b>nat</b> (natural number).</p>\n<p>\r\n</p>",
       "text_content": " The continuing variable is set to true if, and only if, both continuing and success are true. Since Turing uses short circuit operators, once continuing is false, success will not be looked at.\r\nThe and operator can also be applied to natural numbers. The result is the natural number that is the bit-wise and of the operands. See nat (natural number).\r\n",
-      "mdown_content": "The *continuing* variable is set to **true** if, and only if, both *continuing* and *success* are **true**. Since Turing uses short circuit operators, once *continuing* is **false**, *success* will not be looked at.\nThe **and** operator can also be applied to natural numbers. The result is the natural number that is the bit-wise **and** of the operands. See **nat** (natural number)."
+      "mdown_content": "The _continuing_ variable is set to **true** if, and only if, both _continuing_ and _success_ are **true**. Since Turing uses short circuit operators, once _continuing_ is **false**, _success_ will not be looked at.\nThe **and** operator can also be applied to natural numbers. The result is the natural number that is the bit-wise **and** of the operands. See **nat** (natural number)."
     },
     {
       "title": "Example",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "This masks out the everything but the lower two bytes of <i>number</i>.<p>\r\n</p>",
       "text_content": " This masks out the everything but the lower two bytes of number.\r\n\r\n",
-      "mdown_content": "This masks out the everything but the lower two bytes of *number*."
+      "mdown_content": "This masks out the everything but the lower two bytes of _number_."
     },
     {
       "title": "See also",
@@ -50,7 +50,7 @@
       ],
       "raw_content": "<b><a href=\"boolean.html\">boolean</a></b> (which discusses true/false values), <i><a href=\"explicittruefalseconstant.html\">explicitTrueFalseConstant</a></i> (which discusses the values <b><a href=\"true.html\">true</a></b> and <b><a href=\"false.html\">false</a></b>), <i><a href=\"precedence.html\">precedence</a></i> and <i><a href=\"expn.html\">expn</a></i> (expression).<p>\r\n</p>",
       "text_content": " boolean (which discusses true/false values), explicitTrueFalseConstant (which discusses the values true and false), precedence and expn (expression).\r\n",
-      "mdown_content": "**[boolean.html](boolean)** (which discusses true/false values), *[explicittruefalseconstant.html](explicitTrueFalseConstant)* (which discusses the values **[true.html](true)** and **[false.html](false)**), *[precedence.html](precedence)* and *[expn.html](expn)* (expression)."
+      "mdown_content": "**[boolean.html](boolean)** (which discusses true/false values), _[explicittruefalseconstant.html](explicitTrueFalseConstant)_ (which discusses the values **[true.html](true)** and **[false.html](false)**), _[precedence.html](precedence)_ and _[expn.html](expn)_ (expression)."
     }
   ],
   "dependencies": [

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderValue</b> (<i>widgetID</i>, <i>value</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSliderValue (widgetID, value : int)\r\n",
-      "mdown_content": "**GUI.SetSliderValue** (*widgetID*, *value* : **int**)"
+      "mdown_content": "**GUI.SetSliderValue** (_widgetID_, _value_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the value of a slider or scroll bar specified by <i>widgetID</i> to <i>value</i>. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's <i>action procedure</i> with the new value.<p>\r\n</p>",
       "text_content": " Sets the value of a slider or scroll bar specified by widgetID to value. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's action procedure with the new value.\r\n",
-      "mdown_content": "Sets the value of a slider or scroll bar specified by *widgetID* to *value*. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's *action procedure* with the new value."
+      "mdown_content": "Sets the value of a slider or scroll bar specified by _widgetID_ to _value_. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's _action procedure_ with the new value."
     },
     {
       "title": "Example",

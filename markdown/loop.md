@@ -2,8 +2,12 @@
 #loop
 
 ##Syntax
-A *loopStatement* is:
- **loop**  *statementsAndDeclarations* **end** **loop**
+A _loopStatement_ is:
+
+**loop**
+_statementsAndDeclarations_
+**end** **loop**
+
 
 
 
@@ -31,7 +35,7 @@ Read words up to the word Stop.
 ##Details
 A **loop** statement can contain more than one **exit**, or none at all (in which case it is an infinite loop). When the **exit** **when** is at the beginning of the loop, the loop works like Pascal's **do** **while**; when at the end, the loop works like Pascal's **repeat** **until**.
 Just preceding the statements and declarations, you are allowed to write an "invariant clause" of the form:
-This clause is equivalent to: **assert** *trueFalseExpn*.
+This clause is equivalent to: **assert** _trueFalseExpn_.
 
 
         invariant trueFalseExpn

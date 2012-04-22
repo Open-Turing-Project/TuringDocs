@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetPosition</b> (<i>windowID</i> : <b>int</b>, <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.SetPosition (windowID : int, x, y : int)\r\n",
-      "mdown_content": "**Window.SetPosition** (*windowID* : **int**, *x*, *y* : **int**)"
+      "mdown_content": "**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.SetPosition</b> procedure moves the location of the specified execution window on the screen. <i>x</i> and <i>y</i> specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
       "text_content": " The Window.SetPosition procedure moves the location of the specified execution window on the screen. x and y specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.\r\n",
-      "mdown_content": "The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. *x* and *y* specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen."
+      "mdown_content": "The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. _x_ and _y_ specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen."
     },
     {
       "title": "Example",

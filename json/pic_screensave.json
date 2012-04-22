@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.ScreenSave</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Pic.ScreenSave (x1, y1, x2, y2 : int, fileName : string)\r\n",
-      "mdown_content": "**Pic.ScreenSave** (*x1*, *y1*, *x2*, *y2* : **int**, *fileName* : **string**)"
+      "mdown_content": "**Pic.ScreenSave** (_x1_, _y1_, _x2_, _y2_ : **int**, _fileName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.ScreenSave </b>saves a portion of the screen into a file in a format specified by the file name.<p>\r\nThe picture saved to the file is the portion of the screen defined by the rectangle (<i>x1</i>, <i>y1</i>) - (<i>x2</i>, <i>y2</i>).</p>\n<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>BMP files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " Pic.ScreenSave saves a portion of the screen into a file in a format specified by the file name.\r\nThe picture saved to the file is the portion of the screen defined by the rectangle (x1, y1) - (x2, y2).\r\nThe fileNameparameter must give the format of the file:\r\n BMP files \"BMP:filename\" or \"filename.BMP\"\r\n",
-      "mdown_content": "**Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.\nThe picture saved to the file is the portion of the screen defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*).\nThe *fileName*parameter must give the format of the file:\n BMP files \"BMP:filename\" or \"filename.BMP\""
+      "mdown_content": "**Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.\nThe picture saved to the file is the portion of the screen defined by the rectangle (_x1_, _y1_) - (_x2_, _y2_).\nThe _fileName_parameter must give the format of the file:\n\n\n"
     },
     {
       "title": "Details",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "The program draws a graphic and saves it as a PICT file called <i>draw</i>.<p>\r\n</p>",
       "text_content": " The program draws a graphic and saves it as a PICT file called draw.\r\n\r\n",
-      "mdown_content": "The program draws a graphic and saves it as a PICT file called *draw*."
+      "mdown_content": "The program draws a graphic and saves it as a PICT file called _draw_."
     },
     {
       "title": "Status",

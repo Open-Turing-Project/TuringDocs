@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.PicDraw</b> (<i>widgetID</i> : <b>int</b>, <i>picID</i>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)<p>\r\n<b>GUI.PicNew</b> (<i>widgetID</i> : <b>int</b>, <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b> ) : <b>int</b></p>\n<p>\r\n<b>GUI.PicScreenLoad</b> (<i>widgetID</i> : <b>int</b>, <i>fileName</i> : <b>string</b>,<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)</p>\n<p>\r\n<b>GUI.PicScreenSave</b> (<i>widgetID</i> : <b>int</b>, <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>,<br><i>fileName</i> : <b>string</b>)</p>\n<p>\r\n</p></font>",
       "text_content": " GUI.PicDraw (widgetID : int, picID, x, y, mode : int)\r\nGUI.PicNew (widgetID : int, x1, y1, x2, y2 : int ) : int\r\nGUI.PicScreenLoad (widgetID : int, fileName : string,\r\n    x, y, mode : int)\r\nGUI.PicScreenSave (widgetID : int, x1, y1, x2, y2 : int,fileName : string)\r\n",
-      "mdown_content": "**GUI.PicDraw** (*widgetID* : **int**, *picID*, *x*, *y*, *mode* : **int**)\n**GUI.PicNew** (*widgetID* : **int**, *x1*, *y1*, *x2*, *y2* : **int** ) : **int**\n**GUI.PicScreenLoad** (*widgetID* : **int**, *fileName* : **string**,    *x*, *y*, *mode* : **int**)\n**GUI.PicScreenSave** (*widgetID* : **int**, *x1*, *y1*, *x2*, *y2* : **int**,*fileName* : **string**)"
+      "mdown_content": "**GUI.PicDraw** (_widgetID_ : **int**, _picID_, _x_, _y_, _mode_ : **int**)\n**GUI.PicNew** (_widgetID_ : **int**, _x1_, _y1_, _x2_, _y2_ : **int** ) : **int**\n**GUI.PicScreenLoad** (_widgetID_ : **int**, _fileName_ : **string**,    _x_, _y_, _mode_ : **int**)\n**GUI.PicScreenSave** (_widgetID_ : **int**, _x1_, _y1_, _x2_, _y2_ : **int**,_fileName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "Performs a <i>Pic</i>&#133; command to the canvas specified by <i>widgetID</i>.<p>\r\nAll of these routines are essentially the same as the similarly-named procedures in the <i>Pic</i> module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. </p>\n<p>\r\n</p>",
       "text_content": " Performs a Pic command to the canvas specified by widgetID.\r\nAll of these routines are essentially the same as the similarly-named procedures in the Pic module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. \r\n",
-      "mdown_content": "Performs a *Pic* command to the canvas specified by *widgetID*.\nAll of these routines are essentially the same as the similarly-named procedures in the *Pic* module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. "
+      "mdown_content": "Performs a _Pic_&#133; command to the canvas specified by _widgetID_.\nAll of these routines are essentially the same as the similarly-named procedures in the _Pic_ module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. "
     },
     {
       "title": "Example",
       "raw_content": "See the <i>ScrollPic</i> program in <b>GUI.CreateHorizontalScrollBarFull </b>for an example of <b>GUI.PicDraw</b>.<p>\r\n</p>",
       "text_content": " See the ScrollPic program in GUI.CreateHorizontalScrollBarFull for an example of GUI.PicDraw.\r\n",
-      "mdown_content": "See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.PicDraw**."
+      "mdown_content": "See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.PicDraw**."
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedures by calling <b>GUI.Pic&#133;</b>, not by calling <b>Pic&#133;</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedures by calling GUI.Pic, not by calling Pic.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.Pic**, not by calling **Pic**."
+      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.Pic&#133;**, not by calling **Pic&#133;**."
     },
     {
       "title": "See also",

@@ -2,12 +2,12 @@
 #GUI.SetSliderReverse
 
 ##Syntax
-**GUI.SetSliderReverse** (*widgetID* : **int**)
+**GUI.SetSliderReverse** (_widgetID_ : **int**)
 
 
 
 ##Description
-Sets a slider or scroll bar specified by *widgetID* into (or out of, if already into) "reverse mode". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location.
+Sets a slider or scroll bar specified by _widgetID_ into (or out of, if already into) "reverse mode". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location.
 
 
 

@@ -2,7 +2,7 @@
 #pred
 
 ##Syntax
-**pred** ( *expn* )
+**pred** ( _expn_ )
 
 
 
@@ -12,7 +12,7 @@ The **pred** function accepts an integer, character, or an enumerated value and 
 
 
 ##Example
-This part of a Turing program fills up array *a *with the enumerated values *red*,* yellow*,* green*,* red*,* yellow*,* green*,* *etc.
+This part of a Turing program fills up array _a _with the enumerated values _red_,_ yellow_,_ green_,_ red_,_ yellow_,_ green_,_ _etc.
 
 
         type colors : enum ( green, yellow, red )

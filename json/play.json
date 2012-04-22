@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>play</b> ( <i>music</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " play ( music : string )\r\n",
-      "mdown_content": "**play** ( *music* : **string** )"
+      "mdown_content": "**play** ( _music_ : **string** )"
     },
     {
       "title": "Description",

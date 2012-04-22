@@ -2,7 +2,7 @@
 #succ
 
 ##Syntax
-**succ** ( *expn* )
+**succ** ( _expn_ )
 
 
 
@@ -12,7 +12,7 @@ The **succ** function accepts an integer, character or an enumerated value and r
 
 
 ##Example
-This part of a Turing program fills up array *a *with the enumerated values *green*,* yellow*,* red*,* green*,* yellow*,* red*,* *etc.
+This part of a Turing program fills up array _a _with the enumerated values _green_,_ yellow_,_ red_,_ green_,_ yellow_,_ red_,_ _etc.
 
 
         type colors : enum ( green, yellow, red  )

@@ -17,7 +17,7 @@ This program outputs the maximum column number.
 
         put "Number of columns on the screen is ", maxrow
 ##Details
-For IBM PC compatibles as well as most UNIX dumb terminals, in "*text*"* *or "*screen*"* *mode, **maxcol** = 80. For the default IBM PC compatible "*graphics*" mode (CGA), **maxcol **= 40.
+For IBM PC compatibles as well as most UNIX dumb terminals, in "_text_"_ _or "_screen_"_ _mode, **maxcol** = 80. For the default IBM PC compatible "_graphics_" mode (CGA), **maxcol **= 40.
 
 
 

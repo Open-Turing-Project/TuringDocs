@@ -10,7 +10,7 @@
 
 <h2>Example</h2>
 
-<p>The <strong>skip</strong> input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in <em><strong>get</strong> s</em> but not in <em><strong>get</strong> s:<strong> or </strong></em>get<strong> s:3*, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so </strong>skip<strong> was required. The form of an input loop that used </strong>skip** was as follows:</p>
+<p>The <strong>skip</strong> input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in <em><strong>get</strong> s</em> but not in <em><strong>get</strong> s:*</em> or <em><strong>get</strong> s:3</em>, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so <strong>skip</strong> was required. The form of an input loop that used <strong>skip</strong> was as follows:</p>
 
 <pre><code>    loop
         get skip            % This is line now redundant

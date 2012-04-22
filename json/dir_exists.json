@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Exists</b> (<i>directoryPathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Dir.Exists (directoryPathName : string) : boolean\r\n",
-      "mdown_content": "**Dir.Exists** (*directoryPathName* : **string**) : **boolean**"
+      "mdown_content": "**Dir.Exists** (_directoryPathName_ : **string**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Dir.Exists </b>returns <b>true</b> if a directory by the name of <i>directoryPathName</i> exists. It will return <b>false</b> if <i>directoryPathName</i> is a file.<p>\r\n</p>",
       "text_content": " Dir.Exists returns true if a directory by the name of directoryPathName exists. It will return false if directoryPathName is a file.\r\n",
-      "mdown_content": "**Dir.Exists **returns **true** if a directory by the name of *directoryPathName* exists. It will return **false** if *directoryPathName* is a file."
+      "mdown_content": "**Dir.Exists **returns **true** if a directory by the name of _directoryPathName_ exists. It will return **false** if _directoryPathName_ is a file."
     },
     {
       "title": "Details",

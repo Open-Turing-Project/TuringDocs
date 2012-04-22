@@ -2,18 +2,21 @@
 #named
 
 ##Syntax
-A *namedType* is one of:
- (a)*typeId* (b)*moduleId* . *typeId*
+A _namedType_ is one of:
+
+(a)_typeId_
+(b)_moduleId_ . _typeId_
+
 
 
 
 ##Description
-A type can be given a name (*typeId*) and later this name can be used instead of writing out the type.
+A type can be given a name (_typeId_) and later this name can be used instead of writing out the type.
 
 
 
 ##Example
-In this example, *phoneRecord* is a named type.
+In this example, _phoneRecord_ is a named type.
 
 
         type phoneRecord :

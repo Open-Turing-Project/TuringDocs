@@ -2,12 +2,12 @@
 #GUI.SetTopLine
 
 ##Syntax
-**GUI.SetTopLine** (*widgetID* : **int**, *lineNum* : **int**)
+**GUI.SetTopLine** (_widgetID_ : **int**, _lineNum_ : **int**)
 
 
 
 ##Description
-The **GUI.SetTopLine** procedure scrolls the text in a text box so as to place the line number specified by*lineNum* at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to *lineNum*.
+The **GUI.SetTopLine** procedure scrolls the text in a text box so as to place the line number specified by_lineNum_ at the top of the text box (if possible).This is often used to scroll the text back to the beginningof the text box by assigning a value of 1 to _lineNum_.
 
 
 

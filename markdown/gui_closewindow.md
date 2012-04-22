@@ -2,12 +2,12 @@
 #GUI.CloseWindow
 
 ##Syntax
-**GUI.CloseWindow** (*window* : **int**)
+**GUI.CloseWindow** (_window_ : **int**)
 
 
 
 ##Description
-Closes a window with widgets in it. This procedure automatically disposes of any widgets in the window and makes certain that the GUI Library recognizes that the window no longer exists. This procedure will call *Window.Close*, so there is no need for the user to do so.
+Closes a window with widgets in it. This procedure automatically disposes of any widgets in the window and makes certain that the GUI Library recognizes that the window no longer exists. This procedure will call _Window.Close_, so there is no need for the user to do so.
 
 
 

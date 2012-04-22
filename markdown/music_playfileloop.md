@@ -2,14 +2,18 @@
 #Music.PlayFileLoop
 
 ##Syntax
-**Music.PlayFileLoop** ( *fileName* : **string** )
+**Music.PlayFileLoop** ( _fileName_ : **string** )
 
 
 
 ##Description
 The **Music.PlayFileLoop** procedure is used to play a file of music continuously, looping until the program is halted or the **Music.PlayFileStop** command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.
-The *fileName*parameter must give the format of the file:
- WAV files "WAV:filename" or "filename.WAV" MP3 files "MP3:filename" or "filename.MP3" MIDI files "MIDI:filename" or "filename.MIDI"
+The _fileName_parameter must give the format of the file:
+
+
+
+
+
 The **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately.
 
 
@@ -20,7 +24,7 @@ Unlike **Music.PlayFile**, the **Music.PlayFileLoop** procedure does not have to
 
 
 ##Example
-This program continuously plays the music in the file "*branden3.wav*" while drawing ovals on the screen.
+This program continuously plays the music in the file "_branden3.wav_" while drawing ovals on the screen.
 
 
         Music.PlayFileLoop ("branden3.wav")
@@ -44,7 +48,7 @@ The Turing 4.1 software can play files in the following audio formats: WAVE (.wa
 
 
 ##Details
-The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].
+The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.
 
 
         Music.PlayFileLoop ("cd")       % Play the entire CD

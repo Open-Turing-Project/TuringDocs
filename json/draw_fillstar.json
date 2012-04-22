@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.FillStar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.FillStar (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**Draw.FillStar** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+      "mdown_content": "**Draw.FillStar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.FillStar </b>procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a star outlined in a different color, use <b>Draw.FillStar</b> with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Star</b> with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.FillStar procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (x1, y1) to (x2, y2) and filled using the specified Color. To get a star outlined in a different color, use Draw.FillStar with the Color parameter set to the fill color and then call Draw.Star with the Color parameter set to the border color. If y1 is greater than y2, then the star is drawn upside down.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.FillStar **procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) and filled using the specified *Color*. To get a star outlined in a different color, use **Draw.FillStar** with the *Color* parameter set to the fill color and then call **Draw.Star** with the *Color* parameter set to the border color. If *y1* is greater than *y2*, then the star is drawn upside down."
+      "mdown_content": "The **Draw.FillStar **procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a star outlined in a different color, use **Draw.FillStar** with the _Color_ parameter set to the fill color and then call **Draw.Star** with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the star is drawn upside down."
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The <b>Draw.FillStar</b> procedure is useful for drawing the American flag.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
       "text_content": " The Draw.FillStar procedure is useful for drawing the American flag.\r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The **Draw.FillStar** procedure is useful for drawing the American flag.\nThe screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
+      "mdown_content": "The **Draw.FillStar** procedure is useful for drawing the American flag.\nThe screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
     },
     {
       "title": "Status",

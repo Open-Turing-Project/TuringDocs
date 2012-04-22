@@ -2,12 +2,12 @@
 #File.Exists
 
 ##Syntax
-**File.Exists** (*pathName* : **string**) : **boolean**
+**File.Exists** (_pathName_ : **string**) : **boolean**
 
 
 
 ##Description
-**File.Exists **returns **true** if a file by the name of *pathName* exists. It will return **false** if *pathName* is a directory.
+**File.Exists **returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory.
 
 
 
@@ -35,6 +35,7 @@ This program loops until the user types in a path name that either doesn't alrea
         end loop
 ##Execute
 An example program is available that creates a file in the current directory, tests for its existence using **File.Exists** and deletes the file using **File.Delete**.
+
 
 
 

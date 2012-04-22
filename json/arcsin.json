@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>arcsin</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
       "text_content": " arcsin (r : real) : real\r\n",
-      "mdown_content": "**arcsin** (*r* : **real**) : **real**"
+      "mdown_content": "**arcsin** (_r_ : **real**) : **real**"
     },
     {
       "title": "Description",

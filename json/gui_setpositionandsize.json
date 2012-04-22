@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetPositionAndSize</b> (<i>widgetID</i>, <i>x</i>,<i> y</i> : <b>int</b>, <br><i>width</i>, <i>height</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetPositionAndSize (widgetID, x, y : int, width, height : int)\r\n",
-      "mdown_content": "**GUI.SetPositionAndSize** (*widgetID*, *x*,* y* : **int**, *width*, *height* : **int**)"
+      "mdown_content": "**GUI.SetPositionAndSize** (_widgetID_, _x_,_ y_ : **int**, _width_, _height_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Changes the position and size of the widget specified by <i>widgetID </i>simultaneously. The <i>x</i>, <i>y</i>, <i>width</i> and <i>height</i> parameters have the same meaning as in the <b>GUI.Create</b> function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the <i>width</i> or <i>height</i> parameter may be ignored.<p>\r\n<b>GUI.SetPositionAndSize</b> works the same way as the <b>GUI.SetPosition</b> and <b>GUI.SetSize</b> procedures.</p>\n<p>\r\n</p>",
       "text_content": " Changes the position and size of the widget specified by widgetID simultaneously. The x, y, width and height parameters have the same meaning as in the GUI.Create function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the width or height parameter may be ignored.\r\nGUI.SetPositionAndSize works the same way as the GUI.SetPosition and GUI.SetSize procedures.\r\n",
-      "mdown_content": "Changes the position and size of the widget specified by *widgetID *simultaneously. The *x*, *y*, *width* and *height* parameters have the same meaning as in the **GUI.Create** function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the *width* or *height* parameter may be ignored.\n**GUI.SetPositionAndSize** works the same way as the **GUI.SetPosition** and **GUI.SetSize** procedures."
+      "mdown_content": "Changes the position and size of the widget specified by _widgetID _simultaneously. The _x_, _y_, _width_ and _height_ parameters have the same meaning as in the **GUI.Create** function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the _width_ or _height_ parameter may be ignored.\n**GUI.SetPositionAndSize** works the same way as the **GUI.SetPosition** and **GUI.SetSize** procedures."
     },
     {
       "title": "Example",

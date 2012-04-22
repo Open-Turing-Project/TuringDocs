@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Height</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Height (picID : int) : int\r\n    ",
-      "mdown_content": "**Pic.Height** (*picID* : **int**) : **int**"
+      "mdown_content": "**Pic.Height** (_picID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Height </b>returns the width in pixels of the picture \r\n\t  represented by <i>picID</i>.<p>\r\n\t  This function is often used in conjunction with <b>Pic.Width</b> \r\n\t  to obtain the dimensions of a picture loaded using \r\n\t  <b>Pic.FileNew</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Pic.Height returns the width in pixels of the picture \r\n\t  represented by picID.\r\n\t  This function is often used in conjunction with Pic.Width \r\n\t  to obtain the dimensions of a picture loaded using \r\n\t  Pic.FileNew.\r\n    ",
-      "mdown_content": "**Pic.Height **returns the width in pixels of the picture represented by *picID*.\nThis function is often used in conjunction with **Pic.Width** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
+      "mdown_content": "**Pic.Height **returns the width in pixels of the picture represented by _picID_.\nThis function is often used in conjunction with **Pic.Width** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "The program draws loads a picture from the file <i>lighthouse.jpg</i> \r\n          and proceeds to tile the entire run window with copies of the \r\n\t  picture.<p>\r\n</p>\r\n          <center></center>\r\n\t  <center><b>Output of Example Program</b></center>\n<p>\r\n    </p>",
       "text_content": "The program draws loads a picture from the file lighthouse.jpg \r\n          and proceeds to tile the entire run window with copies of the \r\n\t  picture.\r\n\r\n          \r\n\t  Output of Example Program\r\n    ",
-      "mdown_content": "The program draws loads a picture from the file *lighthouse.jpg* and proceeds to tile the entire run window with copies of the picture.\n**Output of Example Program**"
+      "mdown_content": "The program draws loads a picture from the file _lighthouse.jpg_ and proceeds to tile the entire run window with copies of the picture.\n"
     },
     {
       "title": "Execute",

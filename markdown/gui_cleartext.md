@@ -2,12 +2,12 @@
 #GUI.ClearText
 
 ##Syntax
-**GUI.ClearText** (*widgetID* : **int**)
+**GUI.ClearText** (_widgetID_ : **int**)
 
 
 
 ##Description
-Clears all the text in a text box specified by *widgetID*. The *widgetID* parameter must be the widget id of a text box.
+Clears all the text in a text box specified by _widgetID_. The _widgetID_ parameter must be the widget id of a text box.
 
 
 

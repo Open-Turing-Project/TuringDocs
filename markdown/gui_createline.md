@@ -2,17 +2,17 @@
 #GUI.CreateLine
 
 ##Syntax
-**GUI.CreateLine** (*x1*, *y1*, *x2*, *y2*, *kind* : **int**) : **int**
+**GUI.CreateLine** (_x1_, _y1_, _x2_, _y2_, _kind_ : **int**) : **int**
 
 
 
 ##Description
 Creates a line and returns the line's widget ID.
 Lines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements. 
-**Three Types of Lines**
+
 Lines are passive widgets, meaning that they do not respond to button clicks or keystrokes.
-The *x1* and *y1* parameters specify one end-point of the line and the *x2* and *y2* parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The *kind* parameter specifies the type of line. This is one of 0, *GUI.LINE*, *GUI.INDENT* or *GUI.EXDENT*. A *kind* of 0 is the default and is the same as *GUI.LINE*. 
-*GUI.INDENT* and *GUI.EXDENT* only display properly if the background colour has been set to *gray* using **GUI.SetBackgroundColor**. *GUI.INDENT* makes the line appear indented or recessed. *GUI.EXDENT* makes the line appear to stand out from the window.
+The _x1_ and _y1_ parameters specify one end-point of the line and the _x2_ and _y2_ parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The _kind_ parameter specifies the type of line. This is one of 0, _GUI.LINE_, _GUI.INDENT_ or _GUI.EXDENT_. A _kind_ of 0 is the default and is the same as _GUI.LINE_. 
+_GUI.INDENT_ and _GUI.EXDENT_ only display properly if the background colour has been set to _gray_ using **GUI.SetBackgroundColor**. _GUI.INDENT_ makes the line appear indented or recessed. _GUI.EXDENT_ makes the line appear to stand out from the window.
 
 ![Doc image](gui_createline01.gif)
 
@@ -38,14 +38,16 @@ The following program draws three lines with three labels in the window.
         exdentLabel := GUI.CreateLabelFull (150, 15, "Exdent", 0, 0, 
             GUI.CENTER + GUI.TOP, 0)
 ##Details
-When **GUI.CreateLine*** *is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. 
+When **GUI.CreateLine**_ _is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 A line widget is a passive widget and cannot be enabled or disabled.
 
 
 
 ##Details
-The following GUI subprograms can be called with a line as the *widgetID* parameter:
- **GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**
+The following GUI subprograms can be called with a line as the _widgetID_ parameter:
+
+
+
 
 
 

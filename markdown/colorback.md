@@ -2,7 +2,7 @@
 #colorback
 
 ##Syntax
-**colorback** (*Color* :* ***int**)
+**colorback** (_Color_ :_ _**int**)
 
 
 
@@ -48,7 +48,7 @@ This program displays the letter 'X' in 16 different colors on 16 different back
         end for
 ##Details
 See **maxcolor** for the number of background colors available . The color in which text appears can be set using the **color** procedure.
-The screen must be in a "*graphics*" mode to use the **color** procedure. See **setscreen** for details.
+The screen must be in a "_graphics_" mode to use the **color** procedure. See **setscreen** for details.
 
 
 

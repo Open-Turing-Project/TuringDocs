@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ClearText</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.ClearText (widgetID : int)\r\n",
-      "mdown_content": "**GUI.ClearText** (*widgetID* : **int**)"
+      "mdown_content": "**GUI.ClearText** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Clears all the text in a text box specified by <i>widgetID</i>. The <i>widgetID</i> parameter must be the widget id of a text box.<p>\r\n</p>",
       "text_content": " Clears all the text in a text box specified by widgetID. The widgetID parameter must be the widget id of a text box.\r\n",
-      "mdown_content": "Clears all the text in a text box specified by *widgetID*. The *widgetID* parameter must be the widget id of a text box."
+      "mdown_content": "Clears all the text in a text box specified by _widgetID_. The _widgetID_ parameter must be the widget id of a text box."
     },
     {
       "title": "Example",

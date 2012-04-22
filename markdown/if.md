@@ -2,14 +2,22 @@
 #if
 
 ##Syntax
-An *ifStatement* is:
- **if** *trueFalseExpn* **then**  *statementsAndDeclarations* { **elsif** *trueFalseExpn* **then**  *statementsAndDeclarations* } [ **else**  *statementsAndDeclarations* ] **end** **if**
+An _ifStatement_ is:
+
+**if** _trueFalseExpn_ **then**
+_statementsAndDeclarations_
+{ **elsif** _trueFalseExpn_ **then**
+_statementsAndDeclarations_ }
+[ **else**
+_statementsAndDeclarations_ ]
+**end** **if**
+
 
 
 
 ##Description
 An **if** statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond **end** **if**.
-The expressions (the *trueFalseExpressions*) following the keyword **if** and each **elsif** are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding **then** are executed. If none of these expressions evaluates to true, the statements following **else** are executed. If no **else** is present and none of the expressions are true, no statements are executed and execution continues following the **end** **if**.
+The expressions (the _trueFalseExpressions_) following the keyword **if** and each **elsif** are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding **then** are executed. If none of these expressions evaluates to true, the statements following **else** are executed. If no **else** is present and none of the expressions are true, no statements are executed and execution continues following the **end** **if**.
 
 
 
@@ -38,21 +46,21 @@ Output A, B, C, D or F depending on mark.
             put "F"
         end if
 ##Example
-If *x *is negative, change its sign.
+If _x _is negative, change its sign.
 
 
         if x < 0 then
             x := - x
         end if
 ##Example
-If *x *is less than zero or greater than maxx, put a message.
+If _x _is less than zero or greater than maxx, put a message.
 
 
         if x < 0  or x > maxx then
             put "Out of bounds!"
         end if
 ##Example
-If the boolean *flag* is true and *name* is stop, put a message and return.
+If the boolean _flag_ is true and _name_ is &#147;stop&#148;, put a message and return.
 
 
         if flag  and name = "stop" then

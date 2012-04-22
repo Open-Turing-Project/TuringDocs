@@ -2,15 +2,15 @@
 #buttonmoved
 
 ##Syntax
-**buttonmoved** (*motion* : **string**) : **boolean**
+**buttonmoved** (_motion_ : **string**) : **boolean**
 
 
 
 ##Description
 The **buttonmoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).
-The parameter *motion* must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonmoved** returns **true**. If the event is not in the queue, then **buttonmoved** returns **false**.
-In "*single-button mode*" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "*multi-button mode*", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonmoved** returns **true**. If the event is not in the queue, then **buttonmoved** returns **false**.
+In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
 
 
 
@@ -60,7 +60,7 @@ This is an example demonstrating how to check for both character and mouse input
 
 
 ##See also
-**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "*single-button mode*" and "*multi-button mode*".
+**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "_single-button mode_" and "_multi-button mode_".
 See also predefined unit **[mousemodule.html](Mouse)**.
 
 

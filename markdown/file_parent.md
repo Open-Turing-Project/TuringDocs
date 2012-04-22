@@ -2,7 +2,7 @@
 #File.Parent
 
 ##Syntax
-**File.Parent** (*pathName* : **string**) : **string**
+**File.Parent** (_pathName_ : **string**) : **string**
 
 
 
@@ -25,6 +25,7 @@ This program obtains a path from the user and then lists all the parent director
         end loop
 ##Details
 Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.
+
 
 
 

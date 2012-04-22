@@ -25,6 +25,6 @@ A **boolean** (true/false) variable can be either **true** or **false** (see **b
             put "You passed all ten subjects"
         end if
 ##Details
-The line **if** *passed*=**true** **then** can be simplified to **if** *passed ***then** with no change to the meaning of the program.
+The line **if** _passed_=**true** **then** can be simplified to **if** _passed _**then** with no change to the meaning of the program.
 
 

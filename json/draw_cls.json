@@ -18,7 +18,7 @@
       "title": "Details",
       "raw_content": "The <b>Draw.Cls</b> procedure sets all pixels in the output window to color 0. In this way it differs from the <b>cls</b> and <b>Text.Cls</b> procedures which set the screen to the text background color.<p>\r\nThe screen must be in \"<i>graphics</i>\" mode. See <b>View.Set</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " The Draw.Cls procedure sets all pixels in the output window to color 0. In this way it differs from the cls and Text.Cls procedures which set the screen to the text background color.\r\nThe screen must be in \"graphics\" mode. See View.Set for details.\r\n",
-      "mdown_content": "The **Draw.Cls** procedure sets all pixels in the output window to color 0. In this way it differs from the **cls** and **Text.Cls** procedures which set the screen to the text background color.\nThe screen must be in \"*graphics*\" mode. See **View.Set** for details."
+      "mdown_content": "The **Draw.Cls** procedure sets all pixels in the output window to color 0. In this way it differs from the **cls** and **Text.Cls** procedures which set the screen to the text background color.\nThe screen must be in \"_graphics_\" mode. See **View.Set** for details."
     },
     {
       "title": "Status",

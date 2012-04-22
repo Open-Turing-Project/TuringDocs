@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>program</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A program is:\r\n statementsAndDeclarations",
-      "mdown_content": "A *program* is:\n *statementsAndDeclarations*"
+      "mdown_content": "A _program_ is:\n\n_statementsAndDeclarations_\n"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This is a complete Turing program. It outputs <i>Alan M. Turing</i>.<p>\r\n</p>",
       "text_content": " This is a complete Turing program. It outputs Alan M. Turing.\r\n\r\n",
-      "mdown_content": "This is a complete Turing program. It outputs *Alan M. Turing*."
+      "mdown_content": "This is a complete Turing program. It outputs _Alan M. Turing_."
     },
     {
       "title": "Example",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "This is a complete Turing program. It outputs <i>Hello </i>once and <i>Goodbye</i> twice.<p>\r\n</p>",
       "text_content": " This is a complete Turing program. It outputs Hello once and Goodbye twice.\r\n\r\n",
-      "mdown_content": "This is a complete Turing program. It outputs *Hello *once and *Goodbye* twice."
+      "mdown_content": "This is a complete Turing program. It outputs _Hello _once and _Goodbye_ twice."
     },
     {
       "title": "Details",

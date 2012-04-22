@@ -2,15 +2,15 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreateRadioButton</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong>
-<strong>GUI.CreateRadioButtonFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,<em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>alignment</em> : <strong>int</strong>, <em>shortCut</em> : <strong>char</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreateRadioButton</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,    <em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong>
+<strong>GUI.CreateRadioButtonFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,    <em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>alignment</em> : <strong>int</strong>, <em>shortCut</em> : <strong>char</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a radio button and returns the radio button's widget ID.
-A slider is a widget that allows the user to select one of a set of values. It has a real-life equivalent in the old car stereos where a single station is selected at a time. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected.
-<strong>Six Radio Buttons in Two Groups</strong>
-A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <em>joinID</em> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <em>joinID</em> parameter.
+A slider is a widget that allows the user to select one of a set of values. It has a real-life equivalent in the old car stereos where a single station is selected at a time. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected.</p>
+
+<p>A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <em>joinID</em> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <em>joinID</em> parameter.
 The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the radio button (unless <em>alignment</em> is set to <em>GUI.RIGHT</em>, in which case they specify the lower-right corner of the radio button). If these are both 1 and <em>joinID</em> is not zero, then the button will be placed directly below the previous radio button in the group. The <em>text</em> parameter specifies the text (or label) beside the radio button. The <em>joinID</em> parameter specifies a member of the radio group that this widget should join. A <em>joinID</em> of 0 sepecifies this radio button is not a member of any group. The <em>actionProc</em> parameter is the name of a procedure that is called when the radio button is selected. In <strong>GUI.CreateRadioButton</strong>, the radio button's text is always to the right of the actual radio button. In <strong>GUI.CreateRadioButtonFull</strong>, the text can be set to the right or left of the radio button with the <em>alignment</em> parameter.
 For <strong>GUI.CreateRadioButtonFull</strong>, the <em>alignment</em> parameter specifies the position of the radio button in relation to the text as well as the meaning of the <em>x</em> and <em>y</em> parameters. The <em>alignment</em> parameter is one of 0, <em>GUI.LEFT</em>, or <em>GUI.RIGHT</em>. An <em>alignment</em> of 0 is the default and is the same as <em>GUI.LEFT</em>. <em>GUI.LEFT</em> means the actual box in the check box appears to the left of the check box's label and (<em>x</em>, <em>y</em>) specify the lower-left corner. An <em>alignment</em> of <em>GUI.RIGHT</em> means that the actual box appears to the right of the radio button's label and (<em>x</em>, <em>y</em>) specify the lower-right corner of the radio button. The <em>shortcut </em>parameter is the keystroke to be used as the button's shortcut.
 A radio button's size is not specified during creation. It is determined based on the size of the text. Instead the user specifies the lower-left corner of the radio button (or the lower-right if the radio button is right justified).</p>
@@ -66,8 +66,7 @@ When a radio button is not enabled, the radio button is grayed out and the radio
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a radio button as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Enable</strong>, <strong>GUI.Disable</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.GetX</strong>,<strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>, <strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong>, <strong>GUI.SetLabel</strong>, <strong>GUI.SelectRadio</strong></p>
+<p>The following GUI subprograms can be called with a radio button as the <em>widgetID</em> parameter:</p>
 
 <h2>Status</h2>
 

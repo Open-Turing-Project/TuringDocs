@@ -2,12 +2,12 @@
 #Math.Distance
 
 ##Syntax
-**Math.Distance** (*x1*, *y1*, *x2*, *y2* : **real**) : **real**
+**Math.Distance** (_x1_, _y1_, _x2_, _y2_ : **real**) : **real**
 
 
 
 ##Description
-**Math.Distance **is used to calculate the distance between two points.(*x1*, *y1*) is the location of the first point, and (*x2*, *y2*) is the location of the second point.
+**Math.Distance **is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point.
 
 
 

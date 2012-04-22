@@ -2,15 +2,15 @@
 #Mouse.ButtonMoved
 
 ##Syntax
-**Mouse.ButtonMoved** (*motion* : **string**) : **boolean**
+**Mouse.ButtonMoved** (_motion_ : **string**) : **boolean**
 
 
 
 ##Description
 The **Mouse.ButtonMoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).
-The parameter *motion* must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonMoved** returns **true**. If the event is not in the queue, then **Mouse.ButtonMoved** returns **false**.
-In "*single-button mode*" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "*multi-button mode*", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonMoved** returns **true**. If the event is not in the queue, then **Mouse.ButtonMoved** returns **false**.
+In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
 
 
 
@@ -67,6 +67,6 @@ This means that you can only call the function by calling **Mouse.ButtonMoved**,
 
 
 ##See also
-**[](Mouse.ButtonMoved)** to get mouse events saved in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between "*single-button mode*" and "*multi-button mode*".
+**[](Mouse.ButtonMoved)** to get mouse events saved in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between "_single-button mode_" and "_multi-button mode_".
 
 

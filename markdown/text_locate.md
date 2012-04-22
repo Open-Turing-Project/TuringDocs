@@ -2,7 +2,7 @@
 #Text.Locate
 
 ##Syntax
-**Text.Locate** ( *row*, *column* : **int** )
+**Text.Locate** ( _row_, _column_ : **int** )
 
 
 
@@ -12,7 +12,7 @@ The **Text.Locate** procedure is used to** **move the cursor so that the next ou
 
 
 ##Example
-This program outputs stars of random colors to random locations on the screen. The variable *colr *is purposely spelled differently from the word *color *to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.
+This program outputs stars of random colors to random locations on the screen. The variable _colr _is purposely spelled differently from the word _color _to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.
 
 
         View.Set ("screen")
@@ -27,7 +27,7 @@ This program outputs stars of random colors to random locations on the screen. T
         end loop
 ##Details
 The **Text.Locate** procedure is used to locate the next output based on row and column positions. See also the **Text.LocateXY **procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.
-The screen should be in a "*screen*"* *or "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to"*screen*" mode.
+The screen should be in a "_screen_"_ _or "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to"_screen_" mode.
 
 
 

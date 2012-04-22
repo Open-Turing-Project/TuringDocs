@@ -2,12 +2,12 @@
 #drawfill
 
 ##Syntax
-**drawfill** (*x*, *y* : **int**, *fillColor*, *borderColor* : **int**)
+**drawfill** (_x_, _y_ : **int**, _fillColor_, _borderColor_ : **int**)
 
 
 
 ##Description
-The **drawfill** procedure is used to color in a figure that is on the screen. Starting at (*x*, *y*), the figure is filled with *fillColor* to a surrounding border whose color is *borderColor*.
+The **drawfill** procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_.
 
 ![Doc image](drawfill01.gif)
 
@@ -22,13 +22,13 @@ This program draws an oval with x and y radius of 10 in the center of the screen
         drawoval (midx, midy, 10, 10, 1)
         drawfill (midx, midy, 2, 1)
 ##Details
-The meaning of the *Color* number depends on the current palette; see the **palette** statement.
-The screen should be in a "*graphics*" mode. See the **setscreen** procedure for details. If the screen is not in a "*graphics*" mode, it will automatically be set to "*graphics*" mode.
-Warning: In Turing for IBM PC compatibles, **drawfill** fails to completely fill in some complicated figures that contain "islands" within them surrounded by the *borderColor*.
+The meaning of the _Color_ number depends on the current palette; see the **palette** statement.
+The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
+Warning: In Turing for IBM PC compatibles, **drawfill** fails to completely fill in some complicated figures that contain "islands" within them surrounded by the _borderColor_.
 
 
 
 ##See also
-**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures. 
+**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. 
 
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Scale</b> (<i>picID</i>, <i>newWidth</i>, <i>newHeight</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Scale (picID, newWidth, newHeight : int) : int\r\n    ",
-      "mdown_content": "**Pic.Scale** (*picID*, *newWidth*, *newHeight* : **int**) : **int**"
+      "mdown_content": "**Pic.Scale** (_picID_, _newWidth_, _newHeight_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Scale </b>is used to create a new picture by scaling (resizing) \r\n\t  an already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.<p>\r\n\t  The <i>newWidth</i> and <i>newHeight</i> parameters are the desired \r\n\t  width and height of the new picture. The <i>newWidth</i> and \r\n\t  <i>newHeight</i> parameters may be negative, in which case \r\n\t  the picture is mirror image (<i>newWidth</i> is negative) or \r\n\t  upside-down (<i>newHeight</i> is negative) and the absolute \r\n\t  values are used for the new width and height values.</p>\n<p>\r\n    </p>",
       "text_content": "Pic.Scale is used to create a new picture by scaling (resizing) \r\n\t  an already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.\r\n\t  The newWidth and newHeight parameters are the desired \r\n\t  width and height of the new picture. The newWidth and \r\n\t  newHeight parameters may be negative, in which case \r\n\t  the picture is mirror image (newWidth is negative) or \r\n\t  upside-down (newHeight is negative) and the absolute \r\n\t  values are used for the new width and height values.\r\n    ",
-      "mdown_content": "**Pic.Scale **is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.\nThe *newWidth* and *newHeight* parameters are the desired width and height of the new picture. The *newWidth* and *newHeight* parameters may be negative, in which case the picture is mirror image (*newWidth* is negative) or upside-down (*newHeight* is negative) and the absolute values are used for the new width and height values."
+      "mdown_content": "**Pic.Scale **is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.\nThe _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values."
     },
     {
       "title": "Details",
@@ -48,7 +48,7 @@
       ],
       "raw_content": "This program draws a set of stars scaled at 50%, 100% and 150% on \r\n          different axes. Note how some single-pixel lines are removed when \r\n\t  the picture is scaled down..<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from Program</b></center>\n<p>\r\n    </p>",
       "text_content": "This program draws a set of stars scaled at 50%, 100% and 150% on \r\n          different axes. Note how some single-pixel lines are removed when \r\n\t  the picture is scaled down..\r\n\r\n\t  \r\n\t  Output from Program\r\n    ",
-      "mdown_content": "This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..\n**Output from Program**"
+      "mdown_content": "This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..\n"
     },
     {
       "title": "Execute",

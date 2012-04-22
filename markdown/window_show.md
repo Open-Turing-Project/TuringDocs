@@ -2,7 +2,7 @@
 #Window.Show
 
 ##Syntax
-**Window.Show** (*windowID* : **int**)
+**Window.Show** (_windowID_ : **int**)
 
 
 

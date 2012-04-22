@@ -2,12 +2,12 @@
 #sysclock
 
 ##Syntax
-**sysclock** ( **var** *c* : **int** )
+**sysclock** ( **var** _c_ : **int** )
 
 
 
 ##Description
-The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable *c *is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**.
+The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable _c _is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**.
 
 
 

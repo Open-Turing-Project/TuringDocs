@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>not</b> (<i>boolean negation</i>) operator produces the opposite of a true/false value. For example, <b>not</b> (<i>x </i>&gt;<i>y</i>) is equivalent to <i>x</i> &lt;= <i>y</i>.<p>\r\n</p>",
       "text_content": " The not (boolean negation) operator produces the opposite of a true/false value. For example, not (x >y) is equivalent to x <= y.\r\n",
-      "mdown_content": "The **not** (*boolean negation*) operator produces the opposite of a true/false value. For example, **not** (*x *>*y*) is equivalent to *x* <= *y*."
+      "mdown_content": "The **not** (_boolean negation_) operator produces the opposite of a true/false value. For example, **not** (_x _>_y_) is equivalent to _x_ <= _y_."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The <b>not</b> operator takes <b>true</b> and produces <b>false</b> and takes <b>false</b> and produces <b>true</b>. The <b>not</b> operator can be written as ~. See also the <b>boolean</b> type, <i>prefix operators</i>, and <i>precedence </i>of operators.<p>\r\nThe <b>not</b> operator can be applied to sets.</p>\n<p>\r\n</p>",
       "text_content": " The not operator takes true and produces false and takes false and produces true. The not operator can be written as ~. See also the boolean type, prefix operators, and precedence of operators.\r\nThe not operator can be applied to sets.\r\n",
-      "mdown_content": "The **not** operator takes **true** and produces **false** and takes **false** and produces **true**. The **not** operator can be written as ~. See also the **boolean** type, *prefix operators*, and *precedence *of operators.\nThe **not** operator can be applied to sets."
+      "mdown_content": "The **not** operator takes **true** and produces **false** and takes **false** and produces **true**. The **not** operator can be written as ~. See also the **boolean** type, _prefix operators_, and _precedence _of operators.\nThe **not** operator can be applied to sets."
     }
   ],
   "dependencies": [

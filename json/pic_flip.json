@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Flip</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Flip (picID : int) : int\r\n    ",
-      "mdown_content": "**Pic.Flip** (*picID* : **int**) : **int**"
+      "mdown_content": "**Pic.Flip** (_picID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Flip</b> is used to create a new picture by flipping the \r\n          picture vertically. The resulting picture is exactly the same size \r\n\t  as the original, except it appears &#147;upside-down&#148;. <p>\r\n    </p>",
       "text_content": "Pic.Flip is used to create a new picture by flipping the \r\n          picture vertically. The resulting picture is exactly the same size \r\n\t  as the original, except it appears upside-down. \r\n    ",
-      "mdown_content": "**Pic.Flip** is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears upside-down. "
+      "mdown_content": "**Pic.Flip** is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears &#147;upside-down&#148;. "
     },
     {
       "title": "Details",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "The program loads a picture from a file, flips it and then draws \r\n          the original and the upside-down image side by side in a window \r\n\t  after resizing the window to fit the two pictures.<p>\r\n</p>\r\n          <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
       "text_content": "The program loads a picture from a file, flips it and then draws \r\n          the original and the upside-down image side by side in a window \r\n\t  after resizing the window to fit the two pictures.\r\n\r\n          \r\n\t  Output from the Program\r\n    ",
-      "mdown_content": "The program loads a picture from a file, flips it and then draws the original and the upside-down image side by side in a window after resizing the window to fit the two pictures.\n**Output from the Program**"
+      "mdown_content": "The program loads a picture from a file, flips it and then draws the original and the upside-down image side by side in a window after resizing the window to fit the two pictures.\n"
     },
     {
       "title": "Execute",

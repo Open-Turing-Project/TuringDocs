@@ -2,7 +2,7 @@
 #Window.Select
 
 ##Syntax
-**Window.Select** (*windowID* : **int**)
+**Window.Select** (_windowID_ : **int**)
 
 
 

@@ -2,12 +2,12 @@
 #File.Delete
 
 ##Syntax
-**File.Delete** (*filePathName* : **string**)
+**File.Delete** (_filePathName_ : **string**)
 
 
 
 ##Description
-**File.Delete** is used to delete the file specified by the parameter *filePathName*. This is the equivalent of doing a **del** in DOS or **rm** in UNIX.
+**File.Delete** is used to delete the file specified by the parameter _filePathName_. This is the equivalent of doing a **del** in DOS or **rm** in UNIX.
 
 
 
@@ -17,7 +17,7 @@ If the **File.Delete** call fails, then **Error.Last** will return a non-zero va
 
 
 ##Example
-This program deletes the file called *information*.
+This program deletes the file called _information_.
 
 
         File.Delete ("information")
@@ -29,6 +29,7 @@ This program deletes the file called *information*.
         end if
 ##Execute
 An example program is available that creates a file in the current directory, and then deletes the file using **File.Delete**.
+
 
 
 

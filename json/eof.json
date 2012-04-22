@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>eof</b> (<i>streamNumber</i> : <b>int</b>) : <b>boolean</b><p></p></font>",
       "text_content": "eof (streamNumber : int) : boolean\r\n    ",
-      "mdown_content": "**eof** (*streamNumber* : **int**) : **boolean**"
+      "mdown_content": "**eof** (_streamNumber_ : **int**) : **boolean**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       "title": "Example",
       "raw_content": "Another example is available that illustrates detecting EOF from\r\n          the keyboard.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,eof2.t;eof from Keyboard Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that illustrates detecting EOF from\r\n          the keyboard.\r\n          \r\n            ",
-      "mdown_content": "Another example is available that illustrates detecting EOF fromthe keyboard."
+      "mdown_content": "Another example is available that illustrates detecting EOF fromthe keyboard.\n"
     }
   ],
   "dependencies": [

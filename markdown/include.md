@@ -2,8 +2,10 @@
 #include
 
 ##Syntax
-An *includeConstruct* is:
- **include** *fileName*
+An _includeConstruct_ is:
+
+**include** _fileName_
+
 
 
 
@@ -13,7 +15,7 @@ An **include** is used to copy parts of  files so that they become part of the T
 
 
 ##Example
-On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called *arrows* contains definitions of these values:
+On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called _arrows_ contains definitions of these values:
 These definitions can be included in any program in the following manner:
 
 

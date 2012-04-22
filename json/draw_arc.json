@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Arc </b>(<i>x</i>, <i>y</i>,<b> </b><i>xRadius</i>, <i>yRadius</i><b> :</b> <b>int</b>, <br></font>\r\n          <table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td width=\"40\">&nbsp;</td>\r\n              <td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\r\n            </tr></table>\n<p>\r\n    </p>",
       "text_content": "Draw.Arc (x, y, xRadius, yRadius : int, \r\n           \r\n               \r\n              initialAngle, finalAngle, Color : int)\r\n            \r\n    ",
-      "mdown_content": "**Draw.Arc **(*x*, *y*,** ***xRadius*, *yRadius*** :** **int**,   *initialAngle*, *finalAngle*, *Color* : **int**)"
+      "mdown_content": "**Draw.Arc **(_x_, _y_,** **_xRadius_, _yRadius_** :** **int**, \n_initialAngle_, _finalAngle_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Arc </b>procedure is used to draw an arc whose center is \r\n          at (<i>x</i>, <i>y</i>). This is just like <b>Draw.Oval</b>, except \r\n          that you must also give two angles, <i>initialAngle </i>and \r\n          <i>finalAngle</i>, which determine where to start and stop drawing. \r\n          Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. \r\n          The horizontal and vertical distances from the center to the arc are \r\n          given by <i>xRadius </i>and <i>yRadius</i>.<p>\r\n\t  </p>\n<center></center>",
       "text_content": "The Draw.Arc procedure is used to draw an arc whose center is \r\n          at (x, y). This is just like Draw.Oval, except \r\n          that you must also give two angles, initialAngle and \r\n          finalAngle, which determine where to start and stop drawing. \r\n          Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. \r\n          The horizontal and vertical distances from the center to the arc are \r\n          given by xRadius and yRadius.\r\n\t  \r\n    ",
-      "mdown_content": "The **Draw.Arc **procedure is used to draw an arc whose center is at (*x*, *y*). This is just like **Draw.Oval**, except that you must also give two angles, *initialAngle *and *finalAngle*, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*."
+      "mdown_content": "The **Draw.Arc **procedure is used to draw an arc whose center is at (_x_, _y_). This is just like **Draw.Oval**, except that you must also give two angles, _initialAngle _and _finalAngle_, which determine where to start and stop drawing. Zero degrees is \"three o'clock\", 90 degrees is \"twelve o'clock\", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius _and _yRadius_."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program draws a quarter circle whose center is \r\n          (<i>midx</i>, <i>midy</i>) the center of the screen, using color \r\n          number 1. The <b>maxx</b> and <b>maxy </b>functions are used to \r\n          determine the maximum x and y values on the screen.<p>\r\n</p>",
       "text_content": "This program draws a quarter circle whose center is \r\n          (midx, midy) the center of the screen, using color \r\n          number 1. The maxx and maxy functions are used to \r\n          determine the maximum x and y values on the screen.\r\n\r\n    ",
-      "mdown_content": "This program draws a quarter circle whose center is (*midx*, *midy*) the center of the screen, using color number 1. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen."
+      "mdown_content": "This program draws a quarter circle whose center is (_midx_, _midy_) the center of the screen, using color number 1. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen."
     },
     {
       "title": "Execute",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur<p>\r\n    </p>",
       "text_content": "The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur\r\n    ",
-      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur"
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur"
     },
     {
       "title": "Status",

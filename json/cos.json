@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>cos</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
       "text_content": " cos (r : real) : real\r\n",
-      "mdown_content": "**cos** (*r* : **real**) : **real**"
+      "mdown_content": "**cos** (_r_ : **real**) : **real**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the cosine of <font face=\"symbol\">p</font>/6, 2<font face=\"symbol\">p</font>/6, 3<font face=\"symbol\">p</font>/6, up to 12<font face=\"symbol\">p</font>/6 radians.<p>\r\n</p>",
       "text_content": " This program prints out the cosine of p/6, 2p/6, 3p/6, up to 12p/6 radians.\r\n\r\n",
-      "mdown_content": "This program prints out the cosine of p/6, 2p/6, 3p/6, up to 12p/6 radians."
+      "mdown_content": "This program prints out the cosine of pppp/6 radians."
     },
     {
       "title": "Execute",

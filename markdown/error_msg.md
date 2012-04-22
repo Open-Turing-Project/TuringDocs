@@ -2,17 +2,17 @@
 #Error.Msg
 
 ##Syntax
-**Error.Msg** (*errorCode* : **int**): **string**
+**Error.Msg** (_errorCode_ : **int**): **string**
 
 
 
 ##Description
-**Error.Msg** is a function that returns the error message related to a specified error code. If the error code is *eNoError*, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.
+**Error.Msg** is a function that returns the error message related to a specified error code. If the error code is _eNoError_, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.
 
 
 
 ##Example
-This program prints out the error message associated with *eFsysFileNotFound* (File not found).
+This program prints out the error message associated with _eFsysFileNotFound_ (&#147;File not found&#148;).
 
 
         put Error.Msg (eFsysFileNotFound)

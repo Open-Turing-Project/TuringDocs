@@ -2,7 +2,7 @@
 #arccosd
 
 ##Syntax
-**arccosd** (*r* : **real**) : **real**
+**arccosd** (_r_ : **real**) : **real**
 
 
 

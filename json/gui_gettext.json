@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetText</b> (<i>widgetID</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " GUI.GetText (widgetID : int) : string\r\n",
-      "mdown_content": "**GUI.GetText** (*widgetID* : **int**) : **string**"
+      "mdown_content": "**GUI.GetText** (_widgetID_ : **int**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the current text of a text field specified by <i>widgetID</i>. The <i>widgetID </i>must specify a text field widget.<p>\r\n</p>",
       "text_content": " Returns the current text of a text field specified by widgetID. The widgetID must specify a text field widget.\r\n",
-      "mdown_content": "Returns the current text of a text field specified by *widgetID*. The *widgetID *must specify a text field widget."
+      "mdown_content": "Returns the current text of a text field specified by _widgetID_. The _widgetID _must specify a text field widget."
     },
     {
       "title": "Example",

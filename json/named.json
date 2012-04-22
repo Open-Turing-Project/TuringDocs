@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>namedType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>typeId</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>moduleId</i> . <i>typeId</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A namedType is one of:\r\n (a)typeId (b)moduleId . typeId",
-      "mdown_content": "A *namedType* is one of:\n (a)*typeId* (b)*moduleId* . *typeId*"
+      "mdown_content": "A _namedType_ is one of:\n\n(a)_typeId_\n(b)_moduleId_ . _typeId_\n"
     },
     {
       "title": "Description",
       "raw_content": "A type can be given a name (<i>typeId</i>) and later this name can be used instead of writing out the type.<p>\r\n</p>",
       "text_content": " A type can be given a name (typeId) and later this name can be used instead of writing out the type.\r\n",
-      "mdown_content": "A type can be given a name (*typeId*) and later this name can be used instead of writing out the type."
+      "mdown_content": "A type can be given a name (_typeId_) and later this name can be used instead of writing out the type."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "In this example, <i>phoneRecord</i> is a named type.<p>\r\n</p>",
       "text_content": " In this example, phoneRecord is a named type.\r\n\r\n",
-      "mdown_content": "In this example, *phoneRecord* is a named type."
+      "mdown_content": "In this example, _phoneRecord_ is a named type."
     },
     {
       "title": "Details",

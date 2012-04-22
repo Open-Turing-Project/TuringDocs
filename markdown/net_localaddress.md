@@ -7,7 +7,7 @@
 
 
 ##Description
-Returns** **the TCP/IP numeric address of the machine the program is running on. The numeric address is of the form *xxx*.*yyy*.*zzz*.*www* where each segment is a number from 0 to 255.
+Returns** **the TCP/IP numeric address of the machine the program is running on. The numeric address is of the form _xxx_._yyy_._zzz_._www_ where each segment is a number from 0 to 255.
 
 
 

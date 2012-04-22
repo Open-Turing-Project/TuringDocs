@@ -8,7 +8,7 @@
 
 ##Description
 This procedure causes **GUI.ProcessEvent** to return **true**. If the program is structured properly with a
-at the end of the program, then the program will exit the loop after finishing the current *action procedure*. This procedure is usually called from the *action procedure* of a Quit button or Exit menu item. 
+at the end of the program, then the program will exit the loop after finishing the current _action procedure_. This procedure is usually called from the _action procedure_ of a Quit button or Exit menu item. 
 
 
         loop

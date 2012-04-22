@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.CloseConnection</b> (<i>netStream</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Net.CloseConnection (netStream : int)\r\n",
-      "mdown_content": "**Net.CloseConnection** (*netStream* : **int**)"
+      "mdown_content": "**Net.CloseConnection** (_netStream_ : **int**)"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "The following program fragment connects to port 5300 on the machine specified by <i>netAddress</i>, sends the work OK to it and closes the connection.<p>\r\n</p>",
       "text_content": " The following program fragment connects to port 5300 on the machine specified by netAddress, sends the work OK to it and closes the connection.\r\n\r\n",
-      "mdown_content": "The following program fragment connects to port 5300 on the machine specified by *netAddress*, sends the work OK to it and closes the connection."
+      "mdown_content": "The following program fragment connects to port 5300 on the machine specified by _netAddress_, sends the work OK to it and closes the connection."
     },
     {
       "title": "Status",

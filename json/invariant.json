@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>invariantAssertion</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>invariant</b> <i>trueFalseExpn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An invariantAssertion is:\r\n invariant trueFalseExpn",
-      "mdown_content": "An *invariantAssertion* is:\n **invariant** *trueFalseExpn*"
+      "mdown_content": "An _invariantAssertion_ is:\n\n**invariant** _trueFalseExpn_\n"
     },
     {
       "title": "Description",
       "raw_content": "An <b>invariant</b> assertion is a special form of an <b>assert</b> statement that is used only in <b>loop</b> and <b>for</b> statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b>, <b>loop</b> and <b>for</b> statements and the <b>module</b> declarations for more details.<p>\r\n</p>",
       "text_content": " An invariant assertion is a special form of an assert statement that is used only in loop and for statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the trueFalseExpn. The trueFalseExpn is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See assert, loop and for statements and the module declarations for more details.\r\n",
-      "mdown_content": "An **invariant** assertion is a special form of an **assert** statement that is used only in **loop** and **for** statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the *trueFalseExpn*. The *trueFalseExpn *is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert**, **loop** and **for** statements and the **module** declarations for more details."
+      "mdown_content": "An **invariant** assertion is a special form of an **assert** statement that is used only in **loop** and **for** statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the _trueFalseExpn_. The _trueFalseExpn _is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert**, **loop** and **for** statements and the **module** declarations for more details."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program uses an invariant in a <b>for</b> loop. The invariant uses the function <i>nameInList </i>to specify that a key has not yet been found in an array of names.<p>\r\n</p>",
       "text_content": " This program uses an invariant in a for loop. The invariant uses the function nameInList to specify that a key has not yet been found in an array of names.\r\n\r\n",
-      "mdown_content": "This program uses an invariant in a **for** loop. The invariant uses the function *nameInList *to specify that a key has not yet been found in an array of names."
+      "mdown_content": "This program uses an invariant in a **for** loop. The invariant uses the function _nameInList _to specify that a key has not yet been found in an array of names."
     }
   ],
   "dependencies": [

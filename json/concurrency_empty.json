@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>empty</b> (<i>variableReference</i>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " empty (variableReference) : boolean\r\n",
-      "mdown_content": "**empty** (*variableReference*) : **boolean**"
+      "mdown_content": "**empty** (_variableReference_) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>empty</b> function is used in a concurrent program.  It returns <b>true</b> if the <i>variableReference</i>, which must be a condition variable, has no processes waiting for it.  Processes join the queue of a condition variable by executing the <b>wait</b> statement, and are awakened by the <b>signal</b> statement.<p>\r\n</p>",
       "text_content": " The empty function is used in a concurrent program.  It returns true if the variableReference, which must be a condition variable, has no processes waiting for it.  Processes join the queue of a condition variable by executing the wait statement, and are awakened by the signal statement.\r\n",
-      "mdown_content": "The **empty** function is used in a concurrent program.  It returns **true** if the *variableReference*, which must be a condition variable, has no processes waiting for it.  Processes join the queue of a condition variable by executing the **wait** statement, and are awakened by the **signal** statement."
+      "mdown_content": "The **empty** function is used in a concurrent program.  It returns **true** if the _variableReference_, which must be a condition variable, has no processes waiting for it.  Processes join the queue of a condition variable by executing the **wait** statement, and are awakened by the **signal** statement."
     },
     {
       "title": "Status",

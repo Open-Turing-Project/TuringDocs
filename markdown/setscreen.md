@@ -2,7 +2,7 @@
 #setscreen
 
 ##Syntax
-**setscreen** ( *s* : **string** )
+**setscreen** ( _s_ : **string** )
 
 
 
@@ -25,14 +25,14 @@ There are two screen modes, **text** and **graphics**. In **text** mode, output 
 In **graphics** mode, a program can use both **put** and **get**, **locate** and graphics commands to send output to the window. However, any output that scrolls off the window is lost. Printing the window outputs the current contents of the window. Saving a **graphics** output window saves the current contents of the window as a BMP file.
 Where the options to **setscreen** are mutually exclusive, they are listed here with the default underlined. Here are the options:
 "**graphics**", "**text**",  Sets the mode of the window to the given mode. A size can for the window can be specified at the same time. If the window mode or size changes, then the window will be cleared.
-To specify the size of a window in **graphics** mode, the **graphics** can have a modifier in the form "graphics:<*width*>;<*height*>". This sets the window to be <*width*> pixels by <*height*> pixels in size. The maximum size of a window is the size of the screen.
-To specify the size of a window in **text** mode, the **text** can have a modifier in the form "text:<*rows*>;<*columns*>". This sets the window to be <*rows*> text lines in height by <*columns*> characters in width. The maximum size of a window is the size of the screen.
-To set a window to the maximum size available on the screen, you can use "max" for the <*width*>, <*height*>, <*rows*> or <*columns*> parameters.
-"**cursor**", "**nocursor**"  Causes the cursor to be shown (or hidden). The cursor only appears when the program is waiting for keyboard input from the user.
-"**echo**", "**noecho**"  Causes (or suppresses) echoing of characters that are typed. Echoing is commonly turned off in interactive programs to keep typed characters from being echoed at inappropriate places on the screen.
-"**nooffscreenonly**", "**offscreenonly**"  Causes or (suppresses) output from being sent to the visible window. When the **offscreenonly** option is active, any text and graphics output is drawn to the offscreen buffer that is maintained for every Run window but not drawn to the screen. **View.Update** is then used to copy the entire contents of the offscreen buffer to the Run window. By allowing numerous drawing commands to be sent to the offscreen buffer and then updating the window at one time, it is possible to get smoother animation.
-"**msdos**", "**nomsdos**"  Causes the window to use theMS-DOS character set (with line drawing characters) instead of theWindows ANSI character set.  The "**nomsdos**" option causes thewindow to use the Windows ANSI character set.  Note that the "**msdos**" option only works if the Windows font (usually Courier New) supports it.
-"**buttonbar**", "**nobuttonbar**"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.
+To specify the size of a window in **graphics** mode, the **graphics** can have a modifier in the form "graphics:<_width_>;<_height_>". This sets the window to be <_width_> pixels by <_height_> pixels in size. The maximum size of a window is the size of the screen.
+To specify the size of a window in **text** mode, the **text** can have a modifier in the form "text:<_rows_>;<_columns_>". This sets the window to be <_rows_> text lines in height by <_columns_> characters in width. The maximum size of a window is the size of the screen.
+To set a window to the maximum size available on the screen, you can use "max" for the <_width_>, <_height_>, <_rows_> or <_columns_> parameters.
+"****", "**nocursor**"  Causes the cursor to be shown (or hidden). The cursor only appears when the program is waiting for keyboard input from the user.
+"****", "**noecho**"  Causes (or suppresses) echoing of characters that are typed. Echoing is commonly turned off in interactive programs to keep typed characters from being echoed at inappropriate places on the screen.
+"****", "**offscreenonly**"  Causes or (suppresses) output from being sent to the visible window. When the **offscreenonly** option is active, any text and graphics output is drawn to the offscreen buffer that is maintained for every Run window but not drawn to the screen. **View.Update** is then used to copy the entire contents of the offscreen buffer to the Run window. By allowing numerous drawing commands to be sent to the offscreen buffer and then updating the window at one time, it is possible to get smoother animation.
+"**msdos**", "****"  Causes the window to use theMS-DOS character set (with line drawing characters) instead of theWindows ANSI character set.  The "**nomsdos**" option causes thewindow to use the Windows ANSI character set.  Note that the "**msdos**" option only works if the Windows font (usually Courier New) supports it.
+"****", "**nobuttonbar**"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.
 
 
 
@@ -42,6 +42,6 @@ This program creates a graphics window that is 300 pixels by 100 pixels.
 
 
 ##See also
-the **[drawmodule.html](Draw)** module, the **draw** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen.
+the **[drawmodule.html](Draw)** module, the **draw&#133;** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen.
 
 

@@ -2,14 +2,16 @@
 #Pic.Save
 
 ##Syntax
-**Pic.Save** (*picID* : **int**, *fileName* : **string**)
+**Pic.Save** (_picID_ : **int**, _fileName_ : **string**)
 
 
 
 ##Description
 **Pic.Save **is used to save  a picture on the screen to a file.
-The *fileName*parameter must give the format of the file:
- BMP files "BMP:filename" or "filename.BMP"
+The _fileName_parameter must give the format of the file:
+
+
+
 
 
 

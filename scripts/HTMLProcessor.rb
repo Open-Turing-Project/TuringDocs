@@ -12,18 +12,32 @@ require "erb"
 require "json"
 require "fileutils"
 
-def markdownFormat(htmlStr)
+def markdownFormat(htmlStr,allowTable = true)
 	text = htmlStr
 	# normal newlines and indenting mean nothing, it's HTML
 	text = text.lines.map {|l| l.chomp.lstrip}.join
 	# convert supported tags
 	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
-	text.gsub!(/<b>(.*?)<\/b>/,'**\1**')
-	text.gsub!(/<i>(.*?)<\/i>/,'*\1*')
+	text.gsub!(/<img src="(.*?)"\/?>/,'![Doc Image](\1)')
+	text.gsub!(/<b>(.*?)<\/b>/) {|s| $1 == "*" ? "__#{$1}__" : "**#{$1}**"}
+	text.gsub!(/<i>(.*?)<\/i>/) {|s| $1 == "_" ? "*#{$1}*" : "_#{$1}_"}
+	text.gsub!(/<tt>(.*?)<\/tt>/,'`\1`')
 	text.gsub!(/<p>(.*?)<\/p>/,"\n\\1")
-	# remove html with nokogiri
-	doc = Nokogiri::HTML(text)
-	text = doc.content.to_s
+	text.gsub!(/<h([1-6])>(.*?)<\/h[1-6]>/) {|m| ("#"*$1.to_i)+$2+"\n"}
+	text.gsub!(/<li>/,"- ")
+	text.gsub!(/<\/li>/,"\n")
+	if allowTable
+		text.gsub!(/<table.*?>/,"\n")
+		text.gsub!(/<\/tr>/,"\n")
+		text.gsub!(/<td.*?>/," ")
+	end
+	# remove html leftovers
+	text.gsub!(/<\/?(\S+).*?>/,"")
+	text.gsub!(/&nbsp;/," ")
+	text.gsub!(/&gt;/,">")
+	text.gsub!(/&lt;/,"<")
+	text.gsub!(/&amp;/,"&")
+	text.gsub!(/&133;/,"...")
 	# remove random indenting
 	text = text.lines.map {|l| l.chomp.lstrip}.join("\n")
 	text
@@ -123,7 +137,6 @@ def structureToMarkdown(page)
 	$mdownTemplate.result(binding) # gets the page param from the binding
 end
 # puts structureToMarkdown(convFile("html/draw_arc.html"))
-failed, total = 0,0
 Dir["html/*.html"].each do |f|
 	#puts "Processing #{f}"
 	datastruct = convFile(f)
@@ -137,22 +150,23 @@ Dir["html/*.html"].each do |f|
 	normalformat = (datastruct[:htmlcontent] == nil)
 	total += 1
 	# markdown
+	markdown = nil
 	if normalformat
 		markdown = structureToMarkdown(datastruct)
-		File.open("markdown/" + datastruct[:fileName] + ".md", "w") do |oFile| 
-			oFile.puts markdown
-		end
-		# Now format it to html
-		html = entities(RDiscount.new(markdown).to_html)
-		# copy the necessary images
-		images = datastruct[:dependencies].map {|s| "html/#{s}"}
-		FileUtils.cp images, "markdownhtml/"
-		File.open("markdownhtml/" + datastruct[:fileName] + ".html", "w") do |oFile| 
-			oFile.puts html
-		end
 	else
-		puts "No markdown generated for #{f}"
-		failed += 1
+		puts "Special file: #{f} (processing may not work well)"
+		markdown = markdownFormat(datastruct[:htmlcontent],true)
+	end
+	File.open("markdown/" + datastruct[:fileName] + ".md", "w") do |oFile| 
+		oFile.puts markdown
+	end
+	# Now format it to html
+	html = entities(RDiscount.new(markdown).to_html)
+	# copy the necessary images
+	images = datastruct[:dependencies].map {|s| "html/#{s}"}
+	FileUtils.cp images, "markdownhtml/"
+	File.open("markdownhtml/" + datastruct[:fileName] + ".html", "w") do |oFile| 
+		oFile.puts html
 	end
 	# json
 	json = JSON.pretty_generate(datastruct)
@@ -160,4 +174,3 @@ Dir["html/*.html"].each do |f|
 		oFile.puts json
 	end
 end
-puts "Completed. Markdown generation failed for #{failed}/#{total}"

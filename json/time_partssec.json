@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>Time.PartsSec</b> (<i>year</i>, <i>month</i>, <i>day</i>, <i>hour</i>, <i>minute</i>, <i>second</i> : <b>int</b>) : <b>int</b><p>\r\n</p>",
       "text_content": " Time.PartsSec (year, month, day, hour, minute, second : int) : int\r\n",
-      "mdown_content": "**Time.PartsSec** (*year*, *month*, *day*, *hour*, *minute*, *second* : **int**) : **int**"
+      "mdown_content": "**Time.PartsSec** (_year_, _month_, _day_, _hour_, _minute_, _second_ : **int**) : **int**"
     },
     {
       "title": "Description",

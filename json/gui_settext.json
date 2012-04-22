@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetText (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetText** (*widgetID* : **int**, *text* : **string**)"
+      "mdown_content": "**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the text of a text field specified by <i>widgetID</i> to <i>text</i>. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).<p>\r\n</p>",
       "text_content": " Sets the text of a text field specified by widgetID to text. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).\r\n",
-      "mdown_content": "Sets the text of a text field specified by *widgetID* to *text*. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text)."
+      "mdown_content": "Sets the text of a text field specified by _widgetID_ to _text_. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text)."
     },
     {
       "title": "Status",

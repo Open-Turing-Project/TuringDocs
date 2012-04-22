@@ -2,7 +2,7 @@
 #arctand
 
 ##Syntax
-**arctand** (*r* : **real**) : **real**
+**arctand** (_r_ : **real**) : **real**
 
 
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Free</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.Free (spriteID : int)\r\n",
-      "mdown_content": "**Sprite.Free** (*spriteID* : **int**)"
+      "mdown_content": "**Sprite.Free** (_spriteID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the <i>spriteID</i> after the sprite has been freed.<p>\r\n</p>",
       "text_content": " Destroys the sprite and frees up the memory the sprite used. It is an error to use the spriteID after the sprite has been freed.\r\n",
-      "mdown_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the *spriteID* after the sprite has been freed."
+      "mdown_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the _spriteID_ after the sprite has been freed."
     },
     {
       "title": "Example",

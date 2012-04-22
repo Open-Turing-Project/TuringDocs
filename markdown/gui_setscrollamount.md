@@ -2,12 +2,12 @@
 #GUI.SetScrollAmount
 
 ##Syntax
-**GUI.SetScrollAmount** (*widgetID* : **int**,*arrowInc*, *pageInc*, *thumbSize* : **int**)
+**GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)
 
 
 
 ##Description
-Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The *widgetID* specifies the scroll bar to be changed. The *arrowInc* parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The *pageInc* parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The *thumbSize* parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.
+Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The _widgetID_ specifies the scroll bar to be changed. The _arrowInc_ parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The _pageInc_ parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The _thumbSize_ parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.
 
 
 

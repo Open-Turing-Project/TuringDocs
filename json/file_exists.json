@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<b>File.Exists</b> (<i>pathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p>",
       "text_content": " File.Exists (pathName : string) : boolean\r\n",
-      "mdown_content": "**File.Exists** (*pathName* : **string**) : **boolean**"
+      "mdown_content": "**File.Exists** (_pathName_ : **string**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Exists </b>returns <b>true</b> if a file by the name of <i>pathName</i> exists. It will return <b>false</b> if <i>pathName</i> is a directory.<p>\r\n</p>",
       "text_content": " File.Exists returns true if a file by the name of pathName exists. It will return false if pathName is a directory.\r\n",
-      "mdown_content": "**File.Exists **returns **true** if a file by the name of *pathName* exists. It will return **false** if *pathName* is a directory."
+      "mdown_content": "**File.Exists **returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory."
     },
     {
       "title": "Details",
@@ -33,7 +33,7 @@
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, tests for its existence using <b>File.Exists</b> and \r\n        deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Exists.t;File.Exists Example\"></object></p>\n<p></p>",
       "text_content": "An example program is available that creates a file in the current \r\n        directory, tests for its existence using File.Exists and \r\n        deletes the file using File.Delete.\r\n        \r\n          ",
-      "mdown_content": "An example program is available that creates a file in the current directory, tests for its existence using **File.Exists** and deletes the file using **File.Delete**."
+      "mdown_content": "An example program is available that creates a file in the current directory, tests for its existence using **File.Exists** and deletes the file using **File.Delete**.\n"
     },
     {
       "title": "Status",

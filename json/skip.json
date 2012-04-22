@@ -21,7 +21,7 @@
       ],
       "raw_content": "This example, <i>To be</i> is output on one line and <i>Or not to be</i> on the next.<p>\r\n</p>",
       "text_content": " This example, To be is output on one line and Or not to be on the next.\r\n\r\n",
-      "mdown_content": "This example, *To be* is output on one line and *Or not to be* on the next."
+      "mdown_content": "This example, _To be_ is output on one line and _Or not to be_ on the next."
     },
     {
       "title": "Details",

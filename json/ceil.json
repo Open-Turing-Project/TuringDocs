@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ceil</b> (<i>r</i> : <b>real</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " ceil (r : real) : int\r\n",
-      "mdown_content": "**ceil** (*r* : **real**) : **int**"
+      "mdown_content": "**ceil** (_r_ : **real**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the smallest integer greater than or equal to <i>r</i>.<p>\r\n</p>",
       "text_content": " Returns the smallest integer greater than or equal to r.\r\n",
-      "mdown_content": "Returns the smallest integer greater than or equal to *r*."
+      "mdown_content": "Returns the smallest integer greater than or equal to _r_."
     },
     {
       "title": "Details",
       "raw_content": "The <b>ceil</b> (ceiling) function is used to convert a <b>real</b> number to an integer. The result is the smallest integer that is greater than or equal to <i>r</i>. In other words, the <b>ceil</b> function rounds up to the nearest integer. For example, <b>ceil</b> (3) is 3, <b>ceil</b> (2.25) is 3 and <b>ceil</b> (-8.43) is -8.<p>\r\n</p>",
       "text_content": " The ceil (ceiling) function is used to convert a real number to an integer. The result is the smallest integer that is greater than or equal to r. In other words, the ceil function rounds up to the nearest integer. For example, ceil (3) is 3, ceil (2.25) is 3 and ceil (-8.43) is -8.\r\n",
-      "mdown_content": "The **ceil** (ceiling) function is used to convert a **real** number to an integer. The result is the smallest integer that is greater than or equal to *r*. In other words, the **ceil** function rounds up to the nearest integer. For example, **ceil** (3) is 3, **ceil** (2.25) is 3 and **ceil** (-8.43) is -8."
+      "mdown_content": "The **ceil** (ceiling) function is used to convert a **real** number to an integer. The result is the smallest integer that is greater than or equal to _r_. In other words, the **ceil** function rounds up to the nearest integer. For example, **ceil** (3) is 3, **ceil** (2.25) is 3 and **ceil** (-8.43) is -8."
     },
     {
       "title": "See also",

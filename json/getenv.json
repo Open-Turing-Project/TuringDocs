@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getenv</b> ( <i>symbol</i> : <b>string</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " getenv ( symbol : string ) : string\r\n",
-      "mdown_content": "**getenv** ( *symbol* : **string** ) : **string**"
+      "mdown_content": "**getenv** ( _symbol_ : **string** ) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>getenv</b> function is used to access the environment string whose name is <i>symbol</i>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <b>nargs</b> and <b>fetcharg</b> functions.<p>\r\n</p>",
       "text_content": " The getenv function is used to access the environment string whose name is symbol. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the nargs and fetcharg functions.\r\n",
-      "mdown_content": "The **getenv** function is used to access the environment string whose name is *symbol*. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **nargs** and **fetcharg** functions."
+      "mdown_content": "The **getenv** function is used to access the environment string whose name is _symbol_. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **nargs** and **fetcharg** functions."
     },
     {
       "title": "Example",

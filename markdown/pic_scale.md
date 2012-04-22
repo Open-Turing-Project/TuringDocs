@@ -2,13 +2,13 @@
 #Pic.Scale
 
 ##Syntax
-**Pic.Scale** (*picID*, *newWidth*, *newHeight* : **int**) : **int**
+**Pic.Scale** (_picID_, _newWidth_, _newHeight_ : **int**) : **int**
 
 
 
 ##Description
 **Pic.Scale **is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
-The *newWidth* and *newHeight* parameters are the desired width and height of the new picture. The *newWidth* and *newHeight* parameters may be negative, in which case the picture is mirror image (*newWidth* is negative) or upside-down (*newHeight* is negative) and the absolute values are used for the new width and height values.
+The _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values.
 
 
 
@@ -35,7 +35,7 @@ Note that the scaled picture is a newly created picture. When it is no longer ne
 
 ##Example
 This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..
-**Output from Program**
+
 
 ![Doc image](pic_scale01.gif)
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>File.Parent</b> (<i>pathName</i> : <b>string</b>) : <b>string</b><p>\r\n</p>",
       "text_content": " File.Parent (pathName : string) : string\r\n",
-      "mdown_content": "**File.Parent** (*pathName* : **string**) : **string**"
+      "mdown_content": "**File.Parent** (_pathName_ : **string**) : **string**"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of <b>File.FullPath</b>, <b>File.Parent</b>, <b>File.Exists</b>, and <b>Dir.Exists</b>.<p>\r\n  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n  <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,TestPathName.t;Path Name Testing Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of File.FullPath, File.Parent, File.Exists, and Dir.Exists.\r\n  \r\n  ",
-      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**."
+      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n"
     },
     {
       "title": "Status",

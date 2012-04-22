@@ -2,12 +2,12 @@
 #Net.OpenURLConnection
 
 ##Syntax
-**Net.OpenURLConnection** (*urlAddr* : **string**) : **int**
+**Net.OpenURLConnection** (_urlAddr_ : **string**) : **int**
 
 
 
 ##Description
-Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the *urlAddr*.
+Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the _urlAddr_.
 If successful, **Net.OpenURLConnection** returns a network stream descriptor which can be used with the **get** statement and **eof** function to read the web page located at the URL.
 The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.
 

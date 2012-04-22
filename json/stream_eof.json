@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>eof</b> ( <i>streamNumber</i> <b>: int</b> ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " eof ( streamNumber : int ) : boolean\r\n",
-      "mdown_content": "**eof** ( *streamNumber* **: int** ) : **boolean**"
+      "mdown_content": "**eof** ( _streamNumber_ **: int** ) : **boolean**"
     },
     {
       "title": "Description",

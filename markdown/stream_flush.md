@@ -2,12 +2,12 @@
 #Stream.Flush
 
 ##Syntax
-**Stream.Flush** ( *streamNumber* **: int** )
+**Stream.Flush** ( _streamNumber_ **: int** )
 
 
 
 ##Description
-The **Stream.Flush** procedure is used to flush any buffered output associated with the *streamNumber* parameter. 
+The **Stream.Flush** procedure is used to flush any buffered output associated with the _streamNumber_ parameter. 
 
 
 

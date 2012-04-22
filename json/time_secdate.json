@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.SecDate</b> (<i>timeInSecs</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Time.SecDate (timeInSecs : int) : string\r\n",
-      "mdown_content": "**Time.SecDate** (*timeInSecs* : **int**) : **string**"
+      "mdown_content": "**Time.SecDate** (_timeInSecs_ : **int**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.SecDate</b> function is used to<b> </b>convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. <p>\r\nIf <i>timeInSecs </i>is incorrect or can't be interpreted, then <b>Time.SecDate</b> will return the empty string and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
       "text_content": " The Time.SecDate function is used to convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \r\nIf timeInSecs is incorrect or can't be interpreted, then Time.SecDate will return the empty string and Error.Last and Error.LastMsg will be set to the appropriate error.\r\n",
-      "mdown_content": "The **Time.SecDate** function is used to** **convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \nIf *timeInSecs *is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error."
+      "mdown_content": "The **Time.SecDate** function is used to** **convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \nIf _timeInSecs _is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error."
     },
     {
       "title": "Example",

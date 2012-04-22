@@ -2,12 +2,12 @@
 #GUI.SelectRadio
 
 ##Syntax
-**GUI.SelectRadio** (*widgetID* : **int**)
+**GUI.SelectRadio** (_widgetID_ : **int**)
 
 
 
 ##Description
-Selects a radio button specified by *widgetID*. The previously-selected radio button is "de-selected". The *action procedure* of the radio button is called.
+Selects a radio button specified by _widgetID_. The previously-selected radio button is "de-selected". The _action procedure_ of the radio button is called.
 
 
 

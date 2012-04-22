@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>pred</b> ( <i>expn</i> )<p>\r\n</p></font>",
       "text_content": " pred ( expn )\r\n",
-      "mdown_content": "**pred** ( *expn* )"
+      "mdown_content": "**pred** ( _expn_ )"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This part of a Turing program fills up array <i>a </i>with the enumerated values <i>red</i>,<i> yellow</i>,<i> green</i>,<i> red</i>,<i> yellow</i>,<i> green</i>,<i> </i>etc.<p>\r\n</p>",
       "text_content": " This part of a Turing program fills up array a with the enumerated values red, yellow, green, red, yellow, green, etc.\r\n\r\n",
-      "mdown_content": "This part of a Turing program fills up array *a *with the enumerated values *red*,* yellow*,* green*,* red*,* yellow*,* green*,* *etc."
+      "mdown_content": "This part of a Turing program fills up array _a _with the enumerated values _red_,_ yellow_,_ green_,_ red_,_ yellow_,_ green_,_ _etc."
     },
     {
       "title": "Details",

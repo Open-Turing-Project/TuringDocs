@@ -2,12 +2,12 @@
 #GUI.SetScrollOnAdd
 
 ##Syntax
-**GUI.SetScrollOnAdd** (*widgetID* : **int**, *scrollOnAdd* : **boolean**)
+**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)
 
 
 
 ##Description
-The **GUI.SetScrollOnAdd** procedure allows you to specifywhether a text box scrolls to the bottom of the text whennew text is added (the default behaviour). By calling thisprocedure with *scrollOnAdd* set to **false**, the text box will not scroll unless the user manipulates thetext box's scroll bars.
+The **GUI.SetScrollOnAdd** procedure allows you to specifywhether a text box scrolls to the bottom of the text whennew text is added (the default behaviour). By calling thisprocedure with _scrollOnAdd_ set to **false**, the text box will not scroll unless the user manipulates thetext box's scroll bars.
 
 
 

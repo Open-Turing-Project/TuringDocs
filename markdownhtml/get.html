@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>getStatement</em> is:
-<strong>get</strong> [ : <em>streamNumber</em> , ] <em>getItem</em> { , <em>getItem</em> }</p>
+<p>A <em>getStatement</em> is:</p>
+
+<p><strong>get</strong> [ : <em>streamNumber</em> , ] <em>getItem</em> { , <em>getItem</em> }</p>
 
 <h2>Description</h2>
 
@@ -111,7 +112,7 @@ In the above and the next example, if the input has been redirected so that it i
 
 <h2>Details</h2>
 
-<p>In form (c) of <em>getItem</em>, the <em>variableReference </em>is followed by :***** which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.</p>
+<p>In form (c) of <em>getItem</em>, the <em>variableReference </em>is followed by :<strong>*</strong> which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.</p>
 
 <h2>Example</h2>
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.FileNew</b> (<i>fileName</i> : <b>string</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.FileNew (fileName : string) : int\r\n    ",
-      "mdown_content": "**Pic.FileNew** (*fileName* : **string**) : **int**"
+      "mdown_content": "**Pic.FileNew** (_fileName_ : **string**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.FileNew </b>is used to obtain a picture from a file. The \r\n          <b>Pic.FileNew</b> procedure allocates the memory for the picture, \r\n\t  which can be very large for pictures of large areas. The memory is \r\n\t  freed up when the program calls <b>Pic.Free</b> with the picture ID. \r\n\t  The picture can be used with the <b>Pic.Draw</b> and \r\n\t  <b>Pic.Save</b>.<p>\r\n          The <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n          </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>GIF files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"GIF:filename\" or \"filename.GIF\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>JPG files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"JPG:filename\" or \"filename.JPG\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>BMP files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"BMP:filename\" or \"filename.BMP\"</td>\r\n\t    </tr>\n</table>\n<p>\r\n    </p>",
       "text_content": "Pic.FileNew is used to obtain a picture from a file. The \r\n          Pic.FileNew procedure allocates the memory for the picture, \r\n\t  which can be very large for pictures of large areas. The memory is \r\n\t  freed up when the program calls Pic.Free with the picture ID. \r\n\t  The picture can be used with the Pic.Draw and \r\n\t  Pic.Save.\r\n          The fileNameparameter must give the format of the file:\r\n           \r\n\t      GIF files\r\n\t       \r\n\t      \"GIF:filename\" or \"filename.GIF\"\r\n\t     \r\n\t      JPG files\r\n\t       \r\n\t      \"JPG:filename\" or \"filename.JPG\"\r\n\t     \r\n\t      BMP files\r\n\t       \r\n\t      \"BMP:filename\" or \"filename.BMP\"\r\n\t    \r\n    ",
-      "mdown_content": "**Pic.FileNew **is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.\nThe *fileName*parameter must give the format of the file:\n GIF files \"GIF:filename\" or \"filename.GIF\" JPG files \"JPG:filename\" or \"filename.JPG\" BMP files \"BMP:filename\" or \"filename.BMP\""
+      "mdown_content": "**Pic.FileNew **is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.\nThe _fileName_parameter must give the format of the file:\n\n\n\n\n"
     },
     {
       "title": "Details",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "The program reads a graphic from the file <i>mypic.bmp</i> and then \r\n          draws it 50 times.<p>\r\n</p>",
       "text_content": "The program reads a graphic from the file mypic.bmp and then \r\n          draws it 50 times.\r\n\r\n    ",
-      "mdown_content": "The program reads a graphic from the file *mypic.bmp* and then draws it 50 times."
+      "mdown_content": "The program reads a graphic from the file _mypic.bmp_ and then draws it 50 times."
     },
     {
       "title": "Execute",

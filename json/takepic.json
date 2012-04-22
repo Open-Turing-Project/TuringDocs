@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<b>takepic</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <b>var</b> <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>)<p>\r\n    </p>",
       "text_content": "takepic (x1, y1, x2, y2 : int, var buffer : array 1 .. * of int)\r\n    ",
-      "mdown_content": "**takepic** (*x1*, *y1*, *x2*, *y2* : **int**, **var** *buffer* : **array** 1 .. * **of** **int**)"
+      "mdown_content": "**takepic** (_x1_, _y1_, _x2_, _y2_ : **int**, **var** _buffer_ : **array** 1 .. * **of** **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>takepic</b> procedure is used to record the pixel values in a \r\n          rectangle, with left bottom and right corners of (<i>x1</i>, \r\n          <i>y1</i>) and (<i>x2</i>, <i>y2</i>), in the buffer array. This \r\n          requires a sufficiently-large buffer (see <b>sizepic</b> ). \r\n          The <b>drawpic</b> procedure is used to make copies of the recorded \r\n          rectangle on the screen.<p>\r\n    </p>",
       "text_content": "The takepic procedure is used to record the pixel values in a \r\n          rectangle, with left bottom and right corners of (x1, \r\n          y1) and (x2, y2), in the buffer array. This \r\n          requires a sufficiently-large buffer (see sizepic ). \r\n          The drawpic procedure is used to make copies of the recorded \r\n          rectangle on the screen.\r\n    ",
-      "mdown_content": "The **takepic** procedure is used to record the pixel values in a rectangle, with left bottom and right corners of (*x1*, *y1*) and (*x2*, *y2*), in the buffer array. This requires a sufficiently-large buffer (see **sizepic** ). The **drawpic** procedure is used to make copies of the recorded rectangle on the screen."
+      "mdown_content": "The **takepic** procedure is used to record the pixel values in a rectangle, with left bottom and right corners of (_x1_, _y1_) and (_x2_, _y2_), in the buffer array. This requires a sufficiently-large buffer (see **sizepic** ). The **drawpic** procedure is used to make copies of the recorded rectangle on the screen."
     },
     {
       "title": "Example",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "The integer values that <b>takepic</b> places in the buffer can be \r\n          read or written (using the <b>read</b> and <b>write</b> statements). \r\n          Unfortunately, if a value happens to be the pattern used to represent \r\n          the uninitialized value (the largest negative number the hardware can \r\n          represent) assignment (by:=) and <b>put</b> of the individual integer \r\n          values in the buffer will fail.<p>\r\n          The screen should be in a \"<i>graphics</i>\" mode. See the \r\n          <b>setscreen</b> procedure for details. If the screen is not in a \r\n          \"<i>graphics</i>\" mode, it will automatically be set to \r\n          \"<i>graphics</i>\" mode.</p>\n<p>\r\n    </p>",
       "text_content": "The integer values that takepic places in the buffer can be \r\n          read or written (using the read and write statements). \r\n          Unfortunately, if a value happens to be the pattern used to represent \r\n          the uninitialized value (the largest negative number the hardware can \r\n          represent) assignment (by:=) and put of the individual integer \r\n          values in the buffer will fail.\r\n          The screen should be in a \"graphics\" mode. See the \r\n          setscreen procedure for details. If the screen is not in a \r\n          \"graphics\" mode, it will automatically be set to \r\n          \"graphics\" mode.\r\n    ",
-      "mdown_content": "The integer values that **takepic** places in the buffer can be read or written (using the **read** and **write** statements). Unfortunately, if a value happens to be the pattern used to represent the uninitialized value (the largest negative number the hardware can represent) assignment (by:=) and **put** of the individual integer values in the buffer will fail.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
+      "mdown_content": "The integer values that **takepic** places in the buffer can be read or written (using the **read** and **write** statements). Unfortunately, if a value happens to be the pattern used to represent the uninitialized value (the largest negative number the hardware can represent) assignment (by:=) and **put** of the individual integer values in the buffer will fail.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
     },
     {
       "title": "Details",

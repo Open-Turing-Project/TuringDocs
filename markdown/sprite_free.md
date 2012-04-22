@@ -2,12 +2,12 @@
 #Sprite.Free
 
 ##Syntax
-**Sprite.Free** (*spriteID* : **int**)
+**Sprite.Free** (_spriteID_ : **int**)
 
 
 
 ##Description
-Destroys the sprite and frees up the memory the sprite used. It is an error to use the *spriteID* after the sprite has been freed.
+Destroys the sprite and frees up the memory the sprite used. It is an error to use the _spriteID_ after the sprite has been freed.
 
 
 

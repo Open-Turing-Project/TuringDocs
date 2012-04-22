@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Delete</b> (<i>filePathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " File.Delete (filePathName : string)\r\n",
-      "mdown_content": "**File.Delete** (*filePathName* : **string**)"
+      "mdown_content": "**File.Delete** (_filePathName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Delete</b> is used to delete the file specified by the parameter <i>filePathName</i>. This is the equivalent of doing a <b>del</b> in DOS or <b>rm</b> in UNIX.<p>\r\n</p>",
       "text_content": " File.Delete is used to delete the file specified by the parameter filePathName. This is the equivalent of doing a del in DOS or rm in UNIX.\r\n",
-      "mdown_content": "**File.Delete** is used to delete the file specified by the parameter *filePathName*. This is the equivalent of doing a **del** in DOS or **rm** in UNIX."
+      "mdown_content": "**File.Delete** is used to delete the file specified by the parameter _filePathName_. This is the equivalent of doing a **del** in DOS or **rm** in UNIX."
     },
     {
       "title": "Details",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "This program deletes the file called <i>information</i>.<p>\r\n</p>",
       "text_content": " This program deletes the file called information.\r\n\r\n  ",
-      "mdown_content": "This program deletes the file called *information*."
+      "mdown_content": "This program deletes the file called _information_."
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, and then deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Delete.t;File.Delete Example\"></object></p>\n<p></p>",
       "text_content": "An example program is available that creates a file in the current \r\n        directory, and then deletes the file using File.Delete.\r\n        \r\n          ",
-      "mdown_content": "An example program is available that creates a file in the current directory, and then deletes the file using **File.Delete**."
+      "mdown_content": "An example program is available that creates a file in the current directory, and then deletes the file using **File.Delete**.\n"
     },
     {
       "title": "Status",

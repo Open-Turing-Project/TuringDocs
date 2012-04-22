@@ -2,8 +2,14 @@
 #indexType
 
 ##Syntax
-An *indexType* is one of:
- (a)*subrangeType* (b)*enumeratedType* (c)*namedType* *% Which is a subrange or enumerated type* (d)**char** (e)**boolean**
+An _indexType_ is one of:
+
+(a)_subrangeType_
+(b)_enumeratedType_
+(c)_namedType_ _% Which is a subrange or enumerated type_
+(d)**char**
+(e)**boolean**
+
 
 
 

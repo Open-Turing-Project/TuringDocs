@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Time.Date** function returns the current date and time as a string. The returned string in the format "*dd mmm yy hh:mm:ss*", where *mmm* is the first 3 characters of the month, e.g., "*Apr*". For example, if the date is Christmas 1989 at 9:02:37 in the morning, **Time.Date** will return "*25 Dec 89 09:02:37*". Twenty-four hour time is used, so eleven thirty at night the same day would return "*25 Dec 89 23:30:00*"
+The **Time.Date** function returns the current date and time as a string. The returned string in the format "_dd mmm yy hh:mm:ss_", where _mmm_ is the first 3 characters of the month, e.g., "_Apr_". For example, if the date is Christmas 1989 at 9:02:37 in the morning, **Time.Date** will return "_25 Dec 89 09:02:37_". Twenty-four hour time is used, so eleven thirty at night the same day would return "_25 Dec 89 23:30:00_"
 
 
 

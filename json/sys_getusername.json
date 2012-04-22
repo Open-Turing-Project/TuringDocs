@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Sys.GetUserName </b>function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.<p>\r\n</p>",
       "text_content": " The Sys.GetUserName function is used to determine the name of the current user. It returns Unknown if a name could not be determined.\r\n",
-      "mdown_content": "The **Sys.GetUserName **function is used to determine the name of the current user. It returns Unknown if a name could not be determined."
+      "mdown_content": "The **Sys.GetUserName **function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined."
     },
     {
       "title": "Example",

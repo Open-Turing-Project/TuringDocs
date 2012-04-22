@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>returnStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>return</b></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A returnStatement is:\r\n return",
-      "mdown_content": "A *returnStatement* is:\n **return**"
+      "mdown_content": "A _returnStatement_ is:\n\n**return**\n"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This procedure takes no action if the <i>errorHasOccurred </i>flag has been set to true.<p>\r\n</p>",
       "text_content": " This procedure takes no action if the errorHasOccurred flag has been set to true.\r\n\r\n",
-      "mdown_content": "This procedure takes no action if the *errorHasOccurred *flag has been set to true."
+      "mdown_content": "This procedure takes no action if the _errorHasOccurred _flag has been set to true."
     },
     {
       "title": "Details",

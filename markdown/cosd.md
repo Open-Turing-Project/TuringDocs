@@ -2,7 +2,7 @@
 #cosd
 
 ##Syntax
-**cosd** (*r* : **real**) : **real**
+**cosd** (_r_ : **real**) : **real**
 
 
 

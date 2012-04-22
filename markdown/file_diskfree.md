@@ -2,12 +2,12 @@
 #File.DiskFree
 
 ##Syntax
-**File.DiskFree** (*pathName* : **string**) : **int**
+**File.DiskFree** (_pathName_ : **string**) : **int**
 
 
 
 ##Description
-**File.DiskFree** gets the number of bytes for the disk upon which *pathName* resides. The *pathName* parameter can specify either a file or a directory. If it is the empty string, then **File.DiskFree** returns the number of bytes of free disk space on the disk upon which the execution directory resides.
+**File.DiskFree** gets the number of bytes for the disk upon which _pathName_ resides. The _pathName_ parameter can specify either a file or a directory. If it is the empty string, then **File.DiskFree** returns the number of bytes of free disk space on the disk upon which the execution directory resides.
 
 
 
@@ -18,7 +18,7 @@ If there is more than 2,147,483,647 bytes free on a disk, the **File.DiskFree** 
 
 
 ##Example
-This program prints out the amount of space on the *A: *drive on a PC and in the execution directory.
+This program prints out the amount of space on the _A: _drive on a PC and in the execution directory.
 
 
 

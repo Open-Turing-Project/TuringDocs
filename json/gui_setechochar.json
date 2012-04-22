@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetEchoChar</b> (<i>widgetID</i> : <b>int</b>, <i>echoChar</i> : <b>char</b>)<p></p></font>",
       "text_content": "GUI.SetEchoChar (widgetID : int, echoChar : char)\r\n    ",
-      "mdown_content": "**GUI.SetEchoChar** (*widgetID* : **int**, *echoChar* : **char**)"
+      "mdown_content": "**GUI.SetEchoChar** (_widgetID_ : **int**, _echoChar_ : **char**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetEchoChar</b> procedure is used with text fields,\r\n          especially when using a text field to input a password.\r\n          When the <b>GUI.SetEchoChar</b> is called with a text field, \r\n\t  any character entered into the text field will appear as the\r\n\t  character specified by <i>inputChar</i>.<p>\r\n\t  This allows you to use the text field to enter a password.\r\n\t  The characters that the user types will be echoed with the\r\n\t  character specified by <i>inputChar</i> (often an asterisk).</p>\n<p>\r\n    </p>",
       "text_content": "The GUI.SetEchoChar procedure is used with text fields,\r\n          especially when using a text field to input a password.\r\n          When the GUI.SetEchoChar is called with a text field, \r\n\t  any character entered into the text field will appear as the\r\n\t  character specified by inputChar.\r\n\t  This allows you to use the text field to enter a password.\r\n\t  The characters that the user types will be echoed with the\r\n\t  character specified by inputChar (often an asterisk).\r\n    ",
-      "mdown_content": "The **GUI.SetEchoChar** procedure is used with text fields,especially when using a text field to input a password.When the **GUI.SetEchoChar** is called with a text field, any character entered into the text field will appear as thecharacter specified by *inputChar*.\nThis allows you to use the text field to enter a password.The characters that the user types will be echoed with thecharacter specified by *inputChar* (often an asterisk)."
+      "mdown_content": "The **GUI.SetEchoChar** procedure is used with text fields,especially when using a text field to input a password.When the **GUI.SetEchoChar** is called with a text field, any character entered into the text field will appear as thecharacter specified by _inputChar_.\nThis allows you to use the text field to enter a password.The characters that the user types will be echoed with thecharacter specified by _inputChar_ (often an asterisk)."
     },
     {
       "title": "Example",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "Note that the <i>echoChar</i> argument to <b>GUI.SetEchoChar</b>\r\n          must be a character, not a string. This means the character\r\n\t  should be enclosed in single quote marks ('), not double\r\n\t  quotes (\").<p>\r\n    </p>",
       "text_content": "Note that the echoChar argument to GUI.SetEchoChar\r\n          must be a character, not a string. This means the character\r\n\t  should be enclosed in single quote marks ('), not double\r\n\t  quotes (\").\r\n    ",
-      "mdown_content": "Note that the *echoChar* argument to **GUI.SetEchoChar**must be a character, not a string. This means the charactershould be enclosed in single quote marks ('), not doublequotes (\")."
+      "mdown_content": "Note that the _echoChar_ argument to **GUI.SetEchoChar**must be a character, not a string. This means the charactershould be enclosed in single quote marks ('), not doublequotes (\")."
     },
     {
       "title": "Status",

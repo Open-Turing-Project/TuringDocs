@@ -18,7 +18,7 @@
       "title": "Details",
       "raw_content": "The entire output window is set to the current text background color (as set by <b>colorback</b> or <b>Text.ColorBack</b>).<p>\r\nThe output window must be in \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " The entire output window is set to the current text background color (as set by colorback or Text.ColorBack).\r\nThe output window must be in \"graphics\" mode. See setscreen for details.\r\n",
-      "mdown_content": "The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).\nThe output window must be in \"*graphics*\" mode. See **setscreen** for details."
+      "mdown_content": "The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).\nThe output window must be in \"_graphics_\" mode. See **setscreen** for details."
     },
     {
       "title": "See also",

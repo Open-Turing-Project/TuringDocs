@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.DelaySinceLast</b> ( <i>duration</i> : <b>int</b> )<p></p></font>",
       "text_content": "Time.DelaySinceLast ( duration : int )\r\n    ",
-      "mdown_content": "**Time.DelaySinceLast** ( *duration* : **int** )"
+      "mdown_content": "**Time.DelaySinceLast** ( _duration_ : **int** )"
     },
     {
       "title": "Description",

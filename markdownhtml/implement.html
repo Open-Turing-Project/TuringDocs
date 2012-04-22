@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>implementClause</em> is:
-<strong>implement</strong> <em>implementItem</em></p>
+<p>An <em>implementClause</em> is:</p>
+
+<p><strong>implement</strong> <em>implementItem</em></p>
 
 <h2>Description</h2>
 
@@ -41,9 +42,9 @@ Next comes the expansion which gives the bodies for the deferred procedures <em>
 <h2>Details</h2>
 
 <p>Module, monitor or class <em>D</em> can be in <em>C'</em>s implement-by clause if, and only if, <em>C</em> is in <em>D'</em>s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.
-An <em>implementItem</em> is one of<em>:</em>
-(a) <em>id</em>(b) <em>id</em> <strong>in</strong> <em>fileName</em>
-The second form is used when the implement clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, as in:
+An <em>implementItem</em> is one of<em>:</em></p>
+
+<p>The second form is used when the implement clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, as in:
 The <em>fileName</em> must be an explicit character string, e.g., "ledg.t". See also <strong>unit</strong>. Parentheses are allowed around the items in <strong>implement</strong> clauses, as in:
 There is no restriction on the declarations that an interface may contain. In particular, an interface (any module, monitor or class containing an implement-by clause), can contain subprogram bodies and variable declarations, exactly as is the case in expansions. This is different from languages such as C++ in which there are strict rules limiting what you can put in an interface.
 Even though <em>D</em> contains an <strong>implement</strong> clause, <em>D</em> can also contain an implement-by clause, which implies further implementation by further automatic expansion.

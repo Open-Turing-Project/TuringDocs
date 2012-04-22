@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>wallclock</b> ( <b>var</b> <i>c</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " wallclock ( var c : int )\r\n",
-      "mdown_content": "**wallclock** ( **var** *c* : **int** )"
+      "mdown_content": "**wallclock** ( **var** _c_ : **int** )"
     },
     {
       "title": "Description",

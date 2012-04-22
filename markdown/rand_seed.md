@@ -2,7 +2,7 @@
 #Rand.Seed
 
 ##Syntax
-**Rand.Seed **(*seed* : **nat4**,** ***seq* : 1 .. 10)
+**Rand.Seed **(_seed_ : **nat4**,** **_seq_ : 1 .. 10)
 
 
 

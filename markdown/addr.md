@@ -2,7 +2,7 @@
 #addr
 
 ##Syntax
-**addr** (*reference*)
+**addr** (_reference_)
 
 
 
@@ -12,7 +12,7 @@ The **addr** attribute is used to find the integer address of a variable or non 
 
 
 ##Example
-Set *a* to be the address of *x*.
+Set _a_ to be the address of _x_.
 
 
         var x : real
@@ -24,6 +24,6 @@ The concept of an address is implementation-dependent. For example, an optimizin
 
 
 ##See also
-the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[sizeof.html](sizeof)**, which returns the size of a variable.
+the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant) _(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[sizeof.html](sizeof)**, which returns the size of a variable.
 
 

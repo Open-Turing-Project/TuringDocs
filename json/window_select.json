@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Select</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Select (windowID : int)\r\n",
-      "mdown_content": "**Window.Select** (*windowID* : **int**)"
+      "mdown_content": "**Window.Select** (_windowID_ : **int**)"
     },
     {
       "title": "Description",

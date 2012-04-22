@@ -9,13 +9,13 @@
       ],
       "raw_content": "When an identifier <i>x</i> is exported from a module, monitor or class <i>M</i> using the keyword <b>unqualified</b>, it can be used outside of M without the qualification \"M.\". In other words, outside of M, it can be referred to as simply <i>x</i>. The keyword <b>unqualified</b> can be written in its short form as ~. which is pronounced \"not dot\", as in:<p>\r\n</p>",
       "text_content": " When an identifier x is exported from a module, monitor or class M using the keyword unqualified, it can be used outside of M without the qualification \"M.\". In other words, outside of M, it can be referred to as simply x. The keyword unqualified can be written in its short form as ~. which is pronounced \"not dot\", as in:\r\n\r\n",
-      "mdown_content": "When an identifier *x* is exported from a module, monitor or class *M* using the keyword **unqualified**, it can be used outside of M without the qualification \"M.\". In other words, outside of M, it can be referred to as simply *x*. The keyword **unqualified** can be written in its short form as ~. which is pronounced \"not dot\", as in:"
+      "mdown_content": "When an identifier _x_ is exported from a module, monitor or class _M_ using the keyword **unqualified**, it can be used outside of M without the qualification \"M.\". In other words, outside of M, it can be referred to as simply _x_. The keyword **unqualified** can be written in its short form as ~. which is pronounced \"not dot\", as in:"
     },
     {
       "title": "See als",
       "raw_content": "<table><tr valign=\"top\">\n<td>o</td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>export</b> list.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": "o export list.\r\n",
-      "mdown_content": "o **export** list."
+      "mdown_content": "\no **export** list.\n"
     }
   ],
   "dependencies": [

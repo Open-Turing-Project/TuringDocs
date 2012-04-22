@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>mod</b> (<i>modulo</i>) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 <b>mod</b> 2 produces 1 and 12 <b>mod</b> 5 produces 3.<p>\r\n</p>",
       "text_content": " The mod (modulo) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 mod 2 produces 1 and 12 mod 5 produces 3.\r\n",
-      "mdown_content": "The **mod** (*modulo*) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 **mod** 2 produces 1 and 12 **mod** 5 produces 3."
+      "mdown_content": "The **mod** (_modulo_) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 **mod** 2 produces 1 and 12 **mod** 5 produces 3."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "In this example, <i>hours</i> is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12).<p>\r\n</p>",
       "text_content": " In this example, hours is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12).\r\n\r\n",
-      "mdown_content": "In this example, *hours* is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12)."
+      "mdown_content": "In this example, _hours_ is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12)."
     },
     {
       "title": "Details",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"rem.html\">rem</a></b> and <b><a href=\"div.html\">div</a></b> operators.<p>\r\n</p>",
       "text_content": " infix operators, precedence of operators and the rem and div operators.\r\n",
-      "mdown_content": "*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[rem.html](rem)** and **[div.html](div)** operators."
+      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[rem.html](rem)** and **[div.html](div)** operators."
     }
   ],
   "dependencies": [

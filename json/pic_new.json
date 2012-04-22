@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.New</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.New (x1, y1, x2, y2 : int) : int\r\n    ",
-      "mdown_content": "**Pic.New** (*x1*, *y1*, *x2*, *y2* : **int**) : **int**"
+      "mdown_content": "**Pic.New** (_x1_, _y1_, _x2_, _y2_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.New</b> is used to obtain a picture of a portion of the \r\n          screen. The <b>Pic.New</b> procedure allocates the memory for \r\n\t  the picture, which can be very large for pictures of large areas.\r\n\t  The memory is freed up when the program calls <b>Pic.Free</b> with \r\n\t  the picture ID. The picture can be used with the <b>Pic.Draw</b> \r\n\t  and <b>Pic.Save</b>.<p>\r\n\t  The picture is of the screen area defined by the rectangle \r\n\t  (<i>x1</i>,&nbsp;<i>y1</i>) - (<i>x2</i>,&nbsp;<i>y2</i>).</p>\n<p>\r\n    </p>",
       "text_content": "Pic.New is used to obtain a picture of a portion of the \r\n          screen. The Pic.New procedure allocates the memory for \r\n\t  the picture, which can be very large for pictures of large areas.\r\n\t  The memory is freed up when the program calls Pic.Free with \r\n\t  the picture ID. The picture can be used with the Pic.Draw \r\n\t  and Pic.Save.\r\n\t  The picture is of the screen area defined by the rectangle \r\n\t  (x1, y1) - (x2, y2).\r\n    ",
-      "mdown_content": "**Pic.New** is used to obtain a picture of a portion of the screen. The **Pic.New** procedure allocates the memory for the picture, which can be very large for pictures of large areas.The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.\nThe picture is of the screen area defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*)."
+      "mdown_content": "**Pic.New** is used to obtain a picture of a portion of the screen. The **Pic.New** procedure allocates the memory for the picture, which can be very large for pictures of large areas.The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.\nThe picture is of the screen area defined by the rectangle (_x1_, _y1_) - (_x2_, _y2_)."
     },
     {
       "title": "Details",

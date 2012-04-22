@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "A <i>comment</i> is a remark to the reader of the program, which the computer ignores. The most common form of comment in Turing starts with a percent sign (%) and continues to the end of the current line; this is called an <i>end-of-line </i>comment. There is also the <i>bracketed </i>comment, which begins with the /* and ends with */ and which can continue across line boundaries.<p>\r\n</p>",
       "text_content": " A comment is a remark to the reader of the program, which the computer ignores. The most common form of comment in Turing starts with a percent sign (%) and continues to the end of the current line; this is called an end-of-line comment. There is also the bracketed comment, which begins with the /* and ends with */ and which can continue across line boundaries.\r\n",
-      "mdown_content": "A *comment* is a remark to the reader of the program, which the computer ignores. The most common form of comment in Turing starts with a percent sign (%) and continues to the end of the current line; this is called an *end-of-line *comment. There is also the *bracketed *comment, which begins with the /* and ends with */ and which can continue across line boundaries."
+      "mdown_content": "A _comment_ is a remark to the reader of the program, which the computer ignores. The most common form of comment in Turing starts with a percent sign (%) and continues to the end of the current line; this is called an _end-of-line _comment. There is also the _bracketed _comment, which begins with the /* and ends with */ and which can continue across line boundaries."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       "title": "Details",
       "raw_content": "In the BASIC language, comments are called <i>remarks </i>and start with the keyword REM. In Pascal, comments are bracketed by (* and *).<p>\r\n</p>",
       "text_content": " In the BASIC language, comments are called remarks and start with the keyword REM. In Pascal, comments are bracketed by (* and *).\r\n",
-      "mdown_content": "In the BASIC language, comments are called *remarks *and start with the keyword REM. In Pascal, comments are bracketed by (* and *)."
+      "mdown_content": "In the BASIC language, comments are called _remarks _and start with the keyword REM. In Pascal, comments are bracketed by (* and *)."
     }
   ],
   "dependencies": [

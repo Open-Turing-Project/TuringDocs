@@ -2,25 +2,29 @@
 #Music.PlayFile
 
 ##Syntax
-**Music.PlayFile** ( *fileName* : **string** )
+**Music.PlayFile** ( _fileName_ : **string** )
 
 
 
 ##Description
 The **Music.PlayFile** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.
-The *fileName* parameter must give the format of the file:
- WAV files "WAV:filename" or "filename.WAV" MP3 files "MP3:filename" or "filename.MP3" MIDI files "MIDI:filename" or "filename.MIDI"
+The _fileName_ parameter must give the format of the file:
+
+
+
+
+
 Sounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile **command, it stops until the command is finished. However, other processes will continue executing.
 
 
 
 ##Details
-To play music while performing any other activity, the call to **Music.PlayFile** must be executed in its own **process**. The process is then called using the **fork** command. When a **fork** command is given, execution starts on the process (like a procedure call) *and* continues following the **fork** command *at the same time*.
+To play music while performing any other activity, the call to **Music.PlayFile** must be executed in its own **process**. The process is then called using the **fork** command. When a **fork** command is given, execution starts on the process (like a procedure call) _and_ continues following the **fork** command _at the same time_.
 
 
 
 ##Example
-This program plays the music in the file "*branden3.wav*" while drawing ovals on the screen.
+This program plays the music in the file "_branden3.wav_" while drawing ovals on the screen.
 
 
         process DoMusic
@@ -48,7 +52,7 @@ The Turing 4.1 software can play files in the following audio formats: WAVE (.wa
 
 
 ##Details
-The Turing 4.1 software can also play music on a compact disk. To play the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].
+The Turing 4.1 software can also play music on a compact disk. To play the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.
 
 
         Music.PlayFile ("cd")       % Play the entire CD

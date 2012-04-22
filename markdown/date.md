@@ -2,12 +2,12 @@
 #date
 
 ##Syntax
-**date** (**var** *d* : **string**)
+**date** (**var** _d_ : **string**)
 
 
 
 ##Description
-The **date** statement is used to determine the current date. Variable *d *is assigned a string in the format "*dd mmm yy*", where *mmm* is the first 3 characters of the month, e.g., "*Apr*". For example, if the date is Christmas 2002, *d *will be set to "*25 Dec 02*".
+The **date** statement is used to determine the current date. Variable _d _is assigned a string in the format "_dd mmm yy_", where _mmm_ is the first 3 characters of the month, e.g., "_Apr_". For example, if the date is Christmas 2002, _d _will be set to "_25 Dec 02_".
 
 
 

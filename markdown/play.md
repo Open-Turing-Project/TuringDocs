@@ -2,7 +2,7 @@
 #play
 
 ##Syntax
-**play** ( *music* : **string** )
+**play** ( _music_ : **string** )
 
 
 

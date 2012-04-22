@@ -2,12 +2,12 @@
 #GUI.SetSize
 
 ##Syntax
-**GUI.SetSize** (*widgetID*, *width*, *height* : **int**)
+**GUI.SetSize** (_widgetID_, _width_, _height_ : **int**)
 
 
 
 ##Description
-Changes the size of the widget specified by *widgetID*. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the *width* and *height* parameters are no necessarily the actual width and height of the widget. For example, the *TextField* widget ignores the *height* parameter, calculating the widget's actual height from the height of the text in the *TextField*.
+Changes the size of the widget specified by _widgetID_. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the _width_ and _height_ parameters are no necessarily the actual width and height of the widget. For example, the _TextField_ widget ignores the _height_ parameter, calculating the widget's actual height from the height of the text in the _TextField_.
 
 
 

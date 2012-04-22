@@ -2,13 +2,33 @@
 #typeSpec
 
 ##Syntax
-A *typeSpec* (type specification) is one of:
- (a)**int** (b)**real** (c)**boolean** (d)*stringType* *% Example: **string** ( 20 )* (e)*subrangeType* *% Example: 1 *..* 150* (f)*enumeratedType* *% Example: **enum** ( red*,* green*,* blue )* (g)*arrayType* *% Example: **array** 1 *..* 150 **of** **real*** (h)*setType* *% Example: **set** **of** 1 *..* 10* (i)*recordType* *% Example: **record**  **end** **record*** (j)*unionType* *% Example: **union**  **end** **union*** (k)*pointerType* *% Example: **pointer** **to** collectionVar* (l)*namedType* *% Example: colorRange* (m)**nat** *% natural number* (n)**int***n* *% n-byte integer (n=1*,* 2*,* 4)* (o)**nat***n* *% n-byte natural (n= 1*,* 2*,* 4)* (p)**real***n* *% n-byte real (n=4*,* 8)* (q)**char** *% single character* (r)**char**(*n*) *% n characters* (s)*subprogramType*
+A _typeSpec_ (type specification) is one of:
+
+(a)**int**
+(b)**real**
+(c)**boolean**
+(d)_stringType_ _% Example: **string** ( 20 )_
+(e)_subrangeType_ _% Example: 1 _.._ 150_
+(f)_enumeratedType_ _% Example: **enum** ( red_,_ green_,_ blue )_
+(g)_arrayType_ _% Example: **array** 1 _.._ 150 **of** **real**_
+(h)_setType_ _% Example: **set** **of** 1 _.._ 10_
+(i)_recordType_ _% Example: **record** &#133; **end** **record**_
+(j)_unionType_ _% Example: **union** &#133; **end** **union**_
+(k)_pointerType_ _% Example: **pointer** **to** collectionVar_
+(l)_namedType_ _% Example: colorRange_
+(m)**nat** _% natural number_
+(n)**int**_n_ _% n-byte integer (n=1_,_ 2_,_ 4)_
+(o)**nat**_n_ _% n-byte natural (n= 1_,_ 2_,_ 4)_
+(p)**real**_n_ _% n-byte real (n=4_,_ 8)_
+(q)**char** _% single character_
+(r)**char**(_n_) _% n characters_
+(s)_subprogramType_
+
 
 
 
 ##Description
-A type specification determines the allowed values for a variable or constant. For example, if variable *x* is an integer (its *typeSpec* is **int**), the possible values for *x* are numbers such as -15, 0, 3 and 348207. If *x* is a real number (its *typeSpec* is **real**), then its possible values include 7.8, -35.0, and 15e12. If *x *is a **boolean**, its possible values are **true** and **false**. If *x *is a **string**, its possible values include *Hello* and *Good-bye*.
+A type specification determines the allowed values for a variable or constant. For example, if variable _x_ is an integer (its _typeSpec_ is **int**), the possible values for _x_ are numbers such as -15, 0, 3 and 348207. If _x_ is a real number (its _typeSpec_ is **real**), then its possible values include 7.8, -35.0, and 15e12. If _x _is a **boolean**, its possible values are **true** and **false**. If _x _is a **string**, its possible values include _Hello_ and _Good-bye_.
 
 
 
@@ -25,6 +45,6 @@ A type specification determines the allowed values for a variable or constant. F
                 age : range
             end record
 ##See also
-**[int.html](int)**, **[real.html](real)**, **[boolean.html](boolean)**, **[string1.html](string)**, *[subrangetype.html](subrangeType)*, **[enum.html](enum)**, **[array.html](array)**, **[set.html](set)**, **[record.html](record)**, **[union.html](union)**, **[pointer.html](pointer)**, [named.html](named),** [nat.html](nat)**, **[int.html](int)*n***, **[nat.html](nat)*n***, **[real.html](real)*n***, **[char.html](char)**, and **[char.html](char)**(*n*) types.
+**[int.html](int)**, **[real.html](real)**, **[boolean.html](boolean)**, **[string1.html](string)**, _[subrangetype.html](subrangeType)_, **[enum.html](enum)**, **[array.html](array)**, **[set.html](set)**, **[record.html](record)**, **[union.html](union)**, **[pointer.html](pointer)**, [named.html](named),** [nat.html](nat)**, **[int.html](int)_n_**, **[nat.html](nat)_n_**, **[real.html](real)_n_**, **[char.html](char)**, and **[char.html](char)**(_n_) types.
 
 

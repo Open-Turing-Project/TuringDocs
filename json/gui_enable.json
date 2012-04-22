@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Enable</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.Enable (widgetID : int)\r\n",
-      "mdown_content": "**GUI.Enable** (*widgetID* : **int**)"
+      "mdown_content": "**GUI.Enable** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Enables a disabled widget specified by <i>widgetID</i>. <p>\r\nUsed in conjunction with <b>GUI.Disable</b> to enable and disable widgets. </p>\n<p>\r\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.</p>\n<p>\r\nDisabled widgets do not respond to keystrokes or mouse clicks.</p>\n<p>\r\n</p>",
       "text_content": " Enables a disabled widget specified by widgetID. \r\nUsed in conjunction with GUI.Disable to enable and disable widgets. \r\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\r\nDisabled widgets do not respond to keystrokes or mouse clicks.\r\n",
-      "mdown_content": "Enables a disabled widget specified by *widgetID*. \nUsed in conjunction with **GUI.Disable** to enable and disable widgets. \nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\nDisabled widgets do not respond to keystrokes or mouse clicks."
+      "mdown_content": "Enables a disabled widget specified by _widgetID_. \nUsed in conjunction with **GUI.Disable** to enable and disable widgets. \nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\nDisabled widgets do not respond to keystrokes or mouse clicks."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       "title": "Details",
       "raw_content": "The following types of widgets can be enabled or disabled:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>Buttons, Check Boxes, Radio Buttons, Picture Buttons,<br>\n</td>\n</tr></table>\n<p>\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,<br>\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>\n<p>\r\n</p>",
       "text_content": " The following types of widgets can be enabled or disabled:\r\n Buttons, Check Boxes, Radio Buttons, Picture Buttons,\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\r\n",
-      "mdown_content": "The following types of widgets can be enabled or disabled:\n Buttons, Check Boxes, Radio Buttons, Picture Buttons,\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders"
+      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders"
     },
     {
       "title": "Status",

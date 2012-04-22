@@ -2,19 +2,19 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreatePictureRadioButton</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,<em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()):<strong>int</strong>
-<strong>GUI.CreatePictureRadioButtonFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>,<em>picture, joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>width</em>,<em>height</em> : <strong>int</strong>,<em>shortcut</em> : <strong>char</strong>, <em>mergePic</em> : <strong>boolean</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreatePictureRadioButton</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,    <em>joinID</em> : <strong>int</strong>, <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()):<strong>int</strong>
+<strong>GUI.CreatePictureRadioButtonFull</strong> (<em>x</em>, <em>y</em> : <strong>int</strong>,    <em>shortcut</em> : <strong>char</strong>, <em>mergePic</em> : <strong>boolean</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a picture radio button and returns the button's widget ID.
 Picture radio buttons behave like picture buttons (see <strong>GUI.CreatePictureButton</strong>) except that they have the "radio" property. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected.
-A common example is the buttons on a paint program that indicate the current shape being painted. The maple leaf button is currently selected. If the star button is selected by the user, the maple leaf button becomes unselected. For picture buttons, the selected button appears depressed.
-<strong>Four Picture Radio Buttons with the Maple Leaf Seledcted</strong>
-A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <em>joinID</em> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <em>joinID</em> parameter.
+A common example is the buttons on a paint program that indicate the current shape being painted. The maple leaf button is currently selected. If the star button is selected by the user, the maple leaf button becomes unselected. For picture buttons, the selected button appears depressed.</p>
+
+<p>A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <em>joinID</em> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <em>joinID</em> parameter.
 The picture must be created by the program beforehand using <strong>Pic.New</strong> or <strong>Pic.FileNew</strong>. The resulting picture can then be used as a parameter to <strong>GUI.CreatePictureButton</strong><em>.</em> In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library.
 The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture radio button. If these are both 1 and <em>joinID</em> is not zero, then the button will be placed directly below the previous picture radio button in the group. The <em>picture</em> parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>joinID</em> parameter specifies a member of the radio group that this widget should join. A <em>joinID</em> of 0 sepecifies this radio button is not a member of any group. The <em>actionProc</em> parameter specifies the name of a procedure that is called when the picture button is pressed.
-For <strong>GUI.CreatePictureRadioButtonFull</strong>, the <em>width</em> and <em>height</em> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> functions. If <em>width</em> and <em>height</em> are larger than the picture, the picture is centered in the button. The <em>shortCut</em>parameter is the keystroke to be used as the button's shortcut. The <em>mergePic</em> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for <em>CreatePictureRadioButton</em>.</p>
+For <strong>GUI.CreatePictureRadioButtonFull</strong>, the <em>width</em> and <em>height</em> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> functions. If <em>width</em> and <em>height</em> are larger than the picture, the picture is centered in the button. The <em>shortCut_parameter is the keystroke to be used as the button's shortcut. The </em>mergePic<em> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for </em>CreatePictureRadioButton_.</p>
 
 <p><img src="gui_createpictureradiobutton_full01.gif" alt="Doc image" /></p>
 
@@ -110,8 +110,7 @@ When a picture radio button is not enabled, the picture radio button is grayed o
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a picture radio button as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>,<strong> GUI.Hide</strong>,<strong> GUI.Enable</strong>,<strong> GUI.Disable</strong>,<strong> GUI.Dispose</strong>,<strong> GUI.GetX</strong>,<strong> GUI.GetY</strong>,<strong> GUI.GetWidth</strong>,<strong> GUI.GetHeight</strong>,<strong> GUI.SetPosition</strong>,<strong> GUI.SetSize</strong>,<strong> GUI.SetPositionAndSize</strong>, <strong>GUI.SelectRadio</strong></p>
+<p>The following GUI subprograms can be called with a picture radio button as the <em>widgetID</em> parameter:</p>
 
 <h2>Status</h2>
 

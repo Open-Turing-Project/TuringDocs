@@ -14,7 +14,7 @@
 <strong>Pic.FileNewFrames</strong> reads the series of frames from the multiframe GIF file, and turns each frame into a picture.  Thepicture is then assigned to an element in the <em>picIDs</em> array.If the array is not large enough, then an error occurs and nopictures are loaded.
 <strong>Pic.FileNewFrames</strong> also reads the delay specified in the GIF file and sets <em>delayTime</em> to the delay in milliseconds.  Note that many multiple frame GIF files do not specify a delay, in which case <em>delayTime</em> will be set to 0.
 In order to determine the number of frames in multiple frame GIFfile, you must use the <strong><a href="Pic.Frames">pic_frames.html</a></strong>function.  This returns a number that can be used to declare thearray that will be passed to <strong>Pic.FileNewFrames</strong>.
-<strong>var</strong> <em>numFrames</em> = <strong>Pic.Frames</strong> ("mypic.gif")<strong>var</strong> <em>pics</em> : <strong>array</strong> 1 .. <em>numFrames</em> <strong>of int</strong><strong>var</strong> <em>delayTime</em> : <strong>int</strong><strong>Pic.FileNewFrames</strong> ("mypic.gif", <em>pics</em>, <em>delayTime</em>)
+<code>**var** _numFrames_ = **Pic.Frames** ("mypic.gif")**var** _delayTime_ : **int****Pic.FileNewFrames** ("mypic.gif", _pics_, _delayTime_)</code>
 The frames can be sequentially displayed using either <strong>Pic.DrawFrames</strong> or <strong>Pic.DrawFramesBack</strong> which display the images one at a time. (<strong>Pic.DrawFrames</strong> returns once all the images have been displayed, <strong>Pic.DrawFramesBack</strong> returns immediately allowing the program to continue execution while the frames are being displayed.</p>
 
 <h2>Details</h2>

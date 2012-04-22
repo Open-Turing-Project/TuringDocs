@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Fill</b> (<i>x</i>, <i>y</i> <b>:</b> <b>int</b>, <i>fillColor</i>,<b> </b><i>borderColor</i> <b>: int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.Fill (x, y : int, fillColor, borderColor : int)\r\n",
-      "mdown_content": "**Draw.Fill** (*x*, *y* **:** **int**, *fillColor*,** ***borderColor* **: int**)"
+      "mdown_content": "**Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_,** **_borderColor_ **: int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Fill </b>procedure is used to color in a figure that is on the screen. Starting at (<i>x</i>, <i>y</i>), the figure is filled with <i>fillColor</i> to a surrounding border whose color is <i>borderColor</i>.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Fill procedure is used to color in a figure that is on the screen. Starting at (x, y), the figure is filled with fillColor to a surrounding border whose color is borderColor.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (*x*, *y*), the figure is filled with *fillColor* to a surrounding border whose color is *borderColor*."
+      "mdown_content": "The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_."
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.<p>\r\n</p>",
       "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
     },
     {
       "title": "Status",

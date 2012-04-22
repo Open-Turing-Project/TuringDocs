@@ -37,7 +37,7 @@
       "title": "Example",
       "raw_content": "Another example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Font Listing Example\">\n<param name=\"Item1\" value=\"-1,FontList.t;Font Listing Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that displays full information about\r\n          the fonts including name, styles, and point sizes.\r\n          \r\n            ",
-      "mdown_content": "Another example is available that displays full information aboutthe fonts including name, styles, and point sizes."
+      "mdown_content": "Another example is available that displays full information aboutthe fonts including name, styles, and point sizes.\n"
     },
     {
       "title": "Status",

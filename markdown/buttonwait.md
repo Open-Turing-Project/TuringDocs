@@ -2,16 +2,18 @@
 #buttonwait
 
 ##Syntax
-**buttonwait** (*motion* : **string**,  **var** *x*, *y*, *buttonnumber*, *buttonupdown* : **int**)
+**buttonwait** (_motion_ : **string**, 
+**var** _x_, _y_, _buttonnumber_, _buttonupdown_ : **int**)
+
 
 
 
 ##Description
 The **buttonwait** procedure gets information about a mouse event and removes it from the queue.
-The parameter *motion* must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonwait** returns instantly. If there isn't such an event, **buttonwait** waits until there is one and then returns (much like **getch** handles keystrokes).
-In "*single-button mode*" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "*multi-button mode*", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
-The parameters *x* and *y* are set to the position of the mouse cursor when the button was pressed. The parameter *buttonnumber* is set to 1 when in "*single-button mode*". In  "*multi-button mode*", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter *buttonupdown* is set to 1, if a button was pressed and 0 if a button was released. 
+The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonwait** returns instantly. If there isn't such an event, **buttonwait** waits until there is one and then returns (much like **getch** handles keystrokes).
+In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+The parameters _x_ and _y_ are set to the position of the mouse cursor when the button was pressed. The parameter _buttonnumber_ is set to 1 when in "_single-button mode_". In  "_multi-button mode_", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter _buttonupdown_ is set to 1, if a button was pressed and 0 if a button was released. 
 
 
 
@@ -39,6 +41,7 @@ In the previous example, when the mouse moves, the line is erased by drawing it 
 
 
 
+
 ##Example
 This is an example demonstrating how to check for both character and mouse input at the same time.
 
@@ -63,7 +66,7 @@ This is an example demonstrating how to check for both character and mouse input
 
 
 ##See also
-**[](buttonwait)** to see if an appropriate event is in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "*single-button mode*" and "*multi-button mode*".
+**[](buttonwait)** to see if an appropriate event is in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "_single-button mode_" and "_multi-button mode_".
 See also predefined unit **[mousemodule.html](Mouse)**.
 
 

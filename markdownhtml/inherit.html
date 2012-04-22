@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>inheritClause </em>is:
-<strong>inherit</strong> <em>inheritItem</em></p>
+<p>An <em>inheritClause </em>is:</p>
+
+<p><strong>inherit</strong> <em>inheritItem</em></p>
 
 <h2>Description</h2>
 
@@ -41,9 +42,9 @@ Next comes an expansion, which inherits the internal declarations of the stack c
 <h2>Details</h2>
 
 <p>Objects of the inherited class <em>stackWithDepth</em> are like objects of the parent class <em>stack</em>, except there is an additional exported function named <em>depth</em>.
-An <em>inheritItem</em> is one of:
-(a) <em>id</em>(b) <em>id</em> <strong>in</strong> <em>fileName</em>
-The second form is used when the inherit clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, for example:
+An <em>inheritItem</em> is one of:</p>
+
+<p>The second form is used when the inherit clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, for example:
 The <em>fileName</em> must be an explicit character string, e.g., "<em>newledg.t</em>". Parentheses are allowed around the item in an inherit clause, as in:
 There is a special form of <strong>inherit</strong> clause, called an <strong>implement</strong> <strong>clause</strong>, that is used to separate an interface from an implementation. Modules and monitors, as well as classes, use these clauses. See <strong>implement</strong> clause and <strong>implement</strong> <strong>by</strong> clause.
 If class <em>D</em> inherits class <em>C</em>, we say that <em>C </em>is the <em>parent</em> and <em>D </em>is the <em>child</em>. Class <em>B</em> is said to be an <em>ancestor</em> of class <em>D </em>(and <em>D</em> is the <em>descendant</em> of <em>B</em>) if <em>B</em> and <em>D</em> are the same class, or if <em>B</em> is the parent of <em>D</em>, or if <em>B</em> is the parent of the parent of <em>D</em>, etc. We write this as follows:

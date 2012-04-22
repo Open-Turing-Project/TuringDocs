@@ -2,7 +2,7 @@
 #sin
 
 ##Syntax
-**sin** ( *r* : **real** ) : **real**
+**sin** ( _r_ : **real** ) : **real**
 
 
 
@@ -12,7 +12,7 @@ The **sin** function is used to find the sine of an angle given in radians. For 
 
 
 ##Example
-This program prints out the sine of p/6, 2p/6, 3p/6, up to 12p/6 radians.
+This program prints out the sine of pppp/6 radians.
 
 
         const pi := 3.14159

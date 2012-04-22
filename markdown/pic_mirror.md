@@ -2,12 +2,12 @@
 #Pic.Mirror
 
 ##Syntax
-**Pic.Mirror** (*picID* : **int**) : **int**
+**Pic.Mirror** (_picID_ : **int**) : **int**
 
 
 
 ##Description
-**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a mirror image. 
+**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a &#147;mirror image&#148;. 
 
 
 
@@ -18,7 +18,7 @@ Note that the mirror-imaged picture is a newly created picture. When it is no lo
 
 ##Example
 The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.
-**Output from the Program**
+
 
 ![Doc image](pic_mirror01.gif)
 

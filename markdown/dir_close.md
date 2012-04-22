@@ -2,7 +2,7 @@
 #Dir.Close
 
 ##Syntax
-**Dir.Close** (*streamNumber* : **int**)
+**Dir.Close** (_streamNumber_ : **int**)
 
 
 
@@ -17,7 +17,7 @@ If the **Dir.Close** call fails, then **Error.Last** will return a non-zero valu
 
 
 ##Example
-This program prints a listing of all the files in the directory *datafiles*.
+This program prints a listing of all the files in the directory _datafiles_.
 
 
         var streamNumber : int

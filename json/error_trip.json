@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Trip</b> (<i>errorCode</i> : <b>int</b>)<p></p></font>",
       "text_content": "Error.Trip (errorCode : int)\r\n    ",
-      "mdown_content": "**Error.Trip** (*errorCode* : **int**)"
+      "mdown_content": "**Error.Trip** (_errorCode_ : **int**)"
     },
     {
       "title": "Description",

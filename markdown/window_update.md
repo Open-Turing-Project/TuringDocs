@@ -2,7 +2,7 @@
 #Window.Update
 
 ##Syntax
-**Window.Update** (*windowID* : **int**)
+**Window.Update** (_windowID_ : **int**)
 
 
 

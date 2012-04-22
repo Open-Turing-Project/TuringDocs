@@ -2,12 +2,12 @@
 #GUI.SetXOR
 
 ##Syntax
-**GUI.SetXOR** (*widgetID* : **int**, *xor* : **boolean**)
+**GUI.SetXOR** (_widgetID_ : **int**, _xor_ : **boolean**)
 
 
 
 ##Description
-Sets the "xor mode" of the canvas specified by *widgetID*. If the *xor* parmeter is set to **true**, the canvas is set to *xor mode*. When in *xor mode*, all the *Draw*... procedures of a canvas are treated as if the **View.Set** ("xor") statement had been executed before the *Draw* procedure.
+Sets the "xor mode" of the canvas specified by _widgetID_. If the _xor_ parmeter is set to **true**, the canvas is set to _xor mode_. When in _xor mode_, all the _Draw_... procedures of a canvas are treated as if the **View.Set** ("xor") statement had been executed before the _Draw_ procedure.
 
 
 

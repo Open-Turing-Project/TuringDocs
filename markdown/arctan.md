@@ -2,7 +2,7 @@
 #arctan
 
 ##Syntax
-**arctan** (*r* : **real**) : **real**
+**arctan** (_r_ : **real**) : **real**
 
 
 

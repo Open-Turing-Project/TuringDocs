@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>A</i> <b>shl</b> <i>B</i><p>\r\n</p></font>",
       "text_content": " A shl B\r\n",
-      "mdown_content": "*A* **shl** *B*"
+      "mdown_content": "_A_ **shl** _B_"
     },
     {
       "title": "Description",
       "raw_content": "The <b>shl</b> (shift left) operator produces the value of <i>A</i> shifted <i>B</i> bits to the left. Both A and B must be non-negative integers (natural numbers).<p>\r\n</p>",
       "text_content": " The shl (shift left) operator produces the value of A shifted B bits to the left. Both A and B must be non-negative integers (natural numbers).\r\n",
-      "mdown_content": "The **shl** (shift left) operator produces the value of *A* shifted *B* bits to the left. Both A and B must be non-negative integers (natural numbers)."
+      "mdown_content": "The **shl** (shift left) operator produces the value of _A_ shifted _B_ bits to the left. Both A and B must be non-negative integers (natural numbers)."
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "Assign the base 2 value 11 to <i>i</i> and then shift it left by 2 places and assign the resulting base 2 value 1100 to <i>j</i>.<p>\r\n</p>",
       "text_content": " Assign the base 2 value 11 to i and then shift it left by 2 places and assign the resulting base 2 value 1100 to j.\r\n\r\n",
-      "mdown_content": "Assign the base 2 value 11 to *i* and then shift it left by 2 places and assign the resulting base 2 value 1100 to *j*."
+      "mdown_content": "Assign the base 2 value 11 to _i_ and then shift it left by 2 places and assign the resulting base 2 value 1100 to _j_."
     },
     {
       "title": "Details",
       "raw_content": "The <b>shl</b> operator is defined mathematically (in a machine-independent way) as follows:  <i>A</i> <b>shl</b> <i>B</i> = <i>A</i> <b>*</b> ( 2**<i>B </i>). Overflow occurs when the result exceeds the maximum value of the <b>nat4</b> (4-byte natural number) type.<p>\r\nValue <i>A</i> can be of any integer type (as long as it is non-negative) or any natural number type.</p>\n<p>\r\nThe <b>shl</b> operator has the same precedence as the * operator.</p>\n<p>\r\n</p>",
       "text_content": " The shl operator is defined mathematically (in a machine-independent way) as follows:  A shl B = A * ( 2**B ). Overflow occurs when the result exceeds the maximum value of the nat4 (4-byte natural number) type.\r\nValue A can be of any integer type (as long as it is non-negative) or any natural number type.\r\nThe shl operator has the same precedence as the * operator.\r\n",
-      "mdown_content": "The **shl** operator is defined mathematically (in a machine-independent way) as follows:  *A* **shl** *B* = *A* ***** ( 2***B *). Overflow occurs when the result exceeds the maximum value of the **nat4** (4-byte natural number) type.\nValue *A* can be of any integer type (as long as it is non-negative) or any natural number type.\nThe **shl** operator has the same precedence as the * operator."
+      "mdown_content": "The **shl** operator is defined mathematically (in a machine-independent way) as follows:  _A_ **shl** _B_ = _A_ __*__ ( 2**_B _). Overflow occurs when the result exceeds the maximum value of the **nat4** (4-byte natural number) type.\nValue _A_ can be of any integer type (as long as it is non-negative) or any natural number type.\nThe **shl** operator has the same precedence as the * operator."
     },
     {
       "title": "See also",

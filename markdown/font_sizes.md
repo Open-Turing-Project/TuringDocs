@@ -2,7 +2,9 @@
 #Font.Sizes
 
 ##Syntax
-**Font.Sizes** (*fontID* : **int**, **var** *height*, *ascent*, *descent*,      *internalLeading* : **int**)
+**Font.Sizes** (_fontID_ : **int**, **var** _height_, _ascent_, _descent_, 
+_internalLeading_ : **int**)
+
 
 
 

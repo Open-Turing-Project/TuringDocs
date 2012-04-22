@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>closeStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>close</b> : <i>fileNumber</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A closeStatement is:\r\n close : fileNumber",
-      "mdown_content": "A *closeStatement* is:\n **close** : *fileNumber*"
+      "mdown_content": "A _closeStatement_ is:\n\n**close** : _fileNumber_\n"
     },
     {
       "title": "Description",
       "raw_content": "In Turing, files are read and written using a <i>fileNumber</i>. In most cases, this number is given a value using the <b>open</b> statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the <b>close</b> statement.<p>\r\n</p>",
       "text_content": " In Turing, files are read and written using a fileNumber. In most cases, this number is given a value using the open statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the close statement.\r\n",
-      "mdown_content": "In Turing, files are read and written using a *fileNumber*. In most cases, this number is given a value using the **open** statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement."
+      "mdown_content": "In Turing, files are read and written using a _fileNumber_. In most cases, this number is given a value using the **open** statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement."
     },
     {
       "title": "Example",

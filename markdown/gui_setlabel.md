@@ -2,13 +2,13 @@
 #GUI.SetLabel
 
 ##Syntax
-**GUI.SetLabel** (*widgetID* : **int**, *text* : **string**)
+**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)
 
 
 
 ##Description
-Changes the text of a widget specified by *widgetID* to *text*. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the *widgetID* parameter.
-In most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original *width* specified and the new text.
+Changes the text of a widget specified by _widgetID_ to _text_. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the _widgetID_ parameter.
+In most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original _width_ specified and the new text.
 
 
 

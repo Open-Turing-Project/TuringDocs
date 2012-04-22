@@ -2,12 +2,12 @@
 #Window.Close
 
 ##Syntax
-**Window.Close **(*windowID* : **int**)
+**Window.Close **(_windowID_ : **int**)
 
 
 
 ##Description
-The **Window.Close ** procedure closes the window specified by the *windowID* parameter.
+The **Window.Close ** procedure closes the window specified by the _windowID_ parameter.
 
 
 

@@ -2,7 +2,7 @@
 #Rand.Set
 
 ##Syntax
-**Rand.Set **(*seed* : **nat4**)
+**Rand.Set **(_seed_ : **nat4**)
 
 
 

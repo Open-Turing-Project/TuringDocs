@@ -2,12 +2,12 @@
 #GUI.SetMouseEventHandler
 
 ##Syntax
-**GUI.SetMouseEventHandler** (    *mouseEventHandler* : **procedure** *x* (*mx*, *my* : **int**))
+**GUI.SetMouseEventHandler** (    _mouseEventHandler_ : **procedure** _x_ (_mx_, _my_ : **int**))
 
 
 
 ##Description
-Sets the new default mouse event handler. The *mouseEventHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The *mx* and *my* parameters in the *mouseEventHandler* are the location of mouse when the button was pressed.
+Sets the new default mouse event handler. The _mouseEventHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The _mx_ and _my_ parameters in the _mouseEventHandler_ are the location of mouse when the button was pressed.
 This procedure is used by programs to allow for mouse input in a program that uses widgets.
 
 

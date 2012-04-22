@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ord</b> ( <i>ch</i> : <b>char</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " ord ( ch : char ) : int\r\n",
-      "mdown_content": "**ord** ( *ch* : **char** ) : **int**"
+      "mdown_content": "**ord** ( _ch_ : **char** ) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>ord</b> function accepts an enumerated value, <b>char</b>, or a string of length 1, and returns the position of the value in the enumeration, or of the character in the ASCII (or EBCDIC for IBM mainframes) sequence. Values of an enumerated type are numbered left to right starting at zero. For example, <b>ord</b> ( \"A\" ) is 65. The <b>ord</b> function is the inverse of <b>chr</b>, so for any character<i> c</i>, <b>chr</b> ( <b>ord</b> (<i>c</i>)) = <i>c</i>.<p>\r\n</p>",
       "text_content": " The ord function accepts an enumerated value, char, or a string of length 1, and returns the position of the value in the enumeration, or of the character in the ASCII (or EBCDIC for IBM mainframes) sequence. Values of an enumerated type are numbered left to right starting at zero. For example, ord ( \"A\" ) is 65. The ord function is the inverse of chr, so for any character c, chr ( ord (c)) = c.\r\n",
-      "mdown_content": "The **ord** function accepts an enumerated value, **char**, or a string of length 1, and returns the position of the value in the enumeration, or of the character in the ASCII (or EBCDIC for IBM mainframes) sequence. Values of an enumerated type are numbered left to right starting at zero. For example, **ord** ( \"A\" ) is 65. The **ord** function is the inverse of **chr**, so for any character* c*, **chr** ( **ord** (*c*)) = *c*."
+      "mdown_content": "The **ord** function accepts an enumerated value, **char**, or a string of length 1, and returns the position of the value in the enumeration, or of the character in the ASCII (or EBCDIC for IBM mainframes) sequence. Values of an enumerated type are numbered left to right starting at zero. For example, **ord** ( \"A\" ) is 65. The **ord** function is the inverse of **chr**, so for any character_ c_, **chr** ( **ord** (_c_)) = _c_."
     },
     {
       "title": "See also",

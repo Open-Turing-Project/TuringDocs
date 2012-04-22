@@ -2,15 +2,17 @@
 #Pic.ScreenSave
 
 ##Syntax
-**Pic.ScreenSave** (*x1*, *y1*, *x2*, *y2* : **int**, *fileName* : **string**)
+**Pic.ScreenSave** (_x1_, _y1_, _x2_, _y2_ : **int**, _fileName_ : **string**)
 
 
 
 ##Description
 **Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.
-The picture saved to the file is the portion of the screen defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*).
-The *fileName*parameter must give the format of the file:
- BMP files "BMP:filename" or "filename.BMP"
+The picture saved to the file is the portion of the screen defined by the rectangle (_x1_, _y1_) - (_x2_, _y2_).
+The _fileName_parameter must give the format of the file:
+
+
+
 
 
 
@@ -25,7 +27,7 @@ If the **Pic.ScreenSave** fails, then **Error.Last** will return a non-zero valu
 
 
 ##Example
-The program draws a graphic and saves it as a PICT file called *draw*.
+The program draws a graphic and saves it as a PICT file called _draw_.
 
 
         Draw.FillBox (50, 50, 150, 150, red)

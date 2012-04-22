@@ -2,16 +2,21 @@
 #constantReference
 
 ##Syntax
-A *constantReference* is:
- *constantId* { *componentSelector* }
+A _constantReference_ is:
+
+_constantId_ { _componentSelector_ }
+
 
 
 
 ##Description
-In a Turing program, a constant is declared and given a name (*constantId*) and then used. Each use is called a *constant reference*.
-If the constant is an array, record or union, its parts (*components*) can be selected using subscripts and field names (using *componentSelectors*). The form of a *componentSelector *is one of:
- (a) (*expn* {, *expn*} ) (b) . *fieldId*
-Form (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a **record** or **union**. Component selectors are used in the same manner as variable references. See *variableReference* for details. See also **const** declaration and *explicitConstant*.
+In a Turing program, a constant is declared and given a name (_constantId_) and then used. Each use is called a _constant reference_.
+If the constant is an array, record or union, its parts (_components_) can be selected using subscripts and field names (using _componentSelectors_). The form of a _componentSelector _is one of:
+
+
+
+
+Form (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a **record** or **union**. Component selectors are used in the same manner as variable references. See _variableReference_ for details. See also **const** declaration and _explicitConstant_.
 
 
 

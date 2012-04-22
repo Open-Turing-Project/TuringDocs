@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.BytesAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Net.BytesAvailable (netStream : int) : int\r\n",
-      "mdown_content": "**Net.BytesAvailable **(*netStream* : **int**) : **int**"
+      "mdown_content": "**Net.BytesAvailable **(_netStream_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the number of bytes available for reading from the net stream specified by the <i>netStream</i> parameter.<p>\r\n</p>",
       "text_content": " Returns the number of bytes available for reading from the net stream specified by the netStream parameter.\r\n",
-      "mdown_content": "Returns the number of bytes available for reading from the net stream specified by the *netStream* parameter."
+      "mdown_content": "Returns the number of bytes available for reading from the net stream specified by the _netStream_ parameter."
     },
     {
       "title": "Details",

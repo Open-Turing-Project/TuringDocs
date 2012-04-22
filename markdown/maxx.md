@@ -19,7 +19,7 @@ This program outputs the maximum x value.
         
         put "The maximum x value is ", maxx
 ##Details
-The screen should be in a "*graphics*" mode. If it is not, it will automatically be set to "*graphics*" mode. See **setscreen** for details.
+The screen should be in a "_graphics_" mode. If it is not, it will automatically be set to "_graphics_" mode. See **setscreen** for details.
 For the default IBM PC compatible graphics mode (CGA), **maxx** = 319.
 
 

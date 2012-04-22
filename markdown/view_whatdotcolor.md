@@ -2,7 +2,7 @@
 #View.WhatDotColor
 
 ##Syntax
-**View.W****hatDotColor** ( *x*, *y* : **int** ) : **int**
+**View.W****hatDotColor** ( _x_, _y_ : **int** ) : **int**
 
 
 
@@ -38,8 +38,9 @@ Another example illustrates the use of **View.WhatDotColor** to determine the co
 
 
 
+
 ##Details
-The screen should be in a"*graphics*" mode. If is not set to "*graphics*"*  *mode,  it will automatically be set to "*graphics*" mode. See **View.Set **for details.
+The screen should be in a"_graphics_" mode. If is not set to "_graphics_"_  _mode,  it will automatically be set to "_graphics_" mode. See **View.Set **for details.
 
 
 

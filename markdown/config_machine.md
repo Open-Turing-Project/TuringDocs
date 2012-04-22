@@ -2,14 +2,18 @@
 #Config.Machine
 
 ##Syntax
-**Config.Machine** (*machineCode* : **int**) : **int**
+**Config.Machine** (_machineCode_ : **int**) : **int**
 
 
 
 ##Description
-**Config.Machine** returns information about the machine that the program is currently running on. The parameter *machineCode* determines what sort of information is passed back. *machineCode* has a number of possible values, all summarized by a set of predefined constants.
+**Config.Machine** returns information about the machine that the program is currently running on. The parameter _machineCode_ determines what sort of information is passed back. _machineCode_ has a number of possible values, all summarized by a set of predefined constants.
 At the time of this writing, the following constants were defined:
-*cmProcessor* return an encoding of the processor number.*cmFPU* return 1 if there is an FPU installed, 0 if not.*cmOS* return the current version number of the operating system (e.g. 6.07 = 607).
+
+_cmProcessor_ return an encoding of the processor number.
+_cmFPU_ return 1 if there is an FPU installed, 0 if not.
+_cmOS_ return the current version number of the operating system (e.g. 6.07 = 607).
+
 
 
 

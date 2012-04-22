@@ -2,12 +2,12 @@
 #Sprite.SetHeight
 
 ##Syntax
-**Sprite.SetHeight** (*spriteID*, *newHeight* : **int**)
+**Sprite.SetHeight** (_spriteID_, _newHeight_ : **int**)
 
 
 
 ##Description
-Sets the height of the sprite specified by *spriteID* to the value specified by *newHeight*.
+Sets the height of the sprite specified by _spriteID_ to the value specified by _newHeight_.
 The height of a sprite determines which sprite appears above another when they overlap. The "higher" sprite (the one with the greater height) will appear on top of the sprite with the lower height, even if the lower sprite is drawn second.
 The background (i.e. any non-sprite) is considered to be in height 0. Sprites with a negative height will appear "behind" the background. Note that if two sprites have the same height, the one drawn last will appear above the first one.
 

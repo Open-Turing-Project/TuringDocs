@@ -2,13 +2,13 @@
 #GUI.Dispose
 
 ##Syntax
-**GUI.Dispose** (*widgetID* : **int**)
+**GUI.Dispose** (_widgetID_ : **int**)
 
 
 
 ##Description
-Eliminates the widget specified by *widgetID*. 
-If the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the *Hide* method and then the *Show* method when you want to use it again.
+Eliminates the widget specified by _widgetID_. 
+If the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the _Hide_ method and then the _Show_ method when you want to use it again.
 
 
 

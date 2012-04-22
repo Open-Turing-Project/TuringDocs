@@ -2,12 +2,12 @@
 #Font.GetStyle
 
 ##Syntax
-**Font.GetStyle** (*fontName* : **string**,         **var** *bold*, *italic*, *underline* : **boolean**) : **string**
+**Font.GetStyle** (_fontName_ : **string**,         **var** _bold_, _italic_, _underline_ : **boolean**) : **string**
 
 
 
 ##Description
-**Font.GetStyle** is used to get the styles available on the system for a specified font. *bold*, *italic* and *underline* are set to **true** if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using **Font.StartSize** and **Font.GetSize**.
+**Font.GetStyle** is used to get the styles available on the system for a specified font. _bold_, _italic_ and _underline_ are set to **true** if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using **Font.StartSize** and **Font.GetSize**.
 
 
 
@@ -37,6 +37,7 @@ The program lists all the fonts and their styles available on the system.
         end loop
 ##Example
 An example is available that displays full information aboutthe fonts including name, styles, and point sizes.
+
 
 
 

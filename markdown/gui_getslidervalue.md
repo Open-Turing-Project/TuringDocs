@@ -2,17 +2,17 @@
 #GUI.GetSliderValue
 
 ##Syntax
-**GUI.GetSliderValue** (*widgetID* : **int**) : **int**
+**GUI.GetSliderValue** (_widgetID_ : **int**) : **int**
 
 
 
 ##Description
-Returns the current value of a slider or scroll bar specified by *widgetID*. The *widgetID* must specify either scroll bar or a slider (horizontal or vertical).
+Returns the current value of a slider or scroll bar specified by _widgetID_. The _widgetID_ must specify either scroll bar or a slider (horizontal or vertical).
 
 
 
 ##Example
-See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetSliderValue**.
+See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetSliderValue**.
 
 
 

@@ -2,7 +2,7 @@
 #Window.Hide
 
 ##Syntax
-**Window.Hide** (*windowID* : **int**)
+**Window.Hide** (_windowID_ : **int**)
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatColorBack</b> :<i> </i><b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatColorBack : int\r\n",
-      "mdown_content": "**Text.WhatColorBack** :* ***int**"
+      "mdown_content": "**Text.WhatColorBack** :_ _**int**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. Beware that the meaning of background color is different in these two modes. See <b>Text.ColorBack </b>for details.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. Beware that the meaning of background color is different in these two modes. See Text.ColorBack for details.\r\n",
-      "mdown_content": "The screen should be in a \"*screen*\" or* *\"*graphics*\" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack **for details."
+      "mdown_content": "The screen should be in a \"_screen_\" or_ _\"_graphics_\" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack **for details."
     },
     {
       "title": "Status",

@@ -2,18 +2,18 @@
 #Draw.Oval
 
 ##Syntax
-**Draw.Oval** (*x*, *y*, *xRadius*, *yRadius*, *Color* :** int**)
+**Draw.Oval** (_x_, _y_, _xRadius_, _yRadius_, _Color_ :** int**)
 
 
 
 ##Description
-The **Draw.Oval **procedure is used to draw an oval whose center is at (*x*, *y*). The horizontal and vertical distances from the center to the oval are given by *xRadius *and *yRadius*.
+The **Draw.Oval **procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius _and _yRadius_.
 
 ![Doc image](draw_oval01.gif)
 
 
 ##Example
-This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The center of the oval is at (*midx*, *midy*), which is the middle of the screen.
+This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The center of the oval is at (_midx_, _midy_), which is the middle of the screen.
 
 
         View.Set ("graphics")
@@ -21,8 +21,8 @@ This program draws a large oval that just touches each edge of the screen in mag
         const midy := maxy div 2
         Draw.Oval (midx, midy, midx, midy, magenta)
 ##Details
-Ideally, a circle is drawn when *xRadius* = *yRadius*. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+Ideally, a circle is drawn when _xRadius_ = _yRadius_. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 

@@ -2,12 +2,12 @@
 #Draw.Line
 
 ##Syntax
-**Draw.Line** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)
+**Draw.Line** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.Line **procedure is used to draw a line on the screen from (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.
+The **Draw.Line **procedure is used to draw a line on the screen from (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_.
 
 ![Doc image](draw_line01.gif)
 
@@ -22,7 +22,7 @@ This program draws a large X, reaching to each corner of the screen using color 
         % Now draw a line from the left top to right bottom
         Draw.Line (0, maxy, maxx, 0, 1)
 ##Details
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*"* *mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_"_ _mode, an error will occur.
 
 
 

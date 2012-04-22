@@ -2,17 +2,17 @@
 #xor
 
 ##Syntax
-*A* **xor** *B*
+_A_ **xor** _B_
 
 
 
 ##Description
-When applied to set values, **xor** (symmetric difference) yields a set which includes element *e* if and only if *e* is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands *A* and *B *are evaluated.
+When applied to set values, **xor** (symmetric difference) yields a set which includes element _e_ if and only if _e_ is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands _A_ and _B _are evaluated.
 
 
 
 ##Example
-Status *s3* will contain elements that are in *s1* or *s2* but not both. Here **xor** is a set operator. See **enum** and **set** types for explanations of these types.
+Status _s3_ will contain elements that are in _s1_ or _s2_ but not both. Here **xor** is a set operator. See **enum** and **set** types for explanations of these types.
 
 
         type status : enum (ready, sending, repeating)
@@ -23,7 +23,7 @@ Status *s3* will contain elements that are in *s1* or *s2* but not both. Here **
         
         s3 := s1 xor s2     % Same as (s1 + s2) - (s1 * s2)
 ##Example
-Each bit of natural number *n3* will be 1 if exactly one of the corresponding bits of *n1* and *n2* are 1. For example, if *n1* = 2#110 (6) and *n2* = 2#010 (2), *n3* will be set to 2#100 (4). Here **xor** is an integer operator.
+Each bit of natural number _n3_ will be 1 if exactly one of the corresponding bits of _n1_ and _n2_ are 1. For example, if _n1_ = 2#110 (6) and _n2_ = 2#010 (2), _n3_ will be set to 2#100 (4). Here **xor** is an integer operator.
 
 
         var n1, n2, n3 : nat
@@ -35,6 +35,6 @@ The **xor** operator is not a short circuit operator; in other words, both of it
 
 
 ##See also
-**[set.html](set)**. See also *[explicitintegerconstant.html](explicitIntegerConstant)* which describes values such as 2**#**110.
+**[set.html](set)**. See also _[explicitintegerconstant.html](explicitIntegerConstant)_ which describes values such as 2**#**110.
 
 

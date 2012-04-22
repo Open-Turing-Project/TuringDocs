@@ -2,12 +2,12 @@
 #Font.Width
 
 ##Syntax
-**Font.Width** (*txtStr* : **string**, *fontID* : **int**) : **int**
+**Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**
 
 
 
 ##Description
-**Font.Width **is used to obtain the width in pixels that a specified string will take to draw in a specified font. The *textStr* parameter is the string. The *fontID* parameter is the font in which the string would be drawn.
+**Font.Width **is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn.
 
 
 

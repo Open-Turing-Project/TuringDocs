@@ -2,12 +2,12 @@
 #getenv
 
 ##Syntax
-**getenv** ( *symbol* : **string** ) : **string**
+**getenv** ( _symbol_ : **string** ) : **string**
 
 
 
 ##Description
-The **getenv** function is used to access the environment string whose name is *symbol*. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **nargs** and **fetcharg** functions.
+The **getenv** function is used to access the environment string whose name is _symbol_. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **nargs** and **fetcharg** functions.
 
 
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.HostAddressFromName </b>( <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>hostName</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Net.HostAddressFromName ( \r\n    hostName : string) : string\r\n",
-      "mdown_content": "**Net.HostAddressFromName **(     *hostName* : **string**) : **string**"
+      "mdown_content": "**Net.HostAddressFromName **(     _hostName_ : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "Returns<b> </b>the numeric TCP/IP address of the machine whose hostname is specified by the <i>hostName</i> parameter.<p>\r\n</p>",
       "text_content": " Returns the numeric TCP/IP address of the machine whose hostname is specified by the hostName parameter.\r\n",
-      "mdown_content": "Returns** **the numeric TCP/IP address of the machine whose hostname is specified by the *hostName* parameter."
+      "mdown_content": "Returns** **the numeric TCP/IP address of the machine whose hostname is specified by the _hostName_ parameter."
     },
     {
       "title": "Details",

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<b>Math.Distance</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>real</b>) : <b>real</b><p>\r\n</p>",
       "text_content": " Math.Distance (x1, y1, x2, y2 : real) : real\r\n",
-      "mdown_content": "**Math.Distance** (*x1*, *y1*, *x2*, *y2* : **real**) : **real**"
+      "mdown_content": "**Math.Distance** (_x1_, _y1_, _x2_, _y2_ : **real**) : **real**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Math.Distance </b>is used to calculate the distance between two points.\r\n(<i>x1</i>, <i>y1</i>) is the location of the first point, and (<i>x2</i>, <i>y2</i>) is the location of the \r\nsecond point.<p>\r\n</p>",
       "text_content": " Math.Distance is used to calculate the distance between two points.\r\n(x1, y1) is the location of the first point, and (x2, y2) is the location of the \r\nsecond point.\r\n",
-      "mdown_content": "**Math.Distance **is used to calculate the distance between two points.(*x1*, *y1*) is the location of the first point, and (*x2*, *y2*) is the location of the second point."
+      "mdown_content": "**Math.Distance **is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point."
     },
     {
       "title": "Details",

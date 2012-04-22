@@ -2,12 +2,12 @@
 #GUI.SetSliderValue
 
 ##Syntax
-**GUI.SetSliderValue** (*widgetID*, *value* : **int**)
+**GUI.SetSliderValue** (_widgetID_, _value_ : **int**)
 
 
 
 ##Description
-Sets the value of a slider or scroll bar specified by *widgetID* to *value*. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's *action procedure* with the new value.
+Sets the value of a slider or scroll bar specified by _widgetID_ to _value_. It moves the thumb on the slider or scroll bar to the appropriate location and calls the slider's _action procedure_ with the new value.
 
 
 

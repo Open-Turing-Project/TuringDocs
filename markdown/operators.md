@@ -1,8 +1,79 @@
-{
-  "title": "Operators",
-  "fileName": "operators",
-  "sections": [
+#Operators
+##Mathematical Operators
 
-  ],
-  "htmlcontent": "\r\n<h1>Operators</h1>\r\n<h2>Mathematical Operators</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td>Prefix +</td>\n<td>Identity</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>Prefix  -</td>\n<td>Negative</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>+</td>\n<td>Addition</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>-</td>\n<td>Subtraction</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>*</td>\n<td>Multiplication</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>/</td>\n<td>Division</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td><b>div</b></td>\n<td>Integer Division</td>\n<td>\n<b>int</b>\r\n</td>\n</tr>\n<tr>\n<td><b>mod</b></td>\n<td>Modulo</td>\n<td>\n<b>int</b>\r\n</td>\n</tr>\n<tr>\n<td><b>rem</b></td>\n<td>Remainder</td>\n<td>\n<b>int</b>\r\n</td>\n</tr>\n<tr>\n<td>**</td>\n<td>Exponentiation</td>\n<td>As Operands\r\n</td>\n</tr>\n<tr>\n<td>&lt;</td>\n<td>Less Than</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&gt;</td>\n<td>Greater Than</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>=</td>\n<td>Equals</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&lt;=</td>\n<td>Less Than or Equal</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&gt;=</td>\n<td>Greater Than or Equal</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>\n<b>not</b>=</td>\n<td>Not Equal</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n</table>\n<h2>Boolean Operators</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td>Prefix not</td>\n<td>Negation</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td><b>and</b></td>\n<td>And</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td><b>or</b></td>\n<td>Or</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td><b>xor</b></td>\n<td>Exclusive Or</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>=&gt;</td>\n<td>Implication</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n</table>\n<h2>Set Operators</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td>+</td>\n<td>Union</td>\n<td>\n<b>set</b>\r\n</td>\n</tr>\n<tr>\n<td>-</td>\n<td>Set Subtraction</td>\n<td>\n<b>set</b>\r\n</td>\n</tr>\n<tr>\n<td>*</td>\n<td>Intersection</td>\n<td>\n<b>set</b>\r\n</td>\n</tr>\n<tr>\n<td>=</td>\n<td>Equality</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>\n<b>not</b>=</td>\n<td>Inequality</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&lt;=</td>\n<td>Subset</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&lt;</td>\n<td>Strict (Proper) Subset</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&gt;=</td>\n<td>Superset</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td>&gt;</td>\n<td>Strict (Proper) Superset</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n</table>\n<h2>Operators on Members and Sets</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td><b>in</b></td>\n<td>Member of Set</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td><b>not in</b></td>\n<td>Not Member of Set</td>\n<td>\n<b>boolean</b>\r\n</td>\n</tr>\n<tr>\n<td><b>xor</b></td>\n<td>Exclusive Or</td>\n<td>\n<b>set</b>\r\n</td>\n</tr>\n</table>\n<h2>Bit Manipulation Operators</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td><b>shl</b></td>\n<td>Shift left</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n<tr>\n<td><b>shr</b></td>\n<td>Shift right</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n<tr>\n<td><b>and</b></td>\n<td>Bit-wise And</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n<tr>\n<td><b>or</b></td>\n<td>Bit-wise Or</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n<tr>\n<td><b>xor</b></td>\n<td>Bit-wise Exclusive Or</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n</table>\n<h2>Pointer Operators</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td>^</td>\n<td>Follow pointer</td>\n<td>Target type\r\n</td>\n</tr>\n</table>\n<h2>Type Cheats</h2>\r\n<table cellpadding=\"3\" border=\"1\">\n<tr>\n<th>Operator</th>\n<th>Operation</th>\n<th>Result Type\r\n</th>\n</tr>\n<tr>\n<td>#</td>\n<td>Type cheat</td>\n<td>\n<b>nat</b>\r\n</td>\n</tr>\n</table>\n<h2>Operator Short Forms</h2>\r\nThese can be used in place of the above notation.\r\n<table>\n<tr>\n<td><b>not</b></td>\n<td width=\"5\">&nbsp;</td>\n<td>~\r\n</td>\n</tr>\n<tr>\n<td>\n<b>not</b>=</td>\n<td width=\"5\">&nbsp;</td>\n<td>~=\r\n</td>\n</tr>\n<tr>\n<td><b>not in</b></td>\n<td width=\"5\">&nbsp;</td>\n<td>~<b>in\r\n<tr>\n<td><b>and</b></td>\n<td width=\"5\">&nbsp;</td>\n<td>&amp;\r\n</td>\n</tr>\n<tr>\n<td><b>or</b></td>\n<td width=\"5\">&nbsp;</td>\n<td>| \r\n</td>\n</tr></b>\n</td>\n</tr>\n</table>\n<h2>Operator Precedence</h2>\r\nHighest precedence operators first.\r\n<ol>\n<li>**, ^, #\r\n  </li>\n<li>prefix + and -\r\n  </li>\n<li>* , / , <b>div</b> , <b>mod</b> , <b>rem</b> , <b>shl</b> , <b>shr</b>\r\n  </li>\n<li>+ , -, <b>xor</b>\r\n  </li>\n<li>&lt; , &gt; , = , &lt;= , &gt;= , <b>not</b>= , <b>in</b> , <b>not in</b>\r\n  </li>\n<li>\n<b>not</b>\r\n  </li>\n<li>\n<b>and</b>\r\n  </li>\n<li>\n<b>or</b>\r\n  </li>\n<li>=&gt;\r\n</li>\n</ol>\n"
-}
+
+Identity
+Negative
+Addition
+Subtraction
+Multiplication
+Division
+Integer Division
+Modulo
+Remainder
+Exponentiation
+Less Than
+Greater Than
+Equals
+Less Than or Equal
+Greater Than or Equal
+Not Equal
+##Boolean Operators
+
+
+Negation
+And
+Or
+Exclusive Or
+Implication
+##Set Operators
+
+
+Union
+Set Subtraction
+Intersection
+Equality
+Inequality
+Subset
+Strict (Proper) Subset
+Superset
+Strict (Proper) Superset
+##Operators on Members and Sets
+
+
+Member of Set
+Not Member of Set
+Exclusive Or
+##Bit Manipulation Operators
+
+
+Shift left
+Shift right
+Bit-wise And
+Bit-wise Or
+Bit-wise Exclusive Or
+##Pointer Operators
+
+
+Follow pointer
+##Type Cheats
+
+
+Type cheat
+##Operator Short Forms
+These can be used in place of the above notation.
+
+
+&
+
+
+##Operator Precedence
+Highest precedence operators first.- **, ^, #
+- prefix + and -
+- * , / , **div** , **mod** , **rem** , **shl** , **shr**
+- + , -, **xor**
+- < , > , = , <= , >= , **not**= , **in** , **not in**
+- **not**
+- **and**
+- **or**
+- =>

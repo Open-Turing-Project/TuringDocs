@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Input.KeyDown</b> (<b>var</b> <i>chars</i> : <b>array char of boolean</b>)<p>\r\n</p></font>",
       "text_content": " Input.KeyDown (var chars : array char of boolean)\r\n",
-      "mdown_content": "**Input.KeyDown** (**var** *chars* : **array char of boolean**)"
+      "mdown_content": "**Input.KeyDown** (**var** _chars_ : **array char of boolean**)"
     },
     {
       "title": "Description",
@@ -27,19 +27,19 @@
       "title": "Details",
       "raw_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <b>true.</b> For example, the <i>a</i> key is pressed is <i>chars</i> ('a') is <b>true</b>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <b>Input.KeyDown</b> would register Shift and 'a' as pressed, but not 'A'.<p>\r\nA full list of all the possible characters that can be set with Input.KeyDown can be found in the <b>Key Codes</b> appendix.</p>\n<p>\r\n</p>",
       "text_content": " The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is true. For example, the a key is pressed is chars ('a') is true. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then Input.KeyDown would register Shift and 'a' as pressed, but not 'A'.\r\nA full list of all the possible characters that can be set with Input.KeyDown can be found in the Key Codes appendix.\r\n",
-      "mdown_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is **true.** For example, the *a* key is pressed is *chars* ('a') is **true**. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then **Input.KeyDown** would register Shift and 'a' as pressed, but not 'A'.\nA full list of all the possible characters that can be set with Input.KeyDown can be found in the **Key Codes** appendix."
+      "mdown_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is **true.** For example, the _a_ key is pressed is _chars_ ('a') is **true**. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then **Input.KeyDown** would register Shift and 'a' as pressed, but not 'A'.\nA full list of all the possible characters that can be set with Input.KeyDown can be found in the **Key Codes** appendix."
     },
     {
       "title": "Details",
       "raw_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <b>true.</b> For example, the <i>a</i> key is pressed is <i>chars</i> ('a') is <b>true</b>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <b>Input.KeyDown</b> would register Shift and 'a' as pressed, but not 'A'.<p>\r\n</p>",
       "text_content": " The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is true. For example, the a key is pressed is chars ('a') is true. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then Input.KeyDown would register Shift and 'a' as pressed, but not 'A'.\r\n",
-      "mdown_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is **true.** For example, the *a* key is pressed is *chars* ('a') is **true**. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then **Input.KeyDown** would register Shift and 'a' as pressed, but not 'A'."
+      "mdown_content": "The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is **true.** For example, the _a_ key is pressed is _chars_ ('a') is **true**. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then **Input.KeyDown** would register Shift and 'a' as pressed, but not 'A'."
     },
     {
       "title": "Details",
       "raw_content": "The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot &#147;hog the keyboard&#148; by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys.<p>\r\n</p>",
       "text_content": " The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot hog the keyboard by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys.\r\n",
-      "mdown_content": "The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot hog the keyboard by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys."
+      "mdown_content": "The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot &#147;hog the keyboard&#148; by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys."
     },
     {
       "title": "Example",
@@ -64,7 +64,7 @@
       "title": "Example",
       "raw_content": "Another example is available that checks for all possible keys.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,Input.KeyDown2.t;Input.KeyDown Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that checks for all possible keys.\r\n          \r\n            ",
-      "mdown_content": "Another example is available that checks for all possible keys."
+      "mdown_content": "Another example is available that checks for all possible keys.\n"
     },
     {
       "title": "Status",

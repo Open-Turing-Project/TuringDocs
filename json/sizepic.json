@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sizepic</b> ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " sizepic ( x1, y1, x2, y2 : int) : int\r\n",
-      "mdown_content": "**sizepic** ( *x1*, *y1*, *x2*, *y2* : **int**) : **int**"
+      "mdown_content": "**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "See <b>takepic</b> for an example of the use of <b>sizepic</b> and for further information about buffers for drawing pictures.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " See takepic for an example of the use of sizepic and for further information about buffers for drawing pictures.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "See **takepic** for an example of the use of **sizepic** and for further information about buffers for drawing pictures.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
+      "mdown_content": "See **takepic** for an example of the use of **sizepic** and for further information about buffers for drawing pictures.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
     },
     {
       "title": "See also",

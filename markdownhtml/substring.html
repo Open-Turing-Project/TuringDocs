@@ -2,8 +2,10 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>substring </em>is one of:
-(a)<em>stringReference</em> ( <em>leftPosition</em> .. <em>rightPosition</em> )(b)<em>stringReference</em> ( <em>charPosition</em> )</p>
+<p>A <em>substring </em>is one of:</p>
+
+<p>(a)<em>stringReference</em> ( <em>leftPosition</em> .. <em>rightPosition</em> )
+(b)<em>stringReference</em> ( <em>charPosition</em> )</p>
 
 <h2>Description</h2>
 
@@ -21,12 +23,12 @@
 
 <h2>Details</h2>
 
-<p>The leftmost possible position in a string is numbered 1. The last position in a string can be written as an asterisk (<em>). For example, </em>word<em> (2 .. </em>) is equivalent to <em>word</em> (2 .. <em>length</em>(<em>word</em>)).
-Each of <em>leftPosition</em>,<em> rightPosition</em>,<em> </em>and <em>charPosition</em> must have one of these forms:
-(a) <em>expn</em>(b) <strong><strong><em>(c) </em></strong></strong> <strong>-</strong> <em>expn</em>
-The exact rules for the allowed values of <em>leftPosition </em>and <em>rightPosition</em> are:
-(1) <em>leftPosition</em> must be at least 1,(2) <em>rightPosition</em> must be at most <em>length </em>(<em>stringReference</em>), and(3) the length of the selected substring must zero or more.
-This specifically allows null substrings such as <em>word </em>(1, 0) in which <em>rightPosition </em>is 0 and <em>word </em>(6, 5) in which <em>leftPosition </em>is one more that <strong>length</strong> (<em>stringReference</em>).
+<p>The leftmost possible position in a string is numbered 1. The last position in a string can be written as an asterisk (<em>). For example, <em>word</em> (2 .. </em>) is equivalent to <em>word</em> (2 .. <em>length</em>(<em>word</em>)).
+Each of <em>leftPosition</em>,<em> rightPosition</em>,<em> </em>and <em>charPosition</em> must have one of these forms:</p>
+
+<p>The exact rules for the allowed values of <em>leftPosition </em>and <em>rightPosition</em> are:</p>
+
+<p>This specifically allows null substrings such as <em>word </em>(1, 0) in which <em>rightPosition </em>is 0 and <em>word </em>(6, 5) in which <em>leftPosition </em>is one more that <strong>length</strong> (<em>stringReference</em>).
 Note that substrings are not assignable. For example, if <em>s</em> is a string, the statement <em>s </em>(3) := "a" is illegal in Turing.
 Turing supports substrings of <strong>char</strong>(<em>n</em>) values. See <strong>char</strong>(<em>n</em>). If a substring of <strong>char</strong>(<em>n</em>) value <em>t</em> has two operands, as in <em>t</em>(2..77), the result type of this operation is a <strong>string</strong>. If the substring has one operand, as in <em>t</em>(7), this becomes, in effect,  a subscript into an array of characters. The result is a reference to a <strong>char</strong>, which can be assigned to or passed to a <strong>var</strong> parameter.</p>
 

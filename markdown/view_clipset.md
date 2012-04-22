@@ -2,15 +2,15 @@
 #View.ClipSet
 
 ##Syntax
-**View.ClipSet** (*x1*, *y1*, *x2*, *y2* : **int**)
+**View.ClipSet** (_x1_, _y1_, _x2_, _y2_ : **int**)
 
 
 
 ##Description
-The **View.ClipSet** procedure sets the clipping region to the rectangle specified by (*x1*, *y1*) - (*x2*, *y2*). If a clipping region already exist, it is replaced by the specified rectangle.
+The **View.ClipSet** procedure sets the clipping region to the rectangle specified by (_x1_, _y1_) - (_x2_, _y2_). If a clipping region already exist, it is replaced by the specified rectangle.
 A clipping region is the region in which the output will appear. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.
 To set the initial clipping, or remove the old region and replace it with a new one, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.
-These commands only work in "*graphics*" mode.
+These commands only work in "_graphics_" mode.
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>includeConstruct</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>include</b> <i>fileName</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": "  An includeConstruct is:\r\n include fileName",
-      "mdown_content": "An *includeConstruct* is:\n **include** *fileName*"
+      "mdown_content": "An _includeConstruct_ is:\n\n**include** _fileName_\n"
     },
     {
       "title": "Description",
@@ -22,7 +22,7 @@
       ],
       "raw_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <i>arrows</i> contains definitions of these values:<p>\r\n</p>\r\nThese definitions can be included in any program in the following manner:<p>\r\n</p>",
       "text_content": " On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called arrows contains definitions of these values:\r\n\r\nThese definitions can be included in any program in the following manner:\r\n\r\n",
-      "mdown_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called *arrows* contains definitions of these values:\nThese definitions can be included in any program in the following manner:"
+      "mdown_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called _arrows_ contains definitions of these values:\nThese definitions can be included in any program in the following manner:"
     },
     {
       "title": "Details",

@@ -1,8 +1,164 @@
-{
-  "title": "\r\nBasic Predefined Subprograms",
-  "fileName": "basic_predef",
-  "sections": [
+#Basic Predefined Subprograms
+- [intreal.html](intreal - integer-to-real function)
+- [intstr.html](intstr - integer-to-string function)
 
-  ],
-  "htmlcontent": "\n<h1>Basic Predefined Subprograms</h1>\r\n<ul>\n<li>Type Conversion<br><ul>\n<li>From Integer<br><ul>\n<li>\n<a href=\"intreal.html\">intreal - integer-to-real function</a>\r\n  </li>\n<li>\n<a href=\"intstr.html\">intstr - integer-to-string function</a>\r\n        </li>\n</ul>\n</li>\n<li>From Real<br><ul>\n<li>\n<a href=\"ceil.html\">ceil - real-to-integer function</a>\r\n  </li>\n<li>\n<a href=\"erealstr.html\">erealstr - real-to-string function</a>\r\n  </li>\n<li>\n<a href=\"floor.html\">floor - real-to-integer function</a>\r\n  </li>\n<li>\n<a href=\"frealstr.html\">frealstr - real-to-string function</a>\r\n  </li>\n<li>\n<a href=\"realstr.html\">realstr - real-to-string function</a>\r\n  </li>\n<li>\n<a href=\"round.html\">round - real-to-integer function</a>\r\n        </li>\n</ul>\n</li>\n<li>From Nat<br><ul>\n<li>\n<a href=\"natreal.html\">natreal - natural number to real function</a>\r\n  </li>\n<li>\n<a href=\"natstr.html\">natstr - natural-number-to-string function</a>\r\n        </li>\n</ul>\n</li>\n<li>From String<br><ul>\n<li>\n<a href=\"strint.html\">strint - string-to-integer:function</a>\r\n  </li>\n<li>\n<a href=\"strintok.html\">strintok - string-to-integer:function</a>\r\n  </li>\n<li>\n<a href=\"strnat.html\">strnat - string to natural number function</a>\r\n  </li>\n<li>\n<a href=\"strnatok.html\">strnatok - string to natural number function</a>\r\n  </li>\n<li>\n<a href=\"strreal.html\">strreal - string-to-real function</a>\r\n  </li>\n<li>\n<a href=\"strrealok.html\">strrealok - string-to-real function</a>\r\n        </li>\n</ul>\n</li>\n<li>To/From ASCII<br><ul>\n<li>\n<a href=\"chr.html\">chr - integer-to-character function</a>\r\n  </li>\n<li>\n<a href=\"ord.html\">ord - character-to-integer function</a>\r\n        </li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Maximum Numbers<br><ul>\n<li>\n<a href=\"maxint.html\">maxint - maximum integer function</a>\r\n  </li>\n<li>\n<a href=\"maxnat.html\">maxnat - maximum natural number function</a>\r\n  </li>\n<li>\n<a href=\"minint.html\">minint - minimum integer function</a>\r\n  </li>\n<li>\n<a href=\"minnat.html\">minnat - minimum natural number function</a>\r\n  </li>\n</ul>\n</li>\n<li>Math<br><ul>\n<li>\n<a href=\"abs.html\">abs - absolute value function</a>\r\n  </li>\n<li>\n<a href=\"arctan.html\">arctan - arctangent function (radians)</a>\r\n  </li>\n<li>\n<a href=\"arctand.html\">arctand - arctangent function (degrees)</a>\r\n  </li>\n<li>\n<a href=\"cos.html\">cos - cosine function (radians)</a>\r\n  </li>\n<li>\n<a href=\"cosd.html\">cosd - cosine function (degrees)</a>\r\n  </li>\n<li>\n<a href=\"exp.html\">exp - exponentiation function</a>\r\n  </li>\n<li>\n<a href=\"ln.html\">ln - natural logarithm function</a>\r\n  </li>\n<li>\n<a href=\"max.html\">max - maximum function</a>\r\n  </li>\n<li>\n<a href=\"min.html\">min - minimum function</a>\r\n  </li>\n<li>\n<a href=\"sign.html\">sign - function</a>\r\n  </li>\n<li>\n<a href=\"sin.html\">sin - sine function (radians)</a>\r\n  </li>\n<li>\n<a href=\"sind.html\">sind - sine function (degrees)</a>\r\n  </li>\n<li>\n<a href=\"sqrt.html\">sqrt - square root function</a>\r\n  </li>\n</ul>\n</li>\n<li>Strings<br><ul>\n<li>\n<a href=\"index.html\">index - find pattern in string function</a>\r\n  </li>\n<li>\n<a href=\"length.html\">length - of a string function</a>\r\n  </li>\n<li>\n<a href=\"repeat.html\">repeat - make copies of string:function</a>\r\n  </li>\n</ul>\n</li>\n<li>Enumerated Types<br><ul>\n<li>\n<a href=\"pred.html\">pred - predecessor function</a>\r\n  </li>\n<li>\n<a href=\"succ.html\">succ - successor function</a>\r\n  </li>\n</ul>\n</li>\n<li>Files<br><ul><li>\n<a href=\"eof.html\">eof - end-of-file function</a>\r\n  </li></ul>\n</li>\n<li>Arrays<br><ul>\n<li>\n<a href=\"lower.html\">lower - bound</a>\r\n  </li>\n<li>\n<a href=\"upper.html\">upper - bound</a>\r\n  </li>\n</ul>\n</li>\n<li>Random Numbers<br><ul>\n<li>\n<a href=\"rand.html\">rand - random real number procedure</a>\r\n  </li>\n<li>\n<a href=\"randint.html\">randint - random integer procedure</a>\r\n  </li>\n<li>\n<a href=\"randnext.html\">randnext - procedure</a>\r\n  </li>\n<li>\n<a href=\"randomize.html\">randomize - procedure</a>\r\n  </li>\n<li>\n<a href=\"randseed.html\">randseed - procedure</a>\r\n  </li>\n</ul>\n</li>\n<li>Time<br><ul>\n<li>\n<a href=\"clock.html\">clock - millisecs used procedure</a>\r\n  </li>\n<li>\n<a href=\"date.html\">date - procedure</a>\r\n  </li>\n<li>\n<a href=\"sysclock.html\">sysclock - millisecs used procedure</a>\r\n  </li>\n<li>\n<a href=\"time.html\">time - time of day as a string procedure</a>\r\n  </li>\n<li>\n<a href=\"wallclock.html\">wallclock - seconds since 1/1/1970 procedure</a>\r\n  </li>\n</ul>\n</li>\n<li>Sound<br><ul>\n<li>\n<a href=\"play.html\">play - procedure</a>\r\n  </li>\n<li>\n<a href=\"playdone.html\">playdone - function</a>\r\n  </li>\n<li>\n<a href=\"sound.html\">sound - statement</a>\r\n  </li>\n</ul>\n</li>\n<li>System<br><ul>\n<li>\n<a href=\"delay.html\">delay - procedure</a>\r\n  </li>\n<li>\n<a href=\"fetcharg.html\">fetcharg - fetch argument function</a>\r\n  </li>\n<li>\n<a href=\"getenv.html\">getenv - get environment function</a>\r\n  </li>\n<li>\n<a href=\"getpid.html\">getpid - get process id function</a>\r\n  </li>\n<li>\n<a href=\"nargs.html\">nargs - number of arguments</a>\r\n  </li>\n<li>\n<a href=\"system.html\">system - statement</a>\r\n  </li>\n</ul>\n</li>\n<li>Parallel Port<br><ul>\n<li>\n<a href=\"parallelget.html\">parallelget - parallel port function</a>\r\n  </li>\n<li>\n<a href=\"parallelput.html\">parallelput - parallel port procedure</a>\r\n  </li>\n</ul>\n</li>\n<li>Mouse<br><ul>\n<li>\n<a href=\"buttonchoose.html\">buttonchoose - switch mouse modes</a>\r\n  </li>\n<li>\n<a href=\"buttonmoved.html\">buttonmoved - has a mouse event occurred</a>\r\n  </li>\n<li>\n<a href=\"buttonwait.html\">buttonwait - get a mouse event procedure</a>\r\n  </li>\n<li>\n<a href=\"mousewhere.html\">mousewhere</a>\r\n  </li>\n</ul>\n</li>\n<li>Character Graphics<br><ul>\n<li>\n<a href=\"cls.html\">cls - clear screen graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"color.html\">color - text color graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"colorback.html\">colorback - background color procedure</a>\r\n  </li>\n<li>\n<a href=\"color.html\">colour - text color graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"colorback.html\">colourback - background color procedure</a>\r\n  </li>\n<li>\n<a href=\"locate.html\">locate - procedure</a>\r\n  </li>\n<li>\n<a href=\"maxcol.html\">maxcol - maximum column function</a>\r\n  </li>\n<li>\n<a href=\"maxcolor.html\">maxcolor - graphics function</a>\r\n  </li>\n<li>\n<a href=\"maxcolor.html\">maxcolour - graphics function</a>\r\n  </li>\n<li>\n<a href=\"maxrow.html\">maxrow - maximum row function</a>\r\n  </li>\n<li>\n<a href=\"setscreen.html\">setscreen - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"whatcol.html\">whatcol - cursor position function</a>\r\n  </li>\n<li>\n<a href=\"whatcolor.html\">whatcolor - text color graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatcolorback.html\">whatcolorback - color of background function</a>\r\n  </li>\n<li>\n<a href=\"whatcolor.html\">whatcolour - text color graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatcolorback.html\">whatcolourback - color of background function</a>\r\n  </li>\n<li>\n<a href=\"whatrow.html\">whatrow - cursor position function</a>\r\n  </li>\n</ul>\n</li>\n<li>Pixel Graphics<br><ul>\n<li>\n<a href=\"cls.html\">cls - clear screen graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"color.html\">color - text color graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"colorback.html\">colorback - background color procedure</a>\r\n  </li>\n<li>\n<a href=\"color.html\">colour - text color graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"colorback.html\">colourback - background color procedure</a>\r\n  </li>\n<li>\n<a href=\"drawarc.html\">drawarc - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawbox.html\">drawbox - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawdot.html\">drawdot - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfill.html\">drawfill - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfillarc.html\">drawfillarc - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfillbox.html\">drawfillbox - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfillmapleleaf.html\">drawfillmapleleaf - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfilloval.html\">drawfilloval - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfillpolygon.html\">drawfillpolygon - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawfillstar.html\">drawfillstar - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawline.html\">drawline - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawmapleleaf.html\">drawmapleleaf - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawoval.html\">drawoval - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawpic.html\">drawpic - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawpolygon.html\">drawpolygon - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"drawstar.html\">drawstar - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"locate.html\">locate - procedure</a>\r\n  </li>\n<li>\n<a href=\"locatexy.html\">locatexy - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"maxcol.html\">maxcol - maximum column function</a>\r\n  </li>\n<li>\n<a href=\"maxcolor.html\">maxcolor - graphics function</a>\r\n  </li>\n<li>\n<a href=\"maxcolor.html\">maxcolour - graphics function</a>\r\n  </li>\n<li>\n<a href=\"maxrow.html\">maxrow - maximum row function</a>\r\n  </li>\n<li>\n<a href=\"maxx.html\">maxx - graphics function</a>\r\n  </li>\n<li>\n<a href=\"maxy.html\">maxy - graphics function</a>\r\n  </li>\n<li>\n<a href=\"setscreen.html\">setscreen - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"sizepic.html\">sizepic - graphics function</a>\r\n  </li>\n<li>\n<a href=\"takepic.html\">takepic - graphics procedure</a>\r\n  </li>\n<li>\n<a href=\"whatcol.html\">whatcol - cursor position function</a>\r\n  </li>\n<li>\n<a href=\"whatcolor.html\">whatcolor - text color graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatcolorback.html\">whatcolorback - color of background function</a>\r\n  </li>\n<li>\n<a href=\"whatcolor.html\">whatcolour - text color graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatcolorback.html\">whatcolourback - color of background function</a>\r\n  </li>\n<li>\n<a href=\"whatdotcolor.html\">whatdotcolor - graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatdotcolor.html\">whatdotcolour - graphics function</a>\r\n  </li>\n<li>\n<a href=\"whatrow.html\">whatrow - cursor position function</a>\r\n  </li>\n</ul>\n</li>\n<li>Character Input<br><ul>\n<li>\n<a href=\"getch.html\">getch - get character procedure</a>\r\n  </li>\n<li>\n<a href=\"getchar.html\">getchar - get character function</a>\r\n  </li>\n<li>\n<a href=\"hasch.html\">hasch - has character function</a>\r\n  </li>\n</ul>\n</li>\n<li>Concurrency<br><ul>\n<li>\n<a href=\"empty.html\">empty - condition function</a>\r\n  </li>\n<li>\n<a href=\"getpriority.html\">getpriority - function</a>\r\n  </li>\n<li>\n<a href=\"setpriority.html\">setpriority - procedure</a>\r\n  </li>\n<li>\n<a href=\"simutime.html\">simutime - simulated time function</a>\r\n  </li>\n</ul>\n</li>\n<li>Addresses and Sizes<br><ul>\n<li>\n<a href=\"addr.html\">addr - address of a variable</a>\r\n  </li>\n<li>\n<a href=\"sizeof.html\">sizeof - size of a type</a>\r\n  </li>\n</ul>\n</li>\n<li>Bit Manipulation<br><ul><li>\n<a href=\"bits.html\">bits - extraction</a>\r\n  </li></ul>\n</li>\n<li>Classes<br><ul>\n<li>\n<a href=\"objectclass.html\">objectclass - of a pointer</a>\r\n  </li>\n<li>\n<a href=\"self.html\">self - pointer to current object</a>\r\n  </li>\n</ul>\n</li>\n<li>Type Cheats<br><ul><li>\n<a href=\"cheat.html\">cheat - type cheating</a>\r\n  </li></ul>\n</li>\n</ul>\n"
-}
+- From Real- [ceil.html](ceil - real-to-integer function)
+- [erealstr.html](erealstr - real-to-string function)
+- [floor.html](floor - real-to-integer function)
+- [frealstr.html](frealstr - real-to-string function)
+- [realstr.html](realstr - real-to-string function)
+- [round.html](round - real-to-integer function)
+
+- From Nat- [natreal.html](natreal - natural number to real function)
+- [natstr.html](natstr - natural-number-to-string function)
+
+- From String- [strint.html](strint - string-to-integer:function)
+- [strintok.html](strintok - string-to-integer:function)
+- [strnat.html](strnat - string to natural number function)
+- [strnatok.html](strnatok - string to natural number function)
+- [strreal.html](strreal - string-to-real function)
+- [strrealok.html](strrealok - string-to-real function)
+
+- To/From ASCII- [chr.html](chr - integer-to-character function)
+- [ord.html](ord - character-to-integer function)
+
+
+- Maximum Numbers- [maxint.html](maxint - maximum integer function)
+- [maxnat.html](maxnat - maximum natural number function)
+- [minint.html](minint - minimum integer function)
+- [minnat.html](minnat - minimum natural number function)
+
+- Math- [abs.html](abs - absolute value function)
+- [arctan.html](arctan - arctangent function (radians))
+- [arctand.html](arctand - arctangent function (degrees))
+- [cos.html](cos - cosine function (radians))
+- [cosd.html](cosd - cosine function (degrees))
+- [exp.html](exp - exponentiation function)
+- [ln.html](ln - natural logarithm function)
+- [max.html](max - maximum function)
+- [min.html](min - minimum function)
+- [sign.html](sign - function)
+- [sin.html](sin - sine function (radians))
+- [sind.html](sind - sine function (degrees))
+- [sqrt.html](sqrt - square root function)
+
+- Strings- [index.html](index - find pattern in string function)
+- [length.html](length - of a string function)
+- [repeat.html](repeat - make copies of string:function)
+
+- Enumerated Types- [pred.html](pred - predecessor function)
+- [succ.html](succ - successor function)
+
+- Files- [eof.html](eof - end-of-file function)
+
+- Arrays- [lower.html](lower - bound)
+- [upper.html](upper - bound)
+
+- Random Numbers- [rand.html](rand - random real number procedure)
+- [randint.html](randint - random integer procedure)
+- [randnext.html](randnext - procedure)
+- [randomize.html](randomize - procedure)
+- [randseed.html](randseed - procedure)
+
+- Time- [clock.html](clock - millisecs used procedure)
+- [date.html](date - procedure)
+- [sysclock.html](sysclock - millisecs used procedure)
+- [time.html](time - time of day as a string procedure)
+- [wallclock.html](wallclock - seconds since 1/1/1970 procedure)
+
+- Sound- [play.html](play - procedure)
+- [playdone.html](playdone - function)
+- [sound.html](sound - statement)
+
+- System- [delay.html](delay - procedure)
+- [fetcharg.html](fetcharg - fetch argument function)
+- [getenv.html](getenv - get environment function)
+- [getpid.html](getpid - get process id function)
+- [nargs.html](nargs - number of arguments)
+- [system.html](system - statement)
+
+- Parallel Port- [parallelget.html](parallelget - parallel port function)
+- [parallelput.html](parallelput - parallel port procedure)
+
+- Mouse- [buttonchoose.html](buttonchoose - switch mouse modes)
+- [buttonmoved.html](buttonmoved - has a mouse event occurred)
+- [buttonwait.html](buttonwait - get a mouse event procedure)
+- [mousewhere.html](mousewhere)
+
+- Character Graphics- [cls.html](cls - clear screen graphics procedure)
+- [color.html](color - text color graphics procedure)
+- [colorback.html](colorback - background color procedure)
+- [color.html](colour - text color graphics procedure)
+- [colorback.html](colourback - background color procedure)
+- [locate.html](locate - procedure)
+- [maxcol.html](maxcol - maximum column function)
+- [maxcolor.html](maxcolor - graphics function)
+- [maxcolor.html](maxcolour - graphics function)
+- [maxrow.html](maxrow - maximum row function)
+- [setscreen.html](setscreen - graphics procedure)
+- [whatcol.html](whatcol - cursor position function)
+- [whatcolor.html](whatcolor - text color graphics function)
+- [whatcolorback.html](whatcolorback - color of background function)
+- [whatcolor.html](whatcolour - text color graphics function)
+- [whatcolorback.html](whatcolourback - color of background function)
+- [whatrow.html](whatrow - cursor position function)
+
+- Pixel Graphics- [cls.html](cls - clear screen graphics procedure)
+- [color.html](color - text color graphics procedure)
+- [colorback.html](colorback - background color procedure)
+- [color.html](colour - text color graphics procedure)
+- [colorback.html](colourback - background color procedure)
+- [drawarc.html](drawarc - graphics procedure)
+- [drawbox.html](drawbox - graphics procedure)
+- [drawdot.html](drawdot - graphics procedure)
+- [drawfill.html](drawfill - graphics procedure)
+- [drawfillarc.html](drawfillarc - graphics procedure)
+- [drawfillbox.html](drawfillbox - graphics procedure)
+- [drawfillmapleleaf.html](drawfillmapleleaf - graphics procedure)
+- [drawfilloval.html](drawfilloval - graphics procedure)
+- [drawfillpolygon.html](drawfillpolygon - graphics procedure)
+- [drawfillstar.html](drawfillstar - graphics procedure)
+- [drawline.html](drawline - graphics procedure)
+- [drawmapleleaf.html](drawmapleleaf - graphics procedure)
+- [drawoval.html](drawoval - graphics procedure)
+- [drawpic.html](drawpic - graphics procedure)
+- [drawpolygon.html](drawpolygon - graphics procedure)
+- [drawstar.html](drawstar - graphics procedure)
+- [locate.html](locate - procedure)
+- [locatexy.html](locatexy - graphics procedure)
+- [maxcol.html](maxcol - maximum column function)
+- [maxcolor.html](maxcolor - graphics function)
+- [maxcolor.html](maxcolour - graphics function)
+- [maxrow.html](maxrow - maximum row function)
+- [maxx.html](maxx - graphics function)
+- [maxy.html](maxy - graphics function)
+- [setscreen.html](setscreen - graphics procedure)
+- [sizepic.html](sizepic - graphics function)
+- [takepic.html](takepic - graphics procedure)
+- [whatcol.html](whatcol - cursor position function)
+- [whatcolor.html](whatcolor - text color graphics function)
+- [whatcolorback.html](whatcolorback - color of background function)
+- [whatcolor.html](whatcolour - text color graphics function)
+- [whatcolorback.html](whatcolourback - color of background function)
+- [whatdotcolor.html](whatdotcolor - graphics function)
+- [whatdotcolor.html](whatdotcolour - graphics function)
+- [whatrow.html](whatrow - cursor position function)
+
+- Character Input- [getch.html](getch - get character procedure)
+- [getchar.html](getchar - get character function)
+- [hasch.html](hasch - has character function)
+
+- Concurrency- [empty.html](empty - condition function)
+- [getpriority.html](getpriority - function)
+- [setpriority.html](setpriority - procedure)
+- [simutime.html](simutime - simulated time function)
+
+- Addresses and Sizes- [addr.html](addr - address of a variable)
+- [sizeof.html](sizeof - size of a type)
+
+- Bit Manipulation- [bits.html](bits - extraction)
+
+- Classes- [objectclass.html](objectclass - of a pointer)
+- [self.html](self - pointer to current object)
+
+- Type Cheats- [cheat.html](cheat - type cheating)

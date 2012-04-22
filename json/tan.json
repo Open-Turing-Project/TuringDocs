@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>tan</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " tan ( r : real ) : real\r\n",
-      "mdown_content": "**tan** ( *r* : **real** ) : **real**"
+      "mdown_content": "**tan** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the tangent of 0, <font face=\"symbol\">p</font>/6, 2<font face=\"symbol\">p</font>/6, 3<font face=\"symbol\">p</font>/6, up to 12<font face=\"symbol\">p</font>/6 radians.<p>\r\n</p>",
       "text_content": " This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians.\r\n\r\n",
-      "mdown_content": "This program prints out the tangent of 0, p/6, 2p/6, 3p/6, up to 12p/6 radians."
+      "mdown_content": "This program prints out the tangent of 0, pppp/6 radians."
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "An argument to <b>tan</b> of <font face=\"symbol\">p</font>/2, 3*<font face=\"symbol\">p</font>/2, etc. may result in an overflow (and halt of the program) as the result is technically <font face=\"symbol\">&yen;</font>. \r\n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)",
       "text_content": "An argument to tan of p/2, 3*p/2, etc. may result in an overflow (and halt of the program) as the result is technically ¥. \r\n(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)",
-      "mdown_content": "An argument to **tan** of p/2, 3*p/2, etc. may result in an overflow (and halt of the program) as the result is technically ¥. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)"
+      "mdown_content": "An argument to **tan** of pp&yen;. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)"
     },
     {
       "title": "See also",

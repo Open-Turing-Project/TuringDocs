@@ -2,19 +2,19 @@
 #Pic.Height
 
 ##Syntax
-**Pic.Height** (*picID* : **int**) : **int**
+**Pic.Height** (_picID_ : **int**) : **int**
 
 
 
 ##Description
-**Pic.Height **returns the width in pixels of the picture represented by *picID*.
+**Pic.Height **returns the width in pixels of the picture represented by _picID_.
 This function is often used in conjunction with **Pic.Width** to obtain the dimensions of a picture loaded using **Pic.FileNew**.
 
 
 
 ##Example
-The program draws loads a picture from the file *lighthouse.jpg* and proceeds to tile the entire run window with copies of the picture.
-**Output of Example Program**
+The program draws loads a picture from the file _lighthouse.jpg_ and proceeds to tile the entire run window with copies of the picture.
+
 
 ![Doc image](pic_height01.gif)
 

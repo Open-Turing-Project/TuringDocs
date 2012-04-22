@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Create</b> (<i>directoryPathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Create (directoryPathName : string)\r\n",
-      "mdown_content": "**Dir.Create** (*directoryPathName* : **string**)"
+      "mdown_content": "**Dir.Create** (_directoryPathName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Dir.Create</b> is used to create the directory specified by the parameter <i>directoryPathName</i>. This is the equivalent of doing a <b>mkdir</b> in DOS or UNIX. On the Macintosh, it creates a folder.<p>\r\n</p>",
       "text_content": " Dir.Create is used to create the directory specified by the parameter directoryPathName. This is the equivalent of doing a mkdir in DOS or UNIX. On the Macintosh, it creates a folder.\r\n",
-      "mdown_content": "**Dir.Create** is used to create the directory specified by the parameter *directoryPathName*. This is the equivalent of doing a **mkdir** in DOS or UNIX. On the Macintosh, it creates a folder."
+      "mdown_content": "**Dir.Create** is used to create the directory specified by the parameter _directoryPathName_. This is the equivalent of doing a **mkdir** in DOS or UNIX. On the Macintosh, it creates a folder."
     },
     {
       "title": "Details",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "This program creates the directory called <i>information</i>.<p>\r\n</p>",
       "text_content": " This program creates the directory called information.\r\n\r\n",
-      "mdown_content": "This program creates the directory called *information*."
+      "mdown_content": "This program creates the directory called _information_."
     },
     {
       "title": "Example",
       "raw_content": "An example demonstrating the use of several of the <b>Dir</b> subprograms\r\n      is available. In this example, a directory is created, a file is written\r\n      to the directory, an attempt is made to delete the directory, the file is\r\n      deleted, and then the directory is deleted.<p>\r\n      This example demonstrates the use of <b>Dir.Change</b>, \r\n      <b>Dir.Current</b>, <b>Dir.Create</b>, and <b>Dir.Delete</b>.</p>\n<p>\r\n      <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n        <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,Dir.t;Dir Subprogams Example\"></object></p>\n<p>\r\n</p>",
       "text_content": "An example demonstrating the use of several of the Dir subprograms\r\n      is available. In this example, a directory is created, a file is written\r\n      to the directory, an attempt is made to delete the directory, the file is\r\n      deleted, and then the directory is deleted.\r\n      This example demonstrates the use of Dir.Change, \r\n      Dir.Current, Dir.Create, and Dir.Delete.\r\n      \r\n        \r\n",
-      "mdown_content": "An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.\nThis example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**."
+      "mdown_content": "An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.\nThis example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.\n"
     },
     {
       "title": "Status",

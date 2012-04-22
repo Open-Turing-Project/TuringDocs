@@ -2,8 +2,10 @@
 #program
 
 ##Syntax
-A *program* is:
- *statementsAndDeclarations*
+A _program_ is:
+
+_statementsAndDeclarations_
+
 
 
 
@@ -13,7 +15,7 @@ A Turing program consists of a list of statements and declarations.
 
 
 ##Example
-This is a complete Turing program. It outputs *Alan M. Turing*.
+This is a complete Turing program. It outputs _Alan M. Turing_.
 
 
         put "Alan M. Turing"
@@ -27,7 +29,7 @@ This is a complete Turing program. It outputs a triangle of stars.
             stars := stars + "*"
         end loop
 ##Example
-This is a complete Turing program. It outputs *Hello *once and *Goodbye* twice.
+This is a complete Turing program. It outputs _Hello _once and _Goodbye_ twice.
 
 
         procedure sayItAgain ( what : string, n : int )

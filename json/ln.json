@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ln</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " ln ( r : real ) : real\r\n",
-      "mdown_content": "**ln** ( *r* : **real** ) : **real**"
+      "mdown_content": "**ln** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the logarithms of 1, 2, 3, &#133; up to 100.<p>\r\n</p>",
       "text_content": " This program prints out the logarithms of 1, 2, 3,  up to 100.\r\n\r\n",
-      "mdown_content": "This program prints out the logarithms of 1, 2, 3,  up to 100."
+      "mdown_content": "This program prints out the logarithms of 1, 2, 3, &#133; up to 100."
     },
     {
       "title": "Details",
@@ -33,7 +33,7 @@
       "title": "Note",
       "raw_content": "logn (<i>i</i> ) = ln (<i>i</i> ) / ln (<i>n</i> )<p>\r\n</p>",
       "text_content": " logn (i ) = ln (i ) / ln (n )\r\n",
-      "mdown_content": "logn (*i* ) = ln (*i* ) / ln (*n* )"
+      "mdown_content": "logn (_i_ ) = ln (_i_ ) / ln (_n_ )"
     },
     {
       "title": "See also",

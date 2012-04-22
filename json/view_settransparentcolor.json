@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "View.SetTransparentColor (colorNumber : int)",
-      "mdown_content": "**View.SetTransparentColor** (*colorNumber* : **int**)"
+      "mdown_content": "**View.SetTransparentColor** (_colorNumber_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.SetTransparentColor</b> procedure sets the color in the \r\n          Run window that should be considered transparent when a picture is \r\n          drawn on the window using the <tt>picUnderMerge</tt> mode. \r\n          If no color is specified, then the default background color \r\n          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent \r\n          color. You can change this background color using <b>RGB.SetColor</b>\r\n          on color 0.<p>\r\n    </p>",
       "text_content": "The View.SetTransparentColor procedure sets the color in the \r\n          Run window that should be considered transparent when a picture is \r\n          drawn on the window using the picUnderMerge mode. \r\n          If no color is specified, then the default background color \r\n          (colorbg, usually white) is used as the transparent \r\n          color. You can change this background color using RGB.SetColor\r\n          on color 0.\r\n    ",
-      "mdown_content": "The **View.SetTransparentColor** procedure sets the color in the Run window that should be considered transparent when a picture is drawn on the window using the picUnderMerge mode. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color. You can change this background color using **RGB.SetColor**on color 0."
+      "mdown_content": "The **View.SetTransparentColor** procedure sets the color in the Run window that should be considered transparent when a picture is drawn on the window using the `picUnderMerge` mode. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color. You can change this background color using **RGB.SetColor**on color 0."
     },
     {
       "title": "Details",

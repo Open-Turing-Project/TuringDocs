@@ -3,14 +3,14 @@
 <h2>Syntax</h2>
 
 <p><strong>GUI.CreateLabel</strong> (<em>x</em>,<em> y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>) : <strong>int</strong>
-<strong>GUI.CreateLabelFull</strong> (<em>x,</em> <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>, <em>width</em>, <em>height</em>, <em>alignment</em>, <em>fontID</em> : <strong>int</strong>) : <strong>int</strong></p>
+<strong>GUI.CreateLabelFull</strong> (<em>x,</em> <em>y</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,     <em>width</em>, <em>height</em>, <em>alignment</em>, <em>fontID</em> : <strong>int</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a label and returns the label's widget ID.
-The label widget is used to display text. It can be used to display text in a variety of fonts and sizes. Label widgets can also be aligned in a variety of ways.
-<strong>Three Labels</strong>
-The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the area in which the text will be drawn. For <strong>GUI.CreateLabel</strong>, this is the lower-left corner of the text. The <em>text</em> parameter specifies the text of the label.
+The label widget is used to display text. It can be used to display text in a variety of fonts and sizes. Label widgets can also be aligned in a variety of ways.</p>
+
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the area in which the text will be drawn. For <strong>GUI.CreateLabel</strong>, this is the lower-left corner of the text. The <em>text</em> parameter specifies the text of the label.
 For <strong>GUI.CreateLabelFull</strong>, the <em>width</em> and <em>height</em> parameters specify the area in which the label is to appear. This is used for alignment purposes. See the program below for an example of aligning the text to different corners of the window. The <em>alignment</em> parameter specifies the alignment of the text in the text area. This value is the sum of horizontal alignment and the vertical alignment. The horizontal alignment is one of 0, <em>GUI.LEFT</em>, <em>GUI.CENTER</em>, or <em>GUI.RIGHT</em>. A horizontal alignment of 0 is the default and is the same as the alignment of <em>GUI.LEFT</em>. The vertical alignment is one of 0, <em>GUI.TOP</em>, <em>GUI.MIDDLE</em>, or <em>GUI.BOTTOM</em>. A horizontal alignment of 0 is the default and is the same as the alignment of <em>GUI.BOTTOM</em>. These alignments align the text in various ways in the text area. The <em>fontID</em> parameter specifies the font ID of the font to be used in the text field. The font ID is received from a <em>Font.New</em> call. Do not call <em>Font.Free</em> for this font ID until the label has been disposed of by calling <strong>GUI.Dispose.</strong>
 By using the <em>fondID</em> parameter, labels can be have any size or typeface.
 Labels are passive widgets, meaning that they do not respond to button clicks or keystrokes.</p>
@@ -37,8 +37,9 @@ A frame widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a label as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>,<strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong>,<strong>GUI.GetSliderValue</strong>, <strong>GUI.SetSliderValue</strong>,<strong>GUI.SetSliderMinMax</strong>, <strong>GUI.SetLabel</strong></p>
+<p>The following GUI subprograms can be called with a label as the <em>widgetID</em> parameter:</p>
+
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>,<strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong>,<strong>GUI.GetSliderValue</strong>, <strong>GUI.SetSliderValue</strong>,<strong>GUI.SetSliderMinMax</strong>, <strong>GUI.SetLabel</strong></p>
 
 <h2>Status</h2>
 

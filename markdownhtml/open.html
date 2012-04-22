@@ -2,8 +2,12 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>openStatement</em> is one of:
-(a)<strong>open</strong> : <em>fileNumberVar</em>, <em>fileName</em>, <em>ioCapability</em>{ , <em>ioCapability</em> }(b)<strong>open</strong> : <em>fileNumberVar</em>, <em>argNum</em>, <em>ioCapability</em>{ , <em>ioCapability</em> }</p>
+<p>An <em>openStatement</em> is one of:</p>
+
+<p>(a)<strong>open</strong> : <em>fileNumberVar</em>, <em>fileName</em>, <em>ioCapability</em>
+{ , <em>ioCapability</em> }
+(b)<strong>open</strong> : <em>fileNumberVar</em>, <em>argNum</em>, <em>ioCapability</em>
+{ , <em>ioCapability</em> }</p>
 
 <h2>Description</h2>
 
@@ -27,20 +31,20 @@ The <strong>read</strong> statement uses the file number, not the file name, to 
 <h2>Details</h2>
 
 <p>The <strong>open</strong> statement always sets the <em>fileNumber</em> to a positive number. If the <strong>open</strong> fails (generally because the file does not exist), the <em>fileNumber</em> is set to a non-positive number. It is wise to check that the stream number is greater than zero before using it further.
-An <em>ioCapability</em> is one of:
-<strong>get</strong>, <strong>put</strong>, <strong>read</strong>, <strong>write</strong>, <strong>seek</strong>, <strong>mod</strong>
-A file can be accessed using only the statements corresponding to the input/output capabilities with which it was opened. Note: <strong>tell</strong> is allowed only if the open is for <strong>seek</strong>.
+An <em>ioCapability</em> is one of:</p>
+
+<p>A file can be accessed using only the statements corresponding to the input/output capabilities with which it was opened. Note: <strong>tell</strong> is allowed only if the open is for <strong>seek</strong>.
 The <strong>open</strong> statement truncates the file to length zero if the <em>ioCapabilities</em> includes <strong>put</strong> or <strong>write</strong> but not <strong>mod</strong> (which stands for <strong>mod</strong>ify). In all other cases, <strong>open</strong> leaves the existing file intact. The <strong>mod</strong> <em>ioCapability</em> specifies that the file is to be modified without being truncated. Each <strong>open</strong> positions to the beginning of a file. There is no mechanism to delete a file.
 To open for appending to the end of the file, one has to <strong>open</strong> for <strong>seek</strong>, <strong>mod</strong> and for <strong>write</strong> or <strong>put</strong> and then <strong>seek</strong> to the end of the file. See the <strong>seek</strong> statement.
 <em>Mixed mode</em> files, which combine <strong>get</strong> and <strong>read</strong> (or <strong>put</strong> and <strong>write</strong>), are supported by some operating systems, such as UNIX, but not by others, such as Microsoft Windows.
 On Microsoft Windows, one should note that opening files in other directories uses the backslash character. This is because the backslash is a special character in Turing (as in \t for tab and \n for a newline). To get a single backslash, use \.
 Form (b) of the syntax  allows you to open a file whose name is given as a program argument on the command line. For example, under UNIX, the command line:
 specifies to execute <em>prog.x</em> with program arguments <em>infile</em> and <em>outfile</em>. Similarly, in the Turing programming environment, the <strong>run</strong> command can accept program arguments. The <em>argNumber</em> is the position of the argument on the command line. (The first argument is number 1.)  The name of the file to be opened is the corresponding program argument. If there is no such argument, or if the file cannot be opened successfully, <em>fileNumberVariable</em> is set to zero. See also <strong>nargs</strong>, which gives the number of arguments, and <strong>fetcharg</strong>, which gives the <em>n</em>-th argument string.
-Program argument files referenced by argument number and used in <strong>put</strong>, <strong>get</strong>, <strong>read</strong> or <strong>write</strong> statements need not be explicitly opened, but are implicitly opened with the capability corresponding to the input/output statement in which they are first used. (The <em>fileNumber</em>gives the number of the argument.)
+Program argument files referenced by argument number and used in <strong>put</strong>, <strong>get</strong>, <strong>read</strong> or <strong>write</strong> statements need not be explicitly opened, but are implicitly opened with the capability corresponding to the input/output statement in which they are first used. (The <em>fileNumber_gives the number of the argument.)
 The operating system standard files (error, output and input) are accessed using file numbers 0, -1, and -2, respectively (although this may be subject to change). These files are not opened explicitly, but are used simply by using form (b) with the number. Beware of the anomalous case of a failed open that gives you file number 0. A subsequent use of this number in a <strong>put</strong> will produce output that goes to the standard error stream, with no warning that the file you attempted to open is not actually being used.
 To append to a file, the file must be opened with the <strong>mod</strong> and <strong>seek</strong> capability and then there must be a seek to the end of file. For example:
 There is an older and still acceptable version of <strong>open</strong> that has this syntax:
-The <em>mode</em> must be "r" (for <strong>get</strong>) or "w " (for <strong>put</strong>).</p>
+The </em>mode_ must be "r" (for <strong>get</strong>) or "w " (for <strong>put</strong>).</p>
 
 <pre><code>    e.g. open : f, "C:\\STUDENTS\\SMITH\\ACCT.DAT", put        prog.x infile outfile        var streamnumber : int
     open : streamnumber, "myfile", put, mod, seek

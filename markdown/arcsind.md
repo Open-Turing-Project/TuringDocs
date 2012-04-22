@@ -2,7 +2,7 @@
 #arcsind
 
 ##Syntax
-**arcsind** (*r* : **real**) : **real**
+**arcsind** (_r_ : **real**) : **real**
 
 
 

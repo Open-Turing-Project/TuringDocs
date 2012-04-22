@@ -2,12 +2,12 @@
 #clock
 
 ##Syntax
-**clock*** *(**var*** c *: **int**)
+**clock**_ _(**var**_ c _: **int**)
 
 
 
 ##Description
-The **clock** statement is used to determine the amount of time since a program (process) started running. Variable *c *is assigned the number of milliseconds since the program started running.
+The **clock** statement is used to determine the amount of time since a program (process) started running. Variable _c _is assigned the number of milliseconds since the program started running.
 
 
 

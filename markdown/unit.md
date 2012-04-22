@@ -2,8 +2,13 @@
 #unit
 
 ##Syntax
-A *compilationUnit* is one of:
- (a)[ *importList* ] *mainProgram* (b)**unit** *moduleDeclaration* (c)**unit** *monitorDeclaration* (d)**unit** *classDeclaration*
+A _compilationUnit_ is one of:
+
+(a)[ _importList_ ] _mainProgram_
+(b)**unit** _moduleDeclaration_
+(c)**unit** _monitorDeclaration_
+(d)**unit** _classDeclaration_
+
 
 
 
@@ -13,7 +18,7 @@ A program can be divided up into units, each in a separate file. All  of these f
 
 
 ##Example
-Here is stack module that is separated out into a file whose name is *stack*.
+Here is stack module that is separated out into a file whose name is _stack_.
 The main program, which is in another file, gains access to the stack by importing it. Here is the main program:
 
 
@@ -40,8 +45,8 @@ The main program, which is in another file, gains access to the stack by importi
         
         stack . pop ( n )
 ##Details
-In this example, the  keyword **var** in the import list  is required because the main program causes a change in the stack, by calling *push* and *pop*. The import lists of units that are modules, monitors and classes are used to gain access to further units.
-If the stack were in a file with a different name, say *stk.t*, the import list would be rewritten to use an **in** clause, as follows:
+In this example, the  keyword **var** in the import list  is required because the main program causes a change in the stack, by calling _push_ and _pop_. The import lists of units that are modules, monitors and classes are used to gain access to further units.
+If the stack were in a file with a different name, say _stk.t_, the import list would be rewritten to use an **in** clause, as follows:
 A mainProgram is simply a program. See **program**.
 
 

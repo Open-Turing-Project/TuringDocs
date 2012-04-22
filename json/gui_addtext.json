@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.AddText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.AddText (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.AddText** (*widgetID* : **int**, *text* : **string**)"
+      "mdown_content": "**GUI.AddText** (_widgetID_ : **int**, _text_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>GUI.AddText </b>adds text to the current line of the text box specified by <i>widgetID</i>. It does not add a newline after the text. It is essentially equivalent to <b>put</b> <i>text</i><b> </b>... in the text box. <b>GUI.AddLine</b><i> </i>scrolls the text box (if necessary) so that the added text is now visible. The <i>widgetID</i> parameter must be the widget id of a text box. The <i>text</i> parameter is the text to be added to the text box.<p>\r\n</p>",
       "text_content": " GUI.AddText adds text to the current line of the text box specified by widgetID. It does not add a newline after the text. It is essentially equivalent to put text ... in the text box. GUI.AddLine scrolls the text box (if necessary) so that the added text is now visible. The widgetID parameter must be the widget id of a text box. The text parameter is the text to be added to the text box.\r\n",
-      "mdown_content": "**GUI.AddText **adds text to the current line of the text box specified by *widgetID*. It does not add a newline after the text. It is essentially equivalent to **put** *text*** **... in the text box. **GUI.AddLine*** *scrolls the text box (if necessary) so that the added text is now visible. The *widgetID* parameter must be the widget id of a text box. The *text* parameter is the text to be added to the text box."
+      "mdown_content": "**GUI.AddText **adds text to the current line of the text box specified by _widgetID_. It does not add a newline after the text. It is essentially equivalent to **put** _text_** **... in the text box. **GUI.AddLine**_ _scrolls the text box (if necessary) so that the added text is now visible. The _widgetID_ parameter must be the widget id of a text box. The _text_ parameter is the text to be added to the text box."
     },
     {
       "title": "Details",
       "raw_content": "To force a text box to scroll to the end of the text without adding any extra text, call <b>GUI.AddText</b> with \"\" (the null string) for the <i>text</i> parameter.<p>\r\n</p>",
       "text_content": " To force a text box to scroll to the end of the text without adding any extra text, call GUI.AddText with \"\" (the null string) for the text parameter.\r\n",
-      "mdown_content": "To force a text box to scroll to the end of the text without adding any extra text, call **GUI.AddText** with \"\" (the null string) for the *text* parameter."
+      "mdown_content": "To force a text box to scroll to the end of the text without adding any extra text, call **GUI.AddText** with \"\" (the null string) for the _text_ parameter."
     },
     {
       "title": "Example",

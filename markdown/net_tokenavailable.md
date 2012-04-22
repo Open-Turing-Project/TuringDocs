@@ -2,12 +2,12 @@
 #Net.TokenAvailable
 
 ##Syntax
-**Net.TokenAvailable **(*netStream* : **int**) : **boolean**
+**Net.TokenAvailable **(_netStream_ : **int**) : **boolean**
 
 
 
 ##Description
-Returns **true** if a line of input is waiting to be read from the net stream specified by the *netStream* parameter. If **Net.TokenAvailable** returns **true**, then a single token (character surrounded by whitespace) can be read from the stream without blocking.
+Returns **true** if a line of input is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.TokenAvailable** returns **true**, then a single token (character surrounded by whitespace) can be read from the stream without blocking.
 
 
 
@@ -18,7 +18,7 @@ It is possible for Firewalls to interfere with the actions of the **Net** module
 
 
 ##Example
-The following program fragment reads a character from *netStream* only if there is one waiting to be read.
+The following program fragment reads a character from _netStream_ only if there is one waiting to be read.
 
 
         if Net.TokenAvailable (netStream) then

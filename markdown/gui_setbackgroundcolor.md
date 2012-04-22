@@ -2,13 +2,13 @@
 #GUI.SetBackgroundColor
 
 ##Syntax
-**GUI.SetBackgroundColor** (*Color* : **int**)
+**GUI.SetBackgroundColor** (_Color_ : **int**)
 
 
 
 ##Description
-Changes the background colour of the currently-selected window to the color specified by *Color*. This does *not* change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.
-For indented and extended items, the background color is assumed to be set to *gray*.
+Changes the background colour of the currently-selected window to the color specified by _Color_. This does _not_ change the value of color 0 in the window. Instead it fills the entire window with the new background color and then redraws all the widgets.
+For indented and extended items, the background color is assumed to be set to _gray_.
 The alternate spelling is **GUI.SetBackgroundColour**
 
 

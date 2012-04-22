@@ -2,7 +2,7 @@
 #length
 
 ##Syntax
-**length** ( *s* : **string** ) : **int**
+**length** ( _s_ : **string** ) : **int**
 
 
 
@@ -22,7 +22,7 @@ If the words are "cat", "robin" and "crow", the program will output 3, 5 and 4.
             put length ( word )
         end for
 ##Details
-The **length** function gives the current length of the string. To find the maximum length of a string, use **upper**. For example, given the declaration **var** s : **string** (10), **upper** (*s*) returns 10.
+The **length** function gives the current length of the string. To find the maximum length of a string, use **upper**. For example, given the declaration **var** s : **string** (10), **upper** (_s_) returns 10.
 
 
 

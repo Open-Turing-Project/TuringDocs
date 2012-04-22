@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>strreal</b> ( <i>s</i> : <b>string</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " strreal ( s : string ) : real\r\n",
-      "mdown_content": "**strreal** ( *s* : **string** ) : **real**"
+      "mdown_content": "**strreal** ( _s_ : **string** ) : **real**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>strreal</b> function is used to convert a string to a <b>real</b> number. For example, <b>strreal</b> (\"2.5e1\") will produce an approximation to the number 25.0.<p>\r\nString <i>s</i> must consist of a possibly null sequence of blanks, then an optional plus or minus sign and finally an explicit unsigned real or integer constant.</p>\n<p>\r\nThe <b>realstr</b>, <b>erealstr</b> and <b>frealstr</b> functions approximate the inverse of <b>strreal</b>, although round-off errors keep these from being exact inverses.</p>\n<p>\r\n</p>",
       "text_content": " The strreal function is used to convert a string to a real number. For example, strreal (\"2.5e1\") will produce an approximation to the number 25.0.\r\nString s must consist of a possibly null sequence of blanks, then an optional plus or minus sign and finally an explicit unsigned real or integer constant.\r\nThe realstr, erealstr and frealstr functions approximate the inverse of strreal, although round-off errors keep these from being exact inverses.\r\n",
-      "mdown_content": "The **strreal** function is used to convert a string to a **real** number. For example, **strreal** (\"2.5e1\") will produce an approximation to the number 25.0.\nString *s* must consist of a possibly null sequence of blanks, then an optional plus or minus sign and finally an explicit unsigned real or integer constant.\nThe **realstr**, **erealstr** and **frealstr** functions approximate the inverse of **strreal**, although round-off errors keep these from being exact inverses."
+      "mdown_content": "The **strreal** function is used to convert a string to a **real** number. For example, **strreal** (\"2.5e1\") will produce an approximation to the number 25.0.\nString _s_ must consist of a possibly null sequence of blanks, then an optional plus or minus sign and finally an explicit unsigned real or integer constant.\nThe **realstr**, **erealstr** and **frealstr** functions approximate the inverse of **strreal**, although round-off errors keep these from being exact inverses."
     },
     {
       "title": "See also",

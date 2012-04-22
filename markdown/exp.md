@@ -2,7 +2,7 @@
 #exp
 
 ##Syntax
-**exp** (*r* : **real**) : **real**
+**exp** (_r_ : **real**) : **real**
 
 
 
@@ -12,7 +12,7 @@ The **exp** function is used to find e to the power r, where e is the natural ba
 
 
 ##Example
-This program prints out the exponential values of 1, 2, 3,  up to 100.
+This program prints out the exponential values of 1, 2, 3, &#133; up to 100.
 
 
         for i : 1 .. 100

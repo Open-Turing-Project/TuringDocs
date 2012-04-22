@@ -2,12 +2,14 @@
 #Pic.DrawFrames
 
 ##Syntax
-**Pic.DrawFrames** (*picIds* : **array** 1 .. * **of int**, *x*, *y*, *mode* : **int**,    *numFrames*, *delayBetweenFrames* : **int**, *eraseAfter* : **boolean**)
+**Pic.DrawFrames** (_picIds_ : **array** 1 .. * **of int**, _x_, _y_, _mode_ : **int**,
+_numFrames_, _delayBetweenFrames_ : **int**, _eraseAfter_ : **boolean**)
+
 
 
 
 ##Description
-**Pic.DrawFrames** is used to draw a set of pictures stored inan array of **int**s.  The pictures are displayed one at a time,and there is a delay of *delayBetweenFrames* millisecondsbetween frames. The *x*, *y*, and *mode* parametersare the same as in **[pic_draw.html](Pic.Draw)**. The*numFrames* parameter specifies the number of frames to bedrawn (the *picIds* array must be at least this big).  The*eraseAfter* parameter specifies whether the last frame of theanimation should be left on the Run window when the call finishes.  If *eraseAfter* is set to **true**, then the background is restored after the last picture has been drawn and *delayBetweenFrames* milliseconds has passed.
+**Pic.DrawFrames** is used to draw a set of pictures stored inan array of **int**s.  The pictures are displayed one at a time,and there is a delay of _delayBetweenFrames_ millisecondsbetween frames. The _x_, _y_, and _mode_ parametersare the same as in **[pic_draw.html](Pic.Draw)**. The_numFrames_ parameter specifies the number of frames to bedrawn (the _picIds_ array must be at least this big).  The_eraseAfter_ parameter specifies whether the last frame of theanimation should be left on the Run window when the call finishes.  If _eraseAfter_ is set to **true**, then the background is restored after the last picture has been drawn and _delayBetweenFrames_ milliseconds has passed.
 
 
 

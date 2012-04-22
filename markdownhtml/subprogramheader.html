@@ -2,8 +2,13 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>subprogramHeader </em>is one of:
-(a)<strong>procedure</strong> [ <strong>pervasive</strong> ] <em>id</em>[ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])](b)<strong>function</strong> [ <strong>pervasive</strong> ] <em>id</em>[ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])][ <em>id</em> ] : <em>typeSpec</em></p>
+<p>A <em>subprogramHeader </em>is one of:</p>
+
+<p>(a)<strong>procedure</strong> [ <strong>pervasive</strong> ] <em>id</em>
+[ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])]
+(b)<strong>function</strong> [ <strong>pervasive</strong> ] <em>id</em>
+[ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])]
+[ <em>id</em> ] : <em>typeSpec</em></p>
 
 <h2>Description</h2>
 
@@ -25,7 +30,7 @@ In a program, <em>f</em> and <em>g</em>() are calls to these functions, while <e
 
 <h2>Details</h2>
 
-<p>The keyword <strong>pervasive</strong> can be inserted just after <strong>procedure</strong> or <strong>function</strong>. When this is done, the subprogram is visible inside all subconstructs of the subprogram's scope. Without <strong>pervasive</strong>, the subprogram is not visible inside modules unless explicitly imported. Pervasive subprograms need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (*****).</p>
+<p>The keyword <strong>pervasive</strong> can be inserted just after <strong>procedure</strong> or <strong>function</strong>. When this is done, the subprogram is visible inside all subconstructs of the subprogram's scope. Without <strong>pervasive</strong>, the subprogram is not visible inside modules unless explicitly imported. Pervasive subprograms need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (<strong>*</strong>).</p>
 
 <h2>See also</h2>
 

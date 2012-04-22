@@ -2,7 +2,7 @@
 #Time.DelaySinceLast
 
 ##Syntax
-**Time.DelaySinceLast** ( *duration* : **int** )
+**Time.DelaySinceLast** ( _duration_ : **int** )
 
 
 

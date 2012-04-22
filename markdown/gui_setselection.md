@@ -2,14 +2,14 @@
 #GUI.SetSelection
 
 ##Syntax
-**GUI.SetSelection** (*widgetID*, *fromSel*, *toSel* : **int**)
+**GUI.SetSelection** (_widgetID_, _fromSel_, _toSel_ : **int**)
 
 
 
 ##Description
-Sets the selected text in the text field specified by *widgetID*. The value of the *fromSel* and *toSel* parameters indicate the characters where the selection will begin and end. For example, if the text was "Hello there", setting *fromSel* to 2 and *toSel* to 5 would select "ell". Setting *fromSel* and *toSel* to 1 automatically selects the entire text.
-The *fromSel* parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both *fromSel* and *toSel* selects the entire text.
-The *toSel* parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both *fromSel* and *toSel* selects the entire text.
+Sets the selected text in the text field specified by _widgetID_. The value of the _fromSel_ and _toSel_ parameters indicate the characters where the selection will begin and end. For example, if the text was "Hello there", setting _fromSel_ to 2 and _toSel_ to 5 would select "ell". Setting _fromSel_ and _toSel_ to 1 automatically selects the entire text.
+The _fromSel_ parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text.
+The _toSel_ parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text.
 
 
 

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetActive</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetActive (widgetID : int)\r\n",
-      "mdown_content": "**GUI.SetActive** (*widgetID* : **int**)"
+      "mdown_content": "**GUI.SetActive** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Makes a text field specified by <i>widgetID </i>active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated.<p>\r\n</p>",
       "text_content": " Makes a text field specified by widgetID active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated.\r\n",
-      "mdown_content": "Makes a text field specified by *widgetID *active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated."
+      "mdown_content": "Makes a text field specified by _widgetID _active. If the text field is not in an active window, then the text field will become active when the window does. If another text field was active in the window, it is deactivated."
     },
     {
       "title": "Example",

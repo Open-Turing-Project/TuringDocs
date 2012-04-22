@@ -2,12 +2,12 @@
 #Str.Upper
 
 ##Syntax
-**Str.Upper** (*s* : **string**) : **string**
+**Str.Upper** (_s_ : **string**) : **string**
 
 
 
 ##Description
-The **Str.Upper** function takes the string *s* and returnsa string in which all the lower case letters are converted to upper case. For example, Str.Upper ("ABC123def") returns"ABC123DEF".
+The **Str.Upper** function takes the string _s_ and returnsa string in which all the lower case letters are converted to upper case. For example, `Str.Upper ("ABC123def")` returns`"ABC123DEF"`.
 
 
 

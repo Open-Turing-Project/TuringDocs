@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>setConstructor</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>setTypeId</i> ( <i>membersOfSet</i> )</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A setConstructor is:\r\n setTypeId ( membersOfSet )",
-      "mdown_content": "A *setConstructor* is:\n *setTypeId* ( *membersOfSet* )"
+      "mdown_content": "A _setConstructor_ is:\n\n_setTypeId_ ( _membersOfSet_ )\n"
     },
     {
       "title": "Description",
       "raw_content": "Each value of a <b>set</b> type consists of a set of elements. In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a <i>set constructor</i> consisting of the name of the set type (<i>setTypeId</i>) followed by a parenthesized list of elements.<p>\r\n</p>",
       "text_content": " Each value of a set type consists of a set of elements. In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a set constructor consisting of the name of the set type (setTypeId) followed by a parenthesized list of elements.\r\n",
-      "mdown_content": "Each value of a **set** type consists of a set of elements. In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a *set constructor* consisting of the name of the set type (*setTypeId*) followed by a parenthesized list of elements."
+      "mdown_content": "Each value of a **set** type consists of a set of elements. In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a _set constructor_ consisting of the name of the set type (_setTypeId_) followed by a parenthesized list of elements."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The <i>smallSet </i>type is declared so that it can contain any and all of the values 0, 1 and 2. Variable <i>s</i> is initialized to be the set containing 1 and 2. The set {0,1} is written in this Turing example as <i>smallInt</i> (0,1).<p>\r\n</p>",
       "text_content": " The smallSet type is declared so that it can contain any and all of the values 0, 1 and 2. Variable s is initialized to be the set containing 1 and 2. The set {0,1} is written in this Turing example as smallInt (0,1).\r\n\r\n",
-      "mdown_content": "The *smallSet *type is declared so that it can contain any and all of the values 0, 1 and 2. Variable *s* is initialized to be the set containing 1 and 2. The set {0,1} is written in this Turing example as *smallInt* (0,1)."
+      "mdown_content": "The _smallSet _type is declared so that it can contain any and all of the values 0, 1 and 2. Variable _s_ is initialized to be the set containing 1 and 2. The set {0,1} is written in this Turing example as _smallInt_ (0,1)."
     },
     {
       "title": "Details",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "The form of <i>membersOfSet</i> is one of:<p>\r\n</p>\r\nThe empty set is written, for example, as <i>smallInt </i>(). The full set is written as <i>smallInt </i>(<b>all</b>), so <i>smallInt </i>(<b>all</b>) = <i>smallInt </i>(0,1,2). See also the <b>set</b> type.<p>\r\nThe syntax of <i>setConstructor</i> as given above has been simplified by ignoring the fact that <b>set</b> types can be exported from modules. When a <b>set</b> type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as <i>m.smallSet</i>(1,2), where <i>m</i> is the module name.</p>\n<p>\r\n</p>",
       "text_content": " The form of membersOfSet is one of:\r\n\r\nThe empty set is written, for example, as smallInt (). The full set is written as smallInt (all), so smallInt (all) = smallInt (0,1,2). See also the set type.\r\nThe syntax of setConstructor as given above has been simplified by ignoring the fact that set types can be exported from modules. When a set type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as m.smallSet(1,2), where m is the module name.\r\n",
-      "mdown_content": "The form of *membersOfSet* is one of:\nThe empty set is written, for example, as *smallInt *(). The full set is written as *smallInt *(**all**), so *smallInt *(**all**) = *smallInt *(0,1,2). See also the **set** type.\nThe syntax of *setConstructor* as given above has been simplified by ignoring the fact that **set** types can be exported from modules. When a **set** type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as *m.smallSet*(1,2), where *m* is the module name."
+      "mdown_content": "The form of _membersOfSet_ is one of:\nThe empty set is written, for example, as _smallInt _(). The full set is written as _smallInt _(**all**), so _smallInt _(**all**) = _smallInt _(0,1,2). See also the **set** type.\nThe syntax of _setConstructor_ as given above has been simplified by ignoring the fact that **set** types can be exported from modules. When a **set** type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as _m.smallSet_(1,2), where _m_ is the module name."
     }
   ],
   "dependencies": [

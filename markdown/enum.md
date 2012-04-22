@@ -2,8 +2,10 @@
 #enum
 
 ##Syntax
-An *enumeratedType* is:
- **enum** (*id *{ , *id *} )
+An _enumeratedType_ is:
+
+**enum** (_id _{ , _id _} )
+
 
 
 
@@ -20,7 +22,7 @@ The values of an enumerated type are distinct and increasing. They can be though
         var c : color := color . red
         var d : color := succ (c)       % d becomes green
 ##Details
-Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, *color*.*red*. Enumerated values can be compared for equality and for ordering. The **succ** and **pred** functions can be used to find the value following or preceding a given enumerated value. The **ord** function can be used to find the enumeration position of a value, for example, **ord** (*color*.*red*) is 0.
+Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, _color_._red_. Enumerated values can be compared for equality and for ordering. The **succ** and **pred** functions can be used to find the value following or preceding a given enumerated value. The **ord** function can be used to find the enumeration position of a value, for example, **ord** (_color_._red_) is 0.
 Enumerated types cannot be combined with integers or with other enumerated types.
 
 

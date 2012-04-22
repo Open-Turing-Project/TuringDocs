@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>tellStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>tell</b> : <i>fileNumber</i> , <i>filePositionVar</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An tellStatement is:\r\n tell : fileNumber , filePositionVar",
-      "mdown_content": "An *tellStatement* is:\n **tell** : *fileNumber* , *filePositionVar*"
+      "mdown_content": "An _tellStatement_ is:\n\n**tell** : _fileNumber_ , _filePositionVar_\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>tell</b> statement sets <i>filePositionVar</i>, whose type must be <b>int</b>, to the current offset in bytes from the beginning of the specified file. The <i>fileNumber</i> must specify a file that is open with <b>seek</b> capability (or else a program argument file that is implicitly opened). The <b>tell</b> statement is useful for recording the file position of a certain piece of data for later access using <b>seek</b>.<p>\r\n</p>",
       "text_content": " The tell statement sets filePositionVar, whose type must be int, to the current offset in bytes from the beginning of the specified file. The fileNumber must specify a file that is open with seek capability (or else a program argument file that is implicitly opened). The tell statement is useful for recording the file position of a certain piece of data for later access using seek.\r\n",
-      "mdown_content": "The **tell** statement sets *filePositionVar*, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The *fileNumber* must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**."
+      "mdown_content": "The **tell** statement sets _filePositionVar_, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The _fileNumber_ must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**."
     },
     {
       "title": "Example",

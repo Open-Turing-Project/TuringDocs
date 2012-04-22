@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetMouseEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>mouseEventHandler</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : <b>int</b>))<p>\r\n</p></font>",
       "text_content": " GUI.SetMouseEventHandler (\r\n    mouseEventHandler : procedure x (mx, my : int))\r\n",
-      "mdown_content": "**GUI.SetMouseEventHandler** (    *mouseEventHandler* : **procedure** *x* (*mx*, *my* : **int**))"
+      "mdown_content": "**GUI.SetMouseEventHandler** (    _mouseEventHandler_ : **procedure** _x_ (_mx_, _my_ : **int**))"
     },
     {
       "title": "Description",
       "raw_content": "Sets the new default mouse event handler. The <i>mouseEventHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there is a mouse button down which is not handled by any widget. The <i>mx</i> and <i>my</i> parameters in the <i>mouseEventHandler</i> are the location of mouse when the button was pressed.<p>\r\nThis procedure is used by programs to allow for mouse input in a program that uses widgets.</p>\n<p>\r\n</p>",
       "text_content": " Sets the new default mouse event handler. The mouseEventHandler parameter is the name of a procedure that is called every time GUI.ProcessEvent is called and there is a mouse button down which is not handled by any widget. The mx and my parameters in the mouseEventHandler are the location of mouse when the button was pressed.\r\nThis procedure is used by programs to allow for mouse input in a program that uses widgets.\r\n",
-      "mdown_content": "Sets the new default mouse event handler. The *mouseEventHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The *mx* and *my* parameters in the *mouseEventHandler* are the location of mouse when the button was pressed.\nThis procedure is used by programs to allow for mouse input in a program that uses widgets."
+      "mdown_content": "Sets the new default mouse event handler. The _mouseEventHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The _mx_ and _my_ parameters in the _mouseEventHandler_ are the location of mouse when the button was pressed.\nThis procedure is used by programs to allow for mouse input in a program that uses widgets."
     },
     {
       "title": "Example",

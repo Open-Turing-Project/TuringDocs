@@ -2,12 +2,12 @@
 #Sprite.Animate
 
 ##Syntax
-**Sprite.Animate** (*spriteID*, *picID, x*, *y* : **int**,    *centered* : **boolean**)
+**Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,
 
 
 
 ##Description
-Moves the sprite specified by *spriteID* to the location specified by (*x, y*). If *centered* is **true**, then the sprite is centered on (*x, y*). Otherwise (*x, y*) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
+Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
 A simple example of the **Sprite.Animate** procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.
 
 

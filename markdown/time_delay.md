@@ -2,7 +2,7 @@
 #Time.Delay
 
 ##Syntax
-**Time.Delay** ( *duration* : **int** )
+**Time.Delay** ( _duration_ : **int** )
 
 
 

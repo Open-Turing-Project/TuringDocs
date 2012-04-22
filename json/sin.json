@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sin</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " sin ( r : real ) : real\r\n",
-      "mdown_content": "**sin** ( *r* : **real** ) : **real**"
+      "mdown_content": "**sin** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the sine of <font face=\"symbol\">p</font>/6, 2<font face=\"symbol\">p</font>/6, 3<font face=\"symbol\">p</font>/6, up to 12<font face=\"symbol\">p</font>/6 radians.<p>\r\n</p>",
       "text_content": " This program prints out the sine of p/6, 2p/6, 3p/6, up to 12p/6 radians.\r\n\r\n",
-      "mdown_content": "This program prints out the sine of p/6, 2p/6, 3p/6, up to 12p/6 radians."
+      "mdown_content": "This program prints out the sine of pppp/6 radians."
     },
     {
       "title": "Execute",

@@ -10,6 +10,18 @@ All subprograms in the **Net **unit are exported qualified (and thus must be pre
 
 
 ##Entry Points
-[net_waitforconnection.html](**WaitForConnection**) Waits until a client connects to a specified port.[net_openconnection.html](**OpenConnection**) Opens a connection to a specified machine.[net_openurlconnection.html](**OpenURLConnection**) Opens a connection to a file specified by a URL.[net_closeconnection.html](**CloseConnection**) Closes a specified connection.[net_bytesavailable.html](**BytesAvailable**) Returns the number of bytes available to be read from a net stream.[net_charavailable.html](**CharAvailable**) Returns true if there is a character available to be read from a net stream.[net_lineavailable.html](**LineAvailable**) Returns true if there is a line of text available to be read from a net stream.[net_tokenavailable.html](**TokenAvailable**) Returns true if there is a token available to be read from a net stream.[net_hostaddressfromname.html](**HostAddressFromName**) Returns a host's address given its host name.[net_hostnamefromaddress.html](**HostNameFromAddress**) Returns a host's name given its address.[net_localaddress.html](**LocalAddress**) Returns the host name of the local machine.[net_localname.html](**LocalName**) Returns the TCP/IP address of the local machine.
+
+[net_waitforconnection.html](**WaitForConnection**) Waits until a client connects to a specified port.
+[net_openconnection.html](**OpenConnection**) Opens a connection to a specified machine.
+[net_openurlconnection.html](**OpenURLConnection**) Opens a connection to a file specified by a URL.
+[net_closeconnection.html](**CloseConnection**) Closes a specified connection.
+[net_bytesavailable.html](**BytesAvailable**) Returns the number of bytes available to be read from a net stream.
+[net_charavailable.html](**CharAvailable**) Returns true if there is a character available to be read from a net stream.
+[net_lineavailable.html](**LineAvailable**) Returns true if there is a line of text available to be read from a net stream.
+[net_tokenavailable.html](**TokenAvailable**) Returns true if there is a token available to be read from a net stream.
+[net_hostaddressfromname.html](**HostAddressFromName**) Returns a host's address given its host name.
+[net_hostnamefromaddress.html](**HostNameFromAddress**) Returns a host's name given its address.
+[net_localaddress.html](**LocalAddress**) Returns the host name of the local machine.
+[net_localname.html](**LocalName**) Returns the TCP/IP address of the local machine.
 
 

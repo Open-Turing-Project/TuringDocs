@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetActive</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.SetActive (windowID : int)\r\n",
-      "mdown_content": "**Window.SetActive** (*windowID* : **int**)"
+      "mdown_content": "**Window.SetActive** (_windowID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.SetActive</b> procedure activates the window specified by the <i>windowID</i> parameter.<p>\r\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.</p>\n<p>\r\n</p>",
       "text_content": " The Window.SetActive procedure activates the window specified by the windowID parameter.\r\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.\r\n",
-      "mdown_content": "The **Window.SetActive** procedure activates the window specified by the *windowID* parameter.\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window."
+      "mdown_content": "The **Window.SetActive** procedure activates the window specified by the _windowID_ parameter.\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window."
     },
     {
       "title": "Details",

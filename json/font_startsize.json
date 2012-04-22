@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.StartSize</b> (<i>fontName</i>, <i>fontStyle</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Font.StartSize (fontName, fontStyle : string)\r\n",
-      "mdown_content": "**Font.StartSize** (*fontName*, *fontStyle* : **string**)"
+      "mdown_content": "**Font.StartSize** (_fontName_, _fontStyle_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>Font.StartSize</b> is used to start a listing of all the sizes for a particular font name and style. <p>\r\nThe <i>fontName</i> parameter should be an actual font name (as opposed to the default names of &#147;serif&#148;, etc). You can get a list of the font names by using the <b>Font.StartName</b> and <b>Font.GetName</b> subprograms. The <i>fontStyle</i> parameter should be in the same format as would appear in the <b>Font.New</b> procedure.</p>\n<p>\r\n</p>",
       "text_content": " Font.StartSize is used to start a listing of all the sizes for a particular font name and style. \r\nThe fontName parameter should be an actual font name (as opposed to the default names of serif, etc). You can get a list of the font names by using the Font.StartName and Font.GetName subprograms. The fontStyle parameter should be in the same format as would appear in the Font.New procedure.\r\n",
-      "mdown_content": "**Font.StartSize** is used to start a listing of all the sizes for a particular font name and style. \nThe *fontName* parameter should be an actual font name (as opposed to the default names of serif, etc). You can get a list of the font names by using the **Font.StartName** and **Font.GetName** subprograms. The *fontStyle* parameter should be in the same format as would appear in the **Font.New** procedure."
+      "mdown_content": "**Font.StartSize** is used to start a listing of all the sizes for a particular font name and style. \nThe _fontName_ parameter should be an actual font name (as opposed to the default names of &#147;serif&#148;, etc). You can get a list of the font names by using the **Font.StartName** and **Font.GetName** subprograms. The _fontStyle_ parameter should be in the same format as would appear in the **Font.New** procedure."
     },
     {
       "title": "Example",

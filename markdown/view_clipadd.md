@@ -2,15 +2,15 @@
 #View.ClipAdd
 
 ##Syntax
-**View.ClipAdd** (*x1*, *y1*, *x2*, *y2* : **int**)
+**View.ClipAdd** (_x1_, _y1_, _x2_, _y2_ : **int**)
 
 
 
 ##Description
-The **View.ClipAdd** procedure adds another rectangle specified by (*x1*, *y1*) - (*x2*, *y2*) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.
+The **View.ClipAdd** procedure adds another rectangle specified by (_x1_, _y1_) - (_x2_, _y2_) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.
 A clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.
 To set the initial clipping, or remove the old region and replace it with a new one, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.
-These commands only work in "*graphics*" mode.
+These commands only work in "_graphics_" mode.
 
 
 
@@ -39,6 +39,8 @@ This program sets the clipping region to five rectangles and then draws random c
 ##Status
 Exported qualified.
 This means that you can only call the function by calling **View.ClipAdd**, not by calling **ClipAdd**.
-**See also** **View.ClipSet** and **View.ClipOff **functions.
+
+**See also** **View.ClipSet** and **View.ClipOff **functions.
+
 
 

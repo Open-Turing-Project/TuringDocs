@@ -12,7 +12,7 @@ The **div** operator divides one number by another and produces the integer resu
 
 
 ##Example
-In this example, *eggCount* is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen.
+In this example, _eggCount_ is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen.
 
 
         var eggCount : int
@@ -20,6 +20,6 @@ In this example, *eggCount* is the total number of eggs. The first **put** state
         put "You have ", eggCount div 12, " dozen eggs"
         put "You have ", eggCount mod 12, " left over"
 ##See also
-*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[mod.html](mod)** operator.
+_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[mod.html](mod)** operator.
 
 

@@ -2,12 +2,12 @@
 #Str.Trim
 
 ##Syntax
-**Str.Trim** (*str* : **string**) : **string**
+**Str.Trim** (_str_ : **string**) : **string**
 
 
 
 ##Description
-The **Str.Trim** function takes the string *str* and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, Str.Trim ("   This is a test ") returns"This is a test". If *str* only has spaces in it, then**Str.Trim** will return an empty string.
+The **Str.Trim** function takes the string _str_ and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, `Str.Trim ("   This is a test ")` returns`"This is a test"`. If _str_ only has spaces in it, then**Str.Trim** will return an empty string.
 
 
 

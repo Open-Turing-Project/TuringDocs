@@ -2,12 +2,12 @@
 #drawbox
 
 ##Syntax
-**drawbox** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)
+**drawbox** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **drawbox** procedure is used to draw a box on the screen with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.
+The **drawbox** procedure is used to draw a box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_.
 
 ![Doc image](drawbox01.gif)
 
@@ -19,12 +19,12 @@ This program draws a large box, reaching to each corner of the screen using colo
         setscreen ("graphics")
         drawbox (0, 0, maxx, maxy, 1)
 ##Details
-The meaning of the *Color* number depends on the current palette. See the **palette** statement.
-The screen should be in a "*graphics*" mode. See the **setscreen** procedure for details. If the screen is not in a "*graphics*" mode, it will automatically be set to "*graphics*" mode.
+The meaning of the _Color_ number depends on the current palette. See the **palette** statement.
+The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
 
 
 ##See also
-**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures.
+**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.
 
 

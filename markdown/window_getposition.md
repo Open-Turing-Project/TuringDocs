@@ -2,12 +2,12 @@
 #Window.GetPosition
 
 ##Syntax
-**Window.GetPosition** (*windowID* : **int**, **var** *x*, *y* : **int**)
+**Window.GetPosition** (_windowID_ : **int**, **var** _x_, _y_ : **int**)
 
 
 
 ##Description
-The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the *x* and *y* parameters. The *x* and *y* parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.
+The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the _x_ and _y_ parameters. The _x_ and _y_ parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.
 
 
 

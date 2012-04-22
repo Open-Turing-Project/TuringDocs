@@ -2,14 +2,14 @@
 #GUI.CreateMenu
 
 ##Syntax
-**GUI.CreateMenu** (*name* : **string**) : **int**
+**GUI.CreateMenu** (_name_ : **string**) : **int**
 
 
 
 ##Description
 Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.
-The *name* parameter specifies the text that appears in the menu bar.
-**A Menu With an Item Selected**
+The _name_ parameter specifies the text that appears in the menu bar.
+
 Menus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.
 As of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.
 
@@ -80,7 +80,7 @@ When a menu is not enabled, the text in the menu bar is grayed out and clicking 
 
 
 ##Details
-The following GUI subprograms can be called with a menu as the *widgetID* parameter:
+The following GUI subprograms can be called with a menu as the _widgetID_ parameter:
 **GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**
 
 

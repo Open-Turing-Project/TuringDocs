@@ -2,7 +2,7 @@
 #arcsin
 
 ##Syntax
-**arcsin** (*r* : **real**) : **real**
+**arcsin** (_r_ : **real**) : **real**
 
 
 

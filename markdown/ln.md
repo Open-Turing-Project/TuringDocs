@@ -2,7 +2,7 @@
 #ln
 
 ##Syntax
-**ln** ( *r* : **real** ) : **real**
+**ln** ( _r_ : **real** ) : **real**
 
 
 
@@ -12,7 +12,7 @@ The **ln** function is used to find the natural logarithm (base e) of a number. 
 
 
 ##Example
-This program prints out the logarithms of 1, 2, 3,  up to 100.
+This program prints out the logarithms of 1, 2, 3, &#133; up to 100.
 
 
         for i : 1 .. 100
@@ -24,7 +24,7 @@ See also the **exp** (exponential) function. You cannot take the logarithm of ze
 
 
 ##Note
-logn (*i* ) = ln (*i* ) / ln (*n* )
+logn (_i_ ) = ln (_i_ ) / ln (_n_ )
 
 
 

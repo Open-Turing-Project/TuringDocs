@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.HideWindow</b> (<i>window</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.HideWindow (window : int)\r\n    ",
-      "mdown_content": "**GUI.HideWindow** (*window* : **int**)"
+      "mdown_content": "**GUI.HideWindow** (_window_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Hides a window with widgets in it. This procedure makes certain \r\n          that the GUI Library recognizes that the window no longer visible. \r\n\t  This procedure will call <i>Window.Hide</i>, so there is no need \r\n\t  for the user to do so.<p>\r\n    </p>",
       "text_content": "Hides a window with widgets in it. This procedure makes certain \r\n          that the GUI Library recognizes that the window no longer visible. \r\n\t  This procedure will call Window.Hide, so there is no need \r\n\t  for the user to do so.\r\n    ",
-      "mdown_content": "Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call *Window.Hide*, so there is no need for the user to do so."
+      "mdown_content": "Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call _Window.Hide_, so there is no need for the user to do so."
     },
     {
       "title": "Example",

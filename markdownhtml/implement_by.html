@@ -2,16 +2,17 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>implementByClause</em> is:
-<strong>implement</strong> <strong>by</strong> <em>implementByItem</em></p>
+<p>An <em>implementByClause</em> is:</p>
+
+<p><strong>implement</strong> <strong>by</strong> <em>implementByItem</em></p>
 
 <h2>Description</h2>
 
 <p>An implement-by clause is used to specify that a module, monitor or class <em>C </em>is to be automatically implemented by the <em>implementByItem</em>. <em>C</em> is called the <em>interface</em> and the <em>implementByItem</em>, which must contain an implement clause, is called the <em>implementation</em>. See <strong>implement</strong> clause for details and an example.
 The implement-by clause can only be used in a <strong>unit</strong>. See <strong>unit</strong> for the definition of a unit.
-An implementByItem is one of:
-(a)<em>id</em>(b)<em>id</em> <strong>in</strong> <em>fileName</em>
-The second form is used when the implement-by clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, as in:
+An implementByItem is one of:</p>
+
+<p>The second form is used when the implement-by clause is for a separate <strong>unit</strong> and the imported item is in a file whose name is different from the item's name, as in:
 The fileName must be an explicit character string, e.g., "ledgbod.t". See also <strong>unit</strong>. Parentheses are allowed around the items in an <strong>implement-by</strong> clauses, as in:</p>
 
 <pre><code>    implement by ledgerBody in "ledgbod.t"        implement by ( ledgerBody in "ledgbod.t" )

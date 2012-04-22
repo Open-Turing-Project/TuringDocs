@@ -2,15 +2,14 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreatePicture</strong> ( <em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>, <em>mergePic</em> : <strong>boolean</strong> ) : <strong>int</strong></p>
+<p><strong>GUI.CreatePicture</strong> ( <em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,     <em>mergePic</em> : <strong>boolean</strong> ) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
 <p>Creates a picture and returns the picture's widget ID.
 The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.
 The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture. The <em>picture</em> parameter specifies the picture ID of the picture. The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>mergePic</em> parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window.
-A picture widget is a passive widget and cannot be enabled or disabled.
-<strong>Two Pictures</strong></p>
+A picture widget is a passive widget and cannot be enabled or disabled.</p>
 
 <p><img src="gui_createpicture01.gif" alt="Doc image" /></p>
 
@@ -47,8 +46,9 @@ A picture widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a picture as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong></p>
+<p>The following GUI subprograms can be called with a picture as the <em>widgetID</em> parameter:</p>
+
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong></p>
 
 <h2>Status</h2>
 

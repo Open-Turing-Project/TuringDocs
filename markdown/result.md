@@ -2,8 +2,10 @@
 #result
 
 ##Syntax
-A *resultStatement* is:
- **result** *expn*
+A _resultStatement_ is:
+
+**result** _expn_
+
 
 
 
@@ -32,8 +34,8 @@ This function finds the position of a name in a list.
             end for
         end find
 ##Details
-The execution of a **result** statement computes the value of the expression (*expn*) and terminates the function, returning the value as the value of the function.
-The expression must be assignable to the result type of the function, for example, in *double*, 2**x* is assignable to **real**. (See the *assignmentStatement* for the definition of assignable.)
+The execution of a **result** statement computes the value of the expression (_expn_) and terminates the function, returning the value as the value of the function.
+The expression must be assignable to the result type of the function, for example, in _double_, 2*_x_ is assignable to **real**. (See the _assignmentStatement_ for the definition of assignable.)
 A function must terminate by executing a **result** statement and not by reaching the end of the function.
 
 

@@ -2,13 +2,15 @@
 #tell
 
 ##Syntax
-An *tellStatement* is:
- **tell** : *fileNumber* , *filePositionVar*
+An _tellStatement_ is:
+
+**tell** : _fileNumber_ , _filePositionVar_
+
 
 
 
 ##Description
-The **tell** statement sets *filePositionVar*, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The *fileNumber* must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**.
+The **tell** statement sets _filePositionVar_, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The _fileNumber_ must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**.
 
 
 

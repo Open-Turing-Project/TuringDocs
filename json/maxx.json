@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.<p>\r\nFor the default IBM PC compatible graphics mode (CGA), <b>maxx</b> = 319.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"graphics\" mode. If it is not, it will automatically be set to \"graphics\" mode. See setscreen for details.\r\nFor the default IBM PC compatible graphics mode (CGA), maxx = 319.\r\n",
-      "mdown_content": "The screen should be in a \"*graphics*\" mode. If it is not, it will automatically be set to \"*graphics*\" mode. See **setscreen** for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxx** = 319."
+      "mdown_content": "The screen should be in a \"_graphics_\" mode. If it is not, it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxx** = 319."
     },
     {
       "title": "See also",

@@ -2,7 +2,7 @@
 #Sprite.Hide
 
 ##Syntax
-**Sprite.Hide** (*spriteID* : **int**)
+**Sprite.Hide** (_spriteID_ : **int**)
 
 
 

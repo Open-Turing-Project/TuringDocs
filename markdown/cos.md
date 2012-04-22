@@ -2,7 +2,7 @@
 #cos
 
 ##Syntax
-**cos** (*r* : **real**) : **real**
+**cos** (_r_ : **real**) : **real**
 
 
 
@@ -12,7 +12,7 @@ The **cos** function is used to find the cosine of an angle given in radians. Fo
 
 
 ##Example
-This program prints out the cosine of p/6, 2p/6, 3p/6, up to 12p/6 radians.
+This program prints out the cosine of pppp/6 radians.
 
 
         const pi := 3.14159

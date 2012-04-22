@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetScrollOnAdd</b> (<i>widgetID</i> : <b>int</b>, <i>scrollOnAdd</i> : <b>boolean</b>)<p></p></font>",
       "text_content": "GUI.SetScrollOnAdd (widgetID : int, scrollOnAdd : boolean)\r\n    ",
-      "mdown_content": "**GUI.SetScrollOnAdd** (*widgetID* : **int**, *scrollOnAdd* : **boolean**)"
+      "mdown_content": "**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetScrollOnAdd</b> procedure allows you to specify\r\n          whether a text box scrolls to the bottom of the text when\r\n\t  new text is added (the default behaviour). By calling this\r\n\t  procedure with <i>scrollOnAdd</i> set to <b>false</b>, the \r\n\t  text box will not scroll unless the user manipulates the\r\n\t  text box's scroll bars.",
       "text_content": "The GUI.SetScrollOnAdd procedure allows you to specify\r\n          whether a text box scrolls to the bottom of the text when\r\n\t  new text is added (the default behaviour). By calling this\r\n\t  procedure with scrollOnAdd set to false, the \r\n\t  text box will not scroll unless the user manipulates the\r\n\t  text box's scroll bars.\r\n    ",
-      "mdown_content": "The **GUI.SetScrollOnAdd** procedure allows you to specifywhether a text box scrolls to the bottom of the text whennew text is added (the default behaviour). By calling thisprocedure with *scrollOnAdd* set to **false**, the text box will not scroll unless the user manipulates thetext box's scroll bars."
+      "mdown_content": "The **GUI.SetScrollOnAdd** procedure allows you to specifywhether a text box scrolls to the bottom of the text whennew text is added (the default behaviour). By calling thisprocedure with _scrollOnAdd_ set to **false**, the text box will not scroll unless the user manipulates thetext box's scroll bars."
     },
     {
       "title": "Example",

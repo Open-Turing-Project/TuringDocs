@@ -2,12 +2,12 @@
 #Str.Lower
 
 ##Syntax
-**Str.Lower** (*s* : **string**) : **string**
+**Str.Lower** (_s_ : **string**) : **string**
 
 
 
 ##Description
-The **Str.Lower** function takes the string *s* and returnsa string in which all the upper case letters are converted to lower case. For example, Str.Lower ("ABC123def") returns"abc123def".
+The **Str.Lower** function takes the string _s_ and returnsa string in which all the upper case letters are converted to lower case. For example, `Str.Lower ("ABC123def")` returns`"abc123def"`.
 
 
 

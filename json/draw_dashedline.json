@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.DashedLine</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>lineStyle</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.DashedLine (x1, y1, x2, y2, lineStyle, Color : int)\r\n",
-      "mdown_content": "**Draw.DashedLine** (*x1*, *y1*, *x2*, *y2*, *lineStyle*, *Color* : **int**)"
+      "mdown_content": "**Draw.DashedLine** (_x1_, _y1_, _x2_, _y2_, _lineStyle_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.DashedLine </b>procedure is used to draw a dotted or dashed line on the screen from (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\nThere are five possible line styles:\r\ndrawSolid Draws a solid line (same as Draw.Line)\r\ndrawDash Draws a dashed line\r\ndrawDot Draws a dotted line\r\ndrawDashDot Draws a line that alternates dashes and dots\r\ndrawDashDotDot Draws a line that alternates dash and dot-dot\r\n</p>\n<center></center>",
       "text_content": " The Draw.DashedLine procedure is used to draw a dotted or dashed line on the screen from (x1, y1) to (x2, y2) using the specified Color.\r\nThere are five possible line styles:\r\ndrawSolid Draws a solid line (same as Draw.Line)\r\ndrawDash Draws a dashed line\r\ndrawDot Draws a dotted line\r\ndrawDashDot Draws a line that alternates dashes and dots\r\ndrawDashDotDot Draws a line that alternates dash and dot-dot\r\n\r\n",
-      "mdown_content": "The **Draw.DashedLine **procedure is used to draw a dotted or dashed line on the screen from (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*.\nThere are five possible line styles:drawSolid Draws a solid line (same as Draw.Line)drawDash Draws a dashed linedrawDot Draws a dotted linedrawDashDot Draws a line that alternates dashes and dotsdrawDashDotDot Draws a line that alternates dash and dot-dot"
+      "mdown_content": "The **Draw.DashedLine **procedure is used to draw a dotted or dashed line on the screen from (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_.\nThere are five possible line styles:drawSolid Draws a solid line (same as Draw.Line)drawDash Draws a dashed linedrawDot Draws a dotted linedrawDashDot Draws a line that alternates dashes and dotsdrawDashDotDot Draws a line that alternates dash and dot-dot"
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\"<i> </i>mode, an error will occur.<p>\r\n</p>",
       "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\"* *mode, an error will occur."
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\"_ _mode, an error will occur."
     },
     {
       "title": "Status",

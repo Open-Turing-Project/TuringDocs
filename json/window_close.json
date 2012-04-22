@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Close </b>(<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Close (windowID : int)\r\n",
-      "mdown_content": "**Window.Close **(*windowID* : **int**)"
+      "mdown_content": "**Window.Close **(_windowID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Close </b> procedure closes the window specified by the <i>windowID</i> parameter.<p>\r\n</p>",
       "text_content": " The Window.Close  procedure closes the window specified by the windowID parameter.\r\n",
-      "mdown_content": "The **Window.Close ** procedure closes the window specified by the *windowID* parameter."
+      "mdown_content": "The **Window.Close ** procedure closes the window specified by the _windowID_ parameter."
     },
     {
       "title": "Example",

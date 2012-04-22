@@ -12,12 +12,12 @@ There is a predefined class called **anyclass**, which is the root of the expans
 
 
 ##Example
-Here is the declaration of a pointer *p *that can locate an object of any class.
-Assuming *stack* is a class, this creates a *stack* object and places its location in *q *and *p*. The compiler will not allow a call to *stack*'s exported subprograms using *p* directly, as in:
-An assignment from *p* to *q* is legal, as in:
-This implies a run time check to make sure that *p* locates an object that is a *stack* (or a descendant of a *stack*).
-Here is a way to call a subprogram exported from *stack* using *p*:
-This checks to see that *p* locates a *stack* object (or a descendant) before calling the *stack* operation *push*.
+Here is the declaration of a pointer _p _that can locate an object of any class.
+Assuming _stack_ is a class, this creates a _stack_ object and places its location in _q _and _p_. The compiler will not allow a call to _stack_'s exported subprograms using _p_ directly, as in:
+An assignment from _p_ to _q_ is legal, as in:
+This implies a run time check to make sure that _p_ locates an object that is a _stack_ (or a descendant of a _stack_).
+Here is a way to call a subprogram exported from _stack_ using _p_:
+This checks to see that _p_ locates a _stack_ object (or a descendant) before calling the _stack_ operation _push_.
 
 
         var p : pointer to anyclass     % Short form: var p : ^ anyclass

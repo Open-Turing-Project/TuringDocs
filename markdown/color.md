@@ -2,7 +2,7 @@
 #color
 
 ##Syntax
-**color** (*Color* : **int**)
+**color** (_Color_ : **int**)
 
 
 
@@ -21,7 +21,7 @@ This program prints out the message "Bravo" three times, each in a different col
             put "Bravo"
         end for
 ##Example
-This program prints out a message. The color of each letter is different from the preceding letter. For letter number *i* the color number is *i *mod maxcolor + 1. This cycles repeatedly through all the available colors.
+This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i _mod maxcolor + 1. This cycles repeatedly through all the available colors.
 
 
         setscreen ("graphics")
@@ -31,8 +31,8 @@ This program prints out a message. The color of each letter is different from th
             put message (i) ..
         end for
 ##Details
-See **maxcolor** for the number of colors available in the various "*graphics*"* *modes. The background color that text appears upon can be set using the **colorback** procedure.
-The screen must be in a "*graphics*" mode to use the **color** procedure. See **setscreen** for details.
+See **maxcolor** for the number of colors available in the various "_graphics_"_ _modes. The background color that text appears upon can be set using the **colorback** procedure.
+The screen must be in a "_graphics_" mode to use the **color** procedure. See **setscreen** for details.
 
 
 

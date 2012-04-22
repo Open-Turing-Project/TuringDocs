@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Copy</b> (<i>srcPathName</i>, <i>destPathName</i> : <b>string</b>)<p></p></font>",
       "text_content": "File.Copy (srcPathName, destPathName : string)\r\n    ",
-      "mdown_content": "**File.Copy** (*srcPathName*, *destPathName* : **string**)"
+      "mdown_content": "**File.Copy** (_srcPathName_, _destPathName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Copy</b> copies a file named by the <i>srcPathName</i> parameter to the file named by the <i>destPathName</i> parameter. The copy can be between different disks or file systems.<p>\r\n    </p>",
       "text_content": "File.Copy copies a file named by the srcPathName parameter to the file named by the destPathName parameter. The copy can be between different disks or file systems.\r\n    ",
-      "mdown_content": "**File.Copy** copies a file named by the *srcPathName* parameter to the file named by the *destPathName* parameter. The copy can be between different disks or file systems."
+      "mdown_content": "**File.Copy** copies a file named by the _srcPathName_ parameter to the file named by the _destPathName_ parameter. The copy can be between different disks or file systems."
     },
     {
       "title": "Details",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "This program copies the file \"<i>d:\\west\\example.dat</i>\" to \r\n          \"<i>new_example.t</i>\". in the current directory.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program copies the file \"d:\\west\\example.dat\" to \r\n          \"new_example.t\". in the current directory.\r\n\r\n    ",
-      "mdown_content": "This program copies the file \"*d:\\west\\example.dat*\" to \"*new_example.t*\". in the current directory.\n"
+      "mdown_content": "This program copies the file \"_d:\\west\\example.dat_\" to \"_new_example.t_\". in the current directory.\n"
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that copies a file to the current \r\n          directory using <b>File.Copy</b>, displays its contents to the run \r\n          window, and then deletes the file using <b>File.Delete</b>.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Copy.t;File.Copy Example\"></object></p>\n<p></p>",
       "text_content": "An example program is available that copies a file to the current \r\n          directory using File.Copy, displays its contents to the run \r\n          window, and then deletes the file using File.Delete.\r\n          \r\n            ",
-      "mdown_content": "An example program is available that copies a file to the current directory using **File.Copy**, displays its contents to the run window, and then deletes the file using **File.Delete**."
+      "mdown_content": "An example program is available that copies a file to the current directory using **File.Copy**, displays its contents to the run window, and then deletes the file using **File.Delete**.\n"
     },
     {
       "title": "Status",

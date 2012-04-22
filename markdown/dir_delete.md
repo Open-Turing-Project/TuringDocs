@@ -2,12 +2,12 @@
 #Dir.Delete
 
 ##Syntax
-**Dir.Delete** (*directoryPathName* : **string**)
+**Dir.Delete** (_directoryPathName_ : **string**)
 
 
 
 ##Description
-**Dir.Delete** is used to delete the directory specified by the parameter *directoryPathName*. This is the equivalent of doing a **rmdir** in DOS or UNIX. On the Macintosh, it removes a folder.
+**Dir.Delete** is used to delete the directory specified by the parameter _directoryPathName_. This is the equivalent of doing a **rmdir** in DOS or UNIX. On the Macintosh, it removes a folder.
 **Dir.Delete** will fail if it attempts delete a directory that has files in it.
 
 
@@ -18,7 +18,7 @@ If the **Dir.Delete** call fails, then **Error.Last** will return a non-zero val
 
 
 ##Example
-This program deletes the directory called *information*.
+This program deletes the directory called _information_.
 
 
         Dir.Delete ("information")
@@ -31,6 +31,7 @@ This program deletes the directory called *information*.
 ##Example
 An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.
 This example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.
+
 
 
 

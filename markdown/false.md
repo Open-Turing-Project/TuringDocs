@@ -25,6 +25,6 @@ A **boolean** (**true**/**false**) variable can be either **true** or **false** 
             put "Found 'gold' in the ten words"
         end if
 ##Details
-The line **if** *found*=**true** **then** can be simplified to **if** *found ***then** with no change to the meaning of the program.
+The line **if** _found_=**true** **then** can be simplified to **if** _found _**then** with no change to the meaning of the program.
 
 

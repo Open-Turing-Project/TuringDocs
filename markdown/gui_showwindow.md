@@ -2,12 +2,12 @@
 #GUI.ShowWindow
 
 ##Syntax
-**GUI.ShowWindow** (*window* : **int**)
+**GUI.ShowWindow** (_window_ : **int**)
 
 
 
 ##Description
-Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call *Window.Hide*, so there is no need for the user to do so.
+Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call _Window.Hide_, so there is no need for the user to do so.
 
 
 

@@ -2,7 +2,7 @@
 #Font.Free
 
 ##Syntax
-**Font.Free** (*fontID* : **int**)
+**Font.Free** (_fontID_ : **int**)
 
 
 

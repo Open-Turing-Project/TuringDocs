@@ -2,13 +2,13 @@
 #Time.SecDate
 
 ##Syntax
-**Time.SecDate** (*timeInSecs* : **int**) : **string**
+**Time.SecDate** (_timeInSecs_ : **int**) : **string**
 
 
 
 ##Description
 The **Time.SecDate** function is used to** **convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. 
-If *timeInSecs *is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.
+If _timeInSecs _is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.
 
 
 

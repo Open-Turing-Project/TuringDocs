@@ -2,12 +2,12 @@
 #PC.ParallelGet
 
 ##Syntax
-**PC.ParallelGet** (*port* : **int**) : **nat1**
+**PC.ParallelGet** (_port_ : **int**) : **nat1**
 
 
 
 ##Description
-The **PC.ParallelGet** function is used to read the value of certain pins on a parallel port. The port is specified with the *port* parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.
+The **PC.ParallelGet** function is used to read the value of certain pins on a parallel port. The port is specified with the _port_ parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.
 
 
 
@@ -24,7 +24,13 @@ This program reads and prints the values of the five data pins of the PC's paral
         put "Pin 15 is: ", (val div 8) mod 2
 ##Details
 The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet **procedure returns the sum of 
- 64  Pin 10 high 128 Pin 11 high  32  Pin 12 high  16  Pin 13 high  8  Pin 15 high
+
+
+
+
+
+
+
 The **mod** and **div** operators can be used to determine which pins are high or low. 
 
 

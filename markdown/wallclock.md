@@ -2,7 +2,7 @@
 #wallclock
 
 ##Syntax
-**wallclock** ( **var** *c* : **int** )
+**wallclock** ( **var** _c_ : **int** )
 
 
 

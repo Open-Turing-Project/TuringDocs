@@ -2,7 +2,7 @@
 #Sprite.SetFrameRate
 
 ##Syntax
-**Sprite.SetFrameRate** (*framesPerSec* : **int**)
+**Sprite.SetFrameRate** (_framesPerSec_ : **int**)
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.FillBox</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.FillBox (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**Draw.FillBox** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+      "mdown_content": "**Draw.FillBox** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.FillBox </b>procedure is used to draw a filled box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) filled using the specified <i>Color</i>. To get a box outlined in a different color, use <b>Draw.FillBox</b> with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Box</b>  with the <i>Color</i> parameter set to the border color.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.FillBox procedure is used to draw a filled box on the screen with bottom left and top right corners of (x1, y1) to (x2, y2) filled using the specified Color. To get a box outlined in a different color, use Draw.FillBox with the Color parameter set to the fill color and then call Draw.Box  with the Color parameter set to the border color.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.FillBox **procedure is used to draw a filled box on the screen with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) filled using the specified *Color*. To get a box outlined in a different color, use **Draw.FillBox** with the *Color* parameter set to the fill color and then call **Draw.Box**  with the *Color* parameter set to the border color."
+      "mdown_content": "The **Draw.FillBox **procedure is used to draw a filled box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) filled using the specified _Color_. To get a box outlined in a different color, use **Draw.FillBox** with the _Color_ parameter set to the fill color and then call **Draw.Box**  with the _Color_ parameter set to the border color."
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.<p>\r\n</p>",
       "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The screen must be in a \"*graphics*\" mode. See the **View.Set** procedure for details. If the screen is not in a \"*graphics*\" mode, an error will occur."
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
     },
     {
       "title": "Status",

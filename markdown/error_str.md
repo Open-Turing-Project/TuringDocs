@@ -2,12 +2,12 @@
 #Error.Str
 
 ##Syntax
-**Error.Str** (*errorCode* : **int**): **string**
+**Error.Str** (_errorCode_ : **int**): **string**
 
 
 
 ##Description
-**Error.Str** is a function that returns the error message related to a specified error code. If the error code is *eNoError* or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.
+**Error.Str** is a function that returns the error message related to a specified error code. If the error code is _eNoError_ or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.
 
 
 

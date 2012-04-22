@@ -2,7 +2,7 @@
 #Error.TripMsg
 
 ##Syntax
-**Error.TripMsg** (*errorCode* : **int**, *errorMessage* : **string**)
+**Error.TripMsg** (_errorCode_ : **int**, _errorMessage_ : **string**)
 
 
 

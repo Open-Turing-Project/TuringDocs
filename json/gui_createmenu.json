@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateMenu</b> (<i>name</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.CreateMenu (name : string) : int\r\n",
-      "mdown_content": "**GUI.CreateMenu** (*name* : **string**) : **int**"
+      "mdown_content": "**GUI.CreateMenu** (_name_ : **string**) : **int**"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.<p>\r\nThe <i>name</i> parameter specifies the text that appears in the menu bar.</p>\n<p>\r\n\r\n</p>\n<center></center>\r\n<center><b>A Menu With an Item Selected</b></center>\n<p>\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.</p>\n<p>\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>\n<p>\r\n</p>",
       "text_content": " Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\r\nThe name parameter specifies the text that appears in the menu bar.\r\n\r\n\r\nA Menu With an Item Selected\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.\r\n",
-      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\nThe *name* parameter specifies the text that appears in the menu bar.\n**A Menu With an Item Selected**\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired."
+      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\nThe _name_ parameter specifies the text that appears in the menu bar.\n\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired."
     },
     {
       "title": "Example",
@@ -46,7 +46,7 @@
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a menu as the <i>widgetID</i> parameter:<p>\r\n<b>GUI.Show</b>,<b> GUI.Hide</b>,<b> GUI.Dispose</b>,<b> GUI.Enable</b>,<b> GUI.Disable</b></p>\n<p>\r\n</p>",
       "text_content": " The following GUI subprograms can be called with a menu as the widgetID parameter:\r\nGUI.Show, GUI.Hide, GUI.Dispose, GUI.Enable, GUI.Disable\r\n",
-      "mdown_content": "The following GUI subprograms can be called with a menu as the *widgetID* parameter:\n**GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**"
+      "mdown_content": "The following GUI subprograms can be called with a menu as the _widgetID_ parameter:\n**GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**"
     },
     {
       "title": "Status",

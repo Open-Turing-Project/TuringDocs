@@ -2,12 +2,12 @@
 #Draw.Polygon
 
 ##Syntax
-**Draw.Polygon** (*x*, *y*  : **array** 1 .. * **of** **int**, *n* : **int**, *Color* : **int**)
+**Draw.Polygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.Polygon** procedure is used to draw a polygon with *n* points. A line is drawn in *Color *from the point (*x*(1), *y*(1)) to (*x*(2), *y*(2)) to (*x*(3), *y*(3)) and so on. After drawing the line to (*x*(*n*), *y* (*n*)), a line will be drawn back to (*x*(1), *y*(1)), closing the polygon. The **Draw.Polygon** procedure is equivalent to:
+The **Draw.Polygon** procedure is used to draw a polygon with _n_ points. A line is drawn in _Color _from the point (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on. After drawing the line to (_x_(_n_), _y_ (_n_)), a line will be drawn back to (_x_(1), _y_(1)), closing the polygon. The **Draw.Polygon** procedure is equivalent to:
 
 
         for i : 1 .. n - 1
@@ -26,7 +26,7 @@ This program will create an octagon and display it in color 1.
         Draw.Polygon (x, y, 8, brightblue)
 ##Details
 The IBM PC limits **Draw.Polygon** to a maximum of 256 points.
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 

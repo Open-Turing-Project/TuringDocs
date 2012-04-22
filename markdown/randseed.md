@@ -2,7 +2,7 @@
 #randseed
 
 ##Syntax
-**randseed** ( *seed* : **int**, *seq* : 1 .. 10 )
+**randseed** ( _seed_ : **int**, _seq_ : 1 .. 10 )
 
 
 

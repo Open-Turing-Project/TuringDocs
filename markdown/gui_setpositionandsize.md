@@ -2,12 +2,12 @@
 #GUI.SetPositionAndSize
 
 ##Syntax
-**GUI.SetPositionAndSize** (*widgetID*, *x*,* y* : **int**, *width*, *height* : **int**)
+**GUI.SetPositionAndSize** (_widgetID_, _x_,_ y_ : **int**, _width_, _height_ : **int**)
 
 
 
 ##Description
-Changes the position and size of the widget specified by *widgetID *simultaneously. The *x*, *y*, *width* and *height* parameters have the same meaning as in the **GUI.Create** function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the *width* or *height* parameter may be ignored.
+Changes the position and size of the widget specified by _widgetID _simultaneously. The _x_, _y_, _width_ and _height_ parameters have the same meaning as in the **GUI.Create** function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the _width_ or _height_ parameter may be ignored.
 **GUI.SetPositionAndSize** works the same way as the **GUI.SetPosition** and **GUI.SetSize** procedures.
 
 

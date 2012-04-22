@@ -2,12 +2,12 @@
 #GUI.SetNullEventHandler
 
 ##Syntax
-**GUI.SetNullEventHandler** (*nullHandler* : **procedure** *x* ())
+**GUI.SetNullEventHandler** (_nullHandler_ : **procedure** _x_ ())
 
 
 
 ##Description
-Sets the new null event handler. The *nullHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.
+Sets the new null event handler. The _nullHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.
 This is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.
 
 

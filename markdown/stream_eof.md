@@ -2,7 +2,7 @@
 #Stream.eof
 
 ##Syntax
-**eof** ( *streamNumber* **: int** ) : **boolean**
+**eof** ( _streamNumber_ **: int** ) : **boolean**
 
 
 

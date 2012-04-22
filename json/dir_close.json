@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Close</b> (<i>streamNumber</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Close (streamNumber : int)\r\n",
-      "mdown_content": "**Dir.Close** (*streamNumber* : **int**)"
+      "mdown_content": "**Dir.Close** (_streamNumber_ : **int**)"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program prints a listing of all the files in the directory <i>datafiles</i>.<p>\r\n</p>",
       "text_content": " This program prints a listing of all the files in the directory datafiles.\r\n\r\n",
-      "mdown_content": "This program prints a listing of all the files in the directory *datafiles*."
+      "mdown_content": "This program prints a listing of all the files in the directory _datafiles_."
     },
     {
       "title": "Execute",

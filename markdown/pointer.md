@@ -2,6 +2,6 @@
 #pointer
 
 ##Syntax
-width="10"> 
+width="10"> <
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Update</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Update (windowID : int)\r\n",
-      "mdown_content": "**Window.Update** (*windowID* : **int**)"
+      "mdown_content": "**Window.Update** (_windowID_ : **int**)"
     },
     {
       "title": "Description",

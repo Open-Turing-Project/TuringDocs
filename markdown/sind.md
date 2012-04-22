@@ -2,7 +2,7 @@
 #sind
 
 ##Syntax
-**sind** ( *r* : **real** ) : **real**
+**sind** ( _r_ : **real** ) : **real**
 
 
 

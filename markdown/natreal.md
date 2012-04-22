@@ -2,7 +2,7 @@
 #natreal
 
 ##Syntax
-**natreal** ( *n* : **nat** ) : **real**
+**natreal** ( _n_ : **nat** ) : **real**
 
 
 

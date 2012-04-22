@@ -12,7 +12,7 @@ Using **skip** as an output item in a **put** statement causes the current outpu
 
 
 ##Example
-This example, *To be* is output on one line and *Or not to be* on the next.
+This example, _To be_ is output on one line and _Or not to be_ on the next.
 
 
         put "To be", skip, "Or not to be"

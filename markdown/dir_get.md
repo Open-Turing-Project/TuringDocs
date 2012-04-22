@@ -2,7 +2,7 @@
 #Dir.Get
 
 ##Syntax
-**Dir.Get** (*streamNumber* : **int**) : **string**
+**Dir.Get** (_streamNumber_ : **int**) : **string**
 
 
 
@@ -17,7 +17,7 @@ If the **Dir.Get** call fails, then **Error.Last** will return a non-zero value 
 
 
 ##Example
-This program prints a listing of all the files in the directory *datafiles*.
+This program prints a listing of all the files in the directory _datafiles_.
 
 
         var streamNumber : int

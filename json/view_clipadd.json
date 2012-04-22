@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.ClipAdd</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " View.ClipAdd (x1, y1, x2, y2 : int)\r\n",
-      "mdown_content": "**View.ClipAdd** (*x1*, *y1*, *x2*, *y2* : **int**)"
+      "mdown_content": "**View.ClipAdd** (_x1_, _y1_, _x2_, _y2_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.ClipAdd</b> procedure adds another rectangle specified by (<i>x1</i>, <i>y1</i>) - (<i>x2</i>, <i>y2</i>) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.<p>\r\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.</p>\n<p>\r\nTo set the initial clipping, or remove the old region and replace it with a new one, use <b>View.ClipSet</b>. To set the clipping region back to the entire screen or window, use <b>View.ClipOff</b>.</p>\n<p>\r\nThese commands only work in \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The View.ClipAdd procedure adds another rectangle specified by (x1, y1) - (x2, y2) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.\r\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.\r\nTo set the initial clipping, or remove the old region and replace it with a new one, use View.ClipSet. To set the clipping region back to the entire screen or window, use View.ClipOff.\r\nThese commands only work in \"graphics\" mode.\r\n",
-      "mdown_content": "The **View.ClipAdd** procedure adds another rectangle specified by (*x1*, *y1*) - (*x2*, *y2*) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.\nTo set the initial clipping, or remove the old region and replace it with a new one, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.\nThese commands only work in \"*graphics*\" mode."
+      "mdown_content": "The **View.ClipAdd** procedure adds another rectangle specified by (_x1_, _y1_) - (_x2_, _y2_) to the clipping region. This only works on systems that support complex clipping regions. If no clipping region has been specified, then the rectangle becomes the complete clipping region.\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.\nTo set the initial clipping, or remove the old region and replace it with a new one, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.\nThese commands only work in \"_graphics_\" mode."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>View.ClipAdd</b>, not by calling <b>ClipAdd</b>.</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td><b>See also</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>View.ClipSet</b> and <b>View.ClipOff </b>functions.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling View.ClipAdd, not by calling ClipAdd.\r\nSee also View.ClipSet and View.ClipOff functions.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipAdd**, not by calling **ClipAdd**.\n**See also** **View.ClipSet** and **View.ClipOff **functions."
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipAdd**, not by calling **ClipAdd**.\n\n**See also** **View.ClipSet** and **View.ClipOff **functions.\n"
     }
   ],
   "dependencies": [

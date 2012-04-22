@@ -2,18 +2,20 @@
 #drawfillarc
 
 ##Syntax
-**drawfillarc** (*x*, *y*, *xRadius*, *yRadius* : **int**,  *initialAngle*, *finalAngle*, *Color* : **int**)
+**drawfillarc** (_x_, _y_, _xRadius_, _yRadius_ : **int**,
+_initialAngle_, _finalAngle_, _Color_ : **int**)
+
 
 
 
 ##Description
-The **drawfillarc** procedure is used to draw a filled arc whose center is at (*x*, *y*). It then fills in the pie-shaped wedge using the specified *Color*. To outline a filled arc, use **drawfillarc** with the *Color* parameter set to the fill color and then **drawarc** with the *Color* parameter set to the border color. For *initialAngle *and *finalAngle*, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by *xRadius *and *yRadius*.
+The **drawfillarc** procedure is used to draw a filled arc whose center is at (_x_, _y_). It then fills in the pie-shaped wedge using the specified _Color_. To outline a filled arc, use **drawfillarc** with the _Color_ parameter set to the fill color and then **drawarc** with the _Color_ parameter set to the border color. For _initialAngle _and _finalAngle_, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius _and _yRadius_.
 
 ![Doc image](drawfillarc01.gif)
 
 
 ##Example
-This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (*midx*,0), the bottom center of the screen, using color number 1. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen.
+This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (_midx_,0), the bottom center of the screen, using color number 1. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen.
 
 
         setscreen ("graphics")
@@ -21,12 +23,12 @@ This program draws a filled semicircle (actually, an approximation to a semicirc
         drawfillarc (midx, 0, maxy, maxy, 0, 180, 1)
 ##Details
 On the PC, **drawfillarc**  fills the pie-shaped wedge by using a "flood" fill and is thus subject to all the conditions of a flood fill. 
-The meaning of the *Color* number depends on the current palette. See the **palette** statement.
-The screen should be in a "*graphics*" mode. See the **setscreen** procedure for details. If the screen is not in a "*graphics*" mode, it will automatically be set to "*graphics*" mode.
+The meaning of the _Color_ number depends on the current palette. See the **palette** statement.
+The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
 
 
 ##See also
-**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures.
+**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.
 
 

@@ -8,6 +8,8 @@ All routines in the Joystick module are exported qualified (and thus must be pre
 
 
 ##Entry Points
-[joystick_joystick.html](**joystick**)**1**, **joystick2** joystick name contants (exported unqualified)[joystick_getinfo.html](**GetInfo**) Reads the current value of a joystick and status of the joystick buttons.
+
+[joystick_joystick.html](**joystick**)**1**, **joystick2** joystick name contants (exported unqualified)
+[joystick_getinfo.html](**GetInfo**) Reads the current value of a joystick and status of the joystick buttons.
 
 

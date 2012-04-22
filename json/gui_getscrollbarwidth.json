@@ -18,7 +18,7 @@
       "title": "Example",
       "raw_content": "See the <i>ScrollPic</i> program in <b>GUI.CreateHorizontalScrollBarFull </b>for an example of <b>GUI.GetScrollBarWidth</b>.<p>\r\n</p>",
       "text_content": " See the ScrollPic program in GUI.CreateHorizontalScrollBarFull for an example of GUI.GetScrollBarWidth.\r\n",
-      "mdown_content": "See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetScrollBarWidth**."
+      "mdown_content": "See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetScrollBarWidth**."
     },
     {
       "title": "Status",

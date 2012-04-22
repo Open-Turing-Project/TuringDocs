@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetNullEventHandler</b> (<i>nullHandler</i> : <b>procedure</b> <i>x</i> ())<p>\r\n</p></font>",
       "text_content": " GUI.SetNullEventHandler (nullHandler : procedure x ())\r\n",
-      "mdown_content": "**GUI.SetNullEventHandler** (*nullHandler* : **procedure** *x* ())"
+      "mdown_content": "**GUI.SetNullEventHandler** (_nullHandler_ : **procedure** _x_ ())"
     },
     {
       "title": "Description",
       "raw_content": "Sets the new null event handler. The <i>nullHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there are no mouse button presses or keystrokes to be processed.<p>\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.</p>\n<p>\r\n</p>",
       "text_content": " Sets the new null event handler. The nullHandler parameter is the name of a procedure that is called every time GUI.ProcessEvent is called and there are no mouse button presses or keystrokes to be processed.\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.\r\n",
-      "mdown_content": "Sets the new null event handler. The *nullHandler* parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets."
+      "mdown_content": "Sets the new null event handler. The _nullHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets."
     },
     {
       "title": "Example",

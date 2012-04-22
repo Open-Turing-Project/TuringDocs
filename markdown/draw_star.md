@@ -2,12 +2,12 @@
 #Draw.Star
 
 ##Syntax
-**Draw.Star **(*x1*, *y1*, *x2*, *y2*, *Color* : **int**)
+**Draw.Star **(_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) using the specified *Color*. If *y1* is greater than *y2* then the star is drawn upside down.
+The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_ then the star is drawn upside down.
 
 ![Doc image](draw_star01.gif)
 
@@ -21,7 +21,7 @@ This program will draw two stars beside each other. The first star will be in co
         Draw.Star (150, 100, 250, 0, brightblue)
 ##Details
 The **Draw.Star** procedure is useful for drawing the American flag.
-The screen must be in a "*graphics*" mode. See the **View.Set** procedure for details. If the screen is not in a "*graphics*" mode, an error will occur.
+The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
 

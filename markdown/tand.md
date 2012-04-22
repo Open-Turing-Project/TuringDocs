@@ -2,7 +2,7 @@
 #tand
 
 ##Syntax
-**tand** ( *r* : **real** ) : **real**
+**tand** ( _r_ : **real** ) : **real**
 
 
 
@@ -20,7 +20,7 @@ This program prints out the tangent of 0, 30, 60, 90, up to 360 degrees.
             put "Tan of ", angle, " is ", tand ( angle )
         end for
 ##Details
-An argument to **tan** of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically ¥. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)
+An argument to **tan** of 90, 270, etc. may result in an overflow (and halt of the program) as the result is technically &yen;. (It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)
 
 
 

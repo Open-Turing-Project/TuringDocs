@@ -2,8 +2,11 @@
 #exit
 
 ##Syntax
-An *exitStatement* is one of:
- (a)**exit** **when** trueFalseExpn (b)**exit**
+An _exitStatement_ is one of:
+
+(a)**exit** **when** trueFalseExpn
+(b)**exit**
+
 
 
 
@@ -23,6 +26,6 @@ Input names until finding Jones.
         end loop
 ##Details
 Exit statements must occur only inside **loop** or **for** statements. An exit takes you out of the closest surrounding **loop** or **for**. The only other ways to terminate a **loop** or **for** is by **return** (in a procedure or in the main program, in which case the entire procedure or main program is terminated) or by **result** (in a function, in which case the entire function is terminated and a result value must be supplied).
-The form "**exit** **when** *trueFalseExpn*" is equivalent to "**if** *trueFalseExpn ***then** **exit** **end** **if**".
+The form "**exit** **when** _trueFalseExpn_" is equivalent to "**if** _trueFalseExpn _**then** **exit** **end** **if**".
 
 

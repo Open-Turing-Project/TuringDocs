@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawfillmapleleaf</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " drawfillmapleleaf (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**drawfillmapleleaf** (*x1*, *y1*, *x2*, *y2*, *Color* : **int**)"
+      "mdown_content": "**drawfillmapleleaf** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>drawfillmapleleaf</b> procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a maple leaf outlined in a different color, use <b>drawfillmapleleaf</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawmapleleaf</b>  with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the maple leaf is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The drawfillmapleleaf procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (x1, y1) to (x2, y2) and filled using the specified Color. To get a maple leaf outlined in a different color, use drawfillmapleleaf with the Color parameter set to the fill color and then call drawmapleleaf  with the Color parameter set to the border color. If y1 is greater than y2, then the maple leaf is drawn upside down.\r\n\r\n\r\n",
-      "mdown_content": "The **drawfillmapleleaf** procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (*x1*, *y1*) to (*x2*, *y2*) and filled using the specified *Color*. To get a maple leaf outlined in a different color, use **drawfillmapleleaf** with the *Color* parameter set to the fill color and then call **drawmapleleaf**  with the *Color* parameter set to the border color. If *y1* is greater than *y2*, then the maple leaf is drawn upside down."
+      "mdown_content": "The **drawfillmapleleaf** procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a maple leaf outlined in a different color, use **drawfillmapleleaf** with the _Color_ parameter set to the fill color and then call **drawmapleleaf**  with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the maple leaf is drawn upside down."
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The <b>drawfillmapleleaf</b> procedure is useful for drawing the Canadian flag.<p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The drawfillmapleleaf procedure is useful for drawing the Canadian flag.\r\nThe meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "The **drawfillmapleleaf** procedure is useful for drawing the Canadian flag.\nThe meaning of the *Color* number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"*graphics*\" mode. See the **setscreen** procedure for details. If the screen is not in a \"*graphics*\" mode, it will automatically be set to \"*graphics*\" mode."
+      "mdown_content": "The **drawfillmapleleaf** procedure is useful for drawing the Canadian flag.\nThe meaning of the _Color_ number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
     },
     {
       "title": "See also",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw** procedures."
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures."
     }
   ],
   "dependencies": [

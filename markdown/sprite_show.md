@@ -2,7 +2,7 @@
 #Sprite.Show
 
 ##Syntax
-**Sprite.Show** (*spriteID* : **int**)
+**Sprite.Show** (_spriteID_ : **int**)
 
 
 

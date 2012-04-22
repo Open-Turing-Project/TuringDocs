@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileReturn</b> ( <i>fileName</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " Music.PlayFileReturn ( fileName : string )\r\n",
-      "mdown_content": "**Music.PlayFileReturn** ( *fileName* : **string** )"
+      "mdown_content": "**Music.PlayFileReturn** ( _fileName_ : **string** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.PlayFileReturn</b> procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>WAV files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"WAV:filename\" or \"filename.WAV\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MP3 files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MP3:filename\" or \"filename.MP3\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MIDI files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MIDI:filename\" or \"filename.MIDI\"</td>\n</tr>\n</table>\n<p>\r\nUnlike <b>Music.PlayFile</b>, the <b>Music.PlayFileReturn</b> procedure should not be called in a \r\nseparate process. Instead, the procedure returns immediately. This makes <b>Music.PlayFileReturn</b>\r\neasier to use, but makes it unsuitable for playing a set of files sequentially.</p>\n<p>\r\n</p>",
       "text_content": " The Music.PlayFileReturn procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\r\nThe fileNameparameter must give the format of the file:\r\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\r\nUnlike Music.PlayFile, the Music.PlayFileReturn procedure should not be called in a \r\nseparate process. Instead, the procedure returns immediately. This makes Music.PlayFileReturn\r\neasier to use, but makes it unsuitable for playing a set of files sequentially.\r\n",
-      "mdown_content": "The **Music.PlayFileReturn** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe *fileName*parameter must give the format of the file:\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\nUnlike **Music.PlayFile**, the **Music.PlayFileReturn** procedure should not be called in a separate process. Instead, the procedure returns immediately. This makes **Music.PlayFileReturn**easier to use, but makes it unsuitable for playing a set of files sequentially."
+      "mdown_content": "The **Music.PlayFileReturn** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe _fileName_parameter must give the format of the file:\n\n\n\n\n\nUnlike **Music.PlayFile**, the **Music.PlayFileReturn** procedure should not be called in a separate process. Instead, the procedure returns immediately. This makes **Music.PlayFileReturn**easier to use, but makes it unsuitable for playing a set of files sequentially."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program plays the music in the file \"<i>branden3.wav</i>\" once while drawing ovals on the screen.\r\nIf the music has not finished when the user presses a key, it is halted using <b>Music.PlayFileStop</b><p>\r\n</p>",
       "text_content": " This program plays the music in the file \"branden3.wav\" once while drawing ovals on the screen.\r\nIf the music has not finished when the user presses a key, it is halted using Music.PlayFileStop\r\n\r\n",
-      "mdown_content": "This program plays the music in the file \"*branden3.wav*\" once while drawing ovals on the screen.If the music has not finished when the user presses a key, it is halted using **Music.PlayFileStop**"
+      "mdown_content": "This program plays the music in the file \"_branden3.wav_\" once while drawing ovals on the screen.If the music has not finished when the user presses a key, it is halted using **Music.PlayFileStop**"
     },
     {
       "title": "Execute",
@@ -52,7 +52,7 @@
       ],
       "raw_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.<p>\r\n</p>",
       "text_content": " The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].\r\n\r\n",
-      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number]."
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;."
     },
     {
       "title": "Details",

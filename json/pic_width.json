@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Width</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Pic.Width (picID : int) : int\r\n",
-      "mdown_content": "**Pic.Width** (*picID* : **int**) : **int**"
+      "mdown_content": "**Pic.Width** (_picID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Width </b>returns the width in pixels of the picture represented by <i>picID</i>.<p>\r\nThis function is often used in conjunction with <b>Pic.Height</b> to obtain the dimensions of a picture loaded using <b>Pic.FileNew</b>.</p>\n<p>\r\n</p>",
       "text_content": " Pic.Width returns the width in pixels of the picture represented by picID.\r\nThis function is often used in conjunction with Pic.Height to obtain the dimensions of a picture loaded using Pic.FileNew.\r\n",
-      "mdown_content": "**Pic.Width **returns the width in pixels of the picture represented by *picID*.\nThis function is often used in conjunction with **Pic.Height** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
+      "mdown_content": "**Pic.Width **returns the width in pixels of the picture represented by _picID_.\nThis function is often used in conjunction with **Pic.Height** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The program draws loads a picture from the file <i>lighthouse.jpg</i> and proceeds to tile the entire run window with copies of the picture..<p>\r\n</p>",
       "text_content": " The program draws loads a picture from the file lighthouse.jpg and proceeds to tile the entire run window with copies of the picture..\r\n\r\n",
-      "mdown_content": "The program draws loads a picture from the file *lighthouse.jpg* and proceeds to tile the entire run window with copies of the picture.."
+      "mdown_content": "The program draws loads a picture from the file _lighthouse.jpg_ and proceeds to tile the entire run window with copies of the picture.."
     },
     {
       "title": "Status",

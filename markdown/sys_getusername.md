@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Sys.GetUserName **function is used to determine the name of the current user. It returns Unknown if a name could not be determined.
+The **Sys.GetUserName **function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.
 
 
 

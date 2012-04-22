@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>assignmentStatement</em> is:
-<em>variableReference</em> := <em>expn</em></p>
+<p>An <em>assignmentStatement</em> is:</p>
+
+<p><em>variableReference</em> := <em>expn</em></p>
 
 <h2>Description</h2>
 
@@ -24,9 +25,9 @@
 
 <p>The expression on the right of := must be <em>assignable </em>to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to <em>i</em>,<em> </em>but a <strong>real</strong> value such as 3.14 would not be not assignable to <em>i</em>. Entire arrays, records and unions can be assigned. For example, in the above, array <em>a</em> is assigned to array <em>b</em>. See <em>assignability </em>for the exact rules of allowed assignments.
 You cannot assign a new value to a constant (<strong>const</strong>).
-There are short forms that allow you to write assignment statements more compactly. For example,
-<em>i</em> := <em>i</em> + 1
-can be shortened to
-<em>i</em> += 1
-In Turing, there are short forms for combining +, = and * with assignment. For example, <em>i</em> <em>= 2 doubles </em>i<em>.
-There are also short forms to allow any binary operator to be combined with assignment. For example, </em>i<em> <strong>shl</strong>= 2 shifts </em>i* by 2 to the left.</p>
+There are short forms that allow you to write assignment statements more compactly. For example,</p>
+
+<p>can be shortened to</p>
+
+<p>In Turing, there are short forms for combining +, = and * with assignment. For example, <em>i</em> *= 2 doubles <em>i</em>.
+There are also short forms to allow any binary operator to be combined with assignment. For example, <em>i</em> <strong>shl</strong>= 2 shifts <em>i</em> by 2 to the left.</p>

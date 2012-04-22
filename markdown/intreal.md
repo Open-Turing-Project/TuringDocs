@@ -2,7 +2,7 @@
 #intreal
 
 ##Syntax
-**intreal** ( *i* : **int** ) : **real**
+**intreal** ( _i_ : **int** ) : **real**
 
 
 

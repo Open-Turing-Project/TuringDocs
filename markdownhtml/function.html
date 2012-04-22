@@ -2,8 +2,12 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>functionDeclaration</em> is:
-<strong>function</strong> <em>id </em>[ ( [<em>paramDeclaration </em>{, <em>paramDeclaration</em> } ] ) ]: <em>typeSpec</em><em>statementsAndDeclarations</em><strong>end</strong> <em>id</em></p>
+<p>A <em>functionDeclaration</em> is:</p>
+
+<p><strong>function</strong> <em>id </em>[ ( [<em>paramDeclaration </em>{, <em>paramDeclaration</em> } ] ) ]
+: <em>typeSpec</em>
+<em>statementsAndDeclarations</em>
+<strong>end</strong> <em>id</em></p>
 
 <h2>Description</h2>
 
@@ -24,11 +28,11 @@
 Each actual non-<strong>var</strong> parameter must be assignable to the type of its corresponding formal parameter. See also <em>assignability</em>.
 A function must finish by executing a <strong>result</strong> statement, which produces the function's value. In the above example, the <strong>result</strong> statement computes and returns the value 2.0 * <em>x</em>.
 In principle, a function (1) should not change any variables outside of itself (global variables) or (2) should not have <strong>var</strong> parameters. In other words, it should have no <em>side effects</em>. The original implementation prevented (1) and (2) and thereby prevented function side effects. Current implementations of Turing do not enforce this restriction.
-The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong><em><em><em>), meaning the bound is that of the actual parameter. See </em>paramDeclaration</em> for details about parameters.
+The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong>*</strong>), meaning the bound is that of the actual parameter. See <em>paramDeclaration</em> for details about parameters.
 Procedures and functions cannot be declared inside other procedures and functions.
-The syntax of a </em>functionDeclaration* presented above has been simplified by leaving out the optional result identifier, </strong>import<strong> list, </strong>pre<strong> condition, </strong>init<strong> clause, </strong>post<strong> condition and exception handler. The full syntax<em> </em>is
-The <em>resultId</em> is the name of the result of the function and can be used only in the </strong>post<strong> condition.
-A function must be declared before being called; to allow for mutually recursive procedures and functions, there are </strong>forward<strong> declarations with later declaration of the procedure or function </strong>body<strong>. See </strong>forward<strong> and </strong>body** declarations for explanations.
+The syntax of a <em>functionDeclaration</em> presented above has been simplified by leaving out the optional result identifier, <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler. The full syntax<em> </em>is
+The <em>resultId</em> is the name of the result of the function and can be used only in the <strong>post</strong> condition.
+A function must be declared before being called; to allow for mutually recursive procedures and functions, there are <strong>forward</strong> declarations with later declaration of the procedure or function <strong>body</strong>. See <strong>forward</strong> and <strong>body</strong> declarations for explanations.
 You declare parameterless functions using an empty parameter list. When this is done, a call to the function must include an empty parameter list.</p>
 
 <pre><code>    function [ pervasive ] id

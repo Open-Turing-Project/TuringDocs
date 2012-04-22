@@ -2,12 +2,12 @@
 #GUI.SetText
 
 ##Syntax
-**GUI.SetText** (*widgetID* : **int**, *text* : **string**)
+**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)
 
 
 
 ##Description
-Sets the text of a text field specified by *widgetID* to *text*. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).
+Sets the text of a text field specified by _widgetID_ to _text_. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).
 
 
 

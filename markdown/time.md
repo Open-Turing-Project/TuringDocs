@@ -2,12 +2,12 @@
 #time
 
 ##Syntax
-**time** ( **var*** t*  : **string** )
+**time** ( **var**_ t_  : **string** )
 
 
 
 ##Description
-The **time** statement is used to determine the current time of day. Variable *t *is assigned a string in the format "*hh:mm:ss*". For example, if the time is two minutes and 47 seconds after nine A.M., *t *will be set to "*09:02:47*". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string "*23:30:00*".
+The **time** statement is used to determine the current time of day. Variable _t _is assigned a string in the format "_hh:mm:ss_". For example, if the time is two minutes and 47 seconds after nine A.M., _t _will be set to "_09:02:47_". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string "_23:30:00_".
 
 
 

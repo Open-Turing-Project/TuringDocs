@@ -2,14 +2,16 @@
 #put
 
 ##Syntax
-A *putStatement* is:
- **put** [ : *fileNumber* , ] *putItem* { , *putItem* } [ .. ]
+A _putStatement_ is:
+
+**put** [ : _fileNumber_ , ] _putItem_ { , _putItem_ } [ .. ]
+
 
 
 
 ##Description
-The **put** statement outputs each of the *putItems*. Usually, a new line is started in the output after the final *putItem*. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.
-Ordinarily, the output goes to the screen. However, if the *fileNumber *is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.
+The **put** statement outputs each of the _putItems_. Usually, a new line is started in the output after the final _putItem_. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.
+Ordinarily, the output goes to the screen. However, if the _fileNumber _is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.
 
 
 
@@ -48,9 +50,12 @@ This **put** statement is sometimes used to close off a line that has been outpu
 
         put ""  % Output null string then new line
 ##Details
-The general form of a *putItem* is one of:
- (a) *expn* [:*widthExpn* [:*fractionWidth* [:*exponentWidth* ] ] ] (b)  **skip**
-See the above examples for uses of *widthExpn*, *fractionWidth* and *exponentWidth*. For the exact meaning of these three widths, see the definitions of the functions *realstr*, *frealstr* and *erealstr*. The **skip** item is used to end the current output line and start a new line.
+The general form of a _putItem_ is one of:
+
+
+
+
+See the above examples for uses of _widthExpn_, _fractionWidth_ and _exponentWidth_. For the exact meaning of these three widths, see the definitions of the functions _realstr_, _frealstr_ and _erealstr_. The **skip** item is used to end the current output line and start a new line.
 
 
 
@@ -62,7 +67,7 @@ The **put** semantics allow put's of enum values. The values printed are the ele
         var c : colors := colors . red
         put c       % outputs "red" (without the quotes)
 ##Details
-The **put** semantics allow put's of **boolean** values. The values printed are either true or false (without the quotes). For example:
+The **put** semantics allow put's of **boolean** values. The values printed are either &#147;true&#148; or &#147;false&#148; (without the quotes). For example:
 
 
         var c : boolean := true or false

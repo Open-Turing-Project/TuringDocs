@@ -2,7 +2,7 @@
 #sizepic
 
 ##Syntax
-**sizepic** ( *x1*, *y1*, *x2*, *y2* : **int**) : **int**
+**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**
 
 
 
@@ -21,7 +21,7 @@ This program outputs the size of array needed to hold a picture with left bottom
             sizepic ( 10, 20, 50, 60 )
 ##Details
 See **takepic** for an example of the use of **sizepic** and for further information about buffers for drawing pictures.
-The screen should be in a "*graphics*" mode. See the **setscreen** procedure for details. If the screen is not in a "*graphics*" mode, it will automatically be set to "*graphics*" mode.
+The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
 
 

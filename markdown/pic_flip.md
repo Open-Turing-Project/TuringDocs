@@ -2,12 +2,12 @@
 #Pic.Flip
 
 ##Syntax
-**Pic.Flip** (*picID* : **int**) : **int**
+**Pic.Flip** (_picID_ : **int**) : **int**
 
 
 
 ##Description
-**Pic.Flip** is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears upside-down. 
+**Pic.Flip** is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears &#147;upside-down&#148;. 
 
 
 
@@ -18,7 +18,7 @@ Note that the upside-down picture is a newly created picture. When it is no long
 
 ##Example
 The program loads a picture from a file, flips it and then draws the original and the upside-down image side by side in a window after resizing the window to fit the two pictures.
-**Output from the Program**
+
 
 ![Doc image](pic_flip01.gif)
 

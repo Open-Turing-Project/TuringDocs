@@ -2,7 +2,7 @@
 #delay
 
 ##Syntax
-**delay** (*duration* : **int**)
+**delay** (_duration_ : **int**)
 
 
 

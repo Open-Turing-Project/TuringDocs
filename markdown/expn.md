@@ -2,13 +2,24 @@
 #expn
 
 ##Syntax
-An *expn* is one of:
- (a)*explicitConstant*  *% e.g.: 25* (b)*variableReference*  *% e.g.: width* (c)*constantReference*  *% e.g.: pi* (d)*expn* *infixOperator* *expn* *% e.g.: 3 **+** width* (e)*prefixOperator* *expn* *% e.g.: **-** width* (f)(*expn*)   *% e.g.: (width - 7)* (g)*substring*   *% e.g.: s (3 .. 5)* (h)*functionCall*  *% e.g.: sqrt (25)* (i)*setConstructor*  *% e.g.: modes (4*,* 3)* (j)*enumeratedValue*  *% e.g.: color . red*
+An _expn_ is one of:
+
+(a)_explicitConstant_  _% e.g.: 25_
+(b)_variableReference_  _% e.g.: width_
+(c)_constantReference_  _% e.g.: pi_
+(d)_expn_ _infixOperator_ _expn_ _% e.g.: 3 **+** width_
+(e)_prefixOperator_ _expn_ _% e.g.: **-** width_
+(f)(_expn_)   _% e.g.: (width - 7)_
+(g)_substring_   _% e.g.: s (3 .. 5)_
+(h)_functionCall_  _% e.g.: sqrt (25)_
+(i)_setConstructor_  _% e.g.: modes (4_,_ 3)_
+(j)_enumeratedValue_  _% e.g.: color . red_
+
 
 
 
 ##Description
-An expression (*expn*)* *returns a value; in the general case, this may involve a calculation, such as addition, as in the expression:
+An expression (_expn_)_ _returns a value; in the general case, this may involve a calculation, such as addition, as in the expression:
 
 
             3 + width
@@ -22,12 +33,12 @@ An expression (*expn*)* *returns a value; in the general case, this may involve 
         diameter := pi * r ** 2         % pi * r ** 2 is an expn
         var x := diameter               % diameter is an expn
 ##Details
-In the simplest case, an expression (*expn*) is simply an explicit constant such as 25 or "*Hello world*". A variable by itself is considered to be an expression when its value is used. This is the case above, where the value of *diameter* is used to initialize *x*. More generally, an expression contains an operator such as **+** and carries out an actual calculation. An expression may also be a substring, function call, set constructor or enumerated value. For details, see the descriptions of these items.
-The Turing infix operators are: +, -, *, /, **div**, **mod**, **, <, >, =, <=, >=, **not=**, **not**, **and**, **or**, =>, **in**, **not** **in**, **shr** (shift right), **shl** (shift left), and **xor** (exclusive **or**). For details, see *infixOperator*. The Turing prefix operators are +, - and **not**, ^ (pointer following) and # (see **cheat**). For details see *prefix *operator.
+In the simplest case, an expression (_expn_) is simply an explicit constant such as 25 or "_Hello world_". A variable by itself is considered to be an expression when its value is used. This is the case above, where the value of _diameter_ is used to initialize _x_. More generally, an expression contains an operator such as **+** and carries out an actual calculation. An expression may also be a substring, function call, set constructor or enumerated value. For details, see the descriptions of these items.
+The Turing infix operators are: +, -, *, /, **div**, **mod**, **, <, >, =, <=, >=, **not=**, **not**, **and**, **or**, =>, **in**, **not** **in**, **shr** (shift right), **shl** (shift left), and **xor** (exclusive **or**). For details, see _infixOperator_. The Turing prefix operators are +, - and **not**, ^ (pointer following) and # (see **cheat**). For details see _prefix _operator.
 
 
 
 ##See also
-*[precedence.html](precedence) *of operators, as well as the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)** and **[boolean.html](boolean)** types.
+_[precedence.html](precedence) _of operators, as well as the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)** and **[boolean.html](boolean)** types.
 
 

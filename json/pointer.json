@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "width=\"10\">&nbsp;<",
       "text_content": " ",
-      "mdown_content": "width=\"10\"> "
+      "mdown_content": "width=\"10\"> <"
     }
   ],
   "dependencies": [

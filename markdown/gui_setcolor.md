@@ -2,12 +2,12 @@
 #GUI.SetColor
 
 ##Syntax
-**GUI.SetColor** (*widgetID* : **int**, *clrNumber* : **int**)
+**GUI.SetColor** (_widgetID_ : **int**, _clrNumber_ : **int**)
 
 
 
 ##Description
-The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the *clrNumber*parameter.  The edges of the button are a darker version of the color specified by *clrNumber*, so in general you should usebrighter colors for buttons.
+The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the _clrNumber_parameter.  The edges of the button are a darker version of the color specified by _clrNumber_, so in general you should usebrighter colors for buttons.
 
 
 

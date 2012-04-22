@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetCheckBox</b> (<i>widgetID</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " GUI.GetCheckBox (widgetID : int) : boolean\r\n",
-      "mdown_content": "**GUI.GetCheckBox** (*widgetID* : **int**) : **boolean**"
+      "mdown_content": "**GUI.GetCheckBox** (_widgetID_ : **int**) : **boolean**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the status of the check box specified by <i>widgetID</i>. If the check box is set (has an X in it), <i>GetCheckBox</i> returns true, otherwise it returns false.<p>\r\n</p>",
       "text_content": " Returns the status of the check box specified by widgetID. If the check box is set (has an X in it), GetCheckBox returns true, otherwise it returns false.\r\n",
-      "mdown_content": "Returns the status of the check box specified by *widgetID*. If the check box is set (has an X in it), *GetCheckBox* returns true, otherwise it returns false."
+      "mdown_content": "Returns the status of the check box specified by _widgetID_. If the check box is set (has an X in it), _GetCheckBox_ returns true, otherwise it returns false."
     },
     {
       "title": "Example",

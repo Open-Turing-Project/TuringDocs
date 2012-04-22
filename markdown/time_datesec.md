@@ -2,13 +2,13 @@
 #Time.DateSec
 
 ##Syntax
-**Time.DateSec** (*dateString* : **string**) : **int**
+**Time.DateSec** (_dateString_ : **string**) : **int**
 
 
 
 ##Description
 The **Time.DateSec** function is used to** **convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.
-The function can also convert just the date ("*dd mmm yy*"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("*hh:mm:ss*"), in which case it returns the number of seconds that have passed since midnight of that day.
+The function can also convert just the date ("_dd mmm yy_"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("_hh:mm:ss_"), in which case it returns the number of seconds that have passed since midnight of that day.
 If the format is incorrect or can't be interpreted, then **Time.DateSec** will return 1 and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.
 
 

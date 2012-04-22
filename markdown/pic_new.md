@@ -2,13 +2,13 @@
 #Pic.New
 
 ##Syntax
-**Pic.New** (*x1*, *y1*, *x2*, *y2* : **int**) : **int**
+**Pic.New** (_x1_, _y1_, _x2_, _y2_ : **int**) : **int**
 
 
 
 ##Description
 **Pic.New** is used to obtain a picture of a portion of the screen. The **Pic.New** procedure allocates the memory for the picture, which can be very large for pictures of large areas.The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.
-The picture is of the screen area defined by the rectangle (*x1*, *y1*) - (*x2*, *y2*).
+The picture is of the screen area defined by the rectangle (_x1_, _y1_) - (_x2_, _y2_).
 
 
 

@@ -7,27 +7,47 @@
 <h2>Description</h2>
 
 <p><strong>Pic.DrawSpecial</strong> is used to draw a picture on the screen with aspecial effect such as a wipe, a slide, or a fade-in. The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>). The <em>duration</em> specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
-The <em>mode</em> parameter is the same as in <strong>Pic.New</strong> and has one of the following values:
-<em>picCopy</em>This draws the picture on top of what was underneath, obscuring it completely.<em>picXor</em>This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.<em>picMerge</em>This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.<em>picUnderMerge</em>This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
-The <em>transition</em> parameter indicates the special effect and hasone of the following values:
-<em>picWipeLeftToRight</em>The picture appears as a solid black bar sweeps from left toright, "revealing" the new picture as the screen underneaththe picture is replaced.
-In the picture below, "to Turing" is replacing the "Welcome"underneath as the bar sweeps from left to right.<strong>picWipeLeftToRight - half way through transition</strong>
-<em>picWipeRightToLeft</em>, <em>picWipeTopToBottom</em>, <em>picWipeBottomToTop</em>As <em>picWipeLeftToRight</em>, except the bar sweeps in different directions.<em>picWipeUpperLeftToLowerRight</em>The picture appears as a solid black bar sweeps from the upperleft corner down to the lower right, "revealing" the new picture as the screen underneath the picture is replaced.
-In the picture below "to Turing" is replacing the "Welcome"underneath as the bar sweeps from upper-left to lower-right.<strong>picWipeUpperLeftToLowerRight - half way through transition</strong>
-<em>picWipeUpperRightToLowerLeft</em>, <em>picWipeLowerLeftToUpperRight</em>, <em>picWipeLowerRightToUpperLeft</em>As <em>picWipeLeftToRight</em>, except the bar sweeps in different directions.<em>picWipeCentreToEdge</em>, <em>picWipeCenterToEdge</em>The picture appears inside an expanding black outlined box as it sweeps from the centre out to the edges, "revealing" the new picture as the screen underneath the picture is replaced.
-In the picture below, "to Turing" is replacing the "Welcome"underneath as the box expands from the centre out.<strong>picWipeCentreToEdge - half way through transition</strong>
-<em>picWipeLeftToRightNoBar</em>, <em>picWipeRightToLeftNoBar</em>, <em>picWipeTopToBottomNoBar</em>, <em>picWipeBottomToTopNoBar**picWipeUpperLeftToLowerRightNoBar</em>, <em>picWipeUpperRightToLowerLeftNoBar</em>, <em>picWipeLowerLeftToUpperRightNoBar</em>, <em>picWipeLowerRightToUpperLeftNoBar</em>,<em>picWipeCentreToEdgeNoBar</em>, <em>picWipeCenterToEdgeNoBar</em>As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).<em>picSlideLeftToRight</em>The picture "slides in" from the left as a solid black bar sweeps from left to right, "pushing" the screen underneathoff the right edge of the drawing area.
-In the picture below "to Turing" is replacing the "Welcome"originally present, "pushing" the "Welcome" to the rightas "to Turing" slides in from the left.<strong>picSlideLeftToRight - half way through transition</strong>
-<em>picSlideRightToLeft</em>, <em>picSlideTopToBottom</em>, <em>picSlideBottomToTop</em>As <em>picSlideLeftToRight</em>, except the bar sweeps in different directions.<em>picSlideLeftToRightNoBar</em>, <em>picSlideRightToLeftNoBar</em>, <em>picSlideTopToBottomNoBar</em>, <em>picSlideBottomToTopNoBar</em>As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is oftenpreferable when the images are completely different (as intwo photographs, and so on).<em>picGrowLeftToRight</em>The picture "grows" from the left as a solid black bar sweeps from left to right, "squeezing" the screen underneathoff the right edge of the drawing area.
-In the picture below "to Turing" is replacing the "Welcome"originally present, "squeezing" the "Welcome" to the rightas "to Turing" "grows" from the left.<strong>picGrowLeftToRight - half way through transition</strong>
-<em>picGrowRightToLeft</em>, <em>picGrowTopToBottom</em>, <em>picGrowBottomToTop</em>As <em>picGrowLeftToRight</em>, except the bar sweeps in different directions.<em>picGrowCentreToEdge</em>, <em>picGrowCenterToEdge</em>The picture "grows" from the centre as a outlined black boxsweeps from outward, replacing the screen underneath.
-In the picture below "to Turing" is replacing the "Welcome"originally present, as "to Turing" grows for the centre.<strong>picGrowCentreToEdge - half way through transition</strong>
-<em>picGrowLowerLeftToUpperRight</em>The picture "grows" from the lower-left corner as a outlinedblack box sweeps right and upward, replacing the screen underneath.
-In the picture below "to Turing" is replacing the "Welcome"originally present, as "to Turing" "grows" from the lower-left.<strong>picGrowLowerLeftToUpperRight - half way through transition</strong>
-<em>picGrowUpperLeftToLowerRight</em>, <em>picGrowLowerRightToUpperLeft</em>, <em>picGrowUpperRightToLowerLeft</em>As <em>picGrowLowerLeftToUpperRight</em>, except the box sweeps in different directions.<em>picGrowLeftToRightNoBar</em>, <em>picGrowRightToLeftNoBar</em>, <em>picGrowTopToBottomNoBar</em>, <em>picGrowBottomToTopNoBar**picGrowUpperLeftToLowerRightNoBar</em>, <em>picGrowLowerLeftToUpperRightNoBar</em>, <em>picGrowUpperRightToLowerLeftNoBar</em>, <em>picGrowLowerRightToUpperLeftNoBar</em>,<em>picGrowCentreToEdgeNoBar</em>, <em>picGrowCenterToEdgeNoBar</em>As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).<em>picFadeIn</em>The picture "fades in" over top of the image underneath it.At the end of the transition, the new image completely replaces the image underneath it.
-<strong>picFadeIn - half way through transition</strong>
-<em>picBlend</em>This transition is somewhat different because it doesn't takeany time to execute.  Instead, <em>picBlend</em> causes thenew image to be blended with the background.  The <em>picBlend</em> constant can be used by itself, in which case,the final image is 70% the new image, 30% the old image.  Youcan also add a number from 1 to 100 to <em>picBlend</em>, in which case, the blend is whatever was added from (1-100) ofthe new image over top of the old image.  (i.e. a transitionof <em>picBlend</em> + 15 would display an image that is composed of 15% the new image and 85% the old image.)
-<strong>picBlend - red star blended with blue circle</strong></p>
+The <em>mode</em> parameter is the same as in <strong>Pic.New</strong> and has one of the following values:</p>
+
+<p><em>picCopy</em> This draws the picture on top of what was underneath, obscuring it completely.
+<em>picXor</em> This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
+<em>picMerge</em> This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
+<em>picUnderMerge</em> This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
+
+<p>The <em>transition</em> parameter indicates the special effect and hasone of the following values:</p>
+
+<p><em>picWipeLeftToRight</em> The picture appears as a solid black bar sweeps from left toright, "revealing" the new picture as the screen underneaththe picture is replaced.
+In the picture below, "to Turing" is replacing the "Welcome"underneath as the bar sweeps from left to right.</p>
+
+<p><em>picWipeRightToLeft</em>, <em>picWipeTopToBottom</em>, <em>picWipeBottomToTop</em>
+<em>picWipeUpperLeftToLowerRight</em> The picture appears as a solid black bar sweeps from the upperleft corner down to the lower right, "revealing" the new picture as the screen underneath the picture is replaced.
+In the picture below "to Turing" is replacing the "Welcome"underneath as the bar sweeps from upper-left to lower-right.</p>
+
+<p><em>picWipeUpperRightToLowerLeft</em>, <em>picWipeLowerLeftToUpperRight</em>, <em>picWipeLowerRightToUpperLeft</em>
+<em>picWipeCentreToEdge</em>, <em>picWipeCenterToEdge</em> The picture appears inside an expanding black outlined box as it sweeps from the centre out to the edges, "revealing" the new picture as the screen underneath the picture is replaced.
+In the picture below, "to Turing" is replacing the "Welcome"underneath as the box expands from the centre out.</p>
+
+<p><em>picWipeLeftToRightNoBar</em>, <em>picWipeRightToLeftNoBar</em>, <em>picWipeTopToBottomNoBar</em>, <em>picWipeBottomToTopNoBar__picWipeUpperLeftToLowerRightNoBar</em>, <em>picWipeUpperRightToLowerLeftNoBar</em>, <em>picWipeLowerLeftToUpperRightNoBar</em>, <em>picWipeLowerRightToUpperLeftNoBar</em>,<em>picWipeCentreToEdgeNoBar</em>, <em>picWipeCenterToEdgeNoBar</em>
+<em>picSlideLeftToRight</em> The picture "slides in" from the left as a solid black bar sweeps from left to right, "pushing" the screen underneathoff the right edge of the drawing area.
+In the picture below "to Turing" is replacing the "Welcome"originally present, "pushing" the "Welcome" to the rightas "to Turing" slides in from the left.</p>
+
+<p><em>picSlideRightToLeft</em>, <em>picSlideTopToBottom</em>, <em>picSlideBottomToTop</em>
+<em>picSlideLeftToRightNoBar</em>, <em>picSlideRightToLeftNoBar</em>, <em>picSlideTopToBottomNoBar</em>, <em>picSlideBottomToTopNoBar</em>
+<em>picGrowLeftToRight</em> The picture "grows" from the left as a solid black bar sweeps from left to right, "squeezing" the screen underneathoff the right edge of the drawing area.
+In the picture below "to Turing" is replacing the "Welcome"originally present, "squeezing" the "Welcome" to the rightas "to Turing" "grows" from the left.</p>
+
+<p><em>picGrowRightToLeft</em>, <em>picGrowTopToBottom</em>, <em>picGrowBottomToTop</em>
+<em>picGrowCentreToEdge</em>, <em>picGrowCenterToEdge</em> The picture "grows" from the centre as a outlined black boxsweeps from outward, replacing the screen underneath.
+In the picture below "to Turing" is replacing the "Welcome"originally present, as "to Turing" grows for the centre.</p>
+
+<p><em>picGrowLowerLeftToUpperRight</em> The picture "grows" from the lower-left corner as a outlinedblack box sweeps right and upward, replacing the screen underneath.
+In the picture below "to Turing" is replacing the "Welcome"originally present, as "to Turing" "grows" from the lower-left.</p>
+
+<p><em>picGrowUpperLeftToLowerRight</em>, <em>picGrowLowerRightToUpperLeft</em>, <em>picGrowUpperRightToLowerLeft</em>
+<em>picGrowLeftToRightNoBar</em>, <em>picGrowRightToLeftNoBar</em>, <em>picGrowTopToBottomNoBar</em>, <em>picGrowBottomToTopNoBar__picGrowUpperLeftToLowerRightNoBar</em>, <em>picGrowLowerLeftToUpperRightNoBar</em>, <em>picGrowUpperRightToLowerLeftNoBar</em>, <em>picGrowLowerRightToUpperLeftNoBar</em>,<em>picGrowCentreToEdgeNoBar</em>, <em>picGrowCenterToEdgeNoBar</em>
+<em>picFadeIn</em> The picture "fades in" over top of the image underneath it.At the end of the transition, the new image completely replaces the image underneath it.</p>
+
+<p><em>picBlend</em> This transition is somewhat different because it doesn't takeany time to execute.  Instead, <em>picBlend</em> causes thenew image to be blended with the background.  The <em>picBlend</em> constant can be used by itself, in which case,the final image is 70% the new image, 30% the old image.  Youcan also add a number from 1 to 100 to <em>picBlend</em>, in which case, the blend is whatever was added from (1-100) ofthe new image over top of the old image.  (i.e. a transitionof <em>picBlend</em> + 15 would display an image that is composed of 15% the new image and 85% the old image.)</p>
 
 <p><img src="pic_drawspecial01.gif" alt="Doc image" />
 <img src="pic_drawspecial05.gif" alt="Doc image" />
@@ -41,8 +61,8 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, a
 
 <h2>Details</h2>
 
-<p>The <strong>Pic.DrawSpecial</strong> requires a moderately fast machine to operate successfully (Pentium III or higher). The <em>picFadeIn</em>and <em>picBlend</em> transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the <em>Display</em> control panel from the <em>Start</em> menu.  You can also use the
-<strong>Config.Display</strong> (<strong>cdNumMaxColors</strong>)
+<p>The <strong>Pic.DrawSpecial</strong> requires a moderately fast machine to operate successfully (Pentium III or higher). The <em>picFadeIn_and </em>picBlend<em> transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the </em>Display<em> control panel from the </em>Start_ menu.  You can also use the
+<code>     **Config.Display** (**cdNumMaxColors**)</code>
 function to determine the bit-depth of the display (anything <strong>over</strong> 256 colors will produce acceptable results).</p>
 
 <h2>Details</h2>

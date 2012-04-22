@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Rename</b> (<i>srcPathName</i>, <i>destName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " File.Rename (srcPathName, destName : string)\r\n",
-      "mdown_content": "**File.Rename** (*srcPathName*, *destName* : **string**)"
+      "mdown_content": "**File.Rename** (_srcPathName_, _destName_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Copy</b> renames a file or directory named by the <i>srcPathName</i> parameter to the <i>destName</i> parameter. The <i>destName</i> parameter must be a name only. In other words <b>File.Rename</b> can't move a file between different directories.<p>\r\n</p>",
       "text_content": " File.Copy renames a file or directory named by the srcPathName parameter to the destName parameter. The destName parameter must be a name only. In other words File.Rename can't move a file between different directories.\r\n",
-      "mdown_content": "**File.Copy** renames a file or directory named by the *srcPathName* parameter to the *destName* parameter. The *destName* parameter must be a name only. In other words **File.Rename** can't move a file between different directories."
+      "mdown_content": "**File.Copy** renames a file or directory named by the _srcPathName_ parameter to the _destName_ parameter. The _destName_ parameter must be a name only. In other words **File.Rename** can't move a file between different directories."
     },
     {
       "title": "Details",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "This program renames the file \"<i>/usr/west/example</i>\" to \"<i>testcase</i>\"<p>\r\n</p>",
       "text_content": " This program renames the file \"/usr/west/example\" to \"testcase\"\r\n\r\n  ",
-      "mdown_content": "This program renames the file \"*/usr/west/example*\" to \"*testcase*\""
+      "mdown_content": "This program renames the file \"_/usr/west/example_\" to \"_testcase_\""
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, renames it to a different name using <b>File.Rename</b>, \r\n        checks the existence of both files using <b>File.Exists</b> and then \r\n        deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Rename.t;File.Rename Example\"></object></p>\n<p></p>",
       "text_content": "An example program is available that creates a file in the current \r\n        directory, renames it to a different name using File.Rename, \r\n        checks the existence of both files using File.Exists and then \r\n        deletes the file using File.Delete.\r\n        \r\n          ",
-      "mdown_content": "An example program is available that creates a file in the current directory, renames it to a different name using **File.Rename**, checks the existence of both files using **File.Exists** and then deletes the file using **File.Delete**."
+      "mdown_content": "An example program is available that creates a file in the current directory, renames it to a different name using **File.Rename**, checks the existence of both files using **File.Exists** and then deletes the file using **File.Delete**.\n"
     },
     {
       "title": "Status",

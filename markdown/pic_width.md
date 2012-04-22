@@ -2,18 +2,18 @@
 #Pic.Width
 
 ##Syntax
-**Pic.Width** (*picID* : **int**) : **int**
+**Pic.Width** (_picID_ : **int**) : **int**
 
 
 
 ##Description
-**Pic.Width **returns the width in pixels of the picture represented by *picID*.
+**Pic.Width **returns the width in pixels of the picture represented by _picID_.
 This function is often used in conjunction with **Pic.Height** to obtain the dimensions of a picture loaded using **Pic.FileNew**.
 
 
 
 ##Example
-The program draws loads a picture from the file *lighthouse.jpg* and proceeds to tile the entire run window with copies of the picture..
+The program draws loads a picture from the file _lighthouse.jpg_ and proceeds to tile the entire run window with copies of the picture..
 
 
         var pic : int := Pic.FileNew ("lighthouse.jpg")

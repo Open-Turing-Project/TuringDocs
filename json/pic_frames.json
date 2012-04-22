@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Frames</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Frames (pathName : string) : int\r\n    ",
-      "mdown_content": "**Pic.Frames** (*pathName* : **string**) : **int**"
+      "mdown_content": "**Pic.Frames** (_pathName_ : **string**) : **int**"
     },
     {
       "title": "Description",

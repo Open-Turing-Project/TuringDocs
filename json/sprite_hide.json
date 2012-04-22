@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Hide</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.Hide (spriteID : int)\r\n",
-      "mdown_content": "**Sprite.Hide** (*spriteID* : **int**)"
+      "mdown_content": "**Sprite.Hide** (_spriteID_ : **int**)"
     },
     {
       "title": "Description",

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Dispose</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.Dispose (widgetID : int)\r\n",
-      "mdown_content": "**GUI.Dispose** (*widgetID* : **int**)"
+      "mdown_content": "**GUI.Dispose** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Eliminates the widget specified by <i>widgetID</i>. <p>\r\nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the <i>Hide</i> method and then the <i>Show</i> method when you want to use it again.</p>\n<p>\r\n</p>",
       "text_content": " Eliminates the widget specified by widgetID. \r\nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the Hide method and then the Show method when you want to use it again.\r\n",
-      "mdown_content": "Eliminates the widget specified by *widgetID*. \nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the *Hide* method and then the *Show* method when you want to use it again."
+      "mdown_content": "Eliminates the widget specified by _widgetID_. \nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the _Hide_ method and then the _Show_ method when you want to use it again."
     },
     {
       "title": "Example",

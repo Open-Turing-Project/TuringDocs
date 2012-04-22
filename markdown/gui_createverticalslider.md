@@ -2,17 +2,17 @@
 #GUI.CreateVerticalSlider
 
 ##Syntax
-**GUI.CreateVerticalSlider** (*x*, *y*, *length* : **int**,    *min*, *max*, *start* : **int**, *actionProc* : **procedure** *x* (*value* : **int**)) : **int**
+**GUI.CreateVerticalSlider** (_x_, _y_, _length_ : **int**,    _min_, _max_, _start_ : **int**, _actionProc_ : **procedure** _x_ (_value_ : **int**)) : **int**
 
 
 
 ##Description
 Creates a vertical (up-down) slider and returns the slider's widget ID. 
 A slider is a widget that allows the user to set a continuous set of values. It has a real-life equivalent in things such as a stereo volume control.
-**A Vertical Slider**
+
 To control a slider, the user clicks on the slider box and drags it back and forth. Every time the value changes, a procedure is called with the new value as a parameter.
-The range of values that the slider will give is determined by the *min* and *max* parameters in the *Create* call. The left side of the slider represents the minimum value, while the right represents the maximum value. 
-The *x* and *y* parameters specify the lower-left corner of the slider track. This means that the slider actually extends above and below this point (and slightly to the left of it to take into account the rounded end of the track). The *length* parameter specifies the length of the track in pixels. (You can use **GUI.GetX***, ***GetY***, ***GetWidth**, and **GetHeight** to get the exact dimensions of the slider.) The *min* and *max* parameters are the minimum and maximum valies returned by the slider. The *start* parameter is the initial value of the slider and should be between *min* and *max* inclusive. The *actionProc *parameter* *is the name of a procedure that is called when the value of the slider is changed. The parameter to the *action procedure *is the current value of the slider.
+The range of values that the slider will give is determined by the _min_ and _max_ parameters in the _Create_ call. The left side of the slider represents the minimum value, while the right represents the maximum value. 
+The _x_ and _y_ parameters specify the lower-left corner of the slider track. This means that the slider actually extends above and below this point (and slightly to the left of it to take into account the rounded end of the track). The _length_ parameter specifies the length of the track in pixels. (You can use **GUI.GetX**_, _**GetY**_, _**GetWidth**, and **GetHeight** to get the exact dimensions of the slider.) The _min_ and _max_ parameters are the minimum and maximum valies returned by the slider. The _start_ parameter is the initial value of the slider and should be between _min_ and _max_ inclusive. The _actionProc _parameter_ _is the name of a procedure that is called when the value of the slider is changed. The parameter to the _action procedure _is the current value of the slider.
 
 ![Doc image](gui_createverticalslider01.gif)
 
@@ -42,14 +42,16 @@ The following program creates a vertical slider. Whenever the slider's value is 
 ##Details
 In some instances, you will want the the minimum and maximum values of the slider to be reversed (right is minimum). In that case, call the **GUI.SetSliderReverse** procedure to flip the values of the slider.
 Sliders always have a fixed height (for horizontal sliders) or width (for vertical sliders). 
-When **GUI.CreateVerticalSlider **or **GUI.CreateVerticalSliderFull*** *is called, the newly created slider will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the *display* parameter set to false. 
+When **GUI.CreateVerticalSlider **or **GUI.CreateVerticalSliderFull**_ _is called, the newly created slider will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 When a slider is not enabled, the appearance does not change. However, the slider no longer responds to any mouse clicks until it is enabled again.
 
 
 
 ##Details
-The following GUI subprograms can be called with a slider as the *widgetID* parameter:
- **GUI.Show**, **GUI.Hide**, **GUI.Enable**,**GUI.Disable**, **GUI.Dispose**, **GUI.GetX**,**GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**,**GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.GetSliderValue**,**GUI.SetSliderValue**, **GUI.SetSliderMinMax**,**GUI.SetSliderSize**, **GUI.SetSliderReverse**
+The following GUI subprograms can be called with a slider as the _widgetID_ parameter:
+
+
+
 
 
 

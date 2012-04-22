@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Mirror</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Mirror (picID : int) : int\r\n    ",
-      "mdown_content": "**Pic.Mirror** (*picID* : **int**) : **int**"
+      "mdown_content": "**Pic.Mirror** (_picID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Mirror</b> is used to create a new picture by flipping the \r\n          picture horizontally. The resulting picture is exactly the same size \r\n\t  as the original, except it appears as a &#147;mirror image&#148;. <p>\r\n    </p>",
       "text_content": "Pic.Mirror is used to create a new picture by flipping the \r\n          picture horizontally. The resulting picture is exactly the same size \r\n\t  as the original, except it appears as a mirror image. \r\n    ",
-      "mdown_content": "**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a mirror image. "
+      "mdown_content": "**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a &#147;mirror image&#148;. "
     },
     {
       "title": "Details",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
       "text_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.\r\n\r\n\t  \r\n\t  Output from the Program\r\n    ",
-      "mdown_content": "The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.\n**Output from the Program**"
+      "mdown_content": "The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.\n"
     },
     {
       "title": "Execute",

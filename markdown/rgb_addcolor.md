@@ -2,20 +2,22 @@
 #RGB.AddColor
 
 ##Syntax
-**RGB.AddColor** (*redComp*, *greenComp*, *blueComp* : **real**) : **int**
+**RGB.AddColor** (_redComp_, _greenComp_, _blueComp_ : **real**) : **int**
 
 
 
 ##Description
 The **RGB.AddColor** function attempts to create a new color with the red, green and blue components specified. If successful, the function returns a new color number (usually one greater than **maxcolor**)** **and** maxcolor **is updated by adding 1 to it. If it is unsuccessful, the function returns 1 and **Error.Last** and **Error.LastMsg** can be used to determine the cause of the problem. 
 The red, green and blue values must normalized to be between 0 and 1. Thus to add the pure red to the color palette, you would call:
-*newColor* would be set to the color added, or 1 if the attempt to add a color failed.
+_newColor_ would be set to the color added, or 1 if the attempt to add a color failed.
 
 
         newColor := RGB.AddColor (1.0, 0.0, 0.0)
 ##Example
 This program adds a palette of 16 blues to the end of the color palette.
-**Details** **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.
+
+**Details** **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.
+
 
 
         var clr : int

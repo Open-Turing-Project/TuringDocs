@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>exportList</em> is:
-<strong>export</strong> [ <em>howExport</em> ] <em>id</em>  {, [ <em>howExport</em> ] <em>id</em> }</p>
+<p>An <em>exportList</em> is:</p>
+
+<p><strong>export</strong> [ <em>howExport</em> ] <em>id</em>  {, [ <em>howExport</em> ] <em>id</em> }</p>
 
 <h2>Description</h2>
 
@@ -30,11 +31,11 @@
 
 <p>Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:
 The following syntax specifies that each exported identifier can optionally be preceded by the keywords <strong>var</strong>, <strong>unqualified</strong>, <strong>pervasive</strong> and <strong>opaque</strong>. Of these, only <strong>opaque</strong> is available in Turing proper.
-The form of <em>howExport</em> is:
-{ <em>exportMethod</em> }
-The form of <em>exportMethod</em> is one of:
-(a)<strong>var</strong>(b)<strong>unqualified</strong>(c)<strong>pervasive</strong>(d)<strong>opaque</strong>
-The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name </em>is exported <strong>var</strong> from module <em>M</em>,<em> name </em>can be changed from outside of <em>M</em> by <em>M.name </em>:= "<em>Surprise!</em>".
+The form of <em>howExport</em> is:</p>
+
+<p>The form of <em>exportMethod</em> is one of:</p>
+
+<p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name </em>is exported <strong>var</strong> from module <em>M</em>,<em> name </em>can be changed from outside of <em>M</em> by <em>M.name </em>:= "<em>Surprise!</em>".
 The keyword <strong>unqualified</strong> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <em>M</em> exports procedure <em>p</em> unqualified, a call to <em>p</em> outside of <em>M</em> can be simply <em>p</em> instead of the usual <em>M.p</em>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <strong>unqualified</strong> can be abbreviated to ~. which is pronounced as "not dot".
 The keyword <strong>pervasive</strong>, which is only meaningful if <strong>unqualified</strong> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.
 The keyword <strong>opaque</strong>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <strong>module</strong> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.

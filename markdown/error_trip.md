@@ -2,7 +2,7 @@
 #Error.Trip
 
 ##Syntax
-**Error.Trip** (*errorCode* : **int**)
+**Error.Trip** (_errorCode_ : **int**)
 
 
 

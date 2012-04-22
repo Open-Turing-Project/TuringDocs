@@ -1,8 +1,7 @@
-{
-  "title": "Run Window Character Set",
-  "fileName": "characters",
-  "sections": [
+#Run Window Character Set
+The Turing character set and their ASCII values
+chr (8) = backspacechar (10) = newline
 
-  ],
-  "htmlcontent": "\r\n<h1>Run Window Character Set</h1>\r\nThe Turing character set and their ASCII values<p>\r\nchr (8) = backspace<br>\r\nchr (9) = tab<br>\r\nchar (10) = newline<br></p>\n<p>\r\n<img width=\"502\" height=\"519\" src=\"characters.gif\"></p>\n<p>\r\nYou can also get (on most systems), the MS-DOS character set by using\r\nthe command <tt>setscreenÂ (\"msdos\")</tt>.<br>\r\nThis is the character\r\nset after the <tt>setscreenÂ (\"msdos\")</tt> command was given.\r\n</p>\n<p>\r\n<img width=\"502\" height=\"519\" src=\"characters2.gif\"></p>\n<p>\r\nClick the button to launch the program to display the character set in Turing.</p>\n<p>\r\n</p>\n<center>\n<object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch characters.t\">\n<param name=\"Item1\" value=\"-1,characters.t;Character Set Example\"></object><p></p>\n</center>\r\n \r\n"
-}
+You can also get (on most systems), the MS-DOS character set by usingthe command `setscreen ("msdos")`.This is the characterset after the `setscreen ("msdos")` command was given.
+
+Click the button to launch the program to display the character set in Turing.

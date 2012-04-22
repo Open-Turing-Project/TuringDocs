@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileLoop</b> ( <i>fileName</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " Music.PlayFileLoop ( fileName : string )\r\n",
-      "mdown_content": "**Music.PlayFileLoop** ( *fileName* : **string** )"
+      "mdown_content": "**Music.PlayFileLoop** ( _fileName_ : **string** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.PlayFileLoop</b> procedure is used to play a file of music continuously, looping until the program is halted or the <b>Music.PlayFileStop</b> command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>WAV files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"WAV:filename\" or \"filename.WAV\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MP3 files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MP3:filename\" or \"filename.MP3\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MIDI files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MIDI:filename\" or \"filename.MIDI\"</td>\n</tr>\n</table>\n<p>\r\nThe <b>Music.PlayFileLoop</b> procedure is used to provide continuous background music for a program.\r\nWhen called, the music starts playing, and the procedure returns immediately.</p>\n<p>\r\n</p>",
       "text_content": " The Music.PlayFileLoop procedure is used to play a file of music continuously, looping until the program is halted or the Music.PlayFileStop command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\r\nThe fileNameparameter must give the format of the file:\r\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\r\nThe Music.PlayFileLoop procedure is used to provide continuous background music for a program.\r\nWhen called, the music starts playing, and the procedure returns immediately.\r\n",
-      "mdown_content": "The **Music.PlayFileLoop** procedure is used to play a file of music continuously, looping until the program is halted or the **Music.PlayFileStop** command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe *fileName*parameter must give the format of the file:\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\nThe **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately."
+      "mdown_content": "The **Music.PlayFileLoop** procedure is used to play a file of music continuously, looping until the program is halted or the **Music.PlayFileStop** command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe _fileName_parameter must give the format of the file:\n\n\n\n\n\nThe **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately."
     },
     {
       "title": "Details",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program continuously plays the music in the file \"<i>branden3.wav</i>\" while drawing ovals on the screen.<p>\r\n</p>",
       "text_content": " This program continuously plays the music in the file \"branden3.wav\" while drawing ovals on the screen.\r\n\r\n",
-      "mdown_content": "This program continuously plays the music in the file \"*branden3.wav*\" while drawing ovals on the screen."
+      "mdown_content": "This program continuously plays the music in the file \"_branden3.wav_\" while drawing ovals on the screen."
     },
     {
       "title": "Execute",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.<p>\r\n</p>",
       "text_content": " The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].\r\n\r\n",
-      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number]."
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;."
     },
     {
       "title": "Details",

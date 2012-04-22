@@ -17,7 +17,7 @@ In Turing, a program will not halt execution until all processes have terminated
 
 
 ##Example
-This program plays the background music for 30 seconds and then terminates. Note that it is important to set the flag (*finished*) before calling **Music.PlayFileStop**. If **Music.PlayFileStop** comes first, it is possible for the process to return from **Music.PlayFile**, loop around, skip over the **exit when**, and call **Music.PlayFile** again before the *finished* flag is set.
+This program plays the background music for 30 seconds and then terminates. Note that it is important to set the flag (_finished_) before calling **Music.PlayFileStop**. If **Music.PlayFileStop** comes first, it is possible for the process to return from **Music.PlayFile**, loop around, skip over the **exit when**, and call **Music.PlayFile** again before the _finished_ flag is set.
 
 
         var finished : boolean := false

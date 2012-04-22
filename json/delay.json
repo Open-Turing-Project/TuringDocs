@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>delay</b> (<i>duration</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " delay (duration : int)\r\n",
-      "mdown_content": "**delay** (*duration* : **int**)"
+      "mdown_content": "**delay** (_duration_ : **int**)"
     },
     {
       "title": "Description",

@@ -2,12 +2,12 @@
 #all
 
 ##Syntax
-*setTypeName* (**all**)
+_setTypeName_ (**all**)
 
 
 
 ##Description
-Given a set type named *S*,* *the set of all of the possible elements of *S* is written *S *(**all**).
+Given a set type named _S_,_ _the set of all of the possible elements of _S_ is written _S _(**all**).
 
 
 

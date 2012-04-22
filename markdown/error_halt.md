@@ -2,7 +2,7 @@
 #Error.Halt
 
 ##Syntax
-**Error.Halt** (*errorMessage* : **string**)
+**Error.Halt** (_errorMessage_ : **string**)
 
 
 

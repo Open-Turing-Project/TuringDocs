@@ -2,12 +2,12 @@
 #File.Copy
 
 ##Syntax
-**File.Copy** (*srcPathName*, *destPathName* : **string**)
+**File.Copy** (_srcPathName_, _destPathName_ : **string**)
 
 
 
 ##Description
-**File.Copy** copies a file named by the *srcPathName* parameter to the file named by the *destPathName* parameter. The copy can be between different disks or file systems.
+**File.Copy** copies a file named by the _srcPathName_ parameter to the file named by the _destPathName_ parameter. The copy can be between different disks or file systems.
 
 
 
@@ -19,7 +19,7 @@ Note that you can use either forward or backward slashes to separatecomponents i
 
 
 ##Example
-This program copies the file "*d:\west\example.dat*" to "*new_example.t*". in the current directory.
+This program copies the file "_d:\west\example.dat_" to "_new_example.t_". in the current directory.
 
 
 
@@ -32,6 +32,7 @@ This program copies the file "*d:\west\example.dat*" to "*new_example.t*". in th
         end if
 ##Execute
 An example program is available that copies a file to the current directory using **File.Copy**, displays its contents to the run window, and then deletes the file using **File.Delete**.
+
 
 
 

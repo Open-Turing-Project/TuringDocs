@@ -8,7 +8,11 @@ All routines in the **Stream** unit are exported qualified (and thus must be pre
 
 
 ##Entry Points
-[stream_eof.html](**eof**)* Determines if the end of file has been reached.[stream_flush.html](**Flush**) Flushes a specified stream.[stream_flushall.html](**FlushAll**) Flushes all open output streams.
+
+[stream_eof.html](**eof**)* Determines if the end of file has been reached.
+[stream_flush.html](**Flush**) Flushes a specified stream.
+[stream_flushall.html](**FlushAll**) Flushes all open output streams.
+
 * Part of the language, conceptually part of the **Stream** unit.
 
 

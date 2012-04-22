@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetX </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n          <b>GUI.GetY </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.GetX (widgetID : int) : int\r\n          GUI.GetY (widgetID : int) : int\r\n    ",
-      "mdown_content": "**GUI.GetX **(*widgetID* : **int**) : **int**\n**GUI.GetY **(*widgetID* : **int**) : **int**"
+      "mdown_content": "**GUI.GetX **(_widgetID_ : **int**) : **int**\n**GUI.GetY **(_widgetID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the x coordinate of the left edge of a widget. Note that \r\n          this may be different from the x coordinate specified in the \r\n          widget's <i>Create</i> call. For example, if a radio button is \r\n          created with right justification, the x coordinate in the \r\n          <i>Create</i> method specifies the right edge while <b>GUI.GetX</b> \r\n          will return the x coordinate of the left edge.<p>\r\n\t  This function is used in conjunction with <b>GUI.GetWidth</b> and \r\n\t  <b>GUI.GetHeight</b> to determine the bounds of a widget. The entire \r\n\t  widget should always fit in the box \r\n\t  (<b>GUI.GetX</b>,&nbsp;<b>GUI.GetY</b>) - \r\n\t  (<b>GUI.GetX</b>&nbsp;+&nbsp;<b>GUI.GetWidth</b> - 1, \r\n\t  <b>GUI.GetY</b>&nbsp;+&nbsp;<b>GUI.GetHeight</b> - 1)</p>\n<p>\r\n          The position and size of a widget is known only after it has been \r\n          drawn to the screen. Attempting to get the location or dimesions of \r\n          the widget may cause an uninitialized variable error.</p>\n<p>\r\n    </p>",
       "text_content": "Returns the x coordinate of the left edge of a widget. Note that \r\n          this may be different from the x coordinate specified in the \r\n          widget's Create call. For example, if a radio button is \r\n          created with right justification, the x coordinate in the \r\n          Create method specifies the right edge while GUI.GetX \r\n          will return the x coordinate of the left edge.\r\n\t  This function is used in conjunction with GUI.GetWidth and \r\n\t  GUI.GetHeight to determine the bounds of a widget. The entire \r\n\t  widget should always fit in the box \r\n\t  (GUI.GetX, GUI.GetY) - \r\n\t  (GUI.GetX + GUI.GetWidth - 1, \r\n\t  GUI.GetY + GUI.GetHeight - 1)\r\n          The position and size of a widget is known only after it has been \r\n          drawn to the screen. Attempting to get the location or dimesions of \r\n          the widget may cause an uninitialized variable error.\r\n    ",
-      "mdown_content": "Returns the x coordinate of the left edge of a widget. Note that this may be different from the x coordinate specified in the widget's *Create* call. For example, if a radio button is created with right justification, the x coordinate in the *Create* method specifies the right edge while **GUI.GetX** will return the x coordinate of the left edge.\nThis function is used in conjunction with **GUI.GetWidth** and **GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth** - 1, **GUI.GetY** + **GUI.GetHeight** - 1)\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error."
+      "mdown_content": "Returns the x coordinate of the left edge of a widget. Note that this may be different from the x coordinate specified in the widget's _Create_ call. For example, if a radio button is created with right justification, the x coordinate in the _Create_ method specifies the right edge while **GUI.GetX** will return the x coordinate of the left edge.\nThis function is used in conjunction with **GUI.GetWidth** and **GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth** - 1, **GUI.GetY** + **GUI.GetHeight** - 1)\nThe position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The following procedure draws a red box around the widget specified \r\n          by <i>widgetID</i>.<p>\r\n</p>",
       "text_content": "The following procedure draws a red box around the widget specified \r\n          by widgetID.\r\n\r\n    ",
-      "mdown_content": "The following procedure draws a red box around the widget specified by *widgetID*."
+      "mdown_content": "The following procedure draws a red box around the widget specified by _widgetID_."
     },
     {
       "title": "Status",

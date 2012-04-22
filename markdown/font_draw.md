@@ -2,12 +2,12 @@
 #Font.Draw
 
 ##Syntax
-**Font.Draw** (*txtStr* : **string**, *x*, *y*, *fontID*, *Color* : **int**)
+**Font.Draw** (_txtStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)
 
 
 
 ##Description
-**Font.Draw **is used to actually draw text in a specified font. The *textStr* parameter contains the string to be drawn. The *x* and *y* parameters are the location of the lower left hand corner of the text to be displayed. The *fontID* parameter is the number of the font in which the text is to be drawn. The *Color* parameter is used to specify the color in which the text is to appear.
+**Font.Draw **is used to actually draw text in a specified font. The _textStr_ parameter contains the string to be drawn. The _x_ and _y_ parameters are the location of the lower left hand corner of the text to be displayed. The _fontID_ parameter is the number of the font in which the text is to be drawn. The _Color_ parameter is used to specify the color in which the text is to appear.
 Note that the text that appears is completely unrelated to the text that appears using **put**. **Font.Draw** is a graphics command and thus does not use or affect the cursor location.
 The text drawn by the **Font.Draw** procedure does not erase the background.
 

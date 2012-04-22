@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetLabel</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetLabel (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetLabel** (*widgetID* : **int**, *text* : **string**)"
+      "mdown_content": "**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)"
     },
     {
       "title": "Description",
       "raw_content": "Changes the text of a widget specified by <i>widgetID</i> to <i>text</i>. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the <i>widgetID</i> parameter.<p>\r\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original <i>width</i> specified and the new text.</p>\n<p>\r\n</p>",
       "text_content": " Changes the text of a widget specified by widgetID to text. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the widgetID parameter.\r\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original width specified and the new text.\r\n",
-      "mdown_content": "Changes the text of a widget specified by *widgetID* to *text*. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the *widgetID* parameter.\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original *width* specified and the new text."
+      "mdown_content": "Changes the text of a widget specified by _widgetID_ to _text_. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the _widgetID_ parameter.\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original _width_ specified and the new text."
     },
     {
       "title": "Example",

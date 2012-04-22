@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderMinMax</b> (<i>widgetID</i>, <i>min</i>, <i>max</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSliderMinMax (widgetID, min, max : int)\r\n",
-      "mdown_content": "**GUI.SetSliderMinMax** (*widgetID*, *min*, *max* : **int**)"
+      "mdown_content": "**GUI.SetSliderMinMax** (_widgetID_, _min_, _max_ : **int**)"
     },
     {
       "title": "Description",
       "raw_content": "Sets the minimum and maximum values of the slider or scroll bar specified by <i>widgetID</i>. The <i>min</i> parameter specifies the new minimum value of the slider or scroll bar. The <i>max</i> parameter specifies the new maximum value of the slider or scroll bar. The <i>max</i> parameter must be greater than the <i>min</i> parameter.<p>\r\n<b>GUI.SetSliderMinMax</b> redraws the thumb to take into account the new minimum and maximum. If the current value of the slider is outside the new minimum/maximum, then the value is adjusted appropriately.</p>\n<p>\r\n</p>",
       "text_content": " Sets the minimum and maximum values of the slider or scroll bar specified by widgetID. The min parameter specifies the new minimum value of the slider or scroll bar. The max parameter specifies the new maximum value of the slider or scroll bar. The max parameter must be greater than the min parameter.\r\nGUI.SetSliderMinMax redraws the thumb to take into account the new minimum and maximum. If the current value of the slider is outside the new minimum/maximum, then the value is adjusted appropriately.\r\n",
-      "mdown_content": "Sets the minimum and maximum values of the slider or scroll bar specified by *widgetID*. The *min* parameter specifies the new minimum value of the slider or scroll bar. The *max* parameter specifies the new maximum value of the slider or scroll bar. The *max* parameter must be greater than the *min* parameter.\n**GUI.SetSliderMinMax** redraws the thumb to take into account the new minimum and maximum. If the current value of the slider is outside the new minimum/maximum, then the value is adjusted appropriately."
+      "mdown_content": "Sets the minimum and maximum values of the slider or scroll bar specified by _widgetID_. The _min_ parameter specifies the new minimum value of the slider or scroll bar. The _max_ parameter specifies the new maximum value of the slider or scroll bar. The _max_ parameter must be greater than the _min_ parameter.\n**GUI.SetSliderMinMax** redraws the thumb to take into account the new minimum and maximum. If the current value of the slider is outside the new minimum/maximum, then the value is adjusted appropriately."
     },
     {
       "title": "Example",

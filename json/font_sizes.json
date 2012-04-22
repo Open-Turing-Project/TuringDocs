@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Sizes</b> (<i>fontID</i> : <b>int</b>, <b>var</b> <i>height</i>, <i>ascent</i>, <i>descent</i>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"4\"><font size=\"+1\"><i>internalLeading</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " Font.Sizes (fontID : int, var height, ascent, descent,      internalLeading : int)",
-      "mdown_content": "**Font.Sizes** (*fontID* : **int**, **var** *height*, *ascent*, *descent*,      *internalLeading* : **int**)"
+      "mdown_content": "**Font.Sizes** (_fontID_ : **int**, **var** _height_, _ascent_, _descent_, \n_internalLeading_ : **int**)\n"
     },
     {
       "title": "Description",

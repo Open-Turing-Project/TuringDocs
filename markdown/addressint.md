@@ -12,7 +12,7 @@ The **addressint** (address integer) type is an integer type whose range of valu
 
 
 ##Example
-Record *r* contains three fields, one of which has type **char**(28). Variable *a* is an integer whose range of values is the same as the addresses of the underlying computer. This assigns *B* to the seventh character of a record of type *r* which is assumed to be located at absolute address *a*.
+Record _r_ contains three fields, one of which has type **char**(28). Variable _a_ is an integer whose range of values is the same as the addresses of the underlying computer. This assigns _B_ to the seventh character of a record of type _r_ which is assumed to be located at absolute address _a_.
 
 
         type r :
@@ -31,6 +31,6 @@ Be careful not to confuse **addressint** with pointer types. In low level langua
 
 
 ##See also
-the [indirection.html](indirection operator @), **[cheat.html](cheat)**, *[explicitintegerconstant.html](explicitIntegerConstant) *(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable.
+the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant) _(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable.
 
 

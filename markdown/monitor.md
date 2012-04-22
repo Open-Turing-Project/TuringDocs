@@ -2,18 +2,27 @@
 #monitor
 
 ##Syntax
-A *monitorDeclaration* is:
- **monitor** *id*  [ **implement** *implementItem *]  [ **implement** **by** *implementByItem *]  [ **import** [ **var** ] *importItem*     * *{,* *[ **var** ]* importItem* } ]  [ **export** [ *howExport* ] *id *{,[*howExport* ]* id* }]  *statementsAndDeclarations* **end** *id*
+A _monitorDeclaration_ is:
+
+**monitor** _id_
+[ **implement** _implementItem _]
+[ **implement** **by** _implementByItem _]
+[ **import** [ **var** ] _importItem_
+_ _{,_ _[ **var** ]_ importItem_ } ]
+[ **export** [ _howExport_ ] _id _{,[_howExport_ ]_ id_ }]
+_statementsAndDeclarations_
+**end** _id_
+
 
 
 
 ##Description
-A monitor is a special purpose module (see **module**) that is used with concurrent processes (see **process**). At most, one concurrent process (see **process**) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides *mutually exclusive *access to the monitor's internal data.
+A monitor is a special purpose module (see **module**) that is used with concurrent processes (see **process**). At most, one concurrent process (see **process**) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides _mutually exclusive _access to the monitor's internal data.
 
 
 
 ##Example
-This monitor controls access to the *count* variable so it can be updated by two processes (the *observer* and the *reporter*) without being corrupted by this concurrent access. Generally, it is not safe to have one process update a variable that other processes are simultaneously accessing. The *observer* process repeatedly increments the *counter* when it observes an event. The *reporter* process repeatedly writes out the number of events that have occurred since the last report, resetting the *counter* to zero.
+This monitor controls access to the _count_ variable so it can be updated by two processes (the _observer_ and the _reporter_) without being corrupted by this concurrent access. Generally, it is not safe to have one process update a variable that other processes are simultaneously accessing. The _observer_ process repeatedly increments the _counter_ when it observes an event. The _reporter_ process repeatedly writes out the number of events that have occurred since the last report, resetting the _counter_ to zero.
 
 
         monitor controller
@@ -56,8 +65,8 @@ The body of a monitor has the same form as that of a module, except that modules
 
 
 ##Details
-The syntax of a *monitorDeclaration* presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses. See **module** for an explanation of these extra features. There is also an optional *compilerTimeIntegerExpression* in the first line, which is explained below. The full syntax* *is:
-If the optional *compileTimeIntegerExpression* is present, this is a *device monitor*. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this *compileTimeIntegerExpression*.
+The syntax of a _monitorDeclaration_ presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses. See **module** for an explanation of these extra features. There is also an optional _compilerTimeIntegerExpression_ in the first line, which is explained below. The full syntax_ _is:
+If the optional _compileTimeIntegerExpression_ is present, this is a _device monitor_. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this _compileTimeIntegerExpression_.
 
 
         monitor id [ : compileTimeIntegerExpn ]
@@ -72,8 +81,8 @@ If the optional *compileTimeIntegerExpression* is present, this is a *device mon
             [ post trueFalseExpn ]
         end id
 ##Details
-An unexported parameterless procedure in a monitor can be specified to be an *interrupt handling procedure* by specifying a device in its header, using the form:
-The *deviceSpecification* is a compile time natural number that designates, to the implementation, the class of interrupts that effectively call this procedure. Interrupt handling procedures cannot be called explicitly within the program.
+An unexported parameterless procedure in a monitor can be specified to be an _interrupt handling procedure_ by specifying a device in its header, using the form:
+The _deviceSpecification_ is a compile time natural number that designates, to the implementation, the class of interrupts that effectively call this procedure. Interrupt handling procedures cannot be called explicitly within the program.
 There are two restrictions that the programmer must follow when using interrupt handling procedures; these restrictions will not necessarily be enforced by the software. The first is that an interrupt handling procedure must not execute a **wait**, either directly or indirectly, by calling another procedure. The second is that the interrupt handling procedure must not directly or indirectly cause an exception, unless the exception will be caught by an exception handler that is activated directly or indirectly by the interrupt handling procedure.
 
 

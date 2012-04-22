@@ -2,12 +2,12 @@
 #Window.SetPosition
 
 ##Syntax
-**Window.SetPosition** (*windowID* : **int**, *x*, *y* : **int**)
+**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)
 
 
 
 ##Description
-The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. *x* and *y* specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.
+The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. _x_ and _y_ specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.
 
 
 

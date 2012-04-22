@@ -2,7 +2,7 @@
 #eof
 
 ##Syntax
-**eof** (*streamNumber* : **int**) : **boolean**
+**eof** (_streamNumber_ : **int**) : **boolean**
 
 
 
@@ -31,5 +31,6 @@ When the input is from the keyboard, the user can signal end-of-file by typing c
 
 ##Example
 Another example is available that illustrates detecting EOF fromthe keyboard.
+
 
 

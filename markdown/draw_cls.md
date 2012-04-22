@@ -13,7 +13,7 @@ The **Draw.Cls** (clear screen) procedure is used to blank the output window The
 
 ##Details
 The **Draw.Cls** procedure sets all pixels in the output window to color 0. In this way it differs from the **cls** and **Text.Cls** procedures which set the screen to the text background color.
-The screen must be in "*graphics*" mode. See **View.Set** for details.
+The screen must be in "_graphics_" mode. See **View.Set** for details.
 
 
 

@@ -1,8 +1,44 @@
-{
-  "title": "Control Constructs",
-  "fileName": "control",
-  "sections": [
+#Control Constructs
 
-  ],
-  "htmlcontent": "\r\n<h1>Control Constructs</h1>\r\n<table>\n<tr>\n<td valign=\"top\"><h2>FOR</h2></td>\n<td width=\"50\"> </td>\n<td><table>\n<tr><td colspan=\"2\">\n<b>for</b> [ <b>decreasing</b> ] <i>variable</i> : <i>startValue</i> .. <i>endValue</i>\r\n\t\t                                            </td></tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>\n<b>exit when</b>  <i>expn</i>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t    </td>\n</tr>\n<tr><td colspan=\"2\"><b>end for</b></td></tr>\n</table></td>\n</tr>\n<tr><td> \r\n</td></tr>\n<tr>\n<td valign=\"top\"><h2>LOOP</h2></td>\n<td width=\"50\"> </td>\n<td><table>\n<tr><td colspan=\"2\">\n<b>loop</b>\r\n\t\t                                            </td></tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>\n<b>exit when</b>  <i>expn</i>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t    </td>\n</tr>\n<tr><td colspan=\"2\"><b>end loop</b></td></tr>\n</table></td>\n</tr>\n<tr><td> \r\n</td></tr>\n<tr>\n<td valign=\"top\"><h2>IF</h2></td>\n<td width=\"50\"> </td>\n<td><table>\n<tr><td colspan=\"2\">\n<b>if</b> <i>condition</i> <b>then</b>\r\n\t\t                                            </td></tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>{ <b>elsif</b> <i>condition</i> <b>then</b>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ... }\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>[ <b>else</b>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ... ]\r\n\t\t\t\t\t\t\t\t\t\t\t\t    </td>\n</tr>\n<tr><td colspan=\"2\"><b>end if</b></td></tr>\n</table></td>\n</tr>\n<tr><td> \r\n</td></tr>\n<tr>\n<td valign=\"top\"><h2>CASE</h2></td>\n<td width=\"50\"> </td>\n<td><table>\n<tr><td colspan=\"2\">\n<b>case</b> <i>expn</i> <b>of</b>\r\n\t\t                                            </td></tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ...\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>{ <b>label</b> <i>expn</i> {, <i>expn</i>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ... }\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>[ <b>label :</b>\r\n\t\t                                            </td>\n</tr>\n<tr>\n<td width=\"40\"></td>\n<td>... <i>statements</i> ... ]\r\n\t\t\t\t\t\t\t\t\t\t\t\t    </td>\n</tr>\n<tr><td colspan=\"2\"><b>end case</b></td></tr>\n</table></td>\n</tr>\n<tr><td> \r\n</td></tr>\n</table>\n<p>\r\nAny number of <b>exit</b> and <b>exit when</b> statements can appear at any place inside \r\n<b>for</b> .. <b>end for</b> constructs and <b>loop</b> .. <b>end loop</b> constructs.\r\n\r\n</p>\n"
-}
+##FOR
+
+
+... _statements_ ...
+**exit when**  _expn_
+... _statements_ ...
+
+
+
+##LOOP
+
+
+... _statements_ ...
+**exit when**  _expn_
+... _statements_ ...
+
+
+
+##IF
+
+
+... _statements_ ...
+{ **elsif** _condition_ **then**
+... _statements_ ... }
+[ **else**
+... _statements_ ... ]
+
+
+
+##CASE
+
+
+... _statements_ ...
+{ **label** _expn_ {, _expn_
+... _statements_ ... }
+[ **label :**
+... _statements_ ... ]
+
+
+
+
+Any number of **exit** and **exit when** statements can appear at any place inside **for** .. **end for** constructs and **loop** .. **end loop** constructs.

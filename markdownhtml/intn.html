@@ -2,11 +2,13 @@
 
 <h2>Syntax</h2>
 
-<p>(a)<strong>int1</strong><em>% 1-byte integer</em>(b)<strong>int2</strong><em>% 2-byte integer</em>(c)<strong>int4</strong><em>% 4-byte integer</em></p>
+<p>(a)<strong>int1</strong>  <em>% 1-byte integer</em>
+(b)<strong>int2</strong>  <em>% 2-byte integer</em>
+(c)<strong>int4</strong>  <em>% 4-byte integer</em></p>
 
 <h2>Description</h2>
 
-<p>The <strong>int<em>n</em></strong> (<em>n</em>-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the <strong>int</strong> type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).</p>
+<p>The <strong>int_n_</strong> (<em>n</em>-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the <strong>int</strong> type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).</p>
 
 <h2>Example</h2>
 
@@ -17,8 +19,8 @@
 
 <h2>Details</h2>
 
-<p>In current implementations of Turing, the range of the <strong>int</strong> is -2147483647 to 2147483647, which means that the <strong>int4</strong> type allows one more value, -2147483648. This extra value is used in <strong>int</strong> to represent the state of being initialized. The <strong>int<em>n</em></strong> types allow use of all possible values that fit into <em>n</em> bytes and thereby cannot check for initialization.
-The <strong>int<em>n</em></strong> types are like the C language types <em>short int</em>, <em>int</em>, and <em>long int</em>, except that the number of bytes occupied by the C types depends on the particular C compiler.</p>
+<p>In current implementations of Turing, the range of the <strong>int</strong> is -2147483647 to 2147483647, which means that the <strong>int4</strong> type allows one more value, -2147483648. This extra value is used in <strong>int</strong> to represent the state of being initialized. The <strong>int_n_</strong> types allow use of all possible values that fit into <em>n</em> bytes and thereby cannot check for initialization.
+The <strong>int_n_</strong> types are like the C language types <em>short int</em>, <em>int</em>, and <em>long int</em>, except that the number of bytes occupied by the C types depends on the particular C compiler.</p>
 
 <h2>See also</h2>
 

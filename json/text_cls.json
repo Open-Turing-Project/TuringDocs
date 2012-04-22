@@ -18,7 +18,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or \"<i>graphics</i>\" mode. If the screen mode has not been set, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If the screen mode has not been set, it will automatically be set to \"screen\" mode. See View.Set for details.\r\n",
-      "mdown_content": "The screen should be in a \"*screen*\" or \"*graphics*\" mode. If the screen mode has not been set, it will automatically be set to \"*screen*\" mode. See **View.Set **for details."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If the screen mode has not been set, it will automatically be set to \"_screen_\" mode. See **View.Set **for details."
     },
     {
       "title": "Status",

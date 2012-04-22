@@ -2,7 +2,7 @@
 #Music.Sound
 
 ##Syntax
-**Music.Sound** ( *frequency*, *duration* : **int **)
+**Music.Sound** ( _frequency_, _duration_ : **int **)
 
 
 

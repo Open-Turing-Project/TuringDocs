@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFile</b> ( <i>fileName</i> : <b>string</b> )<p></p></font>",
       "text_content": "Music.PlayFile ( fileName : string )\r\n    ",
-      "mdown_content": "**Music.PlayFile** ( *fileName* : **string** )"
+      "mdown_content": "**Music.PlayFile** ( _fileName_ : **string** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.PlayFile</b> procedure is used to play a file of music. \r\n          The file must be in one of the acceptable formats and the machine, \r\n\t  must have the appropriate hardware.<p>\r\n\t  The <i>fileName</i> parameter must give the format of the file:</p>\n<p>\r\n\t  </p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>WAV files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"WAV:filename\" or \"filename.WAV\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>MP3 files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"MP3:filename\" or \"filename.MP3\"</td>\r\n\t    </tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>MIDI files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"MIDI:filename\" or \"filename.MIDI\"</td>\r\n\t    </tr>\n</table>\n<p>\r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a <b>Music.Sound</b>, <b>Music.Play</b> \r\n\t  or <b>Music.PlayFile </b>command, it stops until the command is \r\n\t  finished. However, other processes will continue executing.</p>\n<p>\r\n    </p>",
       "text_content": "The Music.PlayFile procedure is used to play a file of music. \r\n          The file must be in one of the acceptable formats and the machine, \r\n\t  must have the appropriate hardware.\r\n\t  The fileName parameter must give the format of the file:\r\n\t   \r\n\t      WAV files\r\n\t       \r\n\t      \"WAV:filename\" or \"filename.WAV\"\r\n\t     \r\n\t      MP3 files\r\n\t       \r\n\t      \"MP3:filename\" or \"filename.MP3\"\r\n\t     \r\n\t      MIDI files\r\n\t       \r\n\t      \"MIDI:filename\" or \"filename.MIDI\"\r\n\t    \r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a Music.Sound, Music.Play \r\n\t  or Music.PlayFile command, it stops until the command is \r\n\t  finished. However, other processes will continue executing.\r\n    ",
-      "mdown_content": "The **Music.PlayFile** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe *fileName* parameter must give the format of the file:\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\nSounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile **command, it stops until the command is finished. However, other processes will continue executing."
+      "mdown_content": "The **Music.PlayFile** procedure is used to play a file of music. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe _fileName_ parameter must give the format of the file:\n\n\n\n\n\nSounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile **command, it stops until the command is finished. However, other processes will continue executing."
     },
     {
       "title": "Details",
       "raw_content": "To play music while performing any other activity, the call to \r\n          <b>Music.PlayFile</b> must be executed in its own <b>process</b>. \r\n\t  The process is then called using the <b>fork</b> command. When a \r\n\t  <b>fork</b> command is given, execution starts on the process (like \r\n\t  a procedure call) <i>and</i> continues following the <b>fork</b> \r\n\t  command <i>at the same time</i>.<p>\r\n    </p>",
       "text_content": "To play music while performing any other activity, the call to \r\n          Music.PlayFile must be executed in its own process. \r\n\t  The process is then called using the fork command. When a \r\n\t  fork command is given, execution starts on the process (like \r\n\t  a procedure call) and continues following the fork \r\n\t  command at the same time.\r\n    ",
-      "mdown_content": "To play music while performing any other activity, the call to **Music.PlayFile** must be executed in its own **process**. The process is then called using the **fork** command. When a **fork** command is given, execution starts on the process (like a procedure call) *and* continues following the **fork** command *at the same time*."
+      "mdown_content": "To play music while performing any other activity, the call to **Music.PlayFile** must be executed in its own **process**. The process is then called using the **fork** command. When a **fork** command is given, execution starts on the process (like a procedure call) _and_ continues following the **fork** command _at the same time_."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program plays the music in the file \"<i>branden3.wav</i>\" \r\n\t  while drawing ovals on the screen.<p>\r\n</p>",
       "text_content": "This program plays the music in the file \"branden3.wav\" \r\n\t  while drawing ovals on the screen.\r\n\r\n    ",
-      "mdown_content": "This program plays the music in the file \"*branden3.wav*\" while drawing ovals on the screen."
+      "mdown_content": "This program plays the music in the file \"_branden3.wav_\" while drawing ovals on the screen."
     },
     {
       "title": "Execute",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "The Turing 4.1 software can also play music on a compact disk. \r\n          To play the complete contents of the compact disk, the filename \r\n\t  is &#147;cd&#148;. To play a single track from a compact disk, the filename \r\n\t  is &#147;cd:[track&nbsp;number]&#148;.<p>\r\n</p>",
       "text_content": "The Turing 4.1 software can also play music on a compact disk. \r\n          To play the complete contents of the compact disk, the filename \r\n\t  is cd. To play a single track from a compact disk, the filename \r\n\t  is cd:[track number].\r\n\r\n    ",
-      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. To play the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number]."
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. To play the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;."
     },
     {
       "title": "Details",

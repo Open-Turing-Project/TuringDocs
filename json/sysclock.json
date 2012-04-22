@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sysclock</b> ( <b>var</b> <i>c</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " sysclock ( var c : int )\r\n",
-      "mdown_content": "**sysclock** ( **var** *c* : **int** )"
+      "mdown_content": "**sysclock** ( **var** _c_ : **int** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sysclock</b> statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable <i>c </i>is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where <b>sysclock</b> returns the same value as <b>clock</b>.<p>\r\n</p>",
       "text_content": " The sysclock statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable c is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where sysclock returns the same value as clock.\r\n",
-      "mdown_content": "The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable *c *is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**."
+      "mdown_content": "The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable _c _is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**."
     },
     {
       "title": "Example",

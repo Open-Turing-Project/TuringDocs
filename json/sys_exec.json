@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.Exec</b> ( <i>command</i> : <b>string</b> ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Sys.Exec ( command : string ) : boolean\r\n",
-      "mdown_content": "**Sys.Exec** ( *command* : **string** ) : **boolean**"
+      "mdown_content": "**Sys.Exec** ( _command_ : **string** ) : **boolean**"
     },
     {
       "title": "Description",

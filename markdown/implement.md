@@ -2,8 +2,10 @@
 #implement
 
 ##Syntax
-An *implementClause* is:
- **implement** *implementItem*
+An _implementClause_ is:
+
+**implement** _implementItem_
+
 
 
 
@@ -14,8 +16,8 @@ The **implement** clause can only be used in a **unit**. See **unit** for the de
 
 
 ##Example
-Here is a *stack* module which defers all of its exported subprograms. This module is an interface but not an implementation. Following *stack* is the *stackBody *module that implements the *stack* module, giving the bodies for *stack*'s subprograms. Any call to *stack's* *push* or *pop* procedures, such as *stack*.*push(*"Ed"*)*, will actually call the procedures given in *stackBody*.
-Next comes the expansion which gives the bodies for the deferred procedures *push* and *pop*. The *stackBody *body also adds declarations for the *top* and *contents* variables.
+Here is a _stack_ module which defers all of its exported subprograms. This module is an interface but not an implementation. Following _stack_ is the _stackBody _module that implements the _stack_ module, giving the bodies for _stack_'s subprograms. Any call to _stack's_ _push_ or _pop_ procedures, such as _stack_._push(_"Ed"_)_, will actually call the procedures given in _stackBody_.
+Next comes the expansion which gives the bodies for the deferred procedures _push_ and _pop_. The _stackBody _body also adds declarations for the _top_ and _contents_ variables.
 
 
         module stack                % Interface
@@ -40,18 +42,21 @@ Next comes the expansion which gives the bodies for the deferred procedures *pus
             end pop
         end stackBody
 ##Details
-Module, monitor or class *D* can be in *C'*s implement-by clause if, and only if, *C* is in *D'*s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.
-An *implementItem* is one of*:*
- (a) *id* (b) *id* **in** *fileName*
+Module, monitor or class _D_ can be in _C'_s implement-by clause if, and only if, _C_ is in _D'_s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.
+An _implementItem_ is one of_:_
+
+
+
+
 The second form is used when the implement clause is for a separate **unit** and the imported item is in a file whose name is different from the item's name, as in:
-The *fileName* must be an explicit character string, e.g., "ledg.t". See also **unit**. Parentheses are allowed around the items in **implement** clauses, as in:
+The _fileName_ must be an explicit character string, e.g., "ledg.t". See also **unit**. Parentheses are allowed around the items in **implement** clauses, as in:
 There is no restriction on the declarations that an interface may contain. In particular, an interface (any module, monitor or class containing an implement-by clause), can contain subprogram bodies and variable declarations, exactly as is the case in expansions. This is different from languages such as C++ in which there are strict rules limiting what you can put in an interface.
-Even though *D* contains an **implement** clause, *D* can also contain an implement-by clause, which implies further implementation by further automatic expansion.
-Suppose class *D* is in class *C*'s implement-by clause and that *p* is a pointer to class *C*:
-Even though *C* is implemented by *D*, *p* remains a pointer to class *C*. Each creation of an object of class *C* actually creates an object of type *D*, for example:
-Class *D*, which implements *C*,* *could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class *E* inherits *C*,* *this expansion does not include *D*.
-If the **new** statement contains an explicit class name *E *that is a descendant of *C* (but not actually C), as in
-the object of the explicit class is created. If *E* has an implement-by clause, the expansion is created.
+Even though _D_ contains an **implement** clause, _D_ can also contain an implement-by clause, which implies further implementation by further automatic expansion.
+Suppose class _D_ is in class _C_'s implement-by clause and that _p_ is a pointer to class _C_:
+Even though _C_ is implemented by _D_, _p_ remains a pointer to class _C_. Each creation of an object of class _C_ actually creates an object of type _D_, for example:
+Class _D_, which implements _C_,_ _could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class _E_ inherits _C_,_ _this expansion does not include _D_.
+If the **new** statement contains an explicit class name _E _that is a descendant of _C_ (but not actually C), as in
+the object of the explicit class is created. If _E_ has an implement-by clause, the expansion is created.
 
 
         implement ledger in "ledg.t"        implement ( ledger in "ledg.t" )        var p : ^ C        new p   % Creates object of class D        new E, p

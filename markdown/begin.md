@@ -2,8 +2,12 @@
 #begin
 
 ##Syntax
-A *beginStatement* is:
- **begin**  *statementsAndDeclarations* **end**
+A _beginStatement_ is:
+
+**begin**
+_statementsAndDeclarations_
+**end**
+
 
 
 

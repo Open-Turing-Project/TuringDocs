@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>colorback</b> (<i>Color</i> :<i> </i><b>int</b>)<p>\r\n</p></font>",
       "text_content": " colorback (Color : int)\r\n",
-      "mdown_content": "**colorback** (*Color* :* ***int**)"
+      "mdown_content": "**colorback** (_Color_ :_ _**int**)"
     },
     {
       "title": "Description",
@@ -81,7 +81,7 @@
       "title": "Details",
       "raw_content": "See <b>maxcolor</b> for the number of background colors available . The color in which text appears can be set using the <b>color</b> procedure.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode to use the <b>color</b> procedure. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " See maxcolor for the number of background colors available . The color in which text appears can be set using the color procedure.\r\nThe screen must be in a \"graphics\" mode to use the color procedure. See setscreen for details.\r\n",
-      "mdown_content": "See **maxcolor** for the number of background colors available . The color in which text appears can be set using the **color** procedure.\nThe screen must be in a \"*graphics*\" mode to use the **color** procedure. See **setscreen** for details."
+      "mdown_content": "See **maxcolor** for the number of background colors available . The color in which text appears can be set using the **color** procedure.\nThe screen must be in a \"_graphics_\" mode to use the **color** procedure. See **setscreen** for details."
     },
     {
       "title": "See also",

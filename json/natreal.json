@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>natreal</b> ( <i>n</i> : <b>nat</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " natreal ( n : nat ) : real\r\n",
-      "mdown_content": "**natreal** ( *n* : **nat** ) : **real**"
+      "mdown_content": "**natreal** ( _n_ : **nat** ) : **real**"
     },
     {
       "title": "Description",

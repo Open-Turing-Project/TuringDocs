@@ -2,7 +2,7 @@
 #Sys.Exec
 
 ##Syntax
-**Sys.Exec** ( *command* : **string** ) : **boolean**
+**Sys.Exec** ( _command_ : **string** ) : **boolean**
 
 
 

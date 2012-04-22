@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Upper</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Upper (s : string) : string",
-      "mdown_content": "**Str.Upper** (*s* : **string**) : **string**"
+      "mdown_content": "**Str.Upper** (_s_ : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Upper</b> function takes the string <i>s</i> and returns\r\n          a string in which all the lower case letters are converted to \r\n          upper case. For example, <tt>Str.Upper (\"ABC123def\")</tt> returns\r\n          <tt>\"ABC123DEF\"</tt>.<p>\r\n    </p>",
       "text_content": "The Str.Upper function takes the string s and returns\r\n          a string in which all the lower case letters are converted to \r\n          upper case. For example, Str.Upper (\"ABC123def\") returns\r\n          \"ABC123DEF\".\r\n    ",
-      "mdown_content": "The **Str.Upper** function takes the string *s* and returnsa string in which all the lower case letters are converted to upper case. For example, Str.Upper (\"ABC123def\") returns\"ABC123DEF\"."
+      "mdown_content": "The **Str.Upper** function takes the string _s_ and returnsa string in which all the lower case letters are converted to upper case. For example, `Str.Upper (\"ABC123def\")` returns`\"ABC123DEF\"`."
     },
     {
       "title": "Example",

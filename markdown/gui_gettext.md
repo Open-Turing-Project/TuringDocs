@@ -2,12 +2,12 @@
 #GUI.GetText
 
 ##Syntax
-**GUI.GetText** (*widgetID* : **int**) : **string**
+**GUI.GetText** (_widgetID_ : **int**) : **string**
 
 
 
 ##Description
-Returns the current text of a text field specified by *widgetID*. The *widgetID *must specify a text field widget.
+Returns the current text of a text field specified by _widgetID_. The _widgetID _must specify a text field widget.
 
 
 

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetSliderValue</b> (<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetSliderValue (widgetID : int) : int\r\n",
-      "mdown_content": "**GUI.GetSliderValue** (*widgetID* : **int**) : **int**"
+      "mdown_content": "**GUI.GetSliderValue** (_widgetID_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "Returns the current value of a slider or scroll bar specified by <i>widgetID</i>. The <i>widgetID</i> must specify either scroll bar or a slider (horizontal or vertical).<p>\r\n</p>",
       "text_content": " Returns the current value of a slider or scroll bar specified by widgetID. The widgetID must specify either scroll bar or a slider (horizontal or vertical).\r\n",
-      "mdown_content": "Returns the current value of a slider or scroll bar specified by *widgetID*. The *widgetID* must specify either scroll bar or a slider (horizontal or vertical)."
+      "mdown_content": "Returns the current value of a slider or scroll bar specified by _widgetID_. The _widgetID_ must specify either scroll bar or a slider (horizontal or vertical)."
     },
     {
       "title": "Example",
       "raw_content": "See the <i>ScrollPic</i> program in <b>GUI.CreateHorizontalScrollBarFull </b>for an example of <b>GUI.GetSliderValue</b>.<p>\r\n</p>",
       "text_content": " See the ScrollPic program in GUI.CreateHorizontalScrollBarFull for an example of GUI.GetSliderValue.\r\n",
-      "mdown_content": "See the *ScrollPic* program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetSliderValue**."
+      "mdown_content": "See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetSliderValue**."
     },
     {
       "title": "Status",

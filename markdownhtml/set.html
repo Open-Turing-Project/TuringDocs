@@ -2,8 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>setType</em> is:
-<strong>set</strong> <strong>of</strong> <em>typeSpec</em></p>
+<p>A <em>setType</em> is:</p>
+
+<p><strong>set</strong> <strong>of</strong> <em>typeSpec</em></p>
 
 <h2>Description</h2>
 
@@ -23,8 +24,8 @@
 
 <p>In classical mathematics, the set consisting of 0 and 1 is written as {0,1}. This is written in Turing using a <em>set constructor</em> consisting of the name of the set type followed by a parenthesized list of elements, which in this example is <em>smallInt</em> (0,1). The empty set is written, for example, as <em>smallInt </em>(). The full set is written as <em>smallInt </em>(<strong>all</strong>), so <em>smallInt </em>(<strong>all</strong>) = <em>smallInt </em>(0,1,2).
 Sets can be assigned as a whole (to sets of an equivalent type). See also <em>equivalence</em> of types.
-The operators to combine two sets are union (+), intersection (<em>), set subtraction (-), equality (=), inequality (<strong>not=</strong>), subset (&lt;=), strict subset (&lt;), superset (>=), strict superset (>), and <strong>xor</strong> ("exclusive or" also known as symmetric difference). Only sets with equivalent types (equal bounds on their index types) can be combined by these operators. The operators which determine if an element is, or is not, in a set are <strong>in</strong> and <strong>not</strong> <strong>in</strong>. For example, the test to see if 2 is in set </em>s<em> is written in the above example as: 2 <strong>in</strong> </em>s<em>.
-The </em>indexType<em> of a <strong>set</strong> type must contain at least one element. For example, the range 1 .. 0 would not be allowed. See also </em>indexType*. In Turing, sets are limited to at most 31 elements. OOT allows a very large number of elements.</p>
+The operators to combine two sets are union (+), intersection (*), set subtraction (-), equality (=), inequality (<strong>not=</strong>), subset (&lt;=), strict subset (&lt;), superset (>=), strict superset (>), and <strong>xor</strong> ("exclusive or" also known as symmetric difference). Only sets with equivalent types (equal bounds on their index types) can be combined by these operators. The operators which determine if an element is, or is not, in a set are <strong>in</strong> and <strong>not</strong> <strong>in</strong>. For example, the test to see if 2 is in set <em>s</em> is written in the above example as: 2 <strong>in</strong> <em>s</em>.
+The <em>indexType</em> of a <strong>set</strong> type must contain at least one element. For example, the range 1 .. 0 would not be allowed. See also <em>indexType</em>. In Turing, sets are limited to at most 31 elements. OOT allows a very large number of elements.</p>
 
 <h2>Details</h2>
 

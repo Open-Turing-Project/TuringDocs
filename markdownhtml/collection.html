@@ -2,8 +2,10 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>collectionDeclaration</em> is one of:
-(a)<strong>var</strong> <em>id </em>{ , <em>id </em>} : <strong>collection</strong> <strong>of</strong> <em>typeSpec</em>(b)<strong>var</strong> <em>id </em>{ , <em>id </em>} : <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></p>
+<p>A <em>collectionDeclaration</em> is one of:</p>
+
+<p>(a)<strong>var</strong> <em>id </em>{ , <em>id </em>} : <strong>collection</strong> <strong>of</strong> <em>typeSpec</em>
+(b)<strong>var</strong> <em>id </em>{ , <em>id </em>} : <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></p>
 
 <h2>Description</h2>
 
@@ -31,6 +33,6 @@ The keyword <strong>forward</strong> (form b above) is used to specify that the 
 Suppose pointer <em>q</em> is equal to pointer <em>p</em> and the element they point to is deleted by "<strong>free</strong> <em>C</em>,<em>p</em>". We say <em>q</em> is a <em>dangling pointer</em> because it seems to locate an element, but the element no longer exists. A dangling pointer is considered to be an uninitialized value. It cannot be assigned, compared, used as a collection subscript, or passed to <strong>free</strong>.
 Collections cannot be assigned, compared, passed as parameters, bound to, or named by a <strong>const</strong> declaration. Collections must not be declared in procedures, functions, records or unions.
 The same short forms for classes can be also used for collections. These include omission of the collection name in <strong>new</strong>, <strong>free</strong> and <strong>nil</strong> together with the ^ and -> notations. Pointers to types (see <strong>pointer</strong>) can also be used, which are often more convenient to use than collections.
-The syntax of a <em>collectionDeclaration</em> presented above has been simplified by leaving out <strong>unchecked</strong> collections. With this feature, a <em>collectionDeclaration</em> is one of:
-(a) <strong>var</strong> <em>id </em>{ , <em>id </em>} : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <em>typeSpec</em>(b)<em> </em><strong>var</strong> <em>id </em>{ , <em>id </em>} : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em>
-When <strong>unchecked</strong> is specified, the checking to verify that pointers actually locate elements is removed. This checking is done using a "time stamp" attached to each element and  pointer, and making sure that these match with each other. When <strong>unchecked</strong> is specified, the execution is dangerous, but faster and smaller, and the pointers become simply machine addresses (as in C).</p>
+The syntax of a <em>collectionDeclaration</em> presented above has been simplified by leaving out <strong>unchecked</strong> collections. With this feature, a <em>collectionDeclaration</em> is one of:</p>
+
+<p>When <strong>unchecked</strong> is specified, the checking to verify that pointers actually locate elements is removed. This checking is done using a "time stamp" attached to each element and  pointer, and making sure that these match with each other. When <strong>unchecked</strong> is specified, the execution is dangerous, but faster and smaller, and the pointers become simply machine addresses (as in C).</p>

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Free</b> (<i>fontID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Font.Free (fontID : int)\r\n",
-      "mdown_content": "**Font.Free** (*fontID* : **int**)"
+      "mdown_content": "**Font.Free** (_fontID_ : **int**)"
     },
     {
       "title": "Description",

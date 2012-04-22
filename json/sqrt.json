@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sqrt</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " sqrt ( r : real ) : real\r\n",
-      "mdown_content": "**sqrt** ( *r* : **real** ) : **real**"
+      "mdown_content": "**sqrt** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program prints out the square roots of 1, 2, 3, &#133; up to 100.<p>\r\n</p>",
       "text_content": " This program prints out the square roots of 1, 2, 3,  up to 100.\r\n\r\n",
-      "mdown_content": "This program prints out the square roots of 1, 2, 3,  up to 100."
+      "mdown_content": "This program prints out the square roots of 1, 2, 3, &#133; up to 100."
     },
     {
       "title": "Details",
       "raw_content": "It is illegal to try to take the square root of a negative number. The result of <b>sqrt</b> is always positive or zero.<p>\r\nThe opposite of a square root is the square. For example, the square of <i>x</i> is written is <i>x</i>**2.</p>\n<p>\r\n</p>",
       "text_content": " It is illegal to try to take the square root of a negative number. The result of sqrt is always positive or zero.\r\nThe opposite of a square root is the square. For example, the square of x is written is x**2.\r\n",
-      "mdown_content": "It is illegal to try to take the square root of a negative number. The result of **sqrt** is always positive or zero.\nThe opposite of a square root is the square. For example, the square of *x* is written is *x***2."
+      "mdown_content": "It is illegal to try to take the square root of a negative number. The result of **sqrt** is always positive or zero.\nThe opposite of a square root is the square. For example, the square of _x_ is written is _x_**2."
     },
     {
       "title": "See also",

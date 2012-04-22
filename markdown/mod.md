@@ -7,12 +7,12 @@
 
 
 ##Description
-The **mod** (*modulo*) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 **mod** 2 produces 1 and 12 **mod** 5 produces 3.
+The **mod** (_modulo_) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 **mod** 2 produces 1 and 12 **mod** 5 produces 3.
 
 
 
 ##Example
-In this example, *hours* is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12).
+In this example, _hours_ is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12).
 
 
         var hours : int := 12
@@ -39,6 +39,6 @@ If the second operand is positive, then the result is always non-negative. Likew
 
 
 ##See also
-*[infix.html](infix) operators*, *[precedence.html](precedence) *of operators and the **[rem.html](rem)** and **[div.html](div)** operators.
+_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[rem.html](rem)** and **[div.html](div)** operators.
 
 

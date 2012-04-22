@@ -2,7 +2,8 @@
 
 <h2>Syntax</h2>
 
-<p><strong>Pic.DrawFramesBack</strong> (<em>picIds</em> : <strong>array</strong> 1 .. * <strong>of int</strong>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>,  <em>numFrames</em>, <em>delayBetweenFrames</em> : <strong>int</strong>, <em>eraseAfter</em> : <strong>boolean</strong>)</p>
+<p><strong>Pic.DrawFramesBack</strong> (<em>picIds</em> : <strong>array</strong> 1 .. * <strong>of int</strong>, <em>x</em>, <em>y</em>, <em>mode</em> : <strong>int</strong>,
+<em>numFrames</em>, <em>delayBetweenFrames</em> : <strong>int</strong>, <em>eraseAfter</em> : <strong>boolean</strong>)</p>
 
 <h2>Description</h2>
 
@@ -13,7 +14,7 @@ For example, this procedure is necessary if you want to have two sets of frames 
 
 <p>If you are wish to have several sets of images displayed at the same time, you must use <strong>Pic.DrawFramesBack</strong> to display each setof images but the last and then use <strong>Pic.DrawFrames</strong> to displaythe last set so that Turing will wait until they are completed before continuing execution.
 If you want to draw the same set of frames continuously, do not use<strong>Pic.DrawFramesBack</strong>.
-<strong>for</strong> <em>i</em> : 1 .. 20<strong>Pic.DrawFrames</strong> (<em>pics</em>, 10, 10, <em>picCopy</em>, 10, 50, <strong>false</strong>)% Do not use Pic.DrawFramesBack in the previous statement<strong>end for</strong>
+<code>**for** _i_ : 1 .. 20    % Do not use Pic.DrawFramesBack in the previous statement**end for**</code>
 If you do, Turing will attempt to run each of the calls at the sametime, and the animation will appear to only run once.</p>
 
 <h2>Details</h2>

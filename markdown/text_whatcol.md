@@ -12,7 +12,7 @@ The **Text.WhatCol** function is used to** **determine the cursor position's col
 
 
 ##Example
-This program outputs *The current row is 5*,* the current column is 15*.
+This program outputs _The current row is 5_,_ the current column is 15_.
 
 
         Text.Locate  ( 5, 10 )
@@ -20,7 +20,7 @@ This program outputs *The current row is 5*,* the current column is 15*.
         put "The current row is", Text.WhatRow
         put "The current column is", Text.WhatCol
 ##Details
-The screen should be in a "*screen*" or* *"*graphics*" mode. **Text.WhatCol** functions properly even if the cursor is invisible.
+The screen should be in a "_screen_" or_ _"_graphics_" mode. **Text.WhatCol** functions properly even if the cursor is invisible.
 
 
 

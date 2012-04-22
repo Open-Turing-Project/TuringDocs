@@ -15,7 +15,7 @@
       ],
       "raw_content": "This procedure causes <b>GUI.ProcessEvent</b> to return <b>true</b>. \r\n          If the program is structured properly with a<p>\r\n</p>\r\n          at the end of the program, then the program will exit the loop after \r\n\t  finishing the current <i>action procedure</i>. This procedure is \r\n\t  usually called from the <i>action procedure</i> of a Quit button \r\n\t  or Exit menu item. <p>\r\n    </p>",
       "text_content": "This procedure causes GUI.ProcessEvent to return true. \r\n          If the program is structured properly with a\r\n\r\n          at the end of the program, then the program will exit the loop after \r\n\t  finishing the current action procedure. This procedure is \r\n\t  usually called from the action procedure of a Quit button \r\n\t  or Exit menu item. \r\n    ",
-      "mdown_content": "This procedure causes **GUI.ProcessEvent** to return **true**. If the program is structured properly with a\nat the end of the program, then the program will exit the loop after finishing the current *action procedure*. This procedure is usually called from the *action procedure* of a Quit button or Exit menu item. "
+      "mdown_content": "This procedure causes **GUI.ProcessEvent** to return **true**. If the program is structured properly with a\nat the end of the program, then the program will exit the loop after finishing the current _action procedure_. This procedure is usually called from the _action procedure_ of a Quit button or Exit menu item. "
     },
     {
       "title": "Example",

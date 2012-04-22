@@ -19,7 +19,7 @@ This program outputs the currently-active color number. The  message is also giv
         
         put "This writing is in color number ", Text.WhatColor
 ##Details
-The screen should be in a "*screen*"* *or "*graphics*" mode. See **View.Set **for details.
+The screen should be in a "_screen_"_ _or "_graphics_" mode. See **View.Set **for details.
 
 
 

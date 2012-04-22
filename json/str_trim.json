@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Trim</b> (<i>str</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Trim (str : string) : string",
-      "mdown_content": "**Str.Trim** (*str* : **string**) : **string**"
+      "mdown_content": "**Str.Trim** (_str_ : **string**) : **string**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Trim</b> function takes the string <i>str</i> and returns\r\n          a string in all the leading and trailing spaces (the spaces at the\r\n          beginning and the end) are deleted. For example, \r\n          <tt>Str.Trim (\"   This is a test \")</tt> returns\r\n          <tt>\"This is a test\"</tt>. If <i>str</i> only has spaces in it, then\r\n          <b>Str.Trim</b> will return an empty string.<p>\r\n    </p>",
       "text_content": "The Str.Trim function takes the string str and returns\r\n          a string in all the leading and trailing spaces (the spaces at the\r\n          beginning and the end) are deleted. For example, \r\n          Str.Trim (\"   This is a test \") returns\r\n          \"This is a test\". If str only has spaces in it, then\r\n          Str.Trim will return an empty string.\r\n    ",
-      "mdown_content": "The **Str.Trim** function takes the string *str* and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, Str.Trim (\"   This is a test \") returns\"This is a test\". If *str* only has spaces in it, then**Str.Trim** will return an empty string."
+      "mdown_content": "The **Str.Trim** function takes the string _str_ and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, `Str.Trim (\"   This is a test \")` returns`\"This is a test\"`. If _str_ only has spaces in it, then**Str.Trim** will return an empty string."
     },
     {
       "title": "Example",

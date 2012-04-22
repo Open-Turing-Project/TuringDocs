@@ -2,14 +2,19 @@
 #Config.Display
 
 ##Syntax
-**Config.Display** (*displayCode* : **int**) : **int**
+**Config.Display** (_displayCode_ : **int**) : **int**
 
 
 
 ##Description
-**Config.Display** returns information about the display (or displays) attached to the computer. The parameter *displayCode* determines what sort of information is passed back. *displayCode* has a number of possible values, all summarized by a set of predefined constants.
+**Config.Display** returns information about the display (or displays) attached to the computer. The parameter _displayCode_ determines what sort of information is passed back. _displayCode_ has a number of possible values, all summarized by a set of predefined constants.
 At the time of this writing, the following constants were defined:
-*cdScreenHeight* return the height of the screen in pixels.*cdScreenWidth* return the width of the screen in pixels.*cdMaxNumColors* return the maximum number of colors supported by the display.*cdMaxNumColours* return the maximum number of colors supported by the display.
+
+_cdScreenHeight_ return the height of the screen in pixels.
+_cdScreenWidth_ return the width of the screen in pixels.
+_cdMaxNumColors_ return the maximum number of colors supported by the display.
+_cdMaxNumColours_ return the maximum number of colors supported by the display.
+
 
 
 

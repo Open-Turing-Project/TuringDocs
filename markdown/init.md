@@ -23,12 +23,12 @@ The **init** (initialization) keyword is used for two different purposes in Turi
                  "Alice", "Barbara", "Cathy")
         put names ( 2, 1 )  % This outputs Alice
 ##Details
-The order of initializing values for multi-dimensional arrays is based on varying the right subscripts (indexes) most rapidly. This is called *row major order*. Initialization of records and unions is analogous to initializing arrays. Values are listed in the order in which they appear in the type. See **array**, **record**, and **union** types.
+The order of initializing values for multi-dimensional arrays is based on varying the right subscripts (indexes) most rapidly. This is called _row major order_. Initialization of records and unions is analogous to initializing arrays. Values are listed in the order in which they appear in the type. See **array**, **record**, and **union** types.
 
 
 
 ##Example
-This procedure is supposed to set integer variable *i* to an integer approximation of its square root. The **init** clause records the initial value of *i *as *j *so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name *j *can be used only in the post condition and nowhere else in the procedure.
+This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i _as _j _so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j _can be used only in the post condition and nowhere else in the procedure.
 
 
         procedure intSqrt ( var i : int )
