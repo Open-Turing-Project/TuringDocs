@@ -2,18 +2,18 @@
 #Draw.Oval
 
 ##Syntax
-**Draw.Oval** (_x_, _y_, _xRadius_, _yRadius_, _Color_ :** int**)
+**Draw.Oval** (_x_, _y_, _xRadius_, _yRadius_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.Oval **procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius _and _yRadius_.
+The **Draw.Oval** procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius_ and _yRadius_.
 
 ![Doc image](draw_oval01.gif)
 
 
 ##Example
-This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The center of the oval is at (_midx_, _midy_), which is the middle of the screen.
+This program draws a large oval that just touches each edge of the screen in magenta. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The center of the oval is at (_midx_, _midy_), which is the middle of the screen.
 
 
         View.Set ("graphics")

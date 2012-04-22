@@ -7,7 +7,7 @@
 
 
 ##Description
-**Font.Free **is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a **Font.Free** for every **Font.New**, the number of simultaneously defined fonts is kept to a minimum.
+**Font.Free** is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a **Font.Free** for every **Font.New**, the number of simultaneously defined fonts is kept to a minimum.
 
 
 

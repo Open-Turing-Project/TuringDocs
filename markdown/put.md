@@ -11,7 +11,7 @@ A _putStatement_ is:
 
 ##Description
 The **put** statement outputs each of the _putItems_. Usually, a new line is started in the output after the final _putItem_. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.
-Ordinarily, the output goes to the screen. However, if the _fileNumber _is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.
+Ordinarily, the output goes to the screen. However, if the _fileNumber_ is present, the output goes to the file specified by the file number (see the **open** statement for details). Also, output can be redirected from the screen to a file, in which case all **put** statements without a file number are sent to the file instead of the screen.
 
 
 

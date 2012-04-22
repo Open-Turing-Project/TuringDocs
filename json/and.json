@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>and</b> (boolean) operator yields a result of true if, and only if, both operands are true. The <b>and</b> operator is a short circuit operator. For example, if <i>A</i> is false in <i>A </i><b>and</b><i> B</i> then <i>B </i>is not evaluated.<p>\r\n</p>",
       "text_content": " The and (boolean) operator yields a result of true if, and only if, both operands are true. The and operator is a short circuit operator. For example, if A is false in A and B then B is not evaluated.\r\n",
-      "mdown_content": "The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if _A_ is false in _A _**and**_ B_ then _B _is not evaluated."
+      "mdown_content": "The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if _A_ is false in _A_ **and** _B_ then _B_ is not evaluated."
     },
     {
       "title": "Example",

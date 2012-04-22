@@ -18,7 +18,7 @@
       "title": "Example",
       "raw_content": "See <b>GUI.CreateFrame </b>for an example of <b>GUI.SetBackgroundColour</b>.<p>\r\n</p>",
       "text_content": " See GUI.CreateFrame for an example of GUI.SetBackgroundColour.\r\n",
-      "mdown_content": "See **GUI.CreateFrame **for an example of **GUI.SetBackgroundColour**."
+      "mdown_content": "See **GUI.CreateFrame** for an example of **GUI.SetBackgroundColour**."
     },
     {
       "title": "Status",

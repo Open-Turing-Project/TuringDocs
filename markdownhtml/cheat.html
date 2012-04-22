@@ -34,7 +34,7 @@ If the <em>expn</em> in a type cheat is a variable reference and the <em>sizeSpe
 <p>If the <em>expn</em> is a value that is not a variable reference, or if <em>sizeSpec</em> is present, the type cheat is an expression value whose type is <em>targetType</em>.
 The <em>sizeSpec</em> is a compile time integer expression giving the size of the <em>expn'</em>s value. It can be specified only for integer or natural number values (where it must be 1, 2 or 4) or real values (where it must be 4 or 8).
 A type cheat is carried out in two steps. The first step converts the value if necessary to the size given by <em>sizeSpec</em>. The second step, which involves no generated code, interprets the value as the target type.
-The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # <em>expn</em> is the same as <strong>cheat</strong> (<strong>nat</strong><em>n</em>, <em>expn</em>) where <em>n</em> is determined as follows. If the <em>expn</em> is a variable or expression of size 1, 2 or 4, <em>n</em> is the size of the item, otherwise <em>n </em>is 4.</p>
+The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # <em>expn</em> is the same as <strong>cheat</strong> (<strong>nat</strong><em>n</em>, <em>expn</em>) where <em>n</em> is determined as follows. If the <em>expn</em> is a variable or expression of size 1, 2 or 4, <em>n</em> is the size of the item, otherwise <em>n</em> is 4.</p>
 
 <h2>Example</h2>
 

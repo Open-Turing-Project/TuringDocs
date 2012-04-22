@@ -49,7 +49,7 @@
       "title": "Details",
       "raw_content": "<b>View.Update</b> should not be used in conjunction with the \r\n          <b>Sprite </b>module. Sprites can be considered a limited version \r\n          of this technique. <b>View.Update</b> also works well when the entire \r\n          background is changing.<p>\r\n    </p>",
       "text_content": "View.Update should not be used in conjunction with the \r\n          Sprite module. Sprites can be considered a limited version \r\n          of this technique. View.Update also works well when the entire \r\n          background is changing.\r\n    ",
-      "mdown_content": "**View.Update** should not be used in conjunction with the **Sprite **module. Sprites can be considered a limited version of this technique. **View.Update** also works well when the entire background is changing."
+      "mdown_content": "**View.Update** should not be used in conjunction with the **Sprite** module. Sprites can be considered a limited version of this technique. **View.Update** also works well when the entire background is changing."
     },
     {
       "title": "Status",

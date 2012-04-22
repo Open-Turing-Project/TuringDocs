@@ -13,7 +13,7 @@ _id_ {, _id_ } : _typeSpec_
 
 
 ##Description
-Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_,_ phoneNumber_ and _address_.
+Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_, _phoneNumber_ and _address_.
 
 
 

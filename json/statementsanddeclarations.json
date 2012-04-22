@@ -15,7 +15,7 @@
       ],
       "raw_content": "<i>StatementsAndDeclarations </i>are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.<p>\r\nEach <i>statementOrDeclaration</i> is one of:</p>\n<p>\r\n</p>\r\nSee also statement and declaration.<p>\r\n</p>",
       "text_content": " StatementsAndDeclarations are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.\r\nEach statementOrDeclaration is one of:\r\n\r\nSee also statement and declaration.\r\n",
-      "mdown_content": "_StatementsAndDeclarations _are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.\nEach _statementOrDeclaration_ is one of:\nSee also statement and declaration."
+      "mdown_content": "_StatementsAndDeclarations_ are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.\nEach _statementOrDeclaration_ is one of:\nSee also statement and declaration."
     },
     {
       "title": "Example",

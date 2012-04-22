@@ -2,16 +2,16 @@
 
 <h2>Syntax</h2>
 
-<p><strong>intstr</strong> ( <em>i </em>: <strong>int</strong> [ ,<em> width</em> : <strong>int</strong> [ , <em>base</em> : <strong>int</strong> ] ] ) : <strong>string</strong></p>
+<p><strong>intstr</strong> ( <em>i</em> : <strong>int</strong> [ , <em>width</em> : <strong>int</strong> [ , <em>base</em> : <strong>int</strong> ] ] ) : <strong>string</strong></p>
 
 <h2>Description</h2>
 
-<p>The <strong>intstr</strong> function is used to convert an integer to a string. The string is equivalent to <em>i</em>, padded on the left with blanks as necessary to a length of <em>width</em>,<em> </em>written in the given number<em> base</em>. For example, <strong>intstr</strong> (14, 4, 10)="<em>bb_14" where </em>b<em> represents a blank. The </em>width<em> and </em>base <em>parameters are both optional. If they are omitted, the string is made just long enough to hold the value, and the number base is 10. For example, <strong>intstr</strong> (14, 4) = "bb14" and <strong>intstr</strong> (23 ) = "23".
+<p>The <strong>intstr</strong> function is used to convert an integer to a string. The string is equivalent to <em>i</em>, padded on the left with blanks as necessary to a length of <em>width</em>, written in the given number <em>base</em>. For example, <strong>intstr</strong> (14, 4, 10)="<em>bb_14" where </em>b<em> represents a blank. The </em>width<em> and </em>base<em> parameters are both optional. If they are omitted, the string is made just long enough to hold the value, and the number base is 10. For example, <strong>intstr</strong> (14, 4) = "bb14" and <strong>intstr</strong> (23 ) = "23".
 The </em>width<em> parameter must be non-negative. If </em>width<em> is not large enough to represent the value of </em>i_, the length is automatically increased as needed.
 The string returned by <strong>intstr</strong> is of the form:</p>
 
 <p>where {blank} means zero or more blanks, [-] means an optional minus sign, and digit{digit} means one or more digits. The leftmost digit is either non-zero or else a single zero digit. In other words, leading zeros are suppressed.
-The letters A, B, C &#133; are used to represent the digit values 10, 11, 12, &#133; The <em>base </em>must be in the range 2 to 36 (36 because there are ten digits and 26 letters). For example, <strong>intstr</strong> (255, 0, 16) = "FF".
+The letters A, B, C &#133; are used to represent the digit values 10, 11, 12, &#133; The <em>base</em> must be in the range 2 to 36 (36 because there are ten digits and 26 letters). For example, <strong>intstr</strong> (255, 0, 16) = "FF".
 The <strong>intstr</strong> function is the inverse of <strong>strint</strong>, so for any integer <em>i</em>,</p>
 
 <pre><code>    strint ( intstr (i)) = i.

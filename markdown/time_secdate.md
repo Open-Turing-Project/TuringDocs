@@ -7,8 +7,8 @@
 
 
 ##Description
-The **Time.SecDate** function is used to** **convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. 
-If _timeInSecs _is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last **and** Error.LastMsg** will be set to the appropriate error.
+The **Time.SecDate** function is used to convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. 
+If _timeInSecs_ is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last** and **Error.LastMsg** will be set to the appropriate error.
 
 
 

@@ -39,9 +39,9 @@ The caret specifies that the top three bits of the character are set to zero. Fo
 
 
 
-However if _c _is the question mark, as in '^?', the bits are not turned off.
+However if _c_ is the question mark, as in '^?', the bits are not turned off.
 Explicit string constants cannot cross line boundaries. To represent a string that is longer than a line, break it into two or more strings on separate lines and use catenation (+) to join the individual strings.
 An explicit string constant can contain at most 255 characters (this is in implementation constraint).
-String values are not allowed to contain characters with the code values of 0 or 128; these character values are called _eos _(end of string) and _uninitchar_ (uninitialized character). These are reserved by the implementation to mark the end of a string value and to see if a string variable has been initialized.
+String values are not allowed to contain characters with the code values of 0 or 128; these character values are called _eos_ (end of string) and _uninitchar_ (uninitialized character). These are reserved by the implementation to mark the end of a string value and to see if a string variable has been initialized.
 
 

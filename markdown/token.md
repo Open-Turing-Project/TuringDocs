@@ -9,7 +9,7 @@ uses _token-oriented_ input. This means that white space (blanks, tabs, etc.) is
 
         get incomeTax
 ##Example
-In this example, the tokens are **var**,_ x_, :, **real**, _x_, := and 9.84.
+In this example, the tokens are **var**, _x_, :, **real**, _x_, := and 9.84.
 
 
         var x : real

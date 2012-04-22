@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Star </b>(<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.Star (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**Draw.Star **(_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
+      "mdown_content": "**Draw.Star** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Star </b>procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i> then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Star procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color. If y1 is greater than y2 then the star is drawn upside down.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_ then the star is drawn upside down."
+      "mdown_content": "The **Draw.Star** procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_ then the star is drawn upside down."
     },
     {
       "title": "Example",

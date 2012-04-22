@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Scale **is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
+**Pic.Scale** is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
 The _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values.
 
 

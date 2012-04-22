@@ -19,8 +19,20 @@ def markdownFormat(htmlStr,allowTable = true)
 	# convert supported tags
 	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
 	text.gsub!(/<img src="(.*?)"\/?>/,'![Doc Image](\1)')
-	text.gsub!(/<b>(.*?)<\/b>/) {|s| $1 == "*" ? "__#{$1}__" : "**#{$1}**"}
-	text.gsub!(/<i>(.*?)<\/i>/) {|s| $1 == "_" ? "*#{$1}*" : "_#{$1}_"}
+	text.gsub!(/<b>(.*?)<\/b>/) do |s|
+		delim = $1 == "*" ? "__" : "**"
+		str = $1.strip
+		rpad = ($1[-1] == " ") ? " " : ""
+		lpad = ($1[0] == " ") ? " " : ""
+		str.empty? ? $1 : "#{lpad}#{delim}#{str}#{delim}#{rpad}"
+	end
+	text.gsub!(/<i>(.*?)<\/i>/) do |s|
+		delim = $1 == "_" ? "*" : "_"
+		str = $1.strip
+		rpad = ($1[-1] == " ") ? " " : ""
+		lpad = ($1[0] == " ") ? " " : ""
+		str.empty? ? $1 : "#{lpad}#{delim}#{str}#{delim}#{rpad}"
+	end
 	text.gsub!(/<tt>(.*?)<\/tt>/,'`\1`')
 	text.gsub!(/<p>(.*?)<\/p>/,"\n\\1")
 	text.gsub!(/<h([1-6])>(.*?)<\/h[1-6]>/) {|m| ("#"*$1.to_i)+$2+"\n"}
@@ -148,7 +160,6 @@ Dir["html/*.html"].each do |f|
 	end
 	# full html content is only present for normal form pages
 	normalformat = (datastruct[:htmlcontent] == nil)
-	total += 1
 	# markdown
 	markdown = nil
 	if normalformat

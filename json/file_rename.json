@@ -18,7 +18,7 @@
       "title": "Details",
       "raw_content": "If the <b>File.Rename </b>call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If the File.Rename call fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If the **File.Rename **call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If the **File.Rename** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
     },
     {
       "title": "Example",

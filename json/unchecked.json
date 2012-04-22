@@ -15,7 +15,7 @@
       ],
       "raw_content": "Declare <i>p</i> to be an unchecked pointer to an integer (see <b>pointers</b> for details). Pointer <i>p </i>will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.<p>\r\n</p>",
       "text_content": " Declare p to be an unchecked pointer to an integer (see pointers for details). Pointer p will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.\r\n\r\n",
-      "mdown_content": "Declare _p_ to be an unchecked pointer to an integer (see **pointers** for details). Pointer _p _will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers."
+      "mdown_content": "Declare _p_ to be an unchecked pointer to an integer (see **pointers** for details). Pointer _p_ will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers."
     },
     {
       "title": "Example",

@@ -7,7 +7,7 @@
 
 
 ##Description
-**Font.Width **is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn.
+**Font.Width** is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn.
 
 
 

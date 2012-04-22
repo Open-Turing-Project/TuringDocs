@@ -26,7 +26,7 @@ A const declaration creates a name _id_ for a value.
         const c : array 1..2, 1..2 of int := init (1, 2, 3, 4)
                 % So c(1,1)=1, c(1,2)=2, c(2,1)=3, c(2,2)=4
 ##Details
-The initializing value can be an arbitrary value or else a list of items separated by commas inside **init** (&#133;). The syntax of _initializingValue _is:
+The initializing value can be an arbitrary value or else a list of items separated by commas inside **init** (&#133;). The syntax of _initializingValue_ is:
 
 
 

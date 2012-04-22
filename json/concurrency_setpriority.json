@@ -29,7 +29,7 @@
       ],
       "raw_content": "<b><a href=\"getpriority.html\">getpriority</a>, <a href=\"fork.html\">fork</a> </b>and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\n</p>",
       "text_content": " getpriority, fork and monitor.\r\n",
-      "mdown_content": "**[getpriority.html](getpriority), [fork.html](fork) **and **[monitor.html](monitor)**."
+      "mdown_content": "**[getpriority.html](getpriority), [fork.html](fork)** and **[monitor.html](monitor)**."
     }
   ],
   "dependencies": [

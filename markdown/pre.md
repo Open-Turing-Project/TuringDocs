@@ -2,7 +2,7 @@
 #pre
 
 ##Syntax
-An _preAssertion _is:
+An _preAssertion_ is:
 
 **pre** _trueFalseExpn_
 
@@ -10,7 +10,7 @@ An _preAssertion _is:
 
 
 ##Description
-A **pre** assertion is a special form of an **assert** statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the _trueFalseExpn_. The _trueFalseExpn _is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **post** and **invariant** assertions.
+A **pre** assertion is a special form of an **assert** statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the _trueFalseExpn_. The _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **post** and **invariant** assertions.
 
 
 

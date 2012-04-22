@@ -2,18 +2,18 @@
 
 <h2>Syntax</h2>
 
-<p><strong>Draw.FillArc </strong>(<em>x</em>, <em>y</em>,<strong> </strong><em>xRadius</em>, <em>yRadius</em><strong> :</strong> <strong>int</strong>,
+<p><strong>Draw.FillArc</strong> (<em>x</em>, <em>y</em>, <em>xRadius</em>, <em>yRadius</em> <strong>:</strong> <strong>int</strong>,
 <em>initialAngle</em>, <em>finalAngle</em>, <em>Color</em> : <strong>int</strong>)</p>
 
 <h2>Description</h2>
 
-<p>The <strong>Draw.FillArc </strong>procedure is used to draw a filled arc whose center is at (<em>x</em>, <em>y</em>). It then fills in the pie-shaped wedge using the specified <em>Color</em>. To outline a filled arc, use <strong>Draw.FillArc</strong> with the <em>Color</em> parameter set to the fill color and then <strong>Draw.Arc</strong> with the <em>Color</em> parameter set to the border color. For <em>initialAngle </em>and <em>finalAngle</em>, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <em>xRadius </em>and <em>yRadius</em>.</p>
+<p>The <strong>Draw.FillArc</strong> procedure is used to draw a filled arc whose center is at (<em>x</em>, <em>y</em>). It then fills in the pie-shaped wedge using the specified <em>Color</em>. To outline a filled arc, use <strong>Draw.FillArc</strong> with the <em>Color</em> parameter set to the fill color and then <strong>Draw.Arc</strong> with the <em>Color</em> parameter set to the border color. For <em>initialAngle</em> and <em>finalAngle</em>, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <em>xRadius</em> and <em>yRadius</em>.</p>
 
 <p><img src="draw_fillarc01.gif" alt="Doc image" /></p>
 
 <h2>Example</h2>
 
-<p>This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (<em>midx</em>,0) the bottom center of the screen, in bright red. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen.</p>
+<p>This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (<em>midx</em>,0) the bottom center of the screen, in bright red. The <strong>maxx</strong> and <strong>maxy</strong> functions are used to determine the maximum x and y values on the screen.</p>
 
 <pre><code>    View.Set ("graphics")
     const midx := maxx div 2

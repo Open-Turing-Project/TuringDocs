@@ -35,7 +35,7 @@ In the _inputLines_ procedure, halt the program if end of file is encountered be
         
         inputLines
 ##Details
-In the simple case, the optional _guiltyParty_ and _quitReason_ are omitted. The _guiltyParty _option is used to specify the position of failure. See _exceptionHandler_ for an example of a **quit** statement used in conjunction with a handler. A handler, which is located at the beginning of a subprogram body, is given control when a **quit** is executed or a failure, such as division by zero, occurs in the subprogram.
+In the simple case, the optional _guiltyParty_ and _quitReason_ are omitted. The _guiltyParty_ option is used to specify the position of failure. See _exceptionHandler_ for an example of a **quit** statement used in conjunction with a handler. A handler, which is located at the beginning of a subprogram body, is given control when a **quit** is executed or a failure, such as division by zero, occurs in the subprogram.
 The _guiltyParty_ option is used to designate the location of the failure, for example, to tell the debugger what line is considered to be the location of the failure. A _guiltyParty_ is one of:
 
 

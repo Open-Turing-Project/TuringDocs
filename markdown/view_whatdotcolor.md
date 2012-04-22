@@ -40,7 +40,7 @@ Another example illustrates the use of **View.WhatDotColor** to determine the co
 
 
 ##Details
-The screen should be in a"_graphics_" mode. If is not set to "_graphics_"_  _mode,  it will automatically be set to "_graphics_" mode. See **View.Set **for details.
+The screen should be in a"_graphics_" mode. If is not set to "_graphics_"  mode,  it will automatically be set to "_graphics_" mode. See **View.Set** for details.
 
 
 

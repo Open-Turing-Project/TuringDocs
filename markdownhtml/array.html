@@ -38,7 +38,7 @@
 
 <h2>Details</h2>
 
-<p>Each <em>indexType</em> must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the <strong>char</strong> type), or of an enumerated type, an (entire) enumerated type, the <strong>char</strong> type, the <strong>boolean </strong>type, or a named type which is one of these.
+<p>Each <em>indexType</em> must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the <strong>char</strong> type), or of an enumerated type, an (entire) enumerated type, the <strong>char</strong> type, the <strong>boolean</strong> type, or a named type which is one of these.
 Arrays can also be declared in the form
 The upper bound of <em>a</em> will be computed from the count of the initializing values. Both <strong>var</strong> and <strong>const</strong> arrays can be declared this way. An array variable/constant declared with "*" as an upper bound must have an initializing list. Only one dimensional arrays may be declared in this form.
 Arrays can be assigned as a whole (to arrays of an equivalent type), but they cannot be compared.
@@ -69,9 +69,9 @@ An array can be initialized in its declaration using <strong>init</strong>. For 
 <h2>Details</h2>
 
 <p>The ends of the range of a subscript are called the <em>bounds</em> of the array. If these values are not known until run time, the array is said to be <em>dynamic</em>. In the above example, <em>height</em> is a dynamic array. Dynamic arrays can be declared as variables, as in the case for <em>height</em>. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using <strong>init</strong>.
-In the above example, <strong>upper</strong><em>(a) </em>returns the size of <em>a</em>. See also <strong>upper</strong> and <strong>lower</strong>.
+In the above example, <strong>upper</strong><em>(a)</em> returns the size of <em>a</em>. See also <strong>upper</strong> and <strong>lower</strong>.
 In the declaration of an array parameter, the upper bound can be given as an asterisk (<strong>*</strong>), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from <em>height</em> in this example).
-You can have arrays of other types, for example arrays of record. If <em>R </em>is an array of records, then <em>R(i).f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
+You can have arrays of other types, for example arrays of record. If <em>R</em> is an array of records, then <em>R(i).f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
 
 <h2>Details</h2>
 

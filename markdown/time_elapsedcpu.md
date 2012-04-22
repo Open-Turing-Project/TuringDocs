@@ -2,12 +2,12 @@
 #Time.ElapsedCPU
 
 ##Syntax
-**Time.ElapsedCPU **: **int**
+**Time.ElapsedCPU** : **int**
 
 
 
 ##Description
-The **Time.ElapsedCPU **function is used on a multitasking system such as UNIX to** **determine the amount of time that has been used by this program (process). The number of central processor milliseconds assigned to this program is returned. This is of little use on a personal computer, where **Time.ElapsedCPU **returns the same value as **Time.Elapsed**.
+The **Time.ElapsedCPU** function is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). The number of central processor milliseconds assigned to this program is returned. This is of little use on a personal computer, where **Time.ElapsedCPU** returns the same value as **Time.Elapsed**.
 
 
 
@@ -26,6 +26,6 @@ This means that you can only call the function by calling **Time.ElapsedCPU**, n
 
 
 ##See also
-**[time_elapsed.html](Time.Elapsed) **and **[time_delay.html](Time.Delay)** subprograms.
+**[time_elapsed.html](Time.Elapsed)** and **[time_delay.html](Time.Delay)** subprograms.
 
 

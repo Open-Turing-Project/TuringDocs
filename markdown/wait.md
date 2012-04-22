@@ -16,7 +16,7 @@ The **wait** statement is used in a concurrent program to cause the executing pr
 
 ##Details
 A **wait** statement for a priority condition must include the optional _expn_,. This expression must be a non-negative **int** value which is used to order processes waiting for the condition, low numbers first.
-A **wait** statement for a **timeout** condition must include the optional _expn_, which must be a non-negative **int** value which gives the _timeout interval_. _A _process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.
+A **wait** statement for a **timeout** condition must include the optional _expn_, which must be a non-negative **int** value which gives the _timeout interval_. _A_ process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.
 
 
 

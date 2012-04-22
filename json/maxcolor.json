@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>screen</i>\" mode. See <b>setscreen</b> for details.<p>\r\nFor IBM PC compatibles in \"<i>screen</i>\"<i> </i>mode, <b>maxcolor</b> = 15. For the default IBM PC compatible \"<i>graphics</i>\" mode (CGA), <b>maxcolor</b> = 3.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If it is not, it will automatically be set to \"screen\" mode. See setscreen for details.\r\nFor IBM PC compatibles in \"screen\" mode, maxcolor = 15. For the default IBM PC compatible \"graphics\" mode (CGA), maxcolor = 3.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\"_ _or \"_graphics_\" mode. If it is not, it will automatically be set to \"_screen_\" mode. See **setscreen** for details.\nFor IBM PC compatibles in \"_screen_\"_ _mode, **maxcolor** = 15. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcolor** = 3."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If it is not, it will automatically be set to \"_screen_\" mode. See **setscreen** for details.\nFor IBM PC compatibles in \"_screen_\" mode, **maxcolor** = 15. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcolor** = 3."
     },
     {
       "title": "See also",

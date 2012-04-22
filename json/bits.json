@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>bits</b><i> </i>operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;<p>\r\n</p>",
       "text_content": " The bits operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 \r\n",
-      "mdown_content": "The **bits**_ _operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;"
+      "mdown_content": "The **bits** operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;"
     },
     {
       "title": "Example",

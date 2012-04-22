@@ -2,12 +2,12 @@
 #index
 
 ##Syntax
-**index** (_s _, _patt_ : **string** ) : **int**
+**index** (_s_ , _patt_ : **string** ) : **int**
 
 
 
 ##Description
-The **index** function is used to find the position of _patt _within string _s_. For example, **index** ( "chair", "air" ) is 3.
+The **index** function is used to find the position of _patt_ within string _s_. For example, **index** ( "chair", "air" ) is 3.
 
 
 
@@ -19,7 +19,7 @@ This program outputs 2, because "ill" is a substring of "willing", starting at t
         put index ( word, "ill" )
 ##Details
 If the pattern (_patt_) does not appear in the string (_s_), **index** returns 0 (zero). For example, here is an **if** statement that checks to see if string _s_ contains a blank:
-The **index** is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an **if** statement that checks to see if _ch_,_ _which is declared using **var** _ch _: **string** (1), is a digit:
+The **index** is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an **if** statement that checks to see if _ch_, which is declared using **var** _ch_ : **string** (1), is a digit:
 If a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, **index** ("pingpong", "ng") returns 3.
 If _patt_ is the null string, the result is 1.
 

@@ -2,7 +2,7 @@
 #Net.CharAvailable
 
 ##Syntax
-**Net.CharAvailable **(_netStream_ : **int**) : **boolean**
+**Net.CharAvailable** (_netStream_ : **int**) : **boolean**
 
 
 

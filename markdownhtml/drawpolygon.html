@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p>The <strong>drawpolygon</strong> procedure is used to draw a polygon with <em>n</em> points. A line is drawn in <em>Color </em>from the point (<em>x</em>(1), <em>y</em>(1)) to (<em>x</em>(2), <em>y</em>(2)) to (<em>x</em>(3), <em>y</em>(3)) and so on. After drawing the line to (<em>x</em>(<em>n</em>), <em>y</em> (<em>n</em>)), a line will be drawn back to (<em>x</em>(1), <em>y</em>(1)), closing the polygon. The <strong>drawpolygon</strong> procedure is equivalent to:</p>
+<p>The <strong>drawpolygon</strong> procedure is used to draw a polygon with <em>n</em> points. A line is drawn in <em>Color</em> from the point (<em>x</em>(1), <em>y</em>(1)) to (<em>x</em>(2), <em>y</em>(2)) to (<em>x</em>(3), <em>y</em>(3)) and so on. After drawing the line to (<em>x</em>(<em>n</em>), <em>y</em> (<em>n</em>)), a line will be drawn back to (<em>x</em>(1), <em>y</em>(1)), closing the polygon. The <strong>drawpolygon</strong> procedure is equivalent to:</p>
 
 <pre><code>    for i : 1 .. n - 1
         drawline (x (i), y(i), x (i + 1), y (i + 1), Color)

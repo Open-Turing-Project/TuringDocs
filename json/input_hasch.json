@@ -21,13 +21,13 @@
       ],
       "raw_content": "The <i>flush </i>procedure gets rid of any characters that have been typed but not yet read.<p>\r\n</p>",
       "text_content": " The flush procedure gets rid of any characters that have been typed but not yet read.\r\n\r\n",
-      "mdown_content": "The _flush _procedure gets rid of any characters that have been typed but not yet read."
+      "mdown_content": "The _flush_ procedure gets rid of any characters that have been typed but not yet read."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to \"<i>screen</i>\" mode.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. See the View.Set procedure for details. If the screen is not in one of these modes, it will automatically be set to \"screen\" mode.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\"_ _or \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"_screen_\" mode."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"_screen_\" mode."
     },
     {
       "title": "Status",

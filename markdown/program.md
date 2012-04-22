@@ -29,7 +29,7 @@ This is a complete Turing program. It outputs a triangle of stars.
             stars := stars + "*"
         end loop
 ##Example
-This is a complete Turing program. It outputs _Hello _once and _Goodbye_ twice.
+This is a complete Turing program. It outputs _Hello_ once and _Goodbye_ twice.
 
 
         procedure sayItAgain ( what : string, n : int )

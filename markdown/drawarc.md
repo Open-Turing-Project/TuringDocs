@@ -9,7 +9,7 @@ _initialAngle_, _finalAngle_, _Color_ : **int**)
 
 
 ##Description
-The **drawarc** procedure is used to draw an arc whose center is at (_x_, _y_). This is just like **drawoval**, except that you must also give two angles, _initialAngle _and _finalAngle_, which determine where to start and stop drawing. Zero degrees is "three o'clock", 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius _and _yRadius_.
+The **drawarc** procedure is used to draw an arc whose center is at (_x_, _y_). This is just like **drawoval**, except that you must also give two angles, _initialAngle_ and _finalAngle_, which determine where to start and stop drawing. Zero degrees is "three o'clock", 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius_ and _yRadius_.
 
 ![Doc image](drawarc01.gif)
 

@@ -2,7 +2,7 @@
 #whatcolorback
 
 ##Syntax
-**whatcolorback** :_ _**int**
+**whatcolorback** : **int**
 
 
 
@@ -20,7 +20,7 @@ This program outputs the currently-active background color number. The backgroun
         put "The background of this writing"
         put  "is in color number ", whatcolorback
 ##Details
-The screen should be in a "_screen_" or_ _"_graphics_" mode. Beware that the meaning of background color is different in these two modes. See **colorback** for details.
+The screen should be in a "_screen_" or "_graphics_" mode. Beware that the meaning of background color is different in these two modes. See **colorback** for details.
 
 
 

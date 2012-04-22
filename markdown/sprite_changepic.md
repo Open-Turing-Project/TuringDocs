@@ -12,7 +12,7 @@ Changes the picture associated with a sprite while maintaining the sprites heigh
 
 
 ##Example
-Here is a program that t that loads six images from files _Pic1.bmp** **_through_** **Pic6.bmp_ and then displays them sequentially in the center of the screen.
+Here is a program that t that loads six images from files _Pic1.bmp_ through _Pic6.bmp_ and then displays them sequentially in the center of the screen.
 
 
         var pics : array 0 .. 5 of int

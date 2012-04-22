@@ -21,7 +21,7 @@
       ],
       "raw_content": "Here is a program that t that loads six images from files <i>Pic1.bmp<b> </b></i>through<i><b> </b>Pic6.bmp</i> and then displays them sequentially in the center of the screen.<p>\r\n</p>",
       "text_content": " Here is a program that t that loads six images from files Pic1.bmp through Pic6.bmp and then displays them sequentially in the center of the screen.\r\n\r\n",
-      "mdown_content": "Here is a program that t that loads six images from files _Pic1.bmp** **_through_** **Pic6.bmp_ and then displays them sequentially in the center of the screen."
+      "mdown_content": "Here is a program that t that loads six images from files _Pic1.bmp_ through _Pic6.bmp_ and then displays them sequentially in the center of the screen."
     },
     {
       "title": "Status",

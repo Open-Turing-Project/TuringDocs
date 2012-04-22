@@ -31,6 +31,6 @@ Be careful not to confuse **addressint** with pointer types. In low level langua
 
 
 ##See also
-the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant) _(how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable.
+the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant)_ (how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable.
 
 

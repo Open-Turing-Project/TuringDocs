@@ -9,7 +9,7 @@
 
 <h2>Description</h2>
 
-<p>A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <strong>procedure</strong><em> </em>and<em> </em><strong>function</strong><em> </em>declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.</p>
+<p>A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <strong>procedure</strong> and <strong>function</strong> declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.</p>
 
 <h2>Example</h2>
 
@@ -29,7 +29,7 @@
 <h2>Details</h2>
 
 <p>Parameters to a procedure may be declared using <strong>var</strong>, which means that the parameter can be changed inside the procedure. For example, <em>s</em> is changed in the <em>x</em> procedure. If a parameter is declared without <strong>var</strong>, it cannot be changed. (This differs from Pascal, where non-<strong>var</strong> parameters can be changed.)  Parameters to functions cannot be declared to be <strong>var</strong>.
-Parameters declared <strong>var</strong> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <em>p</em> ( <em>a</em> (<em>i</em>)), in which array element <em>a</em>(<em>i</em>) is passed to procedure <em>p</em>, a change to <em>i </em>in <em>p </em>does not change the element referred to by <em>p</em>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <strong>char</strong> type) parameter is passed by reference whether or not it is declared <strong>var</strong>. In all other cases (scalar non-<strong>var</strong> parameters) the parameter is passed by value (the actual value is copied to the procedure).
+Parameters declared <strong>var</strong> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <em>p</em> ( <em>a</em> (<em>i</em>)), in which array element <em>a</em>(<em>i</em>) is passed to procedure <em>p</em>, a change to <em>i</em> in <em>p</em> does not change the element referred to by <em>p</em>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <strong>char</strong> type) parameter is passed by reference whether or not it is declared <strong>var</strong>. In all other cases (scalar non-<strong>var</strong> parameters) the parameter is passed by value (the actual value is copied to the procedure).
 The upper bound of an array or string that is a formal parameter may be specified as an asterisk (<strong>*</strong>), as is done above for parameter <em>s</em> in procedure <em>x</em>. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called <em>dynamic</em> parameters.
 The names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.</p>
 
@@ -60,7 +60,7 @@ The names of the formal parameters must be distinct from each other, from the pr
 
 <h2>Details</h2>
 
-<p>Form (b) of <em>paramDeclaration </em>is used to specify formal parameters that are themselves procedures or functions. For example, in the <em>findZero</em> function, <em>f</em> is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the <em>findZero</em> function can be replaced by the following with no change in the action. The names <em>g</em> and <em>x</em> serve no purpose, except as place holders in the declaration of <em>f</em>.</p>
+<p>Form (b) of <em>paramDeclaration</em> is used to specify formal parameters that are themselves procedures or functions. For example, in the <em>findZero</em> function, <em>f</em> is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the <em>findZero</em> function can be replaced by the following with no change in the action. The names <em>g</em> and <em>x</em> serve no purpose, except as place holders in the declaration of <em>f</em>.</p>
 
 <pre><code>    function findZero ( f : function g ( x : real) : real,
                     left, right, accuracy : real ) : real

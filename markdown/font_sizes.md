@@ -9,7 +9,7 @@ _internalLeading_ : **int**)
 
 
 ##Description
-**Font.Sizes **is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.
+**Font.Sizes** is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.
 
 ![Doc image](font_sizes01.gif)
 

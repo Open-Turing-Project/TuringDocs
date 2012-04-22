@@ -23,6 +23,6 @@ Enter the current object onto a list of displayable objects. The module called _
         end C
 ##Details
 It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.
-The notation to call exported subprogram _p_ of an enclosing class _C_ or of its ancestor _D_, is _C.p _or _D.p_. Calls of this form, which can appear only within class _C_, call the subprogram in _C_ (or in _D_ in the case of _D.p_) regardless of the object type, or of any overriding, or of the status of initialization.
+The notation to call exported subprogram _p_ of an enclosing class _C_ or of its ancestor _D_, is _C.p_ or _D.p_. Calls of this form, which can appear only within class _C_, call the subprogram in _C_ (or in _D_ in the case of _D.p_) regardless of the object type, or of any overriding, or of the status of initialization.
 
 

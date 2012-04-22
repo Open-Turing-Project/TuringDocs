@@ -19,7 +19,7 @@ This program outputs the currently-active color number. The  message is also giv
         
         put "This writing is in color number ", whatcolor
 ##Details
-The screen should be in a "_screen_"_ _or "_graphics_" mode. See **setscreen** for details.
+The screen should be in a "_screen_" or "_graphics_" mode. See **setscreen** for details.
 
 
 

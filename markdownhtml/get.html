@@ -8,7 +8,7 @@
 
 <h2>Description</h2>
 
-<p>The <strong>get</strong> statement inputs each of the <em>getItems</em>. Ordinarily, the output comes from the keyboard. However, if the <em>streamNumber </em>is present, the input comes from the file specified by the stream number (see the <strong>open</strong> statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.
+<p>The <strong>get</strong> statement inputs each of the <em>getItems</em>. Ordinarily, the output comes from the keyboard. However, if the <em>streamNumber</em> is present, the input comes from the file specified by the stream number (see the <strong>open</strong> statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.
 The syntax of a <em>getItem</em> is one of:
 These items are used to support three kinds of input:
 (1) token and character oriented input: supported by forms (a) and (b),
@@ -51,8 +51,8 @@ Examples of these will be given, followed by detailed explanations.</p>
 
 <h2>Details</h2>
 
-<p>A <em>token</em> is a sequence of characters surrounded by <em>white space</em>, where <em>white space </em>is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the <em>variableReference</em> in form (a) is a string, integer, real, <strong>int</strong><em>n</em>, <strong>nat</strong><em>n</em>, or <strong>real</strong><em>n</em>. Turing<em> </em>skips white space, reads a token into the <em>variableReference</em>, and then skips white space (stopping at the beginning of the next line).
-If the <em>variableReference</em> is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving <em>name </em>and <em>title</em> above. If the <em>variableReference</em> is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving <em>weight</em> above.
+<p>A <em>token</em> is a sequence of characters surrounded by <em>white space</em>, where <em>white space</em> is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the <em>variableReference</em> in form (a) is a string, integer, real, <strong>int</strong><em>n</em>, <strong>nat</strong><em>n</em>, or <strong>real</strong><em>n</em>. Turing skips white space, reads a token into the <em>variableReference</em>, and then skips white space (stopping at the beginning of the next line).
+If the <em>variableReference</em> is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving <em>name</em> and <em>title</em> above. If the <em>variableReference</em> is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving <em>weight</em> above.
 When the input is coming from the keyboard, no input is done until Return is typed. The line that is input may contain more than one token. Any tokens that are not input by one <strong>get</strong> statement will remain to be input by the next <strong>get</strong> statement.
 Turing has been modified so that token-oriented input now also skips white space following the token, but does not skip beyond the beginning of the next line. This change implies that  form (b) is usually not needed, as <strong>skip</strong> was used to skip white space after the token.
 Form (a) supports <strong>char</strong> and <strong>char</strong>(<em>n</em>). If the type is <strong>char</strong>, exactly one character is read, with no skipping of white space before or after. This character may be, for example, a blank or a carriage return. If the type is <strong>char</strong>(<em>n</em>), exactly <em>n</em> characters are read, with no skipping of white space.</p>
@@ -98,7 +98,7 @@ Form (a) supports <strong>char</strong> and <strong>char</strong>(<em>n</em>). I
 
 <h2>Example</h2>
 
-<p>Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the <strong>get</strong> <strong>skip</strong> line can be omitted. This omission is possible because the line <strong>get</strong><em> word</em> now automatically skips white space following the input value, up to the beginning of the next line.
+<p>Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the <strong>get</strong> <strong>skip</strong> line can be omitted. This omission is possible because the line <strong>get</strong> <em>word</em> now automatically skips white space following the input value, up to the beginning of the next line.
 In the above and the next example, if the input has been redirected so that it is from a file, <strong>eof</strong> becomes true exactly when there are no more characters to be read. If the input is coming from the keyboard, you can signal <strong>eof</strong> by typing control-Z (on a PC) or control-D (on UNIX).</p>
 
 <pre><code>    var word : string
@@ -112,7 +112,7 @@ In the above and the next example, if the input has been redirected so that it i
 
 <h2>Details</h2>
 
-<p>In form (c) of <em>getItem</em>, the <em>variableReference </em>is followed by :<strong>*</strong> which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.</p>
+<p>In form (c) of <em>getItem</em>, the <em>variableReference</em> is followed by :<strong>*</strong> which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.</p>
 
 <h2>Example</h2>
 
@@ -128,8 +128,8 @@ In the above and the next example, if the input has been redirected so that it i
 
 <h2>Details</h2>
 
-<p>In form (d) of <em>getItem</em>, the <em>variableReference </em>is followed by
-which specifies character-oriented input. This form causes the specified number (<em>widthExpn</em>) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the <em>variableReference </em>(this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with <strong>string</strong> and <strong>char</strong>(<em>n</em>) variables, but not with <strong>char</strong>, <strong>int</strong> or any other type.</p>
+<p>In form (d) of <em>getItem</em>, the <em>variableReference</em> is followed by
+which specifies character-oriented input. This form causes the specified number (<em>widthExpn</em>) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the <em>variableReference</em> (this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with <strong>string</strong> and <strong>char</strong>(<em>n</em>) variables, but not with <strong>char</strong>, <strong>int</strong> or any other type.</p>
 
 <pre><code>    : widthExpn 
 </code></pre>

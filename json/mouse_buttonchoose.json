@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Mouse.ButtonChoose </b>(<i>choice</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Mouse.ButtonChoose (choice : string)\r\n",
-      "mdown_content": "**Mouse.ButtonChoose **(_choice_ : **string**)"
+      "mdown_content": "**Mouse.ButtonChoose** (_choice_ : **string**)"
     },
     {
       "title": "Description",

@@ -2,18 +2,18 @@
 #Draw.Fill
 
 ##Syntax
-**Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_,** **_borderColor_ **: int**)
+**Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_, _borderColor_ **: int**)
 
 
 
 ##Description
-The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_.
+The **Draw.Fill** procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_.
 
 ![Doc image](draw_fill01.gif)
 
 
 ##Example
-This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen.
+This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen.
 
 
 

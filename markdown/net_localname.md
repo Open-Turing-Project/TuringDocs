@@ -7,7 +7,7 @@
 
 
 ##Description
-Returns** **the TCP/IP hostname of the machine the program is running on.
+Returns the TCP/IP hostname of the machine the program is running on.
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>seekStatement</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>seek</b> : <i>fileNumber </i>, <i>filePosition</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>seek</b> : <i>fileNumber</i> , *</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A seekStatement is one of:\r\n (a)seek : fileNumber , filePosition (b)seek : fileNumber , *",
-      "mdown_content": "A _seekStatement_ is one of:\n\n(a)**seek** : _fileNumber _, _filePosition_\n(b)**seek** : _fileNumber_ , *\n"
+      "mdown_content": "A _seekStatement_ is one of:\n\n(a)**seek** : _fileNumber_ , _filePosition_\n(b)**seek** : _fileNumber_ , *\n"
     },
     {
       "title": "Description",

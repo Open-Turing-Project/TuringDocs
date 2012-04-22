@@ -21,7 +21,7 @@
       ],
       "raw_content": "Copy the byte value at memory location 246 into <i>b </i>and then set that memory byte to zero.<p>\r\n</p>",
       "text_content": " Copy the byte value at memory location 246 into b and then set that memory byte to zero.\r\n\r\n",
-      "mdown_content": "Copy the byte value at memory location 246 into _b _and then set that memory byte to zero."
+      "mdown_content": "Copy the byte value at memory location 246 into _b_ and then set that memory byte to zero."
     },
     {
       "title": "Details",

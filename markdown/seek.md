@@ -4,7 +4,7 @@
 ##Syntax
 A _seekStatement_ is one of:
 
-(a)**seek** : _fileNumber _, _filePosition_
+(a)**seek** : _fileNumber_ , _filePosition_
 (b)**seek** : _fileNumber_ , *
 
 

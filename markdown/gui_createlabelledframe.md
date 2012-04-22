@@ -32,7 +32,7 @@ The following program draws three frames in the window.
         exdentFrame := GUI. CreateLabelledFrame (170, 10, 240, 70, 
             GUI.EXDENT, "Exdent")
 ##Details
-When **GUI.CreateLabelledFrame **is called, the newly created labelled frame will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreateLabelledFrame** is called, the newly created labelled frame will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 A labelled frame widget is a passive widget and cannot be enabled or disabled.
 
 

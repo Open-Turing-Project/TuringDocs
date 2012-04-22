@@ -2,12 +2,12 @@
 #Draw.Star
 
 ##Syntax
-**Draw.Star **(_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
+**Draw.Star** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)
 
 
 
 ##Description
-The **Draw.Star **procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_ then the star is drawn upside down.
+The **Draw.Star** procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_ then the star is drawn upside down.
 
 ![Doc image](draw_star01.gif)
 

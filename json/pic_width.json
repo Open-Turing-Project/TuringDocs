@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>Pic.Width </b>returns the width in pixels of the picture represented by <i>picID</i>.<p>\r\nThis function is often used in conjunction with <b>Pic.Height</b> to obtain the dimensions of a picture loaded using <b>Pic.FileNew</b>.</p>\n<p>\r\n</p>",
       "text_content": " Pic.Width returns the width in pixels of the picture represented by picID.\r\nThis function is often used in conjunction with Pic.Height to obtain the dimensions of a picture loaded using Pic.FileNew.\r\n",
-      "mdown_content": "**Pic.Width **returns the width in pixels of the picture represented by _picID_.\nThis function is often used in conjunction with **Pic.Height** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
+      "mdown_content": "**Pic.Width** returns the width in pixels of the picture represented by _picID_.\nThis function is often used in conjunction with **Pic.Height** to obtain the dimensions of a picture loaded using **Pic.FileNew**."
     },
     {
       "title": "Example",

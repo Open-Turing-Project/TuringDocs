@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "Given a set type named <i>S</i>,<i> </i>the set of all of the possible elements of <i>S</i> is written <i>S </i>(<b>all</b>).<p>\r\n</p>",
       "text_content": " Given a set type named S, the set of all of the possible elements of S is written S (all).\r\n",
-      "mdown_content": "Given a set type named _S_,_ _the set of all of the possible elements of _S_ is written _S _(**all**)."
+      "mdown_content": "Given a set type named _S_, the set of all of the possible elements of _S_ is written _S_ (**all**)."
     },
     {
       "title": "Example",

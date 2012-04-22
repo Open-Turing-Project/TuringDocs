@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program repeatedly and randomly prints out <i>Hi ho</i>,<i> hi ho</i> or <i>It's off to work we go</i>.<p>\r\n</p>",
       "text_content": " This program repeatedly and randomly prints out Hi ho, hi ho or It's off to work we go.\r\n\r\n",
-      "mdown_content": "This program repeatedly and randomly prints out _Hi ho_,_ hi ho_ or _It's off to work we go_."
+      "mdown_content": "This program repeatedly and randomly prints out _Hi ho_, _hi ho_ or _It's off to work we go_."
     },
     {
       "title": "Details",

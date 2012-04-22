@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randint</b> ( <b>var</b> <i>i</i> : <b>int</b>, <i>low</i>,<i> high</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " randint ( var i : int, low, high : int )\r\n",
-      "mdown_content": "**randint** ( **var** _i_ : **int**, _low_,_ high_ : **int** )"
+      "mdown_content": "**randint** ( **var** _i_ : **int**, _low_, _high_ : **int** )"
     },
     {
       "title": "Description",

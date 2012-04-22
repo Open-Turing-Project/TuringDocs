@@ -26,7 +26,7 @@ An assignment statement calculates the value of the expression (_expn_) and assi
         var b : array 1 .. 25 of string
         b := a          % Array b becomes (is assigned) array a
 ##Details
-The expression on the right of := must be _assignable _to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to _i_,_ _but a **real** value such as 3.14 would not be not assignable to _i_. Entire arrays, records and unions can be assigned. For example, in the above, array _a_ is assigned to array _b_. See _assignability _for the exact rules of allowed assignments.
+The expression on the right of := must be _assignable_ to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to _i_, but a **real** value such as 3.14 would not be not assignable to _i_. Entire arrays, records and unions can be assigned. For example, in the above, array _a_ is assigned to array _b_. See _assignability_ for the exact rules of allowed assignments.
 You cannot assign a new value to a constant (**const**).
 There are short forms that allow you to write assignment statements more compactly. For example,
 

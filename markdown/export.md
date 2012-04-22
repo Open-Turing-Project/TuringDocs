@@ -15,7 +15,7 @@ An **export** list is used to specify those items declared in a module, monitor 
 
 
 ##Example
-In this example, the procedures names _pop_ and _push_ are exported from the _stack_ module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word _stack_ and a dot must precede the use of these names. Since _top _and _contents_ were not exported, they can be accessed only from inside the module.
+In this example, the procedures names _pop_ and _push_ are exported from the _stack_ module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word _stack_ and a dot must precede the use of these names. Since _top_ and _contents_ were not exported, they can be accessed only from inside the module.
 
 
         module stack
@@ -43,7 +43,7 @@ The form of _exportMethod_ is one of:
 
 
 
-The keyword **var** means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable _name _is exported **var** from module _M_,_ name _can be changed from outside of _M_ by _M.name _:= "_Surprise!_".
+The keyword **var** means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable _name_ is exported **var** from module _M_, _name_ can be changed from outside of _M_ by _M.name_ := "_Surprise!_".
 The keyword **unqualified** means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module _M_ exports procedure _p_ unqualified, a call to _p_ outside of _M_ can be simply _p_ instead of the usual _M.p_. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword **unqualified** can be abbreviated to ~. which is pronounced as "not dot".
 The keyword **pervasive**, which is only meaningful if **unqualified** is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.
 The keyword **opaque**, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See **module** declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.

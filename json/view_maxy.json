@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>maxy</b> function is used to<b> </b>determine the maximum value of y for the current graphics mode.<p>\r\n</p>",
       "text_content": " The maxy function is used to determine the maximum value of y for the current graphics mode.\r\n",
-      "mdown_content": "The **maxy** function is used to** **determine the maximum value of y for the current graphics mode."
+      "mdown_content": "The **maxy** function is used to determine the maximum value of y for the current graphics mode."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>graphics</i>\" mode. See <b>setscreen </b>for details.<p>\r\nFor the default IBM PC compatible graphics mode (CGA), <b>maxy </b>= 199.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"graphics\" mode. If it is not, it will automatically be set to \"graphics\" mode. See setscreen for details.\r\nFor the default IBM PC compatible graphics mode (CGA), maxy = 199.\r\n",
-      "mdown_content": "The screen should be in a \"_graphics_\" mode. If it is not, it will automatically be set to \"_graphics_\" mode. See **setscreen **for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxy **= 199."
+      "mdown_content": "The screen should be in a \"_graphics_\" mode. If it is not, it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxy** = 199."
     },
     {
       "title": "Status",

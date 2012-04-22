@@ -7,7 +7,7 @@
 
 
 ##Description
-The **date** statement is used to determine the current date. Variable _d _is assigned a string in the format "_dd mmm yy_", where _mmm_ is the first 3 characters of the month, e.g., "_Apr_". For example, if the date is Christmas 2002, _d _will be set to "_25 Dec 02_".
+The **date** statement is used to determine the current date. Variable _d_ is assigned a string in the format "_dd mmm yy_", where _mmm_ is the first 3 characters of the month, e.g., "_Apr_". For example, if the date is Christmas 2002, _d_ will be set to "_25 Dec 02_".
 
 
 

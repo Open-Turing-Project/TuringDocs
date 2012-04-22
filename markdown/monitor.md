@@ -5,11 +5,11 @@
 A _monitorDeclaration_ is:
 
 **monitor** _id_
-[ **implement** _implementItem _]
-[ **implement** **by** _implementByItem _]
+[ **implement** _implementItem_ ]
+[ **implement** **by** _implementByItem_ ]
 [ **import** [ **var** ] _importItem_
-_ _{,_ _[ **var** ]_ importItem_ } ]
-[ **export** [ _howExport_ ] _id _{,[_howExport_ ]_ id_ }]
+{, [ **var** ] _importItem_ } ]
+[ **export** [ _howExport_ ] _id_ {,[_howExport_ ] _id_ }]
 _statementsAndDeclarations_
 **end** _id_
 
@@ -17,7 +17,7 @@ _statementsAndDeclarations_
 
 
 ##Description
-A monitor is a special purpose module (see **module**) that is used with concurrent processes (see **process**). At most, one concurrent process (see **process**) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides _mutually exclusive _access to the monitor's internal data.
+A monitor is a special purpose module (see **module**) that is used with concurrent processes (see **process**). At most, one concurrent process (see **process**) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides _mutually exclusive_ access to the monitor's internal data.
 
 
 
@@ -65,7 +65,7 @@ The body of a monitor has the same form as that of a module, except that modules
 
 
 ##Details
-The syntax of a _monitorDeclaration_ presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses. See **module** for an explanation of these extra features. There is also an optional _compilerTimeIntegerExpression_ in the first line, which is explained below. The full syntax_ _is:
+The syntax of a _monitorDeclaration_ presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses. See **module** for an explanation of these extra features. There is also an optional _compilerTimeIntegerExpression_ in the first line, which is explained below. The full syntax is:
 If the optional _compileTimeIntegerExpression_ is present, this is a _device monitor_. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this _compileTimeIntegerExpression_.
 
 

@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "When applied to set values, <b>xor</b> (symmetric difference) yields a set which includes element <i>e</i> if and only if <i>e</i> is contained in exactly one of the operands. When applied to non-negative integer values, <b>xor</b> yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands <i>A</i> and <i>B </i>are evaluated.<p>\r\n</p>",
       "text_content": " When applied to set values, xor (symmetric difference) yields a set which includes element e if and only if e is contained in exactly one of the operands. When applied to non-negative integer values, xor yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands A and B are evaluated.\r\n",
-      "mdown_content": "When applied to set values, **xor** (symmetric difference) yields a set which includes element _e_ if and only if _e_ is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands _A_ and _B _are evaluated."
+      "mdown_content": "When applied to set values, **xor** (symmetric difference) yields a set which includes element _e_ if and only if _e_ is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands _A_ and _B_ are evaluated."
     },
     {
       "title": "Example",

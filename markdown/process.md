@@ -33,8 +33,8 @@ The **process** declaration creates a template for a process (a concurrent activ
 A process declaration can appear wherever a module declaration is allowed except that a process declaration is not allowed in a class. The declarations and statements in a process declaration are the same as those in a procedure.
 See _paramDeclaration_ for details about parameters. There is an anomaly in parameters to processes, that can lead to errors. In particular, non-**var** parameters that are non-scalars (such as strings and arrays) are passed by reference. The result is that the target of the reference may change value while the process is executing, which in turn means that the seemingly constant parameter is not really constant. For example, if the string variable _s_ were passed to the _greetings_ process and subsequently changed, the value of _greetings_' formal parameter would change.
 The syntax of a _processDeclaration_ presented above has been simplified by leaving out the optional stack size (_compileTimeExpn_), **import** list, **pre** condition, **init** clause, **post** condition and exception handler. 
-The full syntax_ _is:
-See **pervasive** for information on **pervasive** processes. The optional _compileTimeExpn _following the parameter list (if any) is used to specify the number of bytes for the process' stack.
+The full syntax is:
+See **pervasive** for information on **pervasive** processes. The optional _compileTimeExpn_ following the parameter list (if any) is used to specify the number of bytes for the process' stack.
 
 
         process [ pervasive ] id

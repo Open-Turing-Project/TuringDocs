@@ -7,7 +7,7 @@
 
 
 ##Description
-The **simutime **function returns the number of simulated time units that have passed since program execution began.
+The **simutime** function returns the number of simulated time units that have passed since program execution began.
 
 
 

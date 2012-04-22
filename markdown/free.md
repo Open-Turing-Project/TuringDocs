@@ -32,7 +32,7 @@ Using a collection, declare a list of records and allocate one of these records.
         free list, first    % Deallocate the element of list located by first
                     % Short form: free first
 ##Details
-The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the _collectionOrClassId _in the **free** statement must be omitted.
+The **free** statement sets the pointer variable to the **nil** value. See the **new** statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the _collectionOrClassId_ in the **free** statement must be omitted.
 An imported class can have one of its objects destroyed (by the **free** statement) only if the class is imported **var**.
 The _collectionOrClassId_ is optional in the **free** statement.
 

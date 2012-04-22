@@ -17,7 +17,7 @@ This program tells you how many seconds since 1970.
 
         put "The number of seconds since 1970 is ", Time.Sec
 ##Details
-Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date **procedure will give incorrect results.
+Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date** procedure will give incorrect results.
 The string form of the date can be converted to a numeric form for comparison purposes using the **Time.DateSec** function. The numeric form can be converted to a string using the **Time.SecDate** function. The numeric form of the time can be obtained using the **Time.Sec** function.
 
 

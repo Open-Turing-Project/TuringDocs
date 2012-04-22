@@ -81,7 +81,7 @@ When a menu is not enabled, the text in the menu bar is grayed out and clicking 
 
 ##Details
 The following GUI subprograms can be called with a menu as the _widgetID_ parameter:
-**GUI.Show**,** GUI.Hide**,** GUI.Dispose**,** GUI.Enable**,** GUI.Disable**
+**GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.Enable**, **GUI.Disable**
 
 
 

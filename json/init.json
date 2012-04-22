@@ -36,7 +36,7 @@
       ],
       "raw_content": "This procedure is supposed to set integer variable <i>i</i> to an integer approximation of its square root. The <b>init</b> clause records the initial value of <i>i </i>as <i>j </i>so it can be used in the <b>post</b> condition to make sure that the approximation is sufficiently accurate. The name <i>j </i>can be used only in the post condition and nowhere else in the procedure.<p>\r\n</p>",
       "text_content": " This procedure is supposed to set integer variable i to an integer approximation of its square root. The init clause records the initial value of i as j so it can be used in the post condition to make sure that the approximation is sufficiently accurate. The name j can be used only in the post condition and nowhere else in the procedure.\r\n\r\n",
-      "mdown_content": "This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i _as _j _so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j _can be used only in the post condition and nowhere else in the procedure."
+      "mdown_content": "This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i_ as _j_ so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j_ can be used only in the post condition and nowhere else in the procedure."
     },
     {
       "title": "See also",

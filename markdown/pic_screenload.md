@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.ScreenLoad **displays a picture from a file straight to the screen.
+**Pic.ScreenLoad** displays a picture from a file straight to the screen.
 The _fileName_parameter must give the format of the file:
 
 

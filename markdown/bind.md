@@ -23,13 +23,13 @@ Rename the _n_-th element of array _A_ so it is called _item_ and then change th
         bind var item to A (n)
         item := 15
 ##Details
-The scope of the identifier (_item _above) begins with the **bind** declaration and lasts to the **end** of the surrounding program or statement (or to the end of the surrounding part of a **case** or **if** statement). During this scope, a change to a subscript (_n _above) that occurs in the variable reference does not change the element to which the identifier refers.
+The scope of the identifier (_item_ above) begins with the **bind** declaration and lasts to the **end** of the surrounding program or statement (or to the end of the surrounding part of a **case** or **if** statement). During this scope, a change to a subscript (_n_ above) that occurs in the variable reference does not change the element to which the identifier refers.
 You are not allowed to use **bind** at the outermost level of the main program (except nested inside statements such as **if**) or at the outermost level in a module.
 You can also optionally use the **register** keyword to request that the bind be done using a machine register. The syntax for _bindDeclaration_ is actually:
 
 
 
-{ , [**var**] [**register**] _id_ **to** _variableReference _}
+{ , [**var**] [**register**] _id_ **to** _variableReference_ }
 
 In the current (2002) implementation, programs are run interpretively using pseudo-code and the **register** keyword is ignored.
 

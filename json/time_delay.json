@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Time.Delay </b>procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.<p>\r\n</p>",
       "text_content": " The Time.Delay procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.\r\n",
-      "mdown_content": "The **Time.Delay **procedure is used to cause the program to pause for a given time. The time duration is in milliseconds."
+      "mdown_content": "The **Time.Delay** procedure is used to cause the program to pause for a given time. The time duration is in milliseconds."
     },
     {
       "title": "Example",

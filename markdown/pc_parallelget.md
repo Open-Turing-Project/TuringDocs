@@ -23,7 +23,7 @@ This program reads and prints the values of the five data pins of the PC's paral
         put "Pin 13 is: ", (val div 16) mod 2
         put "Pin 15 is: ", (val div 8) mod 2
 ##Details
-The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet **procedure returns the sum of 
+The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet** procedure returns the sum of 
 
 
 

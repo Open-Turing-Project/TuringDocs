@@ -40,6 +40,6 @@ This means that you can only call the function by calling **Window.Open**, not b
 
 
 ##See also
-**[view_set.html](View.Set) **for the syntax of _startUpString_. See also **[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.
+**[view_set.html](View.Set)** for the syntax of _startUpString_. See also **[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.
 
 

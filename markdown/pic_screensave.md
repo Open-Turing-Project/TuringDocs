@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.ScreenSave **saves a portion of the screen into a file in a format specified by the file name.
+**Pic.ScreenSave** saves a portion of the screen into a file in a format specified by the file name.
 The picture saved to the file is the portion of the screen defined by the rectangle (_x1_, _y1_) - (_x2_, _y2_).
 The _fileName_parameter must give the format of the file:
 

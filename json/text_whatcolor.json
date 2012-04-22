@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Text.WhatColor</b> function is used to<b> </b>determine the current text (foreground) color, ie., the color used for characters that are output using <b>put</b>. The alternate spelling is <b>Text.WhatColour</b>.<p>\r\n</p>",
       "text_content": " The Text.WhatColor function is used to determine the current text (foreground) color, ie., the color used for characters that are output using put. The alternate spelling is Text.WhatColour.\r\n",
-      "mdown_content": "The **Text.WhatColor** function is used to** **determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**."
+      "mdown_content": "The **Text.WhatColor** function is used to determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See <b>View.Set </b>for details.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. See View.Set for details.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\"_ _or \"_graphics_\" mode. See **View.Set **for details."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See **View.Set** for details."
     },
     {
       "title": "Status",

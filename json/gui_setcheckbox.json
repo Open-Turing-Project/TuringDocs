@@ -12,13 +12,13 @@
       "title": "Description",
       "raw_content": "Sets the status of a check box specified by <i>widgetID</i>. If <i>status</i> is <b>true</b>, the check box is filled (marked with an 'X'). If <i>status</i> is <b>false</b>, the check box is set empty. <b>GUI.SetCheckBox </b>calls the check box's <i>action procedure</i> with the new status and redraws the widget with the new status.<p>\r\n</p>",
       "text_content": " Sets the status of a check box specified by widgetID. If status is true, the check box is filled (marked with an 'X'). If status is false, the check box is set empty. GUI.SetCheckBox calls the check box's action procedure with the new status and redraws the widget with the new status.\r\n",
-      "mdown_content": "Sets the status of a check box specified by _widgetID_. If _status_ is **true**, the check box is filled (marked with an 'X'). If _status_ is **false**, the check box is set empty. **GUI.SetCheckBox **calls the check box's _action procedure_ with the new status and redraws the widget with the new status."
+      "mdown_content": "Sets the status of a check box specified by _widgetID_. If _status_ is **true**, the check box is filled (marked with an 'X'). If _status_ is **false**, the check box is set empty. **GUI.SetCheckBox** calls the check box's _action procedure_ with the new status and redraws the widget with the new status."
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.CreateCheckBox </b>for an example of <b>GUI.SetCheckBox</b>.<p>\r\n</p>",
       "text_content": " See GUI.CreateCheckBox for an example of GUI.SetCheckBox.\r\n",
-      "mdown_content": "See **GUI.CreateCheckBox **for an example of **GUI.SetCheckBox**."
+      "mdown_content": "See **GUI.CreateCheckBox** for an example of **GUI.SetCheckBox**."
     },
     {
       "title": "Status",

@@ -11,7 +11,7 @@ A _variableDeclaration_ is one of:
 
 
 ##Description
-A variable declaration creates a new variable (or variables). Only form (a) will be explained here. See _collectionDeclaration _for explanation of form (b). The _typeSpec _of form (a) can be omitted only if the initializing value is present.
+A variable declaration creates a new variable (or variables). Only form (a) will be explained here. See _collectionDeclaration_ for explanation of form (b). The _typeSpec_ of form (a) can be omitted only if the initializing value is present.
 
 
 
@@ -24,7 +24,7 @@ A variable declaration creates a new variable (or variables). Only form (a) will
         var v : array 1 .. 3 of string ( 6 ) :=
                 init ( "George", "Fred", "Alice" )
 ##Details
-The initializing value, if present, must be an expression or else a list of items separated by commas inside **init** ( &#133; ). The syntax of _initializingValue _is one of:
+The initializing value, if present, must be an expression or else a list of items separated by commas inside **init** ( &#133; ). The syntax of _initializingValue_ is one of:
 
 
 

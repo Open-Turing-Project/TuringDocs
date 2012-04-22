@@ -62,7 +62,7 @@ It's very easy to forget that no output will appear in the Run window when using
 
 
 ##Details
-**View.Update** should not be used in conjunction with the **Sprite **module. Sprites can be considered a limited version of this technique. **View.Update** also works well when the entire background is changing.
+**View.Update** should not be used in conjunction with the **Sprite** module. Sprites can be considered a limited version of this technique. **View.Update** also works well when the entire background is changing.
 
 
 

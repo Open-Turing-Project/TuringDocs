@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Sys.GetUserName </b>function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.<p>\r\n</p>",
       "text_content": " The Sys.GetUserName function is used to determine the name of the current user. It returns Unknown if a name could not be determined.\r\n",
-      "mdown_content": "The **Sys.GetUserName **function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined."
+      "mdown_content": "The **Sys.GetUserName** function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.GetUserName</b>, not by calling<b> GetUserName</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys.GetUserName, not by calling GetUserName.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetUserName**, not by calling** GetUserName**."
+      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetUserName**, not by calling **GetUserName**."
     },
     {
       "title": "See also",

@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Save **is used to save  a picture on the screen to a file.
+**Pic.Save** is used to save  a picture on the screen to a file.
 The _fileName_parameter must give the format of the file:
 
 

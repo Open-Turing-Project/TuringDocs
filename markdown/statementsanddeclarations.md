@@ -10,7 +10,7 @@ _StatementsAndDeclarations_ are:
 
 
 ##Description
-_StatementsAndDeclarations _are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.
+_StatementsAndDeclarations_ are a list of statements and declarations. For example, a Turing program consists of a list of statements and declarations. The body of a procedure is a list of statements and declarations.
 Each _statementOrDeclaration_ is one of:
 See also statement and declaration.
 

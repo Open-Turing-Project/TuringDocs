@@ -33,7 +33,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"mod.html\">mod</a></b> and <b><a href=\"div.html\">div</a></b> operators.<p>\r\n</p>",
       "text_content": " infix operators, precedence of operators and the mod and div operators.\r\n",
-      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[mod.html](mod)** and **[div.html](div)** operators."
+      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[mod.html](mod)** and **[div.html](div)** operators."
     }
   ],
   "dependencies": [

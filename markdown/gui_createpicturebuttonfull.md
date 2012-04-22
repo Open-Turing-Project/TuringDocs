@@ -69,7 +69,7 @@ The following program displays five picture buttons which output a message when 
             exit when GUI.ProcessEvent
         end loop
 ##Details
-When **GUI.CreatePictureButton** or **GUI.CreatePictureButtonFull**_ _is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreatePictureButton** or **GUI.CreatePictureButtonFull** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 When a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 

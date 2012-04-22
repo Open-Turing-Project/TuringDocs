@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Draw.FillStar **procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a star outlined in a different color, use **Draw.FillStar** with the _Color_ parameter set to the fill color and then call **Draw.Star** with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the star is drawn upside down.
+The **Draw.FillStar** procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a star outlined in a different color, use **Draw.FillStar** with the _Color_ parameter set to the fill color and then call **Draw.Star** with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the star is drawn upside down.
 
 ![Doc image](draw_fillstar01.gif)
 

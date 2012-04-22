@@ -18,7 +18,7 @@ If there is more than 2,147,483,647 bytes free on a disk, the **File.DiskFree** 
 
 
 ##Example
-This program prints out the amount of space on the _A: _drive on a PC and in the execution directory.
+This program prints out the amount of space on the _A:_ drive on a PC and in the execution directory.
 
 
 

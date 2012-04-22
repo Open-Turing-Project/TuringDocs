@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatColorBack</b> :<i> </i><b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatColorBack : int\r\n",
-      "mdown_content": "**Text.WhatColorBack** :_ _**int**"
+      "mdown_content": "**Text.WhatColorBack** : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.WhatColorBack</b> function is used to<b> </b>determine the current text background color. The alternate spelling is <b>whatcolourback</b>.<p>\r\n</p>",
       "text_content": " The Text.WhatColorBack function is used to determine the current text background color. The alternate spelling is whatcolourback.\r\n",
-      "mdown_content": "The **Text.WhatColorBack** function is used to** **determine the current text background color. The alternate spelling is **whatcolourback**."
+      "mdown_content": "The **Text.WhatColorBack** function is used to determine the current text background color. The alternate spelling is **whatcolourback**."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. Beware that the meaning of background color is different in these two modes. See <b>Text.ColorBack </b>for details.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. Beware that the meaning of background color is different in these two modes. See Text.ColorBack for details.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or_ _\"_graphics_\" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack **for details."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack** for details."
     },
     {
       "title": "Status",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"text_color.html\">Text.Color</a> </b>and <b><a href=\"text_whatcolor.html\">Text.WhatColor</a></b>.<p>\r\n</p>",
       "text_content": " Text.Color and Text.WhatColor.\r\n",
-      "mdown_content": "**[text_color.html](Text.Color) **and **[text_whatcolor.html](Text.WhatColor)**."
+      "mdown_content": "**[text_color.html](Text.Color)** and **[text_whatcolor.html](Text.WhatColor)**."
     }
   ],
   "dependencies": [

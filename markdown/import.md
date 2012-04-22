@@ -16,7 +16,7 @@ An **import** list is used to specify those items that a procedure, function, mo
 
 
 ##Example
-In this example, the type _T _is imported into the _stack _**module** and used as the type that can be pushed onto or popped off the stack. Since no other items are imported, the only identifiers from outside of _stack _that can be used in it must be predefined, such as **sqrt**, or declared to be **pervasive**.
+In this example, the type _T_ is imported into the _stack_ **module** and used as the type that can be pushed onto or popped off the stack. Since no other items are imported, the only identifiers from outside of _stack_ that can be used in it must be predefined, such as **sqrt**, or declared to be **pervasive**.
 
 
         type T : string
@@ -30,7 +30,7 @@ In this example, the type _T _is imported into the _stack _**module** and used a
             procedure pop  end pop
         end stack
 ##Details
-The _importItem _is one of_:_
+The _importItem_ is one of_:_
 
 
 
@@ -44,8 +44,8 @@ There are various ways to import items, as determined by _howImport_. The form o
 
 
 
-Commonly the _howImport _is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a _howImport_ is imported read-write. A read-only symbol that is imported without a _howImport_ is imported read-only.
-If the _importItem _is **forward**, the import list is part of a **forward** procedure or function declaration and the imported item is itself necessarily a procedure or function. See **forward** declarations for details and an example.
+Commonly the _howImport_ is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a _howImport_ is imported read-write. A read-only symbol that is imported without a _howImport_ is imported read-only.
+If the _importItem_ is **forward**, the import list is part of a **forward** procedure or function declaration and the imported item is itself necessarily a procedure or function. See **forward** declarations for details and an example.
 If the **import** list of a **module**, **monitor** or **class** is omitted, the implementation assumes that the list is **import**( ), meaning that no items are imported. For example, a **module** must explicitly import any global identifiers that are not predefined or **pervasive**.
 Circular (recursive) imports are not allowed. For example, if unit _A_ imports _B_ then _B_ cannot import _A_. However, circular usage of separately compiled units is possible by separating the units into interfaces and bodies and having the bodies import the interfaces. For example, if _C_ is the parent class of _D_, _D_ can import _C_, but not vice versa.
 In an expansion (or implementation), the import list of the expansion augments the import list of the parent.

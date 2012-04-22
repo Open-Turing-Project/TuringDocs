@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Rotate **is used to create a new picture by rotating an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
+**Pic.Rotate** is used to create a new picture by rotating an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
 The _angle_ is specified in degrees. The rotation is done in a counter-clockwise direction. The original picture is not modified by the call to **Pic.Rotate** and must still be freed when no longer used. The picture produced by **Pic.Rotate** may be a different size than the original picture.
 The (_x_, _y_) point is the point around which the rotation is to take place and is relative to the picture being rotated. If it is not important to rotate the picture in place, _x_ and _y_ should be set to -1, which make the new picture the minimum size required to fit the rotated image.
 

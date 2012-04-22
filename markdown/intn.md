@@ -30,6 +30,6 @@ The **int_n_** types are like the C language types _short int_, _int_, and _long
 
 
 ##See also
-the **[nat.html](nat)**_n _types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**.
+the **[nat.html](nat)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**.
 
 

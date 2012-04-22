@@ -2,13 +2,13 @@
 #GUI.GetWidth
 
 ##Syntax
-**GUI.GetWidth **(_widgetID_ : **int**) : **int**
+**GUI.GetWidth** (_widgetID_ : **int**) : **int**
 
 
 
 ##Description
 Returns the actual width of a widget. Note that this may be different from the width specified in the _Create_ call (especially since some widgets do not specify a width. The GUI module determines the actual width).
-This function is used in conjunction with **GUI.GetX**, **GUI.GetY**_ _and_ _**GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)
+This function is used in conjunction with **GUI.GetX**, **GUI.GetY** and **GUI.GetHeight** to determine the bounds of a widget. The entire widget should always fit in the box (**GUI.GetX**, **GUI.GetY**) - (**GUI.GetX** + **GUI.GetWidth**  1, **GUI.GetY** + **GUI.GetHeight**  1)
 The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.
 
 

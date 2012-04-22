@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"int.html\">int</a></b>, <b><a href=\"maxint.html\">maxint</a></b> (the largest integer value), <b><a href=\"nat.html\">nat</a></b> (positive values  only) and <b><a href=\"int.html\">int</a><i>n</i></b> (<i><b>n</b></i><b>-</b>byte integers). See also <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"natstr.html\">natstr</a></b> which convert integer and natural number values to corresponding character strings in any base, for example <b><a href=\"intstr.html\">intstr</a> </b>(4, 0, 2) = \"100\".<p>\r\n</p>",
       "text_content": " int, maxint (the largest integer value), nat (positive values  only) and intn (n-byte integers). See also intstr and natstr which convert integer and natural number values to corresponding character strings in any base, for example intstr (4, 0, 2) = \"100\".\r\n",
-      "mdown_content": "**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)_n_** (_**n**_**-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr) **(4, 0, 2) = \"100\"."
+      "mdown_content": "**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)_n_** (_**n**_**-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr)** (4, 0, 2) = \"100\"."
     }
   ],
   "dependencies": [

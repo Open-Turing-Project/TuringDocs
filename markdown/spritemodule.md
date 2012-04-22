@@ -4,7 +4,7 @@
 ##Description
 Sprites are a way of doing animation in Turing bypassing the **Pic** module. A sprite is essentially a picture with a specific location and "depth". You create a sprite by calling **Sprite.New** with a picID received from **Pic.New**. You can then move the sprite around by calling **Sprite.SetPosition**. When you are finished with the sprite, you call **Sprite.Free**.
 Note that sprites work best when they are moderately small. If you have large sprites, you will continue to have flashing. 
-All subprograms in the **Sprite **unit are exported qualified (and thus must be prefaced with "**Sprite.**").
+All subprograms in the **Sprite** unit are exported qualified (and thus must be prefaced with "**Sprite.**").
 
 
 

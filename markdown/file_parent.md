@@ -7,7 +7,7 @@
 
 
 ##Description
-**File.Parent **returns a string representing the parent directory in Turing format (forward slashes) of the path passed asa parameter. The path name passed in does not have to describe an existing file or directory.Attempting to obtain the parent directory of a root directory (for example "c:/") will return the sameroot directory and will set the value returned by **Error.Last** to a non-zero value.
+**File.Parent** returns a string representing the parent directory in Turing format (forward slashes) of the path passed asa parameter. The path name passed in does not have to describe an existing file or directory.Attempting to obtain the parent directory of a root directory (for example "c:/") will return the sameroot directory and will set the value returned by **Error.Last** to a non-zero value.
 
 
 

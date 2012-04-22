@@ -15,7 +15,7 @@
       ],
       "raw_content": "<b>Font.Sizes </b>is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " Font.Sizes is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.\r\n\r\n\r\n",
-      "mdown_content": "**Font.Sizes **is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height."
+      "mdown_content": "**Font.Sizes** is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height."
     },
     {
       "title": "Details",

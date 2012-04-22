@@ -5,7 +5,7 @@
 A _caseStatement_ is:
 
 **case** _expn_ **of**
-{ **label** _compileTimeExpn _{, _compileTimeExpn _} :
+{ **label** _compileTimeExpn_ {, _compileTimeExpn_ } :
 _statementsAndDeclarations_ }
 [ **label** :
 _statementsAndDeclarations_ ]

@@ -2,7 +2,7 @@
 #erealstr
 
 ##Syntax
-**erealstr** (_r _: **real**, 
+**erealstr** (_r_ : **real**, 
 _width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**
 
 

@@ -39,6 +39,6 @@ If the second operand is positive, then the result is always non-negative. Likew
 
 
 ##See also
-_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[rem.html](rem)** and **[div.html](div)** operators.
+_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[rem.html](rem)** and **[div.html](div)** operators.
 
 

@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Draw **is used to draw a picture on the screen. The picture is drawn with the lower left corner at (_x_, _y_).
+**Pic.Draw** is used to draw a picture on the screen. The picture is drawn with the lower left corner at (_x_, _y_).
 The _mode_ parameter has one of the following values:
 
 _picCopy_ This draws the picture on top of what was underneath, obscuring it completely.

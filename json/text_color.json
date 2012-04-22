@@ -30,13 +30,13 @@
       ],
       "raw_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number <i>i</i> the color number is <i>i </i>mod maxcolor + 1. This cycles repeatedly through all the available colors.<p>\r\n</p>",
       "text_content": " This program prints out a message. The color of each letter is different from the preceding letter. For letter number i the color number is i mod maxcolor + 1. This cycles repeatedly through all the available colors.\r\n\r\n",
-      "mdown_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i _mod maxcolor + 1. This cycles repeatedly through all the available colors."
+      "mdown_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i_ mod maxcolor + 1. This cycles repeatedly through all the available colors."
     },
     {
       "title": "Details",
       "raw_content": "In \"<i>screen</i>\" mode on the IBM PC, the color specified can actually range from 0 - 31. The upper 16 colors (16-31) are the same as the lower 16, except that they blink.<p>\r\nSee <b>View.Set</b> for the number of colors available in the various \"<i>graphics</i>\"<i> </i>modes.</p>\n<p>\r\nThe screen should be in a \"<i>screen</i>\" or \"<i>graphics</i>\" mode. If the screen mode has not been set, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details.</p>\n<p>\r\n</p>",
       "text_content": " In \"screen\" mode on the IBM PC, the color specified can actually range from 0 - 31. The upper 16 colors (16-31) are the same as the lower 16, except that they blink.\r\nSee View.Set for the number of colors available in the various \"graphics\" modes.\r\nThe screen should be in a \"screen\" or \"graphics\" mode. If the screen mode has not been set, it will automatically be set to \"screen\" mode. See View.Set for details.\r\n",
-      "mdown_content": "In \"_screen_\" mode on the IBM PC, the color specified can actually range from 0 - 31. The upper 16 colors (16-31) are the same as the lower 16, except that they blink.\nSee **View.Set** for the number of colors available in the various \"_graphics_\"_ _modes.\nThe screen should be in a \"_screen_\" or \"_graphics_\" mode. If the screen mode has not been set, it will automatically be set to \"_screen_\" mode. See **View.Set **for details."
+      "mdown_content": "In \"_screen_\" mode on the IBM PC, the color specified can actually range from 0 - 31. The upper 16 colors (16-31) are the same as the lower 16, except that they blink.\nSee **View.Set** for the number of colors available in the various \"_graphics_\" modes.\nThe screen should be in a \"_screen_\" or \"_graphics_\" mode. If the screen mode has not been set, it will automatically be set to \"_screen_\" mode. See **View.Set** for details."
     },
     {
       "title": "Status",

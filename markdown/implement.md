@@ -16,8 +16,8 @@ The **implement** clause can only be used in a **unit**. See **unit** for the de
 
 
 ##Example
-Here is a _stack_ module which defers all of its exported subprograms. This module is an interface but not an implementation. Following _stack_ is the _stackBody _module that implements the _stack_ module, giving the bodies for _stack_'s subprograms. Any call to _stack's_ _push_ or _pop_ procedures, such as _stack_._push(_"Ed"_)_, will actually call the procedures given in _stackBody_.
-Next comes the expansion which gives the bodies for the deferred procedures _push_ and _pop_. The _stackBody _body also adds declarations for the _top_ and _contents_ variables.
+Here is a _stack_ module which defers all of its exported subprograms. This module is an interface but not an implementation. Following _stack_ is the _stackBody_ module that implements the _stack_ module, giving the bodies for _stack_'s subprograms. Any call to _stack's_ _push_ or _pop_ procedures, such as _stack_._push(_"Ed"_)_, will actually call the procedures given in _stackBody_.
+Next comes the expansion which gives the bodies for the deferred procedures _push_ and _pop_. The _stackBody_ body also adds declarations for the _top_ and _contents_ variables.
 
 
         module stack                % Interface
@@ -54,8 +54,8 @@ There is no restriction on the declarations that an interface may contain. In pa
 Even though _D_ contains an **implement** clause, _D_ can also contain an implement-by clause, which implies further implementation by further automatic expansion.
 Suppose class _D_ is in class _C_'s implement-by clause and that _p_ is a pointer to class _C_:
 Even though _C_ is implemented by _D_, _p_ remains a pointer to class _C_. Each creation of an object of class _C_ actually creates an object of type _D_, for example:
-Class _D_, which implements _C_,_ _could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class _E_ inherits _C_,_ _this expansion does not include _D_.
-If the **new** statement contains an explicit class name _E _that is a descendant of _C_ (but not actually C), as in
+Class _D_, which implements _C_, could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class _E_ inherits _C_, this expansion does not include _D_.
+If the **new** statement contains an explicit class name _E_ that is a descendant of _C_ (but not actually C), as in
 the object of the explicit class is created. If _E_ has an implement-by clause, the expansion is created.
 
 

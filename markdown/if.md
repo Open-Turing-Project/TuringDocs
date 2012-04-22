@@ -46,14 +46,14 @@ Output A, B, C, D or F depending on mark.
             put "F"
         end if
 ##Example
-If _x _is negative, change its sign.
+If _x_ is negative, change its sign.
 
 
         if x < 0 then
             x := - x
         end if
 ##Example
-If _x _is less than zero or greater than maxx, put a message.
+If _x_ is less than zero or greater than maxx, put a message.
 
 
         if x < 0  or x > maxx then

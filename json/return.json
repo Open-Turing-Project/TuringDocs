@@ -21,7 +21,7 @@
       ],
       "raw_content": "This procedure takes no action if the <i>errorHasOccurred </i>flag has been set to true.<p>\r\n</p>",
       "text_content": " This procedure takes no action if the errorHasOccurred flag has been set to true.\r\n\r\n",
-      "mdown_content": "This procedure takes no action if the _errorHasOccurred _flag has been set to true."
+      "mdown_content": "This procedure takes no action if the _errorHasOccurred_ flag has been set to true."
     },
     {
       "title": "Details",

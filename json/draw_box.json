@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Box </b>procedure is used to draw a box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Box procedure is used to draw a box on the screen with bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Box **procedure is used to draw a box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_."
+      "mdown_content": "The **Draw.Box** procedure is used to draw a box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (<b>maxx</b>, <b>maxy</b>) is the right top.<p>\r\n</p>",
       "text_content": " This program draws a large box, reaching to each corner of the screen using color number 12. The maxx and maxy functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (maxx, maxy) is the right top.\r\n\r\n    ",
-      "mdown_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (**maxx**, **maxy**) is the right top."
+      "mdown_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (**maxx**, **maxy**) is the right top."
     },
     {
       "title": "Execute",

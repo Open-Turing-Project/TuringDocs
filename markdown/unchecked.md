@@ -7,7 +7,7 @@ OOT adds the concept of "unchecked" to Turing. Here, you can request that certai
 
 
 ##Example
-Declare _p_ to be an unchecked pointer to an integer (see **pointers** for details). Pointer _p _will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.
+Declare _p_ to be an unchecked pointer to an integer (see **pointers** for details). Pointer _p_ will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.
 
 
         var p : unchecked ^ int

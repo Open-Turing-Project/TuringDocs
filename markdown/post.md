@@ -10,7 +10,7 @@ An _postAssertion_ is:
 
 
 ##Description
-A **post** assertion is a special form of an **assert** statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the _trueFalseExpn_. After the body has executed and just before the procedure or function returns, the _trueFalseExpn _is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **pre** and **invariant** assertions.
+A **post** assertion is a special form of an **assert** statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the _trueFalseExpn_. After the body has executed and just before the procedure or function returns, the _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **pre** and **invariant** assertions.
 
 
 

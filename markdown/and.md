@@ -7,7 +7,7 @@ _A_ **and** _B_
 
 
 ##Description
-The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if _A_ is false in _A _**and**_ B_ then _B _is not evaluated.
+The **and** (boolean) operator yields a result of true if, and only if, both operands are true. The **and** operator is a short circuit operator. For example, if _A_ is false in _A_ **and** _B_ then _B_ is not evaluated.
 
 
 

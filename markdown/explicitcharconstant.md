@@ -17,7 +17,7 @@ An explicit character constant must contain at least one character. If it contai
 The backslash \ is used in explicit string and char(n) constants to specify special values, for example, '\T' is the tab character. Similarly, the carat ^ is used to specify ASCII control characters, for example, '^H' is the ASCII backspace. See _explicitStringConstants_ for details.
 Explicit character constants cannot cross line boundaries. To represent a constant that is longer than a line, break it into two or more strings on separate lines and use + (catenation) to join the individual strings. See **catenation**.
 An explicit character constant may be limited in length by the implementation. We recommend that this limitation be at least 32767.
-Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called _eos _for end of string) and 128 (called _uninitchar_, used as the uninitialized string value).
+Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called _eos_ for end of string) and 128 (called _uninitchar_, used as the uninitialized string value).
 
 
         var c := 'H'        % Type is char

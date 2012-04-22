@@ -7,7 +7,7 @@
 
 
 ##Description
-The **maxx** function is used to** **determine the maximum value of x for the current graphics mode.
+The **maxx** function is used to determine the maximum value of x for the current graphics mode.
 
 
 
@@ -19,7 +19,7 @@ This program outputs the maximum x value.
         
         put "The maximum x value is ", maxx
 ##Details
-The screen should be in a "_graphics_" mode. If it is not, it will automatically be set to "_graphics_" mode. See **setscreen **for details.
+The screen should be in a "_graphics_" mode. If it is not, it will automatically be set to "_graphics_" mode. See **setscreen** for details.
 For the default IBM PC compatible graphics mode (CGA), **maxx** = 319.
 
 

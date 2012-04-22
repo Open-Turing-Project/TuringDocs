@@ -7,7 +7,7 @@
 
 
 ##Description
-The **drawpolygon** procedure is used to draw a polygon with _n_ points. A line is drawn in _Color _from the point (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on. After drawing the line to (_x_(_n_), _y_ (_n_)), a line will be drawn back to (_x_(1), _y_(1)), closing the polygon. The **drawpolygon** procedure is equivalent to:
+The **drawpolygon** procedure is used to draw a polygon with _n_ points. A line is drawn in _Color_ from the point (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on. After drawing the line to (_x_(_n_), _y_ (_n_)), a line will be drawn back to (_x_(1), _y_(1)), closing the polygon. The **drawpolygon** procedure is equivalent to:
 
 
         for i : 1 .. n - 1

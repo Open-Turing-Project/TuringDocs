@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>enumeratedType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>enum</b> (<i>id </i>{ , <i>id </i>} )</font></td>\n</tr></table>\n<p></p>",
       "text_content": " An enumeratedType is:\r\n enum (id { , id } )",
-      "mdown_content": "An _enumeratedType_ is:\n\n**enum** (_id _{ , _id _} )\n"
+      "mdown_content": "An _enumeratedType_ is:\n\n**enum** (_id_ { , _id_ } )\n"
     },
     {
       "title": "Description",

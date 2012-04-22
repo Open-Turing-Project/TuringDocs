@@ -5,7 +5,7 @@
 <p>The Net module allows TCP/IP equipped machines to communicate. In the current implementation (WinOOT 3.0), this is available only under Win32 (Windows 95, 98, NT and later).
 To allow two machines to communicate, there must be a server (which calls <strong>Net,WaitForConnection</strong>) and a client (which calls <strong>Net.OpenConnection</strong>). The server waits until a client connects and then starts communication between the two. When a connection is established, a net stream is returned that can be used in the same fashion as a file stream (i.e. using <strong>put</strong>s and <strong>get</strong>s<strong>)</strong>.  Once the connection is finished, the programs call <strong>Net.CloseConnection</strong>.
 For ease of reading web pages, the <strong>Net.OpenURLConnection</strong> opens up a URL for reading with the <strong>get</strong> statement. It is up to the user program to interpret the HTML or file located at the URL.
-All subprograms in the <strong>Net </strong>unit are exported qualified (and thus must be prefaced with "<strong>Net.</strong>").</p>
+All subprograms in the <strong>Net</strong> unit are exported qualified (and thus must be prefaced with "<strong>Net.</strong>").</p>
 
 <h2>Entry Points</h2>
 

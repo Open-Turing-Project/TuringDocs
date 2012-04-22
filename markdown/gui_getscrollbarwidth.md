@@ -12,7 +12,7 @@ Returns the width of a scroll bar. Useful when placing a scroll bar widget benea
 
 
 ##Example
-See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.GetScrollBarWidth**.
+See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull** for an example of **GUI.GetScrollBarWidth**.
 
 
 

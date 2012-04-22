@@ -30,6 +30,6 @@ The **nat_n_** types are like the C language types _short unsigned_, _unsigned_,
 
 
 ##See also
-the **[int.html](int)_n_**_ _types which are _n_ byte integer values. See also **[nat.html](nat)** and **[int.html](int)**.
+the **[int.html](int)_n_** types which are _n_ byte integer values. See also **[nat.html](nat)** and **[int.html](int)**.
 
 

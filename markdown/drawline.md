@@ -23,7 +23,7 @@ This program draws a large X, reaching to each corner of the screen using color 
         drawline (0, maxy, maxx, 0, 1)
 ##Details
 The meaning of the _Color_ number depends on the current palette. See the **palette** statement.
-The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_"_ _mode, it will automatically be set to "_graphics_" mode.
+The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
 
 

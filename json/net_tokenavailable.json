@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.TokenAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.TokenAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.TokenAvailable **(_netStream_ : **int**) : **boolean**"
+      "mdown_content": "**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**"
     },
     {
       "title": "Description",

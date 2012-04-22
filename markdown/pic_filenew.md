@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.FileNew **is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.
+**Pic.FileNew** is used to obtain a picture from a file. The **Pic.FileNew** procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls **Pic.Free** with the picture ID. The picture can be used with the **Pic.Draw** and **Pic.Save**.
 The _fileName_parameter must give the format of the file:
 
 

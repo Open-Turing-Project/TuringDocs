@@ -2,7 +2,7 @@
 #Net.BytesAvailable
 
 ##Syntax
-**Net.BytesAvailable **(_netStream_ : **int**) : **int**
+**Net.BytesAvailable** (_netStream_ : **int**) : **int**
 
 
 

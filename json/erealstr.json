@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>erealstr</b> (<i>r </i>: <b>real</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>width</i>, <i>fractionWidth</i>, <i>exponentWidth</i> : <b>int</b>) :<b>string</b></font></td>\n</tr></table>\n<p></p>",
       "text_content": " erealstr (r : real,  width, fractionWidth, exponentWidth : int) :string",
-      "mdown_content": "**erealstr** (_r _: **real**, \n_width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**\n"
+      "mdown_content": "**erealstr** (_r_ : **real**, \n_width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**\n"
     },
     {
       "title": "Description",

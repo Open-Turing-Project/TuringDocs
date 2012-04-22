@@ -7,7 +7,7 @@
 
 
 ##Description
-**File.Status **is used to get assorted information about a file or directory. When the function is called with a specified _pathName_, it returns the information about the file in the other parameters.
+**File.Status** is used to get assorted information about a file or directory. When the function is called with a specified _pathName_, it returns the information about the file in the other parameters.
 The _size_ parameter is the size of the file in bytes. 
 The _attribute_ parameter has its individual bits set as exactly as the _attribute_ parameter in **Dir.GetLong** subprogram does. See **Dir.GetLong** for the list of attribute constants.
 The _fileTime_ is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate.**

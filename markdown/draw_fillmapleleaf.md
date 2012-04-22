@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Draw.FillMapleLeaf **procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a maple leaf outlined in a different color, use **Draw.FillMapleLeaf** with the _Color_ parameter set to the fill color and then call **Draw.MapleLeaf**  with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the mapleleaf is drawn upside down.
+The **Draw.FillMapleLeaf** procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a maple leaf outlined in a different color, use **Draw.FillMapleLeaf** with the _Color_ parameter set to the fill color and then call **Draw.MapleLeaf**  with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the mapleleaf is drawn upside down.
 
 ![Doc image](draw_fillmapleleaf01.gif)
 

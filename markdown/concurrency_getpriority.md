@@ -18,6 +18,6 @@ This means that you can only call the function by calling **getpriority**, not b
 
 
 ##See also
-**[setpriority.html](setpriority), [fork.html](fork) **and **[monitor.html](monitor)**.
+**[setpriority.html](setpriority), [fork.html](fork)** and **[monitor.html](monitor)**.
 
 

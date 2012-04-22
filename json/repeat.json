@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>repeat</b> function returns <i>i </i>copies of string <i>s </i>catenated together. For example, <b>repeat</b> (\"X\", 4) is <i>XXXX</i>.<p>\r\n</p>",
       "text_content": " The repeat function returns i copies of string s catenated together. For example, repeat (\"X\", 4) is XXXX.\r\n",
-      "mdown_content": "The **repeat** function returns _i _copies of string _s _catenated together. For example, **repeat** (\"X\", 4) is _XXXX_."
+      "mdown_content": "The **repeat** function returns _i_ copies of string _s_ catenated together. For example, **repeat** (\"X\", 4) is _XXXX_."
     },
     {
       "title": "Example",

@@ -2,7 +2,7 @@
 #Mouse.ButtonChoose
 
 ##Syntax
-**Mouse.ButtonChoose **(_choice_ : **string**)
+**Mouse.ButtonChoose** (_choice_ : **string**)
 
 
 

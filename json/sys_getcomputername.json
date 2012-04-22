@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Sys.GetComputerName </b>function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined.<p>\r\n</p>",
       "text_content": " The Sys.GetComputerName function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns No Name if a name could not be determined.\r\n",
-      "mdown_content": "The **Sys.GetComputerName **function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined."
+      "mdown_content": "The **Sys.GetComputerName** function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined."
     },
     {
       "title": "Example",

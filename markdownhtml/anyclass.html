@@ -10,8 +10,8 @@
 
 <h2>Example</h2>
 
-<p>Here is the declaration of a pointer <em>p </em>that can locate an object of any class.
-Assuming <em>stack</em> is a class, this creates a <em>stack</em> object and places its location in <em>q </em>and <em>p</em>. The compiler will not allow a call to <em>stack</em>'s exported subprograms using <em>p</em> directly, as in:
+<p>Here is the declaration of a pointer <em>p</em> that can locate an object of any class.
+Assuming <em>stack</em> is a class, this creates a <em>stack</em> object and places its location in <em>q</em> and <em>p</em>. The compiler will not allow a call to <em>stack</em>'s exported subprograms using <em>p</em> directly, as in:
 An assignment from <em>p</em> to <em>q</em> is legal, as in:
 This implies a run time check to make sure that <em>p</em> locates an object that is a <em>stack</em> (or a descendant of a <em>stack</em>).
 Here is a way to call a subprogram exported from <em>stack</em> using <em>p</em>:

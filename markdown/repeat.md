@@ -7,7 +7,7 @@
 
 
 ##Description
-The **repeat** function returns _i _copies of string _s _catenated together. For example, **repeat** ("X", 4) is _XXXX_.
+The **repeat** function returns _i_ copies of string _s_ catenated together. For example, **repeat** ("X", 4) is _XXXX_.
 
 
 

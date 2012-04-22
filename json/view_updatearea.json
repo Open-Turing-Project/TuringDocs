@@ -61,7 +61,7 @@
       "title": "Details",
       "raw_content": "<b>View.UpdateArea</b> should not be used in conjunction with the \r\n          <b>Sprite </b>module. Sprites can be considered a limited version \r\n          of this technique. <b>View.UpdateArea</b> also works well when the \r\n          entire background is changing.<p>\r\n    </p>",
       "text_content": "View.UpdateArea should not be used in conjunction with the \r\n          Sprite module. Sprites can be considered a limited version \r\n          of this technique. View.UpdateArea also works well when the \r\n          entire background is changing.\r\n    ",
-      "mdown_content": "**View.UpdateArea** should not be used in conjunction with the **Sprite **module. Sprites can be considered a limited version of this technique. **View.UpdateArea** also works well when the entire background is changing."
+      "mdown_content": "**View.UpdateArea** should not be used in conjunction with the **Sprite** module. Sprites can be considered a limited version of this technique. **View.UpdateArea** also works well when the entire background is changing."
     },
     {
       "title": "Status",

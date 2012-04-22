@@ -18,7 +18,7 @@
       "title": "Example",
       "raw_content": "See <b>GUI.CreateCheckBox </b>for an example of <b>GUI.GetCheckBox</b>.<p>\r\n</p>",
       "text_content": " See GUI.CreateCheckBox for an example of GUI.GetCheckBox.\r\n",
-      "mdown_content": "See **GUI.CreateCheckBox **for an example of **GUI.GetCheckBox**."
+      "mdown_content": "See **GUI.CreateCheckBox** for an example of **GUI.GetCheckBox**."
     },
     {
       "title": "Status",

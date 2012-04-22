@@ -7,7 +7,7 @@
 
 
 ##Description
-**Draw.Text **is used to actually draw text in a specified font. The _textStr_ parameter contains the string to be drawn. The _x_ and _y_ paramters are the location of the lower left hand corner of the text to be displayed. The _fontID_ parameter is the number of the font in which the text is to be drawn. The _Color_ parameter is used to specify the color in which the text is to appear.
+**Draw.Text** is used to actually draw text in a specified font. The _textStr_ parameter contains the string to be drawn. The _x_ and _y_ paramters are the location of the lower left hand corner of the text to be displayed. The _fontID_ parameter is the number of the font in which the text is to be drawn. The _Color_ parameter is used to specify the color in which the text is to appear.
 Note that the text that appears is completely unrelated to the text that appears using **put**. **Draw.Text** is a graphics command and thus does not use or affect the cursor location.
 The text drawn by the **Draw.Text** procedure does not erase the background.
 

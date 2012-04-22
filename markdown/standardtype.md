@@ -9,9 +9,9 @@ A _standardType_ is one of:
 (c)**string** [ ( _maximumLength_ ) ]
 (d)**boolean**
 (e)**nat**  _% natural number_
-(f)**int**_n_  _% n-byte integer (n=1_,_ 2_,_ 4)_
-(g)**nat**_n_  _% n-byte natural (n= 1_,_ 2_,_ 4)_
-(h)**real**_n_ _% n-byte real (n=4_,_ 8)_
+(f)**int**_n_  _% n-byte integer (n=1_, _2_, _4)_
+(g)**nat**_n_  _% n-byte natural (n= 1_, _2_, _4)_
+(h)**real**_n_ _% n-byte real (n=4_, _8)_
 (i)**char**  _% single character_
 (j)**char**(_n_) _% n characters_
 

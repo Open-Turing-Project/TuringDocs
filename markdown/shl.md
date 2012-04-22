@@ -19,7 +19,7 @@ Assign the base 2 value 11 to _i_ and then shift it left by 2 places and assign 
         i := 2 # 11     % 2#11 = 3 (base 10)
         j := i shl 2        % j becomes 2#1100 = 12 (base 10)
 ##Details
-The **shl** operator is defined mathematically (in a machine-independent way) as follows:  _A_ **shl** _B_ = _A_ __*__ ( 2**_B _). Overflow occurs when the result exceeds the maximum value of the **nat4** (4-byte natural number) type.
+The **shl** operator is defined mathematically (in a machine-independent way) as follows:  _A_ **shl** _B_ = _A_ __*__ ( 2**_B_ ). Overflow occurs when the result exceeds the maximum value of the **nat4** (4-byte natural number) type.
 Value _A_ can be of any integer type (as long as it is non-negative) or any natural number type.
 The **shl** operator has the same precedence as the * operator.
 

@@ -27,6 +27,6 @@ The keyword **in** is also used in lists such as **import** lists. See **import*
 
 
 ##See also
-the **[set.html](set)** type, _[infix.html](infix) operators_, and _[precedence.html](precedence) _of operators.
+the **[set.html](set)** type, _[infix.html](infix) operators_, and _[precedence.html](precedence)_ of operators.
 
 

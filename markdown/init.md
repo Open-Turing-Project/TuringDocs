@@ -28,7 +28,7 @@ The order of initializing values for multi-dimensional arrays is based on varyin
 
 
 ##Example
-This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i _as _j _so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j _can be used only in the post condition and nowhere else in the procedure.
+This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i_ as _j_ so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j_ can be used only in the post condition and nowhere else in the procedure.
 
 
         procedure intSqrt ( var i : int )

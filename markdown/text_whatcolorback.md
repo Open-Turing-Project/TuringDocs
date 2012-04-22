@@ -2,12 +2,12 @@
 #Text.WhatColorBack
 
 ##Syntax
-**Text.WhatColorBack** :_ _**int**
+**Text.WhatColorBack** : **int**
 
 
 
 ##Description
-The **Text.WhatColorBack** function is used to** **determine the current text background color. The alternate spelling is **whatcolourback**.
+The **Text.WhatColorBack** function is used to determine the current text background color. The alternate spelling is **whatcolourback**.
 
 
 
@@ -20,7 +20,7 @@ This program outputs the currently-active background color number. The backgroun
         put "The background of this writing"
         put  "is in color number ", Text.WhatColorBack
 ##Details
-The screen should be in a "_screen_" or_ _"_graphics_" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack **for details.
+The screen should be in a "_screen_" or "_graphics_" mode. Beware that the meaning of background color is different in these two modes. See **Text.ColorBack** for details.
 
 
 
@@ -31,6 +31,6 @@ This means that you can only call the function by calling **Text.WhatColorBack**
 
 
 ##See also
-**[text_color.html](Text.Color) **and **[text_whatcolor.html](Text.WhatColor)**.
+**[text_color.html](Text.Color)** and **[text_whatcolor.html](Text.WhatColor)**.
 
 

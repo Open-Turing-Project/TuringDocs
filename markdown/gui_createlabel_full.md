@@ -2,7 +2,7 @@
 #GUI.CreateLabel[Full]
 
 ##Syntax
-**GUI.CreateLabel** (_x_,_ y_ : **int**, _text_ : **string**) : **int**
+**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int**
 **GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**
 
 
@@ -31,7 +31,7 @@ The following program creates three labels, one with the default alignment, the 
         var upperRight : int := GUI.CreateLabelFull (0, 0, "Upper-Right", 
             maxx, maxy, GUI.RIGHT + GUI.TOP, 0)
 ##Details
-When **GUI.CreateLabel** or **GUI.CreateLabelFull**_ _is called, the newly created label will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreateLabel** or **GUI.CreateLabelFull** is called, the newly created label will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 A frame widget is a passive widget and cannot be enabled or disabled.
 
 

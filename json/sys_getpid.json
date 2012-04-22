@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>Sys.GetPid </b>function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the <b>fork</b> statement, that are independent of the operating systems tasks.<p>\r\nUnder UNIX, the number is used, for example, for creating a unique name of a file. </p>\n<p>\r\n</p>",
       "text_content": " The Sys.GetPid function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the fork statement, that are independent of the operating systems tasks.\r\nUnder UNIX, the number is used, for example, for creating a unique name of a file. \r\n",
-      "mdown_content": "The **Sys.GetPid **function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.\nUnder UNIX, the number is used, for example, for creating a unique name of a file. "
+      "mdown_content": "The **Sys.GetPid** function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.\nUnder UNIX, the number is used, for example, for creating a unique name of a file. "
     },
     {
       "title": "Status",

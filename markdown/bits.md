@@ -7,7 +7,7 @@
 
 
 ##Description
-The **bits**_ _operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;
+The **bits** operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;
 
 
 

@@ -2,12 +2,12 @@
 #or
 
 ##Syntax
-_A _**or**_ B_
+_A_ **or** _B_
 
 
 
 ##Description
-The **or** (boolean) operator yields a result of true if at least one (or both) of the operands is true. **or** is a short circuit operator. For example, if _A_ is true in _A _**or**_ B_ then _B _is not evaluated.
+The **or** (boolean) operator yields a result of true if at least one (or both) of the operands is true. **or** is a short circuit operator. For example, if _A_ is true in _A_ **or** _B_ then _B_ is not evaluated.
 
 
 

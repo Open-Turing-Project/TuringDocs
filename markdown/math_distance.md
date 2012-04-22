@@ -7,7 +7,7 @@
 
 
 ##Description
-**Math.Distance **is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point.
+**Math.Distance** is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point.
 
 
 

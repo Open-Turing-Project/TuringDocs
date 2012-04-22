@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Free **is used to release the memory allocated by **Pic.New**. It frees up the memory allocated to the parameter _picID_. This means that _picID_ can not be used in a **Draw.Pic** or **Draw.Save** procedure after **Pic.Free** is called.
+**Pic.Free** is used to release the memory allocated by **Pic.New**. It frees up the memory allocated to the parameter _picID_. This means that _picID_ can not be used in a **Draw.Pic** or **Draw.Save** procedure after **Pic.Free** is called.
 Turing has a limited number of pictures that are available at anyone time (approximately 1,000). A program that continuously allocates pictures (using **Pic.New** or **Pic.FileNew**) will eventually fail if it does not free the pictures using **Pic.Free**. As well,if a program allocates hundreds of pictures and does notfree any of them, the memory devoted to the pictures will not be freed and eventually the program may exhaust the memory on the machine.
 
 

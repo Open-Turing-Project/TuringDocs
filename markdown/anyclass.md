@@ -12,8 +12,8 @@ There is a predefined class called **anyclass**, which is the root of the expans
 
 
 ##Example
-Here is the declaration of a pointer _p _that can locate an object of any class.
-Assuming _stack_ is a class, this creates a _stack_ object and places its location in _q _and _p_. The compiler will not allow a call to _stack_'s exported subprograms using _p_ directly, as in:
+Here is the declaration of a pointer _p_ that can locate an object of any class.
+Assuming _stack_ is a class, this creates a _stack_ object and places its location in _q_ and _p_. The compiler will not allow a call to _stack_'s exported subprograms using _p_ directly, as in:
 An assignment from _p_ to _q_ is legal, as in:
 This implies a run time check to make sure that _p_ locates an object that is a _stack_ (or a descendant of a _stack_).
 Here is a way to call a subprogram exported from _stack_ using _p_:

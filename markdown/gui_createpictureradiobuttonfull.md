@@ -105,7 +105,7 @@ The following program creates and displays for picture radio buttons.
             exit when GUI.ProcessEvent
         end loop
 ##Details
-When **GUI.CreatePictureRadioButton** or **GUI.CreatePictureRadioButtonFull**_ _is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreatePictureRadioButton** or **GUI.CreatePictureRadioButtonFull** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 When a picture radio button is not enabled, the picture radio button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 

@@ -13,8 +13,8 @@ The <strong>implement</strong> clause can only be used in a <strong>unit</strong
 
 <h2>Example</h2>
 
-<p>Here is a <em>stack</em> module which defers all of its exported subprograms. This module is an interface but not an implementation. Following <em>stack</em> is the <em>stackBody </em>module that implements the <em>stack</em> module, giving the bodies for <em>stack</em>'s subprograms. Any call to <em>stack's</em> <em>push</em> or <em>pop</em> procedures, such as <em>stack</em>.<em>push(</em>"Ed"<em>)</em>, will actually call the procedures given in <em>stackBody</em>.
-Next comes the expansion which gives the bodies for the deferred procedures <em>push</em> and <em>pop</em>. The <em>stackBody </em>body also adds declarations for the <em>top</em> and <em>contents</em> variables.</p>
+<p>Here is a <em>stack</em> module which defers all of its exported subprograms. This module is an interface but not an implementation. Following <em>stack</em> is the <em>stackBody</em> module that implements the <em>stack</em> module, giving the bodies for <em>stack</em>'s subprograms. Any call to <em>stack's</em> <em>push</em> or <em>pop</em> procedures, such as <em>stack</em>.<em>push(</em>"Ed"<em>)</em>, will actually call the procedures given in <em>stackBody</em>.
+Next comes the expansion which gives the bodies for the deferred procedures <em>push</em> and <em>pop</em>. The <em>stackBody</em> body also adds declarations for the <em>top</em> and <em>contents</em> variables.</p>
 
 <pre><code>    module stack                % Interface
         implement by stackBody
@@ -50,8 +50,8 @@ There is no restriction on the declarations that an interface may contain. In pa
 Even though <em>D</em> contains an <strong>implement</strong> clause, <em>D</em> can also contain an implement-by clause, which implies further implementation by further automatic expansion.
 Suppose class <em>D</em> is in class <em>C</em>'s implement-by clause and that <em>p</em> is a pointer to class <em>C</em>:
 Even though <em>C</em> is implemented by <em>D</em>, <em>p</em> remains a pointer to class <em>C</em>. Each creation of an object of class <em>C</em> actually creates an object of type <em>D</em>, for example:
-Class <em>D</em>, which implements <em>C</em>,<em> </em>could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class <em>E</em> inherits <em>C</em>,<em> </em>this expansion does not include <em>D</em>.
-If the <strong>new</strong> statement contains an explicit class name <em>E </em>that is a descendant of <em>C</em> (but not actually C), as in
+Class <em>D</em>, which implements <em>C</em>, could also have an implement-by clause, which causes its implementation to be automatically created and so on. If another class <em>E</em> inherits <em>C</em>, this expansion does not include <em>D</em>.
+If the <strong>new</strong> statement contains an explicit class name <em>E</em> that is a descendant of <em>C</em> (but not actually C), as in
 the object of the explicit class is created. If <em>E</em> has an implement-by clause, the expansion is created.</p>
 
 <pre><code>    implement ledger in "ledg.t"        implement ( ledger in "ledg.t" )        var p : ^ C        new p   % Creates object of class D        new E, p

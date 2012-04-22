@@ -8,7 +8,7 @@
 
 <p>Creates a text box that can be used for selecting individual items and returns the text box's widget ID.
 A text box is a box used for displaying text. By using <strong>GUI.AddLine</strong> to add lines of text, the program can then waitfor the user to double click on lines in the text box.  The linehighlights when the user clicks the line once, and calls the actionprocedure when the user clicks the highlighted line a second time.Like a text box, the text box choice has scroll bars that activate when text appears outside the border of the text box. The user cannot directly edit or modify the text in the text box choice.
-The <em>x</em> and<em> y</em> parameters specify the lower-left corner of the area in which the text will be drawn. The <em>width</em> and <em>height</em> parameters specify the width and height of the text drawing area The text box border is just outside the text drawing area. Because of this, <strong>GUI.GetX</strong> and <strong>GUI.GetY</strong> will return a value slightly smaller than <em>x</em> and <em>y</em> and <strong>GUI.GetWidth</strong><em> </em>and <strong>GUI.GetHeight</strong> will return values slightly larger than <em>width</em> and <em>height</em>.
+The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the area in which the text will be drawn. The <em>width</em> and <em>height</em> parameters specify the width and height of the text drawing area The text box border is just outside the text drawing area. Because of this, <strong>GUI.GetX</strong> and <strong>GUI.GetY</strong> will return a value slightly smaller than <em>x</em> and <em>y</em> and <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> will return values slightly larger than <em>width</em> and <em>height</em>.
 For <strong>GUI.CreateTextBox</strong>, the border around the text box is always a line. For <strong>GUI.CreateTextBoxFull</strong>, the type of border is specified by the <em>border</em> parameter. The <em>border</em> parameter is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em>, or <em>GUI.EXDENT</em>. A border of 0 is the default and is the same as <em>GUI.LINE</em>. <em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the text box appear indented or recessed. <em>GUI.EXDENT</em> makes the text box appear to stand out from the window. The <em>fontID</em> parameter specifies the font ID of the font to be used in the text box. The font ID is received from a <em>Font.New</em> call. Do not call <em>Font.Free</em> for this font ID until the label has been disposed of by calling <strong>GUI.Dispose</strong>.
 By using the <em>fontID</em> parameter, text boxes can have any size or typeface.</p>
 
@@ -45,7 +45,7 @@ GUI.AddLine (x, "Choose J")
 
 <h2>Details</h2>
 
-<p>When <strong>GUI.CreateTextBox </strong>or <strong>GUI.CreateTextBoxFull</strong> is called, the newly created text box choice will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
+<p>When <strong>GUI.CreateTextBox</strong> or <strong>GUI.CreateTextBoxFull</strong> is called, the newly created text box choice will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
 
 <h2>Details</h2>
 

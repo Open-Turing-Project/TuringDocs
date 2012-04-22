@@ -40,7 +40,7 @@ This program sets the clipping region to five rectangles and then draws random c
 Exported qualified.
 This means that you can only call the function by calling **View.ClipAdd**, not by calling **ClipAdd**.
 
-**See also** **View.ClipSet** and **View.ClipOff **functions.
+**See also** **View.ClipSet** and **View.ClipOff** functions.
 
 
 

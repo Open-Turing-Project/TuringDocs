@@ -14,7 +14,7 @@ _statementsAndDeclarations_
 {, _paramDeclaration_ })]
 _statementsAndDeclarations_
 **end** _id_
-(d)**body function** _id _[ ( [_paramDeclaration _{,
+(d)**body function** _id_ [ ( [_paramDeclaration_ {,
 _paramDeclaration_ } ]) ] : _typeSpec_
 _statementsAndDeclarations_
 **end** _id_

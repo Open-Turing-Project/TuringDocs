@@ -40,7 +40,7 @@
       ],
       "raw_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number <i>i</i> the color number is <i>i </i>mod maxcolor + 1. This cycles repeatedly through all the available colors.<p>\r\n</p>",
       "text_content": " This program prints out a message. The color of each letter is different from the preceding letter. For letter number i the color number is i mod maxcolor + 1. This cycles repeatedly through all the available colors.\r\n\r\n",
-      "mdown_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i _mod maxcolor + 1. This cycles repeatedly through all the available colors."
+      "mdown_content": "This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i_ mod maxcolor + 1. This cycles repeatedly through all the available colors."
     },
     {
       "title": "Execute",
@@ -56,7 +56,7 @@
       "title": "Details",
       "raw_content": "See <b>maxcolor</b> for the number of colors available in the various \"<i>graphics</i>\"<i> </i>modes. The background color that text appears upon can be set using the <b>colorback</b> procedure.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode to use the <b>color</b> procedure. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " See maxcolor for the number of colors available in the various \"graphics\" modes. The background color that text appears upon can be set using the colorback procedure.\r\nThe screen must be in a \"graphics\" mode to use the color procedure. See setscreen for details.\r\n",
-      "mdown_content": "See **maxcolor** for the number of colors available in the various \"_graphics_\"_ _modes. The background color that text appears upon can be set using the **colorback** procedure.\nThe screen must be in a \"_graphics_\" mode to use the **color** procedure. See **setscreen** for details."
+      "mdown_content": "See **maxcolor** for the number of colors available in the various \"_graphics_\" modes. The background color that text appears upon can be set using the **colorback** procedure.\nThe screen must be in a \"_graphics_\" mode to use the **color** procedure. See **setscreen** for details."
     },
     {
       "title": "See also",

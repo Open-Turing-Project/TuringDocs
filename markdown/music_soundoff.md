@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Music.SoundOff **procedure stops any sound or music that is currently playing or is waiting to play.
+The **Music.SoundOff** procedure stops any sound or music that is currently playing or is waiting to play.
 
 
 

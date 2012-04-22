@@ -14,7 +14,7 @@ The _fileName_ parameter must give the format of the file:
 
 
 
-Sounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile **command, it stops until the command is finished. However, other processes will continue executing.
+Sounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile** command, it stops until the command is finished. However, other processes will continue executing.
 
 
 

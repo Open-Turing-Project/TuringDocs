@@ -2,7 +2,7 @@
 #fetcharg
 
 ##Syntax
-**fetcharg** ( _i _: **int** ) : **string**
+**fetcharg** ( _i_ : **int** ) : **string**
 
 
 
@@ -11,7 +11,7 @@ The **fetcharg** function is used to access the _i_-th argument that has been pa
 
 
 
-then **fetcharg**(2) will return "file2". If a program called _prog.x _is run under UNIX using this command:
+then **fetcharg**(2) will return "file2". If a program called _prog.x_ is run under UNIX using this command:
 
 
 

@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Draw.Dot **procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_.
+The **Draw.Dot** procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_.
 
 ![Doc image](draw_dot01.gif)
 
@@ -26,7 +26,7 @@ This program randomly draws dots with random colors. The **maxx**, **maxy** and 
             Draw.Dot (x, y, c)
         end loop
 ##Details
-The screen must be in a "_graphics_" mode. If the screen is not in a "_graphics_" mode, an error will occur. See **View.Set **for details.
+The screen must be in a "_graphics_" mode. If the screen is not in a "_graphics_" mode, an error will occur. See **View.Set** for details.
 
 
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.LineAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.LineAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.LineAvailable **(_netStream_ : **int**) : **boolean**"
+      "mdown_content": "**Net.LineAvailable** (_netStream_ : **int**) : **boolean**"
     },
     {
       "title": "Description",

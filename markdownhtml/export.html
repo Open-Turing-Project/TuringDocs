@@ -12,7 +12,7 @@
 
 <h2>Example</h2>
 
-<p>In this example, the procedures names <em>pop</em> and <em>push</em> are exported from the <em>stack</em> module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word <em>stack</em> and a dot must precede the use of these names. Since <em>top </em>and <em>contents</em> were not exported, they can be accessed only from inside the module.</p>
+<p>In this example, the procedures names <em>pop</em> and <em>push</em> are exported from the <em>stack</em> module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word <em>stack</em> and a dot must precede the use of these names. Since <em>top</em> and <em>contents</em> were not exported, they can be accessed only from inside the module.</p>
 
 <pre><code>    module stack
         export push, pop
@@ -35,7 +35,7 @@ The form of <em>howExport</em> is:</p>
 
 <p>The form of <em>exportMethod</em> is one of:</p>
 
-<p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name </em>is exported <strong>var</strong> from module <em>M</em>,<em> name </em>can be changed from outside of <em>M</em> by <em>M.name </em>:= "<em>Surprise!</em>".
+<p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name</em> is exported <strong>var</strong> from module <em>M</em>, <em>name</em> can be changed from outside of <em>M</em> by <em>M.name</em> := "<em>Surprise!</em>".
 The keyword <strong>unqualified</strong> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <em>M</em> exports procedure <em>p</em> unqualified, a call to <em>p</em> outside of <em>M</em> can be simply <em>p</em> instead of the usual <em>M.p</em>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <strong>unqualified</strong> can be abbreviated to ~. which is pronounced as "not dot".
 The keyword <strong>pervasive</strong>, which is only meaningful if <strong>unqualified</strong> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.
 The keyword <strong>opaque</strong>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <strong>module</strong> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.

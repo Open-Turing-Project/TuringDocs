@@ -2,21 +2,21 @@
 #Sys.FetchArg
 
 ##Syntax
-**System.FetchArg** ( _i _: **int** ) : **string**
+**System.FetchArg** ( _i_ : **int** ) : **string**
 
 
 
 ##Description
-The **Sys.FetchArg **function is used to** **access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
+The **Sys.FetchArg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
 
 
 
-then **Sys.FetchArg **(2) will return "file2". If a program called _prog.x _is run under UNIX using this command:
+then **Sys.FetchArg** (2) will return "file2". If a program called _prog.x_ is run under UNIX using this command:
 
 
 
-the value of **Sys.FetchArg**(2)** **will similarly be "file2".
-The **Sys.Nargs **function, which gives the number of arguments passed to the program, is usually used together with the **Sys.FetchArg **function. Parameter _i_ passed to **Sys.FetchArg **must be in the range 0 .. **Sys.Nargs**.
+the value of **Sys.FetchArg**(2) will similarly be "file2".
+The **Sys.Nargs** function, which gives the number of arguments passed to the program, is usually used together with the **Sys.FetchArg** function. Parameter _i_ passed to **Sys.FetchArg** must be in the range 0 .. **Sys.Nargs**.
 The 0-th argument is the name of the running program.
 
 

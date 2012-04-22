@@ -7,7 +7,7 @@
 
 
 ##Description
-**GUI.AddLine **adds text and a newline to the current line of the text box specified by _widgetID_. It is essentially equivalent to **put** _text_ in the text box. **GUI.AddLine s**crolls the text box (if necessary) so that the added text is now visible. The _widgetID_ parameter must be the widget id of a text box. The _text_ parameter is the text to be added to the text box.
+**GUI.AddLine** adds text and a newline to the current line of the text box specified by _widgetID_. It is essentially equivalent to **put** _text_ in the text box. **GUI.AddLine s**crolls the text box (if necessary) so that the added text is now visible. The _widgetID_ parameter must be the widget id of a text box. The _text_ parameter is the text to be added to the text box.
 
 
 

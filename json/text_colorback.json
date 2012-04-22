@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.ColorBack</b> ( <i>Color</i> :<i> </i><b>int</b> )<p>\r\n</p></font>",
       "text_content": " Text.ColorBack ( Color : int )\r\n",
-      "mdown_content": "**Text.ColorBack** ( _Color_ :_ _**int** )"
+      "mdown_content": "**Text.ColorBack** ( _Color_ : **int** )"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.ColorBack</b> procedure is used to<b> </b>change the current text background color. The alternate spelling is <b>Text.ColourBack</b>.<p>\r\nThe <b>Text.ColorBack</b> procedure sets the text background color to the specified color. This is the color that surrounds characters when they are <b>put</b> onto the screen. On an IBM PC in \"<i>screen</i>\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, <b>Text.ColorBack</b>(1) turns on highlighting and <b>Text.ColorBack</b>(0) turns it off. On other systems, this procedure may have no effect.</p>\n<p>\r\n</p>",
       "text_content": " The Text.ColorBack procedure is used to change the current text background color. The alternate spelling is Text.ColourBack.\r\nThe Text.ColorBack procedure sets the text background color to the specified color. This is the color that surrounds characters when they are put onto the screen. On an IBM PC in \"screen\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, Text.ColorBack(1) turns on highlighting and Text.ColorBack(0) turns it off. On other systems, this procedure may have no effect.\r\n",
-      "mdown_content": "The **Text.ColorBack** procedure is used to** **change the current text background color. The alternate spelling is **Text.ColourBack**.\nThe **Text.ColorBack** procedure sets the text background color to the specified color. This is the color that surrounds characters when they are **put** onto the screen. On an IBM PC in \"_screen_\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, **Text.ColorBack**(1) turns on highlighting and **Text.ColorBack**(0) turns it off. On other systems, this procedure may have no effect."
+      "mdown_content": "The **Text.ColorBack** procedure is used to change the current text background color. The alternate spelling is **Text.ColourBack**.\nThe **Text.ColorBack** procedure sets the text background color to the specified color. This is the color that surrounds characters when they are **put** onto the screen. On an IBM PC in \"_screen_\" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, **Text.ColorBack**(1) turns on highlighting and **Text.ColorBack**(0) turns it off. On other systems, this procedure may have no effect."
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "Since this program is in \"<i>screen</i>\"<i> </i>mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red.<p>\r\n</p>",
       "text_content": " Since this program is in \"screen\" mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red.\r\n\r\n",
-      "mdown_content": "Since this program is in \"_screen_\"_ _mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red."
+      "mdown_content": "Since this program is in \"_screen_\" mode, changing the background color has no immediately observable effect. When the message \"Greetings\" is output, the background surrounding each letter will be red."
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or \"<i>graphics</i>\" mode. If the screen mode has not been set, it will automatically be set to \"<i>screen</i>\" mode. See <b>View.Set </b>for details <p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If the screen mode has not been set, it will automatically be set to \"screen\" mode. See View.Set for details \r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If the screen mode has not been set, it will automatically be set to \"_screen_\" mode. See **View.Set **for details "
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If the screen mode has not been set, it will automatically be set to \"_screen_\" mode. See **View.Set** for details "
     },
     {
       "title": "Status",

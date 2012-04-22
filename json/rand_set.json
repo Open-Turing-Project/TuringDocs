@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Set </b>(<i>seed</i> : <b>nat4</b>)<p>\r\n</p></font>",
       "text_content": " Rand.Set (seed : nat4)\r\n",
-      "mdown_content": "**Rand.Set **(_seed_ : **nat4**)"
+      "mdown_content": "**Rand.Set** (_seed_ : **nat4**)"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "If <b>Rand.Reset </b>and<b> Rand.Set </b>are not used, each time a program runs <b>Rand.Real</b> and <b>Rand.Int </b>use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use <b>Rand.Reset</b> or <b>Rand.Set</b>.<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>Rand.Seed </b>and <b>Rand.Next</b> procedures.</p>\n<p>\r\n</p>",
       "text_content": " If Rand.Reset and Rand.Set are not used, each time a program runs Rand.Real and Rand.Int use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use Rand.Reset or Rand.Set.\r\nTo use several sequences of repeatable pseudo-random number sequences, use the Rand.Seed and Rand.Next procedures.\r\n",
-      "mdown_content": "If **Rand.Reset **and** Rand.Set **are not used, each time a program runs **Rand.Real** and **Rand.Int **use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use **Rand.Reset** or **Rand.Set**.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures."
+      "mdown_content": "If **Rand.Reset** and **Rand.Set** are not used, each time a program runs **Rand.Real** and **Rand.Int** use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use **Rand.Reset** or **Rand.Set**.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed** and **Rand.Next** procedures."
     },
     {
       "title": "Status",

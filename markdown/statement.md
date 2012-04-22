@@ -16,7 +16,7 @@ A _statement_ is one of:
 (j)_forStatement_ _% **for** &#133; **end for**_
 (k)_loopStatement_ _% **loop** &#133; **end loop**_
 (l)**exit** [ **when** _trueFalseExpn_ ]
-(m)_ifStatement_ _%** if** &#133;** end if**_
+(m)_ifStatement_ _% **if** &#133; **end if**_
 (n)_caseStatement_ _% **case** &#133; **end case**_
 (o)**assert** _trueFalseExpn_
 (p)**begin**

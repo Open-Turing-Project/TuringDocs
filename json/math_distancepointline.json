@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>Math.DistancePointLine </b>is used to calculate the distance between a point and a line segment.\r\nIt is often used in games to determine if a collision has occurred. (<i>xp</i>, <i>yp</i>) is the location\r\nbetween the point. (<i>x1</i>, <i>y1</i>) and (<i>x2</i>, <i>y2</i>) are the end points of the line segment.<p>\r\n</p>",
       "text_content": " Math.DistancePointLine is used to calculate the distance between a point and a line segment.\r\nIt is often used in games to determine if a collision has occurred. (xp, yp) is the location\r\nbetween the point. (x1, y1) and (x2, y2) are the end points of the line segment.\r\n",
-      "mdown_content": "**Math.DistancePointLine **is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment."
+      "mdown_content": "**Math.DistancePointLine** is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment."
     },
     {
       "title": "Details",

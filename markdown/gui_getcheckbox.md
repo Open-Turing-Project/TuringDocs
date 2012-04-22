@@ -12,7 +12,7 @@ Returns the status of the check box specified by _widgetID_. If the check box is
 
 
 ##Example
-See **GUI.CreateCheckBox **for an example of **GUI.GetCheckBox**.
+See **GUI.CreateCheckBox** for an example of **GUI.GetCheckBox**.
 
 
 

@@ -7,7 +7,7 @@
 
 
 ##Description
-**Dir.Exists **returns **true** if a directory by the name of _directoryPathName_ exists. It will return **false** if _directoryPathName_ is a file.
+**Dir.Exists** returns **true** if a directory by the name of _directoryPathName_ exists. It will return **false** if _directoryPathName_ is a file.
 
 
 

@@ -20,6 +20,6 @@ In this example, _eggCount_ is the total number of eggs. The first **put** state
         put "You have ", eggCount div 12, " dozen eggs"
         put "You have ", eggCount rem 12, " left over"
 ##See also
-_[infix.html](infix) operators_, _[precedence.html](precedence) _of operators and the **[mod.html](mod)** and **[div.html](div)** operators.
+_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[mod.html](mod)** and **[div.html](div)** operators.
 
 

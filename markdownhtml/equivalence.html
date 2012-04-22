@@ -2,7 +2,7 @@
 
 <h2>Description</h2>
 
-<p>Two types are <em>equivalent</em> to each other if they are essentially the same types (the exact rules are given below). When a variable is passed to a <strong>var</strong> formal parameter, the types of the variable and the formal parameter must be equivalent because they are effectively the same variable. When an expression is assigned to a variable, their types must be equivalent, except for special cases. For example, Turing allows you to assign an integer expression to a <strong>real</strong> variable (see <em>assignability </em>for details).</p>
+<p>Two types are <em>equivalent</em> to each other if they are essentially the same types (the exact rules are given below). When a variable is passed to a <strong>var</strong> formal parameter, the types of the variable and the formal parameter must be equivalent because they are effectively the same variable. When an expression is assigned to a variable, their types must be equivalent, except for special cases. For example, Turing allows you to assign an integer expression to a <strong>real</strong> variable (see <em>assignability</em> for details).</p>
 
 <h2>Example</h2>
 
@@ -30,7 +30,7 @@
 
 <h2>Details</h2>
 
-<p>Two types are defined to be <em>equivalent </em>if they are:</p>
+<p>Two types are defined to be <em>equivalent</em> if they are:</p>
 
 <p>(a) the same standard type (<strong>int</strong>, <strong>real</strong>, <strong>boolean</strong> or <strong>string</strong>),
 (b) subranges with equal first and last values,
@@ -46,5 +46,5 @@
 (l) both pointer types to the same class or equivalent type and both are checked or unchecked.</p>
 
 <p>Each separate instance of a record, union or enumerated type (written out using one of the keywords <strong>record</strong>, <strong>union</strong> or <strong>enum</strong>) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.
-Opaque type <em>T</em>, exported from a module, monitor or class <em>M</em> as <strong>opaque</strong>, is a special case of equivalence. Outside of <em>M</em> this type is written <em>M</em>.<em>T</em>, and is considered to be distinct from all other types. By contrast, if type <em>U </em>is exported non-<strong>opaque</strong>, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type <em>M</em>.<em>T</em> outside of <em>M</em> if the item is declared using the type identifier <em>T</em>. Outside of <em>M</em>, the <strong>opaque</strong> type can be assigned, but not compared.
-It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in <em>i</em>,<em> j: </em><strong>int</strong> instead of <em>i: </em><strong>int</strong>,<em> j: </em><strong>int</strong>.</p>
+Opaque type <em>T</em>, exported from a module, monitor or class <em>M</em> as <strong>opaque</strong>, is a special case of equivalence. Outside of <em>M</em> this type is written <em>M</em>.<em>T</em>, and is considered to be distinct from all other types. By contrast, if type <em>U</em> is exported non-<strong>opaque</strong>, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type <em>M</em>.<em>T</em> outside of <em>M</em> if the item is declared using the type identifier <em>T</em>. Outside of <em>M</em>, the <strong>opaque</strong> type can be assigned, but not compared.
+It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in <em>i</em>, <em>j:</em> <strong>int</strong> instead of <em>i:</em> <strong>int</strong>, <em>j:</em> <strong>int</strong>.</p>

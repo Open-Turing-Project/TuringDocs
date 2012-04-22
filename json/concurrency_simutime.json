@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>simutime </b>function returns the number of simulated time units that have passed since program execution began.<p>\r\n</p>",
       "text_content": " The simutime function returns the number of simulated time units that have passed since program execution began.\r\n",
-      "mdown_content": "The **simutime **function returns the number of simulated time units that have passed since program execution began."
+      "mdown_content": "The **simutime** function returns the number of simulated time units that have passed since program execution began."
     },
     {
       "title": "Details",

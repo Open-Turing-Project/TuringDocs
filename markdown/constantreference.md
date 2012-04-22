@@ -11,7 +11,7 @@ _constantId_ { _componentSelector_ }
 
 ##Description
 In a Turing program, a constant is declared and given a name (_constantId_) and then used. Each use is called a _constant reference_.
-If the constant is an array, record or union, its parts (_components_) can be selected using subscripts and field names (using _componentSelectors_). The form of a _componentSelector _is one of:
+If the constant is an array, record or union, its parts (_components_) can be selected using subscripts and field names (using _componentSelectors_). The form of a _componentSelector_ is one of:
 
 
 

@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>Font.Width </b>is used to obtain the width in pixels that a specified string will take to draw in a specified font. The <i>textStr</i> parameter is the string. The <i>fontID</i> parameter is the font in which the string would be drawn.<p>\r\n</p>",
       "text_content": " Font.Width is used to obtain the width in pixels that a specified string will take to draw in a specified font. The textStr parameter is the string. The fontID parameter is the font in which the string would be drawn.\r\n",
-      "mdown_content": "**Font.Width **is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn."
+      "mdown_content": "**Font.Width** is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn."
     },
     {
       "title": "Details",

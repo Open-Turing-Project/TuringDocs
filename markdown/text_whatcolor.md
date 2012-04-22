@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Text.WhatColor** function is used to** **determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**.
+The **Text.WhatColor** function is used to determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**.
 
 
 
@@ -19,7 +19,7 @@ This program outputs the currently-active color number. The  message is also giv
         
         put "This writing is in color number ", Text.WhatColor
 ##Details
-The screen should be in a "_screen_"_ _or "_graphics_" mode. See **View.Set **for details.
+The screen should be in a "_screen_" or "_graphics_" mode. See **View.Set** for details.
 
 
 

@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "When <b>GUI.CreatePicture</b><i> </i>is called, the newly created picture will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>\r\nA picture widget is a passive widget and cannot be enabled or disabled.</p>\n<p>\r\n    </p>",
       "text_content": " When GUI.CreatePicture is called, the newly created picture will be displayed immediately unless GUI.DisplayWhenCreated has been called with the display parameter set to false. \r\nA picture widget is a passive widget and cannot be enabled or disabled.\r\n    ",
-      "mdown_content": "When **GUI.CreatePicture**_ _is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. \nA picture widget is a passive widget and cannot be enabled or disabled."
+      "mdown_content": "When **GUI.CreatePicture** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. \nA picture widget is a passive widget and cannot be enabled or disabled."
     },
     {
       "title": "Details",

@@ -2,12 +2,12 @@
 
 <h2>Syntax</h2>
 
-<p><strong>Joystick.GetInfo </strong>(<em>joystick</em> : <strong>int</strong>, <strong>var</strong><em> xPos</em>, <em>yPos</em> : <strong>int</strong>,<em>btn1Pressed</em>, <em>btn2Pressed</em> : <strong>boolean</strong>)</p>
+<p><strong>Joystick.GetInfo</strong> (<em>joystick</em> : <strong>int</strong>, <strong>var</strong> <em>xPos</em>, <em>yPos</em> : <strong>int</strong>,<em>btn1Pressed</em>, <em>btn2Pressed</em> : <strong>boolean</strong>)</p>
 
 <h2>Description</h2>
 
 <p>Reads the position and button status of the joystick specified by the <em>joystack</em> parameter. The <em>x</em> and <em>y</em> parameter are returned in the <em>xPos</em> and <em>yPos</em> parameters. If button 1 or button 2 on the joystick are currently pressed, <em>btn1Pressed</em> and <em>btn2Pressed</em> will be set to <strong>true</strong>. The <em>joystick</em> parameter can be either <strong>joystick1</strong> or <strong>joystick2</strong>.
-The x and y positions vary from <strong>joyMin</strong> to <strong>joyMax</strong>. To use them with respect to a screen, the coordinates returned from <strong>Joystick.GetInfo </strong>must be translated into screen coordinates. The following formula can be used:</p>
+The x and y positions vary from <strong>joyMin</strong> to <strong>joyMax</strong>. To use them with respect to a screen, the coordinates returned from <strong>Joystick.GetInfo</strong> must be translated into screen coordinates. The following formula can be used:</p>
 
 <pre><code>    screenX = round (maxx * (xPos  joyMin) / (joyMax  joyMin))
     screenY = round (maxy * (yPos  joyMin) / (joyMax  joyMin))

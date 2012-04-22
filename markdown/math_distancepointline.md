@@ -7,7 +7,7 @@
 
 
 ##Description
-**Math.DistancePointLine **is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment.
+**Math.DistancePointLine** is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment.
 
 
 

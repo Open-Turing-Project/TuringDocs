@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Int</b> (<i>low</i>,<i> high</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Rand.Int (low, high : int) : int\r\n",
-      "mdown_content": "**Rand.Int** (_low_,_ high_ : **int**) : **int**"
+      "mdown_content": "**Rand.Int** (_low_, _high_ : **int**) : **int**"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Rand.Int </b>statement is used to create a pseudo-random integer in the range <i>low</i> to <i>high</i>, inclusive. For example, if <i>i</i> is an integer, after <i>i:=</i><b>Rand.Int </b>(<i>i</i>,1, 10), <i>i</i> would have a value such as 7 or 2 or 10.<p>\r\n</p>",
       "text_content": " The Rand.Int statement is used to create a pseudo-random integer in the range low to high, inclusive. For example, if i is an integer, after i:=Rand.Int (i,1, 10), i would have a value such as 7 or 2 or 10.\r\n",
-      "mdown_content": "The **Rand.Int **statement is used to create a pseudo-random integer in the range _low_ to _high_, inclusive. For example, if _i_ is an integer, after _i:=_**Rand.Int **(_i_,1, 10), _i_ would have a value such as 7 or 2 or 10."
+      "mdown_content": "The **Rand.Int** statement is used to create a pseudo-random integer in the range _low_ to _high_, inclusive. For example, if _i_ is an integer, after _i:=_**Rand.Int** (_i_,1, 10), _i_ would have a value such as 7 or 2 or 10."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The <b>Rand.Int </b>statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range <i>low</i> =<i>i</i> = <i>high</i>. It is required that <i>low</i> = <i>high</i>.<p>\r\nEach time a program runs, <b>Rand.Int</b> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <b>Rand.Set</b> procedure.</p>\n<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>Rand.Seed </b>and <b>Rand.Next</b> procedures.</p>\n<p>\r\n</p>",
       "text_content": " The Rand.Int statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range low =i = high. It is required that low = high.\r\nEach time a program runs, Rand.Int uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the Rand.Set procedure.\r\nTo use several sequences of repeatable pseudo-random number sequences, use the Rand.Seed and Rand.Next procedures.\r\n",
-      "mdown_content": "The **Rand.Int **statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range _low_ =_i_ = _high_. It is required that _low_ = _high_.\nEach time a program runs, **Rand.Int** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures."
+      "mdown_content": "The **Rand.Int** statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range _low_ =_i_ = _high_. It is required that _low_ = _high_.\nEach time a program runs, **Rand.Int** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.\nTo use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed** and **Rand.Next** procedures."
     },
     {
       "title": "Status",

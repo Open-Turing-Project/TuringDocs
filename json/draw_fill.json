@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Fill</b> (<i>x</i>, <i>y</i> <b>:</b> <b>int</b>, <i>fillColor</i>,<b> </b><i>borderColor</i> <b>: int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.Fill (x, y : int, fillColor, borderColor : int)\r\n",
-      "mdown_content": "**Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_,** **_borderColor_ **: int**)"
+      "mdown_content": "**Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_, _borderColor_ **: int**)"
     },
     {
       "title": "Description",
@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Fill </b>procedure is used to color in a figure that is on the screen. Starting at (<i>x</i>, <i>y</i>), the figure is filled with <i>fillColor</i> to a surrounding border whose color is <i>borderColor</i>.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Fill procedure is used to color in a figure that is on the screen. Starting at (x, y), the figure is filled with fillColor to a surrounding border whose color is borderColor.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Fill **procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_."
+      "mdown_content": "The **Draw.Fill** procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_."
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen.<p>\r\n</p>\n<p>\r\n</p>",
       "text_content": " This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The maxx and maxy functions are used to determine the maximum x and y values on the screen.\r\n\r\n",
-      "mdown_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy **functions are used to determine the maximum x and y values on the screen.\n"
+      "mdown_content": "This program draws an oval with x and y radius of 10 in the center of the screen in bright green. Then the oval is filled with red. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen.\n"
     },
     {
       "title": "Execute",

@@ -62,7 +62,7 @@
       "title": "Details",
       "raw_content": "<b>buttonwait </b>can be thought of as the mouse equivalent of <b>getch</b> in that they both read something in a queue and both wait until they get the thing they're looking for.<p>\r\n</p>",
       "text_content": " buttonwait can be thought of as the mouse equivalent of getch in that they both read something in a queue and both wait until they get the thing they're looking for.\r\n",
-      "mdown_content": "**buttonwait **can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for."
+      "mdown_content": "**buttonwait** can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for."
     },
     {
       "title": "See also",

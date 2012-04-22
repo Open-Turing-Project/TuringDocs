@@ -15,7 +15,7 @@ A **tag** statement is a special-purpose assignment that is used for changing th
 
 
 ##Example
-In this example, the tag field of **union** variable _v_ is set to be _passenger_,_ _thereby activating the _passenger_ field of _v_.
+In this example, the tag field of **union** variable _v_ is set to be _passenger_, thereby activating the _passenger_ field of _v_.
 
 
         type vehicleInfo :

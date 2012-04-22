@@ -15,7 +15,7 @@ A **return** statement terminates the **procedure** (or main program) in which i
 
 
 ##Example
-This procedure takes no action if the _errorHasOccurred _flag has been set to true.
+This procedure takes no action if the _errorHasOccurred_ flag has been set to true.
 
 
         procedure double

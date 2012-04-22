@@ -21,7 +21,7 @@ This program prints out the message "Bravo" three times, each in a different col
             put "Bravo"
         end for
 ##Example
-This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i _mod maxcolor + 1. This cycles repeatedly through all the available colors.
+This program prints out a message. The color of each letter is different from the preceding letter. For letter number _i_ the color number is _i_ mod maxcolor + 1. This cycles repeatedly through all the available colors.
 
 
         View.Set ( "screen" )
@@ -32,8 +32,8 @@ This program prints out a message. The color of each letter is different from th
         end for
 ##Details
 In "_screen_" mode on the IBM PC, the color specified can actually range from 0 - 31. The upper 16 colors (16-31) are the same as the lower 16, except that they blink.
-See **View.Set** for the number of colors available in the various "_graphics_"_ _modes.
-The screen should be in a "_screen_" or "_graphics_" mode. If the screen mode has not been set, it will automatically be set to "_screen_" mode. See **View.Set **for details.
+See **View.Set** for the number of colors available in the various "_graphics_" modes.
+The screen should be in a "_screen_" or "_graphics_" mode. If the screen mode has not been set, it will automatically be set to "_screen_" mode. See **View.Set** for details.
 
 
 

@@ -11,7 +11,7 @@ _variableId_ { _componentSelector_ }
 
 ##Description
 In a Turing program, a variable is declared and given a name (_variableId_) and then used. Each use is called a _variable reference_.
-If the variable is an array, collection, record or union, its parts (_components_) can be selected using subscripts and field names (using _componentSelectors_). The form of a _componentSelector _is one of:\
+If the variable is an array, collection, record or union, its parts (_components_) can be selected using subscripts and field names (using _componentSelectors_). The form of a _componentSelector_ is one of:\
 
 
 
@@ -21,7 +21,7 @@ Form (a) is used for subscripting (indexing) arrays and collections. The number 
 
 
 ##Example
-Following the declarations of _k_,_ a _and _r_, each of _k_,_ a _(_k_) and _r_._name _are variable references.
+Following the declarations of _k_, _a_ and _r_, each of _k_, _a_ (_k_) and _r_._name_ are variable references.
 
 
         var k : int

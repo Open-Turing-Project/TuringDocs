@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\"<i> </i>mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "The meaning of the _Color_ number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\"_ _mode, it will automatically be set to \"_graphics_\" mode."
+      "mdown_content": "The meaning of the _Color_ number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
     },
     {
       "title": "See also",

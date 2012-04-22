@@ -2,12 +2,12 @@
 #Net.HostAddressFromName
 
 ##Syntax
-**Net.HostAddressFromName **(     _hostName_ : **string**) : **string**
+**Net.HostAddressFromName** (     _hostName_ : **string**) : **string**
 
 
 
 ##Description
-Returns** **the numeric TCP/IP address of the machine whose hostname is specified by the _hostName_ parameter.
+Returns the numeric TCP/IP address of the machine whose hostname is specified by the _hostName_ parameter.
 
 
 

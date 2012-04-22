@@ -52,11 +52,11 @@
 <h2>Details</h2>
 
 <p>As the examples in this section show, a pointer can locate one of three things: an object of a collection, an object of a class or a value of a type.
-In the <strong>new</strong> statement, the <em>collectionOrClassId</em> can be omitted. If the pointer locates a type, it<em> </em>must be omitted. The <strong>free</strong> statement is used to deallocate an element.
+In the <strong>new</strong> statement, the <em>collectionOrClassId</em> can be omitted. If the pointer locates a type, it must be omitted. The <strong>free</strong> statement is used to deallocate an element.
 An imported class can have one of its objects created (by the <strong>new</strong> statement) only if the class is imported <strong>var</strong>.
 If there is no more space to allocate an element, <strong>new</strong> will set the pointer to be the <strong>nil</strong> value, and the program will continue executing.
-If the pointer locates class <em>C </em>and <em>C</em> contains an <strong>implement</strong> <strong>by</strong> list, the object created by <strong>new</strong> is the inherited object (through any number of levels of <strong>implement</strong> <strong>by</strong>). The pointer, however, remains a pointer to <em>C</em>.
-The form <strong>new</strong> <em>p</em>  is a short form for <strong>new</strong> <em>C</em>, <em>p </em>when <em>C</em> is the class or collection given in <em>p</em>'s type.
+If the pointer locates class <em>C</em> and <em>C</em> contains an <strong>implement</strong> <strong>by</strong> list, the object created by <strong>new</strong> is the inherited object (through any number of levels of <strong>implement</strong> <strong>by</strong>). The pointer, however, remains a pointer to <em>C</em>.
+The form <strong>new</strong> <em>p</em>  is a short form for <strong>new</strong> <em>C</em>, <em>p</em> when <em>C</em> is the class or collection given in <em>p</em>'s type.
 If <em>p</em> is a pointer to class <em>C</em> and <em>C</em> has a descendant (expansion) class <em>D</em>, a <strong>new</strong> statement can be used to allocate an object of type <em>D</em>, as in:
 If D has an <strong>implement</strong> <strong>by</strong> clause, the expansion is created.</p>
 

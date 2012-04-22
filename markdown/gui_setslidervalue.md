@@ -12,7 +12,7 @@ Sets the value of a slider or scroll bar specified by _widgetID_ to _value_. It 
 
 
 ##Example
-See **GUI.SetScrollAmount **for an example of **GUI.SetSliderValue**.
+See **GUI.SetScrollAmount** for an example of **GUI.SetSliderValue**.
 
 
 
@@ -23,6 +23,6 @@ This means that you can only call the function by calling **GUI.SetSliderValue**
 
 
 ##See also
-**[gui_getslidervalue.html](GUI.GetSliderValue) **for reading a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.
+**[gui_getslidervalue.html](GUI.GetSliderValue)** for reading a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.
 
 

@@ -67,7 +67,7 @@ Output nothing.
         end for
 ##Details
 The **for** statement declares the counting identifier (a separate declaration should not be given for _i_ or _j_). The scope of this identifier is restricted to the **for** statement.
-If _first _is a value beyond _last_, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or _increment_ if the **by** clause is present. Executing an **exit** statement inside a **for** statement causes a jump to just beyond **end** **for**. You are not allowed to change the counting variable (for example, you are not allowed to write _i_ := 10).
+If _first_ is a value beyond _last_, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or _increment_ if the **by** clause is present. Executing an **exit** statement inside a **for** statement causes a jump to just beyond **end** **for**. You are not allowed to change the counting variable (for example, you are not allowed to write _i_ := 10).
 The counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.
 If **decreasing** is not present, _first_ .. _last_ can be replaced by the name of a subrange type, for example by _dozen_, declared by:
 Procedures, functions and modules cannot be declared inside a **for** statement. Just preceding the statements and declarations, you are allowed to write an "invariant clause" of the form:

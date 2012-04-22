@@ -61,7 +61,7 @@ This is an example demonstrating how to check for both character and mouse input
             end if
         end loop
 ##Details
-**buttonwait **can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
+**buttonwait** can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
 
 
 

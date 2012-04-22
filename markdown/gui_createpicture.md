@@ -42,7 +42,7 @@ The following program draws two pictures, merged and not merged.
         label2 := GUI.CreateLabel (135, 5, "Picture (merge)")
         picture2 := GUI.CreatePicture (120, 25, pic, true)
 ##Details
-When **GUI.CreatePicture**_ _is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreatePicture** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 A picture widget is a passive widget and cannot be enabled or disabled.
 
 

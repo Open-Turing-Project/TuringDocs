@@ -8,7 +8,7 @@
 
 ##Description
 The **chr** function is used to convert an integer to a character.The character is the _i_-th character of the ASCII sequence of characters (except on the IBM mainframe, which uses the EBCDIC sequence.)  For example, **chr** (65) is "A".
-The **ord** function is the inverse of **chr**, so for any character_ c_,:
+The **ord** function is the inverse of **chr**, so for any character _c_,:
 
 
 

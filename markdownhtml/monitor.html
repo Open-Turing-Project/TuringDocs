@@ -5,17 +5,17 @@
 <p>A <em>monitorDeclaration</em> is:</p>
 
 <p><strong>monitor</strong> <em>id</em>
-[ <strong>implement</strong> <em>implementItem </em>]
-[ <strong>implement</strong> <strong>by</strong> <em>implementByItem </em>]
+[ <strong>implement</strong> <em>implementItem</em> ]
+[ <strong>implement</strong> <strong>by</strong> <em>implementByItem</em> ]
 [ <strong>import</strong> [ <strong>var</strong> ] <em>importItem</em>
-_ <em>{,</em> <em>[ <strong>var</strong> ]</em> importItem<em> } ]
-[ <strong>export</strong> [ </em>howExport<em> ] </em>id <em>{,[</em>howExport<em> ]</em> id<em> }]
-</em>statementsAndDeclarations<em>
-<strong>end</strong> </em>id_</p>
+{, [ <strong>var</strong> ] <em>importItem</em> } ]
+[ <strong>export</strong> [ <em>howExport</em> ] <em>id</em> {,[<em>howExport</em> ] <em>id</em> }]
+<em>statementsAndDeclarations</em>
+<strong>end</strong> <em>id</em></p>
 
 <h2>Description</h2>
 
-<p>A monitor is a special purpose module (see <strong>module</strong>) that is used with concurrent processes (see <strong>process</strong>). At most, one concurrent process (see <strong>process</strong>) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides <em>mutually exclusive </em>access to the monitor's internal data.</p>
+<p>A monitor is a special purpose module (see <strong>module</strong>) that is used with concurrent processes (see <strong>process</strong>). At most, one concurrent process (see <strong>process</strong>) can be active in a monitor at a time. This means that a process will be blocked if it calls a monitor that is already active. The process will not be allowed to proceed until the monitor is inactive. The monitor provides <em>mutually exclusive</em> access to the monitor's internal data.</p>
 
 <h2>Example</h2>
 
@@ -63,7 +63,7 @@ The body of a monitor has the same form as that of a module, except that modules
 
 <h2>Details</h2>
 
-<p>The syntax of a <em>monitorDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses. See <strong>module</strong> for an explanation of these extra features. There is also an optional <em>compilerTimeIntegerExpression</em> in the first line, which is explained below. The full syntax<em> </em>is:
+<p>The syntax of a <em>monitorDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses. See <strong>module</strong> for an explanation of these extra features. There is also an optional <em>compilerTimeIntegerExpression</em> in the first line, which is explained below. The full syntax is:
 If the optional <em>compileTimeIntegerExpression</em> is present, this is a <em>device monitor</em>. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this <em>compileTimeIntegerExpression</em>.</p>
 
 <pre><code>    monitor id [ : compileTimeIntegerExpn ]

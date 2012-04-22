@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Time.Delay **procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.
+The **Time.Delay** procedure is used to cause the program to pause for a given time. The time duration is in milliseconds.
 
 
 

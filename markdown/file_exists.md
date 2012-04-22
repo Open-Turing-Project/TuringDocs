@@ -7,7 +7,7 @@
 
 
 ##Description
-**File.Exists **returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory.
+**File.Exists** returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory.
 
 
 

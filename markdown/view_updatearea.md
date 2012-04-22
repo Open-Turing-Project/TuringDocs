@@ -55,7 +55,7 @@ It's very easy to forget that no output will appear in the Run window when using
 
 
 ##Details
-**View.UpdateArea** should not be used in conjunction with the **Sprite **module. Sprites can be considered a limited version of this technique. **View.UpdateArea** also works well when the entire background is changing.
+**View.UpdateArea** should not be used in conjunction with the **Sprite** module. Sprites can be considered a limited version of this technique. **View.UpdateArea** also works well when the entire background is changing.
 
 
 

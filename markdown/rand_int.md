@@ -2,12 +2,12 @@
 #Rand.Int
 
 ##Syntax
-**Rand.Int** (_low_,_ high_ : **int**) : **int**
+**Rand.Int** (_low_, _high_ : **int**) : **int**
 
 
 
 ##Description
-The **Rand.Int **statement is used to create a pseudo-random integer in the range _low_ to _high_, inclusive. For example, if _i_ is an integer, after _i:=_**Rand.Int **(_i_,1, 10), _i_ would have a value such as 7 or 2 or 10.
+The **Rand.Int** statement is used to create a pseudo-random integer in the range _low_ to _high_, inclusive. For example, if _i_ is an integer, after _i:=_**Rand.Int** (_i_,1, 10), _i_ would have a value such as 7 or 2 or 10.
 
 
 
@@ -19,9 +19,9 @@ This program simulates the repeated rolling of a six sided die.
             put "Rolled ", Rand.Int (1, 6)
         end loop
 ##Details
-The **Rand.Int **statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range _low_ =_i_ = _high_. It is required that _low_ = _high_.
+The **Rand.Int** statement sets its parameter to the next value of a sequence of pseudo-random integers that approximates a uniform distribution over the range _low_ =_i_ = _high_. It is required that _low_ = _high_.
 Each time a program runs, **Rand.Int** uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the **Rand.Set** procedure.
-To use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures.
+To use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed** and **Rand.Next** procedures.
 
 
 

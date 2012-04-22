@@ -12,7 +12,7 @@ A canvas is a drawing surface for use by the program. It differs from just using
 Canvases have procedures that emulate all the procedures in the Draw module as well as a procedure to emulate Font.Draw, Pic.Draw, Pic.New, Pic.ScreenLoad and Pic.ScreenSave.
 You can get mouse feedback from a canvas. Using the <em>CreateCanvasFull</em> method, you can specify three routines that are called when the mouse button is depressed while pointing in a canvas. One routine will be called when the user presses the mouse button down in a canvas. Another routine will be called while the user drags the mouse with the mouse button down. This routine is repeatedly called whenever the mouse changes position while the mouse button is down. The last routine is called when the mouse button is released. All three routines take an <em>x</em> and <em>y</em> parameter, which is the location of the mouse with respect to the canvas (i.e. (0, 0) is the lower-left corner of the canvas).</p>
 
-<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the canvas. The <em>width</em> and <em>height </em>parameters specify the width and height of the canvas.
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the canvas. The <em>width</em> and <em>height</em> parameters specify the width and height of the canvas.
 For <strong>GUI.CreateCanvasFull</strong>, the <em>border</em> parameter specifies the type of border that surrounds the canvas and is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em> or <em>GUI.EXDENT</em>. A border of 0 is the default and is the same as <em>GUI.LINE</em>. <em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the canvas appear indented or recessed. <em>GUI.EXDENT</em> makes the canvas appear to stand out from the window.
 The <em>mouseDown</em> parameter is a procedure called when the user presses the mouse button in the canvas. The <em>mouseDrag</em> parameter is a procedure called when the user drags the mouse while the mouse button is still pressed. The <em>mouseUp</em> parameter is a procedure called when the user releases the mouse button. The parameters to all three are the x and y location of the mouse where the button was pressed (dragged/released). The coordinates are given with respect to the canvas (i.e. (0, 0) is the lower-left corner of the canvas).</p>
 
@@ -35,7 +35,7 @@ The <em>mouseDown</em> parameter is a procedure called when the user presses the
 <h2>Details</h2>
 
 <p>When <strong>GUI.CreateCanvas</strong> or <strong>GUI.CreateCanvasFull</strong> is called, the newly created canvas will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
-The border of the canvas is just outside the drawing surface, so <strong>GUI.GetWidth</strong><em> </em>and<em> </em><strong>GUI.GetHeight </strong>will return slight larger values than <em>width</em> and <em>height</em>.
+The border of the canvas is just outside the drawing surface, so <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> will return slight larger values than <em>width</em> and <em>height</em>.
 When the canvas is disabled, clicking the mouse in the canvas does not call any of the <em>mouseDown</em>, <em>mouseDrag</em>, or <em>mouseUp</em> procedures. The appearance of the canvas does not change.</p>
 
 <h2>Details</h2>

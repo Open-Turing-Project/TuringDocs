@@ -2,7 +2,7 @@
 #Mouse.ButtonWait
 
 ##Syntax
-**Mouse.ButtonWait **(_motion_ : **string**, 
+**Mouse.ButtonWait** (_motion_ : **string**, 
 **var** _x_, _y_, _buttonNumber_, _buttonUpDown_ : **int**)
 
 
@@ -10,7 +10,7 @@
 
 ##Description
 The **Mouse.ButtonWait** procedure gets information about a mouse event and removes it from the queue.
-The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonWait** returns** **instantly. If there isn't such an event, **Mouse.ButtonWait** waits until there is one and then returns (much like **getch** handles keystrokes).
+The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonWait** returns instantly. If there isn't such an event, **Mouse.ButtonWait** waits until there is one and then returns (much like **getch** handles keystrokes).
 In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
 In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
 The parameters _x_ and _y_ are set to the position of the mouse cursor when the button was pressed. The parameter _buttonnumber_ is set to 1 when in "_single-button mode_". In  "_multi-button mode_", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter _buttonupdown_ is set to 1, if a button was pressed and 0 if a button was released. 
@@ -55,7 +55,7 @@ This is an example demonstrating how to check for both character and mouse input
             end if
         end loop
 ##Details
-**Mouse.ButtonWait **can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
+**Mouse.ButtonWait** can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
 
 
 

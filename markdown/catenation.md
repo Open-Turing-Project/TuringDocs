@@ -2,7 +2,7 @@
 #catenation (+)
 
 ##Syntax
-A _catenation _is:
+A _catenation_ is:
 
 _stringExpn_ **+** _stringExpn_
 
@@ -35,7 +35,7 @@ If both operands have the type **char** or **char**(_n_) neither of which is a d
 
 
 ##See also
-_substrings_ (for separating a strings into parts), **[repeat.html](repeat)**_ _(for making repeated catenations), **[string1.html](string)**_ _type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).
+_substrings_ (for separating a strings into parts), **[repeat.html](repeat)** (for making repeated catenations), **[string1.html](string)** type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).
 See also **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(_n_), _[explicitstringconstant.html](explicitStringConstant),_ _[explicitcharconstant.html](explicitCharConstant),_ [substring.html](substring) and **[length.html](length)**.
 
 

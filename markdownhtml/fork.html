@@ -4,7 +4,7 @@
 
 <p>A <em>forkStatement</em> is:</p>
 
-<p><strong>fork</strong><em> processId</em> [ ( [ <em>expn</em> { , <em>expn</em> } ] ) ]
+<p><strong>fork</strong> <em>processId</em> [ ( [ <em>expn</em> { , <em>expn</em> } ] ) ]
 [ : <em>reference</em> [ , <em>expn</em> [ , <em>reference</em> ] ] ]</p>
 
 <h2>Description</h2>
@@ -29,7 +29,7 @@
 
 <p>See <strong>procedure</strong> declaration for details about parameters. The first optional <em>reference</em> in the <strong>fork</strong> statement must be a <strong>boolean</strong> variable reference. The <strong>fork</strong> sets this to <strong>true</strong> if the process is actually activated. If this fails to occur (probably because stack space could not be allocated), this <em>reference</em> is set to <strong>false</strong>. If the <strong>fork</strong> fails but this reference is omitted, an exception occurs. See exception handlers.
 The optional <em>expn</em> specifies the number of bytes for the process' stack; this overrides the optionally given stack size in the <strong>process</strong> declaration. The second optional <em>reference</em> must be a variable reference with the type <strong>addressint</strong>. See <strong>addressint</strong>. This variable is set to identify the process activation. This reference has the implementation-dependent meaning of locating the process' internal descriptor.
-In this explanation of the <strong>fork</strong> statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the <strong>fork</strong><em> </em>statement<em> </em>is:
+In this explanation of the <strong>fork</strong> statement, we have up to this point ignored the possibility of processes exported from modules. If the process is being forked from outside of a module from which it has been exported, the syntax of the <strong>fork</strong> statement is:
 In other words, the module's name and a dot must precede the process' name.</p>
 
 <pre><code>    fork moduleId . procedureId [ ( expn {, expn } ) ] &#133;

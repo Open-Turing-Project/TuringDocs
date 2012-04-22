@@ -21,7 +21,7 @@
       "title": "Details",
       "raw_content": "<b>true</b>/<b>false</b> values are called <i>boolean </i>values. A <b>boolean</b> variable, such as <i>found</i> in the above example, can have a value of either <b>true</b> or <b>false</b>. <p>\r\n</p>",
       "text_content": " true/false values are called boolean values. A boolean variable, such as found in the above example, can have a value of either true or false. \r\n",
-      "mdown_content": "**true**/**false** values are called _boolean _values. A **boolean** variable, such as _found_ in the above example, can have a value of either **true** or **false**. "
+      "mdown_content": "**true**/**false** values are called _boolean_ values. A **boolean** variable, such as _found_ in the above example, can have a value of either **true** or **false**. "
     },
     {
       "title": "See also",

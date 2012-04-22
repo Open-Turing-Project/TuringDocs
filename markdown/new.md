@@ -49,11 +49,11 @@ Using a record type, declare a list of records and allocate one record.
         new first
 ##Details
 As the examples in this section show, a pointer can locate one of three things: an object of a collection, an object of a class or a value of a type.
-In the **new** statement, the _collectionOrClassId_ can be omitted. If the pointer locates a type, it_ _must be omitted. The **free** statement is used to deallocate an element.
+In the **new** statement, the _collectionOrClassId_ can be omitted. If the pointer locates a type, it must be omitted. The **free** statement is used to deallocate an element.
 An imported class can have one of its objects created (by the **new** statement) only if the class is imported **var**.
 If there is no more space to allocate an element, **new** will set the pointer to be the **nil** value, and the program will continue executing.
-If the pointer locates class _C _and _C_ contains an **implement** **by** list, the object created by **new** is the inherited object (through any number of levels of **implement** **by**). The pointer, however, remains a pointer to _C_.
-The form **new** _p_  is a short form for **new** _C_, _p _when _C_ is the class or collection given in _p_'s type.
+If the pointer locates class _C_ and _C_ contains an **implement** **by** list, the object created by **new** is the inherited object (through any number of levels of **implement** **by**). The pointer, however, remains a pointer to _C_.
+The form **new** _p_  is a short form for **new** _C_, _p_ when _C_ is the class or collection given in _p_'s type.
 If _p_ is a pointer to class _C_ and _C_ has a descendant (expansion) class _D_, a **new** statement can be used to allocate an object of type _D_, as in:
 If D has an **implement** **by** clause, the expansion is created.
 

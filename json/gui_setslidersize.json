@@ -18,7 +18,7 @@
       "title": "Example",
       "raw_content": "See <b>GUI.SetScrollAmount </b>for an example of <b>GUI.SetSliderSize</b>.<p>\r\n</p>",
       "text_content": " See GUI.SetScrollAmount for an example of GUI.SetSliderSize.\r\n",
-      "mdown_content": "See **GUI.SetScrollAmount **for an example of **GUI.SetSliderSize**."
+      "mdown_content": "See **GUI.SetScrollAmount** for an example of **GUI.SetSliderSize**."
     },
     {
       "title": "Status",

@@ -7,7 +7,7 @@ _A_ **xor** _B_
 
 
 ##Description
-When applied to set values, **xor** (symmetric difference) yields a set which includes element _e_ if and only if _e_ is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands _A_ and _B _are evaluated.
+When applied to set values, **xor** (symmetric difference) yields a set which includes element _e_ if and only if _e_ is contained in exactly one of the operands. When applied to non-negative integer values, **xor** yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands _A_ and _B_ are evaluated.
 
 
 

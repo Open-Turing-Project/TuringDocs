@@ -4,8 +4,8 @@
 ##Syntax
 A _collectionDeclaration_ is one of:
 
-(a)**var** _id _{ , _id _} : **collection** **of** _typeSpec_
-(b)**var** _id _{ , _id _} : **collection** **of** **forward** _typeId_
+(a)**var** _id_ { , _id_ } : **collection** **of** _typeSpec_
+(b)**var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_
 
 
 

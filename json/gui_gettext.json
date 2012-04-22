@@ -12,13 +12,13 @@
       "title": "Description",
       "raw_content": "Returns the current text of a text field specified by <i>widgetID</i>. The <i>widgetID </i>must specify a text field widget.<p>\r\n</p>",
       "text_content": " Returns the current text of a text field specified by widgetID. The widgetID must specify a text field widget.\r\n",
-      "mdown_content": "Returns the current text of a text field specified by _widgetID_. The _widgetID _must specify a text field widget."
+      "mdown_content": "Returns the current text of a text field specified by _widgetID_. The _widgetID_ must specify a text field widget."
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.CreateTextField </b>for an example of <b>GUI.GetText</b>.<p>\r\n</p>",
       "text_content": " See GUI.CreateTextField for an example of GUI.GetText.\r\n",
-      "mdown_content": "See **GUI.CreateTextField **for an example of **GUI.GetText**."
+      "mdown_content": "See **GUI.CreateTextField** for an example of **GUI.GetText**."
     },
     {
       "title": "Status",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"gui_settext.html\">GUI.SetText</a> </b>for setting the text in a text field. See also <b>GUI.CreateTextField</b>.<p>\r\n</p>",
       "text_content": " GUI.SetText for setting the text in a text field. See also GUI.CreateTextField.\r\n",
-      "mdown_content": "**[gui_settext.html](GUI.SetText) **for setting the text in a text field. See also **GUI.CreateTextField**."
+      "mdown_content": "**[gui_settext.html](GUI.SetText)** for setting the text in a text field. See also **GUI.CreateTextField**."
     }
   ],
   "dependencies": [

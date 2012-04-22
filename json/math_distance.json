@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>Math.Distance </b>is used to calculate the distance between two points.\r\n(<i>x1</i>, <i>y1</i>) is the location of the first point, and (<i>x2</i>, <i>y2</i>) is the location of the \r\nsecond point.<p>\r\n</p>",
       "text_content": " Math.Distance is used to calculate the distance between two points.\r\n(x1, y1) is the location of the first point, and (x2, y2) is the location of the \r\nsecond point.\r\n",
-      "mdown_content": "**Math.Distance **is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point."
+      "mdown_content": "**Math.Distance** is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point."
     },
     {
       "title": "Details",

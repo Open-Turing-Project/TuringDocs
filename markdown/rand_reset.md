@@ -20,9 +20,9 @@ This program simulates the repeated rolling of a six sided die. Each time the pr
             put "Rolled ", Rand.Int (1, 6)
         end loop
 ##Details
-If **Rand.Reset **and** Rand.Set **are not used, each time a program runs **Rand.Real** and **Rand.Int **use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use **Rand.Reset** or **Rand.Set**.
+If **Rand.Reset** and **Rand.Set** are not used, each time a program runs **Rand.Real** and **Rand.Int** use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use **Rand.Reset** or **Rand.Set**.
 The **Rand.Reset** procedure can be called any time. However, to make it work, it should only be called once per program. Any call to **Rand.Reset** after the first one is ignored.
-To use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed **and **Rand.Next** procedures.
+To use several sequences of repeatable pseudo-random number sequences, use the **Rand.Seed** and **Rand.Next** procedures.
 
 
 

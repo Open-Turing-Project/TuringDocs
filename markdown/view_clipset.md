@@ -43,6 +43,6 @@ This means that you can only call the function by calling **View.ClipSet**, not 
 
 
 ##See also
-**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff) **functions.
+**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff)** functions.
 
 

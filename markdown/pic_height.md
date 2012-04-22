@@ -7,7 +7,7 @@
 
 
 ##Description
-**Pic.Height **returns the width in pixels of the picture represented by _picID_.
+**Pic.Height** returns the width in pixels of the picture represented by _picID_.
 This function is often used in conjunction with **Pic.Width** to obtain the dimensions of a picture loaded using **Pic.FileNew**.
 
 

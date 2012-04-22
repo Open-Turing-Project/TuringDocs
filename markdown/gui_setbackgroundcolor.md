@@ -14,7 +14,7 @@ The alternate spelling is **GUI.SetBackgroundColour**
 
 
 ##Example
-See **GUI.CreateFrame **for an example of **GUI.SetBackgroundColour**.
+See **GUI.CreateFrame** for an example of **GUI.SetBackgroundColour**.
 
 
 

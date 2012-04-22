@@ -12,7 +12,7 @@ The **hasch** procedure is used to determine if there is a character that has be
 
 
 ##Example
-The _flush _procedure gets rid of any characters that have been typed but not yet read.
+The _flush_ procedure gets rid of any characters that have been typed but not yet read.
 
 
         procedure flush
@@ -23,7 +23,7 @@ The _flush _procedure gets rid of any characters that have been typed but not ye
             end loop
         end flush
 ##Details
-The screen should be in a "_screen_"_ _or "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to "_screen_" mode.
+The screen should be in a "_screen_" or "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to "_screen_" mode.
 
 
 

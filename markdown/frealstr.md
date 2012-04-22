@@ -2,7 +2,7 @@
 #frealstr
 
 ##Syntax
-**frealstr** ( _r_ : **real**, _width_,_ fractionWidth _: **int** ) : **string**
+**frealstr** ( _r_ : **real**, _width_, _fractionWidth_ : **int** ) : **string**
 
 
 

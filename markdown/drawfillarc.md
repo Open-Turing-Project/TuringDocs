@@ -9,7 +9,7 @@ _initialAngle_, _finalAngle_, _Color_ : **int**)
 
 
 ##Description
-The **drawfillarc** procedure is used to draw a filled arc whose center is at (_x_, _y_). It then fills in the pie-shaped wedge using the specified _Color_. To outline a filled arc, use **drawfillarc** with the _Color_ parameter set to the fill color and then **drawarc** with the _Color_ parameter set to the border color. For _initialAngle _and _finalAngle_, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius _and _yRadius_.
+The **drawfillarc** procedure is used to draw a filled arc whose center is at (_x_, _y_). It then fills in the pie-shaped wedge using the specified _Color_. To outline a filled arc, use **drawfillarc** with the _Color_ parameter set to the fill color and then **drawarc** with the _Color_ parameter set to the border color. For _initialAngle_ and _finalAngle_, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by _xRadius_ and _yRadius_.
 
 ![Doc image](drawfillarc01.gif)
 

@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"view_clipadd.html\">View.ClipAdd</a></b> and <b><a href=\"view_clipoff.html\">View.ClipOff</a> </b>functions.<p>\r\n</p>",
       "text_content": " View.ClipAdd and View.ClipOff functions.\r\n",
-      "mdown_content": "**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff) **functions."
+      "mdown_content": "**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff)** functions."
     }
   ],
   "dependencies": [

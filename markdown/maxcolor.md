@@ -19,8 +19,8 @@ This program outputs the maximum color number.
         
         put "The maximum color number is ", maxcolor
 ##Details
-The screen should be in a "_screen_"_ _or "_graphics_" mode. If it is not, it will automatically be set to "_screen_" mode. See **setscreen** for details.
-For IBM PC compatibles in "_screen_"_ _mode, **maxcolor** = 15. For the default IBM PC compatible "_graphics_" mode (CGA), **maxcolor** = 3.
+The screen should be in a "_screen_" or "_graphics_" mode. If it is not, it will automatically be set to "_screen_" mode. See **setscreen** for details.
+For IBM PC compatibles in "_screen_" mode, **maxcolor** = 15. For the default IBM PC compatible "_graphics_" mode (CGA), **maxcolor** = 3.
 
 
 

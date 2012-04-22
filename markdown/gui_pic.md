@@ -16,7 +16,7 @@ All of these routines are essentially the same as the similarly-named procedures
 
 
 ##Example
-See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull **for an example of **GUI.PicDraw**.
+See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull** for an example of **GUI.PicDraw**.
 
 
 

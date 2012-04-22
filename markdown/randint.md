@@ -2,7 +2,7 @@
 #randint
 
 ##Syntax
-**randint** ( **var** _i_ : **int**, _low_,_ high_ : **int** )
+**randint** ( **var** _i_ : **int**, _low_, _high_ : **int** )
 
 
 

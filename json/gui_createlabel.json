@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateLabel</b> (<i>x</i>,<i> y</i> : <b>int</b>, <i>text</i> : <b>string</b>) : <b>int</b><p>\r\n          <b>GUI.CreateLabelFull</b> (<i>x,</i> <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>width</i>, <i>height</i>, <i>alignment</i>, <i>fontID</i> : <b>int</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateLabel (x, y : int, text : string) : int\r\n          GUI.CreateLabelFull (x, y : int, text : string, \r\n\t      width, height, alignment, fontID : int) : int\r\n    ",
-      "mdown_content": "**GUI.CreateLabel** (_x_,_ y_ : **int**, _text_ : **string**) : **int**\n**GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**"
+      "mdown_content": "**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int**\n**GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "When <b>GUI.CreateLabel</b> or <b>GUI.CreateLabelFull</b><i> </i>is called, the newly created label will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>\r\nA frame widget is a passive widget and cannot be enabled or disabled.</p>\n<p>\r\n    </p>",
       "text_content": " When GUI.CreateLabel or GUI.CreateLabelFull is called, the newly created label will be displayed immediately unless GUI.DisplayWhenCreated has been called with the display parameter set to false. \r\nA frame widget is a passive widget and cannot be enabled or disabled.\r\n    ",
-      "mdown_content": "When **GUI.CreateLabel** or **GUI.CreateLabelFull**_ _is called, the newly created label will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. \nA frame widget is a passive widget and cannot be enabled or disabled."
+      "mdown_content": "When **GUI.CreateLabel** or **GUI.CreateLabelFull** is called, the newly created label will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. \nA frame widget is a passive widget and cannot be enabled or disabled."
     },
     {
       "title": "Details",

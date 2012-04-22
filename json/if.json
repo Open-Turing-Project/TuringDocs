@@ -39,7 +39,7 @@
       ],
       "raw_content": "If <i>x </i>is negative, change its sign.<p>\r\n</p>",
       "text_content": " If x is negative, change its sign.\r\n\r\n",
-      "mdown_content": "If _x _is negative, change its sign."
+      "mdown_content": "If _x_ is negative, change its sign."
     },
     {
       "title": "Example",
@@ -48,7 +48,7 @@
       ],
       "raw_content": "If <i>x </i>is less than zero or greater than maxx, put a message.<p>\r\n</p>",
       "text_content": " If x is less than zero or greater than maxx, put a message.\r\n\r\n",
-      "mdown_content": "If _x _is less than zero or greater than maxx, put a message."
+      "mdown_content": "If _x_ is less than zero or greater than maxx, put a message."
     },
     {
       "title": "Example",

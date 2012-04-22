@@ -6,13 +6,13 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Draw.FillOval </strong>procedure is used to draw a filled oval whose center is at (<em>x</em>, <em>y</em>). The horizontal and vertical distances from the center to the oval are given by <em>xRadius </em>and <em>yRadius</em>. To get an oval outlined in a different color, use <strong>Draw.FillOval</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>Draw.Oval</strong> with the <em>Color</em> parameter set to the border color.</p>
+<p>The <strong>Draw.FillOval</strong> procedure is used to draw a filled oval whose center is at (<em>x</em>, <em>y</em>). The horizontal and vertical distances from the center to the oval are given by <em>xRadius</em> and <em>yRadius</em>. To get an oval outlined in a different color, use <strong>Draw.FillOval</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>Draw.Oval</strong> with the <em>Color</em> parameter set to the border color.</p>
 
 <p><img src="draw_filloval01.gif" alt="Doc image" /></p>
 
 <h2>Example</h2>
 
-<p>This program draws a large filled oval that just touches each edge of the screen using color number 1. The <strong>maxx</strong> and <strong>maxy </strong>functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<em>midx</em>, <em>midy</em>), which is the middle of the screen.</p>
+<p>This program draws a large filled oval that just touches each edge of the screen using color number 1. The <strong>maxx</strong> and <strong>maxy</strong> functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<em>midx</em>, <em>midy</em>), which is the middle of the screen.</p>
 
 <pre><code>    View.Set ("graphics")
     const midx := maxx div 2

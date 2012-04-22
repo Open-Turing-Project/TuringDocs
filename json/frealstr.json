@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>frealstr</b> ( <i>r</i> : <b>real</b>, <i>width</i>,<i> fractionWidth </i>: <b>int</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " frealstr ( r : real, width, fractionWidth : int ) : string\r\n",
-      "mdown_content": "**frealstr** ( _r_ : **real**, _width_,_ fractionWidth _: **int** ) : **string**"
+      "mdown_content": "**frealstr** ( _r_ : **real**, _width_, _fractionWidth_ : **int** ) : **string**"
     },
     {
       "title": "Description",

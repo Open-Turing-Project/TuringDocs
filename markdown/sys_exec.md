@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Sys.Exec** function** **is used to** **execute an application or more often, open a data file with its associated application. **Sys.Exec** can be used to launch such programs as the Internet Browser by specifying a URL. **Sys.Exec** launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)
+The **Sys.Exec** function is used to execute an application or more often, open a data file with its associated application. **Sys.Exec** can be used to launch such programs as the Internet Browser by specifying a URL. **Sys.Exec** launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)
 
 
 

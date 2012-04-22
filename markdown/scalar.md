@@ -4,7 +4,7 @@
 ##Syntax
 A _scalarType_ is one of:
 
-(a)_standardType_ _% int_,_ real_,_ boolean or string_
+(a)_standardType_ _% int_, _real_, _boolean or string_
 (b)_enumeratedType_
 (c)_subrangeType_
 (d)_pointerType_

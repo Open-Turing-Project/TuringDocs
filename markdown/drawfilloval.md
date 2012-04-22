@@ -7,7 +7,7 @@
 
 
 ##Description
-The **drawfilloval** procedure is used to draw a filled oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius _and _yRadius_. To get an oval outlined in a different color, use **drawfilloval** with the _Color_ parameter set to the fill color and then call **drawoval**  with the _Color_ parameter set to the border color.
+The **drawfilloval** procedure is used to draw a filled oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius_ and _yRadius_. To get an oval outlined in a different color, use **drawfilloval** with the _Color_ parameter set to the fill color and then call **drawoval**  with the _Color_ parameter set to the border color.
 
 ![Doc image](drawfilloval01.gif)
 

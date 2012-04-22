@@ -39,7 +39,7 @@
       ],
       "raw_content": "This is a complete Turing program. It outputs <i>Hello </i>once and <i>Goodbye</i> twice.<p>\r\n</p>",
       "text_content": " This is a complete Turing program. It outputs Hello once and Goodbye twice.\r\n\r\n",
-      "mdown_content": "This is a complete Turing program. It outputs _Hello _once and _Goodbye_ twice."
+      "mdown_content": "This is a complete Turing program. It outputs _Hello_ once and _Goodbye_ twice."
     },
     {
       "title": "Details",

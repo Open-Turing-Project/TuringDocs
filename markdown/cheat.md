@@ -45,7 +45,7 @@ If the _expn_ in a type cheat is a variable reference and the _sizeSpec_ is omit
 If the _expn_ is a value that is not a variable reference, or if _sizeSpec_ is present, the type cheat is an expression value whose type is _targetType_.
 The _sizeSpec_ is a compile time integer expression giving the size of the _expn'_s value. It can be specified only for integer or natural number values (where it must be 1, 2 or 4) or real values (where it must be 4 or 8).
 A type cheat is carried out in two steps. The first step converts the value if necessary to the size given by _sizeSpec_. The second step, which involves no generated code, interprets the value as the target type.
-The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # _expn_ is the same as **cheat** (**nat**_n_, _expn_) where _n_ is determined as follows. If the _expn_ is a variable or expression of size 1, 2 or 4, _n_ is the size of the item, otherwise _n _is 4.
+The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # _expn_ is the same as **cheat** (**nat**_n_, _expn_) where _n_ is determined as follows. If the _expn_ is a variable or expression of size 1, 2 or 4, _n_ is the size of the item, otherwise _n_ is 4.
 
 
 

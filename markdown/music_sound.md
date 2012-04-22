@@ -2,12 +2,12 @@
 #Music.Sound
 
 ##Syntax
-**Music.Sound** ( _frequency_, _duration_ : **int **)
+**Music.Sound** ( _frequency_, _duration_ : **int** )
 
 
 
 ##Description
-The **Music.Sound **statement is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so **Music.Sound**(440, 1000) plays middle A for one second.
+The **Music.Sound** statement is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so **Music.Sound**(440, 1000) plays middle A for one second.
 Sounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound** or **Music.Play** command, it stops until the command is finished. However, other processes will continue executing.
 
 

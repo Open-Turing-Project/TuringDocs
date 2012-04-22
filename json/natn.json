@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"int.html\">int</a><i>n</i></b><i> </i>types which are <i>n</i> byte integer values. See also <b><a href=\"nat.html\">nat</a></b> and <b><a href=\"int.html\">int</a></b>.<p>\r\n</p>",
       "text_content": " the intn types which are n byte integer values. See also nat and int.\r\n",
-      "mdown_content": "the **[int.html](int)_n_**_ _types which are _n_ byte integer values. See also **[nat.html](nat)** and **[int.html](int)**."
+      "mdown_content": "the **[int.html](int)_n_** types which are _n_ byte integer values. See also **[nat.html](nat)** and **[int.html](int)**."
     }
   ],
   "dependencies": [

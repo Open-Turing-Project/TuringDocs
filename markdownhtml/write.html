@@ -8,7 +8,7 @@
 
 <h2>Description</h2>
 
-<p>The <strong>write</strong> statement outputs each of the <em>writeItems</em> to the specified file. These items are output directly using the <em>binary </em>format that they have in the computer. In other words, the items are not in source (ASCII or EBCDIC) format. In the common case, these items will later be input from the file using the <strong>read</strong> statement. By contrast, the <strong>get</strong> and <strong>put</strong> statements use source format, which a person can read using a text editor.</p>
+<p>The <strong>write</strong> statement outputs each of the <em>writeItems</em> to the specified file. These items are output directly using the <em>binary</em> format that they have in the computer. In other words, the items are not in source (ASCII or EBCDIC) format. In the common case, these items will later be input from the file using the <strong>read</strong> statement. By contrast, the <strong>get</strong> and <strong>put</strong> statements use source format, which a person can read using a text editor.</p>
 
 <h2>Example</h2>
 
@@ -29,7 +29,7 @@
 <h2>Details</h2>
 
 <p>An array, record or union may be read and written as a whole. The <em>fileNumber</em> must specify a file that is open with <strong>write</strong> capability (or else a program argument file that is implicitly opened).
-The optional <em>status</em> is an <strong>int</strong> variable that is set to implementation-dependent information about the <strong>write</strong>. If <em>status</em> is returned as zero, the <strong>write</strong> was successful. If <em>status</em> is not returned as zero, <em>status</em> gives information about the incomplete or failed <strong>write</strong> (which is not documented here). Programmers often use <em>status </em>when they are writing a record or array to a file and are not sure if there is enough room on the disk to hold the item. If there is not enough room, the <strong>write</strong> will fail part way through, but the program can continue and diagnose the problem by inspecting <em>status</em>.
+The optional <em>status</em> is an <strong>int</strong> variable that is set to implementation-dependent information about the <strong>write</strong>. If <em>status</em> is returned as zero, the <strong>write</strong> was successful. If <em>status</em> is not returned as zero, <em>status</em> gives information about the incomplete or failed <strong>write</strong> (which is not documented here). Programmers often use <em>status</em> when they are writing a record or array to a file and are not sure if there is enough room on the disk to hold the item. If there is not enough room, the <strong>write</strong> will fail part way through, but the program can continue and diagnose the problem by inspecting <em>status</em>.
 A <em>writeItem</em> is:
 Each <em>writeItem</em> is a variable or constant, to be written in internal form. The optional <em>requestedSize</em> is an integer expression giving the number of bytes of data to be written. The <em>requestedSize</em> should be less than or equal to the size of the item's internal form in memory (if it is not, a warning message is issued). If no <em>requestedSize</em> is given, the size of the item in memory is used. The optional <em>actualSize</em> is set to the number of bytes actually written.</p>
 

@@ -12,7 +12,7 @@ The **rand** statement is used to create a pseudo-random number in the range zer
 
 
 ##Example
-This program repeatedly and randomly prints out _Hi ho_,_ hi ho_ or _It's off to work we go_.
+This program repeatedly and randomly prints out _Hi ho_, _hi ho_ or _It's off to work we go_.
 
 
         var r : real

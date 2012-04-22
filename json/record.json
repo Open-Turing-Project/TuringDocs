@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "Each value of a record type consists of fields, one field for each name (<i>id</i>) declared inside the record. In the following example, the fields are <i>name</i>,<i> phoneNumber</i> and <i>address</i>.<p>\r\n</p>",
       "text_content": " Each value of a record type consists of fields, one field for each name (id) declared inside the record. In the following example, the fields are name, phoneNumber and address.\r\n",
-      "mdown_content": "Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_,_ phoneNumber_ and _address_."
+      "mdown_content": "Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_, _phoneNumber_ and _address_."
     },
     {
       "title": "Example",

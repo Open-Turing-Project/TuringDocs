@@ -32,6 +32,6 @@ You should be careful to avoid confusion about patterns such as 16#FFFF. It is t
         const maxnat1 := 16#FF      % Largest 1-byte natural number
         const maxint2 := 16#7FFF    % Largest 2-byte integer
 ##See also
-**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)_n_** (_**n**_**-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr) **(4, 0, 2) = "100".
+**[int.html](int)**, **[maxint.html](maxint)** (the largest integer value), **[nat.html](nat)** (positive values  only) and **[int.html](int)_n_** (_**n**_**-**byte integers). See also **[intstr.html](intstr)** and **[natstr.html](natstr)** which convert integer and natural number values to corresponding character strings in any base, for example **[intstr.html](intstr)** (4, 0, 2) = "100".
 
 

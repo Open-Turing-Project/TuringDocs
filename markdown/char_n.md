@@ -24,7 +24,7 @@ The form of _numberOfCharacters_ is one of:
 
 
 
-The first form determines _n_. If the expression is a run time value, the type is considered to be _dynamic_ **char**(_n_). The value of _n_ must be at least 1. The second form is used only for subprogram parameters and uses the length of the actual parameter. This too, is considered to be a_ dynamic_ **char**(_n_) type. Dynamic **char**(_n_) types can only be passed to **char**(*) parameters. Dynamic **char**(_n_) types have the same restrictions as dynamic arrays. This implies they cannot be assigned as a whole and cannot appear in record and union types.
+The first form determines _n_. If the expression is a run time value, the type is considered to be _dynamic_ **char**(_n_). The value of _n_ must be at least 1. The second form is used only for subprogram parameters and uses the length of the actual parameter. This too, is considered to be a _dynamic_ **char**(_n_) type. Dynamic **char**(_n_) types can only be passed to **char**(*) parameters. Dynamic **char**(_n_) types have the same restrictions as dynamic arrays. This implies they cannot be assigned as a whole and cannot appear in record and union types.
 An implementation may impose a limit, recommended to be at least 32767, on the length _n_.
 Values of the **char**(_n_) type can be assigned and they can be compared for both equality and for ordering, but only if they have the same length and they are not dynamic (i.e. the length must be known at compile time).
 Values of the **char**(_n_) type can be read and written by **get** and **put** statements.

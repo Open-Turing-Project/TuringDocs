@@ -12,7 +12,7 @@ The **succ** function accepts an integer, character or an enumerated value and r
 
 
 ##Example
-This part of a Turing program fills up array _a _with the enumerated values _green_,_ yellow_,_ red_,_ green_,_ yellow_,_ red_,_ _etc.
+This part of a Turing program fills up array _a_ with the enumerated values _green_, _yellow_, _red_, _green_, _yellow_, _red_, etc.
 
 
         type colors : enum ( green, yellow, red  )

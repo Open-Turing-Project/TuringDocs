@@ -19,7 +19,7 @@ Bit 4  _attrHidden_  set to 1 if the entry if a hidden file (PC, Mac).
 Bit 5  _attrSystem_  set to 1 if the entry is a system file (PC only).
 Bit 6  _attrVolume_  set to 1 if the entry is a volume name (PC only).
 Bit 7  _attrArchive_  set to 1 if the entry has archive bit set (PC only).
-The _attr..._ constants are defined in the **Dir** unit. They correspond to the values of _attribute_ if a specified bit is set.  For example, _attrSystem_ is the value of the _attribute_ parameter if bit 5 is set to 1. You can **and** or **or **these constants to get combinations of specific file attributes. 
+The _attr..._ constants are defined in the **Dir** unit. They correspond to the values of _attribute_ if a specified bit is set.  For example, _attrSystem_ is the value of the _attribute_ parameter if bit 5 is set to 1. You can **and** or **or** these constants to get combinations of specific file attributes. 
 The _fileTime_ is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate**
 
 

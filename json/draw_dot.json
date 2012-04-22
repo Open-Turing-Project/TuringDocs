@@ -15,7 +15,7 @@
       ],
       "raw_content": "The <b>Draw.Dot </b>procedure is used to color the dot (pixel) at location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center></center>",
       "text_content": " The Draw.Dot procedure is used to color the dot (pixel) at location (x, y) using the specified Color.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Dot **procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_."
+      "mdown_content": "The **Draw.Dot** procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_."
     },
     {
       "title": "Example",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur. See <b>View.Set </b>for details.<p>\r\n</p>",
       "text_content": " The screen must be in a \"graphics\" mode. If the screen is not in a \"graphics\" mode, an error will occur. See View.Set for details.\r\n",
-      "mdown_content": "The screen must be in a \"_graphics_\" mode. If the screen is not in a \"_graphics_\" mode, an error will occur. See **View.Set **for details."
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. If the screen is not in a \"_graphics_\" mode, an error will occur. See **View.Set** for details."
     },
     {
       "title": "Status",

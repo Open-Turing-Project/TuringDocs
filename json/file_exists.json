@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>File.Exists </b>returns <b>true</b> if a file by the name of <i>pathName</i> exists. It will return <b>false</b> if <i>pathName</i> is a directory.<p>\r\n</p>",
       "text_content": " File.Exists returns true if a file by the name of pathName exists. It will return false if pathName is a directory.\r\n",
-      "mdown_content": "**File.Exists **returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory."
+      "mdown_content": "**File.Exists** returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory."
     },
     {
       "title": "Details",

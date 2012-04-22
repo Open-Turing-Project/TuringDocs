@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"nat.html\">nat</a></b><i>n </i>types which are <i>n</i> byte natural (non-negative) values. See also <b><a href=\"int.html\">int</a></b> and <b><a href=\"nat.html\">nat</a></b>.<p>\r\n</p>",
       "text_content": " the natn types which are n byte natural (non-negative) values. See also int and nat.\r\n",
-      "mdown_content": "the **[nat.html](nat)**_n _types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**."
+      "mdown_content": "the **[nat.html](nat)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**."
     }
   ],
   "dependencies": [

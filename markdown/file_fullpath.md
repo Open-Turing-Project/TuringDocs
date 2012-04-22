@@ -7,7 +7,7 @@
 
 
 ##Description
-**File.FullPath **returns a string representing the full absolute path name in Turing format (forward slashes) of the path thatis passed to the function. The path name passed in does not have to describe an existing file or directory.
+**File.FullPath** returns a string representing the full absolute path name in Turing format (forward slashes) of the path thatis passed to the function. The path name passed in does not have to describe an existing file or directory.
 
 
 

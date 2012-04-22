@@ -2,7 +2,7 @@
 #colorback
 
 ##Syntax
-**colorback** (_Color_ :_ _**int**)
+**colorback** (_Color_ : **int**)
 
 
 

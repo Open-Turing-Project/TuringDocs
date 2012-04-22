@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "Returns<b> </b>the TCP/IP hostname of the machine the program is running on.<p>\r\n</p>",
       "text_content": " Returns the TCP/IP hostname of the machine the program is running on.\r\n",
-      "mdown_content": "Returns** **the TCP/IP hostname of the machine the program is running on."
+      "mdown_content": "Returns the TCP/IP hostname of the machine the program is running on."
     },
     {
       "title": "Details",

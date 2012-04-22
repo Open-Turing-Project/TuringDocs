@@ -21,7 +21,7 @@
       ],
       "raw_content": "In this example, the tag field of <b>union</b> variable <i>v</i> is set to be <i>passenger</i>,<i> </i>thereby activating the <i>passenger</i> field of <i>v</i>.<p>\r\n</p>",
       "text_content": " In this example, the tag field of union variable v is set to be passenger, thereby activating the passenger field of v.\r\n\r\n",
-      "mdown_content": "In this example, the tag field of **union** variable _v_ is set to be _passenger_,_ _thereby activating the _passenger_ field of _v_."
+      "mdown_content": "In this example, the tag field of **union** variable _v_ is set to be _passenger_, thereby activating the _passenger_ field of _v_."
     },
     {
       "title": "Details",

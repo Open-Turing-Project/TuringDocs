@@ -7,7 +7,7 @@
 
 
 ##Description
-The **Sys.GetPid **function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.
+The **Sys.GetPid** function is used to determine the I.D. (number) that identifies the current operating system task (process). Beware that there are processes, activated by the **fork** statement, that are independent of the operating systems tasks.
 Under UNIX, the number is used, for example, for creating a unique name of a file. 
 
 

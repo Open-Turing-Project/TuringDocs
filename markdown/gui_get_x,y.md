@@ -2,8 +2,8 @@
 #GUI.Get{X,Y}
 
 ##Syntax
-**GUI.GetX **(_widgetID_ : **int**) : **int**
-**GUI.GetY **(_widgetID_ : **int**) : **int**
+**GUI.GetX** (_widgetID_ : **int**) : **int**
+**GUI.GetY** (_widgetID_ : **int**) : **int**
 
 
 

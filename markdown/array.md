@@ -39,7 +39,7 @@ The _prices_ array shows how an array can have more than one dimension. This arr
             end for
         end for
 ##Details
-Each _indexType_ must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the **char** type), or of an enumerated type, an (entire) enumerated type, the **char** type, the **boolean **type, or a named type which is one of these.
+Each _indexType_ must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the **char** type), or of an enumerated type, an (entire) enumerated type, the **char** type, the **boolean** type, or a named type which is one of these.
 Arrays can also be declared in the form
 The upper bound of _a_ will be computed from the count of the initializing values. Both **var** and **const** arrays can be declared this way. An array variable/constant declared with "*" as an upper bound must have an initializing list. Only one dimensional arrays may be declared in this form.
 Arrays can be assigned as a whole (to arrays of an equivalent type), but they cannot be compared.
@@ -66,9 +66,9 @@ In this example, the size of the array is not known until run time.
         put "Sum of the heights is ", total (height)
 ##Details
 The ends of the range of a subscript are called the _bounds_ of the array. If these values are not known until run time, the array is said to be _dynamic_. In the above example, _height_ is a dynamic array. Dynamic arrays can be declared as variables, as in the case for _height_. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using **init**.
-In the above example, **upper**_(a) _returns the size of _a_. See also **upper** and **lower**.
+In the above example, **upper**_(a)_ returns the size of _a_. See also **upper** and **lower**.
 In the declaration of an array parameter, the upper bound can be given as an asterisk (__*__), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from _height_ in this example).
-You can have arrays of other types, for example arrays of record. If _R _is an array of records, then _R(i).f_ is the way to access the _f_ field of the _i_-th element of array _R_.
+You can have arrays of other types, for example arrays of record. If _R_ is an array of records, then _R(i).f_ is the way to access the _f_ field of the _i_-th element of array _R_.
 
 
 

@@ -2,7 +2,7 @@
 #subprogramHeader
 
 ##Syntax
-A _subprogramHeader _is one of:
+A _subprogramHeader_ is one of:
 
 (a)**procedure** [ **pervasive** ] _id_
 [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]

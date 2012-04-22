@@ -44,7 +44,7 @@ Count capital letters. This example illustrates the use of the **char** type as 
             put d, " ", frequency (d)
         end for
 ##Details
-The type **string** (or **char**(_n_)) is used instead of **char** when more than one character needs to be stored, such as the string of characters _Henry_. Unless the program needs to be quite efficient, it is usually easier to use the **string** type. See also the **char**(_n_) type, which always stores exactly_ n _characters.
+The type **string** (or **char**(_n_)) is used instead of **char** when more than one character needs to be stored, such as the string of characters _Henry_. Unless the program needs to be quite efficient, it is usually easier to use the **string** type. See also the **char**(_n_) type, which always stores exactly _n_ characters.
 The **char** type differs from the **string**(1) type in the following way: **char** always represents exactly one character, while **string**(1) can represent either the null string or a string containing one character. The **char** type is similar to the **char**(1) type in that both contain at most one character.
 The **char** type is an index type and can be used, for example, as subscripts, **for** ranges and **case** labels. For example, this declaration
 

@@ -10,7 +10,7 @@ A _getStatement_ is:
 
 
 ##Description
-The **get** statement inputs each of the _getItems_. Ordinarily, the output comes from the keyboard. However, if the _streamNumber _is present, the input comes from the file specified by the stream number (see the **open** statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.
+The **get** statement inputs each of the _getItems_. Ordinarily, the output comes from the keyboard. However, if the _streamNumber_ is present, the input comes from the file specified by the stream number (see the **open** statement for details). Also, input can be redirected so it is taken from a file rather than the keyboard. Check the documentation on the environment for instructions on doing so.
 The syntax of a _getItem_ is one of:
 These items are used to support three kinds of input:
 (1) token and character oriented input: supported by forms (a) and (b),
@@ -45,8 +45,8 @@ Character-oriented input.
         var code : string
         get code : 2        % Next 2 characters are input into code.
 ##Details
-A _token_ is a sequence of characters surrounded by _white space_, where _white space _is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the _variableReference_ in form (a) is a string, integer, real, **int**_n_, **nat**_n_, or **real**_n_. Turing_ _skips white space, reads a token into the _variableReference_, and then skips white space (stopping at the beginning of the next line). 
-If the _variableReference_ is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving _name _and _title_ above. If the _variableReference_ is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving _weight_ above.
+A _token_ is a sequence of characters surrounded by _white space_, where _white space_ is defined as the characters: blank, tab, form feed, new line, and carriage return as well as end-of-file. The sequence of characters making up the token are either all non-white space or else the token must be a quoted string (an explicit string constant). When the _variableReference_ in form (a) is a string, integer, real, **int**_n_, **nat**_n_, or **real**_n_. Turing skips white space, reads a token into the _variableReference_, and then skips white space (stopping at the beginning of the next line). 
+If the _variableReference_ is a string, the token is assigned to the variable (if the token is quoted, the quotation marks are first removed). See the examples involving _name_ and _title_ above. If the _variableReference_ is an integer or a real, the token is converted to be numeric before being assigned to the variable. See the example involving _weight_ above.
 When the input is coming from the keyboard, no input is done until Return is typed. The line that is input may contain more than one token. Any tokens that are not input by one **get** statement will remain to be input by the next **get** statement.
 Turing has been modified so that token-oriented input now also skips white space following the token, but does not skip beyond the beginning of the next line. This change implies that  form (b) is usually not needed, as **skip** was used to skip white space after the token.
 Form (a) supports **char** and **char**(_n_). If the type is **char**, exactly one character is read, with no skipping of white space before or after. This character may be, for example, a blank or a carriage return. If the type is **char**(_n_), exactly _n_ characters are read, with no skipping of white space.
@@ -90,7 +90,7 @@ In form (b) of _getItem_, **skip** causes white space in the input to be skipped
 
 
 ##Example
-Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the **get** **skip** line can be omitted. This omission is possible because the line **get**_ word_ now automatically skips white space following the input value, up to the beginning of the next line.
+Using token-oriented input, input and then output all tokens. This example gives what used to be the standard way of reading tokens up to end of file. With the new meaning of form (a) for reading tokens, the **get** **skip** line can be omitted. This omission is possible because the line **get** _word_ now automatically skips white space following the input value, up to the beginning of the next line.
 In the above and the next example, if the input has been redirected so that it is from a file, **eof** becomes true exactly when there are no more characters to be read. If the input is coming from the keyboard, you can signal **eof** by typing control-Z (on a PC) or control-D (on UNIX).
 
 
@@ -102,7 +102,7 @@ In the above and the next example, if the input has been redirected so that it i
             put word        % Output the token
         end loop
 ##Details
-In form (c) of _getItem_, the _variableReference _is followed by :__*__ which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.
+In form (c) of _getItem_, the _variableReference_ is followed by :__*__ which implies line-oriented input. This form causes the entire line (or the remainder of the current line) to be read. In this case the variable must be a string (not an integer or real). The new line character at the end of the line is discarded. It is an error to try to read another line when you are already at the end of the file. The following example shows how to use line-oriented input to read all lines in the input.
 
 
 
@@ -117,8 +117,8 @@ Using line-oriented input, input and then output all lines.
             put line
         end loop
 ##Details
-In form (d) of _getItem_, the _variableReference _is followed by
-which specifies character-oriented input. This form causes the specified number (_widthExpn_) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the _variableReference _(this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with **string** and **char**(_n_) variables, but not with **char**, **int** or any other type.
+In form (d) of _getItem_, the _variableReference_ is followed by
+which specifies character-oriented input. This form causes the specified number (_widthExpn_) of characters to be input (or all of the remaining characters if not enough are left). If no characters remain, the null string is read and no warning is given. In this form, the new line character is actually input into the _variableReference_ (this differs from line-oriented input which discards new line characters). The following example shows how to use character-oriented input to read each character of the input. Form (d) can be used with **string** and **char**(_n_) variables, but not with **char**, **int** or any other type.
 
 
         : widthExpn 

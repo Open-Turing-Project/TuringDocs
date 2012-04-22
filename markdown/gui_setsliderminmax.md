@@ -13,7 +13,7 @@ Sets the minimum and maximum values of the slider or scroll bar specified by _wi
 
 
 ##Example
-See **GUI.SetScrollAmount **for an example of **GUI.SetSliderMinMax**.
+See **GUI.SetScrollAmount** for an example of **GUI.SetSliderMinMax**.
 
 
 

@@ -6,11 +6,11 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Text.Locate</strong> procedure is used to<strong> </strong>move the cursor so that the next output from <strong>put</strong> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.</p>
+<p>The <strong>Text.Locate</strong> procedure is used to move the cursor so that the next output from <strong>put</strong> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.</p>
 
 <h2>Example</h2>
 
-<p>This program outputs stars of random colors to random locations on the screen. The variable <em>colr </em>is purposely spelled differently from the word <em>color </em>to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <strong>maxrow</strong>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.</p>
+<p>This program outputs stars of random colors to random locations on the screen. The variable <em>colr</em> is purposely spelled differently from the word <em>color</em> to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <strong>maxrow</strong>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.</p>
 
 <pre><code>    View.Set ("screen")
     var row, column, colr : int
@@ -26,8 +26,8 @@
 
 <h2>Details</h2>
 
-<p>The <strong>Text.Locate</strong> procedure is used to locate the next output based on row and column positions. See also the <strong>Text.LocateXY </strong>procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.
-The screen should be in a "<em>screen</em>"<em> </em>or "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in one of these modes, it will automatically be set to"<em>screen</em>" mode.</p>
+<p>The <strong>Text.Locate</strong> procedure is used to locate the next output based on row and column positions. See also the <strong>Text.LocateXY</strong> procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.
+The screen should be in a "<em>screen</em>" or "<em>graphics</em>" mode. See the <strong>View.Set</strong> procedure for details. If the screen is not in one of these modes, it will automatically be set to"<em>screen</em>" mode.</p>
 
 <h2>Status</h2>
 
@@ -36,4 +36,4 @@ This means that you can only call the function by calling <strong>Text.Locate</s
 
 <h2>See also</h2>
 
-<p><strong><a href="View.Set">view_set.html</a> </strong>and <strong><a href="Draw.Dot">draw_dot.html</a></strong>.</p>
+<p><strong><a href="View.Set">view_set.html</a></strong> and <strong><a href="Draw.Dot">draw_dot.html</a></strong>.</p>

@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p>The <strong>PC.ParallelPut </strong>procedure is used on a PC to set the values on the data pins on the parallel port. The port is specified with the <em>port</em> parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.</p>
+<p>The <strong>PC.ParallelPut</strong> procedure is used on a PC to set the values on the data pins on the parallel port. The port is specified with the <em>port</em> parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.</p>
 
 <h2>Example</h2>
 
@@ -21,11 +21,11 @@
 
 <h2>Details</h2>
 
-<p>The <strong>PC.ParallelPut </strong>procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.
-The value sent to <strong>PC.ParallelPut </strong>is the sum of the following:</p>
+<p>The <strong>PC.ParallelPut</strong> procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.
+The value sent to <strong>PC.ParallelPut</strong> is the sum of the following:</p>
 
-<p>For example, the command <strong>PC.ParallelPut </strong>(97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <strong>PC.ParallelPut </strong>must be from 0 to 255.
-The <strong>PC.ParallelPut </strong>procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string "Hello" to the printer). If you want to do this, open the file "LPT1" using the <strong>open</strong> statement and <strong>put</strong> to the file.</p>
+<p>For example, the command <strong>PC.ParallelPut</strong> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <strong>PC.ParallelPut</strong> must be from 0 to 255.
+The <strong>PC.ParallelPut</strong> procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string "Hello" to the printer). If you want to do this, open the file "LPT1" using the <strong>open</strong> statement and <strong>put</strong> to the file.</p>
 
 <p><img src="pc_parallelput01.gif" alt="Doc image" /></p>
 
@@ -36,4 +36,4 @@ This means that you can only call the function by calling <strong>PC.ParallelPut
 
 <h2>See also</h2>
 
-<p><strong><a href="PC.ParallelGet">pc_parallelget.html</a> </strong>function, which is used to <a href="read">read.html</a> the values of pins on the parallel port.</p>
+<p><strong><a href="PC.ParallelGet">pc_parallelget.html</a></strong> function, which is used to <a href="read">read.html</a> the values of pins on the parallel port.</p>

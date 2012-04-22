@@ -38,7 +38,7 @@ The following program draws three lines with three labels in the window.
         exdentLabel := GUI.CreateLabelFull (150, 15, "Exdent", 0, 0, 
             GUI.CENTER + GUI.TOP, 0)
 ##Details
-When **GUI.CreateLine**_ _is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
+When **GUI.CreateLine** is called, the newly created line will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 A line widget is a passive widget and cannot be enabled or disabled.
 
 

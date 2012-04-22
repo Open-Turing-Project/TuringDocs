@@ -4,7 +4,7 @@
 ##Syntax
 An _enumeratedType_ is:
 
-**enum** (_id _{ , _id _} )
+**enum** (_id_ { , _id_ } )
 
 
 

@@ -2,7 +2,7 @@
 
 <h2>Description</h2>
 
-<p>A value, such as 24, is assignable to a variable, such as <em>i</em>, if certain rules are followed. These rules, given in detail below, are called the <em>assignability </em>rules. They must be followed in assignment statements as well as when passing values to non-<strong>var</strong> parameters.</p>
+<p>A value, such as 24, is assignable to a variable, such as <em>i</em>, if certain rules are followed. These rules, given in detail below, are called the <em>assignability</em> rules. They must be followed in assignment statements as well as when passing values to non-<strong>var</strong> parameters.</p>
 
 <h2>Example</h2>
 
@@ -34,8 +34,8 @@
 
 <h2>Details</h2>
 
-<p>The expression on the right of := must be <em>assignable </em>to the variable on the left. An expression passed to a non-<strong>var</strong> parameter must be assignable to the corresponding parameter.
-An expression<em> </em>is defined to be <em>assignable </em>to a variable if the two <em>root </em>types are<em> equivalent</em> or if an integer value is being assigned to a <strong>real</strong> variable (in which case the integer value is automatically converted to <strong>real</strong>). Two types are considered to be equivalent if they are essentially the same type (see <em>equivalence </em>for the detailed definition of this term).
+<p>The expression on the right of := must be <em>assignable</em> to the variable on the left. An expression passed to a non-<strong>var</strong> parameter must be assignable to the corresponding parameter.
+An expression is defined to be <em>assignable</em> to a variable if the two <em>root</em> types are <em>equivalent</em> or if an integer value is being assigned to a <strong>real</strong> variable (in which case the integer value is automatically converted to <strong>real</strong>). Two types are considered to be equivalent if they are essentially the same type (see <em>equivalence</em> for the detailed definition of this term).
 In most cases a <em>root</em> type is simply the type itself. The exceptions are subranges and strings. The <em>root</em> type of a subrange, such as 0 .. 319, is the type of its bounds (<strong>int</strong> type in this example). The <em>root</em> type of a string, such as the type <strong>string</strong>(9), is the most general string type, namely <strong>string</strong>.
 When a subrange variable, such as <em>width</em>, is used as an expression, for example on the right side of an assignment statement, its type is considered to be the <em>root</em> type (integer in this case) rather than the subrange. When an expression is assigned to a subrange variable such as <em>width</em>, the value (3*<em>i</em> in this example) must lie in the subrange. Analogously, any string variable used in an expression is considered to be of the most general type of string. When a string value is assigned to a string variable, its length must not exceed the variable's maximum length.
 Turing's assignability rule applies to characters and strings in this way. A <strong>char</strong> value can be assigned (or passed to an non <strong>var</strong> parameter) with automatic conversion to a <strong>char</strong>(1) variable and vice versa. String values of length 1 can be assigned to <strong>char</strong> variables. Character, that is <strong>char</strong>, values can be assigned to string variables, yielding a string of length 1. String values of length <em>n</em> are assignable with automatic conversion to <strong>char</strong>(<em>n</em>) variables. Values of type <strong>char</strong>(<em>n</em>) can be assigned with automatic conversion to <strong>string</strong> variables.

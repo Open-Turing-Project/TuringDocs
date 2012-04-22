@@ -2,7 +2,7 @@
 #Net.TokenAvailable
 
 ##Syntax
-**Net.TokenAvailable **(_netStream_ : **int**) : **boolean**
+**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**
 
 
 

@@ -7,7 +7,7 @@
 
 
 ##Description
-The **drawoval** procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius _and _yRadius_.
+The **drawoval** procedure is used to draw an oval whose center is at (_x_, _y_). The horizontal and vertical distances from the center to the oval are given by _xRadius_ and _yRadius_.
 
 ![Doc image](drawoval01.gif)
 

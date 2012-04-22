@@ -7,7 +7,7 @@
 
 
 ##Description
-The **maxrow** function is used to** **determine the number of rows on the screen.
+The **maxrow** function is used to determine the number of rows on the screen.
 
 
 
@@ -28,6 +28,6 @@ This means that you can call the function by calling **maxrow** or by calling **
 
 
 ##See also
-**[text_locate.html](Text.Locate) **[procedure.html](procedure) for an example of the use of **[maxrow.html](maxrow)**.
+**[text_locate.html](Text.Locate)** [procedure.html](procedure) for an example of the use of **[maxrow.html](maxrow)**.
 
 

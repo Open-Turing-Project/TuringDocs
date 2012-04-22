@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "The <b>maxcol</b> function is used to<b> </b>determine the number of columns on the screen.<p>\r\n</p>",
       "text_content": " The maxcol function is used to determine the number of columns on the screen.\r\n",
-      "mdown_content": "The **maxcol** function is used to** **determine the number of columns on the screen."
+      "mdown_content": "The **maxcol** function is used to determine the number of columns on the screen."
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "For IBM PC compatibles as well as most UNIX dumb terminals, in \"<i>text</i>\"<i> </i>or \"<i>screen</i>\"<i> </i>mode, <b>maxcol</b> = 80. For the default IBM PC compatible \"<i>graphics</i>\" mode (CGA), <b>maxcol </b>= 40.<p>\r\n</p>",
       "text_content": " For IBM PC compatibles as well as most UNIX dumb terminals, in \"text\" or \"screen\" mode, maxcol = 80. For the default IBM PC compatible \"graphics\" mode (CGA), maxcol = 40.\r\n",
-      "mdown_content": "For IBM PC compatibles as well as most UNIX dumb terminals, in \"_text_\"_ _or \"_screen_\"_ _mode, **maxcol** = 80. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcol **= 40."
+      "mdown_content": "For IBM PC compatibles as well as most UNIX dumb terminals, in \"_text_\" or \"_screen_\" mode, **maxcol** = 80. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcol** = 40."
     },
     {
       "title": "Status",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"text_locate.html\">Text.Locate</a> </b><a href=\"procedure.html\">procedure</a> for an example of the use of <b><a href=\"maxcol.html\">maxcol</a></b>.<p>\r\n</p>",
       "text_content": " Text.Locate procedure for an example of the use of maxcol.\r\n",
-      "mdown_content": "**[text_locate.html](Text.Locate) **[procedure.html](procedure) for an example of the use of **[maxcol.html](maxcol)**."
+      "mdown_content": "**[text_locate.html](Text.Locate)** [procedure.html](procedure) for an example of the use of **[maxcol.html](maxcol)**."
     }
   ],
   "dependencies": [

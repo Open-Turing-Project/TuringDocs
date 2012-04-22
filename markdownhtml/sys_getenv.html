@@ -6,11 +6,11 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Sys.GetEnv </strong>function is used to<strong> </strong>access the environment string whose name is <em>symbol</em>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <strong>Sys.Nargs</strong> and <strong>Sys.FetchArg</strong> functions.</p>
+<p>The <strong>Sys.GetEnv</strong> function is used to access the environment string whose name is <em>symbol</em>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <strong>Sys.Nargs</strong> and <strong>Sys.FetchArg</strong> functions.</p>
 
 <h2>Example</h2>
 
-<p>On a PC, this retrieves the environment variable USERLEVEL<strong> </strong>and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command <strong>SET USERLEVEL = NOVICE</strong> in the <strong>autoexec.bat</strong> file or in any batch file.</p>
+<p>On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command <strong>SET USERLEVEL = NOVICE</strong> in the <strong>autoexec.bat</strong> file or in any batch file.</p>
 
 <pre><code>    const userLevel : string
     userLevel := Sys.GetEnv ("USERLEVEL")

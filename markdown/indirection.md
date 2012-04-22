@@ -12,7 +12,7 @@ The indirection operator @ is used to access values that lie at absolute machine
 
 
 ##Example
-Copy the byte value at memory location 246 into _b _and then set that memory byte to zero.
+Copy the byte value at memory location 246 into _b_ and then set that memory byte to zero.
 
 
         var b : nat1            % One byte natural number

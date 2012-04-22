@@ -12,7 +12,7 @@ Changes the length of a slider or scroll bar specified by _widgetID_ to the valu
 
 
 ##Example
-See **GUI.SetScrollAmount **for an example of **GUI.SetSliderSize**.
+See **GUI.SetScrollAmount** for an example of **GUI.SetSliderSize**.
 
 
 

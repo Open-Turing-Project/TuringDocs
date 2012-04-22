@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>catenation </i>is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>stringExpn</i> <b>+</b> <i>stringExpn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A catenation is:\r\n stringExpn + stringExpn",
-      "mdown_content": "A _catenation _is:\n\n_stringExpn_ **+** _stringExpn_\n"
+      "mdown_content": "A _catenation_ is:\n\n_stringExpn_ **+** _stringExpn_\n"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "<i>substrings</i> (for separating a strings into parts), <b><a href=\"repeat.html\">repeat</a></b><i> </i>(for making repeated catenations), <b><a href=\"string1.html\">string</a></b><i> </i>type, <b><a href=\"length.html\">length</a></b>, and <b><a href=\"index.html\">index</a></b> (to determine where one string is located inside another).<p>\r\nSee also <b><a href=\"string1.html\">string</a></b>, <b><a href=\"char.html\">char</a></b>, <b><a href=\"char.html\">char</a></b>(<i>n</i>), <i><a href=\"explicitstringconstant.html\">explicitStringConstant</a>,</i> <i><a href=\"explicitcharconstant.html\">explicitCharConstant</a>,</i> <a href=\"substring.html\">substring</a> and <b><a href=\"length.html\">length</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " substrings (for separating a strings into parts), repeat (for making repeated catenations), string type, length, and index (to determine where one string is located inside another).\r\nSee also string, char, char(n), explicitStringConstant, explicitCharConstant, substring and length.\r\n",
-      "mdown_content": "_substrings_ (for separating a strings into parts), **[repeat.html](repeat)**_ _(for making repeated catenations), **[string1.html](string)**_ _type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).\nSee also **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(_n_), _[explicitstringconstant.html](explicitStringConstant),_ _[explicitcharconstant.html](explicitCharConstant),_ [substring.html](substring) and **[length.html](length)**."
+      "mdown_content": "_substrings_ (for separating a strings into parts), **[repeat.html](repeat)** (for making repeated catenations), **[string1.html](string)** type, **[length.html](length)**, and **[index.html](index)** (to determine where one string is located inside another).\nSee also **[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(_n_), _[explicitstringconstant.html](explicitStringConstant),_ _[explicitcharconstant.html](explicitCharConstant),_ [substring.html](substring) and **[length.html](length)**."
     }
   ],
   "dependencies": [
