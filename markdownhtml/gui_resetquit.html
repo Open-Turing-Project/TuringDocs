@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>GUI.ResetQuit</strong> procedure resets the "quitting" flag thatis set by the <strong>GUI.Quit</strong> program. The <strong>GUI.ResetQuit</strong>can be used whenever you want to have a program that exitsfrom the main processing loop, does some work, and then reenters the processing loop.
-Without <strong>GUI.ResetQuit</strong>, the program will exit the secondloop immediately because <strong>GUI.ProcessEvent</strong> will return<strong>true</strong>.</p>
+<p>The <strong>GUI.ResetQuit</strong> procedure resets the "quitting" flag thatis set by the <strong>GUI.Quit</strong> program. The <strong>GUI.ResetQuit</strong>can be used whenever you want to have a program that exitsfrom the main processing loop, does some work, and then reenters the processing loop.</p>
+
+<p>Without <strong>GUI.ResetQuit</strong>, the program will exit the secondloop immediately because <strong>GUI.ProcessEvent</strong> will return<strong>true</strong>.</p>
 
 <h2>Example</h2>
 
@@ -80,5 +81,6 @@ Without <strong>GUI.ResetQuit</strong>, the program will exit the secondloop imm
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.ResetQuit</strong>, not by calling <strong>ResetQuit</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.ResetQuit</strong>, not by calling <strong>ResetQuit</strong>.</p>

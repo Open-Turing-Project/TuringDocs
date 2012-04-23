@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatColor</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatColor : int\r\n",
-      "mdown_content": "**Text.WhatColor** : **int**"
+      "mdown_content": "**Text.WhatColor** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.WhatColor</b> function is used to<b> </b>determine the current text (foreground) color, ie., the color used for characters that are output using <b>put</b>. The alternate spelling is <b>Text.WhatColour</b>.<p>\r\n</p>",
       "text_content": " The Text.WhatColor function is used to determine the current text (foreground) color, ie., the color used for characters that are output using put. The alternate spelling is Text.WhatColour.\r\n",
-      "mdown_content": "The **Text.WhatColor** function is used to determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**."
+      "mdown_content": "The **Text.WhatColor** function is used to determine the current text (foreground) color, ie., the color used for characters that are output using **put**. The alternate spelling is **Text.WhatColour**.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program outputs the currently-active color number. The  message is also given in the currently-active color.<p>\r\n</p>",
       "text_content": " This program outputs the currently-active color number. The  message is also given in the currently-active color.\r\n\r\n",
-      "mdown_content": "This program outputs the currently-active color number. The  message is also given in the currently-active color."
+      "mdown_content": "This program outputs the currently-active color number. The  message is also given in the currently-active color.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See <b>View.Set </b>for details.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. See View.Set for details.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See **View.Set** for details."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See **View.Set** for details.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.WhatColor</b>, not by calling <b>WhatColor</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Text.WhatColor, not by calling WhatColor.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.WhatColor**, not by calling **WhatColor**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Text.WhatColor**, not by calling **WhatColor**.\n"
     },
     {
       "title": "See also",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "the <b><a href=\"text_color.html\">Text.Color</a></b> <a href=\"procedure.html\">procedure</a>, which is used to <a href=\"set.html\">set</a> the <a href=\"color.html\">color</a>. See also <b><a href=\"text_colorback.html\">Text.ColorBack</a></b> and <b><a href=\"text_whatcolorback.html\">Text.WhatColorBack</a></b>.<p>\r\n</p>",
       "text_content": " the Text.Color procedure, which is used to set the color. See also Text.ColorBack and Text.WhatColorBack.\r\n",
-      "mdown_content": "the **[text_color.html](Text.Color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[text_colorback.html](Text.ColorBack)** and **[text_whatcolorback.html](Text.WhatColorBack)**."
+      "mdown_content": "the **[text_color.html](Text.Color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[text_colorback.html](Text.ColorBack)** and **[text_whatcolorback.html](Text.WhatColorBack)**.\n"
     }
   ],
   "dependencies": [

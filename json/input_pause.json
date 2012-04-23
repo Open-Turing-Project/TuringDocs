@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Input.Pause</b><p></p></font>",
       "text_content": "Input.Pause\r\n    ",
-      "mdown_content": "**Input.Pause**"
+      "mdown_content": "**Input.Pause**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Input.Pause</b> procedure simply waits for a key to be \r\n          pressed and then returns. It echoes the key pressed if <b>echo</b> \r\n          mode is set. (See <b>View.Set</b> for setting <b>echo</b> mode)<p>\r\n          This subprogram helps avoid having to declare a variable declaration \r\n          and then make a call to <b>getch</b>or <b>getchar</b>.</p>\n<p>\r\n    </p>",
       "text_content": "The Input.Pause procedure simply waits for a key to be \r\n          pressed and then returns. It echoes the key pressed if echo \r\n          mode is set. (See View.Set for setting echo mode)\r\n          This subprogram helps avoid having to declare a variable declaration \r\n          and then make a call to getchor getchar.\r\n    ",
-      "mdown_content": "The **Input.Pause** procedure simply waits for a key to be pressed and then returns. It echoes the key pressed if **echo** mode is set. (See **View.Set** for setting **echo** mode)\nThis subprogram helps avoid having to declare a variable declaration and then make a call to **getch**or **getchar**."
+      "mdown_content": "The **Input.Pause** procedure simply waits for a key to be pressed and then returns. It echoes the key pressed if **echo** mode is set. (See **View.Set** for setting **echo** mode)\n\nThis subprogram helps avoid having to declare a variable declaration and then make a call to **getch**or **getchar**.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program pauses after every name read from the file.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program pauses after every name read from the file.\r\n\r\n    ",
-      "mdown_content": "This program pauses after every name read from the file.\n"
+      "mdown_content": "This program pauses after every name read from the file.\n\n\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Input.Pause</b>, not by calling <b>Pause</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Input.Pause, not by calling Pause.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Input.Pause**, not by calling **Pause**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Input.Pause**, not by calling **Pause**.\n"
     }
   ],
   "dependencies": [

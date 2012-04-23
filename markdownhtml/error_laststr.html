@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p><strong>Error.LastStr</strong> is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string "eDrawClrNumTooLarge" for using a color greater than <strong>maxcolor</strong> in a <strong>Draw</strong> command). If there is no error then it returns the empty string. If there is an error, you can use <strong>Error.Last</strong> to obtain the actual error code.
-The fact that <strong>Error.LastStr</strong> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.LastStr</strong> also returns a number of error codes for warning messages. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.LastStr</strong> will return a string version of the error code that indicates that the color was out of range.
-You can take a look at the error constants defined by looking at the unit <strong>ErrorNum</strong> which contains all defined error codes.</p>
+<p><strong>Error.LastStr</strong> is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string "eDrawClrNumTooLarge" for using a color greater than <strong>maxcolor</strong> in a <strong>Draw</strong> command). If there is no error then it returns the empty string. If there is an error, you can use <strong>Error.Last</strong> to obtain the actual error code.</p>
+
+<p>The fact that <strong>Error.LastStr</strong> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.LastStr</strong> also returns a number of error codes for warning messages. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.LastStr</strong> will return a string version of the error code that indicates that the color was out of range.</p>
+
+<p>You can take a look at the error constants defined by looking at the unit <strong>ErrorNum</strong> which contains all defined error codes.</p>
 
 <h2>Example</h2>
 
@@ -26,5 +28,6 @@ You can take a look at the error constants defined by looking at the unit <stron
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Error.LastStr</strong>, not by calling <strong>LastStr</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Error.LastStr</strong>, not by calling <strong>LastStr</strong>.</p>

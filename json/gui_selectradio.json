@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SelectRadio</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SelectRadio (widgetID : int)\r\n",
-      "mdown_content": "**GUI.SelectRadio** (_widgetID_ : **int**)"
+      "mdown_content": "**GUI.SelectRadio** (_widgetID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Selects a radio button specified by <i>widgetID</i>. The previously-selected radio button is \"de-selected\". The <i>action procedure</i> of the radio button is called.<p>\r\n</p>",
       "text_content": " Selects a radio button specified by widgetID. The previously-selected radio button is \"de-selected\". The action procedure of the radio button is called.\r\n",
-      "mdown_content": "Selects a radio button specified by _widgetID_. The previously-selected radio button is \"de-selected\". The _action procedure_ of the radio button is called."
+      "mdown_content": "Selects a radio button specified by _widgetID_. The previously-selected radio button is \"de-selected\". The _action procedure_ of the radio button is called.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected.<p>\r\n</p>",
       "text_content": " The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected.\r\n\r\n",
-      "mdown_content": "The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected."
+      "mdown_content": "The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedures by calling <b>GUI.SelectRadio</b>, not by calling <b>SelectRadio</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedures by calling GUI.SelectRadio, not by calling SelectRadio.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.SelectRadio**, not by calling **SelectRadio**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the procedures by calling **GUI.SelectRadio**, not by calling **SelectRadio**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateRadioButton</b> and <b>GUI.CreatePictureRadioButton</b>.<p>\r\n</p>",
       "text_content": " GUI.CreateRadioButton and GUI.CreatePictureRadioButton.\r\n",
-      "mdown_content": "**GUI.CreateRadioButton** and **GUI.CreatePictureRadioButton**."
+      "mdown_content": "**GUI.CreateRadioButton** and **GUI.CreatePictureRadioButton**.\n"
     }
   ],
   "dependencies": [

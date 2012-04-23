@@ -6,14 +6,19 @@
 
 <h2>Description</h2>
 
-<p>Creates a line and returns the line's widget ID.
-Lines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements.</p>
+<p>Creates a line and returns the line's widget ID.</p>
 
-<p>Lines are passive widgets, meaning that they do not respond to button clicks or keystrokes.
-The <em>x1</em> and <em>y1</em> parameters specify one end-point of the line and the <em>x2</em> and <em>y2</em> parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The <em>kind</em> parameter specifies the type of line. This is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em> or <em>GUI.EXDENT</em>. A <em>kind</em> of 0 is the default and is the same as <em>GUI.LINE</em>.
-<em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the line appear indented or recessed. <em>GUI.EXDENT</em> makes the line appear to stand out from the window.</p>
+<p>Lines are generally used to separate parts of a window. A line is used to make the window look better and help organize the GUI elements.</p>
 
-<p><img src="gui_createline01.gif" alt="Doc image" /></p>
+<p><img src="gui_createline01.gif" alt="Doc Image" /></p>
+
+<p><strong>Three Types of Lines</strong></p>
+
+<p>Lines are passive widgets, meaning that they do not respond to button clicks or keystrokes.</p>
+
+<p>The <em>x1</em> and <em>y1</em> parameters specify one end-point of the line and the <em>x2</em> and <em>y2</em> parameters specify the other end point. The line must either be horizontal or vertical (i.e. x1 must equal x2 or y1 must equal y2). The <em>kind</em> parameter specifies the type of line. This is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em> or <em>GUI.EXDENT</em>. A <em>kind</em> of 0 is the default and is the same as <em>GUI.LINE</em>.</p>
+
+<p><em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor</strong>. <em>GUI.INDENT</em> makes the line appear indented or recessed. <em>GUI.EXDENT</em> makes the line appear to stand out from the window.</p>
 
 <h2>Example</h2>
 
@@ -38,14 +43,18 @@ The <em>x1</em> and <em>y1</em> parameters specify one end-point of the line and
 
 <h2>Details</h2>
 
-<p>When <strong>GUI.CreateLine</strong> is called, the newly created line will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
-A line widget is a passive widget and cannot be enabled or disabled.</p>
+<p>When <strong>GUI.CreateLine</strong> is called, the newly created line will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
+
+<p>A line widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Details</h2>
 
 <p>The following GUI subprograms can be called with a line as the <em>widgetID</em> parameter:</p>
 
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong></p>
+
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreateLine</strong>, not by calling <strong>CreateLine</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreateLine</strong>, not by calling <strong>CreateLine</strong>.</p>

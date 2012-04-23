@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxy</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxy : int\r\n",
-      "mdown_content": "**maxy** : **int**"
+      "mdown_content": "**maxy** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>maxy</b> function is used to<b> </b>determine the maximum value of y for the current graphics mode.<p>\r\n</p>",
       "text_content": " The maxy function is used to determine the maximum value of y for the current graphics mode.\r\n",
-      "mdown_content": "The **maxy** function is used to determine the maximum value of y for the current graphics mode."
+      "mdown_content": "The **maxy** function is used to determine the maximum value of y for the current graphics mode.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program outputs the maximum y value.<p>\r\n</p>",
       "text_content": " This program outputs the maximum y value.\r\n\r\n",
-      "mdown_content": "This program outputs the maximum y value."
+      "mdown_content": "This program outputs the maximum y value.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>graphics</i>\" mode. See <b>setscreen </b>for details.<p>\r\nFor the default IBM PC compatible graphics mode (CGA), <b>maxy </b>= 199.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"graphics\" mode. If it is not, it will automatically be set to \"graphics\" mode. See setscreen for details.\r\nFor the default IBM PC compatible graphics mode (CGA), maxy = 199.\r\n",
-      "mdown_content": "The screen should be in a \"_graphics_\" mode. If it is not, it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\nFor the default IBM PC compatible graphics mode (CGA), **maxy** = 199."
+      "mdown_content": "The screen should be in a \"_graphics_\" mode. If it is not, it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\n\nFor the default IBM PC compatible graphics mode (CGA), **maxy** = 199.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported unqualified.<p>\r\nThis means that you can call the function by calling <b>maxy</b> or by calling <b>View.maxy</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported unqualified.\r\nThis means that you can call the function by calling maxy or by calling View.maxy.\r\n",
-      "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **maxy** or by calling **View.maxy**."
+      "mdown_content": "Exported unqualified.\n\nThis means that you can call the function by calling **maxy** or by calling **View.maxy**.\n"
     },
     {
       "title": "See also",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"draw_dot.html\">Draw.Dot</a></b> for an example of the use of <b><a href=\"maxy.html\">maxy</a></b> and for a diagram illustrating x and y positions. <p>\r\n</p>",
       "text_content": " Draw.Dot for an example of the use of maxy and for a diagram illustrating x and y positions. \r\n",
-      "mdown_content": "**[draw_dot.html](Draw.Dot)** for an example of the use of **[maxy.html](maxy)** and for a diagram illustrating x and y positions. "
+      "mdown_content": "**[draw_dot.html](Draw.Dot)** for an example of the use of **[maxy.html](maxy)** and for a diagram illustrating x and y positions. \n"
     }
   ],
   "dependencies": [

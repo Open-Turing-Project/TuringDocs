@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Width</b> (<i>txtStr</i> : <b>string</b>, <i>fontID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Font.Width (txtStr : string, fontID : int) : int\r\n",
-      "mdown_content": "**Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**"
+      "mdown_content": "**Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Font.Width </b>is used to obtain the width in pixels that a specified string will take to draw in a specified font. The <i>textStr</i> parameter is the string. The <i>fontID</i> parameter is the font in which the string would be drawn.<p>\r\n</p>",
       "text_content": " Font.Width is used to obtain the width in pixels that a specified string will take to draw in a specified font. The textStr parameter is the string. The fontID parameter is the font in which the string would be drawn.\r\n",
-      "mdown_content": "**Font.Width** is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn."
+      "mdown_content": "**Font.Width** is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn.\n"
     },
     {
       "title": "Details",
       "raw_content": "If <b>Font.Width</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Width</b> call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If Font.Width is passed an invalid font ID, a fatal error occurs. If the Font.Width call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If **Font.Width** is passed an invalid font ID, a fatal error occurs. If the **Font.Width** call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If **Font.Width** is passed an invalid font ID, a fatal error occurs. If the **Font.Width** call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "The program gets information about 24pt Bold Palatino.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": " The program gets information about 24pt Bold Palatino.\r\n\r\n    ",
-      "mdown_content": "The program gets information about 24pt Bold Palatino.\n"
+      "mdown_content": "The program gets information about 24pt Bold Palatino.\n\n\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.Width</b>, not by calling <b>Width</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.Width, not by calling Width.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Width**, not by calling **Width**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Font.Width**, not by calling **Width**.\n"
     }
   ],
   "dependencies": [

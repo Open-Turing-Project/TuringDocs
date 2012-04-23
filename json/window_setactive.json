@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetActive</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.SetActive (windowID : int)\r\n",
-      "mdown_content": "**Window.SetActive** (_windowID_ : **int**)"
+      "mdown_content": "**Window.SetActive** (_windowID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.SetActive</b> procedure activates the window specified by the <i>windowID</i> parameter.<p>\r\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.</p>\n<p>\r\n</p>",
       "text_content": " The Window.SetActive procedure activates the window specified by the windowID parameter.\r\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.\r\n",
-      "mdown_content": "The **Window.SetActive** procedure activates the window specified by the _windowID_ parameter.\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window."
+      "mdown_content": "The **Window.SetActive** procedure activates the window specified by the _windowID_ parameter.\n\nAn active window is defined as the window that has the input focus. This means that any typing will be sent to the active window. Under most systems an active window is indicated by a change in the appearance of the window.\n"
     },
     {
       "title": "Details",
       "raw_content": "In general, it is unwise to change the active window. If the user is working on another program at the same time the program is running and the program executes the <b>Window.SetActive</b> procedure, she or he will suddenly be returned to OOT without warning.<p>\r\n</p>",
       "text_content": " In general, it is unwise to change the active window. If the user is working on another program at the same time the program is running and the program executes the Window.SetActive procedure, she or he will suddenly be returned to OOT without warning.\r\n",
-      "mdown_content": "In general, it is unwise to change the active window. If the user is working on another program at the same time the program is running and the program executes the **Window.SetActive** procedure, she or he will suddenly be returned to OOT without warning."
+      "mdown_content": "In general, it is unwise to change the active window. If the user is working on another program at the same time the program is running and the program executes the **Window.SetActive** procedure, she or he will suddenly be returned to OOT without warning.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.SetActive</b>, not by calling <b>SetActive</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.SetActive, not by calling SetActive.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.SetActive**, not by calling **SetActive**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.SetActive**, not by calling **SetActive**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"window_getactive.html\">Window.GetActive</a></b> and <b><a href=\"window_select.html\">Window.Select</a>.</b><p>\r\n</p>",
       "text_content": " Window.GetActive and Window.Select.\r\n",
-      "mdown_content": "**[window_getactive.html](Window.GetActive)** and **[window_select.html](Window.Select).**"
+      "mdown_content": "**[window_getactive.html](Window.GetActive)** and **[window_select.html](Window.Select).**\n"
     }
   ],
   "dependencies": [

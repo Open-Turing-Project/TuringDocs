@@ -17,13 +17,19 @@
 
 <h2>Details</h2>
 
-<p>See also <em>explicitIntegerConstant</em>. The <strong>real</strong> type is used instead of <strong>int</strong> when values have fractional parts as in 16.837. See the <strong>real</strong> type for details.
-The operators on integers are +, -, * (multiply), <strong>div</strong> (truncating integer division), <strong>mod</strong> (integer remainder), <strong> (exponentiation), as well as comparisons (+, </strong>not=<strong>, >, >=, &lt;, &lt;=). The operators </strong>and<strong>, </strong>or<strong> and </strong>xor<strong> can be applied to non-negative integer values. The bit-wise boolean result is produced as an integer (actually, as a natural number). The </strong>shr<strong> (shift right) and </strong>shl<strong> (shift left) operators are also introduced.
-Real numbers can be converted to integers using </strong>ceil<strong> (ceiling), </strong>floor<strong>, and </strong>round<strong> (see descriptions of these functions). Integers can be converted to real numbers using </strong>intreal<strong>, but in practice this is rarely used, because an integer value used in place of a real value will be automatically converted to real.
-Integers can be converted to strings and back using </strong>intstr<strong> and </strong>strint<strong>. Integers can be converted to corresponding ASCII (or EBCDIC) characters using </strong>chr<strong> and </strong>ord<strong>. See the descriptions of these functions.
-Pseudo-random sequences of integers can be generated using </strong>randint<strong>. See </strong>randint<strong>.
-In current implementations of Turing, the range of integers is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2</strong>31 - 1. See <strong>maxint</strong>. This range exists because integers are stored in 4 bytes. The remaining negative value, -2147483648 records uninitialization. The types <strong>int1</strong>, <strong>int2</strong> and <strong>int4</strong> specify integers that fit into 1, 2 or 4 bytes. The <strong>int</strong><em>n</em> types (<strong>int1</strong>, <strong>int2</strong> and <strong>int4</strong>) are not checked for initialization and allow all their bit patterns as numbers.
-The natural number type <strong>nat</strong> allows only the non-negative values: 0,1,2,3,&#133; Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.</p>
+<p>See also <em>explicitIntegerConstant</em>. The <strong>real</strong> type is used instead of <strong>int</strong> when values have fractional parts as in 16.837. See the <strong>real</strong> type for details.</p>
+
+<p>The operators on integers are +, -, * (multiply), <strong>div</strong> (truncating integer division), <strong>mod</strong> (integer remainder), <strong> (exponentiation), as well as comparisons (+, </strong>not=<strong>, >, >=, &lt;, &lt;=). The operators </strong>and<strong>, </strong>or<strong> and </strong>xor<strong> can be applied to non-negative integer values. The bit-wise boolean result is produced as an integer (actually, as a natural number). The </strong>shr<strong> (shift right) and </strong>shl** (shift left) operators are also introduced.</p>
+
+<p>Real numbers can be converted to integers using <strong>ceil</strong> (ceiling), <strong>floor</strong>, and <strong>round</strong> (see descriptions of these functions). Integers can be converted to real numbers using <strong>intreal</strong>, but in practice this is rarely used, because an integer value used in place of a real value will be automatically converted to real.</p>
+
+<p>Integers can be converted to strings and back using <strong>intstr</strong> and <strong>strint</strong>. Integers can be converted to corresponding ASCII (or EBCDIC) characters using <strong>chr</strong> and <strong>ord</strong>. See the descriptions of these functions.</p>
+
+<p>Pseudo-random sequences of integers can be generated using <strong>randint</strong>. See <strong>randint</strong>.</p>
+
+<p>In current implementations of Turing, the range of integers is from -2147483647 to 2147483647. In other words, the maximum size of integer is 2<strong>31 - 1. See </strong>maxint<strong>. This range exists because integers are stored in 4 bytes. The remaining negative value, -2147483648 records uninitialization. The types </strong>int1<strong>, </strong>int2<strong> and </strong>int4<strong> specify integers that fit into 1, 2 or 4 bytes. The </strong>int<strong><em>n</em> types (</strong>int1<strong>, </strong>int2<strong> and </strong>int4**) are not checked for initialization and allow all their bit patterns as numbers.</p>
+
+<p>The natural number type <strong>nat</strong> allows only the non-negative values: 0,1,2,3,&#133; Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.</p>
 
 <h2>See also</h2>
 

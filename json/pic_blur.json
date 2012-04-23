@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Blur</b> (<i>picID</i>, <i>blurAmount</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Blur (picID, blurAmount : int) : int\r\n    ",
-      "mdown_content": "**Pic.Blur** (_picID_, _blurAmount_ : **int**) : **int**"
+      "mdown_content": "**Pic.Blur** (_picID_, _blurAmount_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Blur</b> is used to create a new picture by blurring an\r\n          existing picture. The resulting picture is created by mixing pixels\r\n          in a picture with pixels adjacent to it.  As the <i>blurAmount</i>\r\n          increases, the image grows more and more blurry.<p>\r\n    </p>",
       "text_content": "Pic.Blur is used to create a new picture by blurring an\r\n          existing picture. The resulting picture is created by mixing pixels\r\n          in a picture with pixels adjacent to it.  As the blurAmount\r\n          increases, the image grows more and more blurry.\r\n    ",
-      "mdown_content": "**Pic.Blur** is used to create a new picture by blurring anexisting picture. The resulting picture is created by mixing pixelsin a picture with pixels adjacent to it.  As the _blurAmount_increases, the image grows more and more blurry."
+      "mdown_content": "**Pic.Blur** is used to create a new picture by blurring anexisting picture. The resulting picture is created by mixing pixelsin a picture with pixels adjacent to it.  As the _blurAmount_increases, the image grows more and more blurry.\n"
     },
     {
       "title": "Details",
       "raw_content": "Note that the blurred picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using <b>Pic.Free</b>.<p>\r\n\t  Note that this is a fairly CPU intensive routine.  On slow machines, \r\n\t  it can take up to a second or more when <i>blurAmount</i> is large.  \r\n\t  In such cases, it is better to precompute the pictures before \r\n\t  starting the program.  The second example shows this being done.</p>\n<p>\r\n    </p>",
       "text_content": "Note that the blurred picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using Pic.Free.\r\n\t  Note that this is a fairly CPU intensive routine.  On slow machines, \r\n\t  it can take up to a second or more when blurAmount is large.  \r\n\t  In such cases, it is better to precompute the pictures before \r\n\t  starting the program.  The second example shows this being done.\r\n    ",
-      "mdown_content": "Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\nNote that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when _blurAmount_ is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done."
+      "mdown_content": "Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\n\nNote that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when _blurAmount_ is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.\n"
     },
     {
       "title": "Example",
@@ -29,9 +29,9 @@
         "pic_blur01.gif",
         "pic_blur02.gif"
       ],
-      "raw_content": "The program creates a picture and then progressively blurs it.\r\n\r\n          <table><tr>\n<td>\r\n\t  \t<center></center>\r\n\t  \t<center><b>Output at start</b></center>\n<p>\r\n\t      </p>\n</td>\r\n              <td>\r\n\t  \t<center></center>\r\n\t  \t<center><b>After several loops</b></center>\n<p>\r\n\t      </p>\n</td>\r\n\t     </tr></table>",
+      "raw_content": "The program creates a picture and then progressively blurs it.\r\n\r\n          <table><tr>\n<td>\r\n\t  \t<center><img src=\"pic_blur01.gif\"></center>\r\n\t  \t<center><b>Output at start</b></center>\n<p>\r\n\t      </p>\n</td>\r\n              <td>\r\n\t  \t<center><img src=\"pic_blur02.gif\"></center>\r\n\t  \t<center><b>After several loops</b></center>\n<p>\r\n\t      </p>\n</td>\r\n\t     </tr></table>",
       "text_content": "The program creates a picture and then progressively blurs it.\r\n\r\n          \r\n\t  \t\r\n\t  \tOutput at start\r\n\t      \r\n              \r\n\t  \t\r\n\t  \tAfter several loops\r\n\t      \r\n\t     ",
-      "mdown_content": "The program creates a picture and then progressively blurs it.\n\n\n"
+      "mdown_content": "The program creates a picture and then progressively blurs it.\n\n\n![Doc Image](pic_blur01.gif)\n\n**Output at start**\n\n\n\n![Doc Image](pic_blur02.gif)\n\n**After several loops**\n\n"
     },
     {
       "title": "Execute",
@@ -47,13 +47,13 @@
       "title": "Execute",
       "raw_content": "By precalculating and saving the results of the blurred picture, you\r\n          can produce a visual effect where an object seems to come into focus.\r\n          <br>\r\n          The program below blurs an image, saving each step.  It then \r\n          draws the images in reverse order, making it appear as if the image\r\n          is becoming successively sharper.<p>\r\n      \t  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n\t    <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,Pic.Blur1.t;Pic.Blur1 Example\"></object></p>\n<p></p>",
       "text_content": "By precalculating and saving the results of the blurred picture, you\r\n          can produce a visual effect where an object seems to come into focus.\r\n          \r\n          The program below blurs an image, saving each step.  It then \r\n          draws the images in reverse order, making it appear as if the image\r\n          is becoming successively sharper.\r\n      \t  \r\n\t    ",
-      "mdown_content": "By precalculating and saving the results of the blurred picture, youcan produce a visual effect where an object seems to come into focus.The program below blurs an image, saving each step.  It then draws the images in reverse order, making it appear as if the imageis becoming successively sharper.\n"
+      "mdown_content": "By precalculating and saving the results of the blurred picture, youcan produce a visual effect where an object seems to come into focus.The program below blurs an image, saving each step.  It then draws the images in reverse order, making it appear as if the imageis becoming successively sharper.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Blur</b>, not by calling <b>Blur</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Blur, not by calling Blur.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Blur**, not by calling **Blur**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.Blur**, not by calling **Blur**.\n"
     }
   ],
   "dependencies": [

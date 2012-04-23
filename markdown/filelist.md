@@ -1,617 +1,618 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[abs.html" target="main](abs)
+[addressint.html" target="main](addressint)
+[addr.html" target="main](addr)
+[all_elements.html" target="main](all_elements)
+[all.html" target="main](all)
+[and.html" target="main](and)
+[anyclass.html" target="main](anyclass)
+[arccosd.html" target="main](arccosd)
+[arccos.html" target="main](arccos)
+[arcsind.html" target="main](arcsind)
+[arcsin.html" target="main](arcsin)
+[arctand.html" target="main](arctand)
+[arctan.html" target="main](arctan)
+[array.html" target="main](array)
+[assert.html" target="main](assert)
+[assignability.html" target="main](assignability)
+[assignment.html" target="main](assignment)
+[basic_predef.html" target="main](basic_predef)
+[begin.html" target="main](begin)
+[bind.html" target="main](bind)
+[bits.html" target="main](bits)
+[body.html" target="main](body)
+[boolean.html" target="main](boolean)
+[break.html" target="main](break)
+[buttonchoose.html" target="main](buttonchoose)
+[buttonmoved.html" target="main](buttonmoved)
+[buttonwait.html" target="main](buttonwait)
+[case.html" target="main](case)
+[catenation.html" target="main](catenation)
+[ceil.html" target="main](ceil)
+[characters.html" target="main](characters)
+[char.html" target="main](char)
+[char_n.html" target="main](char_n)
+[cheat.html" target="main](cheat)
+[checked.html" target="main](checked)
+[chr.html" target="main](chr)
+[class.html" target="main](class)
+[clock.html" target="main](clock)
+[close.html" target="main](close)
+[cls.html" target="main](cls)
+[collection.html" target="main](collection)
+[colorback.html" target="main](colorback)
+[color.html" target="main](color)
+[comment.html" target="main](comment)
+[comparisonoperator.html" target="main](comparisonoperator)
+[concurrency_empty.html" target="main](concurrency_empty)
+[concurrency_getpriority.html" target="main](concurrency_getpriority)
+[concurrencymodule.html" target="main](concurrencymodule)
+[concurrency_setpriority.html" target="main](concurrency_setpriority)
+[concurrency_simutime.html" target="main](concurrency_simutime)
+[condition.html" target="main](condition)
+[config_display.html" target="main](config_display)
+[config_lang.html" target="main](config_lang)
+[config_machine.html" target="main](config_machine)
+[configmodule.html" target="main](configmodule)
+[constantreference.html" target="main](constantreference)
+[const.html" target="main](const)
+[control.html" target="main](control)
+[cosd.html" target="main](cosd)
+[cos.html" target="main](cos)
+[date.html" target="main](date)
+[declaration.html" target="main](declaration)
+[deferred.html" target="main](deferred)
+[delay.html" target="main](delay)
+[dir_change.html" target="main](dir_change)
+[dir_close.html" target="main](dir_close)
+[dir_create.html" target="main](dir_create)
+[dir_current.html" target="main](dir_current)
+[dir_delete.html" target="main](dir_delete)
+[dir_exists.html" target="main](dir_exists)
+[dir_get.html" target="main](dir_get)
+[dir_getlong.html" target="main](dir_getlong)
+[dirmodule.html" target="main](dirmodule)
+[dir_open.html" target="main](dir_open)
+[div.html" target="main](div)
+[drawarc.html" target="main](drawarc)
+[draw_arc.html" target="main](draw_arc)
+[drawbox.html" target="main](drawbox)
+[draw_box.html" target="main](draw_box)
+[draw_cls.html" target="main](draw_cls)
+[draw_dashedline.html" target="main](draw_dashedline)
+[draw_dot.html" target="main](draw_dot)
+[drawdot.html" target="main](drawdot)
+[draw_fillarc.html" target="main](draw_fillarc)
+[drawfillarc.html" target="main](drawfillarc)
+[drawfillbox.html" target="main](drawfillbox)
+[draw_fillbox.html" target="main](draw_fillbox)
+[draw_fill.html" target="main](draw_fill)
+[drawfill.html" target="main](drawfill)
+[drawfillmapleleaf.html" target="main](drawfillmapleleaf)
+[draw_fillmapleleaf.html" target="main](draw_fillmapleleaf)
+[draw_filloval.html" target="main](draw_filloval)
+[drawfilloval.html" target="main](drawfilloval)
+[drawfillpolygon.html" target="main](drawfillpolygon)
+[draw_fillpolygon.html" target="main](draw_fillpolygon)
+[drawfillstar.html" target="main](drawfillstar)
+[draw_fillstar.html" target="main](draw_fillstar)
+[drawline.html" target="main](drawline)
+[draw_line.html" target="main](draw_line)
+[drawmapleleaf.html" target="main](drawmapleleaf)
+[draw_mapleleaf.html" target="main](draw_mapleleaf)
+[drawmodule.html" target="main](drawmodule)
+[drawoval.html" target="main](drawoval)
+[draw_oval.html" target="main](draw_oval)
+[drawpic.html" target="main](drawpic)
+[drawpolygon.html" target="main](drawpolygon)
+[draw_polygon.html" target="main](draw_polygon)
+[drawstar.html" target="main](drawstar)
+[draw_star.html" target="main](draw_star)
+[draw_text.html" target="main](draw_text)
+[draw_thickline.html" target="main](draw_thickline)
+[empty.html" target="main](empty)
+[enumeratedvalue.html" target="main](enumeratedvalue)
+[enum.html" target="main](enum)
+[eof.html" target="main](eof)
+[equivalence.html" target="main](equivalence)
+[erealstr.html" target="main](erealstr)
+[error_halt.html" target="main](error_halt)
+[error_last.html" target="main](error_last)
+[error_lastmsg.html" target="main](error_lastmsg)
+[error_laststr.html" target="main](error_laststr)
+[errormodule.html" target="main](errormodule)
+[error_msg.html" target="main](error_msg)
+[errornummodule.html" target="main](errornummodule)
+[error_str.html" target="main](error_str)
+[error_trip.html" target="main](error_trip)
+[error_tripmsg.html" target="main](error_tripmsg)
+[exceptionsmodule.html" target="main](exceptionsmodule)
+[exit.html" target="main](exit)
+[exp.html" target="main](exp)
+[explicitcharconstant.html" target="main](explicitcharconstant)
+[explicitconstant.html" target="main](explicitconstant)
+[explicitintegerconstant.html" target="main](explicitintegerconstant)
+[explicitrealconstant.html" target="main](explicitrealconstant)
+[explicitstringconstant.html" target="main](explicitstringconstant)
+[explicittruefalseconstant.html" target="main](explicittruefalseconstant)
+[expn.html" target="main](expn)
+[export.html" target="main](export)
+[external.html" target="main](external)
+[false.html" target="main](false)
+[fetcharg.html" target="main](fetcharg)
+[file_copy.html" target="main](file_copy)
+[file_delete.html" target="main](file_delete)
+[file_diskfree.html" target="main](file_diskfree)
+[file_exists.html" target="main](file_exists)
+[file_fullpath.html" target="main](file_fullpath)
+[filemodule.html" target="main](filemodule)
+[file_parent.html" target="main](file_parent)
+[file_rename.html" target="main](file_rename)
+[filestatements.html" target="main](filestatements)
+[file_status.html" target="main](file_status)
+[flexible.html" target="main](flexible)
+[floor.html" target="main](floor)
+[font_draw.html" target="main](font_draw)
+[font_free.html" target="main](font_free)
+[font_getname.html" target="main](font_getname)
+[font_getsize.html" target="main](font_getsize)
+[font_getstyle.html" target="main](font_getstyle)
+[fontmodule.html" target="main](fontmodule)
+[font_name.html" target="main](font_name)
+[font_new.html" target="main](font_new)
+[font_sizes.html" target="main](font_sizes)
+[font_startname.html" target="main](font_startname)
+[font_startsize.html" target="main](font_startsize)
+[font_width.html" target="main](font_width)
+[for.html" target="main](for)
+[fork.html" target="main](fork)
+[forward.html" target="main](forward)
+[frame.html" target="main](frame)
+[frealstr.html" target="main](frealstr)
+[free.html" target="main](free)
+[functioncall.html" target="main](functioncall)
+[function.html" target="main](function)
+[getchar.html" target="main](getchar)
+[getch.html" target="main](getch)
+[getenv.html" target="main](getenv)
+[get.html" target="main](get)
+[getpid.html" target="main](getpid)
+[getpriority.html" target="main](getpriority)
+[gui_addline.html" target="main](gui_addline)
+[gui_addtext.html" target="main](gui_addtext)
+[gui_alert_2,3,full.html" target="main](gui_alert_2,3,full)
+[gui_alert2.html" target="main](gui_alert2)
+[gui_alert3.html" target="main](gui_alert3)
+[gui_alertfull.html" target="main](gui_alertfull)
+[gui_alert.html" target="main](gui_alert)
+[gui_choose_full.html" target="main](gui_choose_full)
+[gui_choosefull.html" target="main](gui_choosefull)
+[gui_choose.html" target="main](gui_choose)
+[gui_cleartext.html" target="main](gui_cleartext)
+[gui_closewindow.html" target="main](gui_closewindow)
+[gui_createbutton_full.html" target="main](gui_createbutton_full)
+[gui_createbuttonfull.html" target="main](gui_createbuttonfull)
+[gui_createbutton.html" target="main](gui_createbutton)
+[gui_createcanvas_full.html" target="main](gui_createcanvas_full)
+[gui_createcanvasfull.html" target="main](gui_createcanvasfull)
+[gui_createcanvas.html" target="main](gui_createcanvas)
+[gui_createcheckbox_full.html" target="main](gui_createcheckbox_full)
+[gui_createcheckboxfull.html" target="main](gui_createcheckboxfull)
+[gui_createcheckbox.html" target="main](gui_createcheckbox)
+[gui_createframe.html" target="main](gui_createframe)
+[gui_createhorizontalscrollbar_full.html" target="main](gui_createhorizontalscrollbar_full)
+[gui_createhorizontalscrollbarfull.html" target="main](gui_createhorizontalscrollbarfull)
+[gui_createhorizontalscrollbar.html" target="main](gui_createhorizontalscrollbar)
+[gui_createhorizontalslider.html" target="main](gui_createhorizontalslider)
+[gui_createlabel_full.html" target="main](gui_createlabel_full)
+[gui_createlabelfull.html" target="main](gui_createlabelfull)
+[gui_createlabel.html" target="main](gui_createlabel)
+[gui_createlabelledframe.html" target="main](gui_createlabelledframe)
+[gui_createline.html" target="main](gui_createline)
+[gui_createmenu.html" target="main](gui_createmenu)
+[gui_createmenuitem_full.html" target="main](gui_createmenuitem_full)
+[gui_createmenuitemfull.html" target="main](gui_createmenuitemfull)
+[gui_createmenuitem.html" target="main](gui_createmenuitem)
+[gui_createpicturebutton_full.html" target="main](gui_createpicturebutton_full)
+[gui_createpicturebuttonfull.html" target="main](gui_createpicturebuttonfull)
+[gui_createpicturebutton.html" target="main](gui_createpicturebutton)
+[gui_createpicture.html" target="main](gui_createpicture)
+[gui_createpictureradiobutton_full.html" target="main](gui_createpictureradiobutton_full)
+[gui_createpictureradiobuttonfull.html" target="main](gui_createpictureradiobuttonfull)
+[gui_createpictureradiobutton.html" target="main](gui_createpictureradiobutton)
+[gui_createradiobutton_full.html" target="main](gui_createradiobutton_full)
+[gui_createradiobuttonfull.html" target="main](gui_createradiobuttonfull)
+[gui_createradiobutton.html" target="main](gui_createradiobutton)
+[gui_createtextboxchoice.html" target="main](gui_createtextboxchoice)
+[gui_createtextbox_full.html" target="main](gui_createtextbox_full)
+[gui_createtextboxfull.html" target="main](gui_createtextboxfull)
+[gui_createtextbox.html" target="main](gui_createtextbox)
+[gui_createtextfield_full.html" target="main](gui_createtextfield_full)
+[gui_createtextfieldfull.html" target="main](gui_createtextfieldfull)
+[gui_createtextfield.html" target="main](gui_createtextfield)
+[gui_createverticalscrollbar_full.html" target="main](gui_createverticalscrollbar_full)
+[gui_createverticalscrollbarfull.html" target="main](gui_createverticalscrollbarfull)
+[gui_createverticalscrollbar.html" target="main](gui_createverticalscrollbar)
+[gui_createverticalslider.html" target="main](gui_createverticalslider)
+[gui_disable.html" target="main](gui_disable)
+[gui_dispose.html" target="main](gui_dispose)
+[gui_draw.html" target="main](gui_draw)
+[gui_enable.html" target="main](gui_enable)
+[gui_fontdraw.html" target="main](gui_fontdraw)
+[gui_getcheckbox.html" target="main](gui_getcheckbox)
+[gui_geteventtime.html" target="main](gui_geteventtime)
+[gui_geteventwidgetid.html" target="main](gui_geteventwidgetid)
+[gui_geteventwindow.html" target="main](gui_geteventwindow)
+[gui_getheight.html" target="main](gui_getheight)
+[gui_getmenubarheight.html" target="main](gui_getmenubarheight)
+[gui_getscrollbarwidth.html" target="main](gui_getscrollbarwidth)
+[gui_getslidervalue.html" target="main](gui_getslidervalue)
+[gui_gettext.html" target="main](gui_gettext)
+[gui_getversion.html" target="main](gui_getversion)
+[gui_getwidth.html" target="main](gui_getwidth)
+[gui_getx.html" target="main](gui_getx)
+[gui_get_x,y.html" target="main](gui_get_x,y)
+[gui_gety.html" target="main](gui_gety)
+[gui_hide.html" target="main](gui_hide)
+[gui_hidemenubar.html" target="main](gui_hidemenubar)
+[gui_hidewindow.html" target="main](gui_hidewindow)
+[gui.html" target="main](gui)
+[guimodule.html" target="main](guimodule)
+[gui_openfilefull.html" target="main](gui_openfilefull)
+[gui_openfile.html" target="main](gui_openfile)
+[gui_pic.html" target="main](gui_pic)
+[gui_processevent.html" target="main](gui_processevent)
+[gui_quit.html" target="main](gui_quit)
+[gui_refresh.html" target="main](gui_refresh)
+[gui_resetquit.html" target="main](gui_resetquit)
+[gui_savefilefull.html" target="main](gui_savefilefull)
+[gui_savefile.html" target="main](gui_savefile)
+[gui_selectradio.html" target="main](gui_selectradio)
+[gui_setactive.html" target="main](gui_setactive)
+[gui_setbackgroundcolor.html" target="main](gui_setbackgroundcolor)
+[gui_setcheckbox.html" target="main](gui_setcheckbox)
+[gui_setcolor.html" target="main](gui_setcolor)
+[gui_setdefault.html" target="main](gui_setdefault)
+[gui_setdisplaywhencreated.html" target="main](gui_setdisplaywhencreated)
+[gui_setechochar.html" target="main](gui_setechochar)
+[gui_setkeyeventhandler.html" target="main](gui_setkeyeventhandler)
+[gui_setlabel.html" target="main](gui_setlabel)
+[gui_setmouseeventhandler.html" target="main](gui_setmouseeventhandler)
+[gui_setnulleventhandler.html" target="main](gui_setnulleventhandler)
+[gui_setpositionandsize.html" target="main](gui_setpositionandsize)
+[gui_setposition.html" target="main](gui_setposition)
+[gui_setscrollamount.html" target="main](gui_setscrollamount)
+[gui_setscrollonadd.html" target="main](gui_setscrollonadd)
+[gui_setselection.html" target="main](gui_setselection)
+[gui_setsize.html" target="main](gui_setsize)
+[gui_setsliderminmax.html" target="main](gui_setsliderminmax)
+[gui_setsliderreverse.html" target="main](gui_setsliderreverse)
+[gui_setslidersize.html" target="main](gui_setslidersize)
+[gui_setslidervalue.html" target="main](gui_setslidervalue)
+[gui_settext.html" target="main](gui_settext)
+[gui_settopline.html" target="main](gui_settopline)
+[gui_setxor.html" target="main](gui_setxor)
+[gui_show.html" target="main](gui_show)
+[gui_showmenubar.html" target="main](gui_showmenubar)
+[gui_showwindow.html" target="main](gui_showwindow)
+[handler.html" target="main](handler)
+[hasch.html" target="main](hasch)
+[id.html" target="main](id)
+[_if.html" target="main](_if)
+[if.html" target="main](if)
+[implement_by.html" target="main](implement_by)
+[implement.html" target="main](implement)
+[import.html" target="main](import)
+[include.html" target="main](include)
+[index.html" target="main](index)
+[indextype.html" target="main](indextype)
+[indirection.html" target="main](indirection)
+[infix.html" target="main](infix)
+[inherit.html" target="main](inherit)
+[in.html" target="main](in)
+[init.html" target="main](init)
+[input_flush.html" target="main](input_flush)
+[input_getchar.html" target="main](input_getchar)
+[input_getch.html" target="main](input_getch)
+[input_hasch.html" target="main](input_hasch)
+[input_keydown.html" target="main](input_keydown)
+[inputmodule.html" target="main](inputmodule)
+[input_pause.html" target="main](input_pause)
+[int.html" target="main](int)
+[intn.html" target="main](intn)
+[intreal.html" target="main](intreal)
+[intro.html" target="main](intro)
+[intstr.html" target="main](intstr)
+[invariant.html" target="main](invariant)
+[joystick_getinfo.html" target="main](joystick_getinfo)
+[joystickmodule.html" target="main](joystickmodule)
+[keyboardmodule.html" target="main](keyboardmodule)
+[keycodes.html" target="main](keycodes)
+[keywords.html" target="main](keywords)
+[lang_elements.html" target="main](lang_elements)
+[length.html" target="main](length)
+[limitsmodule.html" target="main](limitsmodule)
+[ln.html" target="main](ln)
+[locate.html" target="main](locate)
+[locatexy.html" target="main](locatexy)
+[loop.html" target="main](loop)
+[lower.html" target="main](lower)
+[math_distance.html" target="main](math_distance)
+[math_distancepointline.html" target="main](math_distancepointline)
+[mathmodule.html" target="main](mathmodule)
+[maxcol.html" target="main](maxcol)
+[maxcolor.html" target="main](maxcolor)
+[max.html" target="main](max)
+[maxint.html" target="main](maxint)
+[maxnat.html" target="main](maxnat)
+[maxrow.html" target="main](maxrow)
+[maxx.html" target="main](maxx)
+[maxy.html" target="main](maxy)
+[min.html" target="main](min)
+[minint.html" target="main](minint)
+[minnat.html" target="main](minnat)
+[mod.html" target="main](mod)
+[module.html" target="main](module)
+[module_predef.html" target="main](module_predef)
+[monitor.html" target="main](monitor)
+[mouse_buttonchoose.html" target="main](mouse_buttonchoose)
+[mouse_buttonmoved.html" target="main](mouse_buttonmoved)
+[mouse_buttonwait.html" target="main](mouse_buttonwait)
+[mousemodule.html" target="main](mousemodule)
+[mousewhere.html" target="main](mousewhere)
+[mouse_where.html" target="main](mouse_where)
+[musicmodule.html" target="main](musicmodule)
+[music_playfile.html" target="main](music_playfile)
+[music_playfileloop.html" target="main](music_playfileloop)
+[music_playfilereturn.html" target="main](music_playfilereturn)
+[music_playfilestop.html" target="main](music_playfilestop)
+[music_play.html" target="main](music_play)
+[music_sound.html" target="main](music_sound)
+[music_soundoff.html" target="main](music_soundoff)
+[named.html" target="main](named)
+[nargs.html" target="main](nargs)
+[nat.html" target="main](nat)
+[natn.html" target="main](natn)
+[natreal.html" target="main](natreal)
+[natstr.html" target="main](natstr)
+[net_bytesavailable.html" target="main](net_bytesavailable)
+[net_charavailable.html" target="main](net_charavailable)
+[net_closeconnection.html" target="main](net_closeconnection)
+[net_hostaddressfromname.html" target="main](net_hostaddressfromname)
+[net_hostnamefromaddress.html" target="main](net_hostnamefromaddress)
+[net_lineavailable.html" target="main](net_lineavailable)
+[net_localaddress.html" target="main](net_localaddress)
+[net_localname.html" target="main](net_localname)
+[netmodule.html" target="main](netmodule)
+[net_openconnection.html" target="main](net_openconnection)
+[net_openurlconnection.html" target="main](net_openurlconnection)
+[net_tokenavailable.html" target="main](net_tokenavailable)
+[net_waitforconnection.html" target="main](net_waitforconnection)
+[new.html" target="main](new)
+[nil.html" target="main](nil)
+[not.html" target="main](not)
+[objectclass.html" target="main](objectclass)
+[opaque.html" target="main](opaque)
+[open.html" target="main](open)
+[operators.html" target="main](operators)
+[ord.html" target="main](ord)
+[or.html" target="main](or)
+[parallelget.html" target="main](parallelget)
+[parallelput.html" target="main](parallelput)
+[paramdeclaration.html" target="main](paramdeclaration)
+[pause.html" target="main](pause)
+[pcmodule.html" target="main](pcmodule)
+[pc_parallelget.html" target="main](pc_parallelget)
+[pc_parallelput.html" target="main](pc_parallelput)
+[pervasive.html" target="main](pervasive)
+[pic_blend.html" target="main](pic_blend)
+[pic_blur.html" target="main](pic_blur)
+[pic_drawframesback.html" target="main](pic_drawframesback)
+[pic_drawframes.html" target="main](pic_drawframes)
+[pic_draw.html" target="main](pic_draw)
+[pic_drawspecialback.html" target="main](pic_drawspecialback)
+[pic_drawspecial.html" target="main](pic_drawspecial)
+[pic_filenewframes.html" target="main](pic_filenewframes)
+[pic_filenew.html" target="main](pic_filenew)
+[pic_flip.html" target="main](pic_flip)
+[pic_frames.html" target="main](pic_frames)
+[pic_free.html" target="main](pic_free)
+[pic_height.html" target="main](pic_height)
+[pic_mirror.html" target="main](pic_mirror)
+[picmodule.html" target="main](picmodule)
+[pic_new.html" target="main](pic_new)
+[pic_rotate.html" target="main](pic_rotate)
+[pic_save.html" target="main](pic_save)
+[pic_scale.html" target="main](pic_scale)
+[pic_screenload.html" target="main](pic_screenload)
+[pic_screensave.html" target="main](pic_screensave)
+[pic_settransparentcolor.html" target="main](pic_settransparentcolor)
+[pic_width.html" target="main](pic_width)
+[playdone.html" target="main](playdone)
+[play.html" target="main](play)
+[pointer.html" target="main](pointer)
+[post.html" target="main](post)
+[precedence.html" target="main](precedence)
+[pred.html" target="main](pred)
+[prefix.html" target="main](prefix)
+[pre.html" target="main](pre)
+[procedurecall.html" target="main](procedurecall)
+[procedure.html" target="main](procedure)
+[process.html" target="main](process)
+[program.html" target="main](program)
+[put.html" target="main](put)
+[quit.html" target="main](quit)
+[rand.html" target="main](rand)
+[randint.html" target="main](randint)
+[rand_int.html" target="main](rand_int)
+[randmodule.html" target="main](randmodule)
+[randnext.html" target="main](randnext)
+[rand_next.html" target="main](rand_next)
+[randomize.html" target="main](randomize)
+[rand_real.html" target="main](rand_real)
+[rand_reset.html" target="main](rand_reset)
+[randseed.html" target="main](randseed)
+[rand_seed.html" target="main](rand_seed)
+[rand_set.html" target="main](rand_set)
+[read.html" target="main](read)
+[real.html" target="main](real)
+[realn.html" target="main](realn)
+[realstr.html" target="main](realstr)
+[record.html" target="main](record)
+[register.html" target="main](register)
+[rem.html" target="main](rem)
+[repeat.html" target="main](repeat)
+[result.html" target="main](result)
+[return.html" target="main](return)
+[rgb_addcolor.html" target="main](rgb_addcolor)
+[rgb_getcolor.html" target="main](rgb_getcolor)
+[rgb_maxcolor.html" target="main](rgb_maxcolor)
+[rgbmodule.html" target="main](rgbmodule)
+[rgb_setcolor.html" target="main](rgb_setcolor)
+[round.html" target="main](round)
+[scalar.html" target="main](scalar)
+[seek.html" target="main](seek)
+[self.html" target="main](self)
+[separator.html" target="main](separator)
+[setconstructor.html" target="main](setconstructor)
+[set.html" target="main](set)
+[setpriority.html" target="main](setpriority)
+[setscreen.html" target="main](setscreen)
+[shl.html" target="main](shl)
+[shr.html" target="main](shr)
+[signal.html" target="main](signal)
+[sign.html" target="main](sign)
+[simutime.html" target="main](simutime)
+[sind.html" target="main](sind)
+[sin.html" target="main](sin)
+[sizeof.html" target="main](sizeof)
+[sizepic.html" target="main](sizepic)
+[skip1.html" target="main](skip1)
+[skip.html" target="main](skip)
+[sound.html" target="main](sound)
+[sprite_animate.html" target="main](sprite_animate)
+[sprite_changepic.html" target="main](sprite_changepic)
+[sprite_free.html" target="main](sprite_free)
+[sprite_hide.html" target="main](sprite_hide)
+[spritemodule.html" target="main](spritemodule)
+[sprite_new.html" target="main](sprite_new)
+[sprite_setframerate.html" target="main](sprite_setframerate)
+[sprite_setheight.html" target="main](sprite_setheight)
+[sprite_setposition.html" target="main](sprite_setposition)
+[sprite_show.html" target="main](sprite_show)
+[sqrt.html" target="main](sqrt)
+[standardtype.html" target="main](standardtype)
+[statement.html" target="main](statement)
+[statementsanddeclarations.html" target="main](statementsanddeclarations)
+[stream_eof.html" target="main](stream_eof)
+[stream_flushall.html" target="main](stream_flushall)
+[stream_flush.html" target="main](stream_flush)
+[streammodule.html" target="main](streammodule)
+[string1.html" target="main](string1)
+[string.html" target="main](string)
+[strint.html" target="main](strint)
+[strintok.html" target="main](strintok)
+[str_lower.html" target="main](str_lower)
+[strmodule.html" target="main](strmodule)
+[strnat.html" target="main](strnat)
+[strnatok.html" target="main](strnatok)
+[strreal.html" target="main](strreal)
+[strrealok.html" target="main](strrealok)
+[str_trim.html" target="main](str_trim)
+[str_upper.html" target="main](str_upper)
+[subprogramheader.html" target="main](subprogramheader)
+[subprogramtype.html" target="main](subprogramtype)
+[subrangetype.html" target="main](subrangetype)
+[substring.html" target="main](substring)
+[succ.html" target="main](succ)
+[sysclock.html" target="main](sysclock)
+[sys_exec.html" target="main](sys_exec)
+[sys_fetcharg.html" target="main](sys_fetcharg)
+[sys_getcomputername.html" target="main](sys_getcomputername)
+[sys_getenv.html" target="main](sys_getenv)
+[sys_getpid.html" target="main](sys_getpid)
+[sys_getusername.html" target="main](sys_getusername)
+[sysmodule.html" target="main](sysmodule)
+[sys_nargs.html" target="main](sys_nargs)
+[system.html" target="main](system)
+[tag.html" target="main](tag)
+[takepic.html" target="main](takepic)
+[tand.html" target="main](tand)
+[tan.html" target="main](tan)
+[tell.html" target="main](tell)
+[text_cls.html" target="main](text_cls)
+[text_colorback.html" target="main](text_colorback)
+[text_color.html" target="main](text_color)
+[text_locate.html" target="main](text_locate)
+[text_locatexy.html" target="main](text_locatexy)
+[text_maxcol.html" target="main](text_maxcol)
+[text_maxrow.html" target="main](text_maxrow)
+[textmodule.html" target="main](textmodule)
+[text_whatcol.html" target="main](text_whatcol)
+[text_whatcolorback.html" target="main](text_whatcolorback)
+[text_whatcolor.html" target="main](text_whatcolor)
+[text_whatrow.html" target="main](text_whatrow)
+[time_date.html" target="main](time_date)
+[time_datesec.html" target="main](time_datesec)
+[time_delay.html" target="main](time_delay)
+[time_delaysincelast.html" target="main](time_delaysincelast)
+[time_elapsedcpu.html" target="main](time_elapsedcpu)
+[time_elapsed.html" target="main](time_elapsed)
+[time.html" target="main](time)
+[timemodule.html" target="main](timemodule)
+[time_partssec.html" target="main](time_partssec)
+[time_secdate.html" target="main](time_secdate)
+[time_sec.html" target="main](time_sec)
+[time_secparts.html" target="main](time_secparts)
+[time_secstr.html" target="main](time_secstr)
+[token.html" target="main](token)
+[true.html" target="main](true)
+[turing_admin.html" target="main](turing_admin)
+[turing_debugger.html" target="main](turing_debugger)
+[turing_quick_admin.html" target="main](turing_quick_admin)
+[typeconvmodule.html" target="main](typeconvmodule)
+[type.html" target="main](type)
+[typespec.html" target="main](typespec)
+[unchecked.html" target="main](unchecked)
+[union.html" target="main](union)
+[unit.html" target="main](unit)
+[unqualified.html" target="main](unqualified)
+[upper.html" target="main](upper)
+[var.html" target="main](var)
+[variablereference.html" target="main](variablereference)
+[view_clipadd.html" target="main](view_clipadd)
+[view_clipaddoval.html" target="main](view_clipaddoval)
+[view_clipoff.html" target="main](view_clipoff)
+[view_clipset.html" target="main](view_clipset)
+[view_maxcolor.html" target="main](view_maxcolor)
+[view_maxx.html" target="main](view_maxx)
+[view_maxy.html" target="main](view_maxy)
+[viewmodule.html" target="main](viewmodule)
+[view_set.html" target="main](view_set)
+[view_settransparentcolor.html" target="main](view_settransparentcolor)
+[view_updatearea.html" target="main](view_updatearea)
+[view_update.html" target="main](view_update)
+[view_whatdotcolor.html" target="main](view_whatdotcolor)
+[wait.html" target="main](wait)
+[wallclock.html" target="main](wallclock)
+[whatcol.html" target="main](whatcol)
+[whatcolorback.html" target="main](whatcolorback)
+[whatcolor.html" target="main](whatcolor)
+[whatdotcolor.html" target="main](whatdotcolor)
+[whatrow.html" target="main](whatrow)
+[whatsnew41.html" target="main](whatsnew41)
+[window_close.html" target="main](window_close)
+[window_getactive.html" target="main](window_getactive)
+[window_getposition.html" target="main](window_getposition)
+[window_getselect.html" target="main](window_getselect)
+[window_hide.html" target="main](window_hide)
+[windowmodule.html" target="main](windowmodule)
+[window_open.html" target="main](window_open)
+[window_select.html" target="main](window_select)
+[window_setactive.html" target="main](window_setactive)
+[window_set.html" target="main](window_set)
+[window_setposition.html" target="main](window_setposition)
+[window_show.html" target="main](window_show)
+[window_update.html" target="main](window_update)
+[write.html" target="main](write)
+[xor.html" target="main](xor)

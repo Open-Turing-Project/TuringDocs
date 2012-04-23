@@ -20,14 +20,17 @@
 
 <h2>Details</h2>
 
-<p>If <strong>Rand.Reset</strong> and <strong>Rand.Set</strong> are not used, each time a program runs <strong>Rand.Real</strong> and <strong>Rand.Int</strong> use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use <strong>Rand.Reset</strong> or <strong>Rand.Set</strong>.
-The <strong>Rand.Reset</strong> procedure can be called any time. However, to make it work, it should only be called once per program. Any call to <strong>Rand.Reset</strong> after the first one is ignored.
-To use several sequences of repeatable pseudo-random number sequences, use the <strong>Rand.Seed</strong> and <strong>Rand.Next</strong> procedures.</p>
+<p>If <strong>Rand.Reset</strong> and <strong>Rand.Set</strong> are not used, each time a program runs <strong>Rand.Real</strong> and <strong>Rand.Int</strong> use a different pseudo-random number sequence. To get the same sequence each time (actually, to start the sequence at a different point), use <strong>Rand.Reset</strong> or <strong>Rand.Set</strong>.</p>
+
+<p>The <strong>Rand.Reset</strong> procedure can be called any time. However, to make it work, it should only be called once per program. Any call to <strong>Rand.Reset</strong> after the first one is ignored.</p>
+
+<p>To use several sequences of repeatable pseudo-random number sequences, use the <strong>Rand.Seed</strong> and <strong>Rand.Next</strong> procedures.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Rand.Reset</strong>, not by calling <strong>Reset</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Rand.Reset</strong>, not by calling <strong>Reset</strong>.</p>
 
 <h2>See also</h2>
 

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.LocalName</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Net.LocalName : string\r\n",
-      "mdown_content": "**Net.LocalName** : **string**"
+      "mdown_content": "**Net.LocalName** : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns<b> </b>the TCP/IP hostname of the machine the program is running on.<p>\r\n</p>",
       "text_content": " Returns the TCP/IP hostname of the machine the program is running on.\r\n",
-      "mdown_content": "Returns the TCP/IP hostname of the machine the program is running on."
+      "mdown_content": "Returns the TCP/IP hostname of the machine the program is running on.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
       "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\n\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
     },
     {
       "title": "Example",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "The following program prints out the hostname of the current machine.<p>\r\n</p>",
       "text_content": " The following program prints out the hostname of the current machine.\r\n\r\n",
-      "mdown_content": "The following program prints out the hostname of the current machine."
+      "mdown_content": "The following program prints out the hostname of the current machine.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.LocalName</b>, not by calling <b>LocalName</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.LocalName, not by calling LocalName.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.LocalName**, not by calling **LocalName**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Net.LocalName**, not by calling **LocalName**.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_localaddress.html\">Net.LocalAddress</a></b>.<p>\r\n</p>",
       "text_content": " Net.LocalAddress.\r\n",
-      "mdown_content": "**[net_localaddress.html](Net.LocalAddress)**."
+      "mdown_content": "**[net_localaddress.html](Net.LocalAddress)**.\n"
     }
   ],
   "dependencies": [

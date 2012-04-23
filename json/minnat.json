@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>minnat</b> : <b>nat</b><p>\r\n</p></font>",
       "text_content": " minnat : nat\r\n",
-      "mdown_content": "**minnat** : **nat**"
+      "mdown_content": "**minnat** : **nat**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>minnat</b> function is used to determine the smallest natural number that can be used in a program.<p>\r\n</p>",
       "text_content": " The minnat function is used to determine the smallest natural number that can be used in a program.\r\n",
-      "mdown_content": "The **minnat** function is used to determine the smallest natural number that can be used in a program."
+      "mdown_content": "The **minnat** function is used to determine the smallest natural number that can be used in a program.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs the smallest natural number.<p>\r\n</p>",
       "text_content": " This program outputs the smallest natural number.\r\n\r\n",
-      "mdown_content": "This program outputs the smallest natural number."
+      "mdown_content": "This program outputs the smallest natural number.\n"
     },
     {
       "title": "Details",
       "raw_content": "In current Turing and OOT implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. However, the minimum natural number in all implementations is 0. <b>minnat</b> is provided for purposes of symmetry with <b>minint</b>, <b>maxint</b> and <b>maxnat</b>.<p>\r\nIn four bytes it is possible to represent one more value, namely, 2**32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a <b>nat</b> variable is detected as an overflow. You can use this extra value by using the <b>nat4</b> type instead of <b>nat</b>, but this type has no initialization checking.</p>\n<p>\r\n</p>",
       "text_content": " In current Turing and OOT implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. However, the minimum natural number in all implementations is 0. minnat is provided for purposes of symmetry with minint, maxint and maxnat.\r\nIn four bytes it is possible to represent one more value, namely, 2**32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a nat variable is detected as an overflow. You can use this extra value by using the nat4 type instead of nat, but this type has no initialization checking.\r\n",
-      "mdown_content": "In current Turing and OOT implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. However, the minimum natural number in all implementations is 0. **minnat** is provided for purposes of symmetry with **minint**, **maxint** and **maxnat**.\nIn four bytes it is possible to represent one more value, namely, 2**32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a **nat** variable is detected as an overflow. You can use this extra value by using the **nat4** type instead of **nat**, but this type has no initialization checking."
+      "mdown_content": "In current Turing and OOT implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. However, the minimum natural number in all implementations is 0. **minnat** is provided for purposes of symmetry with **minint**, **maxint** and **maxnat**.\n\nIn four bytes it is possible to represent one more value, namely, 2**32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a **nat** variable is detected as an overflow. You can use this extra value by using the **nat4** type instead of **nat**, but this type has no initialization checking.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"minint.html\">minint</a></b> and <b><a href=\"maxnat.html\">maxnat</a></b>.<p>\r\nSee also predefined unit <b><a href=\"limitsmodule.html\">Limits</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " minint and maxnat.\r\nSee also predefined unit Limits.\r\n",
-      "mdown_content": "**[minint.html](minint)** and **[maxnat.html](maxnat)**.\nSee also predefined unit **[limitsmodule.html](Limits)**."
+      "mdown_content": "**[minint.html](minint)** and **[maxnat.html](maxnat)**.\n\nSee also predefined unit **[limitsmodule.html](Limits)**.\n"
     }
   ],
   "dependencies": [

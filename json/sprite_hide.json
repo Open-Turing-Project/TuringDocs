@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Hide</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.Hide (spriteID : int)\r\n",
-      "mdown_content": "**Sprite.Hide** (_spriteID_ : **int**)"
+      "mdown_content": "**Sprite.Hide** (_spriteID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Hides a previously visible sprite. <b>Sprite.Hide</b> has no effect if the sprite is already invisible.<p>\r\n</p>",
       "text_content": " Hides a previously visible sprite. Sprite.Hide has no effect if the sprite is already invisible.\r\n",
-      "mdown_content": "Hides a previously visible sprite. **Sprite.Hide** has no effect if the sprite is already invisible."
+      "mdown_content": "Hides a previously visible sprite. **Sprite.Hide** has no effect if the sprite is already invisible.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden.<p>\r\n</p>",
       "text_content": " The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden.\r\n\r\n",
-      "mdown_content": "The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden."
+      "mdown_content": "The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.Hide</b>, not by calling <b>Hide</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sprite.Hide, not by calling Hide.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Hide**, not by calling **Hide**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sprite.Hide**, not by calling **Hide**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sprite_show.html\">Sprite.Show</a></b>.<p>\r\n</p>",
       "text_content": " Sprite.Show.\r\n",
-      "mdown_content": "**[sprite_show.html](Sprite.Show)**."
+      "mdown_content": "**[sprite_show.html](Sprite.Show)**.\n"
     }
   ],
   "dependencies": [

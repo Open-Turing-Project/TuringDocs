@@ -38,12 +38,17 @@
 
 <h2>Details</h2>
 
-<p>The set of parameters declared with the procedure are called <em>formal</em> parameters. In the <em>double</em> procedure, for example, <em>x</em> is a formal parameter. A procedure is called (invoked) by a procedure <em>call statement</em> which consists of the procedure's name followed by the parenthesized list of <em>actual</em> parameters (if any). For example, <em>double</em>(<em>y</em>) is a call having <em>y</em> as an actual parameter. If there are no parameters (see the <em>greet</em> procedure above), the call does not have parentheses. The keyword <strong>procedure</strong> can be abbreviated to <strong>proc</strong>.
-Ordinarily, a procedure <em>returns</em> (finishes and goes back to the place where it was called) by reaching its <strong>end</strong>. However, the <strong>return</strong> statement in a procedure causes it to return immediately. Note that <strong>return</strong> can also be used in the main program to cause it to halt immediately.
-Only parameters declared using <strong>var</strong> may be changed in the procedure, for example, <em>x</em> is changed in the <em>double</em> procedure. The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong>*</strong>). This means that the bound is that of the actual parameter. See <em>paramDeclaration</em> for details about parameters.
-Procedures and functions cannot be declared inside other procedures and functions.
-The syntax of a <em>procedureDeclaration</em> presented above has been simplified by leaving out the optional <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler. The full syntax is
-A procedure must be declared before being called. To allow for mutually recursive procedures, there are <strong>forward</strong> declarations of procedures with later declaration of each procedure <strong>body</strong>. See <strong>forward</strong> and <strong>body</strong> declarations for explanations.</p>
+<p>The set of parameters declared with the procedure are called <em>formal</em> parameters. In the <em>double</em> procedure, for example, <em>x</em> is a formal parameter. A procedure is called (invoked) by a procedure <em>call statement</em> which consists of the procedure's name followed by the parenthesized list of <em>actual</em> parameters (if any). For example, <em>double</em>(<em>y</em>) is a call having <em>y</em> as an actual parameter. If there are no parameters (see the <em>greet</em> procedure above), the call does not have parentheses. The keyword <strong>procedure</strong> can be abbreviated to <strong>proc</strong>.</p>
+
+<p>Ordinarily, a procedure <em>returns</em> (finishes and goes back to the place where it was called) by reaching its <strong>end</strong>. However, the <strong>return</strong> statement in a procedure causes it to return immediately. Note that <strong>return</strong> can also be used in the main program to cause it to halt immediately.</p>
+
+<p>Only parameters declared using <strong>var</strong> may be changed in the procedure, for example, <em>x</em> is changed in the <em>double</em> procedure. The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong>*</strong>). This means that the bound is that of the actual parameter. See <em>paramDeclaration</em> for details about parameters.</p>
+
+<p>Procedures and functions cannot be declared inside other procedures and functions.</p>
+
+<p>The syntax of a <em>procedureDeclaration</em> presented above has been simplified by leaving out the optional <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler. The full syntax is</p>
+
+<p>A procedure must be declared before being called. To allow for mutually recursive procedures, there are <strong>forward</strong> declarations of procedures with later declaration of each procedure <strong>body</strong>. See <strong>forward</strong> and <strong>body</strong> declarations for explanations.</p>
 
 <pre><code>    procedure [ pervasive ] id
         [ ( [ paramDeclaration {,paramDeclaration } ] ) ]

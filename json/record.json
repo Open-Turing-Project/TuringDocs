@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>recordType</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>record</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">{ <i>id</i> {, <i>id</i> } : <i>typeSpec</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>record</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A recordType is:\r\n record  id {, id } : typeSpec  { id {, id } : typeSpec } end record",
-      "mdown_content": "A _recordType_ is:\n\n**record**\n_id_ {, _id_ } : _typeSpec_\n{ _id_ {, _id_ } : _typeSpec_ }\n**end** **record**\n"
+      "mdown_content": "A _recordType_ is:\n\n\n**record**\n_id_ {, _id_ } : _typeSpec_\n{ _id_ {, _id_ } : _typeSpec_ }\n**end** **record**\n\n"
     },
     {
       "title": "Description",
       "raw_content": "Each value of a record type consists of fields, one field for each name (<i>id</i>) declared inside the record. In the following example, the fields are <i>name</i>,<i> phoneNumber</i> and <i>address</i>.<p>\r\n</p>",
       "text_content": " Each value of a record type consists of fields, one field for each name (id) declared inside the record. In the following example, the fields are name, phoneNumber and address.\r\n",
-      "mdown_content": "Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_, _phoneNumber_ and _address_."
+      "mdown_content": "Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_, _phoneNumber_ and _address_.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Details",
       "raw_content": "In a record, <i>id'</i>s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each <i>typeSpec</i>.<p>\r\nAny array contained in a record must have bounds that are known at compile time.</p>\n<p>\r\nThe notation &gt; can be used to access record fields. For example, if <i>p</i> is a pointer to <i>phoneRecord</i>, <i>p</i>&gt;<i>name</i> locates the <i>name</i> field. See <b>pointer</b>.</p>\n<p>\r\n</p>",
       "text_content": " In a record, id's of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each typeSpec.\r\nAny array contained in a record must have bounds that are known at compile time.\r\nThe notation > can be used to access record fields. For example, if p is a pointer to phoneRecord, p>name locates the name field. See pointer.\r\n",
-      "mdown_content": "In a record, _id'_s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each _typeSpec_.\nAny array contained in a record must have bounds that are known at compile time.\nThe notation > can be used to access record fields. For example, if _p_ is a pointer to _phoneRecord_, _p_>_name_ locates the _name_ field. See **pointer**."
+      "mdown_content": "In a record, _id'_s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each _typeSpec_.\n\nAny array contained in a record must have bounds that are known at compile time.\n\nThe notation > can be used to access record fields. For example, if _p_ is a pointer to _phoneRecord_, _p_>_name_ locates the _name_ field. See **pointer**.\n"
     }
   ],
   "dependencies": [

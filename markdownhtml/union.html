@@ -40,11 +40,15 @@
 
 <h2>Details</h2>
 
-<p>The optional identifier following the keyword <strong>union</strong> is the name of the <em>tag</em> of the union type. If the identifier is omitted, the tag is still considered to exist, although its value cannot be accessed. The tag must be of an index type, for example 1..7. You should limit the range of this index type, as the compiler may have a limit (at least 255) on the maximum range it can handle.
-Each <em>labelExpn</em> must be known at compile time and must lie within the range of the tag's type. The fields, including the tag, of a union value are referenced using the dot operator, as in <em>v.cylinders</em> and these can be used as variables or constants. A field can be accessed only when the tag matches one of the label expressions corresponding to the field. The tag can be changed by the <strong>tag</strong> statement  but it cannot be assigned to, passed to a <strong>var</strong> parameter, or bound to using <strong>var</strong>.
-In a union, <em>id'</em>s of fields, including the tag, must be distinct. However, these need not be distinct from identifiers outside the union. Unions can be assigned as a whole (to unions of an equivalent type), but they cannot be compared. A semicolon can optionally follow each <em>typeSpec</em>.
-Any array contained in a union must have bounds that are known at compile time.
-The notation > can be used to access union fields. For example, if <em>p</em> is a pointer to <em>vehicleRecord</em>, <em>p</em>><em>farmClass</em> locates the <em>farmClass</em> field.</p>
+<p>The optional identifier following the keyword <strong>union</strong> is the name of the <em>tag</em> of the union type. If the identifier is omitted, the tag is still considered to exist, although its value cannot be accessed. The tag must be of an index type, for example 1..7. You should limit the range of this index type, as the compiler may have a limit (at least 255) on the maximum range it can handle.</p>
+
+<p>Each <em>labelExpn</em> must be known at compile time and must lie within the range of the tag's type. The fields, including the tag, of a union value are referenced using the dot operator, as in <em>v.cylinders</em> and these can be used as variables or constants. A field can be accessed only when the tag matches one of the label expressions corresponding to the field. The tag can be changed by the <strong>tag</strong> statement  but it cannot be assigned to, passed to a <strong>var</strong> parameter, or bound to using <strong>var</strong>.</p>
+
+<p>In a union, <em>id'</em>s of fields, including the tag, must be distinct. However, these need not be distinct from identifiers outside the union. Unions can be assigned as a whole (to unions of an equivalent type), but they cannot be compared. A semicolon can optionally follow each <em>typeSpec</em>.</p>
+
+<p>Any array contained in a union must have bounds that are known at compile time.</p>
+
+<p>The notation > can be used to access union fields. For example, if <em>p</em> is a pointer to <em>vehicleRecord</em>, <em>p</em>><em>farmClass</em> locates the <em>farmClass</em> field.</p>
 
 <h2>See also</h2>
 

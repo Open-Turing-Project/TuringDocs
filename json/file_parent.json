@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>File.Parent</b> (<i>pathName</i> : <b>string</b>) : <b>string</b><p>\r\n</p>",
       "text_content": " File.Parent (pathName : string) : string\r\n",
-      "mdown_content": "**File.Parent** (_pathName_ : **string**) : **string**"
+      "mdown_content": "**File.Parent** (_pathName_ : **string**) : **string**\n"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program obtains a path from the user and then lists all the parent directories until it reaches the root directory.<p>\r\n</p>",
       "text_content": " This program obtains a path from the user and then lists all the parent directories until it reaches the root directory.\r\n\r\n",
-      "mdown_content": "This program obtains a path from the user and then lists all the parent directories until it reaches the root directory."
+      "mdown_content": "This program obtains a path from the user and then lists all the parent directories until it reaches the root directory.\n"
     },
     {
       "title": "Execute",
@@ -37,13 +37,13 @@
       "title": "Details",
       "raw_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of <b>File.FullPath</b>, <b>File.Parent</b>, <b>File.Exists</b>, and <b>Dir.Exists</b>.<p>\r\n  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n  <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,TestPathName.t;Path Name Testing Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of File.FullPath, File.Parent, File.Exists, and Dir.Exists.\r\n  \r\n  ",
-      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n"
+      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Parent</b>, not by calling <b>Parent</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling File.Parent, not by calling Parent.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Parent**, not by calling **Parent**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **File.Parent**, not by calling **Parent**.\n"
     }
   ],
   "dependencies": [

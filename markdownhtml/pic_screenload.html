@@ -6,16 +6,21 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.ScreenLoad</strong> displays a picture from a file straight to the screen.
-The _fileName_parameter must give the format of the file:</p>
+<p><strong>Pic.ScreenLoad</strong> displays a picture from a file straight to the screen.</p>
 
-<p>The <em>x</em> and <em>y</em> parameters set the lower left hand corner of the picture.
-The <em>mode</em> parameter has one of the following values:</p>
+<p>The _fileName_parameter must give the format of the file:</p>
 
-<p><em>picCopy</em> This draws the picture on top of what was underneath, obscuring it completely.
-<em>picXOR</em> This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
-<em>picMerge</em> This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
-<em>picUnderMerge</em> This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
+<p>JPG files   "JPG:filename" or "filename.JPG"
+BMP files   "BMP:filename" or "filename.BMP"</p>
+
+<p>The <em>x</em> and <em>y</em> parameters set the lower left hand corner of the picture.</p>
+
+<p>The <em>mode</em> parameter has one of the following values:</p>
+
+<p><em>picCopy</em>   This draws the picture on top of what was underneath, obscuring it completely.
+<em>picXOR</em>   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
+<em>picMerge</em>   This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
+<em>picUnderMerge</em>   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
 
 <h2>Details</h2>
 
@@ -38,5 +43,6 @@ The <em>mode</em> parameter has one of the following values:</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.ScreenLoad</strong>, not by calling <strong>ScreenLoad</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.ScreenLoad</strong>, not by calling <strong>ScreenLoad</strong>.</p>

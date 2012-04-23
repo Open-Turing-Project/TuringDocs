@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.GetEnv</b> ( <i>symbol</i> : <b>string</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Sys.GetEnv ( symbol : string ) : string\r\n",
-      "mdown_content": "**Sys.GetEnv** ( _symbol_ : **string** ) : **string**"
+      "mdown_content": "**Sys.GetEnv** ( _symbol_ : **string** ) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Sys.GetEnv </b>function is used to<b> </b>access the environment string whose name is <i>symbol</i>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <b>Sys.Nargs</b> and <b>Sys.FetchArg</b> functions.<p>\r\n</p>",
       "text_content": " The Sys.GetEnv function is used to access the environment string whose name is symbol. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the Sys.Nargs and Sys.FetchArg functions.\r\n",
-      "mdown_content": "The **Sys.GetEnv** function is used to access the environment string whose name is _symbol_. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **Sys.Nargs** and **Sys.FetchArg** functions."
+      "mdown_content": "The **Sys.GetEnv** function is used to access the environment string whose name is _symbol_. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the **Sys.Nargs** and **Sys.FetchArg** functions.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "On a PC, this retrieves the environment variable USERLEVEL<b> </b>and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command <b>SET USERLEVEL = NOVICE</b> in the <b>autoexec.bat</b> file or in any batch file.<p>\r\n</p>",
       "text_content": " On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command SET USERLEVEL = NOVICE in the autoexec.bat file or in any batch file.\r\n\r\n",
-      "mdown_content": "On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command **SET USERLEVEL = NOVICE** in the **autoexec.bat** file or in any batch file."
+      "mdown_content": "On a PC, this retrieves the environment variable USERLEVEL and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command **SET USERLEVEL = NOVICE** in the **autoexec.bat** file or in any batch file.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.GetEnv</b>, not by calling <b>GetEnv</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys.GetEnv, not by calling GetEnv.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetEnv**, not by calling **GetEnv**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sys.GetEnv**, not by calling **GetEnv**.\n"
     }
   ],
   "dependencies": [

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.LastMsg</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Error.LastMsg : string\r\n",
-      "mdown_content": "**Error.LastMsg** : **string**"
+      "mdown_content": "**Error.LastMsg** : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.LastMsg</b> is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use <b>Error.Last</b> to obtain the error code.<p>\r\nThe fact that <b>Error.LastMsg</b> is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. <b>Error.LastMsg</b> also returns a number of warning messages. For example, if a user specifies a number larger than <b>maxcolor</b> for the <i>color</i> parameter of the <b>Draw.Line</b> procedure, the line is still drawn, only in color <b>maxcolor</b>. However, <b>Error.LastMsg</b> will return a message that indicates that the color was out of range</p>\n<p>\r\n</p>",
       "text_content": " Error.LastMsg is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use Error.Last to obtain the error code.\r\nThe fact that Error.LastMsg is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. Error.LastMsg also returns a number of warning messages. For example, if a user specifies a number larger than maxcolor for the color parameter of the Draw.Line procedure, the line is still drawn, only in color maxcolor. However, Error.LastMsg will return a message that indicates that the color was out of range\r\n",
-      "mdown_content": "**Error.LastMsg** is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use **Error.Last** to obtain the error code.\nThe fact that **Error.LastMsg** is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. **Error.LastMsg** also returns a number of warning messages. For example, if a user specifies a number larger than **maxcolor** for the _color_ parameter of the **Draw.Line** procedure, the line is still drawn, only in color **maxcolor**. However, **Error.LastMsg** will return a message that indicates that the color was out of range"
+      "mdown_content": "**Error.LastMsg** is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use **Error.Last** to obtain the error code.\n\nThe fact that **Error.LastMsg** is not \"\" does not necessarily mean that the previous predefined function failed or failed completely. **Error.LastMsg** also returns a number of warning messages. For example, if a user specifies a number larger than **maxcolor** for the _color_ parameter of the **Draw.Line** procedure, the line is still drawn, only in color **maxcolor**. However, **Error.LastMsg** will return a message that indicates that the color was out of range\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program creates the directory called <i>information</i>. If the creation fails, it prints out the error number and an error message.<p>\r\n</p>",
       "text_content": " This program creates the directory called information. If the creation fails, it prints out the error number and an error message.\r\n\r\n",
-      "mdown_content": "This program creates the directory called _information_. If the creation fails, it prints out the error number and an error message."
+      "mdown_content": "This program creates the directory called _information_. If the creation fails, it prints out the error number and an error message.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Error.LastMsg</b>, not by calling <b>LastMsg</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Error.LastMsg, not by calling LastMsg.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.LastMsg**, not by calling **LastMsg**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Error.LastMsg**, not by calling **LastMsg**.\n"
     }
   ],
   "dependencies": [

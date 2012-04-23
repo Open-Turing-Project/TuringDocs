@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p>Returns the actual height of a widget. Note that this may be different from the height specified in the <em>Create</em> call (especially since many widgets do not specify a height. The GUI module determines the actual height).
-This function is used in conjunction with <strong>GUI.GetX</strong>, <strong>GUI.GetY</strong> and <strong>GUI.GetWidth</strong> to determine the bounds of a widget. The entire widget should always fit in the box (<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>) - (<strong>GUI.GetX</strong> + <strong>GUI.GetWidth</strong>  1, <strong>GUI.GetY</strong> + <strong>GUI.GetHeight</strong>  1)
-The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>
+<p>Returns the actual height of a widget. Note that this may be different from the height specified in the <em>Create</em> call (especially since many widgets do not specify a height. The GUI module determines the actual height).</p>
+
+<p>This function is used in conjunction with <strong>GUI.GetX</strong>, <strong>GUI.GetY</strong> and <strong>GUI.GetWidth</strong> to determine the bounds of a widget. The entire widget should always fit in the box (<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>) - (<strong>GUI.GetX</strong> + <strong>GUI.GetWidth</strong>  1, <strong>GUI.GetY</strong> + <strong>GUI.GetHeight</strong>  1)</p>
+
+<p>The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>
 
 <h2>Example</h2>
 
@@ -32,8 +34,9 @@ The position and size of a widget is known only after it has been drawn to the s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.GetHeight</strong>, not by calling <strong>GetHeight</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.GetHeight</strong>, not by calling <strong>GetHeight</strong>.</p>
 
 <h2>See also</h2>
 

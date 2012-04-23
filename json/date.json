@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>date</b> (<b>var</b> <i>d</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " date (var d : string)\r\n",
-      "mdown_content": "**date** (**var** _d_ : **string**)"
+      "mdown_content": "**date** (**var** _d_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>date</b> statement is used to determine the current date. Variable <i>d </i>is assigned a string in the format \"<i>dd mmm yy</i>\", where <i>mmm</i> is the first 3 characters of the month, e.g., \"<i>Apr</i>\". For example, if the date is Christmas 2002, <i>d </i>will be set to \"<i>25 Dec 02</i>\".<p>\r\n</p>",
       "text_content": " The date statement is used to determine the current date. Variable d is assigned a string in the format \"dd mmm yy\", where mmm is the first 3 characters of the month, e.g., \"Apr\". For example, if the date is Christmas 2002, d will be set to \"25 Dec 02\".\r\n",
-      "mdown_content": "The **date** statement is used to determine the current date. Variable _d_ is assigned a string in the format \"_dd mmm yy_\", where _mmm_ is the first 3 characters of the month, e.g., \"_Apr_\". For example, if the date is Christmas 2002, _d_ will be set to \"_25 Dec 02_\"."
+      "mdown_content": "The **date** statement is used to determine the current date. Variable _d_ is assigned a string in the format \"_dd mmm yy_\", where _mmm_ is the first 3 characters of the month, e.g., \"_Apr_\". For example, if the date is Christmas 2002, _d_ will be set to \"_25 Dec 02_\".\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program greets you and tells you the date.<p>\r\n</p>",
       "text_content": " This program greets you and tells you the date.\r\n\r\n",
-      "mdown_content": "This program greets you and tells you the date."
+      "mdown_content": "This program greets you and tells you the date.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "Be warned that Turing gets the date from the operating system. If the date is is not correctly set in the operating system, then the <b>date</b> procedure will give incorrect results.<p>\r\n</p>",
       "text_content": " Be warned that Turing gets the date from the operating system. If the date is is not correctly set in the operating system, then the date procedure will give incorrect results.\r\n",
-      "mdown_content": "Be warned that Turing gets the date from the operating system. If the date is is not correctly set in the operating system, then the **date** procedure will give incorrect results."
+      "mdown_content": "Be warned that Turing gets the date from the operating system. If the date is is not correctly set in the operating system, then the **date** procedure will give incorrect results.\n"
     },
     {
       "title": "See also",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"delay.html\">delay</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b> and <b><a href=\"time.html\">time</a></b> statements. <p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " delay, clock, sysclock, wallclock and time statements. \r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[time.html](time)** statements. \nSee also predefined unit **[timemodule.html](Time)**."
+      "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[time.html](time)** statements. \n\nSee also predefined unit **[timemodule.html](Time)**.\n"
     }
   ],
   "dependencies": [

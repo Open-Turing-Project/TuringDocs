@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Joystick.GetInfo </b>(<i>joystick</i> : <b>int</b>, <b>var</b><i> xPos</i>, <i>yPos</i> : <b>int</b>,<br><i>btn1Pressed</i>, <i>btn2Pressed</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " Joystick.GetInfo (joystick : int, var xPos, yPos : int,btn1Pressed, btn2Pressed : boolean)\r\n",
-      "mdown_content": "**Joystick.GetInfo** (_joystick_ : **int**, **var** _xPos_, _yPos_ : **int**,_btn1Pressed_, _btn2Pressed_ : **boolean**)"
+      "mdown_content": "**Joystick.GetInfo** (_joystick_ : **int**, **var** _xPos_, _yPos_ : **int**,_btn1Pressed_, _btn2Pressed_ : **boolean**)\n"
     },
     {
       "title": "Description",
@@ -15,13 +15,13 @@
       ],
       "raw_content": "Reads the position and button status of the joystick specified by the <i>joystack</i> parameter. The <i>x</i> and <i>y</i> parameter are returned in the <i>xPos</i> and <i>yPos</i> parameters. If button 1 or button 2 on the joystick are currently pressed, <i>btn1Pressed</i> and <i>btn2Pressed</i> will be set to <b>true</b>. The <i>joystick</i> parameter can be either <b>joystick1</b> or <b>joystick2</b>.<p>\r\nThe x and y positions vary from <b>joyMin</b> to <b>joyMax</b>. To use them with respect to a screen, the coordinates returned from <b>Joystick.GetInfo </b>must be translated into screen coordinates. The following formula can be used:</p>\n<p>\r\n</p>",
       "text_content": " Reads the position and button status of the joystick specified by the joystack parameter. The x and y parameter are returned in the xPos and yPos parameters. If button 1 or button 2 on the joystick are currently pressed, btn1Pressed and btn2Pressed will be set to true. The joystick parameter can be either joystick1 or joystick2.\r\nThe x and y positions vary from joyMin to joyMax. To use them with respect to a screen, the coordinates returned from Joystick.GetInfo must be translated into screen coordinates. The following formula can be used:\r\n\r\n",
-      "mdown_content": "Reads the position and button status of the joystick specified by the _joystack_ parameter. The _x_ and _y_ parameter are returned in the _xPos_ and _yPos_ parameters. If button 1 or button 2 on the joystick are currently pressed, _btn1Pressed_ and _btn2Pressed_ will be set to **true**. The _joystick_ parameter can be either **joystick1** or **joystick2**.\nThe x and y positions vary from **joyMin** to **joyMax**. To use them with respect to a screen, the coordinates returned from **Joystick.GetInfo** must be translated into screen coordinates. The following formula can be used:"
+      "mdown_content": "Reads the position and button status of the joystick specified by the _joystack_ parameter. The _x_ and _y_ parameter are returned in the _xPos_ and _yPos_ parameters. If button 1 or button 2 on the joystick are currently pressed, _btn1Pressed_ and _btn2Pressed_ will be set to **true**. The _joystick_ parameter can be either **joystick1** or **joystick2**.\n\nThe x and y positions vary from **joyMin** to **joyMax**. To use them with respect to a screen, the coordinates returned from **Joystick.GetInfo** must be translated into screen coordinates. The following formula can be used:\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Joystick</b> module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information.<p>\r\n</p>",
       "text_content": " The Joystick module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information.\r\n",
-      "mdown_content": "The **Joystick** module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information."
+      "mdown_content": "The **Joystick** module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information.\n"
     },
     {
       "title": "Example",
@@ -30,13 +30,13 @@
       ],
       "raw_content": "The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing.<p>\r\n</p>",
       "text_content": " The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing.\r\n\r\n",
-      "mdown_content": "The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing."
+      "mdown_content": "The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Joystick.GetInfo</b>, not by calling <b>GetInfo</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Joystick.GetInfo, not by calling GetInfo.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Joystick.GetInfo**, not by calling **GetInfo**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Joystick.GetInfo**, not by calling **GetInfo**.\n"
     }
   ],
   "dependencies": [

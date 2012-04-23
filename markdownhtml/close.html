@@ -26,9 +26,11 @@
 
 <h2>Details</h2>
 
-<p>In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.
-If a program does not close a file, the file will be automatically closed when the program finishes.
-There is an older and still acceptable version of <strong>close</strong> that has this syntax:</p>
+<p>In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.</p>
+
+<p>If a program does not close a file, the file will be automatically closed when the program finishes.</p>
+
+<p>There is an older and still acceptable version of <strong>close</strong> that has this syntax:</p>
 
 <pre><code>    close (fileNumber : int)
 </code></pre>

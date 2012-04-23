@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetScrollOnAdd</b> (<i>widgetID</i> : <b>int</b>, <i>scrollOnAdd</i> : <b>boolean</b>)<p></p></font>",
       "text_content": "GUI.SetScrollOnAdd (widgetID : int, scrollOnAdd : boolean)\r\n    ",
-      "mdown_content": "**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)"
+      "mdown_content": "**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)\n"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program displays the contents of a file in a text box.\r\n          After the file is displayed, the top line in the text box will\r\n\t  be the first line in the file.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program displays the contents of a file in a text box.\r\n          After the file is displayed, the top line in the text box will\r\n\t  be the first line in the file.\r\n\r\n    ",
-      "mdown_content": "This program displays the contents of a file in a text box.After the file is displayed, the top line in the text box willbe the first line in the file.\n"
+      "mdown_content": "This program displays the contents of a file in a text box.After the file is displayed, the top line in the text box willbe the first line in the file.\n\n\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.SetScrollOnAdd</b>, not by calling <b>SetScrollOnAdd</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.SetScrollOnAdd, not by calling SetScrollOnAdd.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetScrollOnAdd**, not by calling **SetScrollOnAdd**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetScrollOnAdd**, not by calling **SetScrollOnAdd**.\n"
     }
   ],
   "dependencies": [

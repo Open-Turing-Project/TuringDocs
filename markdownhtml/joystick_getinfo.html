@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>Reads the position and button status of the joystick specified by the <em>joystack</em> parameter. The <em>x</em> and <em>y</em> parameter are returned in the <em>xPos</em> and <em>yPos</em> parameters. If button 1 or button 2 on the joystick are currently pressed, <em>btn1Pressed</em> and <em>btn2Pressed</em> will be set to <strong>true</strong>. The <em>joystick</em> parameter can be either <strong>joystick1</strong> or <strong>joystick2</strong>.
-The x and y positions vary from <strong>joyMin</strong> to <strong>joyMax</strong>. To use them with respect to a screen, the coordinates returned from <strong>Joystick.GetInfo</strong> must be translated into screen coordinates. The following formula can be used:</p>
+<p>Reads the position and button status of the joystick specified by the <em>joystack</em> parameter. The <em>x</em> and <em>y</em> parameter are returned in the <em>xPos</em> and <em>yPos</em> parameters. If button 1 or button 2 on the joystick are currently pressed, <em>btn1Pressed</em> and <em>btn2Pressed</em> will be set to <strong>true</strong>. The <em>joystick</em> parameter can be either <strong>joystick1</strong> or <strong>joystick2</strong>.</p>
+
+<p>The x and y positions vary from <strong>joyMin</strong> to <strong>joyMax</strong>. To use them with respect to a screen, the coordinates returned from <strong>Joystick.GetInfo</strong> must be translated into screen coordinates. The following formula can be used:</p>
 
 <pre><code>    screenX = round (maxx * (xPos  joyMin) / (joyMax  joyMin))
     screenY = round (maxy * (yPos  joyMin) / (joyMax  joyMin))
@@ -46,5 +47,6 @@ The x and y positions vary from <strong>joyMin</strong> to <strong>joyMax</stron
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Joystick.GetInfo</strong>, not by calling <strong>GetInfo</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Joystick.GetInfo</strong>, not by calling <strong>GetInfo</strong>.</p>

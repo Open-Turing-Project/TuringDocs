@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderSize</b> (<i>widgetID</i>, <i>length</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSliderSize (widgetID, length : int)\r\n",
-      "mdown_content": "**GUI.SetSliderSize** (_widgetID_, _length_ : **int**)"
+      "mdown_content": "**GUI.SetSliderSize** (_widgetID_, _length_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Changes the length of a slider or scroll bar specified by <i>widgetID</i> to the value specified by the <i>length</i> parameter. Redraws the slider or scroll bar and changes the position of the thumb to take into account the new size of the slider or scroll bar.<p>\r\n</p>",
       "text_content": " Changes the length of a slider or scroll bar specified by widgetID to the value specified by the length parameter. Redraws the slider or scroll bar and changes the position of the thumb to take into account the new size of the slider or scroll bar.\r\n",
-      "mdown_content": "Changes the length of a slider or scroll bar specified by _widgetID_ to the value specified by the _length_ parameter. Redraws the slider or scroll bar and changes the position of the thumb to take into account the new size of the slider or scroll bar."
+      "mdown_content": "Changes the length of a slider or scroll bar specified by _widgetID_ to the value specified by the _length_ parameter. Redraws the slider or scroll bar and changes the position of the thumb to take into account the new size of the slider or scroll bar.\n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.SetScrollAmount </b>for an example of <b>GUI.SetSliderSize</b>.<p>\r\n</p>",
       "text_content": " See GUI.SetScrollAmount for an example of GUI.SetSliderSize.\r\n",
-      "mdown_content": "See **GUI.SetScrollAmount** for an example of **GUI.SetSliderSize**."
+      "mdown_content": "See **GUI.SetScrollAmount** for an example of **GUI.SetSliderSize**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSliderSize</b>, not by calling <b>SetSliderSize</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetSliderSize, not by calling SetSliderSize.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSliderSize**, not by calling **SetSliderSize**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetSliderSize**, not by calling **SetSliderSize**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b>GUI.CreateHorizontalScrollBar</b>, <b>GUI.CreateVerticalScrollBar</b>, <b><a href=\"gui_createhorizontalslider.html\">GUI.CreateHorizontalSlider</a></b>, and <b><a href=\"gui_createverticalslider.html\">GUI.CreateVerticalSlider</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
-      "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**."
+      "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.\n"
     }
   ],
   "dependencies": [

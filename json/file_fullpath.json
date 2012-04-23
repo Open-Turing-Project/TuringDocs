@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<b>File.FullPath</b> (<i>pathName</i>) : <b>string</b>) : <b>string</b><p>\r\n</p>",
       "text_content": " File.FullPath (pathName) : string) : string\r\n",
-      "mdown_content": "**File.FullPath** (_pathName_) : **string**) : **string**"
+      "mdown_content": "**File.FullPath** (_pathName_) : **string**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.FullPath </b>returns a string representing the full absolute path name in Turing format (forward slashes) of the path that\r\nis passed to the function. The path name passed in does not have to describe an existing file or directory.<p>\r\n</p>",
       "text_content": " File.FullPath returns a string representing the full absolute path name in Turing format (forward slashes) of the path that\r\nis passed to the function. The path name passed in does not have to describe an existing file or directory.\r\n",
-      "mdown_content": "**File.FullPath** returns a string representing the full absolute path name in Turing format (forward slashes) of the path thatis passed to the function. The path name passed in does not have to describe an existing file or directory."
+      "mdown_content": "**File.FullPath** returns a string representing the full absolute path name in Turing format (forward slashes) of the path thatis passed to the function. The path name passed in does not have to describe an existing file or directory.\n"
     },
     {
       "title": "Details",
       "raw_content": "The full path name will be in Turing format and include the drive name (for example \"d:/turing/examples/games/SpaceGame.t\")<p>\r\n</p>",
       "text_content": "The full path name will be in Turing format and include the drive name (for example \"d:/turing/examples/games/SpaceGame.t\")\r\n",
-      "mdown_content": "The full path name will be in Turing format and include the drive name (for example \"d:/turing/examples/games/SpaceGame.t\")"
+      "mdown_content": "The full path name will be in Turing format and include the drive name (for example \"d:/turing/examples/games/SpaceGame.t\")\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program obtains a path from the user and then outputs a full path name based on the path.<p>\r\n</p>\n<p>\r\n</p>",
       "text_content": "This program obtains a path from the user and then outputs a full path name based on the path.\r\n\r\n",
-      "mdown_content": "This program obtains a path from the user and then outputs a full path name based on the path.\n"
+      "mdown_content": "This program obtains a path from the user and then outputs a full path name based on the path.\n\n\n"
     },
     {
       "title": "Execute",
@@ -43,13 +43,13 @@
       "title": "Details",
       "raw_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of <b>File.FullPath</b>, <b>File.Parent</b>, <b>File.Exists</b>, and <b>Dir.Exists</b>.<p>\r\n  <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n  <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Path Name Testing Program\">\n<param name=\"Item1\" value=\"-1,TestPathName.t;Path Name Testing Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.\r\nThis program illustrates the use of File.FullPath, File.Parent, File.Exists, and Dir.Exists.\r\n  \r\n  ",
-      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n"
+      "mdown_content": "Another example is available that checks whether a file and all of the directories in the path to the file exist.This program illustrates the use of **File.FullPath**, **File.Parent**, **File.Exists**, and **Dir.Exists**.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.FullPath</b>, not by calling <b>FullPath</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling File.FullPath, not by calling FullPath.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.FullPath**, not by calling **FullPath**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **File.FullPath**, not by calling **FullPath**.\n"
     }
   ],
   "dependencies": [

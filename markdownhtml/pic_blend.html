@@ -10,14 +10,17 @@
 
 <h2>Details</h2>
 
-<p>Note that the blended picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.
-Note that if <em>pct</em> is 100, then the resulting picture willbe identical to <em>picID1</em>.  if <em>pct</em> is 0, then the resulting picture will be identical to <em>picID2</em>.</p>
+<p>Note that the blended picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.</p>
+
+<p>Note that if <em>pct</em> is 100, then the resulting picture willbe identical to <em>picID1</em>.  if <em>pct</em> is 0, then the resulting picture will be identical to <em>picID2</em>.</p>
 
 <h2>Example</h2>
 
 <p>The program creates two identically sized pictures, blends themtogether and displays all three pictures.  You can vary theblend percentage to obtain different results.</p>
 
-<p><img src="pic_blend01.gif" alt="Doc image" /></p>
+<p><img src="pic_blend01.gif" alt="Doc Image" /></p>
+
+<p><strong>Output from the Program</strong></p>
 
 <pre><code>    View.Set ("graphics:340;140,nobuttonbar")
     % Create the original pictures
@@ -40,5 +43,6 @@ Note that if <em>pct</em> is 100, then the resulting picture willbe identical to
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Blend</strong>, not by calling <strong>Blend</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Blend</strong>, not by calling <strong>Blend</strong>.</p>

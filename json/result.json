@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>resultStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>result</b> <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A resultStatement is:\r\n result expn",
-      "mdown_content": "A _resultStatement_ is:\n\n**result** _expn_\n"
+      "mdown_content": "A _resultStatement_ is:\n\n\n**result** _expn_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "A <b>result</b> statement, which must appear only in a <b>function</b>, is used to provide the value of the function.<p>\r\n</p>",
       "text_content": " A result statement, which must appear only in a function, is used to provide the value of the function.\r\n",
-      "mdown_content": "A **result** statement, which must appear only in a **function**, is used to provide the value of the function."
+      "mdown_content": "A **result** statement, which must appear only in a **function**, is used to provide the value of the function.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This function doubles its parameter.<p>\r\n</p>",
       "text_content": " This function doubles its parameter.\r\n\r\n",
-      "mdown_content": "This function doubles its parameter."
+      "mdown_content": "This function doubles its parameter.\n"
     },
     {
       "title": "Example",
@@ -30,13 +30,13 @@
       ],
       "raw_content": "This function finds the position of a name in a list.<p>\r\n</p>",
       "text_content": " This function finds the position of a name in a list.\r\n\r\n",
-      "mdown_content": "This function finds the position of a name in a list."
+      "mdown_content": "This function finds the position of a name in a list.\n"
     },
     {
       "title": "Details",
       "raw_content": "The execution of a <b>result</b> statement computes the value of the expression (<i>expn</i>) and terminates the function, returning the value as the value of the function.<p>\r\nThe expression must be assignable to the result type of the function, for example, in <i>double</i>, 2*<i>x</i> is assignable to <b>real</b>. (See the <i>assignmentStatement</i> for the definition of assignable.)</p>\n<p>\r\nA function must terminate by executing a <b>result</b> statement and not by reaching the end of the function.</p>\n<p>\r\n</p>",
       "text_content": " The execution of a result statement computes the value of the expression (expn) and terminates the function, returning the value as the value of the function.\r\nThe expression must be assignable to the result type of the function, for example, in double, 2*x is assignable to real. (See the assignmentStatement for the definition of assignable.)\r\nA function must terminate by executing a result statement and not by reaching the end of the function.\r\n",
-      "mdown_content": "The execution of a **result** statement computes the value of the expression (_expn_) and terminates the function, returning the value as the value of the function.\nThe expression must be assignable to the result type of the function, for example, in _double_, 2*_x_ is assignable to **real**. (See the _assignmentStatement_ for the definition of assignable.)\nA function must terminate by executing a **result** statement and not by reaching the end of the function."
+      "mdown_content": "The execution of a **result** statement computes the value of the expression (_expn_) and terminates the function, returning the value as the value of the function.\n\nThe expression must be assignable to the result type of the function, for example, in _double_, 2*_x_ is assignable to **real**. (See the _assignmentStatement_ for the definition of assignable.)\n\nA function must terminate by executing a **result** statement and not by reaching the end of the function.\n"
     }
   ],
   "dependencies": [

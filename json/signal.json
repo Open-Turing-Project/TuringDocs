@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "A <i>signalStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>signal</b> <i>variableReference</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A signalStatement is:\r\n signal variableReference",
-      "mdown_content": "A _signalStatement_ is:\n\n**signal** _variableReference_\n"
+      "mdown_content": "A _signalStatement_ is:\n\n\n**signal** _variableReference_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "A <b>signal</b> statement is used in a concurrent program to wake up a process that is blocked (waiting on a condition variable). The statement can only be used inside a monitor (a special kind of module that handles concurrency). A <b>signal</b> statement operates on a <b>condition</b> variable (the <i>variableReference</i>), which is essentially a queue of sleeping processes. See <b>condition</b> for an example of a <b>signal</b> statement.<p>\r\n</p>",
       "text_content": " A signal statement is used in a concurrent program to wake up a process that is blocked (waiting on a condition variable). The statement can only be used inside a monitor (a special kind of module that handles concurrency). A signal statement operates on a condition variable (the variableReference), which is essentially a queue of sleeping processes. See condition for an example of a signal statement.\r\n",
-      "mdown_content": "A **signal** statement is used in a concurrent program to wake up a process that is blocked (waiting on a condition variable). The statement can only be used inside a monitor (a special kind of module that handles concurrency). A **signal** statement operates on a **condition** variable (the _variableReference_), which is essentially a queue of sleeping processes. See **condition** for an example of a **signal** statement."
+      "mdown_content": "A **signal** statement is used in a concurrent program to wake up a process that is blocked (waiting on a condition variable). The statement can only be used inside a monitor (a special kind of module that handles concurrency). A **signal** statement operates on a **condition** variable (the _variableReference_), which is essentially a queue of sleeping processes. See **condition** for an example of a **signal** statement.\n"
     },
     {
       "title": "Details",
       "raw_content": "A <b>signal</b> statement wakes up one process that is doing a <b>wait</b> on the specified condition queue, if such a process exists. If the condition is deferred (or <b>timeout</b>; see <b>condition</b>), the signaler continues in the monitor, and the awakened process is allowed to continue only when the monitor becomes inactive. A signal to an <i>immediate</i> (non-deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive.<p>\r\n</p>",
       "text_content": " A signal statement wakes up one process that is doing a wait on the specified condition queue, if such a process exists. If the condition is deferred (or timeout; see condition), the signaler continues in the monitor, and the awakened process is allowed to continue only when the monitor becomes inactive. A signal to an immediate (non-deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive.\r\n",
-      "mdown_content": "A **signal** statement wakes up one process that is doing a **wait** on the specified condition queue, if such a process exists. If the condition is deferred (or **timeout**; see **condition**), the signaler continues in the monitor, and the awakened process is allowed to continue only when the monitor becomes inactive. A signal to an _immediate_ (non-deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive."
+      "mdown_content": "A **signal** statement wakes up one process that is doing a **wait** on the specified condition queue, if such a process exists. If the condition is deferred (or **timeout**; see **condition**), the signaler continues in the monitor, and the awakened process is allowed to continue only when the monitor becomes inactive. A signal to an _immediate_ (non-deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive.\n"
     },
     {
       "title": "See also",
@@ -32,7 +32,7 @@
       ],
       "raw_content": "<b><a href=\"condition.html\">condition</a></b> and <b><a href=\"wait.html\">wait</a></b>. See also <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"fork.html\">fork</a></b>. See also <b><a href=\"empty.html\">empty</a></b>. See also <b><a href=\"pause.html\">pause</a></b>.<p>\r\n</p>",
       "text_content": " condition and wait. See also monitor and fork. See also empty. See also pause.\r\n",
-      "mdown_content": "**[condition.html](condition)** and **[wait.html](wait)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**."
+      "mdown_content": "**[condition.html](condition)** and **[wait.html](wait)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**.\n"
     }
   ],
   "dependencies": [

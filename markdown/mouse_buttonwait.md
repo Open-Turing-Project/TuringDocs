@@ -7,19 +7,20 @@
 
 
 
-
 ##Description
 The **Mouse.ButtonWait** procedure gets information about a mouse event and removes it from the queue.
-The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonWait** returns instantly. If there isn't such an event, **Mouse.ButtonWait** waits until there is one and then returns (much like **getch** handles keystrokes).
-In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
-The parameters _x_ and _y_ are set to the position of the mouse cursor when the button was pressed. The parameter _buttonnumber_ is set to 1 when in "_single-button mode_". In  "_multi-button mode_", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter _buttonupdown_ is set to 1, if a button was pressed and 0 if a button was released. 
 
+The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **Mouse.ButtonWait** returns instantly. If there isn't such an event, **Mouse.ButtonWait** waits until there is one and then returns (much like **getch** handles keystrokes).
+
+In "_single-button mode_" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
+
+In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
+
+The parameters _x_ and _y_ are set to the position of the mouse cursor when the button was pressed. The parameter _buttonnumber_ is set to 1 when in "_single-button mode_". In  "_multi-button mode_", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter _buttonupdown_ is set to 1, if a button was pressed and 0 if a button was released. 
 
 
 ##Example
 This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.
-
 
         var x, y, btnNumber, btnUpDown, buttons : int
         var nx, ny : int
@@ -39,7 +40,6 @@ This program draws lines. It starts a line where the user presses down and conti
 ##Example
 This is an example demonstrating how to check for both character and mouse input at the same time.
 
-
         var ch : string (1)
         var x, y, btnNum, btnUpDown : int
         loop
@@ -58,14 +58,12 @@ This is an example demonstrating how to check for both character and mouse input
 **Mouse.ButtonWait** can be thought of as the mouse equivalent of **getch** in that they both read something in a queue and both wait until they get the thing they're looking for.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Mouse.ButtonWait**, not by calling **ButtonWait**.
 
+This means that you can only call the function by calling **Mouse.ButtonWait**, not by calling **ButtonWait**.
 
 
 ##See also
 **[](Mouse.ButtonWait)** to see if an appropriate event is in the queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between "_single-button mode_" and "_multi-button mode_".
-
 

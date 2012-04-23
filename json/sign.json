@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sign</b> ( <i>r</i> : <b>real</b> ) : -1 .. 1<p>\r\n</p></font>",
       "text_content": " sign ( r : real ) : -1 .. 1\r\n",
-      "mdown_content": "**sign** ( _r_ : **real** ) : -1 .. 1"
+      "mdown_content": "**sign** ( _r_ : **real** ) : -1 .. 1\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sign</b> function is used to determine whether a number is positive, zero or negative. It returns 1 if <i>r</i> &gt; 0, 0 if <i>r</i> = 0, and -1 if <i>r</i> &lt; 0. For example, <b>sign</b> (5) is 1 and <b>sign</b> (-23) is -1.<p>\r\n</p>",
       "text_content": " The sign function is used to determine whether a number is positive, zero or negative. It returns 1 if r > 0, 0 if r = 0, and -1 if r < 0. For example, sign (5) is 1 and sign (-23) is -1.\r\n",
-      "mdown_content": "The **sign** function is used to determine whether a number is positive, zero or negative. It returns 1 if _r_ > 0, 0 if _r_ = 0, and -1 if _r_ < 0. For example, **sign** (5) is 1 and **sign** (-23) is -1."
+      "mdown_content": "The **sign** function is used to determine whether a number is positive, zero or negative. It returns 1 if _r_ > 0, 0 if _r_ = 0, and -1 if _r_ < 0. For example, **sign** (5) is 1 and **sign** (-23) is -1.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program reads in numbers and determines if they are positive, zero or negative:<p>\r\n</p>",
       "text_content": " This program reads in numbers and determines if they are positive, zero or negative:\r\n\r\n",
-      "mdown_content": "This program reads in numbers and determines if they are positive, zero or negative:"
+      "mdown_content": "This program reads in numbers and determines if they are positive, zero or negative:\n"
     },
     {
       "title": "See also",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Math.\r\n",
-      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**."
+      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**.\n"
     }
   ],
   "dependencies": [

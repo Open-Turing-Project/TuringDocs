@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p><strong>Error.Last</strong> is a function that returns the error code set by the last called predefined subprogram. If there is no error, then it returns <em>eNoError</em> (which is 0). If there is an error, you can use <strong>Error.LastMsg</strong> to obtain a textual form of the error or <strong>Error.LastStr</strong> to obtain a string version of the error constant.
-The fact that <strong>Error.Last</strong> is not <em>eNoError</em> does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.Last</strong> also returns a number of warning codes. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.Last</strong> will return a code that warns the user of the fact.</p>
+<p><strong>Error.Last</strong> is a function that returns the error code set by the last called predefined subprogram. If there is no error, then it returns <em>eNoError</em> (which is 0). If there is an error, you can use <strong>Error.LastMsg</strong> to obtain a textual form of the error or <strong>Error.LastStr</strong> to obtain a string version of the error constant.</p>
+
+<p>The fact that <strong>Error.Last</strong> is not <em>eNoError</em> does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.Last</strong> also returns a number of warning codes. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.Last</strong> will return a code that warns the user of the fact.</p>
 
 <h2>Example</h2>
 
@@ -27,5 +28,6 @@ The fact that <strong>Error.Last</strong> is not <em>eNoError</em> does not nece
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Error.Last</strong>, not by calling <strong>Last</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Error.Last</strong>, not by calling <strong>Last</strong>.</p>

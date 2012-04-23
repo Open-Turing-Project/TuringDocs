@@ -5,12 +5,12 @@
 **Draw.DashedLine** (_x1_, _y1_, _x2_, _y2_, _lineStyle_, _Color_ : **int**)
 
 
-
 ##Description
 The **Draw.DashedLine** procedure is used to draw a dotted or dashed line on the screen from (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_.
+
 There are five possible line styles:drawSolid Draws a solid line (same as Draw.Line)drawDash Draws a dashed linedrawDot Draws a dotted linedrawDashDot Draws a line that alternates dashes and dotsdrawDashDotDot Draws a line that alternates dash and dot-dot
 
-![Doc image](draw_line01.gif)
+![Doc Image](draw_line01.gif)
 
 
 ##Example
@@ -30,14 +30,12 @@ This program draws a large X, reaching to each corner of the screen in two diffe
 The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Draw.DashedLine**, not by calling **DashedLine**.
 
+This means that you can only call the function by calling **Draw.DashedLine**, not by calling **DashedLine**.
 
 
 ##See also
 **[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit.
-
 

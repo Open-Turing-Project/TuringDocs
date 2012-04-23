@@ -6,16 +6,16 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawdot</b> (<i>x</i>, <i>y</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
       "text_content": "drawdot (x, y, Color : int)\r\n    ",
-      "mdown_content": "**drawdot** (_x_, _y_, _Color_ : **int**)"
+      "mdown_content": "**drawdot** (_x_, _y_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "images": [
         "drawdot01.gif"
       ],
-      "raw_content": "The <b>drawdot</b> procedure is used to color the dot (pixel) at \r\n          location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>\r\n\t\t</p>\n<center></center>",
+      "raw_content": "The <b>drawdot</b> procedure is used to color the dot (pixel) at \r\n          location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>\r\n\t\t</p>\n<center><img src=\"drawdot01.gif\"></center>",
       "text_content": "The drawdot procedure is used to color the dot (pixel) at \r\n          location (x, y) using the specified Color.\r\n\t\t\r\n    ",
-      "mdown_content": "The **drawdot** procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_."
+      "mdown_content": "The **drawdot** procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_.\n\n\n\n![Doc Image](drawdot01.gif)\n"
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program randomly draws dots with random colors. The <b>maxx</b>, \r\n          <b>maxy</b> and <b>maxcolor</b> functions give the maximum x, y and \r\n          color values.<p>\r\n</p>",
       "text_content": "This program randomly draws dots with random colors. The maxx, \r\n          maxy and maxcolor functions give the maximum x, y and \r\n          color values.\r\n\r\n    ",
-      "mdown_content": "This program randomly draws dots with random colors. The **maxx**, **maxy** and **maxcolor** functions give the maximum x, y and color values."
+      "mdown_content": "This program randomly draws dots with random colors. The **maxx**, **maxy** and **maxcolor** functions give the maximum x, y and color values.\n"
     },
     {
       "title": "Execute",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. If the screen is \r\n          not in a \"<i>graphics</i>\" mode,  it will automatically be set to \r\n          \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.<p>\r\n    </p>",
       "text_content": "The screen should be in a \"graphics\" mode. If the screen is \r\n          not in a \"graphics\" mode,  it will automatically be set to \r\n          \"graphics\" mode. See setscreen for details.\r\n    ",
-      "mdown_content": "The screen should be in a \"_graphics_\" mode. If the screen is not in a \"_graphics_\" mode,  it will automatically be set to \"_graphics_\" mode. See **setscreen** for details."
+      "mdown_content": "The screen should be in a \"_graphics_\" mode. If the screen is not in a \"_graphics_\" mode,  it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\n"
     },
     {
       "title": "Example",
@@ -49,7 +49,7 @@
       ],
       "raw_content": "This program draws a line of dots that bounce off the &#147;sides&#148; of the \r\n          screen. It also demonstrates that you can use real coordinates to\r\n          store position (<i>x</i>, <i>y</i>), as long as you convert the \r\n          coordinates to <b>int</b> values using <b>round</b> in the \r\n          <b>drawdot</b> call.<p>\r\n</p>",
       "text_content": "This program draws a line of dots that bounce off the sides of the \r\n          screen. It also demonstrates that you can use real coordinates to\r\n          store position (x, y), as long as you convert the \r\n          coordinates to int values using round in the \r\n          drawdot call.\r\n\r\n    ",
-      "mdown_content": "This program draws a line of dots that bounce off the &#147;sides&#148; of the screen. It also demonstrates that you can use real coordinates tostore position (_x_, _y_), as long as you convert the coordinates to **int** values using **round** in the **drawdot** call."
+      "mdown_content": "This program draws a line of dots that bounce off the &#147;sides&#148; of the screen. It also demonstrates that you can use real coordinates tostore position (_x_, _y_), as long as you convert the coordinates to **int** values using **round** in the **drawdot** call.\n"
     },
     {
       "title": "Execute",
@@ -70,7 +70,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b> and the various \r\n          <b>draw&#133;</b> procedures. <p>\r\n    </p>",
       "text_content": "setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures. \r\n    ",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. "
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. \n"
     }
   ],
   "dependencies": [

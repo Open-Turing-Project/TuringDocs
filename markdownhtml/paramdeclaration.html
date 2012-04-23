@@ -4,8 +4,8 @@
 
 <p>A <em>paramDeclaration</em> is one of:</p>
 
-<p>(a)[ <strong>var</strong> ] <em>id</em> {, <em>id</em> } : <em>typeSpec</em>
-(b)<em>subprogramHeader</em></p>
+<p>(a) [ <strong>var</strong> ] <em>id</em> {, <em>id</em> } : <em>typeSpec</em>
+(b) <em>subprogramHeader</em></p>
 
 <h2>Description</h2>
 
@@ -28,10 +28,13 @@
 
 <h2>Details</h2>
 
-<p>Parameters to a procedure may be declared using <strong>var</strong>, which means that the parameter can be changed inside the procedure. For example, <em>s</em> is changed in the <em>x</em> procedure. If a parameter is declared without <strong>var</strong>, it cannot be changed. (This differs from Pascal, where non-<strong>var</strong> parameters can be changed.)  Parameters to functions cannot be declared to be <strong>var</strong>.
-Parameters declared <strong>var</strong> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <em>p</em> ( <em>a</em> (<em>i</em>)), in which array element <em>a</em>(<em>i</em>) is passed to procedure <em>p</em>, a change to <em>i</em> in <em>p</em> does not change the element referred to by <em>p</em>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <strong>char</strong> type) parameter is passed by reference whether or not it is declared <strong>var</strong>. In all other cases (scalar non-<strong>var</strong> parameters) the parameter is passed by value (the actual value is copied to the procedure).
-The upper bound of an array or string that is a formal parameter may be specified as an asterisk (<strong>*</strong>), as is done above for parameter <em>s</em> in procedure <em>x</em>. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called <em>dynamic</em> parameters.
-The names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.</p>
+<p>Parameters to a procedure may be declared using <strong>var</strong>, which means that the parameter can be changed inside the procedure. For example, <em>s</em> is changed in the <em>x</em> procedure. If a parameter is declared without <strong>var</strong>, it cannot be changed. (This differs from Pascal, where non-<strong>var</strong> parameters can be changed.)  Parameters to functions cannot be declared to be <strong>var</strong>.</p>
+
+<p>Parameters declared <strong>var</strong> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <em>p</em> ( <em>a</em> (<em>i</em>)), in which array element <em>a</em>(<em>i</em>) is passed to procedure <em>p</em>, a change to <em>i</em> in <em>p</em> does not change the element referred to by <em>p</em>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <strong>char</strong> type) parameter is passed by reference whether or not it is declared <strong>var</strong>. In all other cases (scalar non-<strong>var</strong> parameters) the parameter is passed by value (the actual value is copied to the procedure).</p>
+
+<p>The upper bound of an array or string that is a formal parameter may be specified as an asterisk (<strong>*</strong>), as is done above for parameter <em>s</em> in procedure <em>x</em>. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called <em>dynamic</em> parameters.</p>
+
+<p>The names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.</p>
 
 <h2>Example</h2>
 
@@ -68,10 +71,13 @@ The names of the formal parameters must be distinct from each other, from the pr
 
 <h2>Details</h2>
 
-<p>Parameters that are declared non <strong>var</strong> should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.
-You can also optionally use the <strong>register</strong> keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the <strong>register</strong> keyword. The syntax for form (a) is actually:
-In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See <strong>register</strong> for restrictions on the use of register parameters.
-The optional keyword <strong>cheat</strong> means that the parameter has a type cheat. See <strong>cheat</strong>. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.</p>
+<p>Parameters that are declared non <strong>var</strong> should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.</p>
+
+<p>You can also optionally use the <strong>register</strong> keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the <strong>register</strong> keyword. The syntax for form (a) is actually:</p>
+
+<p>In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See <strong>register</strong> for restrictions on the use of register parameters.</p>
+
+<p>The optional keyword <strong>cheat</strong> means that the parameter has a type cheat. See <strong>cheat</strong>. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.</p>
 
 <pre><code>    [ var ] [ register ] id {, id } : [ cheat ] typeSpec
 </code></pre>

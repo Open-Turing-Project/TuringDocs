@@ -6,16 +6,16 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateMenu</b> (<i>name</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.CreateMenu (name : string) : int\r\n",
-      "mdown_content": "**GUI.CreateMenu** (_name_ : **string**) : **int**"
+      "mdown_content": "**GUI.CreateMenu** (_name_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "images": [
         "gui_createmenu01.gif"
       ],
-      "raw_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.<p>\r\nThe <i>name</i> parameter specifies the text that appears in the menu bar.</p>\n<p>\r\n\r\n</p>\n<center></center>\r\n<center><b>A Menu With an Item Selected</b></center>\n<p>\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.</p>\n<p>\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>\n<p>\r\n</p>",
+      "raw_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.<p>\r\nThe <i>name</i> parameter specifies the text that appears in the menu bar.</p>\n<p>\r\n\r\n</p>\n<center><img src=\"gui_createmenu01.gif\"></center>\r\n<center><b>A Menu With an Item Selected</b></center>\n<p>\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.</p>\n<p>\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>\n<p>\r\n</p>",
       "text_content": " Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\r\nThe name parameter specifies the text that appears in the menu bar.\r\n\r\n\r\nA Menu With an Item Selected\r\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\r\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.\r\n",
-      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\nThe _name_ parameter specifies the text that appears in the menu bar.\n\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired."
+      "mdown_content": "Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.\n\nThe _name_ parameter specifies the text that appears in the menu bar.\n\n\n\n![Doc Image](gui_createmenu01.gif)\n\n**A Menu With an Item Selected**\n\nMenus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.\n\nAs of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.\n"
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": " The following program creates a series of menus with menu items in them. It then disables the second menu.\r\n\r\n    ",
-      "mdown_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.\n"
+      "mdown_content": "The following program creates a series of menus with menu items in them. It then disables the second menu.\n\n\n"
     },
     {
       "title": "Execute",
@@ -40,19 +40,19 @@
       "title": "Details",
       "raw_content": "When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.<p>\r\n</p>",
       "text_content": " When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.\r\n",
-      "mdown_content": "When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear."
+      "mdown_content": "When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.\n"
     },
     {
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a menu as the <i>widgetID</i> parameter:<p>\r\n<b>GUI.Show</b>,<b> GUI.Hide</b>,<b> GUI.Dispose</b>,<b> GUI.Enable</b>,<b> GUI.Disable</b></p>\n<p>\r\n</p>",
       "text_content": " The following GUI subprograms can be called with a menu as the widgetID parameter:\r\nGUI.Show, GUI.Hide, GUI.Dispose, GUI.Enable, GUI.Disable\r\n",
-      "mdown_content": "The following GUI subprograms can be called with a menu as the _widgetID_ parameter:\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.Enable**, **GUI.Disable**"
+      "mdown_content": "The following GUI subprograms can be called with a menu as the _widgetID_ parameter:\n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.Enable**, **GUI.Disable**\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.CreateMenu</b>, not by calling <b>CreateMenu</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.CreateMenu, not by calling CreateMenu.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**.\n"
     },
     {
       "title": "See also",
@@ -63,7 +63,7 @@
       ],
       "raw_content": "<b><a href=\"gui_createmenuitem_full-2.html\">GUI.CreateMenuItem</a></b> for adding items to a menu. See also <b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b> and <b><a href=\"gui_hidemenubar.html\">GUI.HideMenuBar</a></b> for showing and hiding the menu bar.<p>\r\n</p>",
       "text_content": " GUI.CreateMenuItem for adding items to a menu. See also GUI.ShowMenuBar and GUI.HideMenuBar for showing and hiding the menu bar.\r\n",
-      "mdown_content": "**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar."
+      "mdown_content": "**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar.\n"
     }
   ],
   "dependencies": [

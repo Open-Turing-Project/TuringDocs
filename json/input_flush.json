@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Input.Flush</b><p>\r\n</p></font>",
       "text_content": " Input.Flush\r\n",
-      "mdown_content": "**Input.Flush**"
+      "mdown_content": "**Input.Flush**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Input.Flush</b> procedure empties the keyboard buffer. It is often used to avoid accidentally reading multiple\r\nkeystrokes because the user pressed a key for too long, causing autorepeat.<p>\r\n</p>",
       "text_content": "The Input.Flush procedure empties the keyboard buffer. It is often used to avoid accidentally reading multiple\r\nkeystrokes because the user pressed a key for too long, causing autorepeat.\r\n",
-      "mdown_content": "The **Input.Flush** procedure empties the keyboard buffer. It is often used to avoid accidentally reading multiplekeystrokes because the user pressed a key for too long, causing autorepeat."
+      "mdown_content": "The **Input.Flush** procedure empties the keyboard buffer. It is often used to avoid accidentally reading multiplekeystrokes because the user pressed a key for too long, causing autorepeat.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program echoes input from the keyboard at a rate of 10 characters per second. If you hold down a key, the echoing will stop as soon as you stop\r\npressing the key. Without the <b>Input.Flush</b>, the program continues to echo many more keystrokes that have accumulated in the keyboard buffer.<p>\r\n</p>",
       "text_content": " This program echoes input from the keyboard at a rate of 10 characters per second. If you hold down a key, the echoing will stop as soon as you stop\r\npressing the key. Without the Input.Flush, the program continues to echo many more keystrokes that have accumulated in the keyboard buffer.\r\n\r\n",
-      "mdown_content": "This program echoes input from the keyboard at a rate of 10 characters per second. If you hold down a key, the echoing will stop as soon as you stoppressing the key. Without the **Input.Flush**, the program continues to echo many more keystrokes that have accumulated in the keyboard buffer."
+      "mdown_content": "This program echoes input from the keyboard at a rate of 10 characters per second. If you hold down a key, the echoing will stop as soon as you stoppressing the key. Without the **Input.Flush**, the program continues to echo many more keystrokes that have accumulated in the keyboard buffer.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Input.Flush</b>, not by calling <b>Flush</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Input.Flush, not by calling Flush.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Input.Flush**, not by calling **Flush**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Input.Flush**, not by calling **Flush**.\n"
     }
   ],
   "dependencies": [

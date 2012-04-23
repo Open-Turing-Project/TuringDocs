@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.SecDate</b> (<i>timeInSecs</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Time.SecDate (timeInSecs : int) : string\r\n",
-      "mdown_content": "**Time.SecDate** (_timeInSecs_ : **int**) : **string**"
+      "mdown_content": "**Time.SecDate** (_timeInSecs_ : **int**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.SecDate</b> function is used to<b> </b>convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. <p>\r\nIf <i>timeInSecs </i>is incorrect or can't be interpreted, then <b>Time.SecDate</b> will return the empty string and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
       "text_content": " The Time.SecDate function is used to convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \r\nIf timeInSecs is incorrect or can't be interpreted, then Time.SecDate will return the empty string and Error.Last and Error.LastMsg will be set to the appropriate error.\r\n",
-      "mdown_content": "The **Time.SecDate** function is used to convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \nIf _timeInSecs_ is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last** and **Error.LastMsg** will be set to the appropriate error."
+      "mdown_content": "The **Time.SecDate** function is used to convert  the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string. \n\nIf _timeInSecs_ is incorrect or can't be interpreted, then **Time.SecDate** will return the empty string and **Error.Last** and **Error.LastMsg** will be set to the appropriate error.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form.<p>\r\n</p>",
       "text_content": " This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form.\r\n\r\n",
-      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form."
+      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date in string form.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.SecDate</b>, not by calling <b>SecDate</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.SecDate, not by calling SecDate.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.SecDate**, not by calling **SecDate**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Time.SecDate**, not by calling **SecDate**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b>, <b><a href=\"time_date.html\">Time.Date</a></b> and <b><a href=\"time_datesec.html\">Time.DateSec</a></b> functions.<p>\r\n</p>",
       "text_content": " Time.Sec, Time.Date and Time.DateSec functions.\r\n",
-      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_datesec.html](Time.DateSec)** functions."
+      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_datesec.html](Time.DateSec)** functions.\n"
     }
   ],
   "dependencies": [

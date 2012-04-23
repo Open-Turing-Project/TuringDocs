@@ -1,8 +1,10 @@
 <h1>Turing Teacher/Administrator Guide</h1>
 
-<p>This is the Turing Teacher/Administrator guide. It contains most of the information that you will need to administer the Turing 4.0 software.It should be read by those who are teaching courses using Turing 4.0 or are in charge of administering Turing 4.0
-This guide provides information on the Turing environment (the editor, therun windows, etc.)  It does <strong>not</strong> provide any information on the Turingprogramming language itself.
-Note that there is some overlap with the <a href="TuringTeacher/Administrator%20Quick%20Start%20Guide">turing_quick_admin.html</a>.##Table of Contents
+<p>This is the Turing Teacher/Administrator guide. It contains most of the information that you will need to administer the Turing 4.0 software.It should be read by those who are teaching courses using Turing 4.0 or are in charge of administering Turing 4.0</p>
+
+<p>This guide provides information on the Turing environment (the editor, therun windows, etc.)  It does <strong>not</strong> provide any information on the Turingprogramming language itself.</p>
+
+<p>Note that there is some overlap with the <a href="TuringTeacher/Administrator%20Quick%20Start%20Guide">turing_quick_admin.html</a>.##Table of Contents
 - <a href="Making%20Certain%20You%20Have%20the%20Lastest%20Version"></a>
 - <a href="Mandatory%20Administration%20Issues"></a>
 - <a href="Changing%20System%20Preferences"></a>
@@ -11,106 +13,180 @@ Note that there is some overlap with the <a href="TuringTeacher/Administrator%20
 - <a href="Missing%20Features%20from%20Turing%204"></a>
 - <a href="The%20Turing%20Debugger"></a>
 - <a href="Student%20Distribution"></a>
-- <a href="Technical%20Support"></a>
-1. Making Certain You Have the Lastest Version
-Turing 4.0 is updated regularly.  To find out what version youare currently running, click the <strong>About Turing</strong> menu item in the <strong>Help</strong> menu.  To find out the current version of Turing, go to<a href="http://www.holtsoft.com/turing/support/#currentversion">http://www.holtsoft.com/turing/support/#currentversion</a>. This lists thecurrent version of the software.
-This page also lists which bugs have been fixed and when new features havebeen added.  The page also contains a section (<a href="http://www.holtsoft.com/turing/support/#turing4patches">http://www.holtsoft.com/turing/support/#turing4patches</a>)where a file can be downloaded that will update most versions of Turing to the latest version.<br/>
-If you are a teacher or an administrator at a school and require a complete installation file (as opposed to the publically available patch), contact TomWest at (416) 978-8363.##2. Mandatory Administration Issues
-Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of each of installation, however, Turing will load somewhat fasterwhen it is launched if it is stored locally.
-Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of ease of administration. However, Turing, like any other applicationwill load somewhat faster when it is launched if it is stored locally.
-There are a few administration issues that must be addressed to configure Turing properly.<strong>Set the start-in (often called the "working") directory properly.</strong>
-It is important that the start-in directory for Turing be set to the student's home directory.  This can be done in a variety of ways, fromleast to most complicated.
-- Many schools have the student's home directory mapped to a drive(often H:). If this is the case, then set the start-in (or working) directory of the shortcut or menu item used to launch Turing to the mapped drive.
-The shortcut's working directory can be modified bychanging it's start-in or working directory property. (To display the <strong>Properties</strong> dialog box, right click on the shortcut or menu item and select Properties from the pop-up menu.)
-<strong>Properties for a Shortcut under Windows 2000</strong>
-This requires changing the shortcut's properties requireswrite access to the shortcut.  Note that commercial menu front-ends have their own way of setting the start-in directory of applications.</p>
+- <a href="Technical%20Support"></a></p>
+
+<h2>1. Making Certain You Have the Lastest Version</h2>
+
+<p>Turing 4.0 is updated regularly.  To find out what version youare currently running, click the <strong>About Turing</strong> menu item in the <strong>Help</strong> menu.  To find out the current version of Turing, go to<a href="http://www.holtsoft.com/turing/support/#currentversion">http://www.holtsoft.com/turing/support/#currentversion</a>. This lists thecurrent version of the software.</p>
+
+<p>This page also lists which bugs have been fixed and when new features havebeen added.  The page also contains a section (<a href="http://www.holtsoft.com/turing/support/#turing4patches">http://www.holtsoft.com/turing/support/#turing4patches</a>)where a file can be downloaded that will update most versions of Turing to the latest version.</p>
+
+<p>If you are a teacher or an administrator at a school and require a complete installation file (as opposed to the publically available patch), contact TomWest at (416) 978-8363.##2. Mandatory Administration Issues
+Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of each of installation, however, Turing will load somewhat fasterwhen it is launched if it is stored locally.</p>
+
+<p>Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of ease of administration. However, Turing, like any other applicationwill load somewhat faster when it is launched if it is stored locally.</p>
+
+<p>There are a few administration issues that must be addressed to configure Turing properly.- <strong>Set the start-in (often called the "working") directory properly.</strong></p>
+
+<p>It is important that the start-in directory for Turing be set to the student's home directory.  This can be done in a variety of ways, fromleast to most complicated.</p>
 
 <ul>
-<li><p>If the "My Documents" folder is mapped to the students home directory, you can set the preferences to make Turing use the "My Documents" folder as the start-in folder.  Note that  this option is the preferred option for home users, where the "My Documents" folder is the home directory.
-<strong>The Use "My Documents" Folder in the Admin Pane</strong>
-To change the preference, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Use "My Documents" Folder</strong> checkbox in the<strong>Admin</strong> pane of the Turing Preferences (see <a href="Turing%20Preferences"></a> below).</p></li>
+<li>Many schools have the student's home directory mapped to a drive(often H:). If this is the case, then set the start-in (or working) directory of the shortcut or menu item used to launch Turing to the mapped drive.</li>
+</ul>
+
+
+<p>The shortcut's working directory can be modified bychanging it's start-in or working directory property. (To display the <strong>Properties</strong> dialog box, right click on the shortcut or menu item and select Properties from the pop-up menu.)</p>
+
+<p><img src="turing_admin03.gif" alt="Doc Image" /></p>
+
+<p><strong>Properties for a Shortcut under Windows 2000</strong></p>
+
+<p>This requires changing the shortcut's properties requireswrite access to the shortcut.  Note that commercial menu front-ends have their own way of setting the start-in directory of applications.</p>
+
+<ul>
+<li>If the "My Documents" folder is mapped to the students home directory, you can set the preferences to make Turing use the "My Documents" folder as the start-in folder.  Note that  this option is the preferred option for home users, where the "My Documents" folder is the home directory.</li>
+</ul>
+
+
+<p><img src="turing_admin08.gif" alt="Doc Image" /></p>
+
+<p><strong>The Use "My Documents" Folder in the Admin Pane</strong></p>
+
+<p>To change the preference, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Use "My Documents" Folder</strong> checkbox in the<strong>Admin</strong> pane of the Turing Preferences (see <a href="Turing%20Preferences"></a> below).</p>
+
+<ul>
 <li><p>If each student's home directory is specified differently (i.e. there is no mapping of the home directory to a drive), then you may need to use environment variables to create a useable path.  For example, if students files are stored in <strong>g:\class108[Student Name]</strong> and there is an environmentvariables USERNAME that contains the student's name, then the the start-in directory for the shortcut should be set to<code>g:\class108\%USERNAME%</code>.</p></li>
-<li><p>Occasionally users have reported situations like the previous case, except that Windows seems unable to set the start-in directory properly using environment variables.<br/>
-<strong>The Startup Directory Text Field in the Admin Pane</strong>
-To set the start-in directory, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Startup Directory</strong> text field in the<strong>Admin</strong> pane of the Turing Preferences appropriately (see <a href="Turing%20Preferences"></a> below) including specifyingthe directory using the environment variables.</p></li>
-<li><p><strong>Set either Beginner or Regular Mode for Students.</strong></p></li>
+<li><p>Occasionally users have reported situations like the previous case, except that Windows seems unable to set the start-in directory properly using environment variables.</p></li>
 </ul>
 
 
-<p>Turing can be set to <strong>Beginner</strong> mode, in which case only onefile is open at a time.  Opening up another file closes the first one.When the program is running, the Editor window minimizes. In this way,only one window is usually visible at a time. In this fashion, <strong>Beginner</strong> mode is similar to the old DOS Turing.
-In <strong>Regular</strong> mode, any number of files can be opened and eachappears in its own editor window.
-In general, we suggest <strong>Beginner</strong> mode for grade 9 and 10 and<strong>Regular</strong> mode for all others.  If you are using <strong>Beginner</strong>mode, we suggest that you point out to the students that they can usethe Prefences to change to <strong>Regular</strong> mode when they feel comfortable with the environment.
-To change the preference, you will need to enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and changethe <strong>Beginner Mode</strong> preference in the <strong>General</strong> pane appropriately (see <a href="Turing%20Preferences"></a> below).</p>
+<p><img src="turing_admin09.gif" alt="Doc Image" /></p>
+
+<p><strong>The Startup Directory Text Field in the Admin Pane</strong></p>
+
+<p>To set the start-in directory, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Startup Directory</strong> text field in the<strong>Admin</strong> pane of the Turing Preferences appropriately (see <a href="Turing%20Preferences"></a> below) including specifyingthe directory using the environment variables.</p>
 
 <ul>
-<li><strong>Windows 95 and the Turing Net module</strong>
-If you are using Windows 95 (not Windows 98/Me/NT/2000/XP) and youwish to use the Turing <strong>Net</strong> module in order to write programsthat communicate with other computers, then you may need update theWindow 95 networking code.
-This can be done by running the program located at:</li>
+<li><strong>Set either Beginner or Regular Mode for Students.</strong></li>
 </ul>
 
+
+<p>Turing can be set to <strong>Beginner</strong> mode, in which case only onefile is open at a time.  Opening up another file closes the first one.When the program is running, the Editor window minimizes. In this way,only one window is usually visible at a time. In this fashion, <strong>Beginner</strong> mode is similar to the old DOS Turing.</p>
+
+<p>In <strong>Regular</strong> mode, any number of files can be opened and eachappears in its own editor window.</p>
+
+<p>In general, we suggest <strong>Beginner</strong> mode for grade 9 and 10 and<strong>Regular</strong> mode for all others.  If you are using <strong>Beginner</strong>mode, we suggest that you point out to the students that they can usethe Prefences to change to <strong>Regular</strong> mode when they feel comfortable with the environment.</p>
+
+<p>To change the preference, you will need to enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and changethe <strong>Beginner Mode</strong> preference in the <strong>General</strong> pane appropriately (see <a href="Turing%20Preferences"></a> below).</p>
+
+<ul>
+<li><strong>Windows 95 and the Turing Net module</strong></li>
+</ul>
+
+
+<p>If you are using Windows 95 (not Windows 98/Me/NT/2000/XP) and youwish to use the Turing <strong>Net</strong> module in order to write programsthat communicate with other computers, then you may need update theWindow 95 networking code.</p>
+
+<p>This can be done by running the program located at:</p>
+
+<p>[Turing directory]\support\Microsoft\W95ws2setup.exe</p>
 
 <p>This program from Microsoft patches Windows 95 networking code.  Itmust be run on every computer running Windows 95 unless the machinesboot from a server.
 - <strong>Parallel Port Usage</strong>If you are intend to use Turing to control devices attached to theparallel port (using the <strong>parallelput</strong> and <strong>parallelget</strong>,and are running under Windows NT/XP/2000, you will need to install adevice driver. (Windows NT/XP/2000 do not allow direct access to thesystem hardware.).  The device driver can be installed by running theprogram located at:</p>
 
+<p>[Turing directory]\support\dlportio_install.exe</p>
+
 <p>Further information can be found in <a href="Parallel%20Port%20and%20Turing%204"></a>.</p>
 
-<ol>
-<li>Changing System Preferences
-Turing uses a two level preference model.  There is a central set ofpreferences that are kept in
-<strong>    [Turing Directory]\Support\Ini\turing_admin.ini</strong>
-These preferences are the same for all users and are called the <strong>SystemPreferences</strong>.  A second set of preferences is stored in each student's home directory in a file called <strong>turing.ini</strong>.  These preferences override the central preferences and allow students to individually modify the behaviour of Turing.
-When a student modifies the preferences, the <strong>turing.ini</strong> file in the student's home directory is changed. To change the System preferences (i.e. the contents of the <strong>turing_admin.ini</strong> file), Turing must be startedup with the command line
-<strong>    turing  -admin</strong>
-This can be done by starting up a DOS window, doing a <strong>cd</strong> to thedirectory in which <strong>turing.exe</strong> is stored and then typing <strong>turing  -admin</strong>. The user must have write access to the directory in which the <strong>turing_admin.ini</strong> file is stored.
-When Turing is launched, it will display a message box on start-up indicatingthat it is in <strong>Administrator mode</strong> and where the preferences will bestored.
-<strong>Administration Mode Notification</strong>
-Selecting <strong>Preferences</strong> from the <strong>File</strong> menu will display a tabbeddialog box of all the Turing preferences.  If you are in <strong>Administrator mode</strong>, then an extra tab labeled <strong>Admin</strong> will appear with extrapreferences that can only be set by the Administrator.  Note that individualstudents cannot override the preferences that appear on the <strong>Admin</strong> pane.
-<strong>Preferences in Administrator Mode</strong>
-Once the Preferences have been set, the Administrator can exit Turing.##4. Turing Preferences
-This section lists all the preferences available in Turing sorted by thepane###"General" Pane</li>
-</ol>
+<h2>3. Changing System Preferences</h2>
 
+<p>Turing uses a two level preference model.  There is a central set ofpreferences that are kept in</p>
 
-<p><strong>The "General" Pane</strong>
-When <strong>Beginner</strong> mode is set, only one file canbe can be loaded into the Turing environment at a time.  The Editorwindow is minimized every time the Run window is active and vice-versa.The debugger cannot be displayed or used.  If this box is not set, thenTuring is in <strong>Regular</strong> mode and multiple files can be open simultaneously.  <strong>Beginner</strong> mode is recommended for students whoare overwhelmed or confused by too many Turing windows (especiallystudents in grades 9 and 10).
-- <strong>One Window Mode</strong>This option is not available in Turing 4.0.  It will be used to switchbetween MDI and SDI modes in a future version of the software.
-- <strong>Display Full Pathnames</strong>The full path name and not just the file name are displayed in the Editor window's title bar and recent files submenu.
-- <strong>Save Previous File as ".BAK"</strong>When a file is saved over top of an older file, the older file is renamed with a .BAK suffix (i.e. <strong>test.t</strong> to <strong>test.bak</strong>)
-- <strong>Confirm on Quit</strong>When the user closes the last editor window, Turing displays a dialog box asking whether the user wishes to Quit. On systems where loading is slow (usually over a network), this can stop the users from accidentally quitting Turing.
-- <strong>Skip Splash Screen</strong>When Turing starts up, it normally displays a "Splash" screen withthe version number.  The Splash screen disappears when the user clicksa button or after 3 seconds.  Turning this option off causes the Splash screen not to be displayed.
-- <strong>Add ".t" to File Names</strong>When a Save File dialog box appears and the user specifies a file name without a file suffix, Turing adds ".t".  This can be removed by theuser.
-- <strong>Convert Leading Spaces into Tabs</strong>When Turing saves a file, it normally converts groups of leading spacesinto TAB characters, saving disk space.  The number of spaces per tab isspecified by the <strong>Spaces per Tab</strong> text field.  If this check box isnot selected, then the spaces are not converted.
-- <strong>Don't Save Recent Files Menu</strong>Normally Turing lists the last several files opened. However, if students do not have individual accounts, then this feature may not be useful and can be turned off.
-- <strong>Find Uses Selected Text</strong>By default, Turing uses the Windows behaviour that when a Find commandis given and there is selected text, the selected text is copied tothe Find dialog box.  If you don't like this behaviour, then unsettingthis option will stop this behaviour. If it is not set, then an additional menu item is placed in the <strong>Search</strong> menu that findsthe next occurance of the currently selected text.
-- <strong>Start in Last Active Directory</strong>If students are writing large projects in many subdirectories, then this option can be enabled to automatically start Turing in the last directory in which a file was loaded or saved. The Turing preferences file is still stored in the student's home directory.
-- <strong>Spaces per Tab</strong>This specifies the number of spaces that a Tab is converted to and from.When Turing reads a text file into the editor, all tabs are converted onto spaces. If you created the Turing file on an editor where Tabsare a different number of spaces, then change this value appropriately.
-- <strong>Indent Size</strong>When Tab is pressed in the Turing editor, it is converted into spaces.The number in the <strong>Indent Size</strong> text field determines how manyspaces the Tab key is converted to.  Note the <strong>Spaces per Tab</strong> isused when Turing reads/writes files.  The <strong>Indent Size</strong> field isused when Turing responds to the Tab key.
-- <strong>File Association</strong>Microsoft Windows has the ability to associate files with a particularsuffix with specific programs. The Turing environment can be associatedwith the following file suffixes: <strong>.t</strong>, <strong>.tur</strong>, <strong>.dem</strong>, <strong>.ti</strong> and <strong>.tu</strong>.  To associate these file suffixes with Turing, click the <strong>Associate ".t" files with Turing</strong> button. Toreset the file associations back to what they were before, click the<strong>Reset ".t" File Association</strong>.</p>
+<p><strong>    [Turing Directory]\Support\Ini\turing_admin.ini</strong></p>
+
+<p>These preferences are the same for all users and are called the <strong>SystemPreferences</strong>.  A second set of preferences is stored in each student's home directory in a file called <strong>turing.ini</strong>.  These preferences override the central preferences and allow students to individually modify the behaviour of Turing.</p>
+
+<p>When a student modifies the preferences, the <strong>turing.ini</strong> file in the student's home directory is changed. To change the System preferences (i.e. the contents of the <strong>turing_admin.ini</strong> file), Turing must be startedup with the command line</p>
+
+<p><strong>    turing  -admin</strong></p>
+
+<p>This can be done by starting up a DOS window, doing a <strong>cd</strong> to thedirectory in which <strong>turing.exe</strong> is stored and then typing <strong>turing  -admin</strong>. The user must have write access to the directory in which the <strong>turing_admin.ini</strong> file is stored.</p>
+
+<p>When Turing is launched, it will display a message box on start-up indicatingthat it is in <strong>Administrator mode</strong> and where the preferences will bestored.</p>
+
+<p><img src="turing_admin01.gif" alt="Doc Image" /></p>
+
+<p><strong>Administration Mode Notification</strong></p>
+
+<p>Selecting <strong>Preferences</strong> from the <strong>File</strong> menu will display a tabbeddialog box of all the Turing preferences.  If you are in <strong>Administrator mode</strong>, then an extra tab labeled <strong>Admin</strong> will appear with extrapreferences that can only be set by the Administrator.  Note that individualstudents cannot override the preferences that appear on the <strong>Admin</strong> pane.</p>
+
+<p><img src="turing_admin02.gif" alt="Doc Image" /></p>
+
+<p><strong>Preferences in Administrator Mode</strong></p>
+
+<p>Once the Preferences have been set, the Administrator can exit Turing.##4. Turing Preferences
+This section lists all the preferences available in Turing sorted by thepane###"General" Pane</p>
+
+<p><img src="turing_admin02.gif" alt="Doc Image" /></p>
+
+<p><strong>The "General" Pane</strong></p>
+
+<ul>
+<li><strong>Beginner Mode</strong>When <strong>Beginner</strong> mode is set, only one file canbe can be loaded into the Turing environment at a time.  The Editorwindow is minimized every time the Run window is active and vice-versa.The debugger cannot be displayed or used.  If this box is not set, thenTuring is in <strong>Regular</strong> mode and multiple files can be open simultaneously.  <strong>Beginner</strong> mode is recommended for students whoare overwhelmed or confused by too many Turing windows (especiallystudents in grades 9 and 10).</li>
+<li><strong>One Window Mode</strong>This option is not available in Turing 4.0.  It will be used to switchbetween MDI and SDI modes in a future version of the software.</li>
+<li><strong>Display Full Pathnames</strong>The full path name and not just the file name are displayed in the Editor window's title bar and recent files submenu.</li>
+<li><strong>Save Previous File as ".BAK"</strong>When a file is saved over top of an older file, the older file is renamed with a .BAK suffix (i.e. <strong>test.t</strong> to <strong>test.bak</strong>)</li>
+<li><strong>Confirm on Quit</strong>When the user closes the last editor window, Turing displays a dialog box asking whether the user wishes to Quit. On systems where loading is slow (usually over a network), this can stop the users from accidentally quitting Turing.</li>
+<li><strong>Skip Splash Screen</strong>When Turing starts up, it normally displays a "Splash" screen withthe version number.  The Splash screen disappears when the user clicksa button or after 3 seconds.  Turning this option off causes the Splash screen not to be displayed.</li>
+<li><strong>Add ".t" to File Names</strong>When a Save File dialog box appears and the user specifies a file name without a file suffix, Turing adds ".t".  This can be removed by theuser.</li>
+<li><strong>Convert Leading Spaces into Tabs</strong>When Turing saves a file, it normally converts groups of leading spacesinto TAB characters, saving disk space.  The number of spaces per tab isspecified by the <strong>Spaces per Tab</strong> text field.  If this check box isnot selected, then the spaces are not converted.</li>
+<li><strong>Don't Save Recent Files Menu</strong>Normally Turing lists the last several files opened. However, if students do not have individual accounts, then this feature may not be useful and can be turned off.</li>
+<li><strong>Find Uses Selected Text</strong>By default, Turing uses the Windows behaviour that when a Find commandis given and there is selected text, the selected text is copied tothe Find dialog box.  If you don't like this behaviour, then unsettingthis option will stop this behaviour. If it is not set, then an additional menu item is placed in the <strong>Search</strong> menu that findsthe next occurance of the currently selected text.</li>
+<li><strong>Start in Last Active Directory</strong>If students are writing large projects in many subdirectories, then this option can be enabled to automatically start Turing in the last directory in which a file was loaded or saved. The Turing preferences file is still stored in the student's home directory.</li>
+<li><strong>Spaces per Tab</strong>This specifies the number of spaces that a Tab is converted to and from.When Turing reads a text file into the editor, all tabs are converted onto spaces. If you created the Turing file on an editor where Tabsare a different number of spaces, then change this value appropriately.</li>
+<li><strong>Indent Size</strong>When Tab is pressed in the Turing editor, it is converted into spaces.The number in the <strong>Indent Size</strong> text field determines how manyspaces the Tab key is converted to.  Note the <strong>Spaces per Tab</strong> isused when Turing reads/writes files.  The <strong>Indent Size</strong> field isused when Turing responds to the Tab key.</li>
+<li><strong>File Association</strong>Microsoft Windows has the ability to associate files with a particularsuffix with specific programs. The Turing environment can be associatedwith the following file suffixes: <strong>.t</strong>, <strong>.tur</strong>, <strong>.dem</strong>, <strong>.ti</strong> and <strong>.tu</strong>.  To associate these file suffixes with Turing, click the <strong>Associate ".t" files with Turing</strong> button. Toreset the file associations back to what they were before, click the<strong>Reset ".t" File Association</strong>.</li>
+</ul>
+
 
 <h3>"Editor Window" Pane</h3>
 
-<p><strong>The "Editor Window" Pane</strong>
-You can change the font size and typeface used in the editor window. If you change the typeface, you must choose a monospaced font where bold and non-bold letters are the same size. Many monospaced fonts have different sizes for bold and non-bold letters.
-- <strong>Full Screen for Beginner Mode</strong>If in beginner mode, editor windows are automatically in full screen mode.  You can change this behaviour buy unsetting this checkbox.
-- <strong>Full Screen for Regular Mode</strong>Editor windows are normally 25x80 columns (or the size specified by the<strong>Editor Window Rows/Columns</strong> text fields).  If this checkbox isset, editor windows are automatically maximized to fill the screen. This option is suggested for systems with 640x480 screen resolution. Users can change the window size by clicking the full screen/normal window button in the window's title bar.
-- <strong>Editor Window Rows/Columns</strong>These text fields control the size of editor windows when first created.
-- <strong>Syntax Coloring</strong>When selected, parts of Turing programs appear in different colors: comments appear in green, strings in red, keywords in bold face, predefined identifiers in black, and user identifiers in blue.
-- <strong>Always Show 'Debugger' Menu</strong>In the interest of keeping the interface as simple as possible, and because most students do not use the debugging features, Turing doesnot display the Debugger menu by default.  Instead, the user selects<strong>Show Debugger Menu</strong> from the <strong>Run</strong> menu.  Setting thischeckbox causes the Debugger menu to always be displayed.
-- <strong>Text Cursor Width</strong>By default, the cursor (correctly called the caret) is 2 pixels wide, allowing it to be seen easily in the Editor window.  However, some users prefer the caret to be 1 pixel wide and some prefer the caret to overlay an entire character (in a similar manner to DOS editors). Legal values are 1 (which represent a 1 pixel thick caret), 2 (which represent a 2 pixel thick caret), and 3 (which represents a text cursor that covers the entire character.</p>
+<p><img src="turing_admin04.gif" alt="Doc Image" /></p>
+
+<p><strong>The "Editor Window" Pane</strong></p>
+
+<ul>
+<li><strong>Editor Font</strong>You can change the font size and typeface used in the editor window. If you change the typeface, you must choose a monospaced font where bold and non-bold letters are the same size. Many monospaced fonts have different sizes for bold and non-bold letters.</li>
+<li><strong>Full Screen for Beginner Mode</strong>If in beginner mode, editor windows are automatically in full screen mode.  You can change this behaviour buy unsetting this checkbox.</li>
+<li><strong>Full Screen for Regular Mode</strong>Editor windows are normally 25x80 columns (or the size specified by the<strong>Editor Window Rows/Columns</strong> text fields).  If this checkbox isset, editor windows are automatically maximized to fill the screen. This option is suggested for systems with 640x480 screen resolution. Users can change the window size by clicking the full screen/normal window button in the window's title bar.</li>
+<li><strong>Editor Window Rows/Columns</strong>These text fields control the size of editor windows when first created.</li>
+<li><strong>Syntax Coloring</strong>When selected, parts of Turing programs appear in different colors: comments appear in green, strings in red, keywords in bold face, predefined identifiers in black, and user identifiers in blue.</li>
+<li><strong>Always Show 'Debugger' Menu</strong>In the interest of keeping the interface as simple as possible, and because most students do not use the debugging features, Turing doesnot display the Debugger menu by default.  Instead, the user selects<strong>Show Debugger Menu</strong> from the <strong>Run</strong> menu.  Setting thischeckbox causes the Debugger menu to always be displayed.</li>
+<li><strong>Text Cursor Width</strong>By default, the cursor (correctly called the caret) is 2 pixels wide, allowing it to be seen easily in the Editor window.  However, some users prefer the caret to be 1 pixel wide and some prefer the caret to overlay an entire character (in a similar manner to DOS editors). Legal values are 1 (which represent a 1 pixel thick caret), 2 (which represent a 2 pixel thick caret), and 3 (which represents a text cursor that covers the entire character.</li>
+</ul>
+
 
 <h3>"Run Window" Pane</h3>
 
-<p><strong>The "Run Window" Pane</strong>
-You can change the font size and typeface used in the Turing run window. If you change the typeface, you must choose a monospaced font. Note that changing the size of the run window font may cause odd output in Turing programs that were written assuming a particular character size.
-- <strong>Start in Graphics Mode</strong>This makes the initial run window a graphics window. The user can use graphics without the setscreen ("graphics") command in the program. Output that scrolls off the top of the screen is lost. In text mode, graphics are not allowed, but all text output is kept and can be scrolled, saved, and printed at any time.
-- <strong>Full Screen Run Window</strong>This causes the default run window to occupy the entire screen.
-- <strong>Run Window Rows/Columns</strong>This sets the size of the default run window. Changing the size may cause programs that assume a 25x80 window to malfunction.
-- <strong>Use Small Fonts on 640x480 Screen</strong>A standard 25x80 window does not quite fit on a 640x480 screen with a standard size task bar. As a result, without this option, the default graphics mode run window appears with scroll bars. This option causes Turing to use a slightly smaller font for 640x480 run windows so the entire window fits on the screen. This option may cause odd output in Turing programs that were written assuming a particular character size.</p>
+<p><img src="turing_admin05.gif" alt="Doc Image" /></p>
+
+<p><strong>The "Run Window" Pane</strong></p>
+
+<ul>
+<li><strong>Default Run Window Font</strong>You can change the font size and typeface used in the Turing run window. If you change the typeface, you must choose a monospaced font. Note that changing the size of the run window font may cause odd output in Turing programs that were written assuming a particular character size.</li>
+<li><strong>Start in Graphics Mode</strong>This makes the initial run window a graphics window. The user can use graphics without the setscreen ("graphics") command in the program. Output that scrolls off the top of the screen is lost. In text mode, graphics are not allowed, but all text output is kept and can be scrolled, saved, and printed at any time.</li>
+<li><strong>Full Screen Run Window</strong>This causes the default run window to occupy the entire screen.</li>
+<li><strong>Run Window Rows/Columns</strong>This sets the size of the default run window. Changing the size may cause programs that assume a 25x80 window to malfunction.</li>
+<li><strong>Use Small Fonts on 640x480 Screen</strong>A standard 25x80 window does not quite fit on a 640x480 screen with a standard size task bar. As a result, without this option, the default graphics mode run window appears with scroll bars. This option causes Turing to use a slightly smaller font for 640x480 run windows so the entire window fits on the screen. This option may cause odd output in Turing programs that were written assuming a particular character size.</li>
+</ul>
+
 
 <h3>"Printing" Pane</h3>
 
-<p><strong>The "Printing" Pane</strong>
-Note that the options marked with an asterisk (<em>) can be set in the printingdialog.You can change the font size and typeface used in printing. If you change the typeface, you must choose a monospaced font where bold and non-bold letters are the same size. Many monospaced fonts have different sizes for bold and non-bold letters.
+<p><img src="turing_admin06.gif" alt="Doc Image" /></p>
+
+<p><strong>The "Printing" Pane</strong></p>
+
+<p>Note that the options marked with an asterisk (<em>) can be set in the printingdialog.- <strong>Printing Font/Printing Header Font</strong>You can change the font size and typeface used in printing. If you change the typeface, you must choose a monospaced font where bold and non-bold letters are the same size. Many monospaced fonts have different sizes for bold and non-bold letters.
 - <strong>Bold Keywords/Italicize Identifiers</strong> </em>This allows for "syntax coloring" of printouts.  Keywords can be placedin bold and identifiers italicized.
 - <strong>Print Page Header</strong>On some systems, a header page is automatically printed out and there islittle reason for a page header.  Unsetting this checkbox will causeprintouts not to have any header on the printed programs.
 - <strong>User Name in Header</strong>Normally the user name is displayed in the header. However, on somesystems the user name is non-descriptive or non-existent.  This allowsyou to disable the printing of the user name on such systems.
@@ -122,8 +198,11 @@ Note that the options marked with an asterisk (<em>) can be set in the printingd
 
 <h3>"Admin" Pane</h3>
 
-<p><strong>The "Admin" Pane</strong>
-Note, the <strong>Admin</strong> pane is only available in administrator mode. Students starting Turing will not have access to this dialog box.Users will start in the directory listed in this text field. If left blank, Turing will use the working directory of the shortcut used to start Turing. If no working directory for the shortcut is specified, the directory where Turing is installed is used. Environment variables prefixed and suffixed with % signs can be used here (example: g:\students\%username%).  Note that in most cases, this text field should be blank.
+<p><img src="turing_admin07.gif" alt="Doc Image" /></p>
+
+<p><strong>The "Admin" Pane</strong></p>
+
+<p>Note, the <strong>Admin</strong> pane is only available in administrator mode. Students starting Turing will not have access to this dialog box.- <strong>Startup Directory</strong>Users will start in the directory listed in this text field. If left blank, Turing will use the working directory of the shortcut used to start Turing. If no working directory for the shortcut is specified, the directory where Turing is installed is used. Environment variables prefixed and suffixed with % signs can be used here (example: g:\students\%username%).  Note that in most cases, this text field should be blank.
 - <strong>Use "My Documents" folder</strong>The "My Documents" folder can be used as the startup directory insteadof the contents of the Startup Directory text field. This is most commonly used in single user systems.
 - <strong>Can Set User Name</strong>Allows the user to specify the user name to appear on top of printouts.This checkbox can be unset if students are choosing inappropriate user names.
 - <strong>Can Enter Regular Mode</strong>Allows the user to turn off the beginner mode preference.  This checkbox can be unset if it is desirable to have all students workingin beginner mode.
@@ -133,28 +212,50 @@ Note, the <strong>Admin</strong> pane is only available in administrator mode. S
 - <strong>No Sound or Music</strong>When set, the Turing sound and music commands do nothing.
 - <strong>Use only Startup Directory and Below</strong><strong>CAUTION!</strong> This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option will not allow students to save or load to any directory other that their startup directory or directories created in the startup directory. This option does not stop students from browsing the names of files in other directories, only from loading or saving files in them.
 - <strong>Use Only Allowed Drives</strong><strong>CAUTION!</strong> This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option allows students to load files only from the set of drives specified in the text field. The'<em>' represents network drives.
-- <strong>Forbid Use of Certain Drives</strong></em><em>CAUTION!** This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option prevents students from loadingfiles from the set of drives specified in the text field. The'</em>' represents network drives.
-5. Using the Parallel Ports in Turing 4
-Under Turing 4.0 and , it is possible to access the IBM PC's parallel port for reading and writing. This is normally done using the <strong>parallelput</strong> and <strong>parallelget</strong> commands. (In Turing 4.0, you can use <strong>PC.ParallelPut</strong> and <strong>PC.ParallelGet</strong> to access ports other than LPT1.)
-Under Windows 95/98 and Me, the operating system allows direct access to the parallel port. Under Windows NT, 2000 and XP, access to the parallel port is restricted by the operating system. In order to access the port, under Windows NT, 2000 and XP, it is necessary to install a device driver oneach machine that will be accessing the parallel port. The needed devicedriver installer is located at:</p>
+- <strong>Forbid Use of Certain Drives</strong></em><em>CAUTION!** This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option prevents students from loadingfiles from the set of drives specified in the text field. The'</em>' represents network drives.</p>
 
-<p>where <strong>[Turing directory]</strong> is the directory in which Turing was installed.  Executing this program will install the device driver in theWindows System directory of the machine upon which it is executed.
-Lastly, before accessing the parallel port, check that the parallel port is in <strong>normal</strong> mode and not in <strong>bi-directional</strong>, <strong>PS/2</strong>, <strong>EPP</strong> or <strong>ECP</strong> mode. You can determine which mode the parallel port is in using the Device Manager. In the list of devices in the Device Manager window, double click <strong>Ports (COM and LPT)</strong>, and then the <strong>LPT</strong> (or <strong>PRN</strong>) port. This displays a property sheet about the parallel port. Take a look at what it says about it. If it is in a non-original mode (i.e. mentions <strong>bi-directional</strong>, <strong>PS/2</strong>, <strong>EPP</strong> or <strong>ECP</strong> mode), then you will probably need to adjust the systems BIOS settings.
-(Under Windows 2000 the Device Manager can be displayed by selecting the System Control Panel from Settings in the Start menu. Select the Hardware tab and then click the Device Manager button.)
-If the setting for the parallel port needs to be changed, restart the machine, and press the appropriate key to enter the BIOS Set Up Program (the key varies between machines, but is usually noted on the screen).  Often the parallel port settings are found in <strong>Advanced Settings</strong> of the program.  The parallel port should be set to <strong>Normal</strong>, <strong>Standard</strong>, <strong>AT</strong> or <strong>Unidirectional</strong> mode.  (All four names are different descriptions of the same mode.) Once this is done and the new settings are saved, then start the machine into Windows.  Once in Windows, select <strong>Shut Down</strong>and turn the machine completely off.  Once the machine is off, wait at least 10 seconds in the powered-off state.  Then restart the machine.(While shutting down the machine should not be necessary, we have had severalcases where the change only <em>took</em> when the machine had been powered-downand restarted.)##6. Missing Features from Turing 4
+<h2>5. Using the Parallel Ports in Turing 4</h2>
+
+<p>Under Turing 4.0 and , it is possible to access the IBM PC's parallel port for reading and writing. This is normally done using the <strong>parallelput</strong> and <strong>parallelget</strong> commands. (In Turing 4.0, you can use <strong>PC.ParallelPut</strong> and <strong>PC.ParallelGet</strong> to access ports other than LPT1.)</p>
+
+<p>Under Windows 95/98 and Me, the operating system allows direct access to the parallel port. Under Windows NT, 2000 and XP, access to the parallel port is restricted by the operating system. In order to access the port, under Windows NT, 2000 and XP, it is necessary to install a device driver oneach machine that will be accessing the parallel port. The needed devicedriver installer is located at:</p>
+
+<p>[Turing directory]\support\dlportio_install.exe</p>
+
+<p>where <strong>[Turing directory]</strong> is the directory in which Turing was installed.  Executing this program will install the device driver in theWindows System directory of the machine upon which it is executed.</p>
+
+<p>Lastly, before accessing the parallel port, check that the parallel port is in <strong>normal</strong> mode and not in <strong>bi-directional</strong>, <strong>PS/2</strong>, <strong>EPP</strong> or <strong>ECP</strong> mode. You can determine which mode the parallel port is in using the Device Manager. In the list of devices in the Device Manager window, double click <strong>Ports (COM and LPT)</strong>, and then the <strong>LPT</strong> (or <strong>PRN</strong>) port. This displays a property sheet about the parallel port. Take a look at what it says about it. If it is in a non-original mode (i.e. mentions <strong>bi-directional</strong>, <strong>PS/2</strong>, <strong>EPP</strong> or <strong>ECP</strong> mode), then you will probably need to adjust the systems BIOS settings.</p>
+
+<p>(Under Windows 2000 the Device Manager can be displayed by selecting the System Control Panel from Settings in the Start menu. Select the Hardware tab and then click the Device Manager button.)</p>
+
+<p>If the setting for the parallel port needs to be changed, restart the machine, and press the appropriate key to enter the BIOS Set Up Program (the key varies between machines, but is usually noted on the screen).  Often the parallel port settings are found in <strong>Advanced Settings</strong> of the program.  The parallel port should be set to <strong>Normal</strong>, <strong>Standard</strong>, <strong>AT</strong> or <strong>Unidirectional</strong> mode.  (All four names are different descriptions of the same mode.) Once this is done and the new settings are saved, then start the machine into Windows.  Once in Windows, select <strong>Shut Down</strong>and turn the machine completely off.  Once the machine is off, wait at least 10 seconds in the powered-off state.  Then restart the machine.(While shutting down the machine should not be necessary, we have had severalcases where the change only <em>took</em> when the machine had been powered-downand restarted.)##6. Missing Features from Turing 4
 Turing 4.0 does not yet incorporate all the features that currently exist in Object Oriented Turing 3.1.1 and are intended for future Turing releases. Over the next few months, new features will be added and updates to Turing will be made available on our web site. The features to be added are:- View Variables
 - The Sprite module
-If you have immediate need of any of these features, please continue to use the Object Oriented Turing 3.1.1 software. Ontario users can obtain the software through their OESS software representative.
-To determine the current release of Turing, check the Turing web site at7. The Turing Debugger
-The current version of Turing has a Debugger facilities that allow studentsto follow execution of a program either pausing after each line of executionor executing slowly while highlighting each line of execution.  Because ofthe confusing nature of the debugger for many students, the default configuration of Turing does not display the debugger menu until the studentrequests it by selecting the <strong>Show Debugger Menu</strong> from the <strong>Run</strong> menu.
-<strong>Always Show 'Debugger' Menu in the Editor Window Pane</strong>
-If you wish students to have a more regular exposure to the Debugger, youcan set a System preference to cause Turing to always display the Debugger menu. To set the this preference, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Always Show 'Debugger' Menu</strong> checkbox in the<strong>Editor Window</strong> pane of the Turing Preferences.##8. Student Distribution of Turing 4.0
-The Ontario Ministry license does not include the right to redistribute the software to students. If you wish to give the software to students, a separate license must be obtained directly from Holt Software.
-If your school does not have such a license, students can purchase the software for home use by printing and then mailing an order form found<a href="http://www.holtsoft.com/studentbuy">http://www.holtsoft.com/studentbuy</a>.  This order form can also be used to allow interested students to purchase textbooks.
-If your school has purchased a redistribution license (almost 200 schools havedone so), then you may redistribute the Turing software to your students. You can either burn copies of the CD to distribute to students or place the Turing installer file onto your school Internet server and give your students the URL.
-<strong>If you place this file on your school internet server, you must not make any links from your web pages to the software.</strong>
-This will prevent other users of the web from downloading your software. If you place links from your school's web site, then at some point a web search engine will find the software and post its location to the internet at large, allowing for large scale piracy (and a very overloaded school web server). If there are no links to the software, then only those who have been told the exact URL will be able to download the software.
-Note that if you are copying a number of different programs onto a single CD for redistribution, you may rename the Turing installer program to something more descriptive.
-Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or <a href="chris@hsa.on.ca">mailto:chris@hsa.on.ca</a>##9. Technical Support
+If you have immediate need of any of these features, please continue to use the Object Oriented Turing 3.1.1 software. Ontario users can obtain the software through their OESS software representative.</p>
+
+<p>To determine the current release of Turing, check the Turing web site at<a href="http://www.holtsoft.com/turing/support">http://www.holtsoft.com/turing/support/#currentversion</a>##7. The Turing Debugger
+The current version of Turing has a Debugger facilities that allow studentsto follow execution of a program either pausing after each line of executionor executing slowly while highlighting each line of execution.  Because ofthe confusing nature of the debugger for many students, the default configuration of Turing does not display the debugger menu until the studentrequests it by selecting the <strong>Show Debugger Menu</strong> from the <strong>Run</strong> menu.</p>
+
+<p><img src="turing_admin10.gif" alt="Doc Image" /></p>
+
+<p><strong>Always Show 'Debugger' Menu in the Editor Window Pane</strong></p>
+
+<p>If you wish students to have a more regular exposure to the Debugger, youcan set a System preference to cause Turing to always display the Debugger menu. To set the this preference, enter Administrator mode (see <a href="Changing%20System%20Preferences"></a> below) and set the <strong>Always Show 'Debugger' Menu</strong> checkbox in the<strong>Editor Window</strong> pane of the Turing Preferences.##8. Student Distribution of Turing 4.0
+The Ontario Ministry license does not include the right to redistribute the software to students. If you wish to give the software to students, a separate license must be obtained directly from Holt Software.</p>
+
+<p>If your school does not have such a license, students can purchase the software for home use by printing and then mailing an order form found<a href="http://www.holtsoft.com/studentbuy">http://www.holtsoft.com/studentbuy</a>.  This order form can also be used to allow interested students to purchase textbooks.</p>
+
+<p>If your school has purchased a redistribution license (almost 200 schools havedone so), then you may redistribute the Turing software to your students. You can either burn copies of the CD to distribute to students or place the Turing installer file onto your school Internet server and give your students the URL.</p>
+
+<p><strong>If you place this file on your school internet server, you must not make any links from your web pages to the software.</strong></p>
+
+<p>This will prevent other users of the web from downloading your software. If you place links from your school's web site, then at some point a web search engine will find the software and post its location to the internet at large, allowing for large scale piracy (and a very overloaded school web server). If there are no links to the software, then only those who have been told the exact URL will be able to download the software.</p>
+
+<p>Note that if you are copying a number of different programs onto a single CD for redistribution, you may rename the Turing installer program to something more descriptive.</p>
+
+<p>Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or <a href="chris@hsa.on.ca">mailto:chris@hsa.on.ca</a>##9. Technical Support
 If you have problems, questions or suggestions about the Turing software, contact technical support at:
- </p>
+Telephone:   (416) 978-8363
+Toll free:  1-800-361-8324
+Fax:  (416) 978-1509
+E-mail:  <a href="west@hsa.on.ca">mailto:west@hsa.on.ca</a></p>

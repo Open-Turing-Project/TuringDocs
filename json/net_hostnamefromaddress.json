@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.HostNameFromAddress </b>( <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>hostAddr</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Net.HostNameFromAddress ( \r\n    hostAddr : string) : string\r\n",
-      "mdown_content": "**Net.HostNameFromAddress** (     _hostAddr_ : **string**) : **string**"
+      "mdown_content": "**Net.HostNameFromAddress** (     _hostAddr_ : **string**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns<b> </b>the TCP/IP hostname of the machine whose numeric address is specified by the <i>hostAddr</i> parameter.<p>\r\n</p>",
       "text_content": " Returns the TCP/IP hostname of the machine whose numeric address is specified by the hostAddr parameter.\r\n",
-      "mdown_content": "Returns the TCP/IP hostname of the machine whose numeric address is specified by the _hostAddr_ parameter."
+      "mdown_content": "Returns the TCP/IP hostname of the machine whose numeric address is specified by the _hostAddr_ parameter.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
       "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\n\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
     },
     {
       "title": "Example",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "The following program prints out the hostname of the machine whose TCP/IP numeric address is \"128.100.5.1\".<p>\r\n</p>",
       "text_content": " The following program prints out the hostname of the machine whose TCP/IP numeric address is \"128.100.5.1\".\r\n\r\n",
-      "mdown_content": "The following program prints out the hostname of the machine whose TCP/IP numeric address is \"128.100.5.1\"."
+      "mdown_content": "The following program prints out the hostname of the machine whose TCP/IP numeric address is \"128.100.5.1\".\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.HostNameFromAddress</b>, not by calling <b>LocalName</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.HostNameFromAddress, not by calling LocalName.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.HostNameFromAddress**, not by calling **LocalName**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Net.HostNameFromAddress**, not by calling **LocalName**.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_hostaddressfromname.html\">Net.HostAddressFromName</a></b>.<p>\r\n</p>",
       "text_content": " Net.HostAddressFromName.\r\n",
-      "mdown_content": "**[net_hostaddressfromname.html](Net.HostAddressFromName)**."
+      "mdown_content": "**[net_hostaddressfromname.html](Net.HostAddressFromName)**.\n"
     }
   ],
   "dependencies": [

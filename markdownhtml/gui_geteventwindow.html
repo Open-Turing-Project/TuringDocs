@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an <em>action procedure</em> or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.
-This function is commonly used when several windows share the same layout. The same buttons in each window point to the same <em>action procedures</em>. To determine which button was actually pressed, the function is called to get the window.</p>
+<p>Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an <em>action procedure</em> or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.</p>
+
+<p>This function is commonly used when several windows share the same layout. The same buttons in each window point to the same <em>action procedures</em>. To determine which button was actually pressed, the function is called to get the window.</p>
 
 <h2>Example</h2>
 
@@ -36,8 +37,9 @@ This function is commonly used when several windows share the same layout. The s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.GetEventWindow</strong>, not by calling <strong>GetEventWindow</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.GetEventWindow</strong>, not by calling <strong>GetEventWindow</strong>.</p>
 
 <h2>See also</h2>
 

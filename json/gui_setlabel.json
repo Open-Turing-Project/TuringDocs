@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetLabel</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetLabel (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)"
+      "mdown_content": "**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Changes the text of a widget specified by <i>widgetID</i> to <i>text</i>. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the <i>widgetID</i> parameter.<p>\r\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original <i>width</i> specified and the new text.</p>\n<p>\r\n</p>",
       "text_content": " Changes the text of a widget specified by widgetID to text. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the widgetID parameter.\r\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original width specified and the new text.\r\n",
-      "mdown_content": "Changes the text of a widget specified by _widgetID_ to _text_. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the _widgetID_ parameter.\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original _width_ specified and the new text."
+      "mdown_content": "Changes the text of a widget specified by _widgetID_ to _text_. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the _widgetID_ parameter.\n\nIn most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original _width_ specified and the new text.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to \"Quit\", the button assumes a width of 100 again.<p>\r\n</p>",
       "text_content": " The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to \"Quit\", the button assumes a width of 100 again.\r\n\r\n",
-      "mdown_content": "The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to \"Quit\", the button assumes a width of 100 again."
+      "mdown_content": "The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to \"Quit\", the button assumes a width of 100 again.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetLabel</b>, not by calling <b>SetLabel</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetLabel, not by calling SetLabel.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetLabel**, not by calling **SetLabel**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetLabel**, not by calling **SetLabel**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b>GUI.CreateButton</b>, <b>GUI.CreateCheckBox</b>, <b>GUI.CreateRadioButton</b>, <b>GUI.CreateLabel</b>, and <b><a href=\"gui_createlabelledframe.html\">GUI.CreateLabelledFrame</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateButton, GUI.CreateCheckBox, GUI.CreateRadioButton, GUI.CreateLabel, and GUI.CreateLabelledFrame.\r\n",
-      "mdown_content": "**GUI.CreateButton**, **GUI.CreateCheckBox**, **GUI.CreateRadioButton**, **GUI.CreateLabel**, and **[gui_createlabelledframe.html](GUI.CreateLabelledFrame)**."
+      "mdown_content": "**GUI.CreateButton**, **GUI.CreateCheckBox**, **GUI.CreateRadioButton**, **GUI.CreateLabel**, and **[gui_createlabelledframe.html](GUI.CreateLabelledFrame)**.\n"
     }
   ],
   "dependencies": [

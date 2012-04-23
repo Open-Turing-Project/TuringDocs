@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.<p>\r\nAll routines in the <b>PC</b> unit are exported qualified (and thus must be prefaced with \"<b>PC.</b>\").</p>\n<p>\r\n</p>",
       "text_content": " This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.\r\nAll routines in the PC unit are exported qualified (and thus must be prefaced with \"PC.\").\r\n",
-      "mdown_content": "This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.\nAll routines in the **PC** unit are exported qualified (and thus must be prefaced with \"**PC.**\")."
+      "mdown_content": "This unit contains the predefined subprograms that deal with direct access to the hardware under the IBM PC architecture.\n\nAll routines in the **PC** unit are exported qualified (and thus must be prefaced with \"**PC.**\").\n"
     },
     {
       "title": "Entry Points",
@@ -16,7 +16,7 @@
       ],
       "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"pc_parallelget.html\"><b>ParallelGet</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns the value of the pins set on the parallel port.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"pc_parallelput.html\"><b>ParallelPut</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Sets the values of the pins on the parallel port.</td>\n</tr>\n</table>",
       "text_content": "ParallelGet Returns the value of the pins set on the parallel port.ParallelPut Sets the values of the pins on the parallel port.",
-      "mdown_content": "\n[pc_parallelget.html](**ParallelGet**) Returns the value of the pins set on the parallel port.\n[pc_parallelput.html](**ParallelPut**) Sets the values of the pins on the parallel port."
+      "mdown_content": "\n[pc_parallelget.html](**ParallelGet**)   Returns the value of the pins set on the parallel port.\n[pc_parallelput.html](**ParallelPut**)   Sets the values of the pins on the parallel port."
     }
   ],
   "dependencies": [

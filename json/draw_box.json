@@ -6,16 +6,16 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Box</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.Box (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**Draw.Box** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
+      "mdown_content": "**Draw.Box** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "images": [
         "draw_box01.gif"
       ],
-      "raw_content": "The <b>Draw.Box </b>procedure is used to draw a box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center></center>",
+      "raw_content": "The <b>Draw.Box </b>procedure is used to draw a box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>\r\n\r\n</p>\n<center><img src=\"draw_box01.gif\"></center>",
       "text_content": " The Draw.Box procedure is used to draw a box on the screen with bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.Box** procedure is used to draw a box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_."
+      "mdown_content": "The **Draw.Box** procedure is used to draw a box on the screen with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_.\n\n\n\n![Doc Image](draw_box01.gif)\n"
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (<b>maxx</b>, <b>maxy</b>) is the right top.<p>\r\n</p>",
       "text_content": " This program draws a large box, reaching to each corner of the screen using color number 12. The maxx and maxy functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (maxx, maxy) is the right top.\r\n\r\n    ",
-      "mdown_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (**maxx**, **maxy**) is the right top."
+      "mdown_content": "This program draws a large box, reaching to each corner of the screen using color number 12. The **maxx** and **maxy** functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (**maxx**, **maxy**) is the right top.\n"
     },
     {
       "title": "Execute",
@@ -40,13 +40,13 @@
       "title": "Details",
       "raw_content": "The screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.<p>\r\n</p>",
       "text_content": " The screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
+      "mdown_content": "The screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.Box</b>, not by calling <b>Box</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.Box, not by calling Box.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Box**, not by calling **Box**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Draw.Box**, not by calling **Box**.\n"
     },
     {
       "title": "See also",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
       "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
+      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit.\n"
     }
   ],
   "dependencies": [

@@ -6,22 +6,22 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Sizes</b> (<i>fontID</i> : <b>int</b>, <b>var</b> <i>height</i>, <i>ascent</i>, <i>descent</i>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"4\"><font size=\"+1\"><i>internalLeading</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " Font.Sizes (fontID : int, var height, ascent, descent,      internalLeading : int)",
-      "mdown_content": "**Font.Sizes** (_fontID_ : **int**, **var** _height_, _ascent_, _descent_, \n_internalLeading_ : **int**)\n"
+      "mdown_content": "**Font.Sizes** (_fontID_ : **int**, **var** _height_, _ascent_, _descent_, \n_internalLeading_ : **int**)\n\n"
     },
     {
       "title": "Description",
       "images": [
         "font_sizes01.gif"
       ],
-      "raw_content": "<b>Font.Sizes </b>is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.<p>\r\n\r\n</p>\n<center></center>",
+      "raw_content": "<b>Font.Sizes </b>is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.<p>\r\n\r\n</p>\n<center><img src=\"font_sizes01.gif\"></center>",
       "text_content": " Font.Sizes is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.\r\n\r\n\r\n",
-      "mdown_content": "**Font.Sizes** is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height."
+      "mdown_content": "**Font.Sizes** is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.\n\n\n\n![Doc Image](font_sizes01.gif)\n"
     },
     {
       "title": "Details",
       "raw_content": "If <b>Font.Sizes</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Sizes</b> call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If Font.Sizes is passed an invalid font ID, a fatal error occurs. If the Font.Sizes call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If **Font.Sizes** is passed an invalid font ID, a fatal error occurs. If the **Font.Sizes** call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If **Font.Sizes** is passed an invalid font ID, a fatal error occurs. If the **Font.Sizes** call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Example",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "The program gets information about 24pt Bold Italic Palatino.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": " The program gets information about 24pt Bold Italic Palatino.\r\n\r\n    ",
-      "mdown_content": "The program gets information about 24pt Bold Italic Palatino.\n"
+      "mdown_content": "The program gets information about 24pt Bold Italic Palatino.\n\n\n"
     },
     {
       "title": "Execute",
@@ -46,7 +46,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.Sizes</b>, not by calling <b>Sizes</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.Sizes, not by calling Sizes.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Sizes**, not by calling **Sizes**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Font.Sizes**, not by calling **Sizes**.\n"
     }
   ],
   "dependencies": [

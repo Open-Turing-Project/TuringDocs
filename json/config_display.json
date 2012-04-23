@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Config.Display</b> (<i>displayCode</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Config.Display (displayCode : int) : int\r\n",
-      "mdown_content": "**Config.Display** (_displayCode_ : **int**) : **int**"
+      "mdown_content": "**Config.Display** (_displayCode_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Config.Display</b> returns information about the display (or displays) attached to the computer. The parameter <i>displayCode</i> determines what sort of information is passed back. <i>displayCode</i> has a number of possible values, all summarized by a set of predefined constants.<p>\r\nAt the time of this writing, the following constants were defined:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td><i>cdScreenHeight</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the height of the screen in pixels.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>cdScreenWidth</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the width of the screen in pixels.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>cdMaxNumColors</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the maximum number of colors supported by the display.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>cdMaxNumColours</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>return the maximum number of colors supported by the display.</td>\n</tr>\n</table>\n<p>\r\n</p>",
       "text_content": " Config.Display returns information about the display (or displays) attached to the computer. The parameter displayCode determines what sort of information is passed back. displayCode has a number of possible values, all summarized by a set of predefined constants.\r\nAt the time of this writing, the following constants were defined:\r\ncdScreenHeight return the height of the screen in pixels.cdScreenWidth return the width of the screen in pixels.cdMaxNumColors return the maximum number of colors supported by the display.cdMaxNumColours return the maximum number of colors supported by the display.\r\n",
-      "mdown_content": "**Config.Display** returns information about the display (or displays) attached to the computer. The parameter _displayCode_ determines what sort of information is passed back. _displayCode_ has a number of possible values, all summarized by a set of predefined constants.\nAt the time of this writing, the following constants were defined:\n\n_cdScreenHeight_ return the height of the screen in pixels.\n_cdScreenWidth_ return the width of the screen in pixels.\n_cdMaxNumColors_ return the maximum number of colors supported by the display.\n_cdMaxNumColours_ return the maximum number of colors supported by the display.\n"
+      "mdown_content": "**Config.Display** returns information about the display (or displays) attached to the computer. The parameter _displayCode_ determines what sort of information is passed back. _displayCode_ has a number of possible values, all summarized by a set of predefined constants.\n\nAt the time of this writing, the following constants were defined:\n\n\n_cdScreenHeight_   return the height of the screen in pixels.\n_cdScreenWidth_   return the width of the screen in pixels.\n_cdMaxNumColors_   return the maximum number of colors supported by the display.\n_cdMaxNumColours_   return the maximum number of colors supported by the display.\n\n"
     },
     {
       "title": "Execute",
@@ -31,13 +31,13 @@
       ],
       "raw_content": "This program prints the screen width and height.<p>\r\n</p>",
       "text_content": " This program prints the screen width and height.\r\n\r\n",
-      "mdown_content": "This program prints the screen width and height."
+      "mdown_content": "This program prints the screen width and height.\n"
     },
     {
       "title": "Details",
       "raw_content": "On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call <b>Config.Display</b> with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays.<p>\r\n</p>",
       "text_content": " On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call Config.Display with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays.\r\n",
-      "mdown_content": "On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call **Config.Display** with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays."
+      "mdown_content": "On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call **Config.Display** with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays.\n"
     },
     {
       "title": "Example",
@@ -46,13 +46,13 @@
       ],
       "raw_content": "This program prints the screen width and height of the second display on a Macintosh.<p>\r\n</p>",
       "text_content": " This program prints the screen width and height of the second display on a Macintosh.\r\n\r\n",
-      "mdown_content": "This program prints the screen width and height of the second display on a Macintosh."
+      "mdown_content": "This program prints the screen width and height of the second display on a Macintosh.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Config.Display</b>, not by calling <b>Display</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Config.Display, not by calling Display.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Config.Display**, not by calling **Display**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Config.Display**, not by calling **Display**.\n"
     }
   ],
   "dependencies": [

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetKeyEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>keyEventHandler</i> : <b>procedure</b> <i>x</i> (<i>ch</i> : <b>char</b>))<p>\r\n</p></font>",
       "text_content": " GUI.SetKeyEventHandler (\r\n    keyEventHandler : procedure x (ch : char))\r\n",
-      "mdown_content": "**GUI.SetKeyEventHandler** (    _keyEventHandler_ : **procedure** _x_ (_ch_ : **char**))"
+      "mdown_content": "**GUI.SetKeyEventHandler** (    _keyEventHandler_ : **procedure** _x_ (_ch_ : **char**))\n"
     },
     {
       "title": "Description",
       "raw_content": "Sets the new default keystroke event handler. The <i>keyEventHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there is a keystroke which is not handled by any widget. The <i>ch</i> parameter in the <i>keyEventHandler</i> is the keystroke typed by the user.<p>\r\nThis procedure is often used to allow for more than one shortcut character for a given button.</p>\n<p>\r\n</p>",
       "text_content": " Sets the new default keystroke event handler. The keyEventHandler parameter is the name of a procedure that is called every time GUI.ProcessEvent is called and there is a keystroke which is not handled by any widget. The ch parameter in the keyEventHandler is the keystroke typed by the user.\r\nThis procedure is often used to allow for more than one shortcut character for a given button.\r\n",
-      "mdown_content": "Sets the new default keystroke event handler. The _keyEventHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a keystroke which is not handled by any widget. The _ch_ parameter in the _keyEventHandler_ is the keystroke typed by the user.\nThis procedure is often used to allow for more than one shortcut character for a given button."
+      "mdown_content": "Sets the new default keystroke event handler. The _keyEventHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a keystroke which is not handled by any widget. The _ch_ parameter in the _keyEventHandler_ is the keystroke typed by the user.\n\nThis procedure is often used to allow for more than one shortcut character for a given button.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER.<p>\r\n</p>",
       "text_content": " The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER.\r\n\r\n",
-      "mdown_content": "The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER."
+      "mdown_content": "The following program draws a star or quits depening on the button. The Draw Star button can be activated by clicking on it or typing 'D', 'd', 'S', 's' or Ctrl+S. The Quit button can be activate by typing 'Q', 'q' or Ctrl+Q. The Draw Star button is also the default button. It is activated whenever the user presses ENTER.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetKeyEventHandler</b>, not by calling <b>SetKeyEventHandler</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetKeyEventHandler, not by calling SetKeyEventHandler.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetKeyEventHandler**, not by calling **SetKeyEventHandler**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetKeyEventHandler**, not by calling **SetKeyEventHandler**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ProcessEvent.\r\n",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\n"
     }
   ],
   "dependencies": [

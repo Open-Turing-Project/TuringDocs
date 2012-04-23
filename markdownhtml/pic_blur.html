@@ -10,15 +10,21 @@
 
 <h2>Details</h2>
 
-<p>Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.
-Note that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when <em>blurAmount</em> is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.</p>
+<p>Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using <strong>Pic.Free</strong>.</p>
+
+<p>Note that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when <em>blurAmount</em> is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.</p>
 
 <h2>Example</h2>
 
 <p>The program creates a picture and then progressively blurs it.</p>
 
-<p><img src="pic_blur01.gif" alt="Doc image" />
-<img src="pic_blur02.gif" alt="Doc image" /></p>
+<p><img src="pic_blur01.gif" alt="Doc Image" /></p>
+
+<p><strong>Output at start</strong></p>
+
+<p><img src="pic_blur02.gif" alt="Doc Image" /></p>
+
+<p><strong>After several loops</strong></p>
 
 <pre><code>    View.Set ("graphics:270;120,nobuttonbar")
     % Create the original picture
@@ -47,5 +53,6 @@ Font.Draw ("Turing", 10, 30, f, red)
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Blur</strong>, not by calling <strong>Blur</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Blur</strong>, not by calling <strong>Blur</strong>.</p>

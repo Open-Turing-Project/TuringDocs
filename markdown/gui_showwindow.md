@@ -5,10 +5,8 @@
 **GUI.ShowWindow** (_window_ : **int**)
 
 
-
 ##Description
 Hides a window with widgets in it. This procedure makes certain that the GUI Library recognizes that the window no longer visible. This procedure will call _Window.Hide_, so there is no need for the user to do so.
-
 
 
 ##Example
@@ -56,11 +54,10 @@ The program opens up a window with two buttons. If the button labelled "Close an
 
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.ShowWindow**, not by calling **ShowWindow**.
 
+This means that you can only call the function by calling **GUI.ShowWindow**, not by calling **ShowWindow**.
 
 
 ##See also
 **[gui_hidewindow.html](GUI.HideWindow)**for hiding a window with widgets in it.See also **[gui_closewindow.html](GUI.CloseWindow)**for closing a window with widgets in it.
-
 

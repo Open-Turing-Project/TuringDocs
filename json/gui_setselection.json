@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSelection</b> (<i>widgetID</i>, <i>fromSel</i>, <i>toSel</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSelection (widgetID, fromSel, toSel : int)\r\n",
-      "mdown_content": "**GUI.SetSelection** (_widgetID_, _fromSel_, _toSel_ : **int**)"
+      "mdown_content": "**GUI.SetSelection** (_widgetID_, _fromSel_, _toSel_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Sets the selected text in the text field specified by <i>widgetID</i>. The value of the <i>fromSel</i> and <i>toSel</i> parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting <i>fromSel</i> to 2 and <i>toSel</i> to 5 would select \"ell\". Setting <i>fromSel</i> and <i>toSel</i> to 1 automatically selects the entire text.<p>\r\nThe <i>fromSel</i> parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <i>fromSel</i> and <i>toSel</i> selects the entire text.</p>\n<p>\r\nThe <i>toSel</i> parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both <i>fromSel</i> and <i>toSel</i> selects the entire text.</p>\n<p>\r\n</p>",
       "text_content": " Sets the selected text in the text field specified by widgetID. The value of the fromSel and toSel parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting fromSel to 2 and toSel to 5 would select \"ell\". Setting fromSel and toSel to 1 automatically selects the entire text.\r\nThe fromSel parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both fromSel and toSel selects the entire text.\r\nThe toSel parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both fromSel and toSel selects the entire text.\r\n",
-      "mdown_content": "Sets the selected text in the text field specified by _widgetID_. The value of the _fromSel_ and _toSel_ parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting _fromSel_ to 2 and _toSel_ to 5 would select \"ell\". Setting _fromSel_ and _toSel_ to 1 automatically selects the entire text.\nThe _fromSel_ parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text.\nThe _toSel_ parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text."
+      "mdown_content": "Sets the selected text in the text field specified by _widgetID_. The value of the _fromSel_ and _toSel_ parameters indicate the characters where the selection will begin and end. For example, if the text was \"Hello there\", setting _fromSel_ to 2 and _toSel_ to 5 would select \"ell\". Setting _fromSel_ and _toSel_ to 1 automatically selects the entire text.\n\nThe _fromSel_ parameter specifies the start of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text.\n\nThe _toSel_ parameter specifies the end of the selection. This ranges from 1 (before the first character) to the number of characters in the text + 1 (after the last character). A value of 1 for both _fromSel_ and _toSel_ selects the entire text.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates.<p>\r\n</p>",
       "text_content": " The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates.\r\n\r\n",
-      "mdown_content": "The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates."
+      "mdown_content": "The following program allows the user to type into a text field. When the user presses ENTER, it searches for any non-lowercase text and if it finds any, selects it to make it easy for the user to correct it. If all the input is lower-case text, the program terminates.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSelection</b>, not by calling <b>SetSelection</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetSelection, not by calling SetSelection.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSelection**, not by calling **SetSelection**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetSelection**, not by calling **SetSelection**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextField</b>.<p>\r\n</p>",
       "text_content": " GUI.CreateTextField.\r\n",
-      "mdown_content": "**GUI.CreateTextField**."
+      "mdown_content": "**GUI.CreateTextField**.\n"
     }
   ],
   "dependencies": [

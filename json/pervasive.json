@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "When a variable, constant, type or subprogram is declared, you can specify that it is to be <b>pervasive</b>, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword <b>pervasive</b> can be abbreviated as an asterisk (*).<p>\r\n</p>",
       "text_content": " When a variable, constant, type or subprogram is declared, you can specify that it is to be pervasive, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword pervasive can be abbreviated as an asterisk (*).\r\n",
-      "mdown_content": "When a variable, constant, type or subprogram is declared, you can specify that it is to be **pervasive**, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword **pervasive** can be abbreviated as an asterisk (*)."
+      "mdown_content": "When a variable, constant, type or subprogram is declared, you can specify that it is to be **pervasive**, which means that it does not need to be explicitly imported into modules, monitors or classes in the current scope. The keyword **pervasive** can be abbreviated as an asterisk (*).\n"
     },
     {
       "title": "Example",
@@ -15,13 +15,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Details",
       "raw_content": "The keyword <b>pervasive</b> is also used in <b>export</b> lists along with the keyword <b>unqualified</b>. See <b>export</b> list for details.<p>\r\n</p>",
       "text_content": " The keyword pervasive is also used in export lists along with the keyword unqualified. See export list for details.\r\n",
-      "mdown_content": "The keyword **pervasive** is also used in **export** lists along with the keyword **unqualified**. See **export** list for details."
+      "mdown_content": "The keyword **pervasive** is also used in **export** lists along with the keyword **unqualified**. See **export** list for details.\n"
     },
     {
       "title": "See also",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"var.html\">var</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"const.html\">const</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"procedure.html\">procedure</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"function.html\">function</a></b> <a href=\"declaration.html\">declaration</a>, <b>subprogram</b> header and <b><a href=\"export.html\">export</a></b> list for uses of <b><a href=\"\">pervasive</a></b>.<p>\r\n</p>",
       "text_content": " var declaration, const declaration, procedure declaration, function declaration, subprogram header and export list for uses of pervasive.\r\n",
-      "mdown_content": "**[var.html](var)** [declaration.html](declaration), **[const.html](const)** [declaration.html](declaration), **[procedure.html](procedure)** [declaration.html](declaration), **[function.html](function)** [declaration.html](declaration), **subprogram** header and **[export.html](export)** list for uses of **[](pervasive)**."
+      "mdown_content": "**[var.html](var)** [declaration.html](declaration), **[const.html](const)** [declaration.html](declaration), **[procedure.html](procedure)** [declaration.html](declaration), **[function.html](function)** [declaration.html](declaration), **subprogram** header and **[export.html](export)** list for uses of **[](pervasive)**.\n"
     }
   ],
   "dependencies": [

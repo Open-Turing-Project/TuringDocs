@@ -46,17 +46,27 @@
 
 <h2>Details</h2>
 
-<p>The type <strong>string</strong> (or <strong>char</strong>(<em>n</em>)) is used instead of <strong>char</strong> when more than one character needs to be stored, such as the string of characters <em>Henry</em>. Unless the program needs to be quite efficient, it is usually easier to use the <strong>string</strong> type. See also the <strong>char</strong>(<em>n</em>) type, which always stores exactly <em>n</em> characters.
-The <strong>char</strong> type differs from the <strong>string</strong>(1) type in the following way: <strong>char</strong> always represents exactly one character, while <strong>string</strong>(1) can represent either the null string or a string containing one character. The <strong>char</strong> type is similar to the <strong>char</strong>(1) type in that both contain at most one character.
-The <strong>char</strong> type is an index type and can be used, for example, as subscripts, <strong>for</strong> ranges and <strong>case</strong> labels. For example, this declaration</p>
+<p>The type <strong>string</strong> (or <strong>char</strong>(<em>n</em>)) is used instead of <strong>char</strong> when more than one character needs to be stored, such as the string of characters <em>Henry</em>. Unless the program needs to be quite efficient, it is usually easier to use the <strong>string</strong> type. See also the <strong>char</strong>(<em>n</em>) type, which always stores exactly <em>n</em> characters.</p>
 
-<p>creates an array whose subscripts are characters.
-The <strong>char</strong> type is a scalar type, which implies that its parameters are passed by value, instead of by reference (which is the case for <strong>char</strong>(<em>n</em>) and <strong>string</strong>).
-Values of the <strong>char</strong> type can be assigned and they can be compared for both equality and ordering. Explicit <strong>char</strong> constants are written as a character surrounded by single quotes, for example, 'A'. For details, including how to write control characters, see <em>explicitCharConstant</em>.
-Characters can be read and written by <strong>get</strong> and <strong>put</strong> statements.
-There are 256 <strong>char</strong> values, corresponding to the distinct patterns in an 8-bit byte. This allows the patterns <em>eos</em> (internal value 0) and <em>uninitchar</em> (internal value 128) to be <strong>char</strong> values (these patterns are not allowed in the <strong>string</strong> type; see the <strong>string</strong> type). All 256 patterns are used, so there is no pattern left to be the "uninitialized value". Uninitialized checking is not done for the <strong>char</strong> type.
-The <strong>ord</strong> and <strong>chr</strong> functions convert between the <strong>char</strong> values and their corresponding numeric representation in a byte. See <strong>ord</strong> and <strong>chr</strong>.
-In general, you can freely intermix the values of the types <strong>char</strong>, <strong>char</strong>(<em>n</em>) and <strong>string</strong>. This means that catenation (+), comparisons, <strong>length</strong> and substrings can be applied to any of these types. See <strong>char</strong>(<em>n</em>) for details about conversions between <strong>char</strong>, <strong>char</strong>(<em>n</em>) and <strong>string</strong>.</p>
+<p>The <strong>char</strong> type differs from the <strong>string</strong>(1) type in the following way: <strong>char</strong> always represents exactly one character, while <strong>string</strong>(1) can represent either the null string or a string containing one character. The <strong>char</strong> type is similar to the <strong>char</strong>(1) type in that both contain at most one character.</p>
+
+<p>The <strong>char</strong> type is an index type and can be used, for example, as subscripts, <strong>for</strong> ranges and <strong>case</strong> labels. For example, this declaration</p>
+
+<p><strong>var</strong> <em>charCounts</em> : a<strong>rray</strong> <strong>char</strong> <strong>of</strong> <strong>int</strong></p>
+
+<p>creates an array whose subscripts are characters.</p>
+
+<p>The <strong>char</strong> type is a scalar type, which implies that its parameters are passed by value, instead of by reference (which is the case for <strong>char</strong>(<em>n</em>) and <strong>string</strong>).</p>
+
+<p>Values of the <strong>char</strong> type can be assigned and they can be compared for both equality and ordering. Explicit <strong>char</strong> constants are written as a character surrounded by single quotes, for example, 'A'. For details, including how to write control characters, see <em>explicitCharConstant</em>.</p>
+
+<p>Characters can be read and written by <strong>get</strong> and <strong>put</strong> statements.</p>
+
+<p>There are 256 <strong>char</strong> values, corresponding to the distinct patterns in an 8-bit byte. This allows the patterns <em>eos</em> (internal value 0) and <em>uninitchar</em> (internal value 128) to be <strong>char</strong> values (these patterns are not allowed in the <strong>string</strong> type; see the <strong>string</strong> type). All 256 patterns are used, so there is no pattern left to be the "uninitialized value". Uninitialized checking is not done for the <strong>char</strong> type.</p>
+
+<p>The <strong>ord</strong> and <strong>chr</strong> functions convert between the <strong>char</strong> values and their corresponding numeric representation in a byte. See <strong>ord</strong> and <strong>chr</strong>.</p>
+
+<p>In general, you can freely intermix the values of the types <strong>char</strong>, <strong>char</strong>(<em>n</em>) and <strong>string</strong>. This means that catenation (+), comparisons, <strong>length</strong> and substrings can be applied to any of these types. See <strong>char</strong>(<em>n</em>) for details about conversions between <strong>char</strong>, <strong>char</strong>(<em>n</em>) and <strong>string</strong>.</p>
 
 <h2>See also</h2>
 

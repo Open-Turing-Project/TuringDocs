@@ -32,19 +32,21 @@
 
 <p>Two types are defined to be <em>equivalent</em> if they are:</p>
 
-<p>(a) the same standard type (<strong>int</strong>, <strong>real</strong>, <strong>boolean</strong> or <strong>string</strong>),
-(b) subranges with equal first and last values,
-(c) arrays with equivalent index types and equivalent component types,
-(d) strings with equal maximum lengths,
-(e) sets with equivalent base types, or
-(f)  pointers to the same collection; in addition,
-(g) a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)
-(h) both <strong>char</strong>,
-(i) both <strong>char</strong>(<em>n</em>) with the same length,
-(j) both procedure types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters,
-(k) both function types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters and equivalent result types,
-(l) both pointer types to the same class or equivalent type and both are checked or unchecked.</p>
+<p>(a)   the same standard type (<strong>int</strong>, <strong>real</strong>, <strong>boolean</strong> or <strong>string</strong>),
+(b)   subranges with equal first and last values,
+(c)   arrays with equivalent index types and equivalent component types,
+(d)   strings with equal maximum lengths,
+(e)   sets with equivalent base types, or
+(f)    pointers to the same collection; in addition,
+(g)   a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)
+(h)   both <strong>char</strong>,
+(i)   both <strong>char</strong>(<em>n</em>) with the same length,
+(j)   both procedure types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters,
+(k)   both function types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters and equivalent result types,
+(l)   both pointer types to the same class or equivalent type and both are checked or unchecked.</p>
 
-<p>Each separate instance of a record, union or enumerated type (written out using one of the keywords <strong>record</strong>, <strong>union</strong> or <strong>enum</strong>) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.
-Opaque type <em>T</em>, exported from a module, monitor or class <em>M</em> as <strong>opaque</strong>, is a special case of equivalence. Outside of <em>M</em> this type is written <em>M</em>.<em>T</em>, and is considered to be distinct from all other types. By contrast, if type <em>U</em> is exported non-<strong>opaque</strong>, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type <em>M</em>.<em>T</em> outside of <em>M</em> if the item is declared using the type identifier <em>T</em>. Outside of <em>M</em>, the <strong>opaque</strong> type can be assigned, but not compared.
-It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in <em>i</em>, <em>j:</em> <strong>int</strong> instead of <em>i:</em> <strong>int</strong>, <em>j:</em> <strong>int</strong>.</p>
+<p>Each separate instance of a record, union or enumerated type (written out using one of the keywords <strong>record</strong>, <strong>union</strong> or <strong>enum</strong>) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.</p>
+
+<p>Opaque type <em>T</em>, exported from a module, monitor or class <em>M</em> as <strong>opaque</strong>, is a special case of equivalence. Outside of <em>M</em> this type is written <em>M</em>.<em>T</em>, and is considered to be distinct from all other types. By contrast, if type <em>U</em> is exported non-<strong>opaque</strong>, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type <em>M</em>.<em>T</em> outside of <em>M</em> if the item is declared using the type identifier <em>T</em>. Outside of <em>M</em>, the <strong>opaque</strong> type can be assigned, but not compared.</p>
+
+<p>It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in <em>i</em>, <em>j:</em> <strong>int</strong> instead of <em>i:</em> <strong>int</strong>, <em>j:</em> <strong>int</strong>.</p>

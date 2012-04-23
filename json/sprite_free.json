@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Free</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.Free (spriteID : int)\r\n",
-      "mdown_content": "**Sprite.Free** (_spriteID_ : **int**)"
+      "mdown_content": "**Sprite.Free** (_spriteID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the <i>spriteID</i> after the sprite has been freed.<p>\r\n</p>",
       "text_content": " Destroys the sprite and frees up the memory the sprite used. It is an error to use the spriteID after the sprite has been freed.\r\n",
-      "mdown_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the _spriteID_ after the sprite has been freed."
+      "mdown_content": "Destroys the sprite and frees up the memory the sprite used. It is an error to use the _spriteID_ after the sprite has been freed.\n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>Sprite.Animate</b> for an example of <b>Sprite.Free</b>.<p>\r\n</p>",
       "text_content": " See Sprite.Animate for an example of Sprite.Free.\r\n",
-      "mdown_content": "See **Sprite.Animate** for an example of **Sprite.Free**."
+      "mdown_content": "See **Sprite.Animate** for an example of **Sprite.Free**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.Free</b>, not by calling <b>Free</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sprite.Free, not by calling Free.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.Free**, not by calling **Free**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sprite.Free**, not by calling **Free**.\n"
     },
     {
       "title": "See also",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n</p>",
       "text_content": " Sprite.New.\r\n",
-      "mdown_content": "**[sprite_new.html](Sprite.New)**."
+      "mdown_content": "**[sprite_new.html](Sprite.New)**.\n"
     }
   ],
   "dependencies": [

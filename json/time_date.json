@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.Date</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Time.Date : string\r\n",
-      "mdown_content": "**Time.Date** : **string**"
+      "mdown_content": "**Time.Date** : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.Date</b> function returns the current date and time as a string. The returned string in the format \"<i>dd mmm yy hh:mm:ss</i>\", where <i>mmm</i> is the first 3 characters of the month, e.g., \"<i>Apr</i>\". For example, if the date is Christmas 1989 at 9:02:37 in the morning, <b>Time.Date</b> will return \"<i>25 Dec 89 09:02:37</i>\". Twenty-four hour time is used, so eleven thirty at night the same day would return \"<i>25 Dec 89 23:30:00</i>\"<p>\r\n</p>",
       "text_content": " The Time.Date function returns the current date and time as a string. The returned string in the format \"dd mmm yy hh:mm:ss\", where mmm is the first 3 characters of the month, e.g., \"Apr\". For example, if the date is Christmas 1989 at 9:02:37 in the morning, Time.Date will return \"25 Dec 89 09:02:37\". Twenty-four hour time is used, so eleven thirty at night the same day would return \"25 Dec 89 23:30:00\"\r\n",
-      "mdown_content": "The **Time.Date** function returns the current date and time as a string. The returned string in the format \"_dd mmm yy hh:mm:ss_\", where _mmm_ is the first 3 characters of the month, e.g., \"_Apr_\". For example, if the date is Christmas 1989 at 9:02:37 in the morning, **Time.Date** will return \"_25 Dec 89 09:02:37_\". Twenty-four hour time is used, so eleven thirty at night the same day would return \"_25 Dec 89 23:30:00_\""
+      "mdown_content": "The **Time.Date** function returns the current date and time as a string. The returned string in the format \"_dd mmm yy hh:mm:ss_\", where _mmm_ is the first 3 characters of the month, e.g., \"_Apr_\". For example, if the date is Christmas 1989 at 9:02:37 in the morning, **Time.Date** will return \"_25 Dec 89 09:02:37_\". Twenty-four hour time is used, so eleven thirty at night the same day would return \"_25 Dec 89 23:30:00_\"\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program greets you and tells you the date and time.<p>\r\n</p>",
       "text_content": " This program greets you and tells you the date and time.\r\n\r\n",
-      "mdown_content": "This program greets you and tells you the date and time."
+      "mdown_content": "This program greets you and tells you the date and time.\n"
     },
     {
       "title": "Details",
       "raw_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the <b>Time.Date </b>procedure will give incorrect results.<p>\r\nThe string form of the date can be converted to a numeric form for comparison purposes using the <b>Time.DateSec</b> function. The numeric form can be converted to a string using the <b>Time.SecDate</b> function. The numeric form of the time can be obtained using the <b>Time.Sec</b> function.</p>\n<p>\r\n</p>",
       "text_content": " Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the Time.Date procedure will give incorrect results.\r\nThe string form of the date can be converted to a numeric form for comparison purposes using the Time.DateSec function. The numeric form can be converted to a string using the Time.SecDate function. The numeric form of the time can be obtained using the Time.Sec function.\r\n",
-      "mdown_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date** procedure will give incorrect results.\nThe string form of the date can be converted to a numeric form for comparison purposes using the **Time.DateSec** function. The numeric form can be converted to a string using the **Time.SecDate** function. The numeric form of the time can be obtained using the **Time.Sec** function."
+      "mdown_content": "Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the **Time.Date** procedure will give incorrect results.\n\nThe string form of the date can be converted to a numeric form for comparison purposes using the **Time.DateSec** function. The numeric form can be converted to a string using the **Time.SecDate** function. The numeric form of the time can be obtained using the **Time.Sec** function.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.Date</b>, not by calling <b>Date</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.Date, not by calling Date.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.Date**, not by calling **Date**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Time.Date**, not by calling **Date**.\n"
     },
     {
       "title": "See also",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b>, <b><a href=\"time_datesec.html\">Time.DateSec</a></b> and <b><a href=\"time_secdate.html\">Time.SecDate</a></b> functions.<p>\r\n</p>",
       "text_content": " Time.Sec, Time.DateSec and Time.SecDate functions.\r\n",
-      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_datesec.html](Time.DateSec)** and **[time_secdate.html](Time.SecDate)** functions."
+      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_datesec.html](Time.DateSec)** and **[time_secdate.html](Time.SecDate)** functions.\n"
     }
   ],
   "dependencies": [

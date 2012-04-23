@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileLoop</b> ( <i>fileName</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " Music.PlayFileLoop ( fileName : string )\r\n",
-      "mdown_content": "**Music.PlayFileLoop** ( _fileName_ : **string** )"
+      "mdown_content": "**Music.PlayFileLoop** ( _fileName_ : **string** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.PlayFileLoop</b> procedure is used to play a file of music continuously, looping until the program is halted or the <b>Music.PlayFileStop</b> command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>WAV files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"WAV:filename\" or \"filename.WAV\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MP3 files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MP3:filename\" or \"filename.MP3\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>MIDI files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"MIDI:filename\" or \"filename.MIDI\"</td>\n</tr>\n</table>\n<p>\r\nThe <b>Music.PlayFileLoop</b> procedure is used to provide continuous background music for a program.\r\nWhen called, the music starts playing, and the procedure returns immediately.</p>\n<p>\r\n</p>",
       "text_content": " The Music.PlayFileLoop procedure is used to play a file of music continuously, looping until the program is halted or the Music.PlayFileStop command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\r\nThe fileNameparameter must give the format of the file:\r\n WAV files \"WAV:filename\" or \"filename.WAV\" MP3 files \"MP3:filename\" or \"filename.MP3\" MIDI files \"MIDI:filename\" or \"filename.MIDI\"\r\nThe Music.PlayFileLoop procedure is used to provide continuous background music for a program.\r\nWhen called, the music starts playing, and the procedure returns immediately.\r\n",
-      "mdown_content": "The **Music.PlayFileLoop** procedure is used to play a file of music continuously, looping until the program is halted or the **Music.PlayFileStop** command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\nThe _fileName_parameter must give the format of the file:\n\n\n\n\n\nThe **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately."
+      "mdown_content": "The **Music.PlayFileLoop** procedure is used to play a file of music continuously, looping until the program is halted or the **Music.PlayFileStop** command is given. The file must be in one of the acceptable formats and the machine, must have the appropriate hardware.\n\nThe _fileName_parameter must give the format of the file:\n\n\nWAV files   \"WAV:filename\" or \"filename.WAV\"\nMP3 files   \"MP3:filename\" or \"filename.MP3\"\nMIDI files   \"MIDI:filename\" or \"filename.MIDI\"\n\n\nThe **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately.\n"
     },
     {
       "title": "Details",
       "raw_content": "Unlike <b>Music.PlayFile</b>, the <b>Music.PlayFileLoop</b> procedure does not have to be called in a separate process. \r\nHowever, the music will not stop playing (nor will a program that calls this procedure terminate) until <b>Music.PlayFileStop</b> is called.<p>\r\n</p>",
       "text_content": "Unlike Music.PlayFile, the Music.PlayFileLoop procedure does not have to be called in a separate process. \r\nHowever, the music will not stop playing (nor will a program that calls this procedure terminate) until Music.PlayFileStop is called.\r\n",
-      "mdown_content": "Unlike **Music.PlayFile**, the **Music.PlayFileLoop** procedure does not have to be called in a separate process. However, the music will not stop playing (nor will a program that calls this procedure terminate) until **Music.PlayFileStop** is called."
+      "mdown_content": "Unlike **Music.PlayFile**, the **Music.PlayFileLoop** procedure does not have to be called in a separate process. However, the music will not stop playing (nor will a program that calls this procedure terminate) until **Music.PlayFileStop** is called.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program continuously plays the music in the file \"<i>branden3.wav</i>\" while drawing ovals on the screen.<p>\r\n</p>",
       "text_content": " This program continuously plays the music in the file \"branden3.wav\" while drawing ovals on the screen.\r\n\r\n",
-      "mdown_content": "This program continuously plays the music in the file \"_branden3.wav_\" while drawing ovals on the screen."
+      "mdown_content": "This program continuously plays the music in the file \"_branden3.wav_\" while drawing ovals on the screen.\n"
     },
     {
       "title": "Execute",
@@ -43,13 +43,13 @@
       "title": "Details",
       "raw_content": "To play a sound file requires that the computer be equipped with a sound card and speakers.<p>\r\n</p>",
       "text_content": " To play a sound file requires that the computer be equipped with a sound card and speakers.\r\n",
-      "mdown_content": "To play a sound file requires that the computer be equipped with a sound card and speakers."
+      "mdown_content": "To play a sound file requires that the computer be equipped with a sound card and speakers.\n"
     },
     {
       "title": "Details",
       "raw_content": "The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects.<p>\r\n</p>",
       "text_content": " The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects.\r\n",
-      "mdown_content": "The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects."
+      "mdown_content": "The Turing 4.1 software can play files in the following audio formats: WAVE (.wav) files, MIDI files (.midi or .mid), and MP3 files (.mp3). In general, MIDI files are the most efficient and thus are the preferred form for longer music pieces like background music. WAVE files can record anything, not just music, so are often used for sound effects.\n"
     },
     {
       "title": "Details",
@@ -58,13 +58,13 @@
       ],
       "raw_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.<p>\r\n</p>",
       "text_content": " The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is cd. To play a single track from a compact disk, the filename is cd:[track number].\r\n\r\n",
-      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;."
+      "mdown_content": "The Turing 4.1 software can also play music on a compact disk. Toplay the complete contents of the compact disk, the filename is &#147;cd&#148;. To play a single track from a compact disk, the filename is &#147;cd:[track number]&#148;.\n"
     },
     {
       "title": "Details",
       "raw_content": "On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music.<p>\r\n</p>",
       "text_content": " On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music.\r\n",
-      "mdown_content": "On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music."
+      "mdown_content": "On the PC, different formats of music can play simultaneously. This means that a program might use a MIDI file as a background soundtrack and then use WAVE files for individual sound effects. The sound effects would not interfere with the background music. Playing a second music file with the same format as an already playing piece immediately halts the first piece and starts the second.  This can be used to stop a single type of music by playing a short silent piece of music.\n"
     },
     {
       "title": "Example",
@@ -73,7 +73,7 @@
       ],
       "raw_content": "This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits.<p>\r\n</p>",
       "text_content": " This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits.\r\n\r\n",
-      "mdown_content": "This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits."
+      "mdown_content": "This program bounces a maple leaf around the screen with background music and a sound effect when the maple leaf hits an edge. When the user presses any key, the program immediately exits.\n"
     },
     {
       "title": "Execute",
@@ -92,13 +92,13 @@
       ],
       "raw_content": "<b><a href=\"music_playfilestop.html\">Music.PlayFileStop</a></b> to halt a music file that is current playing.<p>\r\n</p>",
       "text_content": " Music.PlayFileStop to halt a music file that is current playing.\r\n",
-      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to halt a music file that is current playing."
+      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to halt a music file that is current playing.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Music.PlayFileLoop</b>, not by calling <b>PlayFileLoop</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Music.PlayFileLoop, not by calling PlayFileLoop.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.PlayFileLoop**, not by calling **PlayFileLoop**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Music.PlayFileLoop**, not by calling **PlayFileLoop**.\n"
     }
   ],
   "dependencies": [

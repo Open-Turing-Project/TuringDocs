@@ -2,8 +2,9 @@
 
 <h2>Description</h2>
 
-<p>This unit contains the predefined constants for the basic colors and the subprograms to change the color palette.
-All subprograms in the <strong>RGB</strong> unit are exported qualified (and thus must be prefaced with "<strong>RGB.</strong>"). All the color constants are exported unqualified and thus do not need the <strong>RGB</strong> prefix.</p>
+<p>This unit contains the predefined constants for the basic colors and the subprograms to change the color palette.</p>
+
+<p>All subprograms in the <strong>RGB</strong> unit are exported qualified (and thus must be prefaced with "<strong>RGB.</strong>"). All the color constants are exported unqualified and thus do not need the <strong>RGB</strong> prefix.</p>
 
 <h2>Details</h2>
 
@@ -11,18 +12,22 @@ All subprograms in the <strong>RGB</strong> unit are exported qualified (and thu
 
 <h2>Details</h2>
 
-<p>The following names can be used for colors.  They representcolor numbers and thus will not be accurate if <strong>RGB.SetColor</strong>has been used to change color numbers 0 through 15.
-<strong>black</strong>, <strong>blue</strong>, <strong>green</strong>, <strong>cyan</strong>, <strong>red</strong>, <strong>magenta</strong>, <strong>purple</strong>, <strong>brown</strong>, <strong>white</strong>, <strong>gray</strong>, <strong>grey</strong>, <strong>brightblue</strong>, <strong>brightgreen</strong>, <strong>brightcyan</strong>, <strong>brightred</strong>, <strong>brightmagenta</strong>, <strong>brightpurple</strong>, <strong>yellow</strong>, <strong>brightwhite</strong>, <strong>darkgray</strong>, <strong>darkgrey</strong>
-The remaining four colors represent the foreground color (blackon Windows or the Macintosh, white on a DOS system) and the background color (white on Windows or Macintosh, black on a DOSsystem).  Using these four colors allows you to write programsthat work on both Windows and DOS versions of Turing.
-<strong>colorfg</strong>, <strong>colourfg</strong>, <strong>colorbg</strong>, <strong>colourbg</strong></p>
+<p>The following names can be used for colors.  They representcolor numbers and thus will not be accurate if <strong>RGB.SetColor</strong>has been used to change color numbers 0 through 15.</p>
+
+<p><strong>black</strong>, <strong>blue</strong>, <strong>green</strong>, <strong>cyan</strong>, <strong>red</strong>, <strong>magenta</strong>, <strong>purple</strong>, <strong>brown</strong>, <strong>white</strong>, <strong>gray</strong>, <strong>grey</strong>, <strong>brightblue</strong>, <strong>brightgreen</strong>, <strong>brightcyan</strong>, <strong>brightred</strong>, <strong>brightmagenta</strong>, <strong>brightpurple</strong>, <strong>yellow</strong>, <strong>brightwhite</strong>, <strong>darkgray</strong>, <strong>darkgrey</strong></p>
+
+<p>The remaining four colors represent the foreground color (blackon Windows or the Macintosh, white on a DOS system) and the background color (white on Windows or Macintosh, black on a DOSsystem).  Using these four colors allows you to write programsthat work on both Windows and DOS versions of Turing.</p>
+
+<p><strong>colorfg</strong>, <strong>colourfg</strong>, <strong>colorbg</strong>, <strong>colourbg</strong></p>
 
 <h2>Details</h2>
 
-<p>Turing uses a <em>palette</em> to access colors for display.  Thispalette is a list of color numbers and their associated actual color.The Turing palette starts with 256 entries (the color numbers from 0 to 255). With 16, 24, and 32-bit color displays, however, a Turing program can display thousands of colors at once. These colors, however, will all have color numbers associated with them. For example, if a Turing program loads a JPEG image, there may bethousands of colors on the screen, but the number of color numberswill stay at 256. Likewise, 16, 24, and 32-bit color displays, if you load a picture in GIF format that has a 256 colors that are different from the initial Turing color palette, they will appear in the run window.  However, they will not be added to Turing's color palette.
-If you attempt to determine the color number of a particular pixel that does not match any of the colors in Turing's color palette,then Turing will return the color number of the color in the Turing palette that most closely matches that color of the pixel.</p>
+<p>Turing uses a <em>palette</em> to access colors for display.  Thispalette is a list of color numbers and their associated actual color.The Turing palette starts with 256 entries (the color numbers from 0 to 255). With 16, 24, and 32-bit color displays, however, a Turing program can display thousands of colors at once. These colors, however, will all have color numbers associated with them. For example, if a Turing program loads a JPEG image, there may bethousands of colors on the screen, but the number of color numberswill stay at 256. Likewise, 16, 24, and 32-bit color displays, if you load a picture in GIF format that has a 256 colors that are different from the initial Turing color palette, they will appear in the run window.  However, they will not be added to Turing's color palette.</p>
+
+<p>If you attempt to determine the color number of a particular pixel that does not match any of the colors in Turing's color palette,then Turing will return the color number of the color in the Turing palette that most closely matches that color of the pixel.</p>
 
 <h2>Entry Points</h2>
 
-<p><a href="**GetColor**">rgb_getcolor.html</a> Gets the current red, green and blue values of a specified color number.
-<a href="**SetColor**">rgb_setcolor.html</a> Sets the red, green and blue values of a specified color number.
-<a href="**AddColor**">rgb_addcolor.html</a> Creates a new color number with a specified red, green and blue value.</p>
+<p><a href="**GetColor**">rgb_getcolor.html</a><a href="**GetColour**">rgb_getcolor.html</a>   Gets the current red, green and blue values of a specified color number.
+<a href="**SetColor**">rgb_setcolor.html</a><a href="**SetColour**">rgb_setcolor.html</a>   Sets the red, green and blue values of a specified color number.
+<a href="**AddColor**">rgb_addcolor.html</a><a href="**AddColour**">rgb_addcolor.html</a>   Creates a new color number with a specified red, green and blue value.</p>

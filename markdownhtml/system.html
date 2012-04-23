@@ -27,10 +27,13 @@
 
 <h2>Details</h2>
 
-<p>When the <strong>system</strong> procedure is used, the executing program usually remains in memory while the system command is executing, and once execution of the system command is finished, control returns to the original program. However, on the PC, there is variant of the <strong>system</strong> procedure that allows "chaining". This means that when the system command is executed, the originally running program is "thrown away" (i.e. removed from memory). When the executed program terminates, one is returned to DOS.
-To chain another program, one prepends "chain:" to the start <em>command</em>.
-Note that this command is "hazardous". Specifically, if you call it from Turing (as opposed to a program compiled with TComp) and you have not saved your source file, <strong>you</strong> <strong>will</strong> <strong>lose</strong> <strong>it!</strong>  Turing will be removed from memory without any warning when the <strong>system</strong> procedure is executed. Likewise any open files will be closed instantly. This means there is a danger if all files were not properly closed before the <strong>system</strong> procedure was called.
-The "chain:" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.</p>
+<p>When the <strong>system</strong> procedure is used, the executing program usually remains in memory while the system command is executing, and once execution of the system command is finished, control returns to the original program. However, on the PC, there is variant of the <strong>system</strong> procedure that allows "chaining". This means that when the system command is executed, the originally running program is "thrown away" (i.e. removed from memory). When the executed program terminates, one is returned to DOS.</p>
+
+<p>To chain another program, one prepends "chain:" to the start <em>command</em>.</p>
+
+<p>Note that this command is "hazardous". Specifically, if you call it from Turing (as opposed to a program compiled with TComp) and you have not saved your source file, <strong>you</strong> <strong>will</strong> <strong>lose</strong> <strong>it!</strong>  Turing will be removed from memory without any warning when the <strong>system</strong> procedure is executed. Likewise any open files will be closed instantly. This means there is a danger if all files were not properly closed before the <strong>system</strong> procedure was called.</p>
+
+<p>The "chain:" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.</p>
 
 <pre><code>    i.e.    system ("chain:myprog.exe", retCode)
 </code></pre>
@@ -67,11 +70,20 @@ The "chain:" command is often used for starting menu programs, where the user se
 
 <p>Here are the possible errors under PC-Turing</p>
 
+<p>-1   Not enough memory to load COMMAND.COM
+-2   Not enough memory to run command
+-3   Argument list greater than 128 bytes or environment info</p>
+
 <p>is greater than 32k</p>
+
+<p>-4   Couldn't find COMMAND.COM
+-5   COMMAND.COM corrupt
+-6   -noshell option is selected, the system procedure is</p>
 
 <p>disallowed</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="nargs">nargs.html</a></strong>, <strong><a href="fetcharg">fetcharg.html</a></strong> and <strong><a href="getenv">getenv.html</a></strong> functions.
-See also predefined unit <strong><a href="Sys">sysmodule.html</a></strong>.</p>
+<p><strong><a href="nargs">nargs.html</a></strong>, <strong><a href="fetcharg">fetcharg.html</a></strong> and <strong><a href="getenv">getenv.html</a></strong> functions.</p>
+
+<p>See also predefined unit <strong><a href="Sys">sysmodule.html</a></strong>.</p>

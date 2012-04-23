@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "Pic.SetTransparentColor (colorNumber : int)",
-      "mdown_content": "**Pic.SetTransparentColor** (_colorNumber_ : **int**)"
+      "mdown_content": "**Pic.SetTransparentColor** (_colorNumber_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Pic.SetTransparentColor</b> procedure sets the color in the \r\n          picture that should be considered transparent when the picture is \r\n          drawn using the <tt>picMerge</tt> or <tt>picUnderMerge</tt> modes. \r\n          If no color is specified, then the default background color \r\n          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent \r\n          color.<p>\r\n    </p>",
       "text_content": "The Pic.SetTransparentColor procedure sets the color in the \r\n          picture that should be considered transparent when the picture is \r\n          drawn using the picMerge or picUnderMerge modes. \r\n          If no color is specified, then the default background color \r\n          (colorbg, usually white) is used as the transparent \r\n          color.\r\n    ",
-      "mdown_content": "The **Pic.SetTransparentColor** procedure sets the color in the picture that should be considered transparent when the picture is drawn using the `picMerge` or `picUnderMerge` modes. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color."
+      "mdown_content": "The **Pic.SetTransparentColor** procedure sets the color in the picture that should be considered transparent when the picture is drawn using the `picMerge` or `picUnderMerge` modes. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color.\n"
     },
     {
       "title": "Details",
       "raw_content": "This call is often used when displaying images that were \r\n          originally stored as GIFs and translated into another format. \r\n          Many GIFs have a transparent color that can be non-white. To use \r\n          this call, you must know the color number that represents the color \r\n          in the image that is to be transparent.<p>\r\n    </p>",
       "text_content": "This call is often used when displaying images that were \r\n          originally stored as GIFs and translated into another format. \r\n          Many GIFs have a transparent color that can be non-white. To use \r\n          this call, you must know the color number that represents the color \r\n          in the image that is to be transparent.\r\n    ",
-      "mdown_content": "This call is often used when displaying images that were originally stored as GIFs and translated into another format. Many GIFs have a transparent color that can be non-white. To use this call, you must know the color number that represents the color in the image that is to be transparent."
+      "mdown_content": "This call is often used when displaying images that were originally stored as GIFs and translated into another format. Many GIFs have a transparent color that can be non-white. To use this call, you must know the color number that represents the color in the image that is to be transparent.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program displays two images loaded from the same file. In the \r\n          second image,the transparent color has been set to bright red (that\r\n          is, the parts of the image that are meant to be transparent are in\r\n          bright red).\r\n          <p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program displays two images loaded from the same file. In the \r\n          second image,the transparent color has been set to bright red (that\r\n          is, the parts of the image that are meant to be transparent are in\r\n          bright red).\r\n          \r\n\r\n    ",
-      "mdown_content": "This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red).\n"
+      "mdown_content": "This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red).\n\n\n"
     },
     {
       "title": "Execute",
@@ -43,13 +43,13 @@
       "title": "Details",
       "raw_content": "<b>Pic.SetTransparentColour</b> is an alternate spelling for \r\n          <b>Pic.SetTransparentColor</b>.<p></p>",
       "text_content": "Pic.SetTransparentColour is an alternate spelling for \r\n          Pic.SetTransparentColor.",
-      "mdown_content": "**Pic.SetTransparentColour** is an alternate spelling for **Pic.SetTransparentColor**."
+      "mdown_content": "**Pic.SetTransparentColour** is an alternate spelling for **Pic.SetTransparentColor**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Pic.SetTransparentColor</b>, not by calling \r\n          <b>SetTransparentColor</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Pic.SetTransparentColor, not by calling \r\n          SetTransparentColor.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.SetTransparentColor**, not by calling **SetTransparentColor**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.SetTransparentColor**, not by calling **SetTransparentColor**.\n"
     },
     {
       "title": "See also",
@@ -59,7 +59,7 @@
       ],
       "raw_content": "<b><a href=\"pic_draw.html\">Pic.Draw</a></b> and \r\n          <b><a href=\"pic_filenew.html\">Pic.FileNew</a></b>.<p>\r\n    </p>",
       "text_content": "Pic.Draw and \r\n          Pic.FileNew.\r\n    ",
-      "mdown_content": "**[pic_draw.html](Pic.Draw)** and **[pic_filenew.html](Pic.FileNew)**."
+      "mdown_content": "**[pic_draw.html](Pic.Draw)** and **[pic_filenew.html](Pic.FileNew)**.\n"
     }
   ],
   "dependencies": [

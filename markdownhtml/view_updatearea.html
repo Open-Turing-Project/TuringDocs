@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>View.UpdateArea</strong> procedure updates a rectanglular area Run window, specified by (<em>x1</em>, <em>y1</em>) - (<em>x2</em>, <em>y2</em>) from the offscreen bitmap. It is used with the command <strong>View.Set</strong> ("offscreenonly") which prevents the Run window from being updated until the <strong>View.UpdateArea</strong> or <strong>View.Update</strong> command is given.
-Because the entire screen is not updated each time, the animation canbe much faster, especially on slow machines.  This procedure does take more effort to use than <strong>View.Update</strong> as it requires the programmer to calculate which portion of the screen must be updated.</p>
+<p>The <strong>View.UpdateArea</strong> procedure updates a rectanglular area Run window, specified by (<em>x1</em>, <em>y1</em>) - (<em>x2</em>, <em>y2</em>) from the offscreen bitmap. It is used with the command <strong>View.Set</strong> ("offscreenonly") which prevents the Run window from being updated until the <strong>View.UpdateArea</strong> or <strong>View.Update</strong> command is given.</p>
+
+<p>Because the entire screen is not updated each time, the animation canbe much faster, especially on slow machines.  This procedure does take more effort to use than <strong>View.Update</strong> as it requires the programmer to calculate which portion of the screen must be updated.</p>
 
 <h2>Example</h2>
 
@@ -31,8 +32,9 @@ Because the entire screen is not updated each time, the animation canbe much fas
 
 <h2>Details</h2>
 
-<p>If the entire screen is being updated each time through the animationloop (for example if the background image is changing), then use<strong>View.Update</strong> instead.
-When using <strong>View.UpdateArea</strong>, it is important to correctly calculate the region to be updated. This region must not only containthe item being drawn, but also any area where the background shouldbe replaced. For example, in the program above, the area updated included the one pixel to the left of the star when the star wasmoving right-ward and one pixel to the right of the star when the starwas moving left-ward.</p>
+<p>If the entire screen is being updated each time through the animationloop (for example if the background image is changing), then use<strong>View.Update</strong> instead.</p>
+
+<p>When using <strong>View.UpdateArea</strong>, it is important to correctly calculate the region to be updated. This region must not only containthe item being drawn, but also any area where the background shouldbe replaced. For example, in the program above, the area updated included the one pixel to the left of the star when the star wasmoving right-ward and one pixel to the right of the star when the starwas moving left-ward.</p>
 
 <h2>Execute</h2>
 
@@ -40,9 +42,11 @@ When using <strong>View.UpdateArea</strong>, it is important to correctly calcul
 
 <h2>Details</h2>
 
-<p>All Turing Run windows have both an onscreen visible window and an offscreen window. Whenever any output is sent to the screen, both the onscreen window and the offscreen window are updated. When the Run window needs to be updated (for example when another window is moved over top of it and then removed), Turing copies the offscreen window onto the onscreen window.
-When the <strong>View.Set</strong> ("offscreenonly") command is given, Turing no longer draws to the onscreen window when any drawing command is given. However, it does update the offscreen window. When the <strong>View.Update</strong> command is given, the entire offscreen window is copied to the onscreen window.
-This can be used to provide smooth, flicker-free animation. Animated objects flicker when the object being animated disappears from the onscreen window for a period of time. By using <strong>View.Set</strong> ("offscreenonly") / <strong>View.Update</strong>, the onscreen window is never blank. Instead, the offscreen window drawn over top off the on screen window, replacing it. This means that the on-screenwindow is never blanked out, eliminating the flickering found in the animation.</p>
+<p>All Turing Run windows have both an onscreen visible window and an offscreen window. Whenever any output is sent to the screen, both the onscreen window and the offscreen window are updated. When the Run window needs to be updated (for example when another window is moved over top of it and then removed), Turing copies the offscreen window onto the onscreen window.</p>
+
+<p>When the <strong>View.Set</strong> ("offscreenonly") command is given, Turing no longer draws to the onscreen window when any drawing command is given. However, it does update the offscreen window. When the <strong>View.Update</strong> command is given, the entire offscreen window is copied to the onscreen window.</p>
+
+<p>This can be used to provide smooth, flicker-free animation. Animated objects flicker when the object being animated disappears from the onscreen window for a period of time. By using <strong>View.Set</strong> ("offscreenonly") / <strong>View.Update</strong>, the onscreen window is never blank. Instead, the offscreen window drawn over top off the on screen window, replacing it. This means that the on-screenwindow is never blanked out, eliminating the flickering found in the animation.</p>
 
 <h2>Details</h2>
 
@@ -54,10 +58,12 @@ This can be used to provide smooth, flicker-free animation. Animated objects fli
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>View.UpdateArea</strong>, not by calling <strong>UpdateArea</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>View.UpdateArea</strong>, not by calling <strong>UpdateArea</strong>.</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="View.Set">view_set.html</a></strong> for the "offscreenonly" and "nooffscreenonly" options.
-<strong><a href="View.Update">view_update.html</a></strong> for procedure toupdate the entire screen at one time.</p>
+<p><strong><a href="View.Set">view_set.html</a></strong> for the "offscreenonly" and "nooffscreenonly" options.</p>
+
+<p><strong><a href="View.Update">view_update.html</a></strong> for procedure toupdate the entire screen at one time.</p>

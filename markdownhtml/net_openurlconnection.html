@@ -6,14 +6,17 @@
 
 <h2>Description</h2>
 
-<p>Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the <em>urlAddr</em>.
-If successful, <strong>Net.OpenURLConnection</strong> returns a network stream descriptor which can be used with the <strong>get</strong> statement and <strong>eof</strong> function to read the web page located at the URL.
-The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
+<p>Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the <em>urlAddr</em>.</p>
+
+<p>If successful, <strong>Net.OpenURLConnection</strong> returns a network stream descriptor which can be used with the <strong>get</strong> statement and <strong>eof</strong> function to read the web page located at the URL.</p>
+
+<p>The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
 
 <h2>Details</h2>
 
-<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
-It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols</p>
+
+<p>It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
 
 <h2>Example</h2>
 
@@ -41,8 +44,9 @@ It is possible for Firewalls to interfere with the actions of the <strong>Net</s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Net.OpenURLConnection</strong>, not by calling <strong>OpenURLConnection</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Net.OpenURLConnection</strong>, not by calling <strong>OpenURLConnection</strong>.</p>
 
 <h2>See also</h2>
 

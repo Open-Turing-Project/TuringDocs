@@ -17,10 +17,12 @@
 
 <h2>Details</h2>
 
-<p>In current  implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. This determines the maximum natural number, which is 2<strong>32 - 2, equaling 4294967294.
-In four bytes it is possible to represent one more value, namely, 2</strong>32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a <strong>nat</strong> variable is detected as an overflow. You can use this extra value by using the <strong>nat4</strong> type instead of <strong>nat</strong>, but this type has no initialization checking.</p>
+<p>In current  implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. This determines the maximum natural number, which is 2**32 - 2, equaling 4294967294.</p>
+
+<p>In four bytes it is possible to represent one more value, namely, 2<strong>32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a </strong>nat<strong> variable is detected as an overflow. You can use this extra value by using the </strong>nat4<strong> type instead of </strong>nat**, but this type has no initialization checking.</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="maxint">maxint.html</a></strong> and <strong><a href="minnat">minnat.html</a></strong>.
-See also predefined unit <strong><a href="Limits">limitsmodule.html</a></strong>.</p>
+<p><strong><a href="maxint">maxint.html</a></strong> and <strong><a href="minnat">minnat.html</a></strong>.</p>
+
+<p>See also predefined unit <strong><a href="Limits">limitsmodule.html</a></strong>.</p>

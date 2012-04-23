@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>minint</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " minint : int\r\n",
-      "mdown_content": "**minint** : **int**"
+      "mdown_content": "**minint** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>minint</b> function is used to determine the smallest integer (<b>int</b>) that can be used in a program.<p>\r\n</p>",
       "text_content": " The minint function is used to determine the smallest integer (int) that can be used in a program.\r\n",
-      "mdown_content": "The **minint** function is used to determine the smallest integer (**int**) that can be used in a program."
+      "mdown_content": "The **minint** function is used to determine the smallest integer (**int**) that can be used in a program.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs the maximum integer.<p>\r\n</p>",
       "text_content": " This program outputs the maximum integer.\r\n\r\n",
-      "mdown_content": "This program outputs the maximum integer."
+      "mdown_content": "This program outputs the maximum integer.\n"
     },
     {
       "title": "Details",
       "raw_content": "In current  implementations, <b>int</b> values are stored in 4 bytes, i.e., 32 bits. This determines the minimum <b>int</b> value, which is -2**31-1, equaling -2147483647.<p>\r\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than <b>maxint</b>. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an <b>int</b> variable is detected as an overflow. You can use this extra value by using the <b>int4</b> type instead of <b>int</b>, but this type has no initialization checking.</p>\n<p>\r\n</p>",
       "text_content": " In current  implementations, int values are stored in 4 bytes, i.e., 32 bits. This determines the minimum int value, which is -2**31-1, equaling -2147483647.\r\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than maxint. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an int variable is detected as an overflow. You can use this extra value by using the int4 type instead of int, but this type has no initialization checking.\r\n",
-      "mdown_content": "In current  implementations, **int** values are stored in 4 bytes, i.e., 32 bits. This determines the minimum **int** value, which is -2**31-1, equaling -2147483647.\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than **maxint**. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an **int** variable is detected as an overflow. You can use this extra value by using the **int4** type instead of **int**, but this type has no initialization checking."
+      "mdown_content": "In current  implementations, **int** values are stored in 4 bytes, i.e., 32 bits. This determines the minimum **int** value, which is -2**31-1, equaling -2147483647.\n\nThere is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than **maxint**. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an **int** variable is detected as an overflow. You can use this extra value by using the **int4** type instead of **int**, but this type has no initialization checking.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"minnat.html\">minnat</a></b> and <b><a href=\"maxint.html\">maxint</a></b>.<p>\r\nSee also predefined unit <b><a href=\"limitsmodule.html\">Limits</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " minnat and maxint.\r\nSee also predefined unit Limits.\r\n",
-      "mdown_content": "**[minnat.html](minnat)** and **[maxint.html](maxint)**.\nSee also predefined unit **[limitsmodule.html](Limits)**."
+      "mdown_content": "**[minnat.html](minnat)** and **[maxint.html](maxint)**.\n\nSee also predefined unit **[limitsmodule.html](Limits)**.\n"
     }
   ],
   "dependencies": [

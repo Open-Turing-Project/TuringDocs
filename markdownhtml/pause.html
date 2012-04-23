@@ -8,6 +8,8 @@
 
 <h2>Description</h2>
 
-<p>The <strong>pause</strong> statement blocks the program (or just the process in the case of a concurrent program) for a given number of simulated time units. The <em>expn</em> must be a non-negative <strong>int</strong> value giving the number of time units. This is analogous to the <strong>delay</strong> statement, which causes blocking for a given amount of real time (actual physical time).
-The interpreter maintains a counter which it considers to be simulated time. The only execution that causes this counter to increase is the <strong>pause</strong> statement. The process executing the <strong>pause</strong> is blocked until the counter has counted forward the number of units given by <em>expn</em>. All other statements (except <strong>wait</strong>) are considered to be infinitely fast. Several processes can be executing <strong>pause</strong> statements simultaneously.
-The use of simulated time allows Turing to be used as a simulation language in which the <strong>pause</strong> statement simulates the passage of time in the simulated system.</p>
+<p>The <strong>pause</strong> statement blocks the program (or just the process in the case of a concurrent program) for a given number of simulated time units. The <em>expn</em> must be a non-negative <strong>int</strong> value giving the number of time units. This is analogous to the <strong>delay</strong> statement, which causes blocking for a given amount of real time (actual physical time).</p>
+
+<p>The interpreter maintains a counter which it considers to be simulated time. The only execution that causes this counter to increase is the <strong>pause</strong> statement. The process executing the <strong>pause</strong> is blocked until the counter has counted forward the number of units given by <em>expn</em>. All other statements (except <strong>wait</strong>) are considered to be infinitely fast. Several processes can be executing <strong>pause</strong> statements simultaneously.</p>
+
+<p>The use of simulated time allows Turing to be used as a simulation language in which the <strong>pause</strong> statement simulates the passage of time in the simulated system.</p>

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.GetUserName</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Sys.GetUserName : string\r\n",
-      "mdown_content": "**Sys.GetUserName** : **string**"
+      "mdown_content": "**Sys.GetUserName** : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Sys.GetUserName </b>function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.<p>\r\n</p>",
       "text_content": " The Sys.GetUserName function is used to determine the name of the current user. It returns Unknown if a name could not be determined.\r\n",
-      "mdown_content": "The **Sys.GetUserName** function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined."
+      "mdown_content": "The **Sys.GetUserName** function is used to determine the name of the current user. It returns &#147;Unknown&#148; if a name could not be determined.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs a greeting to the user .<p>\r\n</p>",
       "text_content": " This program outputs a greeting to the user .\r\n\r\n",
-      "mdown_content": "This program outputs a greeting to the user ."
+      "mdown_content": "This program outputs a greeting to the user .\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.GetUserName</b>, not by calling<b> GetUserName</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys.GetUserName, not by calling GetUserName.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.GetUserName**, not by calling **GetUserName**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sys.GetUserName**, not by calling **GetUserName**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sys_getcomputername.html\">Sys.GetComputerName</a></b> to obtain the name of the computer.<p>\r\n</p>",
       "text_content": " Sys.GetComputerName to obtain the name of the computer.\r\n",
-      "mdown_content": "**[sys_getcomputername.html](Sys.GetComputerName)** to obtain the name of the computer."
+      "mdown_content": "**[sys_getcomputername.html](Sys.GetComputerName)** to obtain the name of the computer.\n"
     }
   ],
   "dependencies": [

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "View.SetTransparentColor (colorNumber : int)",
-      "mdown_content": "**View.SetTransparentColor** (_colorNumber_ : **int**)"
+      "mdown_content": "**View.SetTransparentColor** (_colorNumber_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.SetTransparentColor</b> procedure sets the color in the \r\n          Run window that should be considered transparent when a picture is \r\n          drawn on the window using the <tt>picUnderMerge</tt> mode. \r\n          If no color is specified, then the default background color \r\n          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent \r\n          color. You can change this background color using <b>RGB.SetColor</b>\r\n          on color 0.<p>\r\n    </p>",
       "text_content": "The View.SetTransparentColor procedure sets the color in the \r\n          Run window that should be considered transparent when a picture is \r\n          drawn on the window using the picUnderMerge mode. \r\n          If no color is specified, then the default background color \r\n          (colorbg, usually white) is used as the transparent \r\n          color. You can change this background color using RGB.SetColor\r\n          on color 0.\r\n    ",
-      "mdown_content": "The **View.SetTransparentColor** procedure sets the color in the Run window that should be considered transparent when a picture is drawn on the window using the `picUnderMerge` mode. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color. You can change this background color using **RGB.SetColor**on color 0."
+      "mdown_content": "The **View.SetTransparentColor** procedure sets the color in the Run window that should be considered transparent when a picture is drawn on the window using the `picUnderMerge` mode. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color. You can change this background color using **RGB.SetColor**on color 0.\n"
     },
     {
       "title": "Details",
       "raw_content": "This call is often used when you want the Run window to have a\r\n          background color other than color 0.<p>\r\n    </p>",
       "text_content": "This call is often used when you want the Run window to have a\r\n          background color other than color 0.\r\n    ",
-      "mdown_content": "This call is often used when you want the Run window to have abackground color other than color 0."
+      "mdown_content": "This call is often used when you want the Run window to have abackground color other than color 0.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program displays two images loaded from the same file. In the \r\n          second image,the transparent color has been set to bright red (that\r\n          is, the parts of the image that are meant to be transparent are in\r\n          bright red).\r\n          <p>\r\n</p>",
       "text_content": "This program displays two images loaded from the same file. In the \r\n          second image,the transparent color has been set to bright red (that\r\n          is, the parts of the image that are meant to be transparent are in\r\n          bright red).\r\n          \r\n\r\n    ",
-      "mdown_content": "This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red)."
+      "mdown_content": "This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red).\n"
     },
     {
       "title": "Execute",
@@ -43,13 +43,13 @@
       "title": "Details",
       "raw_content": "<b>View.SetTransparentColour</b> is an alternate spelling for \r\n          <b>View.SetTransparentColor</b>.<p></p>",
       "text_content": "View.SetTransparentColour is an alternate spelling for \r\n          View.SetTransparentColor.",
-      "mdown_content": "**View.SetTransparentColour** is an alternate spelling for **View.SetTransparentColor**."
+      "mdown_content": "**View.SetTransparentColour** is an alternate spelling for **View.SetTransparentColor**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.SetTransparentColor</b>, not by calling \r\n          <b>SetTransparentColor</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          View.SetTransparentColor, not by calling \r\n          SetTransparentColor.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.SetTransparentColor**, not by calling **SetTransparentColor**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **View.SetTransparentColor**, not by calling **SetTransparentColor**.\n"
     },
     {
       "title": "See also",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"pic_settransparentcolor.html\">Pic.SetTransparentColor</a></b>.<p>\r\n    </p>",
       "text_content": "Pic.SetTransparentColor.\r\n    ",
-      "mdown_content": "**[pic_settransparentcolor.html](Pic.SetTransparentColor)**."
+      "mdown_content": "**[pic_settransparentcolor.html](Pic.SetTransparentColor)**.\n"
     }
   ],
   "dependencies": [

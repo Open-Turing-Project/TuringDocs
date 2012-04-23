@@ -4,17 +4,17 @@
 
 <p>A <em>declaration</em> is one of:</p>
 
-<p>(a)<em>variableDeclaration</em>
-(b)<em>constantDeclaration</em>
-(c)<em>typeDeclaration</em>
-(d)<em>bindDeclaration</em>
-(e)<em>procedureDeclaration</em>
-(f)<em>functionDeclaration</em>
-(g)<em>moduleDeclaration</em>
-(h)<em>classDeclaration</em>
-(i)<em>processDeclaration</em>
-(j)<em>monitorDeclaration</em>
-(k)<em>conditionDeclaration</em></p>
+<p>(a) <em>variableDeclaration</em>
+(b) <em>constantDeclaration</em>
+(c) <em>typeDeclaration</em>
+(d) <em>bindDeclaration</em>
+(e) <em>procedureDeclaration</em>
+(f) <em>functionDeclaration</em>
+(g) <em>moduleDeclaration</em>
+(h) <em>classDeclaration</em>
+(i) <em>processDeclaration</em>
+(j) <em>monitorDeclaration</em>
+(k) <em>conditionDeclaration</em></p>
 
 <h2>Description</h2>
 
@@ -33,8 +33,12 @@
 
 <h2>Details</h2>
 
-<p>Ordinarily, each new name must be distinct from names that are already visible; that is, redeclaration is not allowed. There are certain exceptions to this rule, for example, names of parameters and fields of records can be the same as existing visible variables. Variables declared inside a subprogram (a procedure and function) are allowed to be the same as variables global to (outside of) the subprogram.
-The effect of a declaration (its <em>scope</em>) lasts to the end of the construct in which the declaration occurs; this will be the end of the program, the <strong>end</strong> of the surrounding procedure, function or module, the <strong>end</strong> of a <strong>loop</strong>, <strong>for</strong>, <strong>case</strong> or <strong>begin</strong> statement, or the end of the <strong>then</strong>, <strong>elsif</strong>, or <strong>else</strong> clause of an <strong>if</strong> statement, or the end of the <strong>case</strong> statement alternative.
-A name must be declared before it can be used; this is called the <em>DBU</em> (<em>Declaration Before Use</em>) rule. The exceptions to this rule use the keyword <strong>forward</strong>, as in <strong>import</strong> lists and in <strong>collection</strong> declarations.
-A <em>declaration</em> can appear any place a <em>statement</em> can appear. This differs from the Pascal language, in which declarations are allowed only at the beginning of the program or at the beginning of a procedure or function. Each declaration can optionally be followed by a semicolon (;).
-There are certain restrictions on the placement of declarations. Procedures and functions cannot be declared inside other procedures and functions nor inside statements (for example, not inside an <strong>if</strong> statement). A <strong>bind</strong> declaration cannot appear at the outer level of either the main program or a module. A <strong>condition</strong> declaration can appear only inside a monitor. Processes cannot be declared inside procedures, functions, monitors or classes. Classes cannot be declared inside classes. However, modules and monitors can be declared inside classes and vice versa. Monitors can be declared inside modules, not vice versa.</p>
+<p>Ordinarily, each new name must be distinct from names that are already visible; that is, redeclaration is not allowed. There are certain exceptions to this rule, for example, names of parameters and fields of records can be the same as existing visible variables. Variables declared inside a subprogram (a procedure and function) are allowed to be the same as variables global to (outside of) the subprogram.</p>
+
+<p>The effect of a declaration (its <em>scope</em>) lasts to the end of the construct in which the declaration occurs; this will be the end of the program, the <strong>end</strong> of the surrounding procedure, function or module, the <strong>end</strong> of a <strong>loop</strong>, <strong>for</strong>, <strong>case</strong> or <strong>begin</strong> statement, or the end of the <strong>then</strong>, <strong>elsif</strong>, or <strong>else</strong> clause of an <strong>if</strong> statement, or the end of the <strong>case</strong> statement alternative.</p>
+
+<p>A name must be declared before it can be used; this is called the <em>DBU</em> (<em>Declaration Before Use</em>) rule. The exceptions to this rule use the keyword <strong>forward</strong>, as in <strong>import</strong> lists and in <strong>collection</strong> declarations.</p>
+
+<p>A <em>declaration</em> can appear any place a <em>statement</em> can appear. This differs from the Pascal language, in which declarations are allowed only at the beginning of the program or at the beginning of a procedure or function. Each declaration can optionally be followed by a semicolon (;).</p>
+
+<p>There are certain restrictions on the placement of declarations. Procedures and functions cannot be declared inside other procedures and functions nor inside statements (for example, not inside an <strong>if</strong> statement). A <strong>bind</strong> declaration cannot appear at the outer level of either the main program or a module. A <strong>condition</strong> declaration can appear only inside a monitor. Processes cannot be declared inside procedures, functions, monitors or classes. Classes cannot be declared inside classes. However, modules and monitors can be declared inside classes and vice versa. Monitors can be declared inside modules, not vice versa.</p>

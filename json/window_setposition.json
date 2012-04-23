@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetPosition</b> (<i>windowID</i> : <b>int</b>, <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.SetPosition (windowID : int, x, y : int)\r\n",
-      "mdown_content": "**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)"
+      "mdown_content": "**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.SetPosition</b> procedure moves the location of the specified execution window on the screen. <i>x</i> and <i>y</i> specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
       "text_content": " The Window.SetPosition procedure moves the location of the specified execution window on the screen. x and y specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.\r\n",
-      "mdown_content": "The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. _x_ and _y_ specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen."
+      "mdown_content": "The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. _x_ and _y_ specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program opens four windows, one at each corner of the screen.<p>\r\n</p>",
       "text_content": " The following program opens four windows, one at each corner of the screen.\r\n\r\n",
-      "mdown_content": "The following program opens four windows, one at each corner of the screen."
+      "mdown_content": "The following program opens four windows, one at each corner of the screen.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.SetPosition</b>, not by calling <b>SetPosition</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.SetPosition, not by calling SetPosition.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.SetPosition**, not by calling **SetPosition**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.SetPosition**, not by calling **SetPosition**.\n"
     },
     {
       "title": "See also",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"window_getposition.html\">Window.GetPosition</a></b> to get the current window position and <b><a href=\"config_display.html\">Config.Display</a></b> to get the size of the screen.<p>\r\n</p>",
       "text_content": " Window.GetPosition to get the current window position and Config.Display to get the size of the screen.\r\n",
-      "mdown_content": "**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen."
+      "mdown_content": "**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen.\n"
     }
   ],
   "dependencies": [

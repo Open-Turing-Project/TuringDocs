@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randnext</b> ( <b>var</b> <i>v</i> : <b>real</b>, <i>seq</i> : 1 .. 10 )<p>\r\n</p></font>",
       "text_content": " randnext ( var v : real, seq : 1 .. 10 )\r\n",
-      "mdown_content": "**randnext** ( **var** _v_ : **real**, _seq_ : 1 .. 10 )"
+      "mdown_content": "**randnext** ( **var** _v_ : **real**, _seq_ : 1 .. 10 )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>randnext</b> procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The <b>randnext</b> procedure is the same as <b>rand</b>, except <i>seq</i> specifies one of ten independent and repeatable sequences of pseudo-random real numbers.<p>\r\nThe <b>randseed</b> procedure is used to start one of these sequences at a particular point.</p>\n<p>\r\n</p>",
       "text_content": " The randnext procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The randnext procedure is the same as rand, except seq specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\r\nThe randseed procedure is used to start one of these sequences at a particular point.\r\n",
-      "mdown_content": "The **randnext** procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The **randnext** procedure is the same as **rand**, except _seq_ specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\nThe **randseed** procedure is used to start one of these sequences at a particular point."
+      "mdown_content": "The **randnext** procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The **randnext** procedure is the same as **rand**, except _seq_ specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\n\nThe **randseed** procedure is used to start one of these sequences at a particular point.\n"
     },
     {
       "title": "See also",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "<b><a href=\"randseed.html\">randseed</a></b>, <b><a href=\"randint.html\">randint</a></b>, <b><a href=\"rand.html\">rand</a></b> and <b><a href=\"\">randnext</a></b>.<p>\r\n</p>",
       "text_content": " randseed, randint, rand and randnext.\r\n",
-      "mdown_content": "**[randseed.html](randseed)**, **[randint.html](randint)**, **[rand.html](rand)** and **[](randnext)**."
+      "mdown_content": "**[randseed.html](randseed)**, **[randint.html](randint)**, **[rand.html](rand)** and **[](randnext)**.\n"
     }
   ],
   "dependencies": [

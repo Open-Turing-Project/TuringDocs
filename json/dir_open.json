@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Open</b> (<i>directoryPathName</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Dir.Open (directoryPathName : string) : int\r\n",
-      "mdown_content": "**Dir.Open** (_directoryPathName_ : **string**) : **int**"
+      "mdown_content": "**Dir.Open** (_directoryPathName_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Dir.Open</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Open</b> returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the <b>Dir.Get</b> and <b>Dir.GetLong</b> subprograms. After getting the listing, the user should call <b>Dir.Close</b>.<p>\r\n</p>",
       "text_content": " Dir.Open is part of a series of four subprograms that help users get directory listings. Dir.Open returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the Dir.Get and Dir.GetLong subprograms. After getting the listing, the user should call Dir.Close.\r\n",
-      "mdown_content": "**Dir.Open** is part of a series of four subprograms that help users get directory listings. **Dir.Open** returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the **Dir.Get** and **Dir.GetLong** subprograms. After getting the listing, the user should call **Dir.Close**."
+      "mdown_content": "**Dir.Open** is part of a series of four subprograms that help users get directory listings. **Dir.Open** returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the **Dir.Get** and **Dir.GetLong** subprograms. After getting the listing, the user should call **Dir.Close**.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>Dir.Open</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If the Dir.Open call fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If the **Dir.Open** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If the **Dir.Open** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program prints a listing of all the files in the current directory.<p>\r\n</p>",
       "text_content": " This program prints a listing of all the files in the current directory.\r\n\r\n",
-      "mdown_content": "This program prints a listing of all the files in the current directory."
+      "mdown_content": "This program prints a listing of all the files in the current directory.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Dir.Open</b>, not by calling <b>Open</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Dir.Open, not by calling Open.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Open**, not by calling **Open**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Dir.Open**, not by calling **Open**.\n"
     }
   ],
   "dependencies": [

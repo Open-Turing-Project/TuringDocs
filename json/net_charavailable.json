@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.CharAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.CharAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.CharAvailable** (_netStream_ : **int**) : **boolean**"
+      "mdown_content": "**Net.CharAvailable** (_netStream_ : **int**) : **boolean**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns <b>true</b> if a character is waiting to be read from the net stream specified by the <i>netStream</i> parameter. If <b>Net.CharAvailable</b> returns <b>true</b>, then a single character can be read from the stream without blocking.<p>\r\n</p>",
       "text_content": " Returns true if a character is waiting to be read from the net stream specified by the netStream parameter. If Net.CharAvailable returns true, then a single character can be read from the stream without blocking.\r\n",
-      "mdown_content": "Returns **true** if a character is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.CharAvailable** returns **true**, then a single character can be read from the stream without blocking."
+      "mdown_content": "Returns **true** if a character is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.CharAvailable** returns **true**, then a single character can be read from the stream without blocking.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
       "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\n\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
     },
     {
       "title": "Example",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "The following program fragment reads a character from <i>netStream</i> only if there is one waiting to be read.<p>\r\n</p>",
       "text_content": " The following program fragment reads a character from netStream only if there is one waiting to be read.\r\n\r\n",
-      "mdown_content": "The following program fragment reads a character from _netStream_ only if there is one waiting to be read."
+      "mdown_content": "The following program fragment reads a character from _netStream_ only if there is one waiting to be read.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.CharAvailable</b>, not by calling <b>CharAvailable</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.CharAvailable, not by calling CharAvailable.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.CharAvailable**, not by calling **CharAvailable**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Net.CharAvailable**, not by calling **CharAvailable**.\n"
     },
     {
       "title": "See also",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"net_bytesavailable.html\">Net.BytesAvailable</a></b>, <b><a href=\"net_lineavailable.html\">Net.LineAvailable</a></b>, and <b><a href=\"net_tokenavailable.html\">Net.TokenAvailable</a></b>.<p>\r\n</p>",
       "text_content": " Net.BytesAvailable, Net.LineAvailable, and Net.TokenAvailable.\r\n",
-      "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_lineavailable.html](Net.LineAvailable)**, and **[net_tokenavailable.html](Net.TokenAvailable)**."
+      "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_lineavailable.html](Net.LineAvailable)**, and **[net_tokenavailable.html](Net.TokenAvailable)**.\n"
     }
   ],
   "dependencies": [

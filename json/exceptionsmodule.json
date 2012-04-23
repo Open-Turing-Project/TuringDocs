@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "This unit contains all the constants corresponding to exception numbers in Turing for use in building exception handlers.<p>\r\nAll constants in the Exceptions module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"<b>Exceptions.</b>\".)</p>\n<p>\r\n</p>",
       "text_content": " This unit contains all the constants corresponding to exception numbers in Turing for use in building exception handlers.\r\nAll constants in the Exceptions module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"Exceptions.\".)\r\n",
-      "mdown_content": "This unit contains all the constants corresponding to exception numbers in Turing for use in building exception handlers.\nAll constants in the Exceptions module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"**Exceptions.**\".)"
+      "mdown_content": "This unit contains all the constants corresponding to exception numbers in Turing for use in building exception handlers.\n\nAll constants in the Exceptions module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"**Exceptions.**\".)\n"
     }
   ],
   "dependencies": [

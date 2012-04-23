@@ -19,13 +19,15 @@
 
 <h2>Details</h2>
 
-<p>Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, <em>color</em>.<em>red</em>. Enumerated values can be compared for equality and for ordering. The <strong>succ</strong> and <strong>pred</strong> functions can be used to find the value following or preceding a given enumerated value. The <strong>ord</strong> function can be used to find the enumeration position of a value, for example, <strong>ord</strong> (<em>color</em>.<em>red</em>) is 0.
-Enumerated types cannot be combined with integers or with other enumerated types.</p>
+<p>Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, <em>color</em>.<em>red</em>. Enumerated values can be compared for equality and for ordering. The <strong>succ</strong> and <strong>pred</strong> functions can be used to find the value following or preceding a given enumerated value. The <strong>ord</strong> function can be used to find the enumeration position of a value, for example, <strong>ord</strong> (<em>color</em>.<em>red</em>) is 0.</p>
+
+<p>Enumerated types cannot be combined with integers or with other enumerated types.</p>
 
 <h2>Details</h2>
 
-<p>It is illegal to declare an "anonymous" enum. The only legal declaration for an enum is in a type declaration. For example, the following is now illegal:
-Given that there is no (easy) way of generating an enum value without it being a named type, this should not impact any but the most bizarre code.</p>
+<p>It is illegal to declare an "anonymous" enum. The only legal declaration for an enum is in a type declaration. For example, the following is now illegal:</p>
+
+<p>Given that there is no (easy) way of generating an enum value without it being a named type, this should not impact any but the most bizarre code.</p>
 
 <pre><code>    var a : array enum (red, green, blue) of int
 </code></pre>

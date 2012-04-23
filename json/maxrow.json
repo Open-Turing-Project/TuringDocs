@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxrow</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxrow : int\r\n",
-      "mdown_content": "**maxrow** : **int**"
+      "mdown_content": "**maxrow** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>maxrow</b> function is used to determine the number of rows on the screen.<p>\r\n</p>",
       "text_content": " The maxrow function is used to determine the number of rows on the screen.\r\n",
-      "mdown_content": "The **maxrow** function is used to determine the number of rows on the screen."
+      "mdown_content": "The **maxrow** function is used to determine the number of rows on the screen.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs the maximum row number.<p>\r\n</p>",
       "text_content": " This program outputs the maximum row number.\r\n\r\n",
-      "mdown_content": "This program outputs the maximum row number."
+      "mdown_content": "This program outputs the maximum row number.\n"
     },
     {
       "title": "Details",
       "raw_content": "For IBM PC compatibles, <b>maxrow</b> = 25. For many UNIX dumb terminals, <b>maxrow</b> = 24. <p>\r\n</p>",
       "text_content": " For IBM PC compatibles, maxrow = 25. For many UNIX dumb terminals, maxrow = 24. \r\n",
-      "mdown_content": "For IBM PC compatibles, **maxrow** = 25. For many UNIX dumb terminals, **maxrow** = 24. "
+      "mdown_content": "For IBM PC compatibles, **maxrow** = 25. For many UNIX dumb terminals, **maxrow** = 24. \n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"locate.html\">locate</a></b> <a href=\"procedure.html\">procedure</a> for an example of the use of <b><a href=\"\">maxrow</a></b>.<p>\r\n</p>",
       "text_content": " locate procedure for an example of the use of maxrow.\r\n",
-      "mdown_content": "**[locate.html](locate)** [procedure.html](procedure) for an example of the use of **[](maxrow)**."
+      "mdown_content": "**[locate.html](locate)** [procedure.html](procedure) for an example of the use of **[](maxrow)**.\n"
     }
   ],
   "dependencies": [

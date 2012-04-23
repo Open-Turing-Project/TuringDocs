@@ -6,12 +6,17 @@
 
 <h2>Description</h2>
 
-<p>The <strong>frealstr</strong> function is used to convert a real number to a string. For example, <strong>frealstr</strong> (2.5e1, 5, 1)="<em>b_25.0"  where </em>b<em> represents a blank. The string is an approximation to </em>r<em>, padded on the left with blanks as necessary to a length of </em>width<em>.
-The number of digits of the fraction to be displayed is given by </em>fractionWidth<em>.
-The </em>width<em> must be non-negative. If the </em>width<em> parameter is not large enough to represent the value of </em>r<em>, it is implicitly increased as needed.
-The </em>fractionWidth_must be non-negative. The displayed value is rounded to the nearest decimal equivalent with this accuracy. In the case of a tie, the value is rounded to the next larger value. The result string is of the form:
-If the leftmost digit is zero, then it is the only digit to the left of the decimal point.
-The <strong>frealstr</strong> function approximates the inverse of <strong>strreal</strong>, although round-off errors keep these from being exact inverses.</p>
+<p>The <strong>frealstr</strong> function is used to convert a real number to a string. For example, <strong>frealstr</strong> (2.5e1, 5, 1)="<em>b_25.0"  where </em>b<em> represents a blank. The string is an approximation to </em>r<em>, padded on the left with blanks as necessary to a length of </em>width_.</p>
+
+<p>The number of digits of the fraction to be displayed is given by <em>fractionWidth</em>.</p>
+
+<p>The <em>width</em> must be non-negative. If the <em>width</em> parameter is not large enough to represent the value of <em>r</em>, it is implicitly increased as needed.</p>
+
+<p>The _fractionWidth_must be non-negative. The displayed value is rounded to the nearest decimal equivalent with this accuracy. In the case of a tie, the value is rounded to the next larger value. The result string is of the form:</p>
+
+<p>If the leftmost digit is zero, then it is the only digit to the left of the decimal point.</p>
+
+<p>The <strong>frealstr</strong> function approximates the inverse of <strong>strreal</strong>, although round-off errors keep these from being exact inverses.</p>
 
 <pre><code>            {blank} [-]{digit}. {digit}
 </code></pre>

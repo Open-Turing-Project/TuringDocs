@@ -31,18 +31,34 @@
 
 <p>The <em>importItem</em> is one of<em>:</em></p>
 
-<p>The second form is used in OOT when the list is the import list  for a separate <strong>unit</strong> (or the main program), and the imported item is in a file whose name is different from the item's name, for example:
-The <em>fileName</em> must be an explicit character string. See also <strong>unit</strong>.
-Parentheses are allowed around the items in an import lists, as in:
-There are various ways to import items, as determined by <em>howImport</em>. The form of <em>howImport</em> is one of:</p>
+<p>(a) <em>id</em>
+(b) <em>id</em> <strong>in</strong> <em>fileName</em></p>
 
-<p>Commonly the <em>howImport</em> is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a <em>howImport</em> is imported read-write. A read-only symbol that is imported without a <em>howImport</em> is imported read-only.
-If the <em>importItem</em> is <strong>forward</strong>, the import list is part of a <strong>forward</strong> procedure or function declaration and the imported item is itself necessarily a procedure or function. See <strong>forward</strong> declarations for details and an example.
-If the <strong>import</strong> list of a <strong>module</strong>, <strong>monitor</strong> or <strong>class</strong> is omitted, the implementation assumes that the list is <strong>import</strong>( ), meaning that no items are imported. For example, a <strong>module</strong> must explicitly import any global identifiers that are not predefined or <strong>pervasive</strong>.
-Circular (recursive) imports are not allowed. For example, if unit <em>A</em> imports <em>B</em> then <em>B</em> cannot import <em>A</em>. However, circular usage of separately compiled units is possible by separating the units into interfaces and bodies and having the bodies import the interfaces. For example, if <em>C</em> is the parent class of <em>D</em>, <em>D</em> can import <em>C</em>, but not vice versa.
-In an expansion (or implementation), the import list of the expansion augments the import list of the parent.
-An overriding subprogram (in an expansion) ignores the import list of the target subprogram and uses its own import list.
-Turing initializes modules and monitors  in order of importation. Initialization begins with the main program, which first initializes its imports in the order given in its <strong>import</strong> list, and then initializes itself.</p>
+<p>The second form is used in OOT when the list is the import list  for a separate <strong>unit</strong> (or the main program), and the imported item is in a file whose name is different from the item's name, for example:</p>
+
+<p>The <em>fileName</em> must be an explicit character string. See also <strong>unit</strong>.</p>
+
+<p>Parentheses are allowed around the items in an import lists, as in:</p>
+
+<p>There are various ways to import items, as determined by <em>howImport</em>. The form of <em>howImport</em> is one of:</p>
+
+<p>(a) <strong>var</strong>
+(b) <strong>const</strong>
+(c) <strong>forward</strong></p>
+
+<p>Commonly the <em>howImport</em> is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a <em>howImport</em> is imported read-write. A read-only symbol that is imported without a <em>howImport</em> is imported read-only.</p>
+
+<p>If the <em>importItem</em> is <strong>forward</strong>, the import list is part of a <strong>forward</strong> procedure or function declaration and the imported item is itself necessarily a procedure or function. See <strong>forward</strong> declarations for details and an example.</p>
+
+<p>If the <strong>import</strong> list of a <strong>module</strong>, <strong>monitor</strong> or <strong>class</strong> is omitted, the implementation assumes that the list is <strong>import</strong>( ), meaning that no items are imported. For example, a <strong>module</strong> must explicitly import any global identifiers that are not predefined or <strong>pervasive</strong>.</p>
+
+<p>Circular (recursive) imports are not allowed. For example, if unit <em>A</em> imports <em>B</em> then <em>B</em> cannot import <em>A</em>. However, circular usage of separately compiled units is possible by separating the units into interfaces and bodies and having the bodies import the interfaces. For example, if <em>C</em> is the parent class of <em>D</em>, <em>D</em> can import <em>C</em>, but not vice versa.</p>
+
+<p>In an expansion (or implementation), the import list of the expansion augments the import list of the parent.</p>
+
+<p>An overriding subprogram (in an expansion) ignores the import list of the target subprogram and uses its own import list.</p>
+
+<p>Turing initializes modules and monitors  in order of importation. Initialization begins with the main program, which first initializes its imports in the order given in its <strong>import</strong> list, and then initializes itself.</p>
 
 <pre><code>    import ledger in "newledg.t"        import ( ledger in "newledg.t" )
 </code></pre>

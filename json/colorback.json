@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>colorback</b> (<i>Color</i> :<i> </i><b>int</b>)<p>\r\n</p></font>",
       "text_content": " colorback (Color : int)\r\n",
-      "mdown_content": "**colorback** (_Color_ : **int**)"
+      "mdown_content": "**colorback** (_Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>colorback</b> procedure is used to change the color upon which text appears. The alternate spelling is <b>colourback</b>.<p>\r\n</p>",
       "text_content": " The colorback procedure is used to change the color upon which text appears. The alternate spelling is colourback.\r\n",
-      "mdown_content": "The **colorback** procedure is used to change the color upon which text appears. The alternate spelling is **colourback**."
+      "mdown_content": "The **colorback** procedure is used to change the color upon which text appears. The alternate spelling is **colourback**.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "When the message \"Greetings\" is output, the background surrounding each letter will be inred.<p>\r\n</p>",
       "text_content": " When the message \"Greetings\" is output, the background surrounding each letter will be inred.\r\n\r\n",
-      "mdown_content": "When the message \"Greetings\" is output, the background surrounding each letter will be inred."
+      "mdown_content": "When the message \"Greetings\" is output, the background surrounding each letter will be inred.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "When a newline is output, such as when the <b>put</b> statement does not contain a .. at the end, the rest of the line is cleared from cursor to the right edge of the output window in the text background color.<p>\r\n</p>",
       "text_content": " When a newline is output, such as when the put statement does not contain a .. at the end, the rest of the line is cleared from cursor to the right edge of the output window in the text background color.\r\n",
-      "mdown_content": "When a newline is output, such as when the **put** statement does not contain a .. at the end, the rest of the line is cleared from cursor to the right edge of the output window in the text background color."
+      "mdown_content": "When a newline is output, such as when the **put** statement does not contain a .. at the end, the rest of the line is cleared from cursor to the right edge of the output window in the text background color.\n"
     },
     {
       "title": "Example",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "This program will result in the word \"Hello\" being displayed in red on a green background followed by the word \"Again\" displayed in red on a yellow background. The yellow background stretches across the window.<p>\r\n</p>",
       "text_content": " This program will result in the word \"Hello\" being displayed in red on a green background followed by the word \"Again\" displayed in red on a yellow background. The yellow background stretches across the window.\r\n\r\n",
-      "mdown_content": "This program will result in the word \"Hello\" being displayed in red on a green background followed by the word \"Again\" displayed in red on a yellow background. The yellow background stretches across the window."
+      "mdown_content": "This program will result in the word \"Hello\" being displayed in red on a green background followed by the word \"Again\" displayed in red on a yellow background. The yellow background stretches across the window.\n"
     },
     {
       "title": "Execute",
@@ -65,7 +65,7 @@
       ],
       "raw_content": "This program displays the letter 'X' in 16 different colors on 16 different backgrounds. Note that the letter is not visible when the text color and the bacground color are the same<p>\r\n</p>",
       "text_content": " This program displays the letter 'X' in 16 different colors on 16 different backgrounds. Note that the letter is not visible when the text color and the bacground color are the same\r\n\r\n",
-      "mdown_content": "This program displays the letter 'X' in 16 different colors on 16 different backgrounds. Note that the letter is not visible when the text color and the bacground color are the same"
+      "mdown_content": "This program displays the letter 'X' in 16 different colors on 16 different backgrounds. Note that the letter is not visible when the text color and the bacground color are the same\n"
     },
     {
       "title": "Execute",
@@ -81,7 +81,7 @@
       "title": "Details",
       "raw_content": "See <b>maxcolor</b> for the number of background colors available . The color in which text appears can be set using the <b>color</b> procedure.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode to use the <b>color</b> procedure. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " See maxcolor for the number of background colors available . The color in which text appears can be set using the color procedure.\r\nThe screen must be in a \"graphics\" mode to use the color procedure. See setscreen for details.\r\n",
-      "mdown_content": "See **maxcolor** for the number of background colors available . The color in which text appears can be set using the **color** procedure.\nThe screen must be in a \"_graphics_\" mode to use the **color** procedure. See **setscreen** for details."
+      "mdown_content": "See **maxcolor** for the number of background colors available . The color in which text appears can be set using the **color** procedure.\n\nThe screen must be in a \"_graphics_\" mode to use the **color** procedure. See **setscreen** for details.\n"
     },
     {
       "title": "See also",
@@ -92,7 +92,7 @@
       ],
       "raw_content": "<b><a href=\"color.html\">color</a></b> and <b><a href=\"whatcolorback.html\">whatcolorback</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " color and whatcolorback.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "**[color.html](color)** and **[whatcolorback.html](whatcolorback)**.\nSee also predefined unit **[textmodule.html](Text)**."
+      "mdown_content": "**[color.html](color)** and **[whatcolorback.html](whatcolorback)**.\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
     }
   ],
   "dependencies": [

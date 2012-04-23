@@ -1,5 +1,5 @@
 #Basic Predefined Subprograms
-- [intreal.html](intreal - integer-to-real function)
+- Type Conversion- From Integer- [intreal.html](intreal - integer-to-real function)
 - [intstr.html](intstr - integer-to-string function)
 
 - From Real- [ceil.html](ceil - real-to-integer function)

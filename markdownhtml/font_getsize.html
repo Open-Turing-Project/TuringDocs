@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p><strong>Font.GetSize</strong> is used to get the next size in the list of available font sizes for a particular font name and style.
-<strong>Font.StartSize</strong> must be called before any calls to <strong>Font.GetSize</strong>. After that, <strong>Font.GetSize</strong> returns the list of sizes, one per call. When there are no more sizes, <strong>Font.GetSize</strong> returns 0.
-Some fonts are &#147;scalable&#148;. This means that the computer can scale the fonts to fit any given size. (Under Microsoft Windows and the Apple Macintosh, TrueType and PostScript fonts are scalable with the appropriate utilities.) In this case, <strong>Font.GetSize</strong> returns -1.</p>
+<p><strong>Font.GetSize</strong> is used to get the next size in the list of available font sizes for a particular font name and style.</p>
+
+<p><strong>Font.StartSize</strong> must be called before any calls to <strong>Font.GetSize</strong>. After that, <strong>Font.GetSize</strong> returns the list of sizes, one per call. When there are no more sizes, <strong>Font.GetSize</strong> returns 0.</p>
+
+<p>Some fonts are &#147;scalable&#148;. This means that the computer can scale the fonts to fit any given size. (Under Microsoft Windows and the Apple Macintosh, TrueType and PostScript fonts are scalable with the appropriate utilities.) In this case, <strong>Font.GetSize</strong> returns -1.</p>
 
 <h2>Example</h2>
 
@@ -20,5 +22,6 @@ Some fonts are &#147;scalable&#148;. This means that the computer can scale the 
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Font.GetSize</strong>, not by calling <strong>GetSize</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Font.GetSize</strong>, not by calling <strong>GetSize</strong>.</p>

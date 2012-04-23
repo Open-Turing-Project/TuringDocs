@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Show</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Show (windowID : int)\r\n",
-      "mdown_content": "**Window.Show** (_windowID_ : **int**)"
+      "mdown_content": "**Window.Show** (_windowID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Show</b> procedure makes the specified window appear if it was invisible. <p>\r\nTo make a window disappear after it's visible, you use <b>Window.Hide.</b></p>\n<p>\r\n</p>",
       "text_content": " The Window.Show procedure makes the specified window appear if it was invisible. \r\nTo make a window disappear after it's visible, you use Window.Hide.\r\n",
-      "mdown_content": "The **Window.Show** procedure makes the specified window appear if it was invisible. \nTo make a window disappear after it's visible, you use **Window.Hide.**"
+      "mdown_content": "The **Window.Show** procedure makes the specified window appear if it was invisible. \n\nTo make a window disappear after it's visible, you use **Window.Hide.**\n"
     },
     {
       "title": "Details",
       "raw_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.<p>\r\n</p>",
       "text_content": " When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.\r\n",
-      "mdown_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster."
+      "mdown_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.Show</b>, not by calling <b>Show</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.Show, not by calling Show.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.Show**, not by calling **Show**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.Show**, not by calling **Show**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"window_select.html\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>\n<p>\r\n</p>",
       "text_content": " Window.Select and Window.SetActive.\r\n\r\n",
-      "mdown_content": "**[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n"
+      "mdown_content": "**[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n\n\n"
     }
   ],
   "dependencies": [

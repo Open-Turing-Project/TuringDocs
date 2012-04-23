@@ -5,11 +5,12 @@
 **Draw.Fill** (_x_, _y_ **:** **int**, _fillColor_, _borderColor_ **: int**)
 
 
-
 ##Description
 The **Draw.Fill** procedure is used to color in a figure that is on the screen. Starting at (_x_, _y_), the figure is filled with _fillColor_ to a surrounding border whose color is _borderColor_.
 
-![Doc image](draw_fill01.gif)
+
+
+![Doc Image](draw_fill01.gif)
 
 
 ##Example
@@ -26,14 +27,12 @@ This program draws an oval with x and y radius of 10 in the center of the screen
 The screen must be in a "_graphics_" mode. See the **View.Set** procedure for details. If the screen is not in a "_graphics_" mode, an error will occur.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Draw.Fill**, not by calling **Fill.**
 
+This means that you can only call the function by calling **Draw.Fill**, not by calling **Fill.**
 
 
 ##See also
 **[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit.
-
 

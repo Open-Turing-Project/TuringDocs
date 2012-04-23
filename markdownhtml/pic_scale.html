@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.Scale</strong> is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
-The <em>newWidth</em> and <em>newHeight</em> parameters are the desired width and height of the new picture. The <em>newWidth</em> and <em>newHeight</em> parameters may be negative, in which case the picture is mirror image (<em>newWidth</em> is negative) or upside-down (<em>newHeight</em> is negative) and the absolute values are used for the new width and height values.</p>
+<p><strong>Pic.Scale</strong> is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.</p>
+
+<p>The <em>newWidth</em> and <em>newHeight</em> parameters are the desired width and height of the new picture. The <em>newWidth</em> and <em>newHeight</em> parameters may be negative, in which case the picture is mirror image (<em>newWidth</em> is negative) or upside-down (<em>newHeight</em> is negative) and the absolute values are used for the new width and height values.</p>
 
 <h2>Details</h2>
 
@@ -15,8 +16,9 @@ The <em>newWidth</em> and <em>newHeight</em> parameters are the desired width an
 
 <h2>Details</h2>
 
-<p>Creating a larger picture by scaling a smaller picture will result in a "grainy" image with each pixel being scaled up into 2 or 3 pixels. In general image quality is better if a large picture is scaled down. However, when a large picture is scaled down, thin one-pixel wide lines can "disappear".
-In order to scale a picture while retaining its original aspect ratio, scale with multiples of the original width and height. The width and height of a picture can be obtained using <strong>Pic.Width</strong> and <strong>Pic.Height</strong>.</p>
+<p>Creating a larger picture by scaling a smaller picture will result in a "grainy" image with each pixel being scaled up into 2 or 3 pixels. In general image quality is better if a large picture is scaled down. However, when a large picture is scaled down, thin one-pixel wide lines can "disappear".</p>
+
+<p>In order to scale a picture while retaining its original aspect ratio, scale with multiples of the original width and height. The width and height of a picture can be obtained using <strong>Pic.Width</strong> and <strong>Pic.Height</strong>.</p>
 
 <h2>Details</h2>
 
@@ -30,7 +32,9 @@ In order to scale a picture while retaining its original aspect ratio, scale wit
 
 <p>This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..</p>
 
-<p><img src="pic_scale01.gif" alt="Doc image" /></p>
+<p><img src="pic_scale01.gif" alt="Doc Image" /></p>
+
+<p><strong>Output from Program</strong></p>
 
 <pre><code>    % The "Pic.Scale Example" program.
     const STAR_SIZE : int := 70
@@ -64,5 +68,6 @@ In order to scale a picture while retaining its original aspect ratio, scale wit
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Scale</strong>, not by calling <strong>Scale</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Scale</strong>, not by calling <strong>Scale</strong>.</p>

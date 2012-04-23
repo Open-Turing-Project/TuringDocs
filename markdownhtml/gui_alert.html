@@ -12,9 +12,11 @@
 
 <h2>Description</h2>
 
-<p>Displays a dialog box with the string specified by <em>msg</em> in it. There is a single button labelled <em>OK</em> which dismisses the dialog and resumes execution. The <em>title</em> parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.
-The <strong>GUI.Alert2</strong> and <strong>GUI.Alert3</strong> procedures allow the user to specify a two or three line message respectively. The <strong>GUI.AlertFull</strong> procedure allows the user to specify any number of lines of text in the string array specified by <em>msg</em> as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.
-<strong>Note</strong>: This function is <strong>not</strong> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
+<p>Displays a dialog box with the string specified by <em>msg</em> in it. There is a single button labelled <em>OK</em> which dismisses the dialog and resumes execution. The <em>title</em> parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.</p>
+
+<p>The <strong>GUI.Alert2</strong> and <strong>GUI.Alert3</strong> procedures allow the user to specify a two or three line message respectively. The <strong>GUI.AlertFull</strong> procedure allows the user to specify any number of lines of text in the string array specified by <em>msg</em> as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.</p>
+
+<p><strong>Note</strong>: This function is <strong>not</strong> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
 
 <h2>Example</h2>
 
@@ -71,5 +73,6 @@ The <strong>GUI.Alert2</strong> and <strong>GUI.Alert3</strong> procedures allow
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.Alert</strong>, not by calling <strong>Alert</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.Alert</strong>, not by calling <strong>Alert</strong>.</p>

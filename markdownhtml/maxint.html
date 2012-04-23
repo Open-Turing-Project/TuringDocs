@@ -17,10 +17,12 @@
 
 <h2>Details</h2>
 
-<p>In current Turing and OOT implementations, <strong>int</strong> values are stored in 4 bytes, i.e., 32 bits. This determines the maximum <strong>int</strong> value, which is 2<strong>311, equaling 2147483647.
-There is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than </strong>maxint<strong>. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an </strong>int<strong> variable is detected as an overflow. You can use this extra value by using the </strong>int4<strong> type instead of </strong>int**, but this type has no initialization checking.</p>
+<p>In current Turing and OOT implementations, <strong>int</strong> values are stored in 4 bytes, i.e., 32 bits. This determines the maximum <strong>int</strong> value, which is 2**311, equaling 2147483647.</p>
+
+<p>There is an anomaly in computer arithmetic in that the absolute value of the largest negative integer is one larger than <strong>maxint</strong>. Turing reserves this extra value to represent the uninitialized integer. This value can be computed but any attempt to assign it to an <strong>int</strong> variable is detected as an overflow. You can use this extra value by using the <strong>int4</strong> type instead of <strong>int</strong>, but this type has no initialization checking.</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="maxnat">maxnat.html</a></strong> and <strong><a href="minint">minint.html</a></strong>.
-See also OOT predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>
+<p><strong><a href="maxnat">maxnat.html</a></strong> and <strong><a href="minint">minint.html</a></strong>.</p>
+
+<p>See also OOT predefined unit <strong><a href="Math">mathmodule.html</a></strong>.</p>

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "A <i>waitStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>wait</b> <i>variableReference</i> [ , <i>expn</i> ]</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A waitStatement is:\r\n wait variableReference [ , expn ]",
-      "mdown_content": "A _waitStatement_ is:\n\n**wait** _variableReference_ [ , _expn_ ]\n"
+      "mdown_content": "A _waitStatement_ is:\n\n\n**wait** _variableReference_ [ , _expn_ ]\n\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>wait</b> statement is used in a concurrent program to cause the executing process to be blocked (to go to sleep) until it is awakened by a <b>signal</b> statement. The statement can only be used inside a monitor (a special kind of module that handles concurrency). A <b>wait</b> statement operates on a <b>condition</b> variable (the <i>variableReference</i>), which is essentially a queue of sleeping processes. See <b>condition</b> for an example of a <b>wait</b> statement.<p>\r\n</p>",
       "text_content": " The wait statement is used in a concurrent program to cause the executing process to be blocked (to go to sleep) until it is awakened by a signal statement. The statement can only be used inside a monitor (a special kind of module that handles concurrency). A wait statement operates on a condition variable (the variableReference), which is essentially a queue of sleeping processes. See condition for an example of a wait statement.\r\n",
-      "mdown_content": "The **wait** statement is used in a concurrent program to cause the executing process to be blocked (to go to sleep) until it is awakened by a **signal** statement. The statement can only be used inside a monitor (a special kind of module that handles concurrency). A **wait** statement operates on a **condition** variable (the _variableReference_), which is essentially a queue of sleeping processes. See **condition** for an example of a **wait** statement."
+      "mdown_content": "The **wait** statement is used in a concurrent program to cause the executing process to be blocked (to go to sleep) until it is awakened by a **signal** statement. The statement can only be used inside a monitor (a special kind of module that handles concurrency). A **wait** statement operates on a **condition** variable (the _variableReference_), which is essentially a queue of sleeping processes. See **condition** for an example of a **wait** statement.\n"
     },
     {
       "title": "Details",
       "raw_content": "A <b>wait</b> statement for a priority condition must include the optional <i>expn</i>,. This expression must be a non-negative <b>int</b> value which is used to order processes waiting for the condition, low numbers first.<p>\r\nA <b>wait</b> statement for a <b>timeout</b> condition must include the optional <i>expn</i>, which must be a non-negative <b>int</b> value which gives the <i>timeout interval</i>. <i>A </i>process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.</p>\n<p>\r\n</p>",
       "text_content": " A wait statement for a priority condition must include the optional expn,. This expression must be a non-negative int value which is used to order processes waiting for the condition, low numbers first.\r\nA wait statement for a timeout condition must include the optional expn, which must be a non-negative int value which gives the timeout interval. A process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.\r\n",
-      "mdown_content": "A **wait** statement for a priority condition must include the optional _expn_,. This expression must be a non-negative **int** value which is used to order processes waiting for the condition, low numbers first.\nA **wait** statement for a **timeout** condition must include the optional _expn_, which must be a non-negative **int** value which gives the _timeout interval_. _A_ process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval."
+      "mdown_content": "A **wait** statement for a priority condition must include the optional _expn_,. This expression must be a non-negative **int** value which is used to order processes waiting for the condition, low numbers first.\n\nA **wait** statement for a **timeout** condition must include the optional _expn_, which must be a non-negative **int** value which gives the _timeout interval_. _A_ process waiting for a timeout condition is implicitly awakened if it waits longer than its timeout interval.\n"
     },
     {
       "title": "See also",
@@ -32,7 +32,7 @@
       ],
       "raw_content": "<b><a href=\"condition.html\">condition</a></b> and <b><a href=\"signal.html\">signal</a></b>. See also <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"fork.html\">fork</a></b>. See also <b><a href=\"empty.html\">empty</a></b>. See also <b><a href=\"pause.html\">pause</a></b>.<p>\r\n</p>",
       "text_content": " condition and signal. See also monitor and fork. See also empty. See also pause.\r\n",
-      "mdown_content": "**[condition.html](condition)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**."
+      "mdown_content": "**[condition.html](condition)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**.\n"
     }
   ],
   "dependencies": [

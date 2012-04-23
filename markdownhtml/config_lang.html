@@ -6,14 +6,15 @@
 
 <h2>Description</h2>
 
-<p><strong>Config.Lang</strong> returns information about the language and the limitations of the implementation that the program is currently running. The parameter <em>langCode</em> determines what sort of information is passed back. <em>langCode</em> has a number of possible values, all summarized by a set of predefined constants.
-At the time of this writing, the following constants were defined:</p>
+<p><strong>Config.Lang</strong> returns information about the language and the limitations of the implementation that the program is currently running. The parameter <em>langCode</em> determines what sort of information is passed back. <em>langCode</em> has a number of possible values, all summarized by a set of predefined constants.</p>
 
-<p><em>clRelease</em> return the current release number of the environment (e.g. 4.02 = 400).
-<em>clLanguageVersion</em> return the current version number of the language (e.g. 1.81 = 181).
-<em>clMaxNumStreams</em> return the maximum number of I/O streams (used by the <strong>open</strong> and <strong>close</strong> statements) that can be opened at once.
-<em>clMaxNumDirStreams</em> return the maximum number of directory streams that can be opened at once.
-<em>clMaxNumRunTimeArgs</em> return the maximum number of run-time arguments.</p>
+<p>At the time of this writing, the following constants were defined:</p>
+
+<p><em>clRelease</em>   return the current release number of the environment (e.g. 4.02 = 400).
+<em>clLanguageVersion</em>   return the current version number of the language (e.g. 1.81 = 181).
+<em>clMaxNumStreams</em>   return the maximum number of I/O streams (used by the <strong>open</strong> and <strong>close</strong> statements) that can be opened at once.
+<em>clMaxNumDirStreams</em>   return the maximum number of directory streams that can be opened at once.
+<em>clMaxNumRunTimeArgs</em>   return the maximum number of run-time arguments.</p>
 
 <h2>Example</h2>
 
@@ -25,5 +26,6 @@ At the time of this writing, the following constants were defined:</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Config.Lang</strong>, not by calling <strong>Lang</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Config.Lang</strong>, not by calling <strong>Lang</strong>.</p>

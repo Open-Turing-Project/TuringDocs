@@ -5,25 +5,28 @@
 **fetcharg** ( _i_ : **int** ) : **string**
 
 
-
 ##Description
 The **fetcharg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
 
+
+:r file1 file2
 
 
 then **fetcharg**(2) will return "file2". If a program called _prog.x_ is run under UNIX using this command:
 
 
+prog.x file1 file2
+
 
 the value of **fetcharg**(2) will similarly be "file2".
-The **nargs** function, which gives the number of arguments passed to the program, is usually used together with the **fetcharg** function. Parameter _i_ passed to **fetcharg** must be in the range 0 .. **nargs**.
-The 0-th argument is the name of the running program.
 
+The **nargs** function, which gives the number of arguments passed to the program, is usually used together with the **fetcharg** function. Parameter _i_ passed to **fetcharg** must be in the range 0 .. **nargs**.
+
+The 0-th argument is the name of the running program.
 
 
 ##Example
 This program lists its own name and its arguments.
-
 
         put "The name of this program is : ", fetcharg ( 0 )
         for i : 1 .. nargs
@@ -31,5 +34,4 @@ This program lists its own name and its arguments.
         end for
 ##See also
 **[nargs.html](nargs)**
-
 

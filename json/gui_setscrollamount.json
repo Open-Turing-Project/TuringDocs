@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetScrollAmount</b> (<i>widgetID</i> : <b>int</b>,<br><i>arrowInc</i>, <i>pageInc</i>, <i>thumbSize</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetScrollAmount (widgetID : int,arrowInc, pageInc, thumbSize : int)\r\n",
-      "mdown_content": "**GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)"
+      "mdown_content": "**GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The <i>widgetID</i> specifies the scroll bar to be changed. The <i>arrowInc</i> parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The <i>pageInc</i> parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The <i>thumbSize</i> parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.<p>\r\n</p>",
       "text_content": " Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The widgetID specifies the scroll bar to be changed. The arrowInc parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The pageInc parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The thumbSize parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.\r\n",
-      "mdown_content": "Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The _widgetID_ specifies the scroll bar to be changed. The _arrowInc_ parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The _pageInc_ parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The _thumbSize_ parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size."
+      "mdown_content": "Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The _widgetID_ specifies the scroll bar to be changed. The _arrowInc_ parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The _pageInc_ parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The _thumbSize_ parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "The following program displays an image in a canvas in a window. If the image is larger than the canvas, scroll bars to the bottom and left are used to allow the user to see the entire image. A text field allows users to load additional images whenever the \"Load File\" button is pressed.<p>\r\n</p>",
       "text_content": " The following program displays an image in a canvas in a window. If the image is larger than the canvas, scroll bars to the bottom and left are used to allow the user to see the entire image. A text field allows users to load additional images whenever the \"Load File\" button is pressed.\r\n\r\n",
-      "mdown_content": "The following program displays an image in a canvas in a window. If the image is larger than the canvas, scroll bars to the bottom and left are used to allow the user to see the entire image. A text field allows users to load additional images whenever the \"Load File\" button is pressed."
+      "mdown_content": "The following program displays an image in a canvas in a window. If the image is larger than the canvas, scroll bars to the bottom and left are used to allow the user to see the entire image. A text field allows users to load additional images whenever the \"Load File\" button is pressed.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetScrollAmount</b>, not by calling <b>SetScrollAmount</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetScrollAmount, not by calling SetScrollAmount.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetScrollAmount**, not by calling **SetScrollAmount**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetScrollAmount**, not by calling **SetScrollAmount**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateHorizontalScrollBar</b> and <b>GUI.CreateVerticalScrollBar</b><p>\r\n</p>",
       "text_content": " GUI.CreateHorizontalScrollBar and GUI.CreateVerticalScrollBar\r\n",
-      "mdown_content": "**GUI.CreateHorizontalScrollBar** and **GUI.CreateVerticalScrollBar**"
+      "mdown_content": "**GUI.CreateHorizontalScrollBar** and **GUI.CreateVerticalScrollBar**\n"
     }
   ],
   "dependencies": [

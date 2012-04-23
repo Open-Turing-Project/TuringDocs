@@ -5,11 +5,10 @@
 **GUI.SetEchoChar** (_widgetID_ : **int**, _echoChar_ : **char**)
 
 
-
 ##Description
 The **GUI.SetEchoChar** procedure is used with text fields,especially when using a text field to input a password.When the **GUI.SetEchoChar** is called with a text field, any character entered into the text field will appear as thecharacter specified by _inputChar_.
-This allows you to use the text field to enter a password.The characters that the user types will be echoed with thecharacter specified by _inputChar_ (often an asterisk).
 
+This allows you to use the text field to enter a password.The characters that the user types will be echoed with thecharacter specified by _inputChar_ (often an asterisk).
 
 
 ##Example
@@ -33,9 +32,8 @@ This program displays a text field.  As the user enterscharacters, each characte
 Note that the _echoChar_ argument to **GUI.SetEchoChar**must be a character, not a string. This means the charactershould be enclosed in single quote marks ('), not doublequotes (").
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.SetEchoChar**, not by calling **SetEchoChar**.
 
+This means that you can only call the function by calling **GUI.SetEchoChar**, not by calling **SetEchoChar**.
 

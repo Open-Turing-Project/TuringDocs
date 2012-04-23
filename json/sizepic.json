@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sizepic</b> ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " sizepic ( x1, y1, x2, y2 : int) : int\r\n",
-      "mdown_content": "**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**"
+      "mdown_content": "**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sizepic</b> function is used to determine the size buffer needed to record a picture from the screen (see description of <b>takepic</b> ). This gives the minimum number of elements of the int array used by <b>takepic</b>. The buffer is used by <b>drawpic</b> to make copies of the picture on the screen.<p>\r\n</p>",
       "text_content": " The sizepic function is used to determine the size buffer needed to record a picture from the screen (see description of takepic ). This gives the minimum number of elements of the int array used by takepic. The buffer is used by drawpic to make copies of the picture on the screen.\r\n",
-      "mdown_content": "The **sizepic** function is used to determine the size buffer needed to record a picture from the screen (see description of **takepic** ). This gives the minimum number of elements of the int array used by **takepic**. The buffer is used by **drawpic** to make copies of the picture on the screen."
+      "mdown_content": "The **sizepic** function is used to determine the size buffer needed to record a picture from the screen (see description of **takepic** ). This gives the minimum number of elements of the int array used by **takepic**. The buffer is used by **drawpic** to make copies of the picture on the screen.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs the size of array needed to hold a picture with left bottom corner at x=10, y=20 and right top corner at x=50, y=60.<p>\r\n</p>",
       "text_content": " This program outputs the size of array needed to hold a picture with left bottom corner at x=10, y=20 and right top corner at x=50, y=60.\r\n\r\n",
-      "mdown_content": "This program outputs the size of array needed to hold a picture with left bottom corner at x=10, y=20 and right top corner at x=50, y=60."
+      "mdown_content": "This program outputs the size of array needed to hold a picture with left bottom corner at x=10, y=20 and right top corner at x=50, y=60.\n"
     },
     {
       "title": "Details",
       "raw_content": "See <b>takepic</b> for an example of the use of <b>sizepic</b> and for further information about buffers for drawing pictures.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " See takepic for an example of the use of sizepic and for further information about buffers for drawing pictures.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "See **takepic** for an example of the use of **sizepic** and for further information about buffers for drawing pictures.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
+      "mdown_content": "See **takepic** for an example of the use of **sizepic** and for further information about buffers for drawing pictures.\n\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\n"
     },
     {
       "title": "See also",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"drawpic.html\">drawpic</a></b>. See also <b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b>, <b><a href=\"drawdot.html\">drawdot</a></b>, <b><a href=\"drawline.html\">drawline</a></b>, <b><a href=\"drawbox.html\">drawbox</a></b>, and <b><a href=\"drawoval.html\">drawoval</a></b>.<p>\r\nSee also predefined unit <b><a href=\"picmodule.html\">Pic</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " drawpic. See also setscreen, maxx, maxy, drawdot, drawline, drawbox, and drawoval.\r\nSee also predefined unit Pic.\r\n",
-      "mdown_content": "**[drawpic.html](drawpic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)**, **[drawdot.html](drawdot)**, **[drawline.html](drawline)**, **[drawbox.html](drawbox)**, and **[drawoval.html](drawoval)**.\nSee also predefined unit **[picmodule.html](Pic)**."
+      "mdown_content": "**[drawpic.html](drawpic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)**, **[drawdot.html](drawdot)**, **[drawline.html](drawline)**, **[drawbox.html](drawbox)**, and **[drawoval.html](drawoval)**.\n\nSee also predefined unit **[picmodule.html](Pic)**.\n"
     }
   ],
   "dependencies": [

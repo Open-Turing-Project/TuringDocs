@@ -3,5 +3,3 @@
 
 ##Syntax
 width="10"> <
-
-

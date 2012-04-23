@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.LocateXY</b> ( <i>x</i> , <i>y</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " Text.LocateXY ( x , y : int )\r\n",
-      "mdown_content": "**Text.LocateXY** ( _x_ , _y_ : **int** )"
+      "mdown_content": "**Text.LocateXY** ( _x_ , _y_ : **int** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.LocateXY </b>procedure is used to<b> </b>move the cursor so that the next output from <b>put</b> will be at approximately (<i>x</i>, <i>y</i>). The exact location may be somewhat to the left of <i>x</i> and below <i>y</i> to force alignment to a character boundary.<p>\r\n</p>",
       "text_content": " The Text.LocateXY procedure is used to move the cursor so that the next output from put will be at approximately (x, y). The exact location may be somewhat to the left of x and below y to force alignment to a character boundary.\r\n",
-      "mdown_content": "The **Text.LocateXY** procedure is used to move the cursor so that the next output from **put** will be at approximately (_x_, _y_). The exact location may be somewhat to the left of _x_ and below _y_ to force alignment to a character boundary."
+      "mdown_content": "The **Text.LocateXY** procedure is used to move the cursor so that the next output from **put** will be at approximately (_x_, _y_). The exact location may be somewhat to the left of _x_ and below _y_ to force alignment to a character boundary.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program outputs <i>Hello</i> starting at approximately (100, 50) on the screen.<p>\r\n</p>",
       "text_content": " This program outputs Hello starting at approximately (100, 50) on the screen.\r\n\r\n",
-      "mdown_content": "This program outputs _Hello_ starting at approximately (100, 50) on the screen."
+      "mdown_content": "This program outputs _Hello_ starting at approximately (100, 50) on the screen.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Text.LocateXY</b> procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the <b>Text.Locate </b>procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The Text.LocateXY procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the Text.Locate procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.\r\nThe screen should be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "The **Text.LocateXY** procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the **Text.Locate** procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.\nThe screen should be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
+      "mdown_content": "The **Text.LocateXY** procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the **Text.Locate** procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.\n\nThe screen should be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.LocateXY</b> , not by calling <b>LocateXY</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Text.LocateXY , not by calling LocateXY.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.LocateXY** , not by calling **LocateXY**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Text.LocateXY** , not by calling **LocateXY**.\n"
     },
     {
       "title": "See also",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a> </b>and <b><a href=\"draw_dot.html\">Draw.Dot</a></b>.<p>\r\n</p>",
       "text_content": " View.Set and Draw.Dot.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)** and **[draw_dot.html](Draw.Dot)**."
+      "mdown_content": "**[view_set.html](View.Set)** and **[draw_dot.html](Draw.Dot)**.\n"
     }
   ],
   "dependencies": [

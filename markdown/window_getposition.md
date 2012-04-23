@@ -5,15 +5,12 @@
 **Window.GetPosition** (_windowID_ : **int**, **var** _x_, _y_ : **int**)
 
 
-
 ##Description
 The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the _x_ and _y_ parameters. The _x_ and _y_ parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.
 
 
-
 ##Example
 The following program outputs the current position of the run window.
-
 
         % Constants for windows
         const titleBarHeight : int := 21
@@ -37,11 +34,10 @@ The following program outputs the current position of the run window.
         put "Window located at ", windowXPosition, ",", windowYPosition
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**.
 
+This means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**.
 
 
 ##See also
 **[window_setposition.html](Window.SetPosition)** to [set.html](set) the current window position and **[config_display.html](Config.Display)** to get the size of the screen.
-
 

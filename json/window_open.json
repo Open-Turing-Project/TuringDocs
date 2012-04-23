@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Open</b> (<i>setUpString</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Window.Open (setUpString : string) : int\r\n",
-      "mdown_content": "**Window.Open** (_setUpString_ : **string**) : **int**"
+      "mdown_content": "**Window.Open** (_setUpString_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Open</b> function is used to create a window. A window ID is returned if the window  is successfully created. If the window is not created then it returns 0. <b>Error.Last</b> and <b>Error.LastMsg</b> can then be used to determine the cause of the failure.<p>\r\nThe <i>setUpString</i> parameter is identical to that of <b>View.Set</b>. See <b>View.Set</b> for the list of options available. </p>\n<p>\r\nWhen the window is created, it is automatically selected (i.e. all output will be sent to that window unless redirected by a <b>Window.Select</b> command).</p>\n<p>\r\n</p>",
       "text_content": " The Window.Open function is used to create a window. A window ID is returned if the window  is successfully created. If the window is not created then it returns 0. Error.Last and Error.LastMsg can then be used to determine the cause of the failure.\r\nThe setUpString parameter is identical to that of View.Set. See View.Set for the list of options available. \r\nWhen the window is created, it is automatically selected (i.e. all output will be sent to that window unless redirected by a Window.Select command).\r\n",
-      "mdown_content": "The **Window.Open** function is used to create a window. A window ID is returned if the window  is successfully created. If the window is not created then it returns 0. **Error.Last** and **Error.LastMsg** can then be used to determine the cause of the failure.\nThe _setUpString_ parameter is identical to that of **View.Set**. See **View.Set** for the list of options available. \nWhen the window is created, it is automatically selected (i.e. all output will be sent to that window unless redirected by a **Window.Select** command)."
+      "mdown_content": "The **Window.Open** function is used to create a window. A window ID is returned if the window  is successfully created. If the window is not created then it returns 0. **Error.Last** and **Error.LastMsg** can then be used to determine the cause of the failure.\n\nThe _setUpString_ parameter is identical to that of **View.Set**. See **View.Set** for the list of options available. \n\nWhen the window is created, it is automatically selected (i.e. all output will be sent to that window unless redirected by a **Window.Select** command).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program opens a window, makes it active and then close the window after getting a keystroke from the user.<p>\r\n</p>",
       "text_content": " The following program opens a window, makes it active and then close the window after getting a keystroke from the user.\r\n\r\n",
-      "mdown_content": "The following program opens a window, makes it active and then close the window after getting a keystroke from the user."
+      "mdown_content": "The following program opens a window, makes it active and then close the window after getting a keystroke from the user.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.Open</b>, not by calling <b>Open</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.Open, not by calling Open.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.Open**, not by calling **Open**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.Open**, not by calling **Open**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a> </b>for the syntax of <i>startUpString</i>. See also <b><a href=\"window_select.html\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>",
       "text_content": " View.Set for the syntax of startUpString. See also Window.Select and Window.SetActive.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)** for the syntax of _startUpString_. See also **[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**."
+      "mdown_content": "**[view_set.html](View.Set)** for the syntax of _startUpString_. See also **[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n"
     }
   ],
   "dependencies": [

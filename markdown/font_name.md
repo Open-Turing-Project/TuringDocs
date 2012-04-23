@@ -5,10 +5,8 @@
 **Font.Name** (_fontID_ : **int**) _fontName_ : **string**
 
 
-
 ##Description
 **Font.Name** is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.
-
 
 
 ##Example
@@ -31,6 +29,6 @@ The program prints out the fonts used for &#147;serif&#148;, &#147;sans serif&#1
         Font.Free (monoFont)
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Font.Name**, not by calling **Name**.
 
+This means that you can only call the function by calling **Font.Name**, not by calling **Name**.
 

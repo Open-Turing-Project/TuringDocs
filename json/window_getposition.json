@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.GetPosition</b> (<i>windowID</i> : <b>int</b>, <b>var</b> <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.GetPosition (windowID : int, var x, y : int)\r\n",
-      "mdown_content": "**Window.GetPosition** (_windowID_ : **int**, **var** _x_, _y_ : **int**)"
+      "mdown_content": "**Window.GetPosition** (_windowID_ : **int**, **var** _x_, _y_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.GetPosition</b> procedure returns the location of the specified execution window on the screen in the <i>x</i> and <i>y</i> parameters. The <i>x</i> and <i>y</i> parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.<p>\r\n</p>",
       "text_content": " The Window.GetPosition procedure returns the location of the specified execution window on the screen in the x and y parameters. The x and y parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.\r\n",
-      "mdown_content": "The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the _x_ and _y_ parameters. The _x_ and _y_ parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen."
+      "mdown_content": "The **Window.GetPosition** procedure returns the location of the specified execution window on the screen in the _x_ and _y_ parameters. The _x_ and _y_ parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program outputs the current position of the run window.<p>\r\n</p>",
       "text_content": " The following program outputs the current position of the run window.\r\n\r\n",
-      "mdown_content": "The following program outputs the current position of the run window."
+      "mdown_content": "The following program outputs the current position of the run window.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.GetPosition</b>, not by calling <b>GetPosition</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.GetPosition, not by calling GetPosition.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.GetPosition**, not by calling **GetPosition**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"window_setposition.html\">Window.SetPosition</a></b> to <a href=\"set.html\">set</a> the current window position and <b><a href=\"config_display.html\">Config.Display</a></b> to get the size of the screen.<p>\r\n</p>",
       "text_content": " Window.SetPosition to set the current window position and Config.Display to get the size of the screen.\r\n",
-      "mdown_content": "**[window_setposition.html](Window.SetPosition)** to [set.html](set) the current window position and **[config_display.html](Config.Display)** to get the size of the screen."
+      "mdown_content": "**[window_setposition.html](Window.SetPosition)** to [set.html](set) the current window position and **[config_display.html](Config.Display)** to get the size of the screen.\n"
     }
   ],
   "dependencies": [

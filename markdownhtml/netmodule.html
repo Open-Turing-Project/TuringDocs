@@ -2,22 +2,25 @@
 
 <h2>Description</h2>
 
-<p>The Net module allows TCP/IP equipped machines to communicate. In the current implementation (WinOOT 3.0), this is available only under Win32 (Windows 95, 98, NT and later).
-To allow two machines to communicate, there must be a server (which calls <strong>Net,WaitForConnection</strong>) and a client (which calls <strong>Net.OpenConnection</strong>). The server waits until a client connects and then starts communication between the two. When a connection is established, a net stream is returned that can be used in the same fashion as a file stream (i.e. using <strong>put</strong>s and <strong>get</strong>s<strong>)</strong>.  Once the connection is finished, the programs call <strong>Net.CloseConnection</strong>.
-For ease of reading web pages, the <strong>Net.OpenURLConnection</strong> opens up a URL for reading with the <strong>get</strong> statement. It is up to the user program to interpret the HTML or file located at the URL.
-All subprograms in the <strong>Net</strong> unit are exported qualified (and thus must be prefaced with "<strong>Net.</strong>").</p>
+<p>The Net module allows TCP/IP equipped machines to communicate. In the current implementation (WinOOT 3.0), this is available only under Win32 (Windows 95, 98, NT and later).</p>
+
+<p>To allow two machines to communicate, there must be a server (which calls <strong>Net,WaitForConnection</strong>) and a client (which calls <strong>Net.OpenConnection</strong>). The server waits until a client connects and then starts communication between the two. When a connection is established, a net stream is returned that can be used in the same fashion as a file stream (i.e. using <strong>put</strong>s and <strong>get</strong>s<strong>)</strong>.  Once the connection is finished, the programs call <strong>Net.CloseConnection</strong>.</p>
+
+<p>For ease of reading web pages, the <strong>Net.OpenURLConnection</strong> opens up a URL for reading with the <strong>get</strong> statement. It is up to the user program to interpret the HTML or file located at the URL.</p>
+
+<p>All subprograms in the <strong>Net</strong> unit are exported qualified (and thus must be prefaced with "<strong>Net.</strong>").</p>
 
 <h2>Entry Points</h2>
 
-<p><a href="**WaitForConnection**">net_waitforconnection.html</a> Waits until a client connects to a specified port.
-<a href="**OpenConnection**">net_openconnection.html</a> Opens a connection to a specified machine.
-<a href="**OpenURLConnection**">net_openurlconnection.html</a> Opens a connection to a file specified by a URL.
-<a href="**CloseConnection**">net_closeconnection.html</a> Closes a specified connection.
-<a href="**BytesAvailable**">net_bytesavailable.html</a> Returns the number of bytes available to be read from a net stream.
-<a href="**CharAvailable**">net_charavailable.html</a> Returns true if there is a character available to be read from a net stream.
-<a href="**LineAvailable**">net_lineavailable.html</a> Returns true if there is a line of text available to be read from a net stream.
-<a href="**TokenAvailable**">net_tokenavailable.html</a> Returns true if there is a token available to be read from a net stream.
-<a href="**HostAddressFromName**">net_hostaddressfromname.html</a> Returns a host's address given its host name.
-<a href="**HostNameFromAddress**">net_hostnamefromaddress.html</a> Returns a host's name given its address.
-<a href="**LocalAddress**">net_localaddress.html</a> Returns the host name of the local machine.
-<a href="**LocalName**">net_localname.html</a> Returns the TCP/IP address of the local machine.</p>
+<p><a href="**WaitForConnection**">net_waitforconnection.html</a>   Waits until a client connects to a specified port.
+<a href="**OpenConnection**">net_openconnection.html</a>   Opens a connection to a specified machine.
+<a href="**OpenURLConnection**">net_openurlconnection.html</a>   Opens a connection to a file specified by a URL.
+<a href="**CloseConnection**">net_closeconnection.html</a>   Closes a specified connection.
+<a href="**BytesAvailable**">net_bytesavailable.html</a>   Returns the number of bytes available to be read from a net stream.
+<a href="**CharAvailable**">net_charavailable.html</a>   Returns true if there is a character available to be read from a net stream.
+<a href="**LineAvailable**">net_lineavailable.html</a>   Returns true if there is a line of text available to be read from a net stream.
+<a href="**TokenAvailable**">net_tokenavailable.html</a>   Returns true if there is a token available to be read from a net stream.
+<a href="**HostAddressFromName**">net_hostaddressfromname.html</a>   Returns a host's address given its host name.
+<a href="**HostNameFromAddress**">net_hostnamefromaddress.html</a>   Returns a host's name given its address.
+<a href="**LocalAddress**">net_localaddress.html</a>   Returns the host name of the local machine.
+<a href="**LocalName**">net_localname.html</a>   Returns the TCP/IP address of the local machine.</p>

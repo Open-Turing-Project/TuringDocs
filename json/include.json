@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>includeConstruct</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>include</b> <i>fileName</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": "  An includeConstruct is:\r\n include fileName",
-      "mdown_content": "An _includeConstruct_ is:\n\n**include** _fileName_\n"
+      "mdown_content": "An _includeConstruct_ is:\n\n\n**include** _fileName_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "An <b>include</b> is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\".<p>\r\n</p>",
       "text_content": " An include is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\".\r\n",
-      "mdown_content": "An **include** is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\"."
+      "mdown_content": "An **include** is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as \"stdstuff\".\n"
     },
     {
       "title": "Example",
@@ -22,19 +22,19 @@
       ],
       "raw_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <i>arrows</i> contains definitions of these values:<p>\r\n</p>\r\nThese definitions can be included in any program in the following manner:<p>\r\n</p>",
       "text_content": " On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called arrows contains definitions of these values:\r\n\r\nThese definitions can be included in any program in the following manner:\r\n\r\n",
-      "mdown_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called _arrows_ contains definitions of these values:\nThese definitions can be included in any program in the following manner:"
+      "mdown_content": "On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called _arrows_ contains definitions of these values:\n\nThese definitions can be included in any program in the following manner:\n"
     },
     {
       "title": "Details",
       "raw_content": "An include file can itself contain <b>include</b> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.<p>\r\nIt is common to save procedures, functions and modules in separate files. The files are collected together using <b>include</b>.</p>\n<p>\r\n</p>",
       "text_content": " An include file can itself contain include constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.\r\nIt is common to save procedures, functions and modules in separate files. The files are collected together using include.\r\n",
-      "mdown_content": "An include file can itself contain **include** constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.\nIt is common to save procedures, functions and modules in separate files. The files are collected together using **include**."
+      "mdown_content": "An include file can itself contain **include** constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.\n\nIt is common to save procedures, functions and modules in separate files. The files are collected together using **include**.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the filename in the <b>include</b> statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.<p>\r\n</p>",
       "text_content": " If the filename in the include statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.\r\n",
-      "mdown_content": "If the filename in the **include** statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location."
+      "mdown_content": "If the filename in the **include** statement starts with a \"%\", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.\n"
     },
     {
       "title": "Example",
@@ -43,13 +43,13 @@
       ],
       "raw_content": "If the system directory is set to \"C:\\TURING\", then the line<p>\r\n</p>\r\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. <p>\r\n</p>",
       "text_content": " If the system directory is set to \"C:\\TURING\", then the line\r\n\r\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. \r\n",
-      "mdown_content": "If the system directory is set to \"C:\\TURING\", then the line\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. "
+      "mdown_content": "If the system directory is set to \"C:\\TURING\", then the line\n\nwill include the file \"C:\\TURING\\SORTING.T\" in the program. \n"
     },
     {
       "title": "Details",
       "raw_content": "Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory.<p>\r\n</p>",
       "text_content": " Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory.\r\n",
-      "mdown_content": "Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory."
+      "mdown_content": "Under OOT, there are several system directories available. The \"%oot\" directory is the directory where all the OOT system files are located. The \"%home\" directory is the user's home directory.\n"
     },
     {
       "title": "Example",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "If the oot directory is set to \"/usr/local/lib/oot\" then the line<p>\r\n</p>\r\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. <p>\r\n</p>",
       "text_content": " If the oot directory is set to \"/usr/local/lib/oot\" then the line\r\n\r\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. \r\n",
-      "mdown_content": "If the oot directory is set to \"/usr/local/lib/oot\" then the line\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. "
+      "mdown_content": "If the oot directory is set to \"/usr/local/lib/oot\" then the line\n\nwill include the file \"/usr/local/lib/oot/teacher/sorting.t\" in the program. \n"
     }
   ],
   "dependencies": [

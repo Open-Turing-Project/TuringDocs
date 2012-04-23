@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>true</b><p>\r\n</p></font>",
       "text_content": " true\r\n",
-      "mdown_content": "**true**"
+      "mdown_content": "**true**\n"
     },
     {
       "title": "Description",
       "raw_content": "A <b>boolean</b> (true/false) variable can be either <b>true</b> or <b>false</b> (see <b>boolean</b> type).<p>\r\n</p>",
       "text_content": " A boolean (true/false) variable can be either true or false (see boolean type).\r\n",
-      "mdown_content": "A **boolean** (true/false) variable can be either **true** or **false** (see **boolean** type)."
+      "mdown_content": "A **boolean** (true/false) variable can be either **true** or **false** (see **boolean** type).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Details",
       "raw_content": "The line <b>if</b> <i>passed</i>=<b>true</b> <b>then</b> can be simplified to <b>if</b> <i>passed </i><b>then</b> with no change to the meaning of the program.<p>\r\n</p>",
       "text_content": " The line if passed=true then can be simplified to if passed then with no change to the meaning of the program.\r\n",
-      "mdown_content": "The line **if** _passed_=**true** **then** can be simplified to **if** _passed_ **then** with no change to the meaning of the program."
+      "mdown_content": "The line **if** _passed_=**true** **then** can be simplified to **if** _passed_ **then** with no change to the meaning of the program.\n"
     }
   ],
   "dependencies": [

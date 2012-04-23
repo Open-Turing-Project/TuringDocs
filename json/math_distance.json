@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<b>Math.Distance</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>real</b>) : <b>real</b><p>\r\n</p>",
       "text_content": " Math.Distance (x1, y1, x2, y2 : real) : real\r\n",
-      "mdown_content": "**Math.Distance** (_x1_, _y1_, _x2_, _y2_ : **real**) : **real**"
+      "mdown_content": "**Math.Distance** (_x1_, _y1_, _x2_, _y2_ : **real**) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Math.Distance </b>is used to calculate the distance between two points.\r\n(<i>x1</i>, <i>y1</i>) is the location of the first point, and (<i>x2</i>, <i>y2</i>) is the location of the \r\nsecond point.<p>\r\n</p>",
       "text_content": " Math.Distance is used to calculate the distance between two points.\r\n(x1, y1) is the location of the first point, and (x2, y2) is the location of the \r\nsecond point.\r\n",
-      "mdown_content": "**Math.Distance** is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point."
+      "mdown_content": "**Math.Distance** is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point.\n"
     },
     {
       "title": "Details",
       "raw_content": "The parameters to <b>Math.Distance</b> are real, but you can pass integer variables and constants.<p>\r\n</p>",
       "text_content": "The parameters to Math.Distance are real, but you can pass integer variables and constants.\r\n",
-      "mdown_content": "The parameters to **Math.Distance** are real, but you can pass integer variables and constants."
+      "mdown_content": "The parameters to **Math.Distance** are real, but you can pass integer variables and constants.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This progam draws two circles with radius 75 on the screen and outputs whether they touch.<p>\r\n</p>",
       "text_content": "This progam draws two circles with radius 75 on the screen and outputs whether they touch.\r\n\r\n",
-      "mdown_content": "This progam draws two circles with radius 75 on the screen and outputs whether they touch."
+      "mdown_content": "This progam draws two circles with radius 75 on the screen and outputs whether they touch.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Math.Distance</b>, not by calling <b>Distance</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Math.Distance, not by calling Distance.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Math.Distance**, not by calling **Distance**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Math.Distance**, not by calling **Distance**.\n"
     }
   ],
   "dependencies": [

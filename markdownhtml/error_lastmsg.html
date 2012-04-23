@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p><strong>Error.LastMsg</strong> is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use <strong>Error.Last</strong> to obtain the error code.
-The fact that <strong>Error.LastMsg</strong> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.LastMsg</strong> also returns a number of warning messages. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.LastMsg</strong> will return a message that indicates that the color was out of range</p>
+<p><strong>Error.LastMsg</strong> is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use <strong>Error.Last</strong> to obtain the error code.</p>
+
+<p>The fact that <strong>Error.LastMsg</strong> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <strong>Error.LastMsg</strong> also returns a number of warning messages. For example, if a user specifies a number larger than <strong>maxcolor</strong> for the <em>color</em> parameter of the <strong>Draw.Line</strong> procedure, the line is still drawn, only in color <strong>maxcolor</strong>. However, <strong>Error.LastMsg</strong> will return a message that indicates that the color was out of range</p>
 
 <h2>Example</h2>
 
@@ -25,5 +26,6 @@ The fact that <strong>Error.LastMsg</strong> is not "" does not necessarily mean
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Error.LastMsg</strong>, not by calling <strong>LastMsg</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Error.LastMsg</strong>, not by calling <strong>LastMsg</strong>.</p>

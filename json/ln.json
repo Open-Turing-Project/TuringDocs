@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ln</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " ln ( r : real ) : real\r\n",
-      "mdown_content": "**ln** ( _r_ : **real** ) : **real**"
+      "mdown_content": "**ln** ( _r_ : **real** ) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>ln</b> function is used to find the natural logarithm (base e) of a number. For example, <b>ln</b> ( 1) is 0.<p>\r\n</p>",
       "text_content": " The ln function is used to find the natural logarithm (base e) of a number. For example, ln ( 1) is 0.\r\n",
-      "mdown_content": "The **ln** function is used to find the natural logarithm (base e) of a number. For example, **ln** ( 1) is 0."
+      "mdown_content": "The **ln** function is used to find the natural logarithm (base e) of a number. For example, **ln** ( 1) is 0.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program prints out the logarithms of 1, 2, 3, &#133; up to 100.<p>\r\n</p>",
       "text_content": " This program prints out the logarithms of 1, 2, 3,  up to 100.\r\n\r\n",
-      "mdown_content": "This program prints out the logarithms of 1, 2, 3, &#133; up to 100."
+      "mdown_content": "This program prints out the logarithms of 1, 2, 3, &#133; up to 100.\n"
     },
     {
       "title": "Details",
       "raw_content": "See also the <b>exp</b> (exponential) function. You cannot take the logarithm of zero or a negative number.<p>\r\n</p>",
       "text_content": " See also the exp (exponential) function. You cannot take the logarithm of zero or a negative number.\r\n",
-      "mdown_content": "See also the **exp** (exponential) function. You cannot take the logarithm of zero or a negative number."
+      "mdown_content": "See also the **exp** (exponential) function. You cannot take the logarithm of zero or a negative number.\n"
     },
     {
       "title": "Note",
       "raw_content": "logn (<i>i</i> ) = ln (<i>i</i> ) / ln (<i>n</i> )<p>\r\n</p>",
       "text_content": " logn (i ) = ln (i ) / ln (n )\r\n",
-      "mdown_content": "logn (_i_ ) = ln (_i_ ) / ln (_n_ )"
+      "mdown_content": "logn (_i_ ) = ln (_i_ ) / ln (_n_ )\n"
     },
     {
       "title": "See also",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"exp.html\">exp</a></b> (the exponentiation function).<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " exp (the exponentiation function).\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "**[exp.html](exp)** (the exponentiation function).\nSee also predefined unit **[mathmodule.html](Math)**."
+      "mdown_content": "**[exp.html](exp)** (the exponentiation function).\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
     }
   ],
   "dependencies": [

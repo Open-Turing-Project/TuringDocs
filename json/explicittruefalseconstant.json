@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>explicitTrueFalseConstant</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>true</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>false</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An explicitTrueFalseConstant is one of:\r\n (a)true (b)false",
-      "mdown_content": "An _explicitTrueFalseConstant_ is one of:\n\n(a)**true**\n(b)**false**\n"
+      "mdown_content": "An _explicitTrueFalseConstant_ is one of:\n\n\n(a) **true**\n(b) **false**\n\n"
     },
     {
       "title": "Example",
@@ -15,13 +15,13 @@
       ],
       "raw_content": "The following determines if string <i>s</i> contains a period. After the <b>for</b> statement, <i>found</i> will be <b>true</b> if there is a period in <i>s</i>.<p>\r\n</p>",
       "text_content": " The following determines if string s contains a period. After the for statement, found will be true if there is a period in s.\r\n\r\n",
-      "mdown_content": "The following determines if string _s_ contains a period. After the **for** statement, _found_ will be **true** if there is a period in _s_."
+      "mdown_content": "The following determines if string _s_ contains a period. After the **for** statement, _found_ will be **true** if there is a period in _s_.\n"
     },
     {
       "title": "Details",
       "raw_content": "<b>true</b>/<b>false</b> values are called <i>boolean </i>values. A <b>boolean</b> variable, such as <i>found</i> in the above example, can have a value of either <b>true</b> or <b>false</b>. <p>\r\n</p>",
       "text_content": " true/false values are called boolean values. A boolean variable, such as found in the above example, can have a value of either true or false. \r\n",
-      "mdown_content": "**true**/**false** values are called _boolean_ values. A **boolean** variable, such as _found_ in the above example, can have a value of either **true** or **false**. "
+      "mdown_content": "**true**/**false** values are called _boolean_ values. A **boolean** variable, such as _found_ in the above example, can have a value of either **true** or **false**. \n"
     },
     {
       "title": "See also",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"boolean.html\">boolean</a></b> type.<p>\r\n</p>",
       "text_content": " boolean type.\r\n",
-      "mdown_content": "**[boolean.html](boolean)** type."
+      "mdown_content": "**[boolean.html](boolean)** type.\n"
     }
   ],
   "dependencies": [

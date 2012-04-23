@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetMenuBarHeight</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetMenuBarHeight : int\r\n",
-      "mdown_content": "**GUI.GetMenuBarHeight** : **int**"
+      "mdown_content": "**GUI.GetMenuBarHeight** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar.<p>\r\n</p>",
       "text_content": " Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar.\r\n",
-      "mdown_content": "Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar."
+      "mdown_content": "Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program draws a red box in the window just belowe the menu bar.<p>\r\n</p>",
       "text_content": " The following program draws a red box in the window just belowe the menu bar.\r\n\r\n",
-      "mdown_content": "The following program draws a red box in the window just belowe the menu bar."
+      "mdown_content": "The following program draws a red box in the window just belowe the menu bar.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetMenuBarHeight</b>, not by calling <b>GetMenuBarHeight</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.GetMenuBarHeight, not by calling GetMenuBarHeight.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetMenuBarHeight**, not by calling **GetMenuBarHeight**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.GetMenuBarHeight**, not by calling **GetMenuBarHeight**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateMenu.\r\n",
-      "mdown_content": "**[gui_createmenu.html](GUI.CreateMenu)**."
+      "mdown_content": "**[gui_createmenu.html](GUI.CreateMenu)**.\n"
     }
   ],
   "dependencies": [

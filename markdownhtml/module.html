@@ -19,8 +19,9 @@
 
 <h2>Example</h2>
 
-<p>This module implements a stack of strings.
-Outside of the <em>stack</em> module, the procedures <em>push</em> and <em>pop</em> can be called using the notation <em>stack.push</em> and <em>stack.pop</em>. This access is allowed because <em>push</em> and <em>pop</em> are <em>exported</em> from the module. Other items declared in the module (<em>top</em> and <em>contents</em>) cannot be accessed from outside because they are not exported.</p>
+<p>This module implements a stack of strings.</p>
+
+<p>Outside of the <em>stack</em> module, the procedures <em>push</em> and <em>pop</em> can be called using the notation <em>stack.push</em> and <em>stack.pop</em>. This access is allowed because <em>push</em> and <em>pop</em> are <em>exported</em> from the module. Other items declared in the module (<em>top</em> and <em>contents</em>) cannot be accessed from outside because they are not exported.</p>
 
 <pre><code>    module stack            % Implements a LIFO list of strings
         export push, pop
@@ -46,15 +47,23 @@ Outside of the <em>stack</em> module, the procedures <em>push</em> and <em>pop</
 
 <h2>Details</h2>
 
-<p>In some other programming languages, a module is called a <em>package</em>, <em>cluster</em> or <em>object</em>.
-A module declaration is executed (it is initialized) by executing its declarations and statements. For example, the <em>stack</em> module is initialized by setting the <em>top</em> variable to 0. This initialization executes all the statements and declarations in the module that are not contained in procedures or functions. The initialization is completed before any procedure or function of the module can be called from outside the module. An exported subprogram must not be called until initialization of the module is complete.
-A call to an exported procedure or function from outside the module executes the body of that procedure or function (the module is <em>not</em> initialized with each such call). See also <strong>monitor</strong> and <strong>class</strong> declarations.
-The <strong>import</strong> list gives the names of items declared outside the module that can be accessed inside the module. Since <em>stack</em> has no <strong>import</strong> list, it is not allowed to access any names declared outside of it. See also <strong>import</strong> lists. Separately-compiled units that are imported are initialized before the importing unit.
-The <strong>export</strong> list is used to implement <em>information hiding</em>, which isolates implementation details inside the module. The <strong>export</strong> list gives the names of items declared inside the module that can be used outside the module. For example, <em>push</em> and <em>pop</em> are exported from <em>stack</em>. Each such use of an exported item must be preceded by the module name and a dot, for example, <em>stack.push</em>. (See <strong>unqualified</strong> for advice on how to avoid using the prefix "<em>stack.</em>"). Names that are not exported, such as <em>top</em> and <em>contents</em>, cannot be accessed outside the module.
-Procedures, functions, variables, constants and types can be exported; modules, monitors or classes cannot be exported.
-A class is essentially a template for creating individual modules (objects). See <strong>class</strong> for details. A <strong>monitor</strong> is essentially a module in which only one process can be active at a time. See <strong>monitor</strong> and <strong>process</strong> for details.
-The <strong>opaque</strong> keyword is used (only) in export lists to precede exported type names that have declarations in the module. Outside of the module, the type will be distinct from all others types. This means, for example, that if the opaque type is a record, its fields cannot be accessed outside of the module. Opaque types are used to guarantee that certain items are inspected and manipulated in only one place, namely, inside the module. These types are sometimes called <em>abstract data types</em>. See also <strong>export</strong> lists, which also describes <strong>unqualified</strong> and <strong>pervasive</strong> exports.
-<strong>Implement</strong> and i<strong>mplement-by</strong> lists are used to separate a module's interface from its body. This allows only a part of a module (its interface) to be visible to its users (its importers), while hiding its implementation. See <strong>implement</strong> and <strong>implement</strong> <strong>by</strong> lists.</p>
+<p>In some other programming languages, a module is called a <em>package</em>, <em>cluster</em> or <em>object</em>.</p>
+
+<p>A module declaration is executed (it is initialized) by executing its declarations and statements. For example, the <em>stack</em> module is initialized by setting the <em>top</em> variable to 0. This initialization executes all the statements and declarations in the module that are not contained in procedures or functions. The initialization is completed before any procedure or function of the module can be called from outside the module. An exported subprogram must not be called until initialization of the module is complete.</p>
+
+<p>A call to an exported procedure or function from outside the module executes the body of that procedure or function (the module is <em>not</em> initialized with each such call). See also <strong>monitor</strong> and <strong>class</strong> declarations.</p>
+
+<p>The <strong>import</strong> list gives the names of items declared outside the module that can be accessed inside the module. Since <em>stack</em> has no <strong>import</strong> list, it is not allowed to access any names declared outside of it. See also <strong>import</strong> lists. Separately-compiled units that are imported are initialized before the importing unit.</p>
+
+<p>The <strong>export</strong> list is used to implement <em>information hiding</em>, which isolates implementation details inside the module. The <strong>export</strong> list gives the names of items declared inside the module that can be used outside the module. For example, <em>push</em> and <em>pop</em> are exported from <em>stack</em>. Each such use of an exported item must be preceded by the module name and a dot, for example, <em>stack.push</em>. (See <strong>unqualified</strong> for advice on how to avoid using the prefix "<em>stack.</em>"). Names that are not exported, such as <em>top</em> and <em>contents</em>, cannot be accessed outside the module.</p>
+
+<p>Procedures, functions, variables, constants and types can be exported; modules, monitors or classes cannot be exported.</p>
+
+<p>A class is essentially a template for creating individual modules (objects). See <strong>class</strong> for details. A <strong>monitor</strong> is essentially a module in which only one process can be active at a time. See <strong>monitor</strong> and <strong>process</strong> for details.</p>
+
+<p>The <strong>opaque</strong> keyword is used (only) in export lists to precede exported type names that have declarations in the module. Outside of the module, the type will be distinct from all others types. This means, for example, that if the opaque type is a record, its fields cannot be accessed outside of the module. Opaque types are used to guarantee that certain items are inspected and manipulated in only one place, namely, inside the module. These types are sometimes called <em>abstract data types</em>. See also <strong>export</strong> lists, which also describes <strong>unqualified</strong> and <strong>pervasive</strong> exports.</p>
+
+<p><strong>Implement</strong> and i<strong>mplement-by</strong> lists are used to separate a module's interface from its body. This allows only a part of a module (its interface) to be visible to its users (its importers), while hiding its implementation. See <strong>implement</strong> and <strong>implement</strong> <strong>by</strong> lists.</p>
 
 <h2>Example</h2>
 
@@ -93,9 +102,11 @@ The <strong>opaque</strong> keyword is used (only) in export lists to precede ex
 
 <h2>Details</h2>
 
-<p>Module declarations can be nested inside other modules but cannot be nested inside procedures or functions. A module must not contain a <strong>bind</strong> as one of its (outermost) declarations. A <strong>return</strong> statement cannot be used as one of the (outermost) statements in a module.
-The syntax of a <em>moduleDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses; the full syntax is:
-The true/false expression in the <strong>pre</strong> and <strong>post</strong> clauses must be true when initialization reaches each of them. After that, these have no effect. The true/false expression in the <strong>invariant</strong> must be true any time the module is exited (when finishing initialization or when returning from an external call to an exported subprogram) or called (via an exported subprogram). These clauses (<strong>pre</strong>,<strong>post</strong> and <strong>invariant</strong>) are not inherited by expansions. For example, if module <em>B</em> inherits <em>A</em>, the subprograms of <em>B</em> are bound by <em>B</em>'s clauses and not by <em>A</em>'s.</p>
+<p>Module declarations can be nested inside other modules but cannot be nested inside procedures or functions. A module must not contain a <strong>bind</strong> as one of its (outermost) declarations. A <strong>return</strong> statement cannot be used as one of the (outermost) statements in a module.</p>
+
+<p>The syntax of a <em>moduleDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses; the full syntax is:</p>
+
+<p>The true/false expression in the <strong>pre</strong> and <strong>post</strong> clauses must be true when initialization reaches each of them. After that, these have no effect. The true/false expression in the <strong>invariant</strong> must be true any time the module is exited (when finishing initialization or when returning from an external call to an exported subprogram) or called (via an exported subprogram). These clauses (<strong>pre</strong>,<strong>post</strong> and <strong>invariant</strong>) are not inherited by expansions. For example, if module <em>B</em> inherits <em>A</em>, the subprograms of <em>B</em> are bound by <em>B</em>'s clauses and not by <em>A</em>'s.</p>
 
 <pre><code>    module id
         [ implement implementItem ]

@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Hide</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Hide (windowID : int)\r\n",
-      "mdown_content": "**Window.Hide** (_windowID_ : **int**)"
+      "mdown_content": "**Window.Hide** (_windowID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Hide</b> procedure hides the specified window. This means it disappears from the user's screen. However, it is still possible to select and draw the window while it remains hidden. If the user activates it (using <b>Window.GetActive</b>) it will automatically appear.<p>\r\nTo make a window appear after it's hidden, you use <b>Window.Show.</b></p>\n<p>\r\n</p>",
       "text_content": " The Window.Hide procedure hides the specified window. This means it disappears from the user's screen. However, it is still possible to select and draw the window while it remains hidden. If the user activates it (using Window.GetActive) it will automatically appear.\r\nTo make a window appear after it's hidden, you use Window.Show.\r\n",
-      "mdown_content": "The **Window.Hide** procedure hides the specified window. This means it disappears from the user's screen. However, it is still possible to select and draw the window while it remains hidden. If the user activates it (using **Window.GetActive**) it will automatically appear.\nTo make a window appear after it's hidden, you use **Window.Show.**"
+      "mdown_content": "The **Window.Hide** procedure hides the specified window. This means it disappears from the user's screen. However, it is still possible to select and draw the window while it remains hidden. If the user activates it (using **Window.GetActive**) it will automatically appear.\n\nTo make a window appear after it's hidden, you use **Window.Show.**\n"
     },
     {
       "title": "Details",
       "raw_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.<p>\r\n</p>",
       "text_content": " When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.\r\n",
-      "mdown_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster."
+      "mdown_content": "When a window is hidden, output to it is faster. It is quite possible for the you to hide a window, do complicated drawing to it and then make it appear in order to have the program execute faster.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.Hide</b>, not by calling <b>Hide</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.Hide, not by calling Hide.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.Hide**, not by calling **Hide**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.Hide**, not by calling **Hide**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"window_select.html\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>",
       "text_content": " Window.Select and Window.SetActive.\r\n",
-      "mdown_content": "**[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**."
+      "mdown_content": "**[window_select.html](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n"
     }
   ],
   "dependencies": [

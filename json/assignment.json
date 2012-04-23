@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>assignmentStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>variableReference</i> := <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An assignmentStatement is:\r\n variableReference := expn",
-      "mdown_content": "An _assignmentStatement_ is:\n\n_variableReference_ := _expn_\n"
+      "mdown_content": "An _assignmentStatement_ is:\n\n\n_variableReference_ := _expn_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "An assignment statement calculates the value of the expression (<i>expn</i>) and assigns that value to the variable (<i>variableReference</i>).<p>\r\n</p>",
       "text_content": " An assignment statement calculates the value of the expression (expn) and assigns that value to the variable (variableReference).\r\n",
-      "mdown_content": "An assignment statement calculates the value of the expression (_expn_) and assigns that value to the variable (_variableReference_)."
+      "mdown_content": "An assignment statement calculates the value of the expression (_expn_) and assigns that value to the variable (_variableReference_).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Details",
       "raw_content": "The expression on the right of := must be <i>assignable </i>to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to <i>i</i>,<i> </i>but a <b>real</b> value such as 3.14 would not be not assignable to <i>i</i>. Entire arrays, records and unions can be assigned. For example, in the above, array <i>a</i> is assigned to array <i>b</i>. See <i>assignability </i>for the exact rules of allowed assignments.<p>\r\nYou cannot assign a new value to a constant (<b>const</b>).</p>\n<p>\r\nThere are short forms that allow you to write assignment statements more compactly. For example,</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<i>i</i> := <i>i</i> + 1</td>\n</tr></table>\n<p>\r\ncan be shortened to</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<i>i</i> += 1</td>\n</tr></table>\n<p>\r\nIn Turing, there are short forms for combining +, = and * with assignment. For example, <i>i</i> *= 2 doubles <i>i</i>.</p>\n<p>\r\nThere are also short forms to allow any binary operator to be combined with assignment. For example, <i>i</i> <b>shl</b>= 2 shifts <i>i</i> by 2 to the left.</p>\n<p>\r\n</p>",
       "text_content": " The expression on the right of := must be assignable to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to i, but a real value such as 3.14 would not be not assignable to i. Entire arrays, records and unions can be assigned. For example, in the above, array a is assigned to array b. See assignability for the exact rules of allowed assignments.\r\nYou cannot assign a new value to a constant (const).\r\nThere are short forms that allow you to write assignment statements more compactly. For example,\r\n i := i + 1\r\ncan be shortened to\r\n i += 1\r\nIn Turing, there are short forms for combining +, = and * with assignment. For example, i *= 2 doubles i.\r\nThere are also short forms to allow any binary operator to be combined with assignment. For example, i shl= 2 shifts i by 2 to the left.\r\n",
-      "mdown_content": "The expression on the right of := must be _assignable_ to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to _i_, but a **real** value such as 3.14 would not be not assignable to _i_. Entire arrays, records and unions can be assigned. For example, in the above, array _a_ is assigned to array _b_. See _assignability_ for the exact rules of allowed assignments.\nYou cannot assign a new value to a constant (**const**).\nThere are short forms that allow you to write assignment statements more compactly. For example,\n\n\n\ncan be shortened to\n\n\n\nIn Turing, there are short forms for combining +, = and * with assignment. For example, _i_ *= 2 doubles _i_.\nThere are also short forms to allow any binary operator to be combined with assignment. For example, _i_ **shl**= 2 shifts _i_ by 2 to the left."
+      "mdown_content": "The expression on the right of := must be _assignable_ to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to _i_, but a **real** value such as 3.14 would not be not assignable to _i_. Entire arrays, records and unions can be assigned. For example, in the above, array _a_ is assigned to array _b_. See _assignability_ for the exact rules of allowed assignments.\n\nYou cannot assign a new value to a constant (**const**).\n\nThere are short forms that allow you to write assignment statements more compactly. For example,\n\n\n_i_ := _i_ + 1\n\n\ncan be shortened to\n\n\n_i_ += 1\n\n\nIn Turing, there are short forms for combining +, = and * with assignment. For example, _i_ *= 2 doubles _i_.\n\nThere are also short forms to allow any binary operator to be combined with assignment. For example, _i_ **shl**= 2 shifts _i_ by 2 to the left.\n"
     }
   ],
   "dependencies": [

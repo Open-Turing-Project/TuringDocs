@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Upper</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Upper (s : string) : string",
-      "mdown_content": "**Str.Upper** (_s_ : **string**) : **string**"
+      "mdown_content": "**Str.Upper** (_s_ : **string**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Upper</b> function takes the string <i>s</i> and returns\r\n          a string in which all the lower case letters are converted to \r\n          upper case. For example, <tt>Str.Upper (\"ABC123def\")</tt> returns\r\n          <tt>\"ABC123DEF\"</tt>.<p>\r\n    </p>",
       "text_content": "The Str.Upper function takes the string s and returns\r\n          a string in which all the lower case letters are converted to \r\n          upper case. For example, Str.Upper (\"ABC123def\") returns\r\n          \"ABC123DEF\".\r\n    ",
-      "mdown_content": "The **Str.Upper** function takes the string _s_ and returnsa string in which all the lower case letters are converted to upper case. For example, `Str.Upper (\"ABC123def\")` returns`\"ABC123DEF\"`."
+      "mdown_content": "The **Str.Upper** function takes the string _s_ and returnsa string in which all the lower case letters are converted to upper case. For example, `Str.Upper (\"ABC123def\")` returns`\"ABC123DEF\"`.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program obtains lines of text from the user and outputs the\r\n          lines converted to upper case.\r\n          <p>\r\n</p>",
       "text_content": "This program obtains lines of text from the user and outputs the\r\n          lines converted to upper case.\r\n          \r\n",
-      "mdown_content": "This program obtains lines of text from the user and outputs thelines converted to upper case."
+      "mdown_content": "This program obtains lines of text from the user and outputs thelines converted to upper case.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Str.Upper</b>, not by calling <b>Upper</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Str.Upper, not by calling Upper.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Str.Upper**, not by calling **Upper**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Str.Upper**, not by calling **Upper**.\n"
     },
     {
       "title": "See also",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"str_lower.html\">Str.Lower</a></b> and \r\n          <b><a href=\"str_trim.html\">Str.Trim</a></b>.<p>\r\n    </p>",
       "text_content": "Str.Lower and \r\n          Str.Trim.\r\n    ",
-      "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_trim.html](Str.Trim)**."
+      "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_trim.html](Str.Trim)**.\n"
     }
   ],
   "dependencies": [

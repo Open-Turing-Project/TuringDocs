@@ -56,15 +56,19 @@
 
 <h2>Details</h2>
 
-<p>A <strong>monitor</strong> is essentially a module in which only one process can be active at a time. See <strong>module</strong> declarations for details about initialization. Initialization is the same for modules and monitors.
-A monitor can contain <strong>wait</strong> statements (that put processes to sleep) and <strong>signal</strong> statements (that wake them up again). These statements operate on <strong>condition</strong> variables, which are essentially queues of sleeping processes.
-A class is essentially a template for creating individual modules (objects). See <strong>class</strong> for details. If the class declaration is preceded by the keyword <strong>monitor</strong>, the created modules are actually monitors. Monitor classes can only inherit (inherit from) other monitor classes.
-The body of a monitor has the same form as that of a module, except that modules, monitors and processes cannot be declared inside monitors, and certain statements (<strong>wait</strong> and <strong>signal</strong>) are allowed in monitors.</p>
+<p>A <strong>monitor</strong> is essentially a module in which only one process can be active at a time. See <strong>module</strong> declarations for details about initialization. Initialization is the same for modules and monitors.</p>
+
+<p>A monitor can contain <strong>wait</strong> statements (that put processes to sleep) and <strong>signal</strong> statements (that wake them up again). These statements operate on <strong>condition</strong> variables, which are essentially queues of sleeping processes.</p>
+
+<p>A class is essentially a template for creating individual modules (objects). See <strong>class</strong> for details. If the class declaration is preceded by the keyword <strong>monitor</strong>, the created modules are actually monitors. Monitor classes can only inherit (inherit from) other monitor classes.</p>
+
+<p>The body of a monitor has the same form as that of a module, except that modules, monitors and processes cannot be declared inside monitors, and certain statements (<strong>wait</strong> and <strong>signal</strong>) are allowed in monitors.</p>
 
 <h2>Details</h2>
 
-<p>The syntax of a <em>monitorDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses. See <strong>module</strong> for an explanation of these extra features. There is also an optional <em>compilerTimeIntegerExpression</em> in the first line, which is explained below. The full syntax is:
-If the optional <em>compileTimeIntegerExpression</em> is present, this is a <em>device monitor</em>. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this <em>compileTimeIntegerExpression</em>.</p>
+<p>The syntax of a <em>monitorDeclaration</em> presented above has been simplified by leaving out <strong>pre</strong>, <strong>invariant</strong> and <strong>post</strong> clauses. See <strong>module</strong> for an explanation of these extra features. There is also an optional <em>compilerTimeIntegerExpression</em> in the first line, which is explained below. The full syntax is:</p>
+
+<p>If the optional <em>compileTimeIntegerExpression</em> is present, this is a <em>device monitor</em>. Its exclusive access is enforced by an implementation-dependent trick, such as executing it at a hardware priority level given by the expression. A device monitor is restricted from calling monitors (directly or indirectly). This restriction is imposed to eliminate the possibility of blocking a process with a non-zero hardware priority (as this would inadvertently allow multiple entry into a device monitor). It is the programmer's responsibility to meet this restriction; the compiler will not in general enforce the restriction. The current (1999) implementation ignores this <em>compileTimeIntegerExpression</em>.</p>
 
 <pre><code>    monitor id [ : compileTimeIntegerExpn ]
         [ implement implementItem ]
@@ -81,18 +85,22 @@ If the optional <em>compileTimeIntegerExpression</em> is present, this is a <em>
 
 <h2>Details</h2>
 
-<p>An unexported parameterless procedure in a monitor can be specified to be an <em>interrupt handling procedure</em> by specifying a device in its header, using the form:
-The <em>deviceSpecification</em> is a compile time natural number that designates, to the implementation, the class of interrupts that effectively call this procedure. Interrupt handling procedures cannot be called explicitly within the program.
-There are two restrictions that the programmer must follow when using interrupt handling procedures; these restrictions will not necessarily be enforced by the software. The first is that an interrupt handling procedure must not execute a <strong>wait</strong>, either directly or indirectly, by calling another procedure. The second is that the interrupt handling procedure must not directly or indirectly cause an exception, unless the exception will be caught by an exception handler that is activated directly or indirectly by the interrupt handling procedure.</p>
+<p>An unexported parameterless procedure in a monitor can be specified to be an <em>interrupt handling procedure</em> by specifying a device in its header, using the form:</p>
+
+<p>The <em>deviceSpecification</em> is a compile time natural number that designates, to the implementation, the class of interrupts that effectively call this procedure. Interrupt handling procedures cannot be called explicitly within the program.</p>
+
+<p>There are two restrictions that the programmer must follow when using interrupt handling procedures; these restrictions will not necessarily be enforced by the software. The first is that an interrupt handling procedure must not execute a <strong>wait</strong>, either directly or indirectly, by calling another procedure. The second is that the interrupt handling procedure must not directly or indirectly cause an exception, unless the exception will be caught by an exception handler that is activated directly or indirectly by the interrupt handling procedure.</p>
 
 <pre><code>    procedure id [ : deviceSpecification ]
 </code></pre>
 
 <h2>Details</h2>
 
-<p>Declarations of monitors within monitors are disallowed. This would be  redundant anyway, as only one process can be inside the outer monitor, so the inner monitor is guaranteed to be successful.
-Declarations of classes within monitors are also disallowed.
-Any subprogram declared within a subprogram is now allowed to be assigned to a subprogram variable, nor passed as a parametric subprogram.</p>
+<p>Declarations of monitors within monitors are disallowed. This would be  redundant anyway, as only one process can be inside the outer monitor, so the inner monitor is guaranteed to be successful.</p>
+
+<p>Declarations of classes within monitors are also disallowed.</p>
+
+<p>Any subprogram declared within a subprogram is now allowed to be assigned to a subprogram variable, nor passed as a parametric subprogram.</p>
 
 <h2>See also</h2>
 

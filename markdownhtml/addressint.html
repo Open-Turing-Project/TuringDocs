@@ -25,8 +25,9 @@
 
 <h2>Details</h2>
 
-<p>Although <strong>addressint</strong> is called an integer type, it is commonly equivalent to a natural type such as <strong>nat4</strong> (for 32-bit machines).
-Be careful not to confuse <strong>addressint</strong> with pointer types. In low level languages such as assembler and C, addresses and pointers are the same. In Turing, however, a pointer is a high level concept that is more abstract than a machine address. A Turing pointer is a reference to an object, and the representation of this reference depends upon the implementation. In current Turing implementations, pointers (which are by default checked) are represented as a time stamp (a unique number) together with an address. The time stamp is used to make sure that the pointer actually locates an object. There are also <strong>unchecked</strong> pointers. An <strong>unchecked</strong> pointer's internal representation is a machine address. You can use type cheats (a dangerous feature) to translate between <strong>addressint</strong> and unchecked pointers. This is meaningful in current implementations.</p>
+<p>Although <strong>addressint</strong> is called an integer type, it is commonly equivalent to a natural type such as <strong>nat4</strong> (for 32-bit machines).</p>
+
+<p>Be careful not to confuse <strong>addressint</strong> with pointer types. In low level languages such as assembler and C, addresses and pointers are the same. In Turing, however, a pointer is a high level concept that is more abstract than a machine address. A Turing pointer is a reference to an object, and the representation of this reference depends upon the implementation. In current Turing implementations, pointers (which are by default checked) are represented as a time stamp (a unique number) together with an address. The time stamp is used to make sure that the pointer actually locates an object. There are also <strong>unchecked</strong> pointers. An <strong>unchecked</strong> pointer's internal representation is a machine address. You can use type cheats (a dangerous feature) to translate between <strong>addressint</strong> and unchecked pointers. This is meaningful in current implementations.</p>
 
 <h2>See also</h2>
 

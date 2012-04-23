@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Mouse.Where </b>(<b>var</b> <i>x</i>, <i>y</i>, <i>button</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Mouse.Where (var x, y, button : int)\r\n",
-      "mdown_content": "**Mouse.Where** (**var** _x_, _y_, _button_ : **int**)"
+      "mdown_content": "**Mouse.Where** (**var** _x_, _y_, _button_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Mouse.Where</b> procedure is used to get current information about the status of the mouse. The parameters <i>x</i> and <i>y</i> are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that <i>x</i> and <i>y</i> may be set to values outside of the bounds of 0 to <b>maxx</b> and 0 to <b>maxy</b>.<p>\r\nThe parameter <i>button</i> is set depending on the current mode. In \"<i>single-button mode</i>\" (where the mouse is treated like a one-button mouse), <i>button</i> is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"<i>multi-button mode</i>\", <i>button</i><b> </b>is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if <i>button</i> has the value of 101, then it means that the left and right mouse buttons were depressed.</p>\n<p>\r\n</p>",
       "text_content": " The Mouse.Where procedure is used to get current information about the status of the mouse. The parameters x and y are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that x and y may be set to values outside of the bounds of 0 to maxx and 0 to maxy.\r\nThe parameter button is set depending on the current mode. In \"single-button mode\" (where the mouse is treated like a one-button mouse), button is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"multi-button mode\", button is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if button has the value of 101, then it means that the left and right mouse buttons were depressed.\r\n",
-      "mdown_content": "The **Mouse.Where** procedure is used to get current information about the status of the mouse. The parameters _x_ and _y_ are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that _x_ and _y_ may be set to values outside of the bounds of 0 to **maxx** and 0 to **maxy**.\nThe parameter _button_ is set depending on the current mode. In \"_single-button mode_\" (where the mouse is treated like a one-button mouse), _button_ is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"_multi-button mode_\", _button_ is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if _button_ has the value of 101, then it means that the left and right mouse buttons were depressed."
+      "mdown_content": "The **Mouse.Where** procedure is used to get current information about the status of the mouse. The parameters _x_ and _y_ are set to the current location of the mouse cursor. If the program is running on a system using windows, the cursor may be outside the window. This means that _x_ and _y_ may be set to values outside of the bounds of 0 to **maxx** and 0 to **maxy**.\n\nThe parameter _button_ is set depending on the current mode. In \"_single-button mode_\" (where the mouse is treated like a one-button mouse), _button_ is set to 0 if all the mouse buttons are up, and 1 if any of the mouse buttons are down. In \"_multi-button mode_\", _button_ is assigned the sum of 1 if the left button is down, 10 if the middle button is down, and 100 if the right button is down. Thus if _button_ has the value of 101, then it means that the left and right mouse buttons were depressed.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "A program that displays the status of the mouse at the top left corner of the screen.<p>\r\n</p>",
       "text_content": " A program that displays the status of the mouse at the top left corner of the screen.\r\n\r\n",
-      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen."
+      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Mouse.Where</b>, not by calling <b>Where</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Mouse.Where, not by calling Where.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Mouse.Where**, not by calling **Where**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Mouse.Where**, not by calling **Where**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"mouse_buttonmoved.html\">Mouse.ButtonMoved</a></b> and <b><a href=\"mouse_buttonwait.html\">Mouse.ButtonWait</a></b> to get mouse events saved in a queue. See also <b><a href=\"mouse_buttonchoose.html\">Mouse.ButtonChoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\n</p>",
       "text_content": " Mouse.ButtonMoved and Mouse.ButtonWait to get mouse events saved in a queue. See also Mouse.ButtonChoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
-      "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between \"_single-button mode_\" and \"_multi-button mode_\"."
+      "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_buttonchoose.html](Mouse.ButtonChoose)** to switch between \"_single-button mode_\" and \"_multi-button mode_\".\n"
     }
   ],
   "dependencies": [

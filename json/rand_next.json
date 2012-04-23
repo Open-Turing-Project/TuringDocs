@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Next</b> (<i>seq</i> : 1 .. 10) : <b>real</b><p>\r\n</p></font>",
       "text_content": " Rand.Next (seq : 1 .. 10) : real\r\n",
-      "mdown_content": "**Rand.Next** (_seq_ : 1 .. 10) : **real**"
+      "mdown_content": "**Rand.Next** (_seq_ : 1 .. 10) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Rand.Next</b> procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The <b>Rand.Next</b> procedure is the same as <b>rand</b>, except <i>seq</i> specifies one of ten independent and repeatable sequences of pseudo-random real numbers.<p>\r\nThe <b>Rand.Seed</b> procedure is used to start one of these sequences at a particular point.</p>\n<p>\r\n</p>",
       "text_content": " The Rand.Next procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The Rand.Next procedure is the same as rand, except seq specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\r\nThe Rand.Seed procedure is used to start one of these sequences at a particular point.\r\n",
-      "mdown_content": "The **Rand.Next** procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The **Rand.Next** procedure is the same as **rand**, except _seq_ specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\nThe **Rand.Seed** procedure is used to start one of these sequences at a particular point."
+      "mdown_content": "The **Rand.Next** procedure is used when you need several sequences of pseudo-random numbers, and you need to be able to exactly repeat these sequences for a number of simulations. The **Rand.Next** procedure is the same as **rand**, except _seq_ specifies one of ten independent and repeatable sequences of pseudo-random real numbers.\n\nThe **Rand.Seed** procedure is used to start one of these sequences at a particular point.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Rand.Next</b>, not by calling <b>Next</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Rand.Next, not by calling Next.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Rand.Next**, not by calling **Next**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Rand.Next**, not by calling **Next**.\n"
     },
     {
       "title": "See also",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"rand_seed.html\">Rand.Seed</a></b>, <b><a href=\"rand_int.html\">Rand.Int</a></b>, <b><a href=\"rand_real.html\">Rand.Real</a></b> and <b><a href=\"\">Rand.Next</a></b>.<p>\r\n</p>",
       "text_content": " Rand.Seed, Rand.Int, Rand.Real and Rand.Next.\r\n",
-      "mdown_content": "**[rand_seed.html](Rand.Seed)**, **[rand_int.html](Rand.Int)**, **[rand_real.html](Rand.Real)** and **[](Rand.Next)**."
+      "mdown_content": "**[rand_seed.html](Rand.Seed)**, **[rand_int.html](Rand.Int)**, **[rand_real.html](Rand.Real)** and **[](Rand.Next)**.\n"
     }
   ],
   "dependencies": [

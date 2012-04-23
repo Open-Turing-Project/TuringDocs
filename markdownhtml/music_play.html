@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Music.Play</strong> procedure is used to sound musical notes on the computer.
-Sounds are produced synchronously on a per process basis. This means that when a process executes a <strong>Music.Sound</strong> or <strong>Music.Play</strong> command, it stops until the command is finished. However, other processes will continue to executing.</p>
+<p>The <strong>Music.Play</strong> procedure is used to sound musical notes on the computer.</p>
+
+<p>Sounds are produced synchronously on a per process basis. This means that when a process executes a <strong>Music.Sound</strong> or <strong>Music.Play</strong> command, it stops until the command is finished. However, other processes will continue to executing.</p>
 
 <h2>Example</h2>
 
@@ -26,14 +27,17 @@ Sounds are produced synchronously on a per process basis. This means that when a
 
 <h2>Details</h2>
 
-<p>The syntax of the play string may be enhanced in the future.
-The <strong>Music.Play</strong> procedure takes strings containing characters that specify notes, rests, sharps, flats and duration. The notes are the letters a to g (or A to G). A rest is p (for pause). A sharp is <strong>+</strong> and a flat is <strong>-</strong>. The durations are 1 (whole note), 2 (half note), 4 (quarter note), 8 (eight note) and 6 (sixteenth note). The character > raises to the next octave and &lt; lowers. For example, this is the way to play C and then C sharp one octave above middle C with a rest between them, all in sixteenth notes:  <strong>Music.Play</strong>(">6cpc+"). Blanks can be used for readability and are ignored by <strong>Music.Play</strong>.
-The <strong>Music.Play</strong> procedure requires that the machine have a sound card in order to play tones.</p>
+<p>The syntax of the play string may be enhanced in the future.</p>
+
+<p>The <strong>Music.Play</strong> procedure takes strings containing characters that specify notes, rests, sharps, flats and duration. The notes are the letters a to g (or A to G). A rest is p (for pause). A sharp is <strong>+</strong> and a flat is <strong>-</strong>. The durations are 1 (whole note), 2 (half note), 4 (quarter note), 8 (eight note) and 6 (sixteenth note). The character > raises to the next octave and &lt; lowers. For example, this is the way to play C and then C sharp one octave above middle C with a rest between them, all in sixteenth notes:  <strong>Music.Play</strong>(">6cpc+"). Blanks can be used for readability and are ignored by <strong>Music.Play</strong>.</p>
+
+<p>The <strong>Music.Play</strong> procedure requires that the machine have a sound card in order to play tones.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Music.Play</strong>, not by calling <strong>Play</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Music.Play</strong>, not by calling <strong>Play</strong>.</p>
 
 <h2>See also</h2>
 

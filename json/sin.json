@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sin</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " sin ( r : real ) : real\r\n",
-      "mdown_content": "**sin** ( _r_ : **real** ) : **real**"
+      "mdown_content": "**sin** ( _r_ : **real** ) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sin</b> function is used to find the sine of an angle given in radians. For example, <b>sin</b> (0) is 0.<p>\r\n</p>",
       "text_content": " The sin function is used to find the sine of an angle given in radians. For example, sin (0) is 0.\r\n",
-      "mdown_content": "The **sin** function is used to find the sine of an angle given in radians. For example, **sin** (0) is 0."
+      "mdown_content": "The **sin** function is used to find the sine of an angle given in radians. For example, **sin** (0) is 0.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the sine of <font face=\"symbol\">p</font>/6, 2<font face=\"symbol\">p</font>/6, 3<font face=\"symbol\">p</font>/6, up to 12<font face=\"symbol\">p</font>/6 radians.<p>\r\n</p>",
       "text_content": " This program prints out the sine of p/6, 2p/6, 3p/6, up to 12p/6 radians.\r\n\r\n",
-      "mdown_content": "This program prints out the sine of pppp/6 radians."
+      "mdown_content": "This program prints out the sine of p/6, 2p/6, 3p/6, up to 12p/6 radians.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "the <b><a href=\"cos.html\">cos</a></b> and <b><a href=\"tan.html\">tan</a></b> functions for calculating cosine and tangent.<p>\r\nthe <b><a href=\"sind.html\">sind</a></b> function which finds the sine of an angle given in degrees. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": "the cos and tan functions for calculating cosine and tangent.\r\nthe sind function which finds the sine of an angle given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "the **[cos.html](cos)** and **[tan.html](tan)** functions for calculating cosine and tangent.\nthe **[sind.html](sind)** function which finds the sine of an angle given in degrees. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
+      "mdown_content": "the **[cos.html](cos)** and **[tan.html](tan)** functions for calculating cosine and tangent.\n\nthe **[sind.html](sind)** function which finds the sine of an angle given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
     }
   ],
   "dependencies": [

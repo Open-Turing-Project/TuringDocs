@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.GetComputerName</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Sys.GetComputerName : string\r\n",
-      "mdown_content": "**Sys.GetComputerName** : **string**"
+      "mdown_content": "**Sys.GetComputerName** : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Sys.GetComputerName </b>function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined.<p>\r\n</p>",
       "text_content": " The Sys.GetComputerName function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns No Name if a name could not be determined.\r\n",
-      "mdown_content": "The **Sys.GetComputerName** function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined."
+      "mdown_content": "The **Sys.GetComputerName** function is used to determine the name of the computer. On the PC, this is the NetBIOS name. It returns &#147;No Name&#148; if a name could not be determined.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs a greeting to the user .<p>\r\n</p>",
       "text_content": " This program outputs a greeting to the user .\r\n\r\n",
-      "mdown_content": "This program outputs a greeting to the user ."
+      "mdown_content": "This program outputs a greeting to the user .\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys. GetComputerName</b>, not by calling <b>GetComputerName</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys. GetComputerName, not by calling GetComputerName.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys. GetComputerName**, not by calling **GetComputerName**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sys. GetComputerName**, not by calling **GetComputerName**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sys_getusername.html\">Sys.GetUserName</a></b> to obtain the user name of the user currently logged in.<p>\r\n</p>",
       "text_content": " Sys.GetUserName to obtain the user name of the user currently logged in.\r\n",
-      "mdown_content": "**[sys_getusername.html](Sys.GetUserName)** to obtain the user name of the user currently logged in."
+      "mdown_content": "**[sys_getusername.html](Sys.GetUserName)** to obtain the user name of the user currently logged in.\n"
     }
   ],
   "dependencies": [

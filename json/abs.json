@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>abs</b> (<i>expn</i>)<p>\r\n</p></font>",
       "text_content": " abs (expn)\r\n",
-      "mdown_content": "**abs** (_expn_)"
+      "mdown_content": "**abs** (_expn_)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>abs</b> function is used to find the absolute value of a number (the <i>expn</i>). For example, <b>abs</b> (-23) is 23.<p>\r\n</p>",
       "text_content": " The abs function is used to find the absolute value of a number (the expn). For example, abs (-23) is 23.\r\n",
-      "mdown_content": "The **abs** function is used to find the absolute value of a number (the _expn_). For example, **abs** (-23) is 23."
+      "mdown_content": "The **abs** function is used to find the absolute value of a number (the _expn_). For example, **abs** (-23) is 23.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program outputs 9.83.<p>\r\n</p>",
       "text_content": " This program outputs 9.83.\r\n\r\n",
-      "mdown_content": "This program outputs 9.83."
+      "mdown_content": "This program outputs 9.83.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "The <b>abs</b> function accepts numbers that are either <b>int</b>'s or <b>real</b>'s. The type of the result is the same type as the accepted number. The <b>abs</b> function is often used to see if one number <i>x</i> is within a given distance <i>d </i>of another number <i>y</i>; for example:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<b>if</b> <b>abs</b> (<i>x</i> - <i>y</i>) <b>&lt;</b>= <i>d</i> <b>then</b> &#133;</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " The abs function accepts numbers that are either int's or real's. The type of the result is the same type as the accepted number. The abs function is often used to see if one number x is within a given distance d of another number y; for example:\r\n if abs (x - y) <= d then \r\n",
-      "mdown_content": "The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number _x_ is within a given distance _d_ of another number _y_; for example:\n\n\n"
+      "mdown_content": "The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number _x_ is within a given distance _d_ of another number _y_; for example:\n\n\n**if** **abs** (_x_ - _y_) **<**= _d_ **then** &#133;\n\n"
     },
     {
       "title": "See also",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " predefined unit Math.\r\n",
-      "mdown_content": "predefined unit **[mathmodule.html](Math)**."
+      "mdown_content": "predefined unit **[mathmodule.html](Math)**.\n"
     }
   ],
   "dependencies": [

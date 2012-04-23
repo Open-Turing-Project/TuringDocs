@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.OpenURLConnection</b> (<i>urlAddr</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Net.OpenURLConnection (urlAddr : string) : int\r\n",
-      "mdown_content": "**Net.OpenURLConnection** (_urlAddr_ : **string**) : **int**"
+      "mdown_content": "**Net.OpenURLConnection** (_urlAddr_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the <i>urlAddr</i>.<p>\r\nIf successful, <b>Net.OpenURLConnection</b> returns a network stream descriptor which can be used with the <b>get</b> statement and <b>eof</b> function to read the web page located at the URL.</p>\n<p>\r\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>\n<p>\r\n</p>",
       "text_content": " Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the urlAddr.\r\nIf successful, Net.OpenURLConnection returns a network stream descriptor which can be used with the get statement and eof function to read the web page located at the URL.\r\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.\r\n",
-      "mdown_content": "Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the _urlAddr_.\nIf successful, **Net.OpenURLConnection** returns a network stream descriptor which can be used with the **get** statement and **eof** function to read the web page located at the URL.\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value."
+      "mdown_content": "Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the _urlAddr_.\n\nIf successful, **Net.OpenURLConnection** returns a network stream descriptor which can be used with the **get** statement and **eof** function to read the web page located at the URL.\n\nThe program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
       "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\n\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
     },
     {
       "title": "Example",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "The following program prints out the contents of the file specified by the user.<p>\r\n</p>",
       "text_content": " The following program prints out the contents of the file specified by the user.\r\n\r\n",
-      "mdown_content": "The following program prints out the contents of the file specified by the user."
+      "mdown_content": "The following program prints out the contents of the file specified by the user.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.OpenURLConnection</b>, not by calling <b>OpenURLConnection</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.OpenURLConnection, not by calling OpenURLConnection.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.OpenURLConnection**, not by calling **OpenURLConnection**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Net.OpenURLConnection**, not by calling **OpenURLConnection**.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
       "text_content": " Net.CloseConnection.\r\n",
-      "mdown_content": "**[net_closeconnection.html](Net.CloseConnection)**."
+      "mdown_content": "**[net_closeconnection.html](Net.CloseConnection)**.\n"
     }
   ],
   "dependencies": [

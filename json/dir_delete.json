@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Delete</b> (<i>directoryPathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Delete (directoryPathName : string)\r\n",
-      "mdown_content": "**Dir.Delete** (_directoryPathName_ : **string**)"
+      "mdown_content": "**Dir.Delete** (_directoryPathName_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Dir.Delete</b> is used to delete the directory specified by the parameter <i>directoryPathName</i>. This is the equivalent of doing a <b>rmdir</b> in DOS or UNIX. On the Macintosh, it removes a folder.<p>\r\n<b>Dir.Delete</b> will fail if it attempts delete a directory that has files in it.</p>\n<p>\r\n</p>",
       "text_content": " Dir.Delete is used to delete the directory specified by the parameter directoryPathName. This is the equivalent of doing a rmdir in DOS or UNIX. On the Macintosh, it removes a folder.\r\nDir.Delete will fail if it attempts delete a directory that has files in it.\r\n",
-      "mdown_content": "**Dir.Delete** is used to delete the directory specified by the parameter _directoryPathName_. This is the equivalent of doing a **rmdir** in DOS or UNIX. On the Macintosh, it removes a folder.\n**Dir.Delete** will fail if it attempts delete a directory that has files in it."
+      "mdown_content": "**Dir.Delete** is used to delete the directory specified by the parameter _directoryPathName_. This is the equivalent of doing a **rmdir** in DOS or UNIX. On the Macintosh, it removes a folder.\n\n**Dir.Delete** will fail if it attempts delete a directory that has files in it.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>Dir.Delete</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If the Dir.Delete call fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If the **Dir.Delete** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If the **Dir.Delete** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Example",
@@ -27,19 +27,19 @@
       ],
       "raw_content": "This program deletes the directory called <i>information</i>.<p>\r\n</p>",
       "text_content": " This program deletes the directory called information.\r\n\r\n",
-      "mdown_content": "This program deletes the directory called _information_."
+      "mdown_content": "This program deletes the directory called _information_.\n"
     },
     {
       "title": "Example",
       "raw_content": "An example demonstrating the use of several of the <b>Dir</b> subprograms\r\n      is available. In this example, a directory is created, a file is written\r\n      to the directory, an attempt is made to delete the directory, the file is\r\n      deleted, and then the directory is deleted.<p>\r\n      This example demonstrates the use of <b>Dir.Change</b>, \r\n      <b>Dir.Current</b>, <b>Dir.Create</b>, and <b>Dir.Delete</b>.</p>\n<p>\r\n      <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n        <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,Dir.t;Dir Subprogams Example\"></object></p>\n<p>\r\n</p>",
       "text_content": "An example demonstrating the use of several of the Dir subprograms\r\n      is available. In this example, a directory is created, a file is written\r\n      to the directory, an attempt is made to delete the directory, the file is\r\n      deleted, and then the directory is deleted.\r\n      This example demonstrates the use of Dir.Change, \r\n      Dir.Current, Dir.Create, and Dir.Delete.\r\n      \r\n        \r\n",
-      "mdown_content": "An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.\nThis example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.\n"
+      "mdown_content": "An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.\n\nThis example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Dir.Delete</b>, not by calling <b>Delete</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Dir.Delete, not by calling Delete.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Dir.Delete**, not by calling **Delete**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Dir.Delete**, not by calling **Delete**.\n"
     }
   ],
   "dependencies": [

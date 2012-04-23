@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ClearText</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.ClearText (widgetID : int)\r\n",
-      "mdown_content": "**GUI.ClearText** (_widgetID_ : **int**)"
+      "mdown_content": "**GUI.ClearText** (_widgetID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Clears all the text in a text box specified by <i>widgetID</i>. The <i>widgetID</i> parameter must be the widget id of a text box.<p>\r\n</p>",
       "text_content": " Clears all the text in a text box specified by widgetID. The widgetID parameter must be the widget id of a text box.\r\n",
-      "mdown_content": "Clears all the text in a text box specified by _widgetID_. The _widgetID_ parameter must be the widget id of a text box."
+      "mdown_content": "Clears all the text in a text box specified by _widgetID_. The _widgetID_ parameter must be the widget id of a text box.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. <p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": " The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. \r\n\r\n    ",
-      "mdown_content": "The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. \n"
+      "mdown_content": "The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. \n\n\n"
     },
     {
       "title": "Execute",
@@ -37,13 +37,13 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.ClearText</b>, not by calling <b>ClearText</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.ClearText, not by calling ClearText.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.ClearText**, not by calling **ClearText**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.ClearText**, not by calling **ClearText**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextBox</b>.<p>\r\n</p>",
       "text_content": " GUI.CreateTextBox.\r\n",
-      "mdown_content": "**GUI.CreateTextBox**."
+      "mdown_content": "**GUI.CreateTextBox**.\n"
     }
   ],
   "dependencies": [

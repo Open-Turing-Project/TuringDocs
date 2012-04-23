@@ -5,15 +5,12 @@
 **sign** ( _r_ : **real** ) : -1 .. 1
 
 
-
 ##Description
 The **sign** function is used to determine whether a number is positive, zero or negative. It returns 1 if _r_ > 0, 0 if _r_ = 0, and -1 if _r_ < 0. For example, **sign** (5) is 1 and **sign** (-23) is -1.
 
 
-
 ##Example
 This program reads in numbers and determines if they are positive, zero or negative:
-
 
         var x : real
         get x
@@ -24,5 +21,4 @@ This program reads in numbers and determines if they are positive, zero or negat
         end case
 ##See also
 See also predefined unit **[mathmodule.html](Math)**.
-
 

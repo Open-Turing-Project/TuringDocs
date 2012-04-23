@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.DiskFree</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>",
       "text_content": "File.DiskFree (pathName : string) : int\r\n    ",
-      "mdown_content": "**File.DiskFree** (_pathName_ : **string**) : **int**"
+      "mdown_content": "**File.DiskFree** (_pathName_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.DiskFree</b> gets the number of bytes for the disk upon \r\n          which <i>pathName</i> resides. The <i>pathName</i> parameter can \r\n          specify either a file or a directory. If it is the empty string, \r\n          then <b>File.DiskFree</b> returns the number of bytes of free \r\n          disk space on the disk upon which the execution directory resides.<p>\r\n    </p>",
       "text_content": "File.DiskFree gets the number of bytes for the disk upon \r\n          which pathName resides. The pathName parameter can \r\n          specify either a file or a directory. If it is the empty string, \r\n          then File.DiskFree returns the number of bytes of free \r\n          disk space on the disk upon which the execution directory resides.\r\n    ",
-      "mdown_content": "**File.DiskFree** gets the number of bytes for the disk upon which _pathName_ resides. The _pathName_ parameter can specify either a file or a directory. If it is the empty string, then **File.DiskFree** returns the number of bytes of free disk space on the disk upon which the execution directory resides."
+      "mdown_content": "**File.DiskFree** gets the number of bytes for the disk upon which _pathName_ resides. The _pathName_ parameter can specify either a file or a directory. If it is the empty string, then **File.DiskFree** returns the number of bytes of free disk space on the disk upon which the execution directory resides.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>File.DiskFree</b> call fails, then it returns -1. \r\n          Also <b>Error.Last</b> will return a non-zero value indicating \r\n          the reason for the failure. <b>Error.LastMsg</b> will return a \r\n          string which contains the textual version of the error.<p>\r\n          If there is more than 2,147,483,647 bytes free on a disk, \r\n          the <b>File.DiskFree</b> function returns 2,147,483,647.</p>\n<p>\r\n    </p>",
       "text_content": "If the File.DiskFree call fails, then it returns -1. \r\n          Also Error.Last will return a non-zero value indicating \r\n          the reason for the failure. Error.LastMsg will return a \r\n          string which contains the textual version of the error.\r\n          If there is more than 2,147,483,647 bytes free on a disk, \r\n          the File.DiskFree function returns 2,147,483,647.\r\n    ",
-      "mdown_content": "If the **File.DiskFree** call fails, then it returns -1. Also **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\nIf there is more than 2,147,483,647 bytes free on a disk, the **File.DiskFree** function returns 2,147,483,647."
+      "mdown_content": "If the **File.DiskFree** call fails, then it returns -1. Also **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n\nIf there is more than 2,147,483,647 bytes free on a disk, the **File.DiskFree** function returns 2,147,483,647.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This program prints out the amount of space on the <i>A: </i>drive \r\n          on a PC and in the execution directory.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program prints out the amount of space on the A: drive \r\n          on a PC and in the execution directory.\r\n\r\n    ",
-      "mdown_content": "This program prints out the amount of space on the _A:_ drive on a PC and in the execution directory.\n"
+      "mdown_content": "This program prints out the amount of space on the _A:_ drive on a PC and in the execution directory.\n\n\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>File.DiskFree</b>, not by calling <b>DiskFree</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          File.DiskFree, not by calling DiskFree.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.DiskFree**, not by calling **DiskFree**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **File.DiskFree**, not by calling **DiskFree**.\n"
     }
   ],
   "dependencies": [

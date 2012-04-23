@@ -2,14 +2,13 @@
 #Sprite.Animate
 
 ##Syntax
-**Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,
-
+**Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,    _centered_ : **boolean**)
 
 
 ##Description
 Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
-A simple example of the **Sprite.Animate** procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.
 
+A simple example of the **Sprite.Animate** procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.
 
 
 ##Example
@@ -34,11 +33,10 @@ Here is a program that loads a series of images from an animatedGIF file called 
         Sprite.Free (sprite)
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Sprite.Animate**, not by calling **Animate**.
 
+This means that you can only call the function by calling **Sprite.Animate**, not by calling **Animate**.
 
 
 ##See also
 **[sprite_new.html](Sprite.New)**, **[sprite_setposition.html](Sprite.SetPosition)** and **[sprite_changepic.html](Sprite.ChangePic)**.
-
 

@@ -28,12 +28,17 @@
 
 <h2>Details</h2>
 
-<p>A parameter declared in the header of a procedure is a <em>formal</em> parameter. For example, <em>i</em> and <em>factor</em> above are formal parameters. Each expression in the call is an <em>actual</em> parameter. For example, <em>j</em> and 4 above are actual parameters.
-If a formal parameter is declared using <strong>var</strong>, then the expression passed to that parameter must be a variable reference (so its value can potentially be changed by the procedure). This means, for example, that it would be illegal to pass <em>j</em>+3 as the first parameter to <em>times</em>. The variable reference and the formal parameter must have equivalent types (see <em>equivalence</em> for details).
-Each actual parameter passed to a non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability</em> for details). See also <em>procedureDeclaration</em>.
-In this explanation of <em>procedureCall</em>, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor <em>M</em> from which it has been exported, the syntax of the <em>procedureCall</em> is:
-In other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the <em>procedureCall</em> is one of:
-In these, <em>p</em> must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
+<p>A parameter declared in the header of a procedure is a <em>formal</em> parameter. For example, <em>i</em> and <em>factor</em> above are formal parameters. Each expression in the call is an <em>actual</em> parameter. For example, <em>j</em> and 4 above are actual parameters.</p>
+
+<p>If a formal parameter is declared using <strong>var</strong>, then the expression passed to that parameter must be a variable reference (so its value can potentially be changed by the procedure). This means, for example, that it would be illegal to pass <em>j</em>+3 as the first parameter to <em>times</em>. The variable reference and the formal parameter must have equivalent types (see <em>equivalence</em> for details).</p>
+
+<p>Each actual parameter passed to a non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability</em> for details). See also <em>procedureDeclaration</em>.</p>
+
+<p>In this explanation of <em>procedureCall</em>, we have up to this point ignored the possibility of procedures exported from modules, monitors and classes. If the procedure is being called from outside of a module or monitor <em>M</em> from which it has been exported, the syntax of the <em>procedureCall</em> is:</p>
+
+<p>In other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the <em>procedureCall</em> is one of:</p>
+
+<p>In these, <em>p</em> must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
 
 <pre><code>    M . procedureId [ ( [ expn {, expn } ] ) ]        (a) classId (p) . procedureId [ ( [ expn {, expn } ] ) ]
     (b) p -&gt; procedureId [ ( [ expn {, expn } ] ) ]

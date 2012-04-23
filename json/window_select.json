@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Select</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Select (windowID : int)\r\n",
-      "mdown_content": "**Window.Select** (_windowID_ : **int**)"
+      "mdown_content": "**Window.Select** (_windowID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Window.Select</b> selects the window that output is to be sent to.<p>\r\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main <b>Run</b> window.</p>\n<p>\r\n</p>",
       "text_content": " The Window.Select selects the window that output is to be sent to.\r\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main Run window.\r\n",
-      "mdown_content": "The **Window.Select** selects the window that output is to be sent to.\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main **Run** window."
+      "mdown_content": "The **Window.Select** selects the window that output is to be sent to.\n\nA selected window is defined as the window that output will be sent to. It can be invisible. When a program starts execution, the selected window is the main **Run** window.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Window.Select</b>, not by calling <b>Select</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Window.Select, not by calling Select.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Window.Select**, not by calling **Select**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Window.Select**, not by calling **Select**.\n"
     },
     {
       "title": "See also",
@@ -28,7 +28,7 @@
       ],
       "raw_content": "<b><a href=\"\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>",
       "text_content": " Window.Select and Window.SetActive.\r\n",
-      "mdown_content": "**[](Window.Select)** and **[window_setactive.html](Window.SetActive)**."
+      "mdown_content": "**[](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n"
     }
   ],
   "dependencies": [

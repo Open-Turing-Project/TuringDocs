@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Trip</b> (<i>errorCode</i> : <b>int</b>)<p></p></font>",
       "text_content": "Error.Trip (errorCode : int)\r\n    ",
-      "mdown_content": "**Error.Trip** (_errorCode_ : **int**)"
+      "mdown_content": "**Error.Trip** (_errorCode_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.Trip</b> is a procedure that sets the error number that is\r\n          returned by <b>Error.Last</b> and <b>Error.LastMsg</b>. It does  \r\n          not halt the program.<p>\r\n          Error codes that do not correspond to recognized errors will cause \r\n          an abort with the error message \"Unknown Error #n\" where n is the \r\n          error passed in.</p>\n<p>\r\n          You can find a list of constants for the legal error codes in the \r\n          module <b>ErrorNum</b>. Any call to <b>Error.Trip</b> should use a \r\n          constant found in the <b>ErrorNum</b> module.</p>\n<p>\r\n    </p>",
       "text_content": "Error.Trip is a procedure that sets the error number that is\r\n          returned by Error.Last and Error.LastMsg. It does  \r\n          not halt the program.\r\n          Error codes that do not correspond to recognized errors will cause \r\n          an abort with the error message \"Unknown Error #n\" where n is the \r\n          error passed in.\r\n          You can find a list of constants for the legal error codes in the \r\n          module ErrorNum. Any call to Error.Trip should use a \r\n          constant found in the ErrorNum module.\r\n    ",
-      "mdown_content": "**Error.Trip** is a procedure that sets the error number that isreturned by **Error.Last** and **Error.LastMsg**. It does  not halt the program.\nError codes that do not correspond to recognized errors will cause an abort with the error message \"Unknown Error #n\" where n is the error passed in.\nYou can find a list of constants for the legal error codes in the module **ErrorNum**. Any call to **Error.Trip** should use a constant found in the **ErrorNum** module."
+      "mdown_content": "**Error.Trip** is a procedure that sets the error number that isreturned by **Error.Last** and **Error.LastMsg**. It does  not halt the program.\n\nError codes that do not correspond to recognized errors will cause an abort with the error message \"Unknown Error #n\" where n is the error passed in.\n\nYou can find a list of constants for the legal error codes in the module **ErrorNum**. Any call to **Error.Trip** should use a constant found in the **ErrorNum** module.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program sets an error code. The program outputs 201 for the error\r\n          number and \"File not found\" for the message.<p>\r\n</p>",
       "text_content": "This program sets an error code. The program outputs 201 for the error\r\n          number and \"File not found\" for the message.\r\n\r\n    ",
-      "mdown_content": "This program sets an error code. The program outputs 201 for the errornumber and \"File not found\" for the message."
+      "mdown_content": "This program sets an error code. The program outputs 201 for the errornumber and \"File not found\" for the message.\n"
     },
     {
       "title": "Execute",
@@ -34,13 +34,13 @@
       ],
       "raw_content": "<p>\r\n    </p>",
       "text_content": "\r\n    ",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Error.Trip</b>, not by calling <b>Trip</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Error.Trip, not by calling Trip.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.Trip**, not by calling **Trip**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Error.Trip**, not by calling **Trip**.\n"
     }
   ],
   "dependencies": [

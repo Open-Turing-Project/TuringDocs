@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>System.FetchArg</b> ( <i>i </i>: <b>int</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " System.FetchArg ( i : int ) : string\r\n",
-      "mdown_content": "**System.FetchArg** ( _i_ : **int** ) : **string**"
+      "mdown_content": "**System.FetchArg** ( _i_ : **int** ) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Sys.FetchArg </b>function is used to<b> </b>access the <i>i</i>-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>:r file1 file2</td>\n</tr></table>\n<p>\r\nthen <b>Sys.FetchArg </b>(2) will return \"file2\". If a program called <i>prog.x </i>is run under UNIX using this command:</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>prog.x file1 file2</td>\n</tr></table>\n<p>\r\nthe value of <b>Sys.FetchArg</b>(2)<b> </b>will similarly be \"file2\".</p>\n<p>\r\nThe <b>Sys.Nargs </b>function, which gives the number of arguments passed to the program, is usually used together with the <b>Sys.FetchArg </b>function. Parameter <i>i</i> passed to <b>Sys.FetchArg </b>must be in the range 0 .. <b>Sys.Nargs</b>.</p>\n<p>\r\nThe 0-th argument is the name of the running program.</p>\n<p>\r\n</p>",
       "text_content": " The Sys.FetchArg function is used to access the i-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using\r\n :r file1 file2\r\nthen Sys.FetchArg (2) will return \"file2\". If a program called prog.x is run under UNIX using this command:\r\n prog.x file1 file2\r\nthe value of Sys.FetchArg(2) will similarly be \"file2\".\r\nThe Sys.Nargs function, which gives the number of arguments passed to the program, is usually used together with the Sys.FetchArg function. Parameter i passed to Sys.FetchArg must be in the range 0 .. Sys.Nargs.\r\nThe 0-th argument is the name of the running program.\r\n",
-      "mdown_content": "The **Sys.FetchArg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using\n\n\n\nthen **Sys.FetchArg** (2) will return \"file2\". If a program called _prog.x_ is run under UNIX using this command:\n\n\n\nthe value of **Sys.FetchArg**(2) will similarly be \"file2\".\nThe **Sys.Nargs** function, which gives the number of arguments passed to the program, is usually used together with the **Sys.FetchArg** function. Parameter _i_ passed to **Sys.FetchArg** must be in the range 0 .. **Sys.Nargs**.\nThe 0-th argument is the name of the running program."
+      "mdown_content": "The **Sys.FetchArg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using\n\n\n:r file1 file2\n\n\nthen **Sys.FetchArg** (2) will return \"file2\". If a program called _prog.x_ is run under UNIX using this command:\n\n\nprog.x file1 file2\n\n\nthe value of **Sys.FetchArg**(2) will similarly be \"file2\".\n\nThe **Sys.Nargs** function, which gives the number of arguments passed to the program, is usually used together with the **Sys.FetchArg** function. Parameter _i_ passed to **Sys.FetchArg** must be in the range 0 .. **Sys.Nargs**.\n\nThe 0-th argument is the name of the running program.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program lists its own name and its arguments.<p>\r\n</p>",
       "text_content": " This program lists its own name and its arguments.\r\n\r\n",
-      "mdown_content": "This program lists its own name and its arguments."
+      "mdown_content": "This program lists its own name and its arguments.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.FetchArg</b>, not by calling <b>FetchArg</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys.FetchArg, not by calling FetchArg.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.FetchArg**, not by calling **FetchArg**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sys.FetchArg**, not by calling **FetchArg**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b><p>\r\n</p>",
       "text_content": " Sys.Nargs\r\n",
-      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**"
+      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**\n"
     }
   ],
   "dependencies": [

@@ -5,36 +5,40 @@
 **Pic.Rotate** (_picID_, _angle_, _x_, _y_ : **int**) : **int**
 
 
-
 ##Description
 **Pic.Rotate** is used to create a new picture by rotating an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
-The _angle_ is specified in degrees. The rotation is done in a counter-clockwise direction. The original picture is not modified by the call to **Pic.Rotate** and must still be freed when no longer used. The picture produced by **Pic.Rotate** may be a different size than the original picture.
-The (_x_, _y_) point is the point around which the rotation is to take place and is relative to the picture being rotated. If it is not important to rotate the picture in place, _x_ and _y_ should be set to -1, which make the new picture the minimum size required to fit the rotated image.
 
+The _angle_ is specified in degrees. The rotation is done in a counter-clockwise direction. The original picture is not modified by the call to **Pic.Rotate** and must still be freed when no longer used. The picture produced by **Pic.Rotate** may be a different size than the original picture.
+
+The (_x_, _y_) point is the point around which the rotation is to take place and is relative to the picture being rotated. If it is not important to rotate the picture in place, _x_ and _y_ should be set to -1, which make the new picture the minimum size required to fit the rotated image.
 
 
 ##Details
 The **Pic.Rotate** command can fail, in which case it returns 0. The **Error.LastMsg** function can then be used to obtain more information about the failure.
 
 
-
 ##Details
 If _x_ and _y_ are set to a point in the picture (rather than 1), it is possible for parts of the original picture to be rotated off the left and bottom edge of the new picture. This occurs because **Pic.Rotate** guarantees that the point specified by  (_x_, _y_) in the original picture will be located at  (_x_, _y_) in the rotated picture. You can avoid losingparts of the picture by making certain there is a margin of backgroundcolor on the left and bottom sides of the picture.
-As well, any pixels in the rotated picture that were not part of the original picture are set to the background color.
 
-![Doc image](pic_rotate01.gif)
+
+
+![Doc Image](pic_rotate01.gif)
+
+As well, any pixels in the rotated picture that were not part of the original picture are set to the background color.
 
 
 ##Details
 Rotation can be slow on older machines. Programs that are using animation should create and store all the rotated images that may be needed. Often pictures of an object at various angles are stored in an array. 
 
 
-
 ##Example
 This program draws &#147;Hello&#148; on the screen rotated at 0, 45 and 90 degrees.
 
 
-![Doc image](pic_rotate02.gif)
+
+![Doc Image](pic_rotate02.gif)
+
+**Output from Program**
 
         View.Set ("graphics:200;150,nobuttonbar")
         var f : int := Font.New ("Serif:36")
@@ -47,7 +51,6 @@ This program draws &#147;Hello&#148; on the screen rotated at 0, 45 and 90 degre
         
 ##Example
 This program moves a spinning &#147;Hello&#148; around the screen, bouncing it off the edges of the output window. Notice that the original picture contains adequate space on the left and bottom sides to contain the rotation.
-
 
         View.Set ("graphics:300;250,nobuttonbar")
         var pic : array 0 .. 35 of int
@@ -83,9 +86,8 @@ This program moves a spinning &#147;Hello&#148; around the screen, bouncing it o
 Note that the rotated picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Pic.Rotate**, not by calling **Rotate**.
 
+This means that you can only call the function by calling **Pic.Rotate**, not by calling **Rotate**.
 

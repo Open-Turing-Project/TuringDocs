@@ -12,8 +12,9 @@
 
 <h2>Example</h2>
 
-<p>On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <em>arrows</em> contains definitions of these values:
-These definitions can be included in any program in the following manner:</p>
+<p>On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <em>arrows</em> contains definitions of these values:</p>
+
+<p>These definitions can be included in any program in the following manner:</p>
 
 <pre><code>    const upArrow := 200
     const downArrow := 208
@@ -38,8 +39,9 @@ These definitions can be included in any program in the following manner:</p>
 
 <h2>Details</h2>
 
-<p>An include file can itself contain <strong>include</strong> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.
-It is common to save procedures, functions and modules in separate files. The files are collected together using <strong>include</strong>.</p>
+<p>An include file can itself contain <strong>include</strong> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.</p>
+
+<p>It is common to save procedures, functions and modules in separate files. The files are collected together using <strong>include</strong>.</p>
 
 <h2>Details</h2>
 
@@ -47,8 +49,9 @@ It is common to save procedures, functions and modules in separate files. The fi
 
 <h2>Example</h2>
 
-<p>If the system directory is set to "C:\TURING", then the line
-will include the file "C:\TURING\SORTING.T" in the program.</p>
+<p>If the system directory is set to "C:\TURING", then the line</p>
+
+<p>will include the file "C:\TURING\SORTING.T" in the program.</p>
 
 <pre><code>    include "%sorting.t"
 </code></pre>
@@ -59,8 +62,9 @@ will include the file "C:\TURING\SORTING.T" in the program.</p>
 
 <h2>Example</h2>
 
-<p>If the oot directory is set to "/usr/local/lib/oot" then the line
-will include the file "/usr/local/lib/oot/teacher/sorting.t" in the program.</p>
+<p>If the oot directory is set to "/usr/local/lib/oot" then the line</p>
+
+<p>will include the file "/usr/local/lib/oot/teacher/sorting.t" in the program.</p>
 
 <pre><code>    include "%oot/teacher/sorting.t"
 </code></pre>

@@ -29,26 +29,41 @@
 
 <h2>Details</h2>
 
-<p>Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:
-The following syntax specifies that each exported identifier can optionally be preceded by the keywords <strong>var</strong>, <strong>unqualified</strong>, <strong>pervasive</strong> and <strong>opaque</strong>. Of these, only <strong>opaque</strong> is available in Turing proper.
-The form of <em>howExport</em> is:</p>
+<p>Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:</p>
+
+<p>The following syntax specifies that each exported identifier can optionally be preceded by the keywords <strong>var</strong>, <strong>unqualified</strong>, <strong>pervasive</strong> and <strong>opaque</strong>. Of these, only <strong>opaque</strong> is available in Turing proper.</p>
+
+<p>The form of <em>howExport</em> is:</p>
+
+<p>{ <em>exportMethod</em> }</p>
 
 <p>The form of <em>exportMethod</em> is one of:</p>
 
-<p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name</em> is exported <strong>var</strong> from module <em>M</em>, <em>name</em> can be changed from outside of <em>M</em> by <em>M.name</em> := "<em>Surprise!</em>".
-The keyword <strong>unqualified</strong> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <em>M</em> exports procedure <em>p</em> unqualified, a call to <em>p</em> outside of <em>M</em> can be simply <em>p</em> instead of the usual <em>M.p</em>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <strong>unqualified</strong> can be abbreviated to ~. which is pronounced as "not dot".
-The keyword <strong>pervasive</strong>, which is only meaningful if <strong>unqualified</strong> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.
-The keyword <strong>opaque</strong>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <strong>module</strong> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.
-Exported subprograms are considered to be <strong>deferred</strong>, meaning that expansions are allowed to override these subprograms. See also <strong>deferred</strong> subprograms. These can be overridden using the keyword <strong>body</strong> before the resolving subprogram body.
-A class cannot export items from its parent or it parent's ancestors. All exported item must be declared in the current class.</p>
+<p>(a)   <strong>var</strong>
+(b)   <strong>unqualified</strong>
+(c)   <strong>pervasive</strong>
+(d)   <strong>opaque</strong></p>
+
+<p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name</em> is exported <strong>var</strong> from module <em>M</em>, <em>name</em> can be changed from outside of <em>M</em> by <em>M.name</em> := "<em>Surprise!</em>".</p>
+
+<p>The keyword <strong>unqualified</strong> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <em>M</em> exports procedure <em>p</em> unqualified, a call to <em>p</em> outside of <em>M</em> can be simply <em>p</em> instead of the usual <em>M.p</em>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <strong>unqualified</strong> can be abbreviated to ~. which is pronounced as "not dot".</p>
+
+<p>The keyword <strong>pervasive</strong>, which is only meaningful if <strong>unqualified</strong> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.</p>
+
+<p>The keyword <strong>opaque</strong>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <strong>module</strong> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.</p>
+
+<p>Exported subprograms are considered to be <strong>deferred</strong>, meaning that expansions are allowed to override these subprograms. See also <strong>deferred</strong> subprograms. These can be overridden using the keyword <strong>body</strong> before the resolving subprogram body.</p>
+
+<p>A class cannot export items from its parent or it parent's ancestors. All exported item must be declared in the current class.</p>
 
 <pre><code>    export (push, pop)
 </code></pre>
 
 <h2>Details</h2>
 
-<p>You can export <strong>all</strong> from a module, monitor or a class. This means that every sibmle that is legal to export is exported. You may also qualify the all, as in <strong>export opaque unqualified pervasive all</strong> where the qualifiers are added to each export item (if it makes sense).
-If <strong>all</strong> is specified as the export item, no other item may be specified. Also, and <strong>all</strong> export affects only the module, monitor or class that it is given in. Any inheriting or implementing module, monitor or class does not export <strong>all</strong> unless they also specify it.</p>
+<p>You can export <strong>all</strong> from a module, monitor or a class. This means that every sibmle that is legal to export is exported. You may also qualify the all, as in <strong>export opaque unqualified pervasive all</strong> where the qualifiers are added to each export item (if it makes sense).</p>
+
+<p>If <strong>all</strong> is specified as the export item, no other item may be specified. Also, and <strong>all</strong> export affects only the module, monitor or class that it is given in. Any inheriting or implementing module, monitor or class does not export <strong>all</strong> unless they also specify it.</p>
 
 <h2>See also</h2>
 

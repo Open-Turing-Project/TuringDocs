@@ -6,11 +6,15 @@
 
 <h2>Description</h2>
 
-<p>This function processes a single event (a mouse button press or a keystroke). If the event activates a widget, then the <em>action procedure</em> of the widget is called.
-The function returns <strong>false</strong> until <strong>GUI.Quit</strong> is called. It then returns <strong>true</strong>.
-In order for the widgets to function once placed, the GUI.ProcessEvent must be called continually. Without a call to <strong>GUI.ProcessEvent</strong>, the widgets will appear, but will not react to mouse clicks or keystrokes.
-Almost all programs involving the GUI Procedure Library have the following code fragment in the program. This code fragment is often called the <em>event loop</em>.
-The loop runs continuously until <strong>GUI.Quit</strong> is called, whereupon <strong>GUI.ProcessEvent</strong> will return <strong>true</strong> and the loop will exit. The rest of the program is reached through the <em>action procedures</em> that are called when the user interacts with various widgets.</p>
+<p>This function processes a single event (a mouse button press or a keystroke). If the event activates a widget, then the <em>action procedure</em> of the widget is called.</p>
+
+<p>The function returns <strong>false</strong> until <strong>GUI.Quit</strong> is called. It then returns <strong>true</strong>.</p>
+
+<p>In order for the widgets to function once placed, the GUI.ProcessEvent must be called continually. Without a call to <strong>GUI.ProcessEvent</strong>, the widgets will appear, but will not react to mouse clicks or keystrokes.</p>
+
+<p>Almost all programs involving the GUI Procedure Library have the following code fragment in the program. This code fragment is often called the <em>event loop</em>.</p>
+
+<p>The loop runs continuously until <strong>GUI.Quit</strong> is called, whereupon <strong>GUI.ProcessEvent</strong> will return <strong>true</strong> and the loop will exit. The rest of the program is reached through the <em>action procedures</em> that are called when the user interacts with various widgets.</p>
 
 <pre><code>    loop
         exit when GUI.ProcessEvent
@@ -34,15 +38,19 @@ The loop runs continuously until <strong>GUI.Quit</strong> is called, whereupon 
 
 <h2>Details</h2>
 
-<p>To find out which widget was activated and called the <em>action procedure</em> (necessary if several widgets have the same <em>action</em> <em>procedure</em>), you can call <strong>GUI.GetEventWidgetID</strong>. To get the exact time that the event occurred, you can call <strong>GUI.GetEventTime.</strong> To get the window in which the event took place, you can call <strong>GUI.GetEventWindow</strong>.
-If a mouse click occured, but did not activate any widget, then the default mouse event handler is called. By default, this does nothing. However, if you want your program to respond to mouse events that do not affect a widget, call <strong>GUI.SetMouseEventHandler</strong> to specify your own default mouse event handler.
-If a keystroke occurred, but did not activate any widget (i.e. it wasn't a short cut for a widget and there are no text fields in the window) then the default keystroke handler is called. By default, this does nothing. However, if you want your program to respond to keystroke events that do not affect a widget, call <strong>GUI.SetKeyEventHandler</strong> to specify your own default key event handler.
-If no event occurred, then the null event handler is called. By default, this does nothing. However, if you want your program to perform some action repetetively when it is not doing anything else, then call <strong>GUI.SetNullEventHandler</strong> to specify your own null event handler. The null event handler is often used for such things as updating a clock and making certain that music is playing in the background.</p>
+<p>To find out which widget was activated and called the <em>action procedure</em> (necessary if several widgets have the same <em>action</em> <em>procedure</em>), you can call <strong>GUI.GetEventWidgetID</strong>. To get the exact time that the event occurred, you can call <strong>GUI.GetEventTime.</strong> To get the window in which the event took place, you can call <strong>GUI.GetEventWindow</strong>.</p>
+
+<p>If a mouse click occured, but did not activate any widget, then the default mouse event handler is called. By default, this does nothing. However, if you want your program to respond to mouse events that do not affect a widget, call <strong>GUI.SetMouseEventHandler</strong> to specify your own default mouse event handler.</p>
+
+<p>If a keystroke occurred, but did not activate any widget (i.e. it wasn't a short cut for a widget and there are no text fields in the window) then the default keystroke handler is called. By default, this does nothing. However, if you want your program to respond to keystroke events that do not affect a widget, call <strong>GUI.SetKeyEventHandler</strong> to specify your own default key event handler.</p>
+
+<p>If no event occurred, then the null event handler is called. By default, this does nothing. However, if you want your program to perform some action repetetively when it is not doing anything else, then call <strong>GUI.SetNullEventHandler</strong> to specify your own null event handler. The null event handler is often used for such things as updating a clock and making certain that music is playing in the background.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the procedures by calling <strong>GUI.PProcessEvent</strong>, not by calling <strong>ProcessEvent</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the procedures by calling <strong>GUI.PProcessEvent</strong>, not by calling <strong>ProcessEvent</strong>.</p>
 
 <h2>See also</h2>
 

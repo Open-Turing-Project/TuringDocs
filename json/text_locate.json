@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.Locate</b> ( <i>row</i>, <i>column</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " Text.Locate ( row, column : int )\r\n",
-      "mdown_content": "**Text.Locate** ( _row_, _column_ : **int** )"
+      "mdown_content": "**Text.Locate** ( _row_, _column_ : **int** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.Locate</b> procedure is used to<b> </b>move the cursor so that the next output from <b>put</b> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.<p>\r\n</p>",
       "text_content": " The Text.Locate procedure is used to move the cursor so that the next output from put will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.\r\n",
-      "mdown_content": "The **Text.Locate** procedure is used to move the cursor so that the next output from **put** will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen."
+      "mdown_content": "The **Text.Locate** procedure is used to move the cursor so that the next output from **put** will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program outputs stars of random colors to random locations on the screen. The variable <i>colr </i>is purposely spelled differently from the word <i>color </i>to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <b>maxrow</b>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.<p>\r\n</p>",
       "text_content": " This program outputs stars of random colors to random locations on the screen. The variable colr is purposely spelled differently from the word color to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than maxrow. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.\r\n\r\n",
-      "mdown_content": "This program outputs stars of random colors to random locations on the screen. The variable _colr_ is purposely spelled differently from the word _color_ to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row."
+      "mdown_content": "This program outputs stars of random colors to random locations on the screen. The variable _colr_ is purposely spelled differently from the word _color_ to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than **maxrow**. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Text.Locate</b> procedure is used to locate the next output based on row and column positions. See also the <b>Text.LocateXY </b>procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.<p>\r\nThe screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to\"<i>screen</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The Text.Locate procedure is used to locate the next output based on row and column positions. See also the Text.LocateXY procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.\r\nThe screen should be in a \"screen\" or \"graphics\" mode. See the View.Set procedure for details. If the screen is not in one of these modes, it will automatically be set to\"screen\" mode.\r\n",
-      "mdown_content": "The **Text.Locate** procedure is used to locate the next output based on row and column positions. See also the **Text.LocateXY** procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.\nThe screen should be in a \"_screen_\" or \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to\"_screen_\" mode."
+      "mdown_content": "The **Text.Locate** procedure is used to locate the next output based on row and column positions. See also the **Text.LocateXY** procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.\n\nThe screen should be in a \"_screen_\" or \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in one of these modes, it will automatically be set to\"_screen_\" mode.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.Locate</b> , not by calling <b>Locate</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Text.Locate , not by calling Locate.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.Locate** , not by calling **Locate**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Text.Locate** , not by calling **Locate**.\n"
     },
     {
       "title": "See also",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a> </b>and <b><a href=\"draw_dot.html\">Draw.Dot</a></b>.<p>\r\n</p>",
       "text_content": " View.Set and Draw.Dot.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)** and **[draw_dot.html](Draw.Dot)**."
+      "mdown_content": "**[view_set.html](View.Set)** and **[draw_dot.html](Draw.Dot)**.\n"
     }
   ],
   "dependencies": [

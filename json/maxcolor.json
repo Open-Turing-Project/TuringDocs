@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxcolor</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxcolor : int\r\n",
-      "mdown_content": "**maxcolor** : **int**"
+      "mdown_content": "**maxcolor** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>maxcolor</b> function is used to determine the maximum color number for the current mode of the screen. The alternate spelling is <b>maxcolour</b>.<p>\r\n</p>",
       "text_content": " The maxcolor function is used to determine the maximum color number for the current mode of the screen. The alternate spelling is maxcolour.\r\n",
-      "mdown_content": "The **maxcolor** function is used to determine the maximum color number for the current mode of the screen. The alternate spelling is **maxcolour**."
+      "mdown_content": "The **maxcolor** function is used to determine the maximum color number for the current mode of the screen. The alternate spelling is **maxcolour**.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs the maximum color number.<p>\r\n</p>",
       "text_content": " This program outputs the maximum color number.\r\n\r\n",
-      "mdown_content": "This program outputs the maximum color number."
+      "mdown_content": "This program outputs the maximum color number.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. If it is not, it will automatically be set to \"<i>screen</i>\" mode. See <b>setscreen</b> for details.<p>\r\nFor IBM PC compatibles in \"<i>screen</i>\"<i> </i>mode, <b>maxcolor</b> = 15. For the default IBM PC compatible \"<i>graphics</i>\" mode (CGA), <b>maxcolor</b> = 3.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. If it is not, it will automatically be set to \"screen\" mode. See setscreen for details.\r\nFor IBM PC compatibles in \"screen\" mode, maxcolor = 15. For the default IBM PC compatible \"graphics\" mode (CGA), maxcolor = 3.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If it is not, it will automatically be set to \"_screen_\" mode. See **setscreen** for details.\nFor IBM PC compatibles in \"_screen_\" mode, **maxcolor** = 15. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcolor** = 3."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. If it is not, it will automatically be set to \"_screen_\" mode. See **setscreen** for details.\n\nFor IBM PC compatibles in \"_screen_\" mode, **maxcolor** = 15. For the default IBM PC compatible \"_graphics_\" mode (CGA), **maxcolor** = 3.\n"
     },
     {
       "title": "See also",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"drawdot.html\">drawdot</a></b> and <b>palette</b> for examples of the use of <b><a href=\"\">maxcolor</a></b>. See the <b><a href=\"color.html\">color</a></b> <a href=\"procedure.html\">procedure</a> which is used for setting the currently active <a href=\"color.html\">color</a>.<p>\r\n</p>",
       "text_content": " drawdot and palette for examples of the use of maxcolor. See the color procedure which is used for setting the currently active color.\r\n",
-      "mdown_content": "**[drawdot.html](drawdot)** and **palette** for examples of the use of **[](maxcolor)**. See the **[color.html](color)** [procedure.html](procedure) which is used for setting the currently active [color.html](color)."
+      "mdown_content": "**[drawdot.html](drawdot)** and **palette** for examples of the use of **[](maxcolor)**. See the **[color.html](color)** [procedure.html](procedure) which is used for setting the currently active [color.html](color).\n"
     }
   ],
   "dependencies": [

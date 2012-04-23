@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.TokenAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.TokenAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**"
+      "mdown_content": "**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns <b>true</b> if a line of input is waiting to be read from the net stream specified by the <i>netStream</i> parameter. If <b>Net.TokenAvailable</b> returns <b>true</b>, then a single token (character surrounded by whitespace) can be read from the stream without blocking.<p>\r\n</p>",
       "text_content": " Returns true if a line of input is waiting to be read from the net stream specified by the netStream parameter. If Net.TokenAvailable returns true, then a single token (character surrounded by whitespace) can be read from the stream without blocking.\r\n",
-      "mdown_content": "Returns **true** if a line of input is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.TokenAvailable** returns **true**, then a single token (character surrounded by whitespace) can be read from the stream without blocking."
+      "mdown_content": "Returns **true** if a line of input is waiting to be read from the net stream specified by the _netStream_ parameter. If **Net.TokenAvailable** returns **true**, then a single token (character surrounded by whitespace) can be read from the stream without blocking.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>\r\nIt is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>\n<p>\r\n</p>",
       "text_content": " The Net module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\r\nIt is possible for Firewalls to interfere with the actions of the Net module, preventing connections from taking place.\r\n",
-      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place."
+      "mdown_content": "The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols\n\nIt is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.\n"
     },
     {
       "title": "Example",
@@ -27,13 +27,13 @@
       ],
       "raw_content": "The following program fragment reads a character from <i>netStream</i> only if there is one waiting to be read.<p>\r\n</p>",
       "text_content": " The following program fragment reads a character from netStream only if there is one waiting to be read.\r\n\r\n",
-      "mdown_content": "The following program fragment reads a character from _netStream_ only if there is one waiting to be read."
+      "mdown_content": "The following program fragment reads a character from _netStream_ only if there is one waiting to be read.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Net.TokenAvailable</b>, not by calling <b>TokenAvailable</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Net.TokenAvailable, not by calling TokenAvailable.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Net.TokenAvailable**, not by calling **TokenAvailable**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Net.TokenAvailable**, not by calling **TokenAvailable**.\n"
     },
     {
       "title": "See also",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"net_bytesavailable.html\">Net.BytesAvailable</a></b>, <b><a href=\"net_charavailable.html\">Net.CharAvailable</a></b>, and <b><a href=\"net_lineavailable.html\">Net.LineAvailable</a></b>.<p>\r\n</p>",
       "text_content": " Net.BytesAvailable, Net.CharAvailable, and Net.LineAvailable.\r\n",
-      "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_charavailable.html](Net.CharAvailable)**, and **[net_lineavailable.html](Net.LineAvailable)**."
+      "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_charavailable.html](Net.CharAvailable)**, and **[net_lineavailable.html](Net.LineAvailable)**.\n"
     }
   ],
   "dependencies": [

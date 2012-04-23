@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Dispose</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.Dispose (widgetID : int)\r\n",
-      "mdown_content": "**GUI.Dispose** (_widgetID_ : **int**)"
+      "mdown_content": "**GUI.Dispose** (_widgetID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Eliminates the widget specified by <i>widgetID</i>. <p>\r\nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the <i>Hide</i> method and then the <i>Show</i> method when you want to use it again.</p>\n<p>\r\n</p>",
       "text_content": " Eliminates the widget specified by widgetID. \r\nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the Hide method and then the Show method when you want to use it again.\r\n",
-      "mdown_content": "Eliminates the widget specified by _widgetID_. \nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the _Hide_ method and then the _Show_ method when you want to use it again."
+      "mdown_content": "Eliminates the widget specified by _widgetID_. \n\nIf the widget is visible, it is immediately made invisible before being deleted. It should be called in order to free up any memory that the widget might have allocated. Note that you cannot use the widget after it has been disposed of. If you wish to temporarily get rid of a widget, consider using the _Hide_ method and then the _Show_ method when you want to use it again.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program waits for the Quit button to be pressed. When it is, the Quit button is deleted and a message is displayed in the center of the screen.<p>\r\n</p>",
       "text_content": " The following program waits for the Quit button to be pressed. When it is, the Quit button is deleted and a message is displayed in the center of the screen.\r\n\r\n",
-      "mdown_content": "The following program waits for the Quit button to be pressed. When it is, the Quit button is deleted and a message is displayed in the center of the screen."
+      "mdown_content": "The following program waits for the Quit button to be pressed. When it is, the Quit button is deleted and a message is displayed in the center of the screen.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedure by calling <b>GUI.Dispose</b> , not by calling <b>Dispose</b> .</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedure by calling GUI.Dispose , not by calling Dispose .\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedure by calling **GUI.Dispose** , not by calling **Dispose** ."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the procedure by calling **GUI.Dispose** , not by calling **Dispose** .\n"
     }
   ],
   "dependencies": [

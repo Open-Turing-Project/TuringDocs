@@ -5,16 +5,14 @@
 **GUI.GetEventWindow** : **int**
 
 
-
 ##Description
 Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an _action procedure_ or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.
-This function is commonly used when several windows share the same layout. The same buttons in each window point to the same _action procedures_. To determine which button was actually pressed, the function is called to get the window.
 
+This function is commonly used when several windows share the same layout. The same buttons in each window point to the same _action procedures_. To determine which button was actually pressed, the function is called to get the window.
 
 
 ##Example
 The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window.
-
 
         import GUI in "%oot/lib/GUI" 
         
@@ -37,11 +35,10 @@ The following program creates four windows in a row, each with a button that, wh
         end loop
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.GetEventWindow**, not by calling **GetEventWindow**.
 
+This means that you can only call the function by calling **GUI.GetEventWindow**, not by calling **GetEventWindow**.
 
 
 ##See also
 **[gui_processevent.html](GUI.ProcessEvent)**.
-
 

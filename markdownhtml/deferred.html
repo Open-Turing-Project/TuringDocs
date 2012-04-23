@@ -12,9 +12,11 @@
 
 <h2>Example</h2>
 
-<p>The <em>display</em> procedure is deferred in this class of stacks to allow various ways of graphically displaying the stack on the screen:
-An expansion to the <em>stack</em> class can give a body for <em>display</em>, as in:
-The following creates a stack that can be displayed and displays it:</p>
+<p>The <em>display</em> procedure is deferred in this class of stacks to allow various ways of graphically displaying the stack on the screen:</p>
+
+<p>An expansion to the <em>stack</em> class can give a body for <em>display</em>, as in:</p>
+
+<p>The following creates a stack that can be displayed and displays it:</p>
 
 <pre><code>    class stack
         export push, pop
@@ -33,10 +35,13 @@ The following creates a stack that can be displayed and displays it:</p>
 
 <h2>Details</h2>
 
-<p>A deferred procedure is <em>resolved</em> by giving its body. This can be done in the scope (<strong>module</strong>, <strong>monitor</strong> or <strong>class</strong>) containing the <strong>deferred</strong> declaration (following the <strong>deferred</strong> declaration) or in any expansion of that scope. Only one resolution per scope is allowed. Unresolved subprograms can be called, but they immediately abort.
-All exported subprograms are implicitly deferred and can be overridden in expansions.
-During initialization of a <strong>module</strong>, <strong>monitor</strong> or <strong>object</strong> of a <strong>class</strong>, deferred subprograms (including exported subprograms) cannot be called. This restriction prevents accessing an object before it is fully initialized.
-A <strong>deferred</strong> declaration must not appear in the main program.</p>
+<p>A deferred procedure is <em>resolved</em> by giving its body. This can be done in the scope (<strong>module</strong>, <strong>monitor</strong> or <strong>class</strong>) containing the <strong>deferred</strong> declaration (following the <strong>deferred</strong> declaration) or in any expansion of that scope. Only one resolution per scope is allowed. Unresolved subprograms can be called, but they immediately abort.</p>
+
+<p>All exported subprograms are implicitly deferred and can be overridden in expansions.</p>
+
+<p>During initialization of a <strong>module</strong>, <strong>monitor</strong> or <strong>object</strong> of a <strong>class</strong>, deferred subprograms (including exported subprograms) cannot be called. This restriction prevents accessing an object before it is fully initialized.</p>
+
+<p>A <strong>deferred</strong> declaration must not appear in the main program.</p>
 
 <h2>See also</h2>
 

@@ -6,10 +6,13 @@
 
 <h2>Description</h2>
 
-<p><strong>File.Status</strong> is used to get assorted information about a file or directory. When the function is called with a specified <em>pathName</em>, it returns the information about the file in the other parameters.
-The <em>size</em> parameter is the size of the file in bytes.
-The <em>attribute</em> parameter has its individual bits set as exactly as the <em>attribute</em> parameter in <strong>Dir.GetLong</strong> subprogram does. See <strong>Dir.GetLong</strong> for the list of attribute constants.
-The <em>fileTime</em> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <strong>Time.SecDate.</strong></p>
+<p><strong>File.Status</strong> is used to get assorted information about a file or directory. When the function is called with a specified <em>pathName</em>, it returns the information about the file in the other parameters.</p>
+
+<p>The <em>size</em> parameter is the size of the file in bytes.</p>
+
+<p>The <em>attribute</em> parameter has its individual bits set as exactly as the <em>attribute</em> parameter in <strong>Dir.GetLong</strong> subprogram does. See <strong>Dir.GetLong</strong> for the list of attribute constants.</p>
+
+<p>The <em>fileTime</em> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <strong>Time.SecDate.</strong></p>
 
 <h2>Details</h2>
 
@@ -59,5 +62,6 @@ The <em>fileTime</em> is the time of last modification of the file. It is return
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>File.Status</strong>, not by calling <strong>Status</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>File.Status</strong>, not by calling <strong>Status</strong>.</p>

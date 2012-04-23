@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>div</b><p>\r\n</p></font>",
       "text_content": " div\r\n",
-      "mdown_content": "**div**"
+      "mdown_content": "**div**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>div</b> operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 <b>div</b> 2 produces 3 and -7 <b>div</b> 2 produces -3.<p>\r\n</p>",
       "text_content": " The div operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 div 2 produces 3 and -7 div 2 produces -3.\r\n",
-      "mdown_content": "The **div** operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 **div** 2 produces 3 and -7 **div** 2 produces -3."
+      "mdown_content": "The **div** operator divides one number by another and produces the integer result, truncated in the direction of zero. For example, 7 **div** 2 produces 3 and -7 **div** 2 produces -3.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "In this example, <i>eggCount</i> is the total number of eggs. The first <b>put</b> statement determines how many dozen eggs there are. The second <b>put</b> statement determines how many extra eggs there are beyond the last dozen.<p>\r\n</p>",
       "text_content": " In this example, eggCount is the total number of eggs. The first put statement determines how many dozen eggs there are. The second put statement determines how many extra eggs there are beyond the last dozen.\r\n\r\n",
-      "mdown_content": "In this example, _eggCount_ is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen."
+      "mdown_content": "In this example, _eggCount_ is the total number of eggs. The first **put** statement determines how many dozen eggs there are. The second **put** statement determines how many extra eggs there are beyond the last dozen.\n"
     },
     {
       "title": "Execute",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"mod.html\">mod</a></b> operator.<p>\r\n</p>",
       "text_content": " infix operators, precedence of operators and the mod operator.\r\n",
-      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[mod.html](mod)** operator."
+      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[mod.html](mod)** operator.\n"
     }
   ],
   "dependencies": [

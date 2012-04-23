@@ -2,12 +2,13 @@
 
 <h2>Syntax</h2>
 
-<p><strong>Sprite.Animate</strong> (<em>spriteID</em>, <em>picID, x</em>, <em>y</em> : <strong>int</strong>,</p>
+<p><strong>Sprite.Animate</strong> (<em>spriteID</em>, <em>picID, x</em>, <em>y</em> : <strong>int</strong>,    <em>centered</em> : <strong>boolean</strong>)</p>
 
 <h2>Description</h2>
 
-<p>Moves the sprite specified by <em>spriteID</em> to the location specified by (<em>x, y</em>). If <em>centered</em> is <strong>true</strong>, then the sprite is centered on (<em>x, y</em>). Otherwise (<em>x, y</em>) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
-A simple example of the <strong>Sprite.Animate</strong> procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.</p>
+<p>Moves the sprite specified by <em>spriteID</em> to the location specified by (<em>x, y</em>). If <em>centered</em> is <strong>true</strong>, then the sprite is centered on (<em>x, y</em>). Otherwise (<em>x, y</em>) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.</p>
+
+<p>A simple example of the <strong>Sprite.Animate</strong> procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.</p>
 
 <h2>Example</h2>
 
@@ -32,8 +33,9 @@ Pic.FileNewFrames ("mypic.gif", pics, delayTime)
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Sprite.Animate</strong>, not by calling <strong>Animate</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Sprite.Animate</strong>, not by calling <strong>Animate</strong>.</p>
 
 <h2>See also</h2>
 

@@ -8,8 +8,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>put</strong> statement outputs each of the <em>putItems</em>. Usually, a new line is started in the output after the final <em>putItem</em>. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.
-Ordinarily, the output goes to the screen. However, if the <em>fileNumber</em> is present, the output goes to the file specified by the file number (see the <strong>open</strong> statement for details). Also, output can be redirected from the screen to a file, in which case all <strong>put</strong> statements without a file number are sent to the file instead of the screen.</p>
+<p>The <strong>put</strong> statement outputs each of the <em>putItems</em>. Usually, a new line is started in the output after the final <em>putItem</em>. If the optional dot-dot (..) is present, though, subsequent output will be continued on the current output line. With character graphics, the omission of dot-dot causes the remainder of the output line to be cleared to blanks.</p>
+
+<p>Ordinarily, the output goes to the screen. However, if the <em>fileNumber</em> is present, the output goes to the file specified by the file number (see the <strong>open</strong> statement for details). Also, output can be redirected from the screen to a file, in which case all <strong>put</strong> statements without a file number are sent to the file instead of the screen.</p>
 
 <h2>Example</h2>
 
@@ -41,8 +42,9 @@ Ordinarily, the output goes to the screen. However, if the <em>fileNumber</em> i
 
 <h2>Example</h2>
 
-<p>A single blank line is output this way:
-This <strong>put</strong> statement is sometimes used to close off a line that has been output piece by piece using <strong>put</strong> with dot-dot.</p>
+<p>A single blank line is output this way:</p>
+
+<p>This <strong>put</strong> statement is sometimes used to close off a line that has been output piece by piece using <strong>put</strong> with dot-dot.</p>
 
 <pre><code>    put ""  % Output null string then new line
 </code></pre>
@@ -50,6 +52,9 @@ This <strong>put</strong> statement is sometimes used to close off a line that h
 <h2>Details</h2>
 
 <p>The general form of a <em>putItem</em> is one of:</p>
+
+<p>(a)   <em>expn</em> [:<em>widthExpn</em> [:<em>fractionWidth</em> [:<em>exponentWidth</em> ] ] ]
+(b)    <strong>skip</strong></p>
 
 <p>See the above examples for uses of <em>widthExpn</em>, <em>fractionWidth</em> and <em>exponentWidth</em>. For the exact meaning of these three widths, see the definitions of the functions <em>realstr</em>, <em>frealstr</em> and <em>erealstr</em>. The <strong>skip</strong> item is used to end the current output line and start a new line.</p>
 

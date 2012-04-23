@@ -4,18 +4,21 @@
 
 <p>A <em>subprogramHeader</em> is one of:</p>
 
-<p>(a)<strong>procedure</strong> [ <strong>pervasive</strong> ] <em>id</em>
+<p>(a) <strong>procedure</strong> [ <strong>pervasive</strong> ] <em>id</em>
 [ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])]
-(b)<strong>function</strong> [ <strong>pervasive</strong> ] <em>id</em>
+(b) <strong>function</strong> [ <strong>pervasive</strong> ] <em>id</em>
 [ ([ <em>paramDeclaration</em> {, <em>paramDeclaration</em>} ])]
 [ <em>id</em> ] : <em>typeSpec</em></p>
 
 <h2>Description</h2>
 
-<p>A subprogram header is used to describe the interface to a subprogram. Subprogram headers are used within other language features such as subprogram types and external declarations.
-Parameterless subprograms may use parentheses (with nothing between them), as is required in the C programming language. These parentheses can be used to disambiguate between the call to the subprogram (parentheses present) and a reference the subprogram (parentheses missing).
-Suppose <em>f</em> is a parameterless subprogram declared without parentheses and <em>g</em> is a parameterless subprogram declared with parentheses. Their headers are:
-In a program, <em>f</em> and <em>g</em>() are calls to these functions, while <em>g</em> is a reference to (not a call to) the procedure. There is no way to write a reference to <em>f</em>. When in doubt, use parentheses in the declaration, as in the case for <em>g</em>, so that calls always have parentheses and references always do not. A reference to a subprogram can be assigned to a subprogram variable. See subprogram type.</p>
+<p>A subprogram header is used to describe the interface to a subprogram. Subprogram headers are used within other language features such as subprogram types and external declarations.</p>
+
+<p>Parameterless subprograms may use parentheses (with nothing between them), as is required in the C programming language. These parentheses can be used to disambiguate between the call to the subprogram (parentheses present) and a reference the subprogram (parentheses missing).</p>
+
+<p>Suppose <em>f</em> is a parameterless subprogram declared without parentheses and <em>g</em> is a parameterless subprogram declared with parentheses. Their headers are:</p>
+
+<p>In a program, <em>f</em> and <em>g</em>() are calls to these functions, while <em>g</em> is a reference to (not a call to) the procedure. There is no way to write a reference to <em>f</em>. When in doubt, use parentheses in the declaration, as in the case for <em>g</em>, so that calls always have parentheses and references always do not. A reference to a subprogram can be assigned to a subprogram variable. See subprogram type.</p>
 
 <pre><code>    procedure f
     procedure g ()

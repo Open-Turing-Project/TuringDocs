@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>cls</b><p>\r\n</p></font>",
       "text_content": " cls\r\n",
-      "mdown_content": "**cls**"
+      "mdown_content": "**cls**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>cls</b> (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1).<p>\r\n</p>",
       "text_content": " The cls (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1).\r\n",
-      "mdown_content": "The **cls** (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1)."
+      "mdown_content": "The **cls** (clear screen) procedure is used to blank the output window. The cursor is set to the top left (to row 1, column 1).\n"
     },
     {
       "title": "Details",
       "raw_content": "The entire output window is set to the current text background color (as set by <b>colorback</b> or <b>Text.ColorBack</b>).<p>\r\nThe output window must be in \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.</p>\n<p>\r\n</p>",
       "text_content": " The entire output window is set to the current text background color (as set by colorback or Text.ColorBack).\r\nThe output window must be in \"graphics\" mode. See setscreen for details.\r\n",
-      "mdown_content": "The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).\nThe output window must be in \"_graphics_\" mode. See **setscreen** for details."
+      "mdown_content": "The entire output window is set to the current text background color (as set by **colorback** or **Text.ColorBack**).\n\nThe output window must be in \"_graphics_\" mode. See **setscreen** for details.\n"
     },
     {
       "title": "See also",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Text.\r\n",
-      "mdown_content": "See also predefined unit **[textmodule.html](Text)**."
+      "mdown_content": "See also predefined unit **[textmodule.html](Text)**.\n"
     }
   ],
   "dependencies": [

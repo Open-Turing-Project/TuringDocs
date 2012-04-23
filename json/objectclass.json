@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>objectclass</b> ( <i>pointerExpn</i> )<p>\r\n</p></font>",
       "text_content": " objectclass ( pointerExpn )\r\n",
-      "mdown_content": "**objectclass** ( _pointerExpn_ )"
+      "mdown_content": "**objectclass** ( _pointerExpn_ )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>objectclass</b> attribute is used to find the class of an object located by a pointer. The <i>pointerExpn</i> must be an expression that is a pointer to a class.<p>\r\n</p>",
       "text_content": " The objectclass attribute is used to find the class of an object located by a pointer. The pointerExpn must be an expression that is a pointer to a class.\r\n",
-      "mdown_content": "The **objectclass** attribute is used to find the class of an object located by a pointer. The _pointerExpn_ must be an expression that is a pointer to a class."
+      "mdown_content": "The **objectclass** attribute is used to find the class of an object located by a pointer. The _pointerExpn_ must be an expression that is a pointer to a class.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "See <b>class</b> for an example of classes and inheritance, in which a class called <i>TextFile</i> is inherited by a class called <i>Device</i>. The <i>Device</i> class adds a new exported procedure called <i>ioCtl</i>. In the present example, <b>objectclass</b> is used to test to make sure that the <i>textFilePtr</i> currently locates an object that was created as a <i>Device</i> (or as a descendant of <i>Device</i>). The notation <i>Device(textFilePtr) </i>converts the pointer to be a pointer to a <i>Device </i>so that <i>ioCtl </i>can be called.<p>\r\n</p>",
       "text_content": " See class for an example of classes and inheritance, in which a class called TextFile is inherited by a class called Device. The Device class adds a new exported procedure called ioCtl. In the present example, objectclass is used to test to make sure that the textFilePtr currently locates an object that was created as a Device (or as a descendant of Device). The notation Device(textFilePtr) converts the pointer to be a pointer to a Device so that ioCtl can be called.\r\n\r\n",
-      "mdown_content": "See **class** for an example of classes and inheritance, in which a class called _TextFile_ is inherited by a class called _Device_. The _Device_ class adds a new exported procedure called _ioCtl_. In the present example, **objectclass** is used to test to make sure that the _textFilePtr_ currently locates an object that was created as a _Device_ (or as a descendant of _Device_). The notation _Device(textFilePtr)_ converts the pointer to be a pointer to a _Device_ so that _ioCtl_ can be called."
+      "mdown_content": "See **class** for an example of classes and inheritance, in which a class called _TextFile_ is inherited by a class called _Device_. The _Device_ class adds a new exported procedure called _ioCtl_. In the present example, **objectclass** is used to test to make sure that the _textFilePtr_ currently locates an object that was created as a _Device_ (or as a descendant of _Device_). The notation _Device(textFilePtr)_ converts the pointer to be a pointer to a _Device_ so that _ioCtl_ can be called.\n"
     },
     {
       "title": "Details",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "This example uses the class comparison operator &gt;= which means \"is a descendant of\". See <b>class</b>.<p>\r\nYou can only use <b>objectclass</b>  in class comparisons. In particular, <b>objectclass</b> cannot be used to declare pointers. For example, this: </p>\n<p>\r\n</p>\r\nis not allowed.<p>\r\n</p>",
       "text_content": " This example uses the class comparison operator >= which means \"is a descendant of\". See class.\r\nYou can only use objectclass  in class comparisons. In particular, objectclass cannot be used to declare pointers. For example, this: \r\n\r\nis not allowed.\r\n",
-      "mdown_content": "This example uses the class comparison operator >= which means \"is a descendant of\". See **class**.\nYou can only use **objectclass**  in class comparisons. In particular, **objectclass** cannot be used to declare pointers. For example, this: \nis not allowed."
+      "mdown_content": "This example uses the class comparison operator >= which means \"is a descendant of\". See **class**.\n\nYou can only use **objectclass**  in class comparisons. In particular, **objectclass** cannot be used to declare pointers. For example, this: \n\nis not allowed.\n"
     }
   ],
   "dependencies": [

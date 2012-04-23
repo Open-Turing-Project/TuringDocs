@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>rand</b> (<b>var</b> <i>r</i> : <b>real</b>)<p>\r\n</p></font>",
       "text_content": " rand (var r : real)\r\n",
-      "mdown_content": "**rand** (**var** _r_ : **real**)"
+      "mdown_content": "**rand** (**var** _r_ : **real**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>rand</b> statement is used to create a pseudo-random number in the range zero to one. For example, if <i>x</i> is a real number, after <b>rand</b>(<i>x</i>), <i>x</i> would have a value such as 0.729548 or 0.352879.<p>\r\n</p>",
       "text_content": " The rand statement is used to create a pseudo-random number in the range zero to one. For example, if x is a real number, after rand(x), x would have a value such as 0.729548 or 0.352879.\r\n",
-      "mdown_content": "The **rand** statement is used to create a pseudo-random number in the range zero to one. For example, if _x_ is a real number, after **rand**(_x_), _x_ would have a value such as 0.729548 or 0.352879."
+      "mdown_content": "The **rand** statement is used to create a pseudo-random number in the range zero to one. For example, if _x_ is a real number, after **rand**(_x_), _x_ would have a value such as 0.729548 or 0.352879.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program repeatedly and randomly prints out <i>Hi ho</i>,<i> hi ho</i> or <i>It's off to work we go</i>.<p>\r\n</p>",
       "text_content": " This program repeatedly and randomly prints out Hi ho, hi ho or It's off to work we go.\r\n\r\n",
-      "mdown_content": "This program repeatedly and randomly prints out _Hi ho_, _hi ho_ or _It's off to work we go_."
+      "mdown_content": "This program repeatedly and randomly prints out _Hi ho_, _hi ho_ or _It's off to work we go_.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>rand</b> statement sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0&lt;<i>r</i> &lt;1.<p>\r\nEach time a program runs, <b>rand</b> uses a different pseudo-random number sequence. To get the same sequence (use <b>Rand.Set</b>).</p>\n<p>\r\nTo use several sequences of repeatable pseudo-random number sequences, use the <b>randseed</b> and <b>randnext</b> procedures.</p>\n<p>\r\nIn many languages, <b>rand</b> would be a function rather than a procedure. It has been designed as a procedure in Turing to respect the mathematical idea that every call to a function using the same arguments (or no arguments at all) should return the same value. If <b>rand</b> were a function, this would not be true.</p>\n<p>\r\n</p>",
       "text_content": " The rand statement sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<r <1.\r\nEach time a program runs, rand uses a different pseudo-random number sequence. To get the same sequence (use Rand.Set).\r\nTo use several sequences of repeatable pseudo-random number sequences, use the randseed and randnext procedures.\r\nIn many languages, rand would be a function rather than a procedure. It has been designed as a procedure in Turing to respect the mathematical idea that every call to a function using the same arguments (or no arguments at all) should return the same value. If rand were a function, this would not be true.\r\n",
-      "mdown_content": "The **rand** statement sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<_r_ <1.\nEach time a program runs, **rand** uses a different pseudo-random number sequence. To get the same sequence (use **Rand.Set**).\nTo use several sequences of repeatable pseudo-random number sequences, use the **randseed** and **randnext** procedures.\nIn many languages, **rand** would be a function rather than a procedure. It has been designed as a procedure in Turing to respect the mathematical idea that every call to a function using the same arguments (or no arguments at all) should return the same value. If **rand** were a function, this would not be true."
+      "mdown_content": "The **rand** statement sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0<_r_ <1.\n\nEach time a program runs, **rand** uses a different pseudo-random number sequence. To get the same sequence (use **Rand.Set**).\n\nTo use several sequences of repeatable pseudo-random number sequences, use the **randseed** and **randnext** procedures.\n\nIn many languages, **rand** would be a function rather than a procedure. It has been designed as a procedure in Turing to respect the mathematical idea that every call to a function using the same arguments (or no arguments at all) should return the same value. If **rand** were a function, this would not be true.\n"
     },
     {
       "title": "See also",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"randint.html\">randint</a></b>, <b><a href=\"randomize.html\">randomize</a></b>, <b><a href=\"randseed.html\">randseed</a></b> and <b><a href=\"randnext.html\">randnext</a></b>.<p>\r\nSee also predefined unit <b><a href=\"randmodule.html\">Rand</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " randint, randomize, randseed and randnext.\r\nSee also predefined unit Rand.\r\n",
-      "mdown_content": "**[randint.html](randint)**, **[randomize.html](randomize)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\nSee also predefined unit **[randmodule.html](Rand)**."
+      "mdown_content": "**[randint.html](randint)**, **[randomize.html](randomize)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\n\nSee also predefined unit **[randmodule.html](Rand)**.\n"
     }
   ],
   "dependencies": [

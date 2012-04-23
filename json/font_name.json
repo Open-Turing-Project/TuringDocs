@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Name</b> (<i>fontID</i> : <b>int</b>) <i>fontName</i> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Font.Name (fontID : int) fontName : string\r\n",
-      "mdown_content": "**Font.Name** (_fontID_ : **int**) _fontName_ : **string**"
+      "mdown_content": "**Font.Name** (_fontID_ : **int**) _fontName_ : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Font.Name</b> is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.<p>\r\n</p>",
       "text_content": " Font.Name is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts serif, sans serif and mono.\r\n",
-      "mdown_content": "**Font.Name** is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;."
+      "mdown_content": "**Font.Name** is used to get the name of a font that is being used. The string that is returned can be used to determine which font is actually being used for the default fonts &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "The program prints out the fonts used for &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": " The program prints out the fonts used for serif, sans serif and mono.\r\n\r\n    ",
-      "mdown_content": "The program prints out the fonts used for &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.\n"
+      "mdown_content": "The program prints out the fonts used for &#147;serif&#148;, &#147;sans serif&#148; and &#147;mono&#148;.\n\n\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Font.Name</b>, not by calling <b>Name</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Font.Name, not by calling Name.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Font.Name**, not by calling **Name**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Font.Name**, not by calling **Name**.\n"
     }
   ],
   "dependencies": [

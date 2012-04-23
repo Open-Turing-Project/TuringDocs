@@ -5,14 +5,11 @@
 **true**
 
 
-
 ##Description
 A **boolean** (true/false) variable can be either **true** or **false** (see **boolean** type).
 
 
-
 ##Example
-
 
 
         var passed : boolean := true
@@ -26,5 +23,4 @@ A **boolean** (true/false) variable can be either **true** or **false** (see **b
         end if
 ##Details
 The line **if** _passed_=**true** **then** can be simplified to **if** _passed_ **then** with no change to the meaning of the program.
-
 

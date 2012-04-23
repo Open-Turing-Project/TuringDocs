@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.Exec</b> ( <i>command</i> : <b>string</b> ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Sys.Exec ( command : string ) : boolean\r\n",
-      "mdown_content": "**Sys.Exec** ( _command_ : **string** ) : **boolean**"
+      "mdown_content": "**Sys.Exec** ( _command_ : **string** ) : **boolean**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Sys.Exec</b> function<b> </b>is used to<b> </b>execute an application or more often, open a data file with its associated application. <b>Sys.Exec</b> can be used to launch such programs as the Internet Browser by specifying a URL. <b>Sys.Exec</b> launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)<p>\r\n</p>",
       "text_content": " The Sys.Exec function is used to execute an application or more often, open a data file with its associated application. Sys.Exec can be used to launch such programs as the Internet Browser by specifying a URL. Sys.Exec launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)\r\n",
-      "mdown_content": "The **Sys.Exec** function is used to execute an application or more often, open a data file with its associated application. **Sys.Exec** can be used to launch such programs as the Internet Browser by specifying a URL. **Sys.Exec** launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)"
+      "mdown_content": "The **Sys.Exec** function is used to execute an application or more often, open a data file with its associated application. **Sys.Exec** can be used to launch such programs as the Internet Browser by specifying a URL. **Sys.Exec** launches the application associated with file's suffix. (In essence, it performs the same operation as if a user double clicked on the file.)\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player.<p>\r\n</p>",
       "text_content": " This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player.\r\n\r\n",
-      "mdown_content": "This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player."
+      "mdown_content": "This program launches an internet browser and points it to Holt Software's home page. It then launches a movie using the default video player.\n"
     },
     {
       "title": "Details",
       "raw_content": "When the <b>Sys.Exec</b> procedure is used, the executing program continues execution immediately while the launched application is running. <p>\r\n</p>",
       "text_content": " When the Sys.Exec procedure is used, the executing program continues execution immediately while the launched application is running. \r\n",
-      "mdown_content": "When the **Sys.Exec** procedure is used, the executing program continues execution immediately while the launched application is running. "
+      "mdown_content": "When the **Sys.Exec** procedure is used, the executing program continues execution immediately while the launched application is running. \n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sys.Exec</b>, not by calling <b>Exec</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sys.Exec, not by calling Exec.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sys.Exec**, not by calling **Exec**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sys.Exec**, not by calling **Exec**.\n"
     },
     {
       "title": "See also",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b>, <b><a href=\"sys_fetcharg.html\">Sys.FetchArg</a></b> and <b><a href=\"sys_getenv.html\">Sys.GetEnv</a></b> functions.<p>\r\n</p>",
       "text_content": " Sys.Nargs, Sys.FetchArg and Sys.GetEnv functions.\r\n",
-      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**, **[sys_fetcharg.html](Sys.FetchArg)** and **[sys_getenv.html](Sys.GetEnv)** functions."
+      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**, **[sys_fetcharg.html](Sys.FetchArg)** and **[sys_getenv.html](Sys.GetEnv)** functions.\n"
     }
   ],
   "dependencies": [

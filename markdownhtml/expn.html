@@ -4,16 +4,16 @@
 
 <p>An <em>expn</em> is one of:</p>
 
-<p>(a)<em>explicitConstant</em>  <em>% e.g.: 25</em>
-(b)<em>variableReference</em>  <em>% e.g.: width</em>
-(c)<em>constantReference</em>  <em>% e.g.: pi</em>
-(d)<em>expn</em> <em>infixOperator</em> <em>expn</em> <em>% e.g.: 3 <strong>+</strong> width</em>
-(e)<em>prefixOperator</em> <em>expn</em> <em>% e.g.: <strong>-</strong> width</em>
-(f)(<em>expn</em>)   <em>% e.g.: (width - 7)</em>
-(g)<em>substring</em>   <em>% e.g.: s (3 .. 5)</em>
-(h)<em>functionCall</em>  <em>% e.g.: sqrt (25)</em>
-(i)<em>setConstructor</em>  <em>% e.g.: modes (4</em>, <em>3)</em>
-(j)<em>enumeratedValue</em>  <em>% e.g.: color . red</em></p>
+<p>(a) <em>explicitConstant</em>     <em>% e.g.: 25</em>
+(b) <em>variableReference</em>     <em>% e.g.: width</em>
+(c) <em>constantReference</em>     <em>% e.g.: pi</em>
+(d) <em>expn</em> <em>infixOperator</em> <em>expn</em>   <em>% e.g.: 3 <strong>+</strong> width</em>
+(e) <em>prefixOperator</em> <em>expn</em>   <em>% e.g.: <strong>-</strong> width</em>
+(f) (<em>expn</em>)       <em>% e.g.: (width - 7)</em>
+(g) <em>substring</em>       <em>% e.g.: s (3 .. 5)</em>
+(h) <em>functionCall</em>     <em>% e.g.: sqrt (25)</em>
+(i) <em>setConstructor</em>     <em>% e.g.: modes (4</em>, <em>3)</em>
+(j) <em>enumeratedValue</em>     <em>% e.g.: color . red</em></p>
 
 <h2>Description</h2>
 
@@ -33,8 +33,9 @@
 
 <h2>Details</h2>
 
-<p>In the simplest case, an expression (<em>expn</em>) is simply an explicit constant such as 25 or "<em>Hello world</em>". A variable by itself is considered to be an expression when its value is used. This is the case above, where the value of <em>diameter</em> is used to initialize <em>x</em>. More generally, an expression contains an operator such as <strong>+</strong> and carries out an actual calculation. An expression may also be a substring, function call, set constructor or enumerated value. For details, see the descriptions of these items.
-The Turing infix operators are: +, -, *, /, <strong>div</strong>, <strong>mod</strong>, <strong>, &lt;, >, =, &lt;=, >=, </strong>not=<strong>, </strong>not<strong>, </strong>and<strong>, </strong>or<strong>, =>, </strong>in<strong>, </strong>not<strong> </strong>in<strong>, </strong>shr<strong> (shift right), </strong>shl<strong> (shift left), and </strong>xor<strong> (exclusive </strong>or<strong>). For details, see <em>infixOperator</em>. The Turing prefix operators are +, - and </strong>not<strong>, ^ (pointer following) and # (see </strong>cheat**). For details see <em>prefix</em> operator.</p>
+<p>In the simplest case, an expression (<em>expn</em>) is simply an explicit constant such as 25 or "<em>Hello world</em>". A variable by itself is considered to be an expression when its value is used. This is the case above, where the value of <em>diameter</em> is used to initialize <em>x</em>. More generally, an expression contains an operator such as <strong>+</strong> and carries out an actual calculation. An expression may also be a substring, function call, set constructor or enumerated value. For details, see the descriptions of these items.</p>
+
+<p>The Turing infix operators are: +, -, *, /, <strong>div</strong>, <strong>mod</strong>, <strong>, &lt;, >, =, &lt;=, >=, </strong>not=<strong>, </strong>not<strong>, </strong>and<strong>, </strong>or<strong>, =>, </strong>in<strong>, </strong>not<strong> </strong>in<strong>, </strong>shr<strong> (shift right), </strong>shl<strong> (shift left), and </strong>xor<strong> (exclusive </strong>or<strong>). For details, see <em>infixOperator</em>. The Turing prefix operators are +, - and </strong>not<strong>, ^ (pointer following) and # (see </strong>cheat**). For details see <em>prefix</em> operator.</p>
 
 <h2>See also</h2>
 

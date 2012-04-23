@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>whatcol</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " whatcol : int\r\n",
-      "mdown_content": "**whatcol** : **int**"
+      "mdown_content": "**whatcol** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>whatcol</b> function is used to determine the cursor position's column.<p>\r\n</p>",
       "text_content": " The whatcol function is used to determine the cursor position's column.\r\n",
-      "mdown_content": "The **whatcol** function is used to determine the cursor position's column."
+      "mdown_content": "The **whatcol** function is used to determine the cursor position's column.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program outputs <i>The current row is 5</i>,<i> the current column is 15</i>.<p>\r\n</p>",
       "text_content": " This program outputs The current row is 5, the current column is 15.\r\n\r\n",
-      "mdown_content": "This program outputs _The current row is 5_, _the current column is 15_."
+      "mdown_content": "This program outputs _The current row is 5_, _the current column is 15_.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. <b>whatcol</b> functions properly even if the cursor is invisible.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. whatcol functions properly even if the cursor is invisible.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. **whatcol** functions properly even if the cursor is invisible."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. **whatcol** functions properly even if the cursor is invisible.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "the <b><a href=\"whatrow.html\">whatrow</a></b> function, which is used to <a href=\"set.html\">set</a> the determine the cursor row. See also the <b><a href=\"locate.html\">locate</a></b>, <b><a href=\"maxrow.html\">maxrow</a></b> and <b><a href=\"maxcol.html\">maxcol</a></b> <a href=\"procedure.html\">procedure</a>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " the whatrow function, which is used to set the determine the cursor row. See also the locate, maxrow and maxcol procedure.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "the **[whatrow.html](whatrow)** function, which is used to [set.html](set) the determine the cursor row. See also the **[locate.html](locate)**, **[maxrow.html](maxrow)** and **[maxcol.html](maxcol)** [procedure.html](procedure).\nSee also predefined unit **[textmodule.html](Text)**."
+      "mdown_content": "the **[whatrow.html](whatrow)** function, which is used to [set.html](set) the determine the cursor row. See also the **[locate.html](locate)**, **[maxrow.html](maxrow)** and **[maxcol.html](maxcol)** [procedure.html](procedure).\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
     }
   ],
   "dependencies": [

@@ -10,9 +10,11 @@
 
 <h2>Details</h2>
 
-<p>GIF files can contain multiple frames (pictures).  Animated GIFs function by each frame in the GIF one after another with a delaybetween them.
-Turing allows users to load multiple frame GIF images into a seriesof pictures into an array using the <strong><a href="Pic.FileNewFrames">pic_filenewframes.html</a></strong> procedure.  The user can determine how many frames are found in the GIF file using <strong><a href="Pic.Frames"></a></strong>.  The frames can be sequentially displayed using either <strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> or <strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> which display the images one at a time.(<strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> returns once all the images have been displayed, <strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> returns immediately allowing the program to continue execution while the frames are being displayed.
-<strong><a href="Pic.Frames"></a></strong> is a function which returns the number of frames found in the GIF.  If it is used on a GIF that does not contain multiple images, or on a non-GIF image file, it returns 1.</p>
+<p>GIF files can contain multiple frames (pictures).  Animated GIFs function by each frame in the GIF one after another with a delaybetween them.</p>
+
+<p>Turing allows users to load multiple frame GIF images into a seriesof pictures into an array using the <strong><a href="Pic.FileNewFrames">pic_filenewframes.html</a></strong> procedure.  The user can determine how many frames are found in the GIF file using <strong><a href="Pic.Frames"></a></strong>.  The frames can be sequentially displayed using either <strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> or <strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> which display the images one at a time.(<strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> returns once all the images have been displayed, <strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> returns immediately allowing the program to continue execution while the frames are being displayed.</p>
+
+<p><strong><a href="Pic.Frames"></a></strong> is a function which returns the number of frames found in the GIF.  If it is used on a GIF that does not contain multiple images, or on a non-GIF image file, it returns 1.</p>
 
 <h2>Example</h2>
 
@@ -30,11 +32,14 @@ Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Frames</strong>, not by calling <strong>Frames</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Frames</strong>, not by calling <strong>Frames</strong>.</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="Pic.FileNewFrames">pic_filenewframes.html</a></strong> for informationon how to load a GIF image with multiple frames into an array of <strong>int</strong>s.
-<strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> for information onhow to sequentially display the images stored in array of pictures.
-<strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> for information on how to sequentially display the images stored in array of pictures while continuing to execute the program.</p>
+<p><strong><a href="Pic.FileNewFrames">pic_filenewframes.html</a></strong> for informationon how to load a GIF image with multiple frames into an array of <strong>int</strong>s.</p>
+
+<p><strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> for information onhow to sequentially display the images stored in array of pictures.</p>
+
+<p><strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> for information on how to sequentially display the images stored in array of pictures while continuing to execute the program.</p>

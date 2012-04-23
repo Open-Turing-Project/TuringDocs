@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ShowMenuBar</b><p>\r\n</p></font>",
       "text_content": " GUI.ShowMenuBar\r\n",
-      "mdown_content": "**GUI.ShowMenuBar**"
+      "mdown_content": "**GUI.ShowMenuBar**\n"
     },
     {
       "title": "Description",
       "raw_content": "Shows the menu bar in the selected window. <p>\r\n</p>",
       "text_content": " Shows the menu bar in the selected window. \r\n",
-      "mdown_content": "Shows the menu bar in the selected window. "
+      "mdown_content": "Shows the menu bar in the selected window. \n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.SetMouseEventHandler</b> for an example of <b>GUI.HideMenuBar</b>.<p>\r\n</p>",
       "text_content": " See GUI.SetMouseEventHandler for an example of GUI.HideMenuBar.\r\n",
-      "mdown_content": "See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**."
+      "mdown_content": "See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.ShowMenuBar</b>, not by calling <b>ShowMenuBar</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.ShowMenuBar, not by calling ShowMenuBar.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.ShowMenuBar**, not by calling **ShowMenuBar**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.ShowMenuBar**, not by calling **ShowMenuBar**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"gui_hidemenubar.html\">GUI.HideMenuBar</a></b>. See also <b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
       "text_content": " GUI.HideMenuBar. See also GUI.CreateMenu.\r\n",
-      "mdown_content": "**[gui_hidemenubar.html](GUI.HideMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**."
+      "mdown_content": "**[gui_hidemenubar.html](GUI.HideMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**.\n"
     }
   ],
   "dependencies": [

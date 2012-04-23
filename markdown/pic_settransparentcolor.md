@@ -5,15 +5,12 @@
 **Pic.SetTransparentColor** (_colorNumber_ : **int**)
 
 
-
 ##Description
 The **Pic.SetTransparentColor** procedure sets the color in the picture that should be considered transparent when the picture is drawn using the `picMerge` or `picUnderMerge` modes. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color.
 
 
-
 ##Details
 This call is often used when displaying images that were originally stored as GIFs and translated into another format. Many GIFs have a transparent color that can be non-white. To use this call, you must know the color number that represents the color in the image that is to be transparent.
-
 
 
 ##Example
@@ -37,14 +34,12 @@ This program displays two images loaded from the same file. In the second image,
 **Pic.SetTransparentColour** is an alternate spelling for **Pic.SetTransparentColor**.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Pic.SetTransparentColor**, not by calling **SetTransparentColor**.
 
+This means that you can only call the function by calling **Pic.SetTransparentColor**, not by calling **SetTransparentColor**.
 
 
 ##See also
 **[pic_draw.html](Pic.Draw)** and **[pic_filenew.html](Pic.FileNew)**.
-
 

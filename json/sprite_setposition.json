@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.SetPosition</b> (<i>spriteID</i>, <i>x</i>, <i>y</i> : <b>int</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>centered</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.SetPosition (spriteID, x, y : int, \r\n    centered : boolean)\r\n",
-      "mdown_content": "**Sprite.SetPosition** (_spriteID_, _x_, _y_ : **int**,     _centered_ : **boolean**)"
+      "mdown_content": "**Sprite.SetPosition** (_spriteID_, _x_, _y_ : **int**,     _centered_ : **boolean**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Moves the sprite specified by <i>spriteID</i> to the location specified by (<i>x, y</i>). If <i>centered</i> is <b>true</b>, then the sprite is centered on (<i>x, y</i>). Otherwise (<i>x, y</i>) specifies the lower-left corner of the sprite.<p>\r\n</p>",
       "text_content": " Moves the sprite specified by spriteID to the location specified by (x, y). If centered is true, then the sprite is centered on (x, y). Otherwise (x, y) specifies the lower-left corner of the sprite.\r\n",
-      "mdown_content": "Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite."
+      "mdown_content": "Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite.\n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>Sprite.Hide</b> for an example of <b>Sprite.SetPosition</b>.<p>\r\n</p>",
       "text_content": " See Sprite.Hide for an example of Sprite.SetPosition.\r\n",
-      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.SetPosition**."
+      "mdown_content": "See **Sprite.Hide** for an example of **Sprite.SetPosition**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Sprite.SetPosition</b>, not by calling <b>SetPosition</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Sprite.SetPosition, not by calling SetPosition.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Sprite.SetPosition**, not by calling **SetPosition**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Sprite.SetPosition**, not by calling **SetPosition**.\n"
     },
     {
       "title": "See also",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>.<p>\r\n</p>",
       "text_content": " Sprite.New.\r\n",
-      "mdown_content": "**[sprite_new.html](Sprite.New)**."
+      "mdown_content": "**[sprite_new.html](Sprite.New)**.\n"
     }
   ],
   "dependencies": [

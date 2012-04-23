@@ -2,19 +2,27 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreateTextField</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>text</em> : <strong>string</strong>)) : <strong>int</strong>
-<strong>GUI.CreateTextFieldFull</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,     <em>border</em>, <em>fontID</em>, <em>inputKind</em> : <strong>int</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreateTextField</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>text</em> : <strong>string</strong>)) : <strong>int</strong></p>
+
+<p><strong>GUI.CreateTextFieldFull</strong> (<em>x</em>, <em>y</em>, <em>width</em> : <strong>int</strong>, <em>text</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (<em>text</em> : <strong>string</strong>),    <em>border</em>, <em>fontID</em>, <em>inputKind</em> : <strong>int</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
-<p>Creates a text field and returns the text field's widget ID.
-A text field is used to create a line of text that can be edited by the user. The user can use the mouse to select part of the text and can enter text into the text field.
-If one or more text fields are enabled in a window, then one of the text fields will be active. This means that when any keystrokes are entered into the window, the active text field will receive the keystrokes. The active text field can be changed using the <strong>GUI.SetActive</strong> procedure.
-The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the area in which the text will be drawn. The text field border is just outside the text drawing area. The <em>width</em> parameter specifies the width of the text drawing area. The height of the text field is determined by the height of the font used by the text field. The border of the text field is just outside the text drawing area, so <strong>GUI.GetWidth</strong> will return values slightly larger than <em>width</em>. The <em>actionProc</em> parameter specifies the name of the procedure to be called when the user presses ENTER (RETURN on a Macintosh) when the text field is active. The parameter is the current text in the text field.
-For <strong>GUI.CreateTextField</strong>, the border around the text field is always a line. For <strong>GUI.CreateTextFieldFull</strong>, the type of border is specified by the <em>border</em> parameter. The <em>border</em> parameter is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em>, or <em>GUI.EXDENT</em>. A border of 0 is the default and is the same as <em>GUI.LINE</em>. <em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor.</strong> <em>GUI.INDENT</em> makes the text field appear indented or recessed. <em>GUI.EXDENT</em> makes the text field appear to stand out from the window. The <em>fontID</em> parameter specifies the font ID of the font to be used in the text field. The font ID is received from a <em>Font.New</em> call. Do not call <em>Font.Free</em> for this font ID until the label has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>inputKind</em> parameter specifies the type of input accepted by the text field. This is one of 0, <em>GUI.ANY</em>, <em>GUI.INT</em>, or <em>GUI.REAL</em>. An input type of 0 is the default and is the same as <em>GUI.ANY</em>. <em>GUI.ANY</em> allows any type of input in the text field. <em>GUI.INTEGER</em> only allows positive integer input in the text field. <em>GUI.REAL</em> allows any real number input in the text field. Note that using
-<em>GUI.INTEGER</em> or <em>GUI.REAL</em> does not guarantee that the text field string can be converted to an integer or a real. The text could be a null string, and for <em>GUI.REAL</em> could be part of a number such as the string "" or "1.25E" both of which are illegal numbers. (To check the conversion, use the <em>strintok</em> or <em>strrealok</em> functions before calling <em>strint</em> or <em>strreal</em>.)</p>
+<p>Creates a text field and returns the text field's widget ID.</p>
 
-<p><img src="gui_createtextfield_full01.gif" alt="Doc image" /></p>
+<p>A text field is used to create a line of text that can be edited by the user. The user can use the mouse to select part of the text and can enter text into the text field.</p>
+
+<p>If one or more text fields are enabled in a window, then one of the text fields will be active. This means that when any keystrokes are entered into the window, the active text field will receive the keystrokes. The active text field can be changed using the <strong>GUI.SetActive</strong> procedure.</p>
+
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the area in which the text will be drawn. The text field border is just outside the text drawing area. The <em>width</em> parameter specifies the width of the text drawing area. The height of the text field is determined by the height of the font used by the text field. The border of the text field is just outside the text drawing area, so <strong>GUI.GetWidth</strong> will return values slightly larger than <em>width</em>. The <em>actionProc</em> parameter specifies the name of the procedure to be called when the user presses ENTER (RETURN on a Macintosh) when the text field is active. The parameter is the current text in the text field.</p>
+
+<p>For <strong>GUI.CreateTextField</strong>, the border around the text field is always a line. For <strong>GUI.CreateTextFieldFull</strong>, the type of border is specified by the <em>border</em> parameter. The <em>border</em> parameter is one of 0, <em>GUI.LINE</em>, <em>GUI.INDENT</em>, or <em>GUI.EXDENT</em>. A border of 0 is the default and is the same as <em>GUI.LINE</em>. <em>GUI.INDENT</em> and <em>GUI.EXDENT</em> only display properly if the background colour has been set to <em>gray</em> using <strong>GUI.SetBackgroundColor.</strong> <em>GUI.INDENT</em> makes the text field appear indented or recessed. <em>GUI.EXDENT</em> makes the text field appear to stand out from the window. The <em>fontID</em> parameter specifies the font ID of the font to be used in the text field. The font ID is received from a <em>Font.New</em> call. Do not call <em>Font.Free</em> for this font ID until the label has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>inputKind</em> parameter specifies the type of input accepted by the text field. This is one of 0, <em>GUI.ANY</em>, <em>GUI.INT</em>, or <em>GUI.REAL</em>. An input type of 0 is the default and is the same as <em>GUI.ANY</em>. <em>GUI.ANY</em> allows any type of input in the text field. <em>GUI.INTEGER</em> only allows positive integer input in the text field. <em>GUI.REAL</em> allows any real number input in the text field. Note that using</p>
+
+<p><em>GUI.INTEGER</em> or <em>GUI.REAL</em> does not guarantee that the text field string can be converted to an integer or a real. The text could be a null string, and for <em>GUI.REAL</em> could be part of a number such as the string "" or "1.25E" both of which are illegal numbers. (To check the conversion, use the <em>strintok</em> or <em>strrealok</em> functions before calling <em>strint</em> or <em>strreal</em>.)</p>
+
+<p><img src="gui_createtextfield_full01.gif" alt="Doc Image" /></p>
+
+<p><strong>Two Text Fields</strong></p>
 
 <h2>Example</h2>
 
@@ -58,25 +66,33 @@ For <strong>GUI.CreateTextField</strong>, the border around the text field is al
 
 <h2>Details</h2>
 
-<p>Only one text field is active at a time. The active text field has a blinking cursor (or its selection highlighted). If a keystroke occurs when a window has an active text field in it, the keystroke will be directed to the active text field. You can change which text field is active with the <strong>GUI.SetActive</strong> procedure or by simply clicking on another text field with the mouse.
-When multiple text fields are created in a window, the first text field created is active when the program begins.
-The current version of the text field does not support cut and paste or keyboard commands to extend the selection.
-Because strings are a maximum of 255 characters, this is the maximum number of characters in a text field.
-The TAB character cycles between different text fields in a window. It cycles through the text fields in the order in which they were created. BACK TAB (shift+TAB) cycles through the fields in reverse order.</p>
+<p>Only one text field is active at a time. The active text field has a blinking cursor (or its selection highlighted). If a keystroke occurs when a window has an active text field in it, the keystroke will be directed to the active text field. You can change which text field is active with the <strong>GUI.SetActive</strong> procedure or by simply clicking on another text field with the mouse.</p>
+
+<p>When multiple text fields are created in a window, the first text field created is active when the program begins.</p>
+
+<p>The current version of the text field does not support cut and paste or keyboard commands to extend the selection.</p>
+
+<p>Because strings are a maximum of 255 characters, this is the maximum number of characters in a text field.</p>
+
+<p>The TAB character cycles between different text fields in a window. It cycles through the text fields in the order in which they were created. BACK TAB (shift+TAB) cycles through the fields in reverse order.</p>
 
 <h2>Details</h2>
 
-<p>When <strong>GUI.CreateTextField</strong> or <strong>GUI.CreateTextFieldFull</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
-When a text field is not enabled, the text field cannot be made active and the text in the field cannot be edited.</p>
+<p>When <strong>GUI.CreateTextField</strong> or <strong>GUI.CreateTextFieldFull</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
+
+<p>When a text field is not enabled, the text field cannot be made active and the text in the field cannot be edited.</p>
 
 <h2>Details</h2>
 
 <p>The following GUI subprograms can be called with a text box as the <em>widgetID</em> parameter:</p>
 
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>,<strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>,<strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong>,<strong>GUI.GetText</strong>, <strong>GUI.SetText</strong>, <strong>GUI.SetSelection</strong>, <strong>GUI.SetActive</strong>,<strong>GUI.SetEchoChar</strong></p>
+
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreateTextField</strong>, not by calling <strong>CreateTextField</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreateTextField</strong>, not by calling <strong>CreateTextField</strong>.</p>
 
 <h2>See also</h2>
 

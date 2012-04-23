@@ -5,15 +5,12 @@
 **GUI.SetSliderReverse** (_widgetID_ : **int**)
 
 
-
 ##Description
 Sets a slider or scroll bar specified by _widgetID_ into (or out of, if already into) "reverse mode". Normally, a slider or scroll bar is at its minimum value when the thumb is on the left hand side (bottom for a vertical slider). This reverses it, so the minimum value is when the thumb is at the right hand side (top for vertical sliders) of the track. Calling this routine a second time reverses it back to normal. This procedure redraws the slider to move the thumb to its new location.
 
 
-
 ##Example
 The following program creates two sliders, one of which is reversed.
-
 
         import GUI in "%oot/lib/GUI"
         
@@ -43,11 +40,10 @@ The following program creates two sliders, one of which is reversed.
         end loop
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.SetSliderReverse**, not by calling **SetSliderReverse**.
 
+This means that you can only call the function by calling **GUI.SetSliderReverse**, not by calling **SetSliderReverse**.
 
 
 ##See also
 **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.
-
 

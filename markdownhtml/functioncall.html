@@ -28,11 +28,15 @@
 
 <h2>Details</h2>
 
-<p>The parameter declared in the header of a function, is a <em>formal</em> parameter, for example, <em>str</em> above is a formal parameter. Each expression in the call is an <em>actual</em> parameter, for example, <em>sample</em> above is an actual parameter.
-Each actual parameter passed to its non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability</em> for details). See also <em>functionDeclaration</em> and <em>procedureDeclaration</em>.
-In this explanation of <em>functionCall</em>, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the <em>functionCall</em> is:
-In other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the <em>functionCall</em> is one of:
-In these <em>p</em> must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
+<p>The parameter declared in the header of a function, is a <em>formal</em> parameter, for example, <em>str</em> above is a formal parameter. Each expression in the call is an <em>actual</em> parameter, for example, <em>sample</em> above is an actual parameter.</p>
+
+<p>Each actual parameter passed to its non-<strong>var</strong> formal parameter must be assignable to that parameter (see <em>assignability</em> for details). See also <em>functionDeclaration</em> and <em>procedureDeclaration</em>.</p>
+
+<p>In this explanation of <em>functionCall</em>, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the <em>functionCall</em> is:</p>
+
+<p>In other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the <em>functionCall</em> is one of:</p>
+
+<p>In these <em>p</em> must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).</p>
 
 <pre><code>    moduleId . functionId [ ( expn {, expn } ) ]        (a) classId ( p ) . functionId [ ( [ expn {, expn } ] ) ]
     (b) p -&gt; functionId [ ( [ expn {, expn } ] ) ]

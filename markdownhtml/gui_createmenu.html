@@ -6,13 +6,17 @@
 
 <h2>Description</h2>
 
-<p>Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.
-The <em>name</em> parameter specifies the text that appears in the menu bar.</p>
+<p>Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.</p>
 
-<p>Menus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.
-As of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>
+<p>The <em>name</em> parameter specifies the text that appears in the menu bar.</p>
 
-<p><img src="gui_createmenu01.gif" alt="Doc image" /></p>
+<p><img src="gui_createmenu01.gif" alt="Doc Image" /></p>
+
+<p><strong>A Menu With an Item Selected</strong></p>
+
+<p>Menus are used in most modern interfaces. In order to create a full set of menus, you must create the menu and then create the menu items in that menu. The menus are automatically added to the menu bar of the selected menu.</p>
+
+<p>As of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.</p>
 
 <h2>Example</h2>
 
@@ -79,13 +83,15 @@ As of the v1.0 release of the GUI Library, it is an error to create a menu item 
 
 <h2>Details</h2>
 
-<p>The following GUI subprograms can be called with a menu as the <em>widgetID</em> parameter:
-<strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.Enable</strong>, <strong>GUI.Disable</strong></p>
+<p>The following GUI subprograms can be called with a menu as the <em>widgetID</em> parameter:</p>
+
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.Enable</strong>, <strong>GUI.Disable</strong></p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreateMenu</strong>, not by calling <strong>CreateMenu</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreateMenu</strong>, not by calling <strong>CreateMenu</strong>.</p>
 
 <h2>See also</h2>
 

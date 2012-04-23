@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>hasch</b> : <b>boolean</b><p></p></font>",
       "text_content": "hasch : boolean\r\n    ",
-      "mdown_content": "**hasch** : **boolean**"
+      "mdown_content": "**hasch** : **boolean**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>hasch</b> procedure is used to determine if there is a \r\n          character that has been typed but not yet been read.<p>\r\n    </p>",
       "text_content": "The hasch procedure is used to determine if there is a \r\n          character that has been typed but not yet been read.\r\n    ",
-      "mdown_content": "The **hasch** procedure is used to determine if there is a character that has been typed but not yet been read."
+      "mdown_content": "The **hasch** procedure is used to determine if there is a character that has been typed but not yet been read.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program simulates the rolling of a pair of dice until the\r\n          user pressed the keyboard.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program simulates the rolling of a pair of dice until the\r\n          user pressed the keyboard.\r\n\r\n    ",
-      "mdown_content": "This program simulates the rolling of a pair of dice until theuser pressed the keyboard.\n"
+      "mdown_content": "This program simulates the rolling of a pair of dice until theuser pressed the keyboard.\n\n\n"
     },
     {
       "title": "Execute",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "The screen should be in a \"<i>graphics</i>\" mode. See the \r\n          <b>setscreen</b> procedure for details. If the screen is not \r\n          in \"<i>graphics</i>\" mode, it will automatically be set \r\n          to \"<i>graphics</i>\" mode.<p>\r\n          If there is the possibility that there are already keystrokes in the\r\n          keyboard buffer, the <a href=\"input_flush.html\"><b>Input.Flush</b></a>\r\n          command can be used to flush the keyboard buffer (remove all \r\n          keystrokes from the buffer) before entering the loop to check for\r\n          input.</p>\n<p>\r\n    </p>",
       "text_content": "The screen should be in a \"graphics\" mode. See the \r\n          setscreen procedure for details. If the screen is not \r\n          in \"graphics\" mode, it will automatically be set \r\n          to \"graphics\" mode.\r\n          If there is the possibility that there are already keystrokes in the\r\n          keyboard buffer, the Input.Flush\r\n          command can be used to flush the keyboard buffer (remove all \r\n          keystrokes from the buffer) before entering the loop to check for\r\n          input.\r\n    ",
-      "mdown_content": "The screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\nIf there is the possibility that there are already keystrokes in thekeyboard buffer, the [input_flush.html](**Input.Flush**)command can be used to flush the keyboard buffer (remove all keystrokes from the buffer) before entering the loop to check forinput."
+      "mdown_content": "The screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\n\nIf there is the possibility that there are already keystrokes in thekeyboard buffer, the [input_flush.html](**Input.Flush**)command can be used to flush the keyboard buffer (remove all keystrokes from the buffer) before entering the loop to check forinput.\n"
     },
     {
       "title": "See also",
@@ -52,7 +52,7 @@
       ],
       "raw_content": "<b><a href=\"getch.html\">getch</a></b> and \r\n          <b><a href=\"getchar.html\">getchar</a></b>.<p>\r\n          See also the <a href=\"input_flush.html\"><b>Input.Flush</b></a>\r\n          command for flushing the keyboard buffer.</p>\n<p>\r\n          See also predefined unit <b><a href=\"inputmodule.html\">Input</a></b>.</p>\n<p>\r\n    </p>",
       "text_content": "getch and \r\n          getchar.\r\n          See also the Input.Flush\r\n          command for flushing the keyboard buffer.\r\n          See also predefined unit Input.\r\n    ",
-      "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**.\nSee also the [input_flush.html](**Input.Flush**)command for flushing the keyboard buffer.\nSee also predefined unit **[inputmodule.html](Input)**."
+      "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**.\n\nSee also the [input_flush.html](**Input.Flush**)command for flushing the keyboard buffer.\n\nSee also predefined unit **[inputmodule.html](Input)**.\n"
     }
   ],
   "dependencies": [

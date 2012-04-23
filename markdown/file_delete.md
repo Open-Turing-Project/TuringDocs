@@ -5,20 +5,16 @@
 **File.Delete** (_filePathName_ : **string**)
 
 
-
 ##Description
 **File.Delete** is used to delete the file specified by the parameter _filePathName_. This is the equivalent of doing a **del** in DOS or **rm** in UNIX.
-
 
 
 ##Details
 If the **File.Delete** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-
 ##Example
 This program deletes the file called _information_.
-
 
         File.Delete ("information")
         if Error.Last = eNoError then
@@ -35,6 +31,6 @@ An example program is available that creates a file in the current directory, an
 
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **File.Delete**, not by calling **File**.
 
+This means that you can only call the function by calling **File.Delete**, not by calling **File**.
 

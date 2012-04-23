@@ -13,11 +13,15 @@
 
 <h2>Description</h2>
 
-<p>Displays a dialog box with text and from one to three buttons. The user selects a button to dismiss the dialog. The number of the button pressed is returned by the function. The dialog box is centered on the screen.
-The <em>title</em> parameter specifies the title in the window bar of the dialog box. The Apple Macintosh does not have a title bar, so do not assume that the user will see the string in the <em>title</em> parameter. The message is specified by strings in <em>msg1</em>, <em>msg2</em> and <em>msg3</em> for <strong>GUI.Choose</strong> and the string array <em>message</em> for <strong>GUI.ChooseFull</strong>. In each case, empty strings at the end of the list of strings are ignored. The <em>btn1</em>, <em>btn2</em>, and <em>btn3</em> parameters specify the text to appear in the buttons. If the text is an empty string (""), the button is not displayed.
-The function returns the button number from one to three that was chosen.
-The <em>defaultBtn</em> parameter in <strong>GUI.ChooseFull</strong> specifies which, if any, button should be the default button. The default button is selected if the user presses <strong>Enter</strong>. If the default button is 0, then no button is highlighted as the default button.
-<strong>Note</strong>: This function is <strong>not</strong> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
+<p>Displays a dialog box with text and from one to three buttons. The user selects a button to dismiss the dialog. The number of the button pressed is returned by the function. The dialog box is centered on the screen.</p>
+
+<p>The <em>title</em> parameter specifies the title in the window bar of the dialog box. The Apple Macintosh does not have a title bar, so do not assume that the user will see the string in the <em>title</em> parameter. The message is specified by strings in <em>msg1</em>, <em>msg2</em> and <em>msg3</em> for <strong>GUI.Choose</strong> and the string array <em>message</em> for <strong>GUI.ChooseFull</strong>. In each case, empty strings at the end of the list of strings are ignored. The <em>btn1</em>, <em>btn2</em>, and <em>btn3</em> parameters specify the text to appear in the buttons. If the text is an empty string (""), the button is not displayed.</p>
+
+<p>The function returns the button number from one to three that was chosen.</p>
+
+<p>The <em>defaultBtn</em> parameter in <strong>GUI.ChooseFull</strong> specifies which, if any, button should be the default button. The default button is selected if the user presses <strong>Enter</strong>. If the default button is 0, then no button is highlighted as the default button.</p>
+
+<p><strong>Note</strong>: This function is <strong>not</strong> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
 
 <h2>Example</h2>
 
@@ -59,5 +63,6 @@ The <em>defaultBtn</em> parameter in <strong>GUI.ChooseFull</strong> specifies w
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.Choose</strong>, not by calling <strong>Choose</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.Choose</strong>, not by calling <strong>Choose</strong>.</p>

@@ -5,10 +5,8 @@
 **GUI.CloseWindow** (_window_ : **int**)
 
 
-
 ##Description
 Closes a window with widgets in it. This procedure automatically disposes of any widgets in the window and makes certain that the GUI Library recognizes that the window no longer exists. This procedure will call _Window.Close_, so there is no need for the user to do so.
-
 
 
 ##Example
@@ -51,11 +49,10 @@ The program opens up a window with two buttons. If the button labelled "Close an
         GUI.CloseWindow (windowID)
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.CloseWindow**, not by calling **CloseWindow**.
 
+This means that you can only call the function by calling **GUI.CloseWindow**, not by calling **CloseWindow**.
 
 
 ##See also
 **[gui_showwindow.html](GUI.ShowWindow)** and**[gui_hidewindow.html](GUI.HideWindow)**, for showing and hiding windows with widgets in them.
-
 

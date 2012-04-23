@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>assert</b> <i>trueFalseExpn</i><p>\r\n</p></font>",
       "text_content": " assert trueFalseExpn\r\n",
-      "mdown_content": "**assert** _trueFalseExpn_"
+      "mdown_content": "**assert** _trueFalseExpn_\n"
     },
     {
       "title": "Description",
       "raw_content": "An <b>assert</b> statement is used to make sure that a certain requirement is met. This requirement is given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.<p>\r\n</p>",
       "text_content": " An assert statement is used to make sure that a certain requirement is met. This requirement is given by the trueFalseExpn. The trueFalseExpn is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.\r\n",
-      "mdown_content": "An **assert** statement is used to make sure that a certain requirement is met. This requirement is given by the _trueFalseExpn_. The _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message."
+      "mdown_content": "An **assert** statement is used to make sure that a certain requirement is met. This requirement is given by the _trueFalseExpn_. The _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "Make sure that <i>n</i> is positive.<p>\r\n</p>",
       "text_content": " Make sure that n is positive.\r\n\r\n",
-      "mdown_content": "Make sure that _n_ is positive."
+      "mdown_content": "Make sure that _n_ is positive.\n"
     },
     {
       "title": "Example",
@@ -30,13 +30,13 @@
       ],
       "raw_content": "This program assumes that the <i>textFile </i>exists and can be opened, in other words, that the <b>open</b> will set the <i>fileNumber </i>to a positive stream number. If this is not true, the programmer wants the program halted immediately.<p>\r\n</p>",
       "text_content": " This program assumes that the textFile exists and can be opened, in other words, that the open will set the fileNumber to a positive stream number. If this is not true, the programmer wants the program halted immediately.\r\n\r\n",
-      "mdown_content": "This program assumes that the _textFile_ exists and can be opened, in other words, that the **open** will set the _fileNumber_ to a positive stream number. If this is not true, the programmer wants the program halted immediately."
+      "mdown_content": "This program assumes that the _textFile_ exists and can be opened, in other words, that the **open** will set the _fileNumber_ to a positive stream number. If this is not true, the programmer wants the program halted immediately.\n"
     },
     {
       "title": "Details",
       "raw_content": "In some Turing systems, checking can be turned off. If checking is turned off, <b>assert</b> statements may be ignored and as a result never cause termination.<p>\r\n</p>",
       "text_content": " In some Turing systems, checking can be turned off. If checking is turned off, assert statements may be ignored and as a result never cause termination.\r\n",
-      "mdown_content": "In some Turing systems, checking can be turned off. If checking is turned off, **assert** statements may be ignored and as a result never cause termination."
+      "mdown_content": "In some Turing systems, checking can be turned off. If checking is turned off, **assert** statements may be ignored and as a result never cause termination.\n"
     }
   ],
   "dependencies": [

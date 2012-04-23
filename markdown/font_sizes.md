@@ -7,16 +7,16 @@ _internalLeading_ : **int**)
 
 
 
-
 ##Description
 **Font.Sizes** is used to get the metrics of a particular font. The various parts of the metric are illustrated below. Note that you can calculate the external leading by subtracting the ascent and descent from the height.
 
-![Doc image](font_sizes01.gif)
+
+
+![Doc Image](font_sizes01.gif)
 
 
 ##Details
 If **Font.Sizes** is passed an invalid font ID, a fatal error occurs. If the **Font.Sizes** call fails for other (non-fatal) reasons, the metrics for the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
-
 
 
 ##Example
@@ -37,6 +37,6 @@ The program gets information about 24pt Bold Italic Palatino.
         Font.Free (fontID)
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Font.Sizes**, not by calling **Sizes**.
 
+This means that you can only call the function by calling **Font.Sizes**, not by calling **Sizes**.
 

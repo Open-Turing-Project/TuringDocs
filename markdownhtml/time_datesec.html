@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Time.DateSec</strong> function is used to convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.
-The function can also convert just the date ("<em>dd mmm yy</em>"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("<em>hh:mm:ss</em>"), in which case it returns the number of seconds that have passed since midnight of that day.
-If the format is incorrect or can't be interpreted, then <strong>Time.DateSec</strong> will return 1 and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> will be set to the appropriate error.</p>
+<p>The <strong>Time.DateSec</strong> function is used to convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.</p>
+
+<p>The function can also convert just the date ("<em>dd mmm yy</em>"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("<em>hh:mm:ss</em>"), in which case it returns the number of seconds that have passed since midnight of that day.</p>
+
+<p>If the format is incorrect or can't be interpreted, then <strong>Time.DateSec</strong> will return 1 and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> will be set to the appropriate error.</p>
 
 <h2>Example</h2>
 
@@ -28,8 +30,9 @@ If the format is incorrect or can't be interpreted, then <strong>Time.DateSec</s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Time.DateSec</strong>, not by calling <strong>DateSec</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Time.DateSec</strong>, not by calling <strong>DateSec</strong>.</p>
 
 <h2>See also</h2>
 

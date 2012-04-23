@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetText (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)"
+      "mdown_content": "**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Sets the text of a text field specified by <i>widgetID</i> to <i>text</i>. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).<p>\r\n</p>",
       "text_content": " Sets the text of a text field specified by widgetID to text. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).\r\n",
-      "mdown_content": "Sets the text of a text field specified by _widgetID_ to _text_. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text)."
+      "mdown_content": "Sets the text of a text field specified by _widgetID_ to _text_. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetText</b>, not by calling <b>SetText</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetText, not by calling SetText.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.\n"
     },
     {
       "title": "Example",
@@ -27,19 +27,19 @@
       ],
       "raw_content": "The following program converts all lower case input in the text field to upper case when the user presses ENTER.<p>\r\n</p>",
       "text_content": " The following program converts all lower case input in the text field to upper case when the user presses ENTER.\r\n\r\n",
-      "mdown_content": "The following program converts all lower case input in the text field to upper case when the user presses ENTER."
+      "mdown_content": "The following program converts all lower case input in the text field to upper case when the user presses ENTER.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetText</b>, not by calling <b>SetText</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetText, not by calling SetText.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateTextField</b>.<p>\r\n</p>",
       "text_content": " GUI.CreateTextField.\r\n",
-      "mdown_content": "**GUI.CreateTextField**."
+      "mdown_content": "**GUI.CreateTextField**.\n"
     }
   ],
   "dependencies": [

@@ -5,15 +5,12 @@
 **Str.Upper** (_s_ : **string**) : **string**
 
 
-
 ##Description
 The **Str.Upper** function takes the string _s_ and returnsa string in which all the lower case letters are converted to upper case. For example, `Str.Upper ("ABC123def")` returns`"ABC123DEF"`.
 
 
-
 ##Example
 This program obtains lines of text from the user and outputs thelines converted to upper case.
-
 
         var line : string
         loop
@@ -25,11 +22,10 @@ This program obtains lines of text from the user and outputs thelines converted 
     
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Str.Upper**, not by calling **Upper**.
 
+This means that you can only call the function by calling **Str.Upper**, not by calling **Upper**.
 
 
 ##See also
 **[str_lower.html](Str.Lower)** and **[str_trim.html](Str.Trim)**.
-
 

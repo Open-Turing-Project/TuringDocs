@@ -5,20 +5,16 @@
 **Math.Distance** (_x1_, _y1_, _x2_, _y2_ : **real**) : **real**
 
 
-
 ##Description
 **Math.Distance** is used to calculate the distance between two points.(_x1_, _y1_) is the location of the first point, and (_x2_, _y2_) is the location of the second point.
-
 
 
 ##Details
 The parameters to **Math.Distance** are real, but you can pass integer variables and constants.
 
 
-
 ##Example
 This progam draws two circles with radius 75 on the screen and outputs whether they touch.
-
 
         var x1, y1, x2, y2 : int
         const RADIUS : int := 75
@@ -35,6 +31,6 @@ This progam draws two circles with radius 75 on the screen and outputs whether t
         end if
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Math.Distance**, not by calling **Distance**.
 
+This means that you can only call the function by calling **Math.Distance**, not by calling **Distance**.
 

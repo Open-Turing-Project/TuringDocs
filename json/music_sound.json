@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.Sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int </b>)<p></p></font>",
       "text_content": "Music.Sound ( frequency, duration : int )\r\n    ",
-      "mdown_content": "**Music.Sound** ( _frequency_, _duration_ : **int** )"
+      "mdown_content": "**Music.Sound** ( _frequency_, _duration_ : **int** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Music.Sound </b>statement is used to cause the computer to \r\n\t  sound a note of a given frequency for a given time. The frequency \r\n\t  is in cycles per second (Hertz). The time duration is in milliseconds. \r\n\t  For example, middle A on a piano is 440 Hertz, so \r\n\t  <b>Music.Sound</b>(440, 1000) plays middle A for one second.<p>\r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a <b>Music.Sound</b> or <b>Music.Play</b> \r\n\t  command, it stops until the command is finished. However, other \r\n\t  processes will continue executing.</p>\n<p>\r\n    </p>",
       "text_content": "The Music.Sound statement is used to cause the computer to \r\n\t  sound a note of a given frequency for a given time. The frequency \r\n\t  is in cycles per second (Hertz). The time duration is in milliseconds. \r\n\t  For example, middle A on a piano is 440 Hertz, so \r\n\t  Music.Sound(440, 1000) plays middle A for one second.\r\n\t  Sounds are produced synchronously on a per process basis. This means \r\n\t  that when a process executes a Music.Sound or Music.Play \r\n\t  command, it stops until the command is finished. However, other \r\n\t  processes will continue executing.\r\n    ",
-      "mdown_content": "The **Music.Sound** statement is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so **Music.Sound**(440, 1000) plays middle A for one second.\nSounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound** or **Music.Play** command, it stops until the command is finished. However, other processes will continue executing."
+      "mdown_content": "The **Music.Sound** statement is used to cause the computer to sound a note of a given frequency for a given time. The frequency is in cycles per second (Hertz). The time duration is in milliseconds. For example, middle A on a piano is 440 Hertz, so **Music.Sound**(440, 1000) plays middle A for one second.\n\nSounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound** or **Music.Play** command, it stops until the command is finished. However, other processes will continue executing.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program plays a siren sound in the background.<p>\r\n</p>",
       "text_content": "This program plays a siren sound in the background.\r\n\r\n    ",
-      "mdown_content": "This program plays a siren sound in the background."
+      "mdown_content": "This program plays a siren sound in the background.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Music.Sound</b>, not by calling <b>Sound</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Music.Sound, not by calling Sound.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Music.Sound**, not by calling **Sound**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Music.Sound**, not by calling **Sound**.\n"
     },
     {
       "title": "See also",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"music_play.html\">Music.Play</a></b> statement, which \r\n          plays notes based on musical notation. For example, \r\n\t  <b><a href=\"music_play.html\">Music.Play</a></b>(\"8C\") plays an \r\n\t  eighth note of middle C.<p>\r\n    </p>",
       "text_content": "Music.Play statement, which \r\n          plays notes based on musical notation. For example, \r\n\t  Music.Play(\"8C\") plays an \r\n\t  eighth note of middle C.\r\n    ",
-      "mdown_content": "**[music_play.html](Music.Play)** statement, which plays notes based on musical notation. For example, **[music_play.html](Music.Play)**(\"8C\") plays an eighth note of middle C."
+      "mdown_content": "**[music_play.html](Music.Play)** statement, which plays notes based on musical notation. For example, **[music_play.html](Music.Play)**(\"8C\") plays an eighth note of middle C.\n"
     }
   ],
   "dependencies": [

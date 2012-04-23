@@ -2,14 +2,17 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.GetX</strong> (<em>widgetID</em> : <strong>int</strong>) : <strong>int</strong>
-<strong>GUI.GetY</strong> (<em>widgetID</em> : <strong>int</strong>) : <strong>int</strong></p>
+<p><strong>GUI.GetX</strong> (<em>widgetID</em> : <strong>int</strong>) : <strong>int</strong></p>
+
+<p><strong>GUI.GetY</strong> (<em>widgetID</em> : <strong>int</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
-<p>Returns the x coordinate of the left edge of a widget. Note that this may be different from the x coordinate specified in the widget's <em>Create</em> call. For example, if a radio button is created with right justification, the x coordinate in the <em>Create</em> method specifies the right edge while <strong>GUI.GetX</strong> will return the x coordinate of the left edge.
-This function is used in conjunction with <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> to determine the bounds of a widget. The entire widget should always fit in the box (<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>) - (<strong>GUI.GetX</strong> + <strong>GUI.GetWidth</strong> - 1, <strong>GUI.GetY</strong> + <strong>GUI.GetHeight</strong> - 1)
-The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>
+<p>Returns the x coordinate of the left edge of a widget. Note that this may be different from the x coordinate specified in the widget's <em>Create</em> call. For example, if a radio button is created with right justification, the x coordinate in the <em>Create</em> method specifies the right edge while <strong>GUI.GetX</strong> will return the x coordinate of the left edge.</p>
+
+<p>This function is used in conjunction with <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> to determine the bounds of a widget. The entire widget should always fit in the box (<strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>) - (<strong>GUI.GetX</strong> + <strong>GUI.GetWidth</strong> - 1, <strong>GUI.GetY</strong> + <strong>GUI.GetHeight</strong> - 1)</p>
+
+<p>The position and size of a widget is known only after it has been drawn to the screen. Attempting to get the location or dimesions of the widget may cause an uninitialized variable error.</p>
 
 <h2>Example</h2>
 
@@ -32,8 +35,9 @@ The position and size of a widget is known only after it has been drawn to the s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.GetX</strong>, not by calling <strong>GetX</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.GetX</strong>, not by calling <strong>GetX</strong>.</p>
 
 <h2>See also</h2>
 

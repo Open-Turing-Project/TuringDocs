@@ -8,12 +8,16 @@
 
 <p>The <strong>drawpic</strong> procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (<em>x</em>, <em>y</em>). In the common case, the buffer was initialized by calling <strong>takepic</strong>. The values of <em>picmode</em> are:</p>
 
+<p>0:  Copy actual picture on screen.
+1:  Copy picture by XORing it onto the screen.</p>
+
 <p>XORing a picture onto the screen twice leaves the screen as it was  (this is a convenient way to move images for animation). XORing a picture onto a background effectively superimposes the picture onto the background.</p>
 
 <h2>Details</h2>
 
-<p>See <strong>takepic</strong> for an example of the use of <strong>drawpic</strong> and for further information about buffers for drawing pictures.
-The screen must be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
+<p>See <strong>takepic</strong> for an example of the use of <strong>drawpic</strong> and for further information about buffers for drawing pictures.</p>
+
+<p>The screen must be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, an error will occur.</p>
 
 <h2>Details</h2>
 
@@ -21,5 +25,6 @@ The screen must be in a "<em>graphics</em>" mode. See the <strong>setscreen</str
 
 <h2>See also</h2>
 
-<p><strong><a href="takepic">takepic.html</a></strong> and <strong><a href="sizepic">sizepic.html</a></strong>. See also <strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.
-See also predefined unit <strong><a href="Draw">drawmodule.html</a></strong> and <strong><a href="Pic">picmodule.html</a></strong>.</p>
+<p><strong><a href="takepic">takepic.html</a></strong> and <strong><a href="sizepic">sizepic.html</a></strong>. See also <strong><a href="setscreen">setscreen.html</a></strong>, <strong><a href="maxx">maxx.html</a></strong>, <strong><a href="maxy">maxy.html</a></strong> and the various <strong>draw&#133;</strong> procedures.</p>
+
+<p>See also predefined unit <strong><a href="Draw">drawmodule.html</a></strong> and <strong><a href="Pic">picmodule.html</a></strong>.</p>

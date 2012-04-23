@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>drawfillpolygon</strong> procedure is used to draw a filled polygon with <em>n</em> points. The polygon is described by the points (<em>x</em>(1), <em>y</em>(1)) to (<em>x</em>(2), <em>y</em>(2)) to (<em>x</em>(3), <em>y</em>(3)) and so on to (<em>x</em>(<em>n</em>), <em>y</em> (<em>n</em>)). The polygon will be drawn and filled with <em>Color</em>.
-To get an polygon outlined in a different color, use <strong>drawfillpolygon</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>drawpolygon</strong>  with the <em>Color</em> parameter set to the border color.</p>
+<p>The <strong>drawfillpolygon</strong> procedure is used to draw a filled polygon with <em>n</em> points. The polygon is described by the points (<em>x</em>(1), <em>y</em>(1)) to (<em>x</em>(2), <em>y</em>(2)) to (<em>x</em>(3), <em>y</em>(3)) and so on to (<em>x</em>(<em>n</em>), <em>y</em> (<em>n</em>)). The polygon will be drawn and filled with <em>Color</em>.</p>
+
+<p>To get an polygon outlined in a different color, use <strong>drawfillpolygon</strong> with the <em>Color</em> parameter set to the fill color and then call <strong>drawpolygon</strong>  with the <em>Color</em> parameter set to the border color.</p>
 
 <h2>Example</h2>
 
@@ -24,9 +25,11 @@ To get an polygon outlined in a different color, use <strong>drawfillpolygon</st
 
 <h2>Details</h2>
 
-<p>The PC allows a maximum of 256 points. As well, <strong>drawfillpolygon</strong>  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything.
-The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.
-The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
+<p>The PC allows a maximum of 256 points. As well, <strong>drawfillpolygon</strong>  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything.</p>
+
+<p>The meaning of the <em>Color</em> number depends on the current palette. See the <strong>palette</strong> statement.</p>
+
+<p>The screen should be in a "<em>graphics</em>" mode. See the <strong>setscreen</strong> procedure for details. If the screen is not in a "<em>graphics</em>" mode, it will automatically be set to "<em>graphics</em>" mode.</p>
 
 <h2>See also</h2>
 

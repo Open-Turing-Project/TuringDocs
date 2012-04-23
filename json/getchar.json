@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getchar</b> : <b>char</b><p>\r\n</p></font>",
       "text_content": " getchar : char\r\n",
-      "mdown_content": "**getchar** : **char**"
+      "mdown_content": "**getchar** : **char**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>getchar</b> function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned.<p>\r\n</p>",
       "text_content": " The getchar function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned.\r\n",
-      "mdown_content": "The **getchar** function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned."
+      "mdown_content": "The **getchar** function is used to input a single character without waiting for the end of a line. The next character in the keyboard buffer (the oldest not-yet-read character) is returned.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program contains a procedure called <i>getKey </i>which causes the program to wait until a key is pressed.<p>\r\n</p>",
       "text_content": " This program contains a procedure called getKey which causes the program to wait until a key is pressed.\r\n\r\n",
-      "mdown_content": "This program contains a procedure called _getKey_ which causes the program to wait until a key is pressed."
+      "mdown_content": "This program contains a procedure called _getKey_ which causes the program to wait until a key is pressed.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\"<i> </i>or \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to \"<i>screen</i>\" mode.<p>\r\nOn IBM PC's some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by <b>getchar</b> as their \"scan code\" with 128 added to it, unless the scan code already has a value of 128 or greater. This provides a unique value for every key on the keyboard. See Appendix D for these codes.</p>\n<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. See the setscreen procedure for details. If the screen is not in one of these modes, it will automatically be set to \"screen\" mode.\r\nOn IBM PC's some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by getchar as their \"scan code\" with 128 added to it, unless the scan code already has a value of 128 or greater. This provides a unique value for every key on the keyboard. See Appendix D for these codes.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"_screen_\" mode.\nOn IBM PC's some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by **getchar** as their \"scan code\" with 128 added to it, unless the scan code already has a value of 128 or greater. This provides a unique value for every key on the keyboard. See Appendix D for these codes."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in one of these modes, it will automatically be set to \"_screen_\" mode.\n\nOn IBM PC's some keys, such as the left arrow key, insert key, delete key, and function keys do not produce ordinary character values. These keystrokes are returned by **getchar** as their \"scan code\" with 128 added to it, unless the scan code already has a value of 128 or greater. This provides a unique value for every key on the keyboard. See Appendix D for these codes.\n"
     },
     {
       "title": "See also",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"hasch.html\">hasch</a></b> (has character) which is used to see if a character has been typed but <a href=\"not.html\">not</a> yet <a href=\"read.html\">read</a>.<p>\r\nSee also predefined unit <b><a href=\"inputmodule.html\">Input</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " hasch (has character) which is used to see if a character has been typed but not yet read.\r\nSee also predefined unit Input.\r\n",
-      "mdown_content": "**[hasch.html](hasch)** (has character) which is used to see if a character has been typed but [not.html](not) yet [read.html](read).\nSee also predefined unit **[inputmodule.html](Input)**."
+      "mdown_content": "**[hasch.html](hasch)** (has character) which is used to see if a character has been typed but [not.html](not) yet [read.html](read).\n\nSee also predefined unit **[inputmodule.html](Input)**.\n"
     }
   ],
   "dependencies": [

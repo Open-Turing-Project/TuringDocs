@@ -20,12 +20,17 @@
 
 <h2>Details</h2>
 
-<p>Strings can be assigned and they can be compared for both equality and for ordering. See also <em>string comparison</em> and <em>assignment statement</em>.
-Strings can be catenated (joined together) using the + operator and separated into substrings. See <em>catenation</em> and <em>substring</em>. String functions are provided to find the length of a string, to find where one string appears inside another, and to make repeated copies of a string all joined together. See <em>length</em>, <em>index</em>, and <em>repeat</em>.
-A string type written without a maximum length is limited to holding a maximum of 255 characters.
-The <em>maximumLength</em> of a string, if given as a part of the type, must be known at compile time, and must be at least 1 and at most 255. The maximum length of a string is given by <em>upper</em>, for example, <em>upper</em>(<em>licenceNumber</em>) is 6. See also <em>upper</em>.
-In the declaration of a string that is a <strong>var</strong> formal parameter of a procedure or function, the <em>maximumLength</em> can be written as an asterisk (*). Here, the maximum length is taken to be that of the corresponding actual parameter, as in:
-The star can also be used when the parameter is an array of strings.</p>
+<p>Strings can be assigned and they can be compared for both equality and for ordering. See also <em>string comparison</em> and <em>assignment statement</em>.</p>
+
+<p>Strings can be catenated (joined together) using the + operator and separated into substrings. See <em>catenation</em> and <em>substring</em>. String functions are provided to find the length of a string, to find where one string appears inside another, and to make repeated copies of a string all joined together. See <em>length</em>, <em>index</em>, and <em>repeat</em>.</p>
+
+<p>A string type written without a maximum length is limited to holding a maximum of 255 characters.</p>
+
+<p>The <em>maximumLength</em> of a string, if given as a part of the type, must be known at compile time, and must be at least 1 and at most 255. The maximum length of a string is given by <em>upper</em>, for example, <em>upper</em>(<em>licenceNumber</em>) is 6. See also <em>upper</em>.</p>
+
+<p>In the declaration of a string that is a <strong>var</strong> formal parameter of a procedure or function, the <em>maximumLength</em> can be written as an asterisk (*). Here, the maximum length is taken to be that of the corresponding actual parameter, as in:</p>
+
+<p>The star can also be used when the parameter is an array of strings.</p>
 
 <pre><code>    procedure deblank (var s : string (*) ).
 </code></pre>

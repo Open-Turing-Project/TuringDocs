@@ -22,9 +22,11 @@
 
 <h2>Details</h2>
 
-<p>The form of <em>membersOfSet</em> is one of:
-The empty set is written, for example, as <em>smallInt</em> (). The full set is written as <em>smallInt</em> (<strong>all</strong>), so <em>smallInt</em> (<strong>all</strong>) = <em>smallInt</em> (0,1,2). See also the <strong>set</strong> type.
-The syntax of <em>setConstructor</em> as given above has been simplified by ignoring the fact that <strong>set</strong> types can be exported from modules. When a <strong>set</strong> type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as <em>m.smallSet</em>(1,2), where <em>m</em> is the module name.</p>
+<p>The form of <em>membersOfSet</em> is one of:</p>
+
+<p>The empty set is written, for example, as <em>smallInt</em> (). The full set is written as <em>smallInt</em> (<strong>all</strong>), so <em>smallInt</em> (<strong>all</strong>) = <em>smallInt</em> (0,1,2). See also the <strong>set</strong> type.</p>
+
+<p>The syntax of <em>setConstructor</em> as given above has been simplified by ignoring the fact that <strong>set</strong> types can be exported from modules. When a <strong>set</strong> type is exported and used outside of a module, you must write the module name, a dot and then the type name. For example, the set constructor above would be written as <em>m.smallSet</em>(1,2), where <em>m</em> is the module name.</p>
 
 <pre><code>    (a) expn { , expn}  % List of members of set
     (b) all         % All member of index type of set

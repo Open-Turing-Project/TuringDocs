@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.HideMenuBar</b><p>\r\n</p></font>",
       "text_content": " GUI.HideMenuBar\r\n",
-      "mdown_content": "**GUI.HideMenuBar**"
+      "mdown_content": "**GUI.HideMenuBar**\n"
     },
     {
       "title": "Description",
       "raw_content": "Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)<p>\r\n</p>",
       "text_content": " Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)\r\n",
-      "mdown_content": "Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)"
+      "mdown_content": "Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)\n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.SetMouseEventHandler</b> for an example of <b>GUI.HideMenuBar</b>.<p>\r\n</p>",
       "text_content": " See GUI.SetMouseEventHandler for an example of GUI.HideMenuBar.\r\n",
-      "mdown_content": "See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**."
+      "mdown_content": "See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.HideMenuBar</b>, not by calling <b>HideMenuBar</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.HideMenuBar, not by calling HideMenuBar.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.HideMenuBar**, not by calling **HideMenuBar**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.HideMenuBar**, not by calling **HideMenuBar**.\n"
     },
     {
       "title": "See also",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b>. See also <b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ShowMenuBar. See also GUI.CreateMenu.\r\n",
-      "mdown_content": "**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**."
+      "mdown_content": "**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**.\n"
     }
   ],
   "dependencies": [

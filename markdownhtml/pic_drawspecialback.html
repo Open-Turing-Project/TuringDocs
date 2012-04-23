@@ -6,33 +6,40 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.DrawSpecialBack</strong> is very similar to <strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.  The onlydifference is that <strong>Pic.DrawSpecialBack</strong> returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.
-For example, this procedure is necessary if you want to have two pictures being drawn using special effects simultaneously.</p>
+<p><strong>Pic.DrawSpecialBack</strong> is very similar to <strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.  The onlydifference is that <strong>Pic.DrawSpecialBack</strong> returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.</p>
+
+<p>For example, this procedure is necessary if you want to have two pictures being drawn using special effects simultaneously.</p>
 
 <h2>Details</h2>
 
-<p>If you are wish to have several images displayed at the same timeusing special effects, you must use <strong>Pic.DrawSpecialBack</strong> to display all the images but the last and then use <strong>Pic.DrawSpecial</strong> to display the last image so that Turing will wait until the special effects are completed before continuing execution.
-If you want to draw the several special effects continuously overthe same location, do not use <strong>Pic.DrawSpecialBack</strong>.
-<code>**Pic.DrawSpecial** (_pic1_, 10, 10, _picCopy_, _picWipeLeftToRight_, 500)**Pic.DrawSpecial** (_pic2_, 10, 10, _picCopy_, _picFadeIn_, 1000)</code>
-If you do, Turing will attempt to run each of the calls at the sametime, and most of the special effects will not be seen.</p>
+<p>If you are wish to have several images displayed at the same timeusing special effects, you must use <strong>Pic.DrawSpecialBack</strong> to display all the images but the last and then use <strong>Pic.DrawSpecial</strong> to display the last image so that Turing will wait until the special effects are completed before continuing execution.</p>
+
+<p>If you want to draw the several special effects continuously overthe same location, do not use <strong>Pic.DrawSpecialBack</strong>.</p>
+
+<p><code>**Pic.DrawSpecial** (_pic1_, 10, 10, _picCopy_, _picWipeLeftToRight_, 500)**Pic.DrawSpecial** (_pic2_, 10, 10, _picCopy_, _picFadeIn_, 1000)</code></p>
+
+<p>If you do, Turing will attempt to run each of the calls at the sametime, and most of the special effects will not be seen.</p>
 
 <h2>Description</h2>
 
-<p><strong>Pic.DrawSpecialBack</strong> is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of<strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>). The <em>duration</em> specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
-The <em>mode</em> parameter is the same as in <strong>Pic.New</strong> and has one of the following values:</p>
+<p><strong>Pic.DrawSpecialBack</strong> is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of<strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>). The <em>duration</em> specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.</p>
 
-<p><em>picCopy</em> This draws the picture on top of what was underneath, obscuring it completely.
-<em>picXor</em> This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
-<em>picMerge</em> This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
-<em>picUnderMerge</em> This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
+<p>The <em>mode</em> parameter is the same as in <strong>Pic.New</strong> and has one of the following values:</p>
+
+<p><em>picCopy</em>   This draws the picture on top of what was underneath, obscuring it completely.
+<em>picXor</em>   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
+<em>picMerge</em>   This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
+<em>picUnderMerge</em>   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
 
 <p>See <strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong> for thelist of possible values for the <em>transition</em> parameter.</p>
 
 <h2>Details</h2>
 
-<p>The <strong>Pic.DrawSpecialBack</strong> requires a moderately fast machine to operate successfully (Pentium III or higher). The <em>picFadeIn_and </em>picBlend<em> transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the </em>Display<em> control panel from the </em>Start_ menu.  You can also use the
-<code>     **Config.Display** (**cdNumMaxColors**)</code>
-function to determine the bit-depth of the display (anything <strong>over</strong> 256 colors will produce acceptable results).</p>
+<p>The <strong>Pic.DrawSpecialBack</strong> requires a moderately fast machine to operate successfully (Pentium III or higher). The <em>picFadeIn_and </em>picBlend<em> transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the </em>Display<em> control panel from the </em>Start_ menu.  You can also use the</p>
+
+<p><code>     **Config.Display** (**cdNumMaxColors**)</code></p>
+
+<p>function to determine the bit-depth of the display (anything <strong>over</strong> 256 colors will produce acceptable results).</p>
 
 <h2>Details</h2>
 
@@ -65,10 +72,12 @@ Pic.DrawSpecial (blueID, 160, 10, picCopy, picFadeIn, 1000)
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.DrawSpecialBack</strong>, not by calling <strong>DrawSpecialBack</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.DrawSpecialBack</strong>, not by calling <strong>DrawSpecialBack</strong>.</p>
 
 <h2>See also</h2>
 
-<p><strong><a href="Pic.Draw">pic_draw.html</a></strong> for information on the meaningof the <em>mode</em> argument.
-<strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong> for information on how to draw special effects and wait for completionof the effect.</p>
+<p><strong><a href="Pic.Draw">pic_draw.html</a></strong> for information on the meaningof the <em>mode</em> argument.</p>
+
+<p><strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong> for information on how to draw special effects and wait for completionof the effect.</p>

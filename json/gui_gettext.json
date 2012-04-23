@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetText</b> (<i>widgetID</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " GUI.GetText (widgetID : int) : string\r\n",
-      "mdown_content": "**GUI.GetText** (_widgetID_ : **int**) : **string**"
+      "mdown_content": "**GUI.GetText** (_widgetID_ : **int**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns the current text of a text field specified by <i>widgetID</i>. The <i>widgetID </i>must specify a text field widget.<p>\r\n</p>",
       "text_content": " Returns the current text of a text field specified by widgetID. The widgetID must specify a text field widget.\r\n",
-      "mdown_content": "Returns the current text of a text field specified by _widgetID_. The _widgetID_ must specify a text field widget."
+      "mdown_content": "Returns the current text of a text field specified by _widgetID_. The _widgetID_ must specify a text field widget.\n"
     },
     {
       "title": "Example",
       "raw_content": "See <b>GUI.CreateTextField </b>for an example of <b>GUI.GetText</b>.<p>\r\n</p>",
       "text_content": " See GUI.CreateTextField for an example of GUI.GetText.\r\n",
-      "mdown_content": "See **GUI.CreateTextField** for an example of **GUI.GetText**."
+      "mdown_content": "See **GUI.CreateTextField** for an example of **GUI.GetText**.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetText</b>, not by calling <b>GetText</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.GetText, not by calling GetText.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetText**, not by calling **GetText**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.GetText**, not by calling **GetText**.\n"
     },
     {
       "title": "See also",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"gui_settext.html\">GUI.SetText</a> </b>for setting the text in a text field. See also <b>GUI.CreateTextField</b>.<p>\r\n</p>",
       "text_content": " GUI.SetText for setting the text in a text field. See also GUI.CreateTextField.\r\n",
-      "mdown_content": "**[gui_settext.html](GUI.SetText)** for setting the text in a text field. See also **GUI.CreateTextField**."
+      "mdown_content": "**[gui_settext.html](GUI.SetText)** for setting the text in a text field. See also **GUI.CreateTextField**.\n"
     }
   ],
   "dependencies": [

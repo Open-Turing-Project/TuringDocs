@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p><strong>Error.Trip</strong> is a procedure that sets the error number that isreturned by <strong>Error.Last</strong> and <strong>Error.LastMsg</strong>. It does  not halt the program.
-Error codes that do not correspond to recognized errors will cause an abort with the error message "Unknown Error #n" where n is the error passed in.
-You can find a list of constants for the legal error codes in the module <strong>ErrorNum</strong>. Any call to <strong>Error.Trip</strong> should use a constant found in the <strong>ErrorNum</strong> module.</p>
+<p><strong>Error.Trip</strong> is a procedure that sets the error number that isreturned by <strong>Error.Last</strong> and <strong>Error.LastMsg</strong>. It does  not halt the program.</p>
+
+<p>Error codes that do not correspond to recognized errors will cause an abort with the error message "Unknown Error #n" where n is the error passed in.</p>
+
+<p>You can find a list of constants for the legal error codes in the module <strong>ErrorNum</strong>. Any call to <strong>Error.Trip</strong> should use a constant found in the <strong>ErrorNum</strong> module.</p>
 
 <h2>Example</h2>
 
@@ -23,5 +25,6 @@ You can find a list of constants for the legal error codes in the module <strong
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Error.Trip</strong>, not by calling <strong>Trip</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Error.Trip</strong>, not by calling <strong>Trip</strong>.</p>

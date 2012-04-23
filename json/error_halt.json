@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Halt</b> (<i>errorMessage</i> : <b>string</b>)<p></p></font>",
       "text_content": "Error.Halt (errorMessage : string)\r\n    ",
-      "mdown_content": "**Error.Halt** (_errorMessage_ : **string**)"
+      "mdown_content": "**Error.Halt** (_errorMessage_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.Halt</b> is a procedure that immediately halts execution of\r\n          the program and shows the specified error message on the line in the\r\n          program that calls <b>Error.Halt</b>.<p>\r\n          This procedure is useful for allowing a quick halt to a program\r\n          while indicating an error condition.</p>\n<p>\r\n    </p>",
       "text_content": "Error.Halt is a procedure that immediately halts execution of\r\n          the program and shows the specified error message on the line in the\r\n          program that calls Error.Halt.\r\n          This procedure is useful for allowing a quick halt to a program\r\n          while indicating an error condition.\r\n    ",
-      "mdown_content": "**Error.Halt** is a procedure that immediately halts execution ofthe program and shows the specified error message on the line in theprogram that calls **Error.Halt**.\nThis procedure is useful for allowing a quick halt to a programwhile indicating an error condition."
+      "mdown_content": "**Error.Halt** is a procedure that immediately halts execution ofthe program and shows the specified error message on the line in theprogram that calls **Error.Halt**.\n\nThis procedure is useful for allowing a quick halt to a programwhile indicating an error condition.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program halts on the first line with an error message stating\r\n          \"Execution terminated by the program.\"<p>\r\n</p>",
       "text_content": "This program halts on the first line with an error message stating\r\n          \"Execution terminated by the program.\"\r\n\r\n    ",
-      "mdown_content": "This program halts on the first line with an error message stating\"Execution terminated by the program.\""
+      "mdown_content": "This program halts on the first line with an error message stating\"Execution terminated by the program.\"\n"
     },
     {
       "title": "Execute",
@@ -34,13 +34,13 @@
       ],
       "raw_content": "<p>\r\n    </p>",
       "text_content": "\r\n    ",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Error.Halt</b>, not by calling <b>Halt</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Error.Halt, not by calling Halt.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.Halt**, not by calling **Halt**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Error.Halt**, not by calling **Halt**.\n"
     }
   ],
   "dependencies": [

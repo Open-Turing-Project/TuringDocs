@@ -2,18 +2,20 @@
 
 <h2>Description</h2>
 
-<p>Sprites are a way of doing animation in Turing bypassing the <strong>Pic</strong> module. A sprite is essentially a picture with a specific location and "depth". You create a sprite by calling <strong>Sprite.New</strong> with a picID received from <strong>Pic.New</strong>. You can then move the sprite around by calling <strong>Sprite.SetPosition</strong>. When you are finished with the sprite, you call <strong>Sprite.Free</strong>.
-Note that sprites work best when they are moderately small. If you have large sprites, you will continue to have flashing.
-All subprograms in the <strong>Sprite</strong> unit are exported qualified (and thus must be prefaced with "<strong>Sprite.</strong>").</p>
+<p>Sprites are a way of doing animation in Turing bypassing the <strong>Pic</strong> module. A sprite is essentially a picture with a specific location and "depth". You create a sprite by calling <strong>Sprite.New</strong> with a picID received from <strong>Pic.New</strong>. You can then move the sprite around by calling <strong>Sprite.SetPosition</strong>. When you are finished with the sprite, you call <strong>Sprite.Free</strong>.</p>
+
+<p>Note that sprites work best when they are moderately small. If you have large sprites, you will continue to have flashing.</p>
+
+<p>All subprograms in the <strong>Sprite</strong> unit are exported qualified (and thus must be prefaced with "<strong>Sprite.</strong>").</p>
 
 <h2>Entry Points</h2>
 
-<p><a href="**New**">sprite_new.html</a> Creates a new sprite from a picture.
-<a href="**Free**">sprite_free.html</a> Disposes of a sprite and free up its memory.
-<a href="**SetHeight**">sprite_setheight.html</a> Sets the height of a sprite. Sprites with a greater height appear above sprites with a lesser height. The background is considered height 0. The height may be negative.
-<a href="**SetPosition**">sprite_setposition.html</a> Sets the location of the sprite. Can specify the center of the sprite or the lower-left corner.
-<a href="**SetFrameRate**">sprite_setframerate.html</a> Sets the maximum number of times a second the sprites will be moved on screen.
-<a href="**ChangePic**">sprite_changepic.html</a> Changes the picture associated with a sprite.
-<a href="**Animate**">sprite_animate.html</a> Changes the location and the picture associated with a sprite. Used for animating a moving changing image.
-<a href="**Show**">sprite_show.html</a> Shows a previously hidden sprite.
-<a href="**Hide**">sprite_hide.html</a> Hides a visible sprite.</p>
+<p><a href="**New**">sprite_new.html</a>   Creates a new sprite from a picture.
+<a href="**Free**">sprite_free.html</a>   Disposes of a sprite and free up its memory.
+<a href="**SetHeight**">sprite_setheight.html</a>   Sets the height of a sprite. Sprites with a greater height appear above sprites with a lesser height. The background is considered height 0. The height may be negative.
+<a href="**SetPosition**">sprite_setposition.html</a>   Sets the location of the sprite. Can specify the center of the sprite or the lower-left corner.
+<a href="**SetFrameRate**">sprite_setframerate.html</a>   Sets the maximum number of times a second the sprites will be moved on screen.
+<a href="**ChangePic**">sprite_changepic.html</a>   Changes the picture associated with a sprite.
+<a href="**Animate**">sprite_animate.html</a>   Changes the location and the picture associated with a sprite. Used for animating a moving changing image.
+<a href="**Show**">sprite_show.html</a>   Shows a previously hidden sprite.
+<a href="**Hide**">sprite_hide.html</a>   Hides a visible sprite.</p>

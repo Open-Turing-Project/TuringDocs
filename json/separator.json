@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "A Turing program is made up of a sequence of <i>tokens </i>(see <i>tokens</i>), such as <b>var</b>, <i>x</i>, :, and <b>int</b>. These tokens may have <i>separators</i> between them. A separator is a comment (see <i>comment</i>), blank, tab, form feed or an end of line.<p>\r\n</p>",
       "text_content": " A Turing program is made up of a sequence of tokens (see tokens), such as var, x, :, and int. These tokens may have separators between them. A separator is a comment (see comment), blank, tab, form feed or an end of line.\r\n",
-      "mdown_content": "A Turing program is made up of a sequence of _tokens_ (see _tokens_), such as **var**, _x_, :, and **int**. These tokens may have _separators_ between them. A separator is a comment (see _comment_), blank, tab, form feed or an end of line."
+      "mdown_content": "A Turing program is made up of a sequence of _tokens_ (see _tokens_), such as **var**, _x_, :, and **int**. These tokens may have _separators_ between them. A separator is a comment (see _comment_), blank, tab, form feed or an end of line.\n"
     }
   ],
   "dependencies": [

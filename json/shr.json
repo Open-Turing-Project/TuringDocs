@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>A</i> <b>shr</b> <i>B</i><p>\r\n</p></font>",
       "text_content": " A shr B\r\n",
-      "mdown_content": "_A_ **shr** _B_"
+      "mdown_content": "_A_ **shr** _B_\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>shr</b> (shift right) operator produces the value of <i>A</i> shifted <i>B</i> bits to the right. Both A and B must be non-negative integers (natural numbers).<p>\r\n</p>",
       "text_content": " The shr (shift right) operator produces the value of A shifted B bits to the right. Both A and B must be non-negative integers (natural numbers).\r\n",
-      "mdown_content": "The **shr** (shift right) operator produces the value of _A_ shifted _B_ bits to the right. Both A and B must be non-negative integers (natural numbers)."
+      "mdown_content": "The **shr** (shift right) operator produces the value of _A_ shifted _B_ bits to the right. Both A and B must be non-negative integers (natural numbers).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "Assign the base 2 value 1101 to <i>i</i> and then shift it right by 2 places and assign the resulting base 2 value 11 to <i>j</i>.<p>\r\n</p>",
       "text_content": " Assign the base 2 value 1101 to i and then shift it right by 2 places and assign the resulting base 2 value 11 to j.\r\n\r\n",
-      "mdown_content": "Assign the base 2 value 1101 to _i_ and then shift it right by 2 places and assign the resulting base 2 value 11 to _j_."
+      "mdown_content": "Assign the base 2 value 1101 to _i_ and then shift it right by 2 places and assign the resulting base 2 value 11 to _j_.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>shr</b> operator is defined mathematically (in a machine- independent way) as follows:  <i>A</i> <b>shr</b> <i>B</i> = <i>A</i> <b>div</b> 2**<i>B</i>.<p>\r\nValue <i>A</i> can be of any integer type (as long as it is non-negative) or any natural number type.</p>\n<p>\r\nThe <b>shr</b> operator has the same precedence as the * operator.</p>\n<p>\r\n</p>",
       "text_content": " The shr operator is defined mathematically (in a machine- independent way) as follows:  A shr B = A div 2**B.\r\nValue A can be of any integer type (as long as it is non-negative) or any natural number type.\r\nThe shr operator has the same precedence as the * operator.\r\n",
-      "mdown_content": "The **shr** operator is defined mathematically (in a machine- independent way) as follows:  _A_ **shr** _B_ = _A_ **div** 2**_B_.\nValue _A_ can be of any integer type (as long as it is non-negative) or any natural number type.\nThe **shr** operator has the same precedence as the * operator."
+      "mdown_content": "The **shr** operator is defined mathematically (in a machine- independent way) as follows:  _A_ **shr** _B_ = _A_ **div** 2**_B_.\n\nValue _A_ can be of any integer type (as long as it is non-negative) or any natural number type.\n\nThe **shr** operator has the same precedence as the * operator.\n"
     },
     {
       "title": "See also",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"shl.html\">shl</a></b> (shift left), <b><a href=\"or.html\">or</a></b>, <b><a href=\"and.html\">and</a></b> and <b><a href=\"xor.html\">xor</a></b>, which also are bit manipulation operators that act on non-negative values. See also <b><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></b> which describes values such as 2#1101.<p>\r\n</p>",
       "text_content": " shl (shift left), or, and and xor, which also are bit manipulation operators that act on non-negative values. See also explicitIntegerConstant which describes values such as 2#1101.\r\n",
-      "mdown_content": "**[shl.html](shl)** (shift left), **[or.html](or)**, **[and.html](and)** and **[xor.html](xor)**, which also are bit manipulation operators that act on non-negative values. See also **[explicitintegerconstant.html](explicitIntegerConstant)** which describes values such as 2#1101."
+      "mdown_content": "**[shl.html](shl)** (shift left), **[or.html](or)**, **[and.html](and)** and **[xor.html](xor)**, which also are bit manipulation operators that act on non-negative values. See also **[explicitintegerconstant.html](explicitIntegerConstant)** which describes values such as 2#1101.\n"
     }
   ],
   "dependencies": [

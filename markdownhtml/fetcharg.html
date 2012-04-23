@@ -8,11 +8,17 @@
 
 <p>The <strong>fetcharg</strong> function is used to access the <em>i</em>-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using</p>
 
+<p>:r file1 file2</p>
+
 <p>then <strong>fetcharg</strong>(2) will return "file2". If a program called <em>prog.x</em> is run under UNIX using this command:</p>
 
-<p>the value of <strong>fetcharg</strong>(2) will similarly be "file2".
-The <strong>nargs</strong> function, which gives the number of arguments passed to the program, is usually used together with the <strong>fetcharg</strong> function. Parameter <em>i</em> passed to <strong>fetcharg</strong> must be in the range 0 .. <strong>nargs</strong>.
-The 0-th argument is the name of the running program.</p>
+<p>prog.x file1 file2</p>
+
+<p>the value of <strong>fetcharg</strong>(2) will similarly be "file2".</p>
+
+<p>The <strong>nargs</strong> function, which gives the number of arguments passed to the program, is usually used together with the <strong>fetcharg</strong> function. Parameter <em>i</em> passed to <strong>fetcharg</strong> must be in the range 0 .. <strong>nargs</strong>.</p>
+
+<p>The 0-th argument is the name of the running program.</p>
 
 <h2>Example</h2>
 

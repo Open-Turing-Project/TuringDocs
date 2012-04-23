@@ -6,14 +6,17 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.Height</strong> returns the width in pixels of the picture represented by <em>picID</em>.
-This function is often used in conjunction with <strong>Pic.Width</strong> to obtain the dimensions of a picture loaded using <strong>Pic.FileNew</strong>.</p>
+<p><strong>Pic.Height</strong> returns the width in pixels of the picture represented by <em>picID</em>.</p>
+
+<p>This function is often used in conjunction with <strong>Pic.Width</strong> to obtain the dimensions of a picture loaded using <strong>Pic.FileNew</strong>.</p>
 
 <h2>Example</h2>
 
 <p>The program draws loads a picture from the file <em>lighthouse.jpg</em> and proceeds to tile the entire run window with copies of the picture.</p>
 
-<p><img src="pic_height01.gif" alt="Doc image" /></p>
+<p><img src="pic_height01.gif" alt="Doc Image" /></p>
+
+<p><strong>Output of Example Program</strong></p>
 
 <pre><code>    var pic : int := Pic.FileNew ("lighthouse.jpg")
     var width : int := Pic.Width (pic)
@@ -33,8 +36,9 @@ This function is often used in conjunction with <strong>Pic.Width</strong> to ob
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Height</strong>, not by calling <strong>Height</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Height</strong>, not by calling <strong>Height</strong>.</p>
 
 <h2>See also</h2>
 

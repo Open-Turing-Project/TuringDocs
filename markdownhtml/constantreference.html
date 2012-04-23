@@ -8,8 +8,12 @@
 
 <h2>Description</h2>
 
-<p>In a Turing program, a constant is declared and given a name (<em>constantId</em>) and then used. Each use is called a <em>constant reference</em>.
-If the constant is an array, record or union, its parts (<em>components</em>) can be selected using subscripts and field names (using <em>componentSelectors</em>). The form of a <em>componentSelector</em> is one of:</p>
+<p>In a Turing program, a constant is declared and given a name (<em>constantId</em>) and then used. Each use is called a <em>constant reference</em>.</p>
+
+<p>If the constant is an array, record or union, its parts (<em>components</em>) can be selected using subscripts and field names (using <em>componentSelectors</em>). The form of a <em>componentSelector</em> is one of:</p>
+
+<p>(a)   (<em>expn</em> {, <em>expn</em>} )
+(b)   . <em>fieldId</em></p>
 
 <p>Form (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a <strong>record</strong> or <strong>union</strong>. Component selectors are used in the same manner as variable references. See <em>variableReference</em> for details. See also <strong>const</strong> declaration and <em>explicitConstant</em>.</p>
 

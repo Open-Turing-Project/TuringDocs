@@ -6,31 +6,31 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.ScreenLoad</b> (<i>fileName</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Pic.ScreenLoad (fileName : string, x, y, mode : int)\r\n",
-      "mdown_content": "**Pic.ScreenLoad** (_fileName_ : **string**, _x_, _y_, _mode_ : **int**)"
+      "mdown_content": "**Pic.ScreenLoad** (_fileName_ : **string**, _x_, _y_, _mode_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.ScreenLoad </b>displays a picture from a file straight to the screen.<p>\r\nThe <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>JPG files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"JPG:filename\" or \"filename.JPG\"</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>BMP files</td>\n<td width=\"10\">&nbsp;</td>\n<td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr>\n</table>\n<p>\r\nThe <i>x</i> and <i>y</i> parameters set the lower left hand corner of the picture.</p>\n<p>\r\nThe <i>mode</i> parameter has one of the following values:</p>\n<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td><i>picCopy</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>This draws the picture on top of what was underneath, obscuring it completely.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>picXOR</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>picMerge</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>This draws the picture like <i>picCopy</i> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.</td>\n</tr>\n<tr valign=\"top\">\n<td><i>picUnderMerge</i></td>\n<td width=\"10\">&nbsp;</td>\n<td>This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</td>\n</tr>\n</table>\n<p>\r\n</p>",
       "text_content": " Pic.ScreenLoad displays a picture from a file straight to the screen.\r\nThe fileNameparameter must give the format of the file:\r\n JPG files \"JPG:filename\" or \"filename.JPG\" BMP files \"BMP:filename\" or \"filename.BMP\"\r\nThe x and y parameters set the lower left hand corner of the picture.\r\nThe mode parameter has one of the following values:\r\npicCopy This draws the picture on top of what was underneath, obscuring it completely.picXOR This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.picMerge This draws the picture like picCopy except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.picUnderMerge This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.\r\n",
-      "mdown_content": "**Pic.ScreenLoad** displays a picture from a file straight to the screen.\nThe _fileName_parameter must give the format of the file:\n\n\n\n\nThe _x_ and _y_ parameters set the lower left hand corner of the picture.\nThe _mode_ parameter has one of the following values:\n\n_picCopy_ This draws the picture on top of what was underneath, obscuring it completely.\n_picXOR_ This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.\n_picMerge_ This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.\n_picUnderMerge_ This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.\n"
+      "mdown_content": "**Pic.ScreenLoad** displays a picture from a file straight to the screen.\n\nThe _fileName_parameter must give the format of the file:\n\n\nJPG files   \"JPG:filename\" or \"filename.JPG\"\nBMP files   \"BMP:filename\" or \"filename.BMP\"\n\n\nThe _x_ and _y_ parameters set the lower left hand corner of the picture.\n\nThe _mode_ parameter has one of the following values:\n\n\n_picCopy_   This draws the picture on top of what was underneath, obscuring it completely.\n_picXOR_   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.\n_picMerge_   This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.\n_picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.\n\n"
     },
     {
       "title": "Details",
       "raw_content": "Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP files and JPG files. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement importation of GIF pictures until the patents expire in June 2004.<p>\r\n</p>",
       "text_content": " Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP files and JPG files. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement importation of GIF pictures until the patents expire in June 2004.\r\n",
-      "mdown_content": "Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP files and JPG files. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement importation of GIF pictures until the patents expire in June 2004."
+      "mdown_content": "Various versions of Turing can convert different formats of files. Turing 4.1 for Windows can load BMP files and JPG files. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement importation of GIF pictures until the patents expire in June 2004.\n"
     },
     {
       "title": "Details",
       "raw_content": "At the time of writing, MacOOT supported only PICT files. Consult the release notes to find out which file formats are currently supported.<p>\r\n</p>",
       "text_content": " At the time of writing, MacOOT supported only PICT files. Consult the release notes to find out which file formats are currently supported.\r\n",
-      "mdown_content": "At the time of writing, MacOOT supported only PICT files. Consult the release notes to find out which file formats are currently supported."
+      "mdown_content": "At the time of writing, MacOOT supported only PICT files. Consult the release notes to find out which file formats are currently supported.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>Pic.ScreenLoad</b> fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>\r\n</p>",
       "text_content": " If the Pic.ScreenLoad fails, then Error.Last will return a non-zero value indicating the reason for the failure. Error.LastMsg will return a string which contains the textual version of the error.\r\n",
-      "mdown_content": "If the **Pic.ScreenLoad** fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If the **Pic.ScreenLoad** fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Example",
@@ -39,13 +39,13 @@
       ],
       "raw_content": "The program displays a picture on the screen from the PCX file <i>mypic.BMP</i>.<p>\r\n</p>",
       "text_content": " The program displays a picture on the screen from the PCX file mypic.BMP.\r\n\r\n",
-      "mdown_content": "The program displays a picture on the screen from the PCX file _mypic.BMP_."
+      "mdown_content": "The program displays a picture on the screen from the PCX file _mypic.BMP_.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Pic.ScreenLoad</b>, not by calling <b>ScreenLoad</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Pic.ScreenLoad, not by calling ScreenLoad.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.ScreenLoad**, not by calling **ScreenLoad**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.ScreenLoad**, not by calling **ScreenLoad**.\n"
     }
   ],
   "dependencies": [

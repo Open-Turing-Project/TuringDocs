@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>in</b><p>\r\n</p></font>",
       "text_content": " in\r\n",
-      "mdown_content": "**in**"
+      "mdown_content": "**in**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>in</b> operator determines if an element is in a set.<p>\r\n</p>",
       "text_content": " The in operator determines if an element is in a set.\r\n",
-      "mdown_content": "The **in** operator determines if an element is in a set."
+      "mdown_content": "The **in** operator determines if an element is in a set.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>not</b> <b>in</b> operator is exactly the opposite of <b>in</b>. For example, 7 <b>not</b> <b>in</b> <i>rankings</i> means the same as <b>not</b> (7 <b>in</b> <i>rankings</i>).<p>\r\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.</p>\n<p>\r\nThe keyword <b>in</b> is also used in lists such as <b>import</b> lists. See <b>import</b> list.</p>\n<p>\r\n</p>",
       "text_content": " The not in operator is exactly the opposite of in. For example, 7 not in rankings means the same as not (7 in rankings).\r\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.\r\nThe keyword in is also used in lists such as import lists. See import list.\r\n",
-      "mdown_content": "The **not** **in** operator is exactly the opposite of **in**. For example, 7 **not** **in** _rankings_ means the same as **not** (7 **in** _rankings_).\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.\nThe keyword **in** is also used in lists such as **import** lists. See **import** list."
+      "mdown_content": "The **not** **in** operator is exactly the opposite of **in**. For example, 7 **not** **in** _rankings_ means the same as **not** (7 **in** _rankings_).\n\nThe element is required to be in the set's index type. In the above example this is satisfied because element 5 is in the index type 0 .. 10.\n\nThe keyword **in** is also used in lists such as **import** lists. See **import** list.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"set.html\">set</a></b> type, <i><a href=\"infix.html\">infix</a> operators</i>, and <i><a href=\"precedence.html\">precedence</a> </i>of operators.<p>\r\n</p>",
       "text_content": " the set type, infix operators, and precedence of operators.\r\n",
-      "mdown_content": "the **[set.html](set)** type, _[infix.html](infix) operators_, and _[precedence.html](precedence)_ of operators."
+      "mdown_content": "the **[set.html](set)** type, _[infix.html](infix) operators_, and _[precedence.html](precedence)_ of operators.\n"
     }
   ],
   "dependencies": [

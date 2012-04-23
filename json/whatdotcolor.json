@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>whatdotcolor</b> ( <i>x</i>, <i>y</i> : <b>int</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " whatdotcolor ( x, y : int ) : int\r\n",
-      "mdown_content": "**whatdotcolor** ( _x_, _y_ : **int** ) : **int**"
+      "mdown_content": "**whatdotcolor** ( _x_, _y_ : **int** ) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>whatdotcolor</b> function is used to determine the color number of the specified pixel. The alternate spelling is <b>whatdotcolour</b>.<p>\r\n</p>",
       "text_content": " The whatdotcolor function is used to determine the color number of the specified pixel. The alternate spelling is whatdotcolour.\r\n",
-      "mdown_content": "The **whatdotcolor** function is used to determine the color number of the specified pixel. The alternate spelling is **whatdotcolour**."
+      "mdown_content": "The **whatdotcolor** function is used to determine the color number of the specified pixel. The alternate spelling is **whatdotcolour**.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.<p>\r\n</p>",
       "text_content": " This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.\r\n\r\n",
-      "mdown_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored."
+      "mdown_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a\"<i>graphics</i>\" mode. If is not set to \"<i>graphics</i>\"<i>  </i>mode,  it will automatically be set to \"<i>graphics</i>\" mode. See <b>setscreen</b> for details.<p>\r\n</p>",
       "text_content": " The screen should be in a\"graphics\" mode. If is not set to \"graphics\"  mode,  it will automatically be set to \"graphics\" mode. See setscreen for details.\r\n",
-      "mdown_content": "The screen should be in a\"_graphics_\" mode. If is not set to \"_graphics_\"  mode,  it will automatically be set to \"_graphics_\" mode. See **setscreen** for details."
+      "mdown_content": "The screen should be in a\"_graphics_\" mode. If is not set to \"_graphics_\"  mode,  it will automatically be set to \"_graphics_\" mode. See **setscreen** for details.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"drawdot.html\">drawdot</a></b>, which is used for setting the <a href=\"color.html\">color</a> of a pixel. See also <b><a href=\"maxx.html\">maxx</a></b> and <b><a href=\"maxy.html\">maxy</a></b>, which are used to determine the number of pixels on the screen. See also <b><a href=\"sound.html\">sound</a></b>, which causes the computer to make a <a href=\"sound.html\">sound</a>.<p>\r\nSee also predefined unit <b><a href=\"viewmodule.html\">View</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " drawdot, which is used for setting the color of a pixel. See also maxx and maxy, which are used to determine the number of pixels on the screen. See also sound, which causes the computer to make a sound.\r\nSee also predefined unit View.\r\n",
-      "mdown_content": "**[drawdot.html](drawdot)**, which is used for setting the [color.html](color) of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen. See also **[sound.html](sound)**, which causes the computer to make a [sound.html](sound).\nSee also predefined unit **[viewmodule.html](View)**."
+      "mdown_content": "**[drawdot.html](drawdot)**, which is used for setting the [color.html](color) of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen. See also **[sound.html](sound)**, which causes the computer to make a [sound.html](sound).\n\nSee also predefined unit **[viewmodule.html](View)**.\n"
     }
   ],
   "dependencies": [

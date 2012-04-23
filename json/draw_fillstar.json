@@ -6,16 +6,16 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.FillStar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Draw.FillStar (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**Draw.FillStar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
+      "mdown_content": "**Draw.FillStar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "images": [
         "draw_fillstar01.gif"
       ],
-      "raw_content": "The <b>Draw.FillStar </b>procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a star outlined in a different color, use <b>Draw.FillStar</b> with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Star</b> with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
+      "raw_content": "The <b>Draw.FillStar </b>procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a star outlined in a different color, use <b>Draw.FillStar</b> with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Star</b> with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center><img src=\"draw_fillstar01.gif\"></center>",
       "text_content": " The Draw.FillStar procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (x1, y1) to (x2, y2) and filled using the specified Color. To get a star outlined in a different color, use Draw.FillStar with the Color parameter set to the fill color and then call Draw.Star with the Color parameter set to the border color. If y1 is greater than y2, then the star is drawn upside down.\r\n\r\n\r\n",
-      "mdown_content": "The **Draw.FillStar** procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a star outlined in a different color, use **Draw.FillStar** with the _Color_ parameter set to the fill color and then call **Draw.Star** with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the star is drawn upside down."
+      "mdown_content": "The **Draw.FillStar** procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) and filled using the specified _Color_. To get a star outlined in a different color, use **Draw.FillStar** with the _Color_ parameter set to the fill color and then call **Draw.Star** with the _Color_ parameter set to the border color. If _y1_ is greater than _y2_, then the star is drawn upside down.\n\n\n\n![Doc Image](draw_fillstar01.gif)\n"
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3.<p>\r\n</p>",
       "text_content": " This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3.\r\n\r\n    ",
-      "mdown_content": "This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3."
+      "mdown_content": "This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3.\n"
     },
     {
       "title": "Execute",
@@ -40,13 +40,13 @@
       "title": "Details",
       "raw_content": "The <b>Draw.FillStar</b> procedure is useful for drawing the American flag.<p>\r\nThe screen must be in a \"<i>graphics</i>\" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, an error will occur.</p>\n<p>\r\n</p>",
       "text_content": " The Draw.FillStar procedure is useful for drawing the American flag.\r\nThe screen must be in a \"graphics\" mode. See the View.Set procedure for details. If the screen is not in a \"graphics\" mode, an error will occur.\r\n",
-      "mdown_content": "The **Draw.FillStar** procedure is useful for drawing the American flag.\nThe screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur."
+      "mdown_content": "The **Draw.FillStar** procedure is useful for drawing the American flag.\n\nThe screen must be in a \"_graphics_\" mode. See the **View.Set** procedure for details. If the screen is not in a \"_graphics_\" mode, an error will occur.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Draw.FillStar</b>, not by calling <b>FillStar</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Draw.FillStar, not by calling FillStar.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.FillStar**, not by calling **FillStar**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Draw.FillStar**, not by calling **FillStar**.\n"
     },
     {
       "title": "See also",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
       "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit."
+      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit.\n"
     }
   ],
   "dependencies": [

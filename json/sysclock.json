@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sysclock</b> ( <b>var</b> <i>c</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " sysclock ( var c : int )\r\n",
-      "mdown_content": "**sysclock** ( **var** _c_ : **int** )"
+      "mdown_content": "**sysclock** ( **var** _c_ : **int** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sysclock</b> statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable <i>c </i>is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where <b>sysclock</b> returns the same value as <b>clock</b>.<p>\r\n</p>",
       "text_content": " The sysclock statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable c is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where sysclock returns the same value as clock.\r\n",
-      "mdown_content": "The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable _c_ is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**."
+      "mdown_content": "The **sysclock** statement is used on a multitasking system such as UNIX to determine the amount of time that has been used by this program (process). Variable _c_ is assigned the number of central processor milliseconds assigned to this program. This is of little use on a personal computer, where **sysclock** returns the same value as **clock**.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "On a UNIX system, this program tells you how much time it has used.<p>\r\n</p>",
       "text_content": " On a UNIX system, this program tells you how much time it has used.\r\n\r\n",
-      "mdown_content": "On a UNIX system, this program tells you how much time it has used."
+      "mdown_content": "On a UNIX system, this program tells you how much time it has used.\n"
     },
     {
       "title": "See also",
@@ -35,7 +35,7 @@
       ],
       "raw_content": "<b><a href=\"delay.html\">delay</a></b>, <b><a href=\"time.html\">time</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " delay, time, clock, wallclock and date statements.\r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[delay.html](delay)**, **[time.html](time)**, **[clock.html](clock)**, **[wallclock.html](wallclock)** and **[date.html](date)** statements.\nSee also predefined unit **[timemodule.html](Time)**."
+      "mdown_content": "**[delay.html](delay)**, **[time.html](time)**, **[clock.html](clock)**, **[wallclock.html](wallclock)** and **[date.html](date)** statements.\n\nSee also predefined unit **[timemodule.html](Time)**.\n"
     }
   ],
   "dependencies": [

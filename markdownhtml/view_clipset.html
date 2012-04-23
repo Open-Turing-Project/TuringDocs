@@ -6,10 +6,13 @@
 
 <h2>Description</h2>
 
-<p>The <strong>View.ClipSet</strong> procedure sets the clipping region to the rectangle specified by (<em>x1</em>, <em>y1</em>) - (<em>x2</em>, <em>y2</em>). If a clipping region already exist, it is replaced by the specified rectangle.
-A clipping region is the region in which the output will appear. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.
-To set the initial clipping, or remove the old region and replace it with a new one, use <strong>View.ClipSet</strong>. To set the clipping region back to the entire screen or window, use <strong>View.ClipOff</strong>.
-These commands only work in "<em>graphics</em>" mode.</p>
+<p>The <strong>View.ClipSet</strong> procedure sets the clipping region to the rectangle specified by (<em>x1</em>, <em>y1</em>) - (<em>x2</em>, <em>y2</em>). If a clipping region already exist, it is replaced by the specified rectangle.</p>
+
+<p>A clipping region is the region in which the output will appear. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.</p>
+
+<p>To set the initial clipping, or remove the old region and replace it with a new one, use <strong>View.ClipSet</strong>. To set the clipping region back to the entire screen or window, use <strong>View.ClipOff</strong>.</p>
+
+<p>These commands only work in "<em>graphics</em>" mode.</p>
 
 <h2>Example</h2>
 
@@ -37,8 +40,9 @@ These commands only work in "<em>graphics</em>" mode.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>View.ClipSet</strong>, not by calling <strong>ClipSet</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>View.ClipSet</strong>, not by calling <strong>ClipSet</strong>.</p>
 
 <h2>See also</h2>
 

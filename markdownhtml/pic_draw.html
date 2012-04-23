@@ -6,19 +6,22 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.Draw</strong> is used to draw a picture on the screen. The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>).
-The <em>mode</em> parameter has one of the following values:</p>
+<p><strong>Pic.Draw</strong> is used to draw a picture on the screen. The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>).</p>
 
-<p><em>picCopy</em> This draws the picture on top of what was underneath, obscuring it completely.
-<em>picXor</em> This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
-<em>picMerge</em> This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
-<em>picUnderMerge</em> This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
+<p>The <em>mode</em> parameter has one of the following values:</p>
+
+<p><em>picCopy</em>   This draws the picture on top of what was underneath, obscuring it completely.
+<em>picXor</em>   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
+<em>picMerge</em>   This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
+<em>picUnderMerge</em>   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
 
 <h2>Details</h2>
 
 <p>If the <strong>Pic.Draw</strong> call fails, <strong>Error.Last</strong> will return a non-zero value indicating the reason for the failure. <strong>Error.LastMsg</strong> will return a string which contains the textual version of the error.</p>
 
-<p><img src="pic_draw01.gif" alt="Doc image" /></p>
+<p><img src="pic_draw01.gif" alt="Doc Image" /></p>
+
+<p><strong>Display Modes with Pic.Draw</strong></p>
 
 <h2>Example</h2>
 
@@ -41,11 +44,14 @@ The <em>mode</em> parameter has one of the following values:</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.Draw</strong>, not by calling <strong>Draw</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.Draw</strong>, not by calling <strong>Draw</strong>.</p>
 
 <h2>See also</h2>
 
-<p><a href="View.Update">view_update.html</a> for information on howto produce smooth animation.
-<a href="Pic.DrawSpecial">pic_drawspecial.html</a> for information on howto make pictures appear using special effects such as wipes and slides.
-<a href="Pic.DrawFrames">pic_drawframes.html</a> for information on howto display multiple frame images such as are obtained from GIF files.</p>
+<p><a href="View.Update">view_update.html</a> for information on howto produce smooth animation.</p>
+
+<p><a href="Pic.DrawSpecial">pic_drawspecial.html</a> for information on howto make pictures appear using special effects such as wipes and slides.</p>
+
+<p><a href="Pic.DrawFrames">pic_drawframes.html</a> for information on howto display multiple frame images such as are obtained from GIF files.</p>

@@ -6,10 +6,13 @@
 
 <h2>Description</h2>
 
-<p>The <strong>strnat</strong> function is used to convert a string to a natural number. The natural number is equivalent to string <em>s</em>. The number <em>base</em> parameter is optional, for example, <strong>strnat</strong>("47") = 47.
-String <em>s</em> must consist of a possibly null sequence of blanks, then an optional plus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c &#133; (alternately A, B, C &#133;) which represent the digit values 10, 11, 12 &#133; The <em>base</em>, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, <strong>strnat</strong>("FF", 16) = 255.
-The <strong>natstr</strong> function is the inverse of <strong>strnat</strong>, so for any natural number <em>n</em>, <strong>strnat</strong>( <strong>natstr</strong> (<em>n</em>)) = <em>n</em>.
-The <strong>strnat</strong> function is similar to <strong>strint</strong>, except that <strong>strnat</strong> handles values that are larger than <strong>int</strong> values and does not handle negative values.</p>
+<p>The <strong>strnat</strong> function is used to convert a string to a natural number. The natural number is equivalent to string <em>s</em>. The number <em>base</em> parameter is optional, for example, <strong>strnat</strong>("47") = 47.</p>
+
+<p>String <em>s</em> must consist of a possibly null sequence of blanks, then an optional plus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c &#133; (alternately A, B, C &#133;) which represent the digit values 10, 11, 12 &#133; The <em>base</em>, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, <strong>strnat</strong>("FF", 16) = 255.</p>
+
+<p>The <strong>natstr</strong> function is the inverse of <strong>strnat</strong>, so for any natural number <em>n</em>, <strong>strnat</strong>( <strong>natstr</strong> (<em>n</em>)) = <em>n</em>.</p>
+
+<p>The <strong>strnat</strong> function is similar to <strong>strint</strong>, except that <strong>strnat</strong> handles values that are larger than <strong>int</strong> values and does not handle negative values.</p>
 
 <h2>See also</h2>
 

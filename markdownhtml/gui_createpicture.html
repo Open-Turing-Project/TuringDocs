@@ -6,12 +6,17 @@
 
 <h2>Description</h2>
 
-<p>Creates a picture and returns the picture's widget ID.
-The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.
-The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture. The <em>picture</em> parameter specifies the picture ID of the picture. The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>mergePic</em> parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window.
-A picture widget is a passive widget and cannot be enabled or disabled.</p>
+<p>Creates a picture and returns the picture's widget ID.</p>
 
-<p><img src="gui_createpicture01.gif" alt="Doc image" /></p>
+<p>The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.</p>
+
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture. The <em>picture</em> parameter specifies the picture ID of the picture. The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>mergePic</em> parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window.</p>
+
+<p>A picture widget is a passive widget and cannot be enabled or disabled.</p>
+
+<p><img src="gui_createpicture01.gif" alt="Doc Image" /></p>
+
+<p><strong>Two Pictures</strong></p>
 
 <h2>Example</h2>
 
@@ -41,8 +46,9 @@ A picture widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Details</h2>
 
-<p>When <strong>GUI.CreatePicture</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
-A picture widget is a passive widget and cannot be enabled or disabled.</p>
+<p>When <strong>GUI.CreatePicture</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
+
+<p>A picture widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Details</h2>
 
@@ -52,5 +58,6 @@ A picture widget is a passive widget and cannot be enabled or disabled.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreatePicture</strong>, not by calling <strong>CreatePicture</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreatePicture</strong>, not by calling <strong>CreatePicture</strong>.</p>

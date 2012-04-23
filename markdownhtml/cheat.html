@@ -4,20 +4,23 @@
 
 <p>A <em>typeCheat</em> is one of:</p>
 
-<p>(a)<strong>cheat</strong> (<em>targetType</em>, <em>expn</em> <strong>[</strong> : <em>sizeSpec</em> <strong>]</strong> )
-(b)<strong>#</strong> <em>expn</em>
-(c)<em>id</em> : <strong>cheat</strong> <em>typeSpec</em></p>
+<p>(a) <strong>cheat</strong> (<em>targetType</em>, <em>expn</em> <strong>[</strong> : <em>sizeSpec</em> <strong>]</strong> )
+(b) <strong>#</strong> <em>expn</em>
+(c) <em>id</em> : <strong>cheat</strong> <em>typeSpec</em></p>
 
 <h2>Description</h2>
 
-<p>A type cheat interprets the representation (bits) of one type as another type. Type cheats are dirty (machine-dependent) and sometimes dangerous (arbitrary corruption) and should be used only by programmers who know the underlying computer representation of values.
-Form (b) is a short form type cheat in which the target type is a natural number.
-Form (c) is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as <em>typeSpec</em>.</p>
+<p>A type cheat interprets the representation (bits) of one type as another type. Type cheats are dirty (machine-dependent) and sometimes dangerous (arbitrary corruption) and should be used only by programmers who know the underlying computer representation of values.</p>
+
+<p>Form (b) is a short form type cheat in which the target type is a natural number.</p>
+
+<p>Form (c) is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as <em>typeSpec</em>.</p>
 
 <h2>Example</h2>
 
-<p>The character 'B' is assigned to variable <em>i</em>, whose type is considered to be <strong>char</strong> (although it is really <strong>int1</strong>).
-This assignment is equivalent (on byte oriented computers) to either of the following:</p>
+<p>The character 'B' is assigned to variable <em>i</em>, whose type is considered to be <strong>char</strong> (although it is really <strong>int1</strong>).</p>
+
+<p>This assignment is equivalent (on byte oriented computers) to either of the following:</p>
 
 <pre><code>    var i : int1        % One byte integer
     cheat (char, i) := 'B'        i := cheat (int1, 'B')
@@ -28,13 +31,27 @@ This assignment is equivalent (on byte oriented computers) to either of the foll
 
 <p>The form of <em>targetType</em> must be one of:</p>
 
-<p>In form (a) the beginning identifier <em>id</em> must be the name of a module, monitor or class that exports the <em>typeId</em>. Each of <em>numberOfCharacters</em> and <em>maximumLength</em> must be compile time integer expressions.
-If the <em>expn</em> in a type cheat is a variable reference and the <em>sizeSpec</em> is omitted, the type cheat is considered to be a variable whose type is <em>targetType</em>. This allows, for example, the type cheat to be assigned to, as in:</p>
+<p>(a)   [ <em>id</em> . ] <em>typeId</em>
+(b)   <strong>int</strong>, <strong>int1</strong>, <strong>int2</strong> or <strong>int4</strong>
+(c)   <strong>nat</strong>, <strong>nat1</strong>, <strong>nat2</strong> or <strong>nat4</strong>
+(d)   <strong>boolean</strong>
+(e)   <strong>char</strong> [ (<em>numberOfCharacters</em> ) ]
+(f)   <strong>string</strong> [ (<em>maximumLength</em> ) ]
+(g)   <strong>addressint</strong></p>
 
-<p>If the <em>expn</em> is a value that is not a variable reference, or if <em>sizeSpec</em> is present, the type cheat is an expression value whose type is <em>targetType</em>.
-The <em>sizeSpec</em> is a compile time integer expression giving the size of the <em>expn'</em>s value. It can be specified only for integer or natural number values (where it must be 1, 2 or 4) or real values (where it must be 4 or 8).
-A type cheat is carried out in two steps. The first step converts the value if necessary to the size given by <em>sizeSpec</em>. The second step, which involves no generated code, interprets the value as the target type.
-The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # <em>expn</em> is the same as <strong>cheat</strong> (<strong>nat</strong><em>n</em>, <em>expn</em>) where <em>n</em> is determined as follows. If the <em>expn</em> is a variable or expression of size 1, 2 or 4, <em>n</em> is the size of the item, otherwise <em>n</em> is 4.</p>
+<p>In form (a) the beginning identifier <em>id</em> must be the name of a module, monitor or class that exports the <em>typeId</em>. Each of <em>numberOfCharacters</em> and <em>maximumLength</em> must be compile time integer expressions.</p>
+
+<p>If the <em>expn</em> in a type cheat is a variable reference and the <em>sizeSpec</em> is omitted, the type cheat is considered to be a variable whose type is <em>targetType</em>. This allows, for example, the type cheat to be assigned to, as in:</p>
+
+<p><strong>cheat</strong> (<strong>char</strong>, <em>i</em>) := 'B'</p>
+
+<p>If the <em>expn</em> is a value that is not a variable reference, or if <em>sizeSpec</em> is present, the type cheat is an expression value whose type is <em>targetType</em>.</p>
+
+<p>The <em>sizeSpec</em> is a compile time integer expression giving the size of the <em>expn'</em>s value. It can be specified only for integer or natural number values (where it must be 1, 2 or 4) or real values (where it must be 4 or 8).</p>
+
+<p>A type cheat is carried out in two steps. The first step converts the value if necessary to the size given by <em>sizeSpec</em>. The second step, which involves no generated code, interprets the value as the target type.</p>
+
+<p>The prefix operator # is a short form for a class of type cheats. It interprets its argument as a natural number. In general, # <em>expn</em> is the same as <strong>cheat</strong> (<strong>nat</strong><em>n</em>, <em>expn</em>) where <em>n</em> is determined as follows. If the <em>expn</em> is a variable or expression of size 1, 2 or 4, <em>n</em> is the size of the item, otherwise <em>n</em> is 4.</p>
 
 <h2>Example</h2>
 

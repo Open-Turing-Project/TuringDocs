@@ -7,11 +7,15 @@
 
 <h2>Description</h2>
 
-<p>The <strong>buttonwait</strong> procedure gets information about a mouse event and removes it from the queue.
-The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>buttonwait</strong> returns instantly. If there isn't such an event, <strong>buttonwait</strong> waits until there is one and then returns (much like <strong>getch</strong> handles keystrokes).
-In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
-The parameters <em>x</em> and <em>y</em> are set to the position of the mouse cursor when the button was pressed. The parameter <em>buttonnumber</em> is set to 1 when in "<em>single-button mode</em>". In  "<em>multi-button mode</em>", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <em>buttonupdown</em> is set to 1, if a button was pressed and 0 if a button was released.</p>
+<p>The <strong>buttonwait</strong> procedure gets information about a mouse event and removes it from the queue.</p>
+
+<p>The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>buttonwait</strong> returns instantly. If there isn't such an event, <strong>buttonwait</strong> waits until there is one and then returns (much like <strong>getch</strong> handles keystrokes).</p>
+
+<p>In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.</p>
+
+<p>In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
+
+<p>The parameters <em>x</em> and <em>y</em> are set to the position of the mouse cursor when the button was pressed. The parameter <em>buttonnumber</em> is set to 1 when in "<em>single-button mode</em>". In  "<em>multi-button mode</em>", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <em>buttonupdown</em> is set to 1, if a button was pressed and 0 if a button was released.</p>
 
 <h2>Example</h2>
 
@@ -64,5 +68,6 @@ The parameters <em>x</em> and <em>y</em> are set to the position of the mouse cu
 
 <h2>See also</h2>
 
-<p><strong><a href="buttonwait"></a></strong> to see if an appropriate event is in the queue. See also <strong><a href="buttonchoose">buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".
-See also predefined unit <strong><a href="Mouse">mousemodule.html</a></strong>.</p>
+<p><strong><a href="buttonwait"></a></strong> to see if an appropriate event is in the queue. See also <strong><a href="buttonchoose">buttonchoose.html</a></strong> to switch between "<em>single-button mode</em>" and "<em>multi-button mode</em>".</p>
+
+<p>See also predefined unit <strong><a href="Mouse">mousemodule.html</a></strong>.</p>

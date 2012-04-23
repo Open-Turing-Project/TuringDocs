@@ -5,15 +5,12 @@
 **Font.Free** (_fontID_ : **int**)
 
 
-
 ##Description
 **Font.Free** is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a **Font.Free** for every **Font.New**, the number of simultaneously defined fonts is kept to a minimum.
 
 
-
 ##Details
 If **Font.Free** is passed an invalid font ID, a fatal error occurs. If the **Font.Free** call fails for other (non-fatal) reasons, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
-
 
 
 ##Example
@@ -40,6 +37,6 @@ The program prints out several phrases in a variety of fonts.
         Font.Free (font4)
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Font.Free**, not by calling **Free**.
 
+This means that you can only call the function by calling **Font.Free**, not by calling **Free**.
 

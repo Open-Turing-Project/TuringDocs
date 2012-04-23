@@ -6,16 +6,21 @@
 
 <h2>Description</h2>
 
-<p>Attempts to open a connection to port specified by the <em>port</em> parameter on the machine specified by <em>netAddr</em> parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the <strong>Net.WaitForConnection</strong> function.
-If successful, <strong>Net.OpenConnection</strong> returns a network stream descriptor which can be used with the <strong>put</strong>, <strong>get</strong>, <strong>read</strong>, and <strong>write</strong> statements and <strong>eof</strong> function to send and receive data to the listening program. It is also the parameter used for the <strong>Net.CloseConnection</strong>, <strong>Net.BytesAvailable</strong>, <strong>Net.CharAvailable</strong>, <strong>Net.LineAvailable</strong>, and <strong>Net.TokenAvailable</strong> functions.
-The <em>netAddr</em> parameter is a string specifying the net address of the machine to be connected to. This can either be the full hostname or the numerical address.
-In general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.
-The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
+<p>Attempts to open a connection to port specified by the <em>port</em> parameter on the machine specified by <em>netAddr</em> parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the <strong>Net.WaitForConnection</strong> function.</p>
+
+<p>If successful, <strong>Net.OpenConnection</strong> returns a network stream descriptor which can be used with the <strong>put</strong>, <strong>get</strong>, <strong>read</strong>, and <strong>write</strong> statements and <strong>eof</strong> function to send and receive data to the listening program. It is also the parameter used for the <strong>Net.CloseConnection</strong>, <strong>Net.BytesAvailable</strong>, <strong>Net.CharAvailable</strong>, <strong>Net.LineAvailable</strong>, and <strong>Net.TokenAvailable</strong> functions.</p>
+
+<p>The <em>netAddr</em> parameter is a string specifying the net address of the machine to be connected to. This can either be the full hostname or the numerical address.</p>
+
+<p>In general, system program listen in on ports with numbers below 1024. Port numbers above 1024 are generally available for use by user created programs.</p>
+
+<p>The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
 
 <h2>Details</h2>
 
-<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
-It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
+<p>The <strong>Net</strong> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols</p>
+
+<p>It is possible for Firewalls to interfere with the actions of the <strong>Net</strong> module, preventing connections from taking place.</p>
 
 <h2>Example</h2>
 
@@ -91,8 +96,9 @@ It is possible for Firewalls to interfere with the actions of the <strong>Net</s
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Net.OpenConnection</strong>, not by calling <strong>OpenConnection</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Net.OpenConnection</strong>, not by calling <strong>OpenConnection</strong>.</p>
 
 <h2>See also</h2>
 

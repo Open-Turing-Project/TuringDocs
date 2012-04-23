@@ -7,18 +7,29 @@
 
 <h2>Description</h2>
 
-<p><strong>Dir.GetLong</strong> is part of a series of four subprograms that help users get directory listings. <strong>Dir.GetLong</strong> is used to get the names and assorted information of the files in the directory. Each time the function is called, it returns the name and information of the next file in the directory. The names are not sorted. When there are no more file names in the directory, <strong>Dir.GetLong</strong> returns the empty string in the <em>entryName</em> parameter.
-The <em>size</em> parameter is the size of the file in bytes. The <em>attribute</em> parameter has its individual bits set as follows (the individual bits can be extracted using the <strong>bits</strong> operator):
-Bit 0  <em>attrDir</em>   set to 1 if entry is a directory.
-Bit 1  <em>attrRead</em>  set to 1 if the program can read the file.
-Bit 2  <em>attrWrite</em>  set to 1 if the program can write the file.
-Bit 3  <em>attrExecute</em>  set to 1 if the program can execute the file.
-Bit 4  <em>attrHidden</em>  set to 1 if the entry if a hidden file (PC, Mac).
-Bit 5  <em>attrSystem</em>  set to 1 if the entry is a system file (PC only).
-Bit 6  <em>attrVolume</em>  set to 1 if the entry is a volume name (PC only).
-Bit 7  <em>attrArchive</em>  set to 1 if the entry has archive bit set (PC only).
-The <em>attr...</em> constants are defined in the <strong>Dir</strong> unit. They correspond to the values of <em>attribute</em> if a specified bit is set.  For example, <em>attrSystem</em> is the value of the <em>attribute</em> parameter if bit 5 is set to 1. You can <strong>and</strong> or <strong>or</strong> these constants to get combinations of specific file attributes.
-The <em>fileTime</em> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <strong>Time.SecDate</strong></p>
+<p><strong>Dir.GetLong</strong> is part of a series of four subprograms that help users get directory listings. <strong>Dir.GetLong</strong> is used to get the names and assorted information of the files in the directory. Each time the function is called, it returns the name and information of the next file in the directory. The names are not sorted. When there are no more file names in the directory, <strong>Dir.GetLong</strong> returns the empty string in the <em>entryName</em> parameter.</p>
+
+<p>The <em>size</em> parameter is the size of the file in bytes. The <em>attribute</em> parameter has its individual bits set as follows (the individual bits can be extracted using the <strong>bits</strong> operator):</p>
+
+<p>Bit 0  <em>attrDir</em>   set to 1 if entry is a directory.</p>
+
+<p>Bit 1  <em>attrRead</em>  set to 1 if the program can read the file.</p>
+
+<p>Bit 2  <em>attrWrite</em>  set to 1 if the program can write the file.</p>
+
+<p>Bit 3  <em>attrExecute</em>  set to 1 if the program can execute the file.</p>
+
+<p>Bit 4  <em>attrHidden</em>  set to 1 if the entry if a hidden file (PC, Mac).</p>
+
+<p>Bit 5  <em>attrSystem</em>  set to 1 if the entry is a system file (PC only).</p>
+
+<p>Bit 6  <em>attrVolume</em>  set to 1 if the entry is a volume name (PC only).</p>
+
+<p>Bit 7  <em>attrArchive</em>  set to 1 if the entry has archive bit set (PC only).</p>
+
+<p>The <em>attr...</em> constants are defined in the <strong>Dir</strong> unit. They correspond to the values of <em>attribute</em> if a specified bit is set.  For example, <em>attrSystem</em> is the value of the <em>attribute</em> parameter if bit 5 is set to 1. You can <strong>and</strong> or <strong>or</strong> these constants to get combinations of specific file attributes.</p>
+
+<p>The <em>fileTime</em> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <strong>Time.SecDate</strong></p>
 
 <h2>Details</h2>
 
@@ -73,5 +84,6 @@ The <em>fileTime</em> is the time of last modification of the file. It is return
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Dir.GetLong</strong>, not by calling <strong>GetLong</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Dir.GetLong</strong>, not by calling <strong>GetLong</strong>.</p>

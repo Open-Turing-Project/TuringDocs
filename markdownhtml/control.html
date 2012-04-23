@@ -2,30 +2,50 @@
 
 <h2>FOR</h2>
 
-<p>... <em>statements</em> ...
+<p> 
+<strong>for</strong> [ <strong>decreasing</strong> ] <em>variable</em> : <em>startValue</em> .. <em>endValue</em>
+... <em>statements</em> ...
 <strong>exit when</strong>  <em>expn</em>
-... <em>statements</em> ...</p>
+... <em>statements</em> ...
+<strong>end for</strong></p>
+
+<p> </p>
 
 <h2>LOOP</h2>
 
-<p>... <em>statements</em> ...
+<p> 
+<strong>loop</strong>
+... <em>statements</em> ...
 <strong>exit when</strong>  <em>expn</em>
-... <em>statements</em> ...</p>
+... <em>statements</em> ...
+<strong>end loop</strong></p>
+
+<p> </p>
 
 <h2>IF</h2>
 
-<p>... <em>statements</em> ...
+<p> 
+<strong>if</strong> <em>condition</em> <strong>then</strong>
+... <em>statements</em> ...
 { <strong>elsif</strong> <em>condition</em> <strong>then</strong>
 ... <em>statements</em> ... }
 [ <strong>else</strong>
-... <em>statements</em> ... ]</p>
+... <em>statements</em> ... ]
+<strong>end if</strong></p>
+
+<p> </p>
 
 <h2>CASE</h2>
 
-<p>... <em>statements</em> ...
+<p> 
+<strong>case</strong> <em>expn</em> <strong>of</strong>
+... <em>statements</em> ...
 { <strong>label</strong> <em>expn</em> {, <em>expn</em>
 ... <em>statements</em> ... }
 [ <strong>label :</strong>
-... <em>statements</em> ... ]</p>
+... <em>statements</em> ... ]
+<strong>end case</strong></p>
+
+<p> </p>
 
 <p>Any number of <strong>exit</strong> and <strong>exit when</strong> statements can appear at any place inside <strong>for</strong> .. <strong>end for</strong> constructs and <strong>loop</strong> .. <strong>end loop</strong> constructs.</p>

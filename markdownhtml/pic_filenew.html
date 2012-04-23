@@ -6,8 +6,13 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.FileNew</strong> is used to obtain a picture from a file. The <strong>Pic.FileNew</strong> procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls <strong>Pic.Free</strong> with the picture ID. The picture can be used with the <strong>Pic.Draw</strong> and <strong>Pic.Save</strong>.
-The _fileName_parameter must give the format of the file:</p>
+<p><strong>Pic.FileNew</strong> is used to obtain a picture from a file. The <strong>Pic.FileNew</strong> procedure allocates the memory for the picture, which can be very large for pictures of large areas. The memory is freed up when the program calls <strong>Pic.Free</strong> with the picture ID. The picture can be used with the <strong>Pic.Draw</strong> and <strong>Pic.Save</strong>.</p>
+
+<p>The _fileName_parameter must give the format of the file:</p>
+
+<p>GIF files   "GIF:filename" or "filename.GIF"
+JPG files   "JPG:filename" or "filename.JPG"
+BMP files   "BMP:filename" or "filename.BMP"</p>
 
 <h2>Details</h2>
 
@@ -39,5 +44,6 @@ The _fileName_parameter must give the format of the file:</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Pic.FileNew</strong>, not by calling <strong>FileNew</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Pic.FileNew</strong>, not by calling <strong>FileNew</strong>.</p>

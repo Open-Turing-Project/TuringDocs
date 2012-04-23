@@ -2,18 +2,25 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreatePictureButton</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,    <em>actionProc</em> : <strong>procedure</strong> x ()) : <strong>int</strong>
-<strong>GUI.CreatePictureButtonFull</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,    <em>shortcut</em> : <strong>char</strong>, <em>mergePic</em> : <strong>boolean</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreatePictureButton</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,    <em>actionProc</em> : <strong>procedure</strong> x ()) : <strong>int</strong></p>
+
+<p><strong>GUI.CreatePictureButtonFull</strong> (<em>x</em>, <em>y</em>, <em>picture</em> : <strong>int</strong>,    <em>actionProc</em> : <strong>procedure</strong> x (), <em>width</em>, <em>height</em> : <strong>int</strong>,     <em>shortcut</em> : <strong>char</strong>, <em>mergePic</em> : <strong>boolean</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
-<p>Creates a picture button and returns the button's widget ID.
-Picture buttons behave like buttons (see <strong>GUI.CreateButton</strong>) except that instead of text on the button, a picture specified by the user is displayed on the button. The picture button widget responds to mouse clicks and keystrokes in the same manner as a regular button widget.
-The picture must be created by the program beforehand using <strong>Pic.New</strong> or <strong>Pic.FileNew</strong>. The resulting picture can then be used as a parameter to <strong>GUI.CreatePictureButton</strong><em>.</em> In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library.
-The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture button. The <em>picture</em> parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>actionProc</em> parameter specifies the name of a procedure that is called when the picture button is pressed.
-For <strong>GUI.CreatePictureButtonFull</strong>, the <em>width</em> and <em>height</em> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> functions. If <em>width</em> and <em>height</em> are larger than the picture, the picture is centered in the button. The <em>shortCut_parameter is the keystroke to be used as the button's shortcut. The </em>mergePic<em> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for </em>CreatePictureButton_.</p>
+<p>Creates a picture button and returns the button's widget ID.</p>
 
-<p><img src="gui_createpicturebutton_full01.gif" alt="Doc image" /></p>
+<p>Picture buttons behave like buttons (see <strong>GUI.CreateButton</strong>) except that instead of text on the button, a picture specified by the user is displayed on the button. The picture button widget responds to mouse clicks and keystrokes in the same manner as a regular button widget.</p>
+
+<p>The picture must be created by the program beforehand using <strong>Pic.New</strong> or <strong>Pic.FileNew</strong>. The resulting picture can then be used as a parameter to <strong>GUI.CreatePictureButton</strong><em>.</em> In general, pictures should be a maximum of about 50 pixels high and wide, although there is no built-in limit in the GUI library.</p>
+
+<p>The <em>x</em> and <em>y</em> parameters specify the lower-left corner of the picture button. The <em>picture</em> parameter specifies the picture ID of the picture to be displayed on the button. (Note that, in general, this picture should be fairly small.) The picture ID is received from a <strong>Pic.New</strong> or <strong>Pic.FileNew</strong> call. Do not call <strong>Pic.Free</strong> for this picture ID until the button has been disposed of by calling <strong>GUI.Dispose</strong>. The <em>actionProc</em> parameter specifies the name of a procedure that is called when the picture button is pressed.</p>
+
+<p>For <strong>GUI.CreatePictureButtonFull</strong>, the <em>width</em> and <em>height</em> parameters specify the width and height of the button. If they are set to 0, then the picture radio button is automatically sized to fit the picture. If you need to know the precise size of the button, use the <strong>GUI.GetWidth</strong> and <strong>GUI.GetHeight</strong> functions. If <em>width</em> and <em>height</em> are larger than the picture, the picture is centered in the button. The <em>shortCut_parameter is the keystroke to be used as the button's shortcut. The </em>mergePic<em> parameter specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the button (which is usually gray). This defaults to true for </em>CreatePictureButton_.</p>
+
+<p><img src="gui_createpicturebutton_full01.gif" alt="Doc Image" /></p>
+
+<p><strong>Two Picture Buttons</strong></p>
 
 <h2>Example</h2>
 
@@ -68,14 +75,18 @@ For <strong>GUI.CreatePictureButtonFull</strong>, the <em>width</em> and <em>hei
 
 <h2>Details</h2>
 
-<p>When <strong>GUI.CreatePictureButton</strong> or <strong>GUI.CreatePictureButtonFull</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.
-When a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.</p>
+<p>When <strong>GUI.CreatePictureButton</strong> or <strong>GUI.CreatePictureButtonFull</strong> is called, the newly created picture will be displayed immediately unless <strong>GUI.DisplayWhenCreated</strong> has been called with the <em>display</em> parameter set to false.</p>
+
+<p>When a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.</p>
 
 <h2>Details</h2>
 
 <p>The following GUI subprograms can be called with a picture button as the <em>widgetID</em> parameter:</p>
 
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Enable</strong>, <strong>GUI.Disable</strong>, <strong>GUI.Dispose</strong>, <strong>GUI.GetX</strong>, <strong>GUI.GetY</strong>, <strong>GUI.GetWidth</strong>, <strong>GUI.GetHeight</strong>, <strong>GUI.SetPosition</strong>, <strong>GUI.SetSize</strong>, <strong>GUI.SetPositionAndSize</strong></p>
+
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreatePictureButton</strong>, not by calling <strong>CreatePictureButton</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreatePictureButton</strong>, not by calling <strong>CreatePictureButton</strong>.</p>

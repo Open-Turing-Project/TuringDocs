@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>preAssertion </i>is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>pre</b> <i>trueFalseExpn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An preAssertion is:\r\n pre trueFalseExpn",
-      "mdown_content": "An _preAssertion_ is:\n\n**pre** _trueFalseExpn_\n"
+      "mdown_content": "An _preAssertion_ is:\n\n\n**pre** _trueFalseExpn_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "A <b>pre</b> assertion is a special form of an <b>assert</b> statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b> statements and <b>procedure</b> and <b>function</b> declarations for more details. See also <b>post</b> and <b>invariant</b> assertions.<p>\r\n</p>",
       "text_content": " A pre assertion is a special form of an assert statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the trueFalseExpn. The trueFalseExpn is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See assert statements and procedure and function declarations for more details. See also post and invariant assertions.\r\n",
-      "mdown_content": "A **pre** assertion is a special form of an **assert** statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the _trueFalseExpn_. The _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **post** and **invariant** assertions."
+      "mdown_content": "A **pre** assertion is a special form of an **assert** statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the _trueFalseExpn_. The _trueFalseExpn_ is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See **assert** statements and **procedure** and **function** declarations for more details. See also **post** and **invariant** assertions.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This function computes the average of <i>n values</i>. Its <b>pre</b> condition requires that <i>n</i> must be strictly positive, to avoid the possibility of dividing by zero when computing the average.<p>\r\n</p>",
       "text_content": " This function computes the average of n values. Its pre condition requires that n must be strictly positive, to avoid the possibility of dividing by zero when computing the average.\r\n\r\n",
-      "mdown_content": "This function computes the average of _n values_. Its **pre** condition requires that _n_ must be strictly positive, to avoid the possibility of dividing by zero when computing the average."
+      "mdown_content": "This function computes the average of _n values_. Its **pre** condition requires that _n_ must be strictly positive, to avoid the possibility of dividing by zero when computing the average.\n"
     },
     {
       "title": "Details",
       "raw_content": "A <b>pre</b> assertion can also be used in a <b>module</b>, <b>monitor</b>, <b>class</b> or <b>process</b> declaration to make sure that requirements for initialization are met.<p>\r\n</p>",
       "text_content": " A pre assertion can also be used in a module, monitor, class or process declaration to make sure that requirements for initialization are met.\r\n",
-      "mdown_content": "A **pre** assertion can also be used in a **module**, **monitor**, **class** or **process** declaration to make sure that requirements for initialization are met."
+      "mdown_content": "A **pre** assertion can also be used in a **module**, **monitor**, **class** or **process** declaration to make sure that requirements for initialization are met.\n"
     },
     {
       "title": "See also",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"module.html\">module</a></b> and <b><a href=\"process.html\">process</a></b>.<p>\r\n</p>",
       "text_content": " module and process.\r\n",
-      "mdown_content": "**[module.html](module)** and **[process.html](process)**."
+      "mdown_content": "**[module.html](module)** and **[process.html](process)**.\n"
     }
   ],
   "dependencies": [

@@ -13,8 +13,9 @@
 
 <h2>Description</h2>
 
-<p>A <strong>case</strong> statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond <strong>end</strong> <strong>case</strong>.
-The expression (<em>expn</em>) following the keyword <strong>case</strong> is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final <strong>label</strong> with no expression, that alternative is selected.</p>
+<p>A <strong>case</strong> statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond <strong>end</strong> <strong>case</strong>.</p>
+
+<p>The expression (<em>expn</em>) following the keyword <strong>case</strong> is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final <strong>label</strong> with no expression, that alternative is selected.</p>
 
 <h2>Example</h2>
 
@@ -42,5 +43,6 @@ The expression (<em>expn</em>) following the keyword <strong>case</strong> is ev
 
 <h2>Details</h2>
 
-<p>The case expression is required to match one of the labels. If it does not, there must be a final <strong>label</strong> with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, <strong>char</strong>, <strong>boolean</strong>, an <strong>enum</strong> type or strings.
-Note that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.</p>
+<p>The case expression is required to match one of the labels. If it does not, there must be a final <strong>label</strong> with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, <strong>char</strong>, <strong>boolean</strong>, an <strong>enum</strong> type or strings.</p>
+
+<p>Note that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.</p>

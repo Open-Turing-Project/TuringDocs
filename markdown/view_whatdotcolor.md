@@ -5,15 +5,12 @@
 **View.W****hatDotColor** ( _x_, _y_ : **int** ) : **int**
 
 
-
 ##Description
 The **View.WhatDotColor** function is used to determine the color number of the specified pixel. The alternate spelling is **View.WhatDotColour**.
 
 
-
 ##Example
 This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.
-
 
         View.Set ( "graphics" )
         var x, y : int := 0
@@ -43,14 +40,12 @@ Another example illustrates the use of **View.WhatDotColor** to determine the co
 The screen should be in a"_graphics_" mode. If is not set to "_graphics_"  mode,  it will automatically be set to "_graphics_" mode. See **View.Set** for details.
 
 
-
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **View.WhatDotColor**, not by calling **WhatDotColor**.
 
+This means that you can only call the function by calling **View.WhatDotColor**, not by calling **WhatDotColor**.
 
 
 ##See also
 **[draw_dot.html](Draw.Dot)**, which is used for setting the color of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen.
-
 

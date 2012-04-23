@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.W</b><b>hatDotColor</b> ( <i>x</i>, <i>y</i> : <b>int</b> ) : <b>int</b><p></p></font>",
       "text_content": "View.WhatDotColor ( x, y : int ) : int\r\n    ",
-      "mdown_content": "**View.W****hatDotColor** ( _x_, _y_ : **int** ) : **int**"
+      "mdown_content": "**View.W****hatDotColor** ( _x_, _y_ : **int** ) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.WhatDotColor</b> function is used to determine the color \r\n          number of the specified pixel. The alternate spelling is \r\n\t  <b>View.WhatDotColour</b>.<p>\r\n    </p>",
       "text_content": "The View.WhatDotColor function is used to determine the color \r\n          number of the specified pixel. The alternate spelling is \r\n\t  View.WhatDotColour.\r\n    ",
-      "mdown_content": "The **View.WhatDotColor** function is used to determine the color number of the specified pixel. The alternate spelling is **View.WhatDotColour**."
+      "mdown_content": "The **View.WhatDotColor** function is used to determine the color number of the specified pixel. The alternate spelling is **View.WhatDotColour**.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.<p>\r\n</p>",
       "text_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.\r\n\r\n    ",
-      "mdown_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored."
+      "mdown_content": "This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.\n"
     },
     {
       "title": "Execute",
@@ -37,19 +37,19 @@
       "title": "Example",
       "raw_content": "Another example illustrates the use of <b>View.WhatDotColor</b> to \r\n          determine the color of pixels in a window painted with multi-color\r\n\t  blocks. The actual color number appears in the block. The color\r\n\t  of the dot under the mouse cursor appears in the upper-left\r\n\t  corner of the window.  Note that you can also place the mouse\r\n\t  cursor over the black text indicating the color number.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,View.WhatDotColor2.t;View.WhatDotColor Example\"></object></p>\n<p></p>",
       "text_content": "Another example illustrates the use of View.WhatDotColor to \r\n          determine the color of pixels in a window painted with multi-color\r\n\t  blocks. The actual color number appears in the block. The color\r\n\t  of the dot under the mouse cursor appears in the upper-left\r\n\t  corner of the window.  Note that you can also place the mouse\r\n\t  cursor over the black text indicating the color number.\r\n          \r\n            ",
-      "mdown_content": "Another example illustrates the use of **View.WhatDotColor** to determine the color of pixels in a window painted with multi-colorblocks. The actual color number appears in the block. The colorof the dot under the mouse cursor appears in the upper-leftcorner of the window.  Note that you can also place the mousecursor over the black text indicating the color number.\n"
+      "mdown_content": "Another example illustrates the use of **View.WhatDotColor** to determine the color of pixels in a window painted with multi-colorblocks. The actual color number appears in the block. The colorof the dot under the mouse cursor appears in the upper-leftcorner of the window.  Note that you can also place the mousecursor over the black text indicating the color number.\n\n\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a\"<i>graphics</i>\" mode. If is not set to \r\n          \"<i>graphics</i>\"<i>  </i>mode,  it will automatically be set to \r\n\t  \"<i>graphics</i>\" mode. See <b>View.Set </b>for details.<p>\r\n    </p>",
       "text_content": "The screen should be in a\"graphics\" mode. If is not set to \r\n          \"graphics\"  mode,  it will automatically be set to \r\n\t  \"graphics\" mode. See View.Set for details.\r\n    ",
-      "mdown_content": "The screen should be in a\"_graphics_\" mode. If is not set to \"_graphics_\"  mode,  it will automatically be set to \"_graphics_\" mode. See **View.Set** for details."
+      "mdown_content": "The screen should be in a\"_graphics_\" mode. If is not set to \"_graphics_\"  mode,  it will automatically be set to \"_graphics_\" mode. See **View.Set** for details.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>View.WhatDotColor</b>, not by calling <b>WhatDotColor</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  View.WhatDotColor, not by calling WhatDotColor.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.WhatDotColor**, not by calling **WhatDotColor**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **View.WhatDotColor**, not by calling **WhatDotColor**.\n"
     },
     {
       "title": "See also",
@@ -60,7 +60,7 @@
       ],
       "raw_content": "<b><a href=\"draw_dot.html\">Draw.Dot</a></b>, which is used for setting \r\n          the color of a pixel. See also <b><a href=\"maxx.html\">maxx</a></b> and \r\n\t  <b><a href=\"maxy.html\">maxy</a></b>, which are used to determine the \r\n\t  number of pixels on the screen.<p>\r\n    </p>",
       "text_content": "Draw.Dot, which is used for setting \r\n          the color of a pixel. See also maxx and \r\n\t  maxy, which are used to determine the \r\n\t  number of pixels on the screen.\r\n    ",
-      "mdown_content": "**[draw_dot.html](Draw.Dot)**, which is used for setting the color of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen."
+      "mdown_content": "**[draw_dot.html](Draw.Dot)**, which is used for setting the color of a pixel. See also **[maxx.html](maxx)** and **[maxy.html](maxy)**, which are used to determine the number of pixels on the screen.\n"
     }
   ],
   "dependencies": [

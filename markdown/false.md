@@ -5,14 +5,11 @@
 **false**
 
 
-
 ##Description
 A **boolean** (**true**/**false**) variable can be either **true** or **false** (see **boolean** type).
 
 
-
 ##Example
-
 
 
         var found : boolean := false
@@ -26,5 +23,4 @@ A **boolean** (**true**/**false**) variable can be either **true** or **false** 
         end if
 ##Details
 The line **if** _found_=**true** **then** can be simplified to **if** _found_ **then** with no change to the meaning of the program.
-
 

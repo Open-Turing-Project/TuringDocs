@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>simutime</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " simutime : int\r\n",
-      "mdown_content": "**simutime** : **int**"
+      "mdown_content": "**simutime** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>simutime </b>function returns the number of simulated time units that have passed since program execution began.<p>\r\n</p>",
       "text_content": " The simutime function returns the number of simulated time units that have passed since program execution began.\r\n",
-      "mdown_content": "The **simutime** function returns the number of simulated time units that have passed since program execution began."
+      "mdown_content": "The **simutime** function returns the number of simulated time units that have passed since program execution began.\n"
     },
     {
       "title": "Details",
       "raw_content": "Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely faster than \"pause\" time.<p>\r\n</p>",
       "text_content": " Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely faster than \"pause\" time.\r\n",
-      "mdown_content": "Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely faster than \"pause\" time."
+      "mdown_content": "Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely faster than \"pause\" time.\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This prints out the simulated time passing between two processes. This will print out <i>3, 5, 6, 9, 10, 12, 15, 15, 18, 20, 21, ...</i><p>\r\n</p>",
       "text_content": " This prints out the simulated time passing between two processes. This will print out 3, 5, 6, 9, 10, 12, 15, 15, 18, 20, 21, ...\r\n\r\n",
-      "mdown_content": "This prints out the simulated time passing between two processes. This will print out _3, 5, 6, 9, 10, 12, 15, 15, 18, 20, 21, ..._"
+      "mdown_content": "This prints out the simulated time passing between two processes. This will print out _3, 5, 6, 9, 10, 12, 15, 15, 18, 20, 21, ..._\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported unqualified.<p>\r\nThis means that you can call the function by calling <b>simutime</b> or by calling <b>Concurrency.simutime</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported unqualified.\r\nThis means that you can call the function by calling simutime or by calling Concurrency.simutime.\r\n",
-      "mdown_content": "Exported unqualified.\nThis means that you can call the function by calling **simutime** or by calling **Concurrency.simutime**."
+      "mdown_content": "Exported unqualified.\n\nThis means that you can call the function by calling **simutime** or by calling **Concurrency.simutime**.\n"
     }
   ],
   "dependencies": [

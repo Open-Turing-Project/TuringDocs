@@ -1,5 +1,5 @@
 #Predefined Modules
-- [concurrency_empty.html](Concurrency.empty)
+- [concurrencymodule.html%20.html](Concurrency)- [concurrency_empty.html](Concurrency.empty)
 - [concurrency_getpriority.html](Concurrency.getpriority)
 - [concurrency_setpriority.html](Concurrency.setpriority)
 - [concurrency_simutime.html](Concurrency.simutime)
@@ -309,7 +309,7 @@
 - [time_secdate.html](Time.SecDate)
 - [time_secparts.html](Time.SecParts)
 
-- [typeconvmodule.html%20.html](TypeConv)- [intreal.html](intreal - integer-to-real function)
+- [typeconvmodule.html%20.html](TypeConv)- From Integer- [intreal.html](intreal - integer-to-real function)
 - [intstr.html](intstr - integer-to-string function)
 
 - From Nat- [natreal.html](natreal - natural number to real function)
@@ -358,7 +358,7 @@
 - [window_show.html](Window.Show)
 - [window_update.html](Window.Update)
 
-- Miscellaneous Subprograms- [addr.html](addr - address of a variable)
+- Miscellaneous Subprograms- Addresses and Sizes- [addr.html](addr - address of a variable)
 - [sizeof.html](sizeof - size of a type)
 
 - Arrays- [lower.html](lower - bound)

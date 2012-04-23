@@ -6,16 +6,16 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawstar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " drawstar (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**drawstar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
+      "mdown_content": "**drawstar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "images": [
         "drawstar01.gif"
       ],
-      "raw_content": "The <b>drawstar</b> procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center></center>",
+      "raw_content": "The <b>drawstar</b> procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>\r\n\r\n</p>\n<center><img src=\"drawstar01.gif\"></center>",
       "text_content": " The drawstar procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (x1, y1) to (x2, y2) using the specified Color. If y1 is greater than y2, then the star is drawn upside down.\r\n\r\n\r\n",
-      "mdown_content": "The **drawstar** procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_, then the star is drawn upside down."
+      "mdown_content": "The **drawstar** procedure is used to draw a star on the screen bounded by a rectangle described by the bottom left and top right corners of (_x1_, _y1_) to (_x2_, _y2_) using the specified _Color_. If _y1_ is greater than _y2_, then the star is drawn upside down.\n\n\n\n![Doc Image](drawstar01.gif)\n"
     },
     {
       "title": "Example",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program will draw two stars beside each other. The first will be in color 1 and the second star will be upside down and  in color 2.<p>\r\n</p>",
       "text_content": " This program will draw two stars beside each other. The first will be in color 1 and the second star will be upside down and  in color 2.\r\n\r\n    ",
-      "mdown_content": "This program will draw two stars beside each other. The first will be in color 1 and the second star will be upside down and  in color 2."
+      "mdown_content": "This program will draw two stars beside each other. The first will be in color 1 and the second star will be upside down and  in color 2.\n"
     },
     {
       "title": "Execute",
@@ -40,7 +40,7 @@
       "title": "Details",
       "raw_content": "The <b>drawstar</b> procedure is useful for drawing the American flag.<p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The drawstar procedure is useful for drawing the American flag.\r\nThe meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "The **drawstar** procedure is useful for drawing the American flag.\nThe meaning of the _Color_ number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
+      "mdown_content": "The **drawstar** procedure is useful for drawing the American flag.\n\nThe meaning of the _Color_ number depends on the current palette. See the **palette** statement.\n\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\n"
     },
     {
       "title": "See also",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures."
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.\n"
     }
   ],
   "dependencies": [

@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p>The <strong>RGB.AddColor</strong> function attempts to create a new color with the red, green and blue components specified. If successful, the function returns a new color number (usually one greater than <strong>maxcolor</strong>) and <strong>maxcolor</strong> is updated by adding 1 to it. If it is unsuccessful, the function returns 1 and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> can be used to determine the cause of the problem.
-The red, green and blue values must normalized to be between 0 and 1. Thus to add the pure red to the color palette, you would call:
-<em>newColor</em> would be set to the color added, or 1 if the attempt to add a color failed.</p>
+<p>The <strong>RGB.AddColor</strong> function attempts to create a new color with the red, green and blue components specified. If successful, the function returns a new color number (usually one greater than <strong>maxcolor</strong>) and <strong>maxcolor</strong> is updated by adding 1 to it. If it is unsuccessful, the function returns 1 and <strong>Error.Last</strong> and <strong>Error.LastMsg</strong> can be used to determine the cause of the problem.</p>
+
+<p>The red, green and blue values must normalized to be between 0 and 1. Thus to add the pure red to the color palette, you would call:</p>
+
+<p><em>newColor</em> would be set to the color added, or 1 if the attempt to add a color failed.</p>
 
 <pre><code>    newColor := RGB.AddColor (1.0, 0.0, 0.0)
 </code></pre>
@@ -17,7 +19,7 @@ The red, green and blue values must normalized to be between 0 and 1. Thus to ad
 
 <p>This program adds a palette of 16 blues to the end of the color palette.</p>
 
-<p><strong>Details</strong> <strong>RGB.AddColour</strong> is an alternate spelling for <strong>RGB.AddColor</strong>.</p>
+<p><strong>Details</strong>   <strong>RGB.AddColour</strong> is an alternate spelling for <strong>RGB.AddColor</strong>.</p>
 
 <pre><code>    var clr : int
     for blueShade : 0 .. 15
@@ -33,8 +35,9 @@ The red, green and blue values must normalized to be between 0 and 1. Thus to ad
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>RGB.AddColor</strong>, not by calling <strong>AddColor</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>RGB.AddColor</strong>, not by calling <strong>AddColor</strong>.</p>
 
 <h2>See also</h2>
 

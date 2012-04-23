@@ -5,23 +5,24 @@
 **Pic.Blend** (_picID1_, _picID2_, _pct_ : **int**) : **int**
 
 
-
 ##Description
 **Pic.Blend** is used to create a new picture by blending twoidentically sized pictures. The resulting picture is created bytaking _pct_ % of the first picture and adding it to(100 - _pct_) % of the second picture.
 
 
-
 ##Details
 Note that the blended picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
-Note that if _pct_ is 100, then the resulting picture willbe identical to _picID1_.  if _pct_ is 0, then the resulting picture will be identical to _picID2_.
 
+Note that if _pct_ is 100, then the resulting picture willbe identical to _picID1_.  if _pct_ is 0, then the resulting picture will be identical to _picID2_.
 
 
 ##Example
 The program creates two identically sized pictures, blends themtogether and displays all three pictures.  You can vary theblend percentage to obtain different results.
 
 
-![Doc image](pic_blend01.gif)
+
+![Doc Image](pic_blend01.gif)
+
+**Output from the Program**
 
         View.Set ("graphics:340;140,nobuttonbar")
         % Create the original pictures
@@ -43,6 +44,6 @@ The program creates two identically sized pictures, blends themtogether and disp
         
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Pic.Blend**, not by calling **Blend**.
 
+This means that you can only call the function by calling **Pic.Blend**, not by calling **Blend**.
 

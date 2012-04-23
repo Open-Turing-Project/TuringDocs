@@ -29,8 +29,12 @@
 
 <h2>Details</h2>
 
-<p>The name of the subprogram, for example <em>q</em>, and the parameters, for example <em>i</em> and <em>x</em>, have no meaning in a subprogram type. They are present only because of the form of subprogram headers.
-If <em>v</em> is a variable or constant that refers to a subprogram, <em>v</em> can be called, compared for equality to other subprogram variables, assigned and passed as a parameter. Variable <em>v</em> is not an integer, string or pointer and cannot participate in their corresponding operations.
-A reference to a subprogram, rather that the code of the subprogram, is contained in a variable <em>v</em> whose type is a subprogram type. This implies that <strong>addr</strong> (<em>v</em>) is the address of the reference to subprogram, rather than the address of the subprogram. The address of the code is given by #<em>v</em>. See <strong>cheat</strong> for an explanation of the # operator.
-You cannot assign a reference to a subprogram exported from a class. This restriction exists because  these subprograms are meaningless without an accompanying reference to an object.
-Many potential uses of subprogram variables are better programmed using classes and overriding exported subprograms. See <strong>class</strong>.</p>
+<p>The name of the subprogram, for example <em>q</em>, and the parameters, for example <em>i</em> and <em>x</em>, have no meaning in a subprogram type. They are present only because of the form of subprogram headers.</p>
+
+<p>If <em>v</em> is a variable or constant that refers to a subprogram, <em>v</em> can be called, compared for equality to other subprogram variables, assigned and passed as a parameter. Variable <em>v</em> is not an integer, string or pointer and cannot participate in their corresponding operations.</p>
+
+<p>A reference to a subprogram, rather that the code of the subprogram, is contained in a variable <em>v</em> whose type is a subprogram type. This implies that <strong>addr</strong> (<em>v</em>) is the address of the reference to subprogram, rather than the address of the subprogram. The address of the code is given by #<em>v</em>. See <strong>cheat</strong> for an explanation of the # operator.</p>
+
+<p>You cannot assign a reference to a subprogram exported from a class. This restriction exists because  these subprograms are meaningless without an accompanying reference to an object.</p>
+
+<p>Many potential uses of subprogram variables are better programmed using classes and overriding exported subprograms. See <strong>class</strong>.</p>

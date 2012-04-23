@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>self</b><p>\r\n</p></font>",
       "text_content": " self\r\n",
-      "mdown_content": "**self**"
+      "mdown_content": "**self**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>self</b> function produces a pointer to the current object. This function can be used only inside a class declaration. See <b>class</b>.<p>\r\n</p>",
       "text_content": " The self function produces a pointer to the current object. This function can be used only inside a class declaration. See class.\r\n",
-      "mdown_content": "The **self** function produces a pointer to the current object. This function can be used only inside a class declaration. See **class**."
+      "mdown_content": "The **self** function produces a pointer to the current object. This function can be used only inside a class declaration. See **class**.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "Enter the current object onto a list of displayable objects. The module called <i>displayable</i> has exported a procedure called <i>enter</i> whose parameter type is <b>pointer</b> <b>to</b> <b>anyclass</b>. Since <b>self</b> is a pointer to <i>C</i> and <i>C</i> is a descendant of <b>anyclass</b>, it is legal to pass <b>self</b> to <i>displayable.enter</i>.<p>\r\n</p>",
       "text_content": " Enter the current object onto a list of displayable objects. The module called displayable has exported a procedure called enter whose parameter type is pointer to anyclass. Since self is a pointer to C and C is a descendant of anyclass, it is legal to pass self to displayable.enter.\r\n\r\n",
-      "mdown_content": "Enter the current object onto a list of displayable objects. The module called _displayable_ has exported a procedure called _enter_ whose parameter type is **pointer** **to** **anyclass**. Since **self** is a pointer to _C_ and _C_ is a descendant of **anyclass**, it is legal to pass **self** to _displayable.enter_."
+      "mdown_content": "Enter the current object onto a list of displayable objects. The module called _displayable_ has exported a procedure called _enter_ whose parameter type is **pointer** **to** **anyclass**. Since **self** is a pointer to _C_ and _C_ is a descendant of **anyclass**, it is legal to pass **self** to _displayable.enter_.\n"
     },
     {
       "title": "Details",
       "raw_content": "It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.<p>\r\nThe notation to call exported subprogram <i>p</i> of an enclosing class <i>C</i> or of its ancestor <i>D</i>, is <i>C.p </i>or <i>D.p</i>. Calls of this form, which can appear only within class <i>C</i>, call the subprogram in <i>C</i> (or in <i>D</i> in the case of <i>D.p</i>) regardless of the object type, or of any overriding, or of the status of initialization.</p>\n<p>\r\n</p>",
       "text_content": " It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.\r\nThe notation to call exported subprogram p of an enclosing class C or of its ancestor D, is C.p or D.p. Calls of this form, which can appear only within class C, call the subprogram in C (or in D in the case of D.p) regardless of the object type, or of any overriding, or of the status of initialization.\r\n",
-      "mdown_content": "It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.\nThe notation to call exported subprogram _p_ of an enclosing class _C_ or of its ancestor _D_, is _C.p_ or _D.p_. Calls of this form, which can appear only within class _C_, call the subprogram in _C_ (or in _D_ in the case of _D.p_) regardless of the object type, or of any overriding, or of the status of initialization."
+      "mdown_content": "It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.\n\nThe notation to call exported subprogram _p_ of an enclosing class _C_ or of its ancestor _D_, is _C.p_ or _D.p_. Calls of this form, which can appear only within class _C_, call the subprogram in _C_ (or in _D_ in the case of _D.p_) regardless of the object type, or of any overriding, or of the status of initialization.\n"
     }
   ],
   "dependencies": [

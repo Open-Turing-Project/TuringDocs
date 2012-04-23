@@ -14,11 +14,15 @@
 
 <h2>Details</h2>
 
-<p>An explicit character constant must contain at least one character. If it contains exactly one character, as in 'A', its type is <strong>char</strong>. If it contains two or more characters (<em>n</em> characters), as 'Width', its type is <strong>char</strong>(<em>n</em>). The difference between the <strong>char</strong> and <strong>char</strong>(1) types is rarely of significance, but does make a difference in declarations without an explicit type, for example:
-The backslash \ is used in explicit string and char(n) constants to specify special values, for example, '\T' is the tab character. Similarly, the carat ^ is used to specify ASCII control characters, for example, '<sup>H'</sup> is the ASCII backspace. See <em>explicitStringConstants</em> for details.
-Explicit character constants cannot cross line boundaries. To represent a constant that is longer than a line, break it into two or more strings on separate lines and use + (catenation) to join the individual strings. See <strong>catenation</strong>.
-An explicit character constant may be limited in length by the implementation. We recommend that this limitation be at least 32767.
-Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called <em>eos</em> for end of string) and 128 (called <em>uninitchar</em>, used as the uninitialized string value).</p>
+<p>An explicit character constant must contain at least one character. If it contains exactly one character, as in 'A', its type is <strong>char</strong>. If it contains two or more characters (<em>n</em> characters), as 'Width', its type is <strong>char</strong>(<em>n</em>). The difference between the <strong>char</strong> and <strong>char</strong>(1) types is rarely of significance, but does make a difference in declarations without an explicit type, for example:</p>
+
+<p>The backslash \ is used in explicit string and char(n) constants to specify special values, for example, '\T' is the tab character. Similarly, the carat ^ is used to specify ASCII control characters, for example, '<sup>H'</sup> is the ASCII backspace. See <em>explicitStringConstants</em> for details.</p>
+
+<p>Explicit character constants cannot cross line boundaries. To represent a constant that is longer than a line, break it into two or more strings on separate lines and use + (catenation) to join the individual strings. See <strong>catenation</strong>.</p>
+
+<p>An explicit character constant may be limited in length by the implementation. We recommend that this limitation be at least 32767.</p>
+
+<p>Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called <em>eos</em> for end of string) and 128 (called <em>uninitchar</em>, used as the uninitialized string value).</p>
 
 <pre><code>    var c := 'H'        % Type is char
     var d := 'Hi'   % Type is char (2)

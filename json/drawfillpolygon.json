@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<b>drawfillpolygon</b> (<i>x</i>, <i>y</i>  : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>n</i> : <b>int</b>, <i>Color</i> : <b>int</b>)<p>\r\n</p>",
       "text_content": " drawfillpolygon (x, y  : array 1 .. * of int, n : int, Color : int)\r\n",
-      "mdown_content": "**drawfillpolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)"
+      "mdown_content": "**drawfillpolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>drawfillpolygon</b> procedure is used to draw a filled polygon with <i>n</i> points. The polygon is described by the points (<i>x</i>(1), <i>y</i>(1)) to (<i>x</i>(2), <i>y</i>(2)) to (<i>x</i>(3), <i>y</i>(3)) and so on to (<i>x</i>(<i>n</i>), <i>y</i> (<i>n</i>)). The polygon will be drawn and filled with <i>Color</i>. <p>\r\nTo get an polygon outlined in a different color, use <b>drawfillpolygon</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawpolygon</b>  with the <i>Color</i> parameter set to the border color.</p>\n<p>\r\n</p>",
       "text_content": " The drawfillpolygon procedure is used to draw a filled polygon with n points. The polygon is described by the points (x(1), y(1)) to (x(2), y(2)) to (x(3), y(3)) and so on to (x(n), y (n)). The polygon will be drawn and filled with Color. \r\nTo get an polygon outlined in a different color, use drawfillpolygon with the Color parameter set to the fill color and then call drawpolygon  with the Color parameter set to the border color.\r\n",
-      "mdown_content": "The **drawfillpolygon** procedure is used to draw a filled polygon with _n_ points. The polygon is described by the points (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on to (_x_(_n_), _y_ (_n_)). The polygon will be drawn and filled with _Color_. \nTo get an polygon outlined in a different color, use **drawfillpolygon** with the _Color_ parameter set to the fill color and then call **drawpolygon**  with the _Color_ parameter set to the border color."
+      "mdown_content": "The **drawfillpolygon** procedure is used to draw a filled polygon with _n_ points. The polygon is described by the points (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on to (_x_(_n_), _y_ (_n_)). The polygon will be drawn and filled with _Color_. \n\nTo get an polygon outlined in a different color, use **drawfillpolygon** with the _Color_ parameter set to the fill color and then call **drawpolygon**  with the _Color_ parameter set to the border color.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program will create a filled octagon and display it in color 1 and then outline it in color 3.<p>\r\n</p>",
       "text_content": " This program will create a filled octagon and display it in color 1 and then outline it in color 3.\r\n\r\n    ",
-      "mdown_content": "This program will create a filled octagon and display it in color 1 and then outline it in color 3."
+      "mdown_content": "This program will create a filled octagon and display it in color 1 and then outline it in color 3.\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Details",
       "raw_content": "The PC allows a maximum of 256 points. As well, <b>drawfillpolygon</b>  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. <p>\r\nThe meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>\n<p>\r\nThe screen should be in a \"<i>graphics</i>\" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a \"<i>graphics</i>\" mode, it will automatically be set to \"<i>graphics</i>\" mode.</p>\n<p>\r\n</p>",
       "text_content": " The PC allows a maximum of 256 points. As well, drawfillpolygon  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \r\nThe meaning of the Color number depends on the current palette. See the palette statement.\r\nThe screen should be in a \"graphics\" mode. See the setscreen procedure for details. If the screen is not in a \"graphics\" mode, it will automatically be set to \"graphics\" mode.\r\n",
-      "mdown_content": "The PC allows a maximum of 256 points. As well, **drawfillpolygon**  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \nThe meaning of the _Color_ number depends on the current palette. See the **palette** statement.\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode."
+      "mdown_content": "The PC allows a maximum of 256 points. As well, **drawfillpolygon**  can fail (due to lack of memory). If failure occurs, it will try to draw an outline of the polygon. If that also fails, it will not draw anything. \n\nThe meaning of the _Color_ number depends on the current palette. See the **palette** statement.\n\nThe screen should be in a \"_graphics_\" mode. See the **setscreen** procedure for details. If the screen is not in a \"_graphics_\" mode, it will automatically be set to \"_graphics_\" mode.\n"
     },
     {
       "title": "See also",
@@ -48,7 +48,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures."
+      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.\n"
     }
   ],
   "dependencies": [

@@ -5,11 +5,8 @@
 **GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)
 
 
-
 ##Description
 The **GUI.SetScrollOnAdd** procedure allows you to specifywhether a text box scrolls to the bottom of the text whennew text is added (the default behaviour). By calling thisprocedure with _scrollOnAdd_ set to **false**, the text box will not scroll unless the user manipulates thetext box's scroll bars.
-
-
 
 ##Example
 This program displays the contents of a file in a text box.After the file is displayed, the top line in the text box willbe the first line in the file.
@@ -57,6 +54,6 @@ This program displays the contents of a file in a text box.After the file is dis
         end loop
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.SetScrollOnAdd**, not by calling **SetScrollOnAdd**.
 
+This means that you can only call the function by calling **GUI.SetScrollOnAdd**, not by calling **SetScrollOnAdd**.
 

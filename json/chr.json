@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>chr</b> (<i>i</i> : <b>int</b>) : <b>char</b><p></p></font>",
       "text_content": "chr (i : int) : char\r\n    ",
-      "mdown_content": "**chr** (_i_ : **int**) : **char**"
+      "mdown_content": "**chr** (_i_ : **int**) : **char**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>chr</b> function is used to convert an integer to a character.\r\n\t      The character is the <i>i</i>-th character of the ASCII sequence of \r\n\t\t  characters (except on the IBM mainframe, which uses the EBCDIC \r\n\t\t  sequence.)  For example, <b>chr</b> (65) is \"A\".<p>\r\n          The <b>ord</b> function is the inverse of <b>chr</b>, so for any \r\n\t\t  character<i> c</i>,:</p>\n<p>\r\n          </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t\t\t  <td>\n<b>chr</b>(<b>ord</b> (<i>c</i>)) = <i>c</i>.</td>\r\n\t\t\t</tr></table>\n<p>\r\n    </p>",
       "text_content": "The chr function is used to convert an integer to a character.\r\n\t      The character is the i-th character of the ASCII sequence of \r\n\t\t  characters (except on the IBM mainframe, which uses the EBCDIC \r\n\t\t  sequence.)  For example, chr (65) is \"A\".\r\n          The ord function is the inverse of chr, so for any \r\n\t\t  character c,:\r\n           \r\n\t\t\t  chr(ord (c)) = c.\r\n\t\t\t\r\n    ",
-      "mdown_content": "The **chr** function is used to convert an integer to a character.The character is the _i_-th character of the ASCII sequence of characters (except on the IBM mainframe, which uses the EBCDIC sequence.)  For example, **chr** (65) is \"A\".\nThe **ord** function is the inverse of **chr**, so for any character _c_,:\n\n\n"
+      "mdown_content": "The **chr** function is used to convert an integer to a character.The character is the _i_-th character of the ASCII sequence of characters (except on the IBM mainframe, which uses the EBCDIC sequence.)  For example, **chr** (65) is \"A\".\n\nThe **ord** function is the inverse of **chr**, so for any character _c_,:\n\n\n**chr**(**ord** (_c_)) = _c_.\n\n"
     },
     {
       "title": "Execute",
@@ -28,13 +28,13 @@
       "title": "Details",
       "raw_content": "There are two sets of characters representing values 128-255: the \r\n\t      ANSI values (the default values for Windows), and the MS-DOS OEM\r\n          character set, which contains various line drawing characters. To \r\n\t\t  use the MS-DOS character set, you must use the \r\n\t\t  <b><tt>setscreen&nbsp;(\"msdos\")</tt></b> command.<p>\r\n    </p>",
       "text_content": "There are two sets of characters representing values 128-255: the \r\n\t      ANSI values (the default values for Windows), and the MS-DOS OEM\r\n          character set, which contains various line drawing characters. To \r\n\t\t  use the MS-DOS character set, you must use the \r\n\t\t  setscreen (\"msdos\") command.\r\n    ",
-      "mdown_content": "There are two sets of characters representing values 128-255: the ANSI values (the default values for Windows), and the MS-DOS OEMcharacter set, which contains various line drawing characters. To use the MS-DOS character set, you must use the **`setscreen (\"msdos\")`** command."
+      "mdown_content": "There are two sets of characters representing values 128-255: the ANSI values (the default values for Windows), and the MS-DOS OEMcharacter set, which contains various line drawing characters. To use the MS-DOS character set, you must use the **`setscreen (\"msdos\")`** command.\n"
     },
     {
       "title": "Example",
       "raw_content": "Another example is available that displays the entire characters \r\n\t  set, both the regular ANSI character set and the MS_DOS OEM\r\n          character set.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Character Set Example\">\n<param name=\"Item1\" value=\"-1,CharSet.t;Character Set Example\"></object></p>\n<p></p>",
       "text_content": "Another example is available that displays the entire characters \r\n\t  set, both the regular ANSI character set and the MS_DOS OEM\r\n          character set.\r\n          \r\n            ",
-      "mdown_content": "Another example is available that displays the entire characters set, both the regular ANSI character set and the MS_DOS OEMcharacter set.\n"
+      "mdown_content": "Another example is available that displays the entire characters set, both the regular ANSI character set and the MS_DOS OEMcharacter set.\n\n\n"
     },
     {
       "title": "See also",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"ord.html\">ord</a></b>, \r\n\t  <b><a href=\"intstr.html\">intstr</a></b> and \r\n\t  <b><a href=\"strint.html\">strint</a></b> functions.<p>\r\n    </p>",
       "text_content": "ord, \r\n\t  intstr and \r\n\t  strint functions.\r\n    ",
-      "mdown_content": "**[ord.html](ord)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions."
+      "mdown_content": "**[ord.html](ord)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.\n"
     }
   ],
   "dependencies": [

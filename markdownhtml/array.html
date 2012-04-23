@@ -38,11 +38,15 @@
 
 <h2>Details</h2>
 
-<p>Each <em>indexType</em> must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the <strong>char</strong> type), or of an enumerated type, an (entire) enumerated type, the <strong>char</strong> type, the <strong>boolean</strong> type, or a named type which is one of these.
-Arrays can also be declared in the form
-The upper bound of <em>a</em> will be computed from the count of the initializing values. Both <strong>var</strong> and <strong>const</strong> arrays can be declared this way. An array variable/constant declared with "*" as an upper bound must have an initializing list. Only one dimensional arrays may be declared in this form.
-Arrays can be assigned as a whole (to arrays of an equivalent type), but they cannot be compared.
-An array can be initialized in its declaration using <strong>init</strong>. For details, see <strong>var</strong> and <strong>const</strong> declarations.</p>
+<p>Each <em>indexType</em> must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the <strong>char</strong> type), or of an enumerated type, an (entire) enumerated type, the <strong>char</strong> type, the <strong>boolean</strong> type, or a named type which is one of these.</p>
+
+<p>Arrays can also be declared in the form</p>
+
+<p>The upper bound of <em>a</em> will be computed from the count of the initializing values. Both <strong>var</strong> and <strong>const</strong> arrays can be declared this way. An array variable/constant declared with "*" as an upper bound must have an initializing list. Only one dimensional arrays may be declared in this form.</p>
+
+<p>Arrays can be assigned as a whole (to arrays of an equivalent type), but they cannot be compared.</p>
+
+<p>An array can be initialized in its declaration using <strong>init</strong>. For details, see <strong>var</strong> and <strong>const</strong> declarations.</p>
 
 <pre><code>    var a : array 1 .. * of typeSpec := init (&#133;)
 </code></pre>
@@ -68,19 +72,27 @@ An array can be initialized in its declaration using <strong>init</strong>. For 
 
 <h2>Details</h2>
 
-<p>The ends of the range of a subscript are called the <em>bounds</em> of the array. If these values are not known until run time, the array is said to be <em>dynamic</em>. In the above example, <em>height</em> is a dynamic array. Dynamic arrays can be declared as variables, as in the case for <em>height</em>. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using <strong>init</strong>.
-In the above example, <strong>upper</strong><em>(a)</em> returns the size of <em>a</em>. See also <strong>upper</strong> and <strong>lower</strong>.
-In the declaration of an array parameter, the upper bound can be given as an asterisk (<strong>*</strong>), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from <em>height</em> in this example).
-You can have arrays of other types, for example arrays of record. If <em>R</em> is an array of records, then <em>R(i).f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
+<p>The ends of the range of a subscript are called the <em>bounds</em> of the array. If these values are not known until run time, the array is said to be <em>dynamic</em>. In the above example, <em>height</em> is a dynamic array. Dynamic arrays can be declared as variables, as in the case for <em>height</em>. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using <strong>init</strong>.</p>
+
+<p>In the above example, <strong>upper</strong><em>(a)</em> returns the size of <em>a</em>. See also <strong>upper</strong> and <strong>lower</strong>.</p>
+
+<p>In the declaration of an array parameter, the upper bound can be given as an asterisk (<strong>*</strong>), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from <em>height</em> in this example).</p>
+
+<p>You can have arrays of other types, for example arrays of record. If <em>R</em> is an array of records, then <em>R(i).f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
 
 <h2>Details</h2>
 
-<p>Arrays can also be made resizeable. This is done using the <strong>flexible</strong> keyword. The declaration syntax is:
-The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:
-The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).
-Additionally, the upper bound (both in the declaration and the <strong>new</strong> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <strong>new</strong>.
-In the current implementation (2002), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.
-Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;<strong>*</strong>&#148; as the upper bound.</p>
+<p>Arrays can also be made resizeable. This is done using the <strong>flexible</strong> keyword. The declaration syntax is:</p>
+
+<p>The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:</p>
+
+<p>The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).</p>
+
+<p>Additionally, the upper bound (both in the declaration and the <strong>new</strong> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <strong>new</strong>.</p>
+
+<p>In the current implementation (2002), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.</p>
+
+<p>Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;<strong>*</strong>&#148; as the upper bound.</p>
 
 <pre><code>    var name : flexible array indexType { , indexType } of typeSpec        new name , newUpper1 {,newUpper2}
 </code></pre>

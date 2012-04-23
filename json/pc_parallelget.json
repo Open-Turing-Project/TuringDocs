@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>PC.ParallelGet</b> (<i>port</i> : <b>int</b>) : <b>nat1</b><p>\r\n</p></font>",
       "text_content": " PC.ParallelGet (port : int) : nat1\r\n",
-      "mdown_content": "**PC.ParallelGet** (_port_ : **int**) : **nat1**"
+      "mdown_content": "**PC.ParallelGet** (_port_ : **int**) : **nat1**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>PC.ParallelGet</b> function is used to read the value of certain pins on a parallel port. The port is specified with the <i>port</i> parameter which can have the value 1, 2 or 3 corresponding to \"LPT1\", \"LPT2\" and \"LPT3\". This procedure can be used to control robots and peripherals.<p>\r\n</p>",
       "text_content": " The PC.ParallelGet function is used to read the value of certain pins on a parallel port. The port is specified with the port parameter which can have the value 1, 2 or 3 corresponding to \"LPT1\", \"LPT2\" and \"LPT3\". This procedure can be used to control robots and peripherals.\r\n",
-      "mdown_content": "The **PC.ParallelGet** function is used to read the value of certain pins on a parallel port. The port is specified with the _port_ parameter which can have the value 1, 2 or 3 corresponding to \"LPT1\", \"LPT2\" and \"LPT3\". This procedure can be used to control robots and peripherals."
+      "mdown_content": "The **PC.ParallelGet** function is used to read the value of certain pins on a parallel port. The port is specified with the _port_ parameter which can have the value 1, 2 or 3 corresponding to \"LPT1\", \"LPT2\" and \"LPT3\". This procedure can be used to control robots and peripherals.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program reads and prints the values of the five data pins of the PC's parallel port.<p>\r\n</p>",
       "text_content": " This program reads and prints the values of the five data pins of the PC's parallel port.\r\n\r\n",
-      "mdown_content": "This program reads and prints the values of the five data pins of the PC's parallel port."
+      "mdown_content": "This program reads and prints the values of the five data pins of the PC's parallel port.\n"
     },
     {
       "title": "Details",
       "raw_content": "The five pins that are used for parallel input are pins 10-15. The <b>PC.ParallelGet </b>procedure returns the sum of <p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>64 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 10 high</td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>128</td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 11 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>32 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 12 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>16 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 13 high </td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>8 </td>\n<td width=\"10\">&nbsp;</td>\n<td>Pin 15 high</td>\n</tr>\n</table>\n<p>\r\nThe <b>mod</b> and <b>div</b> operators can be used to determine which pins are high or low. </p>\n<p>\r\n</p>",
       "text_content": " The five pins that are used for parallel input are pins 10-15. The PC.ParallelGet procedure returns the sum of \r\n 64  Pin 10 high 128 Pin 11 high  32  Pin 12 high  16  Pin 13 high  8  Pin 15 high\r\nThe mod and div operators can be used to determine which pins are high or low. \r\n",
-      "mdown_content": "The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet** procedure returns the sum of \n\n\n\n\n\n\n\nThe **mod** and **div** operators can be used to determine which pins are high or low. "
+      "mdown_content": "The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet** procedure returns the sum of \n\n\n64    Pin 10 high\n128   Pin 11 high \n32    Pin 12 high \n16    Pin 13 high \n8    Pin 15 high\n\n\nThe **mod** and **div** operators can be used to determine which pins are high or low. \n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>PC.ParallelGet</b>, not by calling <b>ParallelGet</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling PC.ParallelGet, not by calling ParallelGet.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **PC.ParallelGet**, not by calling **ParallelGet**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **PC.ParallelGet**, not by calling **ParallelGet**.\n"
     },
     {
       "title": "See also",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"pc_parallelput.html\">PC.ParallelPut</a></b> <a href=\"procedure.html\">procedure</a> for a diagram of the pins. That <a href=\"procedure.html\">procedure</a> is used to <a href=\"set.html\">set</a> the values on the parallel port.<p>\r\n</p>",
       "text_content": " PC.ParallelPut procedure for a diagram of the pins. That procedure is used to set the values on the parallel port.\r\n",
-      "mdown_content": "**[pc_parallelput.html](PC.ParallelPut)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port."
+      "mdown_content": "**[pc_parallelput.html](PC.ParallelPut)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port.\n"
     }
   ],
   "dependencies": [

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.ClipAddOval</b> (<i>x</i>, <i>y</i>, <i>xradius</i>, <i>yradius</i> : <b>int</b>)<p></p></font>",
       "text_content": "View.ClipAddOval (x, y, xradius, yradius : int)\r\n    ",
-      "mdown_content": "**View.ClipAddOval** (_x_, _y_, _xradius_, _yradius_ : **int**)"
+      "mdown_content": "**View.ClipAddOval** (_x_, _y_, _xradius_, _yradius_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>View.ClipAddOval</b> procedure adds another oval specified by \r\n          (<i>x</i>, <i>y</i>) and <i>xradius</i> and <i>yradius</i>) to the \r\n          clipping region. If no clipping region has been specified, then the \r\n          oval becomes the complete clipping region.<p>\r\n          A clipping region is the region that the output will appear in. If \r\n          the rectangle is specified as the clipping region, any drawing done \r\n          outside the oval will not appear.</p>\n<p>\r\n          To set the initial clipping, or remove the old region and replace it \r\n          with a new rectangle, use <b>View.ClipSet</b>. To set the clipping \r\n          region back to the entire screen or window, use <b>View.ClipOff</b>.</p>\n<p>\r\n          These commands only work in \"<i>graphics</i>\" mode.</p>\n<p>\r\n    </p>",
       "text_content": "The View.ClipAddOval procedure adds another oval specified by \r\n          (x, y) and xradius and yradius) to the \r\n          clipping region. If no clipping region has been specified, then the \r\n          oval becomes the complete clipping region.\r\n          A clipping region is the region that the output will appear in. If \r\n          the rectangle is specified as the clipping region, any drawing done \r\n          outside the oval will not appear.\r\n          To set the initial clipping, or remove the old region and replace it \r\n          with a new rectangle, use View.ClipSet. To set the clipping \r\n          region back to the entire screen or window, use View.ClipOff.\r\n          These commands only work in \"graphics\" mode.\r\n    ",
-      "mdown_content": "The **View.ClipAddOval** procedure adds another oval specified by (_x_, _y_) and _xradius_ and _yradius_) to the clipping region. If no clipping region has been specified, then the oval becomes the complete clipping region.\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the oval will not appear.\nTo set the initial clipping, or remove the old region and replace it with a new rectangle, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.\nThese commands only work in \"_graphics_\" mode."
+      "mdown_content": "The **View.ClipAddOval** procedure adds another oval specified by (_x_, _y_) and _xradius_ and _yradius_) to the clipping region. If no clipping region has been specified, then the oval becomes the complete clipping region.\n\nA clipping region is the region that the output will appear in. If the rectangle is specified as the clipping region, any drawing done outside the oval will not appear.\n\nTo set the initial clipping, or remove the old region and replace it with a new rectangle, use **View.ClipSet**. To set the clipping region back to the entire screen or window, use **View.ClipOff**.\n\nThese commands only work in \"_graphics_\" mode.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program sets the clipping region to five circles and then draws \r\n          random squares. The squares will only appear (or partially appear) \r\n          in the ovals.<p>\r\n</p>",
       "text_content": "This program sets the clipping region to five circles and then draws \r\n          random squares. The squares will only appear (or partially appear) \r\n          in the ovals.\r\n\r\n    ",
-      "mdown_content": "This program sets the clipping region to five circles and then draws random squares. The squares will only appear (or partially appear) in the ovals."
+      "mdown_content": "This program sets the clipping region to five circles and then draws random squares. The squares will only appear (or partially appear) in the ovals.\n"
     },
     {
       "title": "Execute",
@@ -34,19 +34,19 @@
       ],
       "raw_content": "<p>\r\n    </p>",
       "text_content": "\r\n    ",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Execute",
       "raw_content": "By combining animation using <b>View.Update</b> and \r\n          <b>View.ClipAddOval</b>, you can achieve a moving spotlight effect.<p>\r\n          <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n            <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch SpotLight Example\">\n<param name=\"Item1\" value=\"-1,SpotLight.t;View.Moving SpotLight Example\"></object></p>\n<p>\r\n    </p>",
       "text_content": "By combining animation using View.Update and \r\n          View.ClipAddOval, you can achieve a moving spotlight effect.\r\n          \r\n            \r\n    ",
-      "mdown_content": "By combining animation using **View.Update** and **View.ClipAddOval**, you can achieve a moving spotlight effect.\n"
+      "mdown_content": "By combining animation using **View.Update** and **View.ClipAddOval**, you can achieve a moving spotlight effect.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>View.ClipAddOval</b>, not by calling <b>ClipAddOval</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          View.ClipAddOval, not by calling ClipAddOval.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **View.ClipAddOval**, not by calling **ClipAddOval**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **View.ClipAddOval**, not by calling **ClipAddOval**.\n"
     },
     {
       "title": "See also",

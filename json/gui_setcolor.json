@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetColor</b> (<i>widgetID</i> : <b>int</b>, <i>clrNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.SetColor (widgetID : int, clrNumber : int)\r\n    ",
-      "mdown_content": "**GUI.SetColor** (_widgetID_ : **int**, _clrNumber_ : **int**)"
+      "mdown_content": "**GUI.SetColor** (_widgetID_ : **int**, _clrNumber_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.SetColor</b> procedure is used buttons to change the\r\n          color of a button.  The color is specified by the <i>clrNumber</i>\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by <i>clrNumber</i>, so in general you should use\r\n          brighter colors for buttons.<p>\r\n    </p>",
       "text_content": "The GUI.SetColor procedure is used buttons to change the\r\n          color of a button.  The color is specified by the clrNumber\r\n          parameter.  The edges of the button are a darker version of the \r\n          color specified by clrNumber, so in general you should use\r\n          brighter colors for buttons.\r\n    ",
-      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the _clrNumber_parameter.  The edges of the button are a darker version of the color specified by _clrNumber_, so in general you should usebrighter colors for buttons."
+      "mdown_content": "The **GUI.SetColor** procedure is used buttons to change thecolor of a button.  The color is specified by the _clrNumber_parameter.  The edges of the button are a darker version of the color specified by _clrNumber_, so in general you should usebrighter colors for buttons.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program displays three buttons with different colors.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program displays three buttons with different colors.\r\n\r\n    ",
-      "mdown_content": "This program displays three buttons with different colors.\n"
+      "mdown_content": "This program displays three buttons with different colors.\n\n\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.SetColor</b>, not by calling <b>SetColor</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.SetColor, not by calling SetColor.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetColor**, not by calling **SetColor**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetColor**, not by calling **SetColor**.\n"
     }
   ],
   "dependencies": [

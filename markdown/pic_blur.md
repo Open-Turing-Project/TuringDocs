@@ -5,26 +5,30 @@
 **Pic.Blur** (_picID_, _blurAmount_ : **int**) : **int**
 
 
-
 ##Description
 **Pic.Blur** is used to create a new picture by blurring anexisting picture. The resulting picture is created by mixing pixelsin a picture with pixels adjacent to it.  As the _blurAmount_increases, the image grows more and more blurry.
 
 
-
 ##Details
 Note that the blurred picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
-Note that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when _blurAmount_ is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.
 
+Note that this is a fairly CPU intensive routine.  On slow machines, it can take up to a second or more when _blurAmount_ is large.  In such cases, it is better to precompute the pictures before starting the program.  The second example shows this being done.
 
 
 ##Example
 The program creates a picture and then progressively blurs it.
 
 
+![Doc Image](pic_blur01.gif)
+
+**Output at start**
 
 
-![Doc image](pic_blur01.gif)
-![Doc image](pic_blur02.gif)
+
+![Doc Image](pic_blur02.gif)
+
+**After several loops**
+
 
         View.Set ("graphics:270;120,nobuttonbar")
         % Create the original picture
@@ -55,6 +59,6 @@ By precalculating and saving the results of the blurred picture, youcan produce 
 
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Pic.Blur**, not by calling **Blur**.
 
+This means that you can only call the function by calling **Pic.Blur**, not by calling **Blur**.
 

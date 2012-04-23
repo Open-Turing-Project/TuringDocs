@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>time</b> ( <b>var</b><i> t</i>  : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " time ( var t  : string )\r\n",
-      "mdown_content": "**time** ( **var** _t_  : **string** )"
+      "mdown_content": "**time** ( **var** _t_  : **string** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>time</b> statement is used to determine the current time of day. Variable <i>t </i>is assigned a string in the format \"<i>hh:mm:ss</i>\". For example, if the time is two minutes and 47 seconds after nine A.M., <i>t </i>will be set to \"<i>09:02:47</i>\". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string \"<i>23:30:00</i>\".<p>\r\n</p>",
       "text_content": " The time statement is used to determine the current time of day. Variable t is assigned a string in the format \"hh:mm:ss\". For example, if the time is two minutes and 47 seconds after nine A.M., t will be set to \"09:02:47\". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string \"23:30:00\".\r\n",
-      "mdown_content": "The **time** statement is used to determine the current time of day. Variable _t_ is assigned a string in the format \"_hh:mm:ss_\". For example, if the time is two minutes and 47 seconds after nine A.M., _t_ will be set to \"_09:02:47_\". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string \"_23:30:00_\"."
+      "mdown_content": "The **time** statement is used to determine the current time of day. Variable _t_ is assigned a string in the format \"_hh:mm:ss_\". For example, if the time is two minutes and 47 seconds after nine A.M., _t_ will be set to \"_09:02:47_\". Twenty-four hour time is used. For example, eleven thirty P.M. gives the string \"_23:30:00_\".\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program greets you and tells you the time of day.<p>\r\n</p>",
       "text_content": " This program greets you and tells you the time of day.\r\n\r\n",
-      "mdown_content": "This program greets you and tells you the time of day."
+      "mdown_content": "This program greets you and tells you the time of day.\n"
     },
     {
       "title": "Details",
       "raw_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system. In this case, the <b>time</b> procedure will give incorrect results.<p>\r\n</p>",
       "text_content": " Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system. In this case, the time procedure will give incorrect results.\r\n",
-      "mdown_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system. In this case, the **time** procedure will give incorrect results."
+      "mdown_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system. In this case, the **time** procedure will give incorrect results.\n"
     },
     {
       "title": "See also",
@@ -41,7 +41,7 @@
       ],
       "raw_content": "<b><a href=\"delay.html\">delay</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " delay, clock, sysclock, wallclock and date statements.\r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[date.html](date)** statements.\nSee also predefined unit **[timemodule.html](Time)**."
+      "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[date.html](date)** statements.\n\nSee also predefined unit **[timemodule.html](Time)**.\n"
     }
   ],
   "dependencies": [

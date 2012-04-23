@@ -8,8 +8,12 @@
 
 <h2>Description</h2>
 
-<p>In a Turing program, a variable is declared and given a name (<em>variableId</em>) and then used. Each use is called a <em>variable reference</em>.
-If the variable is an array, collection, record or union, its parts (<em>components</em>) can be selected using subscripts and field names (using <em>componentSelectors</em>). The form of a <em>componentSelector</em> is one of:\</p>
+<p>In a Turing program, a variable is declared and given a name (<em>variableId</em>) and then used. Each use is called a <em>variable reference</em>.</p>
+
+<p>If the variable is an array, collection, record or union, its parts (<em>components</em>) can be selected using subscripts and field names (using <em>componentSelectors</em>). The form of a <em>componentSelector</em> is one of:\</p>
+
+<p>(a)   ( <em>expn</em> {, <em>expn</em>} )
+(b)   . <em>fieldId</em></p>
 
 <p>Form (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.</p>
 

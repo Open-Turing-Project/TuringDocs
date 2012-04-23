@@ -21,18 +21,26 @@
 
 <h2>Details</h2>
 
-<p>The <strong>PC.ParallelPut</strong> procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.
-The value sent to <strong>PC.ParallelPut</strong> is the sum of the following:</p>
+<p>The <strong>PC.ParallelPut</strong> procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.</p>
 
-<p>For example, the command <strong>PC.ParallelPut</strong> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <strong>PC.ParallelPut</strong> must be from 0 to 255.
-The <strong>PC.ParallelPut</strong> procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string "Hello" to the printer). If you want to do this, open the file "LPT1" using the <strong>open</strong> statement and <strong>put</strong> to the file.</p>
+<p><img src="pc_parallelput01.gif" alt="Doc Image" /></p>
 
-<p><img src="pc_parallelput01.gif" alt="Doc image" /></p>
+<p>The value sent to <strong>PC.ParallelPut</strong> is the sum of the following:</p>
+
+<p>1   Data bit 0   16   Data bit 4
+2   Data bit 1   32   Data bit 5
+4   Data bit 2   64   Data bit 6
+8   Data bit 3   128   Data bit 7</p>
+
+<p>For example, the command <strong>PC.ParallelPut</strong> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <strong>PC.ParallelPut</strong> must be from 0 to 255.</p>
+
+<p>The <strong>PC.ParallelPut</strong> procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string "Hello" to the printer). If you want to do this, open the file "LPT1" using the <strong>open</strong> statement and <strong>put</strong> to the file.</p>
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>PC.ParallelPut</strong>, not by calling <strong>ParallelPut</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>PC.ParallelPut</strong>, not by calling <strong>ParallelPut</strong>.</p>
 
 <h2>See also</h2>
 

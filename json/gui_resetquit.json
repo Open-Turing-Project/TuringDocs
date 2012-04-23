@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ResetQuit</b><p></p></font>",
       "text_content": "GUI.ResetQuit\r\n    ",
-      "mdown_content": "**GUI.ResetQuit**"
+      "mdown_content": "**GUI.ResetQuit**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>GUI.ResetQuit</b> procedure resets the \"quitting\" flag that\r\n          is set by the <b>GUI.Quit</b> program. The <b>GUI.ResetQuit</b>\r\n\t  can be used whenever you want to have a program that exits\r\n\t  from the main processing loop, does some work, and then \r\n\t  reenters the processing loop.<p>\r\n\t  Without <b>GUI.ResetQuit</b>, the program will exit the second\r\n\t  loop immediately because <b>GUI.ProcessEvent</b> will return\r\n\t  <b>true</b>.\r\n    </p>",
       "text_content": "The GUI.ResetQuit procedure resets the \"quitting\" flag that\r\n          is set by the GUI.Quit program. The GUI.ResetQuit\r\n\t  can be used whenever you want to have a program that exits\r\n\t  from the main processing loop, does some work, and then \r\n\t  reenters the processing loop.\r\n\t  Without GUI.ResetQuit, the program will exit the second\r\n\t  loop immediately because GUI.ProcessEvent will return\r\n\t  true.\r\n    ",
-      "mdown_content": "The **GUI.ResetQuit** procedure resets the \"quitting\" flag thatis set by the **GUI.Quit** program. The **GUI.ResetQuit**can be used whenever you want to have a program that exitsfrom the main processing loop, does some work, and then reenters the processing loop.\nWithout **GUI.ResetQuit**, the program will exit the secondloop immediately because **GUI.ProcessEvent** will return**true**."
+      "mdown_content": "The **GUI.ResetQuit** procedure resets the \"quitting\" flag thatis set by the **GUI.Quit** program. The **GUI.ResetQuit**can be used whenever you want to have a program that exitsfrom the main processing loop, does some work, and then reenters the processing loop.\n\nWithout **GUI.ResetQuit**, the program will exit the secondloop immediately because **GUI.ProcessEvent** will return**true**."
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program allows the user to select the color that\r\n          stars are to be drawn in.  When the user presses the button,\r\n\t  the program exits the first event loop and draws the stars.\r\n\t  Before creating another button and entering a second event\r\n\t  loop, it calls <b>GUI.ResetQuit</b>.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "This program allows the user to select the color that\r\n          stars are to be drawn in.  When the user presses the button,\r\n\t  the program exits the first event loop and draws the stars.\r\n\t  Before creating another button and entering a second event\r\n\t  loop, it calls GUI.ResetQuit.\r\n\r\n    ",
-      "mdown_content": "This program allows the user to select the color thatstars are to be drawn in.  When the user presses the button,the program exits the first event loop and draws the stars.Before creating another button and entering a second eventloop, it calls **GUI.ResetQuit**.\n"
+      "mdown_content": "This program allows the user to select the color thatstars are to be drawn in.  When the user presses the button,the program exits the first event loop and draws the stars.Before creating another button and entering a second eventloop, it calls **GUI.ResetQuit**.\n\n\n"
     },
     {
       "title": "Execute",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n\t  <b>GUI.ResetQuit</b>, not by calling <b>ResetQuit</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n\t  GUI.ResetQuit, not by calling ResetQuit.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.ResetQuit**, not by calling **ResetQuit**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.ResetQuit**, not by calling **ResetQuit**.\n"
     }
   ],
   "dependencies": [

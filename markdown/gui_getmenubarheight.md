@@ -5,15 +5,12 @@
 **GUI.GetMenuBarHeight** : **int**
 
 
-
 ##Description
 Returns the height of the menu bar. Useful when drawing or placing widgets to make certain that they don't overlap the menu bar.
 
 
-
 ##Example
 The following program draws a red box in the window just belowe the menu bar.
-
 
         import GUI in "%oot/lib/GUI"
         
@@ -28,11 +25,10 @@ The following program draws a red box in the window just belowe the menu bar.
         end loop
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.GetMenuBarHeight**, not by calling **GetMenuBarHeight**.
 
+This means that you can only call the function by calling **GUI.GetMenuBarHeight**, not by calling **GetMenuBarHeight**.
 
 
 ##See also
 **[gui_createmenu.html](GUI.CreateMenu)**.
-
 

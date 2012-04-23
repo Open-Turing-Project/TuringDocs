@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>buttonchoose</b> (<i>choice</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " buttonchoose (choice : string)\r\n",
-      "mdown_content": "**buttonchoose** (_choice_ : **string**)"
+      "mdown_content": "**buttonchoose** (_choice_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>buttonchoose</b> procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"<i>single-button mode</i>\" or in \"<i>multi-button mode</i>\". In \"<i>single-button mode</i>\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.<p>\r\nIn Turing, the mouse starts in \"<i>single-button mode</i>\".</p>\n<p>\r\nThe parameter <i>choice</i> can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"<i>single-button mode</i>\") or \"multibutton\" (which switches the mouse into \"<i>multi-button mode</i>\").</p>\n<p>\r\n</p>",
       "text_content": " The buttonchoose procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"single-button mode\" or in \"multi-button mode\". In \"single-button mode\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\r\nIn Turing, the mouse starts in \"single-button mode\".\r\nThe parameter choice can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"single-button mode\") or \"multibutton\" (which switches the mouse into \"multi-button mode\").\r\n",
-      "mdown_content": "The **buttonchoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"_single-button mode_\" or in \"_multi-button mode_\". In \"_single-button mode_\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\nIn Turing, the mouse starts in \"_single-button mode_\".\nThe parameter _choice_ can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"_single-button mode_\") or \"multibutton\" (which switches the mouse into \"_multi-button mode_\")."
+      "mdown_content": "The **buttonchoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"_single-button mode_\" or in \"_multi-button mode_\". In \"_single-button mode_\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\n\nIn Turing, the mouse starts in \"_single-button mode_\".\n\nThe parameter _choice_ can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"_single-button mode_\") or \"multibutton\" (which switches the mouse into \"_multi-button mode_\").\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "A program that displays the status of the mouse at the top left corner of the screen.<p>\r\n</p>",
       "text_content": " A program that displays the status of the mouse at the top left corner of the screen.\r\n\r\n",
-      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen."
+      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"buttonmoved.html\">buttonmoved</a></b> and <b><a href=\"buttonwait.html\">buttonwait</a></b> to get mouse events saved in a queue. See also <b><a href=\"mousewhere.html\">mousewhere</a></b> to get the current status of mouse button(s).<p>\r\nSee also predefined unit <b><a href=\"mousemodule.html\">Mouse</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also mousewhere to get the current status of mouse button(s).\r\nSee also predefined unit Mouse.\r\n",
-      "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[mousewhere.html](mousewhere)** to get the current status of mouse button(s).\nSee also predefined unit **[mousemodule.html](Mouse)**."
+      "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[mousewhere.html](mousewhere)** to get the current status of mouse button(s).\n\nSee also predefined unit **[mousemodule.html](Mouse)**.\n"
     }
   ],
   "dependencies": [

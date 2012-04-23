@@ -54,11 +54,19 @@
 
 <p>A <em>conditionOption</em> is one of:</p>
 
-<p>The <strong>priority</strong> option requires that the corresponding <strong>wait</strong> statements include priorities. Options (b) and (c) declare <em>deferred</em> conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an <em>immediate</em> (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or <strong>timeout</strong>).
-A <strong>timeout</strong> option means the signaling is deferred and that an extra parameter to the <strong>wait</strong> statement must give a <em>timeout</em> <em>interval</em>. If a process waits longer than its interval, it is automatically signaled. Beware that the <em>empty</em> function can be non-repeatable when applied to timeout conditions. For example, <strong>empty</strong>(<em>c</em>) may not be equal to <strong>empty</strong>(<em>c</em>) in a single expression. In the current (1999) version of Turing, the time for time outs is measured in simulation time rather than real time. See the <strong>pause</strong> statement.
-Conditions cannot be named as types, cannot be contained in records, unions or collections and cannot be declared in statements (such as <strong>begin</strong> or <strong>loop</strong>) or in subprograms. They can only be declared in monitors and monitor classes.
-There is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.
-Note that <em>conditionOption</em> must precede the keyword <strong>condition</strong>.</p>
+<p>(a)   <strong>priority</strong>
+(b)   <strong>deferred</strong>
+(c)   <strong>timeout</strong></p>
+
+<p>The <strong>priority</strong> option requires that the corresponding <strong>wait</strong> statements include priorities. Options (b) and (c) declare <em>deferred</em> conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an <em>immediate</em> (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or <strong>timeout</strong>).</p>
+
+<p>A <strong>timeout</strong> option means the signaling is deferred and that an extra parameter to the <strong>wait</strong> statement must give a <em>timeout</em> <em>interval</em>. If a process waits longer than its interval, it is automatically signaled. Beware that the <em>empty</em> function can be non-repeatable when applied to timeout conditions. For example, <strong>empty</strong>(<em>c</em>) may not be equal to <strong>empty</strong>(<em>c</em>) in a single expression. In the current (1999) version of Turing, the time for time outs is measured in simulation time rather than real time. See the <strong>pause</strong> statement.</p>
+
+<p>Conditions cannot be named as types, cannot be contained in records, unions or collections and cannot be declared in statements (such as <strong>begin</strong> or <strong>loop</strong>) or in subprograms. They can only be declared in monitors and monitor classes.</p>
+
+<p>There is no guaranteed order of progress among awakened deferred processes, processes signaling immediate conditions, and processes attempting to enter an active monitor.</p>
+
+<p>Note that <em>conditionOption</em> must precede the keyword <strong>condition</strong>.</p>
 
 <h2>See also</h2>
 

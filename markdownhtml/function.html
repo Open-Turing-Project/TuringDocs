@@ -24,16 +24,25 @@
 
 <h2>Details</h2>
 
-<p>The set of parameters declared with the function are called <em>formal</em> parameters. For example, in the <em>doubleIt</em> function, <em>x</em> is a formal parameter. A function is called (invoked) by a <em>function call</em> which consists of the function's name followed by the parenthesized list of <em>actual</em> parameters (if any). For example, <em>doubleIt</em> (5.3) is a call having 5.3 as an actual parameter. If there are no parameters and no parentheses, the call does not have parentheses. The keyword <strong>function</strong> can be abbreviated to <strong>fcn</strong>. See also <em>functionCall</em> and <em>procedureDeclaration</em>.
-Each actual non-<strong>var</strong> parameter must be assignable to the type of its corresponding formal parameter. See also <em>assignability</em>.
-A function must finish by executing a <strong>result</strong> statement, which produces the function's value. In the above example, the <strong>result</strong> statement computes and returns the value 2.0 * <em>x</em>.
-In principle, a function (1) should not change any variables outside of itself (global variables) or (2) should not have <strong>var</strong> parameters. In other words, it should have no <em>side effects</em>. The original implementation prevented (1) and (2) and thereby prevented function side effects. Current implementations of Turing do not enforce this restriction.
-The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong>*</strong>), meaning the bound is that of the actual parameter. See <em>paramDeclaration</em> for details about parameters.
-Procedures and functions cannot be declared inside other procedures and functions.
-The syntax of a <em>functionDeclaration</em> presented above has been simplified by leaving out the optional result identifier, <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler. The full syntax is
-The <em>resultId</em> is the name of the result of the function and can be used only in the <strong>post</strong> condition.
-A function must be declared before being called; to allow for mutually recursive procedures and functions, there are <strong>forward</strong> declarations with later declaration of the procedure or function <strong>body</strong>. See <strong>forward</strong> and <strong>body</strong> declarations for explanations.
-You declare parameterless functions using an empty parameter list. When this is done, a call to the function must include an empty parameter list.</p>
+<p>The set of parameters declared with the function are called <em>formal</em> parameters. For example, in the <em>doubleIt</em> function, <em>x</em> is a formal parameter. A function is called (invoked) by a <em>function call</em> which consists of the function's name followed by the parenthesized list of <em>actual</em> parameters (if any). For example, <em>doubleIt</em> (5.3) is a call having 5.3 as an actual parameter. If there are no parameters and no parentheses, the call does not have parentheses. The keyword <strong>function</strong> can be abbreviated to <strong>fcn</strong>. See also <em>functionCall</em> and <em>procedureDeclaration</em>.</p>
+
+<p>Each actual non-<strong>var</strong> parameter must be assignable to the type of its corresponding formal parameter. See also <em>assignability</em>.</p>
+
+<p>A function must finish by executing a <strong>result</strong> statement, which produces the function's value. In the above example, the <strong>result</strong> statement computes and returns the value 2.0 * <em>x</em>.</p>
+
+<p>In principle, a function (1) should not change any variables outside of itself (global variables) or (2) should not have <strong>var</strong> parameters. In other words, it should have no <em>side effects</em>. The original implementation prevented (1) and (2) and thereby prevented function side effects. Current implementations of Turing do not enforce this restriction.</p>
+
+<p>The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (<strong>*</strong>), meaning the bound is that of the actual parameter. See <em>paramDeclaration</em> for details about parameters.</p>
+
+<p>Procedures and functions cannot be declared inside other procedures and functions.</p>
+
+<p>The syntax of a <em>functionDeclaration</em> presented above has been simplified by leaving out the optional result identifier, <strong>import</strong> list, <strong>pre</strong> condition, <strong>init</strong> clause, <strong>post</strong> condition and exception handler. The full syntax is</p>
+
+<p>The <em>resultId</em> is the name of the result of the function and can be used only in the <strong>post</strong> condition.</p>
+
+<p>A function must be declared before being called; to allow for mutually recursive procedures and functions, there are <strong>forward</strong> declarations with later declaration of the procedure or function <strong>body</strong>. See <strong>forward</strong> and <strong>body</strong> declarations for explanations.</p>
+
+<p>You declare parameterless functions using an empty parameter list. When this is done, a call to the function must include an empty parameter list.</p>
 
 <pre><code>    function [ pervasive ] id
         [ ( [ paramDeclaration {,paramDeclaration } ] ) ] 
@@ -48,5 +57,6 @@ You declare parameterless functions using an empty parameter list. When this is 
 
 <h2>See also</h2>
 
-<p><strong><a href="import">import.html</a></strong> list, <strong><a href="pre">pre.html</a></strong> <a href="condition">condition.html</a>, <strong><a href="init">init.html</a></strong> clause, <strong><a href="post">post.html</a></strong> <a href="condition">condition.html</a> and <em>exceptionHandler</em> for explanations of these additional features.
-See also <strong><a href="pervasive">pervasive.html</a></strong>.</p>
+<p><strong><a href="import">import.html</a></strong> list, <strong><a href="pre">pre.html</a></strong> <a href="condition">condition.html</a>, <strong><a href="init">init.html</a></strong> clause, <strong><a href="post">post.html</a></strong> <a href="condition">condition.html</a> and <em>exceptionHandler</em> for explanations of these additional features.</p>
+
+<p>See also <strong><a href="pervasive">pervasive.html</a></strong>.</p>

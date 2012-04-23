@@ -10,13 +10,15 @@
 
 <h2>Description</h2>
 
-<p>The statements and declarations in a <strong>for</strong> statement are repeatedly executed. In the first iteration, the identifier is assigned the value of <em>first</em>. With each additional iteration, the identifier increases by 1 (or by <em>increment</em>, if the <strong>by</strong> clause is present). The loop stops executing when adding 1 (or <em>increment)</em> to the identifier would cause the identifier to exceed <em>last</em>. <em>first</em> and <em>last</em> must be integer values (or else enumerated or <strong>char</strong> values). If you specify <strong>decreasing</strong>, then the identifier decreases by 1 (or by <em>increment</em>) each time through.
-<em>Increment</em> must be a positive integer value. When the <strong>by</strong> clause is present, the <strong>for</strong> loop terminates as soon as the identifier would become greater than <em>last</em>, unless <strong>decreasing</strong> is present. If <strong>decreasing</strong> is present, the loop terminates when the identifier would become less than <em>last</em>.</p>
+<p>The statements and declarations in a <strong>for</strong> statement are repeatedly executed. In the first iteration, the identifier is assigned the value of <em>first</em>. With each additional iteration, the identifier increases by 1 (or by <em>increment</em>, if the <strong>by</strong> clause is present). The loop stops executing when adding 1 (or <em>increment)</em> to the identifier would cause the identifier to exceed <em>last</em>. <em>first</em> and <em>last</em> must be integer values (or else enumerated or <strong>char</strong> values). If you specify <strong>decreasing</strong>, then the identifier decreases by 1 (or by <em>increment</em>) each time through.</p>
+
+<p><em>Increment</em> must be a positive integer value. When the <strong>by</strong> clause is present, the <strong>for</strong> loop terminates as soon as the identifier would become greater than <em>last</em>, unless <strong>decreasing</strong> is present. If <strong>decreasing</strong> is present, the loop terminates when the identifier would become less than <em>last</em>.</p>
 
 <h2>Details</h2>
 
-<p>The identifier is checked before it is added to (or subtracted from). This means that the loop
-will not cause an overflow.</p>
+<p>The identifier is checked before it is added to (or subtracted from). This means that the loop</p>
+
+<p>will not cause an overflow.</p>
 
 <pre><code>    for i : 1 .. maxint
 </code></pre>
@@ -77,12 +79,17 @@ will not cause an overflow.</p>
 
 <h2>Details</h2>
 
-<p>The <strong>for</strong> statement declares the counting identifier (a separate declaration should not be given for <em>i</em> or <em>j</em>). The scope of this identifier is restricted to the <strong>for</strong> statement.
-If <em>first</em> is a value beyond <em>last</em>, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or <em>increment</em> if the <strong>by</strong> clause is present. Executing an <strong>exit</strong> statement inside a <strong>for</strong> statement causes a jump to just beyond <strong>end</strong> <strong>for</strong>. You are not allowed to change the counting variable (for example, you are not allowed to write <em>i</em> := 10).
-The counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.
-If <strong>decreasing</strong> is not present, <em>first</em> .. <em>last</em> can be replaced by the name of a subrange type, for example by <em>dozen</em>, declared by:
-Procedures, functions and modules cannot be declared inside a <strong>for</strong> statement. Just preceding the statements and declarations, you are allowed to write an "invariant clause" of the form:
-This clause is equivalent to: <strong>assert</strong> <em>trueFalseExpn</em>.</p>
+<p>The <strong>for</strong> statement declares the counting identifier (a separate declaration should not be given for <em>i</em> or <em>j</em>). The scope of this identifier is restricted to the <strong>for</strong> statement.</p>
+
+<p>If <em>first</em> is a value beyond <em>last</em>, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or <em>increment</em> if the <strong>by</strong> clause is present. Executing an <strong>exit</strong> statement inside a <strong>for</strong> statement causes a jump to just beyond <strong>end</strong> <strong>for</strong>. You are not allowed to change the counting variable (for example, you are not allowed to write <em>i</em> := 10).</p>
+
+<p>The counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.</p>
+
+<p>If <strong>decreasing</strong> is not present, <em>first</em> .. <em>last</em> can be replaced by the name of a subrange type, for example by <em>dozen</em>, declared by:</p>
+
+<p>Procedures, functions and modules cannot be declared inside a <strong>for</strong> statement. Just preceding the statements and declarations, you are allowed to write an "invariant clause" of the form:</p>
+
+<p>This clause is equivalent to: <strong>assert</strong> <em>trueFalseExpn</em>.</p>
 
 <pre><code>    type dozen : 1..12        invariant trueFalseExpn
 </code></pre>

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>arccos</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
       "text_content": " arccos (r : real) : real\r\n",
-      "mdown_content": "**arccos** (_r_ : **real**) : **real**"
+      "mdown_content": "**arccos** (_r_ : **real**) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>arccos</b> function is used to find the arc cosine of a value. The result is given in radians. For example, <b>arccos</b> (0.5) is <font face=\"symbol\">p</font> / 3.<p>\r\n</p>",
       "text_content": " The arccos function is used to find the arc cosine of a value. The result is given in radians. For example, arccos (0.5) is p / 3.\r\n",
-      "mdown_content": "The **arccos** function is used to find the arc cosine of a value. The result is given in radians. For example, **arccos** (0.5) is p / 3."
+      "mdown_content": "The **arccos** function is used to find the arc cosine of a value. The result is given in radians. For example, **arccos** (0.5) is p / 3.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program prints out the arccosine of -1 through 1 in radians.<p>\r\n</p>",
       "text_content": " This program prints out the arccosine of -1 through 1 in radians.\r\n\r\n",
-      "mdown_content": "This program prints out the arccosine of -1 through 1 in radians."
+      "mdown_content": "This program prints out the arccosine of -1 through 1 in radians.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "the <b><a href=\"arcsin.html\">arcsin</a></b> and <b><a href=\"arctan.html\">arctan</a></b> functions for calculating arcsine and arctangent.<p>\r\nthe <b><a href=\"arccosd.html\">arccosd</a></b> function which finds the arc cosine of a value with the result given in degrees. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": "the arcsin and arctan functions for calculating arcsine and arctangent.\r\nthe arccosd function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "the **[arcsin.html](arcsin)** and **[arctan.html](arctan)** functions for calculating arcsine and arctangent.\nthe **[arccosd.html](arccosd)** function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\nSee also predefined unit **[mathmodule.html](Math)**."
+      "mdown_content": "the **[arcsin.html](arcsin)** and **[arctan.html](arctan)** functions for calculating arcsine and arctangent.\n\nthe **[arccosd.html](arccosd)** function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
     }
   ],
   "dependencies": [

@@ -6,8 +6,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Input.Keydown</strong> procedure allows a program to read which keys are currently being pressed. This procedure is different from <strong>getch</strong> in that it allows a program to detect when a user presses and releases a button. As such, it is not to be used in conjunction with <strong>getch</strong>.
-The procedure can be used in games where an action takes place while a key is depressed.</p>
+<p>The <strong>Input.Keydown</strong> procedure allows a program to read which keys are currently being pressed. This procedure is different from <strong>getch</strong> in that it allows a program to detect when a user presses and releases a button. As such, it is not to be used in conjunction with <strong>getch</strong>.</p>
+
+<p>The procedure can be used in games where an action takes place while a key is depressed.</p>
 
 <h2>Example</h2>
 
@@ -22,8 +23,9 @@ The procedure can be used in games where an action takes place while a key is de
 
 <h2>Details</h2>
 
-<p>The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <strong>true.</strong> For example, the <em>a</em> key is pressed is <em>chars</em> ('a') is <strong>true</strong>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <strong>Input.KeyDown</strong> would register Shift and 'a' as pressed, but not 'A'.
-A full list of all the possible characters that can be set with Input.KeyDown can be found in the <strong>Key Codes</strong> appendix.</p>
+<p>The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <strong>true.</strong> For example, the <em>a</em> key is pressed is <em>chars</em> ('a') is <strong>true</strong>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <strong>Input.KeyDown</strong> would register Shift and 'a' as pressed, but not 'A'.</p>
+
+<p>A full list of all the possible characters that can be set with Input.KeyDown can be found in the <strong>Key Codes</strong> appendix.</p>
 
 <h2>Details</h2>
 
@@ -70,5 +72,6 @@ A full list of all the possible characters that can be set with Input.KeyDown ca
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Input.KeyDown</strong>, not by calling <strong>KeyDown</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Input.KeyDown</strong>, not by calling <strong>KeyDown</strong>.</p>

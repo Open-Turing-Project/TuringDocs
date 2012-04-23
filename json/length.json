@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>length</b> ( <i>s</i> : <b>string</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " length ( s : string ) : int\r\n",
-      "mdown_content": "**length** ( _s_ : **string** ) : **int**"
+      "mdown_content": "**length** ( _s_ : **string** ) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>length</b> function returns the number of characters in the string. The string must be initialized. For example, <b>length</b>(\"table\") is 5.<p>\r\n</p>",
       "text_content": " The length function returns the number of characters in the string. The string must be initialized. For example, length(\"table\") is 5.\r\n",
-      "mdown_content": "The **length** function returns the number of characters in the string. The string must be initialized. For example, **length**(\"table\") is 5."
+      "mdown_content": "The **length** function returns the number of characters in the string. The string must be initialized. For example, **length**(\"table\") is 5.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program inputs three words and outputs their lengths.<p>\r\n</p>\r\nIf the words are \"cat\", \"robin\" and \"crow\", the program will output 3, 5 and 4.<p>\r\n</p>",
       "text_content": " This program inputs three words and outputs their lengths.\r\n\r\nIf the words are \"cat\", \"robin\" and \"crow\", the program will output 3, 5 and 4.\r\n",
-      "mdown_content": "This program inputs three words and outputs their lengths.\nIf the words are \"cat\", \"robin\" and \"crow\", the program will output 3, 5 and 4."
+      "mdown_content": "This program inputs three words and outputs their lengths.\n\nIf the words are \"cat\", \"robin\" and \"crow\", the program will output 3, 5 and 4.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>length</b> function gives the current length of the string. To find the maximum length of a string, use <b>upper</b>. For example, given the declaration <b>var</b> s : <b>string</b> (10), <b>upper</b> (<i>s</i>) returns 10.<p>\r\n</p>",
       "text_content": " The length function gives the current length of the string. To find the maximum length of a string, use upper. For example, given the declaration var s : string (10), upper (s) returns 10.\r\n",
-      "mdown_content": "The **length** function gives the current length of the string. To find the maximum length of a string, use **upper**. For example, given the declaration **var** s : **string** (10), **upper** (_s_) returns 10."
+      "mdown_content": "The **length** function gives the current length of the string. To find the maximum length of a string, use **upper**. For example, given the declaration **var** s : **string** (10), **upper** (_s_) returns 10.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"upper.html\">upper</a></b>.<p>\r\n</p>",
       "text_content": " upper.\r\n",
-      "mdown_content": "**[upper.html](upper)**."
+      "mdown_content": "**[upper.html](upper)**.\n"
     }
   ],
   "dependencies": [

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Blend</b> (<i>picID1</i>, <i>picID2</i>, <i>pct</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Blend (picID1, picID2, pct : int) : int\r\n    ",
-      "mdown_content": "**Pic.Blend** (_picID1_, _picID2_, _pct_ : **int**) : **int**"
+      "mdown_content": "**Pic.Blend** (_picID1_, _picID2_, _pct_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Blend</b> is used to create a new picture by blending two\r\n          identically sized pictures. The resulting picture is created by\r\n          taking <i>pct</i> % of the first picture and adding it to\r\n          (100 - <i>pct</i>) % of the second picture.<p>\r\n    </p>",
       "text_content": "Pic.Blend is used to create a new picture by blending two\r\n          identically sized pictures. The resulting picture is created by\r\n          taking pct % of the first picture and adding it to\r\n          (100 - pct) % of the second picture.\r\n    ",
-      "mdown_content": "**Pic.Blend** is used to create a new picture by blending twoidentically sized pictures. The resulting picture is created bytaking _pct_ % of the first picture and adding it to(100 - _pct_) % of the second picture."
+      "mdown_content": "**Pic.Blend** is used to create a new picture by blending twoidentically sized pictures. The resulting picture is created bytaking _pct_ % of the first picture and adding it to(100 - _pct_) % of the second picture.\n"
     },
     {
       "title": "Details",
       "raw_content": "Note that the blended picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using <b>Pic.Free</b>.<p>\r\n\t  Note that if <i>pct</i> is 100, then the resulting picture will\r\n\t  be identical to <i>picID1</i>.  if <i>pct</i> is 0, then the \r\n\t  resulting picture will be identical to <i>picID2</i>.</p>\n<p>\r\n    </p>",
       "text_content": "Note that the blended picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using Pic.Free.\r\n\t  Note that if pct is 100, then the resulting picture will\r\n\t  be identical to picID1.  if pct is 0, then the \r\n\t  resulting picture will be identical to picID2.\r\n    ",
-      "mdown_content": "Note that the blended picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\nNote that if _pct_ is 100, then the resulting picture willbe identical to _picID1_.  if _pct_ is 0, then the resulting picture will be identical to _picID2_."
+      "mdown_content": "Note that the blended picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\n\nNote that if _pct_ is 100, then the resulting picture willbe identical to _picID1_.  if _pct_ is 0, then the resulting picture will be identical to _picID2_.\n"
     },
     {
       "title": "Example",
@@ -28,9 +28,9 @@
       "images": [
         "pic_blend01.gif"
       ],
-      "raw_content": "The program creates two identically sized pictures, blends them\r\n          together and displays all three pictures.  You can vary the\r\n          blend percentage to obtain different results.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
+      "raw_content": "The program creates two identically sized pictures, blends them\r\n          together and displays all three pictures.  You can vary the\r\n          blend percentage to obtain different results.<p>\r\n</p>\r\n\t  <center><img src=\"pic_blend01.gif\"></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
       "text_content": "The program creates two identically sized pictures, blends them\r\n          together and displays all three pictures.  You can vary the\r\n          blend percentage to obtain different results.\r\n\r\n\t  \r\n\t  Output from the Program\r\n    ",
-      "mdown_content": "The program creates two identically sized pictures, blends themtogether and displays all three pictures.  You can vary theblend percentage to obtain different results.\n"
+      "mdown_content": "The program creates two identically sized pictures, blends themtogether and displays all three pictures.  You can vary theblend percentage to obtain different results.\n\n\n\n![Doc Image](pic_blend01.gif)\n\n**Output from the Program**\n"
     },
     {
       "title": "Execute",
@@ -46,7 +46,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Blend</b>, not by calling <b>Blend</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Blend, not by calling Blend.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Blend**, not by calling **Blend**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.Blend**, not by calling **Blend**.\n"
     }
   ],
   "dependencies": [

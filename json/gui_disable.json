@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Disable</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.Disable (widgetID : int)\r\n",
-      "mdown_content": "**GUI.Disable** (_widgetID_ : **int**)"
+      "mdown_content": "**GUI.Disable** (_widgetID_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Disables a widget specified by <i>widgetID</i>. <p>\r\nUsed in conjunction with <b>GUI.Enable</b> to enable and disable widgets. </p>\n<p>\r\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.</p>\n<p>\r\nDisabled widgets do not respond to keystrokes or mouse clicks.</p>\n<p>\r\n</p>",
       "text_content": " Disables a widget specified by widgetID. \r\nUsed in conjunction with GUI.Enable to enable and disable widgets. \r\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\r\nDisabled widgets do not respond to keystrokes or mouse clicks.\r\n",
-      "mdown_content": "Disables a widget specified by _widgetID_. \nUsed in conjunction with **GUI.Enable** to enable and disable widgets. \nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\nDisabled widgets do not respond to keystrokes or mouse clicks."
+      "mdown_content": "Disables a widget specified by _widgetID_. \n\nUsed in conjunction with **GUI.Enable** to enable and disable widgets. \n\nDisabled widgets generally are \"grayed out\" to visually depict their disabled status.\n\nDisabled widgets do not respond to keystrokes or mouse clicks.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "The three color radio buttons are enabled only when the color check box is selected.<p>\r\n</p>",
       "text_content": " The three color radio buttons are enabled only when the color check box is selected.\r\n\r\n",
-      "mdown_content": "The three color radio buttons are enabled only when the color check box is selected."
+      "mdown_content": "The three color radio buttons are enabled only when the color check box is selected.\n"
     },
     {
       "title": "Details",
       "raw_content": "The following types of widgets can be enabled or disabled:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>Buttons, Check Boxes, Radio Buttons, Picture Buttons,<br>\n</td>\n</tr></table>\n<p>\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,<br>\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>\n<p>\r\n</p>",
       "text_content": " The following types of widgets can be enabled or disabled:\r\n Buttons, Check Boxes, Radio Buttons, Picture Buttons,\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\r\n",
-      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders"
+      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n\nButtons, Check Boxes, Radio Buttons, Picture Buttons,\n\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedure by calling <b>GUI.Disable</b>, not by calling <b>Disable</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedure by calling GUI.Disable, not by calling Disable.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedure by calling **GUI.Disable**, not by calling **Disable**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the procedure by calling **GUI.Disable**, not by calling **Disable**.\n"
     },
     {
       "title": "See also",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"gui_enable.html\">GUI.Enable</a></b>.<p>\r\n</p>",
       "text_content": " GUI.Enable.\r\n",
-      "mdown_content": "**[gui_enable.html](GUI.Enable)**."
+      "mdown_content": "**[gui_enable.html](GUI.Enable)**.\n"
     }
   ],
   "dependencies": [

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Trim</b> (<i>str</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Trim (str : string) : string",
-      "mdown_content": "**Str.Trim** (_str_ : **string**) : **string**"
+      "mdown_content": "**Str.Trim** (_str_ : **string**) : **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Str.Trim</b> function takes the string <i>str</i> and returns\r\n          a string in all the leading and trailing spaces (the spaces at the\r\n          beginning and the end) are deleted. For example, \r\n          <tt>Str.Trim (\"   This is a test \")</tt> returns\r\n          <tt>\"This is a test\"</tt>. If <i>str</i> only has spaces in it, then\r\n          <b>Str.Trim</b> will return an empty string.<p>\r\n    </p>",
       "text_content": "The Str.Trim function takes the string str and returns\r\n          a string in all the leading and trailing spaces (the spaces at the\r\n          beginning and the end) are deleted. For example, \r\n          Str.Trim (\"   This is a test \") returns\r\n          \"This is a test\". If str only has spaces in it, then\r\n          Str.Trim will return an empty string.\r\n    ",
-      "mdown_content": "The **Str.Trim** function takes the string _str_ and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, `Str.Trim (\"   This is a test \")` returns`\"This is a test\"`. If _str_ only has spaces in it, then**Str.Trim** will return an empty string."
+      "mdown_content": "The **Str.Trim** function takes the string _str_ and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, `Str.Trim (\"   This is a test \")` returns`\"This is a test\"`. If _str_ only has spaces in it, then**Str.Trim** will return an empty string.\n"
     },
     {
       "title": "Example",
@@ -37,7 +37,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Str.Trim</b>, not by calling <b>Trim</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Str.Trim, not by calling Trim.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Str.Trim**, not by calling **Trim**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Str.Trim**, not by calling **Trim**.\n"
     },
     {
       "title": "See also",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"str_lower.html\">Str.Lower</a></b> and \r\n          <b><a href=\"str_upper.html\">Str.Upper</a></b>.<p>\r\n    </p>",
       "text_content": "Str.Lower and \r\n          Str.Upper.\r\n    ",
-      "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_upper.html](Str.Upper)**."
+      "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_upper.html](Str.Upper)**.\n"
     }
   ],
   "dependencies": [

@@ -18,7 +18,7 @@ def markdownFormat(htmlStr,allowTable = true)
 	text = text.lines.map {|l| l.chomp.lstrip}.join
 	# convert supported tags
 	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
-	text.gsub!(/<img src="(.*?)"\/?>/,'![Doc Image](\1)')
+	text.gsub!(/<img src="(.*?)"\/?>/,"\n\n![Doc Image](\\1)\n\n")
 	text.gsub!(/<b>(.*?)<\/b>/) do |s|
 		delim = $1 == "*" ? "__" : "**"
 		str = $1.strip
@@ -34,7 +34,7 @@ def markdownFormat(htmlStr,allowTable = true)
 		str.empty? ? $1 : "#{lpad}#{delim}#{str}#{delim}#{rpad}"
 	end
 	text.gsub!(/<tt>(.*?)<\/tt>/,'`\1`')
-	text.gsub!(/<p>(.*?)<\/p>/,"\n\\1")
+	text.gsub!(/<p>(.*?)<\/p>/,"\n\n\\1")
 	text.gsub!(/<h([1-6])>(.*?)<\/h[1-6]>/) {|m| ("#"*$1.to_i)+$2+"\n"}
 	text.gsub!(/<li>/,"- ")
 	text.gsub!(/<\/li>/,"\n")
@@ -44,7 +44,7 @@ def markdownFormat(htmlStr,allowTable = true)
 		text.gsub!(/<td.*?>/," ")
 	end
 	# remove html leftovers
-	text.gsub!(/<\/?(\S+).*?>/,"")
+	text.gsub!(/<\/?(\w+).*?>/,"")
 	text.gsub!(/&nbsp;/," ")
 	text.gsub!(/&gt;/,">")
 	text.gsub!(/&lt;/,"<")
@@ -98,7 +98,7 @@ def convFile(f)
 			s[:images] ||= []
 			s[:images] << file
 			page[:dependencies] << file
-			o.remove # remove it from the content, we have processed it
+			#o.remove # remove it from the content, we have processed it
 		end
 
 		#find links, mostly for processing utility
@@ -148,7 +148,8 @@ $mdownTemplate = ERB.new(IO.read("scripts/mdownTemplate.erb"),0,"<>")
 def structureToMarkdown(page)
 	$mdownTemplate.result(binding) # gets the page param from the binding
 end
-# puts structureToMarkdown(convFile("html/draw_arc.html"))
+# datastruct = convFile("html/keycodes.html")
+# puts markdownFormat(datastruct[:htmlcontent])
 Dir["html/*.html"].each do |f|
 	#puts "Processing #{f}"
 	datastruct = convFile(f)

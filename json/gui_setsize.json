@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSize</b> (<i>widgetID</i>, <i>width</i>, <i>height</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSize (widgetID, width, height : int)\r\n",
-      "mdown_content": "**GUI.SetSize** (_widgetID_, _width_, _height_ : **int**)"
+      "mdown_content": "**GUI.SetSize** (_widgetID_, _width_, _height_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Changes the size of the widget specified by <i>widgetID</i>. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the <i>width</i> and <i>height</i> parameters are no necessarily the actual width and height of the widget. For example, the <i>TextField</i> widget ignores the <i>height</i> parameter, calculating the widget's actual height from the height of the text in the <i>TextField</i>.<p>\r\n</p>",
       "text_content": " Changes the size of the widget specified by widgetID. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the width and height parameters are no necessarily the actual width and height of the widget. For example, the TextField widget ignores the height parameter, calculating the widget's actual height from the height of the text in the TextField.\r\n",
-      "mdown_content": "Changes the size of the widget specified by _widgetID_. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the _width_ and _height_ parameters are no necessarily the actual width and height of the widget. For example, the _TextField_ widget ignores the _height_ parameter, calculating the widget's actual height from the height of the text in the _TextField_."
+      "mdown_content": "Changes the size of the widget specified by _widgetID_. If the widget is visible, its size is changed immediately, otherwise the widget will appear in its new size when the widget is next made visible. Note that the _width_ and _height_ parameters are no necessarily the actual width and height of the widget. For example, the _TextField_ widget ignores the _height_ parameter, calculating the widget's actual height from the height of the text in the _TextField_.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program resizes the button every time the button is pressed.<p>\r\n</p>",
       "text_content": " The following program resizes the button every time the button is pressed.\r\n\r\n",
-      "mdown_content": "The following program resizes the button every time the button is pressed."
+      "mdown_content": "The following program resizes the button every time the button is pressed.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetSize</b>, not by calling <b>SetSize</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetSize, not by calling SetSize.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetSize**, not by calling **SetSize**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetSize**, not by calling **SetSize**.\n"
     }
   ],
   "dependencies": [

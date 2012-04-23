@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Mouse.ButtonChoose </b>(<i>choice</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Mouse.ButtonChoose (choice : string)\r\n",
-      "mdown_content": "**Mouse.ButtonChoose** (_choice_ : **string**)"
+      "mdown_content": "**Mouse.ButtonChoose** (_choice_ : **string**)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Mouse.ButtonChoose</b> procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"<i>single-button mode</i>\" or in \"<i>multi-button mode</i>\". In \"<i>single-button mode</i>\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.<p>\r\nIn Turing, the mouse starts in \"<i>single-button mode</i>\".</p>\n<p>\r\nThe parameter <i>choice</i> can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"<i>single-button mode</i>\") or \"multibutton\" (which switches the mouse into \"<i>multi-button mode</i>\").</p>\n<p>\r\n</p>",
       "text_content": " The Mouse.ButtonChoose procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"single-button mode\" or in \"multi-button mode\". In \"single-button mode\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\r\nIn Turing, the mouse starts in \"single-button mode\".\r\nThe parameter choice can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"single-button mode\") or \"multibutton\" (which switches the mouse into \"multi-button mode\").\r\n",
-      "mdown_content": "The **Mouse.ButtonChoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"_single-button mode_\" or in \"_multi-button mode_\". In \"_single-button mode_\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\nIn Turing, the mouse starts in \"_single-button mode_\".\nThe parameter _choice_ can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"_single-button mode_\") or \"multibutton\" (which switches the mouse into \"_multi-button mode_\")."
+      "mdown_content": "The **Mouse.ButtonChoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in \"_single-button mode_\" or in \"_multi-button mode_\". In \"_single-button mode_\" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.\n\nIn Turing, the mouse starts in \"_single-button mode_\".\n\nThe parameter _choice_ can be one of \"singlebutton\", \"onebutton\" (which switch the mouse into \"_single-button mode_\") or \"multibutton\" (which switches the mouse into \"_multi-button mode_\").\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "A program that displays the status of the mouse at the top left corner of the screen.<p>\r\n</p>",
       "text_content": " A program that displays the status of the mouse at the top left corner of the screen.\r\n\r\n",
-      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen."
+      "mdown_content": "A program that displays the status of the mouse at the top left corner of the screen.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Mouse.ButtonChoose</b>, not by calling <b>ButtonChoose</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Mouse.ButtonChoose, not by calling ButtonChoose.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Mouse.ButtonChoose**, not by calling **ButtonChoose**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Mouse.ButtonChoose**, not by calling **ButtonChoose**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"mouse_buttonmoved.html\">Mouse.ButtonMoved</a></b> and <b><a href=\"mouse_buttonwait.html\">Mouse.ButtonWait</a></b> to get mouse events saved in a queue. See also <b><a href=\"mouse_where.html\">Mouse.Where</a></b> to get the current status of mouse button(s).<p>\r\n</p>",
       "text_content": " Mouse.ButtonMoved and Mouse.ButtonWait to get mouse events saved in a queue. See also Mouse.Where to get the current status of mouse button(s).\r\n",
-      "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_where.html](Mouse.Where)** to get the current status of mouse button(s)."
+      "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_where.html](Mouse.Where)** to get the current status of mouse button(s).\n"
     }
   ],
   "dependencies": [

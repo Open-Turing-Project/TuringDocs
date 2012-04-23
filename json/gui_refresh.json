@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Refresh</b><p>\r\n</p></font>",
       "text_content": " GUI.Refresh\r\n",
-      "mdown_content": "**GUI.Refresh**"
+      "mdown_content": "**GUI.Refresh**\n"
     },
     {
       "title": "Description",
       "raw_content": "This routine redraws all the widgets in the currently-selected window. This is used when some form of drawing may have overwritten the widgets in a window. <p>\r\nIt is often used when there is some possibility that the widgets may have been drawn over. For example, a program that places buttons on top of a background image should call <b>GUI.Refresh</b> when the image is changed.</p>\n<p>\r\n</p>",
       "text_content": " This routine redraws all the widgets in the currently-selected window. This is used when some form of drawing may have overwritten the widgets in a window. \r\nIt is often used when there is some possibility that the widgets may have been drawn over. For example, a program that places buttons on top of a background image should call GUI.Refresh when the image is changed.\r\n",
-      "mdown_content": "This routine redraws all the widgets in the currently-selected window. This is used when some form of drawing may have overwritten the widgets in a window. \nIt is often used when there is some possibility that the widgets may have been drawn over. For example, a program that places buttons on top of a background image should call **GUI.Refresh** when the image is changed."
+      "mdown_content": "This routine redraws all the widgets in the currently-selected window. This is used when some form of drawing may have overwritten the widgets in a window. \n\nIt is often used when there is some possibility that the widgets may have been drawn over. For example, a program that places buttons on top of a background image should call **GUI.Refresh** when the image is changed.\n"
     },
     {
       "title": "Details",
       "raw_content": "<b>GUI.Refresh</b> is used by the GUI Library to redraw all the widgets when the background colour of a window has changed.<p>\r\n</p>",
       "text_content": " GUI.Refresh is used by the GUI Library to redraw all the widgets when the background colour of a window has changed.\r\n",
-      "mdown_content": "**GUI.Refresh** is used by the GUI Library to redraw all the widgets when the background colour of a window has changed."
+      "mdown_content": "**GUI.Refresh** is used by the GUI Library to redraw all the widgets when the background colour of a window has changed.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedures by calling <b>GUI.Refresh</b>, not by calling <b>Refresh</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedures by calling GUI.Refresh, not by calling Refresh.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedures by calling **GUI.Refresh**, not by calling **Refresh**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the procedures by calling **GUI.Refresh**, not by calling **Refresh**.\n"
     }
   ],
   "dependencies": [

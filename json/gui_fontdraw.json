@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.FontDraw</b> (<i>widgetID</i> : <b>int</b>, <i>textStr</i> : <b>string</b>, <br><i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.FontDraw (widgetID : int, textStr : string, x, y, fontID, Color : int)\r\n",
-      "mdown_content": "**GUI.FontDraw** (_widgetID_ : **int**, _textStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)"
+      "mdown_content": "**GUI.FontDraw** (_widgetID_ : **int**, _textStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "Performs a <i>Font.Draw</i> command to the canvas specified by <i>widgetID</i>.<p>\r\nThis routine is essentially the same as the <i>Font.Draw</i> procedure in the <i>Font</i> module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. If the canvas is in \"xor mode\", all the drawing will be done with \"xor\" set. (See <b>View.Set</b><i> </i>for more information about \"xor\".)</p>\n<p>\r\nThe <i>widgetID</i> must specify a canvas widget.</p>\n<p>\r\n</p>",
       "text_content": " Performs a Font.Draw command to the canvas specified by widgetID.\r\nThis routine is essentially the same as the Font.Draw procedure in the Font module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. If the canvas is in \"xor mode\", all the drawing will be done with \"xor\" set. (See View.Set for more information about \"xor\".)\r\nThe widgetID must specify a canvas widget.\r\n",
-      "mdown_content": "Performs a _Font.Draw_ command to the canvas specified by _widgetID_.\nThis routine is essentially the same as the _Font.Draw_ procedure in the _Font_ module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. If the canvas is in \"xor mode\", all the drawing will be done with \"xor\" set. (See **View.Set** for more information about \"xor\".)\nThe _widgetID_ must specify a canvas widget."
+      "mdown_content": "Performs a _Font.Draw_ command to the canvas specified by _widgetID_.\n\nThis routine is essentially the same as the _Font.Draw_ procedure in the _Font_ module. All coordinates are based on the canvas and all drawing is clipped to the canvas drawing surface. If the canvas is in \"xor mode\", all the drawing will be done with \"xor\" set. (See **View.Set** for more information about \"xor\".)\n\nThe _widgetID_ must specify a canvas widget.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the procedure by calling <b>GUI.FontDraw</b>, not by calling <b>FontDraw</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the procedure by calling GUI.FontDraw, not by calling FontDraw.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the procedure by calling **GUI.FontDraw**, not by calling **FontDraw**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the procedure by calling **GUI.FontDraw**, not by calling **FontDraw**.\n"
     },
     {
       "title": "See also",
       "raw_content": "<b>GUI.CreateCanvas</b>.<p>\r\n</p>",
       "text_content": " GUI.CreateCanvas.\r\n",
-      "mdown_content": "**GUI.CreateCanvas**."
+      "mdown_content": "**GUI.CreateCanvas**.\n"
     }
   ],
   "dependencies": [

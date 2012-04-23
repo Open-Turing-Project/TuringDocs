@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<b>Math.DistancePointLine</b> (<i>xp</i>, <i>yp</i>, <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>real</b>) : <b>real</b><p>\r\n</p>",
       "text_content": " Math.DistancePointLine (xp, yp, x1, y1, x2, y2 : real) : real\r\n",
-      "mdown_content": "**Math.DistancePointLine** (_xp_, _yp_, _x1_, _y1_, _x2_, _y2_ : **real**) : **real**"
+      "mdown_content": "**Math.DistancePointLine** (_xp_, _yp_, _x1_, _y1_, _x2_, _y2_ : **real**) : **real**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Math.DistancePointLine </b>is used to calculate the distance between a point and a line segment.\r\nIt is often used in games to determine if a collision has occurred. (<i>xp</i>, <i>yp</i>) is the location\r\nbetween the point. (<i>x1</i>, <i>y1</i>) and (<i>x2</i>, <i>y2</i>) are the end points of the line segment.<p>\r\n</p>",
       "text_content": " Math.DistancePointLine is used to calculate the distance between a point and a line segment.\r\nIt is often used in games to determine if a collision has occurred. (xp, yp) is the location\r\nbetween the point. (x1, y1) and (x2, y2) are the end points of the line segment.\r\n",
-      "mdown_content": "**Math.DistancePointLine** is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment."
+      "mdown_content": "**Math.DistancePointLine** is used to calculate the distance between a point and a line segment.It is often used in games to determine if a collision has occurred. (_xp_, _yp_) is the locationbetween the point. (_x1_, _y1_) and (_x2_, _y2_) are the end points of the line segment.\n"
     },
     {
       "title": "Details",
       "raw_content": "The parameters to <b>Math.DistancePointLine</b> are real, but you can pass integer variables and constants. The parameters\r\nare in the same order as the subprogram name (that is point, then line).<p>\r\n</p>",
       "text_content": "The parameters to Math.DistancePointLine are real, but you can pass integer variables and constants. The parameters\r\nare in the same order as the subprogram name (that is point, then line).\r\n",
-      "mdown_content": "The parameters to **Math.DistancePointLine** are real, but you can pass integer variables and constants. The parametersare in the same order as the subprogram name (that is point, then line)."
+      "mdown_content": "The parameters to **Math.DistancePointLine** are real, but you can pass integer variables and constants. The parametersare in the same order as the subprogram name (that is point, then line).\n"
     },
     {
       "title": "Example",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "This progam draws a line segment and a circle with radius 75 on the screen and outputs whether they touch.<p>\r\n</p>",
       "text_content": "This progam draws a line segment and a circle with radius 75 on the screen and outputs whether they touch.\r\n\r\n",
-      "mdown_content": "This progam draws a line segment and a circle with radius 75 on the screen and outputs whether they touch."
+      "mdown_content": "This progam draws a line segment and a circle with radius 75 on the screen and outputs whether they touch.\n"
     },
     {
       "title": "Execute",
@@ -43,7 +43,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Math.DistancePointLine</b>, not by calling <b>DistancePointLine</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Math.DistancePointLine, not by calling DistancePointLine.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Math.DistancePointLine**, not by calling **DistancePointLine**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Math.DistancePointLine**, not by calling **DistancePointLine**.\n"
     }
   ],
   "dependencies": [

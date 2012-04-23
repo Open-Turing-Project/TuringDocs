@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetEventWidgetID</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetEventWidgetID : int\r\n",
-      "mdown_content": "**GUI.GetEventWidgetID** : **int**"
+      "mdown_content": "**GUI.GetEventWidgetID** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an <i>action procedure</i>, as it will return 1 when there is no event that activated a widget being processed.<p>\r\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.</p>\n<p>\r\n</p>",
       "text_content": " Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an action procedure, as it will return 1 when there is no event that activated a widget being processed.\r\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.\r\n",
-      "mdown_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an _action procedure_, as it will return 1 when there is no event that activated a widget being processed.\nThis function is used when a several buttons use the same action procedure to determine which button was pressed."
+      "mdown_content": "Returns the widget ID of the widget that was activated by the mouse button press or the keystroke. This function should only be called in an _action procedure_, as it will return 1 when there is no event that activated a widget being processed.\n\nThis function is used when a several buttons use the same action procedure to determine which button was pressed.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program prints a message stating which button was selected.<p>\r\n</p>",
       "text_content": " The following program prints a message stating which button was selected.\r\n\r\n",
-      "mdown_content": "The following program prints a message stating which button was selected."
+      "mdown_content": "The following program prints a message stating which button was selected.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.GetEventWidgetID</b>, not by calling <b>GetEventWidgetID</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.GetEventWidgetID, not by calling GetEventWidgetID.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.GetEventWidgetID**, not by calling **GetEventWidgetID**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.GetEventWidgetID**, not by calling **GetEventWidgetID**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ProcessEvent.\r\n",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\n"
     }
   ],
   "dependencies": [

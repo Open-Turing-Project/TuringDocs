@@ -23,13 +23,18 @@
 
 <h2>Details</h2>
 
-<p>The length of a string catenation is limited to 255 characters.
-Catenation is sometimes called <em>concatenation</em>.
-Catenation can also be applied to <strong>char</strong> and <strong>char</strong>(<em>n</em>) values. See <strong>char</strong> and <strong>char</strong>(<em>n</em>). If either operand, <em>s</em> or <em>t</em> in <em>s</em> + <em>t</em>, is a <strong>string</strong> or a dynamic <strong>char</strong>(<em>n</em>) (length not known at compile time), the result type is <strong>string</strong>. Otherwise (when both <em>s</em> and <em>t</em> are <strong>char</strong> or non-dynamic <strong>char</strong>(<em>n</em>)) the result type is <strong>char</strong>(<em>n</em>).
-The result of catenation is considered to be a compile time value if both operands are compile time values.
-If both operands have the type <strong>char</strong> or <strong>char</strong>(<em>n</em>) neither of which is a dynamic <strong>char</strong>(<em>n</em>), the result is of type <strong>char</strong>(<em>n</em>), which is also of a non dynamic type. This allows the creation of very long <strong>char</strong>(<em>n</em>) values that can effectively span line boundaries using catenation to join lines. If either operand is a dynamic type or a string type, the catenation produces a string, whose length is limited to 255 characters.</p>
+<p>The length of a string catenation is limited to 255 characters.</p>
+
+<p>Catenation is sometimes called <em>concatenation</em>.</p>
+
+<p>Catenation can also be applied to <strong>char</strong> and <strong>char</strong>(<em>n</em>) values. See <strong>char</strong> and <strong>char</strong>(<em>n</em>). If either operand, <em>s</em> or <em>t</em> in <em>s</em> + <em>t</em>, is a <strong>string</strong> or a dynamic <strong>char</strong>(<em>n</em>) (length not known at compile time), the result type is <strong>string</strong>. Otherwise (when both <em>s</em> and <em>t</em> are <strong>char</strong> or non-dynamic <strong>char</strong>(<em>n</em>)) the result type is <strong>char</strong>(<em>n</em>).</p>
+
+<p>The result of catenation is considered to be a compile time value if both operands are compile time values.</p>
+
+<p>If both operands have the type <strong>char</strong> or <strong>char</strong>(<em>n</em>) neither of which is a dynamic <strong>char</strong>(<em>n</em>), the result is of type <strong>char</strong>(<em>n</em>), which is also of a non dynamic type. This allows the creation of very long <strong>char</strong>(<em>n</em>) values that can effectively span line boundaries using catenation to join lines. If either operand is a dynamic type or a string type, the catenation produces a string, whose length is limited to 255 characters.</p>
 
 <h2>See also</h2>
 
-<p><em>substrings</em> (for separating a strings into parts), <strong><a href="repeat">repeat.html</a></strong> (for making repeated catenations), <strong><a href="string">string1.html</a></strong> type, <strong><a href="length">length.html</a></strong>, and <strong><a href="index">index.html</a></strong> (to determine where one string is located inside another).
-See also <strong><a href="string">string1.html</a></strong>, <strong><a href="char">char.html</a></strong>, <strong><a href="char">char.html</a></strong>(<em>n</em>), <em><a href="explicitStringConstant">explicitstringconstant.html</a>,</em> <em><a href="explicitCharConstant">explicitcharconstant.html</a>,</em> <a href="substring">substring.html</a> and <strong><a href="length">length.html</a></strong>.</p>
+<p><em>substrings</em> (for separating a strings into parts), <strong><a href="repeat">repeat.html</a></strong> (for making repeated catenations), <strong><a href="string">string1.html</a></strong> type, <strong><a href="length">length.html</a></strong>, and <strong><a href="index">index.html</a></strong> (to determine where one string is located inside another).</p>
+
+<p>See also <strong><a href="string">string1.html</a></strong>, <strong><a href="char">char.html</a></strong>, <strong><a href="char">char.html</a></strong>(<em>n</em>), <em><a href="explicitStringConstant">explicitstringconstant.html</a>,</em> <em><a href="explicitCharConstant">explicitcharconstant.html</a>,</em> <a href="substring">substring.html</a> and <strong><a href="length">length.html</a></strong>.</p>

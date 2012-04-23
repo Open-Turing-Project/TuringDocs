@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sizeof</b> (<i>typeNameOrVariableReference</i>)<p>\r\n</p></font>",
       "text_content": " sizeof (typeNameOrVariableReference)\r\n",
-      "mdown_content": "**sizeof** (_typeNameOrVariableReference_)"
+      "mdown_content": "**sizeof** (_typeNameOrVariableReference_)\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>sizeof</b> attribute is used to find the number of bytes used to represent the type or variable. This is implementation-dependent (dirty).<p>\r\n</p>",
       "text_content": " The sizeof attribute is used to find the number of bytes used to represent the type or variable. This is implementation-dependent (dirty).\r\n",
-      "mdown_content": "The **sizeof** attribute is used to find the number of bytes used to represent the type or variable. This is implementation-dependent (dirty)."
+      "mdown_content": "The **sizeof** attribute is used to find the number of bytes used to represent the type or variable. This is implementation-dependent (dirty).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The size of <b>int2</b> and <b>nat2</b> is 2.<p>\r\n</p>",
       "text_content": " The size of int2 and nat2 is 2.\r\n\r\n",
-      "mdown_content": "The size of **int2** and **nat2** is 2."
+      "mdown_content": "The size of **int2** and **nat2** is 2.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <i>typeNameOrVariableReference</i> must be the name of a user-defined type, a variable reference, a basic type (such as <b>real</b>), or a constant.<p>\r\nIn principle, <b>sizeof</b> returns the number of <i>storage units</i> which would not necessarily be 8-bit bytes. For example, in some older machines, such as the CDC 6000 series, the storage units are 60 bit words. However, almost all modern computers use 8-bit bytes so these are the units of <b>sizeof</b>.</p>\n<p>\r\nBeware that sizes may reflect alignment constraints in the underlying computer. For example, string sizes may be rounded up to even values (2-byte word alignments).</p>\n<p>\r\n</p>",
       "text_content": " The typeNameOrVariableReference must be the name of a user-defined type, a variable reference, a basic type (such as real), or a constant.\r\nIn principle, sizeof returns the number of storage units which would not necessarily be 8-bit bytes. For example, in some older machines, such as the CDC 6000 series, the storage units are 60 bit words. However, almost all modern computers use 8-bit bytes so these are the units of sizeof.\r\nBeware that sizes may reflect alignment constraints in the underlying computer. For example, string sizes may be rounded up to even values (2-byte word alignments).\r\n",
-      "mdown_content": "The _typeNameOrVariableReference_ must be the name of a user-defined type, a variable reference, a basic type (such as **real**), or a constant.\nIn principle, **sizeof** returns the number of _storage units_ which would not necessarily be 8-bit bytes. For example, in some older machines, such as the CDC 6000 series, the storage units are 60 bit words. However, almost all modern computers use 8-bit bytes so these are the units of **sizeof**.\nBeware that sizes may reflect alignment constraints in the underlying computer. For example, string sizes may be rounded up to even values (2-byte word alignments)."
+      "mdown_content": "The _typeNameOrVariableReference_ must be the name of a user-defined type, a variable reference, a basic type (such as **real**), or a constant.\n\nIn principle, **sizeof** returns the number of _storage units_ which would not necessarily be 8-bit bytes. For example, in some older machines, such as the CDC 6000 series, the storage units are 60 bit words. However, almost all modern computers use 8-bit bytes so these are the units of **sizeof**.\n\nBeware that sizes may reflect alignment constraints in the underlying computer. For example, string sizes may be rounded up to even values (2-byte word alignments).\n"
     },
     {
       "title": "See also",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "the <i><a href=\"indirection.html\">indirection</a> operator</i> @, <b><a href=\"cheat.html\">cheat</a></b>, <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> (how to write hexadecimal constants), and pointers (in particular <a href=\"unchecked.html\">unchecked</a> pointers). See also <b><a href=\"addr.html\">addr</a></b>, which returns the address of a variable.<p>\r\n</p>",
       "text_content": " the indirection operator @, cheat, explicitIntegerConstant (how to write hexadecimal constants), and pointers (in particular unchecked pointers). See also addr, which returns the address of a variable.\r\n",
-      "mdown_content": "the _[indirection.html](indirection) operator_ @, **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant)_ (how to write hexadecimal constants), and pointers (in particular [unchecked.html](unchecked) pointers). See also **[addr.html](addr)**, which returns the address of a variable."
+      "mdown_content": "the _[indirection.html](indirection) operator_ @, **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant)_ (how to write hexadecimal constants), and pointers (in particular [unchecked.html](unchecked) pointers). See also **[addr.html](addr)**, which returns the address of a variable.\n"
     }
   ],
   "dependencies": [

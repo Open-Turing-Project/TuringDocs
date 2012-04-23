@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>closeStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>close</b> : <i>fileNumber</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A closeStatement is:\r\n close : fileNumber",
-      "mdown_content": "A _closeStatement_ is:\n\n**close** : _fileNumber_\n"
+      "mdown_content": "A _closeStatement_ is:\n\n\n**close** : _fileNumber_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "In Turing, files are read and written using a <i>fileNumber</i>. In most cases, this number is given a value using the <b>open</b> statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the <b>close</b> statement.<p>\r\n</p>",
       "text_content": " In Turing, files are read and written using a fileNumber. In most cases, this number is given a value using the open statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the close statement.\r\n",
-      "mdown_content": "In Turing, files are read and written using a _fileNumber_. In most cases, this number is given a value using the **open** statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement."
+      "mdown_content": "In Turing, files are read and written using a _fileNumber_. In most cases, this number is given a value using the **open** statement, which translates a file name, such as \"Master\", to a file number, such as 5. When the program is finished using the file, it disconnects from the file using the **close** statement.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program illustrates how to open, read and then close a file.<p>\r\n</p>",
       "text_content": " This program illustrates how to open, read and then close a file.\r\n\r\n",
-      "mdown_content": "This program illustrates how to open, read and then close a file."
+      "mdown_content": "This program illustrates how to open, read and then close a file.\n"
     },
     {
       "title": "Details",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.<p>\r\nIf a program does not close a file, the file will be automatically closed when the program finishes.</p>\n<p>\r\nThere is an older and still acceptable version of <b>close</b> that has this syntax:</p>\n<p>\r\n</p>",
       "text_content": " In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.\r\nIf a program does not close a file, the file will be automatically closed when the program finishes.\r\nThere is an older and still acceptable version of close that has this syntax:\r\n\r\n",
-      "mdown_content": "In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.\nIf a program does not close a file, the file will be automatically closed when the program finishes.\nThere is an older and still acceptable version of **close** that has this syntax:"
+      "mdown_content": "In a Turing implementation, there will generally be a limit on the number of currently open files. This limit will typically be around 20. To avoid exceeding this limit, a program that uses many files one after another should close files that are no longer in use.\n\nIf a program does not close a file, the file will be automatically closed when the program finishes.\n\nThere is an older and still acceptable version of **close** that has this syntax:\n"
     },
     {
       "title": "See also",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "the <b><a href=\"open.html\">open</a></b>, <b><a href=\"get.html\">get</a></b>, <b><a href=\"put.html\">put</a></b>, <b><a href=\"read.html\">read</a></b>, <b><a href=\"write.html\">write</a></b>, <b><a href=\"seek.html\">seek</a></b> and <b><a href=\"tell.html\">tell</a></b> statements.<p>\r\n</p>",
       "text_content": " the open, get, put, read, write, seek and tell statements.\r\n",
-      "mdown_content": "the **[open.html](open)**, **[get.html](get)**, **[put.html](put)**, **[read.html](read)**, **[write.html](write)**, **[seek.html](seek)** and **[tell.html](tell)** statements."
+      "mdown_content": "the **[open.html](open)**, **[get.html](get)**, **[put.html](put)**, **[read.html](read)**, **[write.html](write)**, **[seek.html](seek)** and **[tell.html](tell)** statements.\n"
     }
   ],
   "dependencies": [

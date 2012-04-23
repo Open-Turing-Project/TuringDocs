@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int1</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 1-byte integer</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int2</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 2-byte integer</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int4</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 4-byte integer</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": "\r\n (a)int1  % 1-byte integer (b)int2  % 2-byte integer (c)int4  % 4-byte integer",
-      "mdown_content": "\n\n(a)**int1**  _% 1-byte integer_\n(b)**int2**  _% 2-byte integer_\n(c)**int4**  _% 4-byte integer_\n"
+      "mdown_content": "\n\n\n(a) **int1**     _% 1-byte integer_\n(b) **int2**     _% 2-byte integer_\n(c) **int4**     _% 4-byte integer_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>int<i>n</i></b> (<i>n</i>-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the <b>int</b> type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).<p>\r\n</p>",
       "text_content": " The intn (n-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the int type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).\r\n",
-      "mdown_content": "The **int_n_** (_n_-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the **int** type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes)."
+      "mdown_content": "The **int_n_** (_n_-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the **int** type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     },
     {
       "title": "Details",
       "raw_content": "In current implementations of Turing, the range of the <b>int</b> is -2147483647 to 2147483647, which means that the <b>int4</b> type allows one more value, -2147483648. This extra value is used in <b>int</b> to represent the state of being initialized. The <b>int<i>n</i></b> types allow use of all possible values that fit into <i>n</i> bytes and thereby cannot check for initialization.<p>\r\nThe <b>int<i>n</i></b> types are like the C language types <i>short int</i>, <i>int</i>, and <i>long int</i>, except that the number of bytes occupied by the C types depends on the particular C compiler.</p>\n<p>\r\n</p>",
       "text_content": " In current implementations of Turing, the range of the int is -2147483647 to 2147483647, which means that the int4 type allows one more value, -2147483648. This extra value is used in int to represent the state of being initialized. The intn types allow use of all possible values that fit into n bytes and thereby cannot check for initialization.\r\nThe intn types are like the C language types short int, int, and long int, except that the number of bytes occupied by the C types depends on the particular C compiler.\r\n",
-      "mdown_content": "In current implementations of Turing, the range of the **int** is -2147483647 to 2147483647, which means that the **int4** type allows one more value, -2147483648. This extra value is used in **int** to represent the state of being initialized. The **int_n_** types allow use of all possible values that fit into _n_ bytes and thereby cannot check for initialization.\nThe **int_n_** types are like the C language types _short int_, _int_, and _long int_, except that the number of bytes occupied by the C types depends on the particular C compiler."
+      "mdown_content": "In current implementations of Turing, the range of the **int** is -2147483647 to 2147483647, which means that the **int4** type allows one more value, -2147483648. This extra value is used in **int** to represent the state of being initialized. The **int_n_** types allow use of all possible values that fit into _n_ bytes and thereby cannot check for initialization.\n\nThe **int_n_** types are like the C language types _short int_, _int_, and _long int_, except that the number of bytes occupied by the C types depends on the particular C compiler.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"nat.html\">nat</a></b><i>n </i>types which are <i>n</i> byte natural (non-negative) values. See also <b><a href=\"int.html\">int</a></b> and <b><a href=\"nat.html\">nat</a></b>.<p>\r\n</p>",
       "text_content": " the natn types which are n byte natural (non-negative) values. See also int and nat.\r\n",
-      "mdown_content": "the **[nat.html](nat)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**."
+      "mdown_content": "the **[nat.html](nat)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**.\n"
     }
   ],
   "dependencies": [

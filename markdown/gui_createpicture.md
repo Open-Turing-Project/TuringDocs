@@ -5,15 +5,20 @@
 **GUI.CreatePicture** ( _x_, _y_, _picture_ : **int**,     _mergePic_ : **boolean** ) : **int**
 
 
-
 ##Description
 Creates a picture and returns the picture's widget ID. 
+
 The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.
+
 The _x_ and _y_ parameters specify the lower-left corner of the picture. The _picture_ parameter specifies the picture ID of the picture. The picture ID is received from a **Pic.New** or **Pic.FileNew** call. Do not call **Pic.Free** for this picture ID until the button has been disposed of by calling **GUI.Dispose**. The _mergePic_ parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window. 
+
 A picture widget is a passive widget and cannot be enabled or disabled.
 
 
-![Doc image](gui_createpicture01.gif)
+
+![Doc Image](gui_createpicture01.gif)
+
+**Two Pictures**
 
 
 ##Example
@@ -43,12 +48,13 @@ The following program draws two pictures, merged and not merged.
         picture2 := GUI.CreatePicture (120, 25, pic, true)
 ##Details
 When **GUI.CreatePicture** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
-A picture widget is a passive widget and cannot be enabled or disabled.
 
+A picture widget is a passive widget and cannot be enabled or disabled.
 
 
 ##Details
 The following GUI subprograms can be called with a picture as the _widgetID_ parameter:
+
 
 **GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**
 
@@ -58,6 +64,6 @@ The following GUI subprograms can be called with a picture as the _widgetID_ par
 
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **GUI.CreatePicture**, not by calling **CreatePicture**.
 
+This means that you can only call the function by calling **GUI.CreatePicture**, not by calling **CreatePicture**.
 

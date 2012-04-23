@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetNullEventHandler</b> (<i>nullHandler</i> : <b>procedure</b> <i>x</i> ())<p>\r\n</p></font>",
       "text_content": " GUI.SetNullEventHandler (nullHandler : procedure x ())\r\n",
-      "mdown_content": "**GUI.SetNullEventHandler** (_nullHandler_ : **procedure** _x_ ())"
+      "mdown_content": "**GUI.SetNullEventHandler** (_nullHandler_ : **procedure** _x_ ())\n"
     },
     {
       "title": "Description",
       "raw_content": "Sets the new null event handler. The <i>nullHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there are no mouse button presses or keystrokes to be processed.<p>\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.</p>\n<p>\r\n</p>",
       "text_content": " Sets the new null event handler. The nullHandler parameter is the name of a procedure that is called every time GUI.ProcessEvent is called and there are no mouse button presses or keystrokes to be processed.\r\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.\r\n",
-      "mdown_content": "Sets the new null event handler. The _nullHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets."
+      "mdown_content": "Sets the new null event handler. The _nullHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.\n\nThis is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.<p>\r\n</p>",
       "text_content": " The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.\r\n\r\n",
-      "mdown_content": "The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated."
+      "mdown_content": "The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>GUI.SetNullEventHandler</b>, not by calling <b>SetNullEventHandler</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling GUI.SetNullEventHandler, not by calling SetNullEventHandler.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **GUI.SetNullEventHandler**, not by calling **SetNullEventHandler**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **GUI.SetNullEventHandler**, not by calling **SetNullEventHandler**.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ProcessEvent.\r\n",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**."
+      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\n"
     }
   ],
   "dependencies": [

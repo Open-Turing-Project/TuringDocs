@@ -6,10 +6,13 @@
 
 <h2>Description</h2>
 
-<p>The <strong>Mouse.ButtonMoved</strong> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).
-The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>Mouse.ButtonMoved</strong> returns <strong>true</strong>. If the event is not in the queue, then <strong>Mouse.ButtonMoved</strong> returns <strong>false</strong>.
-In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.
-In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
+<p>The <strong>Mouse.ButtonMoved</strong> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).</p>
+
+<p>The parameter <em>motion</em> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <strong>Mouse.ButtonMoved</strong> returns <strong>true</strong>. If the event is not in the queue, then <strong>Mouse.ButtonMoved</strong> returns <strong>false</strong>.</p>
+
+<p>In "<em>single-button mode</em>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.</p>
+
+<p>In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
 
 <h2>Example</h2>
 
@@ -62,8 +65,9 @@ In "<em>multi-button mode</em>", a "down" event occurs whenever any button is pr
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Mouse.ButtonMoved</strong>, not by calling <strong>ButtonMoved</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Mouse.ButtonMoved</strong>, not by calling <strong>ButtonMoved</strong>.</p>
 
 <h2>See also</h2>
 

@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<b>File.Exists</b> (<i>pathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p>",
       "text_content": " File.Exists (pathName : string) : boolean\r\n",
-      "mdown_content": "**File.Exists** (_pathName_ : **string**) : **boolean**"
+      "mdown_content": "**File.Exists** (_pathName_ : **string**) : **boolean**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>File.Exists </b>returns <b>true</b> if a file by the name of <i>pathName</i> exists. It will return <b>false</b> if <i>pathName</i> is a directory.<p>\r\n</p>",
       "text_content": " File.Exists returns true if a file by the name of pathName exists. It will return false if pathName is a directory.\r\n",
-      "mdown_content": "**File.Exists** returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory."
+      "mdown_content": "**File.Exists** returns **true** if a file by the name of _pathName_ exists. It will return **false** if _pathName_ is a directory.\n"
     },
     {
       "title": "Details",
       "raw_content": "If the <b>File.Exists</b> returns <b>false</b>, you can examine <b>Error.Last</b> or <b>Error.LastMsg</b> for more information (i.e. whether the path failed or the file was simply not found).<p>\r\n</p>",
       "text_content": " If the File.Exists returns false, you can examine Error.Last or Error.LastMsg for more information (i.e. whether the path failed or the file was simply not found).\r\n",
-      "mdown_content": "If the **File.Exists** returns **false**, you can examine **Error.Last** or **Error.LastMsg** for more information (i.e. whether the path failed or the file was simply not found)."
+      "mdown_content": "If the **File.Exists** returns **false**, you can examine **Error.Last** or **Error.LastMsg** for more information (i.e. whether the path failed or the file was simply not found).\n"
     },
     {
       "title": "Example",
@@ -27,19 +27,19 @@
       ],
       "raw_content": "This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.<p>\r\n</p>",
       "text_content": " This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.\r\n\r\n  ",
-      "mdown_content": "This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten."
+      "mdown_content": "This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.\n"
     },
     {
       "title": "Execute",
       "raw_content": "An example program is available that creates a file in the current \r\n        directory, tests for its existence using <b>File.Exists</b> and \r\n        deletes the file using <b>File.Delete</b>.<p>\r\n        <object id=\"launch\" type=\"application/x-oleobject\" classid=\"clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11\" width=\"120\" height=\"40\">\r\n          <param name=\"Command\" value=\"TCard\">\n<param name=\"Button\" value=\"Text: Launch Example Program\">\n<param name=\"Item1\" value=\"-1,File.Exists.t;File.Exists Example\"></object></p>\n<p></p>",
       "text_content": "An example program is available that creates a file in the current \r\n        directory, tests for its existence using File.Exists and \r\n        deletes the file using File.Delete.\r\n        \r\n          ",
-      "mdown_content": "An example program is available that creates a file in the current directory, tests for its existence using **File.Exists** and deletes the file using **File.Delete**.\n"
+      "mdown_content": "An example program is available that creates a file in the current directory, tests for its existence using **File.Exists** and deletes the file using **File.Delete**.\n\n\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>File.Exists</b>, not by calling <b>Exists</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling File.Exists, not by calling Exists.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **File.Exists**, not by calling **Exists**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **File.Exists**, not by calling **Exists**.\n"
     }
   ],
   "dependencies": [

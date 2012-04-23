@@ -9,8 +9,9 @@
 
 <h2>Description</h2>
 
-<p>The <strong>bind</strong> declaration creates a new name (or names) for a variable reference (or references). You are allowed to change the named item only if you specify <strong>var</strong>. You can also bind to named non scalar constants.
-While <em>variableReference</em> is bound it does not disappear in the scope.</p>
+<p>The <strong>bind</strong> declaration creates a new name (or names) for a variable reference (or references). You are allowed to change the named item only if you specify <strong>var</strong>. You can also bind to named non scalar constants.</p>
+
+<p>While <em>variableReference</em> is bound it does not disappear in the scope.</p>
 
 <h2>Example</h2>
 
@@ -22,9 +23,13 @@ While <em>variableReference</em> is bound it does not disappear in the scope.</p
 
 <h2>Details</h2>
 
-<p>The scope of the identifier (<em>item</em> above) begins with the <strong>bind</strong> declaration and lasts to the <strong>end</strong> of the surrounding program or statement (or to the end of the surrounding part of a <strong>case</strong> or <strong>if</strong> statement). During this scope, a change to a subscript (<em>n</em> above) that occurs in the variable reference does not change the element to which the identifier refers.
-You are not allowed to use <strong>bind</strong> at the outermost level of the main program (except nested inside statements such as <strong>if</strong>) or at the outermost level in a module.
-You can also optionally use the <strong>register</strong> keyword to request that the bind be done using a machine register. The syntax for <em>bindDeclaration</em> is actually:</p>
+<p>The scope of the identifier (<em>item</em> above) begins with the <strong>bind</strong> declaration and lasts to the <strong>end</strong> of the surrounding program or statement (or to the end of the surrounding part of a <strong>case</strong> or <strong>if</strong> statement). During this scope, a change to a subscript (<em>n</em> above) that occurs in the variable reference does not change the element to which the identifier refers.</p>
+
+<p>You are not allowed to use <strong>bind</strong> at the outermost level of the main program (except nested inside statements such as <strong>if</strong>) or at the outermost level in a module.</p>
+
+<p>You can also optionally use the <strong>register</strong> keyword to request that the bind be done using a machine register. The syntax for <em>bindDeclaration</em> is actually:</p>
+
+<p><strong>bind</strong> [<strong>var</strong>] [<strong>register</strong>] <em>id</em> <strong>to</strong> <em>variableReference</em></p>
 
 <p>{ , [<strong>var</strong>] [<strong>register</strong>] <em>id</em> <strong>to</strong> <em>variableReference</em> }</p>
 

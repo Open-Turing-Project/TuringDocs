@@ -6,7 +6,7 @@
       "title": "Description",
       "raw_content": "This unit contains all the constants representing errors used by the Error module.<p>\r\nAll constants in the ErrorNum module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"<b>ErrorNum.</b>\".)</p>\n<p>\r\n</p>",
       "text_content": " This unit contains all the constants representing errors used by the Error module.\r\nAll constants in the ErrorNum module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"ErrorNum.\".)\r\n",
-      "mdown_content": "This unit contains all the constants representing errors used by the Error module.\nAll constants in the ErrorNum module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"**ErrorNum.**\".)"
+      "mdown_content": "This unit contains all the constants representing errors used by the Error module.\n\nAll constants in the ErrorNum module are exported unqualified. (This means you can use the constants directly without having to use the qualifier \"**ErrorNum.**\".)\n"
     }
   ],
   "dependencies": [

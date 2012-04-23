@@ -6,25 +6,25 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Text</b> (<i>txtStr</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
       "text_content": "Draw.Text (txtStr : string, x, y, fontID, Color : int)\r\n    ",
-      "mdown_content": "**Draw.Text** (_txtStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)"
+      "mdown_content": "**Draw.Text** (_txtStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Draw.Text </b>is used to actually draw text in a specified font. \r\n          The <i>textStr</i> parameter contains the string to be drawn. The \r\n          <i>x</i> and <i>y</i> paramters are the location of the lower left \r\n          hand corner of the text to be displayed. The <i>fontID</i> parameter \r\n          is the number of the font in which the text is to be drawn. The \r\n          <i>Color</i> parameter is used to specify the color in which the \r\n          text is to appear.<p>\r\n          Note that the text that appears is completely unrelated to the text \r\n          that appears using <b>put</b>. <b>Draw.Text</b> is a graphics command \r\n          and thus does not use or affect the cursor location.</p>\n<p>\r\n          The text drawn by the <b>Draw.Text</b> procedure does not erase the \r\n          background.</p>\n<p>\r\n    </p>",
       "text_content": "Draw.Text is used to actually draw text in a specified font. \r\n          The textStr parameter contains the string to be drawn. The \r\n          x and y paramters are the location of the lower left \r\n          hand corner of the text to be displayed. The fontID parameter \r\n          is the number of the font in which the text is to be drawn. The \r\n          Color parameter is used to specify the color in which the \r\n          text is to appear.\r\n          Note that the text that appears is completely unrelated to the text \r\n          that appears using put. Draw.Text is a graphics command \r\n          and thus does not use or affect the cursor location.\r\n          The text drawn by the Draw.Text procedure does not erase the \r\n          background.\r\n    ",
-      "mdown_content": "**Draw.Text** is used to actually draw text in a specified font. The _textStr_ parameter contains the string to be drawn. The _x_ and _y_ paramters are the location of the lower left hand corner of the text to be displayed. The _fontID_ parameter is the number of the font in which the text is to be drawn. The _Color_ parameter is used to specify the color in which the text is to appear.\nNote that the text that appears is completely unrelated to the text that appears using **put**. **Draw.Text** is a graphics command and thus does not use or affect the cursor location.\nThe text drawn by the **Draw.Text** procedure does not erase the background."
+      "mdown_content": "**Draw.Text** is used to actually draw text in a specified font. The _textStr_ parameter contains the string to be drawn. The _x_ and _y_ paramters are the location of the lower left hand corner of the text to be displayed. The _fontID_ parameter is the number of the font in which the text is to be drawn. The _Color_ parameter is used to specify the color in which the text is to appear.\n\nNote that the text that appears is completely unrelated to the text that appears using **put**. **Draw.Text** is a graphics command and thus does not use or affect the cursor location.\n\nThe text drawn by the **Draw.Text** procedure does not erase the background.\n"
     },
     {
       "title": "Details",
       "raw_content": "If <b>Draw.Text</b> is passed an invalid font ID, a fatal error \r\n          occurs. If the <b>Draw.Text</b> call fails for other (non-fatal) \r\n          reasons then <b>Error.Last</b> will return a non-zero value indicating \r\n          the reason for the failure. <b>Error.LastMsg</b> will return a string \r\n          which contains the textual version of the error.<p>\r\n    </p>",
       "text_content": "If Draw.Text is passed an invalid font ID, a fatal error \r\n          occurs. If the Draw.Text call fails for other (non-fatal) \r\n          reasons then Error.Last will return a non-zero value indicating \r\n          the reason for the failure. Error.LastMsg will return a string \r\n          which contains the textual version of the error.\r\n    ",
-      "mdown_content": "If **Draw.Text** is passed an invalid font ID, a fatal error occurs. If the **Draw.Text** call fails for other (non-fatal) reasons then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error."
+      "mdown_content": "If **Draw.Text** is passed an invalid font ID, a fatal error occurs. If the **Draw.Text** call fails for other (non-fatal) reasons then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.\n"
     },
     {
       "title": "Details",
       "raw_content": "<b>Draw.Text</b> is identical to <b>Font.Draw</b>. It is placed here \r\n          for consistency with other pixel graphics drawing routines.<p>\r\n    </p>",
       "text_content": "Draw.Text is identical to Font.Draw. It is placed here \r\n          for consistency with other pixel graphics drawing routines.\r\n    ",
-      "mdown_content": "**Draw.Text** is identical to **Font.Draw**. It is placed here for consistency with other pixel graphics drawing routines."
+      "mdown_content": "**Draw.Text** is identical to **Font.Draw**. It is placed here for consistency with other pixel graphics drawing routines.\n"
     },
     {
       "title": "Example",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "The program draws a phrase in red surrounded by a box in bright blue.<p>\r\n</p>",
       "text_content": "The program draws a phrase in red surrounded by a box in bright blue.\r\n\r\n    ",
-      "mdown_content": "The program draws a phrase in red surrounded by a box in bright blue."
+      "mdown_content": "The program draws a phrase in red surrounded by a box in bright blue.\n"
     },
     {
       "title": "Execute",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "The program draws two strings in the default font (<b>defFontID</b>).<p>\r\n</p>",
       "text_content": "The program draws two strings in the default font (defFontID).\r\n\r\n    ",
-      "mdown_content": "The program draws two strings in the default font (**defFontID**)."
+      "mdown_content": "The program draws two strings in the default font (**defFontID**).\n"
     },
     {
       "title": "Execute",
@@ -74,13 +74,13 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n          This means that you can only call the function by calling \r\n          <b>Draw.Text</b>, not by calling <b>Text</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n          This means that you can only call the function by calling \r\n          Draw.Text, not by calling Text.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Draw.Text**, not by calling **Text**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Draw.Text**, not by calling **Text**.\n"
     },
     {
       "title": "See Also",
       "raw_content": "<b>Font</b> module for more information about selecting the font to \r\n          be displayed.<p>\r\n    </p>",
       "text_content": "Font module for more information about selecting the font to \r\n          be displayed.\r\n    ",
-      "mdown_content": "**Font** module for more information about selecting the font to be displayed."
+      "mdown_content": "**Font** module for more information about selecting the font to be displayed.\n"
     }
   ],
   "dependencies": [

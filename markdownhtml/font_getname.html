@@ -6,9 +6,11 @@
 
 <h2>Description</h2>
 
-<p><strong>Font.GetName</strong> is used to get the next font available on the system. By using <strong>Font.StartName</strong> and then calling <strong>Font.GetName</strong> repeatedly, you can get the names of all the fonts available to the program.
-<strong>Font.StartName</strong> must be called before any calls to <strong>Font.GetName</strong>. After that, <strong>Font.GetName</strong> returns the list of the font names, one per call. When there are no more sizes, <strong>Font.GetName</strong> returns the empty string.
-Once the name of a font is known, it's possible to list the available styles (using <strong>Font.GetStyle</strong>) and the available sizes (using <strong>Font.StartSize</strong> and <strong>Font.GetSize</strong>) for that font.</p>
+<p><strong>Font.GetName</strong> is used to get the next font available on the system. By using <strong>Font.StartName</strong> and then calling <strong>Font.GetName</strong> repeatedly, you can get the names of all the fonts available to the program.</p>
+
+<p><strong>Font.StartName</strong> must be called before any calls to <strong>Font.GetName</strong>. After that, <strong>Font.GetName</strong> returns the list of the font names, one per call. When there are no more sizes, <strong>Font.GetName</strong> returns the empty string.</p>
+
+<p>Once the name of a font is known, it's possible to list the available styles (using <strong>Font.GetStyle</strong>) and the available sizes (using <strong>Font.StartSize</strong> and <strong>Font.GetSize</strong>) for that font.</p>
 
 <h2>Example</h2>
 
@@ -29,5 +31,6 @@ Once the name of a font is known, it's possible to list the available styles (us
 
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>Font.GetName</strong>, not by calling <strong>GetName</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>Font.GetName</strong>, not by calling <strong>GetName</strong>.</p>

@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "A <i>tagStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>tag</b> <i>unionVariableReference</i> , <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A tagStatement is:\r\n tag unionVariableReference , expn",
-      "mdown_content": "A _tagStatement_ is:\n\n**tag** _unionVariableReference_ , _expn_\n"
+      "mdown_content": "A _tagStatement_ is:\n\n\n**tag** _unionVariableReference_ , _expn_\n\n"
     },
     {
       "title": "Description",
       "raw_content": "A <b>tag</b> statement is a special-purpose assignment that is used for changing the tag of a <b>union</b> variable.<p>\r\n</p>",
       "text_content": " A tag statement is a special-purpose assignment that is used for changing the tag of a union variable.\r\n",
-      "mdown_content": "A **tag** statement is a special-purpose assignment that is used for changing the tag of a **union** variable."
+      "mdown_content": "A **tag** statement is a special-purpose assignment that is used for changing the tag of a **union** variable.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "In this example, the tag field of <b>union</b> variable <i>v</i> is set to be <i>passenger</i>,<i> </i>thereby activating the <i>passenger</i> field of <i>v</i>.<p>\r\n</p>",
       "text_content": " In this example, the tag field of union variable v is set to be passenger, thereby activating the passenger field of v.\r\n\r\n",
-      "mdown_content": "In this example, the tag field of **union** variable _v_ is set to be _passenger_, thereby activating the _passenger_ field of _v_."
+      "mdown_content": "In this example, the tag field of **union** variable _v_ is set to be _passenger_, thereby activating the _passenger_ field of _v_.\n"
     },
     {
       "title": "Details",
       "raw_content": "A <b>tag</b> statement is the only way to modify the tag field of a <b>union</b> variable (other than by assigning an entire union value to the union variable).<p>\r\nYou cannot  access a particular set of fields of a <b>union</b> unless the tag is set to match the corresponding label value.</p>\n<p>\r\n</p>",
       "text_content": " A tag statement is the only way to modify the tag field of a union variable (other than by assigning an entire union value to the union variable).\r\nYou cannot  access a particular set of fields of a union unless the tag is set to match the corresponding label value.\r\n",
-      "mdown_content": "A **tag** statement is the only way to modify the tag field of a **union** variable (other than by assigning an entire union value to the union variable).\nYou cannot  access a particular set of fields of a **union** unless the tag is set to match the corresponding label value."
+      "mdown_content": "A **tag** statement is the only way to modify the tag field of a **union** variable (other than by assigning an entire union value to the union variable).\n\nYou cannot  access a particular set of fields of a **union** unless the tag is set to match the corresponding label value.\n"
     },
     {
       "title": "See also",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"union.html\">union</a></b> types.<p>\r\n</p>",
       "text_content": " union types.\r\n",
-      "mdown_content": "**[union.html](union)** types."
+      "mdown_content": "**[union.html](union)** types.\n"
     }
   ],
   "dependencies": [

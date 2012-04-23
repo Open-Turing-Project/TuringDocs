@@ -2,16 +2,21 @@
 
 <h2>Syntax</h2>
 
-<p><strong>GUI.CreateMenuItem</strong> (<em>name</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong>
-<strong>GUI.CreateMenuItemFull</strong> (<em>name</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>shortCut</em> : <strong>char</strong>, <em>addNow</em> : <strong>boolean</strong>) : <strong>int</strong></p>
+<p><strong>GUI.CreateMenuItem</strong> (<em>name</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> ()) : <strong>int</strong></p>
+
+<p><strong>GUI.CreateMenuItemFull</strong> (<em>name</em> : <strong>string</strong>,     <em>actionProc</em> : <strong>procedure</strong> <em>x</em> (), <em>shortCut</em> : <strong>char</strong>, <em>addNow</em> : <strong>boolean</strong>) : <strong>int</strong></p>
 
 <h2>Description</h2>
 
-<p>Creates a menu item and returns the menu item's widget ID.
-Menu items are the individual entries of a menu. To create menus for a window, you must create a menu, then create the menu items for that menu, then create the next menu, etc. All menu items are automatically added to the last menu and after the last menu item of the currently selected (not active!) window.
-The menu item will be added to the last menu after the other menu items in the menu. If there are no menus defined, an error results.
-The <em>name</em> parameter specifies the text that is to appear. A <em>name</em> of three dashes ("---") creates a separator across the menu. The <em>actionProc</em> parameter specifies the name of a procedure to be called when user the selects the menu item from the menu.
-For <strong>GUI.CreateMenuItemFull</strong>, the <em>shortCut</em> parameter specifies the keystroke to be used as the menu item's shortcut. If no shortcut is desired, then '\0' can be used. The <em>addNow</em> parameter has no effect in the current version of the GUI Library. In future versions, it will allow you to create menu items that can then be added to a menu later in the program.</p>
+<p>Creates a menu item and returns the menu item's widget ID.</p>
+
+<p>Menu items are the individual entries of a menu. To create menus for a window, you must create a menu, then create the menu items for that menu, then create the next menu, etc. All menu items are automatically added to the last menu and after the last menu item of the currently selected (not active!) window.</p>
+
+<p>The menu item will be added to the last menu after the other menu items in the menu. If there are no menus defined, an error results.</p>
+
+<p>The <em>name</em> parameter specifies the text that is to appear. A <em>name</em> of three dashes ("---") creates a separator across the menu. The <em>actionProc</em> parameter specifies the name of a procedure to be called when user the selects the menu item from the menu.</p>
+
+<p>For <strong>GUI.CreateMenuItemFull</strong>, the <em>shortCut</em> parameter specifies the keystroke to be used as the menu item's shortcut. If no shortcut is desired, then '\0' can be used. The <em>addNow</em> parameter has no effect in the current version of the GUI Library. In future versions, it will allow you to create menu items that can then be added to a menu later in the program.</p>
 
 <h2>Examples</h2>
 
@@ -25,7 +30,10 @@ For <strong>GUI.CreateMenuItemFull</strong>, the <em>shortCut</em> parameter spe
 
 <p>The following GUI subprograms can be called with a menu as the <em>widgetID</em> parameter:</p>
 
+<p><strong>GUI.Show</strong>, <strong>GUI.Hide</strong>, <strong>GUI.Dispose</strong>,<strong>GUI.Enable</strong>, <strong>GUI.Disable</strong></p>
+
 <h2>Status</h2>
 
-<p>Exported qualified.
-This means that you can only call the function by calling <strong>GUI.CreateMenuItem</strong>, not by calling <strong>CreateMenuItem</strong>.</p>
+<p>Exported qualified.</p>
+
+<p>This means that you can only call the function by calling <strong>GUI.CreateMenuItem</strong>, not by calling <strong>CreateMenuItem</strong>.</p>

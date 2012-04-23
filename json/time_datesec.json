@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.DateSec</b> (<i>dateString</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Time.DateSec (dateString : string) : int\r\n",
-      "mdown_content": "**Time.DateSec** (_dateString_ : **string**) : **int**"
+      "mdown_content": "**Time.DateSec** (_dateString_ : **string**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Time.DateSec</b> function is used to<b> </b>convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>\r\nThe function can also convert just the date (\"<i>dd mmm yy</i>\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"<i>hh:mm:ss</i>\"), in which case it returns the number of seconds that have passed since midnight of that day.</p>\n<p>\r\nIf the format is incorrect or can't be interpreted, then <b>Time.DateSec</b> will return 1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>\n<p>\r\n</p>",
       "text_content": " The Time.DateSec function is used to convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.\r\nThe function can also convert just the date (\"dd mmm yy\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"hh:mm:ss\"), in which case it returns the number of seconds that have passed since midnight of that day.\r\nIf the format is incorrect or can't be interpreted, then Time.DateSec will return 1 and Error.Last and Error.LastMsg will be set to the appropriate error.\r\n",
-      "mdown_content": "The **Time.DateSec** function is used to convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.\nThe function can also convert just the date (\"_dd mmm yy_\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"_hh:mm:ss_\"), in which case it returns the number of seconds that have passed since midnight of that day.\nIf the format is incorrect or can't be interpreted, then **Time.DateSec** will return 1 and **Error.Last** and **Error.LastMsg** will be set to the appropriate error."
+      "mdown_content": "The **Time.DateSec** function is used to convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.\n\nThe function can also convert just the date (\"_dd mmm yy_\"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date (\"_hh:mm:ss_\"), in which case it returns the number of seconds that have passed since midnight of that day.\n\nIf the format is incorrect or can't be interpreted, then **Time.DateSec** will return 1 and **Error.Last** and **Error.LastMsg** will be set to the appropriate error.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>\r\n</p>",
       "text_content": " This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.\r\n\r\n",
-      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970."
+      "mdown_content": "This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.DateSec</b>, not by calling <b>DateSec</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.DateSec, not by calling DateSec.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Time.DateSec**, not by calling **DateSec**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Time.DateSec**, not by calling **DateSec**.\n"
     },
     {
       "title": "See also",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b>, <b><a href=\"time_date.html\">Time.Date</a></b> and <b><a href=\"time_secdate.html\">Time.SecDate</a></b> functions.<p>\r\n</p>",
       "text_content": " Time.Sec, Time.Date and Time.SecDate functions.\r\n",
-      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_secdate.html](Time.SecDate)** functions."
+      "mdown_content": "**[time_sec.html](Time.Sec)**, **[time_date.html](Time.Date)** and **[time_secdate.html](Time.SecDate)** functions.\n"
     }
   ],
   "dependencies": [

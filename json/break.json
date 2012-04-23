@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>break</b><p>\r\n</p></font>",
       "text_content": " break\r\n",
-      "mdown_content": "**break**"
+      "mdown_content": "**break**\n"
     },
     {
       "title": "Description",
       "raw_content": "On systems with a debugger, the environment \"pauses\" when execution reaches the <b>break</b> statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc.<p>\r\n</p>",
       "text_content": " On systems with a debugger, the environment \"pauses\" when execution reaches the break statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc.\r\n",
-      "mdown_content": "On systems with a debugger, the environment \"pauses\" when execution reaches the **break** statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc."
+      "mdown_content": "On systems with a debugger, the environment \"pauses\" when execution reaches the **break** statement. While \"pausing\" is environment specific, in general, the program stops execution until the user presses the \"Resume\" or \"Continue\" button. While paused, the program variables can be inspected, stack traces done, etc.\n"
     },
     {
       "title": "Example",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "<p>\r\n</p>",
       "text_content": "\r\n\r\n",
-      "mdown_content": ""
+      "mdown_content": "\n"
     }
   ],
   "dependencies": [

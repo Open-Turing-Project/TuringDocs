@@ -6,19 +6,19 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Mirror</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Mirror (picID : int) : int\r\n    ",
-      "mdown_content": "**Pic.Mirror** (_picID_ : **int**) : **int**"
+      "mdown_content": "**Pic.Mirror** (_picID_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Mirror</b> is used to create a new picture by flipping the \r\n          picture horizontally. The resulting picture is exactly the same size \r\n\t  as the original, except it appears as a &#147;mirror image&#148;. <p>\r\n    </p>",
       "text_content": "Pic.Mirror is used to create a new picture by flipping the \r\n          picture horizontally. The resulting picture is exactly the same size \r\n\t  as the original, except it appears as a mirror image. \r\n    ",
-      "mdown_content": "**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a &#147;mirror image&#148;. "
+      "mdown_content": "**Pic.Mirror** is used to create a new picture by flipping the picture horizontally. The resulting picture is exactly the same size as the original, except it appears as a &#147;mirror image&#148;. \n"
     },
     {
       "title": "Details",
       "raw_content": "Note that the mirror-imaged picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using <b>Pic.Free</b>.<p>\r\n    </p>",
       "text_content": "Note that the mirror-imaged picture is a newly created picture. \r\n          When it is no longer needed, its memory should be released by \r\n\t  using Pic.Free.\r\n    ",
-      "mdown_content": "Note that the mirror-imaged picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**."
+      "mdown_content": "Note that the mirror-imaged picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\n"
     },
     {
       "title": "Example",
@@ -28,9 +28,9 @@
       "images": [
         "pic_mirror01.gif"
       ],
-      "raw_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
+      "raw_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.<p>\r\n</p>\r\n\t  <center><img src=\"pic_mirror01.gif\"></center>\r\n\t  <center><b>Output from the Program</b></center>\n<p>\r\n    </p>",
       "text_content": "The program draws a crescent on the screen, takes a picture of \r\n          it and then creates a second picture by mirror-imaging the \r\n\t  crescent. It then draws both the original picture and the \r\n\t  mirror-imaged version.\r\n\r\n\t  \r\n\t  Output from the Program\r\n    ",
-      "mdown_content": "The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.\n"
+      "mdown_content": "The program draws a crescent on the screen, takes a picture of it and then creates a second picture by mirror-imaging the crescent. It then draws both the original picture and the mirror-imaged version.\n\n\n\n![Doc Image](pic_mirror01.gif)\n\n**Output from the Program**\n"
     },
     {
       "title": "Execute",
@@ -46,7 +46,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Mirror</b>, not by calling <b>Mirror</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Mirror, not by calling Mirror.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Mirror**, not by calling **Mirror**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.Mirror**, not by calling **Mirror**.\n"
     }
   ],
   "dependencies": [

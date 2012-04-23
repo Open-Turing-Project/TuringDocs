@@ -4,10 +4,10 @@
 
 <p>A <em>compilationUnit</em> is one of:</p>
 
-<p>(a)[ <em>importList</em> ] <em>mainProgram</em>
-(b)<strong>unit</strong> <em>moduleDeclaration</em>
-(c)<strong>unit</strong> <em>monitorDeclaration</em>
-(d)<strong>unit</strong> <em>classDeclaration</em></p>
+<p>(a) [ <em>importList</em> ] <em>mainProgram</em>
+(b) <strong>unit</strong> <em>moduleDeclaration</em>
+(c) <strong>unit</strong> <em>monitorDeclaration</em>
+(d) <strong>unit</strong> <em>classDeclaration</em></p>
 
 <h2>Description</h2>
 
@@ -15,8 +15,9 @@
 
 <h2>Example</h2>
 
-<p>Here is stack module that is separated out into a file whose name is <em>stack</em>.
-The main program, which is in another file, gains access to the stack by importing it. Here is the main program:</p>
+<p>Here is stack module that is separated out into a file whose name is <em>stack</em>.</p>
+
+<p>The main program, which is in another file, gains access to the stack by importing it. Here is the main program:</p>
 
 <pre><code>    unit        % The keyword unit begins each separate file
     module stack
@@ -44,9 +45,11 @@ The main program, which is in another file, gains access to the stack by importi
 
 <h2>Details</h2>
 
-<p>In this example, the  keyword <strong>var</strong> in the import list  is required because the main program causes a change in the stack, by calling <em>push</em> and <em>pop</em>. The import lists of units that are modules, monitors and classes are used to gain access to further units.
-If the stack were in a file with a different name, say <em>stk.t</em>, the import list would be rewritten to use an <strong>in</strong> clause, as follows:
-A mainProgram is simply a program. See <strong>program</strong>.</p>
+<p>In this example, the  keyword <strong>var</strong> in the import list  is required because the main program causes a change in the stack, by calling <em>push</em> and <em>pop</em>. The import lists of units that are modules, monitors and classes are used to gain access to further units.</p>
+
+<p>If the stack were in a file with a different name, say <em>stk.t</em>, the import list would be rewritten to use an <strong>in</strong> clause, as follows:</p>
+
+<p>A mainProgram is simply a program. See <strong>program</strong>.</p>
 
 <pre><code>    import var stack in "stk.t"
 </code></pre>

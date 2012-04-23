@@ -6,37 +6,37 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Scale</b> (<i>picID</i>, <i>newWidth</i>, <i>newHeight</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Scale (picID, newWidth, newHeight : int) : int\r\n    ",
-      "mdown_content": "**Pic.Scale** (_picID_, _newWidth_, _newHeight_ : **int**) : **int**"
+      "mdown_content": "**Pic.Scale** (_picID_, _newWidth_, _newHeight_ : **int**) : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Pic.Scale </b>is used to create a new picture by scaling (resizing) \r\n\t  an already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.<p>\r\n\t  The <i>newWidth</i> and <i>newHeight</i> parameters are the desired \r\n\t  width and height of the new picture. The <i>newWidth</i> and \r\n\t  <i>newHeight</i> parameters may be negative, in which case \r\n\t  the picture is mirror image (<i>newWidth</i> is negative) or \r\n\t  upside-down (<i>newHeight</i> is negative) and the absolute \r\n\t  values are used for the new width and height values.</p>\n<p>\r\n    </p>",
       "text_content": "Pic.Scale is used to create a new picture by scaling (resizing) \r\n\t  an already existing picture. Rotation can either be around a specific \r\n\t  point in the picture (often used for rotating a picure in place) or \r\n\t  just a general rotation.\r\n\t  The newWidth and newHeight parameters are the desired \r\n\t  width and height of the new picture. The newWidth and \r\n\t  newHeight parameters may be negative, in which case \r\n\t  the picture is mirror image (newWidth is negative) or \r\n\t  upside-down (newHeight is negative) and the absolute \r\n\t  values are used for the new width and height values.\r\n    ",
-      "mdown_content": "**Pic.Scale** is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.\nThe _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values."
+      "mdown_content": "**Pic.Scale** is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.\n\nThe _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values.\n"
     },
     {
       "title": "Details",
       "raw_content": "The <b>Pic.Scale</b> command can fail, in which case it \r\n          returns 0. The <b>Error.LastMsg</b> function can then be \r\n\t  used to obtain more information about the failure.<p>\r\n    </p>",
       "text_content": "The Pic.Scale command can fail, in which case it \r\n          returns 0. The Error.LastMsg function can then be \r\n\t  used to obtain more information about the failure.\r\n    ",
-      "mdown_content": "The **Pic.Scale** command can fail, in which case it returns 0. The **Error.LastMsg** function can then be used to obtain more information about the failure."
+      "mdown_content": "The **Pic.Scale** command can fail, in which case it returns 0. The **Error.LastMsg** function can then be used to obtain more information about the failure.\n"
     },
     {
       "title": "Details",
       "raw_content": "Creating a larger picture by scaling a smaller picture \r\n          will result in a \"grainy\" image with each pixel being \r\n\t  scaled up into 2 or 3 pixels. In general image quality \r\n\t  is better if a large picture is scaled down. However, \r\n\t  when a large picture is scaled down, thin one-pixel wide \r\n\t  lines can \"disappear\".<p>\r\n\t  In order to scale a picture while retaining its original \r\n\t  aspect ratio, scale with multiples of the original width \r\n\t  and height. The width and height of a picture can be obtained \r\n\t  using <b>Pic.Width</b> and <b>Pic.Height</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Creating a larger picture by scaling a smaller picture \r\n          will result in a \"grainy\" image with each pixel being \r\n\t  scaled up into 2 or 3 pixels. In general image quality \r\n\t  is better if a large picture is scaled down. However, \r\n\t  when a large picture is scaled down, thin one-pixel wide \r\n\t  lines can \"disappear\".\r\n\t  In order to scale a picture while retaining its original \r\n\t  aspect ratio, scale with multiples of the original width \r\n\t  and height. The width and height of a picture can be obtained \r\n\t  using Pic.Width and Pic.Height.\r\n    ",
-      "mdown_content": "Creating a larger picture by scaling a smaller picture will result in a \"grainy\" image with each pixel being scaled up into 2 or 3 pixels. In general image quality is better if a large picture is scaled down. However, when a large picture is scaled down, thin one-pixel wide lines can \"disappear\".\nIn order to scale a picture while retaining its original aspect ratio, scale with multiples of the original width and height. The width and height of a picture can be obtained using **Pic.Width** and **Pic.Height**."
+      "mdown_content": "Creating a larger picture by scaling a smaller picture will result in a \"grainy\" image with each pixel being scaled up into 2 or 3 pixels. In general image quality is better if a large picture is scaled down. However, when a large picture is scaled down, thin one-pixel wide lines can \"disappear\".\n\nIn order to scale a picture while retaining its original aspect ratio, scale with multiples of the original width and height. The width and height of a picture can be obtained using **Pic.Width** and **Pic.Height**.\n"
     },
     {
       "title": "Details",
       "raw_content": "Scaling can be slow on older machines. Programs that are using \r\n          animation should create and store all the scaled images that may \r\n\t  be needed. Often pictures of an object at various sizes are stored \r\n\t  in an array. <p>\r\n    </p>",
       "text_content": "Scaling can be slow on older machines. Programs that are using \r\n          animation should create and store all the scaled images that may \r\n\t  be needed. Often pictures of an object at various sizes are stored \r\n\t  in an array. \r\n    ",
-      "mdown_content": "Scaling can be slow on older machines. Programs that are using animation should create and store all the scaled images that may be needed. Often pictures of an object at various sizes are stored in an array. "
+      "mdown_content": "Scaling can be slow on older machines. Programs that are using animation should create and store all the scaled images that may be needed. Often pictures of an object at various sizes are stored in an array. \n"
     },
     {
       "title": "Details",
       "raw_content": "Note that the scaled picture is a newly created picture. When it is \r\n          no longer needed, its memory should be released by using \r\n\t  <b>Pic.Free</b>.<p>\r\n    </p>",
       "text_content": "Note that the scaled picture is a newly created picture. When it is \r\n          no longer needed, its memory should be released by using \r\n\t  Pic.Free.\r\n    ",
-      "mdown_content": "Note that the scaled picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**."
+      "mdown_content": "Note that the scaled picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.\n"
     },
     {
       "title": "Example",
@@ -46,9 +46,9 @@
       "images": [
         "pic_scale01.gif"
       ],
-      "raw_content": "This program draws a set of stars scaled at 50%, 100% and 150% on \r\n          different axes. Note how some single-pixel lines are removed when \r\n\t  the picture is scaled down..<p>\r\n</p>\r\n\t  <center></center>\r\n\t  <center><b>Output from Program</b></center>\n<p>\r\n    </p>",
+      "raw_content": "This program draws a set of stars scaled at 50%, 100% and 150% on \r\n          different axes. Note how some single-pixel lines are removed when \r\n\t  the picture is scaled down..<p>\r\n</p>\r\n\t  <center><img src=\"pic_scale01.gif\"></center>\r\n\t  <center><b>Output from Program</b></center>\n<p>\r\n    </p>",
       "text_content": "This program draws a set of stars scaled at 50%, 100% and 150% on \r\n          different axes. Note how some single-pixel lines are removed when \r\n\t  the picture is scaled down..\r\n\r\n\t  \r\n\t  Output from Program\r\n    ",
-      "mdown_content": "This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..\n"
+      "mdown_content": "This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..\n\n\n\n![Doc Image](pic_scale01.gif)\n\n**Output from Program**\n"
     },
     {
       "title": "Execute",
@@ -64,7 +64,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\n\t  This means that you can only call the function by calling \r\n\t  <b>Pic.Scale</b>, not by calling <b>Scale</b>.</p>\n<p>\r\n    </p>",
       "text_content": "Exported qualified.\r\n\t  This means that you can only call the function by calling \r\n\t  Pic.Scale, not by calling Scale.\r\n    ",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Pic.Scale**, not by calling **Scale**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Pic.Scale**, not by calling **Scale**.\n"
     }
   ],
   "dependencies": [

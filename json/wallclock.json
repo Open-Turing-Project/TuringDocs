@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>wallclock</b> ( <b>var</b> <i>c</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " wallclock ( var c : int )\r\n",
-      "mdown_content": "**wallclock** ( **var** _c_ : **int** )"
+      "mdown_content": "**wallclock** ( **var** _c_ : **int** )\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>wallclock</b> statement is used to determine the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.<p>\r\n</p>",
       "text_content": " The wallclock statement is used to determine the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.\r\n",
-      "mdown_content": "The **wallclock** statement is used to determine the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970."
+      "mdown_content": "The **wallclock** statement is used to determine the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program tells you how many seconds since 1970.<p>\r\n</p>",
       "text_content": " This program tells you how many seconds since 1970.\r\n\r\n",
-      "mdown_content": "This program tells you how many seconds since 1970."
+      "mdown_content": "This program tells you how many seconds since 1970.\n"
     },
     {
       "title": "Details",
       "raw_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system; in that case, the <b>wallclock</b> procedure will give incorrect results. Also, on IBM PC compatibles, the call is dependent on having the time zone TZ variable correctly set. On an IBM PC, the default time zone is set to PST (6 hours from GMT).<p>\r\nOn the Apple Macintosh, the <b>wallclock</b> procedure returns the number of seconds since 00:00:00 local time Jan. 1, 1970.</p>\n<p>\r\n</p>",
       "text_content": " Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system; in that case, the wallclock procedure will give incorrect results. Also, on IBM PC compatibles, the call is dependent on having the time zone TZ variable correctly set. On an IBM PC, the default time zone is set to PST (6 hours from GMT).\r\nOn the Apple Macintosh, the wallclock procedure returns the number of seconds since 00:00:00 local time Jan. 1, 1970.\r\n",
-      "mdown_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system; in that case, the **wallclock** procedure will give incorrect results. Also, on IBM PC compatibles, the call is dependent on having the time zone TZ variable correctly set. On an IBM PC, the default time zone is set to PST (6 hours from GMT).\nOn the Apple Macintosh, the **wallclock** procedure returns the number of seconds since 00:00:00 local time Jan. 1, 1970."
+      "mdown_content": "Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system; in that case, the **wallclock** procedure will give incorrect results. Also, on IBM PC compatibles, the call is dependent on having the time zone TZ variable correctly set. On an IBM PC, the default time zone is set to PST (6 hours from GMT).\n\nOn the Apple Macintosh, the **wallclock** procedure returns the number of seconds since 00:00:00 local time Jan. 1, 1970.\n"
     },
     {
       "title": "See also",
@@ -41,7 +41,7 @@
       ],
       "raw_content": "<b><a href=\"delay.html\">delay</a></b>, <b><a href=\"time.html\">time</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " delay, time, clock, sysclock and date statements.\r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[delay.html](delay)**, **[time.html](time)**, **[clock.html](clock)**, **[sysclock.html](sysclock)** and **[date.html](date)** statements.\nSee also predefined unit **[timemodule.html](Time)**."
+      "mdown_content": "**[delay.html](delay)**, **[time.html](time)**, **[clock.html](clock)**, **[sysclock.html](sysclock)** and **[date.html](date)** statements.\n\nSee also predefined unit **[timemodule.html](Time)**.\n"
     }
   ],
   "dependencies": [

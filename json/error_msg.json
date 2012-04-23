@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Msg</b> (<i>errorCode</i> : <b>int</b>): <b>string</b><p>\r\n</p></font>",
       "text_content": " Error.Msg (errorCode : int): string\r\n",
-      "mdown_content": "**Error.Msg** (_errorCode_ : **int**): **string**"
+      "mdown_content": "**Error.Msg** (_errorCode_ : **int**): **string**\n"
     },
     {
       "title": "Description",
       "raw_content": "<b>Error.Msg</b> is a function that returns the error message related to a specified error code. If the error code is <i>eNoError</i>, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.<p>\r\n</p>",
       "text_content": " Error.Msg is a function that returns the error message related to a specified error code. If the error code is eNoError, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.\r\n",
-      "mdown_content": "**Error.Msg** is a function that returns the error message related to a specified error code. If the error code is _eNoError_, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error."
+      "mdown_content": "**Error.Msg** is a function that returns the error message related to a specified error code. If the error code is _eNoError_, or if there is no such error code, it returns the empty string. If there is such an error, it returns the textual message associated with that error.\n"
     },
     {
       "title": "Example",
@@ -21,13 +21,13 @@
       ],
       "raw_content": "This program prints out the error message associated with <i>eFsysFileNotFound</i> (&#147;File not found&#148;).<p>\r\n</p>",
       "text_content": " This program prints out the error message associated with eFsysFileNotFound (File not found).\r\n\r\n",
-      "mdown_content": "This program prints out the error message associated with _eFsysFileNotFound_ (&#147;File not found&#148;)."
+      "mdown_content": "This program prints out the error message associated with _eFsysFileNotFound_ (&#147;File not found&#148;).\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Error.Msg</b>, not by calling <b>Msg</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Error.Msg, not by calling Msg.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Error.Msg**, not by calling **Msg**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Error.Msg**, not by calling **Msg**.\n"
     }
   ],
   "dependencies": [

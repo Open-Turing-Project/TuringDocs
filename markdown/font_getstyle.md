@@ -5,10 +5,8 @@
 **Font.GetStyle** (_fontName_ : **string**,         **var** _bold_, _italic_, _underline_ : **boolean**) : **string**
 
 
-
 ##Description
 **Font.GetStyle** is used to get the styles available on the system for a specified font. _bold_, _italic_ and _underline_ are set to **true** if bold, italic or underline versions of the font are available. Once the styles available for a font are known, it's possible to get the sizes available for each style by using **Font.StartSize** and **Font.GetSize**.
-
 
 
 ##Example
@@ -43,6 +41,6 @@ An example is available that displays full information aboutthe fonts including 
 
 ##Status
 Exported qualified.
-This means that you can only call the function by calling **Font.GetStyle**, not by calling **GetStyle**.
 
+This means that you can only call the function by calling **Font.GetStyle**, not by calling **GetStyle**.
 

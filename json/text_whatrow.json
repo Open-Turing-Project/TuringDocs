@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatRow</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatRow : int\r\n",
-      "mdown_content": "**Text.WhatRow** : **int**"
+      "mdown_content": "**Text.WhatRow** : **int**\n"
     },
     {
       "title": "Description",
       "raw_content": "The <b>Text.WhatRow</b> function is used to<b> </b>determine the cursor position's row.<p>\r\n</p>",
       "text_content": " The Text.WhatRow function is used to determine the cursor position's row.\r\n",
-      "mdown_content": "The **Text.WhatRow** function is used to determine the cursor position's row."
+      "mdown_content": "The **Text.WhatRow** function is used to determine the cursor position's row.\n"
     },
     {
       "title": "Example",
@@ -21,19 +21,19 @@
       ],
       "raw_content": "This program outputs <i>The current row is 5</i>,<i> the current column is 15</i>.<p>\r\n</p>",
       "text_content": " This program outputs The current row is 5, the current column is 15.\r\n\r\n",
-      "mdown_content": "This program outputs _The current row is 5_, _the current column is 15_."
+      "mdown_content": "This program outputs _The current row is 5_, _the current column is 15_.\n"
     },
     {
       "title": "Details",
       "raw_content": "The screen should be in a \"<i>screen</i>\" or<i> </i>\"<i>graphics</i>\" mode. <b>Text.WhatRow</b> functions properly even if the cursor is invisible.<p>\r\n</p>",
       "text_content": " The screen should be in a \"screen\" or \"graphics\" mode. Text.WhatRow functions properly even if the cursor is invisible.\r\n",
-      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. **Text.WhatRow** functions properly even if the cursor is invisible."
+      "mdown_content": "The screen should be in a \"_screen_\" or \"_graphics_\" mode. **Text.WhatRow** functions properly even if the cursor is invisible.\n"
     },
     {
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Text.WhatRow</b>, not by calling <b>WhatRow</b>.</p>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Text.WhatRow, not by calling WhatRow.\r\n",
-      "mdown_content": "Exported qualified.\nThis means that you can only call the function by calling **Text.WhatRow**, not by calling **WhatRow**."
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Text.WhatRow**, not by calling **WhatRow**.\n"
     },
     {
       "title": "See also",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "the <b><a href=\"text_whatcol.html\">Text.WhatCol</a> </b>function, which is used to determine the cursor column. See also the <b><a href=\"text_locate.html\">Text.Locate</a></b>, <b><a href=\"textmodule.html\">Text</a></b>.<b><a href=\"maxrow.html\">maxrow</a></b> and <b><a href=\"text_maxcol.html\">Text.maxcol</a> </b><a href=\"procedure.html\">procedure</a>.<p>\r\n</p>",
       "text_content": " the Text.WhatCol function, which is used to determine the cursor column. See also the Text.Locate, Text.maxrow and Text.maxcol procedure.\r\n",
-      "mdown_content": "the **[text_whatcol.html](Text.WhatCol)** function, which is used to determine the cursor column. See also the **[text_locate.html](Text.Locate)**, **[textmodule.html](Text)**.**[maxrow.html](maxrow)** and **[text_maxcol.html](Text.maxcol)** [procedure.html](procedure)."
+      "mdown_content": "the **[text_whatcol.html](Text.WhatCol)** function, which is used to determine the cursor column. See also the **[text_locate.html](Text.Locate)**, **[textmodule.html](Text)**.**[maxrow.html](maxrow)** and **[text_maxcol.html](Text.maxcol)** [procedure.html](procedure).\n"
     }
   ],
   "dependencies": [
