@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>hasch</b> : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " hasch : boolean\r\n",
-      "mdown_content": "**hasch** : **boolean**\n"
+      "mdown_content": "**hasch** : **boolean**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"getch.html\">getch</a></b> and <b><a href=\"getchar.html\">getchar</a></b>.<p>\r\n</p>",
       "text_content": " getch and getchar.\r\n",
-      "mdown_content": "**[getch.html](getch)** and **[getchar.html](getchar)**.\n"
+      "mdown_content": "**[getch](getch.html)** and **[getchar](getchar.html)**.\n"
     }
   ],
   "dependencies": [

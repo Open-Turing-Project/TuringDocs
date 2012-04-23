@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.HostNameFromAddress </b>( <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>hostAddr</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Net.HostNameFromAddress ( \r\n    hostAddr : string) : string\r\n",
-      "mdown_content": "**Net.HostNameFromAddress** (     _hostAddr_ : **string**) : **string**\n"
+      "mdown_content": "**Net.HostNameFromAddress** (     _hostAddr_ : **string**) : **string**"
     },
     {
       "title": "Description",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_hostaddressfromname.html\">Net.HostAddressFromName</a></b>.<p>\r\n</p>",
       "text_content": " Net.HostAddressFromName.\r\n",
-      "mdown_content": "**[net_hostaddressfromname.html](Net.HostAddressFromName)**.\n"
+      "mdown_content": "**[Net.HostAddressFromName](net_hostaddressfromname.html)**.\n"
     }
   ],
   "dependencies": [

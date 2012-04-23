@@ -1,17 +1,16 @@
 
-#Time.SecStr
+# Time.SecStr
 
-##Syntax
+## Syntax
 **Time.SecStr** (_timeInSecs_ : **int**, _formatString_ : **string**) : **string**
 
-
-##Description
+## Description
 The **Time.SecStr** function is used to convert the number of seconds since 00:00:00 GMT Jan 1, 1970 into a date and time string.
 
 If _timeInSecs_ is incorrect or can't be interpreted, then **Time.SecStr** will return the empty string and **Error.Last** and **Error.LastMsg** will be set to the appropriate error.
 
 
-##Detailsn
+## Detailsn
 The _formatString_ parameter specifies how the output stringwill look. The formatString consists of different letters specifyingthe different formats and spaces or commas between these letters. The different letters can be combined to provide different date formats.
 
 Here are the letters:
@@ -41,23 +40,23 @@ Here are the letters:
 
 
 
-##Example
+## Example
 This program outputs the current date and the day number in the year.Example output: **`Thursday November 13, 2003 is day number 317 of 2003`**
 
         put Time.SecStr (Time.Sec, "A B d, Y"), " is day number ",
             Time.SecStr (Time.Sec, "j"), " of ", Time.SecStr (Time.Sec, "Y")
-##Execute
+## Execute
 This example demonstrates each of the formatting letters.
 
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Time.SecStr**, not by calling **SecStr**.
 
 
-##See also
-**[time_sec.html](Time.Sec)** and **[time_secparts.html](Time.SecParts)** functions.
+## See also
+**[Time.Sec](time_sec.html)** and **[Time.SecParts](time_secparts.html)** functions.
 

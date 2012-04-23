@@ -1,22 +1,14 @@
 
-#function
+# function
 
-##Syntax
-A _functionDeclaration_ is:
+## Syntax
+A _functionDeclaration_ is:   **function** _id_ [ ( [_paramDeclaration_ {, _paramDeclaration_ } ] ) ]               : _typeSpec_     _statementsAndDeclarations_   **end** _id_
 
-
-**function** _id_ [ ( [_paramDeclaration_ {, _paramDeclaration_ } ] ) ]
-: _typeSpec_
-_statementsAndDeclarations_
-**end** _id_
-
-
-
-##Description
+## Description
 A function declaration creates (but does not run) a new function. The name of the function (_id_) is given in two places, just after **function** and just after **end**.
 
 
-##Example
+## Example
 
 
         function doubleIt ( x : real ) : real
@@ -24,7 +16,7 @@ A function declaration creates (but does not run) a new function. The name of th
         end doubleIt
         
         put doubleIt ( 5.3 )        % This outputs 10.6
-##Details
+## Details
 The set of parameters declared with the function are called _formal_ parameters. For example, in the _doubleIt_ function, _x_ is a formal parameter. A function is called (invoked) by a _function call_ which consists of the function's name followed by the parenthesized list of _actual_ parameters (if any). For example, _doubleIt_ (5.3) is a call having 5.3 as an actual parameter. If there are no parameters and no parentheses, the call does not have parentheses. The keyword **function** can be abbreviated to **fcn**. See also _functionCall_ and _procedureDeclaration_.
 
 Each actual non-**var** parameter must be assignable to the type of its corresponding formal parameter. See also _assignability_.
@@ -54,8 +46,8 @@ You declare parameterless functions using an empty parameter list. When this is 
             [ exceptionHandler ]
             statementsAndDeclarations
         end id
-##See also
-**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and _exceptionHandler_ for explanations of these additional features.
+## See also
+**[import](import.html)** list, **[pre](pre.html)** [condition](condition.html), **[init](init.html)** clause, **[post](post.html)** [condition](condition.html) and _exceptionHandler_ for explanations of these additional features.
 
-See also **[pervasive.html](pervasive)**. 
+See also **[pervasive](pervasive.html)**. 
 

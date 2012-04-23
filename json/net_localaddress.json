@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.LocalAddress</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Net.LocalAddress : string\r\n",
-      "mdown_content": "**Net.LocalAddress** : **string**\n"
+      "mdown_content": "**Net.LocalAddress** : **string**"
     },
     {
       "title": "Description",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_localname.html\">Net.LocalName</a></b>.<p>\r\n</p>",
       "text_content": " Net.LocalName.\r\n",
-      "mdown_content": "**[net_localname.html](Net.LocalName)**.\n"
+      "mdown_content": "**[Net.LocalName](net_localname.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatColor</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatColor : int\r\n",
-      "mdown_content": "**Text.WhatColor** : **int**\n"
+      "mdown_content": "**Text.WhatColor** : **int**"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "the <b><a href=\"text_color.html\">Text.Color</a></b> <a href=\"procedure.html\">procedure</a>, which is used to <a href=\"set.html\">set</a> the <a href=\"color.html\">color</a>. See also <b><a href=\"text_colorback.html\">Text.ColorBack</a></b> and <b><a href=\"text_whatcolorback.html\">Text.WhatColorBack</a></b>.<p>\r\n</p>",
       "text_content": " the Text.Color procedure, which is used to set the color. See also Text.ColorBack and Text.WhatColorBack.\r\n",
-      "mdown_content": "the **[text_color.html](Text.Color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[text_colorback.html](Text.ColorBack)** and **[text_whatcolorback.html](Text.WhatColorBack)**.\n"
+      "mdown_content": "the **[Text.Color](text_color.html)** [procedure](procedure.html), which is used to [set](set.html) the [color](color.html). See also **[Text.ColorBack](text_colorback.html)** and **[Text.WhatColorBack](text_whatcolorback.html)**.\n"
     }
   ],
   "dependencies": [

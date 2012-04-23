@@ -1,21 +1,14 @@
 
-#process
+# process
 
-##Syntax
-A _processDeclaration_ is:
+## Syntax
+A _processDeclaration_ is:   **process** _id_ [ ( [ _paramDeclaration_ {,_paramDeclaration_ } ] )]     _statementsAndDeclarations_   **end** _id_
 
-
-**process** _id_ [ ( [ _paramDeclaration_ {,_paramDeclaration_ } ] )]
-_statementsAndDeclarations_
-**end** _id_
-
-
-
-##Description
+## Description
 A process declaration is much like a procedure declaration, but is activated by a **fork** statement rather than by a call. The **fork** statement starts concurrent (parallel) execution of the process while the statements following the **fork** continue to execute.
 
 
-##Example
+## Example
 This program initiates (forks) two concurrent processes, one of which repeatedly outputs _Hi_ and the other _Ho_. The resulting output is an unpredictable sequence of _Hi_'s and _Ho_'s as _greetings_ executes twice concurrently, one instance with _word_ set to _Hi_ and the other with _word_ set to _Ho_.
 
         process greetings ( word : string )
@@ -26,7 +19,7 @@ This program initiates (forks) two concurrent processes, one of which repeatedly
         
         fork greetings ( "Hi" )
         fork greetings ( "Ho" )
-##Details
+## Details
 The **process** declaration creates a template for a process (a concurrent activity), which is activated by a **fork** statement.
 
 A process declaration can appear wherever a module declaration is allowed except that a process declaration is not allowed in a class. The declarations and statements in a process declaration are the same as those in a procedure.
@@ -48,6 +41,6 @@ See **pervasive** for information on **pervasive** processes. The optional _comp
             [ exceptionHandler ]
             statementsAndDeclarations
         end id
-##See also
-**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and _exceptionHandler_ for explanations of these additional features.
+## See also
+**[import](import.html)** list, **[pre](pre.html)** [condition](condition.html), **[init](init.html)** clause, **[post](post.html)** [condition](condition.html) and _exceptionHandler_ for explanations of these additional features.
 

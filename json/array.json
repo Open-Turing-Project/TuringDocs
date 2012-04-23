@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>array</b> <i>indexType</i> { , <i>indexType</i> } <b>of</b> <i>typeSpec</i><p>\r\n</p></font>",
       "text_content": " array indexType { , indexType } of typeSpec\r\n",
-      "mdown_content": "**array** _indexType_ { , _indexType_ } **of** _typeSpec_\n"
+      "mdown_content": "**array** _indexType_ { , _indexType_ } **of** _typeSpec_"
     },
     {
       "title": "Description",
@@ -130,7 +130,7 @@
       ],
       "raw_content": "<b><a href=\"init.html\">init</a></b> to initialize arrays, <b><a href=\"flexible.html\">flexible</a></b> to declare resizable arrays and <i><a href=\"indextype.html\">indexType</a></i> to specify the index of an array.<p>\r\n</p>",
       "text_content": " init to initialize arrays, flexible to declare resizable arrays and indexType to specify the index of an array.\r\n",
-      "mdown_content": "**[init.html](init)** to initialize arrays, **[flexible.html](flexible)** to declare resizable arrays and _[indextype.html](indexType)_ to specify the index of an array.\n"
+      "mdown_content": "**[init](init.html)** to initialize arrays, **[flexible](flexible.html)** to declare resizable arrays and _[indexType](indextype.html)_ to specify the index of an array.\n"
     }
   ],
   "dependencies": [

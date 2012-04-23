@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>returnStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>return</b></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A returnStatement is:\r\n return",
-      "mdown_content": "A _returnStatement_ is:\n\n\n**return**\n\n"
+      "mdown_content": "A _returnStatement_ is:   **return**"
     },
     {
       "title": "Description",

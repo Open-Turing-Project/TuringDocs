@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileStop</b><p></p></font>",
       "text_content": "Music.PlayFileStop\r\n    ",
-      "mdown_content": "**Music.PlayFileStop**\n"
+      "mdown_content": "**Music.PlayFileStop**"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "<b><a href=\"music_playfile.html\">Music.PlayFile</a></b> for playing \r\n\t  music files and a larger example.<p>\r\n    </p>",
       "text_content": "Music.PlayFile for playing \r\n\t  music files and a larger example.\r\n    ",
-      "mdown_content": "**[music_playfile.html](Music.PlayFile)** for playing music files and a larger example.\n"
+      "mdown_content": "**[Music.PlayFile](music_playfile.html)** for playing music files and a larger example.\n"
     },
     {
       "title": "Status",

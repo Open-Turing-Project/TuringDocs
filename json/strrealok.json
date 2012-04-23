@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>strrealok</b> ( <i>s</i> : <b>string</b> ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " strrealok ( s : string ) : boolean\r\n",
-      "mdown_content": "**strrealok** ( _s_ : **string** ) : **boolean**\n"
+      "mdown_content": "**strrealok** ( _s_ : **string** ) : **boolean**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "<b><a href=\"strreal.html\">strreal</a></b> function that does the actual conversion.<p>\r\n</p>",
       "text_content": " strreal function that does the actual conversion.\r\n",
-      "mdown_content": "**[strreal.html](strreal)** function that does the actual conversion.\n"
+      "mdown_content": "**[strreal](strreal.html)** function that does the actual conversion.\n"
     }
   ],
   "dependencies": [

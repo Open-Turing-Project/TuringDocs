@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "Pic.SetTransparentColor (colorNumber : int)",
-      "mdown_content": "**Pic.SetTransparentColor** (_colorNumber_ : **int**)\n"
+      "mdown_content": "**Pic.SetTransparentColor** (_colorNumber_ : **int**)"
     },
     {
       "title": "Description",
@@ -59,7 +59,7 @@
       ],
       "raw_content": "<b><a href=\"pic_draw.html\">Pic.Draw</a></b> and \r\n          <b><a href=\"pic_filenew.html\">Pic.FileNew</a></b>.<p>\r\n    </p>",
       "text_content": "Pic.Draw and \r\n          Pic.FileNew.\r\n    ",
-      "mdown_content": "**[pic_draw.html](Pic.Draw)** and **[pic_filenew.html](Pic.FileNew)**.\n"
+      "mdown_content": "**[Pic.Draw](pic_draw.html)** and **[Pic.FileNew](pic_filenew.html)**.\n"
     }
   ],
   "dependencies": [

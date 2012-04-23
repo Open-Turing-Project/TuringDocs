@@ -1,11 +1,10 @@
 
-#Font.New
+# Font.New
 
-##Syntax
+## Syntax
 **Font.New** (_fontSelectStr_ : **string**) : **int**
 
-
-##Description
+## Description
 **Font.New** is used to obtain a font for drawing. The _fontSelectStr_parameter specifies the name, size and style of the font. **Font.New** returns a font identifier which is then used by the **Font.Draw** procedure to draw text in the selected font.
 
 The format for the _fontSelectStr_parameter is "_Family_:_Size_:_Style_". Each element is separated by a colon. The ":_Style_" is optional. If left out, the text appears in the standard face for the font.
@@ -25,13 +24,13 @@ Under Turing, the _size_ parameter may also have the form _height_ x _width_ whe
 _Style_ is the font style in which the text should appear. It can be one of "bold", "italic" or "underline". You can also have "bold,italic" and any other combination.
 
         example fontID := Font.New ("Ariel:18x12:Italic")
-##Details
+## Details
 If the **Font.New** call fails, then it returns 0. Also **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 It is quite possible for **Error.Last** to be set, even if the call succeeds. **Font.New** will report success even if unable to successfully match the requested font with the available resources. A font will be set that matches as closely as possible the requested font and **Last.Error** will be set to indicate that some substitutions were required.
 
 
-##Example
+## Example
 The program prints out several phrases in a variety of fonts.
 
         var font1, font2, font3, font4 : int
@@ -48,7 +47,7 @@ The program prints out several phrases in a variety of fonts.
         Font.Free (font2)
         Font.Free (font3)
         Font.Free (font4)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Font.New**, not by calling **New**.

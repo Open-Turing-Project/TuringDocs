@@ -1,11 +1,10 @@
 
-#Sys.FetchArg
+# Sys.FetchArg
 
-##Syntax
+## Syntax
 **System.FetchArg** ( _i_ : **int** ) : **string**
 
-
-##Description
+## Description
 The **Sys.FetchArg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
 
 
@@ -25,19 +24,19 @@ The **Sys.Nargs** function, which gives the number of arguments passed to the pr
 The 0-th argument is the name of the running program.
 
 
-##Example
+## Example
 This program lists its own name and its arguments.
 
         put "The name of this program is : ", Sys.FetchArg ( 0 )
         for i : 1 .. Sys.Nargs
             put "Argument ", i, " is ", Sys.FetchArg ( i )
         end for
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Sys.FetchArg**, not by calling **FetchArg**.
 
 
-##See also
-**[sys_nargs.html](Sys.Nargs)**
+## See also
+**[Sys.Nargs](sys_nargs.html)**
 

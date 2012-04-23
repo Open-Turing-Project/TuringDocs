@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.Text</b> (<i>txtStr</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
       "text_content": "Draw.Text (txtStr : string, x, y, fontID, Color : int)\r\n    ",
-      "mdown_content": "**Draw.Text** (_txtStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)\n"
+      "mdown_content": "**Draw.Text** (_txtStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)"
     },
     {
       "title": "Description",

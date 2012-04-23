@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>char</b><p>\r\n</p></font>",
       "text_content": " char\r\n",
-      "mdown_content": "**char**\n"
+      "mdown_content": "**char**"
     },
     {
       "title": "Description",
@@ -69,7 +69,7 @@
       ],
       "raw_content": "<b><a href=\"string1.html\">string</a></b> and <b><a href=\"char_n.html\">char(<i>n</i>)</a></b> for related types. See <b><a href=\"ord.html\">ord</a></b> and <b><a href=\"chr.html\">chr</a></b> functions for conversion from and to ASCII values. See <i><a href=\"explicitcharconstant.html\">explicitCharConstant</a></i> for information on special characters like caret (^) and backslash (\\).<p>\r\n</p>",
       "text_content": " string and char(n) for related types. See ord and chr functions for conversion from and to ASCII values. See explicitCharConstant for information on special characters like caret (^) and backslash (\\).\r\n",
-      "mdown_content": "**[string1.html](string)** and **[char_n.html](char(_n_))** for related types. See **[ord.html](ord)** and **[chr.html](chr)** functions for conversion from and to ASCII values. See _[explicitcharconstant.html](explicitCharConstant)_ for information on special characters like caret (^) and backslash (\\).\n"
+      "mdown_content": "**[string](string1.html)** and **[char(_n_)](char_n.html)** for related types. See **[ord](ord.html)** and **[chr](chr.html)** functions for conversion from and to ASCII values. See _[explicitCharConstant](explicitcharconstant.html)_ for information on special characters like caret (^) and backslash (\\).\n"
     }
   ],
   "dependencies": [

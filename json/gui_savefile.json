@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SaveFile</b> (<i>title</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " GUI.SaveFile (title : string) : string\r\n",
-      "mdown_content": "**GUI.SaveFile** (_title_ : **string**) : **string**\n"
+      "mdown_content": "**GUI.SaveFile** (_title_ : **string**) : **string**"
     },
     {
       "title": "Description",

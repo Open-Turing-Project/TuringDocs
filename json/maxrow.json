@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxrow</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxrow : int\r\n",
-      "mdown_content": "**maxrow** : **int**\n"
+      "mdown_content": "**maxrow** : **int**"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"locate.html\">locate</a></b> <a href=\"procedure.html\">procedure</a> for an example of the use of <b><a href=\"\">maxrow</a></b>.<p>\r\n</p>",
       "text_content": " locate procedure for an example of the use of maxrow.\r\n",
-      "mdown_content": "**[locate.html](locate)** [procedure.html](procedure) for an example of the use of **[](maxrow)**.\n"
+      "mdown_content": "**[locate](locate.html)** [procedure](procedure.html) for an example of the use of **[maxrow]()**.\n"
     }
   ],
   "dependencies": [

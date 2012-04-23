@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetText</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetText (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)\n"
+      "mdown_content": "**GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)"
     },
     {
       "title": "Description",

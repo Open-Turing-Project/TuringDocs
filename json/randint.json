@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randint</b> ( <b>var</b> <i>i</i> : <b>int</b>, <i>low</i>,<i> high</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " randint ( var i : int, low, high : int )\r\n",
-      "mdown_content": "**randint** ( **var** _i_ : **int**, _low_, _high_ : **int** )\n"
+      "mdown_content": "**randint** ( **var** _i_ : **int**, _low_, _high_ : **int** )"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"rand.html\">rand</a></b>, <b><a href=\"randomize.html\">randomize</a></b>, <b><a href=\"randseed.html\">randseed</a></b> and <b><a href=\"randnext.html\">randnext</a></b>.<p>\r\n</p>",
       "text_content": " rand, randomize, randseed and randnext.\r\n",
-      "mdown_content": "**[rand.html](rand)**, **[randomize.html](randomize)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\n"
+      "mdown_content": "**[rand](rand.html)**, **[randomize](randomize.html)**, **[randseed](randseed.html)** and **[randnext](randnext.html)**.\n"
     }
   ],
   "dependencies": [

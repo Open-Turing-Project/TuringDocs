@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetEchoChar</b> (<i>widgetID</i> : <b>int</b>, <i>echoChar</i> : <b>char</b>)<p></p></font>",
       "text_content": "GUI.SetEchoChar (widgetID : int, echoChar : char)\r\n    ",
-      "mdown_content": "**GUI.SetEchoChar** (_widgetID_ : **int**, _echoChar_ : **char**)\n"
+      "mdown_content": "**GUI.SetEchoChar** (_widgetID_ : **int**, _echoChar_ : **char**)"
     },
     {
       "title": "Description",

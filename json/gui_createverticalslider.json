@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateVerticalSlider</b> (<i>x</i>, <i>y</i>, <i>length</i> : <b>int</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>min</i>, <i>max</i>, <i>start</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> (<i>value</i> : <b>int</b>)) : <b>int</b><p></p></font>",
       "text_content": "GUI.CreateVerticalSlider (x, y, length : int,\r\n              min, max, start : int, actionProc : procedure x (value : int)) : int\r\n    ",
-      "mdown_content": "**GUI.CreateVerticalSlider** (_x_, _y_, _length_ : **int**,    _min_, _max_, _start_ : **int**, _actionProc_ : **procedure** _x_ (_value_ : **int**)) : **int**\n"
+      "mdown_content": "**GUI.CreateVerticalSlider** (_x_, _y_, _length_ : **int**,    _min_, _max_, _start_ : **int**, _actionProc_ : **procedure** _x_ (_value_ : **int**)) : **int**"
     },
     {
       "title": "Description",
@@ -65,7 +65,7 @@
       ],
       "raw_content": "<b><a href=\"gui_getslidervalue.html\">GUI.GetSliderValue</a></b> and \r\n          <b><a href=\"gui_setslidervalue.html\">GUI.SetSliderValue</a></b> \r\n          for reading and setting the value of a slider, \r\n          <b><a href=\"gui_setsliderminmax.html\">GUI.SetSliderMinMax</a></b> \r\n          for changing the minimum and maximum values of a slider. \r\n          See also <b><a href=\"gui_setslidersize.html\">GUI.SetSliderSize</a></b>\r\n          for setting the length of a slider and \r\n          <b><a href=\"gui_setsliderreverse.html\">GUI.SetSliderReverse</a></b> \r\n          for reversing the sense of a slider.<p>\r\n    </p>",
       "text_content": "GUI.GetSliderValue and \r\n          GUI.SetSliderValue \r\n          for reading and setting the value of a slider, \r\n          GUI.SetSliderMinMax \r\n          for changing the minimum and maximum values of a slider. \r\n          See also GUI.SetSliderSize\r\n          for setting the length of a slider and \r\n          GUI.SetSliderReverse \r\n          for reversing the sense of a slider.\r\n    ",
-      "mdown_content": "**[gui_getslidervalue.html](GUI.GetSliderValue)** and **[gui_setslidervalue.html](GUI.SetSliderValue)** for reading and setting the value of a slider, **[gui_setsliderminmax.html](GUI.SetSliderMinMax)** for changing the minimum and maximum values of a slider. See also **[gui_setslidersize.html](GUI.SetSliderSize)**for setting the length of a slider and **[gui_setsliderreverse.html](GUI.SetSliderReverse)** for reversing the sense of a slider.\n"
+      "mdown_content": "**[GUI.GetSliderValue](gui_getslidervalue.html)** and **[GUI.SetSliderValue](gui_setslidervalue.html)** for reading and setting the value of a slider, **[GUI.SetSliderMinMax](gui_setsliderminmax.html)** for changing the minimum and maximum values of a slider. See also **[GUI.SetSliderSize](gui_setslidersize.html)**for setting the length of a slider and **[GUI.SetSliderReverse](gui_setsliderreverse.html)** for reversing the sense of a slider.\n"
     }
   ],
   "dependencies": [

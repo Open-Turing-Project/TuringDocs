@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetX </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b><p>\r\n          <b>GUI.GetY </b>(<i>widgetID</i> : <b>int</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.GetX (widgetID : int) : int\r\n          GUI.GetY (widgetID : int) : int\r\n    ",
-      "mdown_content": "**GUI.GetX** (_widgetID_ : **int**) : **int**\n\n**GUI.GetY** (_widgetID_ : **int**) : **int**\n"
+      "mdown_content": "**GUI.GetX** (_widgetID_ : **int**) : **int****GUI.GetY** (_widgetID_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"gui_getheight.html\">GUI.GetHeight</a></b> and \r\n          <b><a href=\"gui_getwidth.html\">GUI.GetWidth</a></b>.<p>\r\n    </p>",
       "text_content": "GUI.GetHeight and \r\n          GUI.GetWidth.\r\n    ",
-      "mdown_content": "**[gui_getheight.html](GUI.GetHeight)** and **[gui_getwidth.html](GUI.GetWidth)**.\n"
+      "mdown_content": "**[GUI.GetHeight](gui_getheight.html)** and **[GUI.GetWidth](gui_getwidth.html)**.\n"
     }
   ],
   "dependencies": [

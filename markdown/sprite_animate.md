@@ -1,18 +1,17 @@
 
-#Sprite.Animate
+# Sprite.Animate
 
-##Syntax
+## Syntax
 **Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,    _centered_ : **boolean**)
 
-
-##Description
+## Description
 Moves the sprite specified by _spriteID_ to the location specified by (_x, y_). If _centered_ is **true**, then the sprite is centered on (_x, y_). Otherwise (_x, y_) specifies the lower-left corner of the sprite. At the same time, it changes the picture associated with the sprite.
 
 A simple example of the **Sprite.Animate** procedure would be of a man walking. The picture associated with the sprite would constantly change as the figure was walking. At the same time, the location of the figure would also change.
 
 
-##Example
-Here is a program that loads a series of images from an animatedGIF file called "mypic.gif".  It works by loading the images fromthe GIF file into an array (see **[pic_filenewframes.html](Pic.FileNewFrames)** formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.
+## Example
+Here is a program that loads a series of images from an animatedGIF file called "mypic.gif".  It works by loading the images fromthe GIF file into an array (see **[Pic.FileNewFrames](pic_filenewframes.html)** formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.
 
 
 
@@ -31,12 +30,12 @@ Here is a program that loads a series of images from an animatedGIF file called 
     	    delay (40)    % Stop sprite from moving too quickly
         end for
         Sprite.Free (sprite)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Sprite.Animate**, not by calling **Animate**.
 
 
-##See also
-**[sprite_new.html](Sprite.New)**, **[sprite_setposition.html](Sprite.SetPosition)** and **[sprite_changepic.html](Sprite.ChangePic)**.
+## See also
+**[Sprite.New](sprite_new.html)**, **[Sprite.SetPosition](sprite_setposition.html)** and **[Sprite.ChangePic](sprite_changepic.html)**.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetXOR</b> (<i>widgetID</i> : <b>int</b>, <i>xor</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetXOR (widgetID : int, xor : boolean)\r\n",
-      "mdown_content": "**GUI.SetXOR** (_widgetID_ : **int**, _xor_ : **boolean**)\n"
+      "mdown_content": "**GUI.SetXOR** (_widgetID_ : **int**, _xor_ : **boolean**)"
     },
     {
       "title": "Description",

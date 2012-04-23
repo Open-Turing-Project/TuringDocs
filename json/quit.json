@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>quitStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>quit</b> [ <i>guiltyParty</i> ] [ : <i>quitReason</i> ]</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A quitStatement is:\r\n quit [ guiltyParty ] [ : quitReason ]",
-      "mdown_content": "A _quitStatement_ is:\n\n\n**quit** [ _guiltyParty_ ] [ : _quitReason_ ]\n\n"
+      "mdown_content": "A _quitStatement_ is:   **quit** [ _guiltyParty_ ] [ : _quitReason_ ]"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<i>exceptionHandler</i>, <b><a href=\"return.html\">return</a></b> and <b><a href=\"result.html\">result</a></b>.<p>\r\n</p>",
       "text_content": " exceptionHandler, return and result.\r\n",
-      "mdown_content": "_exceptionHandler_, **[return.html](return)** and **[result.html](result)**.\n"
+      "mdown_content": "_exceptionHandler_, **[return](return.html)** and **[result](result.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>objectclass</b> ( <i>pointerExpn</i> )<p>\r\n</p></font>",
       "text_content": " objectclass ( pointerExpn )\r\n",
-      "mdown_content": "**objectclass** ( _pointerExpn_ )\n"
+      "mdown_content": "**objectclass** ( _pointerExpn_ )"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>lower</b> (<i>reference</i> [ , <i>dimension</i> ] ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " lower (reference [ , dimension ] ) : int\r\n",
-      "mdown_content": "**lower** (_reference_ [ , _dimension_ ] ) : **int**\n"
+      "mdown_content": "**lower** (_reference_ [ , _dimension_ ] ) : **int**"
     },
     {
       "title": "Description",
@@ -22,7 +22,7 @@
       ],
       "raw_content": "<b><a href=\"upper.html\">upper</a></b> which finds the <a href=\"upper.html\">upper</a> bound.<p>\r\n</p>",
       "text_content": " upper which finds the upper bound.\r\n",
-      "mdown_content": "**[upper.html](upper)** which finds the [upper.html](upper) bound.\n"
+      "mdown_content": "**[upper](upper.html)** which finds the [upper](upper.html) bound.\n"
     }
   ],
   "dependencies": [

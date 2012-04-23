@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>nargs</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " nargs : int\r\n",
-      "mdown_content": "**nargs** : **int**\n"
+      "mdown_content": "**nargs** : **int**"
     },
     {
       "title": "Description",
@@ -26,7 +26,7 @@
       ],
       "raw_content": "<b><a href=\"fetcharg.html\">fetcharg</a></b> for an example of the use of <b><a href=\"\">nargs</a></b>.<p>\r\n</p>",
       "text_content": " fetcharg for an example of the use of nargs.\r\n",
-      "mdown_content": "**[fetcharg.html](fetcharg)** for an example of the use of **[](nargs)**.\n"
+      "mdown_content": "**[fetcharg](fetcharg.html)** for an example of the use of **[nargs]()**.\n"
     }
   ],
   "dependencies": [

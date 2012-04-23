@@ -9,7 +9,7 @@
       ],
       "raw_content": "A <i>unionType</i> is:<p>\r\n</p>",
       "text_content": " A unionType is:\r\n\r\n",
-      "mdown_content": "A _unionType_ is:\n"
+      "mdown_content": "A _unionType_ is:"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"pointer.html\">pointer</a></b>.<p>\r\n</p>",
       "text_content": " pointer.\r\n",
-      "mdown_content": "**[pointer.html](pointer)**.\n"
+      "mdown_content": "**[pointer](pointer.html)**.\n"
     }
   ],
   "dependencies": [

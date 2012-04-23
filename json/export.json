@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>exportList</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>export</b> [ <i>howExport</i> ] <i>id</i>  {, [ <i>howExport</i> ] <i>id</i> }</font></td>\n</tr></table>\n<p></p>",
       "text_content": " An exportList is:\r\n export [ howExport ] id  {, [ howExport ] id }",
-      "mdown_content": "An _exportList_ is:\n\n\n**export** [ _howExport_ ] _id_  {, [ _howExport_ ] _id_ }\n\n"
+      "mdown_content": "An _exportList_ is:   **export** [ _howExport_ ] _id_  {, [ _howExport_ ] _id_ }"
     },
     {
       "title": "Description",
@@ -53,7 +53,7 @@
       ],
       "raw_content": "<b><a href=\"unit.html\">unit</a></b>, <b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"import.html\">import</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> clause, <b><a href=\"implement.html\">implement</a></b> clause, <b><a href=\"implement.html\">implement</a></b> <b>by</b> clause and <b><a href=\"deferred.html\">deferred</a></b> subprogram.<p>\r\n</p>",
       "text_content": " unit, module, monitor and class. See also import list, inherit clause, implement clause, implement by clause and deferred subprogram.\r\n",
-      "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[import.html](import)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause, **[implement.html](implement)** **by** clause and **[deferred.html](deferred)** subprogram.\n"
+      "mdown_content": "**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[import](import.html)** list, **[inherit](inherit.html)** clause, **[implement](implement.html)** clause, **[implement](implement.html)** **by** clause and **[deferred](deferred.html)** subprogram.\n"
     }
   ],
   "dependencies": [

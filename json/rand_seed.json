@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Seed </b>(<i>seed</i> : <b>nat4</b>,<b> </b><i>seq</i> : 1 .. 10)<p>\r\n</p></font>",
       "text_content": " Rand.Seed (seed : nat4, seq : 1 .. 10)\r\n",
-      "mdown_content": "**Rand.Seed** (_seed_ : **nat4**, _seq_ : 1 .. 10)\n"
+      "mdown_content": "**Rand.Seed** (_seed_ : **nat4**, _seq_ : 1 .. 10)"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"rand_next.html\">Rand.Next</a></b>, <b><a href=\"rand_int.html\">Rand.Int</a></b>, <b><a href=\"rand_real.html\">Rand.Real</a></b>, and <b><a href=\"rand_set.html\">Rand.Set</a></b>.<p>\r\n</p>",
       "text_content": " Rand.Next, Rand.Int, Rand.Real, and Rand.Set.\r\n",
-      "mdown_content": "**[rand_next.html](Rand.Next)**, **[rand_int.html](Rand.Int)**, **[rand_real.html](Rand.Real)**, and **[rand_set.html](Rand.Set)**.\n"
+      "mdown_content": "**[Rand.Next](rand_next.html)**, **[Rand.Int](rand_int.html)**, **[Rand.Real](rand_real.html)**, and **[Rand.Set](rand_set.html)**.\n"
     }
   ],
   "dependencies": [

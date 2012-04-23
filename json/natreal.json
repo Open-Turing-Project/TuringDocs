@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>natreal</b> ( <i>n</i> : <b>nat</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " natreal ( n : nat ) : real\r\n",
-      "mdown_content": "**natreal** ( _n_ : **nat** ) : **real**\n"
+      "mdown_content": "**natreal** ( _n_ : **nat** ) : **real**"
     },
     {
       "title": "Description",
@@ -25,7 +25,7 @@
       ],
       "raw_content": "<b><a href=\"nat.html\">nat</a></b>. See also the <b><a href=\"intreal.html\">intreal</a></b>, <b><a href=\"floor.html\">floor</a></b>, <b><a href=\"ceil.html\">ceil</a></b> and <b><a href=\"round.html\">round</a></b> functions.<p>\r\n</p>",
       "text_content": " nat. See also the intreal, floor, ceil and round functions.\r\n",
-      "mdown_content": "**[nat.html](nat)**. See also the **[intreal.html](intreal)**, **[floor.html](floor)**, **[ceil.html](ceil)** and **[round.html](round)** functions.\n"
+      "mdown_content": "**[nat](nat.html)**. See also the **[intreal](intreal.html)**, **[floor](floor.html)**, **[ceil](ceil.html)** and **[round](round.html)** functions.\n"
     }
   ],
   "dependencies": [

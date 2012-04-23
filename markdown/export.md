@@ -1,19 +1,14 @@
 
-#export
+# export
 
-##Syntax
-An _exportList_ is:
+## Syntax
+An _exportList_ is:   **export** [ _howExport_ ] _id_  {, [ _howExport_ ] _id_ }
 
-
-**export** [ _howExport_ ] _id_  {, [ _howExport_ ] _id_ }
-
-
-
-##Description
+## Description
 An **export** list is used to specify those items declared in a module, monitor or class that can be used outside of it. Items that are declared inside a module, monitor or class but not exported cannot be accessed outside of it.
 
 
-##Example
+## Example
 In this example, the procedures names _pop_ and _push_ are exported from the _stack_ module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word _stack_ and a dot must precede the use of these names. Since _top_ and _contents_ were not exported, they can be accessed only from inside the module.
 
         module stack
@@ -27,7 +22,7 @@ In this example, the procedures names _pop_ and _push_ are exported from the _st
         stack . push ("Harvey")
         var name : string
         stack . pop (name)      % This sets name to Harvey
-##Details
+## Details
 Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:
 
 The following syntax specifies that each exported identifier can optionally be preceded by the keywords **var**, **unqualified**, **pervasive** and **opaque**. Of these, only **opaque** is available in Turing proper.
@@ -60,12 +55,12 @@ Exported subprograms are considered to be **deferred**, meaning that expansions 
 A class cannot export items from its parent or it parent's ancestors. All exported item must be declared in the current class.
 
         export (push, pop)
-##Details
+## Details
 You can export **all** from a module, monitor or a class. This means that every sibmle that is legal to export is exported. You may also qualify the all, as in **export opaque unqualified pervasive all** where the qualifiers are added to each export item (if it makes sense).
 
 If **all** is specified as the export item, no other item may be specified. Also, and **all** export affects only the module, monitor or class that it is given in. Any inheriting or implementing module, monitor or class does not export **all** unless they also specify it.
 
 
-##See also
-**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[import.html](import)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause, **[implement.html](implement)** **by** clause and **[deferred.html](deferred)** subprogram.
+## See also
+**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[import](import.html)** list, **[inherit](inherit.html)** clause, **[implement](implement.html)** clause, **[implement](implement.html)** **by** clause and **[deferred](deferred.html)** subprogram.
 

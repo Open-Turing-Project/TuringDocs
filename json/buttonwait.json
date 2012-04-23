@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>buttonwait</b> (<i>motion</i> : <b>string</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>x</i>, <i>y</i>, <i>buttonnumber</i>, <i>buttonupdown</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " buttonwait (motion : string,  var x, y, buttonnumber, buttonupdown : int)",
-      "mdown_content": "**buttonwait** (_motion_ : **string**, \n**var** _x_, _y_, _buttonnumber_, _buttonupdown_ : **int**)\n\n"
+      "mdown_content": "**buttonwait** (_motion_ : **string**,    **var** _x_, _y_, _buttonnumber_, _buttonupdown_ : **int**)"
     },
     {
       "title": "Description",
@@ -73,7 +73,7 @@
       ],
       "raw_content": "<b><a href=\"\">buttonwait</a></b> to see if an appropriate event is in the queue. See also <b><a href=\"buttonchoose.html\">buttonchoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\nSee also predefined unit <b><a href=\"mousemodule.html\">Mouse</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " buttonwait to see if an appropriate event is in the queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\nSee also predefined unit Mouse.\r\n",
-      "mdown_content": "**[](buttonwait)** to see if an appropriate event is in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"_single-button mode_\" and \"_multi-button mode_\".\n\nSee also predefined unit **[mousemodule.html](Mouse)**.\n"
+      "mdown_content": "**[buttonwait]()** to see if an appropriate event is in the queue. See also **[buttonchoose](buttonchoose.html)** to switch between \"_single-button mode_\" and \"_multi-button mode_\".\n\nSee also predefined unit **[Mouse](mousemodule.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sign</b> ( <i>r</i> : <b>real</b> ) : -1 .. 1<p>\r\n</p></font>",
       "text_content": " sign ( r : real ) : -1 .. 1\r\n",
-      "mdown_content": "**sign** ( _r_ : **real** ) : -1 .. 1\n"
+      "mdown_content": "**sign** ( _r_ : **real** ) : -1 .. 1"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Math.\r\n",
-      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "See also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

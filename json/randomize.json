@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randomize</b><p>\r\n</p></font>",
       "text_content": " randomize\r\n",
-      "mdown_content": "**randomize**\n"
+      "mdown_content": "**randomize**"
     },
     {
       "title": "Description",
@@ -25,7 +25,7 @@
       ],
       "raw_content": "<b><a href=\"randint.html\">randint</a></b>, <b><a href=\"rand.html\">rand</a></b>, <b><a href=\"randseed.html\">randseed</a></b> and <b><a href=\"randnext.html\">randnext</a></b>.<p>\r\nSee also predefined unit <b><a href=\"randmodule.html\">Rand</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " randint, rand, randseed and randnext.\r\nSee also predefined unit Rand.\r\n",
-      "mdown_content": "**[randint.html](randint)**, **[rand.html](rand)**, **[randseed.html](randseed)** and **[randnext.html](randnext)**.\n\nSee also predefined unit **[randmodule.html](Rand)**.\n"
+      "mdown_content": "**[randint](randint.html)**, **[rand](rand.html)**, **[randseed](randseed.html)** and **[randnext](randnext.html)**.\n\nSee also predefined unit **[Rand](randmodule.html)**.\n"
     }
   ],
   "dependencies": [

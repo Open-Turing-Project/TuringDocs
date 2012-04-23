@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Rotate</b> (<i>picID</i>, <i>angle</i>, <i>x</i>, <i>y</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Rotate (picID, angle, x, y : int) : int\r\n    ",
-      "mdown_content": "**Pic.Rotate** (_picID_, _angle_, _x_, _y_ : **int**) : **int**\n"
+      "mdown_content": "**Pic.Rotate** (_picID_, _angle_, _x_, _y_ : **int**) : **int**"
     },
     {
       "title": "Description",

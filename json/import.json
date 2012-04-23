@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>importList</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>import</b> [ <i>howImport</i> ] <i>importItem</i> </font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"5\"><font size=\"+1\">{, [<i>howImport</i>] <i>importItem</i> }</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": "  An importList is:\r\n import [ howImport ] importItem     {, [howImport] importItem }",
-      "mdown_content": "An _importList_ is:\n\n\n**import** [ _howImport_ ] _importItem_ \n{, [_howImport_] _importItem_ }\n\n"
+      "mdown_content": "An _importList_ is:   **import** [ _howImport_ ] _importItem_          {, [_howImport_] _importItem_ }"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"unit.html\">unit</a></b>, <b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"export.html\">export</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> clause, <b><a href=\"implement.html\">implement</a></b> clause and <b><a href=\"implement_by.html\">implement by</a></b> clause.<p>\r\n</p>",
       "text_content": " unit, module, monitor and class. See also export list, inherit clause, implement clause and implement by clause.\r\n",
-      "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause and **[implement_by.html](implement by)** clause.\n"
+      "mdown_content": "**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[inherit](inherit.html)** clause, **[implement](implement.html)** clause and **[implement by](implement_by.html)** clause.\n"
     }
   ],
   "dependencies": [

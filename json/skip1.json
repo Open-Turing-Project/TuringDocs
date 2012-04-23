@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>skip</b><p>\r\n</p></font>",
       "text_content": " skip\r\n",
-      "mdown_content": "**skip**\n"
+      "mdown_content": "**skip**"
     },
     {
       "title": "Description",
@@ -54,7 +54,7 @@
       ],
       "raw_content": "<b><a href=\"get.html\">get</a></b> <a href=\"statement.html\">statement</a> and <b><a href=\"loop.html\">loop</a></b> <a href=\"statement.html\">statement</a>.<p>\r\n</p>",
       "text_content": " get statement and loop statement.\r\n",
-      "mdown_content": "**[get.html](get)** [statement.html](statement) and **[loop.html](loop)** [statement.html](statement).\n"
+      "mdown_content": "**[get](get.html)** [statement](statement.html) and **[loop](loop.html)** [statement](statement.html).\n"
     }
   ],
   "dependencies": [

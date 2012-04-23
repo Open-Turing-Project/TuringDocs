@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateLabel</b> (<i>x</i>,<i> y</i> : <b>int</b>, <i>text</i> : <b>string</b>) : <b>int</b><p>\r\n          <b>GUI.CreateLabelFull</b> (<i>x,</i> <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>width</i>, <i>height</i>, <i>alignment</i>, <i>fontID</i> : <b>int</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateLabel (x, y : int, text : string) : int\r\n          GUI.CreateLabelFull (x, y : int, text : string, \r\n\t      width, height, alignment, fontID : int) : int\r\n    ",
-      "mdown_content": "**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int**\n\n**GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**\n"
+      "mdown_content": "**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int****GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -61,7 +61,7 @@
       ],
       "raw_content": "<b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for changing the label's text.<p>\r\n</p>",
       "text_content": " GUI.SetLabel for changing the label's text.\r\n",
-      "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the label's text.\n"
+      "mdown_content": "**[GUI.SetLabel](gui_setlabel.html)** for changing the label's text.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>init</b><p>\r\n</p></font>",
       "text_content": " init\r\n",
-      "mdown_content": "**init**\n"
+      "mdown_content": "**init**"
     },
     {
       "title": "Description",
@@ -48,7 +48,7 @@
       ],
       "raw_content": "<b><a href=\"pre.html\">pre</a></b> and <b><a href=\"post.html\">post</a></b> assertions and <b><a href=\"procedure.html\">procedure</a></b> and <b><a href=\"process.html\">process</a></b> declarations.<p>\r\n</p>",
       "text_content": " pre and post assertions and procedure and process declarations.\r\n",
-      "mdown_content": "**[pre.html](pre)** and **[post.html](post)** assertions and **[procedure.html](procedure)** and **[process.html](process)** declarations.\n"
+      "mdown_content": "**[pre](pre.html)** and **[post](post.html)** assertions and **[procedure](procedure.html)** and **[process](process.html)** declarations.\n"
     }
   ],
   "dependencies": [

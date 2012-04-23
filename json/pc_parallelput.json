@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>PC.ParallelPut</b> (<i>port</i> : <b>int</b>, <i>value</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " PC.ParallelPut (port : int, value : int)\r\n",
-      "mdown_content": "**PC.ParallelPut** (_port_ : **int**, _value_ : **int**)\n"
+      "mdown_content": "**PC.ParallelPut** (_port_ : **int**, _value_ : **int**)"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "<b><a href=\"pc_parallelget.html\">PC.ParallelGet</a> </b>function, which is used to <a href=\"read.html\">read</a> the values of pins on the parallel port.<p>\r\n</p>",
       "text_content": " PC.ParallelGet function, which is used to read the values of pins on the parallel port.\r\n",
-      "mdown_content": "**[pc_parallelget.html](PC.ParallelGet)** function, which is used to [read.html](read) the values of pins on the parallel port.\n"
+      "mdown_content": "**[PC.ParallelGet](pc_parallelget.html)** function, which is used to [read](read.html) the values of pins on the parallel port.\n"
     }
   ],
   "dependencies": [

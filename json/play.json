@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>play</b> ( <i>music</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " play ( music : string )\r\n",
-      "mdown_content": "**play** ( _music_ : **string** )\n"
+      "mdown_content": "**play** ( _music_ : **string** )"
     },
     {
       "title": "Description",
@@ -49,7 +49,7 @@
       ],
       "raw_content": "the <b><a href=\"playdone.html\">playdone</a></b> function, which is used to see if a note has finished sounding. See also the <b><a href=\"sound.html\">sound</a></b> <a href=\"procedure.html\">procedure</a>, which makes a <a href=\"sound.html\">sound</a> of a given frequency (Hertz) and duration (milliseconds).<p>\r\nSee also predefined unit <b><a href=\"musicmodule.html\">Music</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " the playdone function, which is used to see if a note has finished sounding. See also the sound procedure, which makes a sound of a given frequency (Hertz) and duration (milliseconds).\r\nSee also predefined unit Music.\r\n",
-      "mdown_content": "the **[playdone.html](playdone)** function, which is used to see if a note has finished sounding. See also the **[sound.html](sound)** [procedure.html](procedure), which makes a [sound.html](sound) of a given frequency (Hertz) and duration (milliseconds).\n\nSee also predefined unit **[musicmodule.html](Music)**.\n"
+      "mdown_content": "the **[playdone](playdone.html)** function, which is used to see if a note has finished sounding. See also the **[sound](sound.html)** [procedure](procedure.html), which makes a [sound](sound.html) of a given frequency (Hertz) and duration (milliseconds).\n\nSee also predefined unit **[Music](musicmodule.html)**.\n"
     }
   ],
   "dependencies": [

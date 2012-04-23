@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>boolean</b><p>\r\n</p></font>",
       "text_content": " boolean\r\n",
-      "mdown_content": "**boolean**\n"
+      "mdown_content": "**boolean**"
     },
     {
       "title": "Description",
@@ -61,7 +61,7 @@
       ],
       "raw_content": "<i><a href=\"explicittruefalseconstant.html\">explicitTrueFalseConstant</a></i> (which discusses the values <b><a href=\"true.html\">true</a></b> and <b><a href=\"false.html\">false</a></b>), <i><a href=\"precedence.html\">precedence</a></i> and <i><a href=\"expn.html\">expn</a> </i>(expression).<p>\r\n</p>",
       "text_content": " explicitTrueFalseConstant (which discusses the values true and false), precedence and expn (expression).\r\n",
-      "mdown_content": "_[explicittruefalseconstant.html](explicitTrueFalseConstant)_ (which discusses the values **[true.html](true)** and **[false.html](false)**), _[precedence.html](precedence)_ and _[expn.html](expn)_ (expression).\n"
+      "mdown_content": "_[explicitTrueFalseConstant](explicittruefalseconstant.html)_ (which discusses the values **[true](true.html)** and **[false](false.html)**), _[precedence](precedence.html)_ and _[expn](expn.html)_ (expression).\n"
     }
   ],
   "dependencies": [

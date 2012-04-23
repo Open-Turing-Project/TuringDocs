@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.Nargs : int</b><p>\r\n</p></font>",
       "text_content": " Sys.Nargs : int\r\n",
-      "mdown_content": "**Sys.Nargs : int**\n"
+      "mdown_content": "**Sys.Nargs : int**"
     },
     {
       "title": "Description",
@@ -32,7 +32,7 @@
       ],
       "raw_content": "<b><a href=\"sys_fetcharg.html\">Sys.FetchArg</a></b> for an example of the use of <b><a href=\"\">Sys.Nargs</a></b>.<p>\r\n</p>",
       "text_content": " Sys.FetchArg for an example of the use of Sys.Nargs.\r\n",
-      "mdown_content": "**[sys_fetcharg.html](Sys.FetchArg)** for an example of the use of **[](Sys.Nargs)**.\n"
+      "mdown_content": "**[Sys.FetchArg](sys_fetcharg.html)** for an example of the use of **[Sys.Nargs]()**.\n"
     }
   ],
   "dependencies": [

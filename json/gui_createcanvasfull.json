@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateCanvas</b> (<i>x</i>, <i>y</i>, <i>width</i>, <i>height</i> : <b>int</b>) : <b>int</b><p>\r\n          <b>GUI.CreateCanvasFull</b> (<i>x</i>, <i>y</i>, <i>width</i>, <i>height</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>border</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>mouseDown</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : int),<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>mouseDrag</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : int),<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>mouseUp</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : int)) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateCanvas (x, y, width, height : int) : int\r\n          GUI.CreateCanvasFull (x, y, width, height : int,\r\n\t      border : int,\r\n\t      mouseDown : procedure x (mx, my : int),\r\n\t      mouseDrag : procedure x (mx, my : int),\r\n\t      mouseUp : procedure x (mx, my : int)) : int\r\n    ",
-      "mdown_content": "**GUI.CreateCanvas** (_x_, _y_, _width_, _height_ : **int**) : **int**\n\n**GUI.CreateCanvasFull** (_x_, _y_, _width_, _height_ : **int**,    _border_ : **int**,    _mouseDown_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseDrag_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseUp_ : **procedure** _x_ (_mx_, _my_ : int)) : **int**\n"
+      "mdown_content": "**GUI.CreateCanvas** (_x_, _y_, _width_, _height_ : **int**) : **int****GUI.CreateCanvasFull** (_x_, _y_, _width_, _height_ : **int**,    _border_ : **int**,    _mouseDown_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseDrag_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseUp_ : **procedure** _x_ (_mx_, _my_ : int)) : **int**"
     },
     {
       "title": "Description",
@@ -64,7 +64,7 @@
       ],
       "raw_content": "<b><a href=\"gui_draw.html\">GUI.Draw&#133;</a></b>, \r\n          <b><a href=\"gui_fontdraw.html\">GUI.FontDraw</a></b>,\r\n          <b><a href=\"gui_pic.html\">GUI.Pic&#133;</a></b>, and \r\n          <b><a href=\"gui_setxor.html\">GUI.SetXOR</a></b> for drawing on a canvas.<p>\r\n    </p>",
       "text_content": "GUI.Draw, \r\n          GUI.FontDraw,\r\n          GUI.Pic, and \r\n          GUI.SetXOR for drawing on a canvas.\r\n    ",
-      "mdown_content": "**[gui_draw.html](GUI.Draw&#133;)**, **[gui_fontdraw.html](GUI.FontDraw)**,**[gui_pic.html](GUI.Pic&#133;)**, and **[gui_setxor.html](GUI.SetXOR)** for drawing on a canvas.\n"
+      "mdown_content": "**[GUI.Draw&#133;](gui_draw.html)**, **[GUI.FontDraw](gui_fontdraw.html)**,**[GUI.Pic&#133;](gui_pic.html)**, and **[GUI.SetXOR](gui_setxor.html)** for drawing on a canvas.\n"
     }
   ],
   "dependencies": [

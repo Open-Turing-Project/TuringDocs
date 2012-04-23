@@ -1,19 +1,14 @@
 
-#return
+# return
 
-##Syntax
-A _returnStatement_ is:
+## Syntax
+A _returnStatement_ is:   **return**
 
-
-**return**
-
-
-
-##Description
+## Description
 A **return** statement terminates the **procedure** (or main program) in which it appears. Ordinarily, a procedure (or main program) terminates by reaching its end; the **return** statement is used to cause early termination.
 
 
-##Example
+## Example
 This procedure takes no action if the _errorHasOccurred_ flag has been set to true.
 
         procedure double
@@ -22,6 +17,6 @@ This procedure takes no action if the _errorHasOccurred_ flag has been set to tr
             end if
              handle usual case in this procedure 
         end double
-##Details
+## Details
 A **return** must not appear as a statement in (the outermost level of) a module, nor can it appear in a **function**.
 

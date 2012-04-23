@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>natstr</b> ( <i>n </i>: <b>nat</b> [<i> </i>,<i> width</i> : <b>int</b> [, <i>base</i> : <b>int</b> ] ] ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " natstr ( n : nat [ , width : int [, base : int ] ] ) : string\r\n",
-      "mdown_content": "**natstr** ( _n_ : **nat** [ , _width_ : **int** [, _base_ : **int** ] ] ) : **string**\n"
+      "mdown_content": "**natstr** ( _n_ : **nat** [ , _width_ : **int** [, _base_ : **int** ] ] ) : **string**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "<b><a href=\"chr.html\">chr</a></b>, <b><a href=\"ord.html\">ord</a></b> and <b><a href=\"strnat.html\">strnat</a></b> functions. See also the <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strint.html\">strint</a></b> functions. See also <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> for the way to write values in base 2 and base 16 in a <a href=\"program.html\">program</a>.<p>\r\n</p>",
       "text_content": " chr, ord and strnat functions. See also the intstr and strint functions. See also explicitIntegerConstant for the way to write values in base 2 and base 16 in a program.\r\n",
-      "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)** and **[strnat.html](strnat)** functions. See also the **[intstr.html](intstr)** and **[strint.html](strint)** functions. See also _[explicitintegerconstant.html](explicitIntegerConstant)_ for the way to write values in base 2 and base 16 in a [program.html](program).\n"
+      "mdown_content": "**[chr](chr.html)**, **[ord](ord.html)** and **[strnat](strnat.html)** functions. See also the **[intstr](intstr.html)** and **[strint](strint.html)** functions. See also _[explicitIntegerConstant](explicitintegerconstant.html)_ for the way to write values in base 2 and base 16 in a [program](program.html).\n"
     }
   ],
   "dependencies": [

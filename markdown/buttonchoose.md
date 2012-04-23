@@ -1,11 +1,10 @@
 
-#buttonchoose
+# buttonchoose
 
-##Syntax
+## Syntax
 **buttonchoose** (_choice_ : **string**)
 
-
-##Description
+## Description
 The **buttonchoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in "_single-button mode_" or in "_multi-button mode_". In "_single-button mode_" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.
 
 In Turing, the mouse starts in "_single-button mode_".
@@ -13,7 +12,7 @@ In Turing, the mouse starts in "_single-button mode_".
 The parameter _choice_ can be one of "singlebutton", "onebutton" (which switch the mouse into "_single-button mode_") or "multibutton" (which switches the mouse into "_multi-button mode_").
 
 
-##Example
+## Example
 A program that displays the status of the mouse at the top left corner of the screen.
 
         buttonchoose ("multibutton")
@@ -31,8 +30,8 @@ A program that displays the status of the mouse at the top left corner of the sc
         if right = 100 then
             put "right button down"
         end if
-##See also
-**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[mousewhere.html](mousewhere)** to get the current status of mouse button(s).
+## See also
+**[buttonmoved](buttonmoved.html)** and **[buttonwait](buttonwait.html)** to get mouse events saved in a queue. See also **[mousewhere](mousewhere.html)** to get the current status of mouse button(s).
 
-See also predefined unit **[mousemodule.html](Mouse)**.
+See also predefined unit **[Mouse](mousemodule.html)**.
 

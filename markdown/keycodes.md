@@ -1,5 +1,5 @@
-#Key Codes
-##Ordinal values of keystrokes returned by **getch** and **getchar**.
+# Key Codes
+## Ordinal values of keystrokes returned by **getch** and **getchar**.
 
 
 
@@ -70,7 +70,7 @@ Alt-A 158 F4 190 Ctrl-F1 222 Alt-7 254
 Alt-S 159 F5 191 Ctrl-F2 223 Alt-8 225
 
 
-##Ordinal values of characters that are set by Input.KeyDown.
+## Ordinal values of characters that are set by Input.KeyDown.
 
 
 

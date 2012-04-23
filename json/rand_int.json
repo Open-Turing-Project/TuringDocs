@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Int</b> (<i>low</i>,<i> high</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Rand.Int (low, high : int) : int\r\n",
-      "mdown_content": "**Rand.Int** (_low_, _high_ : **int**) : **int**\n"
+      "mdown_content": "**Rand.Int** (_low_, _high_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"rand_real.html\">Rand.Real</a></b>, <b><a href=\"rand_set.html\">Rand.Set</a></b>, <b><a href=\"rand_seed.html\">Rand.Seed</a></b> and <b><a href=\"rand_next.html\">Rand.Next</a></b>.<p>\r\n</p>",
       "text_content": " Rand.Real, Rand.Set, Rand.Seed and Rand.Next.\r\n",
-      "mdown_content": "**[rand_real.html](Rand.Real)**, **[rand_set.html](Rand.Set)**, **[rand_seed.html](Rand.Seed)** and **[rand_next.html](Rand.Next)**.\n"
+      "mdown_content": "**[Rand.Real](rand_real.html)**, **[Rand.Set](rand_set.html)**, **[Rand.Seed](rand_seed.html)** and **[Rand.Next](rand_next.html)**.\n"
     }
   ],
   "dependencies": [

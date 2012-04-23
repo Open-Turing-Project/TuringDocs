@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sqrt</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " sqrt ( r : real ) : real\r\n",
-      "mdown_content": "**sqrt** ( _r_ : **real** ) : **real**\n"
+      "mdown_content": "**sqrt** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Math.\r\n",
-      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "See also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

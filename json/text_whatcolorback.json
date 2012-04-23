@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.WhatColorBack</b> :<i> </i><b>int</b><p>\r\n</p></font>",
       "text_content": " Text.WhatColorBack : int\r\n",
-      "mdown_content": "**Text.WhatColorBack** : **int**\n"
+      "mdown_content": "**Text.WhatColorBack** : **int**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"text_color.html\">Text.Color</a> </b>and <b><a href=\"text_whatcolor.html\">Text.WhatColor</a></b>.<p>\r\n</p>",
       "text_content": " Text.Color and Text.WhatColor.\r\n",
-      "mdown_content": "**[text_color.html](Text.Color)** and **[text_whatcolor.html](Text.WhatColor)**.\n"
+      "mdown_content": "**[Text.Color](text_color.html)** and **[Text.WhatColor](text_whatcolor.html)**.\n"
     }
   ],
   "dependencies": [

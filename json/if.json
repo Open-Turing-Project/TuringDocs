@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>ifStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>if</b> <i>trueFalseExpn</i> <b>then</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">{ <b>elsif</b> <i>trueFalseExpn</i> <b>then</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">[ <b>else</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i> ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>if</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An ifStatement is:\r\n if trueFalseExpn then  statementsAndDeclarations { elsif trueFalseExpn then  statementsAndDeclarations } [ else  statementsAndDeclarations ] end if",
-      "mdown_content": "An _ifStatement_ is:\n\n\n**if** _trueFalseExpn_ **then**\n_statementsAndDeclarations_\n{ **elsif** _trueFalseExpn_ **then**\n_statementsAndDeclarations_ }\n[ **else**\n_statementsAndDeclarations_ ]\n**end** **if**\n\n"
+      "mdown_content": "An _ifStatement_ is:   **if** _trueFalseExpn_ **then**     _statementsAndDeclarations_   { **elsif** _trueFalseExpn_ **then**     _statementsAndDeclarations_ }   [ **else**     _statementsAndDeclarations_ ]   **end** **if**"
     },
     {
       "title": "Description",
@@ -72,7 +72,7 @@
       ],
       "raw_content": "<b><a href=\"case.html\">case</a></b> statements for another way to select among statements.<p>\r\n</p>",
       "text_content": " case statements for another way to select among statements.\r\n",
-      "mdown_content": "**[case.html](case)** statements for another way to select among statements.\n"
+      "mdown_content": "**[case](case.html)** statements for another way to select among statements.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Text.Locate</b> ( <i>row</i>, <i>column</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " Text.Locate ( row, column : int )\r\n",
-      "mdown_content": "**Text.Locate** ( _row_, _column_ : **int** )\n"
+      "mdown_content": "**Text.Locate** ( _row_, _column_ : **int** )"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a> </b>and <b><a href=\"draw_dot.html\">Draw.Dot</a></b>.<p>\r\n</p>",
       "text_content": " View.Set and Draw.Dot.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)** and **[draw_dot.html](Draw.Dot)**.\n"
+      "mdown_content": "**[View.Set](view_set.html)** and **[Draw.Dot](draw_dot.html)**.\n"
     }
   ],
   "dependencies": [

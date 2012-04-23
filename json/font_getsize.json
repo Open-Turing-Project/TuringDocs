@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.GetSize</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Font.GetSize : int\r\n",
-      "mdown_content": "**Font.GetSize** : **int**\n"
+      "mdown_content": "**Font.GetSize** : **int**"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Update</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Update (windowID : int)\r\n",
-      "mdown_content": "**Window.Update** (_windowID_ : **int**)\n"
+      "mdown_content": "**Window.Update** (_windowID_ : **int**)"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "<b><a href=\"view_update.html\">View.Update</a></b> for information on flicker-free animation.<p>\r\n</p>\n<p>\r\n</p>",
       "text_content": " View.Update for information on flicker-free animation.\r\n\r\n",
-      "mdown_content": "**[view_update.html](View.Update)** for information on flicker-free animation.\n\n\n"
+      "mdown_content": "**[View.Update](view_update.html)** for information on flicker-free animation.\n\n\n"
     }
   ],
   "dependencies": [

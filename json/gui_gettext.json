@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetText</b> (<i>widgetID</i> : <b>int</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " GUI.GetText (widgetID : int) : string\r\n",
-      "mdown_content": "**GUI.GetText** (_widgetID_ : **int**) : **string**\n"
+      "mdown_content": "**GUI.GetText** (_widgetID_ : **int**) : **string**"
     },
     {
       "title": "Description",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"gui_settext.html\">GUI.SetText</a> </b>for setting the text in a text field. See also <b>GUI.CreateTextField</b>.<p>\r\n</p>",
       "text_content": " GUI.SetText for setting the text in a text field. See also GUI.CreateTextField.\r\n",
-      "mdown_content": "**[gui_settext.html](GUI.SetText)** for setting the text in a text field. See also **GUI.CreateTextField**.\n"
+      "mdown_content": "**[GUI.SetText](gui_settext.html)** for setting the text in a text field. See also **GUI.CreateTextField**.\n"
     }
   ],
   "dependencies": [

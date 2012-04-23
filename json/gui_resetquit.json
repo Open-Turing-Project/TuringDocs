@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ResetQuit</b><p></p></font>",
       "text_content": "GUI.ResetQuit\r\n    ",
-      "mdown_content": "**GUI.ResetQuit**\n"
+      "mdown_content": "**GUI.ResetQuit**"
     },
     {
       "title": "Description",

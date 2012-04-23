@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.Update</b><p></p></font>",
       "text_content": "View.Update\r\n    ",
-      "mdown_content": "**View.Update**\n"
+      "mdown_content": "**View.Update**"
     },
     {
       "title": "Description",
@@ -65,7 +65,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b> for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options.<p>\r\n          <b><a href=\"view_updatearea.html\">View.UpdateArea</a></b> for updating\r\n          part of the window at a time.\r\n    </p>",
       "text_content": "View.Set for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options.\r\n          View.UpdateArea for updating\r\n          part of the window at a time.\r\n    ",
-      "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" and \"nooffscreenonly\" options.\n\n**[view_updatearea.html](View.UpdateArea)** for updatingpart of the window at a time."
+      "mdown_content": "**[View.Set](view_set.html)** for the \"offscreenonly\" and \"nooffscreenonly\" options.\n\n**[View.UpdateArea](view_updatearea.html)** for updatingpart of the window at a time."
     }
   ],
   "dependencies": [

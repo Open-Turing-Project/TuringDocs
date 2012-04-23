@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ord</b> ( <i>ch</i> : <b>char</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " ord ( ch : char ) : int\r\n",
-      "mdown_content": "**ord** ( _ch_ : **char** ) : **int**\n"
+      "mdown_content": "**ord** ( _ch_ : **char** ) : **int**"
     },
     {
       "title": "Description",
@@ -23,7 +23,7 @@
       ],
       "raw_content": "<b><a href=\"chr.html\">chr</a></b>, <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strint.html\">strint</a></b> functions.<p>\r\n</p>",
       "text_content": " chr, intstr and strint functions.\r\n",
-      "mdown_content": "**[chr.html](chr)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.\n"
+      "mdown_content": "**[chr](chr.html)**, **[intstr](intstr.html)** and **[strint](strint.html)** functions.\n"
     }
   ],
   "dependencies": [

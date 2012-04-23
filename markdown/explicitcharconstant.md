@@ -1,16 +1,15 @@
 
-#explicitCharConstant
+# explicitCharConstant
 
-##Syntax
+## Syntax
 An _explicitCharConstant_ is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.
 
-
-##Example
+## Example
 In the following, the explicit character constants are 'H' and 'Hi'.
 
         var c : char := 'H'
         var d : char (2) := 'Hi'
-##Details
+## Details
 An explicit character constant must contain at least one character. If it contains exactly one character, as in 'A', its type is **char**. If it contains two or more characters (_n_ characters), as 'Width', its type is **char**(_n_). The difference between the **char** and **char**(1) types is rarely of significance, but does make a difference in declarations without an explicit type, for example:
 
 The backslash \ is used in explicit string and char(n) constants to specify special values, for example, '\T' is the tab character. Similarly, the carat ^ is used to specify ASCII control characters, for example, '^H' is the ASCII backspace. See _explicitStringConstants_ for details.

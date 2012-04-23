@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Copy</b> (<i>srcPathName</i>, <i>destPathName</i> : <b>string</b>)<p></p></font>",
       "text_content": "File.Copy (srcPathName, destPathName : string)\r\n    ",
-      "mdown_content": "**File.Copy** (_srcPathName_, _destPathName_ : **string**)\n"
+      "mdown_content": "**File.Copy** (_srcPathName_, _destPathName_ : **string**)"
     },
     {
       "title": "Description",

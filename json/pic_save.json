@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Save</b> (<i>picID</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p></p></font>",
       "text_content": "Pic.Save (picID : int, fileName : string)\r\n    ",
-      "mdown_content": "**Pic.Save** (_picID_ : **int**, _fileName_ : **string**)\n"
+      "mdown_content": "**Pic.Save** (_picID_ : **int**, _fileName_ : **string**)"
     },
     {
       "title": "Description",

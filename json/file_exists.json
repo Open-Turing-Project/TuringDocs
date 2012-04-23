@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>File.Exists</b> (<i>pathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p>",
       "text_content": " File.Exists (pathName : string) : boolean\r\n",
-      "mdown_content": "**File.Exists** (_pathName_ : **string**) : **boolean**\n"
+      "mdown_content": "**File.Exists** (_pathName_ : **string**) : **boolean**"
     },
     {
       "title": "Description",

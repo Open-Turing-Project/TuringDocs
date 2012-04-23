@@ -1,11 +1,10 @@
 
-#flexible
+# flexible
 
-##Syntax
+## Syntax
 **flexible array** _indexType_ { , _indexType_ } **of** _typeSpec_
 
-
-##Description
+## Description
 The **flexible** keyword allows an array to be resized using **new** at a later point in time. The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:
 
 The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).
@@ -17,10 +16,10 @@ In the current implementation (1999), with a multi-dimensional array with a non-
 Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;__*__&#148; as the upper bound.
 
         new name , newUpper1 {,newUpper2}
-##Example
+## Example
 See **array** for an example of **flexible**.
 
 
-##See also
-**[array.html](array)** and **[new.html](new)**.
+## See also
+**[array](array.html)** and **[new](new.html)**.
 

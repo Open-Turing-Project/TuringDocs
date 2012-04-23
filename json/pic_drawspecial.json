@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.DrawSpecial</b> (<i>picID</i>, <i>x</i>, <i>y</i>, <i>mode</i>, <i>transition</i>, <i>duration</i>  : <b>int</b>)<p></p></font>",
       "text_content": "Pic.DrawSpecial (picID, x, y, mode, transition, duration  : int)\r\n    ",
-      "mdown_content": "**Pic.DrawSpecial** (_picID_, _x_, _y_, _mode_, _transition_, _duration_  : **int**)\n"
+      "mdown_content": "**Pic.DrawSpecial** (_picID_, _x_, _y_, _mode_, _transition_, _duration_  : **int**)"
     },
     {
       "title": "Description",
@@ -86,7 +86,7 @@
       ],
       "raw_content": "<b><a href=\"pic_draw.html\">Pic.Draw</a></b> for information on the meaning\r\n          of the <i>mode</i> argument.<p>\r\n          <b><a href=\"pic_drawspecialback.html\">Pic.DrawSpecialBack</a></b> for \r\n          information on how to continue executing the program while a special\r\n          effect is occurring.  This allows one to produce several special\r\n          effects at once.</p>\n<p>\r\n    </p>",
       "text_content": "Pic.Draw for information on the meaning\r\n          of the mode argument.\r\n          Pic.DrawSpecialBack for \r\n          information on how to continue executing the program while a special\r\n          effect is occurring.  This allows one to produce several special\r\n          effects at once.\r\n    ",
-      "mdown_content": "**[pic_draw.html](Pic.Draw)** for information on the meaningof the _mode_ argument.\n\n**[pic_drawspecialback.html](Pic.DrawSpecialBack)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once.\n"
+      "mdown_content": "**[Pic.Draw](pic_draw.html)** for information on the meaningof the _mode_ argument.\n\n**[Pic.DrawSpecialBack](pic_drawspecialback.html)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once.\n"
     }
   ],
   "dependencies": [

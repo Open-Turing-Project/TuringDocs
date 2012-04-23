@@ -1,24 +1,23 @@
 
-#GUI.GetSliderValue
+# GUI.GetSliderValue
 
-##Syntax
+## Syntax
 **GUI.GetSliderValue** (_widgetID_ : **int**) : **int**
 
-
-##Description
+## Description
 Returns the current value of a slider or scroll bar specified by _widgetID_. The _widgetID_ must specify either scroll bar or a slider (horizontal or vertical).
 
 
-##Example
+## Example
 See the _ScrollPic_ program in **GUI.CreateHorizontalScrollBarFull** for an example of **GUI.GetSliderValue**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.GetSliderValue**, not by calling **GetSliderValue**.
 
 
-##See also
-**[gui_setslidervalue.html](GUI.SetSliderValue)** for setting a slider [or.html](or) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.
+## See also
+**[GUI.SetSliderValue](gui_setslidervalue.html)** for setting a slider [or](or.html) scroll bar's value. See also **GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[GUI.CreateHorizontalSlider](gui_createhorizontalslider.html)**, and **[GUI.CreateVerticalSlider](gui_createverticalslider.html)**.
 

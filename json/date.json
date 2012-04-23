@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>date</b> (<b>var</b> <i>d</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " date (var d : string)\r\n",
-      "mdown_content": "**date** (**var** _d_ : **string**)\n"
+      "mdown_content": "**date** (**var** _d_ : **string**)"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"delay.html\">delay</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b> and <b><a href=\"time.html\">time</a></b> statements. <p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " delay, clock, sysclock, wallclock and time statements. \r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)** and **[time.html](time)** statements. \n\nSee also predefined unit **[timemodule.html](Time)**.\n"
+      "mdown_content": "**[delay](delay.html)**, **[clock](clock.html)**, **[sysclock](sysclock.html)**, **[wallclock](wallclock.html)** and **[time](time.html)** statements. \n\nSee also predefined unit **[Time](timemodule.html)**.\n"
     }
   ],
   "dependencies": [

@@ -1,15 +1,14 @@
 
-#GUI.SetScrollAmount
+# GUI.SetScrollAmount
 
-##Syntax
+## Syntax
 **GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)
 
-
-##Description
+## Description
 Sets a scroll bar's arrow increment, page increment and thumb size. Redraws the scroll bar to take into account the new thumb size. The _widgetID_ specifies the scroll bar to be changed. The _arrowInc_ parameter is the new arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). A value of 1 means to use the previously-defined arrow increment value. The _pageInc_ parameter specifies the new page increment (the amount the scroll bar's value is changed when the user clicks in the page up/down section of the scroll bar). A value of 1 means to use the previously-defined page increment value. The _thumbSize_ parameter specifies he new thumb size. See the scroll bar explanation for more detail on a scroll bar's thumb size. A value of 1 means to use the previously-defined thumb size.
 
 
-##Example
+## Example
 The following program displays an image in a canvas in a window. If the image is larger than the canvas, scroll bars to the bottom and left are used to allow the user to see the entire image. A text field allows users to load additional images whenever the "Load File" button is pressed.
 
         % The "ScrollPic2" program.
@@ -109,12 +108,12 @@ The following program displays an image in a canvas in a window. If the image is
         end loop
         
         
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetScrollAmount**, not by calling **SetScrollAmount**.
 
 
-##See also
+## See also
 **GUI.CreateHorizontalScrollBar** and **GUI.CreateVerticalScrollBar**
 

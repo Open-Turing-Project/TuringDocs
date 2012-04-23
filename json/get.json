@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>getStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>get</b> [ : <i>streamNumber</i> , ] <i>getItem</i> { , <i>getItem</i> }</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A getStatement is:\r\n get [ : streamNumber , ] getItem { , getItem }",
-      "mdown_content": "A _getStatement_ is:\n\n\n**get** [ : _streamNumber_ , ] _getItem_ { , _getItem_ }\n\n"
+      "mdown_content": "A _getStatement_ is:   **get** [ : _streamNumber_ , ] _getItem_ { , _getItem_ }"
     },
     {
       "title": "Description",
@@ -154,7 +154,7 @@
       ],
       "raw_content": "<b><a href=\"read.html\">read</a></b> <a href=\"statement.html\">statement</a>, which provides binary file input.<p>\r\n</p>",
       "text_content": " read statement, which provides binary file input.\r\n",
-      "mdown_content": "**[read.html](read)** [statement.html](statement), which provides binary file input.\n"
+      "mdown_content": "**[read](read.html)** [statement](statement.html), which provides binary file input.\n"
     }
   ],
   "dependencies": [

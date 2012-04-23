@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>RGB.GetColor</b> (<i>colorNumber</i> : <b>int</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>redComp</i>, <i>greenComp</i>, <i>blueComp</i> : <b>real</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " RGB.GetColor (colorNumber : int,  var redComp, greenComp, blueComp : real)",
-      "mdown_content": "**RGB.GetColor** (_colorNumber_ : **int**, \n**var** _redComp_, _greenComp_, _blueComp_ : **real**)\n\n"
+      "mdown_content": "**RGB.GetColor** (_colorNumber_ : **int**,    **var** _redComp_, _greenComp_, _blueComp_ : **real**)"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"rgb_setcolor.html\">RGB.SetColor</a></b>and <b><a href=\"rgb_addcolor.html\">RGB.AddColor</a></b>.<p>\r\n</p>",
       "text_content": " RGB.SetColorand RGB.AddColor.\r\n",
-      "mdown_content": "**[rgb_setcolor.html](RGB.SetColor)**and **[rgb_addcolor.html](RGB.AddColor)**.\n"
+      "mdown_content": "**[RGB.SetColor](rgb_setcolor.html)**and **[RGB.AddColor](rgb_addcolor.html)**.\n"
     }
   ],
   "dependencies": [

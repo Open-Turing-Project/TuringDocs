@@ -1,18 +1,17 @@
 
-#drawpolygon
+# drawpolygon
 
-##Syntax
+## Syntax
 **drawpolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)
 
-
-##Description
+## Description
 The **drawpolygon** procedure is used to draw a polygon with _n_ points. A line is drawn in _Color_ from the point (_x_(1), _y_(1)) to (_x_(2), _y_(2)) to (_x_(3), _y_(3)) and so on. After drawing the line to (_x_(_n_), _y_ (_n_)), a line will be drawn back to (_x_(1), _y_(1)), closing the polygon. The **drawpolygon** procedure is equivalent to:
 
         for i : 1 .. n - 1
             drawline (x (i), y(i), x (i + 1), y (i + 1), Color)
         end for
         drawline (x (n), y (n), x (1), y (1), Color)
-##Example
+## Example
 This program will create an octagon and display it in color 1.
 
         setscreen ("graphics")
@@ -21,7 +20,7 @@ This program will create an octagon and display it in color 1.
         var y : array 1..8 of int := init (100, 150, 185, 185,
                                    150, 100, 65, 65)
         drawpolygon (x, y, 8, 1)
-##Details
+## Details
 The IBM PC limits **drawpolygon** to a maximum of 256 points.
 
 The meaning of the _Color_ number depends on the current palette. See the **palette** statement.
@@ -29,6 +28,6 @@ The meaning of the _Color_ number depends on the current palette. See the **pale
 The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in a "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
 
-##See also
-**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. 
+## See also
+**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures. 
 

@@ -1,15 +1,14 @@
 
-#GUI.SetXOR
+# GUI.SetXOR
 
-##Syntax
+## Syntax
 **GUI.SetXOR** (_widgetID_ : **int**, _xor_ : **boolean**)
 
-
-##Description
+## Description
 Sets the "xor mode" of the canvas specified by _widgetID_. If the _xor_ parmeter is set to **true**, the canvas is set to _xor mode_. When in _xor mode_, all the _Draw_... procedures of a canvas are treated as if the **View.Set** ("xor") statement had been executed before the _Draw_ procedure.
 
 
-##Example
+## Example
 See **GUI.SetDisplayWhenCreated** for an example of **GUI.Show**.
 
         import GUI in "%oot/lib/GUI"
@@ -38,12 +37,12 @@ See **GUI.SetDisplayWhenCreated** for an example of **GUI.Show**.
             var c : int := Rand.Int (1, 15)
             GUI.DrawFillStar (canvas2, x  20, y  20, x + 20, y + 20, c)
         end for
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetXOR**, not by calling **SetXOR**.
 
 
-##See also
+## See also
 **GUI.CreateCanvas**.
 

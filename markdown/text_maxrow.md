@@ -1,28 +1,27 @@
 
-#Text.maxrow
+# Text.maxrow
 
-##Syntax
+## Syntax
 **maxrow** : **int**
 
-
-##Description
+## Description
 The **maxrow** function is used to determine the number of rows on the screen.
 
 
-##Example
+## Example
 This program outputs the maximum row number.
 
         put "Number of rows on the screen is ", maxrow
-##Details
+## Details
 For IBM PC compatibles, **maxrow** = 25. For many UNIX dumb terminals, **maxrow** = 24. 
 
 
-##Status
+## Status
 Exported unqualified.
 
 This means that you can call the function by calling **maxrow** or by calling **Text.maxrow**.
 
 
-##See also
-**[text_locate.html](Text.Locate)** [procedure.html](procedure) for an example of the use of **[maxrow.html](maxrow)**.
+## See also
+**[Text.Locate](text_locate.html)** [procedure](procedure.html) for an example of the use of **[maxrow](maxrow.html)**.
 

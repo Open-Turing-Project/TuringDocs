@@ -1,11 +1,10 @@
 
-#realstr
+# realstr
 
-##Syntax
+## Syntax
 **realstr** ( _r_ : **real**, _width_ : **int** ) : **string**
 
-
-##Description
+## Description
 The **realstr** function is used to convert a **real** number to a string. For example, **realstr** (2.5e1, 4)="_bb25_" where _b_ represents a blank. The string is an approximation to _r_, padded on the left with blanks as necessary to a length of _width_.
 
 The _width_ parameter must be non-negative. If the _width_ parameter is not large enough to represent the value of _r_ it is implicitly increased as needed. The displayed value is rounded to the nearest decimal equivalent with this accuracy. In the case of a tie, the display value is rounded to the next larger value.
@@ -19,6 +18,6 @@ _Defaultew_ is an implementation-defined number of exponent digits to be display
 The **realstr** function approximates the inverse of **strreal**, although round-off errors keep these from being exact inverses.
 
 
-##See also
-the **[erealstr.html](erealstr)**, **[frealstr.html](frealstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.
+## See also
+the **[erealstr](erealstr.html)**, **[frealstr](frealstr.html)**, **[strreal](strreal.html)**, **[intstr](intstr.html)** and **[strint](strint.html)** functions.
 

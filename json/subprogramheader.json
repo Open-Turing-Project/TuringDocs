@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>subprogramHeader </i>is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>procedure</b> [ <b>pervasive</b> ] <i>id</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\">[ ([ <i>paramDeclaration</i> {, <i>paramDeclaration</i>} ])]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>function</b> [ <b>pervasive</b> ] <i>id</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\">[ ([ <i>paramDeclaration</i> {, <i>paramDeclaration</i>} ])]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\">[ <i>id</i> ] : <i>typeSpec</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A subprogramHeader is one of:\r\n (a)procedure [ pervasive ] id   [ ([ paramDeclaration {, paramDeclaration} ])] (b)function [ pervasive ] id   [ ([ paramDeclaration {, paramDeclaration} ])]   [ id ] : typeSpec",
-      "mdown_content": "A _subprogramHeader_ is one of:\n\n\n(a) **procedure** [ **pervasive** ] _id_\n[ ([ _paramDeclaration_ {, _paramDeclaration_} ])]\n(b) **function** [ **pervasive** ] _id_\n[ ([ _paramDeclaration_ {, _paramDeclaration_} ])]\n[ _id_ ] : _typeSpec_\n\n"
+      "mdown_content": "A _subprogramHeader_ is one of:   (a) **procedure** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]   (b) **function** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]       [ _id_ ] : _typeSpec_"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"pervasive.html\">pervasive</a></b>.<p>\r\n</p>",
       "text_content": " pervasive.\r\n",
-      "mdown_content": "**[pervasive.html](pervasive)**.\n"
+      "mdown_content": "**[pervasive](pervasive.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Flip</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>",
       "text_content": "Pic.Flip (picID : int) : int\r\n    ",
-      "mdown_content": "**Pic.Flip** (_picID_ : **int**) : **int**\n"
+      "mdown_content": "**Pic.Flip** (_picID_ : **int**) : **int**"
     },
     {
       "title": "Description",

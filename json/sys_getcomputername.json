@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.GetComputerName</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Sys.GetComputerName : string\r\n",
-      "mdown_content": "**Sys.GetComputerName** : **string**\n"
+      "mdown_content": "**Sys.GetComputerName** : **string**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sys_getusername.html\">Sys.GetUserName</a></b> to obtain the user name of the user currently logged in.<p>\r\n</p>",
       "text_content": " Sys.GetUserName to obtain the user name of the user currently logged in.\r\n",
-      "mdown_content": "**[sys_getusername.html](Sys.GetUserName)** to obtain the user name of the user currently logged in.\n"
+      "mdown_content": "**[Sys.GetUserName](sys_getusername.html)** to obtain the user name of the user currently logged in.\n"
     }
   ],
   "dependencies": [

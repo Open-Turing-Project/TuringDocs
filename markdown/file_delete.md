@@ -1,19 +1,18 @@
 
-#File.Delete
+# File.Delete
 
-##Syntax
+## Syntax
 **File.Delete** (_filePathName_ : **string**)
 
-
-##Description
+## Description
 **File.Delete** is used to delete the file specified by the parameter _filePathName_. This is the equivalent of doing a **del** in DOS or **rm** in UNIX.
 
 
-##Details
+## Details
 If the **File.Delete** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 This program deletes the file called _information_.
 
         File.Delete ("information")
@@ -23,13 +22,13 @@ This program deletes the file called _information_.
             put "Did not delete the file."
             put "Error: ", Error.LastMsg
         end if
-##Execute
+## Execute
 An example program is available that creates a file in the current directory, and then deletes the file using **File.Delete**.
 
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **File.Delete**, not by calling **File**.

@@ -1,13 +1,10 @@
 
-#GUI.CreateCanvas[Full]
+# GUI.CreateCanvas[Full]
 
-##Syntax
-**GUI.CreateCanvas** (_x_, _y_, _width_, _height_ : **int**) : **int**
+## Syntax
+**GUI.CreateCanvas** (_x_, _y_, _width_, _height_ : **int**) : **int****GUI.CreateCanvasFull** (_x_, _y_, _width_, _height_ : **int**,    _border_ : **int**,    _mouseDown_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseDrag_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseUp_ : **procedure** _x_ (_mx_, _my_ : int)) : **int**
 
-**GUI.CreateCanvasFull** (_x_, _y_, _width_, _height_ : **int**,    _border_ : **int**,    _mouseDown_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseDrag_ : **procedure** _x_ (_mx_, _my_ : int),    _mouseUp_ : **procedure** _x_ (_mx_, _my_ : int)) : **int**
-
-
-##Description
+## Description
 Creates a canvas and returns the canvas' widget ID.
 
 A canvas is a drawing surface for use by the program. It differs from just using the window surface to draw on in that (0, 0) represents the lower-left corner of the canvas and all drawing is clipped to the canvas. (This means that if you accidently attempt to draw outside of the canvas, it will not actually draw beyond the border of the canvas.)
@@ -29,7 +26,7 @@ For **GUI.CreateCanvasFull**, the _border_ parameter specifies the type of borde
 The _mouseDown_ parameter is a procedure called when the user presses the mouse button in the canvas. The _mouseDrag_ parameter is a procedure called when the user drags the mouse while the mouse button is still pressed. The _mouseUp_ parameter is a procedure called when the user releases the mouse button. The parameters to all three are the x and y location of the mouse where the button was pressed (dragged/released). The coordinates are given with respect to the canvas (i.e. (0, 0) is the lower-left corner of the canvas). 
 
 
-##Example
+## Example
 The following program draws 10 random stars in the canvas.
 
 
@@ -42,7 +39,7 @@ The following program draws 10 random stars in the canvas.
             var c : int := Rand.Int (0, maxcolor)
             GUI.DrawFillOval (canvas, x, y, 20, 20, c)
         end for
-##Details
+## Details
 When **GUI.CreateCanvas** or **GUI.CreateCanvasFull** is called, the newly created canvas will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 The border of the canvas is just outside the drawing surface, so **GUI.GetWidth** and **GUI.GetHeight** will return slight larger values than _width_ and _height_.
@@ -50,7 +47,7 @@ The border of the canvas is just outside the drawing surface, so **GUI.GetWidth*
 When the canvas is disabled, clicking the mouse in the canvas does not call any of the _mouseDown_, _mouseDrag_, or _mouseUp_ procedures. The appearance of the canvas does not change.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a button as the _widgetID_ parameter:
 
 
@@ -58,12 +55,12 @@ The following GUI subprograms can be called with a button as the _widgetID_ para
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateCanvas**, not by calling **CreateCanvas**.
 
 
-##See also
-**[gui_draw.html](GUI.Draw&#133;)**, **[gui_fontdraw.html](GUI.FontDraw)**,**[gui_pic.html](GUI.Pic&#133;)**, and **[gui_setxor.html](GUI.SetXOR)** for drawing on a canvas.
+## See also
+**[GUI.Draw&#133;](gui_draw.html)**, **[GUI.FontDraw](gui_fontdraw.html)**,**[GUI.Pic&#133;](gui_pic.html)**, and **[GUI.SetXOR](gui_setxor.html)** for drawing on a canvas.
 

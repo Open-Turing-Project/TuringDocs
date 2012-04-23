@@ -1,13 +1,10 @@
 
-#GUI.CreateLabel[Full]
+# GUI.CreateLabel[Full]
 
-##Syntax
-**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int**
+## Syntax
+**GUI.CreateLabel** (_x_, _y_ : **int**, _text_ : **string**) : **int****GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**
 
-**GUI.CreateLabelFull** (_x,_ _y_ : **int**, _text_ : **string**,     _width_, _height_, _alignment_, _fontID_ : **int**) : **int**
-
-
-##Description
+## Description
 Creates a label and returns the label's widget ID. 
 
 The label widget is used to display text. It can be used to display text in a variety of fonts and sizes. Label widgets can also be aligned in a variety of ways.
@@ -27,7 +24,7 @@ By using the _fondID_ parameter, labels can be have any size or typeface.
 Labels are passive widgets, meaning that they do not respond to button clicks or keystrokes.
 
 
-##Example
+## Example
 The following program creates three labels, one with the default alignment, the other two aligned to appear in the center and upper-right corner of the window.
 
         import GUI
@@ -37,13 +34,13 @@ The following program creates three labels, one with the default alignment, the 
             GUI.MIDDLE + GUI.CENTER, 0)
         var upperRight : int := GUI.CreateLabelFull (0, 0, "Upper-Right", 
             maxx, maxy, GUI.RIGHT + GUI.TOP, 0)
-##Details
+## Details
 When **GUI.CreateLabel** or **GUI.CreateLabelFull** is called, the newly created label will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 A frame widget is a passive widget and cannot be enabled or disabled.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a label as the _widgetID_ parameter:
 
 
@@ -53,12 +50,12 @@ The following GUI subprograms can be called with a label as the _widgetID_ param
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateLabel**, not by calling **CreateLabel**.
 
 
-##See also
-**[gui_setlabel.html](GUI.SetLabel)** for changing the label's text.
+## See also
+**[GUI.SetLabel](gui_setlabel.html)** for changing the label's text.
 

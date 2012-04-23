@@ -1,17 +1,16 @@
 
-#GUI.SetMouseEventHandler
+# GUI.SetMouseEventHandler
 
-##Syntax
+## Syntax
 **GUI.SetMouseEventHandler** (    _mouseEventHandler_ : **procedure** _x_ (_mx_, _my_ : **int**))
 
-
-##Description
+## Description
 Sets the new default mouse event handler. The _mouseEventHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there is a mouse button down which is not handled by any widget. The _mx_ and _my_ parameters in the _mouseEventHandler_ are the location of mouse when the button was pressed.
 
 This procedure is used by programs to allow for mouse input in a program that uses widgets.
 
 
-##Example
+## Example
 This is a program that allows the user to place stars on the screen. The menu bar allows the user to quit the program at any time. The user can also toggle the appearance of the menu bar by pressing any key.
 
 
@@ -70,12 +69,12 @@ This is a program that allows the user to place stars on the screen. The menu ba
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetMouseEventHandler**, not by calling **SetMouseEventHandler**.
 
 
-##See also
-**[gui_processevent.html](GUI.ProcessEvent)**.
+## See also
+**[GUI.ProcessEvent](gui_processevent.html)**.
 

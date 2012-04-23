@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getpriority</b> : <b>nat</b><p>\r\n</p></font>",
       "text_content": " getpriority : nat\r\n",
-      "mdown_content": "**getpriority** : **nat**\n"
+      "mdown_content": "**getpriority** : **nat**"
     },
     {
       "title": "Description",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "<b><a href=\"setpriority.html\">setpriority</a></b>, <b><a href=\"fork.html\">fork</a></b> and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\nSee also predefined unit <b><a href=\"concurrencymodule.html\">Concurrency</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " setpriority, fork and monitor.\r\nSee also predefined unit Concurrency.\r\n",
-      "mdown_content": "**[setpriority.html](setpriority)**, **[fork.html](fork)** and **[monitor.html](monitor)**.\n\nSee also predefined unit **[concurrencymodule.html](Concurrency)**.\n"
+      "mdown_content": "**[setpriority](setpriority.html)**, **[fork](fork.html)** and **[monitor](monitor.html)**.\n\nSee also predefined unit **[Concurrency](concurrencymodule.html)**.\n"
     }
   ],
   "dependencies": [

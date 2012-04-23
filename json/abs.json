@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>abs</b> (<i>expn</i>)<p>\r\n</p></font>",
       "text_content": " abs (expn)\r\n",
-      "mdown_content": "**abs** (_expn_)\n"
+      "mdown_content": "**abs** (_expn_)"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " predefined unit Math.\r\n",
-      "mdown_content": "predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

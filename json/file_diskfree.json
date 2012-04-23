@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.DiskFree</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>",
       "text_content": "File.DiskFree (pathName : string) : int\r\n    ",
-      "mdown_content": "**File.DiskFree** (_pathName_ : **string**) : **int**\n"
+      "mdown_content": "**File.DiskFree** (_pathName_ : **string**) : **int**"
     },
     {
       "title": "Description",

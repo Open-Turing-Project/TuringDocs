@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Rename</b> (<i>srcPathName</i>, <i>destName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " File.Rename (srcPathName, destName : string)\r\n",
-      "mdown_content": "**File.Rename** (_srcPathName_, _destName_ : **string**)\n"
+      "mdown_content": "**File.Rename** (_srcPathName_, _destName_ : **string**)"
     },
     {
       "title": "Description",

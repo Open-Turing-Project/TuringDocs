@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetScrollBarWidth</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetScrollBarWidth : int\r\n",
-      "mdown_content": "**GUI.GetScrollBarWidth** : **int**\n"
+      "mdown_content": "**GUI.GetScrollBarWidth** : **int**"
     },
     {
       "title": "Description",

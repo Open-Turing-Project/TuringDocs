@@ -1,11 +1,10 @@
 
-#Pic.DrawSpecial
+# Pic.DrawSpecial
 
-##Syntax
+## Syntax
 **Pic.DrawSpecial** (_picID_, _x_, _y_, _mode_, _transition_, _duration_  : **int**)
 
-
-##Description
+## Description
 **Pic.DrawSpecial** is used to draw a picture on the screen with aspecial effect such as a wipe, a slide, or a fade-in. The picture is drawn with the lower left corner at (_x_, _y_). The _duration_ specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
 
 The _mode_ parameter is the same as in **Pic.New** and has one of the following values:
@@ -112,7 +111,7 @@ _picBlend_ This transition is somewhat different because it doesn't takeany time
 
 
 
-##Details
+## Details
 The **Pic.DrawSpecial** requires a moderately fast machine to operate successfully (Pentium III or higher). The _picFadeIn_and _picBlend_ transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the _Display_ control panel from the _Start_ menu.  You can also use the
 
 `      **Config.Display** (**cdNumMaxColors**)`
@@ -120,11 +119,11 @@ The **Pic.DrawSpecial** requires a moderately fast machine to operate successful
 function to determine the bit-depth of the display (anything **over** 256 colors will produce acceptable results).
 
 
-##Details
+## Details
 If the **Pic.DrawSpecial** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 The program draws a blue star on the screen, then a red circle, thenproceeds to have to have the two replace each other with a variety oftransitions.
 
 
@@ -144,20 +143,20 @@ The program draws a blue star on the screen, then a red circle, thenproceeds to 
 	Pic.DrawSpecial (blueID, 50, 50, picCopy, picBlend + 50, 0)
         Pic.Free (redID)
         Pic.Free (blueID)
-##Execute
+## Execute
 The following program demonstrates each of the different special effects, first using pictures containing text, then picturesloaded from photographs, then both at once.
 
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Pic.DrawSpecial**, not by calling **DrawSpecial**.
 
 
-##See also
-**[pic_draw.html](Pic.Draw)** for information on the meaningof the _mode_ argument.
+## See also
+**[Pic.Draw](pic_draw.html)** for information on the meaningof the _mode_ argument.
 
-**[pic_drawspecialback.html](Pic.DrawSpecialBack)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once.
+**[Pic.DrawSpecialBack](pic_drawspecialback.html)** for information on how to continue executing the program while a specialeffect is occurring.  This allows one to produce several specialeffects at once.
 

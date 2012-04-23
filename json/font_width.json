@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.Width</b> (<i>txtStr</i> : <b>string</b>, <i>fontID</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Font.Width (txtStr : string, fontID : int) : int\r\n",
-      "mdown_content": "**Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**\n"
+      "mdown_content": "**Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**"
     },
     {
       "title": "Description",

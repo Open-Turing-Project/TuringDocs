@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int1</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 1-byte integer</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int2</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 2-byte integer</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>int4</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 4-byte integer</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": "\r\n (a)int1  % 1-byte integer (b)int2  % 2-byte integer (c)int4  % 4-byte integer",
-      "mdown_content": "\n\n\n(a) **int1**     _% 1-byte integer_\n(b) **int2**     _% 2-byte integer_\n(c) **int4**     _% 4-byte integer_\n\n"
+      "mdown_content": "(a) **int1**     _% 1-byte integer_   (b) **int2**     _% 2-byte integer_   (c) **int4**     _% 4-byte integer_"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"nat.html\">nat</a></b><i>n </i>types which are <i>n</i> byte natural (non-negative) values. See also <b><a href=\"int.html\">int</a></b> and <b><a href=\"nat.html\">nat</a></b>.<p>\r\n</p>",
       "text_content": " the natn types which are n byte natural (non-negative) values. See also int and nat.\r\n",
-      "mdown_content": "the **[nat.html](nat)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int.html](int)** and **[nat.html](nat)**.\n"
+      "mdown_content": "the **[nat](nat.html)**_n_ types which are _n_ byte natural (non-negative) values. See also **[int](int.html)** and **[nat](nat.html)**.\n"
     }
   ],
   "dependencies": [

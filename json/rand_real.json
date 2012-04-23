@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Rand.Real</b> : <b>real</b><p>\r\n</p></font>",
       "text_content": " Rand.Real : real\r\n",
-      "mdown_content": "**Rand.Real** : **real**\n"
+      "mdown_content": "**Rand.Real** : **real**"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"rand_int.html\">Rand.Int</a></b>, <b><a href=\"rand_set.html\">Rand.Set</a></b>, <b><a href=\"rand_seed.html\">Rand.Seed</a></b> and <b><a href=\"rand_next.html\">Rand.Next</a></b>.<p>\r\n</p>",
       "text_content": " Rand.Int, Rand.Set, Rand.Seed and Rand.Next.\r\n",
-      "mdown_content": "**[rand_int.html](Rand.Int)**, **[rand_set.html](Rand.Set)**, **[rand_seed.html](Rand.Seed)** and **[rand_next.html](Rand.Next)**.\n"
+      "mdown_content": "**[Rand.Int](rand_int.html)**, **[Rand.Set](rand_set.html)**, **[Rand.Seed](rand_seed.html)** and **[Rand.Next](rand_next.html)**.\n"
     }
   ],
   "dependencies": [

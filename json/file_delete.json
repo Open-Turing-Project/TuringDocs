@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>File.Delete</b> (<i>filePathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " File.Delete (filePathName : string)\r\n",
-      "mdown_content": "**File.Delete** (_filePathName_ : **string**)\n"
+      "mdown_content": "**File.Delete** (_filePathName_ : **string**)"
     },
     {
       "title": "Description",

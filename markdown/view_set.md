@@ -1,22 +1,21 @@
 
-#View.Set
+# View.Set
 
-##Syntax
+## Syntax
 **View.Set** ( _s_ : **string** )
 
-
-##Example
+## Example
 Here are example uses of the **View.Set** procedure. In many cases, these will appear as the first statement of the program. However, they can appear any place in a program.
 
         View.Set ("graphics")       % Switch to graphics mode
         View.Set ("screen")     % Switch to screen mode
         View.Set ("nocursor")       % Turn off cursor
         View.Set ("noecho")     % Do not echo keystrokes
-##Description
+## Description
 The **View.Set** statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to **View.Set** is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho". **View.Set** affects the active window.
 
 
-##Details
+## Details
 There are two window modes, **text** and **graphics**.
 
 **text** mode does not allow any graphics whatsoever (including cursor positioning, etc.). Only **put** and **get** are allowed. Any output that scrolls off the top of the window is preserved and can viewed or printed later.
@@ -26,7 +25,7 @@ There are two window modes, **text** and **graphics**.
 The default graphics mode is defined in the Turing preferences. It is good practice to set the desired mode so that the program will function properly regardless of thedefault graphics mode. Note that if the user prints the output window, in **text** mode, all output sent to the window is printed. In **graphics** mode, only the current output of the window is printed. If the user saves the output window, a **text** mode window will produce a text file containing all the output sent to the window. A **graphics** window will produce a BMP graphics file containing the current contents of the window.
 
 
-##Details
+## Details
 Where the options to **View.Set** are mutually exclusive, they are listed here with the default underlined. Here are the options: 
 
 "**cursor**", "**nocursor**" - Causes the cursor to be shown (or hidden). The cursor is only displayed when the program is awaiting input.
@@ -58,7 +57,7 @@ The **graphics** mode can have a modifier in the form "graphics:<_width_>;<_heig
 To set a window to the maximum size available on the screen, you can use &#147;max&#148; for the <_width_>, <_height_>, <_rows_> or <_columns_> parameters. If the window requested is larger than will fit on the screen, the window will fill the entire screen and scroll bars will be added to the output window to allow the window user to see the rest of the window.
 
 
-##Example
+## Example
 This program creates a graphics window that is 300 pixels by 100 pixels.
 
 This program outputs the square roots for the first 200 numbers. The user can inspect all the output and print the values after the program has finished execution
@@ -75,11 +74,11 @@ This program resizes the window to 200x200, moves the output window to the botto
         Draw.Line (maxx, 0, 0, maxy, red)        View.Set ("graphics:200;200,position:bottom;left,nobuttonbar")
         View.Set ("title:Bottom Left Window")
         put "Hello"
-##See also
-**[setscreen.html](setscreen)** for further information. 
+## See also
+**[setscreen](setscreen.html)** for further information. 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **View.Set**, not by calling **Set**.

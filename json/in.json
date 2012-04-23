@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>in</b><p>\r\n</p></font>",
       "text_content": " in\r\n",
-      "mdown_content": "**in**\n"
+      "mdown_content": "**in**"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "the <b><a href=\"set.html\">set</a></b> type, <i><a href=\"infix.html\">infix</a> operators</i>, and <i><a href=\"precedence.html\">precedence</a> </i>of operators.<p>\r\n</p>",
       "text_content": " the set type, infix operators, and precedence of operators.\r\n",
-      "mdown_content": "the **[set.html](set)** type, _[infix.html](infix) operators_, and _[precedence.html](precedence)_ of operators.\n"
+      "mdown_content": "the **[set](set.html)** type, _[infix](infix.html) operators_, and _[precedence](precedence.html)_ of operators.\n"
     }
   ],
   "dependencies": [

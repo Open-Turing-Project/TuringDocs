@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>nil</b> [ (<i>collectionOrClassId</i> ) ]<p>\r\n</p></font>",
       "text_content": " nil [ (collectionOrClassId ) ]\r\n",
-      "mdown_content": "**nil** [ (_collectionOrClassId_ ) ]\n"
+      "mdown_content": "**nil** [ (_collectionOrClassId_ ) ]"
     },
     {
       "title": "Description",

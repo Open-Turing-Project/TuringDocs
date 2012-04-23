@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>namedType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>typeId</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>moduleId</i> . <i>typeId</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A namedType is one of:\r\n (a)typeId (b)moduleId . typeId",
-      "mdown_content": "A _namedType_ is one of:\n\n\n(a) _typeId_\n(b) _moduleId_ . _typeId_\n\n"
+      "mdown_content": "A _namedType_ is one of:   (a) _typeId_   (b) _moduleId_ . _typeId_"
     },
     {
       "title": "Description",

@@ -1,11 +1,11 @@
 
-#assignability
+# assignability
 
-##Description
+## Description
 A value, such as 24, is assignable to a variable, such as _i_, if certain rules are followed. These rules, given in detail below, are called the _assignability_ rules. They must be followed in assignment statements as well as when passing values to non-**var** parameters.
 
 
-##Example
+## Example
 
 
         var i : int
@@ -32,7 +32,7 @@ A value, such as 24, is assignable to a variable, such as _i_, if certain rules 
         var r, s : personType
         
         s := r          % Record r is assignable to s
-##Details
+## Details
 The expression on the right of := must be _assignable_ to the variable on the left. An expression passed to a non-**var** parameter must be assignable to the corresponding parameter.
 
 An expression is defined to be _assignable_ to a variable if the two _root_ types are _equivalent_ or if an integer value is being assigned to a **real** variable (in which case the integer value is automatically converted to **real**). Two types are considered to be equivalent if they are essentially the same type (see _equivalence_ for the detailed definition of this term).

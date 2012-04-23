@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>recordType</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>record</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">{ <i>id</i> {, <i>id</i> } : <i>typeSpec</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>record</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A recordType is:\r\n record  id {, id } : typeSpec  { id {, id } : typeSpec } end record",
-      "mdown_content": "A _recordType_ is:\n\n\n**record**\n_id_ {, _id_ } : _typeSpec_\n{ _id_ {, _id_ } : _typeSpec_ }\n**end** **record**\n\n"
+      "mdown_content": "A _recordType_ is:   **record**     _id_ {, _id_ } : _typeSpec_     { _id_ {, _id_ } : _typeSpec_ }   **end** **record**"
     },
     {
       "title": "Description",

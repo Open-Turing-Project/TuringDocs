@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.Sec</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Time.Sec : int\r\n",
-      "mdown_content": "**Time.Sec** : **int**\n"
+      "mdown_content": "**Time.Sec** : **int**"
     },
     {
       "title": "Description",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"time_date.html\">Time.Date</a></b>, <b><a href=\"time_datesec.html\">Time.DateSec</a></b> and <b><a href=\"time_secdate.html\">Time.SecDate</a></b> functions.<p>\r\n</p>",
       "text_content": " Time.Date, Time.DateSec and Time.SecDate functions.\r\n",
-      "mdown_content": "**[time_date.html](Time.Date)**, **[time_datesec.html](Time.DateSec)** and **[time_secdate.html](Time.SecDate)** functions.\n"
+      "mdown_content": "**[Time.Date](time_date.html)**, **[Time.DateSec](time_datesec.html)** and **[Time.SecDate](time_secdate.html)** functions.\n"
     }
   ],
   "dependencies": [

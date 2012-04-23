@@ -1,22 +1,21 @@
 
-#Joystick.GetInfo
+# Joystick.GetInfo
 
-##Syntax
+## Syntax
 **Joystick.GetInfo** (_joystick_ : **int**, **var** _xPos_, _yPos_ : **int**,_btn1Pressed_, _btn2Pressed_ : **boolean**)
 
-
-##Description
+## Description
 Reads the position and button status of the joystick specified by the _joystack_ parameter. The _x_ and _y_ parameter are returned in the _xPos_ and _yPos_ parameters. If button 1 or button 2 on the joystick are currently pressed, _btn1Pressed_ and _btn2Pressed_ will be set to **true**. The _joystick_ parameter can be either **joystick1** or **joystick2**.
 
 The x and y positions vary from **joyMin** to **joyMax**. To use them with respect to a screen, the coordinates returned from **Joystick.GetInfo** must be translated into screen coordinates. The following formula can be used:
 
         screenX = round (maxx * (xPos  joyMin) / (joyMax  joyMin))
         screenY = round (maxy * (yPos  joyMin) / (joyMax  joyMin))
-##Details
+## Details
 The **Joystick** module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information.
 
 
-##Example
+## Example
 The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing.
 
         var jx, jy, x, y, ox, oy : int := 1
@@ -40,7 +39,7 @@ The following program outputs the current location of joystick #1 and draws a cu
                 oB2 := b2
             end if
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Joystick.GetInfo**, not by calling **GetInfo**.

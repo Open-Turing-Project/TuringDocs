@@ -1,19 +1,14 @@
 
-#tell
+# tell
 
-##Syntax
-An _tellStatement_ is:
+## Syntax
+An _tellStatement_ is:   **tell** : _fileNumber_ , _filePositionVar_
 
-
-**tell** : _fileNumber_ , _filePositionVar_
-
-
-
-##Description
+## Description
 The **tell** statement sets _filePositionVar_, whose type must be **int**, to the current offset in bytes from the beginning of the specified file. The _fileNumber_ must specify a file that is open with **seek** capability (or else a program argument file that is implicitly opened). The **tell** statement is useful for recording the file position of a certain piece of data for later access using **seek**.
 
 
-##Example
+## Example
 This example shows how to use **tell** to record the location of a record in a file. This location is later used by **seek** to allow the record to be read.
 
         var employeeRecord :
@@ -32,6 +27,6 @@ This example shows how to use **tell** to record the location of a record in a f
         seek : fileNo, location     % Go back to location
         read : fileNo, employeeRecord   % Read the record
                             % that was previously written
-##See also
-the **[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[seek.html](seek)**, **[get.html](get)** and **[put.html](put)** statements.
+## See also
+the **[read](read.html)**, **[write](write.html)**, **[open](open.html)**, **[close](close.html)**, **[seek](seek.html)**, **[get](get.html)** and **[put](put.html)** statements.
 

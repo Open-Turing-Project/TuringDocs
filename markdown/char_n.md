@@ -1,19 +1,18 @@
 
-#char(n)
+# char(n)
 
-##Syntax
+## Syntax
 **char** (_numberOfCharacters_)
 
-
-##Description
+## Description
 Each variable whose type is a **char**(_n_) contains exactly _n_ characters.
 
 
-##Example
+## Example
 Canadian postal codes contain six characters, for example, M4V 1Y9. This is represented in a **char**(6) variable:
 
         var postalCode : char (6) := 'M4V1Y9'
-##Details
+## Details
 Explicit constants for the **char**(_n_) type use single quotes as in 'M4V1Y9', as opposed to explicit **string** constants which use double quotes, as in "Nancy". A single character single quoted character, such as 'A', is considered to have the type **char** instead of **char**(_n_), but since these two types can be assigned to each other and compared to each other, this fact has little consequence.
 
 The type **char**(_n_) is generally more difficult to use than the **string** type, which is favored for most simple programs. The type **char**(_n_) has the advantage that it is efficient in terms of both space and time. In particular, it is represented as _n_ bytes in the computer's memory. By contrast, the **string** type must use extra space (a trailing zero byte in current implementations) to represent the current length and allocates space for the maximum value it can hold.
@@ -44,6 +43,6 @@ A **char** value can be assigned (or passed to an non **var** parameter) with au
 When comparing two **char**(_n_) values, as in s > t, if both are non-dynamic and of the same length, they are compared without converting to strings. If either are dynamic, they are converted to strings and then compared.
 
 
-##See also
-the **[char.html](char)** type which is much like **char**(1). See also the **[string1.html](string)** type.
+## See also
+the **[char](char.html)** type which is much like **char**(1). See also the **[string](string1.html)** type.
 

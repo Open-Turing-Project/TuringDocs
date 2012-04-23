@@ -1,15 +1,14 @@
 
-#succ
+# succ
 
-##Syntax
+## Syntax
 **succ** ( _expn_ )
 
-
-##Description
+## Description
 The **succ** function accepts an integer, character or an enumerated value and returns the integer plus one, the next character, or the next value in the enumeration. For example, **succ** (7) is 8. 
 
 
-##Example
+## Example
 This part of a Turing program fills up array _a_ with the enumerated values _green_, _yellow_, _red_, _green_, _yellow_, _red_, etc.
 
         type colors : enum ( green, yellow, red  )
@@ -23,10 +22,10 @@ This part of a Turing program fills up array _a_ with the enumerated values _gre
                 c := succ ( c )
             end if
         end for
-##Details
+## Details
 You cannot  apply **succ** to the last value of an enumeration.
 
 
-##See also
-the **[pred.html](pred)**, **[lower.html](lower)** and **[upper.html](upper)** functions.
+## See also
+the **[pred](pred.html)**, **[lower](lower.html)** and **[upper](upper.html)** functions.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>collectionDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>var</b> <i>id </i>{ , <i>id </i>} : <b>collection</b> <b>of</b> <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>var</b> <i>id </i>{ , <i>id </i>} : <b>collection</b> <b>of</b> <b>forward</b> <i>typeId</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A collectionDeclaration is one of:\r\n (a)var id { , id } : collection of typeSpec (b)var id { , id } : collection of forward typeId",
-      "mdown_content": "A _collectionDeclaration_ is one of:\n\n\n(a) **var** _id_ { , _id_ } : **collection** **of** _typeSpec_\n(b) **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_\n\n"
+      "mdown_content": "A _collectionDeclaration_ is one of:   (a) **var** _id_ { , _id_ } : **collection** **of** _typeSpec_   (b) **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_"
     },
     {
       "title": "Description",

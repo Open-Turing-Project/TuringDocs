@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.HideMenuBar</b><p>\r\n</p></font>",
       "text_content": " GUI.HideMenuBar\r\n",
-      "mdown_content": "**GUI.HideMenuBar**\n"
+      "mdown_content": "**GUI.HideMenuBar**"
     },
     {
       "title": "Description",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b>. See also <b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ShowMenuBar. See also GUI.CreateMenu.\r\n",
-      "mdown_content": "**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**.\n"
+      "mdown_content": "**[GUI.ShowMenuBar](gui_showmenubar.html)**. See also **[GUI.CreateMenu](gui_createmenu.html)**.\n"
     }
   ],
   "dependencies": [

@@ -1,27 +1,21 @@
 
-#var
+# var
 
-##Syntax
-A _variableDeclaration_ is one of:
+## Syntax
+A _variableDeclaration_ is one of:   (a) **var** _id_ { ,_id_ } [ :_typeSpec_] [:=_initializingValue_]   (b) _collectionDeclaration_
 
-
-(a) **var** _id_ { ,_id_ } [ :_typeSpec_] [:=_initializingValue_]
-(b) _collectionDeclaration_
-
-
-
-##Description
+## Description
 A variable declaration creates a new variable (or variables). Only form (a) will be explained here. See _collectionDeclaration_ for explanation of form (b). The _typeSpec_ of form (a) can be omitted only if the initializing value is present.
 
 
-##Example
+## Example
 
 
         var j, k : int := 1     % j and k are assigned value 1
         var t := "Sample"       % The type of t is string
         var v : array 1 .. 3 of string ( 6 ) :=
                 init ( "George", "Fred", "Alice" )
-##Details
+## Details
 The initializing value, if present, must be an expression or else a list of items separated by commas inside **init** ( &#133; ). The syntax of _initializingValue_ is one of:
 
 
@@ -40,6 +34,6 @@ OOT extends Turing in the following way. OOT changes form (a) to allow the optio
 In the current (1994) OOT implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the **register** keyword is ignored. See **register** for restrictions on the use of register variables.
 
         var [pervasive] [register] id { , id } [ : typeSpec ] [ := initializingValue ]
-##See also
-**[collection.html](collection)**, **[bind.html](bind)**, **[procedure.html](procedure)** and **[function.html](function)** declarations, parameter declarations, **[export.html](export)** lists and **[import.html](import)** lists for other uses of the keyword **[](var)**.
+## See also
+**[collection](collection.html)**, **[bind](bind.html)**, **[procedure](procedure.html)** and **[function](function.html)** declarations, parameter declarations, **[export](export.html)** lists and **[import](import.html)** lists for other uses of the keyword **[var]()**.
 

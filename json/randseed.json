@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>randseed</b> ( <i>seed</i> : <b>int</b>, <i>seq</i> : 1 .. 10 )<p>\r\n</p></font>",
       "text_content": " randseed ( seed : int, seq : 1 .. 10 )\r\n",
-      "mdown_content": "**randseed** ( _seed_ : **int**, _seq_ : 1 .. 10 )\n"
+      "mdown_content": "**randseed** ( _seed_ : **int**, _seq_ : 1 .. 10 )"
     },
     {
       "title": "Description",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "<b><a href=\"randnext.html\">randnext</a></b>, <b><a href=\"randint.html\">randint</a></b>, <b><a href=\"rand.html\">rand</a></b>, and <b><a href=\"randomize.html\">randomize</a></b>.<p>\r\n</p>",
       "text_content": " randnext, randint, rand, and randomize.\r\n",
-      "mdown_content": "**[randnext.html](randnext)**, **[randint.html](randint)**, **[rand.html](rand)**, and **[randomize.html](randomize)**.\n"
+      "mdown_content": "**[randnext](randnext.html)**, **[randint](randint.html)**, **[rand](rand.html)**, and **[randomize](randomize.html)**.\n"
     }
   ],
   "dependencies": [

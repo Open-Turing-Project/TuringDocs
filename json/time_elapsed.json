@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.Elapsed</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " Time.Elapsed : int\r\n",
-      "mdown_content": "**Time.Elapsed** : **int**\n"
+      "mdown_content": "**Time.Elapsed** : **int**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"time_elapsedcpu.html\">Time.ElapsedCPU</a> </b>and <b><a href=\"time_delay.html\">Time.Delay</a></b> subprograms.<p>\r\n</p>",
       "text_content": " Time.ElapsedCPU and Time.Delay subprograms.\r\n",
-      "mdown_content": "**[time_elapsedcpu.html](Time.ElapsedCPU)** and **[time_delay.html](Time.Delay)** subprograms.\n"
+      "mdown_content": "**[Time.ElapsedCPU](time_elapsedcpu.html)** and **[Time.Delay](time_delay.html)** subprograms.\n"
     }
   ],
   "dependencies": [

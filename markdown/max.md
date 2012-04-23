@@ -1,21 +1,20 @@
 
-#max
+# max
 
-##Syntax
+## Syntax
 **max** ( _expn_ , _expn_ )
 
-
-##Description
+## Description
 The **max** function is used to find the maximum of two numbers (the two _expn_'s). For example, **max** ( 5, 7 ) is 7. If both numbers are **int**, the result is **int**. If both numbers are **nat** (natural numbers), the result is **nat**. But if one or both of the numbers are **real**, the result is **real**. See also the **min** function.
 
 
-##Example
+## Example
 This program outputs 85.72.
 
         var x : real := 74.61
         var y : real := 85.72
         put max ( x, y )        % Outputs 85.72
-##Example
+## Example
 This program inputs 10 numbers and outputs their maximum.
 
         var m, t : real
@@ -25,6 +24,6 @@ This program inputs 10 numbers and outputs their maximum.
             m := max ( m, t )
         end for
         put "The maximum is ", m
-##See also
-See also predefined unit **[mathmodule.html](Math)**.
+## See also
+See also predefined unit **[Math](mathmodule.html)**.
 

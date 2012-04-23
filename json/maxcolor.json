@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxcolor</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxcolor : int\r\n",
-      "mdown_content": "**maxcolor** : **int**\n"
+      "mdown_content": "**maxcolor** : **int**"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"drawdot.html\">drawdot</a></b> and <b>palette</b> for examples of the use of <b><a href=\"\">maxcolor</a></b>. See the <b><a href=\"color.html\">color</a></b> <a href=\"procedure.html\">procedure</a> which is used for setting the currently active <a href=\"color.html\">color</a>.<p>\r\n</p>",
       "text_content": " drawdot and palette for examples of the use of maxcolor. See the color procedure which is used for setting the currently active color.\r\n",
-      "mdown_content": "**[drawdot.html](drawdot)** and **palette** for examples of the use of **[](maxcolor)**. See the **[color.html](color)** [procedure.html](procedure) which is used for setting the currently active [color.html](color).\n"
+      "mdown_content": "**[drawdot](drawdot.html)** and **palette** for examples of the use of **[maxcolor]()**. See the **[color](color.html)** [procedure](procedure.html) which is used for setting the currently active [color](color.html).\n"
     }
   ],
   "dependencies": [

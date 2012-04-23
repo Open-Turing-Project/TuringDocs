@@ -1,11 +1,10 @@
 
-#GUI.ProcessEvent
+# GUI.ProcessEvent
 
-##Syntax
+## Syntax
 **GUI.ProcessEvent** : **boolean**
 
-
-##Description
+## Description
 This function processes a single event (a mouse button press or a keystroke). If the event activates a widget, then the _action procedure_ of the widget is called. 
 
 The function returns **false** until **GUI.Quit** is called. It then returns **true**.
@@ -19,11 +18,11 @@ The loop runs continuously until **GUI.Quit** is called, whereupon **GUI.Process
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 It is usually desirable to allow the user some way of quitting the program without having to abort it. This can be done most simply by adding a Quit button and placing it in an appropriate location.
 
 
-##Example
+## Example
 Here is program that does nothing but wait for the user to press the quit button.
 
         import GUI in "%oot/lib/GUI"
@@ -31,7 +30,7 @@ Here is program that does nothing but wait for the user to press the quit button
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 To find out which widget was activated and called the _action procedure_ (necessary if several widgets have the same _action_ _procedure_), you can call **GUI.GetEventWidgetID**. To get the exact time that the event occurred, you can call **GUI.GetEventTime.** To get the window in which the event took place, you can call **GUI.GetEventWindow**.
 
 If a mouse click occured, but did not activate any widget, then the default mouse event handler is called. By default, this does nothing. However, if you want your program to respond to mouse events that do not affect a widget, call **GUI.SetMouseEventHandler** to specify your own default mouse event handler.
@@ -41,12 +40,12 @@ If a keystroke occurred, but did not activate any widget (i.e. it wasn't a short
 If no event occurred, then the null event handler is called. By default, this does nothing. However, if you want your program to perform some action repetetively when it is not doing anything else, then call **GUI.SetNullEventHandler** to specify your own null event handler. The null event handler is often used for such things as updating a clock and making certain that music is playing in the background.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the procedures by calling **GUI.PProcessEvent**, not by calling **ProcessEvent**.
 
 
-##See also
-**[gui_geteventwidgetid.html](GUI.GetEventWidgetID)**, **[gui_geteventtime.html](GUI.GetEventTime)**, and **[gui_geteventwindow.html](GUI.GetEventWindow)** for obtaining information about an event in an _action [procedure.html](procedure)_. See also **[gui_setmouseeventhandler.html](GUI.SetMouseEventHandler)**, **[gui_setkeyeventhandler.html](GUI.SetKeyEventHandler)** and **[gui_setnulleventhandler.html](GUI.SetNullEventHandler)** for handling mouse, keyboard an d null events in the _event [loop.html](loop)_. See also **[gui_quit.html](GUI.Quit)** for information on exitting the _event [loop.html](loop)_.
+## See also
+**[GUI.GetEventWidgetID](gui_geteventwidgetid.html)**, **[GUI.GetEventTime](gui_geteventtime.html)**, and **[GUI.GetEventWindow](gui_geteventwindow.html)** for obtaining information about an event in an _action [procedure](procedure.html)_. See also **[GUI.SetMouseEventHandler](gui_setmouseeventhandler.html)**, **[GUI.SetKeyEventHandler](gui_setkeyeventhandler.html)** and **[GUI.SetNullEventHandler](gui_setnulleventhandler.html)** for handling mouse, keyboard an d null events in the _event [loop](loop.html)_. See also **[GUI.Quit](gui_quit.html)** for information on exitting the _event [loop](loop.html)_.
 

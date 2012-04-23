@@ -1,22 +1,21 @@
 
-#setscreen
+# setscreen
 
-##Syntax
+## Syntax
 **setscreen** ( _s_ : **string** )
 
-
-##Example
+## Example
 Here are example uses of the **setscreen** procedure. In many cases, these will appear as the first statement of the program. They can, however,  appear any place in a program.
 
         setscreen ( "graphics" )            % Enter graphics mode
         setscreen ( "graphics:400;300" )    % Change window to 400x300
         setscreen ( "nocursor" )            % Turn off cursor
         setscreen ( "noecho" )          % Do not echo keys
-##Description
+## Description
 The **setscreen** statement is used to change the mode of the screen, as well as the way in which Turing does input and output. The parameter to **setscreen** is a string, such as "graphics". The string contains one or more options separated by commas, such as "text, noecho".
 
 
-##Details
+## Details
 Users should look at **View.Set** in order to find out the implementation specified details of **setscreen** on their systems.
 
 There are two screen modes, **text** and **graphics**. In **text** mode, output to the window is only allowed using **put** and **get**. Attempting to use graphics or moving the cursor using **locate** will result in an error. However, a window in **text** mode will keep all text output sent to it. Any output that scrolls off the edge of the window can be read by adjusting the scroll bars of the window. Printing a **text** output window prints all the output sent to the window, not just the output currently visible in the window. Programs often use **text** mode when they are displaying large amounts of text data that the user may wish to view or print later. Saving the contents of a **text** output window creates a text file containing all the output sent to the window.
@@ -44,10 +43,10 @@ To set a window to the maximum size available on the screen, you can use "max" f
 "**buttonbar**", "**nobuttonbar**"  Causes or (suppresses) the display of a button bar at the top of the output window which allows the user to easily stop program execution or save and print the output window.
 
 
-##Example
+## Example
 This program creates a graphics window that is 300 pixels by 100 pixels.
 
 
-##See also
-the **[drawmodule.html](Draw)** module, the **draw&#133;** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen.
+## See also
+the **[Draw](drawmodule.html)** module, the **draw&#133;** subprograms and the **[View.Update](view_update.html)** procedure for doing smooth animation. See also **[View.Set](view_set.html)** for further setscreen options including positioning the output window on the screen.
 

@@ -1,21 +1,20 @@
 
-#File.DiskFree
+# File.DiskFree
 
-##Syntax
+## Syntax
 **File.DiskFree** (_pathName_ : **string**) : **int**
 
-
-##Description
+## Description
 **File.DiskFree** gets the number of bytes for the disk upon which _pathName_ resides. The _pathName_ parameter can specify either a file or a directory. If it is the empty string, then **File.DiskFree** returns the number of bytes of free disk space on the disk upon which the execution directory resides.
 
 
-##Details
+## Details
 If the **File.DiskFree** call fails, then it returns -1. Also **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 If there is more than 2,147,483,647 bytes free on a disk, the **File.DiskFree** function returns 2,147,483,647.
 
 
-##Example
+## Example
 This program prints out the amount of space on the _A:_ drive on a PC and in the execution directory.
 
 
@@ -36,7 +35,7 @@ This program prints out the amount of space on the _A:_ drive on a PC and in the
         else
             put "There are ", bytesFree , " bytes free on the default dir" 
         end if
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **File.DiskFree**, not by calling **DiskFree**.

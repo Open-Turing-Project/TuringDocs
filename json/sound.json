@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " sound ( frequency, duration : int )\r\n",
-      "mdown_content": "**sound** ( _frequency_, _duration_ : **int** )\n"
+      "mdown_content": "**sound** ( _frequency_, _duration_ : **int** )"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"play.html\">play</a></b> <a href=\"statement.html\">statement</a>, which plays notes based on musical notation. For example, <b><a href=\"play.html\">play</a></b>(\"8C\") plays an eighth note of middle C. See also the <b><a href=\"delay.html\">delay</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b>, <b><a href=\"time.html\">time</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"musicmodule.html\">Music</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " play statement, which plays notes based on musical notation. For example, play(\"8C\") plays an eighth note of middle C. See also the delay, clock, sysclock, wallclock, time and date statements.\r\nSee also predefined unit Music.\r\n",
-      "mdown_content": "**[play.html](play)** [statement.html](statement), which plays notes based on musical notation. For example, **[play.html](play)**(\"8C\") plays an eighth note of middle C. See also the **[delay.html](delay)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)**, **[time.html](time)** and **[date.html](date)** statements.\n\nSee also predefined unit **[musicmodule.html](Music)**.\n"
+      "mdown_content": "**[play](play.html)** [statement](statement.html), which plays notes based on musical notation. For example, **[play](play.html)**(\"8C\") plays an eighth note of middle C. See also the **[delay](delay.html)**, **[clock](clock.html)**, **[sysclock](sysclock.html)**, **[wallclock](wallclock.html)**, **[time](time.html)** and **[date](date.html)** statements.\n\nSee also predefined unit **[Music](musicmodule.html)**.\n"
     }
   ],
   "dependencies": [

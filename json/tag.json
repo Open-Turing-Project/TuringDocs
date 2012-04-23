@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>tagStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>tag</b> <i>unionVariableReference</i> , <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A tagStatement is:\r\n tag unionVariableReference , expn",
-      "mdown_content": "A _tagStatement_ is:\n\n\n**tag** _unionVariableReference_ , _expn_\n\n"
+      "mdown_content": "A _tagStatement_ is:   **tag** _unionVariableReference_ , _expn_"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"union.html\">union</a></b> types.<p>\r\n</p>",
       "text_content": " union types.\r\n",
-      "mdown_content": "**[union.html](union)** types.\n"
+      "mdown_content": "**[union](union.html)** types.\n"
     }
   ],
   "dependencies": [

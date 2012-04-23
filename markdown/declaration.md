@@ -1,29 +1,14 @@
 
-#declaration
+# declaration
 
-##Syntax
-A _declaration_ is one of:
+## Syntax
+A _declaration_ is one of:   (a) _variableDeclaration_   (b) _constantDeclaration_   (c) _typeDeclaration_   (d) _bindDeclaration_   (e) _procedureDeclaration_   (f) _functionDeclaration_   (g) _moduleDeclaration_   (h) _classDeclaration_   (i) _processDeclaration_   (j) _monitorDeclaration_   (k) _conditionDeclaration_
 
-
-(a) _variableDeclaration_
-(b) _constantDeclaration_
-(c) _typeDeclaration_
-(d) _bindDeclaration_
-(e) _procedureDeclaration_
-(f) _functionDeclaration_
-(g) _moduleDeclaration_
-(h) _classDeclaration_
-(i) _processDeclaration_
-(j) _monitorDeclaration_
-(k) _conditionDeclaration_
-
-
-
-##Description
+## Description
 A _declaration_ creates a new name (or names) for a variable, constant, type, procedure, function, module, class, process, monitor, or condition. These names are called _identifiers_, where _id_ is the abbreviation for _identifier_.
 
 
-##Example
+## Example
 
 
         var width : int         % Variable declaration
@@ -33,7 +18,7 @@ A _declaration_ creates a new name (or names) for a variable, constant, type, pr
         procedure greet         % Procedure declaration
             put "Hello  world"
         end greet
-##Details
+## Details
 Ordinarily, each new name must be distinct from names that are already visible; that is, redeclaration is not allowed. There are certain exceptions to this rule, for example, names of parameters and fields of records can be the same as existing visible variables. Variables declared inside a subprogram (a procedure and function) are allowed to be the same as variables global to (outside of) the subprogram.
 
 The effect of a declaration (its _scope_) lasts to the end of the construct in which the declaration occurs; this will be the end of the program, the **end** of the surrounding procedure, function or module, the **end** of a **loop**, **for**, **case** or **begin** statement, or the end of the **then**, **elsif**, or **else** clause of an **if** statement, or the end of the **case** statement alternative.

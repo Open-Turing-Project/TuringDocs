@@ -1,26 +1,14 @@
 
-#module
+# module
 
-##Syntax
-A _moduleDeclaration_ is:
+## Syntax
+A _moduleDeclaration_ is:   **module** _id_     [ **implement** _implementItem_ ]     [ **implement** **by** _implementByItem_ ]     [ **import** [ **var** ] _importItem_            {, [ **var** ] _importItem_ } ]     [ **export** [ _howExport_ ] _id_ {,[_howExport_ ] _id_ }]     _statementsAndDeclarations_   **end** _id_
 
-
-**module** _id_
-[ **implement** _implementItem_ ]
-[ **implement** **by** _implementByItem_ ]
-[ **import** [ **var** ] _importItem_ 
-{, [ **var** ] _importItem_ } ]
-[ **export** [ _howExport_ ] _id_ {,[_howExport_ ] _id_ }]
-_statementsAndDeclarations_
-**end** _id_
-
-
-
-##Description
+## Description
 A module declaration creates a package of variables, constants, types, subprograms, etc. The name of the module (_id_) is given in two places, just after **module** and just after **end**. Items declared inside the module can be accessed outside of the module only if they are exported. Items from outside the module that are to be used in the module need to be imported (unless they are predefined or pervasive).
 
 
-##Example
+## Example
 This module implements a stack of strings.
 
 Outside of the _stack_ module, the procedures _push_ and _pop_ can be called using the notation _stack.push_ and _stack.pop_. This access is allowed because _push_ and _pop_ are _exported_ from the module. Other items declared in the module (_top_ and _contents_) cannot be accessed from outside because they are not exported.
@@ -45,7 +33,7 @@ Outside of the _stack_ module, the procedures _push_ and _pop_ can be called usi
         stack . push ( "Harvey" )
         var name : string
         stack . pop ( name )        % This sets name to Harvey
-##Details
+## Details
 In some other programming languages, a module is called a _package_, _cluster_ or _object_.
 
 A module declaration is executed (it is initialized) by executing its declarations and statements. For example, the _stack_ module is initialized by setting the _top_ variable to 0. This initialization executes all the statements and declarations in the module that are not contained in procedures or functions. The initialization is completed before any procedure or function of the module can be called from outside the module. An exported subprogram must not be called until initialization of the module is complete.
@@ -65,7 +53,7 @@ The **opaque** keyword is used (only) in export lists to precede exported type n
 **Implement** and i**mplement-by** lists are used to separate a module's interface from its body. This allows only a part of a module (its interface) to be visible to its users (its importers), while hiding its implementation. See **implement** and **implement** **by** lists.
 
 
-##Example
+## Example
 Use an **opaque** type to implement complex arithmetic.
 
         module complex
@@ -97,7 +85,7 @@ Use an **opaque** type to implement complex arithmetic.
                 % c and d become the complex number (1,5)
         var e : complex .value := complex.add (c, d )
                 % e becomes the complex number (2,10)
-##Details
+## Details
 Module declarations can be nested inside other modules but cannot be nested inside procedures or functions. A module must not contain a **bind** as one of its (outermost) declarations. A **return** statement cannot be used as one of the (outermost) statements in a module.
 
 The syntax of a _moduleDeclaration_ presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses; the full syntax is:
@@ -115,6 +103,6 @@ The true/false expression in the **pre** and **post** clauses must be true when 
             statementsAndDeclarations
             [ post trueFalseExpn ]
         end id
-##See also
-**[unit.html](unit)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** list, i**mplement by** list, **[inherit.html](inherit)** list and **[deferred.html](deferred)** subprogram.
+## See also
+**[unit](unit.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[implement](implement.html)** list, i**mplement by** list, **[inherit](inherit.html)** list and **[deferred](deferred.html)** subprogram.
 

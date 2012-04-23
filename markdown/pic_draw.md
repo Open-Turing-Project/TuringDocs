@@ -1,11 +1,10 @@
 
-#Pic.Draw
+# Pic.Draw
 
-##Syntax
+## Syntax
 **Pic.Draw** (_picID_, _x_, _y_, _mode_ : **int**)
 
-
-##Description
+## Description
 **Pic.Draw** is used to draw a picture on the screen. The picture is drawn with the lower left corner at (_x_, _y_).
 
 The _mode_ parameter has one of the following values:
@@ -18,7 +17,7 @@ _picUnderMerge_   This draws the picture, but only where the background color wa
 
 
 
-##Details
+## Details
 If the **Pic.Draw** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
@@ -28,7 +27,7 @@ If the **Pic.Draw** call fails, **Error.Last** will return a non-zero value indi
 **Display Modes with Pic.Draw**
 
 
-##Example
+## Example
 The program draws a graphic on the screen and then repeats it 50 times in random positions.
 
         var picID: int
@@ -44,15 +43,15 @@ The program draws a graphic on the screen and then repeats it 50 times in random
             Pic.Draw (picID, x, y, picCopy)
         end for
         Pic.Free (picID)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Pic.Draw**, not by calling **Draw**.
 
 
-##See also
-[view_update.html](View.Update) for information on howto produce smooth animation.
+## See also
+[View.Update](view_update.html) for information on howto produce smooth animation.
 
-[pic_drawspecial.html](Pic.DrawSpecial) for information on howto make pictures appear using special effects such as wipes and slides.
+[Pic.DrawSpecial](pic_drawspecial.html) for information on howto make pictures appear using special effects such as wipes and slides.
 
-[pic_drawframes.html](Pic.DrawFrames) for information on howto display multiple frame images such as are obtained from GIF files.
+[Pic.DrawFrames](pic_drawframes.html) for information on howto display multiple frame images such as are obtained from GIF files.

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>forwardDeclaration</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>forward</b> <i>subprogramHeader</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">[ <b>import</b> <i>importItem</i> {, <i>importItem</i> } ]</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A forwardDeclaration is:\r\n forward subprogramHeader  [ import importItem {, importItem } ]",
-      "mdown_content": "A _forwardDeclaration_ is:\n\n\n**forward** _subprogramHeader_\n[ **import** _importItem_ {, _importItem_ } ]\n\n"
+      "mdown_content": "A _forwardDeclaration_ is:   **forward** _subprogramHeader_     [ **import** _importItem_ {, _importItem_ } ]"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"collection.html\">collection</a></b> and <b><a href=\"type.html\">type</a></b> declarations.<p>\r\n</p>",
       "text_content": " collection and type declarations.\r\n",
-      "mdown_content": "**[collection.html](collection)** and **[type.html](type)** declarations.\n"
+      "mdown_content": "**[collection](collection.html)** and **[type](type.html)** declarations.\n"
     }
   ],
   "dependencies": [

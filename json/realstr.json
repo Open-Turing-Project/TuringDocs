@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>realstr</b> ( <i>r</i> : <b>real</b>, <i>width</i> : <b>int</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " realstr ( r : real, width : int ) : string\r\n",
-      "mdown_content": "**realstr** ( _r_ : **real**, _width_ : **int** ) : **string**\n"
+      "mdown_content": "**realstr** ( _r_ : **real**, _width_ : **int** ) : **string**"
     },
     {
       "title": "Description",
@@ -25,7 +25,7 @@
       ],
       "raw_content": "the <b><a href=\"erealstr.html\">erealstr</a></b>, <b><a href=\"frealstr.html\">frealstr</a></b>, <b><a href=\"strreal.html\">strreal</a></b>, <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strint.html\">strint</a></b> functions.<p>\r\n</p>",
       "text_content": " the erealstr, frealstr, strreal, intstr and strint functions.\r\n",
-      "mdown_content": "the **[erealstr.html](erealstr)**, **[frealstr.html](frealstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.\n"
+      "mdown_content": "the **[erealstr](erealstr.html)**, **[frealstr](frealstr.html)**, **[strreal](strreal.html)**, **[intstr](intstr.html)** and **[strint](strint.html)** functions.\n"
     }
   ],
   "dependencies": [

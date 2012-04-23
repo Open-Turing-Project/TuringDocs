@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>RGB.AddColor</b> (<i>redComp</i>, <i>greenComp</i>, <i>blueComp</i> : <b>real</b>) : <b>int</b><p>\r\n</p>",
       "text_content": " RGB.AddColor (redComp, greenComp, blueComp : real) : int\r\n",
-      "mdown_content": "**RGB.AddColor** (_redComp_, _greenComp_, _blueComp_ : **real**) : **int**\n"
+      "mdown_content": "**RGB.AddColor** (_redComp_, _greenComp_, _blueComp_ : **real**) : **int**"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"rgb_getcolor.html\">RGB.GetColor</a></b>and <b><a href=\"rgb_setcolor.html\">RGB.SetColor</a></b>.<p>\r\n</p>",
       "text_content": " RGB.GetColorand RGB.SetColor.\r\n",
-      "mdown_content": "**[rgb_getcolor.html](RGB.GetColor)**and **[rgb_setcolor.html](RGB.SetColor)**.\n"
+      "mdown_content": "**[RGB.GetColor](rgb_getcolor.html)**and **[RGB.SetColor](rgb_setcolor.html)**.\n"
     }
   ],
   "dependencies": [

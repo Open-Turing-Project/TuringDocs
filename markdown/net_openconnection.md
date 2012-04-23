@@ -1,11 +1,10 @@
 
-#Net.OpenConnection
+# Net.OpenConnection
 
-##Syntax
+## Syntax
 **Net.OpenConnection** (_netAddr_ : **string**, _port_ : **int**) : **int**
 
-
-##Description
+## Description
 Attempts to open a connection to port specified by the _port_ parameter on the machine specified by _netAddr_ parameter. There must be a program listening to that port for the connection to be made. In OOT, this is done using the **Net.WaitForConnection** function.
 
 If successful, **Net.OpenConnection** returns a network stream descriptor which can be used with the **put**, **get**, **read**, and **write** statements and **eof** function to send and receive data to the listening program. It is also the parameter used for the **Net.CloseConnection**, **Net.BytesAvailable**, **Net.CharAvailable**, **Net.LineAvailable**, and **Net.TokenAvailable** functions.
@@ -17,13 +16,13 @@ In general, system program listen in on ports with numbers below 1024. Port numb
 The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.
 
 
-##Details
+## Details
 The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
 
 It is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.
 
 
-##Example
+## Example
 The following program implements a "Chat" program. One user runs the program on their machine as a server, which waits for another machine to connect to it. The second user specifies the machine to connect to and then connects. The two can then type at each other.
 
         % The "Chat" program
@@ -92,12 +91,12 @@ The following program implements a "Chat" program. One user runs the program on 
                 end if
             end if
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Net.OpenConnection**, not by calling **OpenConnection**.
 
 
-##See also
-**[net_waitforconnection.html](Net.WaitForConnection)** and **[net_closeconnection.html](Net.CloseConnection)**.
+## See also
+**[Net.WaitForConnection](net_waitforconnection.html)** and **[Net.CloseConnection](net_closeconnection.html)**.
 

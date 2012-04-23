@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFileLoop</b> ( <i>fileName</i> : <b>string</b> )<p>\r\n</p></font>",
       "text_content": " Music.PlayFileLoop ( fileName : string )\r\n",
-      "mdown_content": "**Music.PlayFileLoop** ( _fileName_ : **string** )\n"
+      "mdown_content": "**Music.PlayFileLoop** ( _fileName_ : **string** )"
     },
     {
       "title": "Description",
@@ -92,7 +92,7 @@
       ],
       "raw_content": "<b><a href=\"music_playfilestop.html\">Music.PlayFileStop</a></b> to halt a music file that is current playing.<p>\r\n</p>",
       "text_content": " Music.PlayFileStop to halt a music file that is current playing.\r\n",
-      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to halt a music file that is current playing.\n"
+      "mdown_content": "**[Music.PlayFileStop](music_playfilestop.html)** to halt a music file that is current playing.\n"
     },
     {
       "title": "Status",

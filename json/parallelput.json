@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>parallelput</b> ( <i>p</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " parallelput ( p : int )\r\n",
-      "mdown_content": "**parallelput** ( _p_ : **int** )\n"
+      "mdown_content": "**parallelput** ( _p_ : **int** )"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "the <b><a href=\"parallelget.html\">parallelget</a></b> function, which is used to <a href=\"read.html\">read</a> the values of pins on the parallel port.<p>\r\n</p>",
       "text_content": " the parallelget function, which is used to read the values of pins on the parallel port.\r\n",
-      "mdown_content": "the **[parallelget.html](parallelget)** function, which is used to [read.html](read) the values of pins on the parallel port.\n"
+      "mdown_content": "the **[parallelget](parallelget.html)** function, which is used to [read](read.html) the values of pins on the parallel port.\n"
     }
   ],
   "dependencies": [

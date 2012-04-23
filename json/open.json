@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>openStatement</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>open</b> : <i>fileNumberVar</i>, <i>fileName</i>, <i>ioCapability</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"3\"><font size=\"+1\">{ , <i>ioCapability</i> }</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>open</b> : <i>fileNumberVar</i>, <i>argNum</i>, <i>ioCapability</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"3\"><font size=\"+1\">{ , <i>ioCapability</i> }</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An openStatement is one of:\r\n (a)open : fileNumberVar, fileName, ioCapability      { , ioCapability } (b)open : fileNumberVar, argNum, ioCapability      { , ioCapability }",
-      "mdown_content": "An _openStatement_ is one of:\n\n\n(a) **open** : _fileNumberVar_, _fileName_, _ioCapability_\n{ , _ioCapability_ }\n(b) **open** : _fileNumberVar_, _argNum_, _ioCapability_\n{ , _ioCapability_ }\n\n"
+      "mdown_content": "An _openStatement_ is one of:   (a) **open** : _fileNumberVar_, _fileName_, _ioCapability_             { , _ioCapability_ }   (b) **open** : _fileNumberVar_, _argNum_, _ioCapability_             { , _ioCapability_ }"
     },
     {
       "title": "Description",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"close.html\">close</a></b>, <b><a href=\"get.html\">get</a></b>, <b><a href=\"put.html\">put</a></b>, <b><a href=\"read.html\">read</a></b>, <b><a href=\"write.html\">write</a></b>, <b><a href=\"seek.html\">seek</a></b> and <b><a href=\"tell.html\">tell</a></b> statements.<p>\r\n</p>",
       "text_content": " close, get, put, read, write, seek and tell statements.\r\n",
-      "mdown_content": "**[close.html](close)**, **[get.html](get)**, **[put.html](put)**, **[read.html](read)**, **[write.html](write)**, **[seek.html](seek)** and **[tell.html](tell)** statements.\n"
+      "mdown_content": "**[close](close.html)**, **[get](get.html)**, **[put](put.html)**, **[read](read.html)**, **[write](write.html)**, **[seek](seek.html)** and **[tell](tell.html)** statements.\n"
     }
   ],
   "dependencies": [

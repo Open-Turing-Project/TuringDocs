@@ -1,15 +1,14 @@
 
-#boolean
+# boolean
 
-##Syntax
+## Syntax
 **boolean**
 
-
-##Description
+## Description
 The **boolean** type is used for values that are either **true** or **false**. These true-false values can be combined by various operators such as **or** and **and**.
 
 
-##Example
+## Example
 
 
         var success : boolean := false
@@ -18,7 +17,7 @@ The **boolean** type is used for values that are either **true** or **false**. T
         success := mark >= 60
         continuing := success and continuing
         if continuing then 
-##Details
+## Details
 This type is named after the British mathematician, George Boole, who formulated laws of logic.
 
 The operators for **true** and **false** are **and**, **or**, **xor**, =**>**, and **not**. For two true/false values _A_ and _B_, these operators are defined as follows:
@@ -36,20 +35,20 @@ The **and** operator has higher precedence than **or**, so _A_ **or** _B_ **and*
 The operators **or**, **and** and =**>** are short circuit operators. For example, if _A_ is true in _A_ **or** _B_, _B_ is not evaluated.
 
 
-##Details
+## Details
 The **boolean** type can be used as an index to an array.
 
 
-##Example
+## Example
 Declaration of an array with **boolean** index.
 
         var a : array boolean of int
         a (false) := 10
         a (true) := 20
-##Details
+## Details
 The **put** and **get** semantics allow put's and get's of boolean values. **true** values will be output as "true" and **false** values will be output as "false". The only legal input values are "true" and "false", which are case sensitive.
 
 
-##See also
-_[explicittruefalseconstant.html](explicitTrueFalseConstant)_ (which discusses the values **[true.html](true)** and **[false.html](false)**), _[precedence.html](precedence)_ and _[expn.html](expn)_ (expression).
+## See also
+_[explicitTrueFalseConstant](explicittruefalseconstant.html)_ (which discusses the values **[true](true.html)** and **[false](false.html)**), _[precedence](precedence.html)_ and _[expn](expn.html)_ (expression).
 

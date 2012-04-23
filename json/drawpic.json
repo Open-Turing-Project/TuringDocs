@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>drawpic</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>picmode</i> : <b>int</b>)<p>\r\n    </p>",
       "text_content": "drawpic (x, y : int, buffer : array 1 .. * of int, picmode : int)\r\n    ",
-      "mdown_content": "**drawpic** (_x_, _y_ : **int**, _buffer_ : **array** 1 .. * **of** **int**, _picmode_ : **int**)\n"
+      "mdown_content": "**drawpic** (_x_, _y_ : **int**, _buffer_ : **array** 1 .. * **of** **int**, _picmode_ : **int**)"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "The <b>drawpic</b>, <b>takepic</b>, and <b>sizepic</b> subprograms\r\n          have been made obsolete by the subprograms \r\n          <b><a href=\"pic_draw.html\">Pic.Draw</a></b> and\r\n          <b><a href=\"pic_new.html\">Pic.New</a></b> of the \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module.  Users are \r\n          strongly suggested to use those routines instead. The \r\n          <b><a href=\"picmodule.html\">Pic</a></b> module also contains \r\n          subprograms to load images from files.<p>\r\n    </p>",
       "text_content": "The drawpic, takepic, and sizepic subprograms\r\n          have been made obsolete by the subprograms \r\n          Pic.Draw and\r\n          Pic.New of the \r\n          Pic module.  Users are \r\n          strongly suggested to use those routines instead. The \r\n          Pic module also contains \r\n          subprograms to load images from files.\r\n    ",
-      "mdown_content": "The **drawpic**, **takepic**, and **sizepic** subprogramshave been made obsolete by the subprograms **[pic_draw.html](Pic.Draw)** and**[pic_new.html](Pic.New)** of the **[picmodule.html](Pic)** module.  Users are strongly suggested to use those routines instead. The **[picmodule.html](Pic)** module also contains subprograms to load images from files.\n"
+      "mdown_content": "The **drawpic**, **takepic**, and **sizepic** subprogramshave been made obsolete by the subprograms **[Pic.Draw](pic_draw.html)** and**[Pic.New](pic_new.html)** of the **[Pic](picmodule.html)** module.  Users are strongly suggested to use those routines instead. The **[Pic](picmodule.html)** module also contains subprograms to load images from files.\n"
     },
     {
       "title": "See also",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"takepic.html\">takepic</a></b> and \r\n          <b><a href=\"sizepic.html\">sizepic</a></b>. See also \r\n          <b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b> and the various \r\n          <b>draw&#133;</b> procedures.<p>\r\n          See also predefined unit <b><a href=\"drawmodule.html\">Draw</a></b> and \r\n          <b><a href=\"picmodule.html\">Pic</a></b>.</p>\n<p>\r\n    </p>",
       "text_content": "takepic and \r\n          sizepic. See also \r\n          setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures.\r\n          See also predefined unit Draw and \r\n          Pic.\r\n    ",
-      "mdown_content": "**[takepic.html](takepic)** and **[sizepic.html](sizepic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.\n\nSee also predefined unit **[drawmodule.html](Draw)** and **[picmodule.html](Pic)**.\n"
+      "mdown_content": "**[takepic](takepic.html)** and **[sizepic](sizepic.html)**. See also **[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures.\n\nSee also predefined unit **[Draw](drawmodule.html)** and **[Pic](picmodule.html)**.\n"
     }
   ],
   "dependencies": [

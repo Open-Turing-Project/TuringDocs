@@ -1,11 +1,10 @@
 
-#GUI.Disable
+# GUI.Disable
 
-##Syntax
+## Syntax
 **GUI.Disable** (_widgetID_ : **int**)
 
-
-##Description
+## Description
 Disables a widget specified by _widgetID_. 
 
 Used in conjunction with **GUI.Enable** to enable and disable widgets. 
@@ -15,7 +14,7 @@ Disabled widgets generally are "grayed out" to visually depict their disabled st
 Disabled widgets do not respond to keystrokes or mouse clicks.
 
 
-##Example
+## Example
 The three color radio buttons are enabled only when the color check box is selected.
 
         import GUI in "%oot/lib/GUI" 
@@ -50,7 +49,7 @@ The three color radio buttons are enabled only when the color check box is selec
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 The following types of widgets can be enabled or disabled:
 
 
@@ -60,12 +59,12 @@ Buttons, Check Boxes, Radio Buttons, Picture Buttons,
 Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the procedure by calling **GUI.Disable**, not by calling **Disable**.
 
 
-##See also
-**[gui_enable.html](GUI.Enable)**.
+## See also
+**[GUI.Enable](gui_enable.html)**.
 

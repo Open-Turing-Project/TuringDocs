@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>explicitRealConstant</i> consists of an optional plus or minus sign, a <i>significant digits part</i>, and an <i>exponent part</i>.<p>\r\n</p>",
       "text_content": " An explicitRealConstant consists of an optional plus or minus sign, a significant digits part, and an exponent part.\r\n",
-      "mdown_content": "An _explicitRealConstant_ consists of an optional plus or minus sign, a _significant digits part_, and an _exponent part_.\n"
+      "mdown_content": "An _explicitRealConstant_ consists of an optional plus or minus sign, a _significant digits part_, and an _exponent part_."
     },
     {
       "title": "Example",

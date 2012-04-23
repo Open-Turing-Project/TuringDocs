@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>newStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>new</b> [ <i>collectionOrClassId</i> , ] <i>pointerVariableReference</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A newStatement is:\r\n new [ collectionOrClassId , ] pointerVariableReference",
-      "mdown_content": "A _newStatement_ is:\n\n\n**new** [ _collectionOrClassId_ , ] _pointerVariableReference_\n\n"
+      "mdown_content": "A _newStatement_ is:   **new** [ _collectionOrClassId_ , ] _pointerVariableReference_"
     },
     {
       "title": "Description",
@@ -82,7 +82,7 @@
       ],
       "raw_content": "<b><a href=\"class.html\">class</a></b> and <b><a href=\"collection.html\">collection</a></b> declarations, <b><a href=\"pointer.html\">pointer</a></b> type, <b><a href=\"free.html\">free</a></b> <a href=\"statement.html\">statement</a>, <b><a href=\"nil.html\">nil</a></b> value and <b><a href=\"implement_by.html\">implement by</a></b> list.<p>\r\nFor <a href=\"flexible.html\">flexible</a> arrays, see also <b><a href=\"array.html\">array</a></b> and <b><a href=\"flexible.html\">flexible</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " class and collection declarations, pointer type, free statement, nil value and implement by list.\r\nFor flexible arrays, see also array and flexible.\r\n",
-      "mdown_content": "**[class.html](class)** and **[collection.html](collection)** declarations, **[pointer.html](pointer)** type, **[free.html](free)** [statement.html](statement), **[nil.html](nil)** value and **[implement_by.html](implement by)** list.\n\nFor [flexible.html](flexible) arrays, see also **[array.html](array)** and **[flexible.html](flexible)**.\n"
+      "mdown_content": "**[class](class.html)** and **[collection](collection.html)** declarations, **[pointer](pointer.html)** type, **[free](free.html)** [statement](statement.html), **[nil](nil.html)** value and **[implement by](implement_by.html)** list.\n\nFor [flexible](flexible.html) arrays, see also **[array](array.html)** and **[flexible](flexible.html)**.\n"
     }
   ],
   "dependencies": [

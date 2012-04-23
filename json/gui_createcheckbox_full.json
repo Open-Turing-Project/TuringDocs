@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateCheckBox</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (<i>filled</i> : <b>boolean</b>)) : <b>int</b><p>\r\n\t  <b>GUI.CreateCheckBoxFull</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (<i>filled</i> : <b>boolean</b>), <i>alignment</i> : <b>int</b>, <i>shortcut</i> : <b>char</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateCheckBox (x, y : int, text : string,\r\n              actionProc : procedure x (filled : boolean)) : int\r\n\t  GUI.CreateCheckBoxFull (x, y : int, text : string,\r\n\t      actionProc : procedure x (filled : boolean), alignment : int, shortcut : char) : int\r\n    ",
-      "mdown_content": "**GUI.CreateCheckBox** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**)) : **int**\n\n**GUI.CreateCheckBoxFull** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**), _alignment_ : **int**, _shortcut_ : **char**) : **int**\n"
+      "mdown_content": "**GUI.CreateCheckBox** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**)) : **int****GUI.CreateCheckBoxFull** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**), _alignment_ : **int**, _shortcut_ : **char**) : **int**"
     },
     {
       "title": "Description",
@@ -63,7 +63,7 @@
       ],
       "raw_content": "<b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for changing the chec box's text and <b><a href=\"gui_getcheckbox.html\">GUI.GetCheckBox</a></b> and <b><a href=\"gui_setcheckbox.html\">GUI.SetCheckBox</a></b> for reading and setting the check box's state.<p>\r\n    </p>",
       "text_content": "GUI.SetLabel for changing the chec box's text and GUI.GetCheckBox and GUI.SetCheckBox for reading and setting the check box's state.\r\n    ",
-      "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the chec box's text and **[gui_getcheckbox.html](GUI.GetCheckBox)** and **[gui_setcheckbox.html](GUI.SetCheckBox)** for reading and setting the check box's state.\n"
+      "mdown_content": "**[GUI.SetLabel](gui_setlabel.html)** for changing the chec box's text and **[GUI.GetCheckBox](gui_getcheckbox.html)** and **[GUI.SetCheckBox](gui_setcheckbox.html)** for reading and setting the check box's state.\n"
     }
   ],
   "dependencies": [

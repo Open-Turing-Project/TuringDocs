@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.UpdateArea</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>)<p></p></font>",
       "text_content": "View.UpdateArea (x1, y1, x2, y2)\r\n    ",
-      "mdown_content": "**View.UpdateArea** (_x1_, _y1_, _x2_, _y2_)\n"
+      "mdown_content": "**View.UpdateArea** (_x1_, _y1_, _x2_, _y2_)"
     },
     {
       "title": "Description",
@@ -77,7 +77,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b> for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options. <p>\r\n          <b><a href=\"view_update.html\">View.Update</a></b> for procedure to\r\n          update the entire screen at one time.</p>\n<p>\r\n    </p>",
       "text_content": "View.Set for the \"offscreenonly\" \r\n          and \"nooffscreenonly\" options. \r\n          View.Update for procedure to\r\n          update the entire screen at one time.\r\n    ",
-      "mdown_content": "**[view_set.html](View.Set)** for the \"offscreenonly\" and \"nooffscreenonly\" options. \n\n**[view_update.html](View.Update)** for procedure toupdate the entire screen at one time.\n"
+      "mdown_content": "**[View.Set](view_set.html)** for the \"offscreenonly\" and \"nooffscreenonly\" options. \n\n**[View.Update](view_update.html)** for procedure toupdate the entire screen at one time.\n"
     }
   ],
   "dependencies": [

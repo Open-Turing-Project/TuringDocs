@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetMenuBarHeight</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetMenuBarHeight : int\r\n",
-      "mdown_content": "**GUI.GetMenuBarHeight** : **int**\n"
+      "mdown_content": "**GUI.GetMenuBarHeight** : **int**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateMenu.\r\n",
-      "mdown_content": "**[gui_createmenu.html](GUI.CreateMenu)**.\n"
+      "mdown_content": "**[GUI.CreateMenu](gui_createmenu.html)**.\n"
     }
   ],
   "dependencies": [

@@ -1,24 +1,23 @@
 
-#GUI.GetCheckBox
+# GUI.GetCheckBox
 
-##Syntax
+## Syntax
 **GUI.GetCheckBox** (_widgetID_ : **int**) : **boolean**
 
-
-##Description
+## Description
 Returns the status of the check box specified by _widgetID_. If the check box is set (has an X in it), _GetCheckBox_ returns true, otherwise it returns false.
 
 
-##Example
+## Example
 See **GUI.CreateCheckBox** for an example of **GUI.GetCheckBox**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.GetCheckBox**, not by calling **GetCheckBox**.
 
 
-##See also
+## See also
 **GUI.CreateCheckBox**.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetKeyEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>keyEventHandler</i> : <b>procedure</b> <i>x</i> (<i>ch</i> : <b>char</b>))<p>\r\n</p></font>",
       "text_content": " GUI.SetKeyEventHandler (\r\n    keyEventHandler : procedure x (ch : char))\r\n",
-      "mdown_content": "**GUI.SetKeyEventHandler** (    _keyEventHandler_ : **procedure** _x_ (_ch_ : **char**))\n"
+      "mdown_content": "**GUI.SetKeyEventHandler** (    _keyEventHandler_ : **procedure** _x_ (_ch_ : **char**))"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ProcessEvent.\r\n",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\n"
+      "mdown_content": "**[GUI.ProcessEvent](gui_processevent.html)**.\n"
     }
   ],
   "dependencies": [

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Shitty Turing Docs Editor</title>
+    <link rel="stylesheet" type="text/css" href="/jquery.markedit.css" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" />
+    <style type="text/css">
+        textarea { height: 100%; }
+        #container {
+            width: 100%;
+        }
+        #shittylayout {
+            width: 100%;
+            height: 100%;
+        }
+        #markeditor {
+            min-height: 500px;
+        }
+        #instructions {
+            height: 170px;
+            overflow: scroll;
+        }
+        .column {
+            width: 33%;
+            overflow: scroll;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/showdown.js"></script>
+    <script type="text/javascript" src="/jquery.markedit.js"></script>
+
+    <script type="text/javascript">
+
+        // Create a MarkEdit editor on page load
+        function nextPage() {
+            location.href = "/";
+        }
+        $(function(){
+           $('#markeditor').markedit();
+           $('#markeditor').markeditBindAutoPreview ($('#preview'));
+
+           $('#check').click(function() {
+                $.post("/good/" + "<%= pagename %>",nextPage);
+           });
+           $('#bad').click(function() {
+                $.post("/bad/" + "<%= pagename %>",nextPage);
+           });
+           $('#next').click(nextPage);
+           $('#save').click(function() {
+                newText = $('#markeditor').val();
+                $.post("/save/" + "<%= pagename %>", {markdown: newText},nextPage);
+           });
+        });
+
+    </script>
+</head>
+<body>
+    <div id="container">
+        <table id="shittylayout" border="1">
+            <tr>
+                <td class="column" valign="top">
+                    <div id="editor">
+                        <h1>Turing Docs Editor / Checker</h1>
+                        <h3><%= donePages %> out of <%= totalPages %> pages completed!</h3>
+                        <div id="instructions">
+                            <p>
+                                <h3>Info</h3>
+                                I wrote a script to translate the Turing documentation into markdown! 
+                                The thing is it does not always work perfectly. I need help to verify and fix all the pages.
+                                Compare the page on the left to the page on the right. 
+                                <ul>
+                                    <li>
+                                        If the one on the right has any missing or bad content or formatting, fix it in the markdown editor below! Then press the "Save Edits" button.<br/>
+                                        If you do not know markdown, learn it <a href="http://daringfireball.net/projects/markdown/syntax">here</a>
+                                    </li>
+                                    <li>If it looks okay, press the "This one looks good button"</li>
+                                    <li>
+                                        If it is seriously messed up and you don't know how to fix it, 
+                                        press the "Bad, but I don't want to fix it" button and I will fix it later.
+                                    </li>
+                                </ul>
+                                <h3>Formatting Guide</h3>
+                                <h4>Worry about</h4>
+                                <ul>
+                                    <li>
+                                        Syntax lines should be one line unless it describes 
+                                        something that would normally span many lines. Like an
+                                        if statement.
+                                    </li>
+                                    <li>For single line breaks: put 2 spaces at the end of a line</li>
+                                </ul>
+                                <h4>Don't worry about</h4>
+                                <ul>
+                                    <li>indentation.</li>
+                                    <li>font sizes.</li>
+                                    <li>centering or alignment.</li>
+                                    <li>the random "Doc Image" text.</li>
+                                    <li>the links not going to the right place.</li>
+                                </ul>
+                                <h3>FAQ</h3>
+                                <ul>
+                                    <li>
+                                        Q: It looks like shit!<br/>
+                                        A: I know!
+                                    </li>
+                                    <li>
+                                        Q: Why the hell did you use tables??!!<br/>
+                                        A: They were easy!
+                                    </li>
+                                    <li>
+                                        Q: All the pictures don't show up!<br/>
+                                        A: That's okay, they will if I bothered to copy the images into the right place.
+                                    </li>
+                                    <li>
+                                        Q: I did something wrong!<br/>
+                                        A: Click the back button and fix it!
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <br/>
+                        <form>
+                            <input type="button" id="save" value="Save Edits I Made"/>
+                            <input type="button" id="check" value="This one looks good"/>
+                            <input type="button" id="bad" value="Bad, but I don't want to fix it"/>
+                            <input type="button" id="next" value="Skip"/>
+                            <br/>
+                            You will be taken to the next page once you click a button
+                        </form>
+                        <br/>
+                        <textarea id="markeditor">
+<%= mdpage %>
+                        </textarea>
+                    </div>
+                </td>
+                <td class="column" valign="top">
+                    <h2>Original Page</h2>
+                    <hr/>
+                    <div id="originaldoc">
+                        <%= originalpage %>
+                    </div>
+                </td>
+                <td class="column" valign="top">
+                    <h2>New Page</h2>
+                    <hr/>
+                    <div id="preview">Oh noes! parsing error!</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

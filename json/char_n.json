@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>char</b> (<i>numberOfCharacters</i>)<p>\r\n</p></font>",
       "text_content": " char (numberOfCharacters)\r\n",
-      "mdown_content": "**char** (_numberOfCharacters_)\n"
+      "mdown_content": "**char** (_numberOfCharacters_)"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "the <b><a href=\"char.html\">char</a></b> type which is much like <b>char</b>(1). See also the <b><a href=\"string1.html\">string</a></b> type.<p>\r\n</p>",
       "text_content": " the char type which is much like char(1). See also the string type.\r\n",
-      "mdown_content": "the **[char.html](char)** type which is much like **char**(1). See also the **[string1.html](string)** type.\n"
+      "mdown_content": "the **[char](char.html)** type which is much like **char**(1). See also the **[string](string1.html)** type.\n"
     }
   ],
   "dependencies": [

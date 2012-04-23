@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.SetPosition</b> (<i>windowID</i> : <b>int</b>, <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.SetPosition (windowID : int, x, y : int)\r\n",
-      "mdown_content": "**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)\n"
+      "mdown_content": "**Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"window_getposition.html\">Window.GetPosition</a></b> to get the current window position and <b><a href=\"config_display.html\">Config.Display</a></b> to get the size of the screen.<p>\r\n</p>",
       "text_content": " Window.GetPosition to get the current window position and Config.Display to get the size of the screen.\r\n",
-      "mdown_content": "**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen.\n"
+      "mdown_content": "**[Window.GetPosition](window_getposition.html)** to get the current window position and **[Config.Display](config_display.html)** to get the size of the screen.\n"
     }
   ],
   "dependencies": [

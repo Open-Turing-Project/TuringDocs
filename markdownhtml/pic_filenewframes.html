@@ -16,7 +16,7 @@
 
 <p><strong>Pic.FileNewFrames</strong> also reads the delay specified in the GIF file and sets <em>delayTime</em> to the delay in milliseconds.  Note that many multiple frame GIF files do not specify a delay, in which case <em>delayTime</em> will be set to 0.</p>
 
-<p>In order to determine the number of frames in multiple frame GIFfile, you must use the <strong><a href="Pic.Frames">pic_frames.html</a></strong>function.  This returns a number that can be used to declare thearray that will be passed to <strong>Pic.FileNewFrames</strong>.</p>
+<p>In order to determine the number of frames in multiple frame GIFfile, you must use the <strong><a href="pic_frames.html">Pic.Frames</a></strong>function.  This returns a number that can be used to declare thearray that will be passed to <strong>Pic.FileNewFrames</strong>.</p>
 
 <p><code>**var** _numFrames_ = **Pic.Frames** ("mypic.gif")**var** _pics_ : **array** 1 .. _numFrames_ **of int****var** _delayTime_ : **int****Pic.FileNewFrames** ("mypic.gif", _pics_, _delayTime_)</code></p>
 
@@ -53,8 +53,8 @@ Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)
 
 <h2>See also</h2>
 
-<p><strong><a href="Pic.Frames">pic_frames.html</a></strong> for information on howto determine the number of frames in a GIF image.</p>
+<p><strong><a href="pic_frames.html">Pic.Frames</a></strong> for information on howto determine the number of frames in a GIF image.</p>
 
-<p><strong><a href="Pic.DrawFrames">pic_drawframes.html</a></strong> for information onhow to sequentially display the images stored in array of pictures.</p>
+<p><strong><a href="pic_drawframes.html">Pic.DrawFrames</a></strong> for information onhow to sequentially display the images stored in array of pictures.</p>
 
-<p><strong><a href="Pic.DrawFramesBack">pic_drawframesback.html</a></strong> for information on how to sequentially display the images stored in array of pictures while continuing to execute the program.</p>
+<p><strong><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></strong> for information on how to sequentially display the images stored in array of pictures while continuing to execute the program.</p>

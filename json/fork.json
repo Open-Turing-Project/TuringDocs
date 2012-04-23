@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>forkStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>fork</b><i> processId</i> [ ( [ <i>expn</i> { , <i>expn</i> } ] ) ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"6\"><font size=\"+1\">[ : <i>reference</i> [ , <i>expn</i> [ , <i>reference</i> ] ] ]</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A forkStatement is:\r\n fork processId [ ( [ expn { , expn } ] ) ]   [ : reference [ , expn [ , reference ] ] ]",
-      "mdown_content": "A _forkStatement_ is:\n\n\n**fork** _processId_ [ ( [ _expn_ { , _expn_ } ] ) ]\n[ : _reference_ [ , _expn_ [ , _reference_ ] ] ]\n\n"
+      "mdown_content": "A _forkStatement_ is:   **fork** _processId_ [ ( [ _expn_ { , _expn_ } ] ) ]       [ : _reference_ [ , _expn_ [ , _reference_ ] ] ]"
     },
     {
       "title": "Description",

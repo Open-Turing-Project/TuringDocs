@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateMenuItem</b> (<i>name</i> : <b>string</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>\r\n\t  <b>GUI.CreateMenuItemFull</b> (<i>name</i> : <b>string</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>shortCut</i> : <b>char</b>, <i>addNow</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateMenuItem (name : string, \r\n\t      actionProc : procedure x ()) : int\r\n\t  GUI.CreateMenuItemFull (name : string, \r\n\t      actionProc : procedure x (), shortCut : char, addNow : boolean) : int\r\n    ",
-      "mdown_content": "**GUI.CreateMenuItem** (_name_ : **string**,     _actionProc_ : **procedure** _x_ ()) : **int**\n\n**GUI.CreateMenuItemFull** (_name_ : **string**,     _actionProc_ : **procedure** _x_ (), _shortCut_ : **char**, _addNow_ : **boolean**) : **int**\n"
+      "mdown_content": "**GUI.CreateMenuItem** (_name_ : **string**,     _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateMenuItemFull** (_name_ : **string**,     _actionProc_ : **procedure** _x_ (), _shortCut_ : **char**, _addNow_ : **boolean**) : **int**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "See the example for <b><a href=\"gui_createmenu.html\">GUI.CreateMenu</a></b>.<p>\r\n    </p>",
       "text_content": " See the example for GUI.CreateMenu.\r\n    ",
-      "mdown_content": "See the example for **[gui_createmenu.html](GUI.CreateMenu)**.\n"
+      "mdown_content": "See the example for **[GUI.CreateMenu](gui_createmenu.html)**.\n"
     },
     {
       "title": "Execute",

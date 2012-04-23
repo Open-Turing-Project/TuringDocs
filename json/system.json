@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>system</b> ( <i>command</i> : <b>string</b>, <b>var</b> <i>ret</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " system ( command : string, var ret : int )\r\n",
-      "mdown_content": "**system** ( _command_ : **string**, **var** _ret_ : **int** )\n"
+      "mdown_content": "**system** ( _command_ : **string**, **var** _ret_ : **int** )"
     },
     {
       "title": "Description",
@@ -57,7 +57,7 @@
       ],
       "raw_content": "<b><a href=\"nargs.html\">nargs</a></b>, <b><a href=\"fetcharg.html\">fetcharg</a></b> and <b><a href=\"getenv.html\">getenv</a></b> functions.<p>\r\nSee also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " nargs, fetcharg and getenv functions.\r\nSee also predefined unit Sys.\r\n",
-      "mdown_content": "**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)** functions.\n\nSee also predefined unit **[sysmodule.html](Sys)**.\n"
+      "mdown_content": "**[nargs](nargs.html)**, **[fetcharg](fetcharg.html)** and **[getenv](getenv.html)** functions.\n\nSee also predefined unit **[Sys](sysmodule.html)**.\n"
     }
   ],
   "dependencies": [

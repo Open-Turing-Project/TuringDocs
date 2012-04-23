@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>bits</b> (<i>expn</i>, <i>subrange</i>)<p>\r\n</p></font>",
       "text_content": " bits (expn, subrange)\r\n",
-      "mdown_content": "**bits** (_expn_, _subrange_)\n"
+      "mdown_content": "**bits** (_expn_, _subrange_)"
     },
     {
       "title": "Description",
@@ -53,7 +53,7 @@
       ],
       "raw_content": "<i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: <b><a href=\"ord.html\">ord</a></b>, <b><a href=\"chr.html\">chr</a></b>, <b><a href=\"intstr.html\">intstr</a></b>, <b><a href=\"strint.html\">strint</a></b>, <b><a href=\"natstr.html\">natstr</a></b>, and <b><a href=\"strnat.html\">strnat</a></b>. See also <b><a href=\"shr.html\">shr</a></b> and <b><a href=\"shl.html\">shl</a></b> (shift right and left).<p>\r\n</p>",
       "text_content": " explicitIntegerConstant (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: ord, chr, intstr, strint, natstr, and strnat. See also shr and shl (shift right and left).\r\n",
-      "mdown_content": "_[explicitintegerconstant.html](explicitIntegerConstant)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord.html](ord)**, **[chr.html](chr)**, **[intstr.html](intstr)**, **[strint.html](strint)**, **[natstr.html](natstr)**, and **[strnat.html](strnat)**. See also **[shr.html](shr)** and **[shl.html](shl)** (shift right and left).\n"
+      "mdown_content": "_[explicitIntegerConstant](explicitintegerconstant.html)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord](ord.html)**, **[chr](chr.html)**, **[intstr](intstr.html)**, **[strint](strint.html)**, **[natstr](natstr.html)**, and **[strnat](strnat.html)**. See also **[shr](shr.html)** and **[shl](shl.html)** (shift right and left).\n"
     }
   ],
   "dependencies": [

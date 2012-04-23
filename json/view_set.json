@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.Set</b> ( <i>s</i> : <b>string</b> )<p></p></font>",
       "text_content": "View.Set ( s : string )\r\n    ",
-      "mdown_content": "**View.Set** ( _s_ : **string** )\n"
+      "mdown_content": "**View.Set** ( _s_ : **string** )"
     },
     {
       "title": "Example",
@@ -54,7 +54,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b> for further information. <p>\r\n    </p>",
       "text_content": "setscreen for further information. \r\n    ",
-      "mdown_content": "**[setscreen.html](setscreen)** for further information. \n"
+      "mdown_content": "**[setscreen](setscreen.html)** for further information. \n"
     },
     {
       "title": "Status",

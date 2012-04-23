@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Select</b> (<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Select (windowID : int)\r\n",
-      "mdown_content": "**Window.Select** (_windowID_ : **int**)\n"
+      "mdown_content": "**Window.Select** (_windowID_ : **int**)"
     },
     {
       "title": "Description",
@@ -28,7 +28,7 @@
       ],
       "raw_content": "<b><a href=\"\">Window.Select</a></b> and <b><a href=\"window_setactive.html\">Window.SetActive</a></b>.<p>\r\n</p>",
       "text_content": " Window.Select and Window.SetActive.\r\n",
-      "mdown_content": "**[](Window.Select)** and **[window_setactive.html](Window.SetActive)**.\n"
+      "mdown_content": "**[Window.Select]()** and **[Window.SetActive](window_setactive.html)**.\n"
     }
   ],
   "dependencies": [

@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"var.html\">var</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"const.html\">const</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"procedure.html\">procedure</a></b> <a href=\"declaration.html\">declaration</a>, <b><a href=\"function.html\">function</a></b> <a href=\"declaration.html\">declaration</a>, <b>subprogram</b> header and <b><a href=\"export.html\">export</a></b> list for uses of <b><a href=\"\">pervasive</a></b>.<p>\r\n</p>",
       "text_content": " var declaration, const declaration, procedure declaration, function declaration, subprogram header and export list for uses of pervasive.\r\n",
-      "mdown_content": "**[var.html](var)** [declaration.html](declaration), **[const.html](const)** [declaration.html](declaration), **[procedure.html](procedure)** [declaration.html](declaration), **[function.html](function)** [declaration.html](declaration), **subprogram** header and **[export.html](export)** list for uses of **[](pervasive)**.\n"
+      "mdown_content": "**[var](var.html)** [declaration](declaration.html), **[const](const.html)** [declaration](declaration.html), **[procedure](procedure.html)** [declaration](declaration.html), **[function](function.html)** [declaration](declaration.html), **subprogram** header and **[export](export.html)** list for uses of **[pervasive]()**.\n"
     }
   ],
   "dependencies": [

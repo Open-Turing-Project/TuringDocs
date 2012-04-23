@@ -1,19 +1,18 @@
 
-#Dir.Create
+# Dir.Create
 
-##Syntax
+## Syntax
 **Dir.Create** (_directoryPathName_ : **string**)
 
-
-##Description
+## Description
 **Dir.Create** is used to create the directory specified by the parameter _directoryPathName_. This is the equivalent of doing a **mkdir** in DOS or UNIX. On the Macintosh, it creates a folder.
 
 
-##Details
+## Details
 If the **Dir.Create** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 This program creates the directory called _information_.
 
         Dir.Create ("information")
@@ -23,7 +22,7 @@ This program creates the directory called _information_.
             put "Did not create the directory."
             put "Error: ", Error.LastMsg
         end if
-##Example
+## Example
 An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.
 
 This example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.
@@ -31,7 +30,7 @@ This example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Crea
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Dir.Create**, not by calling **Create**.

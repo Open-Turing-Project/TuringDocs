@@ -1,11 +1,11 @@
 
-#equivalence
+# equivalence
 
-##Description
+## Description
 Two types are _equivalent_ to each other if they are essentially the same types (the exact rules are given below). When a variable is passed to a **var** formal parameter, the types of the variable and the formal parameter must be equivalent because they are effectively the same variable. When an expression is assigned to a variable, their types must be equivalent, except for special cases. For example, Turing allows you to assign an integer expression to a **real** variable (see _assignability_ for details).
 
 
-##Example
+## Example
 
 
         var j : int
@@ -28,7 +28,7 @@ Two types are _equivalent_ to each other if they are essentially the same types 
                     % i and j have the equivalent type int
                     % Arrays a and b have equivalent types
                     % Records r and s have equivalent types
-##Details
+## Details
 Two types are defined to be _equivalent_ if they are:
 
 

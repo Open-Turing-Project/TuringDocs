@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.SoundOff</b><p>\r\n</p></font>",
       "text_content": " Music.SoundOff\r\n",
-      "mdown_content": "**Music.SoundOff**\n"
+      "mdown_content": "**Music.SoundOff**"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"music_play.html\">Music.Play</a></b>, <b><a href=\"music_playfile.html\">Music.PlayFile</a></b>, and <b><a href=\"music_sound.html\">Music.Sound</a></b> procedures, which make sounds that can be turned off with <b><a href=\"\">Music.SoundOff</a></b>.<p>\r\n</p>",
       "text_content": " Music.Play, Music.PlayFile, and Music.Sound procedures, which make sounds that can be turned off with Music.SoundOff.\r\n",
-      "mdown_content": "**[music_play.html](Music.Play)**, **[music_playfile.html](Music.PlayFile)**, and **[music_sound.html](Music.Sound)** procedures, which make sounds that can be turned off with **[](Music.SoundOff)**.\n"
+      "mdown_content": "**[Music.Play](music_play.html)**, **[Music.PlayFile](music_playfile.html)**, and **[Music.Sound](music_sound.html)** procedures, which make sounds that can be turned off with **[Music.SoundOff]()**.\n"
     }
   ],
   "dependencies": [

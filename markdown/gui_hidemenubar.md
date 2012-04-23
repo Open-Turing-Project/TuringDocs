@@ -1,24 +1,23 @@
 
-#GUI.HideMenuBar
+# GUI.HideMenuBar
 
-##Syntax
+## Syntax
 **GUI.HideMenuBar**
 
-
-##Description
+## Description
 Hides the menu bar in the selected window. No menu items can be selected when the menu bar is hidden. (Menu item shortcuts are ignored while the menu bar is hidden.)
 
 
-##Example
+## Example
 See **GUI.SetMouseEventHandler** for an example of **GUI.HideMenuBar**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.HideMenuBar**, not by calling **HideMenuBar**.
 
 
-##See also
-**[gui_showmenubar.html](GUI.ShowMenuBar)**. See also **[gui_createmenu.html](GUI.CreateMenu)**.
+## See also
+**[GUI.ShowMenuBar](gui_showmenubar.html)**. See also **[GUI.CreateMenu](gui_createmenu.html)**.
 

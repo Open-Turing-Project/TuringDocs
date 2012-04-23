@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetPosition</b> (<i>widgetID</i>, <i>x</i>, <i>y</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetPosition (widgetID, x, y : int)\r\n",
-      "mdown_content": "**GUI.SetPosition** (_widgetID_, _x_, _y_ : **int**)\n"
+      "mdown_content": "**GUI.SetPosition** (_widgetID_, _x_, _y_ : **int**)"
     },
     {
       "title": "Description",

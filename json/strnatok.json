@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>strnatok</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " strnatok ( s : string [ , base : int ] ) : boolean\r\n",
-      "mdown_content": "**strnatok** ( _s_ : **string** [ , _base_ : **int** ] ) : **boolean**\n"
+      "mdown_content": "**strnatok** ( _s_ : **string** [ , _base_ : **int** ] ) : **boolean**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "<b><a href=\"strnat.html\">strnat</a></b> function that does the actual conversion.<p>\r\n</p>",
       "text_content": " strnat function that does the actual conversion.\r\n",
-      "mdown_content": "**[strnat.html](strnat)** function that does the actual conversion.\n"
+      "mdown_content": "**[strnat](strnat.html)** function that does the actual conversion.\n"
     }
   ],
   "dependencies": [

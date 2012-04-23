@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CloseWindow</b> (<i>window</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.CloseWindow (window : int)\r\n    ",
-      "mdown_content": "**GUI.CloseWindow** (_window_ : **int**)\n"
+      "mdown_content": "**GUI.CloseWindow** (_window_ : **int**)"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"gui_showwindow.html\">GUI.ShowWindow</a></b> and\r\n          <b><a href=\"gui_hidewindow.html\">GUI.HideWindow</a></b>, \r\n          for showing and hiding windows with widgets in them.<p>\r\n    </p>",
       "text_content": "GUI.ShowWindow and\r\n          GUI.HideWindow, \r\n          for showing and hiding windows with widgets in them.\r\n    ",
-      "mdown_content": "**[gui_showwindow.html](GUI.ShowWindow)** and**[gui_hidewindow.html](GUI.HideWindow)**, for showing and hiding windows with widgets in them.\n"
+      "mdown_content": "**[GUI.ShowWindow](gui_showwindow.html)** and**[GUI.HideWindow](gui_hidewindow.html)**, for showing and hiding windows with widgets in them.\n"
     }
   ],
   "dependencies": [

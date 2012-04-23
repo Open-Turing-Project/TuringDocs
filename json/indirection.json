@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>targetType</i> <b>@</b> ( <i>expn</i> )<p>\r\n</p></font>",
       "text_content": " targetType @ ( expn )\r\n",
-      "mdown_content": "_targetType_ **@** ( _expn_ )\n"
+      "mdown_content": "_targetType_ **@** ( _expn_ )"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"cheat.html\">cheat</a></b>. See also <i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> (which explains how to write hexadecimal constants, which are often used for addresses).<p>\r\n</p>",
       "text_content": " cheat. See also explicitIntegerConstant (which explains how to write hexadecimal constants, which are often used for addresses).\r\n",
-      "mdown_content": "**[cheat.html](cheat)**. See also _[explicitintegerconstant.html](explicitIntegerConstant)_ (which explains how to write hexadecimal constants, which are often used for addresses).\n"
+      "mdown_content": "**[cheat](cheat.html)**. See also _[explicitIntegerConstant](explicitintegerconstant.html)_ (which explains how to write hexadecimal constants, which are often used for addresses).\n"
     }
   ],
   "dependencies": [

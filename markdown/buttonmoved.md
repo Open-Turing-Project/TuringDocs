@@ -1,11 +1,10 @@
 
-#buttonmoved
+# buttonmoved
 
-##Syntax
+## Syntax
 **buttonmoved** (_motion_ : **string**) : **boolean**
 
-
-##Description
+## Description
 The **buttonmoved** function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).
 
 The parameter _motion_ must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, **buttonmoved** returns **true**. If the event is not in the queue, then **buttonmoved** returns **false**.
@@ -15,7 +14,7 @@ In "_single-button mode_" (where the mouse is treated like a one-button mouse), 
 In "_multi-button mode_", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.
 
 
-##Example
+## Example
 This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.
 
         var circles: boolean := true
@@ -36,7 +35,7 @@ This program draws random circles on the screen until the user clicks the mouse 
                 drawfillbox (x, y, x + radius, y + radius, clr)
             end if
         end loop
-##Example
+## Example
 This is an example demonstrating how to check for both character and mouse input at the same time.
 
         var ch : string (1)
@@ -53,12 +52,12 @@ This is an example demonstrating how to check for both character and mouse input
                 put "The button was clicked at position: ", x, ", ",y
             end if
         end loop
-##Details
+## Details
 **buttonmoved** can be thought of as the mouse equivalent of **hasch** in that they both check for something in a queue and both return immediately.
 
 
-##See also
-**[buttonwait.html](buttonwait)** to get mouse events saved in the queue. See also **[buttonchoose.html](buttonchoose)** to switch between "_single-button mode_" and "_multi-button mode_".
+## See also
+**[buttonwait](buttonwait.html)** to get mouse events saved in the queue. See also **[buttonchoose](buttonchoose.html)** to switch between "_single-button mode_" and "_multi-button mode_".
 
-See also predefined unit **[mousemodule.html](Mouse)**.
+See also predefined unit **[Mouse](mousemodule.html)**.
 

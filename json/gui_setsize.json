@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSize</b> (<i>widgetID</i>, <i>width</i>, <i>height</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSize (widgetID, width, height : int)\r\n",
-      "mdown_content": "**GUI.SetSize** (_widgetID_, _width_, _height_ : **int**)\n"
+      "mdown_content": "**GUI.SetSize** (_widgetID_, _width_, _height_ : **int**)"
     },
     {
       "title": "Description",

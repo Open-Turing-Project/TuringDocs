@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.ScreenLoad</b> (<i>fileName</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Pic.ScreenLoad (fileName : string, x, y, mode : int)\r\n",
-      "mdown_content": "**Pic.ScreenLoad** (_fileName_ : **string**, _x_, _y_, _mode_ : **int**)\n"
+      "mdown_content": "**Pic.ScreenLoad** (_fileName_ : **string**, _x_, _y_, _mode_ : **int**)"
     },
     {
       "title": "Description",

@@ -1,19 +1,18 @@
 
-#Pic.Flip
+# Pic.Flip
 
-##Syntax
+## Syntax
 **Pic.Flip** (_picID_ : **int**) : **int**
 
-
-##Description
+## Description
 **Pic.Flip** is used to create a new picture by flipping the picture vertically. The resulting picture is exactly the same size as the original, except it appears &#147;upside-down&#148;. 
 
 
-##Details
+## Details
 Note that the upside-down picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
 
 
-##Example
+## Example
 The program loads a picture from a file, flips it and then draws the original and the upside-down image side by side in a window after resizing the window to fit the two pictures.
 
 
@@ -37,7 +36,7 @@ The program loads a picture from a file, flips it and then draws the original an
         Pic.Draw (newPic, 20 + Pic.Width (pic), 20, picCopy)
         Draw.Text ("Flipped", 60 + Pic.Width (pic), 5, defFontID, black) 
         
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Pic.Flip**, not by calling **Flip**.

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>putStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>put</b> [ : <i>fileNumber</i> , ] <i>putItem</i> { , <i>putItem</i> } [ .. ]</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A putStatement is:\r\n put [ : fileNumber , ] putItem { , putItem } [ .. ]",
-      "mdown_content": "A _putStatement_ is:\n\n\n**put** [ : _fileNumber_ , ] _putItem_ { , _putItem_ } [ .. ]\n\n"
+      "mdown_content": "A _putStatement_ is:   **put** [ : _fileNumber_ , ] _putItem_ { , _putItem_ } [ .. ]"
     },
     {
       "title": "Description",

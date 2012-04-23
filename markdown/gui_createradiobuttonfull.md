@@ -1,13 +1,10 @@
 
-#GUI.CreateRadioButton[Full]
+# GUI.CreateRadioButton[Full]
 
-##Syntax
-**GUI.CreateRadioButton** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()) : **int**
+## Syntax
+**GUI.CreateRadioButton** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateRadioButtonFull** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _alignment_ : **int**, _shortCut_ : **char**) : **int**
 
-**GUI.CreateRadioButtonFull** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _alignment_ : **int**, _shortCut_ : **char**) : **int**
-
-
-##Description
+## Description
 Creates a radio button and returns the radio button's widget ID. 
 
 A slider is a widget that allows the user to select one of a set of values. It has a real-life equivalent in the old car stereos where a single station is selected at a time. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected. 
@@ -27,7 +24,7 @@ For **GUI.CreateRadioButtonFull**, the _alignment_ parameter specifies the posit
 A radio button's size is not specified during creation. It is determined based on the size of the text. Instead the user specifies the lower-left corner of the radio button (or the lower-right if the radio button is right justified).
 
 
-##Example
+## Example
 The following program creates six radio buttons in two groups.
 
         import GUI
@@ -65,7 +62,7 @@ The following program creates six radio buttons in two groups.
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 When a group of radio buttons is selected, the first radio button created in the group will be the selected one. You can change this by using the **GUI.SelectRadio** procedure to select a different one.
 
 When **GUI.CreateRadioButton** or **GUI.CreateRadioButtonFull** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
@@ -73,7 +70,7 @@ When **GUI.CreateRadioButton** or **GUI.CreateRadioButtonFull** is called, the n
 When a radio button is not enabled, the radio button is grayed out and the radio button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a radio button as the _widgetID_ parameter:
 
 
@@ -81,12 +78,12 @@ The following GUI subprograms can be called with a radio button as the _widgetID
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateRadioButton**, not by calling **CreateRadioButton**.
 
 
-##See also
-**[gui_selectradio.html](GUI.SelectRadio)** for selecting a radio button in a program. See also **[gui_setlabel.html](GUI.SetLabel)** for changing the radio button's text.
+## See also
+**[GUI.SelectRadio](gui_selectradio.html)** for selecting a radio button in a program. See also **[GUI.SetLabel](gui_setlabel.html)** for changing the radio button's text.
 

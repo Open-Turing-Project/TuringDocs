@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.Msg</b> (<i>errorCode</i> : <b>int</b>): <b>string</b><p>\r\n</p></font>",
       "text_content": " Error.Msg (errorCode : int): string\r\n",
-      "mdown_content": "**Error.Msg** (_errorCode_ : **int**): **string**\n"
+      "mdown_content": "**Error.Msg** (_errorCode_ : **int**): **string**"
     },
     {
       "title": "Description",

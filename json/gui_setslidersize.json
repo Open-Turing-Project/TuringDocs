@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSliderSize</b> (<i>widgetID</i>, <i>length</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSliderSize (widgetID, length : int)\r\n",
-      "mdown_content": "**GUI.SetSliderSize** (_widgetID_, _length_ : **int**)\n"
+      "mdown_content": "**GUI.SetSliderSize** (_widgetID_, _length_ : **int**)"
     },
     {
       "title": "Description",
@@ -34,7 +34,7 @@
       ],
       "raw_content": "<b>GUI.CreateHorizontalScrollBar</b>, <b>GUI.CreateVerticalScrollBar</b>, <b><a href=\"gui_createhorizontalslider.html\">GUI.CreateHorizontalSlider</a></b>, and <b><a href=\"gui_createverticalslider.html\">GUI.CreateVerticalSlider</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateHorizontalScrollBar, GUI.CreateVerticalScrollBar, GUI.CreateHorizontalSlider, and GUI.CreateVerticalSlider.\r\n",
-      "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[gui_createhorizontalslider.html](GUI.CreateHorizontalSlider)**, and **[gui_createverticalslider.html](GUI.CreateVerticalSlider)**.\n"
+      "mdown_content": "**GUI.CreateHorizontalScrollBar**, **GUI.CreateVerticalScrollBar**, **[GUI.CreateHorizontalSlider](gui_createhorizontalslider.html)**, and **[GUI.CreateVerticalSlider](gui_createverticalslider.html)**.\n"
     }
   ],
   "dependencies": [

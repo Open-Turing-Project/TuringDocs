@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetLabel</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetLabel (widgetID : int, text : string)\r\n",
-      "mdown_content": "**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)\n"
+      "mdown_content": "**GUI.SetLabel** (_widgetID_ : **int**, _text_ : **string**)"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b>GUI.CreateButton</b>, <b>GUI.CreateCheckBox</b>, <b>GUI.CreateRadioButton</b>, <b>GUI.CreateLabel</b>, and <b><a href=\"gui_createlabelledframe.html\">GUI.CreateLabelledFrame</a></b>.<p>\r\n</p>",
       "text_content": " GUI.CreateButton, GUI.CreateCheckBox, GUI.CreateRadioButton, GUI.CreateLabel, and GUI.CreateLabelledFrame.\r\n",
-      "mdown_content": "**GUI.CreateButton**, **GUI.CreateCheckBox**, **GUI.CreateRadioButton**, **GUI.CreateLabel**, and **[gui_createlabelledframe.html](GUI.CreateLabelledFrame)**.\n"
+      "mdown_content": "**GUI.CreateButton**, **GUI.CreateCheckBox**, **GUI.CreateRadioButton**, **GUI.CreateLabel**, and **[GUI.CreateLabelledFrame](gui_createlabelledframe.html)**.\n"
     }
   ],
   "dependencies": [

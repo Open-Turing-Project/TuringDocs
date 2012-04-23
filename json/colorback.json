@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>colorback</b> (<i>Color</i> :<i> </i><b>int</b>)<p>\r\n</p></font>",
       "text_content": " colorback (Color : int)\r\n",
-      "mdown_content": "**colorback** (_Color_ : **int**)\n"
+      "mdown_content": "**colorback** (_Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -92,7 +92,7 @@
       ],
       "raw_content": "<b><a href=\"color.html\">color</a></b> and <b><a href=\"whatcolorback.html\">whatcolorback</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " color and whatcolorback.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "**[color.html](color)** and **[whatcolorback.html](whatcolorback)**.\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "**[color](color.html)** and **[whatcolorback](whatcolorback.html)**.\n\nSee also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

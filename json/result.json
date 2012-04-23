@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>resultStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>result</b> <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A resultStatement is:\r\n result expn",
-      "mdown_content": "A _resultStatement_ is:\n\n\n**result** _expn_\n\n"
+      "mdown_content": "A _resultStatement_ is:   **result** _expn_"
     },
     {
       "title": "Description",

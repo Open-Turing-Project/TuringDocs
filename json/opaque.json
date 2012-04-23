@@ -19,7 +19,7 @@
       ],
       "raw_content": "<b><a href=\"module.html\">module</a></b> declarations for an example of an <a href=\"\">opaque</a> type used to <a href=\"implement.html\">implement</a> complex arithmetic. See also <i><a href=\"equivalence.html\">equivalence</a> </i>of types for the definition of the type matching rules for <a href=\"\">opaque</a> types.<p>\r\n</p>",
       "text_content": " module declarations for an example of an opaque type used to implement complex arithmetic. See also equivalence of types for the definition of the type matching rules for opaque types.\r\n",
-      "mdown_content": "**[module.html](module)** declarations for an example of an [](opaque) type used to [implement.html](implement) complex arithmetic. See also _[equivalence.html](equivalence)_ of types for the definition of the type matching rules for [](opaque) types.\n"
+      "mdown_content": "**[module](module.html)** declarations for an example of an [opaque]() type used to [implement](implement.html) complex arithmetic. See also _[equivalence](equivalence.html)_ of types for the definition of the type matching rules for [opaque]() types.\n"
     }
   ],
   "dependencies": [

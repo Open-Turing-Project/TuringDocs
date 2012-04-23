@@ -24,7 +24,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a></i> and <i><a href=\"prefix.html\">prefix</a> </i>operators. See the <b><a href=\"int.html\">int</a></b>, <b><a href=\"real.html\">real</a></b>, <b><a href=\"string1.html\">string</a></b>, <b><a href=\"boolean.html\">boolean</a></b>, <b><a href=\"set.html\">set</a></b>, <b><a href=\"enum.html\">enum</a></b>, <b><a href=\"char.html\">char</a></b> and <b><a href=\"char.html\">char</a></b>(<i>n</i>) types.<p>\r\n</p>",
       "text_content": " infix and prefix operators. See the int, real, string, boolean, set, enum, char and char(n) types.\r\n",
-      "mdown_content": "_[infix.html](infix)_ and _[prefix.html](prefix)_ operators. See the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)**, **[boolean.html](boolean)**, **[set.html](set)**, **[enum.html](enum)**, **[char.html](char)** and **[char.html](char)**(_n_) types.\n"
+      "mdown_content": "_[infix](infix.html)_ and _[prefix](prefix.html)_ operators. See the **[int](int.html)**, **[real](real.html)**, **[string](string1.html)**, **[boolean](boolean.html)**, **[set](set.html)**, **[enum](enum.html)**, **[char](char.html)** and **[char](char.html)**(_n_) types.\n"
     }
   ],
   "dependencies": [

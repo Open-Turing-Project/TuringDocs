@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Mouse.ButtonChoose </b>(<i>choice</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Mouse.ButtonChoose (choice : string)\r\n",
-      "mdown_content": "**Mouse.ButtonChoose** (_choice_ : **string**)\n"
+      "mdown_content": "**Mouse.ButtonChoose** (_choice_ : **string**)"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"mouse_buttonmoved.html\">Mouse.ButtonMoved</a></b> and <b><a href=\"mouse_buttonwait.html\">Mouse.ButtonWait</a></b> to get mouse events saved in a queue. See also <b><a href=\"mouse_where.html\">Mouse.Where</a></b> to get the current status of mouse button(s).<p>\r\n</p>",
       "text_content": " Mouse.ButtonMoved and Mouse.ButtonWait to get mouse events saved in a queue. See also Mouse.Where to get the current status of mouse button(s).\r\n",
-      "mdown_content": "**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_where.html](Mouse.Where)** to get the current status of mouse button(s).\n"
+      "mdown_content": "**[Mouse.ButtonMoved](mouse_buttonmoved.html)** and **[Mouse.ButtonWait](mouse_buttonwait.html)** to get mouse events saved in a queue. See also **[Mouse.Where](mouse_where.html)** to get the current status of mouse button(s).\n"
     }
   ],
   "dependencies": [

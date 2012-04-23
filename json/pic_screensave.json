@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.ScreenSave</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Pic.ScreenSave (x1, y1, x2, y2 : int, fileName : string)\r\n",
-      "mdown_content": "**Pic.ScreenSave** (_x1_, _y1_, _x2_, _y2_ : **int**, _fileName_ : **string**)\n"
+      "mdown_content": "**Pic.ScreenSave** (_x1_, _y1_, _x2_, _y2_ : **int**, _fileName_ : **string**)"
     },
     {
       "title": "Description",

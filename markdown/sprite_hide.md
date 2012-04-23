@@ -1,15 +1,14 @@
 
-#Sprite.Hide
+# Sprite.Hide
 
-##Syntax
+## Syntax
 **Sprite.Hide** (_spriteID_ : **int**)
 
-
-##Description
+## Description
 Hides a previously visible sprite. **Sprite.Hide** has no effect if the sprite is already invisible.
 
 
-##Example
+## Example
 The following program animates four balls on the screen. When the balls are close to each other or to a wall, they appear, otherwise they are hidden.
 
         var pic, sprite, x, y, dx, dy, radius : array 1 .. 6 of int
@@ -80,12 +79,12 @@ The following program animates four balls on the screen. When the balls are clos
         for i : 1 .. 6
             Sprite.Free (sprite (i))
         end for
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Sprite.Hide**, not by calling **Hide**.
 
 
-##See also
-**[sprite_show.html](Sprite.Show)**.
+## See also
+**[Sprite.Show](sprite_show.html)**.
 

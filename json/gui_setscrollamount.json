@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetScrollAmount</b> (<i>widgetID</i> : <b>int</b>,<br><i>arrowInc</i>, <i>pageInc</i>, <i>thumbSize</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetScrollAmount (widgetID : int,arrowInc, pageInc, thumbSize : int)\r\n",
-      "mdown_content": "**GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)\n"
+      "mdown_content": "**GUI.SetScrollAmount** (_widgetID_ : **int**,_arrowInc_, _pageInc_, _thumbSize_ : **int**)"
     },
     {
       "title": "Description",

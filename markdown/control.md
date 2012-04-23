@@ -1,6 +1,6 @@
-#Control Constructs
+# Control Constructs
 
-##FOR
+## FOR
   
 **for** [ **decreasing** ] _variable_ : _startValue_ .. _endValue_
 ... _statements_ ...
@@ -9,7 +9,7 @@
 **end for**
 
  
-##LOOP
+## LOOP
   
 **loop**
 ... _statements_ ...
@@ -18,7 +18,7 @@
 **end loop**
 
  
-##IF
+## IF
   
 **if** _condition_ **then**
 ... _statements_ ...
@@ -29,7 +29,7 @@
 **end if**
 
  
-##CASE
+## CASE
   
 **case** _expn_ **of**
 ... _statements_ ...

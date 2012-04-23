@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>tand</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " tand ( r : real ) : real\r\n",
-      "mdown_content": "**tand** ( _r_ : **real** ) : **real**\n"
+      "mdown_content": "**tand** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -49,7 +49,7 @@
       ],
       "raw_content": "the <b><a href=\"sind.html\">sind</a></b> and <b><a href=\"cosd.html\">cosd</a></b> functions for calculating sine and cosine.<p>\r\nthe <b><a href=\"tan.html\">tan</a></b> function which finds the tangent of an angle given in radians. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": "the sind and cosd functions for calculating sine and cosine.\r\nthe tan function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "the **[sind.html](sind)** and **[cosd.html](cosd)** functions for calculating sine and cosine.\n\nthe **[tan.html](tan)** function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "the **[sind](sind.html)** and **[cosd](cosd.html)** functions for calculating sine and cosine.\n\nthe **[tan](tan.html)** function which finds the tangent of an angle given in radians. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

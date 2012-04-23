@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<i>StatementsAndDeclarations</i> are:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">{ <i>statementOrDeclaration</i> }</font></td>\n</tr></table>\n<p></p>",
       "text_content": " StatementsAndDeclarations are:\r\n { statementOrDeclaration }",
-      "mdown_content": "_StatementsAndDeclarations_ are:\n\n\n{ _statementOrDeclaration_ }\n\n"
+      "mdown_content": "_StatementsAndDeclarations_ are:   { _statementOrDeclaration_ }"
     },
     {
       "title": "Description",

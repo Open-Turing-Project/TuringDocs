@@ -1,20 +1,14 @@
 
-#import
+# import
 
-##Syntax
-An _importList_ is:
+## Syntax
+An _importList_ is:   **import** [ _howImport_ ] _importItem_          {, [_howImport_] _importItem_ }
 
-
-**import** [ _howImport_ ] _importItem_ 
-{, [_howImport_] _importItem_ }
-
-
-
-##Description
+## Description
 An **import** list is used to specify those items that a procedure, function, module, monitor, or a class uses from outside of itself. Note that a function or procedure is not allowed to have an import list and thus automatically imports whichever functions or procedures are used by the function or procedure. The compiler determines the list automatically by looking to see what items are actually used.
 
 
-##Example
+## Example
 In this example, the type _T_ is imported into the _stack_ **module** and used as the type that can be pushed onto or popped off the stack. Since no other items are imported, the only identifiers from outside of _stack_ that can be used in it must be predefined, such as **sqrt**, or declared to be **pervasive**.
 
         type T : string
@@ -27,7 +21,7 @@ In this example, the type _T_ is imported into the _stack_ **module** and used a
             procedure push  end push
             procedure pop  end pop
         end stack
-##Details
+## Details
 The _importItem_ is one of_:_
 
 
@@ -64,6 +58,6 @@ An overriding subprogram (in an expansion) ignores the import list of the target
 Turing initializes modules and monitors  in order of importation. Initialization begins with the main program, which first initializes its imports in the order given in its **import** list, and then initializes itself.
 
         import ledger in "newledg.t"        import ( ledger in "newledg.t" )
-##See also
-**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[inherit.html](inherit)** clause, **[implement.html](implement)** clause and **[implement_by.html](implement by)** clause.
+## See also
+**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[inherit](inherit.html)** clause, **[implement](implement.html)** clause and **[implement by](implement_by.html)** clause.
 

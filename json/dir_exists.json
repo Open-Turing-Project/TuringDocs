@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Exists</b> (<i>directoryPathName</i> : <b>string</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Dir.Exists (directoryPathName : string) : boolean\r\n",
-      "mdown_content": "**Dir.Exists** (_directoryPathName_ : **string**) : **boolean**\n"
+      "mdown_content": "**Dir.Exists** (_directoryPathName_ : **string**) : **boolean**"
     },
     {
       "title": "Description",

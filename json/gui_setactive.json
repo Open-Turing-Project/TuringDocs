@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetActive</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetActive (widgetID : int)\r\n",
-      "mdown_content": "**GUI.SetActive** (_widgetID_ : **int**)\n"
+      "mdown_content": "**GUI.SetActive** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",

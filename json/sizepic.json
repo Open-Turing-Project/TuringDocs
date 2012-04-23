@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>sizepic</b> ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " sizepic ( x1, y1, x2, y2 : int) : int\r\n",
-      "mdown_content": "**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**\n"
+      "mdown_content": "**sizepic** ( _x1_, _y1_, _x2_, _y2_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"drawpic.html\">drawpic</a></b>. See also <b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b>, <b><a href=\"drawdot.html\">drawdot</a></b>, <b><a href=\"drawline.html\">drawline</a></b>, <b><a href=\"drawbox.html\">drawbox</a></b>, and <b><a href=\"drawoval.html\">drawoval</a></b>.<p>\r\nSee also predefined unit <b><a href=\"picmodule.html\">Pic</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " drawpic. See also setscreen, maxx, maxy, drawdot, drawline, drawbox, and drawoval.\r\nSee also predefined unit Pic.\r\n",
-      "mdown_content": "**[drawpic.html](drawpic)**. See also **[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)**, **[drawdot.html](drawdot)**, **[drawline.html](drawline)**, **[drawbox.html](drawbox)**, and **[drawoval.html](drawoval)**.\n\nSee also predefined unit **[picmodule.html](Pic)**.\n"
+      "mdown_content": "**[drawpic](drawpic.html)**. See also **[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)**, **[drawdot](drawdot.html)**, **[drawline](drawline.html)**, **[drawbox](drawbox.html)**, and **[drawoval](drawoval.html)**.\n\nSee also predefined unit **[Pic](picmodule.html)**.\n"
     }
   ],
   "dependencies": [

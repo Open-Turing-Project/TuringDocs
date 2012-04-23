@@ -1,20 +1,19 @@
 
-#index
+# index
 
-##Syntax
+## Syntax
 **index** (_s_ , _patt_ : **string** ) : **int**
 
-
-##Description
+## Description
 The **index** function is used to find the position of _patt_ within string _s_. For example, **index** ( "chair", "air" ) is 3.
 
 
-##Example
+## Example
 This program outputs 2, because "ill" is a substring of "willing", starting at the second character of "willing".
 
         var word : string := "willing"
         put index ( word, "ill" )
-##Details
+## Details
 If the pattern (_patt_) does not appear in the string (_s_), **index** returns 0 (zero). For example, here is an **if** statement that checks to see if string _s_ contains a blank:
 
 The **index** is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an **if** statement that checks to see if _ch_, which is declared using **var** _ch_ : **string** (1), is a digit:

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawfill</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>fillColor</i>, <i>borderColor</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " drawfill (x, y : int, fillColor, borderColor : int)\r\n",
-      "mdown_content": "**drawfill** (_x_, _y_ : **int**, _fillColor_, _borderColor_ : **int**)\n"
+      "mdown_content": "**drawfill** (_x_, _y_ : **int**, _fillColor_, _borderColor_ : **int**)"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures. <p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures. \r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. \n"
+      "mdown_content": "**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures. \n"
     }
   ],
   "dependencies": [

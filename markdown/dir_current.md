@@ -1,19 +1,18 @@
 
-#Dir.Current
+# Dir.Current
 
-##Syntax
+## Syntax
 **Dir.Current** : **string**
 
-
-##Description
+## Description
 **Dir.Current** returns the full path name of the current execution directory. This is the equivalent of doing a **pwd** in UNIX.
 
 
-##Details
+## Details
 If the **Dir.Current** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 This program changes to the directory called _/usr/west_ and then lists the current directory.
 
         Dir.Change ("/usr/west")
@@ -24,7 +23,7 @@ This program changes to the directory called _/usr/west_ and then lists the curr
             put "Error: ", Error.LastMsg
         end if
         put "The current execution directory is ", Dir.Current
-##Example
+## Example
 An example demonstrating the use of several of the **Dir** subprogramsis available. In this example, a directory is created, a file is writtento the directory, an attempt is made to delete the directory, the file isdeleted, and then the directory is deleted.
 
 This example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Create**, and **Dir.Delete**.
@@ -32,7 +31,7 @@ This example demonstrates the use of **Dir.Change**, **Dir.Current**, **Dir.Crea
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Dir.Current**, not by calling **Current**.

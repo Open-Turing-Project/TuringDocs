@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.GetSelect</b> : <b>int</b><p></p></font>",
       "text_content": "Window.GetSelect : int\r\n    ",
-      "mdown_content": "**Window.GetSelect** : **int**\n"
+      "mdown_content": "**Window.GetSelect** : **int**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "<b><a href=\"window_select.html\">Window.Select</a></b>.<p>\r\n    </p>",
       "text_content": "Window.Select.\r\n    ",
-      "mdown_content": "**[window_select.html](Window.Select)**.\n"
+      "mdown_content": "**[Window.Select](window_select.html)**.\n"
     }
   ],
   "dependencies": [

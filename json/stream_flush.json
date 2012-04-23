@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Stream.Flush</b> ( <i>streamNumber</i> <b>: int</b> )<p>\r\n</p></font>",
       "text_content": " Stream.Flush ( streamNumber : int )\r\n",
-      "mdown_content": "**Stream.Flush** ( _streamNumber_ **: int** )\n"
+      "mdown_content": "**Stream.Flush** ( _streamNumber_ **: int** )"
     },
     {
       "title": "Description",

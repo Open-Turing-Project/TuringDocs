@@ -1,11 +1,10 @@
 
-#GUI.CreateMenu
+# GUI.CreateMenu
 
-##Syntax
+## Syntax
 **GUI.CreateMenu** (_name_ : **string**) : **int**
 
-
-##Description
+## Description
 Creates a menu and returns the menu's widget ID. The menu will be added after the other menus in the menu bar. If there are no previous menus, then a menu bar is automatically created and the menu added.
 
 The _name_ parameter specifies the text that appears in the menu bar.
@@ -21,7 +20,7 @@ Menus are used in most modern interfaces. In order to create a full set of menus
 As of the v1.0 release of the GUI Library, it is an error to create a menu item without having created a menu first. In future releases it will be possible to create menus and attach and remove them from menu bars when desired.
 
 
-##Example
+## Example
 The following program creates a series of menus with menu items in them. It then disables the second menu.
 
 
@@ -79,22 +78,22 @@ The following program creates a series of menus with menu items in them. It then
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 When a menu is not enabled, the text in the menu bar is grayed out and clicking on the menu does not cause the menu to appear.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a menu as the _widgetID_ parameter:
 
 **GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.Enable**, **GUI.Disable**
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateMenu**, not by calling **CreateMenu**.
 
 
-##See also
-**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar.
+## See also
+**[GUI.CreateMenuItem](gui_createmenuitem_full-2.html)** for adding items to a menu. See also **[GUI.ShowMenuBar](gui_showmenubar.html)** and **[GUI.HideMenuBar](gui_hidemenubar.html)** for showing and hiding the menu bar.
 

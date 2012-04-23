@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>drawpolygon</b> (<i>x</i>, <i>y</i>  : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>n</i> : <b>int</b>, <i>Color</i> : <b>int</b>)<p>\r\n</p>",
       "text_content": " drawpolygon (x, y  : array 1 .. * of int, n : int, Color : int)\r\n",
-      "mdown_content": "**drawpolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)\n"
+      "mdown_content": "**drawpolygon** (_x_, _y_  : **array** 1 .. * **of** **int**, _n_ : **int**, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures. <p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures. \r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. \n"
+      "mdown_content": "**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures. \n"
     }
   ],
   "dependencies": [

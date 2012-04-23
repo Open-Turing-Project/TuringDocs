@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>subrangeType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>expn</i> .. <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A subrangeType is:\r\n expn .. expn",
-      "mdown_content": "A _subrangeType_ is:\n\n\n_expn_ .. _expn_\n\n"
+      "mdown_content": "A _subrangeType_ is:   _expn_ .. _expn_"
     },
     {
       "title": "Description",

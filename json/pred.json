@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>pred</b> ( <i>expn</i> )<p>\r\n</p></font>",
       "text_content": " pred ( expn )\r\n",
-      "mdown_content": "**pred** ( _expn_ )\n"
+      "mdown_content": "**pred** ( _expn_ )"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"succ.html\">succ</a></b>, <b><a href=\"lower.html\">lower</a></b> and <b><a href=\"upper.html\">upper</a></b> functions.<p>\r\n</p>",
       "text_content": " succ, lower and upper functions.\r\n",
-      "mdown_content": "**[succ.html](succ)**, **[lower.html](lower)** and **[upper.html](upper)** functions.\n"
+      "mdown_content": "**[succ](succ.html)**, **[lower](lower.html)** and **[upper](upper.html)** functions.\n"
     }
   ],
   "dependencies": [

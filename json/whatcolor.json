@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>whatcolor</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " whatcolor : int\r\n",
-      "mdown_content": "**whatcolor** : **int**\n"
+      "mdown_content": "**whatcolor** : **int**"
     },
     {
       "title": "Description",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "the <b><a href=\"color.html\">color</a></b> <a href=\"procedure.html\">procedure</a>, which is used to <a href=\"set.html\">set</a> the <a href=\"color.html\">color</a>. See also <b><a href=\"colorback.html\">colorback</a></b> and <b><a href=\"whatcolorback.html\">whatcolorback</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " the color procedure, which is used to set the color. See also colorback and whatcolorback.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "the **[color.html](color)** [procedure.html](procedure), which is used to [set.html](set) the [color.html](color). See also **[colorback.html](colorback)** and **[whatcolorback.html](whatcolorback)**.\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "the **[color](color.html)** [procedure](procedure.html), which is used to [set](set.html) the [color](color.html). See also **[colorback](colorback.html)** and **[whatcolorback](whatcolorback.html)**.\n\nSee also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

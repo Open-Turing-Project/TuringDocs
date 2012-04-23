@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>strintok</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " strintok ( s : string [ , base : int ] ) : boolean\r\n",
-      "mdown_content": "**strintok** ( _s_ : **string** [ , _base_ : **int** ] ) : **boolean**\n"
+      "mdown_content": "**strintok** ( _s_ : **string** [ , _base_ : **int** ] ) : **boolean**"
     },
     {
       "title": "Description",
@@ -21,7 +21,7 @@
       ],
       "raw_content": "<b><a href=\"strint.html\">strint</a></b> function that does the actual conversion.<p>\r\n</p>",
       "text_content": " strint function that does the actual conversion.\r\n",
-      "mdown_content": "**[strint.html](strint)** function that does the actual conversion.\n"
+      "mdown_content": "**[strint](strint.html)** function that does the actual conversion.\n"
     }
   ],
   "dependencies": [

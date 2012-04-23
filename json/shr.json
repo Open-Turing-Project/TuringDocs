@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>A</i> <b>shr</b> <i>B</i><p>\r\n</p></font>",
       "text_content": " A shr B\r\n",
-      "mdown_content": "_A_ **shr** _B_\n"
+      "mdown_content": "_A_ **shr** _B_"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"shl.html\">shl</a></b> (shift left), <b><a href=\"or.html\">or</a></b>, <b><a href=\"and.html\">and</a></b> and <b><a href=\"xor.html\">xor</a></b>, which also are bit manipulation operators that act on non-negative values. See also <b><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></b> which describes values such as 2#1101.<p>\r\n</p>",
       "text_content": " shl (shift left), or, and and xor, which also are bit manipulation operators that act on non-negative values. See also explicitIntegerConstant which describes values such as 2#1101.\r\n",
-      "mdown_content": "**[shl.html](shl)** (shift left), **[or.html](or)**, **[and.html](and)** and **[xor.html](xor)**, which also are bit manipulation operators that act on non-negative values. See also **[explicitintegerconstant.html](explicitIntegerConstant)** which describes values such as 2#1101.\n"
+      "mdown_content": "**[shl](shl.html)** (shift left), **[or](or.html)**, **[and](and.html)** and **[xor](xor.html)**, which also are bit manipulation operators that act on non-negative values. See also **[explicitIntegerConstant](explicitintegerconstant.html)** which describes values such as 2#1101.\n"
     }
   ],
   "dependencies": [

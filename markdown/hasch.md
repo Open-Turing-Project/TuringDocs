@@ -1,15 +1,14 @@
 
-#hasch
+# hasch
 
-##Syntax
+## Syntax
 **hasch** : **boolean**
 
-
-##Description
+## Description
 The **hasch** procedure is used to determine if there is a character that has been typed but not yet been read.
 
 
-##Example
+## Example
 This program simulates the rolling of a pair of dice until theuser pressed the keyboard.
 
 
@@ -26,16 +25,16 @@ This program simulates the rolling of a pair of dice until theuser pressed the k
         end loop
             
         getch (ch)    % Discard the character
-##Details
+## Details
 The screen should be in a "_graphics_" mode. See the **setscreen** procedure for details. If the screen is not in "_graphics_" mode, it will automatically be set to "_graphics_" mode.
 
-If there is the possibility that there are already keystrokes in thekeyboard buffer, the [input_flush.html](**Input.Flush**)command can be used to flush the keyboard buffer (remove all keystrokes from the buffer) before entering the loop to check forinput.
+If there is the possibility that there are already keystrokes in thekeyboard buffer, the [**Input.Flush**](input_flush.html)command can be used to flush the keyboard buffer (remove all keystrokes from the buffer) before entering the loop to check forinput.
 
 
-##See also
-**[getch.html](getch)** and **[getchar.html](getchar)**.
+## See also
+**[getch](getch.html)** and **[getchar](getchar.html)**.
 
-See also the [input_flush.html](**Input.Flush**)command for flushing the keyboard buffer.
+See also the [**Input.Flush**](input_flush.html)command for flushing the keyboard buffer.
 
-See also predefined unit **[inputmodule.html](Input)**.
+See also predefined unit **[Input](inputmodule.html)**.
 

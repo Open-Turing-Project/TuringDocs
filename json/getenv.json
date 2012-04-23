@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getenv</b> ( <i>symbol</i> : <b>string</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " getenv ( symbol : string ) : string\r\n",
-      "mdown_content": "**getenv** ( _symbol_ : **string** ) : **string**\n"
+      "mdown_content": "**getenv** ( _symbol_ : **string** ) : **string**"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Sys.\r\n",
-      "mdown_content": "See also predefined unit **[sysmodule.html](Sys)**.\n"
+      "mdown_content": "See also predefined unit **[Sys](sysmodule.html)**.\n"
     }
   ],
   "dependencies": [

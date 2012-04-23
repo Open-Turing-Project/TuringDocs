@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>simutime</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " simutime : int\r\n",
-      "mdown_content": "**simutime** : **int**\n"
+      "mdown_content": "**simutime** : **int**"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"concurrencymodule.html\">Concurrency</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Concurrency.\r\n",
-      "mdown_content": "See also predefined unit **[concurrencymodule.html](Concurrency)**.\n"
+      "mdown_content": "See also predefined unit **[Concurrency](concurrencymodule.html)**.\n"
     }
   ],
   "dependencies": [

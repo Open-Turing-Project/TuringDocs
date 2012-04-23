@@ -1,15 +1,14 @@
 
-#addressint
+# addressint
 
-##Syntax
+## Syntax
 **addressint**
 
-
-##Description
+## Description
 The **addressint** (address integer) type is an integer type whose range of value is the same as that of the underlying computer. This range is, by its nature, implementation-dependent. On 32-bit architectures, it is commonly the same range as **nat4** (4-byte natural number).
 
 
-##Example
+## Example
 Record _r_ contains three fields, one of which has type **char**(28). Variable _a_ is an integer whose range of values is the same as the addresses of the underlying computer. This assigns _B_ to the seventh character of a record of type _r_ which is assumed to be located at absolute address _a_.
 
         type r :
@@ -21,12 +20,12 @@ Record _r_ contains three fields, one of which has type **char**(28). Variable _
         var a : addressint      % An integer
                            % a is assigned an integer value
         r @ (a) . c28 (7) := 'B'        % Use indirection operator @
-##Details
+## Details
 Although **addressint** is called an integer type, it is commonly equivalent to a natural type such as **nat4** (for 32-bit machines).
 
 Be careful not to confuse **addressint** with pointer types. In low level languages such as assembler and C, addresses and pointers are the same. In Turing, however, a pointer is a high level concept that is more abstract than a machine address. A Turing pointer is a reference to an object, and the representation of this reference depends upon the implementation. In current Turing implementations, pointers (which are by default checked) are represented as a time stamp (a unique number) together with an address. The time stamp is used to make sure that the pointer actually locates an object. There are also **unchecked** pointers. An **unchecked** pointer's internal representation is a machine address. You can use type cheats (a dangerous feature) to translate between **addressint** and unchecked pointers. This is meaningful in current implementations.
 
 
-##See also
-the [indirection.html](indirection operator @), **[cheat.html](cheat)**, _[explicitintegerconstant.html](explicitIntegerConstant)_ (how to write hexadecimal constants), and **[pointer.html](pointer)** type (in particular unchecked pointer type). See also **[addr.html](addr)**, which returns the address of a variable.
+## See also
+the [indirection operator @](indirection.html), **[cheat](cheat.html)**, _[explicitIntegerConstant](explicitintegerconstant.html)_ (how to write hexadecimal constants), and **[pointer](pointer.html)** type (in particular unchecked pointer type). See also **[addr](addr.html)**, which returns the address of a variable.
 

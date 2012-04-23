@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>int</b><p>\r\n</p></font>",
       "text_content": " int\r\n",
-      "mdown_content": "**int**\n"
+      "mdown_content": "**int**"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"nat.html\">nat</a></b> and <b><a href=\"\">int</a></b><i>n</i>.<p>\r\n</p>",
       "text_content": " nat and intn.\r\n",
-      "mdown_content": "**[nat.html](nat)** and **[](int)**_n_.\n"
+      "mdown_content": "**[nat](nat.html)** and **[int]()**_n_.\n"
     }
   ],
   "dependencies": [

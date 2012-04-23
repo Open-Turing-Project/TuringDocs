@@ -1,15 +1,14 @@
 
-#init
+# init
 
-##Syntax
+## Syntax
 **init**
 
-
-##Description
+## Description
 The **init** (initialization) keyword is used for two different purposes in Turing. The most common is for initializing arrays, records and unions. The less common is for recording parameter values in subprograms for later use in **post** conditions.
 
 
-##Example
+## Example
 
 
         var mensNames : array 1 .. 3 of string :=
@@ -19,11 +18,11 @@ The **init** (initialization) keyword is used for two different purposes in Turi
             init ( "Tom", "Dick", "Harry",
                  "Alice", "Barbara", "Cathy")
         put names ( 2, 1 )  % This outputs Alice
-##Details
+## Details
 The order of initializing values for multi-dimensional arrays is based on varying the right subscripts (indexes) most rapidly. This is called _row major order_. Initialization of records and unions is analogous to initializing arrays. Values are listed in the order in which they appear in the type. See **array**, **record**, and **union** types.
 
 
-##Example
+## Example
 This procedure is supposed to set integer variable _i_ to an integer approximation of its square root. The **init** clause records the initial value of _i_ as _j_ so it can be used in the **post** condition to make sure that the approximation is sufficiently accurate. The name _j_ can be used only in the post condition and nowhere else in the procedure.
 
         procedure intSqrt ( var i : int )
@@ -32,6 +31,6 @@ This procedure is supposed to set integer variable _i_ to an integer approximati
             post abs ( i - sqrt ( j ) ) <= 1
              statements to approximate square root
         end intSqrt
-##See also
-**[pre.html](pre)** and **[post.html](post)** assertions and **[procedure.html](procedure)** and **[process.html](process)** declarations.
+## See also
+**[pre](pre.html)** and **[post](post.html)** assertions and **[procedure](procedure.html)** and **[process](process.html)** declarations.
 

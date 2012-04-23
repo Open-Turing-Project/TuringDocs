@@ -1,19 +1,14 @@
 
-#inherit
+# inherit
 
-##Syntax
-An _inheritClause_ is:
+## Syntax
+An _inheritClause_ is:   **inherit** _inheritItem_
 
-
-**inherit** _inheritItem_
-
-
-
-##Description
+## Description
 An **inherit** clause specifies that the class containing the clause is to be an expansion of another class. This expansion is called _inheritance_. The class containing the clause gains access to (inherits) all the declarations inside the target item. Expansions are used to add new declarations and exports and to support _polymorphism_ (overriding subprograms).
 
 
-##Example
+## Example
 Here is an example of a stack class. Following it, we show another class, called _stackWithDepth_, that inherits _stack_ by adding a function called _depth_.
 
 Next comes an expansion, which inherits the internal declarations of the stack class and adds the _depth_ function.
@@ -40,7 +35,7 @@ Next comes an expansion, which inherits the internal declarations of the stack c
                 result top
             end push
         end stackWithDepth
-##Details
+## Details
 Objects of the inherited class _stackWithDepth_ are like objects of the parent class _stack_, except there is an additional exported function named _depth_.
 
 An _inheritItem_ is one of:
@@ -76,6 +71,6 @@ Within a class _C_, with ancestor _B_, you can force a call to exported subprogr
 
         inherit ledger in "newledg.t"        inherit ( ledger in "newledg.t" )        B <= D      % B is an ancestor of D        B < D       % B is a strict ancestor of D        % Does the object located by p have the depth operation
         if stackWithDepth <= objectclass(p) then
-##See also
-**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[implement.html](implement)** clause, **[implement_by.html](implement by)** clause and **[deferred.html](deferred)** subprogram. See also **[objectclass.html](objectclass)**.
+## See also
+**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[implement](implement.html)** clause, **[implement by](implement_by.html)** clause and **[deferred](deferred.html)** subprogram. See also **[objectclass](objectclass.html)**.
 

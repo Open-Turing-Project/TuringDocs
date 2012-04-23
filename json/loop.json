@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>loopStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>loop</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>loop</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A loopStatement is:\r\n loop  statementsAndDeclarations end loop",
-      "mdown_content": "A _loopStatement_ is:\n\n\n**loop**\n_statementsAndDeclarations_\n**end** **loop**\n\n"
+      "mdown_content": "A _loopStatement_ is:   **loop**     _statementsAndDeclarations_   **end** **loop**"
     },
     {
       "title": "Description",

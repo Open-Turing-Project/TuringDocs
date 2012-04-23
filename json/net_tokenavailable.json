@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.TokenAvailable </b>(<i>netStream</i> : <b>int</b>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Net.TokenAvailable (netStream : int) : boolean\r\n",
-      "mdown_content": "**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**\n"
+      "mdown_content": "**Net.TokenAvailable** (_netStream_ : **int**) : **boolean**"
     },
     {
       "title": "Description",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"net_bytesavailable.html\">Net.BytesAvailable</a></b>, <b><a href=\"net_charavailable.html\">Net.CharAvailable</a></b>, and <b><a href=\"net_lineavailable.html\">Net.LineAvailable</a></b>.<p>\r\n</p>",
       "text_content": " Net.BytesAvailable, Net.CharAvailable, and Net.LineAvailable.\r\n",
-      "mdown_content": "**[net_bytesavailable.html](Net.BytesAvailable)**, **[net_charavailable.html](Net.CharAvailable)**, and **[net_lineavailable.html](Net.LineAvailable)**.\n"
+      "mdown_content": "**[Net.BytesAvailable](net_bytesavailable.html)**, **[Net.CharAvailable](net_charavailable.html)**, and **[Net.LineAvailable](net_lineavailable.html)**.\n"
     }
   ],
   "dependencies": [

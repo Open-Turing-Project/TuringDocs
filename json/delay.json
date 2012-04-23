@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>delay</b> (<i>duration</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " delay (duration : int)\r\n",
-      "mdown_content": "**delay** (_duration_ : **int**)\n"
+      "mdown_content": "**delay** (_duration_ : **int**)"
     },
     {
       "title": "Description",
@@ -52,7 +52,7 @@
       ],
       "raw_content": "<b><a href=\"sound.html\">sound</a></b>, <b><a href=\"clock.html\">clock</a></b>, <b><a href=\"sysclock.html\">sysclock</a></b>, <b><a href=\"wallclock.html\">wallclock</a></b>, <b><a href=\"time.html\">time</a></b> and <b><a href=\"date.html\">date</a></b> statements.<p>\r\nSee also predefined unit <b><a href=\"timemodule.html\">Time</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " sound, clock, sysclock, wallclock, time and date statements.\r\nSee also predefined unit Time.\r\n",
-      "mdown_content": "**[sound.html](sound)**, **[clock.html](clock)**, **[sysclock.html](sysclock)**, **[wallclock.html](wallclock)**, **[time.html](time)** and **[date.html](date)** statements.\n\nSee also predefined unit **[timemodule.html](Time)**.\n"
+      "mdown_content": "**[sound](sound.html)**, **[clock](clock.html)**, **[sysclock](sysclock.html)**, **[wallclock](wallclock.html)**, **[time](time.html)** and **[date](date.html)** statements.\n\nSee also predefined unit **[Time](timemodule.html)**.\n"
     }
   ],
   "dependencies": [

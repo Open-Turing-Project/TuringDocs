@@ -1,5 +1,5 @@
-#Operators
-##Mathematical Operators
+# Operators
+## Mathematical Operators
 
 OperatorOperationResult Type
 Prefix + Identity As Operands
@@ -18,7 +18,7 @@ Prefix  - Negative As Operands
 <= Less Than or Equal **boolean**
 >= Greater Than or Equal **boolean**
 **not**= Not Equal **boolean**
-##Boolean Operators
+## Boolean Operators
 
 OperatorOperationResult Type
 Prefix not Negation **boolean**
@@ -26,7 +26,7 @@ Prefix not Negation **boolean**
 **or** Or **boolean**
 **xor** Exclusive Or **boolean**
 => Implication **boolean**
-##Set Operators
+## Set Operators
 
 OperatorOperationResult Type
 + Union **set**
@@ -38,13 +38,13 @@ OperatorOperationResult Type
 < Strict (Proper) Subset **boolean**
 >= Superset **boolean**
 > Strict (Proper) Superset **boolean**
-##Operators on Members and Sets
+## Operators on Members and Sets
 
 OperatorOperationResult Type
 **in** Member of Set **boolean**
 **not in** Not Member of Set **boolean**
 **xor** Exclusive Or **set**
-##Bit Manipulation Operators
+## Bit Manipulation Operators
 
 OperatorOperationResult Type
 **shl** Shift left **nat**
@@ -52,22 +52,22 @@ OperatorOperationResult Type
 **and** Bit-wise And **nat**
 **or** Bit-wise Or **nat**
 **xor** Bit-wise Exclusive Or **nat**
-##Pointer Operators
+## Pointer Operators
 
 OperatorOperationResult Type
 ^ Follow pointer Target type
-##Type Cheats
+## Type Cheats
 
 OperatorOperationResult Type
 # Type cheat **nat**
-##Operator Short Forms
+## Operator Short Forms
 These can be used in place of the above notation.
 **not**   ~
 **not**=   ~=
 **not in**   ~**in and**   &
 **or**   | 
 
-##Operator Precedence
+## Operator Precedence
 Highest precedence operators first.- **, ^, #
 - prefix + and -
 - * , / , **div** , **mod** , **rem** , **shl** , **shr**

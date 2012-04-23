@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>nat</b><p>\r\n</p></font>",
       "text_content": " nat\r\n",
-      "mdown_content": "**nat**\n"
+      "mdown_content": "**nat**"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "<b><a href=\"maxnat.html\">maxnat</a></b>, <b><a href=\"int.html\">int</a></b>, <b><a href=\"\">nat</a></b><i>n</i>, <b><a href=\"int.html\">int</a></b><i>n</i>, <b><a href=\"natstr.html\">natstr</a></b>, <b><a href=\"strnat.html\">strnat</a></b> and <b><a href=\"natreal.html\">natreal</a></b>.<p>\r\n</p>",
       "text_content": " maxnat, int, natn, intn, natstr, strnat and natreal.\r\n",
-      "mdown_content": "**[maxnat.html](maxnat)**, **[int.html](int)**, **[](nat)**_n_, **[int.html](int)**_n_, **[natstr.html](natstr)**, **[strnat.html](strnat)** and **[natreal.html](natreal)**.\n"
+      "mdown_content": "**[maxnat](maxnat.html)**, **[int](int.html)**, **[nat]()**_n_, **[int](int.html)**_n_, **[natstr](natstr.html)**, **[strnat](strnat.html)** and **[natreal](natreal.html)**.\n"
     }
   ],
   "dependencies": [

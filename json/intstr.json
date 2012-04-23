@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>intstr</b> ( <i>i </i>: <b>int</b> [ ,<i> width</i> : <b>int</b> [ , <i>base</i> : <b>int</b> ] ] ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " intstr ( i : int [ , width : int [ , base : int ] ] ) : string\r\n",
-      "mdown_content": "**intstr** ( _i_ : **int** [ , _width_ : **int** [ , _base_ : **int** ] ] ) : **string**\n"
+      "mdown_content": "**intstr** ( _i_ : **int** [ , _width_ : **int** [ , _base_ : **int** ] ] ) : **string**"
     },
     {
       "title": "Description",
@@ -29,7 +29,7 @@
       ],
       "raw_content": "<b><a href=\"chr.html\">chr</a></b>, <b><a href=\"ord.html\">ord</a></b> and <b><a href=\"strint.html\">strint</a></b> functions. See also the <b><a href=\"natstr.html\">natstr</a></b> and <b><a href=\"strnat.html\">strnat</a></b> functions. See also <i>explicitIntegerConstants</i> for the way to write non base 10 values in a <a href=\"program.html\">program</a>.<p>\r\n</p>",
       "text_content": " chr, ord and strint functions. See also the natstr and strnat functions. See also explicitIntegerConstants for the way to write non base 10 values in a program.\r\n",
-      "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)** and **[strint.html](strint)** functions. See also the **[natstr.html](natstr)** and **[strnat.html](strnat)** functions. See also _explicitIntegerConstants_ for the way to write non base 10 values in a [program.html](program).\n"
+      "mdown_content": "**[chr](chr.html)**, **[ord](ord.html)** and **[strint](strint.html)** functions. See also the **[natstr](natstr.html)** and **[strnat](strnat.html)** functions. See also _explicitIntegerConstants_ for the way to write non base 10 values in a [program](program.html).\n"
     }
   ],
   "dependencies": [

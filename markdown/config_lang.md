@@ -1,11 +1,10 @@
 
-#Config.Lang
+# Config.Lang
 
-##Syntax
+## Syntax
 **Config.Lang** (_langCode_ : **int**) : **int**
 
-
-##Description
+## Description
 **Config.Lang** returns information about the language and the limitations of the implementation that the program is currently running. The parameter _langCode_ determines what sort of information is passed back. _langCode_ has a number of possible values, all summarized by a set of predefined constants.
 
 At the time of this writing, the following constants were defined:
@@ -19,12 +18,12 @@ _clMaxNumRunTimeArgs_   return the maximum number of run-time arguments.
 
 
 
-##Example
+## Example
 This program prints the current environment version.
 
         const version : int := Config.Lang (clLanguageVersion)
         put "The language version number is ", version
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Config.Lang**, not by calling **Lang**.

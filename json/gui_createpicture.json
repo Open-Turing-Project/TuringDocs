@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreatePicture</b> ( <i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>mergePic</i> : <b>boolean</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.CreatePicture ( x, y, picture : int, \r\n    mergePic : boolean ) : int\r\n",
-      "mdown_content": "**GUI.CreatePicture** ( _x_, _y_, _picture_ : **int**,     _mergePic_ : **boolean** ) : **int**\n"
+      "mdown_content": "**GUI.CreatePicture** ( _x_, _y_, _picture_ : **int**,     _mergePic_ : **boolean** ) : **int**"
     },
     {
       "title": "Description",

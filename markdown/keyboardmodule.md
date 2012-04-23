@@ -1,7 +1,7 @@
 
-#Keyboard
+# Keyboard
 
-##Description
+## Description
 This unit contains all the constants representing both the characters and their ordinal values for all possible keystrokes that can be read by Turing.
 
 Constants beginning with &#147;KEY_&#148; are **char** values. These are the values returned by **getch** and used as an index into the **Input.KeyDown** array. The constants that the constants KEY_KEYPAD_5, KEY_SHIFT, KEY_CTRL and KEY_ALT can only be used in conjunction with **Input.KeyDown**. The **getch** and **getchar** subprograms do not return these values. All other constants with with SHIFT, CTRL and ALT as part of the name cannot be checked for in the **Input.KeyDown** array. 
@@ -75,6 +75,6 @@ Characters marked with an asterisk (*) are keys that can only be detected using 
 All constants in the Keyboard module are exported unqualified. (This means you can use the constants directly without having to use the qualifier "**Keyboard.**".)
 
 
-##See also
-**[getch.html](getch)**, **[getchar.html](getchar)**, and **[input_keydown.html](Input.KeyDown)**.
+## See also
+**[getch](getch.html)**, **[getchar](getchar.html)**, and **[Input.KeyDown](input_keydown.html)**.
 

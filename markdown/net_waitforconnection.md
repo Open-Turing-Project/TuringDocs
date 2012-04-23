@@ -1,11 +1,10 @@
 
-#Net.WaitForConnection
+# Net.WaitForConnection
 
-##Syntax
+## Syntax
 **Net.WaitForConnection** (_port_ : **int**, **var** _netAddr_ : **string**) : **int**
 
-
-##Description
+## Description
 Listens for a connection at the port specified by the _port_ parameter. When another program connects to the port, then the function returns. The address of the connecting machine is specified in the _netAddr_ parameter and the **Net.WaitForConnection** returns a network stream descriptor which can be used with the **put**, **get**, **read**, and **write** statements and **eof** function to send and receive data to the connecting program. It is also the parameter used for the **Net.CloseConnection**, **Net.BytesAvailable**, **Net.CharAvailable**, **Net.LineAvailable**, and **Net.TokenAvailable** functions.
 
 In OOT, the connection to a port is made with the **Net.OpenConnection** function.
@@ -17,22 +16,22 @@ In general, system program listen in on ports with numbers below 1024. Port numb
 The program will wait for indefinitely for a connection to made to the port.
 
 
-##Details
+## Details
 The **Net** module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols
 
 It is possible for Firewalls to interfere with the actions of the **Net** module, preventing connections from taking place.
 
 
-##Example
+## Example
 See **Net.OpenConnection** for an example of **Net.WaitForConnection**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Net.WaitForConnection**, not by calling **WaitForConnection**.
 
 
-##See also
-**[net_openconnection.html](Net.OpenConnection)** and **[net_closeconnection.html](Net.CloseConnection)**.
+## See also
+**[Net.OpenConnection](net_openconnection.html)** and **[Net.CloseConnection](net_closeconnection.html)**.
 

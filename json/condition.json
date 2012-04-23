@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A conditionDeclaration is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>var</b> <i>id </i>{ , <i>id </i>} : [ <b>array</b> <i>indexType</i> {, <i>indexType</i> } <b>of</b> ]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\">[ <i>conditionOption</i> ] <b>condition</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A conditionDeclaration is:\r\n var id { , id } : [ array indexType {, indexType } of ]  [ conditionOption ] condition",
-      "mdown_content": "A conditionDeclaration is:\n\n\n**var** _id_ { , _id_ } : [ **array** _indexType_ {, _indexType_ } **of** ]\n[ _conditionOption_ ] **condition**\n\n"
+      "mdown_content": "A conditionDeclaration is:   **var** _id_ { , _id_ } : [ **array** _indexType_ {, _indexType_ } **of** ]     [ _conditionOption_ ] **condition**"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"wait.html\">wait</a></b> and <b><a href=\"signal.html\">signal</a></b>. See also <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"fork.html\">fork</a></b>. See also <b><a href=\"empty.html\">empty</a></b>. See also <b><a href=\"pause.html\">pause</a></b>.<p>\r\n</p>",
       "text_content": " wait and signal. See also monitor and fork. See also empty. See also pause.\r\n",
-      "mdown_content": "**[wait.html](wait)** and **[signal.html](signal)**. See also **[monitor.html](monitor)** and **[fork.html](fork)**. See also **[empty.html](empty)**. See also **[pause.html](pause)**.\n"
+      "mdown_content": "**[wait](wait.html)** and **[signal](signal.html)**. See also **[monitor](monitor.html)** and **[fork](fork.html)**. See also **[empty](empty.html)**. See also **[pause](pause.html)**.\n"
     }
   ],
   "dependencies": [

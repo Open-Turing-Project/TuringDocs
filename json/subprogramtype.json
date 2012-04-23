@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>subprogramType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>subprogramHeader</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A subprogramType is:\r\n subprogramHeader",
-      "mdown_content": "A _subprogramType_ is:\n\n\n_subprogramHeader_\n\n"
+      "mdown_content": "A _subprogramType_ is:   _subprogramHeader_"
     },
     {
       "title": "Description",

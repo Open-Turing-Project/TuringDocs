@@ -1,15 +1,14 @@
 
-#arccos
+# arccos
 
-##Syntax
+## Syntax
 **arccos** (_r_ : **real**) : **real**
 
-
-##Description
+## Description
 The **arccos** function is used to find the arc cosine of a value. The result is given in radians. For example, **arccos** (0.5) is p / 3.
 
 
-##Example
+## Example
 This program prints out the arccosine of -1 through 1 in radians.
 
         for i : -4 .. 4
@@ -17,10 +16,10 @@ This program prints out the arccosine of -1 through 1 in radians.
             put "Arc cosine of ", arg, " is ",
                 arccos (arg), " radians"
         end for
-##See also
-the **[arcsin.html](arcsin)** and **[arctan.html](arctan)** functions for calculating arcsine and arctangent.
+## See also
+the **[arcsin](arcsin.html)** and **[arctan](arctan.html)** functions for calculating arcsine and arctangent.
 
-the **[arccosd.html](arccosd)** function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)
+the **[arccosd](arccosd.html)** function which finds the arc cosine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)
 
-See also predefined unit **[mathmodule.html](Math)**.
+See also predefined unit **[Math](mathmodule.html)**.
 

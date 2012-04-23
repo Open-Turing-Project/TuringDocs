@@ -1,15 +1,14 @@
 
-#array
+# array
 
-##Syntax
+## Syntax
 **array** _indexType_ { , _indexType_ } **of** _typeSpec_
 
-
-##Description
+## Description
 An array consists of a number of elements. The _typeSpec_ gives the type of these elements. There is one element for each item in the (combinations of) range(s) of the _indexType(s)_. In the following example, the array called _marks_ consists of 100 elements, each of which is an integer.
 
 
-##Example
+## Example
 
 
         var marks : array 1 .. 100 of int
@@ -18,11 +17,11 @@ An array consists of a number of elements. The _typeSpec_ gives the type of thes
         for i : 1 .. 100        % Add up the elements of marks
             sum := sum + marks (i)
         end for
-##Details
+## Details
 In the above example, _marks(i)_ is the _i_-th element of the _marks_ array. We call _i_ the _index_ or _subscript_ of _marks_. In Turing, a subscript is surrounded by parentheses, not by square brackets as is the case in the Pascal or C-like languages.
 
 
-##Example
+## Example
 The _prices_ array shows how an array can have more than one dimension. This array has one dimension for the year (1988, 1989 or 1990) and another for the month (1 .. 12). There are 36 elements of the array, one for each month of each year.
 
         var price : array 1988 .. 1990, 1 .. 12 of int
@@ -33,7 +32,7 @@ The _prices_ array shows how an array can have more than one dimension. This arr
                 sum := sum + price (year, month)
             end for
         end for
-##Details
+## Details
 Each _indexType_ must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the **char** type), or of an enumerated type, an (entire) enumerated type, the **char** type, the **boolean** type, or a named type which is one of these.
 
 Arrays can also be declared in the form
@@ -45,7 +44,7 @@ Arrays can be assigned as a whole (to arrays of an equivalent type), but they ca
 An array can be initialized in its declaration using **init**. For details, see **var** and **const** declarations.
 
         var a : array 1 .. * of typeSpec := init ()
-##Example
+## Example
 In this example, the size of the array is not known until run time.
 
         var howMany : int
@@ -61,7 +60,7 @@ In this example, the size of the array is not known until run time.
         end total
         
         put "Sum of the heights is ", total (height)
-##Details
+## Details
 The ends of the range of a subscript are called the _bounds_ of the array. If these values are not known until run time, the array is said to be _dynamic_. In the above example, _height_ is a dynamic array. Dynamic arrays can be declared as variables, as in the case for _height_. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using **init**.
 
 In the above example, **upper**_(a)_ returns the size of _a_. See also **upper** and **lower**.
@@ -71,7 +70,7 @@ In the declaration of an array parameter, the upper bound can be given as an ast
 You can have arrays of other types, for example arrays of record. If _R_ is an array of records, then _R(i).f_ is the way to access the _f_ field of the _i_-th element of array _R_.
 
 
-##Details
+## Details
 Arrays can also be made resizeable. This is done using the **flexible** keyword. The declaration syntax is:
 
 The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:
@@ -85,7 +84,7 @@ In the current implementation (2002), with a multi-dimensional array with a non-
 Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;__*__&#148; as the upper bound.
 
         var name : flexible array indexType { , indexType } of typeSpec        new name , newUpper1 {,newUpper2}
-##Example
+## Example
 In this example, the array is resized to fit the number of elements in the file.
 
         function getLines (fileName : string) : int
@@ -118,6 +117,6 @@ In this example, the array is resized to fit the number of elements in the file.
         for i : 1 .. upper (lines)
             put lines (i)
         end for
-##See also
-**[init.html](init)** to initialize arrays, **[flexible.html](flexible)** to declare resizable arrays and _[indextype.html](indexType)_ to specify the index of an array.
+## See also
+**[init](init.html)** to initialize arrays, **[flexible](flexible.html)** to declare resizable arrays and _[indexType](indextype.html)_ to specify the index of an array.
 

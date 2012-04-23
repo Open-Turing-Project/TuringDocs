@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Time.SecStr</b> (<i>timeInSecs</i> : <b>int</b>, <i>formatString</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Time.SecStr (timeInSecs : int, formatString : string) : string\r\n    ",
-      "mdown_content": "**Time.SecStr** (_timeInSecs_ : **int**, _formatString_ : **string**) : **string**\n"
+      "mdown_content": "**Time.SecStr** (_timeInSecs_ : **int**, _formatString_ : **string**) : **string**"
     },
     {
       "title": "Description",
@@ -59,7 +59,7 @@
       ],
       "raw_content": "<b><a href=\"time_sec.html\">Time.Sec</a></b> and <b><a href=\"time_secparts.html\">Time.SecParts</a></b> functions.<p>\r\n    </p>",
       "text_content": "Time.Sec and Time.SecParts functions.\r\n    ",
-      "mdown_content": "**[time_sec.html](Time.Sec)** and **[time_secparts.html](Time.SecParts)** functions.\n"
+      "mdown_content": "**[Time.Sec](time_sec.html)** and **[Time.SecParts](time_secparts.html)** functions.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>invariantAssertion</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>invariant</b> <i>trueFalseExpn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An invariantAssertion is:\r\n invariant trueFalseExpn",
-      "mdown_content": "An _invariantAssertion_ is:\n\n\n**invariant** _trueFalseExpn_\n\n"
+      "mdown_content": "An _invariantAssertion_ is:   **invariant** _trueFalseExpn_"
     },
     {
       "title": "Description",

@@ -12,12 +12,12 @@ require "erb"
 require "json"
 require "fileutils"
 
-def markdownFormat(htmlStr,allowTable = true)
+def markdownFormat(htmlStr,allowLines = true)
 	text = htmlStr
 	# normal newlines and indenting mean nothing, it's HTML
 	text = text.lines.map {|l| l.chomp.lstrip}.join
 	# convert supported tags
-	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\1](\2)')
+	text.gsub!(/<a href="(.*?)">(.*?)<\/a>/,'[\2](\1)')
 	text.gsub!(/<img src="(.*?)"\/?>/,"\n\n![Doc Image](\\1)\n\n")
 	text.gsub!(/<b>(.*?)<\/b>/) do |s|
 		delim = $1 == "*" ? "__" : "**"
@@ -34,15 +34,14 @@ def markdownFormat(htmlStr,allowTable = true)
 		str.empty? ? $1 : "#{lpad}#{delim}#{str}#{delim}#{rpad}"
 	end
 	text.gsub!(/<tt>(.*?)<\/tt>/,'`\1`')
-	text.gsub!(/<p>(.*?)<\/p>/,"\n\n\\1")
-	text.gsub!(/<h([1-6])>(.*?)<\/h[1-6]>/) {|m| ("#"*$1.to_i)+$2+"\n"}
+	text.gsub!(/<p>(.*?)<\/p>/,"\n\n\\1") if allowLines
+	text.gsub!(/<h([1-6])>(.*?)<\/h[1-6]>/) {|m| ("#"*$1.to_i)+" "+$2+"\n"}
 	text.gsub!(/<li>/,"- ")
 	text.gsub!(/<\/li>/,"\n")
-	if allowTable
-		text.gsub!(/<table.*?>/,"\n")
-		text.gsub!(/<\/tr>/,"\n")
-		text.gsub!(/<td.*?>/," ")
-	end
+	# table
+	text.gsub!(/<table.*?>/,"\n") if allowLines
+	text.gsub!(/<\/tr>/,"\n") if allowLines
+	text.gsub!(/<td.*?>/," ")
 	# remove html leftovers
 	text.gsub!(/<\/?(\w+).*?>/,"")
 	text.gsub!(/&nbsp;/," ")
@@ -116,7 +115,7 @@ def convFile(f)
 			html = content.to_s[4..-6].strip # The slice strips the <td> tags
 			s[:raw_content] = html
 			s[:text_content] = textcontent
-			s[:mdown_content] = markdownFormat(html) 
+			s[:mdown_content] = markdownFormat(html,s[:title] != "Syntax") 
 		end
 		page[:sections] << s
 	end
@@ -148,17 +147,31 @@ $mdownTemplate = ERB.new(IO.read("scripts/mdownTemplate.erb"),0,"<>")
 def structureToMarkdown(page)
 	$mdownTemplate.result(binding) # gets the page param from the binding
 end
+
+def saveJSON(struct, file)
+	json = JSON.pretty_generate(struct)
+	File.open(file, "w") do |oFile| 
+		oFile.puts json
+	end
+end
 # datastruct = convFile("html/keycodes.html")
 # puts markdownFormat(datastruct[:htmlcontent])
+info = {:pages => [], :special => []}
+status = JSON.parse(IO.read("status.json"), :symbolize_names => true)
 Dir["html/*.html"].each do |f|
 	#puts "Processing #{f}"
 	datastruct = convFile(f)
+	if status[:handedited].include? datastruct[:fileName]
+		puts "Skipping hand edited #{datastruct[:fileName]}"
+		next
+	end
 	# 404s should not exist
 	if datastruct[:title] =~ /404/
 		puts "Deleting 404 file #{f}"
 		FileUtils.rm(f)
 		next
 	end
+	info[:pages] << datastruct[:fileName]
 	# full html content is only present for normal form pages
 	normalformat = (datastruct[:htmlcontent] == nil)
 	# markdown
@@ -167,6 +180,7 @@ Dir["html/*.html"].each do |f|
 		markdown = structureToMarkdown(datastruct)
 	else
 		puts "Special file: #{f} (processing may not work well)"
+		info[:special] << datastruct[:fileName]
 		markdown = markdownFormat(datastruct[:htmlcontent],true)
 	end
 	File.open("markdown/" + datastruct[:fileName] + ".md", "w") do |oFile| 
@@ -181,8 +195,9 @@ Dir["html/*.html"].each do |f|
 		oFile.puts html
 	end
 	# json
-	json = JSON.pretty_generate(datastruct)
-	File.open("json/" + datastruct[:fileName] + ".json", "w") do |oFile| 
-		oFile.puts json
-	end
+	saveJSON(datastruct,"json/" + datastruct[:fileName] + ".json")
 end
+status[:unchecked] ||= info[:pages]
+saveJSON(status,"status.json")
+
+saveJSON(info,"info.json")

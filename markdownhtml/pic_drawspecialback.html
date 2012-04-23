@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.DrawSpecialBack</strong> is very similar to <strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.  The onlydifference is that <strong>Pic.DrawSpecialBack</strong> returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.</p>
+<p><strong>Pic.DrawSpecialBack</strong> is very similar to <strong><a href="pic_drawspecial.html">Pic.DrawSpecial</a></strong>.  The onlydifference is that <strong>Pic.DrawSpecialBack</strong> returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.</p>
 
 <p>For example, this procedure is necessary if you want to have two pictures being drawn using special effects simultaneously.</p>
 
@@ -22,7 +22,7 @@
 
 <h2>Description</h2>
 
-<p><strong>Pic.DrawSpecialBack</strong> is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of<strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong>.The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>). The <em>duration</em> specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.</p>
+<p><strong>Pic.DrawSpecialBack</strong> is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of<strong><a href="pic_drawspecial.html">Pic.DrawSpecial</a></strong>.The picture is drawn with the lower left corner at (<em>x</em>, <em>y</em>). The <em>duration</em> specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.</p>
 
 <p>The <em>mode</em> parameter is the same as in <strong>Pic.New</strong> and has one of the following values:</p>
 
@@ -31,7 +31,7 @@
 <em>picMerge</em>   This draws the picture like <em>picCopy</em> except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
 <em>picUnderMerge</em>   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.</p>
 
-<p>See <strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong> for thelist of possible values for the <em>transition</em> parameter.</p>
+<p>See <strong><a href="pic_drawspecial.html">Pic.DrawSpecial</a></strong> for thelist of possible values for the <em>transition</em> parameter.</p>
 
 <h2>Details</h2>
 
@@ -78,6 +78,6 @@ Pic.DrawSpecial (blueID, 160, 10, picCopy, picFadeIn, 1000)
 
 <h2>See also</h2>
 
-<p><strong><a href="Pic.Draw">pic_draw.html</a></strong> for information on the meaningof the <em>mode</em> argument.</p>
+<p><strong><a href="pic_draw.html">Pic.Draw</a></strong> for information on the meaningof the <em>mode</em> argument.</p>
 
-<p><strong><a href="Pic.DrawSpecial">pic_drawspecial.html</a></strong> for information on how to draw special effects and wait for completionof the effect.</p>
+<p><strong><a href="pic_drawspecial.html">Pic.DrawSpecial</a></strong> for information on how to draw special effects and wait for completionof the effect.</p>

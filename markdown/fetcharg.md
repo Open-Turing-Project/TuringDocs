@@ -1,11 +1,10 @@
 
-#fetcharg
+# fetcharg
 
-##Syntax
+## Syntax
 **fetcharg** ( _i_ : **int** ) : **string**
 
-
-##Description
+## Description
 The **fetcharg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
 
 
@@ -25,13 +24,13 @@ The **nargs** function, which gives the number of arguments passed to the progra
 The 0-th argument is the name of the running program.
 
 
-##Example
+## Example
 This program lists its own name and its arguments.
 
         put "The name of this program is : ", fetcharg ( 0 )
         for i : 1 .. nargs
             put "Argument ", i, " is ", fetcharg ( i )
         end for
-##See also
-**[nargs.html](nargs)**
+## See also
+**[nargs](nargs.html)**
 

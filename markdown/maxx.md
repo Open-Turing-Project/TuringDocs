@@ -1,26 +1,25 @@
 
-#maxx
+# maxx
 
-##Syntax
+## Syntax
 **maxx** : **int**
 
-
-##Description
+## Description
 The **maxx** function is used to determine the maximum value of x for the current graphics mode.
 
 
-##Example
+## Example
 This program outputs the maximum x value.
 
         setscreen ("graphics")
         
         put "The maximum x value is ", maxx
-##Details
+## Details
 The screen should be in a "_graphics_" mode. If it is not, it will automatically be set to "_graphics_" mode. See **setscreen** for details.
 
 For the default IBM PC compatible graphics mode (CGA), **maxx** = 319.
 
 
-##See also
-**[drawdot.html](drawdot)** for an example of the use of **[](maxx)** and for a diagram illustrating x and y positions. 
+## See also
+**[drawdot](drawdot.html)** for an example of the use of **[maxx]()** and for a diagram illustrating x and y positions. 
 

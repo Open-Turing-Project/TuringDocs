@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>freeStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>free</b> [ <i>collectionOrClassId</i>, ] <i>pointerVariableReference</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A freeStatement is:\r\n free [ collectionOrClassId, ] pointerVariableReference",
-      "mdown_content": "A _freeStatement_ is:\n\n\n**free** [ _collectionOrClassId_, ] _pointerVariableReference_\n\n"
+      "mdown_content": "A _freeStatement_ is:   **free** [ _collectionOrClassId_, ] _pointerVariableReference_"
     },
     {
       "title": "Description",
@@ -41,7 +41,7 @@
       ],
       "raw_content": "<b><a href=\"class.html\">class</a></b> and <b><a href=\"collection.html\">collection</a></b> declarations, the <b><a href=\"pointer.html\">pointer</a></b> type, the <b><a href=\"new.html\">new</a></b> <a href=\"statement.html\">statement</a> and the <b><a href=\"nil.html\">nil</a></b> value.<p>\r\n</p>",
       "text_content": " class and collection declarations, the pointer type, the new statement and the nil value.\r\n",
-      "mdown_content": "**[class.html](class)** and **[collection.html](collection)** declarations, the **[pointer.html](pointer)** type, the **[new.html](new)** [statement.html](statement) and the **[nil.html](nil)** value.\n"
+      "mdown_content": "**[class](class.html)** and **[collection](collection.html)** declarations, the **[pointer](pointer.html)** type, the **[new](new.html)** [statement](statement.html) and the **[nil](nil.html)** value.\n"
     }
   ],
   "dependencies": [

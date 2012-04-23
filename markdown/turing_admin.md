@@ -1,24 +1,24 @@
-#Turing Teacher/Administrator Guide
+# Turing Teacher/Administrator Guide
 This is the Turing Teacher/Administrator guide. It contains most of the information that you will need to administer the Turing 4.0 software.It should be read by those who are teaching courses using Turing 4.0 or are in charge of administering Turing 4.0
 
 This guide provides information on the Turing environment (the editor, therun windows, etc.)  It does **not** provide any information on the Turingprogramming language itself.
 
-Note that there is some overlap with the [turing_quick_admin.html](TuringTeacher/Administrator Quick Start Guide).##Table of Contents
-- [](Making Certain You Have the Lastest Version)
-- [](Mandatory Administration Issues)
-- [](Changing System Preferences)
-- [](Turing Preferences)
-- [](Parallel Port and Turing 4)
-- [](Missing Features from Turing 4)
-- [](The Turing Debugger)
-- [](Student Distribution)
-- [](Technical Support)
-##1. Making Certain You Have the Lastest Version
+Note that there is some overlap with the [TuringTeacher/Administrator Quick Start Guide](turing_quick_admin.html).## Table of Contents
+- [Making Certain You Have the Lastest Version]()
+- [Mandatory Administration Issues]()
+- [Changing System Preferences]()
+- [Turing Preferences]()
+- [Parallel Port and Turing 4]()
+- [Missing Features from Turing 4]()
+- [The Turing Debugger]()
+- [Student Distribution]()
+- [Technical Support]()
+## 1. Making Certain You Have the Lastest Version
 Turing 4.0 is updated regularly.  To find out what version youare currently running, click the **About Turing** menu item in the **Help** menu.  To find out the current version of Turing, go to[http://www.holtsoft.com/turing/support/#currentversion](http://www.holtsoft.com/turing/support/#currentversion). This lists thecurrent version of the software.
 
 This page also lists which bugs have been fixed and when new features havebeen added.  The page also contains a section ([http://www.holtsoft.com/turing/support/#turing4patches](http://www.holtsoft.com/turing/support/#turing4patches))where a file can be downloaded that will update most versions of Turing to the latest version.  
 
-If you are a teacher or an administrator at a school and require a complete installation file (as opposed to the publically available patch), contact TomWest at (416) 978-8363.##2. Mandatory Administration Issues
+If you are a teacher or an administrator at a school and require a complete installation file (as opposed to the publically available patch), contact TomWest at (416) 978-8363.## 2. Mandatory Administration Issues
 Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of each of installation, however, Turing will load somewhat fasterwhen it is launched if it is stored locally.
 
 Turing 4.0 has been designed to run on either a network or installed on individual stand-alone machines.  Running on a network is often preferredbecause of ease of administration. However, Turing, like any other applicationwill load somewhat faster when it is launched if it is stored locally.
@@ -48,7 +48,7 @@ This requires changing the shortcut's properties requireswrite access to the sho
 
 **The Use "My Documents" Folder in the Admin Pane**
 
-To change the preference, enter Administrator mode (see [](Changing System Preferences) below) and set the **Use "My Documents" Folder** checkbox in the**Admin** pane of the Turing Preferences (see [](Turing Preferences) below).
+To change the preference, enter Administrator mode (see [Changing System Preferences]() below) and set the **Use "My Documents" Folder** checkbox in the**Admin** pane of the Turing Preferences (see [Turing Preferences]() below).
 
 
 - If each student's home directory is specified differently (i.e. there is no mapping of the home directory to a drive), then you may need to use environment variables to create a useable path.  For example, if students files are stored in **g:\class108\[Student Name]** and there is an environmentvariables USERNAME that contains the student's name, then the the start-in directory for the shortcut should be set to`g:\class108\%USERNAME%`.
@@ -62,7 +62,7 @@ To change the preference, enter Administrator mode (see [](Changing System Prefe
 
 **The Startup Directory Text Field in the Admin Pane**
 
-To set the start-in directory, enter Administrator mode (see [](Changing System Preferences) below) and set the **Startup Directory** text field in the**Admin** pane of the Turing Preferences appropriately (see [](Turing Preferences) below) including specifyingthe directory using the environment variables.
+To set the start-in directory, enter Administrator mode (see [Changing System Preferences]() below) and set the **Startup Directory** text field in the**Admin** pane of the Turing Preferences appropriately (see [Turing Preferences]() below) including specifyingthe directory using the environment variables.
 
 
 - **Set either Beginner or Regular Mode for Students.**
@@ -75,7 +75,7 @@ In **Regular** mode, any number of files can be opened and eachappears in its ow
 
 In general, we suggest **Beginner** mode for grade 9 and 10 and**Regular** mode for all others.  If you are using **Beginner**mode, we suggest that you point out to the students that they can usethe Prefences to change to **Regular** mode when they feel comfortable with the environment.
 
-To change the preference, you will need to enter Administrator mode (see [](Changing System Preferences) below) and changethe **Beginner Mode** preference in the **General** pane appropriately (see [](Turing Preferences) below).
+To change the preference, you will need to enter Administrator mode (see [Changing System Preferences]() below) and changethe **Beginner Mode** preference in the **General** pane appropriately (see [Turing Preferences]() below).
 
 
 - **Windows 95 and the Turing Net module**
@@ -91,9 +91,9 @@ This program from Microsoft patches Windows 95 networking code.  Itmust be run o
 
 [Turing directory]\support\dlportio_install.exe
 
-Further information can be found in [](Parallel Port and Turing 4).
+Further information can be found in [Parallel Port and Turing 4]().
 
-##3. Changing System Preferences
+## 3. Changing System Preferences
 Turing uses a two level preference model.  There is a central set ofpreferences that are kept in
 
 **    [Turing Directory]\Support\Ini\turing_admin.ini**
@@ -122,8 +122,8 @@ Selecting **Preferences** from the **File** menu will display a tabbeddialog box
 
 **Preferences in Administrator Mode**
 
-Once the Preferences have been set, the Administrator can exit Turing.##4. Turing Preferences
-This section lists all the preferences available in Turing sorted by thepane###"General" Pane
+Once the Preferences have been set, the Administrator can exit Turing.## 4. Turing Preferences
+This section lists all the preferences available in Turing sorted by thepane### "General" Pane
 
 
 
@@ -148,7 +148,7 @@ This section lists all the preferences available in Turing sorted by thepane###"
 - **File Association**Microsoft Windows has the ability to associate files with a particularsuffix with specific programs. The Turing environment can be associatedwith the following file suffixes: **.t**, **.tur**, **.dem**, **.ti** and **.tu**.  To associate these file suffixes with Turing, click the **Associate ".t" files with Turing** button. Toreset the file associations back to what they were before, click the**Reset ".t" File Association**.
 
 
-###"Editor Window" Pane
+### "Editor Window" Pane
 
 
 
@@ -166,7 +166,7 @@ This section lists all the preferences available in Turing sorted by thepane###"
 - **Text Cursor Width**By default, the cursor (correctly called the caret) is 2 pixels wide, allowing it to be seen easily in the Editor window.  However, some users prefer the caret to be 1 pixel wide and some prefer the caret to overlay an entire character (in a similar manner to DOS editors). Legal values are 1 (which represent a 1 pixel thick caret), 2 (which represent a 2 pixel thick caret), and 3 (which represents a text cursor that covers the entire character.
 
 
-###"Run Window" Pane
+### "Run Window" Pane
 
 
 
@@ -182,7 +182,7 @@ This section lists all the preferences available in Turing sorted by thepane###"
 - **Use Small Fonts on 640x480 Screen**A standard 25x80 window does not quite fit on a 640x480 screen with a standard size task bar. As a result, without this option, the default graphics mode run window appears with scroll bars. This option causes Turing to use a slightly smaller font for 640x480 run windows so the entire window fits on the screen. This option may cause odd output in Turing programs that were written assuming a particular character size.
 
 
-###"Printing" Pane
+### "Printing" Pane
 
 
 
@@ -202,7 +202,7 @@ Note that the options marked with an asterisk (*) can be set in the printingdial
 - **User Name**On systems where the user name is non-descriptive or non-existent, the user can enter a name that will appear on the printout allowing it to be identified. If students are choosing inappropriate user names, this preference can be disabled in the Admin tab preference dialog.
 
 
-###"Admin" Pane
+### "Admin" Pane
 
 
 
@@ -222,7 +222,7 @@ Note, the **Admin** pane is only available in administrator mode. Students start
 - **Use only Startup Directory and Below****CAUTION!** This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option will not allow students to save or load to any directory other that their startup directory or directories created in the startup directory. This option does not stop students from browsing the names of files in other directories, only from loading or saving files in them.
 - **Use Only Allowed Drives****CAUTION!** This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option allows students to load files only from the set of drives specified in the text field. The'*' represents network drives.
 - **Forbid Use of Certain Drives****CAUTION!** This option only provides rudimentary security and is to be used only on systems where the operating system cannot provide proper security. This option prevents students from loadingfiles from the set of drives specified in the text field. The'*' represents network drives.
-##5. Using the Parallel Ports in Turing 4
+## 5. Using the Parallel Ports in Turing 4
 Under Turing 4.0 and , it is possible to access the IBM PC's parallel port for reading and writing. This is normally done using the **parallelput** and **parallelget** commands. (In Turing 4.0, you can use **PC.ParallelPut** and **PC.ParallelGet** to access ports other than LPT1.)
 
 Under Windows 95/98 and Me, the operating system allows direct access to the parallel port. Under Windows NT, 2000 and XP, access to the parallel port is restricted by the operating system. In order to access the port, under Windows NT, 2000 and XP, it is necessary to install a device driver oneach machine that will be accessing the parallel port. The needed devicedriver installer is located at:
@@ -235,12 +235,12 @@ Lastly, before accessing the parallel port, check that the parallel port is in *
 
 (Under Windows 2000 the Device Manager can be displayed by selecting the System Control Panel from Settings in the Start menu. Select the Hardware tab and then click the Device Manager button.) 
 
-If the setting for the parallel port needs to be changed, restart the machine, and press the appropriate key to enter the BIOS Set Up Program (the key varies between machines, but is usually noted on the screen).  Often the parallel port settings are found in **Advanced Settings** of the program.  The parallel port should be set to **Normal**, **Standard**, **AT** or **Unidirectional** mode.  (All four names are different descriptions of the same mode.) Once this is done and the new settings are saved, then start the machine into Windows.  Once in Windows, select **Shut Down**and turn the machine completely off.  Once the machine is off, wait at least 10 seconds in the powered-off state.  Then restart the machine.(While shutting down the machine should not be necessary, we have had severalcases where the change only _took_ when the machine had been powered-downand restarted.)##6. Missing Features from Turing 4
+If the setting for the parallel port needs to be changed, restart the machine, and press the appropriate key to enter the BIOS Set Up Program (the key varies between machines, but is usually noted on the screen).  Often the parallel port settings are found in **Advanced Settings** of the program.  The parallel port should be set to **Normal**, **Standard**, **AT** or **Unidirectional** mode.  (All four names are different descriptions of the same mode.) Once this is done and the new settings are saved, then start the machine into Windows.  Once in Windows, select **Shut Down**and turn the machine completely off.  Once the machine is off, wait at least 10 seconds in the powered-off state.  Then restart the machine.(While shutting down the machine should not be necessary, we have had severalcases where the change only _took_ when the machine had been powered-downand restarted.)## 6. Missing Features from Turing 4
 Turing 4.0 does not yet incorporate all the features that currently exist in Object Oriented Turing 3.1.1 and are intended for future Turing releases. Over the next few months, new features will be added and updates to Turing will be made available on our web site. The features to be added are:- View Variables
 - The Sprite module
 If you have immediate need of any of these features, please continue to use the Object Oriented Turing 3.1.1 software. Ontario users can obtain the software through their OESS software representative. 
 
-To determine the current release of Turing, check the Turing web site at[http://www.holtsoft.com/turing/support/#currentversion](http://www.holtsoft.com/turing/support)##7. The Turing Debugger
+To determine the current release of Turing, check the Turing web site at[http://www.holtsoft.com/turing/support](http://www.holtsoft.com/turing/support/#currentversion)## 7. The Turing Debugger
 The current version of Turing has a Debugger facilities that allow studentsto follow execution of a program either pausing after each line of executionor executing slowly while highlighting each line of execution.  Because ofthe confusing nature of the debugger for many students, the default configuration of Turing does not display the debugger menu until the studentrequests it by selecting the **Show Debugger Menu** from the **Run** menu.
 
 
@@ -249,7 +249,7 @@ The current version of Turing has a Debugger facilities that allow studentsto fo
 
 **Always Show 'Debugger' Menu in the Editor Window Pane**
 
-If you wish students to have a more regular exposure to the Debugger, youcan set a System preference to cause Turing to always display the Debugger menu. To set the this preference, enter Administrator mode (see [](Changing System Preferences) below) and set the **Always Show 'Debugger' Menu** checkbox in the**Editor Window** pane of the Turing Preferences.##8. Student Distribution of Turing 4.0
+If you wish students to have a more regular exposure to the Debugger, youcan set a System preference to cause Turing to always display the Debugger menu. To set the this preference, enter Administrator mode (see [Changing System Preferences]() below) and set the **Always Show 'Debugger' Menu** checkbox in the**Editor Window** pane of the Turing Preferences.## 8. Student Distribution of Turing 4.0
 The Ontario Ministry license does not include the right to redistribute the software to students. If you wish to give the software to students, a separate license must be obtained directly from Holt Software. 
 
 If your school does not have such a license, students can purchase the software for home use by printing and then mailing an order form found[http://www.holtsoft.com/studentbuy](http://www.holtsoft.com/studentbuy).  This order form can also be used to allow interested students to purchase textbooks.
@@ -262,9 +262,9 @@ This will prevent other users of the web from downloading your software. If you 
 
 Note that if you are copying a number of different programs onto a single CD for redistribution, you may rename the Turing installer program to something more descriptive.
 
-Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or [mailto:chris@hsa.on.ca](chris@hsa.on.ca)##9. Technical Support
+Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or [chris@hsa.on.ca](mailto:chris@hsa.on.ca)## 9. Technical Support
 If you have problems, questions or suggestions about the Turing software, contact technical support at:
 Telephone:   (416) 978-8363
 Toll free:  1-800-361-8324
 Fax:  (416) 978-1509
-E-mail:  [mailto:west@hsa.on.ca](west@hsa.on.ca)
+E-mail:  [west@hsa.on.ca](mailto:west@hsa.on.ca)

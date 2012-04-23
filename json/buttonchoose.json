@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>buttonchoose</b> (<i>choice</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " buttonchoose (choice : string)\r\n",
-      "mdown_content": "**buttonchoose** (_choice_ : **string**)\n"
+      "mdown_content": "**buttonchoose** (_choice_ : **string**)"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"buttonmoved.html\">buttonmoved</a></b> and <b><a href=\"buttonwait.html\">buttonwait</a></b> to get mouse events saved in a queue. See also <b><a href=\"mousewhere.html\">mousewhere</a></b> to get the current status of mouse button(s).<p>\r\nSee also predefined unit <b><a href=\"mousemodule.html\">Mouse</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also mousewhere to get the current status of mouse button(s).\r\nSee also predefined unit Mouse.\r\n",
-      "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[mousewhere.html](mousewhere)** to get the current status of mouse button(s).\n\nSee also predefined unit **[mousemodule.html](Mouse)**.\n"
+      "mdown_content": "**[buttonmoved](buttonmoved.html)** and **[buttonwait](buttonwait.html)** to get mouse events saved in a queue. See also **[mousewhere](mousewhere.html)** to get the current status of mouse button(s).\n\nSee also predefined unit **[Mouse](mousemodule.html)**.\n"
     }
   ],
   "dependencies": [

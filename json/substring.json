@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>substring </i>is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>stringReference</i> ( <i>leftPosition</i> .. <i>rightPosition</i> )</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>stringReference</i> ( <i>charPosition</i> )</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A substring is one of:\r\n (a)stringReference ( leftPosition .. rightPosition ) (b)stringReference ( charPosition )",
-      "mdown_content": "A _substring_ is one of:\n\n\n(a) _stringReference_ ( _leftPosition_ .. _rightPosition_ )\n(b) _stringReference_ ( _charPosition_ )\n\n"
+      "mdown_content": "A _substring_ is one of:   (a) _stringReference_ ( _leftPosition_ .. _rightPosition_ )   (b) _stringReference_ ( _charPosition_ )"
     },
     {
       "title": "Description",
@@ -41,7 +41,7 @@
       ],
       "raw_content": "<b><a href=\"string1.html\">string</a></b>, <b><a href=\"char.html\">char</a></b>, <b><a href=\"char.html\">char</a></b>(<i>n</i>), <i><a href=\"explicitstringconstant.html\">explicitStringConstant</a></i>, <i><a href=\"explicitcharconstant.html\">explicitCharConstant</a></i>, catenation and <b><a href=\"length.html\">length</a></b>.<p>\r\n</p>",
       "text_content": " string, char, char(n), explicitStringConstant, explicitCharConstant, catenation and length.\r\n",
-      "mdown_content": "**[string1.html](string)**, **[char.html](char)**, **[char.html](char)**(_n_), _[explicitstringconstant.html](explicitStringConstant)_, _[explicitcharconstant.html](explicitCharConstant)_, catenation and **[length.html](length)**.\n"
+      "mdown_content": "**[string](string1.html)**, **[char](char.html)**, **[char](char.html)**(_n_), _[explicitStringConstant](explicitstringconstant.html)_, _[explicitCharConstant](explicitcharconstant.html)_, catenation and **[length](length.html)**.\n"
     }
   ],
   "dependencies": [

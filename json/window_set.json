@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Set</b> (<i>windowID</i> : <b>int</b>, <i>setUpString</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Window.Set (windowID : int, setUpString : string)\r\n",
-      "mdown_content": "**Window.Set** (_windowID_ : **int**, _setUpString_ : **string**)\n"
+      "mdown_content": "**Window.Set** (_windowID_ : **int**, _setUpString_ : **string**)"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b> for a complete list of the options available with<b> <a href=\"\">Window.Set</a></b>. See <b><a href=\"window_open.html\">Window.Open</a></b> for how to create a <a href=\"new.html\">new</a> window.<p>\r\n</p>",
       "text_content": " View.Set for a complete list of the options available with Window.Set. See Window.Open for how to create a new window.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)** for a complete list of the options available with **[](Window.Set)**. See **[window_open.html](Window.Open)** for how to create a [new.html](new) window.\n"
+      "mdown_content": "**[View.Set](view_set.html)** for a complete list of the options available with **[Window.Set]()**. See **[Window.Open](window_open.html)** for how to create a [new](new.html) window.\n"
     }
   ],
   "dependencies": [

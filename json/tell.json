@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>tellStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>tell</b> : <i>fileNumber</i> , <i>filePositionVar</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An tellStatement is:\r\n tell : fileNumber , filePositionVar",
-      "mdown_content": "An _tellStatement_ is:\n\n\n**tell** : _fileNumber_ , _filePositionVar_\n\n"
+      "mdown_content": "An _tellStatement_ is:   **tell** : _fileNumber_ , _filePositionVar_"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "the <b><a href=\"read.html\">read</a></b>, <b><a href=\"write.html\">write</a></b>, <b><a href=\"open.html\">open</a></b>, <b><a href=\"close.html\">close</a></b>, <b><a href=\"seek.html\">seek</a></b>, <b><a href=\"get.html\">get</a></b> and <b><a href=\"put.html\">put</a></b> statements.<p>\r\n</p>",
       "text_content": " the read, write, open, close, seek, get and put statements.\r\n",
-      "mdown_content": "the **[read.html](read)**, **[write.html](write)**, **[open.html](open)**, **[close.html](close)**, **[seek.html](seek)**, **[get.html](get)** and **[put.html](put)** statements.\n"
+      "mdown_content": "the **[read](read.html)**, **[write](write.html)**, **[open](open.html)**, **[close](close.html)**, **[seek](seek.html)**, **[get](get.html)** and **[put](put.html)** statements.\n"
     }
   ],
   "dependencies": [

@@ -1,11 +1,10 @@
 
-#GUI.CreateFrame
+# GUI.CreateFrame
 
-##Syntax
+## Syntax
 **GUI.CreateFrame** (_x1_, _y1_, _x2_, _y2_, _kind_ : **int**) : **int**
 
-
-##Description
+## Description
 Creates a frame and returns the frame's widget ID.
 
 A frame is a box drawn around other GUI widgets to make the window look better and help organize the GUI elements.
@@ -23,7 +22,7 @@ The _x1_ and _y1_ parameters specify the lower-left corner of the frame and the 
 _GUI.INDENT_ and _GUI.EXDENT_ only display properly if the background colour has been set to _gray_ using **GUI.SetBackgroundColor**. _GUI.INDENT_ makes the contents frame appear indented or recessed. _GUI.EXDENT_ makes the contents of the frame appear to stand out from the window.
 
 
-##Example
+## Example
 The following program draws three frames in the window and draws a label in each one.
 
 
@@ -43,13 +42,13 @@ The following program draws three frames in the window and draws a label in each
             GUI.CENTER + GUI.MIDDLE, 0)
         exdentLabel := GUI.CreateLabelFull (170, 10, "Exdent", 70, 60, 
             GUI.CENTER + GUI.MIDDLE, 0)
-##Details
+## Details
 When **GUI.CreateFrame** is called, the newly created frame will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 A frame widget is a passive widget and cannot be enabled or disabled.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a frame as the _widgetID_ parameter:
 
 
@@ -57,7 +56,7 @@ The following GUI subprograms can be called with a frame as the _widgetID_ param
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateFrame**, not by calling **CreateFrame**.

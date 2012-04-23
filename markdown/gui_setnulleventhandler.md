@@ -1,17 +1,16 @@
 
-#GUI.SetNullEventHandler
+# GUI.SetNullEventHandler
 
-##Syntax
+## Syntax
 **GUI.SetNullEventHandler** (_nullHandler_ : **procedure** _x_ ())
 
-
-##Description
+## Description
 Sets the new null event handler. The _nullHandler_ parameter is the name of a procedure that is called every time **GUI.ProcessEvent** is called and there are no mouse button presses or keystrokes to be processed.
 
 This is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.
 
 
-##Example
+## Example
 The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.
 
         import GUI
@@ -36,12 +35,12 @@ The following program has a Quit button. When no widgets are being processed, a 
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetNullEventHandler**, not by calling **SetNullEventHandler**.
 
 
-##See also
-**[gui_processevent.html](GUI.ProcessEvent)**.
+## See also
+**[GUI.ProcessEvent](gui_processevent.html)**.
 

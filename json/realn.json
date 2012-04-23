@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>real4</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 4-byte real number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>real8</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 8-byte real number</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": "\r\n (a)real4  % 4-byte real number (b)real8  % 8-byte real number",
-      "mdown_content": "\n\n\n(a) **real4**     _% 4-byte real number_\n(b) **real8**     _% 8-byte real number_\n\n"
+      "mdown_content": "(a) **real4**     _% 4-byte real number_   (b) **real8**     _% 8-byte real number_"
     },
     {
       "title": "Description",

@@ -1,4 +1,4 @@
-#Predefined Functions and Procedures
+# Predefined Functions and Procedures
 
 abs addr arctan arctand anyclass
 break buttonchoose buttonmoved buttonwait ceil
@@ -26,7 +26,7 @@ takepic time upper wallclock whatcol
 whatcolor whatcolorback whatcolour whatcolourback whatdotcolor
 whatdotcolour whatpalette whatrow whattextchar whattextcolor
 whattextcolorback whattextcolour whattextcolourback
-#Predefined Modules
+# Predefined Modules
 
 Brush Button CheckBox Comm Concurrency
 Config Dir Draw DropBox EditBox
@@ -38,7 +38,7 @@ Print RadioButton Rand RGB Sound
 Sprite Str Stream Student Sys
 Text Time TypeConv Video View
 Window
-#Predefined OOT Constants
+# Predefined OOT Constants
 (... means several constants with the prefix, see the module for a complete list)
 
 
@@ -58,7 +58,7 @@ placeCenterDisplay placeCentreWindow printerErrorBase purple
 red rgbErrorBase spriteErrorBase streamErrorBase textErrorBase
 timeErrorBase unixSignalToException viewErrorBase white windowErrorBase
 yellow
-#Keywords
+# Keywords
 
 addressint all and array asm
 assert begin bind bits body

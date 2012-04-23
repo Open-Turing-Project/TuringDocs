@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxint</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxint : int\r\n",
-      "mdown_content": "**maxint** : **int**\n"
+      "mdown_content": "**maxint** : **int**"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"maxnat.html\">maxnat</a></b> and <b><a href=\"minint.html\">minint</a></b>.<p>\r\nSee also OOT predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " maxnat and minint.\r\nSee also OOT predefined unit Math.\r\n",
-      "mdown_content": "**[maxnat.html](maxnat)** and **[minint.html](minint)**.\n\nSee also OOT predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "**[maxnat](maxnat.html)** and **[minint](minint.html)**.\n\nSee also OOT predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

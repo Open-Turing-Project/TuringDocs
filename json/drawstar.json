@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawstar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " drawstar (x1, y1, x2, y2, Color : int)\r\n",
-      "mdown_content": "**drawstar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)\n"
+      "mdown_content": "**drawstar** (_x1_, _y1_, _x2_, _y2_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.\n"
+      "mdown_content": "**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures.\n"
     }
   ],
   "dependencies": [

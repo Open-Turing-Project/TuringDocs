@@ -1,19 +1,14 @@
 
-#subprogramType
+# subprogramType
 
-##Syntax
-A _subprogramType_ is:
+## Syntax
+A _subprogramType_ is:   _subprogramHeader_
 
-
-_subprogramHeader_
-
-
-
-##Description
+## Description
 A variable or constant can contain a reference to a subprogram. The type of the variable or constant is a _subprogramType_. See also _subprogramHeader_.
 
 
-##Example
+## Example
 In the following _t_ is a subprogram type, and _u_ is a variable of type _t_ initialized to refer to procedure _rnd_.
 
         procedure rnd ( var i : int, x : real)
@@ -27,7 +22,7 @@ In the following _t_ is a subprogram type, and _u_ is a variable of type _t_ ini
         u ( j, 24.6 )       % Call procedure u referring to rnd
         
         var v := u      % Subprogram variable v initialized to u
-##Details
+## Details
 The name of the subprogram, for example _q_, and the parameters, for example _i_ and _x_, have no meaning in a subprogram type. They are present only because of the form of subprogram headers.
 
 If _v_ is a variable or constant that refers to a subprogram, _v_ can be called, compared for equality to other subprogram variables, assigned and passed as a parameter. Variable _v_ is not an integer, string or pointer and cannot participate in their corresponding operations.

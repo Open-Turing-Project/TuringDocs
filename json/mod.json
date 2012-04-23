@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>mod</b><p>\r\n</p></font>",
       "text_content": " mod\r\n",
-      "mdown_content": "**mod**\n"
+      "mdown_content": "**mod**"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<i><a href=\"infix.html\">infix</a> operators</i>, <i><a href=\"precedence.html\">precedence</a> </i>of operators and the <b><a href=\"rem.html\">rem</a></b> and <b><a href=\"div.html\">div</a></b> operators.<p>\r\n</p>",
       "text_content": " infix operators, precedence of operators and the rem and div operators.\r\n",
-      "mdown_content": "_[infix.html](infix) operators_, _[precedence.html](precedence)_ of operators and the **[rem.html](rem)** and **[div.html](div)** operators.\n"
+      "mdown_content": "_[infix](infix.html) operators_, _[precedence](precedence.html)_ of operators and the **[rem](rem.html)** and **[div](div.html)** operators.\n"
     }
   ],
   "dependencies": [

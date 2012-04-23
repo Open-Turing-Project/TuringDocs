@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.GetStyle</b> (<i>fontName</i> : <b>string</b>, <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>var</b> <i>bold</i>, <i>italic</i>, <i>underline</i> : <b>boolean</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " Font.GetStyle (fontName : string, \r\n        var bold, italic, underline : boolean) : string\r\n",
-      "mdown_content": "**Font.GetStyle** (_fontName_ : **string**,         **var** _bold_, _italic_, _underline_ : **boolean**) : **string**\n"
+      "mdown_content": "**Font.GetStyle** (_fontName_ : **string**,         **var** _bold_, _italic_, _underline_ : **boolean**) : **string**"
     },
     {
       "title": "Description",

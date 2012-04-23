@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetScrollOnAdd</b> (<i>widgetID</i> : <b>int</b>, <i>scrollOnAdd</i> : <b>boolean</b>)<p></p></font>",
       "text_content": "GUI.SetScrollOnAdd (widgetID : int, scrollOnAdd : boolean)\r\n    ",
-      "mdown_content": "**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)\n"
+      "mdown_content": "**GUI.SetScrollOnAdd** (_widgetID_ : **int**, _scrollOnAdd_ : **boolean**)"
     },
     {
       "title": "Description",

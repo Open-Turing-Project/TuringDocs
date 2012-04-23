@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>",
       "text_content": "View.SetTransparentColor (colorNumber : int)",
-      "mdown_content": "**View.SetTransparentColor** (_colorNumber_ : **int**)\n"
+      "mdown_content": "**View.SetTransparentColor** (_colorNumber_ : **int**)"
     },
     {
       "title": "Description",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"pic_settransparentcolor.html\">Pic.SetTransparentColor</a></b>.<p>\r\n    </p>",
       "text_content": "Pic.SetTransparentColor.\r\n    ",
-      "mdown_content": "**[pic_settransparentcolor.html](Pic.SetTransparentColor)**.\n"
+      "mdown_content": "**[Pic.SetTransparentColor](pic_settransparentcolor.html)**.\n"
     }
   ],
   "dependencies": [

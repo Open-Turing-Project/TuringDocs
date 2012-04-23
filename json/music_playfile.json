@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.PlayFile</b> ( <i>fileName</i> : <b>string</b> )<p></p></font>",
       "text_content": "Music.PlayFile ( fileName : string )\r\n    ",
-      "mdown_content": "**Music.PlayFile** ( _fileName_ : **string** )\n"
+      "mdown_content": "**Music.PlayFile** ( _fileName_ : **string** )"
     },
     {
       "title": "Description",
@@ -94,7 +94,7 @@
       ],
       "raw_content": "<b><a href=\"music_playfilestop.html\">Music.PlayFileStop</a></b> to \r\n          halt a music file that is current playing, \r\n\t  <b><a href=\"music_playfilereturn.html\">Music.PlayFileReturn</a></b> for\r\n\t  a procedure that starts a music file playing and returns immediately\r\n\t  (meaning that you do not need to use <b>process</b> and <b>fork</b>\r\n\t  statements), and <b><a href=\"music_playfileloop.html\">Music.PlayFileLoop</a></b>\r\n\t  that starts a music file playing continuously until it is stopped \r\n\t  without the use of <b>process</b> or <b>fork</b>.<p>\r\n    </p>",
       "text_content": "Music.PlayFileStop to \r\n          halt a music file that is current playing, \r\n\t  Music.PlayFileReturn for\r\n\t  a procedure that starts a music file playing and returns immediately\r\n\t  (meaning that you do not need to use process and fork\r\n\t  statements), and Music.PlayFileLoop\r\n\t  that starts a music file playing continuously until it is stopped \r\n\t  without the use of process or fork.\r\n    ",
-      "mdown_content": "**[music_playfilestop.html](Music.PlayFileStop)** to halt a music file that is current playing, **[music_playfilereturn.html](Music.PlayFileReturn)** fora procedure that starts a music file playing and returns immediately(meaning that you do not need to use **process** and **fork**statements), and **[music_playfileloop.html](Music.PlayFileLoop)**that starts a music file playing continuously until it is stopped without the use of **process** or **fork**.\n"
+      "mdown_content": "**[Music.PlayFileStop](music_playfilestop.html)** to halt a music file that is current playing, **[Music.PlayFileReturn](music_playfilereturn.html)** fora procedure that starts a music file playing and returns immediately(meaning that you do not need to use **process** and **fork**statements), and **[Music.PlayFileLoop](music_playfileloop.html)**that starts a music file playing continuously until it is stopped without the use of **process** or **fork**.\n"
     },
     {
       "title": "Status",

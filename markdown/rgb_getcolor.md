@@ -1,17 +1,14 @@
 
-#RGB.GetColor
+# RGB.GetColor
 
-##Syntax
-**RGB.GetColor** (_colorNumber_ : **int**, 
-**var** _redComp_, _greenComp_, _blueComp_ : **real**)
+## Syntax
+**RGB.GetColor** (_colorNumber_ : **int**,    **var** _redComp_, _greenComp_, _blueComp_ : **real**)
 
-
-
-##Description
+## Description
 The **RGB.GetColor** procedure returns the red, green and blue components to the color associated with the _colorNumber_ parameter. The red, green and blue values are normalized to be between 0 and 1. Thus color white returns 1.0 for the _redComp_, _greenComp_ and _blueComp_ values and color black returns 0.0 for all three.
 
 
-##Example
+## Example
 This program gets the components of all the available colors.
 
 
@@ -25,12 +22,12 @@ This program gets the components of all the available colors.
             put clr : 4, "  ", redComp : 6 : 4 , "  ", greenComp : 6 : 4, " ", 
                                         blueComp : 6 : 4
         end for
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **RGB.GetColor**, not by calling **GetColor**.
 
 
-##See also
-**[rgb_setcolor.html](RGB.SetColor)**and **[rgb_addcolor.html](RGB.AddColor)**.
+## See also
+**[RGB.SetColor](rgb_setcolor.html)**and **[RGB.AddColor](rgb_addcolor.html)**.
 

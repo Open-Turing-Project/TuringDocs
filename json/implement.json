@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>implementClause</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>implement</b> <i>implementItem</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An implementClause is:\r\n implement implementItem",
-      "mdown_content": "An _implementClause_ is:\n\n\n**implement** _implementItem_\n\n"
+      "mdown_content": "An _implementClause_ is:   **implement** _implementItem_"
     },
     {
       "title": "Description",
@@ -52,7 +52,7 @@
       ],
       "raw_content": "<b><a href=\"unit.html\">unit</a></b>, <b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"implement_by.html\">implement by</a></b> clause, <b><a href=\"inherit.html\">inherit</a></b> clause, <b><a href=\"export.html\">export</a></b> list, and <b><a href=\"import.html\">import</a></b> list. See also <b><a href=\"deferred.html\">deferred</a></b> subprograms.<p>\r\n</p>",
       "text_content": " unit, module, monitor and class. See also implement by clause, inherit clause, export list, and import list. See also deferred subprograms.\r\n",
-      "mdown_content": "**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[implement_by.html](implement by)** clause, **[inherit.html](inherit)** clause, **[export.html](export)** list, and **[import.html](import)** list. See also **[deferred.html](deferred)** subprograms.\n"
+      "mdown_content": "**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[implement by](implement_by.html)** clause, **[inherit](inherit.html)** clause, **[export](export.html)** list, and **[import](import.html)** list. See also **[deferred](deferred.html)** subprograms.\n"
     }
   ],
   "dependencies": [

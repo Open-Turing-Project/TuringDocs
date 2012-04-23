@@ -1,11 +1,10 @@
 
-#GUI.CreatePicture
+# GUI.CreatePicture
 
-##Syntax
+## Syntax
 **GUI.CreatePicture** ( _x_, _y_, _picture_ : **int**,     _mergePic_ : **boolean** ) : **int**
 
-
-##Description
+## Description
 Creates a picture and returns the picture's widget ID. 
 
 The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.
@@ -21,7 +20,7 @@ A picture widget is a passive widget and cannot be enabled or disabled.
 **Two Pictures**
 
 
-##Example
+## Example
 The following program draws two pictures, merged and not merged.
 
 
@@ -46,13 +45,13 @@ The following program draws two pictures, merged and not merged.
         
         label2 := GUI.CreateLabel (135, 5, "Picture (merge)")
         picture2 := GUI.CreatePicture (120, 25, pic, true)
-##Details
+## Details
 When **GUI.CreatePicture** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 A picture widget is a passive widget and cannot be enabled or disabled.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a picture as the _widgetID_ parameter:
 
 
@@ -62,7 +61,7 @@ The following GUI subprograms can be called with a picture as the _widgetID_ par
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreatePicture**, not by calling **CreatePicture**.

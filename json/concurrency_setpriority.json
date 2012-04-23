@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>setpriority</b> (<i>p</i> : <b>nat</b>)<p>\r\n</p></font>",
       "text_content": " setpriority (p : nat)\r\n",
-      "mdown_content": "**setpriority** (_p_ : **nat**)\n"
+      "mdown_content": "**setpriority** (_p_ : **nat**)"
     },
     {
       "title": "Description",
@@ -29,7 +29,7 @@
       ],
       "raw_content": "<b><a href=\"getpriority.html\">getpriority</a>, <a href=\"fork.html\">fork</a> </b>and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\n</p>",
       "text_content": " getpriority, fork and monitor.\r\n",
-      "mdown_content": "**[getpriority.html](getpriority), [fork.html](fork)** and **[monitor.html](monitor)**.\n"
+      "mdown_content": "**[getpriority](getpriority.html), [fork](fork.html)** and **[monitor](monitor.html)**.\n"
     }
   ],
   "dependencies": [

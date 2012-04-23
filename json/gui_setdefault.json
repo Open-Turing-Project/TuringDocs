@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetDefault</b> (<i>widgetID</i> : <b>int</b>, <i>default</i> : <b>boolean</b>)<p></p></font>",
       "text_content": "GUI.SetDefault (widgetID : int, default : boolean)\r\n    ",
-      "mdown_content": "**GUI.SetDefault** (_widgetID_ : **int**, _default_ : **boolean**)\n"
+      "mdown_content": "**GUI.SetDefault** (_widgetID_ : **int**, _default_ : **boolean**)"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "<a href=\"gui_createbutton_full.html\">GUI.CreateButton</a>.<p>\r\n    </p>",
       "text_content": "GUI.CreateButton.\r\n    ",
-      "mdown_content": "[gui_createbutton_full.html](GUI.CreateButton).\n"
+      "mdown_content": "[GUI.CreateButton](gui_createbutton_full.html).\n"
     }
   ],
   "dependencies": [

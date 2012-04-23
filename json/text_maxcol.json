@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxcol</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxcol : int\r\n",
-      "mdown_content": "**maxcol** : **int**\n"
+      "mdown_content": "**maxcol** : **int**"
     },
     {
       "title": "Description",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"text_locate.html\">Text.Locate</a> </b><a href=\"procedure.html\">procedure</a> for an example of the use of <b><a href=\"maxcol.html\">maxcol</a></b>.<p>\r\n</p>",
       "text_content": " Text.Locate procedure for an example of the use of maxcol.\r\n",
-      "mdown_content": "**[text_locate.html](Text.Locate)** [procedure.html](procedure) for an example of the use of **[maxcol.html](maxcol)**.\n"
+      "mdown_content": "**[Text.Locate](text_locate.html)** [procedure](procedure.html) for an example of the use of **[maxcol](maxcol.html)**.\n"
     }
   ],
   "dependencies": [

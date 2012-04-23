@@ -1,15 +1,14 @@
 
-#Window.SetPosition
+# Window.SetPosition
 
-##Syntax
+## Syntax
 **Window.SetPosition** (_windowID_ : **int**, _x_, _y_ : **int**)
 
-
-##Description
+## Description
 The **Window.SetPosition** procedure moves the location of the specified execution window on the screen. _x_ and _y_ specify the lower left corner of the window in screen coordinates.  (0, 0) is the lower left corner of the screen.
 
 
-##Example
+## Example
 The following program opens four windows, one at each corner of the screen.
 
         % Constants for windows
@@ -37,12 +36,12 @@ The following program opens four windows, one at each corner of the screen.
         var winID4 : int := Window.Open ("title:Lower Right")
         Window.SetPosition (winID4, screenWidth  windowWidth, 0)
         
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Window.SetPosition**, not by calling **SetPosition**.
 
 
-##See also
-**[window_getposition.html](Window.GetPosition)** to get the current window position and **[config_display.html](Config.Display)** to get the size of the screen.
+## See also
+**[Window.GetPosition](window_getposition.html)** to get the current window position and **[Config.Display](config_display.html)** to get the size of the screen.
 

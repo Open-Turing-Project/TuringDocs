@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>constantDeclaration</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>const</b> <i>id</i> [ : <i>typeSpec</i> ] := <i>initializingValue</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A constantDeclaration is:\r\n const id [ : typeSpec ] := initializingValue",
-      "mdown_content": "A _constantDeclaration_ is:\n\n\n**const** _id_ [ : _typeSpec_ ] := _initializingValue_\n\n"
+      "mdown_content": "A _constantDeclaration_ is:   **const** _id_ [ : _typeSpec_ ] := _initializingValue_"
     },
     {
       "title": "Description",

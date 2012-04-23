@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>explicitStringConstant</i> is a sequence of characters surrounded by quotation marks.<p>\r\n</p>",
       "text_content": " An explicitStringConstant is a sequence of characters surrounded by quotation marks.\r\n",
-      "mdown_content": "An _explicitStringConstant_ is a sequence of characters surrounded by quotation marks.\n"
+      "mdown_content": "An _explicitStringConstant_ is a sequence of characters surrounded by quotation marks."
     },
     {
       "title": "Example",

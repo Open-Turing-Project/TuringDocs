@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.FontDraw</b> (<i>widgetID</i> : <b>int</b>, <i>textStr</i> : <b>string</b>, <br><i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.FontDraw (widgetID : int, textStr : string, x, y, fontID, Color : int)\r\n",
-      "mdown_content": "**GUI.FontDraw** (_widgetID_ : **int**, _textStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)\n"
+      "mdown_content": "**GUI.FontDraw** (_widgetID_ : **int**, _textStr_ : **string**, _x_, _y_, _fontID_, _Color_ : **int**)"
     },
     {
       "title": "Description",

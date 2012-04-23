@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SaveFileFull</b> (<i>title</i>, <i>filter</i>: <b>string</b>,<br><i>startDir</i> : <b>string</b>) : <b>string</b><p>\r\n</p></font>",
       "text_content": " GUI.SaveFileFull (title, filter: string,startDir : string) : string\r\n",
-      "mdown_content": "**GUI.SaveFileFull** (_title_, _filter_: **string**,_startDir_ : **string**) : **string**\n"
+      "mdown_content": "**GUI.SaveFileFull** (_title_, _filter_: **string**,_startDir_ : **string**) : **string**"
     },
     {
       "title": "Description",

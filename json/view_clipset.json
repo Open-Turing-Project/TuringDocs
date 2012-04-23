@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.ClipSet</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " View.ClipSet (x1, y1, x2, y2 : int)\r\n",
-      "mdown_content": "**View.ClipSet** (_x1_, _y1_, _x2_, _y2_ : **int**)\n"
+      "mdown_content": "**View.ClipSet** (_x1_, _y1_, _x2_, _y2_ : **int**)"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"view_clipadd.html\">View.ClipAdd</a></b> and <b><a href=\"view_clipoff.html\">View.ClipOff</a> </b>functions.<p>\r\n</p>",
       "text_content": " View.ClipAdd and View.ClipOff functions.\r\n",
-      "mdown_content": "**[view_clipadd.html](View.ClipAdd)** and **[view_clipoff.html](View.ClipOff)** functions.\n"
+      "mdown_content": "**[View.ClipAdd](view_clipadd.html)** and **[View.ClipOff](view_clipoff.html)** functions.\n"
     }
   ],
   "dependencies": [

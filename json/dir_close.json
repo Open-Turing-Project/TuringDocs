@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Close</b> (<i>streamNumber</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Close (streamNumber : int)\r\n",
-      "mdown_content": "**Dir.Close** (_streamNumber_ : **int**)\n"
+      "mdown_content": "**Dir.Close** (_streamNumber_ : **int**)"
     },
     {
       "title": "Description",

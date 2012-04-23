@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreatePictureRadioButton</b> (<i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> ()):<b>int</b><p>\r\n\t  <b>GUI.CreatePictureRadioButtonFull</b> (<i>x</i>, <i>y</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>picture, joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>width</i>,<i>height</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>shortcut</i> : <b>char</b>, <i>mergePic</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreatePictureRadioButton (x, y, picture : int,\r\n\t      joinID : int, actionProc : procedure x ()):int\r\n\t  GUI.CreatePictureRadioButtonFull (x, y : int,\r\n\t      picture, joinID : int, actionProc : procedure x (), width,height : int,\r\n\t      shortcut : char, mergePic : boolean) : int",
-      "mdown_content": "**GUI.CreatePictureRadioButton** (_x_, _y_, _picture_ : **int**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()):**int**\n\n**GUI.CreatePictureRadioButtonFull** (_x_, _y_ : **int**,    _picture, joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _width_,_height_ : **int**,    _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**\n"
+      "mdown_content": "**GUI.CreatePictureRadioButton** (_x_, _y_, _picture_ : **int**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()):**int****GUI.CreatePictureRadioButtonFull** (_x_, _y_ : **int**,    _picture, joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _width_,_height_ : **int**,    _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**"
     },
     {
       "title": "Description",
@@ -63,7 +63,7 @@
       ],
       "raw_content": "<b><a href=\"gui_selectradio.html\">GUI.SelectRadio</a></b> for \r\n          selecting a picture radio button in a program. See also \r\n          <b><a href=\"gui_createpicturebutton_full.html\">GUI.CreatePictureButton</a></b> \r\n          and <b><a href=\"gui_createradiobutton_full.html\">GUI.CreateRadioButton</a></b> \r\n          for information on picture buttons and radio buttons.<p>\r\n    </p>",
       "text_content": "GUI.SelectRadio for \r\n          selecting a picture radio button in a program. See also \r\n          GUI.CreatePictureButton \r\n          and GUI.CreateRadioButton \r\n          for information on picture buttons and radio buttons.\r\n    ",
-      "mdown_content": "**[gui_selectradio.html](GUI.SelectRadio)** for selecting a picture radio button in a program. See also **[gui_createpicturebutton_full.html](GUI.CreatePictureButton)** and **[gui_createradiobutton_full.html](GUI.CreateRadioButton)** for information on picture buttons and radio buttons.\n"
+      "mdown_content": "**[GUI.SelectRadio](gui_selectradio.html)** for selecting a picture radio button in a program. See also **[GUI.CreatePictureButton](gui_createpicturebutton_full.html)** and **[GUI.CreateRadioButton](gui_createradiobutton_full.html)** for information on picture buttons and radio buttons.\n"
     }
   ],
   "dependencies": [

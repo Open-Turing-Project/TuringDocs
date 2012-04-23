@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>externalDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">(a) <b>external</b> [ <i>overrideName</i> ] <i>subprogramHeader</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\">(b) <b>external</b> [ <i>addressSpec</i> ] <b>var</b> <i>id</i> [ : <i>typeSpec</i> ] [ :=<i>expn</i> ]</font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An externalDeclaration is one of:\r\n (a) external [ overrideName ] subprogramHeader (b) external [ addressSpec ] var id [ : typeSpec ] [ :=expn ]",
-      "mdown_content": "An _externalDeclaration_ is one of:\n\n\n(a) **external** [ _overrideName_ ] _subprogramHeader_\n(b) **external** [ _addressSpec_ ] **var** _id_ [ : _typeSpec_ ] [ :=_expn_ ]\n\n"
+      "mdown_content": "An _externalDeclaration_ is one of:   (a) **external** [ _overrideName_ ] _subprogramHeader_   (b) **external** [ _addressSpec_ ] **var** _id_ [ : _typeSpec_ ] [ :=_expn_ ]"
     },
     {
       "title": "Description",

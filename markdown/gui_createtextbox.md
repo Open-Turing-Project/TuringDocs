@@ -1,13 +1,10 @@
 
-#GUI.CreateTextBox[Full]
+# GUI.CreateTextBox[Full]
 
-##Syntax
-**GUI.CreateTextBox** (_x_, _y_, _width_, _height_ : **int**) : **int**
+## Syntax
+**GUI.CreateTextBox** (_x_, _y_, _width_, _height_ : **int**) : **int****GUI.CreateTextBoxFull** (_x_, _y_, _width_, _height_ : **int**,    _border_, _fontID_ : **int**) : **int**
 
-**GUI.CreateTextBoxFull** (_x_, _y_, _width_, _height_ : **int**,    _border_, _fontID_ : **int**) : **int**
-
-
-##Description
+## Description
 Creates a text box and returns the text box's widget ID. 
 
 A text box is a box used for displaying text. It has scroll bars that activate when text appears outside the border of the text box. The user cannot directly select, edit or modify the text in the text box.
@@ -25,7 +22,7 @@ By using the _fondID_ parameter, text boxes can have any size or typeface.
 **A text box displaying the contents of a file.**
 
 
-##Example
+## Example
 The following program displays the contents of a file in a text box.
 
 
@@ -67,24 +64,24 @@ The following program displays the contents of a file in a text box.
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 When **GUI.CreateTextBox** or **GUI.CreateTextBoxFull** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 A text box widget is a passive widget and cannot be enabled or disabled.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a text box as the _widgetID_ parameter:
 
 
 **GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**,**GUI.SetSize**, **GUI.SetPositionAndSize**,**GUI.AddLine**, **GUI.AddText**, **GUI.ClearText**, **GUI.SetTopLine**, **GUI.SetScrollOnAdd** 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateTextBox**, not by calling **CreateTextBox**.
 
 
-##See also
-**[gui_addline.html](GUI.AddLine)**, **[gui_addtext.html](GUI.AddText)** for adding text to the text box.See also **[gui_settopline.html](GUI.SetTopLine)**to set the top line of text in the text box.See also **[gui_setscrollonadd.html](GUI.SetScrollOnAdd)**to set stop the text box from scrolling when text is added to the text box.See also **[gui_cleartext.html](GUI.ClearText)** for clearing the text box.
+## See also
+**[GUI.AddLine](gui_addline.html)**, **[GUI.AddText](gui_addtext.html)** for adding text to the text box.See also **[GUI.SetTopLine](gui_settopline.html)**to set the top line of text in the text box.See also **[GUI.SetScrollOnAdd](gui_setscrollonadd.html)**to set stop the text box from scrolling when text is added to the text box.See also **[GUI.ClearText](gui_cleartext.html)** for clearing the text box.
 

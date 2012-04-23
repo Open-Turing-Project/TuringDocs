@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetSelection</b> (<i>widgetID</i>, <i>fromSel</i>, <i>toSel</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetSelection (widgetID, fromSel, toSel : int)\r\n",
-      "mdown_content": "**GUI.SetSelection** (_widgetID_, _fromSel_, _toSel_ : **int**)\n"
+      "mdown_content": "**GUI.SetSelection** (_widgetID_, _fromSel_, _toSel_ : **int**)"
     },
     {
       "title": "Description",

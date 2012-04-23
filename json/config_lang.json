@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Config.Lang</b> (<i>langCode</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Config.Lang (langCode : int) : int\r\n",
-      "mdown_content": "**Config.Lang** (_langCode_ : **int**) : **int**\n"
+      "mdown_content": "**Config.Lang** (_langCode_ : **int**) : **int**"
     },
     {
       "title": "Description",

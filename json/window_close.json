@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Window.Close </b>(<i>windowID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Window.Close (windowID : int)\r\n",
-      "mdown_content": "**Window.Close** (_windowID_ : **int**)\n"
+      "mdown_content": "**Window.Close** (_windowID_ : **int**)"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"window_open.html\">Window.Open</a></b> and <b><a href=\"window_select.html\">Window.Select</a></b>.<p>\r\n</p>",
       "text_content": " Window.Open and Window.Select.\r\n",
-      "mdown_content": "**[window_open.html](Window.Open)** and **[window_select.html](Window.Select)**.\n"
+      "mdown_content": "**[Window.Open](window_open.html)** and **[Window.Select](window_select.html)**.\n"
     }
   ],
   "dependencies": [

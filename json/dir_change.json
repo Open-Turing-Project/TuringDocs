@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Change</b> (<i>directoryPathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Change (directoryPathName : string)\r\n",
-      "mdown_content": "**Dir.Change** (_directoryPathName_ : **string**)\n"
+      "mdown_content": "**Dir.Change** (_directoryPathName_ : **string**)"
     },
     {
       "title": "Description",

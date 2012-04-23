@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateMenu</b> (<i>name</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.CreateMenu (name : string) : int\r\n",
-      "mdown_content": "**GUI.CreateMenu** (_name_ : **string**) : **int**\n"
+      "mdown_content": "**GUI.CreateMenu** (_name_ : **string**) : **int**"
     },
     {
       "title": "Description",
@@ -63,7 +63,7 @@
       ],
       "raw_content": "<b><a href=\"gui_createmenuitem_full-2.html\">GUI.CreateMenuItem</a></b> for adding items to a menu. See also <b><a href=\"gui_showmenubar.html\">GUI.ShowMenuBar</a></b> and <b><a href=\"gui_hidemenubar.html\">GUI.HideMenuBar</a></b> for showing and hiding the menu bar.<p>\r\n</p>",
       "text_content": " GUI.CreateMenuItem for adding items to a menu. See also GUI.ShowMenuBar and GUI.HideMenuBar for showing and hiding the menu bar.\r\n",
-      "mdown_content": "**[gui_createmenuitem_full-2.html](GUI.CreateMenuItem)** for adding items to a menu. See also **[gui_showmenubar.html](GUI.ShowMenuBar)** and **[gui_hidemenubar.html](GUI.HideMenuBar)** for showing and hiding the menu bar.\n"
+      "mdown_content": "**[GUI.CreateMenuItem](gui_createmenuitem_full-2.html)** for adding items to a menu. See also **[GUI.ShowMenuBar](gui_showmenubar.html)** and **[GUI.HideMenuBar](gui_hidemenubar.html)** for showing and hiding the menu bar.\n"
     }
   ],
   "dependencies": [

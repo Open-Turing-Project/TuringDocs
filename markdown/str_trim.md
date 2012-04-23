@@ -1,15 +1,14 @@
 
-#Str.Trim
+# Str.Trim
 
-##Syntax
+## Syntax
 **Str.Trim** (_str_ : **string**) : **string**
 
-
-##Description
+## Description
 The **Str.Trim** function takes the string _str_ and returnsa string in all the leading and trailing spaces (the spaces at thebeginning and the end) are deleted. For example, `Str.Trim ("   This is a test ")` returns`"This is a test"`. If _str_ only has spaces in it, then**Str.Trim** will return an empty string.
 
 
-##Example
+## Example
 This program obtains input from the user until the user enters a linewith non-whitespace characters in it.
         var line : string
         loop
@@ -19,12 +18,12 @@ This program obtains input from the user until the user enters a linewith non-wh
         end loop
         put "You entered ", line
     
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Str.Trim**, not by calling **Trim**.
 
 
-##See also
-**[str_lower.html](Str.Lower)** and **[str_upper.html](Str.Upper)**.
+## See also
+**[Str.Lower](str_lower.html)** and **[Str.Upper](str_upper.html)**.
 

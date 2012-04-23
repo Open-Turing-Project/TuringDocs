@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreatePictureButton</b> (<i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> x ()) : <b>int</b><p>\r\n\t  <b>GUI.CreatePictureButtonFull</b> (<i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> x (), <i>width</i>, <i>height</i> : <b>int</b>, <br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>shortcut</i> : <b>char</b>, <i>mergePic</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreatePictureButton (x, y, picture : int,\r\n\t      actionProc : procedure x ()) : int\r\n\t  GUI.CreatePictureButtonFull (x, y, picture : int,\r\n\t      actionProc : procedure x (), width, height : int, \r\n\t      shortcut : char, mergePic : boolean) : int\r\n    ",
-      "mdown_content": "**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int**\n\n**GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**\n"
+      "mdown_content": "**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int****GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Draw.FillArc </b>(<i>x</i>, <i>y</i>,<b> </b><i>xRadius</i>, <i>yRadius</i><b> :</b> <b>int</b>,<br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " Draw.FillArc (x, y, xRadius, yRadius : int,  initialAngle, finalAngle, Color : int)",
-      "mdown_content": "**Draw.FillArc** (_x_, _y_, _xRadius_, _yRadius_ **:** **int**,\n_initialAngle_, _finalAngle_, _Color_ : **int**)\n\n"
+      "mdown_content": "**Draw.FillArc** (_x_, _y_, _xRadius_, _yRadius_ **:** **int**,     _initialAngle_, _finalAngle_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -58,7 +58,7 @@
       ],
       "raw_content": "<b><a href=\"view_set.html\">View.Set</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various procedures in the <b><a href=\"drawmodule.html\">Draw</a></b> unit.<p>\r\n</p>",
       "text_content": " View.Set, maxx, maxy and the various procedures in the Draw unit.\r\n",
-      "mdown_content": "**[view_set.html](View.Set)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various procedures in the **[drawmodule.html](Draw)** unit.\n"
+      "mdown_content": "**[View.Set](view_set.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various procedures in the **[Draw](drawmodule.html)** unit.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getchar</b> : <b>char</b><p>\r\n</p></font>",
       "text_content": " getchar : char\r\n",
-      "mdown_content": "**getchar** : **char**\n"
+      "mdown_content": "**getchar** : **char**"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "<b><a href=\"hasch.html\">hasch</a></b> (has character) which is used to see if a character has been typed but <a href=\"not.html\">not</a> yet <a href=\"read.html\">read</a>.<p>\r\nSee also predefined unit <b><a href=\"inputmodule.html\">Input</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " hasch (has character) which is used to see if a character has been typed but not yet read.\r\nSee also predefined unit Input.\r\n",
-      "mdown_content": "**[hasch.html](hasch)** (has character) which is used to see if a character has been typed but [not.html](not) yet [read.html](read).\n\nSee also predefined unit **[inputmodule.html](Input)**.\n"
+      "mdown_content": "**[hasch](hasch.html)** (has character) which is used to see if a character has been typed but [not](not.html) yet [read](read.html).\n\nSee also predefined unit **[Input](inputmodule.html)**.\n"
     }
   ],
   "dependencies": [

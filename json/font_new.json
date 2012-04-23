@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Font.New</b> (<i>fontSelectStr</i> : <b>string</b>) : <b>int</b><p></p></font>",
       "text_content": "Font.New (fontSelectStr : string) : int\r\n    ",
-      "mdown_content": "**Font.New** (_fontSelectStr_ : **string**) : **int**\n"
+      "mdown_content": "**Font.New** (_fontSelectStr_ : **string**) : **int**"
     },
     {
       "title": "Description",

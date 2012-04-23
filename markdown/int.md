@@ -1,21 +1,20 @@
 
-#int
+# int
 
-##Syntax
+## Syntax
 **int**
 
-
-##Description
+## Description
 The **int** (integer) type has the values &#133; 2, 1, 0, 1, 2 &#133; Integers can be combined by various operators such as addition (+) and multiplication (*). Integers can also be combined with **real** numbers, in which case the result is generally a real number. An integer can always be assigned to a real variable, with implicit conversion to **real**.
 
 
-##Example
+## Example
 
 
         var counter, i : int
         var j : int := 9
         var tax := 0        % The type is implicitly int because 0 is an integer
-##Details
+## Details
 See also _explicitIntegerConstant_. The **real** type is used instead of **int** when values have fractional parts as in 16.837. See the **real** type for details.
 
 The operators on integers are +, -, * (multiply), **div** (truncating integer division), **mod** (integer remainder), ** (exponentiation), as well as comparisons (+, **not=**, >, >=, <, <=). The operators **and**, **or** and **xor** can be applied to non-negative integer values. The bit-wise boolean result is produced as an integer (actually, as a natural number). The **shr** (shift right) and **shl** (shift left) operators are also introduced.
@@ -31,6 +30,6 @@ In current implementations of Turing, the range of integers is from -2147483647 
 The natural number type **nat** allows only the non-negative values: 0,1,2,3,&#133; Natural number values can be used whenever integer values are expected and vice versa, given that the value does not exceed the range of the expected type.
 
 
-##See also
-**[nat.html](nat)** and **[](int)**_n_.
+## See also
+**[nat](nat.html)** and **[int]()**_n_.
 

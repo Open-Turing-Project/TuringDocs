@@ -1,11 +1,10 @@
 
-#drawdot
+# drawdot
 
-##Syntax
+## Syntax
 **drawdot** (_x_, _y_, _Color_ : **int**)
 
-
-##Description
+## Description
 The **drawdot** procedure is used to color the dot (pixel) at location (_x_, _y_) using the specified _Color_.
 
 
@@ -13,7 +12,7 @@ The **drawdot** procedure is used to color the dot (pixel) at location (_x_, _y_
 ![Doc Image](drawdot01.gif)
 
 
-##Example
+## Example
 This program randomly draws dots with random colors. The **maxx**, **maxy** and **maxcolor** functions give the maximum x, y and color values.
 
         setscreen ("graphics")
@@ -24,11 +23,11 @@ This program randomly draws dots with random colors. The **maxx**, **maxy** and 
             randint (c, 0, maxcolor)    % Random color
             drawdot (x, y, c)
         end loop
-##Details
+## Details
 The screen should be in a "_graphics_" mode. If the screen is not in a "_graphics_" mode,  it will automatically be set to "_graphics_" mode. See **setscreen** for details.
 
 
-##Example
+## Example
 This program draws a line of dots that bounce off the &#147;sides&#148; of the screen. It also demonstrates that you can use real coordinates tostore position (_x_, _y_), as long as you convert the coordinates to **int** values using **round** in the **drawdot** call.
 
         var x, y : real
@@ -50,6 +49,6 @@ This program draws a line of dots that bounce off the &#147;sides&#148; of the s
                 dy := -dy
             end if
         end loop
-##See also
-**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. 
+## See also
+**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures. 
 

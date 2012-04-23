@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>cls</b><p>\r\n</p></font>",
       "text_content": " cls\r\n",
-      "mdown_content": "**cls**\n"
+      "mdown_content": "**cls**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Text.\r\n",
-      "mdown_content": "See also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "See also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>typeCheat</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>cheat</b> (<i>targetType</i>, <i>expn</i> <b>[</b> : <i>sizeSpec</i> <b>]</b> )</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>#</b> <i>expn</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>id</i> : <b>cheat</b> <i>typeSpec</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A typeCheat is one of:\r\n (a)cheat (targetType, expn [ : sizeSpec ] ) (b)# expn (c)id : cheat typeSpec",
-      "mdown_content": "A _typeCheat_ is one of:\n\n\n(a) **cheat** (_targetType_, _expn_ **[** : _sizeSpec_ **]** )\n(b) **#** _expn_\n(c) _id_ : **cheat** _typeSpec_\n\n"
+      "mdown_content": "A _typeCheat_ is one of:   (a) **cheat** (_targetType_, _expn_ **[** : _sizeSpec_ **]** )   (b) **#** _expn_   (c) _id_ : **cheat** _typeSpec_"
     },
     {
       "title": "Description",
@@ -76,7 +76,7 @@
       ],
       "raw_content": "<i><a href=\"explicitintegerconstant.html\">explicitIntegerConstant</a></i> (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: <b><a href=\"ord.html\">ord</a></b>, <b><a href=\"chr.html\">chr</a></b>, <b><a href=\"intstr.html\">intstr</a></b>, <b><a href=\"strint.html\">strint</a></b>, <b><a href=\"natstr.html\">natstr</a></b>, and <b><a href=\"strnat.html\">strnat</a></b>.<p>\r\n</p>",
       "text_content": " explicitIntegerConstant (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: ord, chr, intstr, strint, natstr, and strnat.\r\n",
-      "mdown_content": "_[explicitintegerconstant.html](explicitIntegerConstant)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord.html](ord)**, **[chr.html](chr)**, **[intstr.html](intstr)**, **[strint.html](strint)**, **[natstr.html](natstr)**, and **[strnat.html](strnat)**.\n"
+      "mdown_content": "_[explicitIntegerConstant](explicitintegerconstant.html)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord](ord.html)**, **[chr](chr.html)**, **[intstr](intstr.html)**, **[strint](strint.html)**, **[natstr](natstr.html)**, and **[strnat](strnat.html)**.\n"
     }
   ],
   "dependencies": [

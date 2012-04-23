@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>exitStatement</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>exit</b> <b>when</b> trueFalseExpn</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>exit</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An exitStatement is one of:\r\n (a)exit when trueFalseExpn (b)exit",
-      "mdown_content": "An _exitStatement_ is one of:\n\n\n(a) **exit** **when** trueFalseExpn\n(b) **exit**\n\n"
+      "mdown_content": "An _exitStatement_ is one of:   (a) **exit** **when** trueFalseExpn   (b) **exit**"
     },
     {
       "title": "Description",

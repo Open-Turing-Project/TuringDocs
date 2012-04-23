@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateLabelledFrame</b> ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>kind</i> : <b>int</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>text</i> : <b>string</b> ) : <b>int</b><p></p></font>",
       "text_content": "GUI.CreateLabelledFrame ( x1, y1, x2, y2, kind : int,\r\n\t      text : string ) : int\r\n    ",
-      "mdown_content": "**GUI.CreateLabelledFrame** ( _x1_, _y1_, _x2_, _y2_, _kind_ : **int**,    _text_ : **string** ) : **int**\n"
+      "mdown_content": "**GUI.CreateLabelledFrame** ( _x1_, _y1_, _x2_, _y2_, _kind_ : **int**,    _text_ : **string** ) : **int**"
     },
     {
       "title": "Description",
@@ -61,7 +61,7 @@
       ],
       "raw_content": "<b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for changing the frame's text.<p>\r\n    </p>",
       "text_content": "GUI.SetLabel for changing the frame's text.\r\n    ",
-      "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the frame's text.\n"
+      "mdown_content": "**[GUI.SetLabel](gui_setlabel.html)** for changing the frame's text.\n"
     }
   ],
   "dependencies": [

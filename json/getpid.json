@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>getpid</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " getpid : int\r\n",
-      "mdown_content": "**getpid** : **int**\n"
+      "mdown_content": "**getpid** : **int**"
     },
     {
       "title": "Description",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "<b><a href=\"nargs.html\">nargs</a></b>, <b><a href=\"fetcharg.html\">fetcharg</a></b> and <b><a href=\"getenv.html\">getenv</a></b>.<p>\r\nSee also predefined unit <b><a href=\"sysmodule.html\">Sys</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " nargs, fetcharg and getenv.\r\nSee also predefined unit Sys.\r\n",
-      "mdown_content": "**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)**.\n\nSee also predefined unit **[sysmodule.html](Sys)**.\n"
+      "mdown_content": "**[nargs](nargs.html)**, **[fetcharg](fetcharg.html)** and **[getenv](getenv.html)**.\n\nSee also predefined unit **[Sys](sysmodule.html)**.\n"
     }
   ],
   "dependencies": [

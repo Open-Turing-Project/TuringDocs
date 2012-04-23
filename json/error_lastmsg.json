@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Error.LastMsg</b> : <b>string</b><p>\r\n</p></font>",
       "text_content": " Error.LastMsg : string\r\n",
-      "mdown_content": "**Error.LastMsg** : **string**\n"
+      "mdown_content": "**Error.LastMsg** : **string**"
     },
     {
       "title": "Description",

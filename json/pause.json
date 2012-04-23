@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>pauseStatement</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>pause</b> <i>expn</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A pauseStatement is:\r\n pause expn",
-      "mdown_content": "A _pauseStatement_ is:\n\n\n**pause** _expn_\n\n"
+      "mdown_content": "A _pauseStatement_ is:   **pause** _expn_"
     },
     {
       "title": "Description",

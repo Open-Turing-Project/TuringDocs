@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.SetFrameRate</b> (<i>framesPerSec</i> : <b>int</b>)<p></p></font>",
       "text_content": "Sprite.SetFrameRate (framesPerSec : int)\r\n    ",
-      "mdown_content": "**Sprite.SetFrameRate** (_framesPerSec_ : **int**)\n"
+      "mdown_content": "**Sprite.SetFrameRate** (_framesPerSec_ : **int**)"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.ShowWindow</b> (<i>window</i> : <b>int</b>)<p></p></font>",
       "text_content": "GUI.ShowWindow (window : int)\r\n    ",
-      "mdown_content": "**GUI.ShowWindow** (_window_ : **int**)\n"
+      "mdown_content": "**GUI.ShowWindow** (_window_ : **int**)"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"gui_hidewindow.html\">GUI.HideWindow</a></b>\r\n          for hiding a window with widgets in it.\r\n\t  See also <b><a href=\"gui_closewindow.html\">GUI.CloseWindow</a></b>\r\n\t  for closing a window with widgets in it.<p>\r\n    </p>",
       "text_content": "GUI.HideWindow\r\n          for hiding a window with widgets in it.\r\n\t  See also GUI.CloseWindow\r\n\t  for closing a window with widgets in it.\r\n    ",
-      "mdown_content": "**[gui_hidewindow.html](GUI.HideWindow)**for hiding a window with widgets in it.See also **[gui_closewindow.html](GUI.CloseWindow)**for closing a window with widgets in it.\n"
+      "mdown_content": "**[GUI.HideWindow](gui_hidewindow.html)**for hiding a window with widgets in it.See also **[GUI.CloseWindow](gui_closewindow.html)**for closing a window with widgets in it.\n"
     }
   ],
   "dependencies": [

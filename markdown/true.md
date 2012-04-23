@@ -1,15 +1,14 @@
 
-#true
+# true
 
-##Syntax
+## Syntax
 **true**
 
-
-##Description
+## Description
 A **boolean** (true/false) variable can be either **true** or **false** (see **boolean** type).
 
 
-##Example
+## Example
 
 
         var passed : boolean := true
@@ -21,6 +20,6 @@ A **boolean** (true/false) variable can be either **true** or **false** (see **b
         if passed = true then
             put "You passed all ten subjects"
         end if
-##Details
+## Details
 The line **if** _passed_=**true** **then** can be simplified to **if** _passed_ **then** with no change to the meaning of the program.
 

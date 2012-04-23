@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>strint</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " strint ( s : string [ , base : int ] ) : int\r\n",
-      "mdown_content": "**strint** ( _s_ : **string** [ , _base_ : **int** ] ) : **int**\n"
+      "mdown_content": "**strint** ( _s_ : **string** [ , _base_ : **int** ] ) : **int**"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       ],
       "raw_content": "<b><a href=\"chr.html\">chr</a></b>, <b><a href=\"ord.html\">ord</a></b>, <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strnat.html\">strnat</a></b> functions.<p>\r\n</p>",
       "text_content": " chr, ord, intstr and strnat functions.\r\n",
-      "mdown_content": "**[chr.html](chr)**, **[ord.html](ord)**, **[intstr.html](intstr)** and **[strnat.html](strnat)** functions.\n"
+      "mdown_content": "**[chr](chr.html)**, **[ord](ord.html)**, **[intstr](intstr.html)** and **[strnat](strnat.html)** functions.\n"
     }
   ],
   "dependencies": [

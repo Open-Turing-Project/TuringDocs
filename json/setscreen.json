@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>setscreen</b> ( <i>s</i> : <b>string</b> )<p></p></font>",
       "text_content": "setscreen ( s : string )\r\n    ",
-      "mdown_content": "**setscreen** ( _s_ : **string** )\n"
+      "mdown_content": "**setscreen** ( _s_ : **string** )"
     },
     {
       "title": "Example",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "the <b><a href=\"drawmodule.html\">Draw</a></b> module, \r\n          the <b>draw&#133;</b> subprograms and the \r\n          <b><a href=\"view_update.html\">View.Update</a></b> procedure \r\n          for doing smooth animation. See also \r\n          <b><a href=\"view_set.html\">View.Set</a></b> for further setscreen \r\n          options including positioning the output window on the screen.<p>\r\n    </p>",
       "text_content": "the Draw module, \r\n          the draw subprograms and the \r\n          View.Update procedure \r\n          for doing smooth animation. See also \r\n          View.Set for further setscreen \r\n          options including positioning the output window on the screen.\r\n    ",
-      "mdown_content": "the **[drawmodule.html](Draw)** module, the **draw&#133;** subprograms and the **[view_update.html](View.Update)** procedure for doing smooth animation. See also **[view_set.html](View.Set)** for further setscreen options including positioning the output window on the screen.\n"
+      "mdown_content": "the **[Draw](drawmodule.html)** module, the **draw&#133;** subprograms and the **[View.Update](view_update.html)** procedure for doing smooth animation. See also **[View.Set](view_set.html)** for further setscreen options including positioning the output window on the screen.\n"
     }
   ],
   "dependencies": [

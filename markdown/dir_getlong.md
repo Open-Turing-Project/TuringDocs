@@ -1,13 +1,10 @@
 
-#Dir.GetLong
+# Dir.GetLong
 
-##Syntax
-**Dir.GetLong** (_streamNumber_ : **int**, **var** _entryName_ : **string**,
-**var** _size_, _attribute_, _fileTime_ : **int**)
+## Syntax
+**Dir.GetLong** (_streamNumber_ : **int**, **var** _entryName_ : **string**,       **var** _size_, _attribute_, _fileTime_ : **int**)
 
-
-
-##Description
+## Description
 **Dir.GetLong** is part of a series of four subprograms that help users get directory listings. **Dir.GetLong** is used to get the names and assorted information of the files in the directory. Each time the function is called, it returns the name and information of the next file in the directory. The names are not sorted. When there are no more file names in the directory, **Dir.GetLong** returns the empty string in the _entryName_ parameter.
 
 The _size_ parameter is the size of the file in bytes. The _attribute_ parameter has its individual bits set as follows (the individual bits can be extracted using the **bits** operator):
@@ -33,11 +30,11 @@ The _attr..._ constants are defined in the **Dir** unit. They correspond to the 
 The _fileTime_ is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use **Time.SecDate**
 
 
-##Details
+## Details
 If the **Dir.GetLong** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 This program prints a listing of all the files in the directory _datafiles_.
 
         var streamNumber : int
@@ -51,7 +48,7 @@ This program prints a listing of all the files in the directory _datafiles_.
             put fileName, "  ", Time.SecDate (fileTime)
         end loop
         Dir.Close (streamNumber)
-##Example
+## Example
 This program prints a listing of the attributes of all the files in the current directory.
 
         var streamNumber : int
@@ -78,7 +75,7 @@ This program prints a listing of the attributes of all the files in the current 
             put ""
         end loop
         Dir.Close (streamNumber)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Dir.GetLong**, not by calling **GetLong**.

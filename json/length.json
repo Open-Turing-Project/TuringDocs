@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>length</b> ( <i>s</i> : <b>string</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " length ( s : string ) : int\r\n",
-      "mdown_content": "**length** ( _s_ : **string** ) : **int**\n"
+      "mdown_content": "**length** ( _s_ : **string** ) : **int**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"upper.html\">upper</a></b>.<p>\r\n</p>",
       "text_content": " upper.\r\n",
-      "mdown_content": "**[upper.html](upper)**.\n"
+      "mdown_content": "**[upper](upper.html)**.\n"
     }
   ],
   "dependencies": [

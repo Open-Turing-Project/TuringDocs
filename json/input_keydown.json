@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Input.KeyDown</b> (<b>var</b> <i>chars</i> : <b>array char of boolean</b>)<p>\r\n</p></font>",
       "text_content": " Input.KeyDown (var chars : array char of boolean)\r\n",
-      "mdown_content": "**Input.KeyDown** (**var** _chars_ : **array char of boolean**)\n"
+      "mdown_content": "**Input.KeyDown** (**var** _chars_ : **array char of boolean**)"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.OpenConnection</b> (<i>netAddr</i> : <b>string</b>, <br><i>port</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Net.OpenConnection (netAddr : string, port : int) : int\r\n",
-      "mdown_content": "**Net.OpenConnection** (_netAddr_ : **string**, _port_ : **int**) : **int**\n"
+      "mdown_content": "**Net.OpenConnection** (_netAddr_ : **string**, _port_ : **int**) : **int**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"net_waitforconnection.html\">Net.WaitForConnection</a></b> and <b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
       "text_content": " Net.WaitForConnection and Net.CloseConnection.\r\n",
-      "mdown_content": "**[net_waitforconnection.html](Net.WaitForConnection)** and **[net_closeconnection.html](Net.CloseConnection)**.\n"
+      "mdown_content": "**[Net.WaitForConnection](net_waitforconnection.html)** and **[Net.CloseConnection](net_closeconnection.html)**.\n"
     }
   ],
   "dependencies": [

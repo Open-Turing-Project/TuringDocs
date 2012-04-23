@@ -1,20 +1,19 @@
 
-#Music.SoundOff
+# Music.SoundOff
 
-##Syntax
+## Syntax
 **Music.SoundOff**
 
-
-##Description
+## Description
 The **Music.SoundOff** procedure stops any sound or music that is currently playing or is waiting to play.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Music.SoundOff**, not by calling **SoundOff**.
 
 
-##See also
-**[music_play.html](Music.Play)**, **[music_playfile.html](Music.PlayFile)**, and **[music_sound.html](Music.Sound)** procedures, which make sounds that can be turned off with **[](Music.SoundOff)**.
+## See also
+**[Music.Play](music_play.html)**, **[Music.PlayFile](music_playfile.html)**, and **[Music.Sound](music_sound.html)** procedures, which make sounds that can be turned off with **[Music.SoundOff]()**.
 

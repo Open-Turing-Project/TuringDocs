@@ -1,7 +1,7 @@
 
-#TypeConv
+# TypeConv
 
-##Description
+## Description
 This unit contains the predefined subprograms that convert between different Turing standard types. There are also six routines that are part of the language, rather than part of the unit, but are conceptually part of this unit.
 
 All routines in the **TypeConv** unit are exported unqualified.
@@ -9,26 +9,26 @@ All routines in the **TypeConv** unit are exported unqualified.
 Description of the routines in the **TypeConv** module can be found in this chapter.
 
 
-##Entry Points
+## Entry Points
 
-[typeconv_intreal.html](**intreal**)   Converts an integer to a real.
-[typeconv_intstr.html](**intstr**)*   Converts an integer to a string.
-[typeconv_natreal.html](**natreal**)   Converts a natural number to a real.
-[typeconv_natstr.html](**natstr**)*   Converts a natural number to a string.
-[typeconv_round.html](**round**)   Converts a real to an integer (rounding).
-[typeconv_floor.html](**floor**)   Converts a real to an integer (round down).
-[typeconv_ceil.html](**ceil**)   Converts a real to an integer (round up).
-[typeconv_realstr.html](**realstr**)   Converts a real to a string.
-[typeconv_erealstr.html](**erealstr**)   Converts a real to a string (exponential notation).
-[typeconv_frealstr.html](**frealstr**)   Converts a real to a string (no exponent).
-[typeconv_strint.html](**strint**)*   Converts a string to an integer.
-[typeconv_strintok.html](**strintok**)*   Returns whether a string can legally be converted to an integer.
-[typeconv_strnat.html](**strnat**)*   Converts a string to a natural number.
-[typeconv_strnatok.html](**strnatok**)*   Returns whether a string can legally be converted to a natural number.
-[typeconv_strreal.html](**strreal**)   Converts a string to a real.
-[typeconv_strrealok.html](**strrealok**)   Returns whether a string can legally be converted to a real.
-[typeconv_chr.html](**chr**)*   Returns the ASCII value of a specified string of length one.
-[typeconv_ord.html](**ord**)*   Returns a string of length one with the ASCII value specified.
+[**intreal**](typeconv_intreal.html)   Converts an integer to a real.
+[**intstr**](typeconv_intstr.html)*   Converts an integer to a string.
+[**natreal**](typeconv_natreal.html)   Converts a natural number to a real.
+[**natstr**](typeconv_natstr.html)*   Converts a natural number to a string.
+[**round**](typeconv_round.html)   Converts a real to an integer (rounding).
+[**floor**](typeconv_floor.html)   Converts a real to an integer (round down).
+[**ceil**](typeconv_ceil.html)   Converts a real to an integer (round up).
+[**realstr**](typeconv_realstr.html)   Converts a real to a string.
+[**erealstr**](typeconv_erealstr.html)   Converts a real to a string (exponential notation).
+[**frealstr**](typeconv_frealstr.html)   Converts a real to a string (no exponent).
+[**strint**](typeconv_strint.html)*   Converts a string to an integer.
+[**strintok**](typeconv_strintok.html)*   Returns whether a string can legally be converted to an integer.
+[**strnat**](typeconv_strnat.html)*   Converts a string to a natural number.
+[**strnatok**](typeconv_strnatok.html)*   Returns whether a string can legally be converted to a natural number.
+[**strreal**](typeconv_strreal.html)   Converts a string to a real.
+[**strrealok**](typeconv_strrealok.html)   Returns whether a string can legally be converted to a real.
+[**chr**](typeconv_chr.html)*   Returns the ASCII value of a specified string of length one.
+[**ord**](typeconv_ord.html)*   Returns a string of length one with the ASCII value specified.
 
 
 * Part of the language, conceptually part of the **TypeConv** unit.

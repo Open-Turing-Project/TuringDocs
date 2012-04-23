@@ -1,15 +1,14 @@
 
-#playdone
+# playdone
 
-##Syntax
+## Syntax
 **playdone** : **boolean**
 
-
-##Description
+## Description
 The **playdone** function is used to determine when notes played by the **play** procedure have finished sounding.
 
 
-##Example
+## Example
 This program sounds the first three notes of the C scale and outputs "All done" as soon as they are finished. Without the loop, the message would come out before the notes are finished.
 
         play ( "cde" )
@@ -17,12 +16,12 @@ This program sounds the first three notes of the C scale and outputs "All done" 
             exit when playdone
         end loop
         put "All done"
-##Details
+## Details
 Under some systems such as UNIX, the **playdone** procedure may be meaningless.
 
 
-##See also
-the **[play.html](play)** [procedure.html](procedure). See also the **[sound.html](sound)** [procedure.html](procedure) which makes a [sound.html](sound) of a given frequency (Hertz) and duration (milliseconds).
+## See also
+the **[play](play.html)** [procedure](procedure.html). See also the **[sound](sound.html)** [procedure](procedure.html) which makes a [sound](sound.html) of a given frequency (Hertz) and duration (milliseconds).
 
-See also predefined unit **[musicmodule.html](Music)**.
+See also predefined unit **[Music](musicmodule.html)**.
 

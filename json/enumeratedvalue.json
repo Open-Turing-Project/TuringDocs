@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An enumeratedValue is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>enumeratedTypeId</i> . <i>enumeratedId</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " An enumeratedValue is:\r\n enumeratedTypeId . enumeratedId",
-      "mdown_content": "An enumeratedValue is:\n\n\n_enumeratedTypeId_ . _enumeratedId_\n\n"
+      "mdown_content": "An enumeratedValue is:   _enumeratedTypeId_ . _enumeratedId_"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "the <b><a href=\"enum.html\">enum</a></b> type and <i><a href=\"explicitconstant.html\">explicitConstant</a></i>.<p>\r\n</p>",
       "text_content": " the enum type and explicitConstant.\r\n",
-      "mdown_content": "the **[enum.html](enum)** type and _[explicitconstant.html](explicitConstant)_.\n"
+      "mdown_content": "the **[enum](enum.html)** type and _[explicitConstant](explicitconstant.html)_.\n"
     }
   ],
   "dependencies": [

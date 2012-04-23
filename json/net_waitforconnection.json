@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.WaitForConnection</b> (<i>port</i> : <b>int</b>, <br><b>var </b><i>netAddr</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Net.WaitForConnection (port : int, var netAddr : string) : int\r\n",
-      "mdown_content": "**Net.WaitForConnection** (_port_ : **int**, **var** _netAddr_ : **string**) : **int**\n"
+      "mdown_content": "**Net.WaitForConnection** (_port_ : **int**, **var** _netAddr_ : **string**) : **int**"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"net_openconnection.html\">Net.OpenConnection</a></b> and <b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
       "text_content": " Net.OpenConnection and Net.CloseConnection.\r\n",
-      "mdown_content": "**[net_openconnection.html](Net.OpenConnection)** and **[net_closeconnection.html](Net.CloseConnection)**.\n"
+      "mdown_content": "**[Net.OpenConnection](net_openconnection.html)** and **[Net.CloseConnection](net_closeconnection.html)**.\n"
     }
   ],
   "dependencies": [

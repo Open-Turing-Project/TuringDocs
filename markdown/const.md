@@ -1,19 +1,14 @@
 
-#const
+# const
 
-##Syntax
-A _constantDeclaration_ is:
+## Syntax
+A _constantDeclaration_ is:   **const** _id_ [ : _typeSpec_ ] := _initializingValue_
 
-
-**const** _id_ [ : _typeSpec_ ] := _initializingValue_
-
-
-
-##Description
+## Description
 A const declaration creates a name _id_ for a value.
 
 
-##Example
+## Example
 
 
         const c := 3
@@ -23,7 +18,7 @@ A const declaration creates a name _id_ for a value.
         const b : array 1..3 of int := a
         const c : array 1..2, 1..2 of int := init (1, 2, 3, 4)
                 % So c(1,1)=1, c(1,2)=2, c(2,1)=3, c(2,2)=4
-##Details
+## Details
 The initializing value can be an arbitrary value or else a list of items separated by commas inside **init** (&#133;). The syntax of _initializingValue_ is:
 
 

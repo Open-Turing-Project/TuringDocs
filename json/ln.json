@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>ln</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " ln ( r : real ) : real\r\n",
-      "mdown_content": "**ln** ( _r_ : **real** ) : **real**\n"
+      "mdown_content": "**ln** ( _r_ : **real** ) : **real**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"exp.html\">exp</a></b> (the exponentiation function).<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " exp (the exponentiation function).\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "**[exp.html](exp)** (the exponentiation function).\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "**[exp](exp.html)** (the exponentiation function).\n\nSee also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

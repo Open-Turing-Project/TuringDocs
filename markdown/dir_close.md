@@ -1,19 +1,18 @@
 
-#Dir.Close
+# Dir.Close
 
-##Syntax
+## Syntax
 **Dir.Close** (_streamNumber_ : **int**)
 
-
-##Description
+## Description
 **Dir.Close** is part of a series of four subprograms that help users get directory listings. **Dir.Close** is used to close a directory stream number opened by **Dir.Open**. After the directory stream number is closed, it can not be used with **Dir.Get** or **Dir.GetLong**.
 
 
-##Details
+## Details
 If the **Dir.Close** call fails, then **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 This program prints a listing of all the files in the directory _datafiles_.
 
         var streamNumber : int
@@ -26,7 +25,7 @@ This program prints a listing of all the files in the directory _datafiles_.
             put fileName
         end loop
         Dir.Close (streamNumber)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Dir.Close**, not by calling **Close**.

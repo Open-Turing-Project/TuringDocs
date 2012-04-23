@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>System.FetchArg</b> ( <i>i </i>: <b>int</b> ) : <b>string</b><p>\r\n</p></font>",
       "text_content": " System.FetchArg ( i : int ) : string\r\n",
-      "mdown_content": "**System.FetchArg** ( _i_ : **int** ) : **string**\n"
+      "mdown_content": "**System.FetchArg** ( _i_ : **int** ) : **string**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b><p>\r\n</p>",
       "text_content": " Sys.Nargs\r\n",
-      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**\n"
+      "mdown_content": "**[Sys.Nargs](sys_nargs.html)**\n"
     }
   ],
   "dependencies": [

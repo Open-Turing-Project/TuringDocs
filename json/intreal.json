@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>intreal</b> ( <i>i</i> : <b>int</b> ) : <b>real</b><p>\r\n</p></font>",
       "text_content": " intreal ( i : int ) : real\r\n",
-      "mdown_content": "**intreal** ( _i_ : **int** ) : **real**\n"
+      "mdown_content": "**intreal** ( _i_ : **int** ) : **real**"
     },
     {
       "title": "Description",
@@ -23,7 +23,7 @@
       ],
       "raw_content": "<b><a href=\"floor.html\">floor</a></b>, <b><a href=\"ceil.html\">ceil</a></b> and <b><a href=\"round.html\">round</a></b> functions.<p>\r\n</p>",
       "text_content": " floor, ceil and round functions.\r\n",
-      "mdown_content": "**[floor.html](floor)**, **[ceil.html](ceil)** and **[round.html](round)** functions.\n"
+      "mdown_content": "**[floor](floor.html)**, **[ceil](ceil.html)** and **[round](round.html)** functions.\n"
     }
   ],
   "dependencies": [

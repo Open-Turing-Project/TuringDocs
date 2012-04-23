@@ -1,15 +1,14 @@
 
-#false
+# false
 
-##Syntax
+## Syntax
 **false**
 
-
-##Description
+## Description
 A **boolean** (**true**/**false**) variable can be either **true** or **false** (see **boolean** type).
 
 
-##Example
+## Example
 
 
         var found : boolean := false
@@ -21,6 +20,6 @@ A **boolean** (**true**/**false**) variable can be either **true** or **false** 
         if found = true then
             put "Found 'gold' in the ten words"
         end if
-##Details
+## Details
 The line **if** _found_=**true** **then** can be simplified to **if** _found_ **then** with no change to the meaning of the program.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><i>setTypeName</i> (<b>all</b>)<p>\r\n</p></font>",
       "text_content": " setTypeName (all)\r\n",
-      "mdown_content": "_setTypeName_ (**all**)\n"
+      "mdown_content": "_setTypeName_ (**all**)"
     },
     {
       "title": "Description",
@@ -30,7 +30,7 @@
       ],
       "raw_content": "<b><a href=\"set.html\">set</a></b> type for details about sets.<p>\r\n</p>",
       "text_content": " set type for details about sets.\r\n",
-      "mdown_content": "**[set.html](set)** type for details about sets.\n"
+      "mdown_content": "**[set](set.html)** type for details about sets.\n"
     }
   ],
   "dependencies": [

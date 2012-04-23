@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>constantReference</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>constantId</i> { <i>componentSelector</i> }</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A constantReference is:\r\n constantId { componentSelector }",
-      "mdown_content": "A _constantReference_ is:\n\n\n_constantId_ { _componentSelector_ }\n\n"
+      "mdown_content": "A _constantReference_ is:   _constantId_ { _componentSelector_ }"
     },
     {
       "title": "Description",

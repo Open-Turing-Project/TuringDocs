@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.OpenURLConnection</b> (<i>urlAddr</i> : <b>string</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Net.OpenURLConnection (urlAddr : string) : int\r\n",
-      "mdown_content": "**Net.OpenURLConnection** (_urlAddr_ : **string**) : **int**\n"
+      "mdown_content": "**Net.OpenURLConnection** (_urlAddr_ : **string**) : **int**"
     },
     {
       "title": "Description",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "<b><a href=\"net_closeconnection.html\">Net.CloseConnection</a></b>.<p>\r\n</p>",
       "text_content": " Net.CloseConnection.\r\n",
-      "mdown_content": "**[net_closeconnection.html](Net.CloseConnection)**.\n"
+      "mdown_content": "**[Net.CloseConnection](net_closeconnection.html)**.\n"
     }
   ],
   "dependencies": [

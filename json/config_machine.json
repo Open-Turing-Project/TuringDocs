@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Config.Machine</b> (<i>machineCode</i> : <b>int</b>) : <b>int</b><p>\r\n</p></font>",
       "text_content": " Config.Machine (machineCode : int) : int\r\n",
-      "mdown_content": "**Config.Machine** (_machineCode_ : **int**) : **int**\n"
+      "mdown_content": "**Config.Machine** (_machineCode_ : **int**) : **int**"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawfillarc</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i> : <b>int</b>,<br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": " drawfillarc (x, y, xRadius, yRadius : int,  initialAngle, finalAngle, Color : int)",
-      "mdown_content": "**drawfillarc** (_x_, _y_, _xRadius_, _yRadius_ : **int**,\n_initialAngle_, _finalAngle_, _Color_ : **int**)\n\n"
+      "mdown_content": "**drawfillarc** (_x_, _y_, _xRadius_, _yRadius_ : **int**,     _initialAngle_, _finalAngle_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, <b><a href=\"maxx.html\">maxx</a></b>, <b><a href=\"maxy.html\">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>\r\n</p>",
       "text_content": " setscreen, maxx, maxy and the various draw procedures.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures.\n"
+      "mdown_content": "**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures.\n"
     }
   ],
   "dependencies": [

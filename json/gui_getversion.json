@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.GetVersion</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " GUI.GetVersion : int\r\n",
-      "mdown_content": "**GUI.GetVersion** : **int**\n"
+      "mdown_content": "**GUI.GetVersion** : **int**"
     },
     {
       "title": "Description",

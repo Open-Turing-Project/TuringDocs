@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>explicitCharConstant</i> is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.<p>\r\n</p>",
       "text_content": " An explicitCharConstant is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.\r\n",
-      "mdown_content": "An _explicitCharConstant_ is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.\n"
+      "mdown_content": "An _explicitCharConstant_ is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'."
     },
     {
       "title": "Example",

@@ -1,11 +1,10 @@
 
-#Mouse.ButtonChoose
+# Mouse.ButtonChoose
 
-##Syntax
+## Syntax
 **Mouse.ButtonChoose** (_choice_ : **string**)
 
-
-##Description
+## Description
 The **Mouse.ButtonChoose** procedure is used to change the mode of the mouse. In Turing, the mouse can either be in "_single-button mode_" or in "_multi-button mode_". In "_single-button mode_" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.
 
 In Turing, the mouse starts in "_single-button mode_".
@@ -13,7 +12,7 @@ In Turing, the mouse starts in "_single-button mode_".
 The parameter _choice_ can be one of "singlebutton", "onebutton" (which switch the mouse into "_single-button mode_") or "multibutton" (which switches the mouse into "_multi-button mode_").
 
 
-##Example
+## Example
 A program that displays the status of the mouse at the top left corner of the screen.
 
         Mouse.ButtonChoose ("multibutton")
@@ -31,12 +30,12 @@ A program that displays the status of the mouse at the top left corner of the sc
         if right = 100 then
             put "right button down"
         end if
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Mouse.ButtonChoose**, not by calling **ButtonChoose**.
 
 
-##See also
-**[mouse_buttonmoved.html](Mouse.ButtonMoved)** and **[mouse_buttonwait.html](Mouse.ButtonWait)** to get mouse events saved in a queue. See also **[mouse_where.html](Mouse.Where)** to get the current status of mouse button(s).
+## See also
+**[Mouse.ButtonMoved](mouse_buttonmoved.html)** and **[Mouse.ButtonWait](mouse_buttonwait.html)** to get mouse events saved in a queue. See also **[Mouse.Where](mouse_where.html)** to get the current status of mouse button(s).
 

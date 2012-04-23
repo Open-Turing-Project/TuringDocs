@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>min</b> ( <i>expn</i> , <i>expn</i> )<p>\r\n</p></font>",
       "text_content": " min ( expn , expn )\r\n",
-      "mdown_content": "**min** ( _expn_ , _expn_ )\n"
+      "mdown_content": "**min** ( _expn_ , _expn_ )"
     },
     {
       "title": "Description",
@@ -39,7 +39,7 @@
       ],
       "raw_content": "See also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.<p>\r\n</p>",
       "text_content": " See also predefined unit Math.\r\n",
-      "mdown_content": "See also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "See also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

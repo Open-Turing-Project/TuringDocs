@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>forStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>for</b> [<b>decreasing</b>] [<i>id</i> ] : <i>first</i> .. <i>last</i> [<b>by</b> <i>increment</i>]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <b>for</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A forStatement is:\r\n for [decreasing] [id ] : first .. last [by increment]  statementsAndDeclarations end for",
-      "mdown_content": "A _forStatement_ is:\n\n\n**for** [**decreasing**] [_id_ ] : _first_ .. _last_ [**by** _increment_]\n_statementsAndDeclarations_\n**end** **for**\n\n"
+      "mdown_content": "A _forStatement_ is:   **for** [**decreasing**] [_id_ ] : _first_ .. _last_ [**by** _increment_]     _statementsAndDeclarations_   **end** **for**"
     },
     {
       "title": "Description",

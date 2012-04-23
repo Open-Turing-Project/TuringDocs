@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateRadioButton</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>\r\n\t  <b>GUI.CreateRadioButtonFull</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n\t  &nbsp;&nbsp;&nbsp;&nbsp;<i>joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>alignment</i> : <b>int</b>, <i>shortCut</i> : <b>char</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateRadioButton (x, y : int, text : string,\r\n\t      joinID : int, actionProc : procedure x ()) : int\r\n\t  GUI.CreateRadioButtonFull (x, y : int, text : string,\r\n\t      joinID : int, actionProc : procedure x (), alignment : int, shortCut : char) : int\r\n    ",
-      "mdown_content": "**GUI.CreateRadioButton** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()) : **int**\n\n**GUI.CreateRadioButtonFull** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _alignment_ : **int**, _shortCut_ : **char**) : **int**\n"
+      "mdown_content": "**GUI.CreateRadioButton** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateRadioButtonFull** (_x_, _y_ : **int**, _text_ : **string**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _alignment_ : **int**, _shortCut_ : **char**) : **int**"
     },
     {
       "title": "Description",
@@ -62,7 +62,7 @@
       ],
       "raw_content": "<b><a href=\"gui_selectradio.html\">GUI.SelectRadio</a></b> for \r\n          selecting a radio button in a program. \r\n          See also <b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for \r\n          changing the radio button's text.<p>\r\n    </p>",
       "text_content": "GUI.SelectRadio for \r\n          selecting a radio button in a program. \r\n          See also GUI.SetLabel for \r\n          changing the radio button's text.\r\n    ",
-      "mdown_content": "**[gui_selectradio.html](GUI.SelectRadio)** for selecting a radio button in a program. See also **[gui_setlabel.html](GUI.SetLabel)** for changing the radio button's text.\n"
+      "mdown_content": "**[GUI.SelectRadio](gui_selectradio.html)** for selecting a radio button in a program. See also **[GUI.SetLabel](gui_setlabel.html)** for changing the radio button's text.\n"
     }
   ],
   "dependencies": [

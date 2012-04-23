@@ -1,13 +1,10 @@
 
-#GUI.CreateCheckBox[Full]
+# GUI.CreateCheckBox[Full]
 
-##Syntax
-**GUI.CreateCheckBox** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**)) : **int**
+## Syntax
+**GUI.CreateCheckBox** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**)) : **int****GUI.CreateCheckBoxFull** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**), _alignment_ : **int**, _shortcut_ : **char**) : **int**
 
-**GUI.CreateCheckBoxFull** (_x_, _y_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (_filled_ : **boolean**), _alignment_ : **int**, _shortcut_ : **char**) : **int**
-
-
-##Description
+## Description
 Creates a check box (with accompanying text) and returns the check box's widget ID.
 
 The check box widget is used to implement a check box that can be set or unset. When you click on a check box, the status of the check box flips from set to unset and back again and the check box's _action procedure_ is called with the new status as a parameter. If a check box is given a short cut, then entering the keystroke will cause the check box to change status and the _action procedure_ to be called. The new status will be displayed immediately.
@@ -25,7 +22,7 @@ For **GUI.CreateCheckBoxFull**, the _alignment_ parameter specifies the position
 A check box's size is not specified during creation. It is determined based on the size of the text. Instead the user specifies the lower-left corner of the check box (or the lower-right if the check box is right justified).
 
 
-##Example
+## Example
 The following program creates two buttons, one which draws a random circle on the screen and one which quits the program
 
 
@@ -57,13 +54,13 @@ The following program creates two buttons, one which draws a random circle on th
         else
             put "Check box 2: empty"
         end if
-##Details
+## Details
 When **GUI.CreateButton** or **GUI.CreateButtonFull** is called, the newly created check box will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 When a check box is not enabled, the label beside the check box is grayed out and the check box no longer responds to any mouse clicks or keystrokes until the check box is enabled again.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a check box as the _widgetID_ parameter:
 
 
@@ -71,12 +68,12 @@ The following GUI subprograms can be called with a check box as the _widgetID_ p
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateCheckBox**, not by calling **CreateCheckBox**.
 
 
-##See also
-**[gui_setlabel.html](GUI.SetLabel)** for changing the chec box's text and **[gui_getcheckbox.html](GUI.GetCheckBox)** and **[gui_setcheckbox.html](GUI.SetCheckBox)** for reading and setting the check box's state.
+## See also
+**[GUI.SetLabel](gui_setlabel.html)** for changing the chec box's text and **[GUI.GetCheckBox](gui_getcheckbox.html)** and **[GUI.SetCheckBox](gui_setcheckbox.html)** for reading and setting the check box's state.
 

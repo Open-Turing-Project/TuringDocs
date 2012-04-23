@@ -1,17 +1,16 @@
 
-#GUI.SetPositionAndSize
+# GUI.SetPositionAndSize
 
-##Syntax
+## Syntax
 **GUI.SetPositionAndSize** (_widgetID_, _x_, _y_ : **int**, _width_, _height_ : **int**)
 
-
-##Description
+## Description
 Changes the position and size of the widget specified by _widgetID_ simultaneously. The _x_, _y_, _width_ and _height_ parameters have the same meaning as in the **GUI.Create** function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the _width_ or _height_ parameter may be ignored.
 
 **GUI.SetPositionAndSize** works the same way as the **GUI.SetPosition** and **GUI.SetSize** procedures.
 
 
-##Example
+## Example
 The following program moves and resizes the button every time the button is pressed.
 
         import GUI in "%oot/lib/GUI"
@@ -35,7 +34,7 @@ The following program moves and resizes the button every time the button is pres
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetPositionAndSize**, not by calling **SetPositionAndSize**.

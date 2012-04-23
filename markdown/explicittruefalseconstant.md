@@ -1,16 +1,10 @@
 
-#explicitTrueFalseConstant
+# explicitTrueFalseConstant
 
-##Syntax
-An _explicitTrueFalseConstant_ is one of:
+## Syntax
+An _explicitTrueFalseConstant_ is one of:   (a) **true**   (b) **false**
 
-
-(a) **true**
-(b) **false**
-
-
-
-##Example
+## Example
 The following determines if string _s_ contains a period. After the **for** statement, _found_ will be **true** if there is a period in _s_.
 
         var found : boolean := false
@@ -19,10 +13,10 @@ The following determines if string _s_ contains a period. After the **for** stat
                 found := true
             end if
         end for
-##Details
+## Details
 **true**/**false** values are called _boolean_ values. A **boolean** variable, such as _found_ in the above example, can have a value of either **true** or **false**. 
 
 
-##See also
-**[boolean.html](boolean)** type.
+## See also
+**[boolean](boolean.html)** type.
 

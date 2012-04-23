@@ -1,15 +1,14 @@
 
-#GUI.SelectRadio
+# GUI.SelectRadio
 
-##Syntax
+## Syntax
 **GUI.SelectRadio** (_widgetID_ : **int**)
 
-
-##Description
+## Description
 Selects a radio button specified by _widgetID_. The previously-selected radio button is "de-selected". The _action procedure_ of the radio button is called.
 
 
-##Example
+## Example
 The following program creates siz radio buttons. Selecting one of the buttons cause the bottom two radio buttons to become selected.
 
         import GUI in "%oot/lib/GUI" 
@@ -50,12 +49,12 @@ The following program creates siz radio buttons. Selecting one of the buttons ca
             "Quit", GUI.Quit)loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the procedures by calling **GUI.SelectRadio**, not by calling **SelectRadio**.
 
 
-##See also
+## See also
 **GUI.CreateRadioButton** and **GUI.CreatePictureRadioButton**.
 

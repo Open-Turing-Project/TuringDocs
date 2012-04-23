@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>setType</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>set</b> <b>of</b> <i>typeSpec</i></font></td>\n</tr></table>\n<p></p>",
       "text_content": " A setType is:\r\n set of typeSpec",
-      "mdown_content": "A _setType_ is:\n\n\n**set** **of** _typeSpec_\n\n"
+      "mdown_content": "A _setType_ is:   **set** **of** _typeSpec_"
     },
     {
       "title": "Description",
@@ -46,7 +46,7 @@
       ],
       "raw_content": "<i><a href=\"precedence.html\">precedence</a></i> of operators for the order of applying <a href=\"\">set</a> operations.<p>\r\n</p>",
       "text_content": " precedence of operators for the order of applying set operations.\r\n",
-      "mdown_content": "_[precedence.html](precedence)_ of operators for the order of applying [](set) operations.\n"
+      "mdown_content": "_[precedence](precedence.html)_ of operators for the order of applying [set]() operations.\n"
     }
   ],
   "dependencies": [

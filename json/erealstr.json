@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>erealstr</b> (<i>r </i>: <b>real</b>, <br></font><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>width</i>, <i>fractionWidth</i>, <i>exponentWidth</i> : <b>int</b>) :<b>string</b></font></td>\n</tr></table>\n<p></p>",
       "text_content": " erealstr (r : real,  width, fractionWidth, exponentWidth : int) :string",
-      "mdown_content": "**erealstr** (_r_ : **real**, \n_width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**\n\n"
+      "mdown_content": "**erealstr** (_r_ : **real**,    _width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**"
     },
     {
       "title": "Description",
@@ -28,7 +28,7 @@
       ],
       "raw_content": "<b><a href=\"frealstr.html\">frealstr</a></b>, <b><a href=\"realstr.html\">realstr</a></b>, <b><a href=\"strreal.html\">strreal</a></b>, <b><a href=\"intstr.html\">intstr</a></b> and <b><a href=\"strint.html\">strint</a></b> functions.<p>\r\n</p>",
       "text_content": " frealstr, realstr, strreal, intstr and strint functions.\r\n",
-      "mdown_content": "**[frealstr.html](frealstr)**, **[realstr.html](realstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.\n"
+      "mdown_content": "**[frealstr](frealstr.html)**, **[realstr](realstr.html)**, **[strreal](strreal.html)**, **[intstr](intstr.html)** and **[strint](strint.html)** functions.\n"
     }
   ],
   "dependencies": [

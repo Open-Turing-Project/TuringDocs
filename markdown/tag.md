@@ -1,19 +1,14 @@
 
-#tag
+# tag
 
-##Syntax
-A _tagStatement_ is:
+## Syntax
+A _tagStatement_ is:   **tag** _unionVariableReference_ , _expn_
 
-
-**tag** _unionVariableReference_ , _expn_
-
-
-
-##Description
+## Description
 A **tag** statement is a special-purpose assignment that is used for changing the tag of a **union** variable.
 
 
-##Example
+## Example
 In this example, the tag field of **union** variable _v_ is set to be _passenger_, thereby activating the _passenger_ field of _v_.
 
         type vehicleInfo :
@@ -27,12 +22,12 @@ In this example, the tag field of **union** variable _v_ is set to be _passenger
         var v : vehicleInfo
         
         tag v, passenger        % Activate passenger part
-##Details
+## Details
 A **tag** statement is the only way to modify the tag field of a **union** variable (other than by assigning an entire union value to the union variable).
 
 You cannot  access a particular set of fields of a **union** unless the tag is set to match the corresponding label value.
 
 
-##See also
-**[union.html](union)** types.
+## See also
+**[union](union.html)** types.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>View.ClipAddOval</b> (<i>x</i>, <i>y</i>, <i>xradius</i>, <i>yradius</i> : <b>int</b>)<p></p></font>",
       "text_content": "View.ClipAddOval (x, y, xradius, yradius : int)\r\n    ",
-      "mdown_content": "**View.ClipAddOval** (_x_, _y_, _xradius_, _yradius_ : **int**)\n"
+      "mdown_content": "**View.ClipAddOval** (_x_, _y_, _xradius_, _yradius_ : **int**)"
     },
     {
       "title": "Description",
@@ -57,7 +57,7 @@
       ],
       "raw_content": "<a href=\"view_clipset-2.html\"><b>View.ClipSet</b></a>, \r\n          <a href=\"view_clipadd-2.html\"><b>View.ClipAdd</b></a> and \r\n          <a href=\"view_clipoff-2.html\"><b>View.ClipOff</b></a> \r\n          functions.",
       "text_content": "View.ClipSet, \r\n          View.ClipAdd and \r\n          View.ClipOff \r\n          functions.",
-      "mdown_content": "[view_clipset-2.html](**View.ClipSet**), [view_clipadd-2.html](**View.ClipAdd**) and [view_clipoff-2.html](**View.ClipOff**) functions."
+      "mdown_content": "[**View.ClipSet**](view_clipset-2.html), [**View.ClipAdd**](view_clipadd-2.html) and [**View.ClipOff**](view_clipoff-2.html) functions."
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>maxx</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " maxx : int\r\n",
-      "mdown_content": "**maxx** : **int**\n"
+      "mdown_content": "**maxx** : **int**"
     },
     {
       "title": "Description",
@@ -37,7 +37,7 @@
       ],
       "raw_content": "<b><a href=\"drawdot.html\">drawdot</a></b> for an example of the use of <b><a href=\"\">maxx</a></b> and for a diagram illustrating x and y positions. <p>\r\n</p>",
       "text_content": " drawdot for an example of the use of maxx and for a diagram illustrating x and y positions. \r\n",
-      "mdown_content": "**[drawdot.html](drawdot)** for an example of the use of **[](maxx)** and for a diagram illustrating x and y positions. \n"
+      "mdown_content": "**[drawdot](drawdot.html)** for an example of the use of **[maxx]()** and for a diagram illustrating x and y positions. \n"
     }
   ],
   "dependencies": [

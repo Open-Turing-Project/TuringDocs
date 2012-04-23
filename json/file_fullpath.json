@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>File.FullPath</b> (<i>pathName</i>) : <b>string</b>) : <b>string</b><p>\r\n</p>",
       "text_content": " File.FullPath (pathName) : string) : string\r\n",
-      "mdown_content": "**File.FullPath** (_pathName_) : **string**) : **string**\n"
+      "mdown_content": "**File.FullPath** (_pathName_) : **string**) : **string**"
     },
     {
       "title": "Description",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>minint</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " minint : int\r\n",
-      "mdown_content": "**minint** : **int**\n"
+      "mdown_content": "**minint** : **int**"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"minnat.html\">minnat</a></b> and <b><a href=\"maxint.html\">maxint</a></b>.<p>\r\nSee also predefined unit <b><a href=\"limitsmodule.html\">Limits</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " minnat and maxint.\r\nSee also predefined unit Limits.\r\n",
-      "mdown_content": "**[minnat.html](minnat)** and **[maxint.html](maxint)**.\n\nSee also predefined unit **[limitsmodule.html](Limits)**.\n"
+      "mdown_content": "**[minnat](minnat.html)** and **[maxint](maxint.html)**.\n\nSee also predefined unit **[Limits](limitsmodule.html)**.\n"
     }
   ],
   "dependencies": [

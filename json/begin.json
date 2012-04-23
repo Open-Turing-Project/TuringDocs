@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>beginStatement</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>begin</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A beginStatement is:\r\n begin  statementsAndDeclarations end",
-      "mdown_content": "A _beginStatement_ is:\n\n\n**begin**\n_statementsAndDeclarations_\n**end**\n\n"
+      "mdown_content": "A _beginStatement_ is:   **begin**     _statementsAndDeclarations_   **end**"
     },
     {
       "title": "Description",

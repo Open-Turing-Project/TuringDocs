@@ -1,19 +1,18 @@
 
-#View.SetTransparentColor
+# View.SetTransparentColor
 
-##Syntax
+## Syntax
 **View.SetTransparentColor** (_colorNumber_ : **int**)
 
-
-##Description
+## Description
 The **View.SetTransparentColor** procedure sets the color in the Run window that should be considered transparent when a picture is drawn on the window using the `picUnderMerge` mode. If no color is specified, then the default background color (**colorbg**, usually **white**) is used as the transparent color. You can change this background color using **RGB.SetColor**on color 0.
 
 
-##Details
+## Details
 This call is often used when you want the Run window to have abackground color other than color 0.
 
 
-##Example
+## Example
 This program displays two images loaded from the same file. In the second image,the transparent color has been set to bright red (thatis, the parts of the image that are meant to be transparent are inbright red).
 
         const SIZE : int := 20
@@ -35,16 +34,16 @@ This program displays two images loaded from the same file. In the second image,
         Pic.Draw (pic, 100, 100, picUnderMerge)
         View.SetTransparentColor (brightgreen)
         Pic.Draw (pic, 400, 100, picUnderMerge)
-##Details
+## Details
 **View.SetTransparentColour** is an alternate spelling for **View.SetTransparentColor**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **View.SetTransparentColor**, not by calling **SetTransparentColor**.
 
 
-##See also
-**[pic_settransparentcolor.html](Pic.SetTransparentColor)**.
+## See also
+**[Pic.SetTransparentColor](pic_settransparentcolor.html)**.
 

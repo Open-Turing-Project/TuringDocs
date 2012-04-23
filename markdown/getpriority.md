@@ -1,16 +1,15 @@
 
-#getpriority
+# getpriority
 
-##Syntax
+## Syntax
 **getpriority** : **nat**
 
-
-##Description
+## Description
 The **getpriority** function returns the priority of an executing **process** in a concurrent program. A smaller value means a faster speed.
 
 
-##See also
-**[setpriority.html](setpriority)**, **[fork.html](fork)** and **[monitor.html](monitor)**.
+## See also
+**[setpriority](setpriority.html)**, **[fork](fork.html)** and **[monitor](monitor.html)**.
 
-See also predefined unit **[concurrencymodule.html](Concurrency)**.
+See also predefined unit **[Concurrency](concurrencymodule.html)**.
 

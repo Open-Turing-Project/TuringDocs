@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetBackgroundColor</b> (<i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetBackgroundColor (Color : int)\r\n",
-      "mdown_content": "**GUI.SetBackgroundColor** (_Color_ : **int**)\n"
+      "mdown_content": "**GUI.SetBackgroundColor** (_Color_ : **int**)"
     },
     {
       "title": "Description",

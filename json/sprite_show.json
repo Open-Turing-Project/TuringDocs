@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Show</b> (<i>spriteID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Sprite.Show (spriteID : int)\r\n",
-      "mdown_content": "**Sprite.Show** (_spriteID_ : **int**)\n"
+      "mdown_content": "**Sprite.Show** (_spriteID_ : **int**)"
     },
     {
       "title": "Description",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"sprite_hide.html\">Sprite.Hide</a></b>.<p>\r\n</p>",
       "text_content": " Sprite.Hide.\r\n",
-      "mdown_content": "**[sprite_hide.html](Sprite.Hide)**.\n"
+      "mdown_content": "**[Sprite.Hide](sprite_hide.html)**.\n"
     }
   ],
   "dependencies": [

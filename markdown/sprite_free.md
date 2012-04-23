@@ -1,24 +1,23 @@
 
-#Sprite.Free
+# Sprite.Free
 
-##Syntax
+## Syntax
 **Sprite.Free** (_spriteID_ : **int**)
 
-
-##Description
+## Description
 Destroys the sprite and frees up the memory the sprite used. It is an error to use the _spriteID_ after the sprite has been freed.
 
 
-##Example
+## Example
 See **Sprite.Animate** for an example of **Sprite.Free**.
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Sprite.Free**, not by calling **Free**.
 
 
-##See also
-**[sprite_new.html](Sprite.New)**.
+## See also
+**[Sprite.New](sprite_new.html)**.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Str.Upper</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>",
       "text_content": "Str.Upper (s : string) : string",
-      "mdown_content": "**Str.Upper** (_s_ : **string**) : **string**\n"
+      "mdown_content": "**Str.Upper** (_s_ : **string**) : **string**"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"str_lower.html\">Str.Lower</a></b> and \r\n          <b><a href=\"str_trim.html\">Str.Trim</a></b>.<p>\r\n    </p>",
       "text_content": "Str.Lower and \r\n          Str.Trim.\r\n    ",
-      "mdown_content": "**[str_lower.html](Str.Lower)** and **[str_trim.html](Str.Trim)**.\n"
+      "mdown_content": "**[Str.Lower](str_lower.html)** and **[Str.Trim](str_trim.html)**.\n"
     }
   ],
   "dependencies": [

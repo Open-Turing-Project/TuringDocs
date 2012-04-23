@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>assert</b> <i>trueFalseExpn</i><p>\r\n</p></font>",
       "text_content": " assert trueFalseExpn\r\n",
-      "mdown_content": "**assert** _trueFalseExpn_\n"
+      "mdown_content": "**assert** _trueFalseExpn_"
     },
     {
       "title": "Description",

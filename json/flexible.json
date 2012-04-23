@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>flexible array</b> <i>indexType</i> { , <i>indexType</i> } <b>of</b> <i>typeSpec</i><p>\r\n</p></font>",
       "text_content": " flexible array indexType { , indexType } of typeSpec\r\n",
-      "mdown_content": "**flexible array** _indexType_ { , _indexType_ } **of** _typeSpec_\n"
+      "mdown_content": "**flexible array** _indexType_ { , _indexType_ } **of** _typeSpec_"
     },
     {
       "title": "Description",
@@ -41,7 +41,7 @@
       ],
       "raw_content": "<b><a href=\"array.html\">array</a></b> and <b><a href=\"new.html\">new</a></b>.<p>\r\n</p>",
       "text_content": " array and new.\r\n",
-      "mdown_content": "**[array.html](array)** and **[new.html](new)**.\n"
+      "mdown_content": "**[array](array.html)** and **[new](new.html)**.\n"
     }
   ],
   "dependencies": [

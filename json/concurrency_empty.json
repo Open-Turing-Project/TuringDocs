@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>empty</b> (<i>variableReference</i>) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " empty (variableReference) : boolean\r\n",
-      "mdown_content": "**empty** (_variableReference_) : **boolean**\n"
+      "mdown_content": "**empty** (_variableReference_) : **boolean**"
     },
     {
       "title": "Description",
@@ -31,7 +31,7 @@
       ],
       "raw_content": "<b><a href=\"condition.html\">condition</a></b>, <b><a href=\"wait.html\">wait</a></b>, <b><a href=\"signal.html\">signal</a></b>, <b><a href=\"fork.html\">fork</a></b> and <b><a href=\"monitor.html\">monitor</a></b>.<p>\r\n</p>",
       "text_content": " condition, wait, signal, fork and monitor.\r\n",
-      "mdown_content": "**[condition.html](condition)**, **[wait.html](wait)**, **[signal.html](signal)**, **[fork.html](fork)** and **[monitor.html](monitor)**.\n"
+      "mdown_content": "**[condition](condition.html)**, **[wait](wait.html)**, **[signal](signal.html)**, **[fork](fork.html)** and **[monitor](monitor.html)**.\n"
     }
   ],
   "dependencies": [

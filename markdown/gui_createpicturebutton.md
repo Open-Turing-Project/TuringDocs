@@ -1,13 +1,10 @@
 
-#GUI.CreatePictureButton[Full]
+# GUI.CreatePictureButton[Full]
 
-##Syntax
-**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int**
+## Syntax
+**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int****GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
 
-**GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
-
-
-##Description
+## Description
 Creates a picture button and returns the button's widget ID. 
 
 Picture buttons behave like buttons (see **GUI.CreateButton**) except that instead of text on the button, a picture specified by the user is displayed on the button. The picture button widget responds to mouse clicks and keystrokes in the same manner as a regular button widget. 
@@ -25,7 +22,7 @@ For **GUI.CreatePictureButtonFull**, the _width_ and _height_ parameters specify
 **Two Picture Buttons** 
 
 
-##Example
+## Example
 The following program displays five picture buttons which output a message when pressed.
 
 
@@ -75,13 +72,13 @@ The following program displays five picture buttons which output a message when 
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 When **GUI.CreatePictureButton** or **GUI.CreatePictureButtonFull** is called, the newly created picture will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 When a picture button is not enabled, the picture button is grayed out and the picture button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a picture button as the _widgetID_ parameter:
 
 
@@ -89,7 +86,7 @@ The following GUI subprograms can be called with a picture button as the _widget
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreatePictureButton**, not by calling **CreatePictureButton**.

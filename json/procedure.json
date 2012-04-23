@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>procedureDeclaration</i> is:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>procedure</b> <i>id</i> [(<i>paramDeclaration</i> {, <i>paramDeclaration</i> })]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"7\"><font size=\"+1\"><i>statementsAndDeclarations</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>end</b> <i>id</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A procedureDeclaration is:\r\n procedure id [(paramDeclaration {, paramDeclaration })]  statementsAndDeclarations end id",
-      "mdown_content": "A _procedureDeclaration_ is:\n\n\n**procedure** _id_ [(_paramDeclaration_ {, _paramDeclaration_ })]\n_statementsAndDeclarations_\n**end** _id_\n\n"
+      "mdown_content": "A _procedureDeclaration_ is:   **procedure** _id_ [(_paramDeclaration_ {, _paramDeclaration_ })]     _statementsAndDeclarations_   **end** _id_"
     },
     {
       "title": "Description",
@@ -48,7 +48,7 @@
       ],
       "raw_content": "<b><a href=\"import.html\">import</a></b> list, <b><a href=\"pre.html\">pre</a></b> <a href=\"condition.html\">condition</a>, <b><a href=\"init.html\">init</a></b> clause, <b><a href=\"post.html\">post</a></b> <a href=\"condition.html\">condition</a> and <i>exceptionHandler</i> for explanations of these features. See <b><a href=\"pervasive.html\">pervasive</a></b> for information on <b><a href=\"pervasive.html\">pervasive</a></b> procedures. See <b>exceptionHandler</b>. The optional <i>deviceSpecification </i>is used only in procedures declared in monitors and is used to create an <i>interrupt handling <a href=\"\">procedure</a></i>. See <b><a href=\"monitor.html\">monitor</a></b> for details.<p>\r\n</p>",
       "text_content": " import list, pre condition, init clause, post condition and exceptionHandler for explanations of these features. See pervasive for information on pervasive procedures. See exceptionHandler. The optional deviceSpecification is used only in procedures declared in monitors and is used to create an interrupt handling procedure. See monitor for details.\r\n",
-      "mdown_content": "**[import.html](import)** list, **[pre.html](pre)** [condition.html](condition), **[init.html](init)** clause, **[post.html](post)** [condition.html](condition) and _exceptionHandler_ for explanations of these features. See **[pervasive.html](pervasive)** for information on **[pervasive.html](pervasive)** procedures. See **exceptionHandler**. The optional _deviceSpecification_ is used only in procedures declared in monitors and is used to create an _interrupt handling [](procedure)_. See **[monitor.html](monitor)** for details.\n"
+      "mdown_content": "**[import](import.html)** list, **[pre](pre.html)** [condition](condition.html), **[init](init.html)** clause, **[post](post.html)** [condition](condition.html) and _exceptionHandler_ for explanations of these features. See **[pervasive](pervasive.html)** for information on **[pervasive](pervasive.html)** procedures. See **exceptionHandler**. The optional _deviceSpecification_ is used only in procedures declared in monitors and is used to create an _interrupt handling [procedure]()_. See **[monitor](monitor.html)** for details.\n"
     }
   ],
   "dependencies": [

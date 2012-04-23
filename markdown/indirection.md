@@ -1,21 +1,20 @@
 
-#indirection
+# indirection
 
-##Syntax
+## Syntax
 _targetType_ **@** ( _expn_ )
 
-
-##Description
+## Description
 The indirection operator @ is used to access values that lie at absolute machine addresses in the computer's memory. This is dangerous and implementation-dependent and can cause arbitrary corruption of data and programs.
 
 
-##Example
+## Example
 Copy the byte value at memory location 246 into _b_ and then set that memory byte to zero.
 
         var b : nat1            % One byte natural number
         b := nat1 @ (246)
         nat1 @ (246) := 0
-##Details
+## Details
 The form of _targetType_ must be one of:
 
 In form (a) the beginning identifier _id_ must be the name of a module, monitor or class that exports the _typeId_. Each of _numberOfCharacters_ and _maximumLength_ must be compile time integer expressions. These are the same target types as in type cheats.
@@ -29,6 +28,6 @@ The indirection operator @ takes an integer as an address. This value must fit i
         (e) char [ ( numberOfCharacters ) ]
         (f) string [ ( maximumLength ) ]
         (g) addressint
-##See also
-**[cheat.html](cheat)**. See also _[explicitintegerconstant.html](explicitIntegerConstant)_ (which explains how to write hexadecimal constants, which are often used for addresses).
+## See also
+**[cheat](cheat.html)**. See also _[explicitIntegerConstant](explicitintegerconstant.html)_ (which explains how to write hexadecimal constants, which are often used for addresses).
 

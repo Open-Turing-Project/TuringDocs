@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>variableDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>var</b> <i>id</i> { ,<i>id</i> } [ :<i>typeSpec</i>] [:=<i>initializingValue</i>]</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>collectionDeclaration</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A variableDeclaration is one of:\r\n (a)var id { ,id } [ :typeSpec] [:=initializingValue] (b)collectionDeclaration",
-      "mdown_content": "A _variableDeclaration_ is one of:\n\n\n(a) **var** _id_ { ,_id_ } [ :_typeSpec_] [:=_initializingValue_]\n(b) _collectionDeclaration_\n\n"
+      "mdown_content": "A _variableDeclaration_ is one of:   (a) **var** _id_ { ,_id_ } [ :_typeSpec_] [:=_initializingValue_]   (b) _collectionDeclaration_"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"collection.html\">collection</a></b>, <b><a href=\"bind.html\">bind</a></b>, <b><a href=\"procedure.html\">procedure</a></b> and <b><a href=\"function.html\">function</a></b> declarations, parameter declarations, <b><a href=\"export.html\">export</a></b> lists and <b><a href=\"import.html\">import</a></b> lists for other uses of the keyword <b><a href=\"\">var</a></b>.<p>\r\n</p>",
       "text_content": " collection, bind, procedure and function declarations, parameter declarations, export lists and import lists for other uses of the keyword var.\r\n",
-      "mdown_content": "**[collection.html](collection)**, **[bind.html](bind)**, **[procedure.html](procedure)** and **[function.html](function)** declarations, parameter declarations, **[export.html](export)** lists and **[import.html](import)** lists for other uses of the keyword **[](var)**.\n"
+      "mdown_content": "**[collection](collection.html)**, **[bind](bind.html)**, **[procedure](procedure.html)** and **[function](function.html)** declarations, parameter declarations, **[export](export.html)** lists and **[import](import.html)** lists for other uses of the keyword **[var]()**.\n"
     }
   ],
   "dependencies": [

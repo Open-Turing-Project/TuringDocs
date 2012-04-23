@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Quit</b><p></p></font>",
       "text_content": "GUI.Quit\r\n    ",
-      "mdown_content": "**GUI.Quit**\n"
+      "mdown_content": "**GUI.Quit**"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.\r\n          See also <a href=\"gui_resetquit.html\">GUI.ResetQuit</a>\r\n\t  for resetting the \"quit\" flag, so that a second event loop\r\n\t  can be used in the same program.<p>\r\n    </p>",
       "text_content": "GUI.ProcessEvent.\r\n          See also GUI.ResetQuit\r\n\t  for resetting the \"quit\" flag, so that a second event loop\r\n\t  can be used in the same program.\r\n    ",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.See also [gui_resetquit.html](GUI.ResetQuit)for resetting the \"quit\" flag, so that a second event loopcan be used in the same program.\n"
+      "mdown_content": "**[GUI.ProcessEvent](gui_processevent.html)**.See also [GUI.ResetQuit](gui_resetquit.html)for resetting the \"quit\" flag, so that a second event loopcan be used in the same program.\n"
     }
   ],
   "dependencies": [

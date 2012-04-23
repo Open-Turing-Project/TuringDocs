@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A deferredDeclaration is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><b>deferred</b> subprogramHeader</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A deferredDeclaration is:\r\n deferred subprogramHeader",
-      "mdown_content": "A deferredDeclaration is:\n\n\n**deferred** subprogramHeader\n\n"
+      "mdown_content": "A deferredDeclaration is:   **deferred** subprogramHeader"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"module.html\">module</a></b>, <b><a href=\"monitor.html\">monitor</a></b> and <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"export.html\">export</a></b> list, <b><a href=\"import.html\">import</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> list, <b><a href=\"implement.html\">implement</a></b> list and <b><a href=\"implement_by.html\">implement by</a></b> list.<p>\r\n</p>",
       "text_content": " module, monitor and class. See also export list, import list, inherit list, implement list and implement by list.\r\n",
-      "mdown_content": "**[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list.\n"
+      "mdown_content": "**[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[inherit](inherit.html)** list, **[implement](implement.html)** list and **[implement by](implement_by.html)** list.\n"
     }
   ],
   "dependencies": [

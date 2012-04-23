@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.Show</b> (<i>widgetID</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " GUI.Show (widgetID : int)\r\n",
-      "mdown_content": "**GUI.Show** (_widgetID_ : **int**)\n"
+      "mdown_content": "**GUI.Show** (_widgetID_ : **int**)"
     },
     {
       "title": "Description",
@@ -33,7 +33,7 @@
       ],
       "raw_content": "<b><a href=\"gui_hide.html\">GUI.Hide</a></b>.<p>\r\n</p>",
       "text_content": " GUI.Hide.\r\n",
-      "mdown_content": "**[gui_hide.html](GUI.Hide)**.\n"
+      "mdown_content": "**[GUI.Hide](gui_hide.html)**.\n"
     }
   ],
   "dependencies": [

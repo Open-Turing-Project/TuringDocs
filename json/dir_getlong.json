@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.GetLong</b> (<i>streamNumber</i> : <b>int</b>, <b>var</b> <i>entryName</i> : <b>string</b>,</font><br><table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>  <td colspan=\"7\"><font size=\"+1\"><b>var</b> <i>size</i>, <i>attribute</i>, <i>fileTime</i> : <b>int</b>)</font></td>\n</tr></table>\n<p></p>",
       "text_content": "Dir.GetLong (streamNumber : int, var entryName : string,    var size, attribute, fileTime : int)",
-      "mdown_content": "**Dir.GetLong** (_streamNumber_ : **int**, **var** _entryName_ : **string**,\n**var** _size_, _attribute_, _fileTime_ : **int**)\n\n"
+      "mdown_content": "**Dir.GetLong** (_streamNumber_ : **int**, **var** _entryName_ : **string**,       **var** _size_, _attribute_, _fileTime_ : **int**)"
     },
     {
       "title": "Description",

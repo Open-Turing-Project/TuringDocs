@@ -1,20 +1,14 @@
 
-#collection
+# collection
 
-##Syntax
-A _collectionDeclaration_ is one of:
+## Syntax
+A _collectionDeclaration_ is one of:   (a) **var** _id_ { , _id_ } : **collection** **of** _typeSpec_   (b) **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_
 
-
-(a) **var** _id_ { , _id_ } : **collection** **of** _typeSpec_
-(b) **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_
-
-
-
-##Description
+## Description
 A collection declaration creates a new collection (or collections). A collection can be thought of as an array whose elements are dynamically created (by **new**) and deleted (by **free**). Elements of a collection are referred to by the collection's name subscripted by a pointer. See also **new**, **free** and **pointer**.
 
 
-##Example
+## Example
 Create a collection that will represent a binary tree.
 
         var tree : collection of
@@ -26,7 +20,7 @@ Create a collection that will represent a binary tree.
         var root : pointer to tree
         new tree, root
         tree (root) . name := "Adam"
-##Details
+## Details
 The statement "**new** _C_,_p_" creates a new element in collection _C_ and sets _p_ to point at _i_. If there is no more memory space for the element, though, _p_ is set to _nil_ (_C_), which is the null pointer for collection _C_. The statement "**free** _C_,_p_" deletes the element of _C_ pointed to by _p_ and sets _p_ to _nil_ (_C_). In each case, _p_ is passed as a **var** parameter and must be a variable of the pointer type of _C_.
 
 The keyword **forward** (form b above) is used to specify that the _typeId_ of the collection elements will be given later in the collection's scope. The later declaration must appear at the same level (in the same list of declarations and statements) as the original declaration. This allows cyclic collections, for example, when a collection contains pointers to another collection, which in turn contains pointers to the first collection. In this case, the _typeId_ is the name of the type that has not yet been declared; _typeId_ cannot be used until its declaration appears. A collection whose element type is **forward** can be used only to declare pointers to it until the type's declaration is given.

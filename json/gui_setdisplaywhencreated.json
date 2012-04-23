@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetDisplayWhenCreated</b> (<i>display</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetDisplayWhenCreated (display : boolean)\r\n",
-      "mdown_content": "**GUI.SetDisplayWhenCreated** (_display_ : **boolean**)\n"
+      "mdown_content": "**GUI.SetDisplayWhenCreated** (_display_ : **boolean**)"
     },
     {
       "title": "Description",

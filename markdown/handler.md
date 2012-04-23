@@ -1,21 +1,14 @@
 
-#handler
+# handler
 
-##Syntax
-A _exceptionHandler_ is:
+## Syntax
+A _exceptionHandler_ is:   **handler** ( _id_ )     _statementsAndDeclarations_   **end** **handler**
 
-
-**handler** ( _id_ )
-_statementsAndDeclarations_
-**end** **handler**
-
-
-
-##Description
+## Description
 An exception handler  is an optional block of statements and declarations in a subprogram (or process). It is activated when the program (or process) fails. This occurs, for example when dividing by zero.
 
 
-##Example
+## Example
 This program parses the input stream using a stack. If the stack overflows (its top exceeds its maximum), a **quit** statement in the _push_ procedure aborts the parsing and gives control to the exception handler in the _parse_ procedure. The _parse_ procedure calls _parseExpn_ which calls _push_. If _push_ overflows the stack, it executes a **quit** and control is passed to the exception handler in the _parse_ procedure. The interrupted procedures (_parseExpn_ and _push_) are terminated and their local variables are deleted.
 
         const stackOverflow := 500
@@ -44,7 +37,7 @@ This program parses the input stream using a stack. If the stack overflows (its 
             end handler
             parseExpn           % Eventually push is called
         end parse
-##Details
+## Details
 See the **quit** statement for an explanation of its _quitReason_ (_stackOverflow_ in the first **quit** statement above) and its _guiltyParty_ (> in the second **quit** statement, meaning the exception is due to causes outside of this handler).
 
 An exception handler can appear only in the body of a subprogram (or process), just preceding the declarations and statements. The form of a procedure is:

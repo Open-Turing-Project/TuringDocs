@@ -1,35 +1,34 @@
 
-#Pic.Scale
+# Pic.Scale
 
-##Syntax
+## Syntax
 **Pic.Scale** (_picID_, _newWidth_, _newHeight_ : **int**) : **int**
 
-
-##Description
+## Description
 **Pic.Scale** is used to create a new picture by scaling (resizing) an already existing picture. Rotation can either be around a specific point in the picture (often used for rotating a picure in place) or just a general rotation.
 
 The _newWidth_ and _newHeight_ parameters are the desired width and height of the new picture. The _newWidth_ and _newHeight_ parameters may be negative, in which case the picture is mirror image (_newWidth_ is negative) or upside-down (_newHeight_ is negative) and the absolute values are used for the new width and height values.
 
 
-##Details
+## Details
 The **Pic.Scale** command can fail, in which case it returns 0. The **Error.LastMsg** function can then be used to obtain more information about the failure.
 
 
-##Details
+## Details
 Creating a larger picture by scaling a smaller picture will result in a "grainy" image with each pixel being scaled up into 2 or 3 pixels. In general image quality is better if a large picture is scaled down. However, when a large picture is scaled down, thin one-pixel wide lines can "disappear".
 
 In order to scale a picture while retaining its original aspect ratio, scale with multiples of the original width and height. The width and height of a picture can be obtained using **Pic.Width** and **Pic.Height**.
 
 
-##Details
+## Details
 Scaling can be slow on older machines. Programs that are using animation should create and store all the scaled images that may be needed. Often pictures of an object at various sizes are stored in an array. 
 
 
-##Details
+## Details
 Note that the scaled picture is a newly created picture. When it is no longer needed, its memory should be released by using **Pic.Free**.
 
 
-##Example
+## Example
 This program draws a set of stars scaled at 50%, 100% and 150% on different axes. Note how some single-pixel lines are removed when the picture is scaled down..
 
 
@@ -67,7 +66,7 @@ This program draws a set of stars scaled at 50%, 100% and 150% on different axes
             end for
         end for
         
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Pic.Scale**, not by calling **Scale**.

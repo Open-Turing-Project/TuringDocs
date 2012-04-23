@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetCheckBox</b> (<i>widgetID</i> : <b>int</b>, <i>status</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " GUI.SetCheckBox (widgetID : int, status : boolean)\r\n",
-      "mdown_content": "**GUI.SetCheckBox** (_widgetID_ : **int**, _status_ : **boolean**)\n"
+      "mdown_content": "**GUI.SetCheckBox** (_widgetID_ : **int**, _status_ : **boolean**)"
     },
     {
       "title": "Description",

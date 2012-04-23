@@ -1,15 +1,14 @@
 
-#PC.ParallelGet
+# PC.ParallelGet
 
-##Syntax
+## Syntax
 **PC.ParallelGet** (_port_ : **int**) : **nat1**
 
-
-##Description
+## Description
 The **PC.ParallelGet** function is used to read the value of certain pins on a parallel port. The port is specified with the _port_ parameter which can have the value 1, 2 or 3 corresponding to "LPT1", "LPT2" and "LPT3". This procedure can be used to control robots and peripherals.
 
 
-##Example
+## Example
 This program reads and prints the values of the five data pins of the PC's parallel port.
 
         % Read in the set of pin values from LPT1
@@ -19,7 +18,7 @@ This program reads and prints the values of the five data pins of the PC's paral
         put "Pin 12 is: ", (val div 32) mod 2
         put "Pin 13 is: ", (val div 16) mod 2
         put "Pin 15 is: ", (val div 8) mod 2
-##Details
+## Details
 The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet** procedure returns the sum of 
 
 
@@ -33,12 +32,12 @@ The five pins that are used for parallel input are pins 10-15. The **PC.Parallel
 The **mod** and **div** operators can be used to determine which pins are high or low. 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **PC.ParallelGet**, not by calling **ParallelGet**.
 
 
-##See also
-**[pc_parallelput.html](PC.ParallelPut)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port.
+## See also
+**[PC.ParallelPut](pc_parallelput.html)** [procedure](procedure.html) for a diagram of the pins. That [procedure](procedure.html) is used to [set](set.html) the values on the parallel port.
 

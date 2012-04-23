@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>color</b> (<i>Color</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " color (Color : int)\r\n",
-      "mdown_content": "**color** (_Color_ : **int**)\n"
+      "mdown_content": "**color** (_Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -68,7 +68,7 @@
       ],
       "raw_content": "<b><a href=\"colorback.html\">colorback</a></b>, <b><a href=\"whatcolor.html\">whatcolor</a></b> and <b><a href=\"maxcolor.html\">maxcolor</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " colorback, whatcolor and maxcolor.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "**[colorback.html](colorback)**, **[whatcolor.html](whatcolor)** and **[maxcolor.html](maxcolor)**.\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "**[colorback](colorback.html)**, **[whatcolor](whatcolor.html)** and **[maxcolor](maxcolor.html)**.\n\nSee also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Pic.Draw</b> (<i>picID</i>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>)<p></p></font>",
       "text_content": "Pic.Draw (picID, x, y, mode : int)\r\n    ",
-      "mdown_content": "**Pic.Draw** (_picID_, _x_, _y_, _mode_ : **int**)\n"
+      "mdown_content": "**Pic.Draw** (_picID_, _x_, _y_, _mode_ : **int**)"
     },
     {
       "title": "Description",
@@ -67,7 +67,7 @@
       ],
       "raw_content": "<a href=\"view_update.html\">View.Update</a> for information on how\r\n          to produce smooth animation.<p>\r\n          <a href=\"pic_drawspecial.html\">Pic.DrawSpecial</a> for information on how\r\n          to make pictures appear using special effects such as wipes and slides.</p>\n<p>\r\n          <a href=\"pic_drawframes.html\">Pic.DrawFrames</a> for information on how\r\n          to display multiple frame images such as are obtained from GIF files.\r\n    </p>",
       "text_content": "View.Update for information on how\r\n          to produce smooth animation.\r\n          Pic.DrawSpecial for information on how\r\n          to make pictures appear using special effects such as wipes and slides.\r\n          Pic.DrawFrames for information on how\r\n          to display multiple frame images such as are obtained from GIF files.\r\n    ",
-      "mdown_content": "[view_update.html](View.Update) for information on howto produce smooth animation.\n\n[pic_drawspecial.html](Pic.DrawSpecial) for information on howto make pictures appear using special effects such as wipes and slides.\n\n[pic_drawframes.html](Pic.DrawFrames) for information on howto display multiple frame images such as are obtained from GIF files."
+      "mdown_content": "[View.Update](view_update.html) for information on howto produce smooth animation.\n\n[Pic.DrawSpecial](pic_drawspecial.html) for information on howto make pictures appear using special effects such as wipes and slides.\n\n[Pic.DrawFrames](pic_drawframes.html) for information on howto display multiple frame images such as are obtained from GIF files."
     }
   ],
   "dependencies": [

@@ -1,30 +1,30 @@
 
-#Draw
+# Draw
 
-##Description
+## Description
 This unit contains the predefined subprograms that deal with drawing pixel graphics to the screen.
 
 All routines in the **Draw** unit are exported qualified (and thus must be prefaced with "**Draw.**").
 
 
-##Entry Points
+## Entry Points
 
-[draw_cls.html](**Cls**)   Clears the screen to color 0.
-[draw_dot.html](**Dot**)   Draws a dot.
-[draw_line.html](**Line**)   Draws a line.
-[draw_dashedline.html](**DashedLine**)   Draws a dashed or dotted line.
-[draw_thickline.html](**ThickLine**)   Draws a thick line.
-[draw_box.html](**Box**)   Draws a box.
-[draw_fillbox.html](**FillBox**)   Draws a filled box.
-[draw_oval.html](**Oval**)   Draws an oval.
-[draw_filloval.html](**FillOval**)   Draws a filled oval.
-[draw_arc.html](**Arc**)   Draws an arc.
-[draw_fillarc.html](**FillArc**)   Draws a filled arc or a wedge.
-[draw_polygon.html](**Polygon**)   Draws a polygon.
-[draw_fillpolygon.html](**FillPolygon**)   Draws a filled polygon.
-[draw_mapleleaf.html](**MapleLeaf**)   Draws a maple leaf.
-[draw_fillmapleleaf.html](**FillMapleLeaf**)   Draws a filled maple leaf.
-[draw_star.html](**Star**)   Draws a star.
-[draw_fillstar.html](**FillStar**)   Draws a filled star.
-[draw_fill.html](**Fill**)   Does a flood fill.
-[draw_text.html](**Text**)   Draws text as graphics
+[**Cls**](draw_cls.html)   Clears the screen to color 0.
+[**Dot**](draw_dot.html)   Draws a dot.
+[**Line**](draw_line.html)   Draws a line.
+[**DashedLine**](draw_dashedline.html)   Draws a dashed or dotted line.
+[**ThickLine**](draw_thickline.html)   Draws a thick line.
+[**Box**](draw_box.html)   Draws a box.
+[**FillBox**](draw_fillbox.html)   Draws a filled box.
+[**Oval**](draw_oval.html)   Draws an oval.
+[**FillOval**](draw_filloval.html)   Draws a filled oval.
+[**Arc**](draw_arc.html)   Draws an arc.
+[**FillArc**](draw_fillarc.html)   Draws a filled arc or a wedge.
+[**Polygon**](draw_polygon.html)   Draws a polygon.
+[**FillPolygon**](draw_fillpolygon.html)   Draws a filled polygon.
+[**MapleLeaf**](draw_mapleleaf.html)   Draws a maple leaf.
+[**FillMapleLeaf**](draw_fillmapleleaf.html)   Draws a filled maple leaf.
+[**Star**](draw_star.html)   Draws a star.
+[**FillStar**](draw_fillstar.html)   Draws a filled star.
+[**Fill**](draw_fill.html)   Does a flood fill.
+[**Text**](draw_text.html)   Draws text as graphics

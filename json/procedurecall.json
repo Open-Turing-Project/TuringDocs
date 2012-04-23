@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>procedureCall</i> is:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"8\"><font size=\"+1\"><i>procedureId</i> [ ( [ <i>expn</i> { , <i>expn</i> } ] ) ]</font></td>\n</tr></table>\n<p></p>",
       "text_content": " A procedureCall is:\r\n procedureId [ ( [ expn { , expn } ] ) ]",
-      "mdown_content": "A _procedureCall_ is:\n\n\n_procedureId_ [ ( [ _expn_ { , _expn_ } ] ) ]\n\n"
+      "mdown_content": "A _procedureCall_ is:   _procedureId_ [ ( [ _expn_ { , _expn_ } ] ) ]"
     },
     {
       "title": "Description",
@@ -40,7 +40,7 @@
       ],
       "raw_content": "<b><a href=\"class.html\">class</a></b>.<p>\r\n</p>",
       "text_content": " class.\r\n",
-      "mdown_content": "**[class.html](class)**.\n"
+      "mdown_content": "**[class](class.html)**.\n"
     }
   ],
   "dependencies": [

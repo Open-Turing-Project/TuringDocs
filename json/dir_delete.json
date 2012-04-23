@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Dir.Delete</b> (<i>directoryPathName</i> : <b>string</b>)<p>\r\n</p></font>",
       "text_content": " Dir.Delete (directoryPathName : string)\r\n",
-      "mdown_content": "**Dir.Delete** (_directoryPathName_ : **string**)\n"
+      "mdown_content": "**Dir.Delete** (_directoryPathName_ : **string**)"
     },
     {
       "title": "Description",

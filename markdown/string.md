@@ -1,30 +1,20 @@
 
-#string
+# string
 
-##Syntax
-A _stringComparison_ is one of:
+## Syntax
+A _stringComparison_ is one of:   (a) _stringExpn_ = _stringExpn_   (b) _stringExpn_ **not=** _stringExpn_   (c) _stringExpn_ **>** _stringExpn_   (d) _stringExpn_ **<** _stringExpn_   (e) _stringExpn_ **>**= _stringExpn_   (f) _stringExpn_ **<**= _stringExpn_
 
-
-(a) _stringExpn_ = _stringExpn_
-(b) _stringExpn_ **not=** _stringExpn_
-(c) _stringExpn_ **>** _stringExpn_
-(d) _stringExpn_ **<** _stringExpn_
-(e) _stringExpn_ **>**= _stringExpn_
-(f) _stringExpn_ **<**= _stringExpn_
-
-
-
-##Description
+## Description
 Strings (_stringExpns_) can be compared for equality (= and **not=**) and for ordering (>, <, >= and <=).
 
 
-##Example
+## Example
 
 
         var name : string := "Nancy"
         var licenceNumber : string ( 6 )
         licenceNumber := "175AJN"
-##Details
+## Details
 Two strings are considered to be equal (=) if they have the same length and are made up, character by character, of the same characters. If they differ,  they are considered to be unequal (**not=**).
 
 Ordering among strings is essentially alphabetic order. String _S_ is considered to come before string _T_, that is _S_ **<** _T_, if the two are identical up to a certain position and after that position, either the next character of _S_ comes before the next character of _T_, or else there are no more characters in _S_ while _T_ contains more characters.

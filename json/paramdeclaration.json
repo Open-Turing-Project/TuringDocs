@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>paramDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\">[ <b>var</b> ] <i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>subprogramHeader</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A paramDeclaration is one of:\r\n (a)[ var ] id {, id } : typeSpec (b)subprogramHeader",
-      "mdown_content": "A _paramDeclaration_ is one of:\n\n\n(a) [ **var** ] _id_ {, _id_ } : _typeSpec_\n(b) _subprogramHeader_\n\n"
+      "mdown_content": "A _paramDeclaration_ is one of:   (a) [ **var** ] _id_ {, _id_ } : _typeSpec_   (b) _subprogramHeader_"
     },
     {
       "title": "Description",

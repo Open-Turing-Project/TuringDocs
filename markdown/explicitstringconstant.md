@@ -1,17 +1,16 @@
 
-#explicitStringConstant
+# explicitStringConstant
 
-##Syntax
+## Syntax
 An _explicitStringConstant_ is a sequence of characters surrounded by quotation marks.
 
-
-##Example
+## Example
 In the following, the explicit string constants are "Hello world", "" and "273 O'Reilly Ave.".
 
         var name : string := "Hello world"
         name := ""      % Null string, containing zero characters
         var address : string := "273 O'Reilly Ave."
-##Details
+## Details
 Within an explicit string constant (and within an explicit character constant), the back slash \ is used to represent certain other characters as follows:
 
 

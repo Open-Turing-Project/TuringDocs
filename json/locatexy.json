@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>locatexy</b> ( <i>x</i> , <i>y</i> : <b>int</b> )<p>\r\n</p></font>",
       "text_content": " locatexy ( x , y : int )\r\n",
-      "mdown_content": "**locatexy** ( _x_ , _y_ : **int** )\n"
+      "mdown_content": "**locatexy** ( _x_ , _y_ : **int** )"
     },
     {
       "title": "Description",
@@ -38,7 +38,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b> and <b><a href=\"drawdot.html\">drawdot</a></b>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " setscreen and drawdot.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "**[setscreen.html](setscreen)** and **[drawdot.html](drawdot)**.\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "**[setscreen](setscreen.html)** and **[drawdot](drawdot.html)**.\n\nSee also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

@@ -1,13 +1,10 @@
 
-#erealstr
+# erealstr
 
-##Syntax
-**erealstr** (_r_ : **real**, 
-_width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**
+## Syntax
+**erealstr** (_r_ : **real**,    _width_, _fractionWidth_, _exponentWidth_ : **int**) :**string**
 
-
-
-##Description
+## Description
 The **erealstr** function is used to convert a **real** number to a string; for example, **erealstr** (2.5e1, 10, 3, 2)="_b2_._500e+01_" where _b_ represents a blank. The string (including exponent) is an approximation to _r_, padded on the left with blanks as necessary to a length of _width_.
 
 The _width_ must be a non-negative **int** value. If the _width_ parameter is not large enough to represent the value of _r_, it is implicitly increased as needed.
@@ -21,6 +18,6 @@ where _sign_ is a plus or minus sign. The leftmost digit is non-zero, unless all
 The **erealstr** function approximates the inverse of **strreal**, although round-off errors keep these from being exact inverses.
 
         {blank}[-]digit.{digit}e sign digit {digit}
-##See also
-**[frealstr.html](frealstr)**, **[realstr.html](realstr)**, **[strreal.html](strreal)**, **[intstr.html](intstr)** and **[strint.html](strint)** functions.
+## See also
+**[frealstr](frealstr.html)**, **[realstr](realstr.html)**, **[strreal](strreal.html)**, **[intstr](intstr.html)** and **[strint](strint.html)** functions.
 

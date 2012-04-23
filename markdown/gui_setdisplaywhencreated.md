@@ -1,11 +1,10 @@
 
-#GUI.SetDisplayWhenCreated
+# GUI.SetDisplayWhenCreated
 
-##Syntax
+## Syntax
 **GUI.SetDisplayWhenCreated** (_display_ : **boolean**)
 
-
-##Description
+## Description
 By default, whenever a widget is created with a _GUI.Create&#133;_ procedure, the widget instantly appears. Sometimes, this is not the desired behaviour. For example, if several widgets are to occupy the same location with only one being displayed at a time, then it is desirable not to have the widget appear when first created.
 
 If a widget is not displayed when created, then _GUI.Show_ must be called to make the widget visible.
@@ -13,7 +12,7 @@ If a widget is not displayed when created, then _GUI.Show_ must be called to mak
 If the _display_ parameter is **true**, then widgets are displayed immediately upon creation. If the _display_ parameter is set to **false**, then the widget is not made visible on creation and _GUI.Show_ must be called to display the widget.
 
 
-##Example
+## Example
 The following program toggles the visiblility of the frame when the button is pushed. The frame starts out invisible.
 
         import GUI in "%oot/lib/GUI" 
@@ -38,7 +37,7 @@ The following program toggles the visiblility of the frame when the button is pu
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetDisplayWhenCreated**, not by calling **SetDisplayWhenCreated**.

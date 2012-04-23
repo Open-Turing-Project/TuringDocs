@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>PC.ParallelGet</b> (<i>port</i> : <b>int</b>) : <b>nat1</b><p>\r\n</p></font>",
       "text_content": " PC.ParallelGet (port : int) : nat1\r\n",
-      "mdown_content": "**PC.ParallelGet** (_port_ : **int**) : **nat1**\n"
+      "mdown_content": "**PC.ParallelGet** (_port_ : **int**) : **nat1**"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"pc_parallelput.html\">PC.ParallelPut</a></b> <a href=\"procedure.html\">procedure</a> for a diagram of the pins. That <a href=\"procedure.html\">procedure</a> is used to <a href=\"set.html\">set</a> the values on the parallel port.<p>\r\n</p>",
       "text_content": " PC.ParallelPut procedure for a diagram of the pins. That procedure is used to set the values on the parallel port.\r\n",
-      "mdown_content": "**[pc_parallelput.html](PC.ParallelPut)** [procedure.html](procedure) for a diagram of the pins. That [procedure.html](procedure) is used to [set.html](set) the values on the parallel port.\n"
+      "mdown_content": "**[PC.ParallelPut](pc_parallelput.html)** [procedure](procedure.html) for a diagram of the pins. That [procedure](procedure.html) is used to [set](set.html) the values on the parallel port.\n"
     }
   ],
   "dependencies": [

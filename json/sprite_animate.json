@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sprite.Animate</b> (<i>spriteID</i>, <i>picID, x</i>, <i>y</i> : <b>int</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>centered</i> : <b>boolean</b>)</font><p>\r\n    </p>",
       "text_content": "Sprite.Animate (spriteID, picID, x, y : int,\r\n              centered : boolean)\r\n    ",
-      "mdown_content": "**Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,    _centered_ : **boolean**)\n"
+      "mdown_content": "**Sprite.Animate** (_spriteID_, _picID, x_, _y_ : **int**,    _centered_ : **boolean**)"
     },
     {
       "title": "Description",
@@ -24,7 +24,7 @@
       ],
       "raw_content": "Here is a program that loads a series of images from an animated\r\n          GIF file called \"mypic.gif\".  It works by loading the images from\r\n          the GIF file into an array (see \r\n          <b><a href=\"pic_filenewframes.html\">Pic.FileNewFrames</a></b> for\r\n          more information) and then displays the images sequentially on the \r\n          screen, moving the image eight pixels each time.<p>\r\n</p>\n<p>\r\n    </p>",
       "text_content": "Here is a program that loads a series of images from an animated\r\n          GIF file called \"mypic.gif\".  It works by loading the images from\r\n          the GIF file into an array (see \r\n          Pic.FileNewFrames for\r\n          more information) and then displays the images sequentially on the \r\n          screen, moving the image eight pixels each time.\r\n\r\n    ",
-      "mdown_content": "Here is a program that loads a series of images from an animatedGIF file called \"mypic.gif\".  It works by loading the images fromthe GIF file into an array (see **[pic_filenewframes.html](Pic.FileNewFrames)** formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.\n\n\n"
+      "mdown_content": "Here is a program that loads a series of images from an animatedGIF file called \"mypic.gif\".  It works by loading the images fromthe GIF file into an array (see **[Pic.FileNewFrames](pic_filenewframes.html)** formore information) and then displays the images sequentially on the screen, moving the image eight pixels each time.\n\n\n"
     },
     {
       "title": "Execute",
@@ -51,7 +51,7 @@
       ],
       "raw_content": "<b><a href=\"sprite_new.html\">Sprite.New</a></b>, \r\n          <b><a href=\"sprite_setposition.html\">Sprite.SetPosition</a></b> and \r\n          <b><a href=\"sprite_changepic.html\">Sprite.ChangePic</a></b>.<p>\r\n    </p>",
       "text_content": "Sprite.New, \r\n          Sprite.SetPosition and \r\n          Sprite.ChangePic.\r\n    ",
-      "mdown_content": "**[sprite_new.html](Sprite.New)**, **[sprite_setposition.html](Sprite.SetPosition)** and **[sprite_changepic.html](Sprite.ChangePic)**.\n"
+      "mdown_content": "**[Sprite.New](sprite_new.html)**, **[Sprite.SetPosition](sprite_setposition.html)** and **[Sprite.ChangePic](sprite_changepic.html)**.\n"
     }
   ],
   "dependencies": [

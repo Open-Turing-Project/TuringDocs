@@ -1,21 +1,20 @@
 
-#GUI.SetText
+# GUI.SetText
 
-##Syntax
+## Syntax
 **GUI.SetText** (_widgetID_ : **int**, _text_ : **string**)
 
-
-##Description
+## Description
 Sets the text of a text field specified by _widgetID_ to _text_. The selection is set to 1, 1 (i.e. the cursor is at the beginning of the text).
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.
 
 
-##Example
+## Example
 The following program converts all lower case input in the text field to upper case when the user presses ENTER.
 
         import GUI
@@ -43,12 +42,12 @@ The following program converts all lower case input in the text field to upper c
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.SetText**, not by calling **SetText**.
 
 
-##See also
+## See also
 **GUI.CreateTextField**.
 

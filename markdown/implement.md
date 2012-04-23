@@ -1,21 +1,16 @@
 
-#implement
+# implement
 
-##Syntax
-An _implementClause_ is:
+## Syntax
+An _implementClause_ is:   **implement** _implementItem_
 
-
-**implement** _implementItem_
-
-
-
-##Description
+## Description
 An **implement** clause is used to specify that the module, monitor or class containing the clause is to be the implementation of another module, monitor or class. This implementation is a special kind of expansion. The **module**, **monitor** or **class** containing the clause gains access to (inherits) all the declarations inside the target item. See **inherit** clause for rules about expansions, which are also rules for implementations.
 
 The **implement** clause can only be used in a **unit**. See **unit** for the definition of a unit.
 
 
-##Example
+## Example
 Here is a _stack_ module which defers all of its exported subprograms. This module is an interface but not an implementation. Following _stack_ is the _stackBody_ module that implements the _stack_ module, giving the bodies for _stack_'s subprograms. Any call to _stack's_ _push_ or _pop_ procedures, such as _stack_._push(_"Ed"_)_, will actually call the procedures given in _stackBody_.
 
 Next comes the expansion which gives the bodies for the deferred procedures _push_ and _pop_. The _stackBody_ body also adds declarations for the _top_ and _contents_ variables.
@@ -41,7 +36,7 @@ Next comes the expansion which gives the bodies for the deferred procedures _pus
                 top := top - 1
             end pop
         end stackBody
-##Details
+## Details
 Module, monitor or class _D_ can be in _C'_s implement-by clause if, and only if, _C_ is in _D'_s implement clause. In other words, an interface must apply to exactly one implementation and vice versa. A module can implement only a module, a monitor only a monitor, and a class only a class. Classes (but not modules and monitors) can contain inherit clauses. A class cannot contain both an inherit and an implement clause.
 
 An _implementItem_ is one of_:_
@@ -70,6 +65,6 @@ If the **new** statement contains an explicit class name _E_ that is a descendan
 the object of the explicit class is created. If _E_ has an implement-by clause, the expansion is created.
 
         implement ledger in "ledg.t"        implement ( ledger in "ledg.t" )        var p : ^ C        new p   % Creates object of class D        new E, p
-##See also
-**[unit.html](unit)**, **[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[implement_by.html](implement by)** clause, **[inherit.html](inherit)** clause, **[export.html](export)** list, and **[import.html](import)** list. See also **[deferred.html](deferred)** subprograms.
+## See also
+**[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[implement by](implement_by.html)** clause, **[inherit](inherit.html)** clause, **[export](export.html)** list, and **[import](import.html)** list. See also **[deferred](deferred.html)** subprograms.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Music.Sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int </b>)<p></p></font>",
       "text_content": "Music.Sound ( frequency, duration : int )\r\n    ",
-      "mdown_content": "**Music.Sound** ( _frequency_, _duration_ : **int** )\n"
+      "mdown_content": "**Music.Sound** ( _frequency_, _duration_ : **int** )"
     },
     {
       "title": "Description",
@@ -47,7 +47,7 @@
       ],
       "raw_content": "<b><a href=\"music_play.html\">Music.Play</a></b> statement, which \r\n          plays notes based on musical notation. For example, \r\n\t  <b><a href=\"music_play.html\">Music.Play</a></b>(\"8C\") plays an \r\n\t  eighth note of middle C.<p>\r\n    </p>",
       "text_content": "Music.Play statement, which \r\n          plays notes based on musical notation. For example, \r\n\t  Music.Play(\"8C\") plays an \r\n\t  eighth note of middle C.\r\n    ",
-      "mdown_content": "**[music_play.html](Music.Play)** statement, which plays notes based on musical notation. For example, **[music_play.html](Music.Play)**(\"8C\") plays an eighth note of middle C.\n"
+      "mdown_content": "**[Music.Play](music_play.html)** statement, which plays notes based on musical notation. For example, **[Music.Play](music_play.html)**(\"8C\") plays an eighth note of middle C.\n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.CreateButton</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n \t  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>\r\n          <b>GUI.CreateButtonFull</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>\r\n          &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>height</i> : <b>int</b>, <i>shortcut</i> : <b>char</b>, <i>default</i> : <b>boolean</b>) : <b>int</b></p>\n<p></p></font>",
       "text_content": "GUI.CreateButton (x, y, width : int, text : string,\r\n \t      actionProc : procedure x ()) : int\r\n          GUI.CreateButtonFull (x, y, width : int, text : string,\r\n              actionProc : procedure x (), height : int, shortcut : char, default : boolean) : int\r\n    ",
-      "mdown_content": "**GUI.CreateButton** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ ()) : **int**\n\n**GUI.CreateButtonFull** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (), _height_ : **int**, _shortcut_ : **char**, _default_ : **boolean**) : **int**\n"
+      "mdown_content": "**GUI.CreateButton** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateButtonFull** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (), _height_ : **int**, _shortcut_ : **char**, _default_ : **boolean**) : **int**"
     },
     {
       "title": "Description",
@@ -63,7 +63,7 @@
       ],
       "raw_content": "<b><a href=\"gui_setlabel.html\">GUI.SetLabel</a></b> for changing \r\n          the button's text, \r\n          <b><a href=\"gui_setdefault.html\">GUI.SetDefault</a></b> for setting \r\n          the default button in a window and\r\n          <b><a href=\"gui_setcolor.html\">GUI.SetColor</a></b> for setting \r\n          the button's color.<p>\r\n    </p>",
       "text_content": "GUI.SetLabel for changing \r\n          the button's text, \r\n          GUI.SetDefault for setting \r\n          the default button in a window and\r\n          GUI.SetColor for setting \r\n          the button's color.\r\n    ",
-      "mdown_content": "**[gui_setlabel.html](GUI.SetLabel)** for changing the button's text, **[gui_setdefault.html](GUI.SetDefault)** for setting the default button in a window and**[gui_setcolor.html](GUI.SetColor)** for setting the button's color.\n"
+      "mdown_content": "**[GUI.SetLabel](gui_setlabel.html)** for changing the button's text, **[GUI.SetDefault](gui_setdefault.html)** for setting the default button in a window and**[GUI.SetColor](gui_setcolor.html)** for setting the button's color.\n"
     }
   ],
   "dependencies": [

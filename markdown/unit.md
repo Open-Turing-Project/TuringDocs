@@ -1,22 +1,14 @@
 
-#unit
+# unit
 
-##Syntax
-A _compilationUnit_ is one of:
+## Syntax
+A _compilationUnit_ is one of:   (a) [ _importList_ ] _mainProgram_   (b) **unit** _moduleDeclaration_   (c) **unit** _monitorDeclaration_   (d) **unit** _classDeclaration_
 
-
-(a) [ _importList_ ] _mainProgram_
-(b) **unit** _moduleDeclaration_
-(c) **unit** _monitorDeclaration_
-(d) **unit** _classDeclaration_
-
-
-
-##Description
+## Description
 A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword **unit**. The unit contains the main program, a module, a monitor or a class.
 
 
-##Example
+## Example
 Here is stack module that is separated out into a file whose name is _stack_.
 
 The main program, which is in another file, gains access to the stack by importing it. Here is the main program:
@@ -43,7 +35,7 @@ The main program, which is in another file, gains access to the stack by importi
         stack . push ( n )
         
         stack . pop ( n )
-##Details
+## Details
 In this example, the  keyword **var** in the import list  is required because the main program causes a change in the stack, by calling _push_ and _pop_. The import lists of units that are modules, monitors and classes are used to gain access to further units.
 
 If the stack were in a file with a different name, say _stk.t_, the import list would be rewritten to use an **in** clause, as follows:
@@ -51,6 +43,6 @@ If the stack were in a file with a different name, say _stk.t_, the import list 
 A mainProgram is simply a program. See **program**.
 
         import var stack in "stk.t"
-##See also
-**[module.html](module)**, **[monitor.html](monitor)** and **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list.
+## See also
+**[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[inherit](inherit.html)** list, **[implement](implement.html)** list and **[implement by](implement_by.html)** list.
 

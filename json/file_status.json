@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<b>File.Status</b> (<i>pathName</i> : <b>string</b>, <b>var</b> <i>size</i>, <i>attribute</i>, <i>fileTime</i> : <b>int</b>)<p>\r\n</p>",
       "text_content": " File.Status (pathName : string, var size, attribute, fileTime : int)\r\n",
-      "mdown_content": "**File.Status** (_pathName_ : **string**, **var** _size_, _attribute_, _fileTime_ : **int**)\n"
+      "mdown_content": "**File.Status** (_pathName_ : **string**, **var** _size_, _attribute_, _fileTime_ : **int**)"
     },
     {
       "title": "Description",

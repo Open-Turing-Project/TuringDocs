@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>real</b><p>\r\n</p></font>",
       "text_content": " real\r\n",
-      "mdown_content": "**real**\n"
+      "mdown_content": "**real**"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"\">real</a></b><i>n</i>.<p>\r\n</p>",
       "text_content": " realn.\r\n",
-      "mdown_content": "**[](real)**_n_.\n"
+      "mdown_content": "**[real]()**_n_.\n"
     }
   ],
   "dependencies": [

@@ -1,7 +1,7 @@
 
-#precedence
+# precedence
 
-##Description
+## Description
 Turing's _precedence_ rules determine the order of applying operators in an expression such as 3 + 4 * 5. These rules state, for example, that multiplication is done before addition, so this expression is equivalent to 3+ (4 * 5).
 
 Parenthesized parts of an expression are evaluated before being used. For example, in (1 + 2) * 3, the addition is done before the multiplication.
@@ -53,6 +53,6 @@ The pointer following operator ^ is applied before subscripting, subprogram call
 Use parentheses to force ^ to apply to more of the reference. For example, in ^(a(i)), the ^ applies to a(i).
 
 
-##See also
-_[infix.html](infix)_ and _[prefix.html](prefix)_ operators. See the **[int.html](int)**, **[real.html](real)**, **[string1.html](string)**, **[boolean.html](boolean)**, **[set.html](set)**, **[enum.html](enum)**, **[char.html](char)** and **[char.html](char)**(_n_) types.
+## See also
+_[infix](infix.html)_ and _[prefix](prefix.html)_ operators. See the **[int](int.html)**, **[real](real.html)**, **[string](string1.html)**, **[boolean](boolean.html)**, **[set](set.html)**, **[enum](enum.html)**, **[char](char.html)** and **[char](char.html)**(_n_) types.
 

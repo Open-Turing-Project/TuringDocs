@@ -1,15 +1,14 @@
 
-#system
+# system
 
-##Syntax
+## Syntax
 **system** ( _command_ : **string**, **var** _ret_ : **int** )
 
-
-##Description
+## Description
 The **system** statement is used to execute the shell (operating system) _command_, as if it were typed at the terminal. The return code is in _ret_. A return code of 0 (zero) means no detected errors. A return code of 127 means the command processor could not be accessed. A return code of 126 means the command processor did not have room to run on the PC.
 
 
-##Example
+## Example
 This program creates a directory listing when run under DOS on an IBM PC compatible computer. The same program will run under UNIX by changing "_dir_" to "_ls_".
 
         var success : int
@@ -23,7 +22,7 @@ This program creates a directory listing when run under DOS on an IBM PC compati
                 put "Sorry, 'dir' did not work"
             end if
         end if
-##Details
+## Details
 When the **system** procedure is used, the executing program usually remains in memory while the system command is executing, and once execution of the system command is finished, control returns to the original program. However, on the PC, there is variant of the **system** procedure that allows "chaining". This means that when the system command is executed, the originally running program is "thrown away" (i.e. removed from memory). When the executed program terminates, one is returned to DOS.
 
 To chain another program, one prepends "chain:" to the start _command_.
@@ -33,7 +32,7 @@ Note that this command is "hazardous". Specifically, if you call it from Turing 
 The "chain:" command is often used for starting menu programs, where the user selects a program to run and doesn't want Turing to remain in memory. It can also be used with extraordinarily large Turing programs that can be split into different parts. By using TComp and compiling each part separately, one can have each program call the other and never have all parts in memory at once.
 
         i.e.    system ("chain:myprog.exe", retCode)
-##Example
+## Example
 This program uses chaining to launch one of several possible programs based on user choice. It gives an error if for some reason the **system** command fails to work. It assumes that c:\chemistry.exe, c:\math.exe, c:\english.exe and c:\history.exe already exist.
 
         var choice, success : int
@@ -58,7 +57,7 @@ This program uses chaining to launch one of several possible programs based on u
         put "System called failed."
         put "Program \"", command, "\"  couldn't be run."
         assert false    % Terminate the program
-##Details
+## Details
 Here are the possible errors under PC-Turing
 
 
@@ -76,8 +75,8 @@ disallowed
 
 
 
-##See also
-**[nargs.html](nargs)**, **[fetcharg.html](fetcharg)** and **[getenv.html](getenv)** functions.
+## See also
+**[nargs](nargs.html)**, **[fetcharg](fetcharg.html)** and **[getenv](getenv.html)** functions.
 
-See also predefined unit **[sysmodule.html](Sys)**.
+See also predefined unit **[Sys](sysmodule.html)**.
 

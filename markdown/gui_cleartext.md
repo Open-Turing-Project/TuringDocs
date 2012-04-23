@@ -1,15 +1,14 @@
 
-#GUI.ClearText
+# GUI.ClearText
 
-##Syntax
+## Syntax
 **GUI.ClearText** (_widgetID_ : **int**)
 
-
-##Description
+## Description
 Clears all the text in a text box specified by _widgetID_. The _widgetID_ parameter must be the widget id of a text box.
 
 
-##Example
+## Example
 The program lists 25 numbers in a text box. Every time the button is pressed, it clears the text box and prints the next 25 numbers. 
 
 
@@ -32,12 +31,12 @@ The program lists 25 numbers in a text box. Every time the button is pressed, it
         loop
             exit when GUI.ProcessEvent
         end loop
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.ClearText**, not by calling **ClearText**.
 
 
-##See also
+## See also
 **GUI.CreateTextBox**.
 

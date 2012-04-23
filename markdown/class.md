@@ -1,27 +1,14 @@
 
-#class
+# class
 
-##Syntax
-A classDeclaration is:
+## Syntax
+A classDeclaration is:   [ **monitor** ]   **class** _id_     [ **inherit** _inheritItem_ ]     [ **implement** _implementItem_ ]     [ **implement** **by** _implementByItem_ ]     [ **import** [ **var** ] _importItem_ {, [ **var** ] _importItem_ } ]     [ **export** [ _howExport_ ] _id_ {, [ _howExport_ ] _id_ } ]     _statementsAndDeclarations_   **end** _id_
 
-
-[ **monitor** ]
-**class** _id_
-[ **inherit** _inheritItem_ ]
-[ **implement** _implementItem_ ]
-[ **implement** **by** _implementByItem_ ]
-[ **import** [ **var** ] _importItem_ {, [ **var** ] _importItem_ } ]
-[ **export** [ _howExport_ ] _id_ {, [ _howExport_ ] _id_ } ]
-_statementsAndDeclarations_
-**end** _id_
-
-
-
-##Description
+## Description
 A class declaration defines a template for a package of variables, constants, types, subprograms, etc. The name of the class (_id_) is given in two places, just after **class** and just after **end**. Items declared inside the class can be accessed outside of the class only if they are exported. Items from outside the class that are to be used in the class, need to be imported (unless they are predefined or pervasive). Instances (objects) of a class are created using the **new** statement. Each object is essentially a module located by a pointer.
 
 
-##Example
+## Example
 This class is a template for creating objects, each of which is a stack of strings. (See the **module** description for the corresponding module that implements a single stack of strings.)
 
         class stackClass    % Template for creating individual stacks
@@ -46,7 +33,7 @@ This class is a template for creating objects, each of which is a stack of strin
         p -> push ("Harvey")
         var name : string
         p -> pop (name)         % This sets name to be Harvey
-##Details
+## Details
 The **new** statement is used to create objects of a class. Many instances of a class can exist at a given time, each located by a pointer. The **free** statement is used to destroy objects that are no longer of use. Turing does not support _garbage collection_ (automatic recovery of space belonging to inaccessible objects).
 
 See **modules** for a discussion of importing, exporting and related concepts. When an object is created by **new**, its initialization code is executed. In this example, the object's _top_ variable is set to 0. As is true in modules, an exported subprogram of an object's class cannot be called until the object is completely initialized.
@@ -64,7 +51,7 @@ A class cannot export variables (or run time constants) as **unqualified** (beca
 The syntax of a _classDeclaration_ presented above has been simplified by leaving out **pre**, **invariant** and **post** clauses. The full syntax which supports **pre**, **invariant** and **post** is the same as that for modules. The initialization of classes is the same as that for modules. See **module**.
 
         var s : stack       % Not legal!
-##Example
+## Example
 We will give an example in which a subprogram in one class overrides the corresponding subprogram in a class that is being inherited. The example is based on a program that implements a file system inside an operating system. All files have _open_, _close_, _read_ and _write_ operations. Some files, called _Device_ files, also have an operation called _ioCtl_ (input/output control). The kind of file determines the implementation method. Here is the expansion (inheritance) hierarchy among the classes of files.
 
 
@@ -127,7 +114,7 @@ For example, if _filePtr_ currently locates a _Disk_ file, this will call the _r
         
              bodies for close, read, write and ioCtl procedures for disk 
         end Disk        var filePtr : ^ File        filePtr := textFilePtr        filePtr -> read ( actual parameters )
-##Example
+## Example
 As another example, consider class _C_, which contains headers and bodies for functions _f_ and _g_. _C_ exports functions _f_ and _g_. There is also a class _D_, which inherits from _C_. Class _D_ contains a body that overrides the body for _g_. _D_ also contains a header and body for function _h_. _D_ exports function _h_.
 
 Pointer _p_ has been declared to locate an object of class _C_, but at runtime _p_ locates an object of class _D_. When p is used to call _f_, by means of _p_->_f_, the body of _f_, which appears in _C_, is invoked. When p is used to call _g_, by means of _p_->_g_, _g_'s overriding body in _D_ is invoked. Any attempt to use _p_ to call _h_ is illegal because _p_ can only be used to call functions that are exported from _C_.
@@ -161,6 +148,6 @@ Pointer _p_ has been declared to locate an object of class _C_, but at runtime _
         p -> f          % Outputs "C's f"
         p -> g          % Outputs "*** D's g ***"
         p -> h          % Causes error "'h' is not in export list of 'C'"
-##See also
-**[module.html](module)**, **[monitor.html](monitor)** and **[unit.html](unit)**. See also **[import.html](import)** list, **[export.html](export)** list, **[implement.html](implement)** list, **[implement_by.html](implement by)** list, and **[inherit.html](inherit)** list. See also **[deferred.html](deferred)** subprogram. See also **[anyclass.html](anyclass)** and **[objectclass.html](objectclass)**.
+## See also
+**[module](module.html)**, **[monitor](monitor.html)** and **[unit](unit.html)**. See also **[import](import.html)** list, **[export](export.html)** list, **[implement](implement.html)** list, **[implement by](implement_by.html)** list, and **[inherit](inherit.html)** list. See also **[deferred](deferred.html)** subprogram. See also **[anyclass](anyclass.html)** and **[objectclass](objectclass.html)**.
 

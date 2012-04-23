@@ -17,7 +17,7 @@
       ],
       "raw_content": "<b><a href=\"getch.html\">getch</a></b>, <b><a href=\"getchar.html\">getchar</a></b>, and <b><a href=\"input_keydown.html\">Input.KeyDown</a></b>.<p>\r\n</p>",
       "text_content": " getch, getchar, and Input.KeyDown.\r\n",
-      "mdown_content": "**[getch.html](getch)**, **[getchar.html](getchar)**, and **[input_keydown.html](Input.KeyDown)**.\n"
+      "mdown_content": "**[getch](getch.html)**, **[getchar](getchar.html)**, and **[Input.KeyDown](input_keydown.html)**.\n"
     }
   ],
   "dependencies": [

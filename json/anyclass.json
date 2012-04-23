@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>anyclass</b><p>\r\n</p></font>",
       "text_content": " anyclass\r\n",
-      "mdown_content": "**anyclass**\n"
+      "mdown_content": "**anyclass**"
     },
     {
       "title": "Description",
@@ -45,7 +45,7 @@
       ],
       "raw_content": "<b><a href=\"objectclass.html\">objectclass</a></b>, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.<p>\r\nSee also <b><a href=\"class.html\">class</a></b>. See also <b><a href=\"export.html\">export</a></b> list, <b><a href=\"import.html\">import</a></b> list, <b><a href=\"inherit.html\">inherit</a></b> list, <b><a href=\"implement.html\">implement</a></b> list and <b><a href=\"implement_by.html\">implement by</a></b> list.</p>\n<p>\r\n</p>",
       "text_content": " objectclass, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\r\nSee also class. See also export list, import list, inherit list, implement list and implement by list.\r\n",
-      "mdown_content": "**[objectclass.html](objectclass)**, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\n\nSee also **[class.html](class)**. See also **[export.html](export)** list, **[import.html](import)** list, **[inherit.html](inherit)** list, **[implement.html](implement)** list and **[implement_by.html](implement by)** list.\n"
+      "mdown_content": "**[objectclass](objectclass.html)**, which takes a class pointer and produces the class of the object located by the pointer. This is used for testing to determine the class of the object located by a pointer.\n\nSee also **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[inherit](inherit.html)** list, **[implement](implement.html)** list and **[implement by](implement_by.html)** list.\n"
     }
   ],
   "dependencies": [

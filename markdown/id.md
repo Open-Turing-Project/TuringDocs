@@ -1,7 +1,7 @@
 
-#id
+# id
 
-##Description
+## Description
 Variables, constants, types, procedures, etc. in Turing programs are given names such as _incomeTax_, _x_, and _height_. These names are called identifiers (_ids_).
 
 An identifier must start with a letter (large or small) or an underscore ( _ ) and can contain up to 50 characters, each of which must be a letter, a digit (0 to 9) or an underscore ( _ ). Large and small letters are considered distinct, so that _A_ and _a_ are different names. This differs from Pascal  where large and small letters in names are equivalent.

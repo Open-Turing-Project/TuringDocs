@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>drawdot</b> (<i>x</i>, <i>y</i>, <i>Color</i> : <b>int</b>)<p></p></font>",
       "text_content": "drawdot (x, y, Color : int)\r\n    ",
-      "mdown_content": "**drawdot** (_x_, _y_, _Color_ : **int**)\n"
+      "mdown_content": "**drawdot** (_x_, _y_, _Color_ : **int**)"
     },
     {
       "title": "Description",
@@ -70,7 +70,7 @@
       ],
       "raw_content": "<b><a href=\"setscreen.html\">setscreen</a></b>, \r\n          <b><a href=\"maxx.html\">maxx</a></b>, \r\n          <b><a href=\"maxy.html\">maxy</a></b> and the various \r\n          <b>draw&#133;</b> procedures. <p>\r\n    </p>",
       "text_content": "setscreen, \r\n          maxx, \r\n          maxy and the various \r\n          draw procedures. \r\n    ",
-      "mdown_content": "**[setscreen.html](setscreen)**, **[maxx.html](maxx)**, **[maxy.html](maxy)** and the various **draw&#133;** procedures. \n"
+      "mdown_content": "**[setscreen](setscreen.html)**, **[maxx](maxx.html)**, **[maxy](maxy.html)** and the various **draw&#133;** procedures. \n"
     }
   ],
   "dependencies": [

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>GUI.SetMouseEventHandler</b> (<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;<i>mouseEventHandler</i> : <b>procedure</b> <i>x</i> (<i>mx</i>, <i>my</i> : <b>int</b>))<p>\r\n</p></font>",
       "text_content": " GUI.SetMouseEventHandler (\r\n    mouseEventHandler : procedure x (mx, my : int))\r\n",
-      "mdown_content": "**GUI.SetMouseEventHandler** (    _mouseEventHandler_ : **procedure** _x_ (_mx_, _my_ : **int**))\n"
+      "mdown_content": "**GUI.SetMouseEventHandler** (    _mouseEventHandler_ : **procedure** _x_ (_mx_, _my_ : **int**))"
     },
     {
       "title": "Description",
@@ -36,7 +36,7 @@
       ],
       "raw_content": "<b><a href=\"gui_processevent.html\">GUI.ProcessEvent</a></b>.<p>\r\n</p>",
       "text_content": " GUI.ProcessEvent.\r\n",
-      "mdown_content": "**[gui_processevent.html](GUI.ProcessEvent)**.\n"
+      "mdown_content": "**[GUI.ProcessEvent](gui_processevent.html)**.\n"
     }
   ],
   "dependencies": [

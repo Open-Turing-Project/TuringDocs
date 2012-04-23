@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>whatrow</b> : <b>int</b><p>\r\n</p></font>",
       "text_content": " whatrow : int\r\n",
-      "mdown_content": "**whatrow** : **int**\n"
+      "mdown_content": "**whatrow** : **int**"
     },
     {
       "title": "Description",
@@ -42,7 +42,7 @@
       ],
       "raw_content": "the <b><a href=\"whatcol.html\">whatcol</a></b> function, which is used to <a href=\"set.html\">set</a> the determine the cursor column. See also the <b><a href=\"locate.html\">locate</a></b>, <b><a href=\"maxrow.html\">maxrow</a></b> and <b><a href=\"maxcol.html\">maxcol</a></b> <a href=\"procedure.html\">procedure</a>.<p>\r\nSee also predefined unit <b><a href=\"textmodule.html\">Text</a></b>.</p>\n<p>\r\n</p>",
       "text_content": " the whatcol function, which is used to set the determine the cursor column. See also the locate, maxrow and maxcol procedure.\r\nSee also predefined unit Text.\r\n",
-      "mdown_content": "the **[whatcol.html](whatcol)** function, which is used to [set.html](set) the determine the cursor column. See also the **[locate.html](locate)**, **[maxrow.html](maxrow)** and **[maxcol.html](maxcol)** [procedure.html](procedure).\n\nSee also predefined unit **[textmodule.html](Text)**.\n"
+      "mdown_content": "the **[whatcol](whatcol.html)** function, which is used to [set](set.html) the determine the cursor column. See also the **[locate](locate.html)**, **[maxrow](maxrow.html)** and **[maxcol](maxcol.html)** [procedure](procedure.html).\n\nSee also predefined unit **[Text](textmodule.html)**.\n"
     }
   ],
   "dependencies": [

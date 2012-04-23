@@ -1,24 +1,16 @@
 
-#open
+# open
 
-##Syntax
-An _openStatement_ is one of:
+## Syntax
+An _openStatement_ is one of:   (a) **open** : _fileNumberVar_, _fileName_, _ioCapability_             { , _ioCapability_ }   (b) **open** : _fileNumberVar_, _argNum_, _ioCapability_             { , _ioCapability_ }
 
-
-(a) **open** : _fileNumberVar_, _fileName_, _ioCapability_
-{ , _ioCapability_ }
-(b) **open** : _fileNumberVar_, _argNum_, _ioCapability_
-{ , _ioCapability_ }
-
-
-
-##Description
+## Description
 The **open** statement connects the program to a file so the program can perform operations such as **read** on the file. In form (a), the **open** statement translates a _fileName_, such as "Master", to a file number such as 5. Form (b), which is less-commonly used, opens a file whose name is given by a program argument. This is described below.
 
 The **read** statement uses the file number, not the file name, to access the file. When the program is finished using the file, it disconnects from the file using the **close** statement. Each _ioCapability_ is the name of an operation, such as **read**, that is to be performed on the file.
 
 
-##Example
+## Example
 This programs illustrates how to open, read and then close a file.
 
         var fileName : string := "Master"   % Name of file
@@ -29,7 +21,7 @@ This programs illustrates how to open, read and then close a file.
         read : fileNo, inputVariable
         
         close : fileNo
-##Details
+## Details
 The **open** statement always sets the _fileNumber_ to a positive number. If the **open** fails (generally because the file does not exist), the _fileNumber_ is set to a non-positive number. It is wise to check that the stream number is greater than zero before using it further.
 
 An _ioCapability_ is one of:
@@ -66,7 +58,7 @@ The _mode_ must be "r" (for **get**) or "w " (for **put**).
         open : streamnumber, "myfile", put, mod, seek
         seek : streamnumber, *
         put : streamnumber, "This appears at the end of the file"        open ( var fileNumber : int, fileName : string, mode : string)
-##Details
+## Details
 The path name specified in the open statement and elsewhere can always be in UNIX format (i.e. with forward slashes, an initial forward slash indicating an absolute directory). On the PC, absolute paths would have the form:
 
 On the Macintosh, they would have the form:
@@ -76,6 +68,6 @@ Note that in addition to the UNIX path format, on the PC, you can always use sta
 All routines (such as the File and Dir module routines) will return files names in UNIX format, regardless of the machine the program is run on.
 
             a:/dir1/dir2/filename            /volume name/directory1/directory2/file name
-##See also
-**[close.html](close)**, **[get.html](get)**, **[put.html](put)**, **[read.html](read)**, **[write.html](write)**, **[seek.html](seek)** and **[tell.html](tell)** statements.
+## See also
+**[close](close.html)**, **[get](get.html)**, **[put](put.html)**, **[read](read.html)**, **[write](write.html)**, **[seek](seek.html)** and **[tell](tell.html)** statements.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>arcsin</b> (<i>r</i> : <b>real</b>) : <b>real</b><p>\r\n</p></font>",
       "text_content": " arcsin (r : real) : real\r\n",
-      "mdown_content": "**arcsin** (_r_ : **real**) : **real**\n"
+      "mdown_content": "**arcsin** (_r_ : **real**) : **real**"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "the <b><a href=\"arccos.html\">arccos</a></b> and <b><a href=\"arctan.html\">arctan</a></b> functions for calculating arccosine and arctangent.<p>\r\nthe <b><a href=\"arcsind.html\">arcsind</a></b> function which finds the arc sine of a value with the result given in degrees. (2<font face=\"symbol\">p</font> radians are the same as 360 degrees.)</p>\n<p>\r\nSee also predefined unit <b><a href=\"mathmodule.html\">Math</a></b>.</p>\n<p>\r\n</p>",
       "text_content": "the arccos and arctan functions for calculating arccosine and arctangent.\r\nthe arcsind function which finds the arc sine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\r\nSee also predefined unit Math.\r\n",
-      "mdown_content": "the **[arccos.html](arccos)** and **[arctan.html](arctan)** functions for calculating arccosine and arctangent.\n\nthe **[arcsind.html](arcsind)** function which finds the arc sine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[mathmodule.html](Math)**.\n"
+      "mdown_content": "the **[arccos](arccos.html)** and **[arctan](arctan.html)** functions for calculating arccosine and arctangent.\n\nthe **[arcsind](arcsind.html)** function which finds the arc sine of a value with the result given in degrees. (2p radians are the same as 360 degrees.)\n\nSee also predefined unit **[Math](mathmodule.html)**.\n"
     }
   ],
   "dependencies": [

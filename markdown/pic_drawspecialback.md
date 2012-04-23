@@ -1,17 +1,16 @@
 
-#Pic.DrawSpecialBack
+# Pic.DrawSpecialBack
 
-##Syntax
+## Syntax
 **Pic.DrawSpecialBack** (_picID_, _x_, _y_, _mode_, _transition_, _duration_  : **int**)
 
-
-##Description
-**Pic.DrawSpecialBack** is very similar to **[pic_drawspecial.html](Pic.DrawSpecial)**.  The onlydifference is that **Pic.DrawSpecialBack** returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.
+## Description
+**Pic.DrawSpecialBack** is very similar to **[Pic.DrawSpecial](pic_drawspecial.html)**.  The onlydifference is that **Pic.DrawSpecialBack** returns immediatelyafter being called and program execution continues while the specialeffect continues.  This allows you to continue to draw other graphicswhile the special effect is continuing.
 
 For example, this procedure is necessary if you want to have two pictures being drawn using special effects simultaneously.
 
 
-##Details
+## Details
 If you are wish to have several images displayed at the same timeusing special effects, you must use **Pic.DrawSpecialBack** to display all the images but the last and then use **Pic.DrawSpecial** to display the last image so that Turing will wait until the special effects are completed before continuing execution.
 
 If you want to draw the several special effects continuously overthe same location, do not use **Pic.DrawSpecialBack**.
@@ -21,8 +20,8 @@ If you want to draw the several special effects continuously overthe same locati
 If you do, Turing will attempt to run each of the calls at the sametime, and most of the special effects will not be seen.
 
 
-##Description
-**Pic.DrawSpecialBack** is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of**[pic_drawspecial.html](Pic.DrawSpecial)**.The picture is drawn with the lower left corner at (_x_, _y_). The _duration_ specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
+## Description
+**Pic.DrawSpecialBack** is used to draw a picture on the screenwith a special effect such as a wipe, a slide, or a fade-in. Note that all the parameters are identical to the parameters of**[Pic.DrawSpecial](pic_drawspecial.html)**.The picture is drawn with the lower left corner at (_x_, _y_). The _duration_ specifies how long thetransition should take in milliseconds.  For example, a fade-in couldbe specified to last 1/2 a second by using a duration of 500.
 
 The _mode_ parameter is the same as in **Pic.New** and has one of the following values:
 
@@ -33,10 +32,10 @@ _picMerge_   This draws the picture like _picCopy_ except that any occurrence of
 _picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
 
 
-See **[pic_drawspecial.html](Pic.DrawSpecial)** for thelist of possible values for the _transition_ parameter.
+See **[Pic.DrawSpecial](pic_drawspecial.html)** for thelist of possible values for the _transition_ parameter.
 
 
-##Details
+## Details
 The **Pic.DrawSpecialBack** requires a moderately fast machine to operate successfully (Pentium III or higher). The _picFadeIn_and _picBlend_ transitions do not work well on 8-bit (256 color)displays.  On Microsoft Windows machines, you can determine the bit-depth of the display (the number of colors available) by selecting the _Display_ control panel from the _Start_ menu.  You can also use the
 
 `      **Config.Display** (**cdNumMaxColors**)`
@@ -44,11 +43,11 @@ The **Pic.DrawSpecialBack** requires a moderately fast machine to operate succes
 function to determine the bit-depth of the display (anything **over** 256 colors will produce acceptable results).
 
 
-##Details
+## Details
 If the **Pic.DrawSpecialBack** call fails, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 The program draws a blue star on the screen, then a red circle, thenproceeds to have to have the two replace each simultaneously, side-by-side.
 
 
@@ -72,14 +71,14 @@ The program draws a blue star on the screen, then a red circle, thenproceeds to 
 	Pic.DrawSpecial (blueID, 160, 10, picCopy, picFadeIn, 1000)
         Pic.Free (redID)
         Pic.Free (blueID)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Pic.DrawSpecialBack**, not by calling **DrawSpecialBack**.
 
 
-##See also
-**[pic_draw.html](Pic.Draw)** for information on the meaningof the _mode_ argument.
+## See also
+**[Pic.Draw](pic_draw.html)** for information on the meaningof the _mode_ argument.
 
-**[pic_drawspecial.html](Pic.DrawSpecial)** for information on how to draw special effects and wait for completionof the effect.
+**[Pic.DrawSpecial](pic_drawspecial.html)** for information on how to draw special effects and wait for completionof the effect.
 

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>index</b> (<i>s </i>, <i>patt</i> : <b>string</b> ) : <b>int</b><p>\r\n</p></font>",
       "text_content": " index (s , patt : string ) : int\r\n",
-      "mdown_content": "**index** (_s_ , _patt_ : **string** ) : **int**\n"
+      "mdown_content": "**index** (_s_ , _patt_ : **string** ) : **int**"
     },
     {
       "title": "Description",

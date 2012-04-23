@@ -1,13 +1,10 @@
 
-#GUI.CreateButton[Full]
+# GUI.CreateButton[Full]
 
-##Syntax
-**GUI.CreateButton** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ ()) : **int**
+## Syntax
+**GUI.CreateButton** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateButtonFull** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (), _height_ : **int**, _shortcut_ : **char**, _default_ : **boolean**) : **int**
 
-**GUI.CreateButtonFull** (_x_, _y_, _width_ : **int**, _text_ : **string**,    _actionProc_ : **procedure** _x_ (), _height_ : **int**, _shortcut_ : **char**, _default_ : **boolean**) : **int**
-
-
-##Description
+## Description
 Creates a button and returns the button's widget ID.
 
 The button widget is used to implement a textual button. When you click on a button, the button's _action procedure_ is called. If a button is given a short cut, then entering the keystroke will cause the _action procedure_ to be called. It will not visibly cause the button to depress.
@@ -23,7 +20,7 @@ The _x_ and _y_ parameters specify the lower-left corner of the button. The _wid
 For **GUI.CreateButtonFull**, the _height_ parameter specifies the height of the button. If _height_ is less than the size necessary to display the button, the button is automatically enlarged to fit the text. The _shortcut_ parameter is the keystroke to be used as the button's shortcut. The _default_ parameter is a boolean indicating whether the button should be the default button. If there is already a default button, and _default_ is set to true, then this button becomes the new default button.
 
 
-##Example
+## Example
 The following program creates two buttons, one which draws a random circle on the screen and one which quits the program.
 
 
@@ -47,7 +44,7 @@ The following program creates two buttons, one which draws a random circle on th
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 When **GUI.CreateButton** or **GUI.CreateButtonFull** is called, the newly created button will be displayed immediately unless **GUI.DisplayWhenCreated** has been called with the _display_ parameter set to false. 
 
 If a button's width or height is set to zero (or not specified at all), then the button is shaped to fit the text.
@@ -57,7 +54,7 @@ A button can be the default button for a window. The default button is drawn wit
 When a button is not enabled, the text in the button is grayed out and the button no longer responds to any mouse clicks or keystrokes until the button is enabled again.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a button as the _widgetID_ parameter:
 
 
@@ -65,12 +62,12 @@ The following GUI subprograms can be called with a button as the _widgetID_ para
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateButton**, not by calling **CreateButton**.
 
 
-##See also
-**[gui_setlabel.html](GUI.SetLabel)** for changing the button's text, **[gui_setdefault.html](GUI.SetDefault)** for setting the default button in a window and**[gui_setcolor.html](GUI.SetColor)** for setting the button's color.
+## See also
+**[GUI.SetLabel](gui_setlabel.html)** for changing the button's text, **[GUI.SetDefault](gui_setdefault.html)** for setting the default button in a window and**[GUI.SetColor](gui_setcolor.html)** for setting the button's color.
 

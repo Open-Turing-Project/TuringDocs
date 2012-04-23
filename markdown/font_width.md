@@ -1,19 +1,18 @@
 
-#Font.Width
+# Font.Width
 
-##Syntax
+## Syntax
 **Font.Width** (_txtStr_ : **string**, _fontID_ : **int**) : **int**
 
-
-##Description
+## Description
 **Font.Width** is used to obtain the width in pixels that a specified string will take to draw in a specified font. The _textStr_ parameter is the string. The _fontID_ parameter is the font in which the string would be drawn.
 
 
-##Details
+## Details
 If **Font.Width** is passed an invalid font ID, a fatal error occurs. If the **Font.Width** call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, **Error.Last** will return a non-zero value indicating the reason for the failure. **Error.LastMsg** will return a string which contains the textual version of the error.
 
 
-##Example
+## Example
 The program gets information about 24pt Bold Palatino.
 
 
@@ -27,7 +26,7 @@ The program gets information about 24pt Bold Palatino.
         Draw.Line (100, 50, 100, 150, brightred)
         Draw.Line (100 + width, 50, 100 + width, 150, brightred)
         Font.Free (fontID)
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **Font.Width**, not by calling **Width**.

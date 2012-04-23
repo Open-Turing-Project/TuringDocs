@@ -1,13 +1,10 @@
 
-#GUI.CreateHorizontalScrollBar[Full]
+# GUI.CreateHorizontalScrollBar[Full]
 
-##Syntax
-**GUI.CreateHorizontalScrollBar** (_x_, _y_, _size_ : **int**,    _min_, _max_, _start_: **int**, _actionProc_ : **procedure** _x_ (_value_ : **int**)) : **int**
+## Syntax
+**GUI.CreateHorizontalScrollBar** (_x_, _y_, _size_ : **int**,    _min_, _max_, _start_: **int**, _actionProc_ : **procedure** _x_ (_value_ : **int**)) : **int****GUI.CreateHorizontalScrollBarFull** (_x_, _y_, _size_ : **int**,    _min_, _max_, _start_ : **int**,    _actionProc_ : **procedure** _x_ (_value_ : **int**),    _arrowInc_, _pageInc_, _thumbSize_ : **int**) : **int**
 
-**GUI.CreateHorizontalScrollBarFull** (_x_, _y_, _size_ : **int**,    _min_, _max_, _start_ : **int**,    _actionProc_ : **procedure** _x_ (_value_ : **int**),    _arrowInc_, _pageInc_, _thumbSize_ : **int**) : **int**
-
-
-##Description
+## Description
 Creates a horizontal (left-right) scroll bar and returns the scroll bar's widget ID. 
 
 A scroll bar is a widget that allows users to see a piece of a document that cannot be displayed on the screen in its entirety. The picture below shows a horizontal scroll bar. To control a scroll bar, there are a few choices: the user can click on the thumb (the box in the scroll bar) and slide it left or right, or the user can click in the scroll bar itself to the left or right of the thumb (in which case the thumb is moved up or down one "page"), or the user can click on the left or right arrows at the ends of the scroll bar (in which case the thumb is moved left or right one "arrow increment"). 
@@ -27,7 +24,7 @@ By default, the arrow increment (the amount the value is changed when the scroll
 The _x_ and _y_ parameters specify the lower-left corner of the scroll bar. The _size_ parameter specifies the length of the scroll bar (including the arrows) in pixels. The _min_ and _max_ parameters are the minimum and maximum values returned by the scroll bar. The _start_ parameter is the initial value of the scroll bar and should be between _min_ and _max_ inclusive. The _actionProc_ parameter is the name of a procedure that is called when the value of the scroll bar is changed. The parameter to the _action procedure_ is the current value of the scroll bar.
 
 
-##Example
+## Example
 The following program creates a horizontal scroll bar. Whenever the scroll bar's value is changed, a message is displayed in the window.
 
 
@@ -47,13 +44,13 @@ The following program creates a horizontal scroll bar. Whenever the scroll bar's
         loop
             exit when GUI.ProcessEvent
         end loop
-##Description
+## Description
 For **GUI.CreateHorizontalScrollBarFull**, the _arrowInc_ parameter specifies the arrow increment (the amount the scroll bar's value is changed when the scroll arrows are pressed). The _pageInc_ specifies the page increment (the amount the scroll bar's value is changed when the user clicks in the page left/right section of the scroll bar). The _thumbSize_ parameter specifies the "thumb size". (See the scroll bar explanation for more detail on a scroll bar's "thumb size").
 
 For example, if you have a window that can display 20 lines of text at once and there are 100 lines of text, you would set _min_ to 1, _max_ to 100 and _thumbSize_ to 20. The value returned by the scroll bar would then be the line number of the first line on the screen to be displayed. When the scroll bar was at its maximum value, it would return 81, since by doing so, lines 81-100 would be displayed. 
 
 
-##Example
+## Example
 Here is an example program that scrolls a large picture over a smaller window.
 
 
@@ -95,7 +92,7 @@ Here is an example program that scrolls a large picture over a smaller window.
         loop
             exit when GUI.ProcessEvent
         end loop
-##Details
+## Details
 In some instances, you will want the the minimum and maximum values of the scroll bar to be reversed (right/top is minimum). In that case, call the **GUI.SetSliderReverse** procedure to flip the values of the scroll bar.
 
 Scroll bars always have a fixed height (for horizontal scroll bars) or width (for vertical scroll bars). To get a scroll bar's width, use the **GUI.GetScrollBarWidth** function. 
@@ -105,7 +102,7 @@ When **GUI.CreateHorizontalScrollBar** or **GUI.CreateHorizontalScrollBarFull** 
 When a scroll bar is not enabled, the gray in the bar is set to white and the thumb is not displayed. The scroll bar no longer responds to any mouse clicks until the scroll bar is enabled again.
 
 
-##Details
+## Details
 The following GUI subprograms can be called with a scroll bar as the _widgetID_ parameter:
 
 
@@ -113,12 +110,12 @@ The following GUI subprograms can be called with a scroll bar as the _widgetID_ 
 
 
 
-##Status
+## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateHorizontalScrollBar**, not by calling **CreateHorizontalScrollBar**.
 
 
-##See also
-**[gui_getslidervalue.html](GUI.GetSliderValue)** and **[gui_setslidervalue.html](GUI.SetSliderValue)** for reading and setting the value of a scroll bar, **[gui_setsliderminmax.html](GUI.SetSliderMinMax)** for changing the minimum and maximum values of a scroll bar, and **[gui_setscrollamount.html](GUI.SetScrollAmount)** for changing the scrolling increments and thumb size of a scroll bar. See also **[gui_setslidersize.html](GUI.SetSliderSize)** for setting the [length.html](length) of a scroll bar and **[gui_setsliderreverse.html](GUI.SetSliderReverse)** for reversing the sense of a scroll bar.
+## See also
+**[GUI.GetSliderValue](gui_getslidervalue.html)** and **[GUI.SetSliderValue](gui_setslidervalue.html)** for reading and setting the value of a scroll bar, **[GUI.SetSliderMinMax](gui_setsliderminmax.html)** for changing the minimum and maximum values of a scroll bar, and **[GUI.SetScrollAmount](gui_setscrollamount.html)** for changing the scrolling increments and thumb size of a scroll bar. See also **[GUI.SetSliderSize](gui_setslidersize.html)** for setting the [length](length.html) of a scroll bar and **[GUI.SetSliderReverse](gui_setsliderreverse.html)** for reversing the sense of a scroll bar.
 

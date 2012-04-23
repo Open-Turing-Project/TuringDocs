@@ -1,15 +1,14 @@
 
-#bits
+# bits
 
-##Syntax
+## Syntax
 **bits** (_expn_, _subrange_)
 
-
-##Description
+## Description
 The **bits** operator is used to extract a sequence of bits from a natural (non-negative) number expression. The bits are numbered from right to left as 0, 1, 2 &#133;
 
 
-##Example
+## Example
 Set bits 2 and 1 (third and second from the right) in the variable _d_ to be 01. We first set _b_ to be the bit string 1100.
 
         type T12 : 1 .. 2           % Use to specify bit range
@@ -17,12 +16,12 @@ Set bits 2 and 1 (third and second from the right) in the variable _d_ to be 01.
         % At this point bits(d, T12) = 2#10
         bits (d, T12) := 2#01
         % At this point d = 2#1010
-##Example
+## Example
 Set bit 7 in variable _n_ to be 1. As a result, _n_ will equal 2#10000000.
 
         var n : nat1 := 0       % A one byte variable set to zero
         bits (n, 7) := 1        % n now contains the pattern 10000000
-##Details
+## Details
 The form of _subrange_ must be one of:
 
 
@@ -37,6 +36,6 @@ Form (b) represents the range _n_ .. _n_ where _n_ is the non-negative value of 
 If the expression _expn_ is a variable reference, the **bits** operation can be assigned to, but cannot be passed to, a **var** parameter. For example, in the above, **bits** (_d_, _T12_) has the value 2#01 assigned to it. For this assignment to be allowed, the expression _expn_ must be a natural number type (**nat**, **nat1**, **nat2** or **nat4**).
 
 
-##See also
-_[explicitintegerconstant.html](explicitIntegerConstant)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord.html](ord)**, **[chr.html](chr)**, **[intstr.html](intstr)**, **[strint.html](strint)**, **[natstr.html](natstr)**, and **[strnat.html](strnat)**. See also **[shr.html](shr)** and **[shl.html](shl)** (shift right and left).
+## See also
+_[explicitIntegerConstant](explicitintegerconstant.html)_ (for description of constants such as 16#FFFF) and the following functions that convert one type to another in a machine-independent manner: **[ord](ord.html)**, **[chr](chr.html)**, **[intstr](intstr.html)**, **[strint](strint.html)**, **[natstr](natstr.html)**, and **[strnat](strnat.html)**. See also **[shr](shr.html)** and **[shl](shl.html)** (shift right and left).
 

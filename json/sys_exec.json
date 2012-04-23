@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Sys.Exec</b> ( <i>command</i> : <b>string</b> ) : <b>boolean</b><p>\r\n</p></font>",
       "text_content": " Sys.Exec ( command : string ) : boolean\r\n",
-      "mdown_content": "**Sys.Exec** ( _command_ : **string** ) : **boolean**\n"
+      "mdown_content": "**Sys.Exec** ( _command_ : **string** ) : **boolean**"
     },
     {
       "title": "Description",
@@ -44,7 +44,7 @@
       ],
       "raw_content": "<b><a href=\"sys_nargs.html\">Sys.Nargs</a></b>, <b><a href=\"sys_fetcharg.html\">Sys.FetchArg</a></b> and <b><a href=\"sys_getenv.html\">Sys.GetEnv</a></b> functions.<p>\r\n</p>",
       "text_content": " Sys.Nargs, Sys.FetchArg and Sys.GetEnv functions.\r\n",
-      "mdown_content": "**[sys_nargs.html](Sys.Nargs)**, **[sys_fetcharg.html](Sys.FetchArg)** and **[sys_getenv.html](Sys.GetEnv)** functions.\n"
+      "mdown_content": "**[Sys.Nargs](sys_nargs.html)**, **[Sys.FetchArg](sys_fetcharg.html)** and **[Sys.GetEnv](sys_getenv.html)** functions.\n"
     }
   ],
   "dependencies": [

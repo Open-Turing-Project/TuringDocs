@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>mousewhere </b>(<b>var</b> <i>x</i>, <i>y</i>, <i>button</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " mousewhere (var x, y, button : int)\r\n",
-      "mdown_content": "**mousewhere** (**var** _x_, _y_, _button_ : **int**)\n"
+      "mdown_content": "**mousewhere** (**var** _x_, _y_, _button_ : **int**)"
     },
     {
       "title": "Description",
@@ -32,7 +32,7 @@
       ],
       "raw_content": "<b><a href=\"buttonmoved.html\">buttonmoved</a></b> and <b><a href=\"buttonwait.html\">buttonwait</a></b> to get mouse events saved in a queue. See also <b><a href=\"buttonchoose.html\">buttonchoose</a></b> to switch between \"<i>single-button mode</i>\" and \"<i>multi-button mode</i>\".<p>\r\n</p>",
       "text_content": " buttonmoved and buttonwait to get mouse events saved in a queue. See also buttonchoose to switch between \"single-button mode\" and \"multi-button mode\".\r\n",
-      "mdown_content": "**[buttonmoved.html](buttonmoved)** and **[buttonwait.html](buttonwait)** to get mouse events saved in a queue. See also **[buttonchoose.html](buttonchoose)** to switch between \"_single-button mode_\" and \"_multi-button mode_\".\n"
+      "mdown_content": "**[buttonmoved](buttonmoved.html)** and **[buttonwait](buttonwait.html)** to get mouse events saved in a queue. See also **[buttonchoose](buttonchoose.html)** to switch between \"_single-button mode_\" and \"_multi-button mode_\".\n"
     }
   ],
   "dependencies": [

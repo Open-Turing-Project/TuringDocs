@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Joystick.GetInfo </b>(<i>joystick</i> : <b>int</b>, <b>var</b><i> xPos</i>, <i>yPos</i> : <b>int</b>,<br><i>btn1Pressed</i>, <i>btn2Pressed</i> : <b>boolean</b>)<p>\r\n</p></font>",
       "text_content": " Joystick.GetInfo (joystick : int, var xPos, yPos : int,btn1Pressed, btn2Pressed : boolean)\r\n",
-      "mdown_content": "**Joystick.GetInfo** (_joystick_ : **int**, **var** _xPos_, _yPos_ : **int**,_btn1Pressed_, _btn2Pressed_ : **boolean**)\n"
+      "mdown_content": "**Joystick.GetInfo** (_joystick_ : **int**, **var** _xPos_, _yPos_ : **int**,_btn1Pressed_, _btn2Pressed_ : **boolean**)"
     },
     {
       "title": "Description",

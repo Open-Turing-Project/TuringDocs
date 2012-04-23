@@ -1,15 +1,14 @@
 
-#arccosd
+# arccosd
 
-##Syntax
+## Syntax
 **arccosd** (_r_ : **real**) : **real**
 
-
-##Description
+## Description
 The **arccosd** function is used to find the arc cosine of an angle given in degrees. For example, **arccosd** (0.5) is 60.
 
 
-##Example
+## Example
 This program prints out the arccosine of values from -1 to 1 in degrees.
 
         for i : -4 .. 4
@@ -17,10 +16,10 @@ This program prints out the arccosine of values from -1 to 1 in degrees.
             put "Arc cosine of ", arg, " is ",
                 arccosd (arg), " degrees"
         end for
-##See also
-the **[arcsind.html](arcsind)** and **[arctand.html](arctand)** functions for calculating arcsine and arctangent
+## See also
+the **[arcsind](arcsind.html)** and **[arctand](arctand.html)** functions for calculating arcsine and arctangent
 
-the **[arccos.html](arccos)** function which finds the arc cosine of a value with the result given in radians. (2p radians are the same as 360 degrees.)
+the **[arccos](arccos.html)** function which finds the arc cosine of a value with the result given in radians. (2p radians are the same as 360 degrees.)
 
-See also predefined unit **[mathmodule.html](Math)**.
+See also predefined unit **[Math](mathmodule.html)**.
 

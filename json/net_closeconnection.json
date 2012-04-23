@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<font size=\"+1\"><b>Net.CloseConnection</b> (<i>netStream</i> : <b>int</b>)<p>\r\n</p></font>",
       "text_content": " Net.CloseConnection (netStream : int)\r\n",
-      "mdown_content": "**Net.CloseConnection** (_netStream_ : **int**)\n"
+      "mdown_content": "**Net.CloseConnection** (_netStream_ : **int**)"
     },
     {
       "title": "Description",
@@ -43,7 +43,7 @@
       ],
       "raw_content": "<b><a href=\"net_openconnection.html\">Net.OpenConnection</a></b> and <b><a href=\"net_waitforconnection.html\">Net.WaitForConnection</a></b>.<p>\r\n</p>",
       "text_content": " Net.OpenConnection and Net.WaitForConnection.\r\n",
-      "mdown_content": "**[net_openconnection.html](Net.OpenConnection)** and **[net_waitforconnection.html](Net.WaitForConnection)**.\n"
+      "mdown_content": "**[Net.OpenConnection](net_openconnection.html)** and **[Net.WaitForConnection](net_waitforconnection.html)**.\n"
     }
   ],
   "dependencies": [
