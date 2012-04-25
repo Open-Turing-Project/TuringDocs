@@ -2,7 +2,11 @@
 # record
 
 ## Syntax
-A _recordType_ is:   **record**     _id_ {, _id_ } : _typeSpec_     { _id_ {, _id_ } : _typeSpec_ }   **end** **record**
+A _recordType_ is:   
+**record**  
+&nbsp;&nbsp;_id_ {, _id_ } : _typeSpec_  
+&nbsp;&nbsp;{ _id_ {, _id_ } : _typeSpec_ }
+**end** **record**
 
 ## Description
 Each value of a record type consists of fields, one field for each name (_id_) declared inside the record. In the following example, the fields are _name_, _phoneNumber_ and _address_.
@@ -31,3 +35,4 @@ Any array contained in a record must have bounds that are known at compile time.
 
 The notation > can be used to access record fields. For example, if _p_ is a pointer to _phoneRecord_, _p_>_name_ locates the _name_ field. See **pointer**.
 
+                        

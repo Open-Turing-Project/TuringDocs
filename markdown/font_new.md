@@ -12,9 +12,9 @@ The format for the _fontSelectStr_parameter is "_Family_:_Size_:_Style_". Each e
 _Family_ is the name of the font, such as "Times", "Helvetica", etc. The name must match an existing font on the system. Because one does not necessarily know which fonts will be available and names for the same font change between different systems (i.e Times, Times-Roman, etc.), Turing defines three family names that will be mapped as closely as possible to fonts that exist on the system.
 
 
-"serif" is used for a serifed body font. This will usually be mapped to Times-Roman.
-"sans serif" is used for a non-serifed display font. This will usually be mapped to Arial.
-"mono" is used for a mono spaced font. This will usually be mapped to Courier.
+- "serif" is used for a serifed body font. This will usually be mapped to Times-Roman.
+- "sans serif" is used for a non-serifed display font. This will usually be mapped to Arial.
+- "mono" is used for a mono spaced font. This will usually be mapped to Courier.
 
 
 _Size_ is the point size in which the text should appear. If the number is larger or smaller than can be created on a given system, the system will return the font of the largest or smallest size available and set **Error.Last**.
@@ -52,3 +52,4 @@ Exported qualified.
 
 This means that you can only call the function by calling **Font.New**, not by calling **New**.
 
+                        
