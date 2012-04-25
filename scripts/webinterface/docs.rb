@@ -1,11 +1,17 @@
 require "sinatra"
 require "json"
+require "set"
+
+SIZEMODE = false
 
 configure do
 	info = JSON.parse(IO.read("../../info.json"), :symbolize_names => true)
 	status = JSON.parse(IO.read("../../status.json"), :symbolize_names => true)
+	
 	status[:sameSize] ||= []
-	set :infoStruct => info, :statusStruct => status
+	sizeToCheck = Set.new(status[:unchecked])
+
+	set :infoStruct => info, :statusStruct => status, :sizeToCheck => sizeToCheck
 
 	set :port, 9063
 end
@@ -30,8 +36,18 @@ helpers do
 			end
 		end
 		total = settings.infoStruct[:pages].length
-		done = settings.statusStruct[:goodPages].length + settings.statusStruct[:badPages].length
-		erb :index, :locals => {:mdpage => mdpage, :originalpage => content, :pagename => page[:fileName], :totalPages => total, :donePages => done}
+		done = nil
+		if SIZEMODE
+			done = total - settings.sizeToCheck.size
+		else
+			done = settings.statusStruct[:goodPages].length + settings.statusStruct[:badPages].length + settings.statusStruct[:sameSize].length
+		end
+		locals = {
+			:mdpage => mdpage, :originalpage => content, 
+			:pagename => page[:fileName], :totalPages => total, :donePages => done,
+			:sizeMode => SIZEMODE
+		}
+		erb :index, :locals => locals
 	end
 	def goodPage(page)
 		settings.statusStruct[:unchecked].delete(page)
@@ -60,13 +76,20 @@ helpers do
 			oFile.puts json
 		end
 	end
+	def getPageToCheck()
+		unless SIZEMODE
+			unchecked = settings.statusStruct[:unchecked]
+			return unchecked[rand(unchecked.length)]
+		else
+			return settings.sizeToCheck.each.first
+		end
+	end
 end
 
 get '/' do
-  unchecked = settings.statusStruct[:unchecked]
-  unless unchecked.length == 0
+  unless settings.statusStruct[:unchecked].length == 0
   	# get a random next page, so that 2 people won't get the same one at the same time
-  	page = unchecked[rand(unchecked.length)]
+  	page = getPageToCheck()
   	redirect to("/pages/#{page}"), 303
   else
   	"No more pages!"
@@ -84,8 +107,12 @@ post '/bad/:page' do
 end
 
 post '/samesize/:page' do
+	settings.sizeToCheck.delete(params[:page])
 	sendTo(params[:page],:sameSize)
 	saveStatus()
+end
+post '/diffsize/:page' do
+	settings.sizeToCheck.delete(params[:page])
 end
 
 post '/save/:page' do
