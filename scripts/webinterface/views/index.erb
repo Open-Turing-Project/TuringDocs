@@ -33,6 +33,7 @@
     <script type="text/javascript" src="/jquery.markedit.js"></script>
 
     <script type="text/javascript">
+        var sizeMode = true
 
         // Create a MarkEdit editor on page load
         function nextPage() {
@@ -44,8 +45,14 @@
             var diff = Math.abs(originalH-newH);
             if(diff > 17) {
                 $('#sizeCheck').html(diff + "px size difference!");
+                if(sizeMode) {
+                    nextPage();
+                }
             } else {
                 $('#sizeCheck').html("Same Size");
+                if(sizeMode) {
+                    $.post("/samesize/" + "<%= pagename %>",nextPage);
+                }
             }
             console.log("Size check. Difference: " + diff + "px");
         }

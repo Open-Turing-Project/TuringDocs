@@ -4,6 +4,7 @@ require "json"
 configure do
 	info = JSON.parse(IO.read("../../info.json"), :symbolize_names => true)
 	status = JSON.parse(IO.read("../../status.json"), :symbolize_names => true)
+	status[:sameSize] ||= []
 	set :infoStruct => info, :statusStruct => status
 
 	set :port, 9063
@@ -42,6 +43,10 @@ helpers do
 		settings.statusStruct[:badPages] << page
 		puts "NOTICE: #{page} is bad!"
 	end
+	def sendTo(page,bin)
+		settings.statusStruct[:unchecked].delete(page)
+		settings.statusStruct[bin] << page
+	end
 	def savePage(page,markdown)
 		settings.statusStruct[:handedited] << page unless settings.statusStruct[:handedited].include? page
 		File.open("../../markdown/" + page + ".md", "w") do |oFile| 
@@ -69,18 +74,23 @@ get '/' do
 end
 
 post '/good/:page' do
-	goodPage(params[:page])
+	sendTo(params[:page],:goodPages)
 	saveStatus()
 end
 
 post '/bad/:page' do
-	badPage(params[:page])
+	sendTo(params[:page],:badPages)
+	saveStatus()
+end
+
+post '/samesize/:page' do
+	sendTo(params[:page],:sameSize)
 	saveStatus()
 end
 
 post '/save/:page' do
 	savePage(params[:page],params[:markdown])
-	goodPage(params[:page])
+	sendTo(params[:page],:goodPages)
 	saveStatus()
 end
 
