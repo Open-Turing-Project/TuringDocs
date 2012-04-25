@@ -2,7 +2,8 @@
 # tag
 
 ## Syntax
-A _tagStatement_ is:   **tag** _unionVariableReference_ , _expn_
+A _tagStatement_ is:   
+**tag** _unionVariableReference_ , _expn_
 
 ## Description
 A **tag** statement is a special-purpose assignment that is used for changing the tag of a **union** variable.
@@ -31,3 +32,4 @@ You cannot  access a particular set of fields of a **union** unless the tag is s
 ## See also
 **[union](union.html)** types.
 
+                        

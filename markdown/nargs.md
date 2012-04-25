@@ -13,7 +13,9 @@ the value of **nargs** will similarly be 2.
 
 The **nargs** function is usually used together with the **fetcharg** function to access the arguments that have been passed to the program. 
 
-        :r file1 file2        prog.x file1 file2
+        :r file1 file2        
+        prog.x file1 file2
 ## See also
 **[fetcharg](fetcharg.html)** for an example of the use of **[nargs]()**.
 
+                        

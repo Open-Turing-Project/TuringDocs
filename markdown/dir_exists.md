@@ -14,11 +14,14 @@ If the **Dir.Exists** returns **false**, you can examine **Error.Last** or **Err
 
 ## Example
 The following program determines if the directory "d:/usr/west" exists, and outputs an error message if it does not.
+
         if Dir.Exists ("d:/usr/west") then
             put "Directory exists"
         else
             put "Directory does not exists: ", Error.LastMsg
         end if
-Status  
+
+##Status  
  Exported qualified.
-This means that you can only call the function by calling Dir.Exists, not by calling Exists.
+This means that you can only call the function by calling **Dir.Exists**, not by calling **Exists**.
+                        

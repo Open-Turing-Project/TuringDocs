@@ -2,7 +2,9 @@
 # condition
 
 ## Syntax
-A conditionDeclaration is:   **var** _id_ { , _id_ } : [ **array** _indexType_ {, _indexType_ } **of** ]     [ _conditionOption_ ] **condition**
+A conditionDeclaration is:   
+**var** _id_ { , _id_ } : [ **array** _indexType_ {, _indexType_ } **of** ]
+&nbsp; [ _conditionOption_ ] **condition**
 
 ## Description
 A condition is essentially a queue of sleeping processes. It is used in a concurrent program to allow processes to block themselves (by the **wait** statement) and later to be awakened (by the **signal** statement). A condition variable, which can occur only inside a monitor (a special kind of module that handles concurrency) or monitor class, is used by the **wait** and **signal** statements for putting processes to sleep and later waking them up.
@@ -48,9 +50,9 @@ The processes use this monitor to gain exclusive access to a resource. A process
 A _conditionOption_ is one of:
 
 
-(a)   **priority**
-(b)   **deferred**
-(c)   **timeout**
+-   **priority**
+-   **deferred**
+-   **timeout**
 
 
 The **priority** option requires that the corresponding **wait** statements include priorities. Options (b) and (c) declare _deferred_ conditions. A signal to a deferred condition causes the signaled process to become ready to enter the monitor when the monitor becomes inactive. The signaling process continues running in the monitor. A signal to an _immediate_ (non deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive. All conditions in a device monitor must be deferred (or **timeout**).
@@ -67,3 +69,4 @@ Note that _conditionOption_ must precede the keyword **condition**.
 ## See also
 **[wait](wait.html)** and **[signal](signal.html)**. See also **[monitor](monitor.html)** and **[fork](fork.html)**. See also **[empty](empty.html)**. See also **[pause](pause.html)**.
 
+                        

@@ -2,7 +2,12 @@
 # GUI.Alert[2,3,Full]
 
 ## Syntax
-One of four procedures:   **GUI.Alert** (_title_, _msg_ : **string**)   **GUI.Alert2** (_title_, _msg1_, _msg2_ : **string**)   **GUI.Alert3** (_title_, _msg_1, _msg2_, _msg3_ : **string**)   **GUI.AlertFull** (_title_ : **string,**      _msg_ : **array** 1 .. * **of string**, _button_ : **string**)
+One of four procedures:   
+
+- **GUI.Alert** (_title_, _msg_ : **string**)   
+- **GUI.Alert2** (_title_, _msg1_, _msg2_ : **string**)   
+- **GUI.Alert3** (_title_, _msg_1, _msg2_, _msg3_ : **string**)
+- **GUI.AlertFull** (_title_ : **string,** _msg_ : **array** 1 .. * **of string**, _button_ : **string**)
 
 ## Description
 Displays a dialog box with the string specified by _msg_ in it. There is a single button labelled _OK_ which dismisses the dialog and resumes execution. The _title_ parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.
@@ -62,3 +67,4 @@ Exported qualified.
 
 This means that you can only call the function by calling **GUI.Alert**, not by calling **Alert**.
 
+                        

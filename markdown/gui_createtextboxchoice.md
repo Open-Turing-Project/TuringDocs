@@ -36,16 +36,16 @@ The following program displays the contents of a file in a text box.
         
         var x : int := GUI.CreateTextBoxChoice (20, 20, 200, 100, 0, 0, ChoseLine)
 
-	GUI.AddLine (x, "Choose A")
-	GUI.AddLine (x, "Choose B")
-	GUI.AddLine (x, "Choose C")
-	GUI.AddLine (x, "Choose D")
-	GUI.AddLine (x, "Choose E")
-	GUI.AddLine (x, "Choose F")
-	GUI.AddLine (x, "Choose G")
-	GUI.AddLine (x, "Choose H")
-	GUI.AddLine (x, "Choose I")
-	GUI.AddLine (x, "Choose J")
+        GUI.AddLine (x, "Choose A")
+        GUI.AddLine (x, "Choose B")
+        GUI.AddLine (x, "Choose C")
+        GUI.AddLine (x, "Choose D")
+        GUI.AddLine (x, "Choose E")
+        GUI.AddLine (x, "Choose F")
+        GUI.AddLine (x, "Choose G")
+        GUI.AddLine (x, "Choose H")
+        GUI.AddLine (x, "Choose I")
+        GUI.AddLine (x, "Choose J")
 
         loop
             exit when GUI.ProcessEvent
@@ -71,3 +71,4 @@ This means that you can only call the function by calling **GUI.CreateTextBoxCho
 ## See also
 **[GUI.AddLine](gui_addline.html)** for adding text to the text box.See also **[GUI.SetTopLine](gui_settopline.html)**to set the top line of text in the text box.See also **[GUI.SetScrollOnAdd](gui_setscrollonadd.html)**to set stop the text box from scrolling when text is added to the text box.See also **[GUI.ClearText](gui_cleartext.html)** for clearing the text box.
 
+                        

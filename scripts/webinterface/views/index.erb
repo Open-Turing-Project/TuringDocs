@@ -38,6 +38,17 @@
         function nextPage() {
             location.href = "/";
         }
+        function checkSizes() {
+            var originalH = $('#originaldoc').height();
+            var newH = $('#preview').height();
+            var diff = Math.abs(originalH-newH);
+            if(diff > 17) {
+                $('#sizeCheck').html(diff + "px size difference!");
+            } else {
+                $('#sizeCheck').html("Same Size");
+            }
+            console.log("Size check. Difference: " + diff + "px");
+        }
         $(function(){
            $('#markeditor').markedit();
            $('#markeditor').markeditBindAutoPreview ($('#preview'));
@@ -53,6 +64,9 @@
                 newText = $('#markeditor').val();
                 $.post("/save/" + "<%= pagename %>", {markdown: newText},nextPage);
            });
+
+           $('#preview').bind('DOMSubtreeModified',checkSizes);
+           checkSizes();
         });
 
     </script>
@@ -145,7 +159,7 @@
                     </div>
                 </td>
                 <td class="column" valign="top">
-                    <h2>New Page</h2>
+                    <h2>New Page - <span id="sizeCheck">same size</span></h2>
                     <hr/>
                     <div id="preview">Oh noes! parsing error!</div>
                 </td>
