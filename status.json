@@ -13,7 +13,10 @@
     "condition",
     "drawmodule",
     "gui_alert",
-    "tag"
+    "tag",
+    "strmodule",
+    "implement",
+    "typespec"
   ],
   "badPages": [
     "rgb_getcolor",
@@ -67,7 +70,10 @@
     "gui_alert",
     "tag",
     "draw_thickline",
-    "addressint"
+    "addressint",
+    "strmodule",
+    "implement",
+    "typespec"
   ],
   "unchecked": [
     "anyclass",
@@ -195,7 +201,6 @@
     "gui_showwindow",
     "handler",
     "if",
-    "implement",
     "import",
     "include",
     "index",
@@ -288,7 +293,6 @@
     "streammodule",
     "string",
     "string1",
-    "strmodule",
     "subprogramheader",
     "subprogramtype",
     "subrangetype",
@@ -306,7 +310,6 @@
     "turing_quick_admin",
     "type",
     "typeconvmodule",
-    "typespec",
     "union",
     "unit",
     "var",

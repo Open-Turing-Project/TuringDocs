@@ -49,6 +49,8 @@ def markdownFormat(htmlStr,allowLines = true)
 	text.gsub!(/&lt;/,"<")
 	text.gsub!(/&amp;/,"&")
 	text.gsub!(/&133;/,"...")
+	# turn (a) (b) (c) lists into real lists
+	text.gsub!(/\([a-z]\)/,allowLines ? "- " : "\n- ")
 	# remove random indenting
 	text = text.lines.map {|l| l.chomp.lstrip}.join("\n")
 	text
@@ -156,11 +158,16 @@ def saveJSON(struct, file)
 end
 # datastruct = convFile("html/keycodes.html")
 # puts markdownFormat(datastruct[:htmlcontent])
+SKIP_CHECKED = true
 info = {:pages => [], :special => []}
 status = JSON.parse(IO.read("status.json"), :symbolize_names => true)
 Dir["html/*.html"].each do |f|
 	#puts "Processing #{f}"
 	datastruct = convFile(f)
+	if SKIP_CHECKED && !(status[:unchecked].include? datastruct[:fileName])
+		puts "Skipping checked #{datastruct[:fileName]}"
+		next
+	end
 	if status[:handedited].include? datastruct[:fileName]
 		puts "Skipping hand edited #{datastruct[:fileName]}"
 		next

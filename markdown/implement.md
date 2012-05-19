@@ -2,7 +2,8 @@
 # implement
 
 ## Syntax
-An _implementClause_ is:   **implement** _implementItem_
+An _implementClause_ is:   
+**implement** _implementItem_
 
 ## Description
 An **implement** clause is used to specify that the module, monitor or class containing the clause is to be the implementation of another module, monitor or class. This implementation is a special kind of expansion. The **module**, **monitor** or **class** containing the clause gains access to (inherits) all the declarations inside the target item. See **inherit** clause for rules about expansions, which are also rules for implementations.
@@ -21,7 +22,9 @@ Next comes the expansion which gives the bodies for the deferred procedures _pus
             export push, pop
             deferred procedure push ( s : string )
             deferred procedure pop ( var s : string )
-        end stack        module stackBody        % Implementation
+        end stack
+        
+        module stackBody        % Implementation
             implement stack     % stack has interface
             var top : int := 0
             var contents : array 1 .. 100 of string
@@ -42,8 +45,8 @@ Module, monitor or class _D_ can be in _C'_s implement-by clause if, and only if
 An _implementItem_ is one of_:_
 
 
-(a) _id_
-(b) _id_ **in** _fileName_
+- _id_
+- _id_ **in** _fileName_
 
 
 The second form is used when the implement clause is for a separate **unit** and the imported item is in a file whose name is different from the item's name, as in:
@@ -64,7 +67,13 @@ If the **new** statement contains an explicit class name _E_ that is a descendan
 
 the object of the explicit class is created. If _E_ has an implement-by clause, the expansion is created.
 
-        implement ledger in "ledg.t"        implement ( ledger in "ledg.t" )        var p : ^ C        new p   % Creates object of class D        new E, p
+        implement ledger in "ledg.t"
+        implement ( ledger in "ledg.t" )
+        var p : ^ C
+        new p   % Creates object of class D
+        new E, p
+
 ## See also
 **[unit](unit.html)**, **[module](module.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[implement by](implement_by.html)** clause, **[inherit](inherit.html)** clause, **[export](export.html)** list, and **[import](import.html)** list. See also **[deferred](deferred.html)** subprograms.
 
+                        
