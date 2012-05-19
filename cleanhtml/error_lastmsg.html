@@ -1,0 +1,82 @@
+
+<html>
+<head>
+	<title>Error.LastMsg</title>
+</head>
+<body>
+	<h1>Error.LastMsg</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Error.LastMsg</b> : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Error.LastMsg</b> is a function that returns the error message set by the last called predefined subprogram. If there is no error, then it returns the empty string. If there is an error, you can use <b>Error.Last</b> to obtain the error code.<p>
+The fact that <b>Error.LastMsg</b> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <b>Error.LastMsg</b> also returns a number of warning messages. For example, if a user specifies a number larger than <b>maxcolor</b> for the <i>color</i> parameter of the <b>Draw.Line</b> procedure, the line is still drawn, only in color <b>maxcolor</b>. However, <b>Error.LastMsg</b> will return a message that indicates that the color was out of range</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program creates the directory called <i>information</i>. If the creation fails, it prints out the error number and an error message.<p>
+</p>
+
+			
+			
+			<pre><code>        Dir.Create ("testdata/information")
+        if Error.Last = eNoError then
+            put "Directory created"
+        else
+            put "Did not create the directory."
+            put "Error Number: ", Error.Last
+            put "Error Message: ", Error.LastMsg
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Error.LastMsg</b>, not by calling <b>LastMsg</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

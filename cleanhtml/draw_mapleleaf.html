@@ -1,0 +1,107 @@
+
+<html>
+<head>
+	<title>Draw.MapleLeaf</title>
+</head>
+<body>
+	<h1>Draw.MapleLeaf</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.MapleLeaf</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.MapleLeaf </b>procedure is used to draw a maple leaf on the screen bounded by a rectangle described by the bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>. If <i>y1</i> is greater than <i>y2</i>, then the maple leaf is drawn upside down.<p>
+
+</p>
+<center><img src="draw_mapleleaf01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will draw two maple leaves beside each other. The first will be in red and the second maple leaf will be upside down and in yellow.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        Draw.MapleLeaf (0, 0, 100, 100, red)
+        Draw.MapleLeaf (150, 100, 250, 0, yellow)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Draw.MapleLeaf</b> procedure is useful for drawing the Canadian flag.<p>
+The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, an error will occur.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.MapleLeaf</b>, not by calling <b>MapleLeaf</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

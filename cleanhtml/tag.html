@@ -1,0 +1,99 @@
+
+<html>
+<head>
+	<title>tag</title>
+</head>
+<body>
+	<h1>tag</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>tagStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>tag</b> <i>unionVariableReference</i> , <i>expn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>tag</b> statement is a special-purpose assignment that is used for changing the tag of a <b>union</b> variable.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, the tag field of <b>union</b> variable <i>v</i> is set to be <i>passenger</i>,<i> </i>thereby activating the <i>passenger</i> field of <i>v</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        type vehicleInfo :
+            union kind : passenger .. recreational
+                label passenger :
+                    cylinders : 1..16
+                label farm :
+                    farmClass : string ( 10 )
+                label : % No fields for "otherwise" clause
+            end union
+        var v : vehicleInfo
+        
+        tag v, passenger        % Activate passenger part</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A <b>tag</b> statement is the only way to modify the tag field of a <b>union</b> variable (other than by assigning an entire union value to the union variable).<p>
+You cannot  access a particular set of fields of a <b>union</b> unless the tag is set to match the corresponding label value.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="union.html">union</a></b> types.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

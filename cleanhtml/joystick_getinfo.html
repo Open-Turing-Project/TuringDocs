@@ -1,0 +1,109 @@
+
+<html>
+<head>
+	<title>Joystick.GetInfo</title>
+</head>
+<body>
+	<h1>Joystick.GetInfo</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Joystick.GetInfo </b>(<i>joystick</i> : <b>int</b>, <b>var</b><i> xPos</i>, <i>yPos</i> : <b>int</b>,<br><i>btn1Pressed</i>, <i>btn2Pressed</i> : <b>boolean</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Reads the position and button status of the joystick specified by the <i>joystack</i> parameter. The <i>x</i> and <i>y</i> parameter are returned in the <i>xPos</i> and <i>yPos</i> parameters. If button 1 or button 2 on the joystick are currently pressed, <i>btn1Pressed</i> and <i>btn2Pressed</i> will be set to <b>true</b>. The <i>joystick</i> parameter can be either <b>joystick1</b> or <b>joystick2</b>.<p>
+The x and y positions vary from <b>joyMin</b> to <b>joyMax</b>. To use them with respect to a screen, the coordinates returned from <b>Joystick.GetInfo </b>must be translated into screen coordinates. The following formula can be used:</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        screenX = round (maxx * (xPos  joyMin) / (joyMax  joyMin))
+        screenY = round (maxy * (yPos  joyMin) / (joyMax  joyMin))</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Joystick</b> module contains undocumented subprograms for those who need to access more than two buttons or axes on a joystick. Contact Holt Software if you need more information.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program outputs the current location of joystick #1 and draws a cursor on the screen to point out where it is showing.<p>
+</p>
+
+			
+			
+			<pre><code>        var jx, jy, x, y, ox, oy : int := 1
+        var b1, b2, oB1, oB2 : boolean := false
+        loop
+            Joystick.GetInfo (joystick1, jx, jy, b1, b2)
+            % Convert joystick coordinates into screen coordinates.
+            x = round (maxx * (jx  joyMin) / (joyMax  joyMin))
+            y = round (maxy * (jy  joyMin) / (joyMax  joyMin))
+            if x not= ox or y not= oy or  b1 not= oB1 or b2 not= oB2 then
+                Text.Locate (1, 1)
+                put "x = ", x, "  y = ", y, "  b1 = ", b1, "  b2 = ", b2
+                View.Set ("xor")
+                Draw.Line (ox  10, oy, ox + 10, oy, brightred)
+                Draw.Line (ox , oy  10, ox , oy + 10, brightred)
+                Draw.Line (x  10, y, x + 10, y, brightred)
+                Draw.Line (x, y  10, x, y + 10, brightred)
+                ox := x
+                oy := y
+                oB1 := b1
+                oB2 := b2
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Joystick.GetInfo</b>, not by calling <b>GetInfo</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

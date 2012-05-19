@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<title>File Statements</title>
+</head>
+<body>
+	
+<h1>File Statements</h1>
+<h2>File Commands</h2>
+<table cellpadding="4">
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>open</b></td>
+<td width="10">&nbsp;</td>
+<td>open a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>close</b></td>
+<td width="10">&nbsp;</td>
+<td>close a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>put</b></td>
+<td width="10">&nbsp;</td>
+<td>write alphanumeric text to a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>get</b></td>
+<td width="10">&nbsp;</td>
+<td>read alphanumeric text from a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>write</b></td>
+<td width="10">&nbsp;</td>
+<td>binary write to a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>read</b></td>
+<td width="10">&nbsp;</td>
+<td>binary read from a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>seek</b></td>
+<td width="10">&nbsp;</td>
+<td>move to a specified position in a file
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>tell</b></td>
+<td width="10">&nbsp;</td>
+<td>report the current file position
+</td>
+</tr>
+<tr>
+<td width="10">&nbsp;</td>
+<td><b>eof</b></td>
+<td width="10">&nbsp;</td>
+<td>check for end of file
+</td>
+</tr>
+</table>
+<h2>File Command Syntax</h2>
+<tt><b>open</b> : <i>streamNo</i>, <i>fileName</i>, <i>ioCapability</i> {, <i>ioCapability</i> }
+</tt>
+<table>
+<tr>
+<td width="20">&nbsp;</td>
+<td colspan="2">
+<i>ioCapability</i> is one of <b>get</b>, <b>put</b>, <b>read</b>, <b>write</b>, <b>seek</b>, <b>mod</b>
+</td>
+</tr>
+<tr>
+<td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td>
+<td>
+<b>put</b> or <b>write</b> capability will cause any existing file
+				to be truncated to zero length unless the <b>mod</b> 
+				capability is also specified.
+</td>
+</tr>
+<tr>
+<td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td>
+<td>
+<b>seek</b> capability is needed to use <b>seek</b> or <b>tell</b>
+				 commands.
+</td>
+</tr>
+</table>
+<p>				 
+<tt>
+<b>close</b> : <i>streamNo</i><br><b>get</b> : <i>streamNo</i> , <i>getItem</i> { , <i>getItem</i> }<br><b>put</b> : <i>streamNo</i> , <i>putItem</i> { , <i>putItem</i> }<br><b>read</b> : <i>streamNo</i> [ : <i>fileStatus</i> ] , <i>readItem</i> { , <i>readItem</i> }<br><b>write</b> : <i>streamNo</i>[ : <i>fileStatus</i> ] , <i>writeItem</i> {, <i>writeItem</i> }<br><b>seek</b> : <i>streamNo</i> , <i>filePosition</i>    or   <b>seek</b> : <i>streamNo</i> , *<br><b>tell</b> : <i>streamNo</i> , <i>filePositionVar</i><br>
+eof ( <i>streamNo</i> ) : <b>boolean</b>             (This is a function)<br></tt>
+</p>
+<h2>Appending to a Text File</h2>
+<tt>
+<i>% Open the file for <b>put</b>, but do not erase it</i><br><b>open</b> : <i>streamNo</i>, <i>fileName</i>, <b>put</b> { , <b>get</b> }, <b>mod</b><br><i>% Move the file pointer to the end of the file</i><br><b>seek</b> : <i>streamNo</i>, *
+</tt>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+
+<html>
+<head>
+	<title>strint</title>
+</head>
+<body>
+	<h1>strint</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>strint</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>strint</b> function is used to convert a string to an integer. The integer is equivalent to string <i>s</i>. The number <i>base </i>parameter<i> </i>is optional, for example, <b>strint</b> ("47") = 47. In Turing proper, the <i>base</i> is not allowed and is assumed to be 10.<p>
+String <i>s</i> must consist of a possibly null sequence of blanks, then an optional plus or minus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c &#133; (alternately A, B, C &#133;) which represent the digit values 10, 11, 12 &#133; The <i>base</i>, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, <b>strint </b>("FF", 16) = 255.</p>
+<p>
+The <b>intstr</b> function is the inverse of <b>strint</b>, so for any integer <i>i</i>, </p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        strint ( intstr ( i ) ) = i.</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="chr.html">chr</a></b>, <b><a href="ord.html">ord</a></b>, <b><a href="intstr.html">intstr</a></b> and <b><a href="strnat.html">strnat</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

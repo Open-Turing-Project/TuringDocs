@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<title>unchecked</title>
+</head>
+<body>
+	<h1>unchecked</h1>
+	
+		
+		
+
+			<h2>Description</h2>
+			OOT adds the concept of "unchecked" to Turing. Here, you can request that certain run time tests, which take place by default, can be eliminated. This  makes the program more efficient  at the risk of unreliability.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Declare <i>p</i> to be an unchecked pointer to an integer (see <b>pointers</b> for details). Pointer <i>p </i>will be dangerous to use, because the run time system will not check to see if it actually locates an integer, as opposed to arbitrary computer memory. In other words, unchecked pointers are like C language pointers.<p>
+</p>
+
+			
+			
+			<pre><code>        var p : unchecked ^ int</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Declare <i>C</i> to be an unchecked collection of records of type <i>R</i> (see <b>collections</b> for details). Pointers to <i>C</i> will be unchecked.<p>
+</p>
+
+			
+			
+			<pre><code>        var C : unchecked collection of R</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Remove checking from the body of a loop.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 1 .. 500
+            unchecked
+            if a ( i ) = key then
+                exit
+            end if
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In the above example, the <b>unchecked</b> keyword requests that all checking, in particular, array bounds checking for array <i>a</i>, are to be omitted. The disabling lasts from the occurrence of the keyword <b>unchecked</b> to the end of the surrounding construct, in this case, until <b>end</b> <b>for</b>. In a similar way, the checked keyword will request that checking be re-enabled from the occurence of <b>checked</b> to the end of the surrounding construct.<p>
+In the current (1999) implementation, the use of <b>unchecked</b> to turn off checking in a block of statements is ignored. In general, an implementation may choose to ignore requests to disable checking.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

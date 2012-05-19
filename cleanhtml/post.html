@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<title>post</title>
+</head>
+<body>
+	<h1>post</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>postAssertion</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>post</b> <i>trueFalseExpn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>post</b> assertion is a special form of an <b>assert</b> statement that is used in a procedure or function. It is used to give requirements that the body of the procedure or function is supposed to satisfy. These requirements are given by the <i>trueFalseExpn</i>. After the body has executed and just before the procedure or function returns, the <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b> statements and <b>procedure</b> and <b>function</b> declarations for more details. See also <b>pre</b> and <b>invariant</b> assertions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This function is supposed to produce an integer approximation of the square root of integer <i>i</i>. The post condition requires that this result, which is called <i>answer</i>, must be within a distance of 1 from the corresponding <b>real</b> number square root.<p>
+</p>
+
+			
+			
+			<pre><code>        function intSqrt ( i : int) answer : int
+            pre i >= 0
+            post abs ( answer - sqrt ( i ) ) <= 1
+             statements to approximate square root
+        end intSqrt</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A <b>post</b> assertion can also be used in a module, monitor, class or process declaration to make sure that the initialization satisfies its requirements. <p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="module.html">module</a></b> and <b><a href="process.html">process</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

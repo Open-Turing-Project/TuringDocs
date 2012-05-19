@@ -1,0 +1,228 @@
+
+<html>
+<head>
+	<title>View.UpdateArea</title>
+</head>
+<body>
+	<h1>View.UpdateArea</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>View.UpdateArea</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>View.UpdateArea</b> procedure updates a rectanglular area 
+          Run window, specified by (<i>x1</i>, <i>y1</i>) - 
+          (<i>x2</i>, <i>y2</i>) from the offscreen bitmap. It is used with 
+          the command <b>View.Set</b>&nbsp;("offscreenonly") which prevents the 
+          Run window from being updated until the <b>View.UpdateArea</b> 
+          or <b>View.Update</b> command is given.<p>
+          Because the entire screen is not updated each time, the animation can
+          be much faster, especially on slow machines.  This procedure does 
+          take more effort to use than <b>View.Update</b> as it requires the 
+          programmer to calculate which portion of the screen must be updated.
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program moves a star back and forth across the screen. To
+          compare the speed up <b>View.UpdateArea</b> with <b>View.Update</b>,
+          replace the calls to <b>View.UpdateArea</b> with <b>View.Update</b>.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("offscreenonly")
+        var SIZE : int := 50
+        loop
+            for x : 0 .. maxx - SIZE
+                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, brightgreen)
+                View.UpdateArea (x - 1, 100, x + SIZE, 100 + SIZE)
+                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, colorbg)
+            end for
+            for decreasing x : maxx - SIZE .. 0
+                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, brightgreen)
+                View.UpdateArea (x, 100, x + SIZE + 1, 100 + SIZE)
+                Draw.FillStar (x, 100, x + SIZE, 100 + SIZE, colorbg)
+            end for
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the entire screen is being updated each time through the animation
+          loop (for example if the background image is changing), then use
+          <b>View.Update</b> instead.<p>
+          When using <b>View.UpdateArea</b>, it is important to correctly 
+          calculate the region to be updated. This region must not only contain
+          the item being drawn, but also any area where the background should
+          be replaced. For example, in the program above, the area updated 
+          included the one pixel to the left of the star when the star was
+          moving right-ward and one pixel to the right of the star when the star
+          was moving left-ward.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			Here is an example program that allows you to compare the speed of
+          animation using <b>View.Update</b> with <b>View.UpdateArea</b>. The
+          program animates an object on a background of stars. Pressing any key
+          switches between the two calls.<p>
+      	  <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Compare Animation Speed Program">
+<param name="Item1" value="-1,CompareAnimationSpeed.t;Compare Animation Speed Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			All Turing Run windows have both an onscreen visible window and an 
+          offscreen window. Whenever any output is sent to the screen, both 
+          the onscreen window and the offscreen window are updated. When the 
+          Run window needs to be updated (for example when another window is 
+          moved over top of it and then removed), Turing copies the offscreen 
+          window onto the onscreen window.<p>
+          When the <b>View.Set</b>&nbsp;("offscreenonly") command is given, Turing 
+          no longer draws to the onscreen window when any drawing command is 
+          given. However, it does update the offscreen window. When the 
+          <b>View.Update</b> command is given, the entire offscreen window 
+          is copied to the onscreen window.</p>
+<p>
+          This can be used to provide smooth, flicker-free animation. Animated 
+          objects flicker when the object being animated disappears from the 
+          onscreen window for a period of time. By using 
+          <b>View.Set</b>&nbsp;("offscreenonly") / <b>View.Update</b>, the onscreen 
+          window is never blank. Instead, the offscreen window drawn over top 
+          off the on screen window, replacing it. This means that the on-screen
+          window is never blanked out, eliminating the flickering found in 
+          the animation.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			It's very easy to forget that no output will appear in the Run 
+          window when using <b>View.UpdateArea</b>. Remember to use 
+          <b>View.Set</b>("nooffscreenonly") to turn off this feature 
+          sending output for debugging purposes.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>View.UpdateArea</b> should not be used in conjunction with the 
+          <b>Sprite </b>module. Sprites can be considered a limited version 
+          of this technique. <b>View.UpdateArea</b> also works well when the 
+          entire background is changing.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>View.UpdateArea</b>, not by calling <b>UpdateArea</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b> for the "offscreenonly" 
+          and "nooffscreenonly" options. <p>
+          <b><a href="view_update.html">View.Update</a></b> for procedure to
+          update the entire screen at one time.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

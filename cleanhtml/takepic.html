@@ -1,0 +1,131 @@
+
+<html>
+<head>
+	<title>takepic</title>
+</head>
+<body>
+	<h1>takepic</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>takepic</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <b>var</b> <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>)<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>takepic</b> procedure is used to record the pixel values in a 
+          rectangle, with left bottom and right corners of (<i>x1</i>, 
+          <i>y1</i>) and (<i>x2</i>, <i>y2</i>), in the buffer array. This 
+          requires a sufficiently-large buffer (see <b>sizepic</b> ). 
+          The <b>drawpic</b> procedure is used to make copies of the recorded 
+          rectangle on the screen.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			After drawing a happy face, this program copies the face to a new 
+          location.<p>
+	  </p>
+<center><img src="takepic01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The integer values that <b>takepic</b> places in the buffer can be 
+          read or written (using the <b>read</b> and <b>write</b> statements). 
+          Unfortunately, if a value happens to be the pattern used to represent 
+          the uninitialized value (the largest negative number the hardware can 
+          represent) assignment (by:=) and <b>put</b> of the individual integer 
+          values in the buffer will fail.<p>
+          The screen should be in a "<i>graphics</i>" mode. See the 
+          <b>setscreen</b> procedure for details. If the screen is not in a 
+          "<i>graphics</i>" mode, it will automatically be set to 
+          "<i>graphics</i>" mode.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>drawpic</b>, <b>takepic</b>, and <b>sizepic</b> subprograms
+          have been made obsolete by the subprograms 
+          <b><a href="pic_draw.html">Pic.Draw</a></b> and
+          <b><a href="pic_new.html">Pic.New</a></b> of the 
+          <b><a href="picmodule.html">Pic</a></b> module.  Users are 
+          strongly suggested to use those routines instead. The 
+          <b><a href="picmodule.html">Pic</a></b> module also contains 
+          subprograms to load images from files.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="sizepic.html">sizepic</a></b> and 
+          <b><a href="drawpic.html">drawpic</a></b>. See also 
+          <b><a href="setscreen.html">setscreen</a></b>, 
+          <b><a href="maxx.html">maxx</a></b>, 
+          <b><a href="maxy.html">maxy</a></b>, 
+          <b><a href="drawdot.html">drawdot</a></b>, 
+          <b><a href="drawline.html">drawline</a></b>, 
+          <b><a href="drawbox.html">drawbox</a></b>, and 
+          <b><a href="drawoval.html">drawoval</a></b>.<p>
+          See also predefined unit <b><a href="picmodule.html">Pic</a></b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<title>Rand.Real</title>
+</head>
+<body>
+	<h1>Rand.Real</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Rand.Real</b> : <b>real</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Rand.Real </b>function returns a pseudo-random number in the range zero to one. For example, if <i>x</i> is a real number, after <i>x</i> := <b>Rand.Real</b>, <i>x</i> would have a value such as 0.729548 or 0.352879.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program repeatedly and randomly prints out <i>Hi ho</i>,<i> hi ho</i> or <i>It's off to work we go</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        loop
+            if Rand.Real > 0.5 then
+                put "Hi ho, hi ho"
+            else
+                put "It's off to work we go"
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Rand.Real </b>function<b> </b>sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0&lt;<i>r</i> &lt;1.<p>
+Each time a program runs, <b>Rand.Real</b> uses a different pseudo-random number sequence. To always get the same sequence (actually, to start the sequence at the same point), use the <b>Rand.Set</b> procedure.</p>
+<p>
+To use several sequences of repeatable pseudo-random number sequences, use the <b>Rand.Seed </b>and <b>Rand.Next</b> procedures.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Rand.Real</b>, not by calling <b>Real</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="rand_int.html">Rand.Int</a></b>, <b><a href="rand_set.html">Rand.Set</a></b>, <b><a href="rand_seed.html">Rand.Seed</a></b> and <b><a href="rand_next.html">Rand.Next</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

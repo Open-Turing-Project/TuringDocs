@@ -1,0 +1,106 @@
+
+<html>
+<head>
+	<title>Net.CloseConnection</title>
+</head>
+<body>
+	<h1>Net.CloseConnection</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Net.CloseConnection</b> (<i>netStream</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Closes a network connection made with <b>Net.OpenConnection</b> or <b>Net.WaitForConnection</b>. After the connection is closed, the net stream cannot be used for any purpose on either side of the connection.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>
+It is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program fragment connects to port 5300 on the machine specified by <i>netAddress</i>, sends the work OK to it and closes the connection.<p>
+</p>
+
+			
+			
+			<pre><code>        netStream := Net.OpenConnection (netAddress, chatPort)
+        if netStream <= 0 then
+            put "Unable to connect to ", netAddress
+            return
+        end if
+        put : netStream, "OK"
+        Net.CloseConnection (netStream)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Net.CloseConnection</b>, not by calling <b>CloseConnection</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="net_openconnection.html">Net.OpenConnection</a></b> and <b><a href="net_waitforconnection.html">Net.WaitForConnection</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

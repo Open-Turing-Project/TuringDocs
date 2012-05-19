@@ -1,0 +1,202 @@
+
+<html>
+<head>
+	<title>GUI.CreateButton[Full]</title>
+</head>
+<body>
+	<h1>GUI.CreateButton[Full]</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.CreateButton</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>
+ 	  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>
+          <b>GUI.CreateButtonFull</b> (<i>x</i>, <i>y</i>, <i>width</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>height</i> : <b>int</b>, <i>shortcut</i> : <b>char</b>, <i>default</i> : <b>boolean</b>) : <b>int</b></p>
+<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a button and returns the button's widget ID.<p>
+          The button widget is used to implement a textual button. When you 
+          click on a button, the button's <i>action procedure</i> is called. 
+          If a button is given a short cut, then entering the keystroke will 
+          cause the <i>action procedure</i> to be called. It will not visibly 
+          cause the button to depress.</p>
+<p>
+	  </p>
+<center><img src="gui_createbutton_full01.gif"></center>
+          <center><b>Two Buttons</b></center>
+<p>
+          The <i>x</i> and <i>y</i> parameters specify the lower-left corner 
+          of the button. The <i>width</i> parameter specifies the width of the 
+          button. If <i>width</i> is less than the size necessary to display 
+          the button, the button is automatically enlarged to fit the text. 
+          The <i>text</i> parameter specifies the text to appear in the button. 
+          The <i>actionProc</i> parameter is the name of a procedure that is 
+          called when the button is pressed.</p>
+<p>
+          For <b>GUI.CreateButtonFull</b>, the <i>height</i> parameter 
+          specifies the height of the button. If <i>height</i> is less 
+          than the size necessary to display the button, the button is 
+          automatically enlarged to fit the text. The <i>shortcut</i> 
+          parameter is the keystroke to be used as the button's shortcut. 
+          The <i>default</i> parameter is a boolean indicating whether the 
+          button should be the default button. If there is already a default 
+          button, and <i>default</i> is set to true, then this button becomes 
+          the new default button.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program creates two buttons, one which draws a random 
+        circle on the screen and one which quits the program.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI
+        
+        procedure DrawRandomCircle
+            var r : int := Rand.Int (20, 50)
+            var x : int := Rand.Int (r, maxx - r)
+            var y : int := Rand.Int (r, maxy - r)
+            var c : int := Rand.Int (0, maxcolor)
+            Draw.FillOval (x, y, r, r, c)
+            % In case we drew over the buttons, redraw them.
+            GUI.Refresh
+        end DrawRandomCircle
+        
+        View.Set ("graphics:300;200,nobuttonbar ")
+        var draw : int := GUI.CreateButtonFull (50, 10, 0, "Draw Circle",
+            DrawRandomCircle, 0, '^D', true)
+        var quitBtn : int := GUI.CreateButton (200, 10, 0, "Quit", GUI.Quit)
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When <b>GUI.CreateButton</b> or <b>GUI.CreateButtonFull</b> is 
+          called, the newly created button will be displayed immediately 
+          unless <b>GUI.DisplayWhenCreated</b> has been called with the 
+          <i>display</i> parameter set to false. <p>
+          If a button's width or height is set to zero (or not specified 
+          at all), then the button is shaped to fit the text.</p>
+<p>
+          A button can be the default button for a window. The default button 
+          is drawn with a thicker border around it. If the user presses ENTER 
+          in a window with a default button, the default button's 
+          <i>action procedure</i> is called.</p>
+<p>
+          When a button is not enabled, the text in the button is grayed out 
+          and the button no longer responds to any mouse clicks or keystrokes 
+          until the button is enabled again.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following GUI subprograms can be called with a button as the 
+          <i>widgetID</i> parameter:<p>
+	  </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+	      <td>
+<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Enable</b>, 
+	          <b>GUI.Disable</b>, <b>GUI.Dispose</b>, <b>GUI.GetX</b>,
+	          <b>GUI.GetY</b>, <b>GUI.GetWidth</b>, <b>GUI.GetHeight</b>,
+	          <b>GUI.SetPosition</b>, <b>GUI.SetSize</b>,
+	          <b>GUI.SetPositionAndSize</b>, <b>GUI.SetLabel</b>,
+	          <b>GUI.SetDefault</b>
+</td>
+	    </tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>GUI.CreateButton</b>, not by calling <b>CreateButton</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_setlabel.html">GUI.SetLabel</a></b> for changing 
+          the button's text, 
+          <b><a href="gui_setdefault.html">GUI.SetDefault</a></b> for setting 
+          the default button in a window and
+          <b><a href="gui_setcolor.html">GUI.SetColor</a></b> for setting 
+          the button's color.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

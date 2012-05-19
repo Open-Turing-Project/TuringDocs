@@ -1,0 +1,254 @@
+
+<html>
+<head>
+	<title>Pic.DrawSpecialBack</title>
+</head>
+<body>
+	<h1>Pic.DrawSpecialBack</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.DrawSpecialBack</b> (<i>picID</i>, <i>x</i>, <i>y</i>, <i>mode</i>, <i>transition</i>, <i>duration</i>  : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.DrawSpecialBack</b> is very similar to 
+          <b><a href="pic_drawspecial.html">Pic.DrawSpecial</a></b>.  The only
+          difference is that <b>Pic.DrawSpecialBack</b> returns immediately
+          after being called and program execution continues while the special
+          effect continues.  This allows you to continue to draw other graphics
+          while the special effect is continuing.<p>
+          For example, this procedure is necessary if you want to have two 
+          pictures being drawn using special effects simultaneously.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If you are wish to have several images displayed at the same time
+          using special effects, you must use <b>Pic.DrawSpecialBack</b> to 
+          display all the images but the last and then use 
+          <b>Pic.DrawSpecial</b> to display the last image so that Turing will 
+          wait until the special effects are completed before continuing 
+          execution.<p>
+          If you want to draw the several special effects continuously over
+          the same location, do not use <b>Pic.DrawSpecialBack</b>.</p>
+<p>  
+          <tt><b>Pic.DrawSpecial</b> (<i>pic1</i>, 10, 10, <i>picCopy</i>, <i>picWipeLeftToRight</i>, 500)<br><b>Pic.DrawSpecial</b> (<i>pic2</i>, 10, 10, <i>picCopy</i>, <i>picFadeIn</i>, 1000)</tt></p>
+<p>
+          If you do, Turing will attempt to run each of the calls at the same
+          time, and most of the special effects will not be seen.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.DrawSpecialBack</b> is used to draw a picture on the screen
+          with a special effect such as a wipe, a slide, or a fade-in. Note that 
+          all the parameters are identical to the parameters of
+          <b><a href="pic_drawspecial.html">Pic.DrawSpecial</a></b>.
+          The picture is drawn with the lower left corner at 
+          (<i>x</i>, <i>y</i>). The <i>duration</i> specifies how long the
+          transition should take in milliseconds.  For example, a fade-in could
+          be specified to last 1/2 a second by using a duration of 500.<p>
+	  The <i>mode</i> parameter is the same as in <b>Pic.New</b> and has 
+	  one of the following values:</p>
+<p>
+	  </p>
+<table>
+<tr valign="top">
+<td><i>picCopy</i></td>
+	      <td width="10">&nbsp;</td>
+	      <td>This draws the picture on top of what was underneath, 
+	          obscuring it completely.</td>
+	    </tr>
+<tr valign="top">
+<td><i>picXor</i></td>
+	      <td width="10">&nbsp;</td>
+	      <td>This draws the picture XORing it with the background. 
+	          In DOS, you can use this function to do animation. 
+		  Drawing an object on top of itself with XOR erases 
+		  it and restores the background.</td>
+	    </tr>
+<tr valign="top">
+<td><i>picMerge</i></td>
+	      <td width="10">&nbsp;</td>
+	      <td>This draws the picture like <i>picCopy</i> except 
+	          that any occurrence of the background color in the 
+		  picture is not drawn to the screen. This allows you 
+		  to draw an irregularly-shaped object and draw it to 
+		  the screen.</td>
+	    </tr>
+<tr valign="top">
+<td><i>picUnderMerge</i></td>
+	      <td width="10">&nbsp;</td>
+	      <td>This draws the picture, but only where the background 
+	          color was displayed underneath it. The effect of this 
+		  is to make the picture appear to be displayed behind 
+		  the background.</td>
+	    </tr>
+</table>
+<p>
+	  See <b><a href="pic_drawspecial.html">Pic.DrawSpecial</a></b> for the
+	  list of possible values for the <i>transition</i> parameter.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Pic.DrawSpecialBack</b> requires a moderately fast machine to 
+          operate successfully (Pentium III or higher). The <i>picFadeIn</i>
+          and <i>picBlend</i> transitions do not work well on 8-bit (256 color)
+	  displays.  On Microsoft Windows machines, you can determine the 
+	  bit-depth of the display (the number of colors available) by 
+	  selecting the <i>Display</i> control panel from the <i>Start</i> 
+	  menu.  You can also use the<p>
+	  <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <b>Config.Display</b> (<b>cdNumMaxColors</b>)</tt></p>
+<p>
+	  function to determine the bit-depth of the display (anything 
+	  <b>over</b> 256 colors will produce acceptable results).</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Pic.DrawSpecialBack</b> call fails, <b>Error.Last</b> will return a 
+          non-zero value indicating the reason for the failure. 
+	  <b>Error.LastMsg</b> will return a string which contains the textual 
+	  version of the error.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws a blue star on the screen, then a red circle, then
+          proceeds to have to have the two replace each simultaneously, 
+          side-by-side.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var redID, blueID: int
+        Draw.FillStar (0, 0, 100, 100, brightred)
+        redID := Pic.New (0, 0, 100, 100)
+        cls
+        Draw.FillOval (50, 50, 50, 50, brightblue)
+        blueID := Pic.New (0, 0, 100, 100)
+        cls
+	Pic.DrawSpecialBack (redID, 10, 10, picCopy, picWipeLeftToRightNoBar, 1000)
+	Pic.DrawSpecial (blueID, 160, 10, picCopy, picWipeRightToLeftNoBar, 1000)
+	Pic.DrawSpecialBack (blueID, 10, 10, picCopy, picSlideLeftToRightNoBar, 1000)
+	Pic.DrawSpecial (redID, 160, 10, picCopy, picSlideRightToLeftNoBar, 1000)
+	Pic.DrawSpecialBack (redID, 10, 10, picCopy, picGrowRightToLeftNoBar, 1000)
+	Pic.DrawSpecial (blueID, 160, 10, picCopy, picGrowLeftToRightNoBar, 1000)
+	Pic.DrawSpecialBack (blueID, 10, 10, picCopy, picWipeTopToBottomNoBar, 1000)
+	Pic.DrawSpecial (redID, 160, 10, picCopy, picWipeTopToBottomNoBar, 1000)
+	Pic.DrawSpecialBack (redID, 10, 10, picCopy, picFadeIn, 1000)
+	Pic.DrawSpecial (blueID, 160, 10, picCopy, picFadeIn, 1000)
+        Pic.Free (redID)
+        Pic.Free (blueID)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.DrawSpecialBack</b>, not by calling <b>DrawSpecialBack</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_draw.html">Pic.Draw</a></b> for information on the meaning
+          of the <i>mode</i> argument.<p>
+          <b><a href="pic_drawspecial.html">Pic.DrawSpecial</a></b> for 
+          information on how to draw special effects and wait for completion
+          of the effect.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

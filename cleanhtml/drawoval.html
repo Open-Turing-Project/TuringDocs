@@ -1,0 +1,94 @@
+
+<html>
+<head>
+	<title>drawoval</title>
+</head>
+<body>
+	<h1>drawoval</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>drawoval</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawoval</b> procedure is used to draw an oval whose center is at (<i>x</i>, <i>y</i>). The horizontal and vertical distances from the center to the oval are given by <i>xRadius </i>and <i>yRadius</i>.<p>
+
+</p>
+<center><img src="drawoval01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a large oval that just touches each edge of the screen using color number 1. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<i>midx</i>, <i>midy</i>), which is the middle of the screen.<p>
+</p>
+
+			
+			
+			<pre><code>            setscreen ("graphics")
+            const midx := maxx div 2
+            const midy := maxy div 2
+            drawoval (midx, midy, midx, midy, 1)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Ideally, a circle is drawn when <i>xRadius</i> = <i>yRadius</i>. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.<p>
+The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>
+<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

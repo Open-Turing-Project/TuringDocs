@@ -1,0 +1,33 @@
+<%
+# Template to format the documentation in markdown format 
+%>
+<html>
+<head>
+	<title><%= page[:title] %></title>
+</head>
+<body>
+<% if page[:htmlcontent] %>
+	<%= page[:htmlcontent] %>
+<% else %>
+	<h1><%= page[:title] %></h1>
+	<% page[:sections].each do |sect| %>
+		<%# Don't add empty sections %>
+		<% if sect[:mdown_content] || sect[:images] || sect[:code] %>
+
+			<h2><%= sect[:title] %></h2>
+			<%= sect[:raw_content] || "" %>
+
+			<%# Add code blocks %>
+			<% (sect[:code] || []).each do |code| %>
+			<pre><code><%= code %></code></pre>
+			<% end %>
+
+			<%# Add examples %>
+			<% (sect[:executables] || []).each do |exec| %>
+			<b>See example file <% exec[:file] %> for an example of how to use <%= page[:title] %>.</b>
+			<% end %>
+		<% end %>
+	<% end %>
+<% end %>
+</body>
+</html>

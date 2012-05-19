@@ -1,0 +1,152 @@
+
+<html>
+<head>
+	<title>View.ClipAddOval</title>
+</head>
+<body>
+	<h1>View.ClipAddOval</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>View.ClipAddOval</b> (<i>x</i>, <i>y</i>, <i>xradius</i>, <i>yradius</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>View.ClipAddOval</b> procedure adds another oval specified by 
+          (<i>x</i>, <i>y</i>) and <i>xradius</i> and <i>yradius</i>) to the 
+          clipping region. If no clipping region has been specified, then the 
+          oval becomes the complete clipping region.<p>
+          A clipping region is the region that the output will appear in. If 
+          the rectangle is specified as the clipping region, any drawing done 
+          outside the oval will not appear.</p>
+<p>
+          To set the initial clipping, or remove the old region and replace it 
+          with a new rectangle, use <b>View.ClipSet</b>. To set the clipping 
+          region back to the entire screen or window, use <b>View.ClipOff</b>.</p>
+<p>
+          These commands only work in "<i>graphics</i>" mode.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sets the clipping region to five circles and then draws 
+          random squares. The squares will only appear (or partially appear) 
+          in the ovals.<p>
+</p>
+
+			
+			
+			<pre><code>        const c1 : int := maxy div 4
+        const c2 : int := 3* maxy div 4
+        const radius : int := maxy div 4
+        View.ClipAddOval (c1, c1, radius, radius)
+        View.ClipAddOval (c1, c2, radius, radius)
+        View.ClipAddOval (c2, c1, radius, radius)
+        View.ClipAddOval (c2, c2, radius, radius)
+
+        % Draw the random squares in the box
+        var x, y, clr : int
+        loop
+            x := Rand.Int (0, maxx - 30)     % Random x
+            y := Rand.Int (0, maxy - 30)     % Random y
+            clr := Rand.Int (0, maxcolor)    % Random color
+            Draw.FillBox (x, y, x + 30, y + 30, clr)
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			<p>
+    </p>
+
+			
+			
+
+			
+			
+			<b>See example file  for an example of how to use View.ClipAddOval.</b>
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			By combining animation using <b>View.Update</b> and 
+          <b>View.ClipAddOval</b>, you can achieve a moving spotlight effect.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch SpotLight Example">
+<param name="Item1" value="-1,SpotLight.t;View.Moving SpotLight Example"></object></p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>View.ClipAddOval</b>, not by calling <b>ClipAddOval</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<a href="view_clipset-2.html"><b>View.ClipSet</b></a>, 
+          <a href="view_clipadd-2.html"><b>View.ClipAdd</b></a> and 
+          <a href="view_clipoff-2.html"><b>View.ClipOff</b></a> 
+          functions.
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

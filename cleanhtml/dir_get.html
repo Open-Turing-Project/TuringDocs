@@ -1,0 +1,96 @@
+
+<html>
+<head>
+	<title>Dir.Get</title>
+</head>
+<body>
+	<h1>Dir.Get</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Get</b> (<i>streamNumber</i> : <b>int</b>) : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Get</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Get</b> is used to get the file names in the directory. Each time the function is called, it returns the next file name in the directory. The names are not sorted. When there are no more file names in the directory, <b>Dir.Get</b> returns the empty string.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Get</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints a listing of all the files in the directory <i>datafiles</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        var streamNumber : int
+        var fileName : string
+        streamNumber := Dir.Open ("datafiles")
+        assert streamNumber > 0
+        loop
+            fileName := Dir.Get (streamNumber)
+            exit when fileName = ""
+            put fileName
+        end loop
+        Dir.Close (streamNumber)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.Get</b>, not by calling <b>Get</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

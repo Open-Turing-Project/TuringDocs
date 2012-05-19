@@ -1,0 +1,79 @@
+
+<html>
+<head>
+	<title>Window.GetActive</title>
+</head>
+<body>
+	<h1>Window.GetActive</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Window.GetActive</b> : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Window.GetActive</b> function returns the window ID of the 
+          active window. If the active window is a Turing run window, then
+	  <b>Window.GetActive</b> returns <b>defWinID</b> (which is -1) if 
+	  the window is the default run window, or whatever number was 
+	  returned from <b>Window.Open</b> for any other run window. 
+	  If the active window is not a run window, then it returns -5 
+	  and sets <b>Error.Last</b> and <b>Error.LastMsg</b> to indicate 
+	  the fact.<p>
+	  An active window is defined as the window that has the input focus. 
+	  This means that any typing will be sent to the active window. Under 
+	  most systems an active window is indicated by a change in the 
+	  appearance of the window.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling <b>Window.GetActive</b>, not by calling <b>GetActive</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="window_setactive.html">Window.SetActive</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

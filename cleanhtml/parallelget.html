@@ -1,0 +1,123 @@
+
+<html>
+<head>
+	<title>parallelget</title>
+</head>
+<body>
+	<h1>parallelget</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>parallelget</b> : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>parallelget</b> procedure is used on a PC to read the value of certain pins on the parallel port. This port corresponds to the MS-DOS device "LPT1". This procedure can be used to control robots and peripherals.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program reads and prints the values of the five data pins of the PC's parallel port.<p>
+</p>
+
+			
+			
+			<pre><code>        const val : int := parallelget  % Read in the set of pin values
+        put "Pin 10 is: ", (val div 64) mod 2
+        put "Pin 11 is: ", (val div 128) mod 2
+        put "Pin 12 is: ", (val div 32) mod 2
+        put "Pin 13 is: ", (val div 16) mod 2
+        put "Pin 15 is: ", (val div 8) mod 2</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The five pins that are used for parallel input are pins 10-15. The <b>parallelget</b> procedure returns the sum of <p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>64 </td>
+<td width="10">&nbsp;</td>
+<td>Pin 10 high</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>128</td>
+<td width="10">&nbsp;</td>
+<td>Pin 11 high </td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>32 </td>
+<td width="10">&nbsp;</td>
+<td>Pin 12 high </td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>16 </td>
+<td width="10">&nbsp;</td>
+<td>Pin 13 high </td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>8 </td>
+<td width="10">&nbsp;</td>
+<td>Pin 15 high</td>
+</tr>
+</table>
+<p>
+The <b>mod</b> and <b>div</b> operators can be used to determine which pins are high or low. </p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="parallelput.html">parallelput</a></b> <a href="procedure.html">procedure</a> for a diagram of the pins. That <a href="procedure.html">procedure</a> is used to <a href="set.html">set</a> the values on the parallel port.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

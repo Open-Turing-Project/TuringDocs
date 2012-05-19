@@ -1,0 +1,133 @@
+
+<html>
+<head>
+	<title>Config.Display</title>
+</head>
+<body>
+	<h1>Config.Display</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Config.Display</b> (<i>displayCode</i> : <b>int</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Config.Display</b> returns information about the display (or displays) attached to the computer. The parameter <i>displayCode</i> determines what sort of information is passed back. <i>displayCode</i> has a number of possible values, all summarized by a set of predefined constants.<p>
+At the time of this writing, the following constants were defined:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td><i>cdScreenHeight</i></td>
+<td width="10">&nbsp;</td>
+<td>return the height of the screen in pixels.</td>
+</tr>
+<tr valign="top">
+<td><i>cdScreenWidth</i></td>
+<td width="10">&nbsp;</td>
+<td>return the width of the screen in pixels.</td>
+</tr>
+<tr valign="top">
+<td><i>cdMaxNumColors</i></td>
+<td width="10">&nbsp;</td>
+<td>return the maximum number of colors supported by the display.</td>
+</tr>
+<tr valign="top">
+<td><i>cdMaxNumColours</i></td>
+<td width="10">&nbsp;</td>
+<td>return the maximum number of colors supported by the display.</td>
+</tr>
+</table>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints the screen width and height.<p>
+</p>
+
+			
+			
+			<pre><code>        const width : int := Config.Display (cdScreenWidth)
+        const height: int := Config.Display (cdScreenHeight)
+        put "The screen width is ", width, "  the screen height is ", height</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			On the Macintosh, it's possible to have multiple displays attached to a single computer. To get information about the extra displays, you can call <b>Config.Display</b> with any of the first four constants above plus one, two, three, etc.  This will return the height, width or maximum number of colors for the second, third and beyond displays.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints the screen width and height of the second display on a Macintosh.<p>
+</p>
+
+			
+			
+			<pre><code>        const width : int := Config.Display (cdScreenWidth + 1)
+        const height: int := Config.Display (cdScreenHeight + 1)
+        put "The second display size is ", width, "  x ", height</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Config.Display</b>, not by calling <b>Display</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

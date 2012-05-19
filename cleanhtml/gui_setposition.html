@@ -1,0 +1,85 @@
+
+<html>
+<head>
+	<title>GUI.SetPosition</title>
+</head>
+<body>
+	<h1>GUI.SetPosition</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetPosition</b> (<i>widgetID</i>, <i>x</i>, <i>y</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Moves a widget specified by <i>widgetID </i>to the location (<i>x</i>, <i>y</i>). If the widget is visible, it is moved immediately to the new location. If the widget is hidden, it will appear at the new location when the <i>Show</i> procedure is called. Note that the <i>x</i> and <i>y</i> specified here are the same as in the <i>Create</i> method. For example, if you had specified a check box to be right justified in the <i>CreateCheckBoxFull</i> function, then (<i>x</i>, <i>y</i>) in a call to <i>SetPosition</i> would specify the lower-right corner as opposed to the lower-left corner.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program moves the button every time the button is pressed.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        
+        var button : int
+        
+        procedure MoveButton
+            var newX, newY : int
+            newX := Rand.Int (0, maxx  GUI.GetWidth (button))
+            newY := Rand.Int (0, maxy  GUI.GetHeight (button))
+            GUI.SetPosition (button, newX, newY)
+        end MoveButton
+        
+        button := GUI.CreateButton (100, 100, 0, "Move Button", 
+            MoveButton)
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.SetPosition</b>, not by calling <b>SetPosition</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

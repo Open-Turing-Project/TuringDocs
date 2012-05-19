@@ -1,0 +1,145 @@
+
+<html>
+<head>
+	<title>View.SetTransparentColor</title>
+</head>
+<body>
+	<h1>View.SetTransparentColor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>View.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>View.SetTransparentColor</b> procedure sets the color in the 
+          Run window that should be considered transparent when a picture is 
+          drawn on the window using the <tt>picUnderMerge</tt> mode. 
+          If no color is specified, then the default background color 
+          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent 
+          color. You can change this background color using <b>RGB.SetColor</b>
+          on color 0.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			This call is often used when you want the Run window to have a
+          background color other than color 0.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays two images loaded from the same file. In the 
+          second image,the transparent color has been set to bright red (that
+          is, the parts of the image that are meant to be transparent are in
+          bright red).
+          <p>
+</p>
+
+			
+			
+			<pre><code>        const SIZE : int := 20
+        procedure DrawCheckerBoard
+            cls
+            for x : 0 .. maxx by SIZE
+                for y : 0 .. maxy by SIZE
+                    if ((x + y) div SIZE) mod 2 = 0 then
+                        Draw.FillBox (x, y, x + SIZE, y + SIZE, brightgreen)
+                    end if
+                end for
+            end for
+        end DrawCheckerBoard
+
+        var pic : int := Pic.FileNew ("data files/airplane.bmp")
+        Pic.SetTransparentColor (pic, brightred)
+        RGB.SetColor (0, 1., 0., 0.)
+        DrawCheckerBoard
+        Pic.Draw (pic, 100, 100, picUnderMerge)
+        View.SetTransparentColor (brightgreen)
+        Pic.Draw (pic, 400, 100, picUnderMerge)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>View.SetTransparentColour</b> is an alternate spelling for 
+          <b>View.SetTransparentColor</b>.<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>View.SetTransparentColor</b>, not by calling 
+          <b>SetTransparentColor</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_settransparentcolor.html">Pic.SetTransparentColor</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

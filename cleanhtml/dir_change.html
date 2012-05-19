@@ -1,0 +1,118 @@
+
+<html>
+<head>
+	<title>Dir.Change</title>
+</head>
+<body>
+	<h1>Dir.Change</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Change</b> (<i>directoryPathName</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Change</b> changes the execution directory to that specified by the parameter <i>directoryPathName</i>. This is the equivalent of doing a <b>cd</b> in UNIX.<p>
+Under Microsoft Windows, specifying a drive in the <i>directoryPathName</i> parameter causes the drive to become the default drive (unlike the DOS <b>cd</b> command).</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Change</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program changes to the directory called <i>/usr/west</i> and then lists the current directory.<p>
+</p>
+
+			
+			
+			<pre><code>        Dir.Change ("/usr/west")
+        if Error.Last = eNoError  then
+            put "Directory changed"
+        else
+            put "Did not change the directory."
+            put "Error: ", Error.LastMsg
+        end if
+        put "The current execution directory is ", Dir.Current</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			An example demonstrating the use of several of the <b>Dir</b> subprograms
+      is available. In this example, a directory is created, a file is written
+      to the directory, an attempt is made to delete the directory, the file is
+      deleted, and then the directory is deleted.<p>
+      This example demonstrates the use of <b>Dir.Change</b>, 
+      <b>Dir.Current</b>, <b>Dir.Create</b>, and <b>Dir.Delete</b>.</p>
+<p>
+      <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+        <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,Dir.t;Dir Subprogams Example"></object></p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.Change</b>, not by calling <b>Change</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

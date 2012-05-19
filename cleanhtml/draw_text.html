@@ -1,0 +1,178 @@
+
+<html>
+<head>
+	<title>Draw.Text</title>
+</head>
+<body>
+	<h1>Draw.Text</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.Text</b> (<i>txtStr</i> : <b>string</b>, <i>x</i>, <i>y</i>, <i>fontID</i>, <i>Color</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Draw.Text </b>is used to actually draw text in a specified font. 
+          The <i>textStr</i> parameter contains the string to be drawn. The 
+          <i>x</i> and <i>y</i> paramters are the location of the lower left 
+          hand corner of the text to be displayed. The <i>fontID</i> parameter 
+          is the number of the font in which the text is to be drawn. The 
+          <i>Color</i> parameter is used to specify the color in which the 
+          text is to appear.<p>
+          Note that the text that appears is completely unrelated to the text 
+          that appears using <b>put</b>. <b>Draw.Text</b> is a graphics command 
+          and thus does not use or affect the cursor location.</p>
+<p>
+          The text drawn by the <b>Draw.Text</b> procedure does not erase the 
+          background.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If <b>Draw.Text</b> is passed an invalid font ID, a fatal error 
+          occurs. If the <b>Draw.Text</b> call fails for other (non-fatal) 
+          reasons then <b>Error.Last</b> will return a non-zero value indicating 
+          the reason for the failure. <b>Error.LastMsg</b> will return a string 
+          which contains the textual version of the error.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>Draw.Text</b> is identical to <b>Font.Draw</b>. It is placed here 
+          for consistency with other pixel graphics drawing routines.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws a phrase in red surrounded by a box in bright blue.<p>
+</p>
+
+			
+			
+			<pre><code>        var font : int
+        font := Font.New ("serif:12")
+        assert font1 > 0
+        var width : int:= Font.Width ("This is in a serif font", font)
+        var height, ascent, descent, internalLeading : int
+        Font.Sizes (font, height, ascent, descent, internalLeading)
+        Draw.Text ("This is in a serif font", 50, 30, font, red)
+        Draw.Box (50, 30 + descent, 50 + width, 30 + height, brightblue)
+        Font.Free (font)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			To use the same font as is used by the <b>put</b> statement, use 
+          <b>defFontID</b> for the font number.  This font does not have to 
+          be created or freed by the user, and allows a program to quickly 
+          place text in any location on the screen.
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws two strings in the default font (<b>defFontID</b>).<p>
+</p>
+
+			
+			
+			<pre><code>        Draw.Text ("Drawing Here", 100, 120, defFontID, brightred)
+        Draw.Text ("and Here", 180, 90, defFontID, brightgreen)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Draw.Text</b>, not by calling <b>Text</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See Also</h2>
+			<b>Font</b> module for more information about selecting the font to 
+          be displayed.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

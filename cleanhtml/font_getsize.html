@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<title>Font.GetSize</title>
+</head>
+<body>
+	<h1>Font.GetSize</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Font.GetSize</b> : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Font.GetSize</b> is used to get the next size in the list of available font sizes for a particular font name and style. <p>
+<b>Font.StartSize</b> must be called before any calls to <b>Font.GetSize</b>. After that, <b>Font.GetSize</b> returns the list of sizes, one per call. When there are no more sizes, <b>Font.GetSize</b> returns 0.</p>
+<p>
+Some fonts are &#147;scalable&#148;. This means that the computer can scale the fonts to fit any given size. (Under Microsoft Windows and the Apple Macintosh, TrueType and PostScript fonts are scalable with the appropriate utilities.) In this case, <b>Font.GetSize</b> returns -1.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			See <b>Font.StartSize</b> for a program that lists all the fonts, styles and sizes available on the system.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			An example is available that displays full information about
+          the fonts including name, styles, and point sizes.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Font Listing Example">
+<param name="Item1" value="-1,FontList.t;Font Listing Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Font.GetSize</b>, not by calling <b>GetSize</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

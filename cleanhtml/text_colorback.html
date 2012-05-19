@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<title>Text.ColorBack</title>
+</head>
+<body>
+	<h1>Text.ColorBack</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Text.ColorBack</b> ( <i>Color</i> :<i> </i><b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Text.ColorBack</b> procedure is used to<b> </b>change the current text background color. The alternate spelling is <b>Text.ColourBack</b>.<p>
+The <b>Text.ColorBack</b> procedure sets the text background color to the specified color. This is the color that surrounds characters when they are <b>put</b> onto the screen. On an IBM PC in "<i>screen</i>" mode, the color can be from 0 - 7. (You can not have the upper 8 colors as text background colors. On UNIX dumb terminals, <b>Text.ColorBack</b>(1) turns on highlighting and <b>Text.ColorBack</b>(0) turns it off. On other systems, this procedure may have no effect.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Since this program is in "<i>screen</i>"<i> </i>mode, changing the background color has no immediately observable effect. When the message "Greetings" is output, the background surrounding each letter will be red.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ( "screen" )
+        
+        Text.ColorBack ( red )
+        put "Greetings"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a "<i>screen</i>" or "<i>graphics</i>" mode. If the screen mode has not been set, it will automatically be set to "<i>screen</i>" mode. See <b>View.Set </b>for details <p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Text.ColorBack</b> , not by calling <b>ColorBack</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="text_color.html">Text.Color</a></b> and <b><a href="text_whatcolorback.html">Text.WhatColorBack</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

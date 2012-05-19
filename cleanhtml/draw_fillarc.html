@@ -1,0 +1,109 @@
+
+<html>
+<head>
+	<title>Draw.FillArc</title>
+</head>
+<body>
+	<h1>Draw.FillArc</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.FillArc </b>(<i>x</i>, <i>y</i>,<b> </b><i>xRadius</i>, <i>yRadius</i><b> :</b> <b>int</b>,<br></font><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.FillArc </b>procedure is used to draw a filled arc whose center is at (<i>x</i>, <i>y</i>). It then fills in the pie-shaped wedge using the specified <i>Color</i>. To outline a filled arc, use <b>Draw.FillArc</b> with the <i>Color</i> parameter set to the fill color and then <b>Draw.Arc</b> with the <i>Color</i> parameter set to the border color. For <i>initialAngle </i>and <i>finalAngle</i>, which determine the edges of the wedge, zero degrees is "three o'clock" and 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <i>xRadius </i>and <i>yRadius</i>.<p>
+
+</p>
+<center><img src="draw_fillarc01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a filled semicircle (actually, an approximation to a semicircle) whose center is (<i>midx</i>,0) the bottom center of the screen, in bright red. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        const midx := maxx div 2
+        Draw.FillArc (midx, 0, maxy, maxy, 0, 180, brightred)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, an error will occur.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.FillArc</b>, not by calling <b>FillArc</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	<title>Time.PartsSec</title>
+</head>
+<body>
+	<h1>Time.PartsSec</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>Time.PartsSec</b> (<i>year</i>, <i>month</i>, <i>day</i>, <i>hour</i>, <i>minute</i>, <i>second</i> : <b>int</b>) : <b>int</b><p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Time.PartsSec</b> function is used to<b> </b>convert the numeric parts of a date (specifically the year, month, day, hour, minute and second) into the number of seconds since 00:00:00 GMT Jan 1, 1970 and the date specified by the parts.<p>
+The function can also convert a time without a date (year, month and day are all 0), in which case it returns the number of seconds that have passed since midnight of the current day.</p>
+<p>
+If the numbers don't make any sense or can't be interpreted, then <b>Time.PartsSec</b> will return 1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program gives the number of seconds between 00:00:00 GMT Jan 1, 1970 and 9:27 in the morning, Christmas Day, 1989).<p>
+</p>
+
+			
+			
+			<pre><code>        put "The number of seconds from 00:00:00 GMT Jan 1, 1970",
+            "is ", Time.PartsSec (1989, 12, 25, 9, 27, 0)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Time.PartsSec</b>, not by calling <b>PartsSec</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="time_secparts.html">Time.SecParts</a></b>, <b><a href="time_date.html">Time.Date</a></b> and <b><a href="time_sec.html">Time.Sec</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

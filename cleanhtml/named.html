@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<title>named</title>
+</head>
+<body>
+	<h1>named</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>namedType</i> is one of:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(a)</font></td>
+<td colspan="7"><font size="+1"><i>typeId</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(b)</font></td>
+<td colspan="7"><font size="+1"><i>moduleId</i> . <i>typeId</i></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A type can be given a name (<i>typeId</i>) and later this name can be used instead of writing out the type.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, <i>phoneRecord</i> is a named type.<p>
+</p>
+
+			
+			
+			<pre><code>        type phoneRecord :
+            record
+                name : string ( 20 )
+                phoneNumber : int
+                address : string ( 50 )
+            end record
+        
+        var oneEntry : phoneRecord
+        var phoneBook : array 1 .. 100 of phoneRecord</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.<p>
+Arrays whose bounds are not known at compile time cannot be named.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

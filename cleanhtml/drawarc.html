@@ -1,0 +1,95 @@
+
+<html>
+<head>
+	<title>drawarc</title>
+</head>
+<body>
+	<h1>drawarc</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>drawarc</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i> : <b>int</b>, <br></font><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>initialAngle</i>, <i>finalAngle</i>, <i>Color</i> : <b>int</b>)</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawarc</b> procedure is used to draw an arc whose center is at (<i>x</i>, <i>y</i>). This is just like <b>drawoval</b>, except that you must also give two angles, <i>initialAngle </i>and <i>finalAngle</i>, which determine where to start and stop drawing. Zero degrees is "three o'clock", 90 degrees is "twelve o'clock", etc. The horizontal and vertical distances from the center to the arc are given by <i>xRadius </i>and <i>yRadius</i>.<p>
+
+</p>
+<center><img src="drawarc01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a semicircle (actually, an approximation to a semicircle) whose center is (<i>midx</i>,0) the bottom center of the screen, using color number 1. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        const midx := maxx div 2
+        drawarc (midx, 0, maxy, maxy, 0, 180, 1)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

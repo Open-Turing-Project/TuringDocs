@@ -1,0 +1,104 @@
+
+<html>
+<head>
+	<title>GUI.GetEventWindow</title>
+</head>
+<body>
+	<h1>GUI.GetEventWindow</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.GetEventWindow</b> : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Returns the window ID of the window in which the event (mouse button or keystroke) took place. This function should only be called in an <i>action procedure</i> or in a default mouse or keystroke event handler, as it will return 1 when there is no event being processed.<p>
+This function is commonly used when several windows share the same layout. The same buttons in each window point to the same <i>action procedures</i>. To determine which button was actually pressed, the function is called to get the window.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program creates four windows in a row, each with a button that, when pressed, causes a star to be drawn in that window.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI" 
+        
+        procedure DrawStar
+            var windowID : int := GUI.GetEventWindow
+            Window.Select (windowID)
+            Draw.FillStar (25, 40, 175, 190, Rand.Int (10, 15))
+        end DrawStar
+        
+        for i : 0 .. 3
+            var window : int := Window.Open ("graphics:200;200") 
+            % Place window above task bar, across from previous one.
+            Window.SetPosition (window, 220 * i, 27) 
+            var button : int := GUI.CreateButton (5, 5, 190, "Draw Star", 
+                DrawStar) 
+        end for
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.GetEventWindow</b>, not by calling <b>GetEventWindow</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_processevent.html">GUI.ProcessEvent</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+<html>
+<head>
+	<title>tan</title>
+</head>
+<body>
+	<h1>tan</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>tan</b> ( <i>r</i> : <b>real</b> ) : <b>real</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>tan</b> function is used to find the tangent of an angle given in radians. For example, <b>tan</b> (<font face="symbol">p</font>/4) is 0.5.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints out the tangent of 0, <font face="symbol">p</font>/6, 2<font face="symbol">p</font>/6, 3<font face="symbol">p</font>/6, up to 12<font face="symbol">p</font>/6 radians.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 0 .. 12
+            const angle := i * Math.PI / 6
+            put "Tangent of ", angle, " is ", tan ( angle )
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			An argument to <b>tan</b> of <font face="symbol">p</font>/2, 3*<font face="symbol">p</font>/2, etc. may result in an overflow (and halt of the program) as the result is technically <font face="symbol">&yen;</font>. 
+(It may not cause an overflow due to rounding, in which case the result will simply be a very large number.)
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="sin.html">sin</a></b> and <b><a href="cos.html">cos</a></b> functions for calculating sine and cosine.<p>
+the <b><a href="tand.html">tand</a></b> function which finds the tangent of an angle given in degrees. (2<font face="symbol">p</font> radians are the same as 360 degrees.)</p>
+<p>
+See also predefined unit <b><a href="mathmodule.html">Math</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

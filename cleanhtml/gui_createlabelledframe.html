@@ -1,0 +1,151 @@
+
+<html>
+<head>
+	<title>GUI.CreateLabelledFrame</title>
+</head>
+<body>
+	<h1>GUI.CreateLabelledFrame</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.CreateLabelledFrame</b> ( <i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>kind</i> : <b>int</b>,<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<i>text</i> : <b>string</b> ) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a labelled frame and returns the frame's widget ID.<p>
+	  A labelled frame is a box with a text label drawn around other GUI widgets to make the window look better and help organize the GUI elements.</p>
+<p>
+	  </p>
+<center><img src="gui_createlabelledframe01.gif"></center>
+	  <center><b>Three Types of Labelled Frames</b></center>
+<p>
+	  Frames and labelled frames are the only GUI widgets that can have other widgets placed within them. Labelled frames are passive widgets, meaning that they do not respond to button clicks or keystrokes.</p>
+<p>
+	  The <i>x1</i> and <i>y1</i> parameters specify the lower-left corner of the frame and the <i>x2</i> and <i>y2</i> parameters specify the upper-right corner of the frame. (The text will extend above the frame.) The <i>kind</i> parameter specifies the type of frame. This is one of 0, <i>GUI.LINE</i>, <i>GUI.INDENT</i> or <i>GUI.EXDENT</i>. A <i>kind</i> of 0 is the default and is the same as <i>GUI.LINE</i>. </p>
+<p>
+	  <i>GUI.INDENT</i> and <i>GUI.EXDENT</i> only display properly if the background colour has been set to <i>gray</i> using <b>GUI.SetBackgroundColor</b>. <i>GUI.INDENT</i> makes the contents frame appear indented or recessed. <i>GUI.EXDENT</i> makes the contents of the frame appear to stand out from the window.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program draws three frames in the window.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI
+        View.Set ("graphics:250;90,nobuttonbar") 
+        GUI.SetBackgroundColor (gray)
+        var lineFrame, indentFrame, exdentFrame : int
+        lineFrame := GUI.CreateLabelledFrame (10, 10, 80, 70, 0, "Line") 
+        indentFrame := GUI. CreateLabelledFrame (90, 10, 160, 70,   
+            GUI.INDENT, "Indent") 
+        exdentFrame := GUI. CreateLabelledFrame (170, 10, 240, 70, 
+            GUI.EXDENT, "Exdent")</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When <b>GUI.CreateLabelledFrame </b>is called, the newly created labelled frame will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>
+	  A labelled frame widget is a passive widget and cannot be enabled or disabled.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following GUI subprograms can be called with a labelled frame as the <i>widgetID</i> parameter:<p>
+          </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+              <td>
+<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,
+		  <b>GUI.GetX</b>, <b>GUI.GetY</b>, <b>GUI.GetWidth</b>, 
+		  <b>GUI.GetHeight</b>, <b>GUI.SetPosition</b>, 
+		  <b>GUI.SetSize</b>, <b>GUI.SetPositionAndSize</b>,
+		  <b>GUI.SetLabel</b>
+</td>
+	    </tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling <b>GUI.CreateLabelledFrame</b>, not by calling <b>CreateLabelledFrame</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_setlabel.html">GUI.SetLabel</a></b> for changing the frame's text.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

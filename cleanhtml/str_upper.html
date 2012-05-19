@@ -1,0 +1,100 @@
+
+<html>
+<head>
+	<title>Str.Upper</title>
+</head>
+<body>
+	<h1>Str.Upper</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Str.Upper</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Str.Upper</b> function takes the string <i>s</i> and returns
+          a string in which all the lower case letters are converted to 
+          upper case. For example, <tt>Str.Upper ("ABC123def")</tt> returns
+          <tt>"ABC123DEF"</tt>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program obtains lines of text from the user and outputs the
+          lines converted to upper case.
+          <p>
+</p>
+
+			
+			
+			<pre><code>        var line : string
+        loop
+            put "Enter a line of text (empty to quit): " ..
+            get line : *
+            exit when line = ""
+            put "The upper case version: ", Str.Upper (line)
+        end loop
+    </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Str.Upper</b>, not by calling <b>Upper</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="str_lower.html">Str.Lower</a></b> and 
+          <b><a href="str_trim.html">Str.Trim</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

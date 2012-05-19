@@ -1,0 +1,163 @@
+
+<html>
+<head>
+	<title>inherit</title>
+</head>
+<body>
+	<h1>inherit</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>inheritClause </i>is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>inherit</b> <i>inheritItem</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>inherit</b> clause specifies that the class containing the clause is to be an expansion of another class. This expansion is called <i>inheritance</i>. The class containing the clause gains access to (inherits) all the declarations inside the target item. Expansions are used to add new declarations and exports and to support <i>polymorphism</i> (overriding subprograms).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Here is an example of a stack class. Following it, we show another class, called <i>stackWithDepth</i>, that inherits <i>stack</i> by adding a function called <i>depth</i>.<p>
+</p>
+Next comes an expansion, which inherits the internal declarations of the stack class and adds the <i>depth</i> function.<p>
+</p>
+
+			
+			
+			<pre><code>        class stack
+            export push, pop
+        
+            var top : int := 0
+            var contents : array 1 .. 100 of string
+        
+            procedure push ( s : string )
+                top := top + 1
+                contents (top ) := s
+            end push
+        
+            procedure pop ( var s : string )
+                s := contents ( top )
+                top := top - 1
+            end pop
+        end stack</code></pre>
+			
+			<pre><code>        class stackWithDepth
+            inherit stack
+            export depth
+            function depth : int
+                result top
+            end push
+        end stackWithDepth</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Objects of the inherited class <i>stackWithDepth</i> are like objects of the parent class <i>stack</i>, except there is an additional exported function named <i>depth</i>.<p>
+An <i>inheritItem</i> is one of:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a) <i>id</i>
+</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b) <i>id</i> <b>in</b> <i>fileName</i>
+</td>
+</tr>
+</table>
+<p>
+The second form is used when the inherit clause is for a separate <b>unit</b> and the imported item is in a file whose name is different from the item's name, for example:</p>
+<p>
+</p>
+The <i>fileName</i> must be an explicit character string, e.g., "<i>newledg.t</i>". Parentheses are allowed around the item in an inherit clause, as in:<p>
+</p>
+There is a special form of <b>inherit</b> clause, called an <b>implement</b> <b>clause</b>, that is used to separate an interface from an implementation. Modules and monitors, as well as classes, use these clauses. See <b>implement</b> clause and <b>implement</b> <b>by</b> clause.<p>
+If class <i>D</i> inherits class <i>C</i>, we say that <i>C </i>is the <i>parent</i> and <i>D </i>is the <i>child</i>. Class <i>B</i> is said to be an <i>ancestor</i> of class <i>D </i>(and <i>D</i> is the <i>descendant</i> of <i>B</i>) if <i>B</i> and <i>D</i> are the same class, or if <i>B</i> is the parent of <i>D</i>, or if <i>B</i> is the parent of the parent of <i>D</i>, etc. We write this as follows:</p>
+<p>
+</p>
+If <i>B</i> is an ancestor of <i>D</i> but not the same as <i>D</i>, we say <i>B</i> is a <i>strict</i> ancestor of <i>D</i>. We write this as:<p>
+</p>
+We also use the notations <i>D</i> &gt;= <i>B</i>, <i>D</i> &gt; <i>B</i> and <i>D</i> = <i>B</i> with the obvious meanings. All of these notations can be used in a program. Their main use is in conjunction with <b>objectclass</b>, which determines the class of an object located by a pointer. For example, if <i>p</i> is declared to be a pointer to a <i>stack</i>, we can write the following to see if <i>p </i>currently locates an object with the <i>depth</i> operation:<p>
+</p>
+A pointer that locates an object created as class <i>E</i> can be assigned to a pointer to class <i>B</i>, only if <i>B</i> is an ancestor of <i>E</i>. For example, a pointer to an object that is a <i>stackWithDepth</i> can be assigned to a pointer to <i>stack</i>, but not vice versa. The pointer <b>nil</b> can be assigned to any pointer variable, but the value <b>nil</b>(<i>C</i>) can only be assigned to a pointer to an ancestor of C.<p>
+An object (located by a pointer) can be assigned to another object only if they were created as objects of the same class. However, assignment of objects that are monitors or that contain dynamic arrays or collections is not allowed.</p>
+<p>
+Circular (recursive) inherits are not allowed. For example, if unit <i>B</i> inherits <i>A</i> then <i>A</i> cannot inherit <i>B</i>. Only one item is allowed in an inherit clause; in other words, Turing supports <i>single</i> inheritance but not <i>multiple</i> inheritance.</p>
+<p>
+See <b>implement</b> clause for a special kind of expansion that separates a module, monitor or class' interface from its implementation. See <b>class</b> for an example of polymorphism, in which an inheriting class overrides subprograms of its parent class.</p>
+<p>
+The initialization of a module, a monitor or an object is immediately preceded by the initialization of the item that it inherits or implements (if any). Correspondingly, if the item has an <b>implement</b> <b>by</b> clause, the implementation is initialized immediately after the initialization of the current item.</p>
+<p>
+Within a class <i>C</i>, with ancestor <i>B</i>, you can force a call to exported subprogram <i>p</i> using the form <i>C.p</i> (or<i> B.p</i>). This calls the subprogram declared in <i>C</i> (or in <i>B</i> in the case of <i>B.p</i>), regardless of the actual class of the object and any overriding of <i>p</i>. This is similar to the notation <i>C</i>::<i>p</i> of the C++ language. This notation can only be used inside class <i>C</i>.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        inherit ledger in "newledg.t"</code></pre>
+			
+			<pre><code>        inherit ( ledger in "newledg.t" )</code></pre>
+			
+			<pre><code>        B <= D      % B is an ancestor of D</code></pre>
+			
+			<pre><code>        B < D       % B is a strict ancestor of D</code></pre>
+			
+			<pre><code>        % Does the object located by p have the depth operation
+        if stackWithDepth <= objectclass(p) then</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="unit.html">unit</a></b>, <b><a href="module.html">module</a></b>, <b><a href="monitor.html">monitor</a></b> and <b><a href="class.html">class</a></b>. See also <b><a href="export.html">export</a></b> list, <b><a href="import.html">import</a></b> list, <b><a href="implement.html">implement</a></b> clause, <b><a href="implement_by.html">implement by</a></b> clause and <b><a href="deferred.html">deferred</a></b> subprogram. See also <b><a href="objectclass.html">objectclass</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+<html>
+<head>
+	<title>nil</title>
+</head>
+<body>
+	<h1>nil</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>nil</b> [ (<i>collectionOrClassId</i> ) ]<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>nil</b> pointer does not locate any element (object). Pointers locate items in collections, classes and types. The <i>collectionOrClassId</i> is optional.<p>
+This <b>nil</b> pointer is distinct from pointers to actual elements, and it can be compared to these pointers. It is also distinct from the uninitialized pointer value.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, the pointer called <i>first</i> is set to the nil pointer of collection <i>c</i>, that is, to <b>nil</b>(c).<p>
+</p>
+
+			
+			
+			<pre><code>        var c : collection of
+            record
+                name : string ( 50 )
+                next : pointer to c
+            end record
+        var first : pointer to c := nil ( c )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			See also collection, class and pointer. When nil is written without the <i>collectionOrClassId</i>, it can be assigned to a pointer to any collection, class or type.<p>
+The type of <b>nil</b> without the <i>collectionOrClassId</i> is effectively a pointer to <i>everyClass</i>, an imaginary class that has no objects and is the descendant of all classes. This implies that it can be assigned to any other class pointer, because it is a descendant of all classes.</p>
+<p>
+Turing allows you to write <b>nil</b> (<i>id</i>) after a forward declaration of <i>id</i> (the name of a collection, class or type) before (and after) the resolution of the <i>id</i>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

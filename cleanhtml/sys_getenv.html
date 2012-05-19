@@ -1,0 +1,74 @@
+
+<html>
+<head>
+	<title>Sys.GetEnv</title>
+</head>
+<body>
+	<h1>Sys.GetEnv</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Sys.GetEnv</b> ( <i>symbol</i> : <b>string</b> ) : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Sys.GetEnv </b>function is used to<b> </b>access the environment string whose name is <i>symbol</i>. These strings are determined by the shell (command processor) or the program that caused your program to run. See also the <b>Sys.Nargs</b> and <b>Sys.FetchArg</b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			On a PC, this retrieves the environment variable USERLEVEL<b> </b>and prints extra instructions if USERLEVEL had been set to NOVICE. USERLEVEL can be set to NOVICE with the command <b>SET USERLEVEL = NOVICE</b> in the <b>autoexec.bat</b> file or in any batch file.<p>
+</p>
+
+			
+			
+			<pre><code>        const userLevel : string
+        userLevel := Sys.GetEnv ("USERLEVEL")
+            if userLevel = "NOVICE" then
+                       % put a set of instructions
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Sys.GetEnv</b>, not by calling <b>GetEnv</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

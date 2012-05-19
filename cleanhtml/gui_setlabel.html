@@ -1,0 +1,106 @@
+
+<html>
+<head>
+	<title>GUI.SetLabel</title>
+</head>
+<body>
+	<h1>GUI.SetLabel</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetLabel</b> (<i>widgetID</i> : <b>int</b>, <i>text</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Changes the text of a widget specified by <i>widgetID</i> to <i>text</i>. This procedure can accept a button, check box, radio button, label, or a labelled frame widget as the <i>widgetID</i> parameter.<p>
+In most cases, if the text will not fit in the widget's current size, the widget will be resized to fit the text. If the widget was made larger to fit the text and then the text is changed, the widget will be resized as appropriate for the original <i>width</i> specified and the new text.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program changes the text in the button whenever a keystroke occurs. When the text is changed back to "Quit", the button assumes a width of 100 again.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        View.Set ("graphics:220;50")
+        
+        var short : boolean := true
+        var button : int
+        
+        procedure KeyHandler (ch : char)
+            if short then
+                GUI.SetLabel (button, "Press This Button to Quit")
+            else
+                GUI.SetLabel (button, "Quit")
+            end if
+            short := not short
+        end KeyHandler
+        
+        GUI.SetKeyEventHandler (KeyHandler)
+        button := GUI.CreateButton (10, 5, 100, "Quit", GUI.Quit)
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.SetLabel</b>, not by calling <b>SetLabel</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b>GUI.CreateButton</b>, <b>GUI.CreateCheckBox</b>, <b>GUI.CreateRadioButton</b>, <b>GUI.CreateLabel</b>, and <b><a href="gui_createlabelledframe.html">GUI.CreateLabelledFrame</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

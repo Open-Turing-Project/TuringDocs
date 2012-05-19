@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<title>free</title>
+</head>
+<body>
+	<h1>free</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>freeStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>free</b> [ <i>collectionOrClassId</i>, ] <i>pointerVariableReference</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>free</b> statement destroys (deallocates) an element that has been allocated by a <b>new</b> statement.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Using a collection, declare a list of records and allocate one of these records. Then deallocate the record.<p>
+</p>
+
+			
+			
+			<pre><code>        var list : collection of
+            record
+                contents : string ( 10 )
+                next : pointer to list
+                            % Short form: next : ^ list
+            end record
+        var first : pointer to list % Short form: var next : ^ list
+        new list, first
+                % Allocate an element of list; place its location in first
+                % Short form: new first
+        
+        free list, first    % Deallocate the element of list located by first
+                    % Short form: free first</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>free</b> statement sets the pointer variable to the <b>nil</b> value. See the <b>new</b> statement for examples of allocating elements of classes and values of types. It the pointer locates a type, the <i>collectionOrClassId </i>in the <b>free</b> statement must be omitted.<p>
+An imported class can have one of its objects destroyed (by the <b>free</b> statement) only if the class is imported <b>var</b>.</p>
+<p>
+The <i>collectionOrClassId</i> is optional in the <b>free</b> statement.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="class.html">class</a></b> and <b><a href="collection.html">collection</a></b> declarations, the <b><a href="pointer.html">pointer</a></b> type, the <b><a href="new.html">new</a></b> <a href="statement.html">statement</a> and the <b><a href="nil.html">nil</a></b> value.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

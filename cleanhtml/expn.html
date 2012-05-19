@@ -1,0 +1,173 @@
+
+<html>
+<head>
+	<title>expn</title>
+</head>
+<body>
+	<h1>expn</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>expn</i> is one of:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(a)</font></td>
+<td colspan="7"><font size="+1"><i>explicitConstant</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: 25</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(b)</font></td>
+<td colspan="7"><font size="+1"><i>variableReference</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: width</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(c)</font></td>
+<td colspan="7"><font size="+1"><i>constantReference</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: pi</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(d)</font></td>
+<td colspan="7"><font size="+1"><i>expn</i> <i>infixOperator</i> <i>expn</i></font></td>
+<td width="40">&nbsp;</td>
+<td colspan="-1"><font size="+1"><i>% e.g.: 3 <b>+</b> width</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(e)</font></td>
+<td colspan="7"><font size="+1"><i>prefixOperator</i> <i>expn</i></font></td>
+<td width="40">&nbsp;</td>
+<td colspan="-1"><font size="+1"><i>% e.g.: <b>-</b> width</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(f)</font></td>
+<td colspan="7"><font size="+1">(<i>expn</i>)</font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-3"><font size="+1"><i>% e.g.: (width - 7)</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(g)</font></td>
+<td colspan="7"><font size="+1"><i>substring</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-3"><font size="+1"><i>% e.g.: s (3 .. 5)</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(h)</font></td>
+<td colspan="7"><font size="+1"><i>functionCall</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: sqrt (25)</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(i)</font></td>
+<td colspan="7"><font size="+1"><i>setConstructor</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: modes (4</i>,<i> 3)</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(j)</font></td>
+<td colspan="7"><font size="+1"><i>enumeratedValue</i></font></td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="-2"><font size="+1"><i>% e.g.: color . red</i></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An expression (<i>expn</i>)<i> </i>returns a value; in the general case, this may involve a calculation, such as addition, as in the expression:<p>
+</p>
+
+			
+			
+			<pre><code>            3 + width</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        put "Hello world"           % "Hello world" is an expn
+        var diameter : real
+        const pi := 3.14159         % 3.14159 is an expn
+        diameter := pi * r ** 2         % pi * r ** 2 is an expn
+        var x := diameter               % diameter is an expn</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In the simplest case, an expression (<i>expn</i>) is simply an explicit constant such as 25 or "<i>Hello world</i>". A variable by itself is considered to be an expression when its value is used. This is the case above, where the value of <i>diameter</i> is used to initialize <i>x</i>. More generally, an expression contains an operator such as <b>+</b> and carries out an actual calculation. An expression may also be a substring, function call, set constructor or enumerated value. For details, see the descriptions of these items.<p>
+The Turing infix operators are: +, -, *, /, <b>div</b>, <b>mod</b>, **, &lt;, &gt;, =, &lt;=, &gt;=, <b>not=</b>, <b>not</b>, <b>and</b>, <b>or</b>, =&gt;, <b>in</b>, <b>not</b> <b>in</b>, <b>shr</b> (shift right), <b>shl</b> (shift left), and <b>xor</b> (exclusive <b>or</b>). For details, see <i>infixOperator</i>. The Turing prefix operators are +, - and <b>not</b>, ^ (pointer following) and # (see <b>cheat</b>). For details see <i>prefix </i>operator.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<i><a href="precedence.html">precedence</a> </i>of operators, as well as the <b><a href="int.html">int</a></b>, <b><a href="real.html">real</a></b>, <b><a href="string1.html">string</a></b> and <b><a href="boolean.html">boolean</a></b> types.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+<html>
+<head>
+	<title>buttonmoved</title>
+</head>
+<body>
+	<h1>buttonmoved</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>buttonmoved</b> (<i>motion</i> : <b>string</b>) : <b>boolean</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>buttonmoved</b> function indicates whether there is a mouse event of the appropriate type on the mouse queue. Events are either "up", "down", "updown" or "downup" events (although the "downup" and "updown" are the same event).<p>
+The parameter <i>motion</i> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <b>buttonmoved</b> returns <b>true</b>. If the event is not in the queue, then <b>buttonmoved</b> returns <b>false</b>.</p>
+<p>
+In "<i>single-button mode</i>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.</p>
+<p>
+In "<i>multi-button mode</i>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws random circles on the screen until the user clicks the mouse button, whereupon is starts drawing random boxes. Clicking the mouse button switches between the two.<p>
+</p>
+
+			
+			
+			<pre><code>        var circles: boolean := true
+        loop
+            var x, y, radius, clr: int
+            if buttonmoved ("down") then
+                var buttonnumber, buttonupdown : int
+                buttonwait ("down", x, y, buttonnumber, buttonupdown)
+                circles := not circles
+            end if
+            randint (x, 0, maxx)
+            randint (y, 0, maxy)
+            randint (radius, 0, 100)
+            randint (clr, 0, maxcolor)
+            if circles then
+                drawfilloval (x, y, radius, radius, clr)
+            else
+                drawfillbox (x, y, x + radius, y + radius, clr)
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This is an example demonstrating how to check for both character and mouse input at the same time.<p>
+</p>
+
+			
+			
+			<pre><code>        var ch : string (1)
+        var x, y, btnnum, btnupdown : int
+        loop
+            if hasch then
+                getch (ch)
+                locate (1, 1)
+                put "The character entered is a: ", ch
+            end if
+            if buttonmoved ("down") then
+                buttonwait ("down", x, y, btnnum, btnupdown)
+                locate (1, 1)
+                put "The button was clicked at position: ", x, ", ",y
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>buttonmoved</b> can be thought of as the mouse equivalent of <b>hasch</b> in that they both check for something in a queue and both return immediately.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="buttonwait.html">buttonwait</a></b> to get mouse events saved in the queue. See also <b><a href="buttonchoose.html">buttonchoose</a></b> to switch between "<i>single-button mode</i>" and "<i>multi-button mode</i>".<p>
+See also predefined unit <b><a href="mousemodule.html">Mouse</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

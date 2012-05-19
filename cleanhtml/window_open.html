@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<title>Window.Open</title>
+</head>
+<body>
+	<h1>Window.Open</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Window.Open</b> (<i>setUpString</i> : <b>string</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Window.Open</b> function is used to create a window. A window ID is returned if the window  is successfully created. If the window is not created then it returns 0. <b>Error.Last</b> and <b>Error.LastMsg</b> can then be used to determine the cause of the failure.<p>
+The <i>setUpString</i> parameter is identical to that of <b>View.Set</b>. See <b>View.Set</b> for the list of options available. </p>
+<p>
+When the window is created, it is automatically selected (i.e. all output will be sent to that window unless redirected by a <b>Window.Select</b> command).</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program opens a window, makes it active and then close the window after getting a keystroke from the user.<p>
+</p>
+
+			
+			
+			<pre><code>        % Open the window
+        var winID : int
+        winID := Window.Open ("position:top;center,graphics:200;200")
+        
+        % Draw the random ovals in the box
+        var x, y, clr : int
+        for : 1 .. 20
+            x := Rand.Int (0, maxx)     % Random x
+            y := Rand.Int (0, maxy)     % Random y
+            clr := Rand.Int (0, maxcolor)   % Random color
+            Draw.FillOval (x, y, 30, 30, clr)
+        end for
+        
+        var ch : char := getchar            % Wait for input
+        
+        Window.Close (winID)                % Close the window</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Window.Open</b>, not by calling <b>Open</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a> </b>for the syntax of <i>startUpString</i>. See also <b><a href="window_select.html">Window.Select</a></b> and <b><a href="window_setactive.html">Window.SetActive</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

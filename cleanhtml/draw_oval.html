@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<title>Draw.Oval</title>
+</head>
+<body>
+	<h1>Draw.Oval</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.Oval</b> (<i>x</i>, <i>y</i>, <i>xRadius</i>, <i>yRadius</i>, <i>Color</i> :<b> int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.Oval </b>procedure is used to draw an oval whose center is at (<i>x</i>, <i>y</i>). The horizontal and vertical distances from the center to the oval are given by <i>xRadius </i>and <i>yRadius</i>.<p>
+
+</p>
+<center><img src="draw_oval01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a large oval that just touches each edge of the screen in magenta. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The center of the oval is at (<i>midx</i>, <i>midy</i>), which is the middle of the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        const midx := maxx div 2
+        const midy := maxy div 2
+        Draw.Oval (midx, midy, midx, midy, magenta)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Ideally, a circle is drawn when <i>xRadius</i> = <i>yRadius</i>. In fact, the aspect ratio (the ratio of height to width of pixels displayed on the screen) of the IBM PC compatibles is not 1.0, so this does not draw a true circle. In CGA graphics mode this ratio is 5 to 4.<p>
+The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, an error will occur.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.Oval</b>, not by calling <b>Oval</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

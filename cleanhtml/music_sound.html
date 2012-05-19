@@ -1,0 +1,111 @@
+
+<html>
+<head>
+	<title>Music.Sound</title>
+</head>
+<body>
+	<h1>Music.Sound</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Music.Sound</b> ( <i>frequency</i>, <i>duration</i> : <b>int </b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Music.Sound </b>statement is used to cause the computer to 
+	  sound a note of a given frequency for a given time. The frequency 
+	  is in cycles per second (Hertz). The time duration is in milliseconds. 
+	  For example, middle A on a piano is 440 Hertz, so 
+	  <b>Music.Sound</b>(440, 1000) plays middle A for one second.<p>
+	  Sounds are produced synchronously on a per process basis. This means 
+	  that when a process executes a <b>Music.Sound</b> or <b>Music.Play</b> 
+	  command, it stops until the command is finished. However, other 
+	  processes will continue executing.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program plays a siren sound in the background.<p>
+</p>
+
+			
+			
+			<pre><code>        process siren
+            loop
+                for i : 100 .. 3000 by 100
+                    Music.Sound ( i, 50 )   % Sound note
+                end for
+                for decreasing i : 2900 .. 200 by 100
+                    Music.Sound ( i, 50 )   % Sound note
+                end for
+            end loop
+        end siren
+        
+        fork siren
+         the rest of the program goes here while the siren continues </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Music.Sound</b>, not by calling <b>Sound</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="music_play.html">Music.Play</a></b> statement, which 
+          plays notes based on musical notation. For example, 
+	  <b><a href="music_play.html">Music.Play</a></b>("8C") plays an 
+	  eighth note of middle C.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

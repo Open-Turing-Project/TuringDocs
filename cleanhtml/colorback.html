@@ -1,0 +1,156 @@
+
+<html>
+<head>
+	<title>colorback</title>
+</head>
+<body>
+	<h1>colorback</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>colorback</b> (<i>Color</i> :<i> </i><b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>colorback</b> procedure is used to change the color upon which text appears. The alternate spelling is <b>colourback</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			When the message "Greetings" is output, the background surrounding each letter will be inred.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        colorback (red)
+        put "Greetings" ..</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When a newline is output, such as when the <b>put</b> statement does not contain a .. at the end, the rest of the line is cleared from cursor to the right edge of the output window in the text background color.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will result in the word "Hello" being displayed in red on a green background followed by the word "Again" displayed in red on a yellow background. The yellow background stretches across the window.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        color (red)
+        colorback (green)
+        put "Hello " .. % The ".." at the end of line stops the newline
+        colorback (yellow)
+        put "Again" % The rest of the line is cleared in yellow</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays the letter 'X' in 16 different colors on 16 different backgrounds. Note that the letter is not visible when the text color and the bacground color are the same<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        for row : 0 .. 15
+            colorback (row)
+            for column : 0 .. 15
+                color (column)
+                locate (row, column)
+                put "X" ..
+            end for
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			See <b>maxcolor</b> for the number of background colors available . The color in which text appears can be set using the <b>color</b> procedure.<p>
+The screen must be in a "<i>graphics</i>" mode to use the <b>color</b> procedure. See <b>setscreen</b> for details.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="color.html">color</a></b> and <b><a href="whatcolorback.html">whatcolorback</a></b>.<p>
+See also predefined unit <b><a href="textmodule.html">Text</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

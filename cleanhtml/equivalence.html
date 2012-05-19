@@ -1,0 +1,143 @@
+
+<html>
+<head>
+	<title>equivalence</title>
+</head>
+<body>
+	<h1>equivalence</h1>
+	
+		
+		
+
+			<h2>Description</h2>
+			Two types are <i>equivalent</i> to each other if they are essentially the same types (the exact rules are given below). When a variable is passed to a <b>var</b> formal parameter, the types of the variable and the formal parameter must be equivalent because they are effectively the same variable. When an expression is assigned to a variable, their types must be equivalent, except for special cases. For example, Turing allows you to assign an integer expression to a <b>real</b> variable (see <i>assignability </i>for details).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var j : int
+        
+        var b : array 1 .. 25 of string
+        
+        type personType :
+            record
+                age : int
+                name : string (20)
+            end record
+        
+        procedure p (var i : int, var a : array 1 .. 25 of string,
+                    var r : personType)
+         body of procedure p, which modifies each of i, a and r 
+        end p
+        
+        var s : personType
+        p (j, b, s)     % Procedure call to p
+                    % i and j have the equivalent type int
+                    % Arrays a and b have equivalent types
+                    % Records r and s have equivalent types</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Two types are defined to be <i>equivalent </i>if they are:<p>
+</p>
+<table>
+<tr valign="top">
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td>the same standard type (<b>int</b>, <b>real</b>, <b>boolean</b> or <b>string</b>),</td>
+</tr>
+<tr valign="top">
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td>subranges with equal first and last values,</td>
+</tr>
+<tr valign="top">
+<td>(c)</td>
+<td width="10">&nbsp;</td>
+<td>arrays with equivalent index types and equivalent component types,</td>
+</tr>
+<tr valign="top">
+<td>(d)</td>
+<td width="10">&nbsp;</td>
+<td>strings with equal maximum lengths,</td>
+</tr>
+<tr valign="top">
+<td>(e)</td>
+<td width="10">&nbsp;</td>
+<td>sets with equivalent base types, or</td>
+</tr>
+<tr valign="top">
+<td>(f) </td>
+<td width="10">&nbsp;</td>
+<td>pointers to the same collection; in addition,</td>
+</tr>
+<tr valign="top">
+<td>(g)</td>
+<td width="10">&nbsp;</td>
+<td>a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)</td>
+</tr>
+<tr valign="top">
+<td>(h)</td>
+<td width="10">&nbsp;</td>
+<td>both <b>char</b>,</td>
+</tr>
+<tr valign="top">
+<td>(i)</td>
+<td width="10">&nbsp;</td>
+<td>both <b>char</b>(<i>n</i>) with the same length,</td>
+</tr>
+<tr valign="top">
+<td>(j)</td>
+<td width="10">&nbsp;</td>
+<td>both procedure types, with corresponding equivalent parameter types and corresponding <b>var</b> or non-<b>var</b> of the parameters,</td>
+</tr>
+<tr valign="top">
+<td>(k)</td>
+<td width="10">&nbsp;</td>
+<td>both function types, with corresponding equivalent parameter types and corresponding <b>var</b> or non-<b>var</b> of the parameters and equivalent result types,</td>
+</tr>
+<tr valign="top">
+<td>(l)</td>
+<td width="10">&nbsp;</td>
+<td>both pointer types to the same class or equivalent type and both are checked or unchecked.</td>
+</tr>
+</table>
+<p>
+Each separate instance of a record, union or enumerated type (written out using one of the keywords <b>record</b>, <b>union</b> or <b>enum</b>) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.</p>
+<p>
+Opaque type <i>T</i>, exported from a module, monitor or class <i>M</i> as <b>opaque</b>, is a special case of equivalence. Outside of <i>M</i> this type is written <i>M</i>.<i>T</i>, and is considered to be distinct from all other types. By contrast, if type <i>U </i>is exported non-<b>opaque</b>, the usual rules of equivalence apply. The parameter or result type of an exported procedure or function or an exported constant is considered to have type <i>M</i>.<i>T</i> outside of <i>M</i> if the item is declared using the type identifier <i>T</i>. Outside of <i>M</i>, the <b>opaque</b> type can be assigned, but not compared.</p>
+<p>
+It is not required that subprogram types have the same names and parameter names to be equivalent. They also do not require the same factoring of parameters across their types, as in <i>i</i>,<i> j: </i><b>int</b> instead of <i>i: </i><b>int</b>,<i> j: </i><b>int</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

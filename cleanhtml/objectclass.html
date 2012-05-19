@@ -1,0 +1,80 @@
+
+<html>
+<head>
+	<title>objectclass</title>
+</head>
+<body>
+	<h1>objectclass</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>objectclass</b> ( <i>pointerExpn</i> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>objectclass</b> attribute is used to find the class of an object located by a pointer. The <i>pointerExpn</i> must be an expression that is a pointer to a class.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			See <b>class</b> for an example of classes and inheritance, in which a class called <i>TextFile</i> is inherited by a class called <i>Device</i>. The <i>Device</i> class adds a new exported procedure called <i>ioCtl</i>. In the present example, <b>objectclass</b> is used to test to make sure that the <i>textFilePtr</i> currently locates an object that was created as a <i>Device</i> (or as a descendant of <i>Device</i>). The notation <i>Device(textFilePtr) </i>converts the pointer to be a pointer to a <i>Device </i>so that <i>ioCtl </i>can be called.<p>
+</p>
+
+			
+			
+			<pre><code>        var textFilePtr : ^ TextFile
+        
+        if objectclass ( textFilePtr ) >= Device then
+            % Can safely treat object as a Device
+            Device ( textFilePtr ) . ioCtl
+            
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			This example uses the class comparison operator &gt;= which means "is a descendant of". See <b>class</b>.<p>
+You can only use <b>objectclass</b>  in class comparisons. In particular, <b>objectclass</b> cannot be used to declare pointers. For example, this: </p>
+<p>
+</p>
+is not allowed.<p>
+</p>
+
+			
+			
+			<pre><code>        var p : ^objectclass (q)</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

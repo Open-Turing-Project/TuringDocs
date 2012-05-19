@@ -1,0 +1,104 @@
+
+<html>
+<head>
+	<title>Font.GetName</title>
+</head>
+<body>
+	<h1>Font.GetName</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Font.GetName</b> : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Font.GetName</b> is used to get the next font available on the system. By using <b>Font.StartName</b> and then calling <b>Font.GetName</b> repeatedly, you can get the names of all the fonts available to the program.<p>
+<b>Font.StartName</b> must be called before any calls to <b>Font.GetName</b>. After that, <b>Font.GetName</b> returns the list of the font names, one per call. When there are no more sizes, <b>Font.GetName</b> returns the empty string.</p>
+<p>
+Once the name of a font is known, it's possible to list the available styles (using <b>Font.GetStyle</b>) and the available sizes (using <b>Font.StartSize</b> and <b>Font.GetSize</b>) for that font.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program lists all the fonts available on the system.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var fontName : string
+        Font.StartName
+        loop
+            fontName := Font.GetName
+            exit when fontName = ""
+            put fontName
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Another example is available that displays full information about
+          the fonts including name, styles, and point sizes.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Font Listing Example">
+<param name="Item1" value="-1,FontList.t;Font Listing Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Font.GetName</b>, not by calling <b>GetName</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

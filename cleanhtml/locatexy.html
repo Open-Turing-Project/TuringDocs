@@ -1,0 +1,88 @@
+
+<html>
+<head>
+	<title>locatexy</title>
+</head>
+<body>
+	<h1>locatexy</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>locatexy</b> ( <i>x</i> , <i>y</i> : <b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>locatexy</b> procedure is used to move the cursor so that the next output from <b>put</b> will be at approximately (<i>x</i>, <i>y</i>). The exact location may be somewhat to the left of <i>x</i> and below <i>y</i> to force alignment to a character boundary.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs "Hello" starting at approximately (100, 50) on the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        locatexy ( 100, 50 )
+        put "Hello"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>locatexy</b> procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the <b>locate</b> procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b> and <b><a href="drawdot.html">drawdot</a></b>.<p>
+See also predefined unit <b><a href="textmodule.html">Text</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

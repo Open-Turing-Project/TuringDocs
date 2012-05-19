@@ -1,0 +1,111 @@
+
+<html>
+<head>
+	<title>File.Rename</title>
+</head>
+<body>
+	<h1>File.Rename</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>File.Rename</b> (<i>srcPathName</i>, <i>destName</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>File.Copy</b> renames a file or directory named by the <i>srcPathName</i> parameter to the <i>destName</i> parameter. The <i>destName</i> parameter must be a name only. In other words <b>File.Rename</b> can't move a file between different directories.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>File.Rename </b>call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program renames the file "<i>/usr/west/example</i>" to "<i>testcase</i>"<p>
+</p>
+
+			
+			
+			<pre><code>        File.Rename ("/usr/west/example", "testcase")
+        if Error.Last = eNoError then
+            put "File renamed"
+        else
+            put "Did not rename the file."
+            put "Error: ", Error.LastMsg
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			An example program is available that creates a file in the current 
+        directory, renames it to a different name using <b>File.Rename</b>, 
+        checks the existence of both files using <b>File.Exists</b> and then 
+        deletes the file using <b>File.Delete</b>.<p>
+        <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+          <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,File.Rename.t;File.Rename Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>File.Rename</b>, not by calling <b>Rename</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<title>Sprite.SetHeight</title>
+</head>
+<body>
+	<h1>Sprite.SetHeight</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Sprite.SetHeight</b> (<i>spriteID</i>, <i>newHeight</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Sets the height of the sprite specified by <i>spriteID</i> to the 
+          value specified by <i>newHeight</i>.<p>
+          The height of a sprite determines which sprite appears above another 
+          when they overlap. The "higher" sprite (the one with the greater 
+          height) will appear on top of the sprite with the lower height, even 
+          if the lower sprite is drawn second.</p>
+<p>
+          The background (i.e. any non-sprite) is considered to be in height 0. 
+          Sprites with a negative height will appear "behind" the background. 
+          Note that if two sprites have the same height, the one drawn last 
+          will appear above the first one.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			See <b>Sprite.Hide</b> for an example of <b>Sprite.SetHeight</b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			It should be noted that a lot more computation must be done to 
+           display sprites with a negative height.  If you are on a slower
+           machine and performance is not sufficient, consider trying to
+           eliminate the use of sprites moving behind the background.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Sprite.SetPosition</b>, not by calling <b>SetPosition</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="sprite_new.html">Sprite.New</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

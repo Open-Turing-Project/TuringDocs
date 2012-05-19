@@ -1,0 +1,109 @@
+
+<html>
+<head>
+	<title>init</title>
+</head>
+<body>
+	<h1>init</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>init</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>init</b> (initialization) keyword is used for two different purposes in Turing. The most common is for initializing arrays, records and unions. The less common is for recording parameter values in subprograms for later use in <b>post</b> conditions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var mensNames : array 1 .. 3 of string :=
+            init ( "Tom", "Dick", "Harry" )
+        put mensNames ( 2 )             % This outputs Dick
+        var names : array 1 .. 2, 1 .. 3 of string :=
+            init ( "Tom", "Dick", "Harry",
+                 "Alice", "Barbara", "Cathy")
+        put names ( 2, 1 )  % This outputs Alice</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The order of initializing values for multi-dimensional arrays is based on varying the right subscripts (indexes) most rapidly. This is called <i>row major order</i>. Initialization of records and unions is analogous to initializing arrays. Values are listed in the order in which they appear in the type. See <b>array</b>, <b>record</b>, and <b>union</b> types.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This procedure is supposed to set integer variable <i>i</i> to an integer approximation of its square root. The <b>init</b> clause records the initial value of <i>i </i>as <i>j </i>so it can be used in the <b>post</b> condition to make sure that the approximation is sufficiently accurate. The name <i>j </i>can be used only in the post condition and nowhere else in the procedure.<p>
+</p>
+
+			
+			
+			<pre><code>        procedure intSqrt ( var i : int )
+            pre i >= 0
+            init j := i
+            post abs ( i - sqrt ( j ) ) <= 1
+             statements to approximate square root
+        end intSqrt</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pre.html">pre</a></b> and <b><a href="post.html">post</a></b> assertions and <b><a href="procedure.html">procedure</a></b> and <b><a href="process.html">process</a></b> declarations.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

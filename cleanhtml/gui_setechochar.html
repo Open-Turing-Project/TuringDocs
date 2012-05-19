@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<title>GUI.SetEchoChar</title>
+</head>
+<body>
+	<h1>GUI.SetEchoChar</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetEchoChar</b> (<i>widgetID</i> : <b>int</b>, <i>echoChar</i> : <b>char</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>GUI.SetEchoChar</b> procedure is used with text fields,
+          especially when using a text field to input a password.
+          When the <b>GUI.SetEchoChar</b> is called with a text field, 
+	  any character entered into the text field will appear as the
+	  character specified by <i>inputChar</i>.<p>
+	  This allows you to use the text field to enter a password.
+	  The characters that the user types will be echoed with the
+	  character specified by <i>inputChar</i> (often an asterisk).</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays a text field.  As the user enters
+          characters, each character is represented as a '*'.  When
+	  the user enters return, the program exits after displaying
+	  the actual text entered into the text field.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI
+
+        procedure EchoString (s : string)
+            put "You entered \"", s, "\""
+            GUI.Quit
+        end EchoString
+
+        var tf := GUI.CreateTextField (10, 100, 100, "", EchoString)
+        GUI.SetEchoChar (tf, '*')
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Note that the <i>echoChar</i> argument to <b>GUI.SetEchoChar</b>
+          must be a character, not a string. This means the character
+	  should be enclosed in single quote marks ('), not double
+	  quotes (").<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+	  <b>GUI.SetEchoChar</b>, not by calling <b>SetEchoChar</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

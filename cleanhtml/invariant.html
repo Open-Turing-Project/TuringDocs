@@ -1,0 +1,78 @@
+
+<html>
+<head>
+	<title>invariant</title>
+</head>
+<body>
+	<h1>invariant</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>invariantAssertion</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>invariant</b> <i>trueFalseExpn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>invariant</b> assertion is a special form of an <b>assert</b> statement that is used only in <b>loop</b> and <b>for</b> statements and in modules, monitors, and classes. It is used to make sure that a specific requirement is met. This requirement is given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b>, <b>loop</b> and <b>for</b> statements and the <b>module</b> declarations for more details.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program uses an invariant in a <b>for</b> loop. The invariant uses the function <i>nameInList </i>to specify that a key has not yet been found in an array of names.<p>
+</p>
+
+			
+			
+			<pre><code>        var name : array 1 .. 100 of string
+        var key : string
+         input name and key 
+        
+        function nameInList ( n : int) : boolean
+            for i : 1 .. n
+                if key = name ( i ) then
+                    result true
+                end if
+            end for
+            result false
+        end nameInList
+        
+        for j : 1 .. 100
+            invariant not nameInList ( j - 1)
+            if key = name ( j) then
+                put "Found name at ", j
+                exit
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

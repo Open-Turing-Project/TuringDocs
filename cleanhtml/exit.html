@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<title>exit</title>
+</head>
+<body>
+	<h1>exit</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>exitStatement</i> is one of:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(a)</font></td>
+<td colspan="7"><font size="+1"><b>exit</b> <b>when</b> trueFalseExpn</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(b)</font></td>
+<td colspan="7"><font size="+1"><b>exit</b></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>exit</b> statement is used to stop the execution of a <b>loop</b> or <b>for</b> statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond <b>end</b> <b>loop</b> or <b>end</b> <b>for</b>. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as <b>if</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Input names until finding Jones.<p>
+</p>
+
+			
+			
+			<pre><code>        var name : string
+        loop
+            get name
+            exit when name = "Jones"
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Exit statements must occur only inside <b>loop</b> or <b>for</b> statements. An exit takes you out of the closest surrounding <b>loop</b> or <b>for</b>. The only other ways to terminate a <b>loop</b> or <b>for</b> is by <b>return</b> (in a procedure or in the main program, in which case the entire procedure or main program is terminated) or by <b>result</b> (in a function, in which case the entire function is terminated and a result value must be supplied).<p>
+The form "<b>exit</b> <b>when</b> <i>trueFalseExpn</i>" is equivalent to "<b>if</b> <i>trueFalseExpn </i><b>then</b> <b>exit</b> <b>end</b> <b>if</b>".</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

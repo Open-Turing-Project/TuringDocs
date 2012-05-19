@@ -1,0 +1,137 @@
+
+<html>
+<head>
+	<title>case</title>
+</head>
+<body>
+	<h1>case</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>caseStatement</i> is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>case</b> <i>expn</i> <b>of</b></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">{ <b>label</b> <i>compileTimeExpn </i>{, <i>compileTimeExpn </i>} :</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="6"><font size="+1"><i>statementsAndDeclarations</i> }</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>label</b> :</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="6"><font size="+1"><i>statementsAndDeclarations</i> ]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>end</b> <b>case</b></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>case</b> statement is used to choose among a set of statements (and declarations). One set is chosen and executed and then execution continues just beyond <b>end</b> <b>case</b>.<p>
+The expression (<i>expn</i>) following the keyword <b>case</b> is evaluated and used to select one of the alternatives (sets of declarations and statements) for execution. The selected alternative is the one having a label value equaling the case expression. If none are equal and there is a final <b>label</b> with no expression, that alternative is selected.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output a message based on value of mark.<p>
+</p>
+
+			
+			
+			<pre><code>        case mark of
+            label 9, 10 :   put "Excellent"
+            label 7, 8 :        put "Good"
+            label 6 :       put "Fair"
+            label :     put "Poor"
+        end case</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output a message based on value of name.<p>
+</p>
+
+			
+			
+			<pre><code>        case name of
+            label "horse", "cow" :  put "Farm animal"
+            label "tiger", "lion" : put "Jungle animal"
+            label "cat", "dog" :    put "Pet"
+            label :         put "Unknown animal"
+        end case</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The case expression is required to match one of the labels. If it does not, there must be a final <b>label</b> with no expression. Label expressions must have values known at compile time. All label values must be distinct. The case expression and the label values must have the same equivalent type, which must be an integer, <b>char</b>, <b>boolean</b>, an <b>enum</b> type or strings.<p>
+Note that there is no way to express a range of values (for example from 5 to 10) in a label. Each individual value must be expressed in the label.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

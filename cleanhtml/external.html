@@ -1,0 +1,133 @@
+
+<html>
+<head>
+	<title>external</title>
+</head>
+<body>
+	<h1>external</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>externalDeclaration</i> is one of:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1">(a) <b>external</b> [ <i>overrideName</i> ] <i>subprogramHeader</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1">(b) <b>external</b> [ <i>addressSpec</i> ] <b>var</b> <i>id</i> [ : <i>typeSpec</i> ] [ :=<i>expn</i> ]</font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An external declaration is used to access variables or subprograms that are written in other languages or which require special linkage. This feature is implementation-dependent and dangerous and may cause arbitrary data or program corruption. From an interpretive environment such as Turing, this provides linkage to items that are part of the Turing system. For compiled versions of Turing, the linkage would be by means of a standard, operating system-specific linkage editor.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In form (a) the optional <i>overrideName</i> must be an explicit string constant, such as "<i>printf</i>". If it is omitted, the external name is the name in the <i>subprogramHeader</i>. See <i>subprogramHeader</i>.<p>
+The current implementation does not support form (b). This form is documented here in case a future version supports it. The <i>addressSpec </i>is a compile time expression (its value must fit in the range of the <b>addressint</b> type) or is a compile time string value. If the <i>addressSpec</i> is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of <i>typeSpec</i> or <i>expn</i> must be present.</p>
+<p>
+Declaring variables at absolute addresses is useful for device management in computer architectures with memory mapped device registers. External variables declared to be <b>int</b> or <b>nat</b> will by default be checked for initialization. To avoid this check, declare them to be <b>int4</b> or <b>nat4</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Place variable <i>ttyData</i> at hexadecimal location 9001 and assign it the character A.<p>
+</p>
+
+			
+			
+			<pre><code>        external 16#9001 var ttyData : char
+        ttyData := 'A'  % Character A is assigned to hex location 9001</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Access an external integer variable named ERRFLAG.<p>
+</p>
+
+			
+			
+			<pre><code>        external var ERRFLAG : int
+        if ERRFLAG = 0 then </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Access an integer variable which is called <i>y</i> in this program but is called <i>x</i> externally.<p>
+</p>
+
+			
+			
+			<pre><code>        external "x" var y : int</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Declare <i>drawcircle</i> to be a procedure that is externally known as <i>circle</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        external "circle" procedure drawcircle (x, y, r, Color : int)</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

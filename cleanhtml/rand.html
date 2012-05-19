@@ -1,0 +1,98 @@
+
+<html>
+<head>
+	<title>rand</title>
+</head>
+<body>
+	<h1>rand</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>rand</b> (<b>var</b> <i>r</i> : <b>real</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>rand</b> statement is used to create a pseudo-random number in the range zero to one. For example, if <i>x</i> is a real number, after <b>rand</b>(<i>x</i>), <i>x</i> would have a value such as 0.729548 or 0.352879.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program repeatedly and randomly prints out <i>Hi ho</i>,<i> hi ho</i> or <i>It's off to work we go</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        var r : real
+        loop
+            rand ( r )
+            if r > 0.5 then
+                put "Hi ho, hi ho"
+            else
+                put "It's off to work we go"
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>rand</b> statement sets its parameter to the next value of a sequence of pseudo-random real numbers that approximates a uniform distribution over the range 0&lt;<i>r</i> &lt;1.<p>
+Each time a program runs, <b>rand</b> uses a different pseudo-random number sequence. To get the same sequence (use <b>Rand.Set</b>).</p>
+<p>
+To use several sequences of repeatable pseudo-random number sequences, use the <b>randseed</b> and <b>randnext</b> procedures.</p>
+<p>
+In many languages, <b>rand</b> would be a function rather than a procedure. It has been designed as a procedure in Turing to respect the mathematical idea that every call to a function using the same arguments (or no arguments at all) should return the same value. If <b>rand</b> were a function, this would not be true.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="randint.html">randint</a></b>, <b><a href="randomize.html">randomize</a></b>, <b><a href="randseed.html">randseed</a></b> and <b><a href="randnext.html">randnext</a></b>.<p>
+See also predefined unit <b><a href="randmodule.html">Rand</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

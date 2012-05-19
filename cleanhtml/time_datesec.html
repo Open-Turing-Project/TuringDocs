@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<title>Time.DateSec</title>
+</head>
+<body>
+	<h1>Time.DateSec</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Time.DateSec</b> (<i>dateString</i> : <b>string</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Time.DateSec</b> function is used to<b> </b>convert a date and time string into a number, specifically, the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>
+The function can also convert just the date ("<i>dd mmm yy</i>"), in which case it returns the number of seconds since 00:00:00 GMT Jan 1, 1970 from midnight of the entered day. It will also convert a time without the date ("<i>hh:mm:ss</i>"), in which case it returns the number of seconds that have passed since midnight of that day.</p>
+<p>
+If the format is incorrect or can't be interpreted, then <b>Time.DateSec</b> will return 1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program gives the number of seconds since 00:00:00 GMT Jan 1, 1970.<p>
+</p>
+
+			
+			
+			<pre><code>        var theDateTime, theDate, theTime : string
+        theDateTime := Time.Date
+        theDate := theDateTime (1 .. 9)
+        theTime := theDateTime (11 .. *)
+        put "The number of seconds from 00:00:00 GMT Jan 1, 1970",
+            "from midnight ", theDate, "is ", Time.DateSec (theDate)
+        put "The number of seconds from midnight to ", theTime "is ", 
+            Time.DateSec (theTime)
+        put "The number of seconds from 00:00:00 GMT Jan 1, 1970",
+            "from ", theDateTime, "is ", Time.DateSec (theDateTime)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Time.DateSec</b>, not by calling <b>DateSec</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="time_sec.html">Time.Sec</a></b>, <b><a href="time_date.html">Time.Date</a></b> and <b><a href="time_secdate.html">Time.SecDate</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

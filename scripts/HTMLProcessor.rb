@@ -150,6 +150,11 @@ def structureToMarkdown(page)
 	$mdownTemplate.result(binding) # gets the page param from the binding
 end
 
+$htmlTemplate = ERB.new(IO.read("scripts/htmlTemplate.erb"),0,"<>")
+def structureToBetterHTML(page)
+	$htmlTemplate.result(binding) # gets the page param from the binding
+end
+
 def saveJSON(struct, file)
 	json = JSON.pretty_generate(struct)
 	File.open(file, "w") do |oFile| 
@@ -164,6 +169,21 @@ status = JSON.parse(IO.read("status.json"), :symbolize_names => true)
 Dir["html/*.html"].each do |f|
 	#puts "Processing #{f}"
 	datastruct = convFile(f)
+	# 404s should not exist
+	if datastruct[:title] =~ /404/
+		puts "Deleting 404 file #{f}"
+		FileUtils.rm(f)
+		next
+	end
+	info[:pages] << datastruct[:fileName]
+	# better html
+	newhtml = structureToBetterHTML(datastruct)
+	File.open("cleanhtml/" + datastruct[:fileName] + ".html", "w") do |oFile| 
+		oFile.puts newhtml
+	end
+	# full html content is only present for normal form pages
+	normalformat = (datastruct[:htmlcontent] == nil)
+	# don't process already checked markdown
 	if SKIP_CHECKED && !(status[:unchecked].include? datastruct[:fileName])
 		puts "Skipping checked #{datastruct[:fileName]}"
 		next
@@ -172,21 +192,13 @@ Dir["html/*.html"].each do |f|
 		puts "Skipping hand edited #{datastruct[:fileName]}"
 		next
 	end
-	# 404s should not exist
-	if datastruct[:title] =~ /404/
-		puts "Deleting 404 file #{f}"
-		FileUtils.rm(f)
-		next
-	end
-	info[:pages] << datastruct[:fileName]
-	# full html content is only present for normal form pages
-	normalformat = (datastruct[:htmlcontent] == nil)
 	# markdown
 	markdown = nil
 	if normalformat
 		markdown = structureToMarkdown(datastruct)
+		
 	else
-		puts "Special file: #{f} (processing may not work well)"
+		puts "Special file: #{f} (markdown processing may not work well)"
 		info[:special] << datastruct[:fileName]
 		markdown = markdownFormat(datastruct[:htmlcontent],true)
 	end
@@ -195,12 +207,13 @@ Dir["html/*.html"].each do |f|
 	end
 	# Now format it to html
 	html = entities(RDiscount.new(markdown).to_html)
-	# copy the necessary images
-	images = datastruct[:dependencies].map {|s| "html/#{s}"}
-	FileUtils.cp images, "markdownhtml/"
 	File.open("markdownhtml/" + datastruct[:fileName] + ".html", "w") do |oFile| 
 		oFile.puts html
 	end
+	# copy the necessary images
+	images = datastruct[:dependencies].map {|s| "html/#{s}"}
+	FileUtils.cp images, "markdownhtml/"
+	FileUtils.cp images, "cleanhtml/"
 	# json
 	saveJSON(datastruct,"json/" + datastruct[:fileName] + ".json")
 end

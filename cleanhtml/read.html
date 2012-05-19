@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<title>read</title>
+</head>
+<body>
+	<h1>read</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>readStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>read</b> : <i>fileNumber</i> [ : <i>status</i> ] , <i>readItem</i> { ,<i>readItem</i> }</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>read</b> statement inputs each of the <i>readItems</i> from the specified file. These items are input directly using the <i>binary</i> format that they have on the file. In other words, the items are not in source (ASCII or EBCDIC) format. In the common case, these items have been output to the file using the <b>write</b> statement.<p>
+By contrast, the <b>get</b> and <b>put</b> statements use source format, which a person can read using an ordinary text editor.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This example shows how to input a complete employee record using a <b>read</b> statement.<p>
+</p>
+
+			
+			
+			<pre><code>        var employeeRecord :
+            record
+                name : string ( 30 )
+                pay : int
+                dept : 0 .. 9
+            end record
+        var fileNo : int
+        open : fileNo, "payroll", read
+        
+        read : fileNo, employeeRecord</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <i>fileNumber</i> must specify a file that is open with <b>read</b> capability (or a program argument file that is implicitly opened).<p>
+The optional <i>status</i> is an <b>int</b> variable that is set to implementation-dependent information about the <b>read</b>. If <i>status</i> is returned as zero, the read was successful. Otherwise <i>status</i> gives information about the incomplete or failed <b>read</b> (which is not documented here). You commonly use <i>status </i>when you are reading a record or array from a file and you are not sure if the entire item exists on the file. If it does not exist, the <b>read</b> will fail part way through, but your program can continue and diagnose the problem by inspecting <i>status</i>.</p>
+<p>
+A <i>readItem</i> is:</p>
+<p>
+</p>
+Each <i>readItem</i> specifies a variable to be read in internal form. The optional <i>requestedSize</i> is an integer value giving the number of bytes of data to be read. The <i>requestedSize</i> should be less than or equal to the size of the item's internal form in memory (else a warning message is issued). If no <i>requestedSize</i> is given, the size of the item in memory is used. The optional <i>actualSize</i> is an <b>int</b> variable that is set to the number of bytes actually read.<p>
+An array, record or union may be read and written as a whole.</p>
+<p>
+It is dangerous to read into pointer variables, as this allows the possibility of creating incorrect addresses in the pointers. It is also dangerous to read more bytes than are in the <i>readItem</i>.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        variableReference [ : requestedSize [ : actualSize ] ]</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="write.html">write</a></b>, <b><a href="open.html">open</a></b>, <b><a href="close.html">close</a></b>, <b><a href="seek.html">seek</a></b>, <b><a href="tell.html">tell</a></b>, <b><a href="get.html">get</a></b> and <b><a href="put.html">put</a></b> statements.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

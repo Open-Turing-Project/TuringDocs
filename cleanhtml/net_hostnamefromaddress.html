@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<title>Net.HostNameFromAddress</title>
+</head>
+<body>
+	<h1>Net.HostNameFromAddress</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Net.HostNameFromAddress </b>( <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>hostAddr</i> : <b>string</b>) : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Returns<b> </b>the TCP/IP hostname of the machine whose numeric address is specified by the <i>hostAddr</i> parameter.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>
+It is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program prints out the hostname of the machine whose TCP/IP numeric address is "128.100.5.1".<p>
+</p>
+
+			
+			
+			<pre><code>        var hostAddr : string := "128.100.5.1"
+        put "The machine name of ", hostAddr, " is ", 
+            Net.HostNameFromAddress (hostAddr)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Net.HostNameFromAddress</b>, not by calling <b>LocalName</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="net_hostaddressfromname.html">Net.HostAddressFromName</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

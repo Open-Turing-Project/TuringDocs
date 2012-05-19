@@ -1,0 +1,150 @@
+
+<html>
+<head>
+	<title>quit</title>
+</head>
+<body>
+	<h1>quit</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>quitStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>quit</b> [ <i>guiltyParty</i> ] [ : <i>quitReason</i> ]</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>quit</b> statement causes a program (or concurrent process) to fail. The failure (called an <i>exception</i>) either aborts the program (or process) or causes control to be passed to an exception handler.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In the <i>inputLines</i> procedure, halt the program if end of file is encountered before the string "stop" is read. Note that a <b>return</b> statement in the procedure would terminate the procedure but not the entire program.<p>
+</p>
+
+			
+			
+			<pre><code>        var line : array 1 .. 50 of string
+        
+        procedure inputLines
+            var i : int := 0
+            loop
+                if eof then
+                    put "Missing 'stop' in input"
+                    quit        % Halt entire program
+                end if
+                i := i + 1
+                get line ( i )
+                exit when line ( i ) = "stop"
+            end loop
+        end inputLines
+        
+        inputLines</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In the simple case, the optional <i>guiltyParty</i> and <i>quitReason</i> are omitted. The <i>guiltyParty </i>option is used to specify the position of failure. See <i>exceptionHandler</i> for an example of a <b>quit</b> statement used in conjunction with a handler. A handler, which is located at the beginning of a subprogram body, is given control when a <b>quit</b> is executed or a failure, such as division by zero, occurs in the subprogram.<p>
+The <i>guiltyParty</i> option is used to designate the location of the failure, for example, to tell the debugger what line is considered to be the location of the failure. A <i>guiltyParty</i> is one of:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td>&lt;</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td>&gt;</td>
+</tr>
+</table>
+<p>
+If <i>guiltyParty</i> is omitted, the failure is considered to occur at the <b>quit</b> statement. If it is &lt;, the failure is considered to occur at the call to the present subprogram. For example, if the present subprogram implements square root <i>sqrt</i> and is passed a negative argument, it can use &lt; to specify that the caller provided a faulty argument. If <i>guiltyParty</i> is &gt;, this means the failure has already occurred and is being passed on to the next handler or to the system. To summarize, the three possibilities for designating the location of the failure are:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td>&lt;</td>
+<td width="10">&nbsp;</td>
+<td>Caller is cause of failure</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td>&gt;</td>
+<td width="10">&nbsp;</td>
+<td>The exception being handled is the cause.</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(c)</td>
+<td width="10">&nbsp;</td>
+<td>(omitted <i>guiltyParty</i>)  The present <b>quit</b> is the cause.</td>
+</tr>
+</table>
+<p>
+The <i>quitReason</i> is an integer expression which is used to identify the kind of failure. If it is omitted, a default value is chosen in the following manner. If <i>guiltyParty</i> is omitted or is &lt;, the default is 1. If <i>guiltyParty</i> is &gt; and an exception handler is active, the default is the <i>quitReason</i> of the exception being handled. If no exception is being handled, the default is 1. In the case of program abortion, the implementation may pass the <i>quitReason</i> to the operating system or programming environment.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<i>exceptionHandler</i>, <b><a href="return.html">return</a></b> and <b><a href="result.html">result</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

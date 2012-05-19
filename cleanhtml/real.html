@@ -1,0 +1,95 @@
+
+<html>
+<head>
+	<title>real</title>
+</head>
+<body>
+	<h1>real</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>real</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>real</b> number type is used for numbers that have fractional parts, for example, 3.14159. Real numbers can be combined by various operators such as addition (+) and multiplication (*). Real numbers can also be combined with integers (whole numbers, such as 23, 0 and -9), in which case the result is generally a real number. An integer can always be assigned to a real variable, with implicit conversion to <b>real</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var weight, x : real
+        var x : real := 9.83
+        var tax := 0.7      % The type is implicitly real because
+                        % 0.7 is a real number</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			See also <i>explicitRealConstant</i>. The <b>int</b> type is used instead of <b>real</b>, when values are whole numbers. See <b>int</b> for details.<p>
+Real numbers can be converted to integers using <b>ceil</b> (ceiling), <b>floor</b>, or <b>round</b>. Real numbers can be converted to strings using <b>erealstr</b>, <b>frealstr</b>, and <b>realstr</b>. These conversion functions correspond exactly to the formatting used for the <b>put</b> statement with real numbers. Strings can be converted to real numbers using <b>strreal</b>. See descriptions of these conversion functions.</p>
+<p>
+The predefined functions for real numbers include <b>min</b>,<i> </i><b>max</b>,<i> </i><b>sqrt</b>,<i> </i><b>sin</b>,<i> </i><b>cons</b>,<i> </i><b>arctan</b>,<i> </i><b>sind</b>,<i> </i><b>cosd</b>,<i> </i><b>arcand</b>,<i> </i><b>ln</b><i> </i>and <b>exp</b>. See the descriptions of these functions.</p>
+<p>
+Pseudo-random sequences of real numbers can be generated using <b>rand</b>. See the description of this procedure.</p>
+<p>
+The Turing Report gives a formal definition (not repeated here) of implemented real numbers in terms of their required accuracy relative to infinitely accurate (mathematical) real numbers.</p>
+<p>
+Turing implements real numbers using 8 byte floating point representation. This provides 14 to 16 decimal digits of precision and an exponent range of at least -38 .. 38. The PC and Macintosh versions of Turing have 16 decimal digits of accuracy because they use IEEE standard floating point representation.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="">real</a></b><i>n</i>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

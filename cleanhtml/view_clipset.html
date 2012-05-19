@@ -1,0 +1,107 @@
+
+<html>
+<head>
+	<title>View.ClipSet</title>
+</head>
+<body>
+	<h1>View.ClipSet</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>View.ClipSet</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>View.ClipSet</b> procedure sets the clipping region to the rectangle specified by (<i>x1</i>, <i>y1</i>) - (<i>x2</i>, <i>y2</i>). If a clipping region already exist, it is replaced by the specified rectangle.<p>
+A clipping region is the region in which the output will appear. If the rectangle is specified as the clipping region, any drawing done outside the rectangle will not appear.</p>
+<p>
+To set the initial clipping, or remove the old region and replace it with a new one, use <b>View.ClipSet</b>. To set the clipping region back to the entire screen or window, use <b>View.ClipOff</b>.</p>
+<p>
+These commands only work in "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sets the clipping region to five rectangles and then draws random circles. The circles will only appear (or partially appear) in the rectangles.<p>
+</p>
+
+			
+			
+			<pre><code>        const maxx13 : int := maxx div 3
+        const maxx23 : int := 2 * maxx div 3
+        const maxy13 : int := maxy div 3
+        const maxy23 : int := 2 * maxy div 3
+        View.ClipSet (0, 0, maxx13, maxy13)
+        View.ClipAdd (maxx23, 0, maxx, maxy13)
+        View.ClipAdd (maxx13, maxy13, maxx23, maxy23)
+        View.ClipAdd (0, maxy23, maxx13, maxy)
+        View.ClipAdd (maxx23, maxy23, maxx, maxy)
+        
+        % Draw the random ovals in the box
+        var x, y, clr : int
+        loop
+            x := Rand.Int (0, maxx)     % Random x
+            y := Rand.Int (0, maxy)     % Random y
+            clr := Rand.Int (0, maxcolor)   % Random color
+            Draw.FillOval (x, y, 30, 30, clr)
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>View.ClipSet</b>, not by calling <b>ClipSet</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_clipadd.html">View.ClipAdd</a></b> and <b><a href="view_clipoff.html">View.ClipOff</a> </b>functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<html>
+<head>
+	<title>Input.hasch</title>
+</head>
+<body>
+	<h1>Input.hasch</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>hasch</b> : <b>boolean</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>hasch</b> procedure is used to determine if there is a character that has been typed but not yet been read.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The <i>flush </i>procedure gets rid of any characters that have been typed but not yet read.<p>
+</p>
+
+			
+			
+			<pre><code>        procedure flush
+            var ch : string ( 1 )
+            loop
+                exit when not hasch
+                getch ( ch )    % Discard this character
+            end loop
+        end flush</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a "<i>screen</i>"<i> </i>or "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to "<i>screen</i>" mode.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported unqualified.<p>
+This means that you can call the function by calling <b>hasch</b> or by calling <b>Input.hasch</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="getch.html">getch</a></b> and <b><a href="getchar.html">getchar</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

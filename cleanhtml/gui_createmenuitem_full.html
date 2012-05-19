@@ -1,0 +1,117 @@
+
+<html>
+<head>
+	<title>GUI.CreateMenuItem[Full]</title>
+</head>
+<body>
+	<h1>GUI.CreateMenuItem[Full]</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.CreateMenuItem</b> (<i>name</i> : <b>string</b>, <br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>
+	  <b>GUI.CreateMenuItemFull</b> (<i>name</i> : <b>string</b>, <br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>shortCut</i> : <b>char</b>, <i>addNow</i> : <b>boolean</b>) : <b>int</b></p>
+<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a menu item and returns the menu item's widget ID. <p>
+	  Menu items are the individual entries of a menu. To create menus for a window, you must create a menu, then create the menu items for that menu, then create the next menu, etc. All menu items are automatically added to the last menu and after the last menu item of the currently selected (not active!) window.</p>
+<p>
+	  The menu item will be added to the last menu after the other menu items in the menu. If there are no menus defined, an error results.</p>
+<p>
+	  The <i>name</i> parameter specifies the text that is to appear. A <i>name</i> of three dashes ("---") creates a separator across the menu. The <i>actionProc</i> parameter specifies the name of a procedure to be called when user the selects the menu item from the menu.</p>
+<p>
+	  For <b>GUI.CreateMenuItemFull</b>, the <i>shortCut</i> parameter specifies the keystroke to be used as the menu item's shortcut. If no shortcut is desired, then '\0' can be used. The <i>addNow</i> parameter has no effect in the current version of the GUI Library. In future versions, it will allow you to create menu items that can then be added to a menu later in the program.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Examples</h2>
+			See the example for <b><a href="gui_createmenu.html">GUI.CreateMenu</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When a menu item is not enabled, the text of the menu item is grayed out and clicking on the menu item does not cause the menu to appear.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following GUI subprograms can be called with a menu as the <i>widgetID</i> parameter:<p>
+          </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+              <td>
+<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,
+                  <b>GUI.Enable</b>, <b>GUI.Disable</b>
+            </td>
+</tr></table>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling <b>GUI.CreateMenuItem</b>, not by calling <b>CreateMenuItem</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

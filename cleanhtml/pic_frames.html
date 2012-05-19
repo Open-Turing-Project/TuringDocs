@@ -1,0 +1,144 @@
+
+<html>
+<head>
+	<title>Pic.Frames</title>
+</head>
+<body>
+	<h1>Pic.Frames</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Frames</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Frames</b> is used to determine the number of frames found 
+          in a multiple frame GIF file.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			GIF files can contain multiple frames (pictures).  Animated GIFs 
+          function by each frame in the GIF one after another with a delay
+          between them.
+          <p>
+          Turing allows users to load multiple frame GIF images into a series
+          of pictures into an array using the 
+          <b><a href="pic_filenewframes.html">Pic.FileNewFrames</a></b> 
+          procedure.  The user can determine how many frames are found in 
+          the GIF file using <b><a href="">Pic.Frames</a></b>.  
+          The frames can be sequentially displayed using either 
+          <b><a href="pic_drawframes.html">Pic.DrawFrames</a></b> or 
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> 
+          which display the images one at a time.
+          (<b><a href="pic_drawframes.html">Pic.DrawFrames</a></b> returns 
+          once all the images have been displayed, 
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> 
+          returns immediately allowing the program to continue execution while 
+          the frames are being displayed.
+          </p>
+<p>
+          <b><a href="">Pic.Frames</a></b> is a function which 
+          returns the number of frames found in the GIF.  If it is used on a 
+          GIF that does not contain multiple images, or on a non-GIF image file, 
+          it returns 1.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program loads a multiple frame GIF called "globe.gif" and 
+          displays it.
+<p>
+    </p>
+
+			
+			
+			<pre><code>        % Determine the number of frames in "globe.gif"
+        var numFrames := Pic.Frames ("globe.gif")
+        % Load the picture
+        var delayTime : int
+        var pics : array 1 .. numFrames of int
+
+	Pic.FileNewFrames ("globe.gif", pics, delayTime)
+	Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.Frames</b>, not by calling <b>Frames</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_filenewframes.html">Pic.FileNewFrames</a></b> for information
+          on how to load a GIF image with multiple frames into an array of 
+          <b>int</b>s.<p>
+          <b><a href="pic_drawframes.html">Pic.DrawFrames</a></b> for information on
+          how to sequentially display the images stored in array of pictures.</p>
+<p>
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> for 
+          information on how to sequentially display the images stored in array 
+          of pictures while continuing to execute the program.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

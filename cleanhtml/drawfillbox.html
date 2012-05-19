@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<title>drawfillbox</title>
+</head>
+<body>
+	<h1>drawfillbox</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>drawfillbox</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawfillbox</b> procedure is used to draw a filled box on the screen with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) filled using the specified <i>Color</i>. To get a box outlined in a different color, use <b>drawfillbox</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawbox</b>  with the <i>Color</i> parameter set to the border color.<p>
+
+</p>
+<center><img src="drawfillbox01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will fill the bottom half of the screen with color 1 and then outline it in color 2. The <b>maxx</b> and <b>maxy</b> functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen and (<b>maxx</b>, <b>maxy</b>) is the right top.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        drawfillbox (0, 0, maxx, maxy div 2, 1)
+        drawbox (0, 0, maxx, maxy div 2, 2)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various <b>draw&#133;</b> procedures. <p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

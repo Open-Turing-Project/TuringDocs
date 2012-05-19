@@ -1,0 +1,91 @@
+
+<html>
+<head>
+	<title>subprogramType</title>
+</head>
+<body>
+	<h1>subprogramType</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>subprogramType</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>subprogramHeader</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A variable or constant can contain a reference to a subprogram. The type of the variable or constant is a <i>subprogramType</i>. See also <i>subprogramHeader</i>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In the following <i>t</i> is a subprogram type, and <i>u</i> is a variable of type <i>t</i> initialized to refer to procedure <i>rnd</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        procedure rnd ( var i : int, x : real)
+            i := round ( x )
+        end rnd
+        
+        type t : procedure q ( var j : int, y : real )
+        var u : t := rnd    % Procedure variable u refers to rnd
+        
+        var j : int
+        u ( j, 24.6 )       % Call procedure u referring to rnd
+        
+        var v := u      % Subprogram variable v initialized to u</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The name of the subprogram, for example <i>q</i>, and the parameters, for example <i>i</i> and <i>x</i>, have no meaning in a subprogram type. They are present only because of the form of subprogram headers.<p>
+If <i>v</i> is a variable or constant that refers to a subprogram, <i>v </i>can be called, compared for equality to other subprogram variables, assigned and passed as a parameter. Variable <i>v</i> is not an integer, string or pointer and cannot participate in their corresponding operations.</p>
+<p>
+A reference to a subprogram, rather that the code of the subprogram, is contained in a variable <i>v</i> whose type is a subprogram type. This implies that <b>addr</b> (<i>v</i>) is the address of the reference to subprogram, rather than the address of the subprogram. The address of the code is given by #<i>v</i>. See <b>cheat</b> for an explanation of the # operator.</p>
+<p>
+You cannot assign a reference to a subprogram exported from a class. This restriction exists because  these subprograms are meaningless without an accompanying reference to an object.</p>
+<p>
+Many potential uses of subprogram variables are better programmed using classes and overriding exported subprograms. See <b>class</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

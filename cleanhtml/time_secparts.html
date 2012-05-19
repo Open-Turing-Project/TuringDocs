@@ -1,0 +1,92 @@
+
+<html>
+<head>
+	<title>Time.SecParts</title>
+</head>
+<body>
+	<h1>Time.SecParts</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Time.SecParts </b>(<i>sec</i> : <b>int</b>, <b>var</b> <i>year</i>, <i>month</i>, <i>day</i>, <br></font><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="6"><font size="+1"><i>dayOfWeek</i>, <i>hour</i>, <i>minute</i>, <i>second</i> : <b>int</b>)</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Time.SecParts</b> function is used to<b> </b>convert a single number form of the time (the number of seconds since 00:00:00 GMT Jan 1, 1970) into a date with numeric component parts.<p>
+The <i>dayOfWeek</i> parameter is 1 for Monday, 2 for Tuesday through 7 for Sunday.</p>
+<p>
+If the <i>sec</i> parameter doesn't make any sense or can't be interpreted, then <b>Time.PartsSec</b> will set all the <b>var</b> parameters to  1 and <b>Error.Last </b>and<b> Error.LastMsg</b> will be set to the appropriate error.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program returns the current day of the week.<p>
+</p>
+
+			
+			
+			<pre><code>        var year, month, day, dayOfWeek, hour, minute, second : int
+        Time.SecParts (Time.Sec, year, month, day, dayOfWeek, 
+                                hour, minute, second )
+        var days : array 1 .. 7 of string (10) := init ("Monday", "Tuesday", 
+            "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+        put "The current day of the week is ", days (dayOfWeek)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Time.SecParts</b> , not by calling <b>SecParts</b> .</p>
+<p>
+</p>
+<table><tr valign="top">
+<td><b>See also</b></td>
+<td width="10">&nbsp;</td>
+<td>
+<b>Time.PartsSec</b>, <b>Time.Date</b> and <b>Time.Sec</b> functions.</td>
+</tr></table>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

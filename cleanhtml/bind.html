@@ -1,0 +1,102 @@
+
+<html>
+<head>
+	<title>bind</title>
+</head>
+<body>
+	<h1>bind</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>bindDeclaration</i> is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>bind</b> [<b>var</b>] <i>id</i> <b>to</b> <i>variableReference</i> </font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">{ , [<b>var</b>] <i>id</i> <b>to</b> <i>variableReference</i> }</font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>bind</b> declaration creates a new name (or names) for a variable reference (or references). You are allowed to change the named item only if you specify <b>var</b>. You can also bind to named non scalar constants.<p>
+While <i>variableReference</i> is bound it does not disappear in the scope.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Rename the <i>n</i>-th element of array <i>A</i> so it is called <i>item</i> and then change this element to 15.<p>
+</p>
+
+			
+			
+			<pre><code>        bind var item to A (n)
+        item := 15</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The scope of the identifier (<i>item </i>above) begins with the <b>bind</b> declaration and lasts to the <b>end</b> of the surrounding program or statement (or to the end of the surrounding part of a <b>case</b> or <b>if</b> statement). During this scope, a change to a subscript (<i>n </i>above) that occurs in the variable reference does not change the element to which the identifier refers.<p>
+You are not allowed to use <b>bind</b> at the outermost level of the main program (except nested inside statements such as <b>if</b>) or at the outermost level in a module.</p>
+<p>
+You can also optionally use the <b>register</b> keyword to request that the bind be done using a machine register. The syntax for <i>bindDeclaration</i> is actually:</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>
+<b>bind</b> [<b>var</b>] [<b>register</b>] <i>id</i> <b>to</b> <i>variableReference</i>
+</td>
+</tr></table>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td>{ , [<b>var</b>] [<b>register</b>] <i>id</i> <b>to</b> <i>variableReference </i>}</td>
+</tr></table>
+<p>
+In the current (2002) implementation, programs are run interpretively using pseudo-code and the <b>register</b> keyword is ignored.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

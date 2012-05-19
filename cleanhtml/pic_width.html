@@ -1,0 +1,99 @@
+
+<html>
+<head>
+	<title>Pic.Width</title>
+</head>
+<body>
+	<h1>Pic.Width</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Width</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Width </b>returns the width in pixels of the picture represented by <i>picID</i>.<p>
+This function is often used in conjunction with <b>Pic.Height</b> to obtain the dimensions of a picture loaded using <b>Pic.FileNew</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws loads a picture from the file <i>lighthouse.jpg</i> and proceeds to tile the entire run window with copies of the picture..<p>
+</p>
+
+			
+			
+			<pre><code>        var pic : int := Pic.FileNew ("lighthouse.jpg")
+        var width : int := Pic.Width (pic)
+        var height : int := Pic.Height (pic)
+        var x, y : int := 0
+        loop
+            exit when y > maxy
+            loop
+                exit when x > maxx
+                Pic.Draw (pic, x, y, picCopy)
+                x := x + width
+            end loop
+            x := 0
+            y := y + height
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Pic.Width</b>, not by calling <b>Width</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_height.html">Pic.Height</a></b> to obtain a picture's height and <b><a href="pic_filenew.html">Pic.FileNew</a></b> to load a picture from a graphics file.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+<html>
+<head>
+	<title>Dir.GetLong</title>
+</head>
+<body>
+	<h1>Dir.GetLong</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.GetLong</b> (<i>streamNumber</i> : <b>int</b>, <b>var</b> <i>entryName</i> : <b>string</b>,</font><br><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>  <td colspan="7"><font size="+1"><b>var</b> <i>size</i>, <i>attribute</i>, <i>fileTime</i> : <b>int</b>)</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.GetLong</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.GetLong</b> is used to get the names and assorted information of the files in the directory. Each time the function is called, it returns the name and information of the next file in the directory. The names are not sorted. When there are no more file names in the directory, <b>Dir.GetLong</b> returns the empty string in the <i>entryName</i> parameter.<p>
+The <i>size</i> parameter is the size of the file in bytes. The <i>attribute</i> parameter has its individual bits set as follows (the individual bits can be extracted using the <b>bits</b> operator):</p>
+<p>
+Bit 0  <i>attrDir</i>   set to 1 if entry is a directory.</p>
+<p>
+Bit 1  <i>attrRead</i>  set to 1 if the program can read the file.</p>
+<p>
+Bit 2  <i>attrWrite</i>  set to 1 if the program can write the file.</p>
+<p>
+Bit 3  <i>attrExecute</i>  set to 1 if the program can execute the file.</p>
+<p>
+Bit 4  <i>attrHidden</i>  set to 1 if the entry if a hidden file (PC, Mac).</p>
+<p>
+Bit 5  <i>attrSystem</i>  set to 1 if the entry is a system file (PC only).</p>
+<p>
+Bit 6  <i>attrVolume</i>  set to 1 if the entry is a volume name (PC only).</p>
+<p>
+Bit 7  <i>attrArchive</i>  set to 1 if the entry has archive bit set (PC only).</p>
+<p>
+The <i>attr...</i> constants are defined in the <b>Dir</b> unit. They correspond to the values of <i>attribute</i> if a specified bit is set.  For example, <i>attrSystem</i> is the value of the <i>attribute</i> parameter if bit 5 is set to 1. You can <b>and</b> or <b>or </b>these constants to get combinations of specific file attributes. </p>
+<p>
+The <i>fileTime</i> is the time of last modification of the file. It is returned as the number of seconds since 00:00:00 GMT 1/1/1970. To convert this to a string, use <b>Time.SecDate</b></p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.GetLong</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints a listing of all the files in the directory <i>datafiles</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        var streamNumber : int
+        var fileName : string
+        var size, attribute, fileTime : int
+        streamNumber := Dir.Open ("datafiles")
+        assert streamNumber > 0
+        loop
+            Dir.GetLong (streamNumber, fileName, size, attribute, fileTime)
+            exit when fileName = ""
+            put fileName, "  ", Time.SecDate (fileTime)
+        end loop
+        Dir.Close (streamNumber)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints a listing of the attributes of all the files in the current directory.<p>
+</p>
+
+			
+			
+			<pre><code>        var streamNumber : int
+        var fileName : string
+        var size, attribute, fileTime : int
+        streamNumber := Dir.Open (Dir.Current)
+        assert streamNumber > 0
+        loop
+            Dir.GetLong (streamNumber, fileName, size, attribute, fileTime)
+            exit when fileName = ""
+            put fileName, "  "..
+            if (attribute and attrDir) not= 0 then
+                put "Directory  "..
+            end if
+            if (attribute and attrRead) not= 0 then
+                put "Readable  "..
+            end if
+            if (attribute and attrWrite) not= 0 then
+                put "Writeable  "..
+            end if
+            if (attribute and attrExecute) not= 0 then
+                put "Executable  "..
+            end if
+            put ""
+        end loop
+        Dir.Close (streamNumber)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.GetLong</b>, not by calling <b>GetLong</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

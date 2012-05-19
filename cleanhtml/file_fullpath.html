@@ -1,0 +1,111 @@
+
+<html>
+<head>
+	<title>File.FullPath</title>
+</head>
+<body>
+	<h1>File.FullPath</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>File.FullPath</b> (<i>pathName</i>) : <b>string</b>) : <b>string</b><p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>File.FullPath </b>returns a string representing the full absolute path name in Turing format (forward slashes) of the path that
+is passed to the function. The path name passed in does not have to describe an existing file or directory.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The full path name will be in Turing format and include the drive name (for example "d:/turing/examples/games/SpaceGame.t")<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program obtains a path from the user and then outputs a full path name based on the path.<p>
+</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var pathName : string
+        get pathName
+	put "Full path = ", File.FullPath (pathName)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Another example is available that checks whether a file and all of the directories in the path to the file exist.
+This program illustrates the use of <b>File.FullPath</b>, <b>File.Parent</b>, <b>File.Exists</b>, and <b>Dir.Exists</b>.<p>
+  <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+  <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Path Name Testing Program">
+<param name="Item1" value="-1,TestPathName.t;Path Name Testing Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>File.FullPath</b>, not by calling <b>FullPath</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>
