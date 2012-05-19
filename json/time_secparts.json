@@ -27,7 +27,7 @@
       "title": "Status",
       "raw_content": "Exported qualified.<p>\r\nThis means that you can only call the function by calling <b>Time.SecParts</b> , not by calling <b>SecParts</b> .</p>\n<p>\r\n</p>\n<table><tr valign=\"top\">\n<td><b>See also</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>Time.PartsSec</b>, <b>Time.Date</b> and <b>Time.Sec</b> functions.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " Exported qualified.\r\nThis means that you can only call the function by calling Time.SecParts , not by calling SecParts .\r\nSee also Time.PartsSec, Time.Date and Time.Sec functions.\r\n",
-      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Time.SecParts** , not by calling **SecParts** .\n\n\n**See also**   **Time.PartsSec**, **Time.Date** and **Time.Sec** functions.\n\n"
+      "mdown_content": "Exported qualified.\n\nThis means that you can only call the function by calling **Time.SecParts** , not by calling **SecParts** .\n\n\n**See also**   **Time.PartsSec**, **Time.Date** and **Time.Sec** functions.  \n\n"
     }
   ],
   "dependencies": [

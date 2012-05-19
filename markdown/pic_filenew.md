@@ -10,9 +10,9 @@
 The _fileName_parameter must give the format of the file:
 
 
-GIF files   "GIF:filename" or "filename.GIF"
-JPG files   "JPG:filename" or "filename.JPG"
-BMP files   "BMP:filename" or "filename.BMP"
+GIF files   "GIF:filename" or "filename.GIF"  
+JPG files   "JPG:filename" or "filename.JPG"  
+BMP files   "BMP:filename" or "filename.BMP"  
 
 
 

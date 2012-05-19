@@ -9,14 +9,14 @@ All routines in the File module are exported qualified (and thus must be preface
 
 ## Entry Points
 
-[**Exists**](file_exists.html)   Returns whether a file exists.
-[**FullPath**](file_fullpath.html)   Returns the full absolute path name of a file.
-[**Parent**](file_parent.html)   Returns the parent directory of a file or directory.
-[**Status**](file_status.html)   Gets information about a file such as size, modification date, etc.
-[**Copy**](file_copy.html)   Copies a file to another location.
-[**Rename**](file_rename.html)   Renames a file or directory.
-[**Delete**](file_delete.html)   Deletes a file.
-[**DiskFree**](file_diskfree.html)   Gets the free space on the disk upon which a file or directory resides.
+[**Exists**](file_exists.html)   Returns whether a file exists.  
+[**FullPath**](file_fullpath.html)   Returns the full absolute path name of a file.  
+[**Parent**](file_parent.html)   Returns the parent directory of a file or directory.  
+[**Status**](file_status.html)   Gets information about a file such as size, modification date, etc.  
+[**Copy**](file_copy.html)   Copies a file to another location.  
+[**Rename**](file_rename.html)   Renames a file or directory.  
+[**Delete**](file_delete.html)   Deletes a file.  
+[**DiskFree**](file_diskfree.html)   Gets the free space on the disk upon which a file or directory resides.  
 
 
 

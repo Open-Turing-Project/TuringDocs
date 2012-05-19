@@ -39,8 +39,8 @@ def markdownFormat(htmlStr,allowLines = true)
 	text.gsub!(/<li>/,"- ")
 	text.gsub!(/<\/li>/,"\n")
 	# table
-	text.gsub!(/<table.*?>/,"\n") if allowLines
-	text.gsub!(/<\/tr>/,"\n") if allowLines
+	text.gsub!(/<table.*?>/,"  \n") if allowLines
+	text.gsub!(/<\/tr>/,"  \n") if allowLines
 	text.gsub!(/<td.*?>/," ")
 	# remove html leftovers
 	text.gsub!(/<\/?(\w+).*?>/,"")
@@ -50,7 +50,7 @@ def markdownFormat(htmlStr,allowLines = true)
 	text.gsub!(/&amp;/,"&")
 	text.gsub!(/&133;/,"...")
 	# turn (a) (b) (c) lists into real lists
-	text.gsub!(/\([a-z]\)/,allowLines ? "- " : "\n- ")
+	text.gsub!(/\([a-z1-9]\)/,allowLines ? "- " : "\n- ")
 	# remove random indenting
 	text = text.lines.map {|l| l.chomp.lstrip}.join("\n")
 	text

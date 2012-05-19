@@ -12,7 +12,7 @@
       "title": "Description",
       "raw_content": "<b>Pic.Save </b>is used to save  a picture on the screen to a file.<p>\r\n\t  The <i>fileName</i>parameter must give the format of the file:</p>\n<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>BMP files</td>\r\n\t      <td width=\"10\">&nbsp;</td>\r\n\t      <td>\"BMP:filename\" or \"filename.BMP\"</td>\n</tr></table>\n<p>\r\n    </p>",
       "text_content": "Pic.Save is used to save  a picture on the screen to a file.\r\n\t  The fileNameparameter must give the format of the file:\r\n\t   \r\n\t      BMP files\r\n\t       \r\n\t      \"BMP:filename\" or \"filename.BMP\"\r\n    ",
-      "mdown_content": "**Pic.Save** is used to save  a picture on the screen to a file.\n\nThe _fileName_parameter must give the format of the file:\n\n\nBMP files   \"BMP:filename\" or \"filename.BMP\"\n\n"
+      "mdown_content": "**Pic.Save** is used to save  a picture on the screen to a file.\n\nThe _fileName_parameter must give the format of the file:\n\n\nBMP files   \"BMP:filename\" or \"filename.BMP\"  \n\n"
     },
     {
       "title": "Details",

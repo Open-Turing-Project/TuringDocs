@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program sets all the available colors to shades of red<p>\r\n</p>\r\n          <table><tr valign=\"top\">\n<td><b>Details</b></td>\r\n              <td width=\"10\">&nbsp;</td>\r\n              <td>\n<b>RGB.SetColour</b> is an alternate spelling for \r\n                  <b>RGB.SetColor</b>.</td>\r\n            </tr></table>\n<p>\r\n      </p>\n<",
       "text_content": "This program sets all the available colors to shades of red\r\n\r\n          Details\r\n               \r\n              RGB.SetColour is an alternate spelling for \r\n                  RGB.SetColor.\r\n            \r\n      ",
-      "mdown_content": "This program sets all the available colors to shades of red\n\n\n**Details**   **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.\n\n\n<"
+      "mdown_content": "This program sets all the available colors to shades of red\n\n\n**Details**   **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.  \n\n\n<"
     },
     {
       "title": "Status",

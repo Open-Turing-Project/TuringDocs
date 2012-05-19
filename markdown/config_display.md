@@ -10,10 +10,10 @@
 At the time of this writing, the following constants were defined:
 
 
-_cdScreenHeight_   return the height of the screen in pixels.
-_cdScreenWidth_   return the width of the screen in pixels.
-_cdMaxNumColors_   return the maximum number of colors supported by the display.
-_cdMaxNumColours_   return the maximum number of colors supported by the display.
+_cdScreenHeight_   return the height of the screen in pixels.  
+_cdScreenWidth_   return the width of the screen in pixels.  
+_cdMaxNumColors_   return the maximum number of colors supported by the display.  
+_cdMaxNumColours_   return the maximum number of colors supported by the display.  
 
 
 

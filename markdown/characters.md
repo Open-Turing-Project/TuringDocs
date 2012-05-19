@@ -1,7 +1,7 @@
 # Run Window Character Set
 The Turing character set and their ASCII values
 
-chr (8) = backspacechr (9) = tabchar (10) = newline
+chr -  = backspacechr -  = tabchar (10) = newline
 
 
 

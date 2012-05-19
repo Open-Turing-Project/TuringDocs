@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat1</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 1-byte natural number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat2</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 2-byte natural number</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>nat4</b></font></td>\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-2\"><font size=\"+1\"><i>% 4-byte natural number</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": "\r\n (a)nat1  % 1-byte natural number (b)nat2  % 2-byte natural number (c)nat4  % 4-byte natural number",
-      "mdown_content": "(a) **nat1**     _% 1-byte natural number_   (b) **nat2**     _% 2-byte natural number_   (c) **nat4**     _% 4-byte natural number_"
+      "mdown_content": "\n-  **nat1**     _% 1-byte natural number_   \n-  **nat2**     _% 2-byte natural number_   \n-  **nat4**     _% 4-byte natural number_"
     },
     {
       "title": "Description",

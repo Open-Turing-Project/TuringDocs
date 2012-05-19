@@ -8,24 +8,27 @@
 
 <p>The precedence rules are defined by this table, in which operators appearing earlier in the table are applied first. For example,  multiplication is applied before addition:</p>
 
-<p>(1)   <strong>,  ^,  #
-(2)   <em>prefix</em> + and -
-(3)   *, /, </strong>div<strong>, </strong>mod<strong>, </strong>rem<strong>, </strong>shr<strong>, </strong>shl<strong>
-(4)   <em>infix</em> +, -, </strong>xor<strong>
-(5)   &lt;, >, =, &lt;=, >=, </strong>not=<strong>, </strong>in<strong>, </strong>not<strong> </strong>in<strong>
-(6)   </strong>not<strong>
-(7)   </strong>and<strong>
-(8)   </strong>or**
-(9)   =>     ( <em>boolean</em> <em>implication</em>)</p>
+<ul>
+<li> **,  ^,  #</li>
+<li> <em>prefix</em> + and -</li>
+<li> *, /, <strong>div</strong>, <strong>mod</strong>, <strong>rem</strong>, <strong>shr</strong>, <strong>shl</strong></li>
+<li> <em>infix</em> +, -, <strong>xor</strong></li>
+<li> &lt;, >, =, &lt;=, >=, <strong>not=</strong>, <strong>in</strong>, <strong>not</strong> <strong>in</strong></li>
+<li> <strong>not</strong></li>
+<li> <strong>and</strong></li>
+<li> <strong>or</strong></li>
+<li> =>     ( <em>boolean</em> <em>implication</em>)</li>
+</ul>
+
 
 <p>Operators appearing on a single line in this table are applied from left to right. For example, <em>abc</em> is the same is (<em>ab</em>)<em>c</em>.</p>
 
 <p>Here are some examples illustrating precedence, in which the left and right expressions are equivalent:</p>
 
-<p>1<strong>2       (1</strong>2)
-<em>a</em>+<em>b</em><em><em>c</em>       <em>a</em>+(<em>b</em></em><em>c</em>)
-<em>a</em><em><em>b/c</em>       (<em>a</em></em><em>b</em>)<em>/c</em>
-<em>b</em> <strong>or</strong> <em>c</em> <strong>and</strong> <em>d</em>     <em>b</em> <strong>or</strong> (<em>c</em> <strong>and</strong> <em>d</em>)
+<p>1<strong>2       (1</strong>2)<br/>
+<em>a</em>+<em>b</em><em><em>c</em>       <em>a</em>+(<em>b</em></em><em>c</em>)<br/>
+<em>a</em><em><em>b/c</em>       (<em>a</em></em><em>b</em>)<em>/c</em><br/>
+<em>b</em> <strong>or</strong> <em>c</em> <strong>and</strong> <em>d</em>     <em>b</em> <strong>or</strong> (<em>c</em> <strong>and</strong> <em>d</em>)<br/>
 <em>x</em> &lt; <em>y</em> <strong>and</strong> <em>y &lt; z</em>     (<em>x</em> &lt; <em>y</em>) <strong>and</strong> (<em>y</em> &lt; <em>z</em>)</p>
 
 <p>The final example illustrates the fact that in Turing, parentheses are not required when combining comparisons using <strong>and</strong> and <strong>or</strong>. These would be required in the Pascal language.</p>
@@ -40,11 +43,11 @@
 
 <p>The pointer following operator ^ is applied before subscripting, subprogram calling, dotting, and ->. For example, in the following, ^ applies to a, r and p.</p>
 
-<p>^<em>a</em>(<em>i</em>)
-^<em>r.y</em>
+<p>^<em>a</em>(<em>i</em>)<br/>
+^<em>r.y</em><br/>
 ^<em>p</em>-><em>x</em></p>
 
-<p>Use parentheses to force ^ to apply to more of the reference. For example, in ^(a(i)), the ^ applies to a(i).</p>
+<p>Use parentheses to force ^ to apply to more of the reference. For example, in ^(a- ), the ^ applies to a- .</p>
 
 <h2>See also</h2>
 

@@ -27,6 +27,6 @@ Exported qualified.
 This means that you can only call the function by calling **Time.SecParts** , not by calling **SecParts** .
 
 
-**See also**   **Time.PartsSec**, **Time.Date** and **Time.Sec** functions.
+**See also**   **Time.PartsSec**, **Time.Date** and **Time.Sec** functions.  
 
 

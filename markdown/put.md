@@ -46,8 +46,8 @@ This **put** statement is sometimes used to close off a line that has been outpu
 The general form of a _putItem_ is one of:
 
 
-(a)   _expn_ [:_widthExpn_ [:_fractionWidth_ [:_exponentWidth_ ] ] ]
-(b)    **skip**
+-    _expn_ [:_widthExpn_ [:_fractionWidth_ [:_exponentWidth_ ] ] ]  
+-     **skip**  
 
 
 See the above examples for uses of _widthExpn_, _fractionWidth_ and _exponentWidth_. For the exact meaning of these three widths, see the definitions of the functions _realstr_, _frealstr_ and _erealstr_. The **skip** item is used to end the current output line and start a new line.

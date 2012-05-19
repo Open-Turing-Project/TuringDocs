@@ -10,11 +10,11 @@
 At the time of this writing, the following constants were defined:
 
 
-_clRelease_   return the current release number of the environment (e.g. 4.02 = 400).
-_clLanguageVersion_   return the current version number of the language (e.g. 1.81 = 181).
-_clMaxNumStreams_   return the maximum number of I/O streams (used by the **open** and **close** statements) that can be opened at once.
-_clMaxNumDirStreams_   return the maximum number of directory streams that can be opened at once.
-_clMaxNumRunTimeArgs_   return the maximum number of run-time arguments.
+_clRelease_   return the current release number of the environment (e.g. 4.02 = 400).  
+_clLanguageVersion_   return the current version number of the language (e.g. 1.81 = 181).  
+_clMaxNumStreams_   return the maximum number of I/O streams (used by the **open** and **close** statements) that can be opened at once.  
+_clMaxNumDirStreams_   return the maximum number of directory streams that can be opened at once.  
+_clMaxNumRunTimeArgs_   return the maximum number of run-time arguments.  
 
 
 

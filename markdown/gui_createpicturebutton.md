@@ -2,7 +2,9 @@
 # GUI.CreatePictureButton[Full]
 
 ## Syntax
-**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int****GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
+**GUI.CreatePictureButton** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x ()) : **int**
+
+**GUI.CreatePictureButtonFull** (_x_, _y_, _picture_ : **int**,    _actionProc_ : **procedure** x (), _width_, _height_ : **int**,     _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
 
 ## Description
 Creates a picture button and returns the button's widget ID. 
@@ -91,3 +93,4 @@ Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreatePictureButton**, not by calling **CreatePictureButton**.
 
+                        

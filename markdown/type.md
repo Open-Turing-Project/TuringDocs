@@ -2,7 +2,9 @@
 # type
 
 ## Syntax
-A _typeDeclaration_ is one of:   (a) **type** _id_ : _typeSpec_   (b) **type** _id_ : **forward**
+A _typeDeclaration_ is one of:   
+-  **type** _id_ : _typeSpec_   
+-  **type** _id_ : **forward**
 
 ## Description
 A type declaration gives a name to a type. This name can be used in place of the type.

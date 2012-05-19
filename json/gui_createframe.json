@@ -46,7 +46,7 @@
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a frame as the <i>widgetID</i> parameter:<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n\t      <td>\n<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>, \r\n\t          <b>GUI.GetX</b>, <b>GUI.GetY</b>, <b>GUI.GetWidth</b>,\r\n\t          <b>GUI.GetHeight</b>, <b>GUI.SetPosition</b>, \r\n\t          <b>GUI.SetSize</b>,<b> GUI.SetPositionAndSize</b>\n</td>\r\n\t    </tr></table>\n<p>\r\n    </p>",
       "text_content": "The following GUI subprograms can be called with a frame as the widgetID parameter:\r\n\t   \r\n\t      GUI.Show, GUI.Hide, GUI.Dispose, \r\n\t          GUI.GetX, GUI.GetY, GUI.GetWidth,\r\n\t          GUI.GetHeight, GUI.SetPosition, \r\n\t          GUI.SetSize, GUI.SetPositionAndSize\r\n\t    \r\n    ",
-      "mdown_content": "The following GUI subprograms can be called with a frame as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**\n\n"
+      "mdown_content": "The following GUI subprograms can be called with a frame as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**  \n\n"
     },
     {
       "title": "Status",

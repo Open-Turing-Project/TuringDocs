@@ -10,10 +10,10 @@
 The _mode_ parameter is the same as in **Pic.New** and has one of the following values:
 
 
-_picCopy_   This draws the picture on top of what was underneath, obscuring it completely.
-_picXor_   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
-_picMerge_   This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
-_picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
+_picCopy_   This draws the picture on top of what was underneath, obscuring it completely.  
+_picXor_   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.  
+_picMerge_   This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.  
+_picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.  
 
 
 The _transition_ parameter indicates the special effect and hasone of the following values:
@@ -28,7 +28,7 @@ In the picture below, "to Turing" is replacing the "Welcome"underneath as the ba
 **picWipeLeftToRight - half way through transition**
 
 
-_picWipeRightToLeft_, _picWipeTopToBottom_, _picWipeBottomToTop_ As _picWipeLeftToRight_, except the bar sweeps in different directions.
+_picWipeRightToLeft_, _picWipeTopToBottom_, _picWipeBottomToTop_ As _picWipeLeftToRight_, except the bar sweeps in different directions.  
 _picWipeUpperLeftToLowerRight_ The picture appears as a solid black bar sweeps from the upperleft corner down to the lower right, "revealing" the new picture as the screen underneath the picture is replaced.
 
 In the picture below "to Turing" is replacing the "Welcome"underneath as the bar sweeps from upper-left to lower-right.
@@ -38,7 +38,7 @@ In the picture below "to Turing" is replacing the "Welcome"underneath as the bar
 **picWipeUpperLeftToLowerRight - half way through transition**
 
 
-_picWipeUpperRightToLowerLeft_, _picWipeLowerLeftToUpperRight_, _picWipeLowerRightToUpperLeft_ As _picWipeLeftToRight_, except the bar sweeps in different directions.
+_picWipeUpperRightToLowerLeft_, _picWipeLowerLeftToUpperRight_, _picWipeLowerRightToUpperLeft_ As _picWipeLeftToRight_, except the bar sweeps in different directions.  
 _picWipeCentreToEdge_, _picWipeCenterToEdge_ The picture appears inside an expanding black outlined box as it sweeps from the centre out to the edges, "revealing" the new picture as the screen underneath the picture is replaced.
 
 In the picture below, "to Turing" is replacing the "Welcome"underneath as the box expands from the centre out.
@@ -48,7 +48,7 @@ In the picture below, "to Turing" is replacing the "Welcome"underneath as the bo
 **picWipeCentreToEdge - half way through transition**
 
 
-_picWipeLeftToRightNoBar_, _picWipeRightToLeftNoBar_, _picWipeTopToBottomNoBar_, _picWipeBottomToTopNoBar__picWipeUpperLeftToLowerRightNoBar_, _picWipeUpperRightToLowerLeftNoBar_, _picWipeLowerLeftToUpperRightNoBar_, _picWipeLowerRightToUpperLeftNoBar_,_picWipeCentreToEdgeNoBar_, _picWipeCenterToEdgeNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).
+_picWipeLeftToRightNoBar_, _picWipeRightToLeftNoBar_, _picWipeTopToBottomNoBar_, _picWipeBottomToTopNoBar__picWipeUpperLeftToLowerRightNoBar_, _picWipeUpperRightToLowerLeftNoBar_, _picWipeLowerLeftToUpperRightNoBar_, _picWipeLowerRightToUpperLeftNoBar_,_picWipeCentreToEdgeNoBar_, _picWipeCenterToEdgeNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).  
 _picSlideLeftToRight_ The picture "slides in" from the left as a solid black bar sweeps from left to right, "pushing" the screen underneathoff the right edge of the drawing area.
 
 In the picture below "to Turing" is replacing the "Welcome"originally present, "pushing" the "Welcome" to the rightas "to Turing" slides in from the left.
@@ -58,8 +58,8 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, "
 **picSlideLeftToRight - half way through transition**
 
 
-_picSlideRightToLeft_, _picSlideTopToBottom_, _picSlideBottomToTop_ As _picSlideLeftToRight_, except the bar sweeps in different directions.
-_picSlideLeftToRightNoBar_, _picSlideRightToLeftNoBar_, _picSlideTopToBottomNoBar_, _picSlideBottomToTopNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is oftenpreferable when the images are completely different (as intwo photographs, and so on).
+_picSlideRightToLeft_, _picSlideTopToBottom_, _picSlideBottomToTop_ As _picSlideLeftToRight_, except the bar sweeps in different directions.  
+_picSlideLeftToRightNoBar_, _picSlideRightToLeftNoBar_, _picSlideTopToBottomNoBar_, _picSlideBottomToTopNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is oftenpreferable when the images are completely different (as intwo photographs, and so on).  
 _picGrowLeftToRight_ The picture "grows" from the left as a solid black bar sweeps from left to right, "squeezing" the screen underneathoff the right edge of the drawing area.
 
 In the picture below "to Turing" is replacing the "Welcome"originally present, "squeezing" the "Welcome" to the rightas "to Turing" "grows" from the left.
@@ -69,7 +69,7 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, "
 **picGrowLeftToRight - half way through transition**
 
 
-_picGrowRightToLeft_, _picGrowTopToBottom_, _picGrowBottomToTop_ As _picGrowLeftToRight_, except the bar sweeps in different directions.
+_picGrowRightToLeft_, _picGrowTopToBottom_, _picGrowBottomToTop_ As _picGrowLeftToRight_, except the bar sweeps in different directions.  
 _picGrowCentreToEdge_, _picGrowCenterToEdge_ The picture "grows" from the centre as a outlined black boxsweeps from outward, replacing the screen underneath.
 
 In the picture below "to Turing" is replacing the "Welcome"originally present, as "to Turing" grows for the centre.
@@ -88,8 +88,8 @@ In the picture below "to Turing" is replacing the "Welcome"originally present, a
 **picGrowLowerLeftToUpperRight - half way through transition**
 
 
-_picGrowUpperLeftToLowerRight_, _picGrowLowerRightToUpperLeft_, _picGrowUpperRightToLowerLeft_ As _picGrowLowerLeftToUpperRight_, except the box sweeps in different directions.
-_picGrowLeftToRightNoBar_, _picGrowRightToLeftNoBar_, _picGrowTopToBottomNoBar_, _picGrowBottomToTopNoBar__picGrowUpperLeftToLowerRightNoBar_, _picGrowLowerLeftToUpperRightNoBar_, _picGrowUpperRightToLowerLeftNoBar_, _picGrowLowerRightToUpperLeftNoBar_,_picGrowCentreToEdgeNoBar_, _picGrowCenterToEdgeNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).
+_picGrowUpperLeftToLowerRight_, _picGrowLowerRightToUpperLeft_, _picGrowUpperRightToLowerLeft_ As _picGrowLowerLeftToUpperRight_, except the box sweeps in different directions.  
+_picGrowLeftToRightNoBar_, _picGrowRightToLeftNoBar_, _picGrowTopToBottomNoBar_, _picGrowBottomToTopNoBar__picGrowUpperLeftToLowerRightNoBar_, _picGrowLowerLeftToUpperRightNoBar_, _picGrowUpperRightToLowerLeftNoBar_, _picGrowLowerRightToUpperLeftNoBar_,_picGrowCentreToEdgeNoBar_, _picGrowCenterToEdgeNoBar_ As the constants above, expect there is no bar to mark thesweep across. The bar generally looks better when displayingan image over top of a similar one. No bar is usuallypreferable when the images are completely different (as intwo photographs, and so on).  
 _picFadeIn_ The picture "fades in" over top of the image underneath it.At the end of the transition, the new image completely replaces the image underneath it.
 
 

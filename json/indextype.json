@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>indexType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>subrangeType</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>enumeratedType</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>namedType</i></font></td>\n<td width=\"40\">&nbsp;</td>\n<td colspan=\"-1\"><font size=\"+1\"><i>% Which is a subrange or enumerated type</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>char</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(e)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>boolean</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An indexType is one of:\r\n (a)subrangeType (b)enumeratedType (c)namedType % Which is a subrange or enumerated type (d)char (e)boolean",
-      "mdown_content": "An _indexType_ is one of:   (a) _subrangeType_   (b) _enumeratedType_   (c) _namedType_   _% Which is a subrange or enumerated type_   (d) **char**   (e) **boolean**"
+      "mdown_content": "An _indexType_ is one of:   \n-  _subrangeType_   \n-  _enumeratedType_   \n-  _namedType_   _% Which is a subrange or enumerated type_   \n-  **char**   \n-  **boolean**"
     },
     {
       "title": "Description",

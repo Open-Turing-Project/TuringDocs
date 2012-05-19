@@ -26,9 +26,9 @@
 
 <p>The value sent to <strong>parallelput</strong> is the sum of the following:</p>
 
-<p>1   Data bit 0   16   Data bit 4
-2   Data bit 1   32   Data bit 5
-4   Data bit 2   64   Data bit 6
+<p>1   Data bit 0   16   Data bit 4<br/>
+2   Data bit 1   32   Data bit 5<br/>
+4   Data bit 2   64   Data bit 6<br/>
 8   Data bit 3   128   Data bit 7</p>
 
 <p>For example, the command <strong>parallelput</strong> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <strong>parallelput</strong> must be from 0 to 255.</p>

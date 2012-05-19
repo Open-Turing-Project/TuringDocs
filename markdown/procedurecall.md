@@ -34,7 +34,7 @@ In this explanation of _procedureCall_, we have up to this point ignored the pos
 
 In other words, the module or monitor name and a dot must precede the procedure's name. If the procedure is being called from outside of a class from which it has been exported, the syntax of the _procedureCall_ is one of:
 
-In these, _p_ must the a pointer value that locates an object in the class. Form (b) is a short form for form (a).
+In these, _p_ must the a pointer value that locates an object in the class. Form -  is a short form for form - .
 
         M . procedureId [ ( [ expn {, expn } ] ) ]        (a) classId (p) . procedureId [ ( [ expn {, expn } ] ) ]
         (b) p -> procedureId [ ( [ expn {, expn } ] ) ]

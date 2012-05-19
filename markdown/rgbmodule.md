@@ -31,6 +31,6 @@ If you attempt to determine the color number of a particular pixel that does not
 
 ## Entry Points
 
-[**GetColor**](rgb_getcolor.html)[**GetColour**](rgb_getcolor.html)   Gets the current red, green and blue values of a specified color number.
-[**SetColor**](rgb_setcolor.html)[**SetColour**](rgb_setcolor.html)   Sets the red, green and blue values of a specified color number.
-[**AddColor**](rgb_addcolor.html)[**AddColour**](rgb_addcolor.html)   Creates a new color number with a specified red, green and blue value.
+[**GetColor**](rgb_getcolor.html)[**GetColour**](rgb_getcolor.html)   Gets the current red, green and blue values of a specified color number.  
+[**SetColor**](rgb_setcolor.html)[**SetColour**](rgb_setcolor.html)   Sets the red, green and blue values of a specified color number.  
+[**AddColor**](rgb_addcolor.html)[**AddColour**](rgb_addcolor.html)   Creates a new color number with a specified red, green and blue value.  

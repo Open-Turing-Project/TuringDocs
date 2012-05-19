@@ -2,11 +2,13 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>paramDeclaration</em> is one of:   (a) [ <strong>var</strong> ] <em>id</em> {, <em>id</em> } : <em>typeSpec</em>   (b) <em>subprogramHeader</em></p>
+<p>A <em>paramDeclaration</em> is one of: <br/>
+-  [ <strong>var</strong> ] <em>id</em> {, <em>id</em> } : <em>typeSpec</em> <br/>
+-  <em>subprogramHeader</em></p>
 
 <h2>Description</h2>
 
-<p>A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <strong>procedure</strong> and <strong>function</strong> declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.</p>
+<p>A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <strong>procedure</strong> and <strong>function</strong> declarations). Form -  above is the most common case. Form -  specifies procedures and functions that are themselves passed as parameters.</p>
 
 <h2>Example</h2>
 
@@ -35,7 +37,7 @@
 
 <h2>Example</h2>
 
-<p>Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also <em>subprogramHeader</em>.</p>
+<p>Find the zero of function f. This example illustrates form - , which is a parameter that is a function. See also <em>subprogramHeader</em>.</p>
 
 <pre><code>    function findZero ( function f ( x : real) : real,
                     left, right, accuracy : real ) : real
@@ -60,7 +62,7 @@
 
 <h2>Details</h2>
 
-<p>Form (b) of <em>paramDeclaration</em> is used to specify formal parameters that are themselves procedures or functions. For example, in the <em>findZero</em> function, <em>f</em> is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the <em>findZero</em> function can be replaced by the following with no change in the action. The names <em>g</em> and <em>x</em> serve no purpose, except as place holders in the declaration of <em>f</em>.</p>
+<p>Form -  of <em>paramDeclaration</em> is used to specify formal parameters that are themselves procedures or functions. For example, in the <em>findZero</em> function, <em>f</em> is a formal parameter that is itself a function. The subprogram type can be used to replace form - . In particular, the header to the <em>findZero</em> function can be replaced by the following with no change in the action. The names <em>g</em> and <em>x</em> serve no purpose, except as place holders in the declaration of <em>f</em>.</p>
 
 <pre><code>    function findZero ( f : function g ( x : real) : real,
                     left, right, accuracy : real ) : real
@@ -70,7 +72,7 @@
 
 <p>Parameters that are declared non <strong>var</strong> should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.</p>
 
-<p>You can also optionally use the <strong>register</strong> keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the <strong>register</strong> keyword. The syntax for form (a) is actually:</p>
+<p>You can also optionally use the <strong>register</strong> keyword to request that the variable be placed in a machine register. This changes form -  to allow the optional use of the <strong>register</strong> keyword. The syntax for form -  is actually:</p>
 
 <p>In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See <strong>register</strong> for restrictions on the use of register parameters.</p>
 

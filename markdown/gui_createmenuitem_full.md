@@ -2,7 +2,9 @@
 # GUI.CreateMenuItem[Full]
 
 ## Syntax
-**GUI.CreateMenuItem** (_name_ : **string**,     _actionProc_ : **procedure** _x_ ()) : **int****GUI.CreateMenuItemFull** (_name_ : **string**,     _actionProc_ : **procedure** _x_ (), _shortCut_ : **char**, _addNow_ : **boolean**) : **int**
+**GUI.CreateMenuItem** (_name_ : **string**,     _actionProc_ : **procedure** _x_ ()) : **int**
+
+**GUI.CreateMenuItemFull** (_name_ : **string**,     _actionProc_ : **procedure** _x_ (), _shortCut_ : **char**, _addNow_ : **boolean**) : **int**
 
 ## Description
 Creates a menu item and returns the menu item's widget ID. 
@@ -28,10 +30,11 @@ When a menu item is not enabled, the text of the menu item is grayed out and cli
 The following GUI subprograms can be called with a menu as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**
+**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**  
 
 ## Status
 Exported qualified.
 
 This means that you can only call the function by calling **GUI.CreateMenuItem**, not by calling **CreateMenuItem**.
 
+                        

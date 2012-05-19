@@ -2,10 +2,13 @@
 # exit
 
 ## Syntax
-An _exitStatement_ is one of:   (a) **exit** **when** trueFalseExpn   (b) **exit**
+An _exitStatement_ is one of:  
+ 
+-  **exit** **when** trueFalseExpn   
+-  **exit**
 
 ## Description
-An **exit** statement is used to stop the execution of a **loop** or **for** statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond **end** **loop** or **end** **for**. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as **if**.
+An **exit** statement is used to stop the execution of a **loop** or **for** statement. Form -  is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond **end** **loop** or **end** **for**. If it is false, the loop keeps on repeating. Form -  always causes the loop to terminate. This form is almost always used inside another conditional statement such as **if**.
 
 
 ## Example
@@ -21,3 +24,4 @@ Exit statements must occur only inside **loop** or **for** statements. An exit t
 
 The form "**exit** **when** _trueFalseExpn_" is equivalent to "**if** _trueFalseExpn_ **then** **exit** **end** **if**".
 
+                        

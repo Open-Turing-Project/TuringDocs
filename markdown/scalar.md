@@ -2,7 +2,16 @@
 # scalar
 
 ## Syntax
-A _scalarType_ is one of:   (a) _standardType_   _% int_, _real_, _boolean or string_   (b) _enumeratedType_   (c) _subrangeType_   (d) _pointerType_   (e) **char**   (f) **int**_n_   (g) **nat**_n_   (h) **real**_n_   (i) _namedType_     _% Must name one of the above types_
+A _scalarType_ is one of:   
+-  _standardType_   _% int_, _real_, _boolean or string_   
+-  _enumeratedType_   
+-  _subrangeType_   
+-  _pointerType_   
+-  **char**   
+-  **int**_n_   
+-  **nat**_n_   
+-  **real**_n_   
+-  _namedType_     _% Must name one of the above types_
 
 ## Description
 Scalar types are sometimes called _simple_ or _primitive_ types. The non-scalar types are strings, sets, arrays, records, unions and in OOT **char**(_n_). They are defined using scalar types. Scalar types are passed by value to parameters, while non-scalars are passed by reference (by passing an implicit pointer to the non-scalar value).

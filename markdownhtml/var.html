@@ -2,11 +2,13 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>variableDeclaration</em> is one of:   (a) <strong>var</strong> <em>id</em> { ,<em>id</em> } [ :<em>typeSpec</em>] [:=<em>initializingValue</em>]   (b) <em>collectionDeclaration</em></p>
+<p>A <em>variableDeclaration</em> is one of: <br/>
+-  <strong>var</strong> <em>id</em> { ,<em>id</em> } [ :<em>typeSpec</em>] [:=<em>initializingValue</em>] <br/>
+-  <em>collectionDeclaration</em></p>
 
 <h2>Description</h2>
 
-<p>A variable declaration creates a new variable (or variables). Only form (a) will be explained here. See <em>collectionDeclaration</em> for explanation of form (b). The <em>typeSpec</em> of form (a) can be omitted only if the initializing value is present.</p>
+<p>A variable declaration creates a new variable (or variables). Only form -  will be explained here. See <em>collectionDeclaration</em> for explanation of form - . The <em>typeSpec</em> of form -  can be omitted only if the initializing value is present.</p>
 
 <h2>Example</h2>
 
@@ -20,8 +22,11 @@
 
 <p>The initializing value, if present, must be an expression or else a list of items separated by commas inside <strong>init</strong> ( &#133; ). The syntax of <em>initializingValue</em> is one of:</p>
 
-<p>(a)   expn
-(b)   <strong>init</strong> ( initializingValue {, initializingValue } )</p>
+<ul>
+<li> expn</li>
+<li> <strong>init</strong> ( initializingValue {, initializingValue } )</li>
+</ul>
+
 
 <p>Each <strong>init</strong> ( &#133; ) corresponds to an array, record or union value that is being initialized. These must be nested for initialization of nested types.</p>
 
@@ -29,7 +34,7 @@
 
 <p>The keyword <strong>pervasive</strong> can be inserted just after <strong>var</strong>. When this is done, the variable is visible inside all subconstructs of the variable's scope. Without <strong>pervasive</strong>, the variable is not visible inside modules unless explicitly imported. Pervasive variables need not be imported. You can abbreviate <strong>pervasive</strong> as an asterisk (<strong>*</strong>).</p>
 
-<p>OOT extends Turing in the following way. OOT changes form (a) to allow the optional use of the <strong>register</strong> keyword to request that the variable be placed in a machine register. The OOT syntax for form (a) is actually:</p>
+<p>OOT extends Turing in the following way. OOT changes form -  to allow the optional use of the <strong>register</strong> keyword to request that the variable be placed in a machine register. The OOT syntax for form -  is actually:</p>
 
 <p>In the current (1994) OOT implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <strong>register</strong> keyword is ignored. See <strong>register</strong> for restrictions on the use of register variables.</p>
 

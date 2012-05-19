@@ -2,7 +2,9 @@
 # forward
 
 ## Syntax
-A _forwardDeclaration_ is:   **forward** _subprogramHeader_     [ **import** _importItem_ {, _importItem_ } ]
+A _forwardDeclaration_ is:   
+**forward** _subprogramHeader_
+     [ **import** _importItem_ {, _importItem_ } ]
 
 ## Description
 A procedure or function is declared to be **forward** when you want to define its header but not its body. This is the case when one procedure or function calls another, which in turn calls the first; this situation is called _mutual recursion_. The use of **forward** is necessary in this case, because every item must be declared before it can be used.
@@ -58,7 +60,7 @@ This example program evaluates an input expression _e_ of the form _t_ { + _t_ }
 ## Details
 Following a **forward** procedure or function declaration, the **body** of the procedure must be given at the same level (in the same sequence of statements and declarations as the **forward** declaration). This is the only use of the keyword **body**. See also **body**.
 
-Any procedure or function that is declared using **forward** requires an **import** list. In this list, imported procedures or functions that have not yet appeared must be listed as **forward**. For example, the import list for _expn_ is **import** **forward** _term_ &#133; Before a procedure or function can be called, before its body appears, and before it can be passed as a parameter, its header as well as headers of procedures or functions imported directly or indirectly by it must have appeared.
+Any procedure or function that is declared using **forward** requires an **import** list. In this list, imported procedures or functions that have not yet appeared must be listed as **forward**. For example, the import list for _expn_ is **import** **forward** _term_ … Before a procedure or function can be called, before its body appears, and before it can be passed as a parameter, its header as well as headers of procedures or functions imported directly or indirectly by it must have appeared.
 
 The keyword **forward** is also used in **collection** and **type** declarations. 
 
@@ -66,3 +68,4 @@ The keyword **forward** is also used in **collection** and **type** declarations
 ## See also
 **[collection](collection.html)** and **[type](type.html)** declarations.
 
+                        

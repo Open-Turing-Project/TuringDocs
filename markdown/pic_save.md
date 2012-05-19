@@ -10,7 +10,7 @@
 The _fileName_parameter must give the format of the file:
 
 
-BMP files   "BMP:filename" or "filename.BMP"
+BMP files   "BMP:filename" or "filename.BMP"  
 
 
 

@@ -2,7 +2,29 @@
 # infix
 
 ## Syntax
-An _infixOperator_ is one of:   (a) **+**   _% Integer and real addition; set union;_        _% string catenation_   (b) -   _% Integer and real subtraction; set difference_   (c) __*__   _% Integer and real multiplication; set intersection_   (d) **/**   _% Real division_   (e) **div**   _% Truncating integer division_   (f) **mod**   _% Modulo_   (g) **rem**   _% Remainder_    (h) ******   _% Integer and real exponentiation_   (i) **<**   _% Less than_   (j) **>**   _% Greater than_   (k) =   _% Equal_   (l) **<**=   _% Less than or equal; subset_   (m) **>**=   _% Greater than or equal; superset_   (n) **not=**   _% Not equal_   (o) **and**   _% And (boolean conjunction)_   (p) **or**   _% Or (boolean disjunction)_   (q) =**>**   _% Boolean implication_   (r) **in**   _% Member of set_   (s) **not** **in**   _% Not member of set_   (t) **shr**   _% Shift right_   (u) **shl**   _% Shift left_   (v) **xor**   _% Exclusive OR_
+An _infixOperator_ is one of:   
+-  **+**   _% Integer and real addition; set union;_        _% string catenation_   
+-  -   _% Integer and real subtraction; set difference_   
+-  __*__   _% Integer and real multiplication; set intersection_   
+-  **/**   _% Real division_   
+-  **div**   _% Truncating integer division_   
+-  **mod**   _% Modulo_   
+-  **rem**   _% Remainder_    
+-  ******   _% Integer and real exponentiation_   
+-  **<**   _% Less than_   
+-  **>**   _% Greater than_   
+-  =   _% Equal_   
+-  **<**=   _% Less than or equal; subset_   
+-  **>**=   _% Greater than or equal; superset_   
+-  **not=**   _% Not equal_   
+-  **and**   _% And (boolean conjunction)_   
+-  **or**   _% Or (boolean disjunction)_   
+-  =**>**   _% Boolean implication_   
+-  **in**   _% Member of set_   
+-  **not** **in**   _% Not member of set_   
+-  **shr**   _% Shift right_   
+-  **shl**   _% Shift left_   
+-  **xor**   _% Exclusive OR_
 
 ## Description
 An _infix operator_ is placed between two values or _operands_ to produce a third value. For example, the result of 5 + 7 is 12. In some cases the meaning of the operator is determined by its operands. For example, in "pine" + "apple", the + operator means string catenation while in 5 + 7 it means integer addition. There are also _prefix operators_ (-, + and **not**), which are placed in front of a single value. See _prefix operator_.

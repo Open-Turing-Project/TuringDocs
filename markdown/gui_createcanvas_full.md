@@ -51,7 +51,7 @@ When the canvas is disabled, clicking the mouse in the canvas does not call any 
 The following GUI subprograms can be called with a button as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**,**GUI.Enable**, **GUI.Disable**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**,**GUI.SetPositionAndSize**, **GUI.Draw&#133;**,**GUI.FontDraw**, **GUI.Pic&#133;**, **GUI.SetXOR**
+**GUI.Show**, **GUI.Hide**,**GUI.Enable**, **GUI.Disable**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**,**GUI.SetPositionAndSize**, **GUI.Draw&#133;**,**GUI.FontDraw**, **GUI.Pic&#133;**, **GUI.SetXOR**  
 
 
 

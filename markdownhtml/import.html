@@ -28,8 +28,11 @@
 
 <p>The <em>importItem</em> is one of<em>:</em></p>
 
-<p>(a) <em>id</em>
-(b) <em>id</em> <strong>in</strong> <em>fileName</em></p>
+<ul>
+<li><em>id</em></li>
+<li><em>id</em> <strong>in</strong> <em>fileName</em></li>
+</ul>
+
 
 <p>The second form is used in OOT when the list is the import list  for a separate <strong>unit</strong> (or the main program), and the imported item is in a file whose name is different from the item's name, for example:</p>
 
@@ -39,9 +42,12 @@
 
 <p>There are various ways to import items, as determined by <em>howImport</em>. The form of <em>howImport</em> is one of:</p>
 
-<p>(a) <strong>var</strong>
-(b) <strong>const</strong>
-(c) <strong>forward</strong></p>
+<ul>
+<li><strong>var</strong></li>
+<li><strong>const</strong></li>
+<li><strong>forward</strong></li>
+</ul>
+
 
 <p>Commonly the <em>howImport</em> is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a <em>howImport</em> is imported read-write. A read-only symbol that is imported without a <em>howImport</em> is imported read-only.</p>
 

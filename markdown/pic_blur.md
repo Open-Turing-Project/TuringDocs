@@ -15,7 +15,7 @@ Note that this is a fairly CPU intensive routine.  On slow machines, it can take
 
 
 ## Example
-The program creates a picture and then progressively blurs it.
+The program creates a picture and then progressively blurs it.  
 
 
 ![Doc Image](pic_blur01.gif)

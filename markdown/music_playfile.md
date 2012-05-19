@@ -10,9 +10,9 @@ The **Music.PlayFile** procedure is used to play a file of music. The file must 
 The _fileName_ parameter must give the format of the file:
 
 
-WAV files   "WAV:filename" or "filename.WAV"
-MP3 files   "MP3:filename" or "filename.MP3"
-MIDI files   "MIDI:filename" or "filename.MIDI"
+WAV files   "WAV:filename" or "filename.WAV"  
+MP3 files   "MP3:filename" or "filename.MP3"  
+MIDI files   "MIDI:filename" or "filename.MIDI"  
 
 
 Sounds are produced synchronously on a per process basis. This means that when a process executes a **Music.Sound**, **Music.Play** or **Music.PlayFile** command, it stops until the command is finished. However, other processes will continue executing.

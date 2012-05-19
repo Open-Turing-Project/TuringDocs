@@ -55,7 +55,7 @@ When a slider is not enabled, the appearance does not change. However, the slide
 The following GUI subprograms can be called with a slider as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**,  **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.GetSliderValue**, **GUI.SetSliderValue**, **GUI.SetSliderMinMax**, **GUI.SetSliderSize**, **GUI.SetSliderReverse**
+**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**,  **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.GetSliderValue**, **GUI.SetSliderValue**, **GUI.SetSliderMinMax**, **GUI.SetSliderSize**, **GUI.SetSliderReverse**  
 
 
 

@@ -43,7 +43,7 @@
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a menu as the <i>widgetID</i> parameter:<p>\r\n          </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\r\n              <td>\n<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,\r\n                  <b>GUI.Enable</b>, <b>GUI.Disable</b>\r\n            </td>\n</tr></table>",
       "text_content": "The following GUI subprograms can be called with a menu as the widgetID parameter:\r\n           \r\n              GUI.Show, GUI.Hide, GUI.Dispose,\r\n                  GUI.Enable, GUI.Disable\r\n            ",
-      "mdown_content": "The following GUI subprograms can be called with a menu as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**"
+      "mdown_content": "The following GUI subprograms can be called with a menu as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**  "
     },
     {
       "title": "Status",

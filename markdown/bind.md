@@ -23,9 +23,9 @@ You are not allowed to use **bind** at the outermost level of the main program (
 You can also optionally use the **register** keyword to request that the bind be done using a machine register. The syntax for _bindDeclaration_ is actually:
 
 
-**bind** [**var**] [**register**] _id_ **to** _variableReference_
+**bind** [**var**] [**register**] _id_ **to** _variableReference_  
 
-{ , [**var**] [**register**] _id_ **to** _variableReference_ }
+{ , [**var**] [**register**] _id_ **to** _variableReference_ }  
 
 
 In the current (2002) implementation, programs are run interpretively using pseudo-code and the **register** keyword is ignored.

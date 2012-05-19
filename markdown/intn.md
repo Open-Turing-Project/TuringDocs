@@ -2,7 +2,10 @@
 # intn
 
 ## Syntax
-(a) **int1**     _% 1-byte integer_   (b) **int2**     _% 2-byte integer_   (c) **int4**     _% 4-byte integer_
+
+-  **int1**     _% 1-byte integer_   
+-  **int2**     _% 2-byte integer_   
+-  **int4**     _% 4-byte integer_
 
 ## Description
 The **int_n_** (_n_-byte integer) types are machine-dependent types that occupy a specified number of bytes. By contrast, the **int** type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).

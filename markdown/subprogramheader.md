@@ -2,7 +2,9 @@
 # subprogramHeader
 
 ## Syntax
-A _subprogramHeader_ is one of:   (a) **procedure** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]   (b) **function** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]       [ _id_ ] : _typeSpec_
+A _subprogramHeader_ is one of:   
+-  **procedure** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]   
+-  **function** [ **pervasive** ] _id_       [ ([ _paramDeclaration_ {, _paramDeclaration_} ])]       [ _id_ ] : _typeSpec_
 
 ## Description
 A subprogram header is used to describe the interface to a subprogram. Subprogram headers are used within other language features such as subprogram types and external declarations.

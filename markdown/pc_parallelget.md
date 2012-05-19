@@ -22,11 +22,11 @@ This program reads and prints the values of the five data pins of the PC's paral
 The five pins that are used for parallel input are pins 10-15. The **PC.ParallelGet** procedure returns the sum of 
 
 
-64    Pin 10 high
-128   Pin 11 high 
-32    Pin 12 high 
-16    Pin 13 high 
-8    Pin 15 high
+64    Pin 10 high  
+128   Pin 11 high   
+32    Pin 12 high   
+16    Pin 13 high   
+8    Pin 15 high  
 
 
 The **mod** and **div** operators can be used to determine which pins are high or low. 

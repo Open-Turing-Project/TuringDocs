@@ -106,7 +106,7 @@ When a scroll bar is not enabled, the gray in the bar is set to white and the th
 The following GUI subprograms can be called with a scroll bar as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Enable**,**GUI.Disable**, **GUI.Dispose**, **GUI.GetX**,**GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**,**GUI.SetPosition**, **GUI.SetSize**,**GUI.SetPositionAndSize**, **GUI.GetSliderValue**,**GUI.SetSliderValue**, **GUI.SetSliderMinMax**,**GUI.SetSliderSize**, **GUI.SetSliderReverse**,**GUI.SetScrollAmount**
+**GUI.Show**, **GUI.Hide**, **GUI.Enable**,**GUI.Disable**, **GUI.Dispose**, **GUI.GetX**,**GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**,**GUI.SetPosition**, **GUI.SetSize**,**GUI.SetPositionAndSize**, **GUI.GetSliderValue**,**GUI.SetSliderValue**, **GUI.SetSliderMinMax**,**GUI.SetSliderSize**, **GUI.SetSliderReverse**,**GUI.SetScrollAmount**  
 
 
 

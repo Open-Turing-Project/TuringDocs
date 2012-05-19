@@ -2,7 +2,11 @@
 # unit
 
 ## Syntax
-A _compilationUnit_ is one of:   (a) [ _importList_ ] _mainProgram_   (b) **unit** _moduleDeclaration_   (c) **unit** _monitorDeclaration_   (d) **unit** _classDeclaration_
+A _compilationUnit_ is one of:   
+-  [ _importList_ ] _mainProgram_   
+-  **unit** _moduleDeclaration_   
+-  **unit** _monitorDeclaration_   
+-  **unit** _classDeclaration_
 
 ## Description
 A program can be divided up into units, each in a separate file. All  of these files except the main program begin with the keyword **unit**. The unit contains the main program, a module, a monitor or a class.

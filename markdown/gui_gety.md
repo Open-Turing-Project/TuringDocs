@@ -2,7 +2,8 @@
 # GUI.Get{X,Y}
 
 ## Syntax
-**GUI.GetX** (_widgetID_ : **int**) : **int****GUI.GetY** (_widgetID_ : **int**) : **int**
+**GUI.GetX** (_widgetID_ : **int**) : **int**
+**GUI.GetY** (_widgetID_ : **int**) : **int**
 
 ## Description
 Returns the x coordinate of the left edge of a widget. Note that this may be different from the x coordinate specified in the widget's _Create_ call. For example, if a radio button is created with right justification, the x coordinate in the _Create_ method specifies the right edge while **GUI.GetX** will return the x coordinate of the left edge.
@@ -37,3 +38,4 @@ This means that you can only call the function by calling **GUI.GetX**, not by c
 ## See also
 **[GUI.GetHeight](gui_getheight.html)** and **[GUI.GetWidth](gui_getwidth.html)**.
 
+                        

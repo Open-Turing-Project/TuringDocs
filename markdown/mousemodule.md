@@ -9,7 +9,7 @@ All routines in the Mouse module are exported qualified (and thus must be prefac
 
 ## Entry Points
 
-[**Where**](mouse_where.html)   Gets the current location of the mouse cursor and status of the mouse buttons.
-[**ButtonMoved**](mouse_buttonmoved.html)   Checks to see if a mouse button has been pressed.
-[**ButtonWait**](mouse_buttonwait.html)   Gets information about a mouse button being pressed such as where it was pressed, which button was pressed, etc.
-[**ButtonChoose**](mouse_buttonchoose.html)   Selects the mode for the mouse (either single button mode or multi-button mode).
+[**Where**](mouse_where.html)   Gets the current location of the mouse cursor and status of the mouse buttons.  
+[**ButtonMoved**](mouse_buttonmoved.html)   Checks to see if a mouse button has been pressed.  
+[**ButtonWait**](mouse_buttonwait.html)   Gets information about a mouse button being pressed such as where it was pressed, which button was pressed, etc.  
+[**ButtonChoose**](mouse_buttonchoose.html)   Selects the mode for the mouse (either single button mode or multi-button mode).  

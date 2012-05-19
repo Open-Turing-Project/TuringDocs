@@ -22,8 +22,8 @@ A const declaration creates a name _id_ for a value.
 The initializing value can be an arbitrary value or else a list of items separated by commas inside **init** (&#133;). The syntax of _initializingValue_ is:
 
 
-a.   _expn_
-b.   **init** (initializingValue, initializingValue)
+a.   _expn_  
+b.   **init** (initializingValue, initializingValue)  
 
 
 Each **init** (&#133;) corresponds to an array, record or union value that is being initialized. These must be nested for initialization of nested types. In the Pascal language, constants must have values known at compile time; Turing has no such restriction.

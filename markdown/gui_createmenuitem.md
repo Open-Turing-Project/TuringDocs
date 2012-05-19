@@ -28,7 +28,7 @@ When a menu item is not enabled, the text of the menu item is grayed out and cli
 The following GUI subprograms can be called with a menu as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**
+**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.Enable**, **GUI.Disable**  
 
 ## Status
 Exported qualified.

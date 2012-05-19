@@ -2,10 +2,12 @@
 # paramDeclaration
 
 ## Syntax
-A _paramDeclaration_ is one of:   (a) [ **var** ] _id_ {, _id_ } : _typeSpec_   (b) _subprogramHeader_
+A _paramDeclaration_ is one of:   
+-  [ **var** ] _id_ {, _id_ } : _typeSpec_   
+-  _subprogramHeader_
 
 ## Description
-A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also **procedure** and **function** declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.
+A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also **procedure** and **function** declarations). Form -  above is the most common case. Form -  specifies procedures and functions that are themselves passed as parameters.
 
 
 ## Example
@@ -33,7 +35,7 @@ The names of the formal parameters must be distinct from each other, from the pr
 
 
 ## Example
-Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also _subprogramHeader_.
+Find the zero of function f. This example illustrates form - , which is a parameter that is a function. See also _subprogramHeader_.
 
         function findZero ( function f ( x : real) : real,
                         left, right, accuracy : real ) : real
@@ -55,14 +57,14 @@ Find the zero of function f. This example illustrates form (b), which is a param
             result M
         end findZero
 ## Details
-Form (b) of _paramDeclaration_ is used to specify formal parameters that are themselves procedures or functions. For example, in the _findZero_ function, _f_ is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the _findZero_ function can be replaced by the following with no change in the action. The names _g_ and _x_ serve no purpose, except as place holders in the declaration of _f_.
+Form -  of _paramDeclaration_ is used to specify formal parameters that are themselves procedures or functions. For example, in the _findZero_ function, _f_ is a formal parameter that is itself a function. The subprogram type can be used to replace form - . In particular, the header to the _findZero_ function can be replaced by the following with no change in the action. The names _g_ and _x_ serve no purpose, except as place holders in the declaration of _f_.
 
         function findZero ( f : function g ( x : real) : real,
                         left, right, accuracy : real ) : real
 ## Details
 Parameters that are declared non **var** should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.
 
-You can also optionally use the **register** keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the **register** keyword. The syntax for form (a) is actually:
+You can also optionally use the **register** keyword to request that the variable be placed in a machine register. This changes form -  to allow the optional use of the **register** keyword. The syntax for form -  is actually:
 
 In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the **register** keyword is ignored. See **register** for restrictions on the use of register parameters.
 

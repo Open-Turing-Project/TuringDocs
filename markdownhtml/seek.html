@@ -2,7 +2,9 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>seekStatement</em> is one of:   (a) <strong>seek</strong> : <em>fileNumber</em> , <em>filePosition</em>   (b) <strong>seek</strong> : <em>fileNumber</em> , *</p>
+<p>A <em>seekStatement</em> is one of: <br/>
+-  <strong>seek</strong> : <em>fileNumber</em> , <em>filePosition</em> <br/>
+-  <strong>seek</strong> : <em>fileNumber</em> , *</p>
 
 <h2>Description</h2>
 
@@ -10,7 +12,7 @@
 
 <p>The <em>fileNumber</em> must specify a file that is open with <strong>seek</strong> capability. The <em>filePosition</em> is a non-negative integer offset in bytes from the beginning of the file. Usually, this is a number returned by the <strong>tell</strong> statement. (The first position in the file is position zero.)</p>
 
-<p>Form (b) specifies that the next operation is to begin at the position immediately following the current end of the file. A <em>filePosition</em> of zero specifies that the next operation is to start at the beginning of the file. Seeking to a position beyond the current end of the file and then writing, automatically fills the intervening positions with the internal representation of zero.</p>
+<p>Form -  specifies that the next operation is to begin at the position immediately following the current end of the file. A <em>filePosition</em> of zero specifies that the next operation is to start at the beginning of the file. Seeking to a position beyond the current end of the file and then writing, automatically fills the intervening positions with the internal representation of zero.</p>
 
 <h2>Example</h2>
 

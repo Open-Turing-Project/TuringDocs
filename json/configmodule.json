@@ -17,7 +17,7 @@
       ],
       "raw_content": "<table>\n<tr valign=\"top\">\n<td><a href=\"config_display.html\"><b>Display</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the display currently attached.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"config_lang.html\"><b>Lang</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the language environment that the program is currently running within.</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"config_machine.html\"><b>Machine</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Returns information about the hardware on which the program is running.</td>\n</tr>\n</table>",
       "text_content": "Display Returns information about the display currently attached.Lang Returns information about the language environment that the program is currently running within.Machine Returns information about the hardware on which the program is running.",
-      "mdown_content": "\n[**Display**](config_display.html)   Returns information about the display currently attached.\n[**Lang**](config_lang.html)   Returns information about the language environment that the program is currently running within.\n[**Machine**](config_machine.html)   Returns information about the hardware on which the program is running."
+      "mdown_content": "\n[**Display**](config_display.html)   Returns information about the display currently attached.  \n[**Lang**](config_lang.html)   Returns information about the language environment that the program is currently running within.  \n[**Machine**](config_machine.html)   Returns information about the hardware on which the program is running.  "
     }
   ],
   "dependencies": [

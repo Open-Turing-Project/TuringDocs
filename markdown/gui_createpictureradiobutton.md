@@ -2,7 +2,9 @@
 # GUI.CreatePictureRadioButton[Full]
 
 ## Syntax
-**GUI.CreatePictureRadioButton** (_x_, _y_, _picture_ : **int**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()):**int****GUI.CreatePictureRadioButtonFull** (_x_, _y_ : **int**,    _picture, joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _width_,_height_ : **int**,    _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
+**GUI.CreatePictureRadioButton** (_x_, _y_, _picture_ : **int**,    _joinID_ : **int**, _actionProc_ : **procedure** _x_ ()):**int**
+
+**GUI.CreatePictureRadioButtonFull** (_x_, _y_ : **int**,    _picture, joinID_ : **int**, _actionProc_ : **procedure** _x_ (), _width_,_height_ : **int**,    _shortcut_ : **char**, _mergePic_ : **boolean**) : **int**
 
 ## Description
 Creates a picture radio button and returns the button's widget ID. 
@@ -120,7 +122,7 @@ When a picture radio button is not enabled, the picture radio button is grayed o
 The following GUI subprograms can be called with a picture radio button as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SelectRadio**
+**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SelectRadio**  
 
 
 
@@ -133,3 +135,4 @@ This means that you can only call the function by calling **GUI.CreatePictureRad
 ## See also
 **[GUI.SelectRadio](gui_selectradio.html)** for selecting a picture radio button in a program. See also **[GUI.CreatePictureButton](gui_createpicturebutton_full.html)** and **[GUI.CreateRadioButton](gui_createradiobutton_full.html)** for information on picture buttons and radio buttons.
 
+                        

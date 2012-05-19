@@ -2,7 +2,33 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>statement</em> is one of:   (a) <em>assignmentStatement</em>   <em>% variableReference := expn</em>   (b) <em>openStatement</em>   <em>% <strong>open</strong> &#133;</em>   (c) <em>closeStatement</em>   <em>% <strong>close</strong> &#133;</em>   (d) <em>putStatement</em>   <em>% <strong>put</strong> &#133;</em>   (e) <em>getStatement</em>   <em>% <strong>get</strong> &#133;</em>   (f) <em>readStatement</em>   <em>% <strong>read</strong> &#133;</em>   (g) <em>writeStatement</em>   <em>% <strong>write</strong> &#133;</em>   (h) <em>seekStatement</em>   <em>% <strong>seek</strong> &#133;</em>   (i) <em>tellStatement</em>   <em>% <strong>tell</strong> &#133;</em>   (j) <em>forStatement</em>   <em>% <strong>for</strong> &#133; <strong>end for</strong></em>   (k) <em>loopStatement</em>   <em>% <strong>loop</strong> &#133; <strong>end loop</strong></em>   (l) <strong>exit</strong> [ <strong>when</strong> <em>trueFalseExpn</em> ]   (m) <em>ifStatement</em>   <em>% <strong>if</strong> &#133; <strong>end if</strong></em>   (n) <em>caseStatement</em>   <em>% <strong>case</strong> &#133; <strong>end case</strong></em>   (o) <strong>assert</strong> <em>trueFalseExpn</em>   (p) <strong>begin</strong>       <em>statementsAndDeclarations</em>     <strong>end</strong>   (q) <em>procedureCall</em>   <em>% procedureId [(parameters)]</em>   (r) <strong>return</strong>   (s) <strong>result</strong> <em>expn</em>   (t) <strong>new</strong> [ <em>collectionId</em> , ] <em>pointerVariableReference</em>   (u) <strong>free</strong> [ <em>collectionId</em> , ] <em>pointerVariableReference</em>   (v) <strong>tag</strong> <em>unionVariableReference</em> , <em>expn</em>   (w) <em>forkStatement</em>   <em>% <strong>fork</strong> &#133;</em>   (x) <strong>signal</strong> <em>variableReference</em>   (y) <strong>wait</strong> <em>variableReference</em> [ , <em>expn</em> ]   (z) <strong>pause</strong> <em>expn</em>   (aa) <strong>quit</strong> [ <em>guiltyParty</em> ] [ : <em>quitReason</em> ]   (bb) <strong>unchecked</strong>   (cc) <strong>checked</strong></p>
+<p>A <em>statement</em> is one of: <br/>
+-  <em>assignmentStatement</em>   <em>% variableReference := expn</em> <br/>
+-  <em>openStatement</em>   <em>% <strong>open</strong> &#133;</em> <br/>
+-  <em>closeStatement</em>   <em>% <strong>close</strong> &#133;</em> <br/>
+-  <em>putStatement</em>   <em>% <strong>put</strong> &#133;</em> <br/>
+-  <em>getStatement</em>   <em>% <strong>get</strong> &#133;</em> <br/>
+-  <em>readStatement</em>   <em>% <strong>read</strong> &#133;</em> <br/>
+-  <em>writeStatement</em>   <em>% <strong>write</strong> &#133;</em> <br/>
+-  <em>seekStatement</em>   <em>% <strong>seek</strong> &#133;</em> <br/>
+-  <em>tellStatement</em>   <em>% <strong>tell</strong> &#133;</em> <br/>
+-  <em>forStatement</em>   <em>% <strong>for</strong> &#133; <strong>end for</strong></em> <br/>
+-  <em>loopStatement</em>   <em>% <strong>loop</strong> &#133; <strong>end loop</strong></em> <br/>
+-  <strong>exit</strong> [ <strong>when</strong> <em>trueFalseExpn</em> ] <br/>
+-  <em>ifStatement</em>   <em>% <strong>if</strong> &#133; <strong>end if</strong></em> <br/>
+-  <em>caseStatement</em>   <em>% <strong>case</strong> &#133; <strong>end case</strong></em> <br/>
+-  <strong>assert</strong> <em>trueFalseExpn</em> <br/>
+-  <strong>begin</strong>       <em>statementsAndDeclarations</em>     <strong>end</strong> <br/>
+-  <em>procedureCall</em>   <em>% procedureId [(parameters)]</em> <br/>
+-  <strong>return</strong> <br/>
+-  <strong>result</strong> <em>expn</em> <br/>
+-  <strong>new</strong> [ <em>collectionId</em> , ] <em>pointerVariableReference</em> <br/>
+-  <strong>free</strong> [ <em>collectionId</em> , ] <em>pointerVariableReference</em> <br/>
+-  <strong>tag</strong> <em>unionVariableReference</em> , <em>expn</em> <br/>
+-  <em>forkStatement</em>   <em>% <strong>fork</strong> &#133;</em> <br/>
+-  <strong>signal</strong> <em>variableReference</em> <br/>
+-  <strong>wait</strong> <em>variableReference</em> [ , <em>expn</em> ] <br/>
+-  <strong>pause</strong> <em>expn</em>   (aa) <strong>quit</strong> [ <em>guiltyParty</em> ] [ : <em>quitReason</em> ]   (bb) <strong>unchecked</strong>   (cc) <strong>checked</strong></p>
 
 <h2>Description</h2>
 

@@ -16,7 +16,7 @@
       ],
       "raw_content": "<table>\n<tr valign=\"top\">\n<td>\n<a href=\"joystick_joystick.html\"><b>joystick</b></a><b>1</b>, <b>joystick2</b>\n</td>\n<td width=\"20\">&nbsp;</td>\n<td>joystick name contants (exported unqualified)</td>\n</tr>\n<tr valign=\"top\">\n<td><a href=\"joystick_getinfo.html\"><b>GetInfo</b></a></td>\n<td width=\"20\">&nbsp;</td>\n<td>Reads the current value of a joystick and status of the joystick buttons.</td>\n</tr>\n</table>",
       "text_content": "joystick1, joystick2 joystick name contants (exported unqualified)GetInfo Reads the current value of a joystick and status of the joystick buttons.",
-      "mdown_content": "\n[**joystick**](joystick_joystick.html)**1**, **joystick2**   joystick name contants (exported unqualified)\n[**GetInfo**](joystick_getinfo.html)   Reads the current value of a joystick and status of the joystick buttons."
+      "mdown_content": "\n[**joystick**](joystick_joystick.html)**1**, **joystick2**   joystick name contants (exported unqualified)  \n[**GetInfo**](joystick_getinfo.html)   Reads the current value of a joystick and status of the joystick buttons.  "
     }
   ],
   "dependencies": [

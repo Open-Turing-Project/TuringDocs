@@ -10,10 +10,10 @@
 The _mode_ parameter has one of the following values:
 
 
-_picCopy_   This draws the picture on top of what was underneath, obscuring it completely.
-_picXor_   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.
-_picMerge_   This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.
-_picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.
+_picCopy_   This draws the picture on top of what was underneath, obscuring it completely.  
+_picXor_   This draws the picture XORing it with the background. In DOS, you can use this function to do animation. Drawing an object on top of itself with XOR erases it and restores the background.  
+_picMerge_   This draws the picture like _picCopy_ except that any occurrence of the background color in the picture is not drawn to the screen. This allows you to draw an irregularly-shaped object and draw it to the screen.  
+_picUnderMerge_   This draws the picture, but only where the background color was displayed underneath it. The effect of this is to make the picture appear to be displayed behind the background.  
 
 
 

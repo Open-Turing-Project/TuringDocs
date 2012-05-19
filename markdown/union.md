@@ -3,13 +3,15 @@
 
 ## Syntax
 A _unionType_ is:
-        union [ id ] : indexType of
-            label labelExpn { , labelExpn } :
-                        { id {, id } : typeSpec }
-            { label labelExpn { , labelExpn } :
-                        { id {, id } : typeSpec } }
+
+        union [ id ] : indexType of  
+            label labelExpn { , labelExpn } :  
+                        { id {, id } : typeSpec }  
+            { label labelExpn { , labelExpn } :  
+                        { id {, id } : typeSpec } }  
             [ label :       { id {, id } : typeSpec } ]
         end union
+
 ## Description
 A union type (also called a variant record) is like a record in which there is a run time choice among sets of accessible fields. This choice is made by the **tag** statement, which deletes the current set of fields and activates a new set.
 
@@ -47,3 +49,4 @@ The notation > can be used to access union fields. For example, if _p_ is a poin
 ## See also
 **[pointer](pointer.html)**.
 
+                        

@@ -10,9 +10,9 @@ The **Music.PlayFileReturn** procedure is used to play a file of music. The file
 The _fileName_parameter must give the format of the file:
 
 
-WAV files   "WAV:filename" or "filename.WAV"
-MP3 files   "MP3:filename" or "filename.MP3"
-MIDI files   "MIDI:filename" or "filename.MIDI"
+WAV files   "WAV:filename" or "filename.WAV"  
+MP3 files   "MP3:filename" or "filename.MP3"  
+MIDI files   "MIDI:filename" or "filename.MIDI"  
 
 
 Unlike **Music.PlayFile**, the **Music.PlayFileReturn** procedure should not be called in a separate process. Instead, the procedure returns immediately. This makes **Music.PlayFileReturn**easier to use, but makes it unsuitable for playing a set of files sequentially.

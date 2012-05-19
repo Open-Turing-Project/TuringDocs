@@ -10,9 +10,9 @@ The **Music.PlayFileLoop** procedure is used to play a file of music continuousl
 The _fileName_parameter must give the format of the file:
 
 
-WAV files   "WAV:filename" or "filename.WAV"
-MP3 files   "MP3:filename" or "filename.MP3"
-MIDI files   "MIDI:filename" or "filename.MIDI"
+WAV files   "WAV:filename" or "filename.WAV"  
+MP3 files   "MP3:filename" or "filename.MP3"  
+MIDI files   "MIDI:filename" or "filename.MIDI"  
 
 
 The **Music.PlayFileLoop** procedure is used to provide continuous background music for a program.When called, the music starts playing, and the procedure returns immediately.

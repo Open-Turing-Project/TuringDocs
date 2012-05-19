@@ -46,7 +46,7 @@
       "title": "Details",
       "raw_content": "The following GUI subprograms can be called with a picture radio button as the <i>widgetID</i> parameter:<p>\r\n\t  </p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>\n<b>GUI.Show</b>,<b> GUI.Hide</b>,<b> GUI.Enable</b>,<b> GUI.Disable</b>,<b> GUI.Dispose</b>,<b> GUI.GetX</b>,<b> GUI.GetY</b>,<b> GUI.GetWidth</b>,<b> GUI.GetHeight</b>,<b> GUI.SetPosition</b>,<b> GUI.SetSize</b>,<b> GUI.SetPositionAndSize</b>, <b>GUI.SelectRadio</b>\n</td>\n</tr></table>\n<p>\r\n    </p>",
       "text_content": "The following GUI subprograms can be called with a picture radio button as the widgetID parameter:\r\n\t   GUI.Show, GUI.Hide, GUI.Enable, GUI.Disable, GUI.Dispose, GUI.GetX, GUI.GetY, GUI.GetWidth, GUI.GetHeight, GUI.SetPosition, GUI.SetSize, GUI.SetPositionAndSize, GUI.SelectRadio\r\n    ",
-      "mdown_content": "The following GUI subprograms can be called with a picture radio button as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SelectRadio**\n\n"
+      "mdown_content": "The following GUI subprograms can be called with a picture radio button as the _widgetID_ parameter:\n\n\n**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SelectRadio**  \n\n"
     },
     {
       "title": "Status",

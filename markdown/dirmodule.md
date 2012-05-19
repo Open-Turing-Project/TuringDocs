@@ -9,15 +9,15 @@ All routines in the Dir module are exported qualified (and thus must be prefaced
 
 ## Entry Points
 
-[**Open**](dir_open.html)   Opens a directory stream in order to get a listing of the directory contents.
-[**Get**](dir_get.html)   Gets the next file name in the directory listing.
-[**GetLong**](dir_getlong.html)   Gets the next file name and other information in the directory listing.
-[**Close**](dir_close.html)   Closes the directory stream.
-[**Create**](dir_create.html)   Creates a new directory.
-[**Delete**](dir_delete.html)   Deletes a directory (must be empty).
-[**Change**](dir_change.html)   Changes the current execution directory.
-[**Current**](dir_current.html)   Returns the current execution directory.
-[**Exists**](dir_exists.html)   Returns  whether a directory exists.
+[**Open**](dir_open.html)   Opens a directory stream in order to get a listing of the directory contents.  
+[**Get**](dir_get.html)   Gets the next file name in the directory listing.  
+[**GetLong**](dir_getlong.html)   Gets the next file name and other information in the directory listing.  
+[**Close**](dir_close.html)   Closes the directory stream.  
+[**Create**](dir_create.html)   Creates a new directory.  
+[**Delete**](dir_delete.html)   Deletes a directory (must be empty).  
+[**Change**](dir_change.html)   Changes the current execution directory.  
+[**Current**](dir_current.html)   Returns the current execution directory.  
+[**Exists**](dir_exists.html)   Returns  whether a directory exists.  
 
 
 

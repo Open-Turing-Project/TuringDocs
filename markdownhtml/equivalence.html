@@ -32,18 +32,21 @@
 
 <p>Two types are defined to be <em>equivalent</em> if they are:</p>
 
-<p>(a)   the same standard type (<strong>int</strong>, <strong>real</strong>, <strong>boolean</strong> or <strong>string</strong>),
-(b)   subranges with equal first and last values,
-(c)   arrays with equivalent index types and equivalent component types,
-(d)   strings with equal maximum lengths,
-(e)   sets with equivalent base types, or
-(f)    pointers to the same collection; in addition,
-(g)   a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)
-(h)   both <strong>char</strong>,
-(i)   both <strong>char</strong>(<em>n</em>) with the same length,
-(j)   both procedure types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters,
-(k)   both function types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters and equivalent result types,
-(l)   both pointer types to the same class or equivalent type and both are checked or unchecked.</p>
+<ul>
+<li> the same standard type (<strong>int</strong>, <strong>real</strong>, <strong>boolean</strong> or <strong>string</strong>),</li>
+<li> subranges with equal first and last values,</li>
+<li> arrays with equivalent index types and equivalent component types,</li>
+<li> strings with equal maximum lengths,</li>
+<li> sets with equivalent base types, or</li>
+<li>  pointers to the same collection; in addition,</li>
+<li> a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)</li>
+<li> both <strong>char</strong>,</li>
+<li> both <strong>char</strong>(<em>n</em>) with the same length,</li>
+<li> both procedure types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters,</li>
+<li> both function types, with corresponding equivalent parameter types and corresponding <strong>var</strong> or non-<strong>var</strong> of the parameters and equivalent result types,</li>
+<li> both pointer types to the same class or equivalent type and both are checked or unchecked.</li>
+</ul>
+
 
 <p>Each separate instance of a record, union or enumerated type (written out using one of the keywords <strong>record</strong>, <strong>union</strong> or <strong>enum</strong>) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.</p>
 

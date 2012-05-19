@@ -2,7 +2,16 @@
 # module
 
 ## Syntax
-A _moduleDeclaration_ is:   **module** _id_     [ **implement** _implementItem_ ]     [ **implement** **by** _implementByItem_ ]     [ **import** [ **var** ] _importItem_            {, [ **var** ] _importItem_ } ]     [ **export** [ _howExport_ ] _id_ {,[_howExport_ ] _id_ }]     _statementsAndDeclarations_   **end** _id_
+A _moduleDeclaration_ is:   
+
+    module id
+       [ implement implementItem ]
+       [ implement by implementByItem ]
+       [ import [ var ] importItem
+              {, [ var ] importItem } ]
+       [ export [ howExport ] id {,[howExport ] id }]
+       statementsAndDeclarations
+    end id
 
 ## Description
 A module declaration creates a package of variables, constants, types, subprograms, etc. The name of the module (_id_) is given in two places, just after **module** and just after **end**. Items declared inside the module can be accessed outside of the module only if they are exported. Items from outside the module that are to be used in the module need to be imported (unless they are predefined or pervasive).
@@ -106,3 +115,4 @@ The true/false expression in the **pre** and **post** clauses must be true when 
 ## See also
 **[unit](unit.html)**, **[monitor](monitor.html)** and **[class](class.html)**. See also **[export](export.html)** list, **[import](import.html)** list, **[implement](implement.html)** list, i**mplement by** list, **[inherit](inherit.html)** list and **[deferred](deferred.html)** subprogram.
 
+                        

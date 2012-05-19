@@ -23,11 +23,11 @@ This type is named after the British mathematician, George Boole, who formulated
 The operators for **true** and **false** are **and**, **or**, **xor**, =**>**, and **not**. For two true/false values _A_ and _B_, these operators are defined as follows:
 
 
-_A_ **and** _B_ is true when both are true
-_A_ **or** _B_ is true when either or both are true
-_A_ **xor** _B_ is true when either but not both are true
-_A_ =**>** _B_ (A implies B) is true when both are true or when A is false
-**not** _A_ is true when A is false
+_A_ **and** _B_ is true when both are true  
+_A_ **or** _B_ is true when either or both are true  
+_A_ **xor** _B_ is true when either but not both are true  
+_A_ =**>** _B_ (A implies B) is true when both are true or when A is false  
+**not** _A_ is true when A is false  
 
 
 The **and** operator has higher precedence than **or**, so _A_ **or** _B_ **and** _C_ means _A_ **or** (_B_ **and** _C_).

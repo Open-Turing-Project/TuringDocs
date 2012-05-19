@@ -37,10 +37,13 @@
 
 <p>The form of <em>exportMethod</em> is one of:</p>
 
-<p>(a)   <strong>var</strong>
-(b)   <strong>unqualified</strong>
-(c)   <strong>pervasive</strong>
-(d)   <strong>opaque</strong></p>
+<ul>
+<li> <strong>var</strong></li>
+<li> <strong>unqualified</strong></li>
+<li> <strong>pervasive</strong></li>
+<li> <strong>opaque</strong></li>
+</ul>
+
 
 <p>The keyword <strong>var</strong> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <em>name</em> is exported <strong>var</strong> from module <em>M</em>, <em>name</em> can be changed from outside of <em>M</em> by <em>M.name</em> := "<em>Surprise!</em>".</p>
 

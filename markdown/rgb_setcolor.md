@@ -14,7 +14,7 @@ It is wise to use **Error.Last** and **Error.LastMsg** to check to see if the co
 This program sets all the available colors to shades of red
 
 
-**Details**   **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.
+**Details**   **RGB.SetColour** is an alternate spelling for **RGB.SetColor**.  
 
 
 <

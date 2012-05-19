@@ -26,10 +26,10 @@ The **PC.ParallelPut** procedure is used to set the eight data bits on the PC's 
 The value sent to **PC.ParallelPut** is the sum of the following:
 
 
-1   Data bit 0   16   Data bit 4
-2   Data bit 1   32   Data bit 5
-4   Data bit 2   64   Data bit 6
-8   Data bit 3   128   Data bit 7
+1   Data bit 0   16   Data bit 4  
+2   Data bit 1   32   Data bit 5  
+4   Data bit 2   64   Data bit 6  
+8   Data bit 3   128   Data bit 7  
 
 
 For example, the command **PC.ParallelPut** (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to **PC.ParallelPut** must be from 0 to 255.

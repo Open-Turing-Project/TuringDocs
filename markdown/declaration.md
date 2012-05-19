@@ -2,7 +2,18 @@
 # declaration
 
 ## Syntax
-A _declaration_ is one of:   (a) _variableDeclaration_   (b) _constantDeclaration_   (c) _typeDeclaration_   (d) _bindDeclaration_   (e) _procedureDeclaration_   (f) _functionDeclaration_   (g) _moduleDeclaration_   (h) _classDeclaration_   (i) _processDeclaration_   (j) _monitorDeclaration_   (k) _conditionDeclaration_
+A _declaration_ is one of:   
+-  _variableDeclaration_   
+-  _constantDeclaration_   
+-  _typeDeclaration_   
+-  _bindDeclaration_   
+-  _procedureDeclaration_   
+-  _functionDeclaration_   
+-  _moduleDeclaration_   
+-  _classDeclaration_   
+-  _processDeclaration_   
+-  _monitorDeclaration_   
+-  _conditionDeclaration_
 
 ## Description
 A _declaration_ creates a new name (or names) for a variable, constant, type, procedure, function, module, class, process, monitor, or condition. These names are called _identifiers_, where _id_ is the abbreviation for _identifier_.

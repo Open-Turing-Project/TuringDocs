@@ -2,14 +2,17 @@
 # cheat
 
 ## Syntax
-A _typeCheat_ is one of:   (a) **cheat** (_targetType_, _expn_ **[** : _sizeSpec_ **]** )   (b) **#** _expn_   (c) _id_ : **cheat** _typeSpec_
+A _typeCheat_ is one of:   
+-  **cheat** (_targetType_, _expn_ **[** : _sizeSpec_ **]** )   
+-  **#** _expn_   
+-  _id_ : **cheat** _typeSpec_
 
 ## Description
 A type cheat interprets the representation (bits) of one type as another type. Type cheats are dirty (machine-dependent) and sometimes dangerous (arbitrary corruption) and should be used only by programmers who know the underlying computer representation of values. 
 
-Form (b) is a short form type cheat in which the target type is a natural number.
+Form -  is a short form type cheat in which the target type is a natural number.
 
-Form (c) is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as _typeSpec_. 
+Form -  is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as _typeSpec_. 
 
 
 ## Example
@@ -24,21 +27,21 @@ This assignment is equivalent (on byte oriented computers) to either of the foll
 The form of _targetType_ must be one of:
 
 
-(a)   [ _id_ . ] _typeId_
-(b)   **int**, **int1**, **int2** or **int4**
-(c)   **nat**, **nat1**, **nat2** or **nat4**
-(d)   **boolean**
-(e)   **char** [ (_numberOfCharacters_ ) ]
-(f)   **string** [ (_maximumLength_ ) ]
-(g)   **addressint**
+-    [ _id_ . ] _typeId_  
+-    **int**, **int1**, **int2** or **int4**  
+-    **nat**, **nat1**, **nat2** or **nat4**  
+-    **boolean**  
+-    **char** [ (_numberOfCharacters_ ) ]  
+-    **string** [ (_maximumLength_ ) ]  
+-    **addressint**  
 
 
-In form (a) the beginning identifier _id_ must be the name of a module, monitor or class that exports the _typeId_. Each of _numberOfCharacters_ and _maximumLength_ must be compile time integer expressions.
+In form -  the beginning identifier _id_ must be the name of a module, monitor or class that exports the _typeId_. Each of _numberOfCharacters_ and _maximumLength_ must be compile time integer expressions.
 
 If the _expn_ in a type cheat is a variable reference and the _sizeSpec_ is omitted, the type cheat is considered to be a variable whose type is _targetType_. This allows, for example, the type cheat to be assigned to, as in:
 
 
-**cheat** (**char**, _i_) := 'B'
+**cheat** (**char**, _i_) := 'B'  
 
 
 If the _expn_ is a value that is not a variable reference, or if _sizeSpec_ is present, the type cheat is an expression value whose type is _targetType_.
@@ -51,7 +54,7 @@ The prefix operator # is a short form for a class of type cheats. It interprets 
 
 
 ## Example
-Set the second character of _d_ so it has the numeric representation 24. In general, if _c_ is a character, then #_c_ = **ord**_(c)_. Note that #_c_ can have a number value assigned to it, but _ord(c)_ cannot.
+Set the second character of _d_ so it has the numeric representation 24. In general, if _c_ is a character, then #_c_ = **ord**_- _. Note that #_c_ can have a number value assigned to it, but _ord- _ cannot.
 
         var d : char (3)
         #d (2) := 24        % Same as d(2) := chr(24)

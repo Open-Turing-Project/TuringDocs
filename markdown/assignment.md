@@ -26,13 +26,13 @@ You cannot assign a new value to a constant (**const**).
 There are short forms that allow you to write assignment statements more compactly. For example,
 
 
-_i_ := _i_ + 1
+_i_ := _i_ + 1  
 
 
 can be shortened to
 
 
-_i_ += 1
+_i_ += 1  
 
 
 In Turing, there are short forms for combining +, = and * with assignment. For example, _i_ *= 2 doubles _i_.

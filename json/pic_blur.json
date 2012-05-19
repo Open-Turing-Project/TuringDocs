@@ -31,7 +31,7 @@
       ],
       "raw_content": "The program creates a picture and then progressively blurs it.\r\n\r\n          <table><tr>\n<td>\r\n\t  \t<center><img src=\"pic_blur01.gif\"></center>\r\n\t  \t<center><b>Output at start</b></center>\n<p>\r\n\t      </p>\n</td>\r\n              <td>\r\n\t  \t<center><img src=\"pic_blur02.gif\"></center>\r\n\t  \t<center><b>After several loops</b></center>\n<p>\r\n\t      </p>\n</td>\r\n\t     </tr></table>",
       "text_content": "The program creates a picture and then progressively blurs it.\r\n\r\n          \r\n\t  \t\r\n\t  \tOutput at start\r\n\t      \r\n              \r\n\t  \t\r\n\t  \tAfter several loops\r\n\t      \r\n\t     ",
-      "mdown_content": "The program creates a picture and then progressively blurs it.\n\n\n![Doc Image](pic_blur01.gif)\n\n**Output at start**\n\n\n\n![Doc Image](pic_blur02.gif)\n\n**After several loops**\n\n"
+      "mdown_content": "The program creates a picture and then progressively blurs it.  \n\n\n![Doc Image](pic_blur01.gif)\n\n**Output at start**\n\n\n\n![Doc Image](pic_blur02.gif)\n\n**After several loops**\n\n"
     },
     {
       "title": "Execute",
