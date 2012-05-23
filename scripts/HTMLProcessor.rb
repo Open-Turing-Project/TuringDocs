@@ -161,7 +161,7 @@ class Processor
 		!(manually_checked?(datastruct))
 	end
 	def file_name(file)
-		"#{@folder}/#{file}.#{@ext}"
+		File.expand_path("../#{@folder}/#{file}.#{@ext}", File.dirname(__FILE__))
 	end
 end
 class TemplateProcessor < Processor
@@ -209,14 +209,20 @@ class MarkdownHTMLProcessor < Processor
 	end
 end
 
-SKIP_CHECKED = true
-info = {:pages => [], :special => []}
-$status = JSON.parse(IO.read("status.json"), :symbolize_names => true)
+def relative(path)
+	File.expand_path(path, File.dirname(__FILE__))
+end
 
-mdownProcessor = MarkdownProcessor.new("scripts/mdownTemplate.erb",'markdown','md',SKIP_CHECKED)
+SKIP_CHECKED = true
+STATUS_FILE = relative("../status.json")
+INFO_FILE = relative("../info.json")
+info = {:pages => [], :special => []}
+$status = JSON.parse(IO.read(STATUS_FILE), :symbolize_names => true)
+
+mdownProcessor = MarkdownProcessor.new(relative("mdownTemplate.erb"),'markdown','md',SKIP_CHECKED)
 processors = {
 	markdown: mdownProcessor,
-	cleanhtml: TemplateProcessor.new("scripts/htmlTemplate.erb",'cleanhtml','html',false),
+	cleanhtml: TemplateProcessor.new(relative("htmlTemplate.erb"),'cleanhtml','html',false),
 	markdownhtml: MarkdownHTMLProcessor.new(mdownProcessor,'markdownhtml','html',SKIP_CHECKED),
 	json: Processor.new('json','json',false)
 }
@@ -243,12 +249,13 @@ Dir["html/*.html"].each.with_progress do |f|
 	end
 	# find the resources
 	unless datastruct[:dependencies].empty?
-		resources.concat(datastruct[:dependencies].map {|s| "html/#{s}"})
+		resources.concat(datastruct[:dependencies])
 	end
 end
 # copy the necessary resources
+resources.map! { |e| relative("../html/#{e}") }
 copy_resources_to.each do |folder|
-	FileUtils.cp resources, "#{folder}/"
+	FileUtils.cp resources, relative("../#{folder}/")
 end
 $status[:unchecked] ||= info[:pages]
 
@@ -258,5 +265,5 @@ def saveJSON(struct, file)
 		oFile.puts json
 	end
 end
-saveJSON($status,"status.json")
-saveJSON(info,"info.json")
+saveJSON($status,STATUS_FILE)
+saveJSON(info,INFO_FILE)
