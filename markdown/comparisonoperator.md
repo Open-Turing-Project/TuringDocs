@@ -2,13 +2,7 @@
 # comparisonOperator
 
 ## Syntax
-A _comparisonOperator_ is one of:   
--  **<**   _% Less than_   
--  **>**   _% Greater than_   
--  =   _% Equal_   
--  **<**=   _% Less than or equal; subset_   
--  **>**=   _% Greater than or equal; superset_   
--  **not=**   _% Not equal_
+A _comparisonOperator_ is one of:   (a) **<**   _% Less than_   (b) **>**   _% Greater than_   (c) =   _% Equal_   (d) **<**=   _% Less than or equal; subset_   (e) **>**=   _% Greater than or equal; superset_   (f) **not=**   _% Not equal_
 
 ## Description
 A comparison operator is placed between two values to determine their equality or ordering. For example, 7 > 2 is true and so is "Adam" < "Cathy". The comparison operators can be applied to numbers as well as to enumerated types. They can also be applied to strings to determine the _ordering_ between strings (see the **string** type for details). Arrays, records, unions and collections cannot be compared. Boolean values (**true** and **false**) can be compared only for equality (= and **not=**); the same is true of  **pointer** values. Set values can be compared using <= and >=, which are the subset and superset operators. The **not=** operator can be written as ~=.

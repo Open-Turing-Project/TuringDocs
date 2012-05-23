@@ -44,7 +44,7 @@ In general, we suggest **Beginner** mode for grade 9 and 10 and**Regular** mode 
 
 To change the mode (or to make any other change to the system preferences), you must open a DOS window, **cd** to the directory in which the Turing executable (**turing.exe**) is located and issue the command:
 
-**turing  -admin**
+**turingÂ Â -admin**
 
 This will cause Turing to start in **Administrator mode**, displaying the following dialog box:
 
@@ -79,7 +79,7 @@ Note that if you are copying a number of different programs onto a single CD for
 
 Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or [chris@hsa.on.ca](mailto:chris@hsa.on.ca)## 5. Technical Support
 If you have problems, questions or suggestions about the Turing software, contact technical support at:  
-Telephone:   (416) 978-8363  
+Telephone: Â  (416) 978-8363  
 Toll free:  1-800-361-8324  
 Fax:  (416) 978-1509  
 E-mail:  [west@hsa.on.ca](mailto:west@hsa.on.ca)  

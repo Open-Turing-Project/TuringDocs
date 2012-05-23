@@ -2,17 +2,7 @@
 # expn
 
 ## Syntax
-An _expn_ is one of:   
--  _explicitConstant_     _% e.g.: 25_   
--  _variableReference_     _% e.g.: width_   
--  _constantReference_     _% e.g.: pi_   
--  _expn_ _infixOperator_ _expn_   _% e.g.: 3 **+** width_   
--  _prefixOperator_ _expn_   _% e.g.: **-** width_   
--  (_expn_)       _% e.g.: (width - 7)_   
--  _substring_       _% e.g.: s (3 .. 5)_   
--  _functionCall_     _% e.g.: sqrt (25)_   
--  _setConstructor_     _% e.g.: modes (4_, _3)_   
--  _enumeratedValue_     _% e.g.: color . red_
+An _expn_ is one of:   (a) _explicitConstant_     _% e.g.: 25_   (b) _variableReference_     _% e.g.: width_   (c) _constantReference_     _% e.g.: pi_   (d) _expn_ _infixOperator_ _expn_   _% e.g.: 3 **+** width_   (e) _prefixOperator_ _expn_   _% e.g.: **-** width_   (f) (_expn_)       _% e.g.: (width - 7)_   (g) _substring_       _% e.g.: s (3 .. 5)_   (h) _functionCall_     _% e.g.: sqrt (25)_   (i) _setConstructor_     _% e.g.: modes (4_, _3)_   (j) _enumeratedValue_     _% e.g.: color . red_
 
 ## Description
 An expression (_expn_) returns a value; in the general case, this may involve a calculation, such as addition, as in the expression:

@@ -10,9 +10,9 @@
 At the time of this writing, the following constants were defined:
 
 
-_cmProcessor_   return an encoding of the processor number.
-_cmFPU_   return 1 if there is an FPU installed, 0 if not.
-_cmOS_   return the current version number of the operating system (e.g. 6.07 = 607).
+_cmProcessor_   return an encoding of the processor number.  
+_cmFPU_   return 1 if there is an FPU installed, 0 if not.  
+_cmOS_   return the current version number of the operating system (e.g. 6.07 = 607).  
 
 
 

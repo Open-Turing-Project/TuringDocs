@@ -2,9 +2,7 @@
 # realn
 
 ## Syntax
-
--  **real4**     _% 4-byte real number_   
--  **real8**     _% 8-byte real number_
+(a) **real4**     _% 4-byte real number_   (b) **real8**     _% 8-byte real number_
 
 ## Description
 The **real_n_** (_n_-byte real number) types are machine-dependent types that occupy a specified number of bytes. By contrast, the **real** type is, in principle, a machine-independent and mathematical type (however, it overflows when the exponent of the value is too large or small and it has only a limited amount of precision).

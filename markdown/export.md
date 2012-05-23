@@ -36,10 +36,10 @@ The form of _howExport_ is:
 The form of _exportMethod_ is one of:
 
 
--    **var**  
--    **unqualified**  
--    **pervasive**  
--    **opaque**  
+(a)   **var**  
+(b)   **unqualified**  
+(c)   **pervasive**  
+(d)   **opaque**  
 
 
 The keyword **var** means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable _name_ is exported **var** from module _M_, _name_ can be changed from outside of _M_ by _M.name_ := "_Surprise!_".

@@ -2,33 +2,7 @@
 # statement
 
 ## Syntax
-A _statement_ is one of:   
--  _assignmentStatement_   _% variableReference := expn_   
--  _openStatement_   _% **open** &#133;_   
--  _closeStatement_   _% **close** &#133;_   
--  _putStatement_   _% **put** &#133;_   
--  _getStatement_   _% **get** &#133;_   
--  _readStatement_   _% **read** &#133;_   
--  _writeStatement_   _% **write** &#133;_   
--  _seekStatement_   _% **seek** &#133;_   
--  _tellStatement_   _% **tell** &#133;_   
--  _forStatement_   _% **for** &#133; **end for**_   
--  _loopStatement_   _% **loop** &#133; **end loop**_   
--  **exit** [ **when** _trueFalseExpn_ ]   
--  _ifStatement_   _% **if** &#133; **end if**_   
--  _caseStatement_   _% **case** &#133; **end case**_   
--  **assert** _trueFalseExpn_   
--  **begin**       _statementsAndDeclarations_     **end**   
--  _procedureCall_   _% procedureId [(parameters)]_   
--  **return**   
--  **result** _expn_   
--  **new** [ _collectionId_ , ] _pointerVariableReference_   
--  **free** [ _collectionId_ , ] _pointerVariableReference_   
--  **tag** _unionVariableReference_ , _expn_   
--  _forkStatement_   _% **fork** &#133;_   
--  **signal** _variableReference_   
--  **wait** _variableReference_ [ , _expn_ ]   
--  **pause** _expn_   (aa) **quit** [ _guiltyParty_ ] [ : _quitReason_ ]   (bb) **unchecked**   (cc) **checked**
+A _statement_ is one of:   (a) _assignmentStatement_   _% variableReference := expn_   (b) _openStatement_   _% **open** &#133;_   (c) _closeStatement_   _% **close** &#133;_   (d) _putStatement_   _% **put** &#133;_   (e) _getStatement_   _% **get** &#133;_   (f) _readStatement_   _% **read** &#133;_   (g) _writeStatement_   _% **write** &#133;_   (h) _seekStatement_   _% **seek** &#133;_   (i) _tellStatement_   _% **tell** &#133;_   (j) _forStatement_   _% **for** &#133; **end for**_   (k) _loopStatement_   _% **loop** &#133; **end loop**_   (l) **exit** [ **when** _trueFalseExpn_ ]   (m) _ifStatement_   _% **if** &#133; **end if**_   (n) _caseStatement_   _% **case** &#133; **end case**_   (o) **assert** _trueFalseExpn_   (p) **begin**       _statementsAndDeclarations_     **end**   (q) _procedureCall_   _% procedureId [(parameters)]_   (r) **return**   (s) **result** _expn_   (t) **new** [ _collectionId_ , ] _pointerVariableReference_   (u) **free** [ _collectionId_ , ] _pointerVariableReference_   (v) **tag** _unionVariableReference_ , _expn_   (w) _forkStatement_   _% **fork** &#133;_   (x) **signal** _variableReference_   (y) **wait** _variableReference_ [ , _expn_ ]   (z) **pause** _expn_   (aa) **quit** [ _guiltyParty_ ] [ : _quitReason_ ]   (bb) **unchecked**   (cc) **checked**
 
 ## Description
 A _statement_ (or _command_) causes a particular action, for example, the _putStatement_:

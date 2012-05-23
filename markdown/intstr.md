@@ -12,7 +12,7 @@ The _width_ parameter must be non-negative. If _width_ is not large enough to re
 The string returned by **intstr** is of the form:
 
 
-{blank}[-]digit{digits}
+{blank}[-]digit{digits}  
 
 
 where {blank} means zero or more blanks, [-] means an optional minus sign, and digit{digit} means one or more digits. The leftmost digit is either non-zero or else a single zero digit. In other words, leading zeros are suppressed.

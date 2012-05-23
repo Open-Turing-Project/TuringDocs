@@ -8,8 +8,8 @@
 The **drawpic** procedure is used to copy of a rectangular picture onto the screen. The left bottom of the picture is placed at (_x_, _y_). In the common case, the buffer was initialized by calling **takepic**. The values of _picmode_ are:
 
 
-0:  Copy actual picture on screen.
-1:  Copy picture by XORing it onto the screen.
+0:  Copy actual picture on screen.  
+1:  Copy picture by XORing it onto the screen.  
 
 
 XORing a picture onto the screen twice leaves the screen as it was  (this is a convenient way to move images for animation). XORing a picture onto a background effectively superimposes the picture onto the background.

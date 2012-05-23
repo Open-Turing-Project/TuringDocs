@@ -23,7 +23,7 @@
 
 <p>The form of <em>numberOfCharacters</em> is one of:</p>
 
-<p>(a) <em>expn</em>   <em>% Integer value</em>
+<p>(a) <em>expn</em>   <em>% Integer value</em><br/>
 (b) *   <em>% Only in subprogram parameters</em></p>
 
 <p>The first form determines <em>n</em>. If the expression is a run time value, the type is considered to be <em>dynamic</em> <strong>char</strong>(<em>n</em>). The value of <em>n</em> must be at least 1. The second form is used only for subprogram parameters and uses the length of the actual parameter. This too, is considered to be a <em>dynamic</em> <strong>char</strong>(<em>n</em>) type. Dynamic <strong>char</strong>(<em>n</em>) types can only be passed to <strong>char</strong>(*) parameters. Dynamic <strong>char</strong>(<em>n</em>) types have the same restrictions as dynamic arrays. This implies they cannot be assigned as a whole and cannot appear in record and union types.</p>

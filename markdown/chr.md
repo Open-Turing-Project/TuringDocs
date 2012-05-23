@@ -10,7 +10,7 @@ The **chr** function is used to convert an integer to a character.The character 
 The **ord** function is the inverse of **chr**, so for any character _c_,:
 
 
-**chr**(**ord** (_c_)) = _c_.
+**chr**(**ord** (_c_)) = _c_.  
 
 
 

@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "The following types of widgets can be enabled or disabled:<p>\r\n</p>\n<table><tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td>Buttons, Check Boxes, Radio Buttons, Picture Buttons,<br>\n</td>\n</tr></table>\n<p>\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,<br>\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>\n<p>\r\n</p>",
       "text_content": " The following types of widgets can be enabled or disabled:\r\n Buttons, Check Boxes, Radio Buttons, Picture Buttons,\r\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,\r\nCanvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\r\n",
-      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n\nButtons, Check Boxes, Radio Buttons, Picture Buttons,\n\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\n"
+      "mdown_content": "The following types of widgets can be enabled or disabled:\n\n\nButtons, Check Boxes, Radio Buttons, Picture Buttons,  \n\n\nPicture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders\n"
     },
     {
       "title": "Status",

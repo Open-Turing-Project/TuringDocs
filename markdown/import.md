@@ -25,8 +25,8 @@ In this example, the type _T_ is imported into the _stack_ **module** and used a
 The _importItem_ is one of_:_
 
 
--  _id_  
--  _id_ **in** _fileName_  
+(a) _id_  
+(b) _id_ **in** _fileName_  
 
 
 The second form is used in OOT when the list is the import list  for a separate **unit** (or the main program), and the imported item is in a file whose name is different from the item's name, for example:
@@ -38,9 +38,9 @@ Parentheses are allowed around the items in an import lists, as in:
 There are various ways to import items, as determined by _howImport_. The form of _howImport_ is one of:
 
 
--  **var**  
--  **const**  
--  **forward**  
+(a) **var**  
+(b) **const**  
+(c) **forward**  
 
 
 Commonly the _howImport_ is omitted, which means the default access for the item is the same access as the item has. In other words, a read-write item that is imported without a _howImport_ is imported read-write. A read-only symbol that is imported without a _howImport_ is imported read-only.

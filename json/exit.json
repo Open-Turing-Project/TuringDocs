@@ -6,13 +6,13 @@
       "title": "Syntax",
       "raw_content": "An <i>exitStatement</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>exit</b> <b>when</b> trueFalseExpn</font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>exit</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An exitStatement is one of:\r\n (a)exit when trueFalseExpn (b)exit",
-      "mdown_content": "An _exitStatement_ is one of:   \n-  **exit** **when** trueFalseExpn   \n-  **exit**"
+      "mdown_content": "An _exitStatement_ is one of:   (a) **exit** **when** trueFalseExpn   (b) **exit**"
     },
     {
       "title": "Description",
       "raw_content": "An <b>exit</b> statement is used to stop the execution of a <b>loop</b> or <b>for</b> statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond <b>end</b> <b>loop</b> or <b>end</b> <b>for</b>. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as <b>if</b>.<p>\r\n</p>",
       "text_content": " An exit statement is used to stop the execution of a loop or for statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond end loop or end for. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as if.\r\n",
-      "mdown_content": "An **exit** statement is used to stop the execution of a **loop** or **for** statement. Form -  is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond **end** **loop** or **end** **for**. If it is false, the loop keeps on repeating. Form -  always causes the loop to terminate. This form is almost always used inside another conditional statement such as **if**.\n"
+      "mdown_content": "An **exit** statement is used to stop the execution of a **loop** or **for** statement. Form (a) is the most common. Here, the true/false expression is evaluated. If it is true, the loop is terminated and execution jumps down and continues just beyond **end** **loop** or **end** **for**. If it is false, the loop keeps on repeating. Form (b) always causes the loop to terminate. This form is almost always used inside another conditional statement such as **if**.\n"
     },
     {
       "title": "Example",

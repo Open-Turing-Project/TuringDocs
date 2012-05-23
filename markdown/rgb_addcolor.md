@@ -16,7 +16,7 @@ _newColor_ would be set to the color added, or 1 if the attempt to add a color f
 This program adds a palette of 16 blues to the end of the color palette.
 
 
-**Details**   **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.
+**Details**   **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.  
 
 
         var clr : int

@@ -1,11 +1,11 @@
 # Run Window Character Set
 The Turing character set and their ASCII values
 
-chr -  = backspacechr -  = tabchar (10) = newline
+chr (8) = backspacechr (9) = tabchar (10) = newline
 
 
 
-You can also get (on most systems), the MS-DOS character set by usingthe command `setscreen ("msdos")`.This is the characterset after the `setscreen ("msdos")` command was given.
+You can also get (on most systems), the MS-DOS character set by usingthe command `setscreenÂ ("msdos")`.This is the characterset after the `setscreenÂ ("msdos")` command was given.
 
 
 

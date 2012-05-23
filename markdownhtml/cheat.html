@@ -2,18 +2,15 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>typeCheat</em> is one of: <br/>
--  <strong>cheat</strong> (<em>targetType</em>, <em>expn</em> <strong>[</strong> : <em>sizeSpec</em> <strong>]</strong> ) <br/>
--  <strong>#</strong> <em>expn</em> <br/>
--  <em>id</em> : <strong>cheat</strong> <em>typeSpec</em></p>
+<p>A <em>typeCheat</em> is one of:   (a) <strong>cheat</strong> (<em>targetType</em>, <em>expn</em> <strong>[</strong> : <em>sizeSpec</em> <strong>]</strong> )   (b) <strong>#</strong> <em>expn</em>   (c) <em>id</em> : <strong>cheat</strong> <em>typeSpec</em></p>
 
 <h2>Description</h2>
 
 <p>A type cheat interprets the representation (bits) of one type as another type. Type cheats are dirty (machine-dependent) and sometimes dangerous (arbitrary corruption) and should be used only by programmers who know the underlying computer representation of values.</p>
 
-<p>Form -  is a short form type cheat in which the target type is a natural number.</p>
+<p>Form (b) is a short form type cheat in which the target type is a natural number.</p>
 
-<p>Form -  is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as <em>typeSpec</em>.</p>
+<p>Form (c) is used as a parameter in a subprogram declaration. It causes whatever is passed in to the parameter to be interpreted as <em>typeSpec</em>.</p>
 
 <h2>Example</h2>
 
@@ -30,18 +27,15 @@
 
 <p>The form of <em>targetType</em> must be one of:</p>
 
-<ul>
-<li> [ <em>id</em> . ] <em>typeId</em></li>
-<li> <strong>int</strong>, <strong>int1</strong>, <strong>int2</strong> or <strong>int4</strong></li>
-<li> <strong>nat</strong>, <strong>nat1</strong>, <strong>nat2</strong> or <strong>nat4</strong></li>
-<li> <strong>boolean</strong></li>
-<li> <strong>char</strong> [ (<em>numberOfCharacters</em> ) ]</li>
-<li> <strong>string</strong> [ (<em>maximumLength</em> ) ]</li>
-<li> <strong>addressint</strong></li>
-</ul>
+<p>(a)   [ <em>id</em> . ] <em>typeId</em><br/>
+(b)   <strong>int</strong>, <strong>int1</strong>, <strong>int2</strong> or <strong>int4</strong><br/>
+(c)   <strong>nat</strong>, <strong>nat1</strong>, <strong>nat2</strong> or <strong>nat4</strong><br/>
+(d)   <strong>boolean</strong><br/>
+(e)   <strong>char</strong> [ (<em>numberOfCharacters</em> ) ]<br/>
+(f)   <strong>string</strong> [ (<em>maximumLength</em> ) ]<br/>
+(g)   <strong>addressint</strong></p>
 
-
-<p>In form -  the beginning identifier <em>id</em> must be the name of a module, monitor or class that exports the <em>typeId</em>. Each of <em>numberOfCharacters</em> and <em>maximumLength</em> must be compile time integer expressions.</p>
+<p>In form (a) the beginning identifier <em>id</em> must be the name of a module, monitor or class that exports the <em>typeId</em>. Each of <em>numberOfCharacters</em> and <em>maximumLength</em> must be compile time integer expressions.</p>
 
 <p>If the <em>expn</em> in a type cheat is a variable reference and the <em>sizeSpec</em> is omitted, the type cheat is considered to be a variable whose type is <em>targetType</em>. This allows, for example, the type cheat to be assigned to, as in:</p>
 
@@ -57,7 +51,7 @@
 
 <h2>Example</h2>
 
-<p>Set the second character of <em>d</em> so it has the numeric representation 24. In general, if <em>c</em> is a character, then #<em>c</em> = <strong>ord</strong><em>- </em>. Note that #<em>c</em> can have a number value assigned to it, but _ord- _ cannot.</p>
+<p>Set the second character of <em>d</em> so it has the numeric representation 24. In general, if <em>c</em> is a character, then #<em>c</em> = <strong>ord</strong><em>(c)</em>. Note that #<em>c</em> can have a number value assigned to it, but <em>ord(c)</em> cannot.</p>
 
 <pre><code>    var d : char (3)
     #d (2) := 24        % Same as d(2) := chr(24)

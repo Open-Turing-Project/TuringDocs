@@ -46,7 +46,7 @@ The **char** type differs from the **string**(1) type in the following way: **ch
 The **char** type is an index type and can be used, for example, as subscripts, **for** ranges and **case** labels. For example, this declaration
 
 
-**var** _charCounts_ : a**rray** **char** **of** **int**
+**var** _charCounts_ : a**rray** **char** **of** **int**  
 
 
 creates an array whose subscripts are characters.

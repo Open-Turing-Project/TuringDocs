@@ -2,10 +2,7 @@
 # natn
 
 ## Syntax
-
--  **nat1**     _% 1-byte natural number_   
--  **nat2**     _% 2-byte natural number_   
--  **nat4**     _% 4-byte natural number_
+(a) **nat1**     _% 1-byte natural number_   (b) **nat2**     _% 2-byte natural number_   (c) **nat4**     _% 4-byte natural number_
 
 ## Description
 The **nat_n_** (_n_-byte natural number) types are machine-dependent  types that occupy a specified number of bytes. By contrast, the **nat** type is in principle a machine-independent and mathematical type (it overflows, however, when the value is too large or small, that is, when the value does not fit into 4 bytes).

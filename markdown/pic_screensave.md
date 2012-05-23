@@ -12,7 +12,7 @@ The picture saved to the file is the portion of the screen defined by the rectan
 The _fileName_parameter must give the format of the file:
 
 
-BMP files   "BMP:filename" or "filename.BMP"
+BMP files   "BMP:filename" or "filename.BMP"  
 
 
 

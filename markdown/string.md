@@ -2,13 +2,7 @@
 # string
 
 ## Syntax
-A _stringComparison_ is one of:   
--  _stringExpn_ = _stringExpn_   
--  _stringExpn_ **not=** _stringExpn_   
--  _stringExpn_ **>** _stringExpn_   
--  _stringExpn_ **<** _stringExpn_   
--  _stringExpn_ **>**= _stringExpn_   
--  _stringExpn_ **<**= _stringExpn_
+A _stringComparison_ is one of:   (a) _stringExpn_ = _stringExpn_   (b) _stringExpn_ **not=** _stringExpn_   (c) _stringExpn_ **>** _stringExpn_   (d) _stringExpn_ **<** _stringExpn_   (e) _stringExpn_ **>**= _stringExpn_   (f) _stringExpn_ **<**= _stringExpn_
 
 ## Description
 Strings (_stringExpns_) can be compared for equality (= and **not=**) and for ordering (>, <, >= and <=).

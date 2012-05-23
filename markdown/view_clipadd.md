@@ -41,6 +41,6 @@ Exported qualified.
 This means that you can only call the function by calling **View.ClipAdd**, not by calling **ClipAdd**.
 
 
-**See also**   **View.ClipSet** and **View.ClipOff** functions.
+**See also**   **View.ClipSet** and **View.ClipOff** functions.  
 
 

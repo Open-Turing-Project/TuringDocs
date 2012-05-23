@@ -1,0 +1,23 @@
+ <?xml version="1.0" encoding="utf-8" ?>
+ <QHelpCollectionProject version="1.0">
+     <assistant>
+         <title>Turing Help</title>
+         <startPage>qthelp://com.mycompany.1_0_0/doc/index.html</startPage>
+         <applicationIcon>icon.png</applicationIcon>
+         <enableFilterFunctionality>false</enableFilterFunctionality>
+         <enableDocumentationManager>false</enableDocumentationManager>
+         <enableAddressBar>false</enableAddressBar>
+         <cacheDirectory base="default">openturing/turinghelpcache</cacheDirectory>
+     </assistant>
+     <docFiles>
+         <generate>
+             <file>
+                 <input>turing_help.qhp</input>
+                 <output>turing_help.qch</output>
+             </file>
+         </generate>
+         <register>
+             <file>turing_help.qch</file>
+         </register>
+     </docFiles>
+ </QHelpCollectionProject>

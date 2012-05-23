@@ -23,7 +23,7 @@ Each actual non-**var** parameter must be assignable to the type of its correspo
 
 A function must finish by executing a **result** statement, which produces the function's value. In the above example, the **result** statement computes and returns the value 2.0 * _x_.
 
-In principle, a function -  should not change any variables outside of itself (global variables) or -  should not have **var** parameters. In other words, it should have no _side effects_. The original implementation prevented -  and -  and thereby prevented function side effects. Current implementations of Turing do not enforce this restriction.
+In principle, a function (1) should not change any variables outside of itself (global variables) or (2) should not have **var** parameters. In other words, it should have no _side effects_. The original implementation prevented (1) and (2) and thereby prevented function side effects. Current implementations of Turing do not enforce this restriction.
 
 The upper bounds of arrays and strings that are parameters may be declared to be an asterisk (__*__), meaning the bound is that of the actual parameter. See _paramDeclaration_ for details about parameters.
 

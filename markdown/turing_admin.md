@@ -40,7 +40,7 @@ The shortcut's working directory can be modified bychanging it's start-in or wor
 This requires changing the shortcut's properties requireswrite access to the shortcut.  Note that commercial menu front-ends have their own way of setting the start-in directory of applications.
 
 
-- If the "My Documents" folder is mapped to the students home directory, you can set the preferences to make Turing use the "My Documents" folder as the start-in folder.  Note that  this option is the preferred option for home users, where the "My Documents" folder is the home directory.
+- If the "My Documents" folder is mapped to the students home directory, you can set the preferences to make Turing use the "MyÂ Documents" folder as the start-in folder.  Note that  this option is the preferred option for home users, where the "MyÂ Documents" folder is the home directory.
 
 
 
@@ -96,15 +96,15 @@ Further information can be found in [Parallel Port and Turing 4]().
 ## 3. Changing System Preferences
 Turing uses a two level preference model.  There is a central set ofpreferences that are kept in
 
-**    [Turing Directory]\Support\Ini\turing_admin.ini**
+**Â Â Â Â [Turing Directory]\Support\Ini\turing_admin.ini**
 
 These preferences are the same for all users and are called the **SystemPreferences**.  A second set of preferences is stored in each student's home directory in a file called **turing.ini**.  These preferences override the central preferences and allow students to individually modify the behaviour of Turing.
 
 When a student modifies the preferences, the **turing.ini** file in the student's home directory is changed. To change the System preferences (i.e. the contents of the **turing_admin.ini** file), Turing must be startedup with the command line
 
-**    turing  -admin**
+**Â Â Â Â turingÂ Â -admin**
 
-This can be done by starting up a DOS window, doing a **cd** to thedirectory in which **turing.exe** is stored and then typing **turing  -admin**. The user must have write access to the directory in which the **turing_admin.ini** file is stored.
+This can be done by starting up a DOS window, doing a **cd** to thedirectory in which **turing.exe** is stored and then typing **turingÂ Â -admin**. The user must have write access to the directory in which the **turing_admin.ini** file is stored.
 
 When Turing is launched, it will display a message box on start-up indicatingthat it is in **Administrator mode** and where the preferences will bestored.
 
@@ -264,7 +264,7 @@ Note that if you are copying a number of different programs onto a single CD for
 
 Permanent student redistribution licenses can be purchased for $500-$750 for most schools. If you are interested in purchasing a student redistribution license, contact Chris Stephenson at (416) 978-6476 or [chris@hsa.on.ca](mailto:chris@hsa.on.ca)## 9. Technical Support
 If you have problems, questions or suggestions about the Turing software, contact technical support at:  
-Telephone:   (416) 978-8363  
+Telephone: Â  (416) 978-8363  
 Toll free:  1-800-361-8324  
 Fax:  (416) 978-1509  
 E-mail:  [west@hsa.on.ca](mailto:west@hsa.on.ca)  

@@ -12,7 +12,7 @@ The _width_ parameter must be non-negative. If _width_ is not large enough to re
 The string returned by **natstr** is of the form:
 
 
-{blank}digit{digits}
+{blank}digit{digits}  
 
 
 where {blank} means zero or more blanks and digit{digit} means one or more digits. The leftmost digit is either non-zero, or a single zero digit; in other words, leading zeros are suppressed.

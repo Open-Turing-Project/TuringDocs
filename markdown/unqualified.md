@@ -7,6 +7,6 @@ When an identifier _x_ is exported from a module, monitor or class _M_ using the
         export ~. x
 ## See als
 
-o   **export** list.
+o   **export** list.  
 
 

@@ -21,7 +21,7 @@
       ],
       "raw_content": "This program gets the components of all the available colors.<p>\r\n</p>\r\n<table><tr valign=\"top\">\n<td><b>Details</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>RGB.GetColour</b> is an alternate spelling for <b>RGB.GetColor</b>.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " This program gets the components of all the available colors.\r\n\r\nDetails RGB.GetColour is an alternate spelling for RGB.GetColor.\r\n",
-      "mdown_content": "This program gets the components of all the available colors.\n\n\n**Details**   **RGB.GetColour** is an alternate spelling for **RGB.GetColor**.\n\n"
+      "mdown_content": "This program gets the components of all the available colors.\n\n\n**Details**   **RGB.GetColour** is an alternate spelling for **RGB.GetColor**.  \n\n"
     },
     {
       "title": "Status",

@@ -30,7 +30,7 @@ In this explanation of _functionCall_, we have up to this point ignored the poss
 
 In other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the _functionCall_ is one of:
 
-In these _p_ must be a pointer value that locates an object in the class. Form -  is a short form for form - .
+In these _p_ must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).
 
         moduleId . functionId [ ( expn {, expn } ) ]        (a) classId ( p ) . functionId [ ( [ expn {, expn } ] ) ]
         (b) p -> functionId [ ( [ expn {, expn } ] ) ]

@@ -2,9 +2,7 @@
 # explicitTrueFalseConstant
 
 ## Syntax
-An _explicitTrueFalseConstant_ is one of:   
--  **true**   
--  **false**
+An _explicitTrueFalseConstant_ is one of:   (a) **true**   (b) **false**
 
 ## Example
 The following determines if string _s_ contains a period. After the **for** statement, _found_ will be **true** if there is a period in _s_.

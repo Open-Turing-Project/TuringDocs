@@ -62,10 +62,10 @@ OperatorOperationResult Type
 # Type cheat **nat**  
 ## Operator Short Forms
 These can be used in place of the above notation.  
-**not**   ~  
-**not**=   ~=  
-**not in**   ~**in and**   &  
-**or**   |   
+**not**   ~  
+**not**=   ~=  
+**not in**   ~**in and**   &  
+**or**   |   
 
 ## Operator Precedence
 Highest precedence operators first.- **, ^, #

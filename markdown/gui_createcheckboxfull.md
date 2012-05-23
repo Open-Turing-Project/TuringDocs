@@ -64,7 +64,7 @@ When a check box is not enabled, the label beside the check box is grayed out an
 The following GUI subprograms can be called with a check box as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SetLabel**, **GUI.GetCheckBox**, **GUI.SetCheckBox**
+**GUI.Show**, **GUI.Hide**, **GUI.Enable**, **GUI.Disable**, **GUI.Dispose**, **GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**, **GUI.GetHeight**, **GUI.SetPosition**, **GUI.SetSize**, **GUI.SetPositionAndSize**, **GUI.SetLabel**, **GUI.GetCheckBox**, **GUI.SetCheckBox**  
 
 
 

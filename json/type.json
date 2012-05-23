@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>typeDeclaration</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>type</b> <i>id</i> : <i>typeSpec</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>type</b> <i>id</i> : <b>forward</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A typeDeclaration is one of:\r\n (a)type id : typeSpec (b)type id : forward",
-      "mdown_content": "A _typeDeclaration_ is one of:   \n-  **type** _id_ : _typeSpec_   \n-  **type** _id_ : **forward**"
+      "mdown_content": "A _typeDeclaration_ is one of:   (a) **type** _id_ : _typeSpec_   (b) **type** _id_ : **forward**"
     },
     {
       "title": "Description",

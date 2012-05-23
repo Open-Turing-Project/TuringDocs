@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>compilationUnit</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\">[ <i>importList</i> ] <i>mainProgram</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>moduleDeclaration</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(c)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>monitorDeclaration</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(d)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>unit</b> <i>classDeclaration</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A compilationUnit is one of:\r\n (a)[ importList ] mainProgram (b)unit moduleDeclaration (c)unit monitorDeclaration (d)unit classDeclaration",
-      "mdown_content": "A _compilationUnit_ is one of:   \n-  [ _importList_ ] _mainProgram_   \n-  **unit** _moduleDeclaration_   \n-  **unit** _monitorDeclaration_   \n-  **unit** _classDeclaration_"
+      "mdown_content": "A _compilationUnit_ is one of:   (a) [ _importList_ ] _mainProgram_   (b) **unit** _moduleDeclaration_   (c) **unit** _monitorDeclaration_   (d) **unit** _classDeclaration_"
     },
     {
       "title": "Description",

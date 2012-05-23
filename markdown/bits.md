@@ -25,8 +25,8 @@ Set bit 7 in variable _n_ to be 1. As a result, _n_ will equal 2#10000000.
 The form of _subrange_ must be one of:
 
 
-(a)   _typeSpec_   _% Subrange type_
-(b)   _compileTimeIntegerExpression_
+(a)   _typeSpec_   _% Subrange type_  
+(b)   _compileTimeIntegerExpression_  
 
 
 In form (a) the subrange type specifies a range from _L_ to _M_ (for _least_ and _most_ significant). This is a little confusing because the subrange is written _L_ .. _M_ with _L_ on the left and _M_ on the right, but in a number, the least significant bit is on the right and the most significant is on the left. The subrange type can be either the name of a type, for example _T12_, or an explicit subrange, for example 3 .. 7. The values in the explicit subrange must be compile time values.

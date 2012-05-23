@@ -85,7 +85,7 @@ When a text field is not enabled, the text field cannot be made active and the t
 The following GUI subprograms can be called with a text box as the _widgetID_ parameter:
 
 
-**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**,**GUI.SetSize**, **GUI.SetPositionAndSize**,**GUI.GetText**, **GUI.SetText**, **GUI.SetSelection**, **GUI.SetActive**,**GUI.SetEchoChar**
+**GUI.Show**, **GUI.Hide**, **GUI.Dispose**,**GUI.GetX**, **GUI.GetY**, **GUI.GetWidth**,**GUI.GetHeight**, **GUI.SetPosition**,**GUI.SetSize**, **GUI.SetPositionAndSize**,**GUI.GetText**, **GUI.SetText**, **GUI.SetSelection**, **GUI.SetActive**,**GUI.SetEchoChar**  
 
 ## Status
 Exported qualified.

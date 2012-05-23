@@ -2,9 +2,7 @@
 
 <h2>Syntax</h2>
 
-<p>An <em>externalDeclaration</em> is one of: <br/>
--  <strong>external</strong> [ <em>overrideName</em> ] <em>subprogramHeader</em> <br/>
--  <strong>external</strong> [ <em>addressSpec</em> ] <strong>var</strong> <em>id</em> [ : <em>typeSpec</em> ] [ :=<em>expn</em> ]</p>
+<p>An <em>externalDeclaration</em> is one of:   (a) <strong>external</strong> [ <em>overrideName</em> ] <em>subprogramHeader</em>   (b) <strong>external</strong> [ <em>addressSpec</em> ] <strong>var</strong> <em>id</em> [ : <em>typeSpec</em> ] [ :=<em>expn</em> ]</p>
 
 <h2>Description</h2>
 
@@ -12,9 +10,9 @@
 
 <h2>Details</h2>
 
-<p>In form -  the optional <em>overrideName</em> must be an explicit string constant, such as "<em>printf</em>". If it is omitted, the external name is the name in the <em>subprogramHeader</em>. See <em>subprogramHeader</em>.</p>
+<p>In form (a) the optional <em>overrideName</em> must be an explicit string constant, such as "<em>printf</em>". If it is omitted, the external name is the name in the <em>subprogramHeader</em>. See <em>subprogramHeader</em>.</p>
 
-<p>The current implementation does not support form - . This form is documented here in case a future version supports it. The <em>addressSpec</em> is a compile time expression (its value must fit in the range of the <strong>addressint</strong> type) or is a compile time string value. If the <em>addressSpec</em> is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of <em>typeSpec</em> or <em>expn</em> must be present.</p>
+<p>The current implementation does not support form (b). This form is documented here in case a future version supports it. The <em>addressSpec</em> is a compile time expression (its value must fit in the range of the <strong>addressint</strong> type) or is a compile time string value. If the <em>addressSpec</em> is omitted, the identifier is the name of an external variable. This name represents an implementation-dependent method of locating a variable. At least one of <em>typeSpec</em> or <em>expn</em> must be present.</p>
 
 <p>Declaring variables at absolute addresses is useful for device management in computer architectures with memory mapped device registers. External variables declared to be <strong>int</strong> or <strong>nat</strong> will by default be checked for initialization. To avoid this check, declare them to be <strong>int4</strong> or <strong>nat4</strong>.</p>
 

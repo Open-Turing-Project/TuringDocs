@@ -2,11 +2,7 @@
 # body
 
 ## Syntax
-A _bodyDeclaration_ is one of:   
--  **body** **procedure** _procedureId_       _statementsAndDeclarations_     **end** _procedureId_   
--  **body** **function** _functionId_       _statementsAndDeclarations_     **end** _functionId_   
--  **body procedure** _id_ [(_paramDeclaration_             {, _paramDeclaration_ })]       _statementsAndDeclarations_     **end** _id_   
--  **body function** _id_ [ ( [_paramDeclaration_ {,         _paramDeclaration_ } ]) ] : _typeSpec_       _statementsAndDeclarations_     **end** _id_
+A _bodyDeclaration_ is one of:   (a) **body** **procedure** _procedureId_       _statementsAndDeclarations_     **end** _procedureId_   (b) **body** **function** _functionId_       _statementsAndDeclarations_     **end** _functionId_   (c) **body procedure** _id_ [(_paramDeclaration_             {, _paramDeclaration_ })]       _statementsAndDeclarations_     **end** _id_   (d) **body function** _id_ [ ( [_paramDeclaration_ {,         _paramDeclaration_ } ]) ] : _typeSpec_       _statementsAndDeclarations_     **end** _id_
 
 ## Description
 A body declaration is used to resolve either a forward subprogram or a deferred subprogram.

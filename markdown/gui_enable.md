@@ -22,7 +22,7 @@ See **GUI.Disable** for an example of **GUI.Enable**.
 The following types of widgets can be enabled or disabled:
 
 
-Buttons, Check Boxes, Radio Buttons, Picture Buttons,
+Buttons, Check Boxes, Radio Buttons, Picture Buttons,  
 
 
 Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders

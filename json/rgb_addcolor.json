@@ -24,7 +24,7 @@
       ],
       "raw_content": "This program adds a palette of 16 blues to the end of the color palette.<p>\r\n</p>\r\n<table><tr valign=\"top\">\n<td><b>Details</b></td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>RGB.AddColour</b> is an alternate spelling for <b>RGB.AddColor</b>.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": " This program adds a palette of 16 blues to the end of the color palette.\r\n\r\nDetails RGB.AddColour is an alternate spelling for RGB.AddColor.\r\n",
-      "mdown_content": "This program adds a palette of 16 blues to the end of the color palette.\n\n\n**Details**   **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.\n\n"
+      "mdown_content": "This program adds a palette of 16 blues to the end of the color palette.\n\n\n**Details**   **RGB.AddColour** is an alternate spelling for **RGB.AddColor**.  \n\n"
     },
     {
       "title": "Status",

@@ -8,13 +8,13 @@
 The **Sys.FetchArg** function is used to access the _i_-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using
 
 
-:r file1 file2
+:r file1 file2  
 
 
 then **Sys.FetchArg** (2) will return "file2". If a program called _prog.x_ is run under UNIX using this command:
 
 
-prog.x file1 file2
+prog.x file1 file2  
 
 
 the value of **Sys.FetchArg**(2) will similarly be "file2".

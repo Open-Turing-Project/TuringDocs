@@ -17,7 +17,7 @@ This program outputs 9.83.
 The **abs** function accepts numbers that are either **int**'s or **real**'s. The type of the result is the same type as the accepted number. The **abs** function is often used to see if one number _x_ is within a given distance _d_ of another number _y_; for example:
 
 
-**if** **abs** (_x_ - _y_) **<**= _d_ **then** &#133;
+**if** **abs** (_x_ - _y_) **<**= _d_ **then** &#133;  
 
 
 

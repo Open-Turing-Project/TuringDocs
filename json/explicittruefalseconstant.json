@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "An <i>explicitTrueFalseConstant</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>true</b></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><b>false</b></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " An explicitTrueFalseConstant is one of:\r\n (a)true (b)false",
-      "mdown_content": "An _explicitTrueFalseConstant_ is one of:   \n-  **true**   \n-  **false**"
+      "mdown_content": "An _explicitTrueFalseConstant_ is one of:   (a) **true**   (b) **false**"
     },
     {
       "title": "Example",

@@ -6,7 +6,7 @@
       "title": "Syntax",
       "raw_content": "A <i>namedType</i> is one of:<p>\r\n</p>\n<table>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(a)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>typeId</i></font></td>\n</tr>\n<tr valign=\"top\">\n<td width=\"40\">&nbsp;</td>\n<td width=\"40\"><font size=\"+1\">(b)</font></td>\n<td colspan=\"7\"><font size=\"+1\"><i>moduleId</i> . <i>typeId</i></font></td>\n</tr>\n</table>\n<p></p>",
       "text_content": " A namedType is one of:\r\n (a)typeId (b)moduleId . typeId",
-      "mdown_content": "A _namedType_ is one of:   \n-  _typeId_   \n-  _moduleId_ . _typeId_"
+      "mdown_content": "A _namedType_ is one of:   (a) _typeId_   (b) _moduleId_ . _typeId_"
     },
     {
       "title": "Description",
@@ -27,7 +27,7 @@
       "title": "Details",
       "raw_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.<p>\r\nArrays whose bounds are not known at compile time cannot be named.</p>\n<p>\r\n</p>",
       "text_content": " Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\r\nArrays whose bounds are not known at compile time cannot be named.\r\n",
-      "mdown_content": "Form -  is the most common kind of named type. Form -  is used when the type name has been exported from a module.\n\nArrays whose bounds are not known at compile time cannot be named.\n"
+      "mdown_content": "Form (a) is the most common kind of named type. Form (b) is used when the type name has been exported from a module.\n\nArrays whose bounds are not known at compile time cannot be named.\n"
     }
   ],
   "dependencies": [

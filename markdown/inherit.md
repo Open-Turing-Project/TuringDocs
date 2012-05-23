@@ -41,8 +41,8 @@ Objects of the inherited class _stackWithDepth_ are like objects of the parent c
 An _inheritItem_ is one of:
 
 
--  _id_  
--  _id_ **in** _fileName_  
+(a) _id_  
+(b) _id_ **in** _fileName_  
 
 
 The second form is used when the inherit clause is for a separate **unit** and the imported item is in a file whose name is different from the item's name, for example:

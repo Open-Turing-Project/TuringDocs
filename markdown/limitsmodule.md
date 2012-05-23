@@ -17,7 +17,7 @@ All routines in the Limits module are exported qualified (and thus must be prefa
 [**maxnat**](limits_maxnat.html)   The maximum natural number in Turing (exported unqualified).  
 
 
-**Real numbers are represented in Turing  as:****f * (radix ** e)   or  0****where for non-zero f:****(1 / radix) <= abs -  and abs -  < 1.0****minexp <= e and e <= maxexp**.
+**Real numbers are represented in Turing  as:****f * (radix ** e)   or  0****where for non-zero f:****(1 / radix) <= abs (f) and abs (f) < 1.0****minexp <= e and e <= maxexp**.
 
 
 **Radix**   The "radix" (usually 2).  

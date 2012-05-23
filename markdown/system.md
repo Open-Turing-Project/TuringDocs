@@ -61,17 +61,17 @@ This program uses chaining to launch one of several possible programs based on u
 Here are the possible errors under PC-Turing
 
 
--1   Not enough memory to load COMMAND.COM
--2   Not enough memory to run command
--3   Argument list greater than 128 bytes or environment info
+-1   Not enough memory to load COMMAND.COM  
+-2   Not enough memory to run command  
+-3   Argument list greater than 128 bytes or environment info  
 
-is greater than 32k
+is greater than 32k  
 
--4   Couldn't find COMMAND.COM
--5   COMMAND.COM corrupt
--6   -noshell option is selected, the system procedure is
+-4   Couldn't find COMMAND.COM  
+-5   COMMAND.COM corrupt  
+-6   -noshell option is selected, the system procedure is  
 
-disallowed
+disallowed  
 
 
 

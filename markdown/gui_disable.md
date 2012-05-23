@@ -53,7 +53,7 @@ The three color radio buttons are enabled only when the color check box is selec
 The following types of widgets can be enabled or disabled:
 
 
-Buttons, Check Boxes, Radio Buttons, Picture Buttons,
+Buttons, Check Boxes, Radio Buttons, Picture Buttons,  
 
 
 Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders

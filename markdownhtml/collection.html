@@ -2,9 +2,7 @@
 
 <h2>Syntax</h2>
 
-<p>A <em>collectionDeclaration</em> is one of: <br/>
--  <strong>var</strong> <em>id</em> { , <em>id</em> } : <strong>collection</strong> <strong>of</strong> <em>typeSpec</em> <br/>
--  <strong>var</strong> <em>id</em> { , <em>id</em> } : <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></p>
+<p>A <em>collectionDeclaration</em> is one of:   (a) <strong>var</strong> <em>id</em> { , <em>id</em> } : <strong>collection</strong> <strong>of</strong> <em>typeSpec</em>   (b) <strong>var</strong> <em>id</em> { , <em>id</em> } : <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></p>
 
 <h2>Description</h2>
 
@@ -39,10 +37,7 @@
 
 <p>The syntax of a <em>collectionDeclaration</em> presented above has been simplified by leaving out <strong>unchecked</strong> collections. With this feature, a <em>collectionDeclaration</em> is one of:</p>
 
-<ul>
-<li><strong>var</strong> <em>id</em> { , <em>id</em> } : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <em>typeSpec</em></li>
-<li><strong>var</strong> <em>id</em> { , <em>id</em> } : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></li>
-</ul>
-
+<p>(a) <strong>var</strong> <em>id</em> { , <em>id</em> } : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <em>typeSpec</em><br/>
+(b) <strong>var</strong> <em>id</em> { , <em>id</em> } : [ <strong>unchecked</strong> ] <strong>collection</strong> <strong>of</strong> <strong>forward</strong> <em>typeId</em></p>
 
 <p>When <strong>unchecked</strong> is specified, the checking to verify that pointers actually locate elements is removed. This checking is done using a "time stamp" attached to each element and  pointer, and making sure that these match with each other. When <strong>unchecked</strong> is specified, the execution is dangerous, but faster and smaller, and the pointers become simply machine addresses (as in C).</p>

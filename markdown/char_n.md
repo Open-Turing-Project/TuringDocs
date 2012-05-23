@@ -20,8 +20,8 @@ The type **char**(_n_) is generally more difficult to use than the **string** ty
 The form of _numberOfCharacters_ is one of:
 
 
-(a) _expn_   _% Integer value_
-(b) *   _% Only in subprogram parameters_
+(a) _expn_   _% Integer value_  
+(b) *   _% Only in subprogram parameters_  
 
 
 The first form determines _n_. If the expression is a run time value, the type is considered to be _dynamic_ **char**(_n_). The value of _n_ must be at least 1. The second form is used only for subprogram parameters and uses the length of the actual parameter. This too, is considered to be a _dynamic_ **char**(_n_) type. Dynamic **char**(_n_) types can only be passed to **char**(*) parameters. Dynamic **char**(_n_) types have the same restrictions as dynamic arrays. This implies they cannot be assigned as a whole and cannot appear in record and union types.

@@ -6,7 +6,7 @@
 
 <h2>Description</h2>
 
-<p>An array consists of a number of elements. The <em>typeSpec</em> gives the type of these elements. There is one element for each item in the (combinations of) range-  of the <em>indexType- </em>. In the following example, the array called <em>marks</em> consists of 100 elements, each of which is an integer.</p>
+<p>An array consists of a number of elements. The <em>typeSpec</em> gives the type of these elements. There is one element for each item in the (combinations of) range(s) of the <em>indexType(s)</em>. In the following example, the array called <em>marks</em> consists of 100 elements, each of which is an integer.</p>
 
 <h2>Example</h2>
 
@@ -20,7 +20,7 @@
 
 <h2>Details</h2>
 
-<p>In the above example, <em>marks- _ is the </em>i<em>-th element of the </em>marks<em> array. We call </em>i<em> the </em>index<em> or </em>subscript<em> of </em>marks_. In Turing, a subscript is surrounded by parentheses, not by square brackets as is the case in the Pascal or C-like languages.</p>
+<p>In the above example, <em>marks(i)</em> is the <em>i</em>-th element of the <em>marks</em> array. We call <em>i</em> the <em>index</em> or <em>subscript</em> of <em>marks</em>. In Turing, a subscript is surrounded by parentheses, not by square brackets as is the case in the Pascal or C-like languages.</p>
 
 <h2>Example</h2>
 
@@ -74,11 +74,11 @@
 
 <p>The ends of the range of a subscript are called the <em>bounds</em> of the array. If these values are not known until run time, the array is said to be <em>dynamic</em>. In the above example, <em>height</em> is a dynamic array. Dynamic arrays can be declared as variables, as in the case for <em>height</em>. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using <strong>init</strong>.</p>
 
-<p>In the above example, <strong>upper</strong><em>- _ returns the size of </em>a_. See also <strong>upper</strong> and <strong>lower</strong>.</p>
+<p>In the above example, <strong>upper</strong><em>(a)</em> returns the size of <em>a</em>. See also <strong>upper</strong> and <strong>lower</strong>.</p>
 
 <p>In the declaration of an array parameter, the upper bound can be given as an asterisk (<strong>*</strong>), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from <em>height</em> in this example).</p>
 
-<p>You can have arrays of other types, for example arrays of record. If <em>R</em> is an array of records, then <em>R- .f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
+<p>You can have arrays of other types, for example arrays of record. If <em>R</em> is an array of records, then <em>R(i).f</em> is the way to access the <em>f</em> field of the <em>i</em>-th element of array <em>R</em>.</p>
 
 <h2>Details</h2>
 

@@ -15,7 +15,7 @@
       "title": "See als",
       "raw_content": "<table><tr valign=\"top\">\n<td>o</td>\n<td width=\"10\">&nbsp;</td>\n<td>\n<b>export</b> list.</td>\n</tr></table>\n<p>\r\n</p>",
       "text_content": "o export list.\r\n",
-      "mdown_content": "\no   **export** list.\n\n"
+      "mdown_content": "\no   **export** list.  \n\n"
     }
   ],
   "dependencies": [

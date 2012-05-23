@@ -12,7 +12,7 @@ The **RGB.GetColor** procedure returns the red, green and blue components to the
 This program gets the components of all the available colors.
 
 
-**Details**   **RGB.GetColour** is an alternate spelling for **RGB.GetColor**.
+**Details**   **RGB.GetColour** is an alternate spelling for **RGB.GetColor**.  
 
 
         put "Color   Red     Green     Blue"

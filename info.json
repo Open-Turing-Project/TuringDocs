@@ -621,11 +621,16 @@
     "xor"
   ],
   "special": [
+    "all_elements",
     "basic_predef",
     "characters",
+    "control",
     "filelist",
     "filestatements",
+    "intro",
+    "keycodes",
     "keywords",
+    "lang_elements",
     "module_predef",
     "operators",
     "turing_admin",

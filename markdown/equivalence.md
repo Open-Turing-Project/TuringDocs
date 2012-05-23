@@ -32,18 +32,18 @@ Two types are _equivalent_ to each other if they are essentially the same types 
 Two types are defined to be _equivalent_ if they are:
 
 
--    the same standard type (**int**, **real**, **boolean** or **string**),  
--    subranges with equal first and last values,  
--    arrays with equivalent index types and equivalent component types,  
--    strings with equal maximum lengths,  
--    sets with equivalent base types, or  
--     pointers to the same collection; in addition,  
--    a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)  
--    both **char**,  
--    both **char**(_n_) with the same length,  
--    both procedure types, with corresponding equivalent parameter types and corresponding **var** or non-**var** of the parameters,  
--    both function types, with corresponding equivalent parameter types and corresponding **var** or non-**var** of the parameters and equivalent result types,  
--    both pointer types to the same class or equivalent type and both are checked or unchecked.  
+(a)   the same standard type (**int**, **real**, **boolean** or **string**),  
+(b)   subranges with equal first and last values,  
+(c)   arrays with equivalent index types and equivalent component types,  
+(d)   strings with equal maximum lengths,  
+(e)   sets with equivalent base types, or  
+(f)    pointers to the same collection; in addition,  
+(g)   a declared type identifier is also equivalent to the type it names (and to the type named by that type, if that type is a named type, etc.)  
+(h)   both **char**,  
+(i)   both **char**(_n_) with the same length,  
+(j)   both procedure types, with corresponding equivalent parameter types and corresponding **var** or non-**var** of the parameters,  
+(k)   both function types, with corresponding equivalent parameter types and corresponding **var** or non-**var** of the parameters and equivalent result types,  
+(l)   both pointer types to the same class or equivalent type and both are checked or unchecked.  
 
 
 Each separate instance of a record, union or enumerated type (written out using one of the keywords **record**, **union** or **enum**) creates a distinct type, equivalent to no other type. By contrast, separate instances of arrays, strings, subranges and sets are considered equivalent if their parts are equal and equivalent.

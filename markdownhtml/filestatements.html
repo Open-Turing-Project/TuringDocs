@@ -2,22 +2,22 @@
 
 <h2>File Commands</h2>
 
-<p><strong>open</strong>   open a file<br/>
-<strong>close</strong>   close a file<br/>
-<strong>put</strong>   write alphanumeric text to a file<br/>
-<strong>get</strong>   read alphanumeric text from a file<br/>
-<strong>write</strong>   binary write to a file<br/>
-<strong>read</strong>   binary read from a file<br/>
-<strong>seek</strong>   move to a specified position in a file<br/>
-<strong>tell</strong>   report the current file position<br/>
-<strong>eof</strong>   check for end of file</p>
+<p> <strong>open</strong>  open a file<br/>
+ <strong>close</strong>  close a file<br/>
+ <strong>put</strong>  write alphanumeric text to a file<br/>
+ <strong>get</strong>  read alphanumeric text from a file<br/>
+ <strong>write</strong>  binary write to a file<br/>
+ <strong>read</strong>  binary read from a file<br/>
+ <strong>seek</strong>  move to a specified position in a file<br/>
+ <strong>tell</strong>  report the current file position<br/>
+ <strong>eof</strong>  check for end of file</p>
 
 <h2>File Command Syntax</h2>
 
 <p><code>**open** : _streamNo_, _fileName_, _ioCapability_ {, _ioCapability_ }</code><br/>
-<em>ioCapability</em> is one of <strong>get</strong>, <strong>put</strong>, <strong>read</strong>, <strong>write</strong>, <strong>seek</strong>, <strong>mod</strong><br/>
-<strong>put</strong> or <strong>write</strong> capability will cause any existing fileto be truncated to zero length unless the <strong>mod</strong> capability is also specified.<br/>
-<strong>seek</strong> capability is needed to use <strong>seek</strong> or <strong>tell</strong>commands.</p>
+ <em>ioCapability</em> is one of <strong>get</strong>, <strong>put</strong>, <strong>read</strong>, <strong>write</strong>, <strong>seek</strong>, <strong>mod</strong><br/>
+  <strong>put</strong> or <strong>write</strong> capability will cause any existing fileto be truncated to zero length unless the <strong>mod</strong> capability is also specified.<br/>
+  <strong>seek</strong> capability is needed to use <strong>seek</strong> or <strong>tell</strong>commands.</p>
 
 <p><code>**close** : _streamNo_**get** : _streamNo_ , _getItem_ { , _getItem_ }**put** : _streamNo_ , _putItem_ { , _putItem_ }**read** : _streamNo_ [ : _fileStatus_ ] , _readItem_ { , _readItem_ }**write** : _streamNo_[ : _fileStatus_ ] , _writeItem_ {, _writeItem_ }**seek** : _streamNo_ , _filePosition_    or   **seek** : _streamNo_ , ***tell** : _streamNo_ , _filePositionVar_eof ( _streamNo_ ) : **boolean**             (This is a function)</code>## Appending to a Text File
 <code>_% Open the file for **put**, but do not erase it_**open** : _streamNo_, _fileName_, **put** { , **get** }, **mod**_% Move the file pointer to the end of the file_**seek** : _streamNo_, *</code></p>

@@ -2,9 +2,7 @@
 # collection
 
 ## Syntax
-A _collectionDeclaration_ is one of:   
--  **var** _id_ { , _id_ } : **collection** **of** _typeSpec_   
--  **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_
+A _collectionDeclaration_ is one of:   (a) **var** _id_ { , _id_ } : **collection** **of** _typeSpec_   (b) **var** _id_ { , _id_ } : **collection** **of** **forward** _typeId_
 
 ## Description
 A collection declaration creates a new collection (or collections). A collection can be thought of as an array whose elements are dynamically created (by **new**) and deleted (by **free**). Elements of a collection are referred to by the collection's name subscripted by a pointer. See also **new**, **free** and **pointer**.
@@ -36,8 +34,8 @@ The same short forms for classes can be also used for collections. These include
 The syntax of a _collectionDeclaration_ presented above has been simplified by leaving out **unchecked** collections. With this feature, a _collectionDeclaration_ is one of:
 
 
--  **var** _id_ { , _id_ } : [ **unchecked** ] **collection** **of** _typeSpec_  
--  **var** _id_ { , _id_ } : [ **unchecked** ] **collection** **of** **forward** _typeId_  
+(a) **var** _id_ { , _id_ } : [ **unchecked** ] **collection** **of** _typeSpec_  
+(b) **var** _id_ { , _id_ } : [ **unchecked** ] **collection** **of** **forward** _typeId_  
 
 
 When **unchecked** is specified, the checking to verify that pointers actually locate elements is removed. This checking is done using a "time stamp" attached to each element and  pointer, and making sure that these match with each other. When **unchecked** is specified, the execution is dangerous, but faster and smaller, and the pointers become simply machine addresses (as in C).
