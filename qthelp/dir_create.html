@@ -1,0 +1,116 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Dir.Create</title>
+</head>
+<body>
+	<h1>Dir.Create</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Create</b> (<i>directoryPathName</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Create</b> is used to create the directory specified by the parameter <i>directoryPathName</i>. This is the equivalent of doing a <b>mkdir</b> in DOS or UNIX. On the Macintosh, it creates a folder.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Create</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program creates the directory called <i>information</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        Dir.Create ("information")
+        if Error.Last = eNoError  then
+            put "Directory created"
+        else
+            put "Did not create the directory."
+            put "Error: ", Error.LastMsg
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			An example demonstrating the use of several of the <b>Dir</b> subprograms
+      is available. In this example, a directory is created, a file is written
+      to the directory, an attempt is made to delete the directory, the file is
+      deleted, and then the directory is deleted.<p>
+      This example demonstrates the use of <b>Dir.Change</b>, 
+      <b>Dir.Current</b>, <b>Dir.Create</b>, and <b>Dir.Delete</b>.</p>
+<p>
+      <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+        <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,Dir.t;Dir Subprogams Example"></object></p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.Create</b>, not by calling <b>Create</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

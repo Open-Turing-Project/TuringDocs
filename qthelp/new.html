@@ -1,0 +1,198 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>new</title>
+</head>
+<body>
+	<h1>new</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>newStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>new</b> [ <i>collectionOrClassId</i> , ] <i>pointerVariableReference</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>new</b> statement creates (allocates) a new element and assigns its location to the pointer variable. This element can be an object of a collection or class or a value of a type. If the <i>collectionOrClassId</i> is omitted, the choice of element is determined by the type of the pointer. For example, if the pointer is to class <i>C</i>, an object of class <i>C</i> will be allocated.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Using a collection, declare a list of records and allocate one record.<p>
+</p>
+
+			
+			
+			<pre><code>        var list : collection of
+            record
+                contents : string ( 10 )
+                next : pointer to list  % Short form: next : ^ list
+            end record
+        var first : pointer to list     % Short form: var first : ^ list
+        new list, first         % Short form: new first</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Using a class, create an object of that class. The object is located by the <i>start</i> pointer. <p>
+</p>
+
+			
+			
+			<pre><code>        class node
+            export var next, var name
+            name : string (25)
+            next : pointer to node  % Short form: next : ^ node
+        end node
+        var start : pointer to node % Short form: var start : ^ node
+        new node, start         % Short form: new start</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Using a record type, declare a list of records and allocate one record. <p>
+</p>
+
+			
+			
+			<pre><code>        type item:
+            record
+                contents : string ( 10 )
+                next : pointer to item  % Short form: next : ^ item
+            end record
+        var first : pointer to item     % Short form: var first : ^ item
+        new first</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			As the examples in this section show, a pointer can locate one of three things: an object of a collection, an object of a class or a value of a type.<p>
+In the <b>new</b> statement, the <i>collectionOrClassId</i> can be omitted. If the pointer locates a type, it<i> </i>must be omitted. The <b>free</b> statement is used to deallocate an element.</p>
+<p>
+An imported class can have one of its objects created (by the <b>new</b> statement) only if the class is imported <b>var</b>.</p>
+<p>
+If there is no more space to allocate an element, <b>new</b> will set the pointer to be the <b>nil</b> value, and the program will continue executing.</p>
+<p>
+If the pointer locates class <i>C </i>and <i>C</i> contains an <b>implement</b> <b>by</b> list, the object created by <b>new</b> is the inherited object (through any number of levels of <b>implement</b> <b>by</b>). The pointer, however, remains a pointer to <i>C</i>.</p>
+<p>
+The form <b>new</b> <i>p</i>  is a short form for <b>new</b> <i>C</i>, <i>p </i>when <i>C</i> is the class or collection given in <i>p</i>'s type.</p>
+<p>
+If <i>p</i> is a pointer to class <i>C</i> and <i>C</i> has a descendant (expansion) class <i>D</i>, a <b>new</b> statement can be used to allocate an object of type <i>D</i>, as in:</p>
+<p>
+</p>
+If D has an <b>implement</b> <b>by</b> clause, the expansion is created.<p>
+</p>
+
+			
+			
+			<pre><code>        new D, p    % Allocates an object of class D</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>new</b> statement can also be used to resize a <b>flexible array</b>. If an array has been declared flexible using the syntax .<p>
+</p>
+The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:<p>
+</p>
+The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).<p>
+Additionally, the upper bound (both in the declaration and the <b>new</b> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <b>new</b>.</p>
+<p>
+In the current implementation (1999), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.</p>
+<p>
+Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with "<b>*"</b> as the upper bound.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var name : flexible array indexType { , indexType } of typeSpec</code></pre>
+			
+			<pre><code>        new name , newUpper1 {,newUpper2}</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			See <b>array</b> for an example of <b>flexible arrays</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="class.html">class</a></b> and <b><a href="collection.html">collection</a></b> declarations, <b><a href="pointer.html">pointer</a></b> type, <b><a href="free.html">free</a></b> <a href="statement.html">statement</a>, <b><a href="nil.html">nil</a></b> value and <b><a href="implement_by.html">implement by</a></b> list.<p>
+For <a href="flexible.html">flexible</a> arrays, see also <b><a href="array.html">array</a></b> and <b><a href="flexible.html">flexible</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

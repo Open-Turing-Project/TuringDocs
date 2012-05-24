@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>deferred</title>
+</head>
+<body>
+	<h1>deferred</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A deferredDeclaration is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>deferred</b> subprogramHeader</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A procedure or function is declared to be <b>deferred</b> when you want to be able to override the subprogram in an expansion. The procedure or function must be in a module, monitor or class.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The <i>display</i> procedure is deferred in this class of stacks to allow various ways of graphically displaying the stack on the screen:<p>
+</p>
+An expansion to the <i>stack</i> class can give a body for <i>display</i>, as in:<p>
+</p>
+The following creates a stack that can be displayed and displays it:<p>
+</p>
+
+			
+			
+			<pre><code>        class stack
+            export push, pop
+             local declarations 
+             declarations of the push and pop procedures 
+            deferred procedure display (howbig : int)
+        end stack</code></pre>
+			
+			<pre><code>        class stackWithSimpleDisplay
+            body procedure display      % (howbig : int)
+                    graphically display the stack on the screen 
+            end display
+        end stackWithSimpleDisplay</code></pre>
+			
+			<pre><code>        var p : ^stackWithSimpleDisplay
+        new p
+        
+        p -> display (25)       % Display the stack on the screen</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A deferred procedure is <i>resolved</i> by giving its body. This can be done in the scope (<b>module</b>, <b>monitor</b> or <b>class</b>) containing the <b>deferred</b> declaration (following the <b>deferred</b> declaration) or in any expansion of that scope. Only one resolution per scope is allowed. Unresolved subprograms can be called, but they immediately abort.<p>
+All exported subprograms are implicitly deferred and can be overridden in expansions. </p>
+<p>
+During initialization of a <b>module</b>, <b>monitor</b> or <b>object</b> of a <b>class</b>, deferred subprograms (including exported subprograms) cannot be called. This restriction prevents accessing an object before it is fully initialized.</p>
+<p>
+A <b>deferred</b> declaration must not appear in the main program.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="module.html">module</a></b>, <b><a href="monitor.html">monitor</a></b> and <b><a href="class.html">class</a></b>. See also <b><a href="export.html">export</a></b> list, <b><a href="import.html">import</a></b> list, <b><a href="inherit.html">inherit</a></b> list, <b><a href="implement.html">implement</a></b> list and <b><a href="implement_by.html">implement by</a></b> list.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

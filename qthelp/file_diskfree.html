@@ -1,0 +1,116 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>File.DiskFree</title>
+</head>
+<body>
+	<h1>File.DiskFree</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>File.DiskFree</b> (<i>pathName</i> : <b>string</b>) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>File.DiskFree</b> gets the number of bytes for the disk upon 
+          which <i>pathName</i> resides. The <i>pathName</i> parameter can 
+          specify either a file or a directory. If it is the empty string, 
+          then <b>File.DiskFree</b> returns the number of bytes of free 
+          disk space on the disk upon which the execution directory resides.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>File.DiskFree</b> call fails, then it returns -1. 
+          Also <b>Error.Last</b> will return a non-zero value indicating 
+          the reason for the failure. <b>Error.LastMsg</b> will return a 
+          string which contains the textual version of the error.<p>
+          If there is more than 2,147,483,647 bytes free on a disk, 
+          the <b>File.DiskFree</b> function returns 2,147,483,647.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints out the amount of space on the <i>A: </i>drive 
+          on a PC and in the execution directory.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var bytesFree : int
+        bytesFree := File.DiskFree ("A:\\")
+        if bytesFree = -1 then
+            put "Can't get free space on drive A:."
+            put "Error: ", Error.LastMsg
+        else
+            put "There are ", bytesFree , " bytes free on drive A:" 
+        end if
+        
+        bytesFree := File.DiskFree (".")
+        if bytesFree = -1 then
+            put "Can't get free space on default directory."
+            put "Error: ", Error.LastMsg
+        else
+            put "There are ", bytesFree , " bytes free on the default dir" 
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>File.DiskFree</b>, not by calling <b>DiskFree</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

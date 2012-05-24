@@ -1,0 +1,204 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>if</title>
+</head>
+<body>
+	<h1>if</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>ifStatement</i> is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>if</b> <i>trueFalseExpn</i> <b>then</b></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>statementsAndDeclarations</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1">{ <b>elsif</b> <i>trueFalseExpn</i> <b>then</b></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>statementsAndDeclarations</i> }</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1">[ <b>else</b></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>statementsAndDeclarations</i> ]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>end</b> <b>if</b></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>if</b> statement is used to choose among a set of statements (and declarations). One set (at most) is chosen and executed and then execution continues just beyond <b>end</b> <b>if</b>.<p>
+The expressions (the <i>trueFalseExpressions</i>) following the keyword <b>if</b> and each <b>elsif</b> are checked one after the other until one of them is found to be true, in which case the statements (and declarations) following the corresponding <b>then</b> are executed. If none of these expressions evaluates to true, the statements following <b>else</b> are executed. If no <b>else</b> is present and none of the expressions are true, no statements are executed and execution continues following the <b>end</b> <b>if</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output a message based on value of mark.<p>
+</p>
+
+			
+			
+			<pre><code>        if mark >= 50 then
+            put "You pass"
+        else
+            put "You fail"
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output A, B, C, D or F depending on mark.<p>
+</p>
+
+			
+			
+			<pre><code>        if mark >= 80 then
+            put "A"
+        elsif mark >= 70 then
+            put "B"
+        elsif mark >= 60 then
+            put "C"
+        elsif mark >= 50 then
+            put "D"
+        else
+            put "F"
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			If <i>x </i>is negative, change its sign.<p>
+</p>
+
+			
+			
+			<pre><code>        if x < 0 then
+            x := - x
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			If <i>x </i>is less than zero or greater than maxx, put a message.<p>
+</p>
+
+			
+			
+			<pre><code>        if x < 0  or x > maxx then
+            put "Out of bounds!"
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			If the boolean <i>flag</i> is true and <i>name</i> is &#147;stop&#148;, put a message and return.<p>
+</p>
+
+			
+			
+			<pre><code>        if flag  and name = "stop" then
+            put "Exiting routine"
+            return
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Several statements and declarations can appear after a particular <b>then</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="case.html">case</a></b> statements for another way to select among statements.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

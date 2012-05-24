@@ -1,0 +1,164 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.Alert[2,3,Full]</title>
+</head>
+<body>
+	<h1>GUI.Alert[2,3,Full]</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			One of four procedures:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>GUI.Alert</b> (<i>title</i>, <i>msg</i> : <b>string</b>)</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>GUI.Alert2</b> (<i>title</i>, <i>msg1</i>, <i>msg2</i> : <b>string</b>)</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>GUI.Alert3</b> (<i>title</i>, <i>msg</i>1, <i>msg2</i>, <i>msg3</i> : <b>string</b>)</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>GUI.AlertFull</b> (<i>title</i> : <b>string,</b> </font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>msg</i> : <b>array</b> 1 .. * <b>of string</b>, <i>button</i> : <b>string</b>)</font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Displays a dialog box with the string specified by <i>msg</i> in it. There is a single button labelled <i>OK</i> which dismisses the dialog and resumes execution. The <i>title</i> parameter specifies the window title under Microsoft Windows. On the Apple Macintosh, there is no title, so do not assume the user will see the title. The dialog box is centered on the screen.<p>
+The <b>GUI.Alert2</b> and <b>GUI.Alert3</b> procedures allow the user to specify a two or three line message respectively. The <b>GUI.AlertFull</b> procedure allows the user to specify any number of lines of text in the string array specified by <i>msg</i> as well as the text in the dismissal button. Any empty strings at the end of the array are not displayed.</p>
+<p>
+<b>Note</b>: This function is <b>not</b> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. It is likely to be implemented in the version of Turing released in September 2002. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program asks the user for the name of a file puts up an alert dialog box if it fails.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        
+        var fileName : string
+        var streamNumber : int
+        
+        loop
+            fileName := GUI.SaveFile ("Save As")
+            open : streamNumber, fileName, put
+            exit when streamNumber > 0
+            GUI.Alert ("Open Failure", "\"" + fileName + 
+                "\" could not be opened")
+        end loop
+        </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program asks the user for the name of a file puts up a more complete alert dialog box if it fails.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        
+        var fileName : string
+        var streamNumber : int
+        loop
+            fileName := GUI.SaveFile ("Save As")
+            open : streamNumber, fileName, put
+            exit when streamNumber > 0
+            GUI.Alert2 ("Open Failure", 
+                "\"" + fileName + "\" could not be opened.",
+                "Reason: " + Error.LastMsg)
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program fragment displays an alert with four lines of text and a button that says "Abort".<p>
+</p>
+
+			
+			
+			<pre><code>        var message : array 1 .. 10 of string
+        for i : 1 .. 10
+            message (i) := ""
+        end for
+        
+        message (1) := "The program must now quit"
+        message (2) := "becasue of an unrecoverable error."
+        message (3) := "A Read Error occurred while reading"
+        message (4) := "file \"" + fileName + "\"."
+        message (5) := Error.LastMsg
+        GUI.AlertFull ("Error", message, "Abort")</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.Alert</b>, not by calling <b>Alert</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

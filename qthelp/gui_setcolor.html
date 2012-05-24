@@ -1,0 +1,94 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SetColor</title>
+</head>
+<body>
+	<h1>GUI.SetColor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetColor</b> (<i>widgetID</i> : <b>int</b>, <i>clrNumber</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>GUI.SetColor</b> procedure is used buttons to change the
+          color of a button.  The color is specified by the <i>clrNumber</i>
+          parameter.  The edges of the button are a darker version of the 
+          color specified by <i>clrNumber</i>, so in general you should use
+          brighter colors for buttons.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays three buttons with different colors.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI
+
+        procedure DoNothing
+        end DoNothing
+
+        var b1 := GUI.CreateButton (100, 100, 0, "Push Me", DoNothing)
+        GUI.SetColor (b1, brightred)
+        var b2 := GUI.CreateButton (100, 140, 0, "Push Me", DoNothing)
+        GUI.SetColor (b2, brightgreen)
+        var b3 := GUI.CreateButton (100, 180, 0, "Push Me", DoNothing)
+        GUI.SetColor (b3, brightblue)
+
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+	  <b>GUI.SetColor</b>, not by calling <b>SetColor</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

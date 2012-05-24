@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Dir.Open</title>
+</head>
+<body>
+	<h1>Dir.Open</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Open</b> (<i>directoryPathName</i> : <b>string</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Open</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Open</b> returns a directory stream number if the directory could be opened. This stream number can be used to get file names and information using the <b>Dir.Get</b> and <b>Dir.GetLong</b> subprograms. After getting the listing, the user should call <b>Dir.Close</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Open</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints a listing of all the files in the current directory.<p>
+</p>
+
+			
+			
+			<pre><code>        var streamNumber : int
+        var fileName : string
+        streamNumber := Dir.Open (Dir.Current)
+        assert streamNumber > 0
+        loop
+            fileName := Dir.Get (streamNumber)
+            exit when fileName = ""
+            put fileName
+        end loop
+        Dir.Close (streamNumber)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.Open</b>, not by calling <b>Open</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

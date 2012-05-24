@@ -1,0 +1,122 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Sprite.Animate</title>
+</head>
+<body>
+	<h1>Sprite.Animate</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Sprite.Animate</b> (<i>spriteID</i>, <i>picID, x</i>, <i>y</i> : <b>int</b>,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<i>centered</i> : <b>boolean</b>)</font><p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Moves the sprite specified by <i>spriteID</i> to the location 
+      	  specified by (<i>x, y</i>). If <i>centered</i> is <b>true</b>, 
+      	  then the sprite is centered on (<i>x, y</i>). Otherwise (<i>x, y</i>) 
+      	  specifies the lower-left corner of the sprite. At the same time, it 
+      	  changes the picture associated with the sprite.<p>
+          A simple example of the <b>Sprite.Animate</b> procedure would be of a 
+          man walking. The picture associated with the sprite would constantly 
+          change as the figure was walking. At the same time, the location of 
+          the figure would also change.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Here is a program that loads a series of images from an animated
+          GIF file called "mypic.gif".  It works by loading the images from
+          the GIF file into an array (see 
+          <b><a href="pic_filenewframes.html">Pic.FileNewFrames</a></b> for
+          more information) and then displays the images sequentially on the 
+          screen, moving the image eight pixels each time.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var numFrames := Pic.Frames ("mypic.gif")
+        % Load the picture
+        var delayTime : int
+        var pics : array 1 .. numFrames of int
+	Pic.FileNewFrames ("mypic.gif", pics, delayTime)
+
+        var sprite: int
+        sprite:= Sprite.New (pics (1))
+        Sprite.SetPosition (sprite, 0, 100, false)
+        Sprite.Show (sprite)
+        for x : 8 .. maxx by 8
+            Sprite.Animate (sprite, pics ((x div 8) mod numFrames + 1), x, 100, false)
+    	    delay (40)    % Stop sprite from moving too quickly
+        end for
+        Sprite.Free (sprite)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Sprite.Animate</b>, not by calling <b>Animate</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="sprite_new.html">Sprite.New</a></b>, 
+          <b><a href="sprite_setposition.html">Sprite.SetPosition</a></b> and 
+          <b><a href="sprite_changepic.html">Sprite.ChangePic</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

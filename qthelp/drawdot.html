@@ -1,0 +1,142 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>drawdot</title>
+</head>
+<body>
+	<h1>drawdot</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>drawdot</b> (<i>x</i>, <i>y</i>, <i>Color</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawdot</b> procedure is used to color the dot (pixel) at 
+          location (<i>x</i>, <i>y</i>) using the specified <i>Color</i>.<p>
+		</p>
+<center><img src="drawdot01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program randomly draws dots with random colors. The <b>maxx</b>, 
+          <b>maxy</b> and <b>maxcolor</b> functions give the maximum x, y and 
+          color values.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        var x, y, c : int
+        loop
+            randint (x, 0, maxx)        % Random x
+            randint (y, 0, maxy)        % Random y
+            randint (c, 0, maxcolor)    % Random color
+            drawdot (x, y, c)
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a "<i>graphics</i>" mode. If the screen is 
+          not in a "<i>graphics</i>" mode,  it will automatically be set to 
+          "<i>graphics</i>" mode. See <b>setscreen</b> for details.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a line of dots that bounce off the &#147;sides&#148; of the 
+          screen. It also demonstrates that you can use real coordinates to
+          store position (<i>x</i>, <i>y</i>), as long as you convert the 
+          coordinates to <b>int</b> values using <b>round</b> in the 
+          <b>drawdot</b> call.<p>
+</p>
+
+			
+			
+			<pre><code>        var x, y : real
+        var dx, dy : real
+        var clr : int := 1
+        x := Rand.Int (1, maxx - 1)
+        y := Rand.Int (1, maxy - 1)
+        dx := Rand.Real - 0.5
+        dy := Rand.Real - 0.5
+        loop
+            drawdot (round (x), round (y), clr)
+            clr := (clr + 1) mod maxcolor
+            x := x + dx
+            y := y + dy
+            if x <= 0 or x >= maxx then
+                dx := -dx
+            end if
+            if y <= 0 or y >= maxy then
+                dy := -dy
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b>, 
+          <b><a href="maxx.html">maxx</a></b>, 
+          <b><a href="maxy.html">maxy</a></b> and the various 
+          <b>draw&#133;</b> procedures. <p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

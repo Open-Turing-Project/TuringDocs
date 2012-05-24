@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>chr</title>
+</head>
+<body>
+	<h1>chr</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>chr</b> (<i>i</i> : <b>int</b>) : <b>char</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>chr</b> function is used to convert an integer to a character.
+	      The character is the <i>i</i>-th character of the ASCII sequence of 
+		  characters (except on the IBM mainframe, which uses the EBCDIC 
+		  sequence.)  For example, <b>chr</b> (65) is "A".<p>
+          The <b>ord</b> function is the inverse of <b>chr</b>, so for any 
+		  character<i> c</i>,:</p>
+<p>
+          </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+			  <td>
+<b>chr</b>(<b>ord</b> (<i>c</i>)) = <i>c</i>.</td>
+			</tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			There are two sets of characters representing values 128-255: the 
+	      ANSI values (the default values for Windows), and the MS-DOS OEM
+          character set, which contains various line drawing characters. To 
+		  use the MS-DOS character set, you must use the 
+		  <b><tt>setscreen&nbsp;("msdos")</tt></b> command.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Another example is available that displays the entire characters 
+	  set, both the regular ANSI character set and the MS_DOS OEM
+          character set.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Character Set Example">
+<param name="Item1" value="-1,CharSet.t;Character Set Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="ord.html">ord</a></b>, 
+	  <b><a href="intstr.html">intstr</a></b> and 
+	  <b><a href="strint.html">strint</a></b> functions.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

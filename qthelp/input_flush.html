@@ -1,0 +1,82 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Input.Flush</title>
+</head>
+<body>
+	<h1>Input.Flush</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Input.Flush</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Input.Flush</b> procedure empties the keyboard buffer. It is often used to avoid accidentally reading multiple
+keystrokes because the user pressed a key for too long, causing autorepeat.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program echoes input from the keyboard at a rate of 10 characters per second. If you hold down a key, the echoing will stop as soon as you stop
+pressing the key. Without the <b>Input.Flush</b>, the program continues to echo many more keystrokes that have accumulated in the keyboard buffer.<p>
+</p>
+
+			
+			
+			<pre><code>        loop
+            if hasch then
+                put getchar ..
+                Input.Flush
+                delay (100)
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Input.Flush</b>, not by calling <b>Flush</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

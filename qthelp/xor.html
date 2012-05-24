@@ -1,0 +1,107 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>xor</title>
+</head>
+<body>
+	<h1>xor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><i>A</i> <b>xor</b> <i>B</i><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			When applied to set values, <b>xor</b> (symmetric difference) yields a set which includes element <i>e</i> if and only if <i>e</i> is contained in exactly one of the operands. When applied to non-negative integer values, <b>xor</b> yields a natural number whose bits are the xor of the corresponding bits of the operands. Both operands <i>A</i> and <i>B </i>are evaluated.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Status <i>s3</i> will contain elements that are in <i>s1</i> or <i>s2</i> but not both. Here <b>xor</b> is a set operator. See <b>enum</b> and <b>set</b> types for explanations of these types.<p>
+</p>
+
+			
+			
+			<pre><code>        type status : enum (ready, sending, repeating)
+        type statusSet : set of status
+        var s1, s2, s3 : statusSet
+        s1 := statusSet ( status.read, status.sending )
+        s2 := statusSet ( status.read, status.repeating )
+        
+        s3 := s1 xor s2     % Same as (s1 + s2) - (s1 * s2)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Each bit of natural number <i>n3</i> will be 1 if exactly one of the corresponding bits of <i>n1</i> and <i>n2</i> are 1. For example, if <i>n1</i> = 2#110 (6) and <i>n2</i> = 2#010 (2), <i>n3</i> will be set to 2#100 (4). Here <b>xor</b> is an integer operator.<p>
+</p>
+
+			
+			
+			<pre><code>        var n1, n2, n3 : nat
+        
+        n3 := n1 xor n2</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>xor</b> operator is not a short circuit operator; in other words, both of its operands are always evaluated. The precedence of <b>xor</b> is the same as that of plus (+).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="set.html">set</a></b>. See also <i><a href="explicitintegerconstant.html">explicitIntegerConstant</a></i> which describes values such as 2<b>#</b>110.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

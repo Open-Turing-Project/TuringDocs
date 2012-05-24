@@ -1,0 +1,168 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>export</title>
+</head>
+<body>
+	<h1>export</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>exportList</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>export</b> [ <i>howExport</i> ] <i>id</i>  {, [ <i>howExport</i> ] <i>id</i> }</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>export</b> list is used to specify those items declared in a module, monitor or class that can be used outside of it. Items that are declared inside a module, monitor or class but not exported cannot be accessed outside of it.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, the procedures names <i>pop</i> and <i>push</i> are exported from the <i>stack</i> module. These two procedures are called from outside the module on the last and third from last lines of the example. Notice that the word <i>stack</i> and a dot must precede the use of these names. Since <i>top </i>and <i>contents</i> were not exported, they can be accessed only from inside the module.<p>
+</p>
+
+			
+			
+			<pre><code>        module stack
+            export push, pop
+            var top : int := 0
+            var contents : array 1..100 of string
+            procedure push  end push
+            procedure pop  end pop
+        end stack
+        
+        stack . push ("Harvey")
+        var name : string
+        stack . pop (name)      % This sets name to Harvey</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Procedures, functions, variables, constants and types can be exported. Modules, monitors or classes canot be exported. Parentheses are allowed around the items in an export list, as in:<p>
+</p>
+The following syntax specifies that each exported identifier can optionally be preceded by the keywords <b>var</b>, <b>unqualified</b>, <b>pervasive</b> and <b>opaque</b>. Of these, only <b>opaque</b> is available in Turing proper.<p>
+The form of <i>howExport</i> is:</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>{ <i>exportMethod</i> }</td>
+</tr></table>
+<p>
+The form of <i>exportMethod</i> is one of:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td><b>var</b></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td><b>unqualified</b></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(c)</td>
+<td width="10">&nbsp;</td>
+<td><b>pervasive</b></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(d)</td>
+<td width="10">&nbsp;</td>
+<td><b>opaque</b></td>
+</tr>
+</table>
+<p>
+The keyword <b>var</b> means that the exported variable can be changed outside of the exporting module, monitor or class. This keyword applies only to exported variables. For example, if string variable <i>name </i>is exported <b>var</b> from module <i>M</i>,<i> name </i>can be changed from outside of <i>M</i> by <i>M.name </i>:= "<i>Surprise!</i>".</p>
+<p>
+The keyword <b>unqualified</b> means that references to the exported item do not need to be prefixed by the name of the exporting item. For example, if module <i>M</i> exports procedure <i>p</i> unqualified, a call to <i>p</i> outside of <i>M</i> can be simply <i>p</i> instead of the usual <i>M.p</i>. A class cannot export variables or dynamic constants unqualified (because each object of the class has its own copies of these). The only things a class can export unqualified are types and compile time constants. The keyword <b>unqualified</b> can be abbreviated to ~. which is pronounced as "not dot".</p>
+<p>
+The keyword <b>pervasive</b>, which is only meaningful if <b>unqualified</b> is also present, specifies that the exported item is to be visible in subsequent scopes, in other words that it is not necessary to import it into internal modules, monitors and classes.</p>
+<p>
+The keyword <b>opaque</b>, which can only precede type names, specifies that outside the module, monitor or class, the type is considered to be distinct from all other types. This means, for example, that if the type is an array, it cannot be subscripted outside of the module. See <b>module</b> declaration for an example that uses opaque types. In most cases, classes are preferable to opaque types.</p>
+<p>
+Exported subprograms are considered to be <b>deferred</b>, meaning that expansions are allowed to override these subprograms. See also <b>deferred</b> subprograms. These can be overridden using the keyword <b>body</b> before the resolving subprogram body.</p>
+<p>
+A class cannot export items from its parent or it parent's ancestors. All exported item must be declared in the current class.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        export (push, pop)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			You can export <b>all</b> from a module, monitor or a class. This means that every sibmle that is legal to export is exported. You may also qualify the all, as in <b>export opaque unqualified pervasive all</b> where the qualifiers are added to each export item (if it makes sense).<p>
+If <b>all</b> is specified as the export item, no other item may be specified. Also, and <b>all</b> export affects only the module, monitor or class that it is given in. Any inheriting or implementing module, monitor or class does not export <b>all</b> unless they also specify it.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="unit.html">unit</a></b>, <b><a href="module.html">module</a></b>, <b><a href="monitor.html">monitor</a></b> and <b><a href="class.html">class</a></b>. See also <b><a href="import.html">import</a></b> list, <b><a href="inherit.html">inherit</a></b> clause, <b><a href="implement.html">implement</a></b> clause, <b><a href="implement.html">implement</a></b> <b>by</b> clause and <b><a href="deferred.html">deferred</a></b> subprogram.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

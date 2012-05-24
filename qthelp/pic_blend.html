@@ -1,0 +1,120 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.Blend</title>
+</head>
+<body>
+	<h1>Pic.Blend</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Blend</b> (<i>picID1</i>, <i>picID2</i>, <i>pct</i> : <b>int</b>) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Blend</b> is used to create a new picture by blending two
+          identically sized pictures. The resulting picture is created by
+          taking <i>pct</i> % of the first picture and adding it to
+          (100 - <i>pct</i>) % of the second picture.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Note that the blended picture is a newly created picture. 
+          When it is no longer needed, its memory should be released by 
+	  using <b>Pic.Free</b>.<p>
+	  Note that if <i>pct</i> is 100, then the resulting picture will
+	  be identical to <i>picID1</i>.  if <i>pct</i> is 0, then the 
+	  resulting picture will be identical to <i>picID2</i>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program creates two identically sized pictures, blends them
+          together and displays all three pictures.  You can vary the
+          blend percentage to obtain different results.<p>
+</p>
+	  <center><img src="pic_blend01.gif"></center>
+	  <center><b>Output from the Program</b></center>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        View.Set ("graphics:340;140,nobuttonbar")
+        % Create the original pictures
+        var pic1, pic2, picBlended : int
+        Draw.FillBox (0, 0, 100, 100, brightred)
+        Draw.FillOval (50, 50, 50, 50, brightblue)
+        pic1 := Pic.New (0, 0, 100, 100)
+        cls
+        Draw.FillStar (10, 10, 90, 90, brightgreen)
+        Draw.FillMapleLeaf(10, 10, 90, 90, brightred)
+        pic2 := Pic.New (0, 0, 100, 100)
+        cls
+        % Create new picture by blending 30% from pic1, 70% from pic2
+        picBlended := Pic.Blend (pic1, pic2, 30)
+        % Draw the three images
+        Pic.Draw (pic1, 10, 10, picCopy)
+        Pic.Draw (pic2, 120, 10, picCopy)
+        Pic.Draw (picBlended, 230, 10, picCopy)
+        </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.Blend</b>, not by calling <b>Blend</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

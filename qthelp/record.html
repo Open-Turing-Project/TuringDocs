@@ -1,0 +1,106 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>record</title>
+</head>
+<body>
+	<h1>record</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>recordType</i> is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>record</b></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">{ <i>id</i> {, <i>id</i> } : <i>typeSpec</i> }</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>end</b> <b>record</b></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Each value of a record type consists of fields, one field for each name (<i>id</i>) declared inside the record. In the following example, the fields are <i>name</i>,<i> phoneNumber</i> and <i>address</i>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        type phoneRecord :
+            record
+                name : string ( 20 )
+                phoneNumber : int
+                address : string ( 50 )
+            end record
+        
+        var oneEntry : phoneRecord
+        var phoneBook : array 1 .. 100 of phoneRecord
+        var i : int
+        oneEntry .name := "Turing, Alan"
+        
+        phoneBook ( i ) := oneEntry % Assign whole record</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In a record, <i>id'</i>s of fields must be distinct. However, these need not be distinct from identifiers outside the record. Records can be assigned as a whole (to records of an equivalent type), but they cannot be compared. A semicolon can optionally follow each <i>typeSpec</i>.<p>
+Any array contained in a record must have bounds that are known at compile time.</p>
+<p>
+The notation &gt; can be used to access record fields. For example, if <i>p</i> is a pointer to <i>phoneRecord</i>, <i>p</i>&gt;<i>name</i> locates the <i>name</i> field. See <b>pointer</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

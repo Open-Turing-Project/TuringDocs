@@ -1,0 +1,138 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>parallelput</title>
+</head>
+<body>
+	<h1>parallelput</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>parallelput</b> ( <i>p</i> : <b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>parallelput</b> procedure is used on a PC to set the values on the data pins on the parallel port. This port corresponds to the MS-DOS device "LPT1". This procedure can be used to control robots and peripherals.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sets data bit 0, data bit 1 and so on to data bit 7.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 0 .. 7
+            parallelput (2 ** i)    %Set data bit i on the  parallel port
+            put "Data bit ", i, "  or Pin ", i + 2, "has just been set"
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>parallelput</b> procedure is used to set the eight data bits on the PC's parallel port. These data bits 0 - 7 correspond to pins 2 - 9 on the parallel port.<p>
+
+</p>
+<center><img src="parallelput01.gif"></center>
+The value sent to <b>parallelput</b> is the sum of the following:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>1</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 0</td>
+<td width="10">&nbsp;</td>
+<td>16</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 4</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>2</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 1</td>
+<td width="10">&nbsp;</td>
+<td>32</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 5</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>4</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 2</td>
+<td width="10">&nbsp;</td>
+<td>64</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 6</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>8</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 3</td>
+<td width="10">&nbsp;</td>
+<td>128</td>
+<td width="10">&nbsp;</td>
+<td>Data bit 7</td>
+</tr>
+</table>
+<p>
+For example, the command <b>parallelput</b> (97) sets data bits 0, 5 and 6 high (97 = 1 + 32 + 64) and sets the other data pins low. Because there are only 8 data pins in the parallel port, the value passed to <b>parallelput</b> must be from 0 to 255.</p>
+<p>
+The <b>parallelput</b> procedure is not meant for sending a stream of characters to the parallel port (for example, if you want to send the string "Hello" to the printer). If you want to do this, open the file "LPT1" using the <b>open</b> statement and <b>put</b> to the file. </p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="parallelget.html">parallelget</a></b> function, which is used to <a href="read.html">read</a> the values of pins on the parallel port.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

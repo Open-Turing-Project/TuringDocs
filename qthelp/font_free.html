@@ -1,0 +1,106 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Font.Free</title>
+</head>
+<body>
+	<h1>Font.Free</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Font.Free</b> (<i>fontID</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Font.Free </b>is used to release a font that is no longer needed. There is a limit to the number of fonts that may be defined at any one time. By having a <b>Font.Free</b> for every <b>Font.New</b>, the number of simultaneously defined fonts is kept to a minimum.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If <b>Font.Free</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Free</b> call fails for other (non-fatal) reasons, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program prints out several phrases in a variety of fonts.<p>
+</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var font1, font2, font3, font4 : int
+        font1 := Font.New ("serif:12")
+        assert font1 > 0
+        font2 := Font.New ("sans serif:18:bold")
+        assert font2 > 0
+        font3 := Font.New ("mono:9")
+        assert font3 > 0
+        font4 := Font.New ("Palatino:24:Bold,Italic")
+        assert font4 > 0
+        Font.Draw ("This is in a serif font", 50, 30, font1, red)
+        Font.Draw ("This is in a sans serif font", 50, 80, font2, brightblue)
+        Font.Draw ("This is in a mono font", 50, 130, font3, colorfg)
+        Font.Draw ("This is in Palatino (if available)", 50, 180, font4, green)
+        Font.Free (font1)
+        Font.Free (font2)
+        Font.Free (font3)
+        Font.Free (font4)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Font.Free</b>, not by calling <b>Free</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

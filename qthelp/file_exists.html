@@ -1,0 +1,117 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>File.Exists</title>
+</head>
+<body>
+	<h1>File.Exists</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>File.Exists</b> (<i>pathName</i> : <b>string</b>) : <b>boolean</b><p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>File.Exists </b>returns <b>true</b> if a file by the name of <i>pathName</i> exists. It will return <b>false</b> if <i>pathName</i> is a directory.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>File.Exists</b> returns <b>false</b>, you can examine <b>Error.Last</b> or <b>Error.LastMsg</b> for more information (i.e. whether the path failed or the file was simply not found).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program loops until the user types in a path name that either doesn't already exist or is allowed to be overwritten.<p>
+</p>
+
+			
+			
+			<pre><code>        var pathName : string
+        var choice : string
+        loop
+            put "Enter file name to write results to" ..
+            get pathName
+            if File.Exists (pathName) then
+                put "Overwrite ", pathName, "?" ..
+                get choice
+                exit when choice = "y"
+            else
+                exit
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			An example program is available that creates a file in the current 
+        directory, tests for its existence using <b>File.Exists</b> and 
+        deletes the file using <b>File.Delete</b>.<p>
+        <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+          <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,File.Exists.t;File.Exists Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>File.Exists</b>, not by calling <b>Exists</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

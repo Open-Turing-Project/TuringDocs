@@ -1,0 +1,146 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.Disable</title>
+</head>
+<body>
+	<h1>GUI.Disable</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.Disable</b> (<i>widgetID</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Disables a widget specified by <i>widgetID</i>. <p>
+Used in conjunction with <b>GUI.Enable</b> to enable and disable widgets. </p>
+<p>
+Disabled widgets generally are "grayed out" to visually depict their disabled status.</p>
+<p>
+Disabled widgets do not respond to keystrokes or mouse clicks.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The three color radio buttons are enabled only when the color check box is selected.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI" 
+        View.Set ("graphics:100;100") 
+        
+        var colorCheckBox, redRadio, greenRadio, blueRadio : int
+        
+        procedure DoNothing
+        end DoNothing
+        
+        procedure ColorCheckBoxProc (filled : boolean)
+            if filled then
+                GUI.Enable (redRadio)
+                GUI.Enable (greenRadio)
+                GUI.Enable (blueRadio)
+            else
+                GUI.Disable (redRadio)
+                GUI.Disable (greenRadio)
+                GUI.Disable (blueRadio)
+            end if
+        end ColorCheckBoxProc
+        
+        colorCheckBox := GUI.CreateCheckBox (10, 80,
+            "Use Color", ColorCheckBoxProc)
+        redRadio := GUI.CreateRadioButton (33, 60, "Red", 0, DoNothing)
+        greenRadio := GUI.CreateRadioButton (1, 1, "Green", 
+            redRadio, DoNothing)
+        blueRadio := GUI.CreateRadioButton (1, 1, "Blue", 
+            greenRadio, DoNothing)
+        ColorCheckBoxProc (false)
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following types of widgets can be enabled or disabled:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>Buttons, Check Boxes, Radio Buttons, Picture Buttons,<br>
+</td>
+</tr></table>
+<p>
+Picture Radio Buttons, Horizontal Scroll Bars, Horizontal Sliders,<br>
+Canvases, Text Fields, Vertical Scroll Bars, Vertical Sliders</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the procedure by calling <b>GUI.Disable</b>, not by calling <b>Disable</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_enable.html">GUI.Enable</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

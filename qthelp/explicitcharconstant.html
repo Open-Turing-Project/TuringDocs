@@ -1,0 +1,68 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>explicitCharConstant</title>
+</head>
+<body>
+	<h1>explicitCharConstant</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>explicitCharConstant</i> is a sequence of characters surrounded by single quotation marks, for example, 'Renzo'.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In the following, the explicit character constants are 'H' and 'Hi'.<p>
+</p>
+
+			
+			
+			<pre><code>        var c : char := 'H'
+        var d : char (2) := 'Hi'</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			An explicit character constant must contain at least one character. If it contains exactly one character, as in 'A', its type is <b>char</b>. If it contains two or more characters (<i>n</i> characters), as 'Width', its type is <b>char</b>(<i>n</i>). The difference between the <b>char</b> and <b>char</b>(1) types is rarely of significance, but does make a difference in declarations without an explicit type, for example:<p>
+</p>
+The backslash \ is used in explicit string and char(n) constants to specify special values, for example, '\T' is the tab character. Similarly, the carat ^ is used to specify ASCII control characters, for example, '^H' is the ASCII backspace. See <i>explicitStringConstants</i> for details.<p>
+Explicit character constants cannot cross line boundaries. To represent a constant that is longer than a line, break it into two or more strings on separate lines and use + (catenation) to join the individual strings. See <b>catenation</b>.</p>
+<p>
+An explicit character constant may be limited in length by the implementation. We recommend that this limitation be at least 32767.</p>
+<p>
+Explicit character constants, but not strings, are allowed to contain the character internal values 0 (called <i>eos </i>for end of string) and 128 (called <i>uninitchar</i>, used as the uninitialized string value).</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var c := 'H'        % Type is char
+        var d := 'Hi'   % Type is char (2)
+        var e := "H"    % Type is string</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.Quit</title>
+</head>
+<body>
+	<h1>GUI.Quit</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.Quit</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			This procedure causes <b>GUI.ProcessEvent</b> to return <b>true</b>. 
+          If the program is structured properly with a<p>
+</p>
+          at the end of the program, then the program will exit the loop after 
+	  finishing the current <i>action procedure</i>. This procedure is 
+	  usually called from the <i>action procedure</i> of a Quit button 
+	  or Exit menu item. <p>
+    </p>
+
+			
+			
+			<pre><code>        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Here is program that does nothing but wait for the user to press 
+          the quit button or type the letter 'Q', 'q', 'X', or 'x'.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI
+        
+        procedure KeyHandler (ch : char)
+            if ch = 'Q' or ch = 'q' or ch = 'X' or ch = 'x' then
+                GUI.Quit
+            end if
+        end KeyHandler
+        
+        var quitButton : int := GUI.CreateButton (10, 10, 0, "Quit", GUI.Quit)
+        GUI.SetKeyEventHandler (KeyHandler)
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop
+        
+        put "Done!"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the procedures by calling 
+	  <b>GUI.Quit</b>, not by calling <b>Quit</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_processevent.html">GUI.ProcessEvent</a></b>.
+          See also <a href="gui_resetquit.html">GUI.ResetQuit</a>
+	  for resetting the "quit" flag, so that a second event loop
+	  can be used in the same program.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

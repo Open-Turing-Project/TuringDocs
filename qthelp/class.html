@@ -1,0 +1,304 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>class</title>
+</head>
+<body>
+	<h1>class</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A classDeclaration is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1">[ <b>monitor</b> ]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>class</b> <i>id</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>inherit</b> <i>inheritItem </i>]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>implement</b> <i>implementItem </i>]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>implement</b> <b>by</b> <i>implementByItem </i>]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>import</b> [ <b>var</b> ] <i>importItem </i>{,<i> </i>[ <b>var</b> ]<i> importItem</i> } ]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1">[ <b>export</b> [ <i>howExport</i> ] <i>id </i>{,<i> </i>[ <i>howExport</i> ]<i> id</i> } ]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>statementsAndDeclarations</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>end</b> <i>id</i></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A class declaration defines a template for a package of variables, constants, types, subprograms, etc. The name of the class (<i>id</i>) is given in two places, just after <b>class</b> and just after <b>end</b>. Items declared inside the class can be accessed outside of the class only if they are exported. Items from outside the class that are to be used in the class, need to be imported (unless they are predefined or pervasive). Instances (objects) of a class are created using the <b>new</b> statement. Each object is essentially a module located by a pointer.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This class is a template for creating objects, each of which is a stack of strings. (See the <b>module</b> description for the corresponding module that implements a single stack of strings.)<p>
+</p>
+
+			
+			
+			<pre><code>        class stackClass    % Template for creating individual stacks
+            export push, pop
+        
+            var top : int := 0
+            var contents : array 1 .. 100 of string
+        
+            procedure push (s : string)
+                top := top + 1
+                contents (top) := s
+            end push
+        
+            procedure pop (var s : string)
+                s := contents (top)
+                top := top - 1
+            end pop
+        end stackClass
+        
+        var p: pointer to stackClass    % Short form: var p: ^stackClass
+        new stackClass, p           % Short form: new p
+        p -> push ("Harvey")
+        var name : string
+        p -> pop (name)         % This sets name to be Harvey</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>new</b> statement is used to create objects of a class. Many instances of a class can exist at a given time, each located by a pointer. The <b>free</b> statement is used to destroy objects that are no longer of use. Turing does not support <i>garbage collection</i> (automatic recovery of space belonging to inaccessible objects).<p>
+See <b>modules</b> for a discussion of importing, exporting and related concepts. When an object is created by <b>new</b>, its initialization code is executed. In this example, the object's <i>top</i> variable<i> </i>is set to 0. As is true in modules, an exported subprogram of an object's class cannot be called until the object is completely initialized.</p>
+<p>
+You are not allowed to create variables of a class, as in:</p>
+<p>
+</p>
+If the <b>monitor</b> keyword is present (just before <b>class</b>), the objects are monitors. This means that only one process at a time can be active in the object. See <b>monitor</b> and <b>process</b>.<p>
+Inherit lists are used to specify inheritance. See <b>inherit</b> list. Implement and implement-by lists provide a special kind of expansion which supports the separation of an interface from its implementation. See <b>implement</b> list and <b>implement-by</b> list. A class cannot contain both an inherit and an implement list.</p>
+<p>
+Class declarations can be nested inside modules and monitors but cannot be nested inside other classes or inside procedures or functions. A class must not contain a <b>bind</b> as one of its (outermost) declarations. A <b>return</b> statement cannot be used as one of the (outermost) statements in a class.</p>
+<p>
+A class cannot export variables (or run time constants) as <b>unqualified</b> (because each object has a distinct set of variables).</p>
+<p>
+The syntax of a <i>classDeclaration</i> presented above has been simplified by leaving out <b>pre</b>, <b>invariant</b> and <b>post</b> clauses. The full syntax<i> </i>which supports <b>pre</b>, <b>invariant</b> and <b>post</b> is the same as that for modules. The initialization of classes is the same as that for modules. See <b>module</b>.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var s : stack       % Not legal!</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			We will give an example in which a subprogram in one class overrides the corresponding subprogram in a class that is being inherited. The example is based on a program that implements a file system inside an operating system. All files have <i>open</i>,<i> close</i>,<i> read </i>and <i>write</i> operations. Some files, called <i>Device</i> files, also have an operation called <i>ioCtl</i> (input/output control). The kind of file determines the implementation method. Here is the expansion (inheritance) hierarchy among the classes of files.<p>
+</p>
+<p>
+
+</p>
+<center><img src="class01.gif"></center>
+The class called <i>File </i>gives the interface to all possible kinds of files. The <i>TextFile </i>class implements files that are text (ASCII characters). The <i>Device</i> class gives the interface to all files that have the <i>ioCtl</i> operation in addition to <i>open</i>,<i> close</i>,<i> read </i>and <i>write</i>. The <i>Tape</i> and <i>Disk</i> classes implement files that are actually physical tapes or disks. Here is the declaration of the <i>File</i> class:<p>
+</p>
+The <i>TextFile</i> class implements the <i>File</i> interface by giving variables declarations and procedure bodies for ASCII files:<p>
+</p>
+Objects to represent individual text files are created using the <b>new</b> statement:<p>
+</p>
+The <i>Device </i>class adds the <i>ioCtl </i>procedure to the <i>File</i> interface.<p>
+</p>
+The <i>Disk </i>class provides data and procedures to implement a file that is actually a disk<i> </i>(the <i>Tape</i> class is analogous):<p>
+</p>
+A pointer that can locate any kind of <i>File</i> object is declared this way:<p>
+</p>
+This may locate, for example, a <i>TextFile</i>:<p>
+</p>
+This assignment is allowed because <i>filePtr'</i>s corresponding class (<i>File</i>) is an ancestor of <i>textFilePtr'</i>s corresponding class (<i>TextFile</i>). It is guaranteed that the object now located by <i>filePtr</i> supports a version of all the operations of a <i>File</i> (<i>open</i>, <i>close</i>, <i>read</i> and <i>write</i>).<p>
+When we call a procedure in the object located by <i>filePtr</i>, the actual procedure called will depend upon the object:</p>
+<p>
+</p>
+For example, if <i>filePtr</i> currently locates a <i>Disk</i> file, this will call the <i>read</i> procedure from the <i>Disk</i> class. This is an example of <i>dynamic</i> <i>binding</i> in which  the version of <i>read </i>to be used is selected at run time and this choice is based on the object located by <i>filePtr</i>. This is called <i>polymorphism</i>, because <i>File</i> objects can have more than one form.<p>
+</p>
+
+			
+			
+			<pre><code>        class File
+            export open, close, read, write
+            deferred procedure open ( parameters for open )
+            deferred procedure close ( parameters for close )
+            deferred procedure read ( parameters for read )
+            deferred procedure write ( parameters for write )
+        end File</code></pre>
+			
+			<pre><code>        class TextFile
+            inherit File
+            var internalTextFileData :
+                 internal data for text files 
+        
+            body procedure open
+                 body for open for text files 
+            end open
+        
+             bodies for close, read and write procedures for text files
+        end TextFile</code></pre>
+			
+			<pre><code>        var textFilePtr : ^ TextFile
+                        % Pointer will locate a text file object
+        new textFilePtr     % Create a text file object
+        
+        textFilePtr -> read ( actual parameters )  % Read text file</code></pre>
+			
+			<pre><code>        class Device
+            inherit File
+            export ioCtl
+            deferred procedure ioCtl ( parameters for ioCtl )
+        end Device</code></pre>
+			
+			<pre><code>        class Disk
+            inherit Device
+            var internalDiskFileData :  internal data for disk files
+        
+            body procedure open
+                 body for open 
+            end open
+        
+             bodies for close, read, write and ioCtl procedures for disk 
+        end Disk</code></pre>
+			
+			<pre><code>        var filePtr : ^ File</code></pre>
+			
+			<pre><code>        filePtr := textFilePtr</code></pre>
+			
+			<pre><code>        filePtr -> read ( actual parameters )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			As another example, consider class <i>C</i>, which contains headers and bodies for functions <i>f</i> and <i>g</i>. <i>C</i> exports functions <i>f</i> and <i>g</i>. There is also a class <i>D</i>, which inherits from <i>C</i>. Class <i>D</i> contains a body that overrides the body for <i>g</i>. <i>D</i> also contains a header and body for function <i>h</i>. <i>D</i> exports function <i>h</i>.<p>
+Pointer <i>p</i> has been declared to locate an object of class <i>C</i>, but at runtime <i>p</i> locates an object of class <i>D</i>. When p is used to call <i>f</i>, by means of <i>p</i>-&gt;<i>f</i>, the body of <i>f</i>, which appears in <i>C</i>, is invoked. When p is used to call <i>g</i>, by means of <i>p</i>-&gt;<i>g</i>, <i>g</i>'s overriding body in <i>D</i> is invoked. Any attempt to use <i>p</i> to call <i>h</i> is illegal because <i>p</i> can only be used to call functions that are exported from <i>C</i>.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        class C
+            export f, g
+        
+            procedure f
+                put "C's f"
+            end f
+        
+            procedure g
+                put "C's g"
+            end g
+        end C
+        
+        class D
+            inherit C           % Inherit f and g
+        
+            body procedure g    % Overrides g in C
+                put "*** D's g ***"
+            end g
+        
+            procedure h
+                put "*** D's h ***"
+            end h
+        end D
+
+        var p : pointer to C    % p can point to any descendant of C
+        new D, p        % p locates an object of class D
+        p -> f          % Outputs "C's f"
+        p -> g          % Outputs "*** D's g ***"
+        p -> h          % Causes error "'h' is not in export list of 'C'"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="module.html">module</a></b>, <b><a href="monitor.html">monitor</a></b> and <b><a href="unit.html">unit</a></b>. See also <b><a href="import.html">import</a></b> list, <b><a href="export.html">export</a></b> list, <b><a href="implement.html">implement</a></b> list, <b><a href="implement_by.html">implement by</a></b> list, and <b><a href="inherit.html">inherit</a></b> list. See also <b><a href="deferred.html">deferred</a></b> subprogram. See also <b><a href="anyclass.html">anyclass</a></b> and <b><a href="objectclass.html">objectclass</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Text.Locate</title>
+</head>
+<body>
+	<h1>Text.Locate</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Text.Locate</b> ( <i>row</i>, <i>column</i> : <b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Text.Locate</b> procedure is used to<b> </b>move the cursor so that the next output from <b>put</b> will be at the given row and column. Row 1 is the top of the screen and column 1 is the left side of the screen.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs stars of random colors to random locations on the screen. The variable <i>colr </i>is purposely spelled differently from the word <i>color </i>to avoid the procedure of that name (used to set the color of output). The row number is purposely chosen so that it is one less than <b>maxrow</b>. This avoids the scrolling of the screen which occurs when a character is placed in the last column of the last row.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("screen")
+        var row, column, colr : int
+        loop
+            row := Rand.Int (1, maxrow)
+            column := Rand.Int (1, maxcol)
+            colr := Rand.Int (0, maxcolor)
+            Text.Color (colr)
+            Text.Locate (row, column )
+            put "*" ..  % Use dot-dot to avoid clearing end of line
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Text.Locate</b> procedure is used to locate the next output based on row and column positions. See also the <b>Text.LocateXY </b>procedure which is used to locate the output based x and y positions, where x=0, y=0 is the left bottom of the screen.<p>
+The screen should be in a "<i>screen</i>"<i> </i>or "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in one of these modes, it will automatically be set to"<i>screen</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Text.Locate</b> , not by calling <b>Locate</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a> </b>and <b><a href="draw_dot.html">Draw.Dot</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

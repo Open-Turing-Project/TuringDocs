@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Text.LocateXY</title>
+</head>
+<body>
+	<h1>Text.LocateXY</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Text.LocateXY</b> ( <i>x</i> , <i>y</i> : <b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Text.LocateXY </b>procedure is used to<b> </b>move the cursor so that the next output from <b>put</b> will be at approximately (<i>x</i>, <i>y</i>). The exact location may be somewhat to the left of <i>x</i> and below <i>y</i> to force alignment to a character boundary.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs <i>Hello</i> starting at approximately (100, 50) on the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        Text.LocateXY ( 100, 50 )
+        put "Hello"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Text.LocateXY</b> procedure is used to locate the next output based on x and y positions, where the position x=0, y=0 is the left bottom of the screen. See also the <b>Text.Locate </b>procedure which is used to locate the output-based row and column positions, where row 1 is the top row and column 1 is the left column.<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Text.LocateXY</b> , not by calling <b>LocateXY</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a> </b>and <b><a href="draw_dot.html">Draw.Dot</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

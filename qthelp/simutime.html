@@ -1,0 +1,94 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>simutime</title>
+</head>
+<body>
+	<h1>simutime</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>simutime</b> : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>simutime</b> function returns the number of simulated time units that have passed since program execution began.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Simulated time only passes when all process are either paused or waiting. This simulates the fact that CPU time is effectively infinitely fast when compared to "pause" time.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This prints out the simulated time passing between two processes. This will print out <i>3</i>,<i> 5</i>,<i> 6</i>,<i> 9</i>,<i> 10</i>,<i> 12</i>,<i> 15</i>,<i> 15</i>,<i> 18</i>,<i> 20</i>,<i> 21</i>,<i> &#133;</i><p>
+</p>
+
+			
+			
+			<pre><code>        process p (t : int)
+            loop
+                pause t
+                put simutime
+            end loop
+        end p
+        
+        fork p (3)
+        fork p (5)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			See also predefined unit <b><a href="concurrencymodule.html">Concurrency</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

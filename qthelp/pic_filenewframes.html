@@ -1,0 +1,188 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.FileNewFrames</title>
+</head>
+<body>
+	<h1>Pic.FileNewFrames</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.FileNewFrames</b> (<i>pathName</i> : <b>string</b>, <b>var</b> <i>picIDs</i> : <b>array</b> 1 .. * <b>of int</b>, <b>var</b> <i>delayTime</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.FileNewFrames</b> loads multiple pictures stored in a single
+          multiframe GIF image file into an array of integers.
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			GIF files can contain multiple frames (pictures).  Animated GIFs 
+          function by displaying each frame in the GIF one after another 
+          with a delay between them.  This delay can also be specified in 
+          the GIF file.
+          <p>
+          <b>Pic.FileNewFrames</b> reads the series of frames from the 
+          multiframe GIF file, and turns each frame into a picture.  The
+          picture is then assigned to an element in the <i>picIDs</i> array.
+          If the array is not large enough, then an error occurs and no
+          pictures are loaded.
+          </p>
+<p>
+          <b>Pic.FileNewFrames</b> also reads the delay specified in the GIF 
+          file and sets <i>delayTime</i> to the delay in milliseconds.  Note 
+          that many multiple frame GIF files do not specify a delay, in which 
+          case <i>delayTime</i> will be set to 0.
+          </p>
+<p>
+          In order to determine the number of frames in multiple frame GIF
+          file, you must use the <b><a href="pic_frames.html">Pic.Frames</a></b>
+          function.  This returns a number that can be used to declare the
+          array that will be passed to <b>Pic.FileNewFrames</b>.
+          </p>
+<p>
+          <tt><b>var</b> <i>numFrames</i> = <b>Pic.Frames</b> ("mypic.gif")<br><b>var</b> <i>pics</i> : <b>array</b> 1 .. <i>numFrames</i> <b>of int</b><br><b>var</b> <i>delayTime</i> : <b>int</b><br><b>Pic.FileNewFrames</b> ("mypic.gif", <i>pics</i>, <i>delayTime</i>)</tt>
+          </p>
+<p>
+          The frames can be sequentially displayed using either 
+          <b>Pic.DrawFrames</b> or <b>Pic.DrawFramesBack</b> which display the 
+          images one at a time. (<b>Pic.DrawFrames</b> returns once all the 
+          images have been displayed, <b>Pic.DrawFramesBack</b> returns 
+          immediately allowing the program to continue execution while the 
+          frames are being displayed.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			GIF files can have a transparent color.  This color will be added to
+          the color palette, if not already present.  Thus you may notice that
+          <b>maxcolor</b> changes after calling <b>Pic.FileNew</b> or
+          <b>Pic.FileNewFrames</b>.  The GIF image will be be displayed without
+          the transparent color if <i>mode</i> parameter in any of the 
+           <b>Pic.Draw...</b> procedures is set to <i>picMerge</i>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Each picture is in the array has been allocated by the system and
+          should be freed separately once the program is finished with the
+          pictures.  Failing to do so can use up the system's memory.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program loads a multiple frame GIF called "globe.gif" and 
+          displays it.
+<p>
+    </p>
+
+			
+			
+			<pre><code>        % Determine the number of frames in "globe.gif"
+        % Create the original picture
+        var numFrames := Pic.Frames ("globe.gif")
+        % Load the picture
+        var delayTime : int
+        var pics : array 1 .. numFrames of int
+
+	Pic.FileNewFrames ("globe.gif", pics, delayTime)
+	Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.FileNewFrames</b>, not by calling <b>FileNewFrames</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_frames.html">Pic.Frames</a></b> for information on how
+          to determine the number of frames in a GIF image.<p>
+          <b><a href="pic_drawframes.html">Pic.DrawFrames</a></b> for information on
+          how to sequentially display the images stored in array of pictures.</p>
+<p>
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> for 
+          information on how to sequentially display the images stored in array 
+          of pictures while continuing to execute the program.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

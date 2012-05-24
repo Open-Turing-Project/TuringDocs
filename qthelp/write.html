@@ -1,0 +1,105 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>write</title>
+</head>
+<body>
+	<h1>write</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>writeStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>write</b> : <i>fileNumber</i> [:<i>status</i> ], <i>writeItem</i> {, <i>writeItem</i>}</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>write</b> statement outputs each of the <i>writeItems</i> to the specified file. These items are output directly using the <i>binary </i>format that they have in the computer. In other words, the items are not in source (ASCII or EBCDIC) format. In the common case, these items will later be input from the file using the <b>read</b> statement. By contrast, the <b>get</b> and <b>put</b> statements use source format, which a person can read using a text editor.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This example shows how to output a complete employee record using a <b>write</b> statement.<p>
+</p>
+
+			
+			
+			<pre><code>        var employeeRecord :
+            record
+                name : string ( 30 )
+                pay : int
+                dept : 0 .. 9
+            end record
+        var fileNo : int
+        open : fileNo, "payroll", write
+        
+        write : fileNo, employeeRecord</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			An array, record or union may be read and written as a whole. The <i>fileNumber</i> must specify a file that is open with <b>write</b> capability (or else a program argument file that is implicitly opened).<p>
+The optional <i>status</i> is an <b>int</b> variable that is set to implementation-dependent information about the <b>write</b>. If <i>status</i> is returned as zero, the <b>write</b> was successful. If <i>status</i> is not returned as zero, <i>status</i> gives information about the incomplete or failed <b>write</b> (which is not documented here). Programmers often use <i>status </i>when they are writing a record or array to a file and are not sure if there is enough room on the disk to hold the item. If there is not enough room, the <b>write</b> will fail part way through, but the program can continue and diagnose the problem by inspecting <i>status</i>.</p>
+<p>
+A <i>writeItem</i> is:</p>
+<p>
+</p>
+Each <i>writeItem</i> is a variable or constant, to be written in internal form. The optional <i>requestedSize</i> is an integer expression giving the number of bytes of data to be written. The <i>requestedSize</i> should be less than or equal to the size of the item's internal form in memory (if it is not, a warning message is issued). If no <i>requestedSize</i> is given, the size of the item in memory is used. The optional <i>actualSize</i> is set to the number of bytes actually written.<p>
+</p>
+
+			
+			
+			<pre><code>        reference [ : requestedSize [ : actualSize ] ]</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="">write</a></b>, <b><a href="open.html">open</a></b>, <b><a href="close.html">close</a></b>, <b><a href="seek.html">seek</a></b>, <b><a href="tell.html">tell</a></b>, <b><a href="get.html">get</a></b> and <b><a href="put.html">put</a></b> statements.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

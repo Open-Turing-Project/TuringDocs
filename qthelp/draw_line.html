@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Draw.Line</title>
+</head>
+<body>
+	<h1>Draw.Line</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.Line</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.Line </b>procedure is used to draw a line on the screen from (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) using the specified <i>Color</i>.<p>
+
+</p>
+<center><img src="draw_line01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a large X, reaching to each corner of the screen using color number 1. The <b>maxx</b> and <b>maxy </b>functions are used to determine the maximum x and y values on the screen. The point (0,0) is the left bottom of the screen, (<b>maxx</b>, <b>maxy</b>) is the right top, etc.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        % First draw a line from the left bottom to right top
+        Draw.Line (0, 0, maxx, maxy, 1) 
+        % Now draw a line from the left top to right bottom
+        Draw.Line (0, maxy, maxx, 0, 1)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>"<i> </i>mode, an error will occur.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.Line</b>, not by calling <b>Line</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

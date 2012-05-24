@@ -216,7 +216,7 @@ end
 SKIP_CHECKED = true
 STATUS_FILE = relative("../status.json")
 INFO_FILE = relative("../info.json")
-info = {:pages => [], :special => []}
+info = {:pages => [], :special => [],:titles => []}
 $status = JSON.parse(IO.read(STATUS_FILE), :symbolize_names => true)
 
 mdownProcessor = MarkdownProcessor.new(relative("mdownTemplate.erb"),'markdown','md',SKIP_CHECKED)
@@ -236,24 +236,19 @@ elsif process == "none"
 else
 	to_run = [process.to_sym]
 end
-		
 
-resources = []
 Dir["html/*.html"].each.with_progress do |f|
 	datastruct = Processor.convFile(f)
 	info[:pages] << datastruct[:fileName]
+	info[:titles] << datastruct[:title]
 	info[:special] << datastruct[:fileName] if datastruct[:htmlcontent]
 	# run all the processes
 	to_run.each do |process|
 		processors[process].save(datastruct)
 	end
-	# find the resources
-	unless datastruct[:dependencies].empty?
-		resources.concat(datastruct[:dependencies])
-	end
 end
 # copy the necessary resources
-resources.map! { |e| relative("../html/#{e}") }
+resources = Dir[relative("../html/*.gif")]
 copy_resources_to.each do |folder|
 	FileUtils.cp resources, relative("../#{folder}/")
 end

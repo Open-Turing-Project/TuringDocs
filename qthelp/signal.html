@@ -1,0 +1,72 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>signal</title>
+</head>
+<body>
+	<h1>signal</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>signalStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>signal</b> <i>variableReference</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>signal</b> statement is used in a concurrent program to wake up a process that is blocked (waiting on a condition variable). The statement can only be used inside a monitor (a special kind of module that handles concurrency). A <b>signal</b> statement operates on a <b>condition</b> variable (the <i>variableReference</i>), which is essentially a queue of sleeping processes. See <b>condition</b> for an example of a <b>signal</b> statement.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A <b>signal</b> statement wakes up one process that is doing a <b>wait</b> on the specified condition queue, if such a process exists. If the condition is deferred (or <b>timeout</b>; see <b>condition</b>), the signaler continues in the monitor, and the awakened process is allowed to continue only when the monitor becomes inactive. A signal to an <i>immediate</i> (non-deferred) condition causes the signaled process to begin running in the monitor immediately. The signaling process waits to re-enter the monitor when the monitor becomes inactive.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="condition.html">condition</a></b> and <b><a href="wait.html">wait</a></b>. See also <b><a href="monitor.html">monitor</a></b> and <b><a href="fork.html">fork</a></b>. See also <b><a href="empty.html">empty</a></b>. See also <b><a href="pause.html">pause</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Time.ElapsedCPU</title>
+</head>
+<body>
+	<h1>Time.ElapsedCPU</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Time.ElapsedCPU </b>: <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Time.ElapsedCPU </b>function is used on a multitasking system such as UNIX to<b> </b>determine the amount of time that has been used by this program (process). The number of central processor milliseconds assigned to this program is returned. This is of little use on a personal computer, where <b>Time.ElapsedCPU </b>returns the same value as <b>Time.Elapsed</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			On a UNIX system, this program tells you how much time it has used.<p>
+</p>
+
+			
+			
+			<pre><code>        var timeUsed : int
+        timeUsed := Time.ElapsedCPU
+        put "This program has used ", timeUsed,
+                " milliseconds of CPU time"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Time.ElapsedCPU</b>, not by calling <b>ElapsedCPU</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="time_elapsed.html">Time.Elapsed</a> </b>and <b><a href="time_delay.html">Time.Delay</a></b> subprograms.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

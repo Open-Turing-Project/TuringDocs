@@ -1,0 +1,100 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Error.Trip</title>
+</head>
+<body>
+	<h1>Error.Trip</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Error.Trip</b> (<i>errorCode</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Error.Trip</b> is a procedure that sets the error number that is
+          returned by <b>Error.Last</b> and <b>Error.LastMsg</b>. It does  
+          not halt the program.<p>
+          Error codes that do not correspond to recognized errors will cause 
+          an abort with the error message "Unknown Error #n" where n is the 
+          error passed in.</p>
+<p>
+          You can find a list of constants for the legal error codes in the 
+          module <b>ErrorNum</b>. Any call to <b>Error.Trip</b> should use a 
+          constant found in the <b>ErrorNum</b> module.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sets an error code. The program outputs 201 for the error
+          number and "File not found" for the message.<p>
+</p>
+
+			
+			
+			<pre><code>        Error.Trip (eFsysFileNotFound)
+        put "Error code = ", Error.Last
+        put "Error message = ", Error.LastMsg</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			<p>
+    </p>
+
+			
+			
+
+			
+			
+			<b>See example file  for an example of how to use Error.Trip.</b>
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Error.Trip</b>, not by calling <b>Trip</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

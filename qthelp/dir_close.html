@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Dir.Close</title>
+</head>
+<body>
+	<h1>Dir.Close</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Close</b> (<i>streamNumber</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Close</b> is part of a series of four subprograms that help users get directory listings. <b>Dir.Close</b> is used to close a directory stream number opened by <b>Dir.Open</b>. After the directory stream number is closed, it can not be used with <b>Dir.Get</b> or <b>Dir.GetLong</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Close</b> call fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program prints a listing of all the files in the directory <i>datafiles</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        var streamNumber : int
+        var fileName : string
+        streamNumber := Dir.Open ("datafiles")
+        assert streamNumber > 0
+        loop
+            fileName := Dir.Get (streamNumber)
+            exit when fileName = ""
+            put fileName
+        end loop
+        Dir.Close (streamNumber)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Dir.Close</b>, not by calling <b>Close</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>buttonwait</title>
+</head>
+<body>
+	<h1>buttonwait</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>buttonwait</b> (<i>motion</i> : <b>string</b>, <br></font><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>var</b> <i>x</i>, <i>y</i>, <i>buttonnumber</i>, <i>buttonupdown</i> : <b>int</b>)</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>buttonwait</b> procedure gets information about a mouse event and removes it from the queue.<p>
+The parameter <i>motion</i> must be one of "up", "down", "updown" or "downup". If an event of the type requested is in the queue, <b>buttonwait</b> returns instantly. If there isn't such an event, <b>buttonwait</b> waits until there is one and then returns (much like <b>getch</b> handles keystrokes).</p>
+<p>
+In "<i>single-button mode</i>" (where the mouse is treated like a one-button mouse), a "down" event occurs whenever all the buttons are up and a button is pressed. An "up" event takes place when the last button is released so that no buttons remain pressed.</p>
+<p>
+In "<i>multi-button mode</i>", a "down" event occurs whenever any button is pressed, and an "up" event occurs whenever any button is released.</p>
+<p>
+The parameters <i>x</i> and <i>y</i> are set to the position of the mouse cursor when the button was pressed. The parameter <i>buttonnumber</i> is set to 1 when in "<i>single-button mode</i>". In  "<i>multi-button mode</i>", it is set to 1 if the left button was pressed, 2 if the middle button was pressed, and 3 if the right button was pressed. The parameter <i>buttonupdown</i> is set to 1, if a button was pressed and 0 if a button was released. </p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws lines. It starts a line where the user presses down and continues to update the line while the mouse button is held down. When the button is released, the line is permanently draw and the user can draw another line.<p>
+</p>
+
+			
+			
+			<pre><code>        var x, y, buttonnumber, buttonupdown, buttons : int
+        var nx, ny : int
+        loop
+            buttonwait ("down", x, y, buttonnumber, buttonupdown)
+            nx := x
+            ny := y
+            loop
+                drawline (x, y, nx, ny, 0)  % Erase previous line
+                exit when buttonmoved ("up")
+                mousewhere (nx, ny, buttons)
+                drawline (x, y, nx, ny, 1)  % Draw line to position
+            end loop
+            buttonwait ("up", nx, ny, buttonnumber, buttonupdown)
+            drawline (x, y, nx, ny, 2)  % Draw line to final position
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In the previous example, when the mouse moves, the line is erased by drawing it in white. This erases anything that
+the line was drawn on top of, including previous lines. A more complete example involving the clicking and dragging 
+of filled rectangles using the mouse is available. In this example, the background is fully restored when the 
+rectangle is moved by using "xor".<p>
+<object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+  <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Mouse Dragging Example">
+<param name="Item1" value="-1,MouseDrag.t;Click and Drag Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This is an example demonstrating how to check for both character and mouse input at the same time.<p>
+</p>
+
+			
+			
+			<pre><code>        var ch : string (1)
+        var x, y, btnnum, btnupdown : int
+        loop
+            if hasch then
+                getch (ch)
+                locate (1, 1)
+                put "The character entered is a: ", ch
+            end if
+            if buttonmoved ("down") then
+                buttonwait ("down", x, y, btnnum, btnupdown)
+                locate (1, 1)
+                put "The button was clicked at position: ", x, ", ",y
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>buttonwait </b>can be thought of as the mouse equivalent of <b>getch</b> in that they both read something in a queue and both wait until they get the thing they're looking for.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="">buttonwait</a></b> to see if an appropriate event is in the queue. See also <b><a href="buttonchoose.html">buttonchoose</a></b> to switch between "<i>single-button mode</i>" and "<i>multi-button mode</i>".<p>
+See also predefined unit <b><a href="mousemodule.html">Mouse</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

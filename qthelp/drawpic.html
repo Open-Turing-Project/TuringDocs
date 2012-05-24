@@ -1,0 +1,121 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>drawpic</title>
+</head>
+<body>
+	<h1>drawpic</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>drawpic</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>buffer</i> : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>picmode</i> : <b>int</b>)<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawpic</b> procedure is used to copy of a rectangular picture 
+          onto the screen. The left bottom of the picture is placed at 
+          (<i>x</i>, <i>y</i>). In the common case, the buffer was initialized 
+          by calling <b>takepic</b>. The values of <i>picmode</i> are:<p>
+          </p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+              <td>0:  Copy actual picture on screen.</td>
+            </tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+              <td>1:  Copy picture by XORing it onto the screen.</td>
+            </tr>
+</table>
+<p>
+	  XORing a picture onto the screen twice leaves the screen as it was  
+	  (this is a convenient way to move images for animation). XORing a 
+	  picture onto a background effectively superimposes the picture onto 
+	  the background.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			See <b>takepic</b> for an example of the use of <b>drawpic</b> and 
+          for further information about buffers for drawing pictures.<p>
+          The screen must be in a "<i>graphics</i>" mode. See the 
+          <b>setscreen</b> procedure for details. If the screen is not in a 
+          "<i>graphics</i>" mode, an error will occur.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>drawpic</b>, <b>takepic</b>, and <b>sizepic</b> subprograms
+          have been made obsolete by the subprograms 
+          <b><a href="pic_draw.html">Pic.Draw</a></b> and
+          <b><a href="pic_new.html">Pic.New</a></b> of the 
+          <b><a href="picmodule.html">Pic</a></b> module.  Users are 
+          strongly suggested to use those routines instead. The 
+          <b><a href="picmodule.html">Pic</a></b> module also contains 
+          subprograms to load images from files.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="takepic.html">takepic</a></b> and 
+          <b><a href="sizepic.html">sizepic</a></b>. See also 
+          <b><a href="setscreen.html">setscreen</a></b>, 
+          <b><a href="maxx.html">maxx</a></b>, 
+          <b><a href="maxy.html">maxy</a></b> and the various 
+          <b>draw&#133;</b> procedures.<p>
+          See also predefined unit <b><a href="drawmodule.html">Draw</a></b> and 
+          <b><a href="picmodule.html">Pic</a></b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.GetEventTime</title>
+</head>
+<body>
+	<h1>GUI.GetEventTime</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.GetEventTime</b> : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Returns the time in milliseconds when the event (mouse button or keystroke) took place. This value is the same value as <i>Time.Elapsed</i> returns if called when the event was processed. This function should only be called in an <i>action procedure</i> or in a default mouse, keystroke, or null event handler, as it will return 1 when there is no event being processed.<p>
+This event can be used as a timer for various functions such as determining whether a single click or a double click of the mouse button took place or for timing keyboard input.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program times the interval between two button presses.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI" 
+        View.Set ("graphics:300;100") 
+        
+        var startTime, startButton, finishButton : int
+        
+        procedure Start
+            startTime := GUI.GetEventTime
+        end Start
+        
+        procedure Finish
+            Text.Locate (1, 1)
+            put "The time between button pressed is ", 
+                GUI.GetEventTime  startTime, " msecs"
+            GUI.Quit
+        end Finish
+        
+        startButton := GUI.CreateButton (10, 10, 110, "Click First", Start)
+        finishButton := GUI.CreateButton (180, 10, 110, "Click Second", Finish)
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.GetEventTime</b> , not by calling <b>GetEventTime</b> .</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_processevent.html">GUI.ProcessEvent</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

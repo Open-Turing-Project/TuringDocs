@@ -1,0 +1,115 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>eof</title>
+</head>
+<body>
+	<h1>eof</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>eof</b> (<i>streamNumber</i> : <b>int</b>) : <b>boolean</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>eof</b> (end of file) function is used to determine if there 
+          is any more input. It returns <b>true</b> when there are no more 
+          characters to be read. The parameter and its parentheses are omitted 
+          when referring to the standard input (usually this is the keyboard); 
+          otherwise the parameter specifies the number of a stream. The stream 
+          number has been determined (in most cases) by an <b>open</b> 
+          statement.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program reads and outputs all the lines in the file called 
+          "info".<p>
+</p>
+
+			
+			
+			<pre><code>        var line : string
+        var fileNumber : int
+        open : fileNumber, "info", get
+        loop
+            exit when eof (fileNumber)
+            get : fileNumber, line : *
+            put line
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			See also the description of the <b>get</b> statement, which gives 
+          more examples of the use of <b>eof</b>. See also the <b>open</b> 
+          and <b>read</b> statements.<p>
+          When the input is from the keyboard, the user can signal end-of-file 
+          by typing control-Z on a PC (or control-D on UNIX). If a program 
+          tests for <b>eof</b> on the keyboard, and the user has not typed 
+          control-Z (or control-D) and the user has typed no characters beyond 
+          those that have been read, the program must wait until the next 
+          character is typed. Once this character is typed, the program 
+          knows whether it is at the end of the input, and returns the 
+          corresponding <b>true</b> or <b>false</b> value for <b>eof</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Another example is available that illustrates detecting EOF from
+          the keyboard.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,eof2.t;eof from Keyboard Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

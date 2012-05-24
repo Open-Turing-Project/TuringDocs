@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>result</title>
+</head>
+<body>
+	<h1>result</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>resultStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>result</b> <i>expn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>result</b> statement, which must appear only in a <b>function</b>, is used to provide the value of the function.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This function doubles its parameter.<p>
+</p>
+
+			
+			
+			<pre><code>        function double ( x : real ) : real
+            result 2 * x
+        end double
+        put double ( 5.3 )      % This outputs 10.6</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This function finds the position of a name in a list.<p>
+</p>
+
+			
+			
+			<pre><code>        function find ( a : array 1 .. 100 of string ) : int
+            for i : 1 .. 100
+                if a ( i ) = name then
+                    result i
+                end if
+            end for
+        end find</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The execution of a <b>result</b> statement computes the value of the expression (<i>expn</i>) and terminates the function, returning the value as the value of the function.<p>
+The expression must be assignable to the result type of the function, for example, in <i>double</i>, 2*<i>x</i> is assignable to <b>real</b>. (See the <i>assignmentStatement</i> for the definition of assignable.)</p>
+<p>
+A function must terminate by executing a <b>result</b> statement and not by reaching the end of the function.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

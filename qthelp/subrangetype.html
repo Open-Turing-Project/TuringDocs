@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>subrangeType</title>
+</head>
+<body>
+	<h1>subrangeType</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>subrangeType</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>expn</i> .. <i>expn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A subrange type defines a set of values, for example, the subrange 1 .. 4 consists of 1, 2, 3 and 4.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var i : 1 .. 10         % i can be 1, 2  up to 10
+        type xRange : 0 .. 319      % Define integer subrange
+        var pixels : array xRange of int
+                            % Array elements are
+                            % numbered 0, 1,  319
+        for k : xRange          % k ranges from 0 to 319
+            pixels ( k ) := 0
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A subrange must contain at least one element. In other words, the second expression (<i>expn</i>) must be at least as large as the first expression.<p>
+The lower bound of a subrange must be known at compile time. The upper bound is allowed to be a run time value only in one situation and that is when it gives the upper bound of an array being declared in a variable declaration, in other words when declaring a <i>dynamic</i> array.</p>
+<p>
+Subranges are usually a subset of the integers, as in 1 .. 10. You can also have subranges of enumerated types and characters (the <b>char</b> type).</p>
+<p>
+You can apply <b>lower</b> and <b>upper</b> to subrange types.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

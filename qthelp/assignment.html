@@ -1,0 +1,104 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>assignment</title>
+</head>
+<body>
+	<h1>assignment</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>assignmentStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>variableReference</i> := <i>expn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An assignment statement calculates the value of the expression (<i>expn</i>) and assigns that value to the variable (<i>variableReference</i>).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var i : int
+        i := 24         % Variable i becomes 24
+        var a : array 1 .. 25 of string
+        a (i) := "Ralph"        % The i-th element of a becomes "Ralph"
+        
+        var b : array 1 .. 25 of string
+        b := a          % Array b becomes (is assigned) array a</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The expression on the right of := must be <i>assignable </i>to the variable on the left. For example, in the above, any integer value, such as 24, is assignable to <i>i</i>,<i> </i>but a <b>real</b> value such as 3.14 would not be not assignable to <i>i</i>. Entire arrays, records and unions can be assigned. For example, in the above, array <i>a</i> is assigned to array <i>b</i>. See <i>assignability </i>for the exact rules of allowed assignments.<p>
+You cannot assign a new value to a constant (<b>const</b>).</p>
+<p>
+There are short forms that allow you to write assignment statements more compactly. For example,</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>
+<i>i</i> := <i>i</i> + 1</td>
+</tr></table>
+<p>
+can be shortened to</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>
+<i>i</i> += 1</td>
+</tr></table>
+<p>
+In Turing, there are short forms for combining +, = and * with assignment. For example, <i>i</i> *= 2 doubles <i>i</i>.</p>
+<p>
+There are also short forms to allow any binary operator to be combined with assignment. For example, <i>i</i> <b>shl</b>= 2 shifts <i>i</i> by 2 to the left.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

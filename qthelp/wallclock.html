@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>wallclock</title>
+</head>
+<body>
+	<h1>wallclock</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>wallclock</b> ( <b>var</b> <i>c</i> : <b>int</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>wallclock</b> statement is used to determine the time in seconds since 00:00:00 GMT (Greenwich Mean Time) January 1, 1970.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program tells you how many seconds since 1970.<p>
+</p>
+
+			
+			
+			<pre><code>        var seconds : string
+        wallclock ( seconds )
+        put "The number of seconds since 1970 is ", seconds</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Be warned that on some computers such as IBM PC compatibles or Apple Macintoshes, the time may not be set correctly in the operating system; in that case, the <b>wallclock</b> procedure will give incorrect results. Also, on IBM PC compatibles, the call is dependent on having the time zone TZ variable correctly set. On an IBM PC, the default time zone is set to PST (6 hours from GMT).<p>
+On the Apple Macintosh, the <b>wallclock</b> procedure returns the number of seconds since 00:00:00 local time Jan. 1, 1970.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="delay.html">delay</a></b>, <b><a href="time.html">time</a></b>, <b><a href="clock.html">clock</a></b>, <b><a href="sysclock.html">sysclock</a></b> and <b><a href="date.html">date</a></b> statements.<p>
+See also predefined unit <b><a href="timemodule.html">Time</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

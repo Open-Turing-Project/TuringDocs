@@ -1,0 +1,80 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>index</title>
+</head>
+<body>
+	<h1>index</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>index</b> (<i>s </i>, <i>patt</i> : <b>string</b> ) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>index</b> function is used to find the position of <i>patt </i>within string <i>s</i>. For example, <b>index</b> ( "chair", "air" ) is 3.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs 2, because "ill" is a substring of "willing", starting at the second character of "willing".<p>
+</p>
+
+			
+			
+			<pre><code>        var word : string := "willing"
+        put index ( word, "ill" )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the pattern (<i>patt</i>) does not appear in the string (<i>s</i>), <b>index</b> returns 0 (zero). For example, here is an <b>if</b> statement that checks to see if string <i>s</i> contains a blank:<p>
+</p>
+The <b>index</b> is sometimes used to efficiently determine if a character is one of a given set of characters. For example, here is an <b>if</b> statement that checks to see if <i>ch</i>,<i> </i>which is declared using <b>var</b> <i>ch </i>: <b>string</b> (1), is a digit:<p>
+</p>
+If a string contains more that one occurrence of the pattern, the leftmost location is returned. For example, <b>index</b> ("pingpong", "ng") returns 3.<p>
+If <i>patt</i> is the null string, the result is 1.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        if index ( s, " " ) not= 0 then </code></pre>
+			
+			<pre><code>        if index ( "0123456789", ch) not= 0 then </code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

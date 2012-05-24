@@ -1,0 +1,88 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>or</title>
+</head>
+<body>
+	<h1>or</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><i>A </i><b>or</b><i> B</i><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>or</b> (boolean) operator yields a result of true if at least one (or both) of the operands is true. <b>or</b> is a short circuit operator. For example, if <i>A</i> is true in <i>A </i><b>or</b><i> B</i> then <i>B </i>is not evaluated.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var success : boolean := false
+        var continuing := true  % the type is boolean
+        
+        continuing := continuing or success</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<i>continuing</i> is set to <b>false</b>, if and only if, both <i>continuing</i> and <i>success</i> are <b>false</b>. Since Turing uses short circuit operators, once <i>continuing</i> is true, <i>success</i> will not be looked at.<p>
+The <b>or</b> operator can be applied to natural numbers. The result is the natural number that is the bit-wise <b>or</b> of the operands. See <b>nat</b> (natural number).</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="boolean.html">boolean</a></b> (which discusses <b><a href="true.html">true</a></b>/<b>false</b> values), <i><a href="explicittruefalseconstant.html">explicitTrueFalseConstant</a></i> (which discusses the values <b><a href="true.html">true</a></b> and <b><a href="false.html">false</a></b>), <i><a href="precedence.html">precedence</a></i> and <i><a href="expn.html">expn</a></i> (expression).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

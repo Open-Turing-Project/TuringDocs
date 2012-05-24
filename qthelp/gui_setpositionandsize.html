@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SetPositionAndSize</title>
+</head>
+<body>
+	<h1>GUI.SetPositionAndSize</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetPositionAndSize</b> (<i>widgetID</i>, <i>x</i>,<i> y</i> : <b>int</b>, <br><i>width</i>, <i>height</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Changes the position and size of the widget specified by <i>widgetID </i>simultaneously. The <i>x</i>, <i>y</i>, <i>width</i> and <i>height</i> parameters have the same meaning as in the <b>GUI.Create</b> function for that widget. Any widget except a menu or a menu item can be resized, although for some widgets, the <i>width</i> or <i>height</i> parameter may be ignored.<p>
+<b>GUI.SetPositionAndSize</b> works the same way as the <b>GUI.SetPosition</b> and <b>GUI.SetSize</b> procedures.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program moves and resizes the button every time the button is pressed.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        
+        var button, minWidth, minHeight  : int
+        
+        procedure MoveButton
+            var newX, newY, newWidth, newHeight  : int
+            newWidth := max (minWidth, Rand.Int (0, 200))
+            newHeight := max (minHeight, Rand.Int (0, 100))
+            newX := Rand.Int (0, maxx  newWidth)
+            newY := Rand.Int (0, maxy  newHeight)
+            GUI.SetPositionAndSize (button, newX, newY, 
+                newWidth, newHeight)
+        end MoveButton
+        
+        button := GUI.CreateButton (100, 100, 0, "Move Button", 
+            MoveButton)
+        minHeight := GUI.GetHeight (button)
+        minWidth := GUI.GetWidth (button)
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.SetPositionAndSize</b>, not by calling <b>SetPositionAndSize</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,144 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.SetTransparentColor</title>
+</head>
+<body>
+	<h1>Pic.SetTransparentColor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.SetTransparentColor</b> (<i>colorNumber</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Pic.SetTransparentColor</b> procedure sets the color in the 
+          picture that should be considered transparent when the picture is 
+          drawn using the <tt>picMerge</tt> or <tt>picUnderMerge</tt> modes. 
+          If no color is specified, then the default background color 
+          (<b>colorbg</b>, usually <b>white</b>) is used as the transparent 
+          color.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			This call is often used when displaying images that were 
+          originally stored as GIFs and translated into another format. 
+          Many GIFs have a transparent color that can be non-white. To use 
+          this call, you must know the color number that represents the color 
+          in the image that is to be transparent.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays two images loaded from the same file. In the 
+          second image,the transparent color has been set to bright red (that
+          is, the parts of the image that are meant to be transparent are in
+          bright red).
+          <p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var pic1 : int := Pic.FileNew ("airplane.bmp")
+        var pic2 : int := Pic.FileNew ("airplane.bmp")
+        Pic.SetTransparentColor (pic2, brightred)
+        setscreen ("offscreenonly")
+        for x : 100 .. maxx - 100
+            cls
+            put "The lower image has the transparent color set to bright red"
+            Pic.Draw (pic1, x, 150, picMerge)
+            Pic.Draw (pic2, x, 50, picMerge)
+            View.Update
+            delay (5)
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			<b>Pic.SetTransparentColour</b> is an alternate spelling for 
+          <b>Pic.SetTransparentColor</b>.<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Pic.SetTransparentColor</b>, not by calling 
+          <b>SetTransparentColor</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_draw.html">Pic.Draw</a></b> and 
+          <b><a href="pic_filenew.html">Pic.FileNew</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

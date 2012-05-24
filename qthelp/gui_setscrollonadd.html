@@ -1,0 +1,120 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SetScrollOnAdd</title>
+</head>
+<body>
+	<h1>GUI.SetScrollOnAdd</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetScrollOnAdd</b> (<i>widgetID</i> : <b>int</b>, <i>scrollOnAdd</i> : <b>boolean</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>GUI.SetScrollOnAdd</b> procedure allows you to specify
+          whether a text box scrolls to the bottom of the text when
+	  new text is added (the default behaviour). By calling this
+	  procedure with <i>scrollOnAdd</i> set to <b>false</b>, the 
+	  text box will not scroll unless the user manipulates the
+	  text box's scroll bars.
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays the contents of a file in a text box.
+          After the file is displayed, the top line in the text box will
+	  be the first line in the file.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI 
+        View.Set ("graphics:300;300") 
+        
+        const fileNameToBeViewed : string := "TextBxs.DEM"
+        var textBox : int       % The Text Field ID.
+        var title : int     % The label for the title.
+        var f : int         % The stream number of the file.
+        var line : string       % Lines to be read from the file.
+        
+        % Open the file.
+        open : f, fileNameToBeViewed, get
+        if f = 0 then
+            put "Unable to open " + fileNameToBeViewed + " : ", Error.LastMsg
+            return
+        end if
+        
+        % Set background color to gray for indented text box.
+        GUI.SetBackgroundColor (gray)
+        
+        % Create the title label and text box.
+        title := GUI.CreateLabelFull (20, 280, fileNameToBeViewed, 250, 0, 
+            GUI.CENTER, 0)
+        textBox := GUI.CreateTextBoxFull (10, 10, 280, 265, 
+            GUI.INDENT, 0)
+        
+	GUI.SetScrollOnAdd (textBox, false)
+
+        % Read the file and place it in the text box.
+        loop
+            exit when eof (f)
+            get : f, line : *
+            GUI.AddLine (textBox, line)
+        end loop
+        
+        close : f   % Close the file.
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+	  <b>GUI.SetScrollOnAdd</b>, not by calling <b>SetScrollOnAdd</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

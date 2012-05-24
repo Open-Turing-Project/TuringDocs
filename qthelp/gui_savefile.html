@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SaveFile</title>
+</head>
+<body>
+	<h1>GUI.SaveFile</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SaveFile</b> (<i>title</i> : <b>string</b>) : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Displays an "Save File" dialog box to obtain the name of a file. The caption (a window title under MS Windows, a string in a Macintosh dialog box) is specified by the <i>title</i> parameter. The function uses a dialog box specific to the operating system the program is being run on.<p>
+If the user did not choose a file (i.e. hit the <i>Cancel</i> button in the dialog), the function returns "" (the empty string).</p>
+<p>
+<b>Note</b>: This function is <b>not</b> available in the current version of the GUI Procedure Library (shipping with Turing 4.0 and MacOOT 1.5). It is documented here for use with future shipping version of Turing. Check the release notes that are found in the on-line help to find out if this function is now available.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program asks the user for the name of a file and then writes the numbers 1 to 10 in it.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI in "%oot/lib/GUI"
+        
+        var fileName : string
+        var streamNumber : int
+        
+        fileName := GUI.SaveFile ("Choose a Text File")
+        
+        open : streamNumber, fileName, put
+        assert streamNumber > 0
+        for i : 1 .. 10
+            put : streamNumber, i
+        end loop
+        close : streamNumber</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.SaveFile</b>, not by calling <b>SaveFile</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

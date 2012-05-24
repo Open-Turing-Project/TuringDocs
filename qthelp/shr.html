@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>shr</title>
+</head>
+<body>
+	<h1>shr</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><i>A</i> <b>shr</b> <i>B</i><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>shr</b> (shift right) operator produces the value of <i>A</i> shifted <i>B</i> bits to the right. Both A and B must be non-negative integers (natural numbers).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Assign the base 2 value 1101 to <i>i</i> and then shift it right by 2 places and assign the resulting base 2 value 11 to <i>j</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        var i, j : int
+        i := 2 # 1101   % 2#1101 = 13 (base 10)
+        j := i shr 2        % j becomes 2#11 = 3 (base 10)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>shr</b> operator is defined mathematically (in a machine- independent way) as follows:  <i>A</i> <b>shr</b> <i>B</i> = <i>A</i> <b>div</b> 2**<i>B</i>.<p>
+Value <i>A</i> can be of any integer type (as long as it is non-negative) or any natural number type.</p>
+<p>
+The <b>shr</b> operator has the same precedence as the * operator.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="shl.html">shl</a></b> (shift left), <b><a href="or.html">or</a></b>, <b><a href="and.html">and</a></b> and <b><a href="xor.html">xor</a></b>, which also are bit manipulation operators that act on non-negative values. See also <b><a href="explicitintegerconstant.html">explicitIntegerConstant</a></b> which describes values such as 2#1101.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

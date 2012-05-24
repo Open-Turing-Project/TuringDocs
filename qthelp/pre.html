@@ -1,0 +1,95 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>pre</title>
+</head>
+<body>
+	<h1>pre</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>preAssertion </i>is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>pre</b> <i>trueFalseExpn</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A <b>pre</b> assertion is a special form of an <b>assert</b> statement that is used at the beginning of a procedure or function. It is used to give requirements that the caller of the procedure or functions is supposed to satisfy. These requirements are given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message. See <b>assert</b> statements and <b>procedure</b> and <b>function</b> declarations for more details. See also <b>post</b> and <b>invariant</b> assertions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This function computes the average of <i>n values</i>. Its <b>pre</b> condition requires that <i>n</i> must be strictly positive, to avoid the possibility of dividing by zero when computing the average.<p>
+</p>
+
+			
+			
+			<pre><code>        function average ( a : array 1 .. * of real, n : int) : real
+            pre n > 0
+            var sum : real := 0
+            for i : 1 .. n
+                sum := sum + a ( i )
+            end for
+            result sum / n
+        end average</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A <b>pre</b> assertion can also be used in a <b>module</b>, <b>monitor</b>, <b>class</b> or <b>process</b> declaration to make sure that requirements for initialization are met.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="module.html">module</a></b> and <b><a href="process.html">process</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

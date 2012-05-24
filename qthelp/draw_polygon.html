@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Draw.Polygon</title>
+</head>
+<body>
+	<h1>Draw.Polygon</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<b>Draw.Polygon</b> (<i>x</i>, <i>y</i>  : <b>array</b> 1 .. * <b>of</b> <b>int</b>, <i>n</i> : <b>int</b>, <i>Color</i> : <b>int</b>)<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.Polygon</b> procedure is used to draw a polygon with <i>n</i> points. A line is drawn in <i>Color </i>from the point (<i>x</i>(1), <i>y</i>(1)) to (<i>x</i>(2), <i>y</i>(2)) to (<i>x</i>(3), <i>y</i>(3)) and so on. After drawing the line to (<i>x</i>(<i>n</i>), <i>y</i> (<i>n</i>)), a line will be drawn back to (<i>x</i>(1), <i>y</i>(1)), closing the polygon. The <b>Draw.Polygon</b> procedure is equivalent to:<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 1 .. n - 1
+            Draw.Line (x (i), y(i), x (i + 1), y (i + 1), Color)
+        end for
+        Draw.Line (x (n), y (n), x (1), y (1), Color)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will create an octagon and display it in color 1.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        var x : array 1..8 of int := init (100, 100, 135, 185, 
+                                   220, 220, 185, 135)
+        var y : array 1..8 of int := init (100, 150, 185, 185,
+                                   150, 100, 65, 65)
+        Draw.Polygon (x, y, 8, brightblue)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The IBM PC limits <b>Draw.Polygon</b> to a maximum of 256 points.<p>
+The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, an error will occur.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.Polygon</b>, not by calling <b>Polygon</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

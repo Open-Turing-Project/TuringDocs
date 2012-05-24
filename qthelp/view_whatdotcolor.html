@@ -1,0 +1,149 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>View.WhatDotColor</title>
+</head>
+<body>
+	<h1>View.WhatDotColor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>View.W</b><b>hatDotColor</b> ( <i>x</i>, <i>y</i> : <b>int</b> ) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>View.WhatDotColor</b> function is used to determine the color 
+          number of the specified pixel. The alternate spelling is 
+	  <b>View.WhatDotColour</b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ( "graphics" )
+        var x, y : int := 0
+        var dx, dx : int := 1
+        loop
+            if View.WhatDotColor ( x, y ) not= 0 and
+	            View.WhatDotColor ( x, y ) not= brightred then
+                Draw.FillOval (x, y, 10, 10, brightred)
+            end if
+            Draw.Dot ( x, y, 1 )
+            x := x + dx
+            y := y + dy
+            if x = 0 or x = maxx then
+                dx := -dx
+            end if
+            if y = 0 or y = maxy then
+                dy := -dy
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Another example illustrates the use of <b>View.WhatDotColor</b> to 
+          determine the color of pixels in a window painted with multi-color
+	  blocks. The actual color number appears in the block. The color
+	  of the dot under the mouse cursor appears in the upper-left
+	  corner of the window.  Note that you can also place the mouse
+	  cursor over the black text indicating the color number.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,View.WhatDotColor2.t;View.WhatDotColor Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a"<i>graphics</i>" mode. If is not set to 
+          "<i>graphics</i>"<i>  </i>mode,  it will automatically be set to 
+	  "<i>graphics</i>" mode. See <b>View.Set </b>for details.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>View.WhatDotColor</b>, not by calling <b>WhatDotColor</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="draw_dot.html">Draw.Dot</a></b>, which is used for setting 
+          the color of a pixel. See also <b><a href="maxx.html">maxx</a></b> and 
+	  <b><a href="maxy.html">maxy</a></b>, which are used to determine the 
+	  number of pixels on the screen.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

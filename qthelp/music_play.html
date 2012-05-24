@@ -1,0 +1,142 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Music.Play</title>
+</head>
+<body>
+	<h1>Music.Play</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Music.Play</b> ( <i>music</i> : <b>string</b> )<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Music.Play</b> procedure is used to sound musical notes on 
+          the computer.<p>
+	  Sounds are produced synchronously on a per process basis. This means 
+	  that when a process executes a <b>Music.Sound</b> or <b>Music.Play</b> 
+	  command, it stops until the command is finished. However, other 
+	  processes will continue to executing.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sounds the first three notes of the C scale.<p>
+</p>
+
+			
+			
+			<pre><code>        Music.Play ( "cde" )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program plays from middle C to one octave above 
+          middle C and down again in 8th notes.<p>
+</p>
+
+			
+			
+			<pre><code>        Music.Play ( "8cdefgab>c" )
+        Music.Play ( "<bagfedc" )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The syntax of the play string may be enhanced in the future.<p>
+	  The <b>Music.Play</b> procedure takes strings containing characters 
+	  that specify notes, rests, sharps, flats and duration. The notes are 
+	  the letters a to g (or A to G). A rest is p (for pause). A sharp is 
+	  <b>+</b> and a flat is <b>-</b>. The durations are 
+	  1&nbsp;(whole&nbsp;note), 2&nbsp;(half&nbsp;note), 
+	  4&nbsp;(quarter&nbsp;note), 8&nbsp;(eight&nbsp;note) and 
+	  6&nbsp;(sixteenth&nbsp;note). The character &gt; raises to the next 
+	  octave and &lt; lowers. For example, this is the way to play C and 
+	  then C sharp one octave above middle C with a rest between them, 
+	  all in sixteenth notes:  <b>Music.Play</b>("&gt;6cpc+"). Blanks can 
+	  be used for readability and are ignored by <b>Music.Play</b>.</p>
+<p>
+	  The <b>Music.Play</b> procedure requires that the machine have a sound 
+	  card in order to play tones.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Music.Play</b>, not by calling <b>Play</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="music_sound.html">Music.Sound</a></b> procedure, which makes a 
+          sound of a given frequency (Hertz) and duration (milliseconds).<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

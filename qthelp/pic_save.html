@@ -1,0 +1,162 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.Save</title>
+</head>
+<body>
+	<h1>Pic.Save</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Save</b> (<i>picID</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Save </b>is used to save  a picture on the screen to a file.<p>
+	  The <i>fileName</i>parameter must give the format of the file:</p>
+<p>
+	  </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+	      <td>BMP files</td>
+	      <td width="10">&nbsp;</td>
+	      <td>"BMP:filename" or "filename.BMP"</td>
+</tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Various versions of Turing can save different formats of files. 
+          Turing 4.1 for Windows can save only BMP format files, as they are
+          loss-less and can handle 24-bit depth images.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If <b>Pic.Save</b> is passed an invalid picture ID, a fatal error 
+          occurs. If the <b>Pic.Save</b> call fails for other (non-fatal) 
+          reasons, <b>Error.Last</b> will return a non-zero value indicating 
+          the reason for the failure. <b>Error.LastMsg</b> will return a 
+          string which contains the textual version of the error.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws a graphic on the screen and then saves it as 
+          a BMP file.<p>
+</p>
+
+			
+			
+			<pre><code>        var picID: int
+        var x, y : int
+        Draw.FillBox (50, 50, 150, 150, red)
+        Draw.FillStar (50, 50, 150, 150, green)
+        Draw.FillOval (100, 100, 50, 50, blue)
+        
+        picID := Pic.New (50, 50, 150, 150)
+        Pic.Save (picID, "BMP:mypic.dat")
+        Pic.Free (picID)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following two programs save and load a file in BMP format.<p>
+</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        % Program to save a picture in mypic.bmp
+        var picID: int
+        var x, y : int
+        Draw.FillBox (50, 50, 150, 150, red)
+        Draw.FillStar (50, 50, 150, 150, green)
+        Draw.FillOval (100, 100, 50, 50, blue)
+        picID := Pic.New (50, 50, 150, 150)
+        Pic.Save (picID, "mypic.bmp")
+        Pic.Free (picID)</code></pre>
+			
+			<pre><code>        % Program to load the picture back again and draw 50 copies
+        var picID: int
+        var x, y : int
+        
+        picID := Pic.FileNew ("mypic.bmp")
+        for i : 1 .. 50
+            x := Rand.Int (0, maxx)     % Random x
+            y := Rand.Int (0, maxy)     % Random y
+            Pic.Draw (picID, x, y, picCopy)
+        end for
+        Pic.Free (picID)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Pic.Save</b>, not by calling <b>Save</b>.</p>
+<p>
+  </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

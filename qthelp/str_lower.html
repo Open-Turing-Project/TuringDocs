@@ -1,0 +1,101 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Str.Lower</title>
+</head>
+<body>
+	<h1>Str.Lower</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Str.Lower</b> (<i>s</i> : <b>string</b>) : <b>string</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Str.Lower</b> function takes the string <i>s</i> and returns
+          a string in which all the upper case letters are converted to 
+          lower case. For example, <tt>Str.Lower ("ABC123def")</tt> returns
+          <tt>"abc123def"</tt>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program obtains lines of text from the user and outputs the
+          lines converted to lower case.
+          <p>
+</p>
+
+			
+			
+			<pre><code>        var line : string
+        loop
+            put "Enter a line of text (empty to quit): " ..
+            get line : *
+            exit when line = ""
+            put "The lower case version: ", Str.Lower (line)
+        end loop
+    </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Str.Lower</b>, not by calling <b>Lower</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="str_upper.html">Str.Upper</a></b> and 
+          <b><a href="str_trim.html">Str.Trim</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

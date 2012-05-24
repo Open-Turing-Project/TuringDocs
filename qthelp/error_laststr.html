@@ -1,0 +1,85 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Error.LastStr</title>
+</head>
+<body>
+	<h1>Error.LastStr</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Error.LastStr</b> : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Error.LastStr</b> is a function that returns the string version of the error code set by the last called predefined subprogram (i.e. it would return the string "eDrawClrNumTooLarge" for using a color greater than <b>maxcolor</b> in a <b>Draw</b> command). If there is no error then it returns the empty string. If there is an error, you can use <b>Error.Last</b> to obtain the actual error code.<p>
+The fact that <b>Error.LastStr</b> is not "" does not necessarily mean that the previous predefined function failed or failed completely. <b>Error.LastStr</b> also returns a number of error codes for warning messages. For example, if a user specifies a number larger than <b>maxcolor</b> for the <i>color</i> parameter of the <b>Draw.Line</b> procedure, the line is still drawn, only in color <b>maxcolor</b>. However, <b>Error.LastStr</b> will return a string version of the error code that indicates that the color was out of range.</p>
+<p>
+You can take a look at the error constants defined by looking at the unit <b>ErrorNum</b> which contains all defined error codes.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program creates the directory called <i>information</i>. If the creation fails, it prints out the error number and an error message.<p>
+</p>
+
+			
+			
+			<pre><code>        Dir.Create ("testdata/information")
+        if Error.Last = eNoError then
+            put "Directory created"
+        else
+            put "Did not create the directory."
+            put "Error Number: ", Error.Last
+            put "Error Constant: ", Error.LastStr
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Error.LastStr</b>, not by calling <b>LastStr</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

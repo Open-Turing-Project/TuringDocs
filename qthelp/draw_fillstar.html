@@ -1,0 +1,109 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Draw.FillStar</title>
+</head>
+<body>
+	<h1>Draw.FillStar</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Draw.FillStar</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Draw.FillStar </b>procedure is used to draw a filled five pointed star on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a star outlined in a different color, use <b>Draw.FillStar</b> with the <i>Color</i> parameter set to the fill color and then call <b>Draw.Star</b> with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the star is drawn upside down.<p>
+
+</p>
+<center><img src="draw_fillstar01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will draw two stars beside each other. The first will be outlined in color 1 and filled in color 2. The second star will be upside down and both filled and outlined in color 3.<p>
+</p>
+
+			
+			
+			<pre><code>        View.Set ("graphics")
+        Draw.FillStar (0, 0, 100, 100, brightred)
+        Draw.Star (0, 0, 100, 100, green)
+        Draw.FillStar (150, 100, 250, 0, brightblue)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Draw.FillStar</b> procedure is useful for drawing the American flag.<p>
+The screen must be in a "<i>graphics</i>" mode. See the <b>View.Set</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, an error will occur.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Draw.FillStar</b>, not by calling <b>FillStar</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="view_set.html">View.Set</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various procedures in the <b><a href="drawmodule.html">Draw</a></b> unit.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

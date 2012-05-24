@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Sys.FetchArg</title>
+</head>
+<body>
+	<h1>Sys.FetchArg</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>System.FetchArg</b> ( <i>i </i>: <b>int</b> ) : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Sys.FetchArg </b>function is used to<b> </b>access the <i>i</i>-th argument that has been passed to a program from the command line. For example, if the program is run from the Turing environment using<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>:r file1 file2</td>
+</tr></table>
+<p>
+then <b>Sys.FetchArg </b>(2) will return "file2". If a program called <i>prog.x </i>is run under UNIX using this command:</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>prog.x file1 file2</td>
+</tr></table>
+<p>
+the value of <b>Sys.FetchArg</b>(2)<b> </b>will similarly be "file2".</p>
+<p>
+The <b>Sys.Nargs </b>function, which gives the number of arguments passed to the program, is usually used together with the <b>Sys.FetchArg </b>function. Parameter <i>i</i> passed to <b>Sys.FetchArg </b>must be in the range 0 .. <b>Sys.Nargs</b>.</p>
+<p>
+The 0-th argument is the name of the running program.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program lists its own name and its arguments.<p>
+</p>
+
+			
+			
+			<pre><code>        put "The name of this program is : ", Sys.FetchArg ( 0 )
+        for i : 1 .. Sys.Nargs
+            put "Argument ", i, " is ", Sys.FetchArg ( i )
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Sys.FetchArg</b>, not by calling <b>FetchArg</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="sys_nargs.html">Sys.Nargs</a></b><p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

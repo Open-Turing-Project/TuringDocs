@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>assert</title>
+</head>
+<body>
+	<h1>assert</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>assert</b> <i>trueFalseExpn</i><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>assert</b> statement is used to make sure that a certain requirement is met. This requirement is given by the <i>trueFalseExpn</i>. The <i>trueFalseExpn </i>is evaluated. If it is true, all is well and execution continues. If it is false, execution is terminated with an appropriate message.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Make sure that <i>n</i> is positive.<p>
+</p>
+
+			
+			
+			<pre><code>        assert n > 0</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program assumes that the <i>textFile </i>exists and can be opened, in other words, that the <b>open</b> will set the <i>fileNumber </i>to a positive stream number. If this is not true, the programmer wants the program halted immediately.<p>
+</p>
+
+			
+			
+			<pre><code>        var fileNumber : int
+        open : fileNumber, "textFile", read
+        assert fileNumber > 0</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In some Turing systems, checking can be turned off. If checking is turned off, <b>assert</b> statements may be ignored and as a result never cause termination.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

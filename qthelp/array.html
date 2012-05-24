@@ -1,0 +1,268 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>array</title>
+</head>
+<body>
+	<h1>array</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>array</b> <i>indexType</i> { , <i>indexType</i> } <b>of</b> <i>typeSpec</i><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An array consists of a number of elements. The <i>typeSpec</i> gives the type of these elements. There is one element for each item in the (combinations of) range(s) of the <i>indexType(s)</i>. In the following example, the array called <i>marks</i> consists of 100 elements, each of which is an integer.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var marks : array 1 .. 100 of int
+        
+        var sum : int := 0
+        for i : 1 .. 100        % Add up the elements of marks
+            sum := sum + marks (i)
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In the above example, <i>marks(i)</i> is the <i>i</i>-th element of the <i>marks</i> array. We call <i>i</i> the <i>index</i> or <i>subscript</i> of <i>marks</i>. In Turing, a subscript is surrounded by parentheses, not by square brackets as is the case in the Pascal or C-like languages.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The <i>prices</i> array shows how an array can have more than one dimension. This array has one dimension for the year (1988, 1989 or 1990) and another for the month (1 .. 12). There are 36 elements of the array, one for each month of each year.<p>
+</p>
+
+			
+			
+			<pre><code>        var price : array 1988 .. 1990, 1 .. 12 of int
+        
+        var sum : int := 0
+        for year : 1988 .. 1990     % For each year
+            for month : 1 .. 12     % For each month
+                sum := sum + price (year, month)
+            end for
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Each <i>indexType</i> must contain at least one item. The range 1 .. 0, for example, would not be allowed. Each index type must be a subrange of the integers, characters (the <b>char</b> type), or of an enumerated type, an (entire) enumerated type, the <b>char</b> type, the <b>boolean </b>type, or a named type which is one of these.<p>
+Arrays can also be declared in the form</p>
+<p>
+</p>
+The upper bound of <i>a</i> will be computed from the count of the initializing values. Both <b>var</b> and <b>const</b> arrays can be declared this way. An array variable/constant declared with "*" as an upper bound must have an initializing list. Only one dimensional arrays may be declared in this form.<p>
+Arrays can be assigned as a whole (to arrays of an equivalent type), but they cannot be compared.</p>
+<p>
+An array can be initialized in its declaration using <b>init</b>. For details, see <b>var</b> and <b>const</b> declarations.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var a : array 1 .. * of typeSpec := init ()</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, the size of the array is not known until run time.<p>
+</p>
+
+			
+			
+			<pre><code>        var howMany : int
+        get howMany
+        var height : array 1 .. howMany of real
+            read in all the elements of this array
+        function total (a : array 1 .. * of real) : real
+            var sum : real := 0
+            for i : 1 .. upper (a)
+                sum := sum + a (i)
+            end for
+            result sum
+        end total
+        
+        put "Sum of the heights is ", total (height)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The ends of the range of a subscript are called the <i>bounds</i> of the array. If these values are not known until run time, the array is said to be <i>dynamic</i>. In the above example, <i>height</i> is a dynamic array. Dynamic arrays can be declared as variables, as in the case for <i>height</i>. However, dynamic arrays cannot appear inside other types such as records, and cannot be named types. Dynamic arrays cannot be assigned and cannot be initialized using <b>init</b>.<p>
+In the above example, <b>upper</b><i>(a) </i>returns the size of <i>a</i>. See also <b>upper</b> and <b>lower</b>.</p>
+<p>
+In the declaration of an array parameter, the upper bound can be given as an asterisk (<b>*</b>), as is done in the above example. This means that the upper bound is taken from that of the corresponding actual parameter (from <i>height</i> in this example).</p>
+<p>
+You can have arrays of other types, for example arrays of record. If <i>R </i>is an array of records, then <i>R(i).f</i> is the way to access the <i>f</i> field of the <i>i</i>-th element of array <i>R</i>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Arrays can also be made resizeable. This is done using the <b>flexible</b> keyword. The declaration syntax is:<p>
+</p>
+The indices may have compile-time or run-time upper bounds (the lower bound must be compile-time). The upper bounds can be changed by using:<p>
+</p>
+The existing array entries will retain their values, except that any index made smaller will have the corresponding array entries lost. Any index made larger will have the new array entries uninitialized (if applicable).<p>
+Additionally, the upper bound (both in the declaration and the <b>new</b> statement) can be made one less than the lower bound. This effectively makes an array that contains 0 elements. It can later be increased in size with another <b>new</b>.</p>
+<p>
+In the current implementation (2002), with a multi-dimensional array with a non-zero number of total elements, it is a run-time error to change any but the first dimension (unless one of the new upper bounds is one less than the corresponding lower bound, giving 0 elements in the array) as the algorithm to rearrange the element memory locations has not yet been implemented.</p>
+<p>
+Currently, only variables can be declared in this form. There is no flexible array parameter type, although a flexible array can be passed to an array parameter with &#147;<b>*</b>&#148; as the upper bound.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var name : flexible array indexType { , indexType } of typeSpec</code></pre>
+			
+			<pre><code>        new name , newUpper1 {,newUpper2}</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, the array is resized to fit the number of elements in the file.<p>
+</p>
+
+			
+			
+			<pre><code>        function getLines (fileName : string) : int
+            var f, numLines : int
+            var line : string
+            open : f, fileName, get
+            numLines := 0
+            loop
+                exit when eof (f)
+                get : f, line : *
+                numLines += 1
+            end loop
+            close : f
+            result numLines
+        end getLines 
+        
+        procedure readFile (var lines : array 1 .. * of string, fileName : string)
+            var f : int
+            var line : string
+            open : f, fileName, get
+            for i : 1 .. upper (lines)
+                get : f, lines (i) : *
+            end for    
+			close : f
+        end readFile
+            
+        var lines : flexible array 1 .. 0 of string
+        new lines, getLines ("text.dat")
+        readFile (lines, "text.dat")
+        for i : 1 .. upper (lines)
+            put lines (i)
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="init.html">init</a></b> to initialize arrays, <b><a href="flexible.html">flexible</a></b> to declare resizable arrays and <i><a href="indextype.html">indexType</a></i> to specify the index of an array.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

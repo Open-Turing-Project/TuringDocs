@@ -1,0 +1,98 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Font.Width</title>
+</head>
+<body>
+	<h1>Font.Width</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Font.Width</b> (<i>txtStr</i> : <b>string</b>, <i>fontID</i> : <b>int</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Font.Width </b>is used to obtain the width in pixels that a specified string will take to draw in a specified font. The <i>textStr</i> parameter is the string. The <i>fontID</i> parameter is the font in which the string would be drawn.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If <b>Font.Width</b> is passed an invalid font ID, a fatal error occurs. If the <b>Font.Width</b> call fails for other (non-fatal) reasons, the width for string in the default font will be returned. As well, <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program gets information about 24pt Bold Palatino.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        const testString := "Test String"
+        var width, fontID : int
+        fontID := Font.New ("Palatino:24:Bold")
+        width := Font.Width (testString, fontID)
+        put "The width of \"" + testString + "\" is ", width, " pixels"
+        Font.Draw (testString, 100, 100, fontID, black)
+        Draw.Line (100, 50, 100, 150, brightred)
+        Draw.Line (100 + width, 50, 100 + width, 150, brightred)
+        Font.Free (fontID)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Font.Width</b>, not by calling <b>Width</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

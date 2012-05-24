@@ -1,0 +1,88 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>sizeof</title>
+</head>
+<body>
+	<h1>sizeof</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>sizeof</b> (<i>typeNameOrVariableReference</i>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>sizeof</b> attribute is used to find the number of bytes used to represent the type or variable. This is implementation-dependent (dirty).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The size of <b>int2</b> and <b>nat2</b> is 2.<p>
+</p>
+
+			
+			
+			<pre><code>        var i : int2
+        const nat2size := sizeof ( i )  % size is 2</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <i>typeNameOrVariableReference</i> must be the name of a user-defined type, a variable reference, a basic type (such as <b>real</b>), or a constant.<p>
+In principle, <b>sizeof</b> returns the number of <i>storage units</i> which would not necessarily be 8-bit bytes. For example, in some older machines, such as the CDC 6000 series, the storage units are 60 bit words. However, almost all modern computers use 8-bit bytes so these are the units of <b>sizeof</b>.</p>
+<p>
+Beware that sizes may reflect alignment constraints in the underlying computer. For example, string sizes may be rounded up to even values (2-byte word alignments).</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <i><a href="indirection.html">indirection</a> operator</i> @, <b><a href="cheat.html">cheat</a></b>, <i><a href="explicitintegerconstant.html">explicitIntegerConstant</a></i> (how to write hexadecimal constants), and pointers (in particular <a href="unchecked.html">unchecked</a> pointers). See also <b><a href="addr.html">addr</a></b>, which returns the address of a variable.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

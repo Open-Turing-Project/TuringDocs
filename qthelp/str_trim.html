@@ -1,0 +1,101 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Str.Trim</title>
+</head>
+<body>
+	<h1>Str.Trim</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Str.Trim</b> (<i>str</i> : <b>string</b>) : <b>string</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Str.Trim</b> function takes the string <i>str</i> and returns
+          a string in all the leading and trailing spaces (the spaces at the
+          beginning and the end) are deleted. For example, 
+          <tt>Str.Trim ("   This is a test ")</tt> returns
+          <tt>"This is a test"</tt>. If <i>str</i> only has spaces in it, then
+          <b>Str.Trim</b> will return an empty string.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program obtains input from the user until the user enters a line
+      with non-whitespace characters in it.
+
+			
+			
+			<pre><code>        var line : string
+        loop
+            put "Enter a non-empty line of text: " ..
+            get line : *
+            exit when Str.Trim (line) not= ""
+        end loop
+        put "You entered ", line
+    </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Str.Trim</b>, not by calling <b>Trim</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="str_lower.html">Str.Lower</a></b> and 
+          <b><a href="str_upper.html">Str.Upper</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>hasch</title>
+</head>
+<body>
+	<h1>hasch</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>hasch</b> : <b>boolean</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>hasch</b> procedure is used to determine if there is a 
+          character that has been typed but not yet been read.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program simulates the rolling of a pair of dice until the
+          user pressed the keyboard.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        put "Press any key to stop the dice rolling"
+        var die1, die2 : int
+        var ch : string (1)
+        loop
+            exit when hasch
+            randint (die1, 1, 6)
+            randint (die2, 1, 6)
+            locate (1, 1)
+            put "You rolled ", die1 + die2
+        end loop
+            
+        getch (ch)    % Discard the character</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a "<i>graphics</i>" mode. See the 
+          <b>setscreen</b> procedure for details. If the screen is not 
+          in "<i>graphics</i>" mode, it will automatically be set 
+          to "<i>graphics</i>" mode.<p>
+          If there is the possibility that there are already keystrokes in the
+          keyboard buffer, the <a href="input_flush.html"><b>Input.Flush</b></a>
+          command can be used to flush the keyboard buffer (remove all 
+          keystrokes from the buffer) before entering the loop to check for
+          input.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="getch.html">getch</a></b> and 
+          <b><a href="getchar.html">getchar</a></b>.<p>
+          See also the <a href="input_flush.html"><b>Input.Flush</b></a>
+          command for flushing the keyboard buffer.</p>
+<p>
+          See also predefined unit <b><a href="inputmodule.html">Input</a></b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

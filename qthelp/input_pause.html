@@ -1,0 +1,90 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Input.Pause</title>
+</head>
+<body>
+	<h1>Input.Pause</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Input.Pause</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Input.Pause</b> procedure simply waits for a key to be 
+          pressed and then returns. It echoes the key pressed if <b>echo</b> 
+          mode is set. (See <b>View.Set</b> for setting <b>echo</b> mode)<p>
+          This subprogram helps avoid having to declare a variable declaration 
+          and then make a call to <b>getch</b>or <b>getchar</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program pauses after every name read from the file.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var f : int
+        var line : string
+        open : f, "data.txt", get
+        loop
+            exit when eof (f)
+            get : f, line : *
+            put name
+            Input.Pause
+        end loop
+        close : f</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>Input.Pause</b>, not by calling <b>Pause</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Dir.Exists</title>
+</head>
+<body>
+	<h1>Dir.Exists</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Dir.Exists</b> (<i>directoryPathName</i> : <b>string</b>) : <b>boolean</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Dir.Exists </b>returns <b>true</b> if a directory by the name of <i>directoryPathName</i> exists. It will return <b>false</b> if <i>directoryPathName</i> is a file.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Dir.Exists</b> returns <b>false</b>, you can examine <b>Error.Last</b> or <b>Error.LastMsg</b> for more information (i.e. whether the path failed or the directory was simply not found).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program determines if the directory "d:/usr/west" exists, and outputs an error message if it does not.
+
+			
+			
+			<pre><code>        if Dir.Exists ("d:/usr/west") then
+            put "Directory exists"
+        else
+            put "Directory does not exists: ", Error.LastMsg
+        end if
+Status  
+ Exported qualified.
+This means that you can only call the function by calling Dir.Exists, not by calling Exists.
+</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

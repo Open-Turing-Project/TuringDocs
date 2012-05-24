@@ -1,0 +1,184 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Input.KeyDown</title>
+</head>
+<body>
+	<h1>Input.KeyDown</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Input.KeyDown</b> (<b>var</b> <i>chars</i> : <b>array char of boolean</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Input.Keydown</b> procedure allows a program to read which keys are currently being pressed. This procedure is different from <b>getch</b> in that it allows a program to detect when a user presses and releases a button. As such, it is not to be used in conjunction with <b>getch</b>.<p>
+The procedure can be used in games where an action takes place while a key is depressed.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Determine if the T key is pressed. Note that we check for the lower case letter.<p>
+</p>
+
+			
+			
+			<pre><code>        var chars : array char of boolean
+        Input.KeyDown (chars)
+        if chars ('t') then
+            put "The T key is pressed"
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <b>true.</b> For example, the <i>a</i> key is pressed is <i>chars</i> ('a') is <b>true</b>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <b>Input.KeyDown</b> would register Shift and 'a' as pressed, but not 'A'.<p>
+A full list of all the possible characters that can be set with Input.KeyDown can be found in the <b>Key Codes</b> appendix.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The array returned is a list of all the characters. A key is currently pressed if the array element with the corresponding character is <b>true.</b> For example, the <i>a</i> key is pressed is <i>chars</i> ('a') is <b>true</b>. Note that each key is individually represented, so if the user has pressed Shift+a to get a 'A', then <b>Input.KeyDown</b> would register Shift and 'a' as pressed, but not 'A'.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The number of keys that can be pressed simultaneously is hardware dependent. Most keyboards can detect a minimum of two keys + Shift + Control + Alt. This means that if you are designing a two player game to be played at a single keyboard and you wish to make certain that players cannot &#147;hog the keyboard&#148; by holding down keys, you should not use more than 6 different keys and three of them should be the Shift, Control and Alt keys.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program reads the keyboard and displays a message while the arrow keys are pressed. It can detect up to all four arrow keys pressed at once.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        var chars : array char of boolean
+        loop
+            Input.KeyDown (chars)
+            locate (1, 1)
+            if chars (KEY_UP_ARROW) then
+                put "Up Arrow Pressed  " ..
+            else
+                put "                  " ..
+            end if
+            if chars (KEY_RIGHT_ARROW) then
+                put "Right Arrow Pressed  " ..
+            else
+                put "                     " ..
+            end if
+            if chars (KEY_LEFT_ARROW) then
+                put "Left Arrow Pressed  " ..
+            else
+                put "                    " ..
+            end if
+            if chars (KEY_DOWN_ARROW) then
+                put "Down Arrow Pressed  " ..
+            else
+                put "                  " ..
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Another example is available that checks for all possible keys.<p>
+          <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+            <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,Input.KeyDown2.t;Input.KeyDown Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Input.KeyDown</b>, not by calling <b>KeyDown</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

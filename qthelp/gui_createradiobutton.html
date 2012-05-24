@@ -1,0 +1,187 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.CreateRadioButton[Full]</title>
+</head>
+<body>
+	<h1>GUI.CreateRadioButton[Full]</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.CreateRadioButton</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<i>joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> ()) : <b>int</b><p>
+	  <b>GUI.CreateRadioButtonFull</b> (<i>x</i>, <i>y</i> : <b>int</b>, <i>text</i> : <b>string</b>,<br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;<i>joinID</i> : <b>int</b>, <i>actionProc</i> : <b>procedure</b> <i>x</i> (), <i>alignment</i> : <b>int</b>, <i>shortCut</i> : <b>char</b>) : <b>int</b></p>
+<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a radio button and returns the radio button's widget ID. <p>
+	  A slider is a widget that allows the user to select one of a set of values. It has a real-life equivalent in the old car stereos where a single station is selected at a time. That is, one of the buttons in the radio group is always selected, and if another button in the group is selected, the previously selected button is unselected. </p>
+<p>
+	  </p>
+<center><img src="gui_createradiobutton_full01.gif"></center>
+	  <center><b>Six Radio Buttons in Two Groups</b></center>
+<p>
+	  A radio group is created by first creating a single radio button. To add another button to the group, a second radio button is created specifying the first radio button in the <i>joinID</i> parameter. Subsequent radio buttons are added, each specifying a previous member of the group in the <i>joinID</i> parameter. </p>
+<p>
+	  The <i>x</i> and <i>y</i> parameters specify the lower-left corner of the radio button (unless <i>alignment</i> is set to <i>GUI.RIGHT</i>, in which case they specify the lower-right corner of the radio button). If these are both 1 and <i>joinID</i> is not zero, then the button will be placed directly below the previous radio button in the group. The <i>text</i> parameter specifies the text (or label) beside the radio button. The <i>joinID</i> parameter specifies a member of the radio group that this widget should join. A <i>joinID</i> of 0 sepecifies this radio button is not a member of any group. The <i>actionProc</i> parameter is the name of a procedure that is called when the radio button is selected. In <b>GUI.CreateRadioButton</b>, the radio button's text is always to the right of the actual radio button. In <b>GUI.CreateRadioButtonFull</b>, the text can be set to the right or left of the radio button with the <i>alignment</i> parameter.</p>
+<p>
+	  For <b>GUI.CreateRadioButtonFull</b>, the <i>alignment</i> parameter specifies the position of the radio button in relation to the text as well as the meaning of the <i>x</i> and <i>y</i> parameters. The <i>alignment</i> parameter is one of 0, <i>GUI.LEFT</i>, or <i>GUI.RIGHT</i>. An <i>alignment</i> of 0 is the default and is the same as <i>GUI.LEFT</i>. <i>GUI.LEFT</i> means the actual box in the check box appears to the left of the check box's label and (<i>x</i>, <i>y</i>) specify the lower-left corner. An <i>alignment</i> of <i>GUI.RIGHT</i> means that the actual box appears to the right of the radio button's label and (<i>x</i>, <i>y</i>) specify the lower-right corner of the radio button. The <i>shortcut </i>parameter is the keystroke to be used as the button's shortcut. </p>
+<p>
+	  A radio button's size is not specified during creation. It is determined based on the size of the text. Instead the user specifies the lower-left corner of the radio button (or the lower-right if the radio button is right justified).</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program creates six radio buttons in two groups.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI
+        View.Set ("graphics:350;80") 
+        
+        var radio : array 1 .. 6 of int % The radio button IDs.
+        
+        procedure RadioPressed
+            Text.Locate (1, 1)
+            put "Radio Button " ..
+            for i : 1 .. 6
+                if radio (i) = GUI.GetEventWidgetID then
+                    put i ..
+                end if
+            end for
+            put " Selected"
+        end RadioPressed
+        
+        radio (1) := GUI.CreateRadioButton (15, maxy  35, 
+            "Radio Button 1", 0, RadioPressed)
+        radio (2) := GUI.CreateRadioButton ( 1, 1, "Radio Button 2", 
+            radio (1), RadioPressed)
+        radio (3) := GUI.CreateRadioButton ( 1, 1, "Radio Button 3",
+            radio (2), RadioPressed)
+        radio (4) := GUI.CreateRadioButtonFull (maxx  15, maxy  35,
+            "Radio Button A (Shortcut: 'a')", 0, RadioPressed, 
+            GUI.RIGHT, 'a')
+        radio (5) := GUI.CreateRadioButtonFull ( 1, 1,
+            "Radio Button B (Shortcut: 'b')", radio (4), RadioPressed,
+            GUI.RIGHT, 'b')
+        radio (6) := GUI.CreateRadioButtonFull ( 1, 1,
+            "Radio Button C (Shortcut: 'c')", radio (5), RadioPressed,
+            GUI.RIGHT, 'c')
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When a group of radio buttons is selected, the first radio button created in the group will be the selected one. You can change this by using the <b>GUI.SelectRadio </b>procedure to select a different one.<p>
+	  When <b>GUI.CreateRadioButton</b> or <b>GUI.CreateRadioButtonFull</b><i> </i>is called, the newly created picture will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. </p>
+<p>
+	  When a radio button is not enabled, the radio button is grayed out and the radio button no longer responds to any mouse clicks or keystrokes until the button is enabled again.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following GUI subprograms can be called with a radio button as the <i>widgetID</i> parameter:<p>
+	  </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+	      <td>
+<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Enable</b>, 
+	          <b>GUI.Disable</b>, <b>GUI.Dispose</b>, <b>GUI.GetX</b>,
+	          <b>GUI.GetY</b>, <b>GUI.GetWidth</b>, <b>GUI.GetHeight</b>, 
+	          <b>GUI.SetPosition</b>, <b>GUI.SetSize</b>, 
+	          <b>GUI.SetPositionAndSize</b>, <b>GUI.SetLabel</b>, 
+	          <b>GUI.SelectRadio</b>
+</td>
+</tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling <b>GUI.CreateRadioButton</b>, not by calling <b>CreateRadioButton</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_selectradio.html">GUI.SelectRadio</a></b> for 
+          selecting a radio button in a program. 
+          See also <b><a href="gui_setlabel.html">GUI.SetLabel</a></b> for 
+          changing the radio button's text.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

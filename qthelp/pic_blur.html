@@ -1,0 +1,155 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.Blur</title>
+</head>
+<body>
+	<h1>Pic.Blur</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Blur</b> (<i>picID</i>, <i>blurAmount</i> : <b>int</b>) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Blur</b> is used to create a new picture by blurring an
+          existing picture. The resulting picture is created by mixing pixels
+          in a picture with pixels adjacent to it.  As the <i>blurAmount</i>
+          increases, the image grows more and more blurry.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Note that the blurred picture is a newly created picture. 
+          When it is no longer needed, its memory should be released by 
+	  using <b>Pic.Free</b>.<p>
+	  Note that this is a fairly CPU intensive routine.  On slow machines, 
+	  it can take up to a second or more when <i>blurAmount</i> is large.  
+	  In such cases, it is better to precompute the pictures before 
+	  starting the program.  The second example shows this being done.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program creates a picture and then progressively blurs it.
+
+          <table><tr>
+<td>
+	  	<center><img src="pic_blur01.gif"></center>
+	  	<center><b>Output at start</b></center>
+<p>
+	      </p>
+</td>
+              <td>
+	  	<center><img src="pic_blur02.gif"></center>
+	  	<center><b>After several loops</b></center>
+<p>
+	      </p>
+</td>
+	     </tr></table>
+
+			
+			
+			<pre><code>        View.Set ("graphics:270;120,nobuttonbar")
+        % Create the original picture
+        var f := Font.New ("serif:60:bold,italic,noantialias")
+	Font.Draw ("Turing", 10, 30, f, red)
+        Draw.FillStar (70, 80, 90, 100, brightgreen)
+        Draw.FillBox (240, 5, 270, 35, brightblue)
+
+        var oldPic : int
+        oldPic := Pic.New (0, 0, maxx, maxy)
+        loop
+                var newPic : int
+                % Create the new picture by blurring the old picture
+        	newPic := Pic.Blur (oldPic, 10)
+        	% Free the old picture so we don't run out of memory
+    		Pic.Free (oldPic)
+                Pic.Draw (newPic, 0, 0, picCopy)
+                delay (300)
+                oldPic := newPic
+        end loop
+
+        </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Execute</h2>
+			By precalculating and saving the results of the blurred picture, you
+          can produce a visual effect where an object seems to come into focus.
+          <br>
+          The program below blurs an image, saving each step.  It then 
+          draws the images in reverse order, making it appear as if the image
+          is becoming successively sharper.<p>
+      	  <object id="launch" type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width="120" height="40">
+	    <param name="Command" value="TCard">
+<param name="Button" value="Text: Launch Example Program">
+<param name="Item1" value="-1,Pic.Blur1.t;Pic.Blur1 Example"></object></p>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.Blur</b>, not by calling <b>Blur</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

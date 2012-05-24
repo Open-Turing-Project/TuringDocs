@@ -1,0 +1,115 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.ScreenSave</title>
+</head>
+<body>
+	<h1>Pic.ScreenSave</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.ScreenSave</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i> : <b>int</b>, <i>fileName</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.ScreenSave </b>saves a portion of the screen into a file in a format specified by the file name.<p>
+The picture saved to the file is the portion of the screen defined by the rectangle (<i>x1</i>, <i>y1</i>) - (<i>x2</i>, <i>y2</i>).</p>
+<p>
+The <i>fileName</i>parameter must give the format of the file:</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>BMP files</td>
+<td width="10">&nbsp;</td>
+<td>"BMP:filename" or "filename.BMP"</td>
+</tr></table>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Various versions of Turing can save different formats of files. Turing 4.1 for Windows can save BMP. Unfortunately, due to strictly enforced patents on the GIF compression algorithm, Turing will not implement saving of GIF pictures until the patents expire in June 2004.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the <b>Pic.ScreenSave</b> fails, then <b>Error.Last</b> will return a non-zero value indicating the reason for the failure. <b>Error.LastMsg</b> will return a string which contains the textual version of the error.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program draws a graphic and saves it as a PICT file called <i>draw</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        Draw.FillBox (50, 50, 150, 150, red)
+        Draw.FillStar (50, 50, 150, 150, green)
+        Draw.FillOval (100, 100, 50, 50, blue)
+        
+        picID := Pic.ScreenSave (50, 50, 150, 150, "PICT:draw")</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Pic.ScreenSave</b>, not by calling <b>ScreenSave</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

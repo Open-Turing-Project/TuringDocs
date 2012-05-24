@@ -1,0 +1,123 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>skip</title>
+</head>
+<body>
+	<h1>skip</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>skip</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Using <b>skip</b> as an input item in a <b>get</b> statement causes the current input to be skipped until a non-whitespace token is encountered. Whitespace includes all blanks, tabs, form feeds and newlines.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The <b>skip</b> input item was originally intended to be used to see if more input exists in an input file. This use has been largely made redundant by a change in the Turing language. The new version of Turing reads a token, as in <i><b>get</b> s</i> but not in <i><b>get</b> s:*</i> or <i><b>get</b> s:3</i>, and automatically skips any white space following the input value, but will not go beyond the beginning of the next input line. Originally this automatic skipping did not take place, so <b>skip</b> was required. The form of an input loop that used <b>skip</b> was as follows:<p>
+</p>
+
+			
+			
+			<pre><code>        loop
+            get skip            % This is line now redundant
+            exit when eof
+            get 
+            
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>skip</b> bypasses all whitespace characters including any trailing newlines and blank lines. By skipping these characters, a true end-of-file condition was detected. Otherwise, the end-of-file could have been hidden by any whitespace following the last input item. With the change in Turing, the line <b>get</b> <b>skip</b> is no longer needed (although it still works correctly).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The <b>skip</b> can also be used to correctly identify the start of a long string (usually to be read in <i>line</i> or <i>counted</i> mode). Here, it skips the whitespace and trailing newline as follows:<p>
+</p>
+
+			
+			
+			<pre><code>        var i : int
+        var line : string
+        loop
+            get i, skip, line:*
+            
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The first item in the <b>get</b> statement reads an integer by skipping all whitespace and reading digits until whitespace is encountered. The input stream is then left with the whitespace as the next input character. The <b>skip</b> then skips past the whitespace, effectively beginning the next input at the next non-whitespace character. This truncates leading blanks and has another, potentially more important, effect. If the integer is the last data on a line and the string is on a following line, the <b>skip</b> is necessary to avoid setting <i>line</i> to a null string value.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="get.html">get</a></b> <a href="statement.html">statement</a> and <b><a href="loop.html">loop</a></b> <a href="statement.html">statement</a>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

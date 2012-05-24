@@ -1,0 +1,211 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>for</title>
+</head>
+<body>
+	<h1>for</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>forStatement</i> is:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>for</b> [<b>decreasing</b>] [<i>id</i> ] : <i>first</i> .. <i>last</i> [<b>by</b> <i>increment</i>]</font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>
+<td colspan="7"><font size="+1"><i>statementsAndDeclarations</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>end</b> <b>for</b></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The statements and declarations in a <b>for</b> statement are repeatedly executed. In the first iteration, the identifier is assigned the value of <i>first</i>. With each additional iteration, the identifier increases by 1 (or by <i>increment</i>, if the <b>by</b> clause is present). The loop stops executing when adding 1 (or <i>increment)</i> to the identifier would cause the identifier to exceed <i>last</i>. <i>first</i> and <i>last</i> must be integer values (or else enumerated or <b>char</b> values). If you specify <b>decreasing</b>, then the identifier decreases by 1 (or by <i>increment</i>) each time through.<p>
+<i>Increment</i> must be a positive integer value. When the <b>by</b> clause is present, the <b>for</b> loop terminates as soon as the identifier would become greater than <i>last</i>, unless <b>decreasing</b> is present. If <b>decreasing</b> is present, the loop terminates when the identifier would become less than <i>last</i>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The identifier is checked before it is added to (or subtracted from). This means that the loop<p>
+</p>
+will not cause an overflow.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 1 .. maxint</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output 1, 2, 3 to 10.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 1 .. 10
+            put i
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output 1, 3, 5, 7 and 9.<p>
+</p>
+
+			
+			
+			<pre><code>        for i : 1 .. 10 by 2
+            put i
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output 10, 9, 8, down to 1.<p>
+</p>
+
+			
+			
+			<pre><code>        for decreasing j : 10 .. 1
+            put j
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output 10, 6, and 2.<p>
+</p>
+
+			
+			
+			<pre><code>        for decreasing j : 10 .. 1 by 4
+            put j
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output 1.<p>
+</p>
+
+			
+			
+			<pre><code>        for j : 1 .. 10 by 20
+            put j
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Output nothing.<p>
+</p>
+
+			
+			
+			<pre><code>        for j : 5 .. 2
+            put j
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>for</b> statement declares the counting identifier (a separate declaration should not be given for <i>i</i> or <i>j</i>). The scope of this identifier is restricted to the <b>for</b> statement.<p>
+If <i>first </i>is a value beyond <i>last</i>, there will be no repetitions (and no error message). The counting identifier is always increased (or decreased) by 1 or <i>increment</i> if the <b>by</b> clause is present. Executing an <b>exit</b> statement inside a <b>for</b> statement causes a jump to just beyond <b>end</b> <b>for</b>. You are not allowed to change the counting variable (for example, you are not allowed to write <i>i</i> := 10).</p>
+<p>
+The counting identifier can be omitted. In this case, the statement is just as before, except  that the program cannot use the value of the identifier.</p>
+<p>
+If <b>decreasing</b> is not present, <i>first</i> .. <i>last</i> can be replaced by the name of a subrange type, for example by <i>dozen</i>, declared by:</p>
+<p>
+</p>
+Procedures, functions and modules cannot be declared inside a <b>for</b> statement. Just preceding the statements and declarations, you are allowed to write an "invariant clause" of the form:<p>
+</p>
+This clause is equivalent to: <b>assert</b> <i>trueFalseExpn</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        type dozen : 1..12</code></pre>
+			
+			<pre><code>        invariant trueFalseExpn</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

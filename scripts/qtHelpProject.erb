@@ -2,23 +2,25 @@
 <QtHelpProject version="1.0">
  <namespace>ca.compsci.openturing.1.0</namespace>
  <virtualFolder>doc</virtualFolder>
- <!--<customFilter name="Special Pages">
-     <filterAttribute>special</filterAttribute>
- </customFilter>-->
+ <customFilter name="All Pages">
+     <filterAttribute>turingdocs</filterAttribute>
+ </customFilter>
  <filterSection>
-     <filterAttribute>docs</filterAttribute>
+     <filterAttribute>turingdocs</filterAttribute>
      <filterAttribute>1.0</filterAttribute>
      <toc>
-         <section title="My Application Manual" ref="index.html">
-             <section title="Chapter 1" ref="doc.html#chapter1"/>
-             <section title="Chapter 2" ref="doc.html#chapter2"/>
-             <section title="Chapter 3" ref="doc.html#chapter3"/>
+         <section title="Turing Help" ref="intro.html">
+            <% pages.zip(titles).each do |page| %>
+            <% unless page[1].empty? %>
+             <section title="<%= page[1] %>" ref="<%= page[0] %>.html"/>
+            <% end %>
+            <% end %>
          </section>
      </toc>
      <keywords>
-         <keyword name="foo" id="MyApplication::foo" ref="doc.html#foo"/>
-         <keyword name="bar" ref="doc.html#bar"/>
-         <keyword id="MyApplication::foobar" ref="doc.html#foobar"/>
+        <% pages.each do |page| %>
+         <keyword name="<%= page %>" ref="<%= page %>.html"/>
+        <% end %>
      </keywords>
      <files>
          <file>*.gif</file>

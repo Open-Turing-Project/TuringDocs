@@ -1,0 +1,104 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Window.GetPosition</title>
+</head>
+<body>
+	<h1>Window.GetPosition</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Window.GetPosition</b> (<i>windowID</i> : <b>int</b>, <b>var</b> <i>x</i>, <i>y</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Window.GetPosition</b> procedure returns the location of the specified execution window on the screen in the <i>x</i> and <i>y</i> parameters. The <i>x</i> and <i>y</i> parameters specify the lower left corner of the window in screen coordinates. (0, 0) is the lower left corner of the screen.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program outputs the current position of the run window.<p>
+</p>
+
+			
+			
+			<pre><code>        % Constants for windows
+        const titleBarHeight : int := 21
+        const windowEdgeSize : int := 13
+        
+        % Calculate the actual size of a window
+        var windowWidth : int := maxx + windowEdgeSize
+        var windowHeight : int := maxy + windowEdgeSize + titleBarHeight
+        
+        % Get the screen size
+        var screenWidth : int := Config.Display (cdScreenWidth)
+        var screenHeight : int := Config.Display (cdScreenHeight)
+        
+        % Open the window
+        var winID : int := Window.Open ("title:Upper Right")
+        Window.SetPosition (winID, screenWidth  windowWidth,                    screenHeight  windowHeight)
+        
+        % Return the current position
+        var windowXPosition, windowYPosition : int
+        Window.GetPosition (winID, windowXPosition, windowYPosition)
+        put "Window located at ", windowXPosition, ",", windowYPosition</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Window.GetPosition</b>, not by calling <b>GetPosition</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="window_setposition.html">Window.SetPosition</a></b> to <a href="set.html">set</a> the current window position and <b><a href="config_display.html">Config.Display</a></b> to get the size of the screen.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

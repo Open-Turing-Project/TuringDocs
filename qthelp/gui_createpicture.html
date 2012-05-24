@@ -1,0 +1,148 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.CreatePicture</title>
+</head>
+<body>
+	<h1>GUI.CreatePicture</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.CreatePicture</b> ( <i>x</i>, <i>y</i>, <i>picture</i> : <b>int</b>, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<i>mergePic</i> : <b>boolean</b> ) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a picture and returns the picture's widget ID. <p>
+The picture widget is used to display a picture. It can be used to display a picture either merged into the background or not.</p>
+<p>
+The <i>x</i> and <i>y</i> parameters specify the lower-left corner of the picture. The <i>picture</i> parameter specifies the picture ID of the picture. The picture ID is received from a <b>Pic.New</b> or <b>Pic.FileNew</b> call. Do not call <b>Pic.Free</b> for this picture ID until the button has been disposed of by calling <b>GUI.Dispose</b>. The <i>mergePic</i> parameter is a boolean that specifies whether anything that was the background colour in the picture (usually colour 0) should be set to the background colour of the window. </p>
+<p>
+A picture widget is a passive widget and cannot be enabled or disabled.</p>
+<p>
+
+</p>
+<center><img src="gui_createpicture01.gif"></center>
+<center><b>Two Pictures</b></center>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program draws two pictures, merged and not merged.<p>
+</p>
+<p>
+    </p>
+
+			
+			
+			<pre><code>        import GUI 
+        View.Set ("graphics:230;135,nobuttonbar") 
+        
+        % We'll need to create a picture for our Picture widget. Normally 
+        % an external file (and Pic.FileNew) would be used.
+        Draw.FillOval (50, 50, 50, 50, blue)
+        Draw.FillBox (17, 17, 83, 83, brightred)
+        Draw.FillStar (17, 17, 83, 83, brightgreen)
+        Draw.FillMapleLeaf (37, 37, 63, 63, brightpurple)
+        var pic : int := Pic.New (0, 0, 100, 100)
+        var picture1, picture2 : int
+        var label1, label2 : int
+        
+        GUI.SetBackgroundColor (gray)
+        
+        label1 := GUI.CreateLabel (15, 5, "Picture (no merge)")
+        picture1 := GUI.CreatePicture (10, 25, pic, false)
+        
+        label2 := GUI.CreateLabel (135, 5, "Picture (merge)")
+        picture2 := GUI.CreatePicture (120, 25, pic, true)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			When <b>GUI.CreatePicture</b><i> </i>is called, the newly created picture will be displayed immediately unless <b>GUI.DisplayWhenCreated</b> has been called with the <i>display</i> parameter set to false. <p>
+A picture widget is a passive widget and cannot be enabled or disabled.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The following GUI subprograms can be called with a picture as the <i>widgetID</i> parameter:<p>
+          </p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+              <td>
+<b>GUI.Show</b>, <b>GUI.Hide</b>, <b>GUI.Dispose</b>,
+		  <b>GUI.GetX</b>, <b>GUI.GetY</b>, <b>GUI.GetWidth</b>,
+		  <b>GUI.GetHeight</b>, <b>GUI.SetPosition</b>, 
+		  <b>GUI.SetSize</b>, <b>GUI.SetPositionAndSize</b><p></p>
+</td>
+	    </tr></table>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.CreatePicture</b>, not by calling <b>CreatePicture</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

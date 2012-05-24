@@ -1,0 +1,95 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>drawfillmapleleaf</title>
+</head>
+<body>
+	<h1>drawfillmapleleaf</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>drawfillmapleleaf</b> (<i>x1</i>, <i>y1</i>, <i>x2</i>, <i>y2</i>, <i>Color</i> : <b>int</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>drawfillmapleleaf</b> procedure is used to draw a filled maple leaf on the screen bounded by a rectangle with bottom left and top right corners of (<i>x1</i>, <i>y1</i>) to (<i>x2</i>, <i>y2</i>) and filled using the specified <i>Color</i>. To get a maple leaf outlined in a different color, use <b>drawfillmapleleaf</b> with the <i>Color</i> parameter set to the fill color and then call <b>drawmapleleaf</b>  with the <i>Color</i> parameter set to the border color. If <i>y1</i> is greater than <i>y2</i>, then the maple leaf is drawn upside down.<p>
+
+</p>
+<center><img src="drawfillmapleleaf01.gif"></center>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program will draw two maple leaves beside each other. The first will be outlined in color 1 and filled in color 2. The second maple leaf will be upside down and both filled and outlined in color 3.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ("graphics")
+        drawfillmapleleaf (0, 0, 100, 100, 1)
+        drawmapleleaf (0, 0, 100, 100, 2)
+        drawfillmapleleaf (150, 100, 250, 0, 3)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>drawfillmapleleaf</b> procedure is useful for drawing the Canadian flag.<p>
+The meaning of the <i>Color</i> number depends on the current palette. See the <b>palette</b> statement.</p>
+<p>
+The screen should be in a "<i>graphics</i>" mode. See the <b>setscreen</b> procedure for details. If the screen is not in a "<i>graphics</i>" mode, it will automatically be set to "<i>graphics</i>" mode.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="setscreen.html">setscreen</a></b>, <b><a href="maxx.html">maxx</a></b>, <b><a href="maxy.html">maxy</a></b> and the various <b>draw&#133;</b> procedures.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

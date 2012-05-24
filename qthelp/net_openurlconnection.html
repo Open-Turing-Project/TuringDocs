@@ -1,0 +1,122 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Net.OpenURLConnection</title>
+</head>
+<body>
+	<h1>Net.OpenURLConnection</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Net.OpenURLConnection</b> (<i>urlAddr</i> : <b>string</b>) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Attempts to open a http connection to pthe URL (Universal Resource Locator) specified by the <i>urlAddr</i>.<p>
+If successful, <b>Net.OpenURLConnection</b> returns a network stream descriptor which can be used with the <b>get</b> statement and <b>eof</b> function to read the web page located at the URL.</p>
+<p>
+The program will wait for an indeterminate amount of time to make the connection. If it fails, it will return a non-positive value.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>Net</b> module requires a TCP/IP stack to be installed and operating in order to function. It does not communicate using any other protocols<p>
+It is possible for Firewalls to interfere with the actions of the <b>Net</b> module, preventing connections from taking place.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program prints out the contents of the file specified by the user.<p>
+</p>
+
+			
+			
+			<pre><code>        var url : string
+        put "Enter the URL to load: " ..
+        get url 
+        
+        var netStream : int
+        var line : string
+        
+        netStream := Net.OpenURLConnection (url)
+        if netStream <= 0 then
+            put "Unable to connect to ", url
+            return
+        end if
+        loop
+            exit when eof (netStream)
+            get : netStream, line
+            put line
+        end loop
+        Net.CloseConnection (netStream)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Net.OpenURLConnection</b>, not by calling <b>OpenURLConnection</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="net_closeconnection.html">Net.CloseConnection</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

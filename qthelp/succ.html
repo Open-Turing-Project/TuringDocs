@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>succ</title>
+</head>
+<body>
+	<h1>succ</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>succ</b> ( <i>expn</i> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>succ</b> function accepts an integer, character or an enumerated value and returns the integer plus one, the next character, or the next value in the enumeration. For example, <b>succ</b> (7) is 8. <p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This part of a Turing program fills up array <i>a </i>with the enumerated values <i>green</i>,<i> yellow</i>,<i> red</i>,<i> green</i>,<i> yellow</i>,<i> red</i>,<i> </i>etc.<p>
+</p>
+
+			
+			
+			<pre><code>        type colors : enum ( green, yellow, red  )
+        var a : array 1 .. 100 of colors
+        var c : colors := colors .green
+        for i : 1 .. 100
+            a ( i ) := c
+            if c = colors . red then
+                c := colors . green
+            else
+                c := succ ( c )
+            end if
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			You cannot  apply <b>succ</b> to the last value of an enumeration.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="pred.html">pred</a></b>, <b><a href="lower.html">lower</a></b> and <b><a href="upper.html">upper</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

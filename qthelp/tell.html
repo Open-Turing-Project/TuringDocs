@@ -1,0 +1,89 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>tell</title>
+</head>
+<body>
+	<h1>tell</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>tellStatement</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>tell</b> : <i>fileNumber</i> , <i>filePositionVar</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>tell</b> statement sets <i>filePositionVar</i>, whose type must be <b>int</b>, to the current offset in bytes from the beginning of the specified file. The <i>fileNumber</i> must specify a file that is open with <b>seek</b> capability (or else a program argument file that is implicitly opened). The <b>tell</b> statement is useful for recording the file position of a certain piece of data for later access using <b>seek</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This example shows how to use <b>tell</b> to record the location of a record in a file. This location is later used by <b>seek</b> to allow the record to be read.<p>
+</p>
+
+			
+			
+			<pre><code>        var employeeRecord :
+            record
+                name : string ( 30 )
+                pay : int
+                dept : 0 .. 9
+            end record
+        var fileNo : int
+        var location : int
+        open : fileNo, "payroll", write, seek
+        
+        tell : fileNo, location         % Make note of this location
+        write : fileNo, employeeRecord  % Write record at this location
+        
+        seek : fileNo, location     % Go back to location
+        read : fileNo, employeeRecord   % Read the record
+                            % that was previously written</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="read.html">read</a></b>, <b><a href="write.html">write</a></b>, <b><a href="open.html">open</a></b>, <b><a href="close.html">close</a></b>, <b><a href="seek.html">seek</a></b>, <b><a href="get.html">get</a></b> and <b><a href="put.html">put</a></b> statements.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>RGB.SetColor</title>
+</head>
+<body>
+	<h1>RGB.SetColor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>RGB.SetColor</b> (<i>colorNumber</i>: <b>int</b>,<br></font>
+      <table><tr valign="top">
+<td width="40">&nbsp;</td>
+          <td colspan="8"><font size="+1"><i>redComp</i>, <i>greenComp</i>, <i>blueComp</i> : <b>real</b>)</font></td>
+        </tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>RGB.SetColor</b> function sets the red, green and blue 
+        components of the color associated with the <i>colorNumber</i> 
+        parameter. The red, green and blue values must normalized to be between 
+        0 and 1. Thus to set the color associated with the <i>colorNumber</i> 
+        parameter to pure red, you would call:<p>
+</p>
+        It is wise to use <b>Error.Last</b> and <b>Error.LastMsg</b> to check 
+        to see if the color change is successful.<p>
+    </p>
+
+			
+			
+			<pre><code>        RGB.SetColor (colorNumber, 1.0, 0.0, 0.0)</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sets all the available colors to shades of red<p>
+</p>
+          <table><tr valign="top">
+<td><b>Details</b></td>
+              <td width="10">&nbsp;</td>
+              <td>
+<b>RGB.SetColour</b> is an alternate spelling for 
+                  <b>RGB.SetColor</b>.</td>
+            </tr></table>
+<p>
+      </p>
+<
+
+			
+			
+			<pre><code>        for clr : 0 .. maxcolor
+             if not RGB.SetColor (clr, clr / maxcolor, 0, 0) then
+                put "Color set failed on color number ", clr
+                exit
+            end if
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+          <b>RGB.SetColor</b>, not by calling <b>SetColor</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="rgb_getcolor.html">RGB.GetColor</a></b>and 
+          <b><a href="rgb_addcolor.html">RGB.AddColor</a></b>.<p>
+  </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

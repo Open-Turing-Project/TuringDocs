@@ -1,0 +1,108 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SetNullEventHandler</title>
+</head>
+<body>
+	<h1>GUI.SetNullEventHandler</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetNullEventHandler</b> (<i>nullHandler</i> : <b>procedure</b> <i>x</i> ())<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Sets the new null event handler. The <i>nullHandler</i> parameter is the name of a procedure that is called every time <b>GUI.ProcessEvent</b> is called and there are no mouse button presses or keystrokes to be processed.<p>
+This is used by programs that need to call subprograms often, but do not wish to interrupt the action of user widgets.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The following program has a Quit button. When no widgets are being processed, a clock in the corner is updated.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI
+        View.Set ("graphics:220;50")
+        
+        var oldTime : string := ""
+        var button : int
+        
+        procedure NullHandler
+            var newTime : string := Time.Date
+            newTime := newTime (11 .. *)
+            if newTime not= oldTime then
+                Text.Locate (maxrow, maxcol  9)
+                put newTime ..
+                oldTime := newTime
+            end if
+        end NullHandler
+        
+        GUI.SetNullEventHandler (NullHandler)
+        button := GUI.CreateButton (10, 5, 100, "Quit", GUI.Quit)
+        
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>GUI.SetNullEventHandler</b>, not by calling <b>SetNullEventHandler</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="gui_processevent.html">GUI.ProcessEvent</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

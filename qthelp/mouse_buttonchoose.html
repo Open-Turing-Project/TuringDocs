@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Mouse.ButtonChoose</title>
+</head>
+<body>
+	<h1>Mouse.ButtonChoose</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Mouse.ButtonChoose </b>(<i>choice</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Mouse.ButtonChoose</b> procedure is used to change the mode of the mouse. In Turing, the mouse can either be in "<i>single-button mode</i>" or in "<i>multi-button mode</i>". In "<i>single-button mode</i>" the mouse is treated as a one button mouse. A button is considered pressed when any button is pressed and released only when all buttons have been released.<p>
+In Turing, the mouse starts in "<i>single-button mode</i>".</p>
+<p>
+The parameter <i>choice</i> can be one of "singlebutton", "onebutton" (which switch the mouse into "<i>single-button mode</i>") or "multibutton" (which switches the mouse into "<i>multi-button mode</i>").</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			A program that displays the status of the mouse at the top left corner of the screen.<p>
+</p>
+
+			
+			
+			<pre><code>        Mouse.ButtonChoose ("multibutton")
+        var x, y, button, left, middle, right : int
+        Mouse.Where (x, y, button)
+        left := button mod 10           % left = 0 or 1
+        middle := (button - left) mod 100   % middle = 0 or 10
+        right := button - middle - left     % right = 0 or 100
+        if left = 1 then
+            put "left button down"
+        end if
+        if middle = 10 then
+            put "middle button down"
+        end if
+        if right = 100 then
+            put "right button down"
+        end if</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Mouse.ButtonChoose</b>, not by calling <b>ButtonChoose</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="mouse_buttonmoved.html">Mouse.ButtonMoved</a></b> and <b><a href="mouse_buttonwait.html">Mouse.ButtonWait</a></b> to get mouse events saved in a queue. See also <b><a href="mouse_where.html">Mouse.Where</a></b> to get the current status of mouse button(s).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

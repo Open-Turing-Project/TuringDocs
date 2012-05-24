@@ -1,0 +1,162 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>include</title>
+</head>
+<body>
+	<h1>include</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>includeConstruct</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>include</b> <i>fileName</i></font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			An <b>include</b> is used to copy parts of  files so that they become part of the Turing program. This copying is temporary, that is, no files are changed. The file name must be an explicit string constant such as "stdstuff".<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			On IBM PC compatible computers, there are arrow keys that produce character values such as 200 and 208. Let us suppose that a file called <i>arrows</i> contains definitions of these values:<p>
+</p>
+These definitions can be included in any program in the following manner:<p>
+</p>
+
+			
+			
+			<pre><code>        const upArrow := 200
+        const downArrow := 208
+        const rightArrow := 205
+        const leftArrow := 203</code></pre>
+			
+			<pre><code>        include "arrows"
+        
+        var ch : string ( 1 )
+        getch ( ch )                % Read one character
+        case ord ( ch ) of
+            label upArrow :
+                handle up arrow
+            label downArrow :
+                handle down arrow
+            label rightArrow :
+                handle right arrow
+            label leftArrow :
+                handle left arrow
+            label :
+                handle any other key
+        end case</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			An include file can itself contain <b>include</b> constructs. This can continue to any level, although a circular pattern of includes would be a mistake, as it would lead to an infinitely long program.<p>
+It is common to save procedures, functions and modules in separate files. The files are collected together using <b>include</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the filename in the <b>include</b> statement starts with a "%", then Turing searches the system directory for the file. See the editor reference for the environment to see how to set the system directory. This method can be used to allow the system administrator to easily supply a set of routines in a file to a large number of users by placing it in one easy-to-find location.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			If the system directory is set to "C:\TURING", then the line<p>
+</p>
+will include the file "C:\TURING\SORTING.T" in the program. <p>
+</p>
+
+			
+			
+			<pre><code>        include "%sorting.t"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Under OOT, there are several system directories available. The "%oot" directory is the directory where all the OOT system files are located. The "%home" directory is the user's home directory.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			If the oot directory is set to "/usr/local/lib/oot" then the line<p>
+</p>
+will include the file "/usr/local/lib/oot/teacher/sorting.t" in the program. <p>
+</p>
+
+			
+			
+			<pre><code>        include "%oot/teacher/sorting.t"</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

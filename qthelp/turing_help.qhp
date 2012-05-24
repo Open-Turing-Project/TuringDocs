@@ -1,28 +1,3738 @@
- <?xml version="1.0" encoding="UTF-8"?>
- <QtHelpProject version="1.0">
-     <namespace>ca.compsci.openturing.1.0</namespace>
-     <virtualFolder>doc</virtualFolder>
-     <!--<customFilter name="Special Pages">
-         <filterAttribute>special</filterAttribute>
-     </customFilter>-->
-     <filterSection>
-         <filterAttribute>docs</filterAttribute>
-         <filterAttribute>1.0</filterAttribute>
-         <toc>
-             <section title="My Application Manual" ref="index.html">
-                 <section title="Chapter 1" ref="doc.html#chapter1"/>
-                 <section title="Chapter 2" ref="doc.html#chapter2"/>
-                 <section title="Chapter 3" ref="doc.html#chapter3"/>
-             </section>
-         </toc>
-         <keywords>
-             <keyword name="foo" id="MyApplication::foo" ref="doc.html#foo"/>
-             <keyword name="bar" ref="doc.html#bar"/>
-             <keyword id="MyApplication::foobar" ref="doc.html#foobar"/>
-         </keywords>
-         <files>
-             <file>*.gif</file>
-             <file>*.html</file>
-         </files>
-     </filterSection>
- </QtHelpProject>
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+ <namespace>ca.compsci.openturing.1.0</namespace>
+ <virtualFolder>doc</virtualFolder>
+ <customFilter name="All Pages">
+     <filterAttribute>turingdocs</filterAttribute>
+ </customFilter>
+ <filterSection>
+     <filterAttribute>turingdocs</filterAttribute>
+     <filterAttribute>1.0</filterAttribute>
+     <toc>
+         <section title="Turing Help" ref="intro.html">
+            
+            
+             <section title="#if" ref="_if.html"/>
+            
+            
+            
+             <section title="abs" ref="abs.html"/>
+            
+            
+            
+             <section title="addr" ref="addr.html"/>
+            
+            
+            
+             <section title="addressint" ref="addressint.html"/>
+            
+            
+            
+             <section title="all" ref="all.html"/>
+            
+            
+            
+             <section title="
+Alphabetical List of All Turing Elements" ref="all_elements.html"/>
+            
+            
+            
+             <section title="and" ref="and.html"/>
+            
+            
+            
+             <section title="anyclass" ref="anyclass.html"/>
+            
+            
+            
+             <section title="arccos" ref="arccos.html"/>
+            
+            
+            
+             <section title="arccosd" ref="arccosd.html"/>
+            
+            
+            
+             <section title="arcsin" ref="arcsin.html"/>
+            
+            
+            
+             <section title="arcsind" ref="arcsind.html"/>
+            
+            
+            
+             <section title="arctan" ref="arctan.html"/>
+            
+            
+            
+             <section title="arctand" ref="arctand.html"/>
+            
+            
+            
+             <section title="array" ref="array.html"/>
+            
+            
+            
+             <section title="assert" ref="assert.html"/>
+            
+            
+            
+             <section title="assignability" ref="assignability.html"/>
+            
+            
+            
+             <section title="assignment" ref="assignment.html"/>
+            
+            
+            
+             <section title="
+Basic Predefined Subprograms" ref="basic_predef.html"/>
+            
+            
+            
+             <section title="begin" ref="begin.html"/>
+            
+            
+            
+             <section title="bind" ref="bind.html"/>
+            
+            
+            
+             <section title="bits" ref="bits.html"/>
+            
+            
+            
+             <section title="body" ref="body.html"/>
+            
+            
+            
+             <section title="boolean" ref="boolean.html"/>
+            
+            
+            
+             <section title="break" ref="break.html"/>
+            
+            
+            
+             <section title="buttonchoose" ref="buttonchoose.html"/>
+            
+            
+            
+             <section title="buttonmoved" ref="buttonmoved.html"/>
+            
+            
+            
+             <section title="buttonwait" ref="buttonwait.html"/>
+            
+            
+            
+             <section title="case" ref="case.html"/>
+            
+            
+            
+             <section title="catenation (+)" ref="catenation.html"/>
+            
+            
+            
+             <section title="ceil" ref="ceil.html"/>
+            
+            
+            
+             <section title="char" ref="char.html"/>
+            
+            
+            
+             <section title="char(n)" ref="char_n.html"/>
+            
+            
+            
+             <section title="Run Window Character Set" ref="characters.html"/>
+            
+            
+            
+             <section title="cheat" ref="cheat.html"/>
+            
+            
+            
+             <section title="checked" ref="checked.html"/>
+            
+            
+            
+             <section title="chr" ref="chr.html"/>
+            
+            
+            
+             <section title="class" ref="class.html"/>
+            
+            
+            
+             <section title="clock" ref="clock.html"/>
+            
+            
+            
+             <section title="close" ref="close.html"/>
+            
+            
+            
+             <section title="cls" ref="cls.html"/>
+            
+            
+            
+             <section title="collection" ref="collection.html"/>
+            
+            
+            
+             <section title="color" ref="color.html"/>
+            
+            
+            
+             <section title="colorback" ref="colorback.html"/>
+            
+            
+            
+             <section title="comment" ref="comment.html"/>
+            
+            
+            
+             <section title="comparisonOperator" ref="comparisonoperator.html"/>
+            
+            
+            
+             <section title="Concurrency.empty" ref="concurrency_empty.html"/>
+            
+            
+            
+             <section title="Concurrency.getpriority" ref="concurrency_getpriority.html"/>
+            
+            
+            
+             <section title="Concurrency.setpriority" ref="concurrency_setpriority.html"/>
+            
+            
+            
+             <section title="Concurrency.simutime" ref="concurrency_simutime.html"/>
+            
+            
+            
+             <section title="Concurrency" ref="concurrencymodule.html"/>
+            
+            
+            
+             <section title="condition" ref="condition.html"/>
+            
+            
+            
+             <section title="Config.Display" ref="config_display.html"/>
+            
+            
+            
+             <section title="Config.Lang" ref="config_lang.html"/>
+            
+            
+            
+             <section title="Config.Machine" ref="config_machine.html"/>
+            
+            
+            
+             <section title="Config" ref="configmodule.html"/>
+            
+            
+            
+             <section title="const" ref="const.html"/>
+            
+            
+            
+             <section title="constantReference" ref="constantreference.html"/>
+            
+            
+            
+             <section title="Control Constructs" ref="control.html"/>
+            
+            
+            
+             <section title="cos" ref="cos.html"/>
+            
+            
+            
+             <section title="cosd" ref="cosd.html"/>
+            
+            
+            
+             <section title="date" ref="date.html"/>
+            
+            
+            
+             <section title="declaration" ref="declaration.html"/>
+            
+            
+            
+             <section title="deferred" ref="deferred.html"/>
+            
+            
+            
+             <section title="delay" ref="delay.html"/>
+            
+            
+            
+             <section title="Dir.Change" ref="dir_change.html"/>
+            
+            
+            
+             <section title="Dir.Close" ref="dir_close.html"/>
+            
+            
+            
+             <section title="Dir.Create" ref="dir_create.html"/>
+            
+            
+            
+             <section title="Dir.Current" ref="dir_current.html"/>
+            
+            
+            
+             <section title="Dir.Delete" ref="dir_delete.html"/>
+            
+            
+            
+             <section title="Dir.Exists" ref="dir_exists.html"/>
+            
+            
+            
+             <section title="Dir.Get" ref="dir_get.html"/>
+            
+            
+            
+             <section title="Dir.GetLong" ref="dir_getlong.html"/>
+            
+            
+            
+             <section title="Dir.Open" ref="dir_open.html"/>
+            
+            
+            
+             <section title="Dir" ref="dirmodule.html"/>
+            
+            
+            
+             <section title="div" ref="div.html"/>
+            
+            
+            
+             <section title="Draw.Arc" ref="draw_arc.html"/>
+            
+            
+            
+             <section title="Draw.Box" ref="draw_box.html"/>
+            
+            
+            
+             <section title="Draw.Cls" ref="draw_cls.html"/>
+            
+            
+            
+             <section title="Draw.DashedLine" ref="draw_dashedline.html"/>
+            
+            
+            
+             <section title="Draw.Dot" ref="draw_dot.html"/>
+            
+            
+            
+             <section title="Draw.Fill" ref="draw_fill.html"/>
+            
+            
+            
+             <section title="Draw.FillArc" ref="draw_fillarc.html"/>
+            
+            
+            
+             <section title="Draw.FillBox" ref="draw_fillbox.html"/>
+            
+            
+            
+             <section title="Draw.FillMapleLeaf" ref="draw_fillmapleleaf.html"/>
+            
+            
+            
+             <section title="Draw.FillOval" ref="draw_filloval.html"/>
+            
+            
+            
+             <section title="Draw.FillPolygon" ref="draw_fillpolygon.html"/>
+            
+            
+            
+             <section title="Draw.FillStar" ref="draw_fillstar.html"/>
+            
+            
+            
+             <section title="Draw.Line" ref="draw_line.html"/>
+            
+            
+            
+             <section title="Draw.MapleLeaf" ref="draw_mapleleaf.html"/>
+            
+            
+            
+             <section title="Draw.Oval" ref="draw_oval.html"/>
+            
+            
+            
+             <section title="Draw.Polygon" ref="draw_polygon.html"/>
+            
+            
+            
+             <section title="Draw.Star" ref="draw_star.html"/>
+            
+            
+            
+             <section title="Draw.Text" ref="draw_text.html"/>
+            
+            
+            
+             <section title="Draw.ThickLine" ref="draw_thickline.html"/>
+            
+            
+            
+             <section title="drawarc" ref="drawarc.html"/>
+            
+            
+            
+             <section title="drawbox" ref="drawbox.html"/>
+            
+            
+            
+             <section title="drawdot" ref="drawdot.html"/>
+            
+            
+            
+             <section title="drawfill" ref="drawfill.html"/>
+            
+            
+            
+             <section title="drawfillarc" ref="drawfillarc.html"/>
+            
+            
+            
+             <section title="drawfillbox" ref="drawfillbox.html"/>
+            
+            
+            
+             <section title="drawfillmapleleaf" ref="drawfillmapleleaf.html"/>
+            
+            
+            
+             <section title="drawfilloval" ref="drawfilloval.html"/>
+            
+            
+            
+             <section title="drawfillpolygon" ref="drawfillpolygon.html"/>
+            
+            
+            
+             <section title="drawfillstar" ref="drawfillstar.html"/>
+            
+            
+            
+             <section title="drawline" ref="drawline.html"/>
+            
+            
+            
+             <section title="drawmapleleaf" ref="drawmapleleaf.html"/>
+            
+            
+            
+             <section title="Draw" ref="drawmodule.html"/>
+            
+            
+            
+             <section title="drawoval" ref="drawoval.html"/>
+            
+            
+            
+             <section title="drawpic" ref="drawpic.html"/>
+            
+            
+            
+             <section title="drawpolygon" ref="drawpolygon.html"/>
+            
+            
+            
+             <section title="drawstar" ref="drawstar.html"/>
+            
+            
+            
+             <section title="empty" ref="empty.html"/>
+            
+            
+            
+             <section title="enum" ref="enum.html"/>
+            
+            
+            
+             <section title="enumeratedValue" ref="enumeratedvalue.html"/>
+            
+            
+            
+             <section title="eof" ref="eof.html"/>
+            
+            
+            
+             <section title="equivalence" ref="equivalence.html"/>
+            
+            
+            
+             <section title="erealstr" ref="erealstr.html"/>
+            
+            
+            
+             <section title="Error.Halt" ref="error_halt.html"/>
+            
+            
+            
+             <section title="Error.Last" ref="error_last.html"/>
+            
+            
+            
+             <section title="Error.LastMsg" ref="error_lastmsg.html"/>
+            
+            
+            
+             <section title="Error.LastStr" ref="error_laststr.html"/>
+            
+            
+            
+             <section title="Error.Msg" ref="error_msg.html"/>
+            
+            
+            
+             <section title="Error.Str" ref="error_str.html"/>
+            
+            
+            
+             <section title="Error.Trip" ref="error_trip.html"/>
+            
+            
+            
+             <section title="Error.TripMsg" ref="error_tripmsg.html"/>
+            
+            
+            
+             <section title="Error" ref="errormodule.html"/>
+            
+            
+            
+             <section title="ErrorNum" ref="errornummodule.html"/>
+            
+            
+            
+             <section title="Exceptions" ref="exceptionsmodule.html"/>
+            
+            
+            
+             <section title="exit" ref="exit.html"/>
+            
+            
+            
+             <section title="exp" ref="exp.html"/>
+            
+            
+            
+             <section title="explicitCharConstant" ref="explicitcharconstant.html"/>
+            
+            
+            
+             <section title="explicitConstant" ref="explicitconstant.html"/>
+            
+            
+            
+             <section title="explicitIntegerConstant" ref="explicitintegerconstant.html"/>
+            
+            
+            
+             <section title="explicitRealConstant" ref="explicitrealconstant.html"/>
+            
+            
+            
+             <section title="explicitStringConstant" ref="explicitstringconstant.html"/>
+            
+            
+            
+             <section title="explicitTrueFalseConstant" ref="explicittruefalseconstant.html"/>
+            
+            
+            
+             <section title="expn" ref="expn.html"/>
+            
+            
+            
+             <section title="export" ref="export.html"/>
+            
+            
+            
+             <section title="external" ref="external.html"/>
+            
+            
+            
+             <section title="false" ref="false.html"/>
+            
+            
+            
+             <section title="fetcharg" ref="fetcharg.html"/>
+            
+            
+            
+             <section title="File.Copy" ref="file_copy.html"/>
+            
+            
+            
+             <section title="File.Delete" ref="file_delete.html"/>
+            
+            
+            
+             <section title="File.DiskFree" ref="file_diskfree.html"/>
+            
+            
+            
+             <section title="File.Exists" ref="file_exists.html"/>
+            
+            
+            
+             <section title="File.FullPath" ref="file_fullpath.html"/>
+            
+            
+            
+             <section title="File.Parent" ref="file_parent.html"/>
+            
+            
+            
+             <section title="File.Rename" ref="file_rename.html"/>
+            
+            
+            
+             <section title="File.Status" ref="file_status.html"/>
+            
+            
+            
+            
+            
+             <section title="File" ref="filemodule.html"/>
+            
+            
+            
+             <section title="File Statements" ref="filestatements.html"/>
+            
+            
+            
+             <section title="flexible" ref="flexible.html"/>
+            
+            
+            
+             <section title="floor" ref="floor.html"/>
+            
+            
+            
+             <section title="Font.Draw" ref="font_draw.html"/>
+            
+            
+            
+             <section title="Font.Free" ref="font_free.html"/>
+            
+            
+            
+             <section title="Font.GetName" ref="font_getname.html"/>
+            
+            
+            
+             <section title="Font.GetSize" ref="font_getsize.html"/>
+            
+            
+            
+             <section title="Font.GetStyle" ref="font_getstyle.html"/>
+            
+            
+            
+             <section title="Font.Name" ref="font_name.html"/>
+            
+            
+            
+             <section title="Font.New" ref="font_new.html"/>
+            
+            
+            
+             <section title="Font.Sizes" ref="font_sizes.html"/>
+            
+            
+            
+             <section title="Font.StartName" ref="font_startname.html"/>
+            
+            
+            
+             <section title="Font.StartSize" ref="font_startsize.html"/>
+            
+            
+            
+             <section title="Font.Width" ref="font_width.html"/>
+            
+            
+            
+             <section title="Font" ref="fontmodule.html"/>
+            
+            
+            
+             <section title="for" ref="for.html"/>
+            
+            
+            
+             <section title="fork" ref="fork.html"/>
+            
+            
+            
+             <section title="forward" ref="forward.html"/>
+            
+            
+            
+             <section title="Turing 4.1.1 Documentation" ref="frame.html"/>
+            
+            
+            
+             <section title="frealstr" ref="frealstr.html"/>
+            
+            
+            
+             <section title="free" ref="free.html"/>
+            
+            
+            
+             <section title="function" ref="function.html"/>
+            
+            
+            
+             <section title="functionCall" ref="functioncall.html"/>
+            
+            
+            
+             <section title="get" ref="get.html"/>
+            
+            
+            
+             <section title="getch" ref="getch.html"/>
+            
+            
+            
+             <section title="getchar" ref="getchar.html"/>
+            
+            
+            
+             <section title="getenv" ref="getenv.html"/>
+            
+            
+            
+             <section title="getpid" ref="getpid.html"/>
+            
+            
+            
+             <section title="getpriority" ref="getpriority.html"/>
+            
+            
+            
+             <section title="The GUI Module" ref="gui.html"/>
+            
+            
+            
+             <section title="GUI.AddLine" ref="gui_addline.html"/>
+            
+            
+            
+             <section title="GUI.AddText" ref="gui_addtext.html"/>
+            
+            
+            
+             <section title="GUI.Alert[2,3,Full]" ref="gui_alert.html"/>
+            
+            
+            
+             <section title="GUI.Alert[2,3,Full]" ref="gui_alert2.html"/>
+            
+            
+            
+             <section title="GUI.Alert[2,3,Full]" ref="gui_alert3.html"/>
+            
+            
+            
+             <section title="GUI.Alert[2,3,Full]" ref="gui_alert_2,3,full.html"/>
+            
+            
+            
+             <section title="GUI.Alert[2,3,Full]" ref="gui_alertfull.html"/>
+            
+            
+            
+             <section title="GUI.Choose[Full]" ref="gui_choose.html"/>
+            
+            
+            
+             <section title="GUI.Choose[Full]" ref="gui_choose_full.html"/>
+            
+            
+            
+             <section title="GUI.Choose[Full]" ref="gui_choosefull.html"/>
+            
+            
+            
+             <section title="GUI.ClearText" ref="gui_cleartext.html"/>
+            
+            
+            
+             <section title="GUI.CloseWindow" ref="gui_closewindow.html"/>
+            
+            
+            
+             <section title="GUI.CreateButton[Full]" ref="gui_createbutton.html"/>
+            
+            
+            
+             <section title="GUI.CreateButton[Full]" ref="gui_createbutton_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateButton[Full]" ref="gui_createbuttonfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateCanvas[Full]" ref="gui_createcanvas.html"/>
+            
+            
+            
+             <section title="GUI.CreateCanvas[Full]" ref="gui_createcanvas_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateCanvas[Full]" ref="gui_createcanvasfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateCheckBox[Full]" ref="gui_createcheckbox.html"/>
+            
+            
+            
+             <section title="GUI.CreateCheckBox[Full]" ref="gui_createcheckbox_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateCheckBox[Full]" ref="gui_createcheckboxfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateFrame" ref="gui_createframe.html"/>
+            
+            
+            
+             <section title="GUI.CreateHorizontalScrollBar[Full]" ref="gui_createhorizontalscrollbar.html"/>
+            
+            
+            
+             <section title="GUI.CreateHorizontalScrollBar[Full]" ref="gui_createhorizontalscrollbar_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateHorizontalScrollBar[Full]" ref="gui_createhorizontalscrollbarfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateHorizontalSlider" ref="gui_createhorizontalslider.html"/>
+            
+            
+            
+             <section title="GUI.CreateLabel[Full]" ref="gui_createlabel.html"/>
+            
+            
+            
+             <section title="GUI.CreateLabel[Full]" ref="gui_createlabel_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateLabel[Full]" ref="gui_createlabelfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateLabelledFrame" ref="gui_createlabelledframe.html"/>
+            
+            
+            
+             <section title="GUI.CreateLine" ref="gui_createline.html"/>
+            
+            
+            
+             <section title="GUI.CreateMenu" ref="gui_createmenu.html"/>
+            
+            
+            
+             <section title="GUI.CreateMenuItem[Full]" ref="gui_createmenuitem.html"/>
+            
+            
+            
+             <section title="GUI.CreateMenuItem[Full]" ref="gui_createmenuitem_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateMenuItem[Full]" ref="gui_createmenuitemfull.html"/>
+            
+            
+            
+             <section title="GUI.CreatePicture" ref="gui_createpicture.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureButton[Full]" ref="gui_createpicturebutton.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureButton[Full]" ref="gui_createpicturebutton_full.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureButton[Full]" ref="gui_createpicturebuttonfull.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureRadioButton[Full]" ref="gui_createpictureradiobutton.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureRadioButton[Full]" ref="gui_createpictureradiobutton_full.html"/>
+            
+            
+            
+             <section title="GUI.CreatePictureRadioButton[Full]" ref="gui_createpictureradiobuttonfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateRadioButton[Full]" ref="gui_createradiobutton.html"/>
+            
+            
+            
+             <section title="GUI.CreateRadioButton[Full]" ref="gui_createradiobutton_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateRadioButton[Full]" ref="gui_createradiobuttonfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextBox[Full]" ref="gui_createtextbox.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextBox[Full]" ref="gui_createtextbox_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextBoxChoice" ref="gui_createtextboxchoice.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextBox[Full]" ref="gui_createtextboxfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextField[Full]" ref="gui_createtextfield.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextField[Full]" ref="gui_createtextfield_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateTextField[Full]" ref="gui_createtextfieldfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateVerticalScrollBar[Full]" ref="gui_createverticalscrollbar.html"/>
+            
+            
+            
+             <section title="GUI.CreateVerticalScrollBar[Full]" ref="gui_createverticalscrollbar_full.html"/>
+            
+            
+            
+             <section title="GUI.CreateVerticalScrollBar[Full]" ref="gui_createverticalscrollbarfull.html"/>
+            
+            
+            
+             <section title="GUI.CreateVerticalSlider" ref="gui_createverticalslider.html"/>
+            
+            
+            
+             <section title="GUI.Disable" ref="gui_disable.html"/>
+            
+            
+            
+             <section title="GUI.Dispose" ref="gui_dispose.html"/>
+            
+            
+            
+             <section title="GUI.Draw..." ref="gui_draw.html"/>
+            
+            
+            
+             <section title="GUI.Enable" ref="gui_enable.html"/>
+            
+            
+            
+             <section title="GUI.FontDraw" ref="gui_fontdraw.html"/>
+            
+            
+            
+             <section title="GUI.Get{X,Y}" ref="gui_get_x,y.html"/>
+            
+            
+            
+             <section title="GUI.GetCheckBox" ref="gui_getcheckbox.html"/>
+            
+            
+            
+             <section title="GUI.GetEventTime" ref="gui_geteventtime.html"/>
+            
+            
+            
+             <section title="GUI.GetEventWidgetID" ref="gui_geteventwidgetid.html"/>
+            
+            
+            
+             <section title="GUI.GetEventWindow" ref="gui_geteventwindow.html"/>
+            
+            
+            
+             <section title="GUI.GetHeight" ref="gui_getheight.html"/>
+            
+            
+            
+             <section title="GUI.GetMenuBarHeight" ref="gui_getmenubarheight.html"/>
+            
+            
+            
+             <section title="GUI.GetScrollBarWidth" ref="gui_getscrollbarwidth.html"/>
+            
+            
+            
+             <section title="GUI.GetSliderValue" ref="gui_getslidervalue.html"/>
+            
+            
+            
+             <section title="GUI.GetText" ref="gui_gettext.html"/>
+            
+            
+            
+             <section title="GUI.GetVersion" ref="gui_getversion.html"/>
+            
+            
+            
+             <section title="GUI.GetWidth" ref="gui_getwidth.html"/>
+            
+            
+            
+             <section title="GUI.Get{X,Y}" ref="gui_getx.html"/>
+            
+            
+            
+             <section title="GUI.Get{X,Y}" ref="gui_gety.html"/>
+            
+            
+            
+             <section title="GUI.Hide" ref="gui_hide.html"/>
+            
+            
+            
+             <section title="GUI.HideMenuBar" ref="gui_hidemenubar.html"/>
+            
+            
+            
+             <section title="GUI.HideWindow" ref="gui_hidewindow.html"/>
+            
+            
+            
+             <section title="GUI.OpenFile" ref="gui_openfile.html"/>
+            
+            
+            
+             <section title="GUI.OpenFileFull" ref="gui_openfilefull.html"/>
+            
+            
+            
+             <section title="GUI.Pic..." ref="gui_pic.html"/>
+            
+            
+            
+             <section title="GUI.ProcessEvent" ref="gui_processevent.html"/>
+            
+            
+            
+             <section title="GUI.Quit" ref="gui_quit.html"/>
+            
+            
+            
+             <section title="GUI.Refresh" ref="gui_refresh.html"/>
+            
+            
+            
+             <section title="GUI.ResetQuit" ref="gui_resetquit.html"/>
+            
+            
+            
+             <section title="GUI.SaveFile" ref="gui_savefile.html"/>
+            
+            
+            
+             <section title="GUI.SaveFileFull" ref="gui_savefilefull.html"/>
+            
+            
+            
+             <section title="GUI.SelectRadio" ref="gui_selectradio.html"/>
+            
+            
+            
+             <section title="GUI.SetActive" ref="gui_setactive.html"/>
+            
+            
+            
+             <section title="GUI.SetBackgroundColor" ref="gui_setbackgroundcolor.html"/>
+            
+            
+            
+             <section title="GUI.SetCheckBox" ref="gui_setcheckbox.html"/>
+            
+            
+            
+             <section title="GUI.SetColor" ref="gui_setcolor.html"/>
+            
+            
+            
+             <section title="GUI.SetDefault" ref="gui_setdefault.html"/>
+            
+            
+            
+             <section title="GUI.SetDisplayWhenCreated" ref="gui_setdisplaywhencreated.html"/>
+            
+            
+            
+             <section title="GUI.SetEchoChar" ref="gui_setechochar.html"/>
+            
+            
+            
+             <section title="GUI.SetKeyEventHandler" ref="gui_setkeyeventhandler.html"/>
+            
+            
+            
+             <section title="GUI.SetLabel" ref="gui_setlabel.html"/>
+            
+            
+            
+             <section title="GUI.SetMouseEventHandler" ref="gui_setmouseeventhandler.html"/>
+            
+            
+            
+             <section title="GUI.SetNullEventHandler" ref="gui_setnulleventhandler.html"/>
+            
+            
+            
+             <section title="GUI.SetPosition" ref="gui_setposition.html"/>
+            
+            
+            
+             <section title="GUI.SetPositionAndSize" ref="gui_setpositionandsize.html"/>
+            
+            
+            
+             <section title="GUI.SetScrollAmount" ref="gui_setscrollamount.html"/>
+            
+            
+            
+             <section title="GUI.SetScrollOnAdd" ref="gui_setscrollonadd.html"/>
+            
+            
+            
+             <section title="GUI.SetSelection" ref="gui_setselection.html"/>
+            
+            
+            
+             <section title="GUI.SetSize" ref="gui_setsize.html"/>
+            
+            
+            
+             <section title="GUI.SetSliderMinMax" ref="gui_setsliderminmax.html"/>
+            
+            
+            
+             <section title="GUI.SetSliderReverse" ref="gui_setsliderreverse.html"/>
+            
+            
+            
+             <section title="GUI.SetSliderSize" ref="gui_setslidersize.html"/>
+            
+            
+            
+             <section title="GUI.SetSliderValue" ref="gui_setslidervalue.html"/>
+            
+            
+            
+             <section title="GUI.SetText" ref="gui_settext.html"/>
+            
+            
+            
+             <section title="GUI.SetTopLine" ref="gui_settopline.html"/>
+            
+            
+            
+             <section title="GUI.SetXOR" ref="gui_setxor.html"/>
+            
+            
+            
+             <section title="GUI.Show" ref="gui_show.html"/>
+            
+            
+            
+             <section title="GUI.ShowMenuBar" ref="gui_showmenubar.html"/>
+            
+            
+            
+             <section title="GUI.ShowWindow" ref="gui_showwindow.html"/>
+            
+            
+            
+             <section title="GUI" ref="guimodule.html"/>
+            
+            
+            
+             <section title="handler" ref="handler.html"/>
+            
+            
+            
+             <section title="hasch" ref="hasch.html"/>
+            
+            
+            
+             <section title="id" ref="id.html"/>
+            
+            
+            
+             <section title="if" ref="if.html"/>
+            
+            
+            
+             <section title="implement" ref="implement.html"/>
+            
+            
+            
+             <section title="implement by" ref="implement_by.html"/>
+            
+            
+            
+             <section title="import" ref="import.html"/>
+            
+            
+            
+             <section title="in" ref="in.html"/>
+            
+            
+            
+             <section title="include" ref="include.html"/>
+            
+            
+            
+             <section title="Turing 4.1.1 Documentation" ref="index-2.html"/>
+            
+            
+            
+             <section title="index" ref="index.html"/>
+            
+            
+            
+             <section title="indexType" ref="indextype.html"/>
+            
+            
+            
+             <section title="indirection" ref="indirection.html"/>
+            
+            
+            
+             <section title="infix" ref="infix.html"/>
+            
+            
+            
+             <section title="inherit" ref="inherit.html"/>
+            
+            
+            
+             <section title="init" ref="init.html"/>
+            
+            
+            
+             <section title="Input.Flush" ref="input_flush.html"/>
+            
+            
+            
+             <section title="Input.getch" ref="input_getch.html"/>
+            
+            
+            
+             <section title="Input.getchar" ref="input_getchar.html"/>
+            
+            
+            
+             <section title="Input.hasch" ref="input_hasch.html"/>
+            
+            
+            
+             <section title="Input.KeyDown" ref="input_keydown.html"/>
+            
+            
+            
+             <section title="Input.Pause" ref="input_pause.html"/>
+            
+            
+            
+             <section title="Input" ref="inputmodule.html"/>
+            
+            
+            
+             <section title="int" ref="int.html"/>
+            
+            
+            
+             <section title="intn" ref="intn.html"/>
+            
+            
+            
+             <section title="intreal" ref="intreal.html"/>
+            
+            
+            
+             <section title="Turing Help" ref="intro.html"/>
+            
+            
+            
+             <section title="intstr" ref="intstr.html"/>
+            
+            
+            
+             <section title="invariant" ref="invariant.html"/>
+            
+            
+            
+             <section title="Joystick.GetInfo" ref="joystick_getinfo.html"/>
+            
+            
+            
+             <section title="Joystick" ref="joystickmodule.html"/>
+            
+            
+            
+             <section title="Keyboard" ref="keyboardmodule.html"/>
+            
+            
+            
+             <section title="Document Title" ref="keycodes.html"/>
+            
+            
+            
+             <section title="Predefined Names" ref="keywords.html"/>
+            
+            
+            
+             <section title="
+Turing Language Elements" ref="lang_elements.html"/>
+            
+            
+            
+             <section title="length" ref="length.html"/>
+            
+            
+            
+             <section title="Limits" ref="limitsmodule.html"/>
+            
+            
+            
+             <section title="ln" ref="ln.html"/>
+            
+            
+            
+             <section title="locate" ref="locate.html"/>
+            
+            
+            
+             <section title="locatexy" ref="locatexy.html"/>
+            
+            
+            
+             <section title="loop" ref="loop.html"/>
+            
+            
+            
+             <section title="lower" ref="lower.html"/>
+            
+            
+            
+             <section title="Math.Distance" ref="math_distance.html"/>
+            
+            
+            
+             <section title="Math.DistancePointLine" ref="math_distancepointline.html"/>
+            
+            
+            
+             <section title="Math" ref="mathmodule.html"/>
+            
+            
+            
+             <section title="max" ref="max.html"/>
+            
+            
+            
+             <section title="maxcol" ref="maxcol.html"/>
+            
+            
+            
+             <section title="maxcolor" ref="maxcolor.html"/>
+            
+            
+            
+             <section title="maxint" ref="maxint.html"/>
+            
+            
+            
+             <section title="maxnat" ref="maxnat.html"/>
+            
+            
+            
+             <section title="maxrow" ref="maxrow.html"/>
+            
+            
+            
+             <section title="maxx" ref="maxx.html"/>
+            
+            
+            
+             <section title="maxy" ref="maxy.html"/>
+            
+            
+            
+             <section title="min" ref="min.html"/>
+            
+            
+            
+             <section title="minint" ref="minint.html"/>
+            
+            
+            
+             <section title="minnat" ref="minnat.html"/>
+            
+            
+            
+             <section title="mod" ref="mod.html"/>
+            
+            
+            
+             <section title="module" ref="module.html"/>
+            
+            
+            
+             <section title="
+Predefined Modules" ref="module_predef.html"/>
+            
+            
+            
+             <section title="monitor" ref="monitor.html"/>
+            
+            
+            
+             <section title="Mouse.ButtonChoose" ref="mouse_buttonchoose.html"/>
+            
+            
+            
+             <section title="Mouse.ButtonMoved" ref="mouse_buttonmoved.html"/>
+            
+            
+            
+             <section title="Mouse.ButtonWait" ref="mouse_buttonwait.html"/>
+            
+            
+            
+             <section title="Mouse.Where" ref="mouse_where.html"/>
+            
+            
+            
+             <section title="Mouse" ref="mousemodule.html"/>
+            
+            
+            
+             <section title="mousewhere" ref="mousewhere.html"/>
+            
+            
+            
+             <section title="Music.Play" ref="music_play.html"/>
+            
+            
+            
+             <section title="Music.PlayFile" ref="music_playfile.html"/>
+            
+            
+            
+             <section title="Music.PlayFileLoop" ref="music_playfileloop.html"/>
+            
+            
+            
+             <section title="Music.PlayFileReturn" ref="music_playfilereturn.html"/>
+            
+            
+            
+             <section title="Music.PlayFileStop" ref="music_playfilestop.html"/>
+            
+            
+            
+             <section title="Music.Sound" ref="music_sound.html"/>
+            
+            
+            
+             <section title="Music.SoundOff" ref="music_soundoff.html"/>
+            
+            
+            
+             <section title="Music" ref="musicmodule.html"/>
+            
+            
+            
+             <section title="named" ref="named.html"/>
+            
+            
+            
+             <section title="nargs" ref="nargs.html"/>
+            
+            
+            
+             <section title="nat" ref="nat.html"/>
+            
+            
+            
+             <section title="natn" ref="natn.html"/>
+            
+            
+            
+             <section title="natreal" ref="natreal.html"/>
+            
+            
+            
+             <section title="natstr" ref="natstr.html"/>
+            
+            
+            
+             <section title="Net.BytesAvailable" ref="net_bytesavailable.html"/>
+            
+            
+            
+             <section title="Net.CharAvailable" ref="net_charavailable.html"/>
+            
+            
+            
+             <section title="Net.CloseConnection" ref="net_closeconnection.html"/>
+            
+            
+            
+             <section title="Net.HostAddressFromName" ref="net_hostaddressfromname.html"/>
+            
+            
+            
+             <section title="Net.HostNameFromAddress" ref="net_hostnamefromaddress.html"/>
+            
+            
+            
+             <section title="Net.LineAvailable" ref="net_lineavailable.html"/>
+            
+            
+            
+             <section title="Net.LocalAddress" ref="net_localaddress.html"/>
+            
+            
+            
+             <section title="Net.LocalName" ref="net_localname.html"/>
+            
+            
+            
+             <section title="Net.OpenConnection" ref="net_openconnection.html"/>
+            
+            
+            
+             <section title="Net.OpenURLConnection" ref="net_openurlconnection.html"/>
+            
+            
+            
+             <section title="Net.TokenAvailable" ref="net_tokenavailable.html"/>
+            
+            
+            
+             <section title="Net.WaitForConnection" ref="net_waitforconnection.html"/>
+            
+            
+            
+             <section title="Net" ref="netmodule.html"/>
+            
+            
+            
+             <section title="new" ref="new.html"/>
+            
+            
+            
+             <section title="nil" ref="nil.html"/>
+            
+            
+            
+             <section title="not" ref="not.html"/>
+            
+            
+            
+             <section title="objectclass" ref="objectclass.html"/>
+            
+            
+            
+             <section title="opaque" ref="opaque.html"/>
+            
+            
+            
+             <section title="open" ref="open.html"/>
+            
+            
+            
+             <section title="Operators" ref="operators.html"/>
+            
+            
+            
+             <section title="or" ref="or.html"/>
+            
+            
+            
+             <section title="ord" ref="ord.html"/>
+            
+            
+            
+             <section title="parallelget" ref="parallelget.html"/>
+            
+            
+            
+             <section title="parallelput" ref="parallelput.html"/>
+            
+            
+            
+             <section title="paramDeclaration" ref="paramdeclaration.html"/>
+            
+            
+            
+             <section title="pause" ref="pause.html"/>
+            
+            
+            
+             <section title="PC.ParallelGet" ref="pc_parallelget.html"/>
+            
+            
+            
+             <section title="PC.ParallelPut" ref="pc_parallelput.html"/>
+            
+            
+            
+             <section title="PC" ref="pcmodule.html"/>
+            
+            
+            
+             <section title="pervasive" ref="pervasive.html"/>
+            
+            
+            
+             <section title="Pic.Blend" ref="pic_blend.html"/>
+            
+            
+            
+             <section title="Pic.Blur" ref="pic_blur.html"/>
+            
+            
+            
+             <section title="Pic.Draw" ref="pic_draw.html"/>
+            
+            
+            
+             <section title="Pic.DrawFrames" ref="pic_drawframes.html"/>
+            
+            
+            
+             <section title="Pic.DrawFramesBack" ref="pic_drawframesback.html"/>
+            
+            
+            
+             <section title="Pic.DrawSpecial" ref="pic_drawspecial.html"/>
+            
+            
+            
+             <section title="Pic.DrawSpecialBack" ref="pic_drawspecialback.html"/>
+            
+            
+            
+             <section title="Pic.FileNew" ref="pic_filenew.html"/>
+            
+            
+            
+             <section title="Pic.FileNewFrames" ref="pic_filenewframes.html"/>
+            
+            
+            
+             <section title="Pic.Flip" ref="pic_flip.html"/>
+            
+            
+            
+             <section title="Pic.Frames" ref="pic_frames.html"/>
+            
+            
+            
+            
+            
+             <section title="Pic.Height" ref="pic_height.html"/>
+            
+            
+            
+             <section title="Pic.Mirror" ref="pic_mirror.html"/>
+            
+            
+            
+             <section title="Pic.New" ref="pic_new.html"/>
+            
+            
+            
+             <section title="Pic.Rotate" ref="pic_rotate.html"/>
+            
+            
+            
+             <section title="Pic.Save" ref="pic_save.html"/>
+            
+            
+            
+             <section title="Pic.Scale" ref="pic_scale.html"/>
+            
+            
+            
+             <section title="Pic.ScreenLoad" ref="pic_screenload.html"/>
+            
+            
+            
+             <section title="Pic.ScreenSave" ref="pic_screensave.html"/>
+            
+            
+            
+             <section title="Pic.SetTransparentColor" ref="pic_settransparentcolor.html"/>
+            
+            
+            
+             <section title="Pic.Width" ref="pic_width.html"/>
+            
+            
+            
+             <section title="Pic" ref="picmodule.html"/>
+            
+            
+            
+             <section title="play" ref="play.html"/>
+            
+            
+            
+             <section title="playdone" ref="playdone.html"/>
+            
+            
+            
+             <section title="pointer" ref="pointer.html"/>
+            
+            
+            
+             <section title="post" ref="post.html"/>
+            
+            
+            
+             <section title="pre" ref="pre.html"/>
+            
+            
+            
+             <section title="precedence" ref="precedence.html"/>
+            
+            
+            
+             <section title="pred" ref="pred.html"/>
+            
+            
+            
+             <section title="prefix" ref="prefix.html"/>
+            
+            
+            
+             <section title="procedure" ref="procedure.html"/>
+            
+            
+            
+             <section title="procedureCall" ref="procedurecall.html"/>
+            
+            
+            
+             <section title="process" ref="process.html"/>
+            
+            
+            
+             <section title="program" ref="program.html"/>
+            
+            
+            
+             <section title="put" ref="put.html"/>
+            
+            
+            
+             <section title="quit" ref="quit.html"/>
+            
+            
+            
+             <section title="rand" ref="rand.html"/>
+            
+            
+            
+             <section title="Rand.Int" ref="rand_int.html"/>
+            
+            
+            
+             <section title="Rand.Next" ref="rand_next.html"/>
+            
+            
+            
+             <section title="Rand.Real" ref="rand_real.html"/>
+            
+            
+            
+             <section title="Rand.Reset" ref="rand_reset.html"/>
+            
+            
+            
+             <section title="Rand.Seed" ref="rand_seed.html"/>
+            
+            
+            
+             <section title="Rand.Set" ref="rand_set.html"/>
+            
+            
+            
+             <section title="randint" ref="randint.html"/>
+            
+            
+            
+             <section title="Rand" ref="randmodule.html"/>
+            
+            
+            
+             <section title="randnext" ref="randnext.html"/>
+            
+            
+            
+             <section title="randomize" ref="randomize.html"/>
+            
+            
+            
+             <section title="randseed" ref="randseed.html"/>
+            
+            
+            
+             <section title="read" ref="read.html"/>
+            
+            
+            
+             <section title="real" ref="real.html"/>
+            
+            
+            
+             <section title="realn" ref="realn.html"/>
+            
+            
+            
+             <section title="realstr" ref="realstr.html"/>
+            
+            
+            
+             <section title="record" ref="record.html"/>
+            
+            
+            
+             <section title="register" ref="register.html"/>
+            
+            
+            
+             <section title="rem" ref="rem.html"/>
+            
+            
+            
+             <section title="repeat" ref="repeat.html"/>
+            
+            
+            
+             <section title="result" ref="result.html"/>
+            
+            
+            
+             <section title="return" ref="return.html"/>
+            
+            
+            
+             <section title="RGB.AddColor" ref="rgb_addcolor.html"/>
+            
+            
+            
+             <section title="RGB.GetColor" ref="rgb_getcolor.html"/>
+            
+            
+            
+             <section title="RGB.maxcolor" ref="rgb_maxcolor.html"/>
+            
+            
+            
+             <section title="RGB.SetColor" ref="rgb_setcolor.html"/>
+            
+            
+            
+             <section title="RGB" ref="rgbmodule.html"/>
+            
+            
+            
+             <section title="round" ref="round.html"/>
+            
+            
+            
+             <section title="scalar" ref="scalar.html"/>
+            
+            
+            
+             <section title="seek" ref="seek.html"/>
+            
+            
+            
+             <section title="self" ref="self.html"/>
+            
+            
+            
+             <section title="separator" ref="separator.html"/>
+            
+            
+            
+             <section title="set" ref="set.html"/>
+            
+            
+            
+             <section title="setConstructor" ref="setconstructor.html"/>
+            
+            
+            
+             <section title="setpriority" ref="setpriority.html"/>
+            
+            
+            
+             <section title="setscreen" ref="setscreen.html"/>
+            
+            
+            
+             <section title="shl" ref="shl.html"/>
+            
+            
+            
+             <section title="shr" ref="shr.html"/>
+            
+            
+            
+             <section title="sign" ref="sign.html"/>
+            
+            
+            
+             <section title="signal" ref="signal.html"/>
+            
+            
+            
+             <section title="simutime" ref="simutime.html"/>
+            
+            
+            
+             <section title="sin" ref="sin.html"/>
+            
+            
+            
+             <section title="sind" ref="sind.html"/>
+            
+            
+            
+             <section title="sizeof" ref="sizeof.html"/>
+            
+            
+            
+             <section title="sizepic" ref="sizepic.html"/>
+            
+            
+            
+             <section title="skip" ref="skip.html"/>
+            
+            
+            
+             <section title="skip" ref="skip1.html"/>
+            
+            
+            
+             <section title="sound" ref="sound.html"/>
+            
+            
+            
+             <section title="Sprite.Animate" ref="sprite_animate.html"/>
+            
+            
+            
+             <section title="Sprite.ChangePic" ref="sprite_changepic.html"/>
+            
+            
+            
+             <section title="Sprite.Free" ref="sprite_free.html"/>
+            
+            
+            
+             <section title="Sprite.Hide" ref="sprite_hide.html"/>
+            
+            
+            
+             <section title="Sprite.New" ref="sprite_new.html"/>
+            
+            
+            
+             <section title="Sprite.SetFrameRate" ref="sprite_setframerate.html"/>
+            
+            
+            
+             <section title="Sprite.SetHeight" ref="sprite_setheight.html"/>
+            
+            
+            
+             <section title="Sprite.SetPosition" ref="sprite_setposition.html"/>
+            
+            
+            
+             <section title="Sprite.Show" ref="sprite_show.html"/>
+            
+            
+            
+             <section title="Sprite" ref="spritemodule.html"/>
+            
+            
+            
+             <section title="sqrt" ref="sqrt.html"/>
+            
+            
+            
+             <section title="standardType" ref="standardtype.html"/>
+            
+            
+            
+             <section title="statement" ref="statement.html"/>
+            
+            
+            
+             <section title="statementsAndDeclarations" ref="statementsanddeclarations.html"/>
+            
+            
+            
+             <section title="Str.Lower" ref="str_lower.html"/>
+            
+            
+            
+             <section title="Str.Trim" ref="str_trim.html"/>
+            
+            
+            
+             <section title="Str.Upper" ref="str_upper.html"/>
+            
+            
+            
+             <section title="Stream.eof" ref="stream_eof.html"/>
+            
+            
+            
+             <section title="Stream.Flush" ref="stream_flush.html"/>
+            
+            
+            
+             <section title="Stream.FlushAll" ref="stream_flushall.html"/>
+            
+            
+            
+             <section title="Stream" ref="streammodule.html"/>
+            
+            
+            
+             <section title="string" ref="string.html"/>
+            
+            
+            
+             <section title="string" ref="string1.html"/>
+            
+            
+            
+             <section title="strint" ref="strint.html"/>
+            
+            
+            
+             <section title="strintok" ref="strintok.html"/>
+            
+            
+            
+             <section title="Str" ref="strmodule.html"/>
+            
+            
+            
+             <section title="strnat" ref="strnat.html"/>
+            
+            
+            
+             <section title="strnatok" ref="strnatok.html"/>
+            
+            
+            
+             <section title="strreal" ref="strreal.html"/>
+            
+            
+            
+             <section title="strrealok" ref="strrealok.html"/>
+            
+            
+            
+             <section title="subprogramHeader" ref="subprogramheader.html"/>
+            
+            
+            
+             <section title="subprogramType" ref="subprogramtype.html"/>
+            
+            
+            
+             <section title="subrangeType" ref="subrangetype.html"/>
+            
+            
+            
+             <section title="substring" ref="substring.html"/>
+            
+            
+            
+             <section title="succ" ref="succ.html"/>
+            
+            
+            
+             <section title="Sys.Exec" ref="sys_exec.html"/>
+            
+            
+            
+             <section title="Sys.FetchArg" ref="sys_fetcharg.html"/>
+            
+            
+            
+             <section title="Sys.GetComputerName" ref="sys_getcomputername.html"/>
+            
+            
+            
+             <section title="Sys.GetEnv" ref="sys_getenv.html"/>
+            
+            
+            
+             <section title="Sys.GetPid" ref="sys_getpid.html"/>
+            
+            
+            
+             <section title="Sys.GetUserName" ref="sys_getusername.html"/>
+            
+            
+            
+             <section title="Sys.Nargs" ref="sys_nargs.html"/>
+            
+            
+            
+             <section title="sysclock" ref="sysclock.html"/>
+            
+            
+            
+             <section title="Sys" ref="sysmodule.html"/>
+            
+            
+            
+             <section title="system" ref="system.html"/>
+            
+            
+            
+             <section title="tag" ref="tag.html"/>
+            
+            
+            
+             <section title="takepic" ref="takepic.html"/>
+            
+            
+            
+             <section title="tan" ref="tan.html"/>
+            
+            
+            
+             <section title="tand" ref="tand.html"/>
+            
+            
+            
+             <section title="tell" ref="tell.html"/>
+            
+            
+            
+             <section title="Text.Cls" ref="text_cls.html"/>
+            
+            
+            
+             <section title="Text.Color" ref="text_color.html"/>
+            
+            
+            
+             <section title="Text.ColorBack" ref="text_colorback.html"/>
+            
+            
+            
+             <section title="Text.Locate" ref="text_locate.html"/>
+            
+            
+            
+             <section title="Text.LocateXY" ref="text_locatexy.html"/>
+            
+            
+            
+             <section title="Text.maxcol" ref="text_maxcol.html"/>
+            
+            
+            
+             <section title="Text.maxrow" ref="text_maxrow.html"/>
+            
+            
+            
+             <section title="Text.WhatCol" ref="text_whatcol.html"/>
+            
+            
+            
+             <section title="Text.WhatColor" ref="text_whatcolor.html"/>
+            
+            
+            
+             <section title="Text.WhatColorBack" ref="text_whatcolorback.html"/>
+            
+            
+            
+             <section title="Text.WhatRow" ref="text_whatrow.html"/>
+            
+            
+            
+             <section title="Text" ref="textmodule.html"/>
+            
+            
+            
+             <section title="time" ref="time.html"/>
+            
+            
+            
+             <section title="Time.Date" ref="time_date.html"/>
+            
+            
+            
+             <section title="Time.DateSec" ref="time_datesec.html"/>
+            
+            
+            
+             <section title="Time.Delay" ref="time_delay.html"/>
+            
+            
+            
+             <section title="Time.DelaySinceLast" ref="time_delaysincelast.html"/>
+            
+            
+            
+             <section title="Time.Elapsed" ref="time_elapsed.html"/>
+            
+            
+            
+             <section title="Time.ElapsedCPU" ref="time_elapsedcpu.html"/>
+            
+            
+            
+             <section title="Time.PartsSec" ref="time_partssec.html"/>
+            
+            
+            
+             <section title="Time.Sec" ref="time_sec.html"/>
+            
+            
+            
+             <section title="Time.SecDate" ref="time_secdate.html"/>
+            
+            
+            
+             <section title="Time.SecParts" ref="time_secparts.html"/>
+            
+            
+            
+             <section title="Time.SecStr" ref="time_secstr.html"/>
+            
+            
+            
+             <section title="Time" ref="timemodule.html"/>
+            
+            
+            
+             <section title="token" ref="token.html"/>
+            
+            
+            
+             <section title="true" ref="true.html"/>
+            
+            
+            
+             <section title="Turing Teacher/Administrator Guide" ref="turing_admin.html"/>
+            
+            
+            
+             <section title="Turing Debugger Guide" ref="turing_debugger.html"/>
+            
+            
+            
+             <section title="Turing Teacher/Administrator Quick Start Guide" ref="turing_quick_admin.html"/>
+            
+            
+            
+             <section title="type" ref="type.html"/>
+            
+            
+            
+             <section title="TypeConv" ref="typeconvmodule.html"/>
+            
+            
+            
+             <section title="typeSpec" ref="typespec.html"/>
+            
+            
+            
+             <section title="unchecked" ref="unchecked.html"/>
+            
+            
+            
+             <section title="union" ref="union.html"/>
+            
+            
+            
+             <section title="unit" ref="unit.html"/>
+            
+            
+            
+             <section title="unqualified" ref="unqualified.html"/>
+            
+            
+            
+             <section title="upper" ref="upper.html"/>
+            
+            
+            
+             <section title="var" ref="var.html"/>
+            
+            
+            
+             <section title="variableReference" ref="variablereference.html"/>
+            
+            
+            
+             <section title="View.ClipAdd" ref="view_clipadd.html"/>
+            
+            
+            
+             <section title="View.ClipAddOval" ref="view_clipaddoval.html"/>
+            
+            
+            
+             <section title="View.ClipOff" ref="view_clipoff.html"/>
+            
+            
+            
+             <section title="View.ClipSet" ref="view_clipset.html"/>
+            
+            
+            
+             <section title="View.maxcolor" ref="view_maxcolor.html"/>
+            
+            
+            
+             <section title="View.maxx" ref="view_maxx.html"/>
+            
+            
+            
+             <section title="View.maxy" ref="view_maxy.html"/>
+            
+            
+            
+             <section title="View.Set" ref="view_set.html"/>
+            
+            
+            
+             <section title="View.SetTransparentColor" ref="view_settransparentcolor.html"/>
+            
+            
+            
+             <section title="View.Update" ref="view_update.html"/>
+            
+            
+            
+             <section title="View.UpdateArea" ref="view_updatearea.html"/>
+            
+            
+            
+             <section title="View.WhatDotColor" ref="view_whatdotcolor.html"/>
+            
+            
+            
+             <section title="View" ref="viewmodule.html"/>
+            
+            
+            
+             <section title="wait" ref="wait.html"/>
+            
+            
+            
+             <section title="wallclock" ref="wallclock.html"/>
+            
+            
+            
+             <section title="whatcol" ref="whatcol.html"/>
+            
+            
+            
+             <section title="whatcolor" ref="whatcolor.html"/>
+            
+            
+            
+             <section title="whatcolorback" ref="whatcolorback.html"/>
+            
+            
+            
+             <section title="whatdotcolor" ref="whatdotcolor.html"/>
+            
+            
+            
+             <section title="whatrow" ref="whatrow.html"/>
+            
+            
+            
+             <section title="What's New in Turing 4.1" ref="whatsnew41.html"/>
+            
+            
+            
+             <section title="Window.Close" ref="window_close.html"/>
+            
+            
+            
+             <section title="Window.GetActive" ref="window_getactive.html"/>
+            
+            
+            
+             <section title="Window.GetPosition" ref="window_getposition.html"/>
+            
+            
+            
+             <section title="Window.GetSelect" ref="window_getselect.html"/>
+            
+            
+            
+             <section title="Window.Hide" ref="window_hide.html"/>
+            
+            
+            
+             <section title="Window.Open" ref="window_open.html"/>
+            
+            
+            
+             <section title="Window.Select" ref="window_select.html"/>
+            
+            
+            
+             <section title="Window.Set" ref="window_set.html"/>
+            
+            
+            
+             <section title="Window.SetActive" ref="window_setactive.html"/>
+            
+            
+            
+             <section title="Window.SetPosition" ref="window_setposition.html"/>
+            
+            
+            
+             <section title="Window.Show" ref="window_show.html"/>
+            
+            
+            
+             <section title="Window.Update" ref="window_update.html"/>
+            
+            
+            
+             <section title="Window" ref="windowmodule.html"/>
+            
+            
+            
+             <section title="write" ref="write.html"/>
+            
+            
+            
+             <section title="xor" ref="xor.html"/>
+            
+            
+         </section>
+     </toc>
+     <keywords>
+        
+         <keyword name="_if" ref="_if.html"/>
+        
+         <keyword name="abs" ref="abs.html"/>
+        
+         <keyword name="addr" ref="addr.html"/>
+        
+         <keyword name="addressint" ref="addressint.html"/>
+        
+         <keyword name="all" ref="all.html"/>
+        
+         <keyword name="all_elements" ref="all_elements.html"/>
+        
+         <keyword name="and" ref="and.html"/>
+        
+         <keyword name="anyclass" ref="anyclass.html"/>
+        
+         <keyword name="arccos" ref="arccos.html"/>
+        
+         <keyword name="arccosd" ref="arccosd.html"/>
+        
+         <keyword name="arcsin" ref="arcsin.html"/>
+        
+         <keyword name="arcsind" ref="arcsind.html"/>
+        
+         <keyword name="arctan" ref="arctan.html"/>
+        
+         <keyword name="arctand" ref="arctand.html"/>
+        
+         <keyword name="array" ref="array.html"/>
+        
+         <keyword name="assert" ref="assert.html"/>
+        
+         <keyword name="assignability" ref="assignability.html"/>
+        
+         <keyword name="assignment" ref="assignment.html"/>
+        
+         <keyword name="basic_predef" ref="basic_predef.html"/>
+        
+         <keyword name="begin" ref="begin.html"/>
+        
+         <keyword name="bind" ref="bind.html"/>
+        
+         <keyword name="bits" ref="bits.html"/>
+        
+         <keyword name="body" ref="body.html"/>
+        
+         <keyword name="boolean" ref="boolean.html"/>
+        
+         <keyword name="break" ref="break.html"/>
+        
+         <keyword name="buttonchoose" ref="buttonchoose.html"/>
+        
+         <keyword name="buttonmoved" ref="buttonmoved.html"/>
+        
+         <keyword name="buttonwait" ref="buttonwait.html"/>
+        
+         <keyword name="case" ref="case.html"/>
+        
+         <keyword name="catenation" ref="catenation.html"/>
+        
+         <keyword name="ceil" ref="ceil.html"/>
+        
+         <keyword name="char" ref="char.html"/>
+        
+         <keyword name="char_n" ref="char_n.html"/>
+        
+         <keyword name="characters" ref="characters.html"/>
+        
+         <keyword name="cheat" ref="cheat.html"/>
+        
+         <keyword name="checked" ref="checked.html"/>
+        
+         <keyword name="chr" ref="chr.html"/>
+        
+         <keyword name="class" ref="class.html"/>
+        
+         <keyword name="clock" ref="clock.html"/>
+        
+         <keyword name="close" ref="close.html"/>
+        
+         <keyword name="cls" ref="cls.html"/>
+        
+         <keyword name="collection" ref="collection.html"/>
+        
+         <keyword name="color" ref="color.html"/>
+        
+         <keyword name="colorback" ref="colorback.html"/>
+        
+         <keyword name="comment" ref="comment.html"/>
+        
+         <keyword name="comparisonoperator" ref="comparisonoperator.html"/>
+        
+         <keyword name="concurrency_empty" ref="concurrency_empty.html"/>
+        
+         <keyword name="concurrency_getpriority" ref="concurrency_getpriority.html"/>
+        
+         <keyword name="concurrency_setpriority" ref="concurrency_setpriority.html"/>
+        
+         <keyword name="concurrency_simutime" ref="concurrency_simutime.html"/>
+        
+         <keyword name="concurrencymodule" ref="concurrencymodule.html"/>
+        
+         <keyword name="condition" ref="condition.html"/>
+        
+         <keyword name="config_display" ref="config_display.html"/>
+        
+         <keyword name="config_lang" ref="config_lang.html"/>
+        
+         <keyword name="config_machine" ref="config_machine.html"/>
+        
+         <keyword name="configmodule" ref="configmodule.html"/>
+        
+         <keyword name="const" ref="const.html"/>
+        
+         <keyword name="constantreference" ref="constantreference.html"/>
+        
+         <keyword name="control" ref="control.html"/>
+        
+         <keyword name="cos" ref="cos.html"/>
+        
+         <keyword name="cosd" ref="cosd.html"/>
+        
+         <keyword name="date" ref="date.html"/>
+        
+         <keyword name="declaration" ref="declaration.html"/>
+        
+         <keyword name="deferred" ref="deferred.html"/>
+        
+         <keyword name="delay" ref="delay.html"/>
+        
+         <keyword name="dir_change" ref="dir_change.html"/>
+        
+         <keyword name="dir_close" ref="dir_close.html"/>
+        
+         <keyword name="dir_create" ref="dir_create.html"/>
+        
+         <keyword name="dir_current" ref="dir_current.html"/>
+        
+         <keyword name="dir_delete" ref="dir_delete.html"/>
+        
+         <keyword name="dir_exists" ref="dir_exists.html"/>
+        
+         <keyword name="dir_get" ref="dir_get.html"/>
+        
+         <keyword name="dir_getlong" ref="dir_getlong.html"/>
+        
+         <keyword name="dir_open" ref="dir_open.html"/>
+        
+         <keyword name="dirmodule" ref="dirmodule.html"/>
+        
+         <keyword name="div" ref="div.html"/>
+        
+         <keyword name="draw_arc" ref="draw_arc.html"/>
+        
+         <keyword name="draw_box" ref="draw_box.html"/>
+        
+         <keyword name="draw_cls" ref="draw_cls.html"/>
+        
+         <keyword name="draw_dashedline" ref="draw_dashedline.html"/>
+        
+         <keyword name="draw_dot" ref="draw_dot.html"/>
+        
+         <keyword name="draw_fill" ref="draw_fill.html"/>
+        
+         <keyword name="draw_fillarc" ref="draw_fillarc.html"/>
+        
+         <keyword name="draw_fillbox" ref="draw_fillbox.html"/>
+        
+         <keyword name="draw_fillmapleleaf" ref="draw_fillmapleleaf.html"/>
+        
+         <keyword name="draw_filloval" ref="draw_filloval.html"/>
+        
+         <keyword name="draw_fillpolygon" ref="draw_fillpolygon.html"/>
+        
+         <keyword name="draw_fillstar" ref="draw_fillstar.html"/>
+        
+         <keyword name="draw_line" ref="draw_line.html"/>
+        
+         <keyword name="draw_mapleleaf" ref="draw_mapleleaf.html"/>
+        
+         <keyword name="draw_oval" ref="draw_oval.html"/>
+        
+         <keyword name="draw_polygon" ref="draw_polygon.html"/>
+        
+         <keyword name="draw_star" ref="draw_star.html"/>
+        
+         <keyword name="draw_text" ref="draw_text.html"/>
+        
+         <keyword name="draw_thickline" ref="draw_thickline.html"/>
+        
+         <keyword name="drawarc" ref="drawarc.html"/>
+        
+         <keyword name="drawbox" ref="drawbox.html"/>
+        
+         <keyword name="drawdot" ref="drawdot.html"/>
+        
+         <keyword name="drawfill" ref="drawfill.html"/>
+        
+         <keyword name="drawfillarc" ref="drawfillarc.html"/>
+        
+         <keyword name="drawfillbox" ref="drawfillbox.html"/>
+        
+         <keyword name="drawfillmapleleaf" ref="drawfillmapleleaf.html"/>
+        
+         <keyword name="drawfilloval" ref="drawfilloval.html"/>
+        
+         <keyword name="drawfillpolygon" ref="drawfillpolygon.html"/>
+        
+         <keyword name="drawfillstar" ref="drawfillstar.html"/>
+        
+         <keyword name="drawline" ref="drawline.html"/>
+        
+         <keyword name="drawmapleleaf" ref="drawmapleleaf.html"/>
+        
+         <keyword name="drawmodule" ref="drawmodule.html"/>
+        
+         <keyword name="drawoval" ref="drawoval.html"/>
+        
+         <keyword name="drawpic" ref="drawpic.html"/>
+        
+         <keyword name="drawpolygon" ref="drawpolygon.html"/>
+        
+         <keyword name="drawstar" ref="drawstar.html"/>
+        
+         <keyword name="empty" ref="empty.html"/>
+        
+         <keyword name="enum" ref="enum.html"/>
+        
+         <keyword name="enumeratedvalue" ref="enumeratedvalue.html"/>
+        
+         <keyword name="eof" ref="eof.html"/>
+        
+         <keyword name="equivalence" ref="equivalence.html"/>
+        
+         <keyword name="erealstr" ref="erealstr.html"/>
+        
+         <keyword name="error_halt" ref="error_halt.html"/>
+        
+         <keyword name="error_last" ref="error_last.html"/>
+        
+         <keyword name="error_lastmsg" ref="error_lastmsg.html"/>
+        
+         <keyword name="error_laststr" ref="error_laststr.html"/>
+        
+         <keyword name="error_msg" ref="error_msg.html"/>
+        
+         <keyword name="error_str" ref="error_str.html"/>
+        
+         <keyword name="error_trip" ref="error_trip.html"/>
+        
+         <keyword name="error_tripmsg" ref="error_tripmsg.html"/>
+        
+         <keyword name="errormodule" ref="errormodule.html"/>
+        
+         <keyword name="errornummodule" ref="errornummodule.html"/>
+        
+         <keyword name="exceptionsmodule" ref="exceptionsmodule.html"/>
+        
+         <keyword name="exit" ref="exit.html"/>
+        
+         <keyword name="exp" ref="exp.html"/>
+        
+         <keyword name="explicitcharconstant" ref="explicitcharconstant.html"/>
+        
+         <keyword name="explicitconstant" ref="explicitconstant.html"/>
+        
+         <keyword name="explicitintegerconstant" ref="explicitintegerconstant.html"/>
+        
+         <keyword name="explicitrealconstant" ref="explicitrealconstant.html"/>
+        
+         <keyword name="explicitstringconstant" ref="explicitstringconstant.html"/>
+        
+         <keyword name="explicittruefalseconstant" ref="explicittruefalseconstant.html"/>
+        
+         <keyword name="expn" ref="expn.html"/>
+        
+         <keyword name="export" ref="export.html"/>
+        
+         <keyword name="external" ref="external.html"/>
+        
+         <keyword name="false" ref="false.html"/>
+        
+         <keyword name="fetcharg" ref="fetcharg.html"/>
+        
+         <keyword name="file_copy" ref="file_copy.html"/>
+        
+         <keyword name="file_delete" ref="file_delete.html"/>
+        
+         <keyword name="file_diskfree" ref="file_diskfree.html"/>
+        
+         <keyword name="file_exists" ref="file_exists.html"/>
+        
+         <keyword name="file_fullpath" ref="file_fullpath.html"/>
+        
+         <keyword name="file_parent" ref="file_parent.html"/>
+        
+         <keyword name="file_rename" ref="file_rename.html"/>
+        
+         <keyword name="file_status" ref="file_status.html"/>
+        
+         <keyword name="filelist" ref="filelist.html"/>
+        
+         <keyword name="filemodule" ref="filemodule.html"/>
+        
+         <keyword name="filestatements" ref="filestatements.html"/>
+        
+         <keyword name="flexible" ref="flexible.html"/>
+        
+         <keyword name="floor" ref="floor.html"/>
+        
+         <keyword name="font_draw" ref="font_draw.html"/>
+        
+         <keyword name="font_free" ref="font_free.html"/>
+        
+         <keyword name="font_getname" ref="font_getname.html"/>
+        
+         <keyword name="font_getsize" ref="font_getsize.html"/>
+        
+         <keyword name="font_getstyle" ref="font_getstyle.html"/>
+        
+         <keyword name="font_name" ref="font_name.html"/>
+        
+         <keyword name="font_new" ref="font_new.html"/>
+        
+         <keyword name="font_sizes" ref="font_sizes.html"/>
+        
+         <keyword name="font_startname" ref="font_startname.html"/>
+        
+         <keyword name="font_startsize" ref="font_startsize.html"/>
+        
+         <keyword name="font_width" ref="font_width.html"/>
+        
+         <keyword name="fontmodule" ref="fontmodule.html"/>
+        
+         <keyword name="for" ref="for.html"/>
+        
+         <keyword name="fork" ref="fork.html"/>
+        
+         <keyword name="forward" ref="forward.html"/>
+        
+         <keyword name="frame" ref="frame.html"/>
+        
+         <keyword name="frealstr" ref="frealstr.html"/>
+        
+         <keyword name="free" ref="free.html"/>
+        
+         <keyword name="function" ref="function.html"/>
+        
+         <keyword name="functioncall" ref="functioncall.html"/>
+        
+         <keyword name="get" ref="get.html"/>
+        
+         <keyword name="getch" ref="getch.html"/>
+        
+         <keyword name="getchar" ref="getchar.html"/>
+        
+         <keyword name="getenv" ref="getenv.html"/>
+        
+         <keyword name="getpid" ref="getpid.html"/>
+        
+         <keyword name="getpriority" ref="getpriority.html"/>
+        
+         <keyword name="gui" ref="gui.html"/>
+        
+         <keyword name="gui_addline" ref="gui_addline.html"/>
+        
+         <keyword name="gui_addtext" ref="gui_addtext.html"/>
+        
+         <keyword name="gui_alert" ref="gui_alert.html"/>
+        
+         <keyword name="gui_alert2" ref="gui_alert2.html"/>
+        
+         <keyword name="gui_alert3" ref="gui_alert3.html"/>
+        
+         <keyword name="gui_alert_2,3,full" ref="gui_alert_2,3,full.html"/>
+        
+         <keyword name="gui_alertfull" ref="gui_alertfull.html"/>
+        
+         <keyword name="gui_choose" ref="gui_choose.html"/>
+        
+         <keyword name="gui_choose_full" ref="gui_choose_full.html"/>
+        
+         <keyword name="gui_choosefull" ref="gui_choosefull.html"/>
+        
+         <keyword name="gui_cleartext" ref="gui_cleartext.html"/>
+        
+         <keyword name="gui_closewindow" ref="gui_closewindow.html"/>
+        
+         <keyword name="gui_createbutton" ref="gui_createbutton.html"/>
+        
+         <keyword name="gui_createbutton_full" ref="gui_createbutton_full.html"/>
+        
+         <keyword name="gui_createbuttonfull" ref="gui_createbuttonfull.html"/>
+        
+         <keyword name="gui_createcanvas" ref="gui_createcanvas.html"/>
+        
+         <keyword name="gui_createcanvas_full" ref="gui_createcanvas_full.html"/>
+        
+         <keyword name="gui_createcanvasfull" ref="gui_createcanvasfull.html"/>
+        
+         <keyword name="gui_createcheckbox" ref="gui_createcheckbox.html"/>
+        
+         <keyword name="gui_createcheckbox_full" ref="gui_createcheckbox_full.html"/>
+        
+         <keyword name="gui_createcheckboxfull" ref="gui_createcheckboxfull.html"/>
+        
+         <keyword name="gui_createframe" ref="gui_createframe.html"/>
+        
+         <keyword name="gui_createhorizontalscrollbar" ref="gui_createhorizontalscrollbar.html"/>
+        
+         <keyword name="gui_createhorizontalscrollbar_full" ref="gui_createhorizontalscrollbar_full.html"/>
+        
+         <keyword name="gui_createhorizontalscrollbarfull" ref="gui_createhorizontalscrollbarfull.html"/>
+        
+         <keyword name="gui_createhorizontalslider" ref="gui_createhorizontalslider.html"/>
+        
+         <keyword name="gui_createlabel" ref="gui_createlabel.html"/>
+        
+         <keyword name="gui_createlabel_full" ref="gui_createlabel_full.html"/>
+        
+         <keyword name="gui_createlabelfull" ref="gui_createlabelfull.html"/>
+        
+         <keyword name="gui_createlabelledframe" ref="gui_createlabelledframe.html"/>
+        
+         <keyword name="gui_createline" ref="gui_createline.html"/>
+        
+         <keyword name="gui_createmenu" ref="gui_createmenu.html"/>
+        
+         <keyword name="gui_createmenuitem" ref="gui_createmenuitem.html"/>
+        
+         <keyword name="gui_createmenuitem_full" ref="gui_createmenuitem_full.html"/>
+        
+         <keyword name="gui_createmenuitemfull" ref="gui_createmenuitemfull.html"/>
+        
+         <keyword name="gui_createpicture" ref="gui_createpicture.html"/>
+        
+         <keyword name="gui_createpicturebutton" ref="gui_createpicturebutton.html"/>
+        
+         <keyword name="gui_createpicturebutton_full" ref="gui_createpicturebutton_full.html"/>
+        
+         <keyword name="gui_createpicturebuttonfull" ref="gui_createpicturebuttonfull.html"/>
+        
+         <keyword name="gui_createpictureradiobutton" ref="gui_createpictureradiobutton.html"/>
+        
+         <keyword name="gui_createpictureradiobutton_full" ref="gui_createpictureradiobutton_full.html"/>
+        
+         <keyword name="gui_createpictureradiobuttonfull" ref="gui_createpictureradiobuttonfull.html"/>
+        
+         <keyword name="gui_createradiobutton" ref="gui_createradiobutton.html"/>
+        
+         <keyword name="gui_createradiobutton_full" ref="gui_createradiobutton_full.html"/>
+        
+         <keyword name="gui_createradiobuttonfull" ref="gui_createradiobuttonfull.html"/>
+        
+         <keyword name="gui_createtextbox" ref="gui_createtextbox.html"/>
+        
+         <keyword name="gui_createtextbox_full" ref="gui_createtextbox_full.html"/>
+        
+         <keyword name="gui_createtextboxchoice" ref="gui_createtextboxchoice.html"/>
+        
+         <keyword name="gui_createtextboxfull" ref="gui_createtextboxfull.html"/>
+        
+         <keyword name="gui_createtextfield" ref="gui_createtextfield.html"/>
+        
+         <keyword name="gui_createtextfield_full" ref="gui_createtextfield_full.html"/>
+        
+         <keyword name="gui_createtextfieldfull" ref="gui_createtextfieldfull.html"/>
+        
+         <keyword name="gui_createverticalscrollbar" ref="gui_createverticalscrollbar.html"/>
+        
+         <keyword name="gui_createverticalscrollbar_full" ref="gui_createverticalscrollbar_full.html"/>
+        
+         <keyword name="gui_createverticalscrollbarfull" ref="gui_createverticalscrollbarfull.html"/>
+        
+         <keyword name="gui_createverticalslider" ref="gui_createverticalslider.html"/>
+        
+         <keyword name="gui_disable" ref="gui_disable.html"/>
+        
+         <keyword name="gui_dispose" ref="gui_dispose.html"/>
+        
+         <keyword name="gui_draw" ref="gui_draw.html"/>
+        
+         <keyword name="gui_enable" ref="gui_enable.html"/>
+        
+         <keyword name="gui_fontdraw" ref="gui_fontdraw.html"/>
+        
+         <keyword name="gui_get_x,y" ref="gui_get_x,y.html"/>
+        
+         <keyword name="gui_getcheckbox" ref="gui_getcheckbox.html"/>
+        
+         <keyword name="gui_geteventtime" ref="gui_geteventtime.html"/>
+        
+         <keyword name="gui_geteventwidgetid" ref="gui_geteventwidgetid.html"/>
+        
+         <keyword name="gui_geteventwindow" ref="gui_geteventwindow.html"/>
+        
+         <keyword name="gui_getheight" ref="gui_getheight.html"/>
+        
+         <keyword name="gui_getmenubarheight" ref="gui_getmenubarheight.html"/>
+        
+         <keyword name="gui_getscrollbarwidth" ref="gui_getscrollbarwidth.html"/>
+        
+         <keyword name="gui_getslidervalue" ref="gui_getslidervalue.html"/>
+        
+         <keyword name="gui_gettext" ref="gui_gettext.html"/>
+        
+         <keyword name="gui_getversion" ref="gui_getversion.html"/>
+        
+         <keyword name="gui_getwidth" ref="gui_getwidth.html"/>
+        
+         <keyword name="gui_getx" ref="gui_getx.html"/>
+        
+         <keyword name="gui_gety" ref="gui_gety.html"/>
+        
+         <keyword name="gui_hide" ref="gui_hide.html"/>
+        
+         <keyword name="gui_hidemenubar" ref="gui_hidemenubar.html"/>
+        
+         <keyword name="gui_hidewindow" ref="gui_hidewindow.html"/>
+        
+         <keyword name="gui_openfile" ref="gui_openfile.html"/>
+        
+         <keyword name="gui_openfilefull" ref="gui_openfilefull.html"/>
+        
+         <keyword name="gui_pic" ref="gui_pic.html"/>
+        
+         <keyword name="gui_processevent" ref="gui_processevent.html"/>
+        
+         <keyword name="gui_quit" ref="gui_quit.html"/>
+        
+         <keyword name="gui_refresh" ref="gui_refresh.html"/>
+        
+         <keyword name="gui_resetquit" ref="gui_resetquit.html"/>
+        
+         <keyword name="gui_savefile" ref="gui_savefile.html"/>
+        
+         <keyword name="gui_savefilefull" ref="gui_savefilefull.html"/>
+        
+         <keyword name="gui_selectradio" ref="gui_selectradio.html"/>
+        
+         <keyword name="gui_setactive" ref="gui_setactive.html"/>
+        
+         <keyword name="gui_setbackgroundcolor" ref="gui_setbackgroundcolor.html"/>
+        
+         <keyword name="gui_setcheckbox" ref="gui_setcheckbox.html"/>
+        
+         <keyword name="gui_setcolor" ref="gui_setcolor.html"/>
+        
+         <keyword name="gui_setdefault" ref="gui_setdefault.html"/>
+        
+         <keyword name="gui_setdisplaywhencreated" ref="gui_setdisplaywhencreated.html"/>
+        
+         <keyword name="gui_setechochar" ref="gui_setechochar.html"/>
+        
+         <keyword name="gui_setkeyeventhandler" ref="gui_setkeyeventhandler.html"/>
+        
+         <keyword name="gui_setlabel" ref="gui_setlabel.html"/>
+        
+         <keyword name="gui_setmouseeventhandler" ref="gui_setmouseeventhandler.html"/>
+        
+         <keyword name="gui_setnulleventhandler" ref="gui_setnulleventhandler.html"/>
+        
+         <keyword name="gui_setposition" ref="gui_setposition.html"/>
+        
+         <keyword name="gui_setpositionandsize" ref="gui_setpositionandsize.html"/>
+        
+         <keyword name="gui_setscrollamount" ref="gui_setscrollamount.html"/>
+        
+         <keyword name="gui_setscrollonadd" ref="gui_setscrollonadd.html"/>
+        
+         <keyword name="gui_setselection" ref="gui_setselection.html"/>
+        
+         <keyword name="gui_setsize" ref="gui_setsize.html"/>
+        
+         <keyword name="gui_setsliderminmax" ref="gui_setsliderminmax.html"/>
+        
+         <keyword name="gui_setsliderreverse" ref="gui_setsliderreverse.html"/>
+        
+         <keyword name="gui_setslidersize" ref="gui_setslidersize.html"/>
+        
+         <keyword name="gui_setslidervalue" ref="gui_setslidervalue.html"/>
+        
+         <keyword name="gui_settext" ref="gui_settext.html"/>
+        
+         <keyword name="gui_settopline" ref="gui_settopline.html"/>
+        
+         <keyword name="gui_setxor" ref="gui_setxor.html"/>
+        
+         <keyword name="gui_show" ref="gui_show.html"/>
+        
+         <keyword name="gui_showmenubar" ref="gui_showmenubar.html"/>
+        
+         <keyword name="gui_showwindow" ref="gui_showwindow.html"/>
+        
+         <keyword name="guimodule" ref="guimodule.html"/>
+        
+         <keyword name="handler" ref="handler.html"/>
+        
+         <keyword name="hasch" ref="hasch.html"/>
+        
+         <keyword name="id" ref="id.html"/>
+        
+         <keyword name="if" ref="if.html"/>
+        
+         <keyword name="implement" ref="implement.html"/>
+        
+         <keyword name="implement_by" ref="implement_by.html"/>
+        
+         <keyword name="import" ref="import.html"/>
+        
+         <keyword name="in" ref="in.html"/>
+        
+         <keyword name="include" ref="include.html"/>
+        
+         <keyword name="index-2" ref="index-2.html"/>
+        
+         <keyword name="index" ref="index.html"/>
+        
+         <keyword name="indextype" ref="indextype.html"/>
+        
+         <keyword name="indirection" ref="indirection.html"/>
+        
+         <keyword name="infix" ref="infix.html"/>
+        
+         <keyword name="inherit" ref="inherit.html"/>
+        
+         <keyword name="init" ref="init.html"/>
+        
+         <keyword name="input_flush" ref="input_flush.html"/>
+        
+         <keyword name="input_getch" ref="input_getch.html"/>
+        
+         <keyword name="input_getchar" ref="input_getchar.html"/>
+        
+         <keyword name="input_hasch" ref="input_hasch.html"/>
+        
+         <keyword name="input_keydown" ref="input_keydown.html"/>
+        
+         <keyword name="input_pause" ref="input_pause.html"/>
+        
+         <keyword name="inputmodule" ref="inputmodule.html"/>
+        
+         <keyword name="int" ref="int.html"/>
+        
+         <keyword name="intn" ref="intn.html"/>
+        
+         <keyword name="intreal" ref="intreal.html"/>
+        
+         <keyword name="intro" ref="intro.html"/>
+        
+         <keyword name="intstr" ref="intstr.html"/>
+        
+         <keyword name="invariant" ref="invariant.html"/>
+        
+         <keyword name="joystick_getinfo" ref="joystick_getinfo.html"/>
+        
+         <keyword name="joystickmodule" ref="joystickmodule.html"/>
+        
+         <keyword name="keyboardmodule" ref="keyboardmodule.html"/>
+        
+         <keyword name="keycodes" ref="keycodes.html"/>
+        
+         <keyword name="keywords" ref="keywords.html"/>
+        
+         <keyword name="lang_elements" ref="lang_elements.html"/>
+        
+         <keyword name="length" ref="length.html"/>
+        
+         <keyword name="limitsmodule" ref="limitsmodule.html"/>
+        
+         <keyword name="ln" ref="ln.html"/>
+        
+         <keyword name="locate" ref="locate.html"/>
+        
+         <keyword name="locatexy" ref="locatexy.html"/>
+        
+         <keyword name="loop" ref="loop.html"/>
+        
+         <keyword name="lower" ref="lower.html"/>
+        
+         <keyword name="math_distance" ref="math_distance.html"/>
+        
+         <keyword name="math_distancepointline" ref="math_distancepointline.html"/>
+        
+         <keyword name="mathmodule" ref="mathmodule.html"/>
+        
+         <keyword name="max" ref="max.html"/>
+        
+         <keyword name="maxcol" ref="maxcol.html"/>
+        
+         <keyword name="maxcolor" ref="maxcolor.html"/>
+        
+         <keyword name="maxint" ref="maxint.html"/>
+        
+         <keyword name="maxnat" ref="maxnat.html"/>
+        
+         <keyword name="maxrow" ref="maxrow.html"/>
+        
+         <keyword name="maxx" ref="maxx.html"/>
+        
+         <keyword name="maxy" ref="maxy.html"/>
+        
+         <keyword name="min" ref="min.html"/>
+        
+         <keyword name="minint" ref="minint.html"/>
+        
+         <keyword name="minnat" ref="minnat.html"/>
+        
+         <keyword name="mod" ref="mod.html"/>
+        
+         <keyword name="module" ref="module.html"/>
+        
+         <keyword name="module_predef" ref="module_predef.html"/>
+        
+         <keyword name="monitor" ref="monitor.html"/>
+        
+         <keyword name="mouse_buttonchoose" ref="mouse_buttonchoose.html"/>
+        
+         <keyword name="mouse_buttonmoved" ref="mouse_buttonmoved.html"/>
+        
+         <keyword name="mouse_buttonwait" ref="mouse_buttonwait.html"/>
+        
+         <keyword name="mouse_where" ref="mouse_where.html"/>
+        
+         <keyword name="mousemodule" ref="mousemodule.html"/>
+        
+         <keyword name="mousewhere" ref="mousewhere.html"/>
+        
+         <keyword name="music_play" ref="music_play.html"/>
+        
+         <keyword name="music_playfile" ref="music_playfile.html"/>
+        
+         <keyword name="music_playfileloop" ref="music_playfileloop.html"/>
+        
+         <keyword name="music_playfilereturn" ref="music_playfilereturn.html"/>
+        
+         <keyword name="music_playfilestop" ref="music_playfilestop.html"/>
+        
+         <keyword name="music_sound" ref="music_sound.html"/>
+        
+         <keyword name="music_soundoff" ref="music_soundoff.html"/>
+        
+         <keyword name="musicmodule" ref="musicmodule.html"/>
+        
+         <keyword name="named" ref="named.html"/>
+        
+         <keyword name="nargs" ref="nargs.html"/>
+        
+         <keyword name="nat" ref="nat.html"/>
+        
+         <keyword name="natn" ref="natn.html"/>
+        
+         <keyword name="natreal" ref="natreal.html"/>
+        
+         <keyword name="natstr" ref="natstr.html"/>
+        
+         <keyword name="net_bytesavailable" ref="net_bytesavailable.html"/>
+        
+         <keyword name="net_charavailable" ref="net_charavailable.html"/>
+        
+         <keyword name="net_closeconnection" ref="net_closeconnection.html"/>
+        
+         <keyword name="net_hostaddressfromname" ref="net_hostaddressfromname.html"/>
+        
+         <keyword name="net_hostnamefromaddress" ref="net_hostnamefromaddress.html"/>
+        
+         <keyword name="net_lineavailable" ref="net_lineavailable.html"/>
+        
+         <keyword name="net_localaddress" ref="net_localaddress.html"/>
+        
+         <keyword name="net_localname" ref="net_localname.html"/>
+        
+         <keyword name="net_openconnection" ref="net_openconnection.html"/>
+        
+         <keyword name="net_openurlconnection" ref="net_openurlconnection.html"/>
+        
+         <keyword name="net_tokenavailable" ref="net_tokenavailable.html"/>
+        
+         <keyword name="net_waitforconnection" ref="net_waitforconnection.html"/>
+        
+         <keyword name="netmodule" ref="netmodule.html"/>
+        
+         <keyword name="new" ref="new.html"/>
+        
+         <keyword name="nil" ref="nil.html"/>
+        
+         <keyword name="not" ref="not.html"/>
+        
+         <keyword name="objectclass" ref="objectclass.html"/>
+        
+         <keyword name="opaque" ref="opaque.html"/>
+        
+         <keyword name="open" ref="open.html"/>
+        
+         <keyword name="operators" ref="operators.html"/>
+        
+         <keyword name="or" ref="or.html"/>
+        
+         <keyword name="ord" ref="ord.html"/>
+        
+         <keyword name="parallelget" ref="parallelget.html"/>
+        
+         <keyword name="parallelput" ref="parallelput.html"/>
+        
+         <keyword name="paramdeclaration" ref="paramdeclaration.html"/>
+        
+         <keyword name="pause" ref="pause.html"/>
+        
+         <keyword name="pc_parallelget" ref="pc_parallelget.html"/>
+        
+         <keyword name="pc_parallelput" ref="pc_parallelput.html"/>
+        
+         <keyword name="pcmodule" ref="pcmodule.html"/>
+        
+         <keyword name="pervasive" ref="pervasive.html"/>
+        
+         <keyword name="pic_blend" ref="pic_blend.html"/>
+        
+         <keyword name="pic_blur" ref="pic_blur.html"/>
+        
+         <keyword name="pic_draw" ref="pic_draw.html"/>
+        
+         <keyword name="pic_drawframes" ref="pic_drawframes.html"/>
+        
+         <keyword name="pic_drawframesback" ref="pic_drawframesback.html"/>
+        
+         <keyword name="pic_drawspecial" ref="pic_drawspecial.html"/>
+        
+         <keyword name="pic_drawspecialback" ref="pic_drawspecialback.html"/>
+        
+         <keyword name="pic_filenew" ref="pic_filenew.html"/>
+        
+         <keyword name="pic_filenewframes" ref="pic_filenewframes.html"/>
+        
+         <keyword name="pic_flip" ref="pic_flip.html"/>
+        
+         <keyword name="pic_frames" ref="pic_frames.html"/>
+        
+         <keyword name="pic_free" ref="pic_free.html"/>
+        
+         <keyword name="pic_height" ref="pic_height.html"/>
+        
+         <keyword name="pic_mirror" ref="pic_mirror.html"/>
+        
+         <keyword name="pic_new" ref="pic_new.html"/>
+        
+         <keyword name="pic_rotate" ref="pic_rotate.html"/>
+        
+         <keyword name="pic_save" ref="pic_save.html"/>
+        
+         <keyword name="pic_scale" ref="pic_scale.html"/>
+        
+         <keyword name="pic_screenload" ref="pic_screenload.html"/>
+        
+         <keyword name="pic_screensave" ref="pic_screensave.html"/>
+        
+         <keyword name="pic_settransparentcolor" ref="pic_settransparentcolor.html"/>
+        
+         <keyword name="pic_width" ref="pic_width.html"/>
+        
+         <keyword name="picmodule" ref="picmodule.html"/>
+        
+         <keyword name="play" ref="play.html"/>
+        
+         <keyword name="playdone" ref="playdone.html"/>
+        
+         <keyword name="pointer" ref="pointer.html"/>
+        
+         <keyword name="post" ref="post.html"/>
+        
+         <keyword name="pre" ref="pre.html"/>
+        
+         <keyword name="precedence" ref="precedence.html"/>
+        
+         <keyword name="pred" ref="pred.html"/>
+        
+         <keyword name="prefix" ref="prefix.html"/>
+        
+         <keyword name="procedure" ref="procedure.html"/>
+        
+         <keyword name="procedurecall" ref="procedurecall.html"/>
+        
+         <keyword name="process" ref="process.html"/>
+        
+         <keyword name="program" ref="program.html"/>
+        
+         <keyword name="put" ref="put.html"/>
+        
+         <keyword name="quit" ref="quit.html"/>
+        
+         <keyword name="rand" ref="rand.html"/>
+        
+         <keyword name="rand_int" ref="rand_int.html"/>
+        
+         <keyword name="rand_next" ref="rand_next.html"/>
+        
+         <keyword name="rand_real" ref="rand_real.html"/>
+        
+         <keyword name="rand_reset" ref="rand_reset.html"/>
+        
+         <keyword name="rand_seed" ref="rand_seed.html"/>
+        
+         <keyword name="rand_set" ref="rand_set.html"/>
+        
+         <keyword name="randint" ref="randint.html"/>
+        
+         <keyword name="randmodule" ref="randmodule.html"/>
+        
+         <keyword name="randnext" ref="randnext.html"/>
+        
+         <keyword name="randomize" ref="randomize.html"/>
+        
+         <keyword name="randseed" ref="randseed.html"/>
+        
+         <keyword name="read" ref="read.html"/>
+        
+         <keyword name="real" ref="real.html"/>
+        
+         <keyword name="realn" ref="realn.html"/>
+        
+         <keyword name="realstr" ref="realstr.html"/>
+        
+         <keyword name="record" ref="record.html"/>
+        
+         <keyword name="register" ref="register.html"/>
+        
+         <keyword name="rem" ref="rem.html"/>
+        
+         <keyword name="repeat" ref="repeat.html"/>
+        
+         <keyword name="result" ref="result.html"/>
+        
+         <keyword name="return" ref="return.html"/>
+        
+         <keyword name="rgb_addcolor" ref="rgb_addcolor.html"/>
+        
+         <keyword name="rgb_getcolor" ref="rgb_getcolor.html"/>
+        
+         <keyword name="rgb_maxcolor" ref="rgb_maxcolor.html"/>
+        
+         <keyword name="rgb_setcolor" ref="rgb_setcolor.html"/>
+        
+         <keyword name="rgbmodule" ref="rgbmodule.html"/>
+        
+         <keyword name="round" ref="round.html"/>
+        
+         <keyword name="scalar" ref="scalar.html"/>
+        
+         <keyword name="seek" ref="seek.html"/>
+        
+         <keyword name="self" ref="self.html"/>
+        
+         <keyword name="separator" ref="separator.html"/>
+        
+         <keyword name="set" ref="set.html"/>
+        
+         <keyword name="setconstructor" ref="setconstructor.html"/>
+        
+         <keyword name="setpriority" ref="setpriority.html"/>
+        
+         <keyword name="setscreen" ref="setscreen.html"/>
+        
+         <keyword name="shl" ref="shl.html"/>
+        
+         <keyword name="shr" ref="shr.html"/>
+        
+         <keyword name="sign" ref="sign.html"/>
+        
+         <keyword name="signal" ref="signal.html"/>
+        
+         <keyword name="simutime" ref="simutime.html"/>
+        
+         <keyword name="sin" ref="sin.html"/>
+        
+         <keyword name="sind" ref="sind.html"/>
+        
+         <keyword name="sizeof" ref="sizeof.html"/>
+        
+         <keyword name="sizepic" ref="sizepic.html"/>
+        
+         <keyword name="skip" ref="skip.html"/>
+        
+         <keyword name="skip1" ref="skip1.html"/>
+        
+         <keyword name="sound" ref="sound.html"/>
+        
+         <keyword name="sprite_animate" ref="sprite_animate.html"/>
+        
+         <keyword name="sprite_changepic" ref="sprite_changepic.html"/>
+        
+         <keyword name="sprite_free" ref="sprite_free.html"/>
+        
+         <keyword name="sprite_hide" ref="sprite_hide.html"/>
+        
+         <keyword name="sprite_new" ref="sprite_new.html"/>
+        
+         <keyword name="sprite_setframerate" ref="sprite_setframerate.html"/>
+        
+         <keyword name="sprite_setheight" ref="sprite_setheight.html"/>
+        
+         <keyword name="sprite_setposition" ref="sprite_setposition.html"/>
+        
+         <keyword name="sprite_show" ref="sprite_show.html"/>
+        
+         <keyword name="spritemodule" ref="spritemodule.html"/>
+        
+         <keyword name="sqrt" ref="sqrt.html"/>
+        
+         <keyword name="standardtype" ref="standardtype.html"/>
+        
+         <keyword name="statement" ref="statement.html"/>
+        
+         <keyword name="statementsanddeclarations" ref="statementsanddeclarations.html"/>
+        
+         <keyword name="str_lower" ref="str_lower.html"/>
+        
+         <keyword name="str_trim" ref="str_trim.html"/>
+        
+         <keyword name="str_upper" ref="str_upper.html"/>
+        
+         <keyword name="stream_eof" ref="stream_eof.html"/>
+        
+         <keyword name="stream_flush" ref="stream_flush.html"/>
+        
+         <keyword name="stream_flushall" ref="stream_flushall.html"/>
+        
+         <keyword name="streammodule" ref="streammodule.html"/>
+        
+         <keyword name="string" ref="string.html"/>
+        
+         <keyword name="string1" ref="string1.html"/>
+        
+         <keyword name="strint" ref="strint.html"/>
+        
+         <keyword name="strintok" ref="strintok.html"/>
+        
+         <keyword name="strmodule" ref="strmodule.html"/>
+        
+         <keyword name="strnat" ref="strnat.html"/>
+        
+         <keyword name="strnatok" ref="strnatok.html"/>
+        
+         <keyword name="strreal" ref="strreal.html"/>
+        
+         <keyword name="strrealok" ref="strrealok.html"/>
+        
+         <keyword name="subprogramheader" ref="subprogramheader.html"/>
+        
+         <keyword name="subprogramtype" ref="subprogramtype.html"/>
+        
+         <keyword name="subrangetype" ref="subrangetype.html"/>
+        
+         <keyword name="substring" ref="substring.html"/>
+        
+         <keyword name="succ" ref="succ.html"/>
+        
+         <keyword name="sys_exec" ref="sys_exec.html"/>
+        
+         <keyword name="sys_fetcharg" ref="sys_fetcharg.html"/>
+        
+         <keyword name="sys_getcomputername" ref="sys_getcomputername.html"/>
+        
+         <keyword name="sys_getenv" ref="sys_getenv.html"/>
+        
+         <keyword name="sys_getpid" ref="sys_getpid.html"/>
+        
+         <keyword name="sys_getusername" ref="sys_getusername.html"/>
+        
+         <keyword name="sys_nargs" ref="sys_nargs.html"/>
+        
+         <keyword name="sysclock" ref="sysclock.html"/>
+        
+         <keyword name="sysmodule" ref="sysmodule.html"/>
+        
+         <keyword name="system" ref="system.html"/>
+        
+         <keyword name="tag" ref="tag.html"/>
+        
+         <keyword name="takepic" ref="takepic.html"/>
+        
+         <keyword name="tan" ref="tan.html"/>
+        
+         <keyword name="tand" ref="tand.html"/>
+        
+         <keyword name="tell" ref="tell.html"/>
+        
+         <keyword name="text_cls" ref="text_cls.html"/>
+        
+         <keyword name="text_color" ref="text_color.html"/>
+        
+         <keyword name="text_colorback" ref="text_colorback.html"/>
+        
+         <keyword name="text_locate" ref="text_locate.html"/>
+        
+         <keyword name="text_locatexy" ref="text_locatexy.html"/>
+        
+         <keyword name="text_maxcol" ref="text_maxcol.html"/>
+        
+         <keyword name="text_maxrow" ref="text_maxrow.html"/>
+        
+         <keyword name="text_whatcol" ref="text_whatcol.html"/>
+        
+         <keyword name="text_whatcolor" ref="text_whatcolor.html"/>
+        
+         <keyword name="text_whatcolorback" ref="text_whatcolorback.html"/>
+        
+         <keyword name="text_whatrow" ref="text_whatrow.html"/>
+        
+         <keyword name="textmodule" ref="textmodule.html"/>
+        
+         <keyword name="time" ref="time.html"/>
+        
+         <keyword name="time_date" ref="time_date.html"/>
+        
+         <keyword name="time_datesec" ref="time_datesec.html"/>
+        
+         <keyword name="time_delay" ref="time_delay.html"/>
+        
+         <keyword name="time_delaysincelast" ref="time_delaysincelast.html"/>
+        
+         <keyword name="time_elapsed" ref="time_elapsed.html"/>
+        
+         <keyword name="time_elapsedcpu" ref="time_elapsedcpu.html"/>
+        
+         <keyword name="time_partssec" ref="time_partssec.html"/>
+        
+         <keyword name="time_sec" ref="time_sec.html"/>
+        
+         <keyword name="time_secdate" ref="time_secdate.html"/>
+        
+         <keyword name="time_secparts" ref="time_secparts.html"/>
+        
+         <keyword name="time_secstr" ref="time_secstr.html"/>
+        
+         <keyword name="timemodule" ref="timemodule.html"/>
+        
+         <keyword name="token" ref="token.html"/>
+        
+         <keyword name="true" ref="true.html"/>
+        
+         <keyword name="turing_admin" ref="turing_admin.html"/>
+        
+         <keyword name="turing_debugger" ref="turing_debugger.html"/>
+        
+         <keyword name="turing_quick_admin" ref="turing_quick_admin.html"/>
+        
+         <keyword name="type" ref="type.html"/>
+        
+         <keyword name="typeconvmodule" ref="typeconvmodule.html"/>
+        
+         <keyword name="typespec" ref="typespec.html"/>
+        
+         <keyword name="unchecked" ref="unchecked.html"/>
+        
+         <keyword name="union" ref="union.html"/>
+        
+         <keyword name="unit" ref="unit.html"/>
+        
+         <keyword name="unqualified" ref="unqualified.html"/>
+        
+         <keyword name="upper" ref="upper.html"/>
+        
+         <keyword name="var" ref="var.html"/>
+        
+         <keyword name="variablereference" ref="variablereference.html"/>
+        
+         <keyword name="view_clipadd" ref="view_clipadd.html"/>
+        
+         <keyword name="view_clipaddoval" ref="view_clipaddoval.html"/>
+        
+         <keyword name="view_clipoff" ref="view_clipoff.html"/>
+        
+         <keyword name="view_clipset" ref="view_clipset.html"/>
+        
+         <keyword name="view_maxcolor" ref="view_maxcolor.html"/>
+        
+         <keyword name="view_maxx" ref="view_maxx.html"/>
+        
+         <keyword name="view_maxy" ref="view_maxy.html"/>
+        
+         <keyword name="view_set" ref="view_set.html"/>
+        
+         <keyword name="view_settransparentcolor" ref="view_settransparentcolor.html"/>
+        
+         <keyword name="view_update" ref="view_update.html"/>
+        
+         <keyword name="view_updatearea" ref="view_updatearea.html"/>
+        
+         <keyword name="view_whatdotcolor" ref="view_whatdotcolor.html"/>
+        
+         <keyword name="viewmodule" ref="viewmodule.html"/>
+        
+         <keyword name="wait" ref="wait.html"/>
+        
+         <keyword name="wallclock" ref="wallclock.html"/>
+        
+         <keyword name="whatcol" ref="whatcol.html"/>
+        
+         <keyword name="whatcolor" ref="whatcolor.html"/>
+        
+         <keyword name="whatcolorback" ref="whatcolorback.html"/>
+        
+         <keyword name="whatdotcolor" ref="whatdotcolor.html"/>
+        
+         <keyword name="whatrow" ref="whatrow.html"/>
+        
+         <keyword name="whatsnew41" ref="whatsnew41.html"/>
+        
+         <keyword name="window_close" ref="window_close.html"/>
+        
+         <keyword name="window_getactive" ref="window_getactive.html"/>
+        
+         <keyword name="window_getposition" ref="window_getposition.html"/>
+        
+         <keyword name="window_getselect" ref="window_getselect.html"/>
+        
+         <keyword name="window_hide" ref="window_hide.html"/>
+        
+         <keyword name="window_open" ref="window_open.html"/>
+        
+         <keyword name="window_select" ref="window_select.html"/>
+        
+         <keyword name="window_set" ref="window_set.html"/>
+        
+         <keyword name="window_setactive" ref="window_setactive.html"/>
+        
+         <keyword name="window_setposition" ref="window_setposition.html"/>
+        
+         <keyword name="window_show" ref="window_show.html"/>
+        
+         <keyword name="window_update" ref="window_update.html"/>
+        
+         <keyword name="windowmodule" ref="windowmodule.html"/>
+        
+         <keyword name="write" ref="write.html"/>
+        
+         <keyword name="xor" ref="xor.html"/>
+        
+     </keywords>
+     <files>
+         <file>*.gif</file>
+         <file>*.html</file>
+     </files>
+ </filterSection>
+</QtHelpProject>

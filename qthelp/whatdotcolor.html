@@ -1,0 +1,101 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>whatdotcolor</title>
+</head>
+<body>
+	<h1>whatdotcolor</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>whatdotcolor</b> ( <i>x</i>, <i>y</i> : <b>int</b> ) : <b>int</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>whatdotcolor</b> function is used to determine the color number of the specified pixel. The alternate spelling is <b>whatdotcolour</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program draws a line which bounces off the edges of the screen and makes a beep when it finds a pixel that has already been colored.<p>
+</p>
+
+			
+			
+			<pre><code>        setscreen ( "graphics" )
+        var x, y : int := 0
+        var dx, dx : int := 1
+        loop
+            if whatdotcolor ( x, y ) not= 0 then
+                sound ( 400, 50 )
+            end if
+            drawdot ( x, y, 1 )
+            x := x + dx
+            y := y + dy
+            if x = 0 or x = maxx then
+                dx := -dx
+            end if
+            if y = 0 or y = maxy then
+                dy := -dy
+            end if
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The screen should be in a"<i>graphics</i>" mode. If is not set to "<i>graphics</i>"<i>  </i>mode,  it will automatically be set to "<i>graphics</i>" mode. See <b>setscreen</b> for details.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="drawdot.html">drawdot</a></b>, which is used for setting the <a href="color.html">color</a> of a pixel. See also <b><a href="maxx.html">maxx</a></b> and <b><a href="maxy.html">maxy</a></b>, which are used to determine the number of pixels on the screen. See also <b><a href="sound.html">sound</a></b>, which causes the computer to make a <a href="sound.html">sound</a>.<p>
+See also predefined unit <b><a href="viewmodule.html">View</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>string</title>
+</head>
+<body>
+	<h1>string</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>stringType</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>string</b> [ ( <i>maximumLength</i> ) ]</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Each variable whose type is a <i>stringType</i> can contain a sequence (a string ) of characters. The length of this sequence must not exceed the <i>stringType'</i>s maximum length.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var name : string
+        name := "Nancy"
+        var licenceNumber : string ( 6 )
+        licenceNumber := "175AJN"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Strings can be assigned and they can be compared for both equality and for ordering. See also <i>string comparison </i>and <i>assignment statement</i>.<p>
+Strings can be catenated (joined together) using the + operator and separated into substrings. See<i> catenation </i>and<i> substring</i>. String functions are provided to find the length of a string, to find where one string appears inside another, and to make repeated copies of a string all joined together. See <i>length</i>, <i>index</i>, and <i>repeat</i>.</p>
+<p>
+A string type written without a maximum length is limited to holding a maximum of 255 characters.</p>
+<p>
+The <i>maximumLength</i> of a string, if given as a part of the type, must be known at compile time, and must be at least 1 and at most 255. The maximum length of a string is given by <i>upper</i>, for example, <i>upper</i>(<i>licenceNumber</i>) is 6. See also <i>upper</i>.</p>
+<p>
+In the declaration of a string that is a <b>var</b> formal parameter of a procedure or function, the <i>maximumLength </i>can be written as an asterisk (*). Here, the maximum length is taken to be that of the corresponding actual parameter, as in:</p>
+<p>
+</p>
+The star can also be used when the parameter is an array of strings.<p>
+</p>
+
+			
+			
+			<pre><code>        procedure deblank (var s : string (*) ).</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<i>explicitStringConstants</i> for exact rules for writing string values such as "Nancy". See also <b><a href="char.html">char</a></b>(<i>n</i>) and <b><a href="char.html">char</a></b> types.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

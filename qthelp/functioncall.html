@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>functionCall</title>
+</head>
+<body>
+	<h1>functionCall</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>functionCall</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>functionId</i> [ ( [ <i>expn </i>{ , <i>expn</i> } ] ) ]</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A function call is an expression that calls (invokes or activates) a <b>function</b>. If the function has parameters, a parenthesized list of expressions (<i>expns</i>) must follow the function's name (<i>functionId</i>).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This function takes a string containing a blank and returns the first word in the string (all the characters up to the first blank).<p>
+</p>
+
+			
+			
+			<pre><code>        function firstWord ( str : string ): string
+            for i : 1 .. length ( str )
+                if str ( i ) = " " then
+                    result str ( 1 .. i - 1)
+                end if
+            end for
+        end firstWord
+        
+        put "The first word is: ", firstWord ("Henry Hudson")   
+                        % The output is Henry.</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The parameter declared in the header of a function, is a <i>formal</i> parameter, for example, <i>str </i>above is a formal parameter. Each expression in the call is an <i>actual</i> parameter, for example, <i>sample</i> above is an actual parameter.<p>
+Each actual parameter passed to its non-<b>var</b> formal parameter must be assignable to that parameter (see <i>assignability </i>for details). See also <i>functionDeclaration</i> and <i>procedureDeclaration</i>.</p>
+<p>
+In this explanation of <i>functionCall</i>, we have up to this point ignored the possibility of functions exported from modules. If the function is being called from outside of a module from which it has been exported, the syntax of the <i>functionCall </i>is:</p>
+<p>
+</p>
+In other words, the module or monitor name and a dot must precede the function's name. If the function is being called from outside of a class from which it has been exported, the syntax of the <i>functionCall </i>is one of:<p>
+</p>
+In these <i>p</i> must be a pointer value that locates an object in the class. Form (b) is a short form for form (a).<p>
+</p>
+
+			
+			
+			<pre><code>        moduleId . functionId [ ( expn {, expn } ) ]</code></pre>
+			
+			<pre><code>        (a) classId ( p ) . functionId [ ( [ expn {, expn } ] ) ]
+        (b) p -> functionId [ ( [ expn {, expn } ] ) ]</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="class.html">class</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

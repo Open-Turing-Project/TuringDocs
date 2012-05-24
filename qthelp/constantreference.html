@@ -1,0 +1,85 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>constantReference</title>
+</head>
+<body>
+	<h1>constantReference</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>constantReference</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>constantId</i> { <i>componentSelector</i> }</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			In a Turing program, a constant is declared and given a name (<i>constantId</i>) and then used. Each use is called a <i>constant reference</i>.<p>
+If the constant is an array, record or union, its parts (<i>components</i>) can be selected using subscripts and field names (using <i>componentSelectors</i>). The form of a <i>componentSelector </i>is one of:</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td>(<i>expn</i> {, <i>expn</i>} )</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td>. <i>fieldId</i>
+</td>
+</tr>
+</table>
+<p>
+Form (a) is used for subscripting (indexing) arrays. The number of array subscripts must be the same as in the array's declaration. Form (b) is used for selecting a field of a <b>record</b> or <b>union</b>. Component selectors are used in the same manner as variable references. See <i>variableReference</i> for details. See also <b>const</b> declaration and <i>explicitConstant</i>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var radius : real
+        const pi := 3.14159     % Constant declaration
+        
+        put "Area is: ", pi * radius **2
+                            % pi is a constant reference.</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

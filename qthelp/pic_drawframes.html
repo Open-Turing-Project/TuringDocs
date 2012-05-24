@@ -1,0 +1,161 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Pic.DrawFrames</title>
+</head>
+<body>
+	<h1>Pic.DrawFrames</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.DrawFrames</b> (<i>picIds</i> : <b>array</b> 1 .. * <b>of int</b>, <i>x</i>, <i>y</i>, <i>mode</i> : <b>int</b>,</font><br><table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40">&nbsp;</td>  <td colspan="7"><font size="+1"><i>numFrames</i>, <i>delayBetweenFrames</i> : <b>int</b>, <i>eraseAfter</i> : <b>boolean</b>)</font></td>
+</tr></table>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.DrawFrames</b> is used to draw a set of pictures stored in
+          an array of <b>int</b>s.  The pictures are displayed one at a time,
+          and there is a delay of <i>delayBetweenFrames</i> milliseconds
+          between frames. The <i>x</i>, <i>y</i>, and <i>mode</i> parameters
+          are the same as in <b><a href="pic_draw.html">Pic.Draw</a></b>. The
+          <i>numFrames</i> parameter specifies the number of frames to be
+          drawn (the <i>picIds</i> array must be at least this big).  The
+          <i>eraseAfter</i> parameter specifies whether the last frame of the
+          animation should be left on the Run window when the call finishes.  
+          If <i>eraseAfter</i> is set to <b>true</b>, then the background is 
+          restored after the last picture has been drawn and 
+          <i>delayBetweenFrames</i> milliseconds has passed.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			GIF files can contain multiple frames (pictures).  Animated GIFs 
+          function by each frame in the GIF one after another with a delay
+          between them.
+          <p>
+          Turing allows users to load multiple frame GIF images into a series
+          of pictures into an array using the 
+          <b><a href="pic_filenewframes.html">Pic.FileNewFrames</a></b> 
+          procedure.  The user can determine how many frames are found in 
+          the GIF file using <b><a href="pic_frames.html">Pic.Frames</a></b>.  
+          The frames can be sequentially displayed using either 
+          <b><a href="">Pic.DrawFrames</a></b> or 
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> 
+          which display the images one at a time.
+          (<b><a href="">Pic.DrawFrames</a></b> returns 
+          once all the images have been displayed, 
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> 
+          returns immediately allowing the program to continue execution while 
+          the frames are being displayed.
+          </p>
+<p>
+          <b><a href="pic_frames.html">Pic.Frames</a></b> is a function which 
+          returns the number of frames found in the GIF.  If it is used on a 
+          GIF that does not contain multiple images, or on a non-GIF image file, 
+          it returns 1.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program loads a multiple frame GIF called "globe.gif" and 
+          displays it.
+
+			
+			
+			<pre><code>        % Determine the number of frames in "globe.gif"
+        var numFrames := Pic.Frames ("globe.gif")
+        % Load the picture
+        var delayTime : int
+        var pics : array 1 .. numFrames of int
+
+	Pic.FileNewFrames ("globe.gif", pics, delayTime)
+	Pic.DrawFrames (pics, 10, 10, picCopy, numFrames, 50, false)
+	for i : 1 .. numFramesPic.Free (pics (i))
+	end for
+    </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.DrawFrames</b>, not by calling <b>DrawFrames</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="pic_frames.html">Pic.Frames</a></b> for information on how
+          to determine the number of frames in a GIF image.<p>
+          <b><a href="pic_filenewframes.html">Pic.FileNewFrames</a></b> for information
+          on how to load a GIF image with multiple frames into an array of 
+          <b>int</b>s.</p>
+<p>
+          <b><a href="pic_drawframesback.html">Pic.DrawFramesBack</a></b> for 
+          information on how to sequentially display the images stored in array 
+          of pictures while continuing to execute the program.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Sprite.New</title>
+</head>
+<body>
+	<h1>Sprite.New</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Sprite.New</b> (<i>picID</i> : <b>int</b>) : <b>int</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Creates a new sprite from a picture specified by <i>picID</i>. The 
+          sprite starts invisible and should be given a <i>depth</i> using 
+          <b>Sprite.SetHeight</b> and a position, given <b>Sprite.SetPosition</b> 
+          before being made visible using <b>Sprite.Show</b>. When you are 
+          finished using the sprite, the sprite should be freed using 
+          <b>Sprite.Free</b>.
+          <p>
+          Sprites work best when they are of moderate size. Large sprites will 
+          cause flashing when moved across the screen.
+          </p>
+<p>
+          Anything that is is color 0 in the picture will not appear when the 
+          sprite is drawn. In other words, color 0 is transparent. (This is by
+          default. You can set the transparent color for a sprite by setting
+          the picture's transparent colour using
+          <b><a href="pic_settransparentcolor.html">Pic.SetTransparentColor</a></b>.
+          </p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			See <b>Sprite.Animate</b> for an example of <b>Sprite.New</b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+	  <b>Sprite.New</b>, not by calling <b>New</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="sprite_setheight.html">Sprite.SetHeight</a></b>, 
+	  <b><a href="sprite_setposition.html">Sprite.SetPosition</a></b>, 
+	  <b><a href="sprite_show.html">Sprite.Show</a></b> and 
+	  <b><a href="sprite_free.html">Sprite.Free</a></b>.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

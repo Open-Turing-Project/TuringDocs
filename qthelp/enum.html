@@ -1,0 +1,114 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>enum</title>
+</head>
+<body>
+	<h1>enum</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			An <i>enumeratedType</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><b>enum</b> (<i>id </i>{ , <i>id </i>} )</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The values of an enumerated type are distinct and increasing. They can be thought of as the values 0, 1, 2 and so on, but arithmetic is not allowed with these values.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        type color : enum (red, green, blue)
+        var c : color := color . red
+        var d : color := succ (c)       % d becomes green</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Each value of an enumerated type is the name of the type followed by a dot followed by the element's name, for example, <i>color</i>.<i>red</i>. Enumerated values can be compared for equality and for ordering. The <b>succ</b> and <b>pred</b> functions can be used to find the value following or preceding a given enumerated value. The <b>ord</b> function can be used to find the enumeration position of a value, for example, <b>ord</b> (<i>color</i>.<i>red</i>) is 0.<p>
+Enumerated types cannot be combined with integers or with other enumerated types.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			It is illegal to declare an "anonymous" enum. The only legal declaration for an enum is in a type declaration. For example, the following is now illegal:<p>
+</p>
+Given that there is no (easy) way of generating an enum value without it being a named type, this should not impact any but the most bizarre code.<p>
+</p>
+
+			
+			
+			<pre><code>        var a : array enum (red, green, blue) of int</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The "put" and "get" statement semantics have been expanded to allow put's and get's of enum values. The values printed and input are the element names themselves, case sensitive. For example, for<p>
+</p>
+
+			
+			
+			<pre><code>        type colors : enum (red, green, blue)
+        var c : colors := colors . red
+        put c       % outputs "red" (without the quotes)</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

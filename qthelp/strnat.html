@@ -1,0 +1,59 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>strnat</title>
+</head>
+<body>
+	<h1>strnat</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>strnat</b> ( <i>s</i> : <b>string</b> [ , <i>base</i> : <b>int</b> ] ) : <b>nat</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>strnat</b> function is used to convert a string to a natural number. The natural number is equivalent to string <i>s</i>. The number <i>base </i>parameter<i> </i>is optional, for example, <b>strnat</b>("47") = 47.<p>
+String <i>s</i> must consist of a possibly null sequence of blanks, then an optional plus sign, and finally a sequence of one or more digits. For number bases larger than 10, the digits can include a, b, c &#133; (alternately A, B, C &#133;) which represent the digit values 10, 11, 12 &#133; The <i>base</i>, if given, must be in the range 2 to 36 (36 because there are 10 base ten digits and 26 letters). For example, <b>strnat</b>("FF", 16) = 255.</p>
+<p>
+The <b>natstr</b> function is the inverse of <b>strnat</b>, so for any natural number <i>n</i>, <b>strnat</b>( <b>natstr</b> (<i>n</i>)) = <i>n</i>.</p>
+<p>
+The <b>strnat</b> function is similar to <b>strint</b>, except that <b>strnat</b> handles values that are larger than <b>int</b> values and does not handle negative values.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="chr.html">chr</a></b>, <b><a href="ord.html">ord</a></b>, <b><a href="intstr.html">intstr</a></b> <b><a href="and.html">and</a></b> <b><a href="strint.html">strint</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

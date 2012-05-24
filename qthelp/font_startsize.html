@@ -1,0 +1,103 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Font.StartSize</title>
+</head>
+<body>
+	<h1>Font.StartSize</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Font.StartSize</b> (<i>fontName</i>, <i>fontStyle</i> : <b>string</b>)<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Font.StartSize</b> is used to start a listing of all the sizes for a particular font name and style. <p>
+The <i>fontName</i> parameter should be an actual font name (as opposed to the default names of &#147;serif&#148;, etc). You can get a list of the font names by using the <b>Font.StartName</b> and <b>Font.GetName</b> subprograms. The <i>fontStyle</i> parameter should be in the same format as would appear in the <b>Font.New</b> procedure.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program lists all the fonts, styles and sizes available on the system.<p>
+</p>
+
+			
+			
+			<pre><code>        var fontName : string
+        var bold, italic, underline : boolean
+        var size : int
+        var styles : array boolean, boolean, boolean of string := 
+            init ("", "underline", "italic", "italic, underline", "bold",           
+                         "bold,underline", "bold,italic", "bold,italic,underline")
+        Font.StartName
+        loop
+            fontName := Font.GetName
+            exit when fontName = ""
+            Font.GetStyle (fontName, bold, italic, underline)
+            for b : false .. bold
+                for i : false .. italic
+                    for u : false .. underline
+                        put fontName : 30, styles (b, i, u) : 22 ..
+                        Font.StartSize (fontName, styles (b, i, u) )
+                        loop
+                            size := Font.GetSize
+                            exit when size = 0
+                            if size = -1 then put "scalable  " ..
+                            else put size, " " ..
+                            end if
+                        end loop 
+                        put ""
+                    end for
+                end for
+            end for
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Font.StartSize</b>, not by calling <b>StartSize</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

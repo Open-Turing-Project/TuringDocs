@@ -1,0 +1,94 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>GUI.SetTopLine</title>
+</head>
+<body>
+	<h1>GUI.SetTopLine</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>GUI.SetTopLine</b> (<i>widgetID</i> : <b>int</b>, <i>lineNum</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>GUI.SetTopLine</b> procedure scrolls the text in a 
+          text box so as to place the line number specified by
+	  <i>lineNum</i> at the top of the text box (if possible).
+	  This is often used to scroll the text back to the beginning
+	  of the text box by assigning a value of 1 to <i>lineNum</i>.
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program displays 100 lines of text in a text box, then
+          sets the text box to display line 50 at the top of the box.<p>
+</p>
+
+			
+			
+			<pre><code>        import GUI
+
+        var textBox : int     % The Text Field ID.
+        textBox := GUI.CreateTextBoxFull (10, 10, 180, 275,
+            GUI.INDENT, 0)
+
+        GUI.SetBackgroundColor (gray)
+
+        % Read the file and place it in the text box.
+        for i : 1 .. 100
+            GUI.AddLine (textBox, intstr (i))
+        end for
+        GUI.SetTopLine (textBox, 50)
+
+        loop
+            exit when GUI.ProcessEvent
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+          This means that you can only call the function by calling 
+	  <b>GUI.SetTopLine</b>, not by calling <b>SetTopLine</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

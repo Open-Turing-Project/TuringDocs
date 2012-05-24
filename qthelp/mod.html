@@ -1,0 +1,100 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>mod</title>
+</head>
+<body>
+	<h1>mod</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>mod</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>mod</b> (<i>modulo</i>) operator produces the modulo of one number with another. In other words, the result is always a number between 0 and the second operand. If both operands are positive, the result is identical to the remainder operator. For example, 7 <b>mod</b> 2 produces 1 and 12 <b>mod</b> 5 produces 3.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			In this example, <i>hours</i> is the current time. It is moved back and forth by a random amount, but the final result must always be between 1 and 12 (the mod operation produces a number between 0 and 11 and then 0 becomes 12).<p>
+</p>
+
+			
+			
+			<pre><code>        var hours : int := 12
+        var hoursPassed : int
+        put "The time is now ", hours, " o'clock"
+        loop
+            randint (hoursPassed, -12, 12)
+            exit when hoursPassed = 0
+            if hoursPassed < 0 then 
+                put hoursPassed, " hours before " ..
+            else
+                put hoursPassed, " hours later " ..
+            end if
+            put hours, " o'clock" ..
+            hours := (hours + hoursPassed) mod 12
+            if hours = 0 then 
+                hours = 12
+            end if
+            put " it was ", hours, " o'clock"
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If the second operand is positive, then the result is always non-negative. Likewise, if the second operand is negative, then the result is always non-positive. If both  operands are negative, the result is the same as the remainder operator.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<i><a href="infix.html">infix</a> operators</i>, <i><a href="precedence.html">precedence</a> </i>of operators and the <b><a href="rem.html">rem</a></b> and <b><a href="div.html">div</a></b> operators.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

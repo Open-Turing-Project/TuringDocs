@@ -1,0 +1,133 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Music.PlayFileStop</title>
+</head>
+<body>
+	<h1>Music.PlayFileStop</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Music.PlayFileStop</b><p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Music.PlayFileStop</b> procedure is used to to stop all 
+          music files currently playing. This includes processes that are
+	  executing the <b>Music.PlayFile</b> procedure (they exit immediately
+	  and start executing the next statement in the process), and the
+	  <b>Music.PlayFileReturn</b> and <b>Music.PlayFileLoop</b>
+	  statements, which simply stop playing the music.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In Turing, a program will not halt execution until all processes 
+          have terminated. This means that if you are playing background 
+	  music, the program will not terminate, even if execution returns 
+	  from the main program unless the background music is halted.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program plays the background music for 30 seconds and then 
+          terminates. Note that it is important to set the flag 
+	  (<i>finished</i>) before calling <b>Music.PlayFileStop</b>. 
+	  If <b>Music.PlayFileStop</b> comes first, it is possible for 
+	  the process to return from <b>Music.PlayFile</b>, loop around, 
+	  skip over the <b>exit when</b>, and call <b>Music.PlayFile</b> 
+	  again before the <i>finished</i> flag is set.<p>
+</p>
+
+			
+			
+			<pre><code>        var finished : boolean := false
+
+	% Loop playing background music until 'finished' is true.
+        process BackgroundMusic
+            loop
+                exit when finished
+                Music.PlayFile ("background.mid")
+            end loop
+        end BackgroundMusic
+        
+        fork BackgroundMusic    % Start the background music
+        Time.Delay (30000)  % Wait for 30 seconds
+        
+        % Stop the background music.
+        finished := true        % The flag must be set first
+        Music.PlayFileStop  % Music.PlayFile will return immediately
+        </code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="music_playfile.html">Music.PlayFile</a></b> for playing 
+	  music files and a larger example.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Music.PlayFileStop</b>, not by calling <b>PlayFileStop</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

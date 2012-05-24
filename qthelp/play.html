@@ -1,0 +1,106 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>play</title>
+</head>
+<body>
+	<h1>play</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>play</b> ( <i>music</i> : <b>string</b> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>play</b> procedure is used to sound musical notes on the computer.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program sounds the first three notes of the C scale.<p>
+</p>
+
+			
+			
+			<pre><code>        play ( "cde" )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program plays from middle C to one octave above middle C and down again in 8th notes.<p>
+</p>
+
+			
+			
+			<pre><code>        play ( "8cdefgab>c" )
+        play ( "<bagfedc" )</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The <b>play</b> procedure takes strings containing characters that specify notes, rests, sharps, flats and  duration. The notes are the letters a to g (or A to G). A rest is p (for pause). A sharp is <b>+</b> and a flat is <b>-</b>. The durations are 1 (whole note), 2 (half note), 4 (quarter note), 8 (eight note) and 6 (sixteenth note). The character &gt; raises to the next octave and &lt; lowers. For example, this is the way to play C and then C sharp one octave above middle C with a rest between them, all in sixteenth notes:  <b>play</b>("&gt;6cpc+"). Blanks can be used for readability and are ignored by <b>play</b>.<p>
+Under some systems such as UNIX, the <b>play</b> procedure may have no effect.</p>
+<p>
+The current (1999) implementation does not support play.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			the <b><a href="playdone.html">playdone</a></b> function, which is used to see if a note has finished sounding. See also the <b><a href="sound.html">sound</a></b> <a href="procedure.html">procedure</a>, which makes a <a href="sound.html">sound</a> of a given frequency (Hertz) and duration (milliseconds).<p>
+See also predefined unit <b><a href="musicmodule.html">Music</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

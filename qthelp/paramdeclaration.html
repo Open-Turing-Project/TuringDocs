@@ -1,0 +1,194 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>paramDeclaration</title>
+</head>
+<body>
+	<h1>paramDeclaration</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>paramDeclaration</i> is one of:<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(a)</font></td>
+<td colspan="7"><font size="+1">[ <b>var</b> ] <i>id</i> {, <i>id</i> } : <i>typeSpec</i></font></td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td width="40"><font size="+1">(b)</font></td>
+<td colspan="7"><font size="+1"><i>subprogramHeader</i></font></td>
+</tr>
+</table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			A parameter declaration, which is part of the header of a procedure or function, specifies a formal parameter (see also <b>procedure</b><i> </i>and<i> </i><b>function</b><i> </i>declarations). Form (a) above is the most common case. Form (b) specifies procedures and functions that are themselves passed as parameters.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        procedure putTitle ( title : string )
+            % The parameter declaration is: title : string
+            put title
+        end putTitle
+        
+        procedure x (var s : array 1 .. * of string (*))
+            % Set each element of s to the null string
+            for i : 1 .. upper ( s )
+                s ( i ) := ""
+            end for
+        end x</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Parameters to a procedure may be declared using <b>var</b>, which means that the parameter can be changed inside the procedure. For example, <i>s</i> is changed in the <i>x</i> procedure. If a parameter is declared without <b>var</b>, it cannot be changed. (This differs from Pascal, where non-<b>var</b> parameters can be changed.)  Parameters to functions cannot be declared to be <b>var</b>.<p>
+Parameters declared <b>var</b> are passed by reference, which means that a pointer to the value is passed to the procedure, rather than passing the actual value. This implies that in the call <i>p</i> ( <i>a</i> (<i>i</i>)), in which array element <i>a</i>(<i>i</i>) is passed to procedure <i>p</i>, a change to <i>i </i>in <i>p </i>does not change the element referred to by <i>p</i>'s actual parameter. Every non-scalar (not integer, subrange, real, boolean, enumerated, pointer or the <b>char</b> type) parameter is passed by reference whether or not it is declared <b>var</b>. In all other cases (scalar non-<b>var</b> parameters) the parameter is passed by value (the actual value is copied to the procedure).</p>
+<p>
+The upper bound of an array or string that is a formal parameter may be specified as an asterisk (<b>*</b>), as is done above for parameter <i>s</i> in procedure <i>x</i>. This specifies that  the size of the upper bound is inherited from the corresponding actual parameter. Parameters declared using star are called <i>dynamic</i> parameters.</p>
+<p>
+The names of the formal parameters must be distinct from each other, from the procedure or function name, and from pervasive identifiers. However, they need not be distinct from names outside of the procedure or function.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Find the zero of function f. This example illustrates form (b), which is a parameter that is a function. See also <i>subprogramHeader</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        function findZero ( function f ( x : real) : real,
+                        left, right, accuracy : real ) : real
+            pre sign ( f ( left ) ) not= sign ( f ( right)) )
+                    and accuracy > 0
+            var L : real := left
+            var R : real := right
+            var M : real
+            const signLeft := sign ( f ( left ) )
+            loop
+                M := ( R + L) / 2
+                exit when abs ( R - L ) <= accuracy
+                if signLeft =sign ( f ( M ) ) then
+                    L := M
+                else
+                    R := M
+                end if
+            end loop
+            result M
+        end findZero</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Form (b) of <i>paramDeclaration </i>is used to specify formal parameters that are themselves procedures or functions. For example, in the <i>findZero</i> function, <i>f</i> is a formal parameter that is itself a function. The subprogram type can be used to replace form (b). In particular, the header to the <i>findZero</i> function can be replaced by the following with no change in the action. The names <i>g</i> and <i>x</i> serve no purpose, except as place holders in the declaration of <i>f</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        function findZero ( f : function g ( x : real) : real,
+                        left, right, accuracy : real ) : real</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Parameters that are declared non <b>var</b> should, in principle, be constant. Unfortunately, there is an anomalous situation in which these can change. This occurs when the parameter is passed by reference, because it is a non scalar such as a string. If the actual parameter is changed while the subprogram is executing, the formal parameter will change as well.<p>
+You can also optionally use the <b>register</b> keyword to request that the variable be placed in a machine register. This changes form (a) to allow the optional use of the <b>register</b> keyword. The syntax for form (a) is actually:</p>
+<p>
+</p>
+In the current (1999) implementation, programs are run interpretively using pseudo-code, which has no machine registers, and the <b>register</b> keyword is ignored. See <b>register</b> for restrictions on the use of register parameters.<p>
+The optional keyword <b>cheat</b> means that the parameter has a type cheat. See <b>cheat</b>. Any variable or constant non scalar (in other words, items passed by reference) can be passed to a type cheat parameter. The internal representation will be interpreted as a value of the specified type. This is dangerous as it provides unconstrained access to the underlying computer memory.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        [ var ] [ register ] id {, id } : [ cheat ] typeSpec</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This procedure outputs the values of <i>n</i> bytes starting at the address of formal parameter <i>a</i>, using a parameter type cheat.<p>
+</p>
+
+			
+			
+			<pre><code>        procedure dump (a : cheat array 0 .. 10000 of nat1, n : int )
+            for i : 0 .. n - 1
+                put i, a ( i ) : 4
+            end for
+        end dump
+        
+        var s : string := "abc"
+        dump ( s, 5 )       % Dumps 5 bytes, starting with "abc"</code></pre>
+			
+
+			
+			
+		
+	
+</body>
+</html>

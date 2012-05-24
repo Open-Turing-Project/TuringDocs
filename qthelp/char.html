@@ -1,0 +1,153 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>char</title>
+</head>
+<body>
+	<h1>char</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>char</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			Each variable whose type is a <b>char</b> contains a single character, such as the letter <i>A</i>, the digit <i>3</i> or the special character &amp;.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Count characters until a period is found. Character <i>c</i> is read using a <b>get</b> statement and is compared to the explicit character constant '.'.<p>
+</p>
+
+			
+			
+			<pre><code>        var c : char
+        var counter := 0
+        loop
+            exit when eof
+            get c           % Read a single character
+            exit when c = '.'   % Single quotes for char constant
+            counter := counter + 1
+        end loop
+        put counter, " characters before the period"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Count capital letters. This example illustrates the use of the <b>char</b> type as the subscript type for the <i>frequency</i> array, the use of character variable <i>c</i> as a subscript, and the use of <i>d</i> as a <b>for</b> counter that ranges across the letters A to Z.<p>
+</p>
+
+			
+			
+			<pre><code>        var frequency : array 'A' .. 'Z' of nat
+        for d : 'A' .. 'Z'
+            frequency (d) := 0
+        end for
+        loop                % Tabulate use of capital letters
+            exit when eof
+            var c : char
+            get c           % Read one character
+            if c >= 'A' and c <= 'Z' then
+                frequency (c) := frequency (c) + 1
+            end if
+        end loop
+        for d : 'A' .. 'Z'      % Print frequency of capital letters
+            put d, " ", frequency (d)
+        end for</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The type <b>string</b> (or <b>char</b>(<i>n</i>)) is used instead of <b>char</b> when more than one character needs to be stored, such as the string of characters <i>Henry</i>. Unless the program needs to be quite efficient, it is usually easier to use the <b>string</b> type. See also the <b>char</b>(<i>n</i>) type, which always stores exactly<i> n </i>characters.<p>
+The <b>char</b> type differs from the <b>string</b>(1) type in the following way: <b>char</b> always represents exactly one character, while <b>string</b>(1) can represent either the null string or a string containing one character. The <b>char</b> type is similar to the <b>char</b>(1) type in that both contain at most one character.</p>
+<p>
+The <b>char</b> type is an index type and can be used, for example, as subscripts, <b>for</b> ranges and <b>case</b> labels. For example, this declaration</p>
+<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td>
+<b>var</b> <i>charCounts</i> : a<b>rray</b> <b>char</b> <b>of</b> <b>int</b>
+</td>
+</tr></table>
+<p>
+creates an array whose subscripts are characters.</p>
+<p>
+The <b>char</b> type is a scalar type, which implies that its parameters are passed by value, instead of by reference (which is the case for <b>char</b>(<i>n</i>) and <b>string</b>).</p>
+<p>
+Values of the <b>char</b> type can be assigned and they can be compared for both equality and ordering. Explicit <b>char</b> constants are written as a character surrounded by single quotes, for example, 'A'. For details, including how to write control characters, see <i>explicitCharConstant</i>.</p>
+<p>
+Characters can be read and written by <b>get</b> and <b>put</b> statements.</p>
+<p>
+There are 256 <b>char</b> values, corresponding to the distinct patterns in an 8-bit byte. This allows the patterns <i>eos</i> (internal value 0) and <i>uninitchar</i> (internal value 128) to be <b>char</b> values (these patterns are not allowed in the <b>string</b> type; see the <b>string</b> type). All 256 patterns are used, so there is no pattern left to be the "uninitialized value". Uninitialized checking is not done for the <b>char</b> type.</p>
+<p>
+The <b>ord</b> and <b>chr</b> functions convert between the <b>char</b> values and their corresponding numeric representation in a byte. See <b>ord</b> and <b>chr</b>.</p>
+<p>
+In general, you can freely intermix the values of the types <b>char</b>, <b>char</b>(<i>n</i>) and <b>string</b>. This means that catenation (+), comparisons, <b>length</b> and substrings can be applied to any of these types. See <b>char</b>(<i>n</i>) for details about conversions between <b>char</b>, <b>char</b>(<i>n</i>) and <b>string</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="string1.html">string</a></b> and <b><a href="char_n.html">char(<i>n</i>)</a></b> for related types. See <b><a href="ord.html">ord</a></b> and <b><a href="chr.html">chr</a></b> functions for conversion from and to ASCII values. See <i><a href="explicitcharconstant.html">explicitCharConstant</a></i> for information on special characters like caret (^) and backslash (\).<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

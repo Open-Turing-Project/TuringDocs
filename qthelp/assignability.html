@@ -1,0 +1,90 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>assignability</title>
+</head>
+<body>
+	<h1>assignability</h1>
+	
+		
+		
+
+			<h2>Description</h2>
+			A value, such as 24, is assignable to a variable, such as <i>i</i>, if certain rules are followed. These rules, given in detail below, are called the <i>assignability </i>rules. They must be followed in assignment statements as well as when passing values to non-<b>var</b> parameters.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			<p>
+</p>
+
+			
+			
+			<pre><code>        var i : int
+        i := 24         % 24 is assignable to i
+        
+        var width : 0 .. 319
+        width := 3 * i      % 3 * i is assignable to width
+        
+        var a : array 1 .. 25 of string
+        a (i) := "Ralph"        % "Ralph" is assignable to a(i)
+        
+        var name : string (20)
+        name := a (i)       % a(i) is assignable to name
+        
+        
+        var b : array 1 .. 25 of string
+        b := a          % Array a is assignable to b
+        
+        type personType :
+            record
+                age : int
+                name : string (20)
+            end record
+        var r, s : personType
+        
+        s := r          % Record r is assignable to s</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			The expression on the right of := must be <i>assignable </i>to the variable on the left. An expression passed to a non-<b>var</b> parameter must be assignable to the corresponding parameter.<p>
+An expression<i> </i>is defined to be <i>assignable </i>to a variable if the two <i>root </i>types are<i> equivalent</i> or if an integer value is being assigned to a <b>real</b> variable (in which case the integer value is automatically converted to <b>real</b>). Two types are considered to be equivalent if they are essentially the same type (see <i>equivalence </i>for the detailed definition of this term).</p>
+<p>
+In most cases a <i>root</i> type is simply the type itself. The exceptions are subranges and strings. The <i>root</i> type of a subrange, such as 0 .. 319, is the type of its bounds (<b>int</b> type in this example). The <i>root</i> type of a string, such as the type <b>string</b>(9), is the most general string type, namely <b>string</b>.</p>
+<p>
+When a subrange variable, such as <i>width</i>, is used as an expression, for example on the right side of an assignment statement, its type is considered to be the <i>root</i> type (integer in this case) rather than the subrange. When an expression is assigned to a subrange variable such as <i>width</i>, the value (3*<i>i</i> in this example) must lie in the subrange. Analogously, any string variable used in an expression is considered to be of the most general type of string. When a string value is assigned to a string variable, its length must not exceed the variable's maximum length.</p>
+<p>
+Turing's assignability rule applies to characters and strings in this way. A <b>char</b> value can be assigned (or passed to an non <b>var</b> parameter) with automatic conversion to a <b>char</b>(1) variable and vice versa. String values of length 1 can be assigned to <b>char</b> variables. Character, that is <b>char</b>, values can be assigned to string variables, yielding a string of length 1. String values of length <i>n</i> are assignable with automatic conversion to <b>char</b>(<i>n</i>) variables. Values of type <b>char</b>(<i>n</i>) can be assigned with automatic conversion to <b>string</b> variables.</p>
+<p>
+Turing's assignability rule applies to pointers to classes in this way. A pointer that locates an object created as class <i>E</i>, can be assigned to a pointer to class <i>B</i> only if <i>B</i> is an ancestor of (or the same as) <i>E</i>. For example, a pointer to an object that is a <i>stackWithDepth</i> can be assigned to a pointer to <i>stack</i>, where <i>stackWithDepth</i> is a child of <i>stack</i>, but not vice versa. The pointer <b>nil</b> can be assigned to any pointer variable, but the value <b>nil</b>(<i>C</i>) can only be assigned to a pointer to an ancestor of C.</p>
+<p>
+Objects of classes can be assigned to each other only if both were created as the same class.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

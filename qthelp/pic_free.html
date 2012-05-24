@@ -1,0 +1,148 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title></title>
+</head>
+<body>
+	<h1></h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Pic.Free</b> (<i>picID</i> : <b>int</b>)<p></p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			<b>Pic.Free </b>is used to release the memory allocated by 
+          <b>Pic.New</b>. It frees up the memory allocated to the parameter 
+	  <i>picID</i>. This means that <i>picID</i> can not be used in a 
+	  <b>Draw.Pic</b> or <b>Draw.Save</b> procedure after <b>Pic.Free</b> 
+	  is called.<p>
+	  Turing has a limited number of pictures that are available at any
+	  one time (approximately 1,000). A program that continuously allocates 
+	  pictures (using <b>Pic.New</b> or <b>Pic.FileNew</b>) will eventually 
+	  fail if it does not free the pictures using <b>Pic.Free</b>. As well,
+	  if a program allocates hundreds of pictures and does not
+	  free any of them, the memory devoted to the pictures will 
+	  not be freed and eventually the program may exhaust the memory on 
+	  the machine.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			If <b>Pic.Free</b> is passed an invalid picture ID, a fatal error 
+          occurs. If the <b>Pic.Free</b> call fails for other (non-fatal) 
+	  reasons, <b>Error.Last</b> will return a non-zero value indicating 
+	  the reason for the failure. <b>Error.LastMsg</b> will return a string 
+	  which contains the textual version of the error.<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			The program animates a picture moving across a background.  Each
+          time the picture is about to move to a new location, a picture of
+	  the background at that location is taken. When the picture is to be
+	  moved to the next location, the background picture is drawn over top
+	  of the picture, thus "erasing" it. The <b>Pic.Free</b> command frees 
+	  up each background picture once it is no longer in use. Without it,
+	  the program would use up all the picture identifiers and crash after
+	  one or two moves across the window.<p>
+	  The animation in the example flickers slightly. See 
+	  <a href="view_update.html">View.Update</a> for information on 
+	  how to produce flicker-free animation.</p>
+<p>
+</p>
+
+			
+			
+			<pre><code>        var picID, bgID : int
+        var x, y, c, direction : int
+
+        % Create the picture being moved
+        Draw.FillBox (50, 50, 150, 150, brightred)
+        Draw.FillStar (50, 50, 150, 150, brightgreen)
+        Draw.FillOval (100, 100, 30, 30, brightblue)
+        picID := Pic.New (50, 50, 150, 150)
+
+        % Create a background
+        for i : 1 .. 1000
+            x := Rand.Int (0, maxx)
+            y := Rand.Int (0, maxy)
+            c := Rand.Int (9, 15)    % Use bright colors
+            Draw.FillBox (x, y, x + 30, y + 30, c)
+        end for
+
+        x := 1
+        y := 100
+        direction := 1
+        % Main loop
+        loop
+            % Take a picture of the background 
+            bgID := Pic.New (x, y, x + 100, y + 100)
+            Pic.Draw (picID, x, y, picCopy)     % Draw the picture
+            delay (20)                          % Delay 20 milliseconds
+            Pic.Draw (bgID, x, y, picCopy)      % Draw the background over the picture
+            Pic.Free (bgID)                     % Free the background
+            if x <= 0 or (x + 100) >= maxx then
+                direction := -direction
+            end if
+            x += direction
+        end loop</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+	  This means that you can only call the function by calling 
+	  <b>Pic.Free</b>, not by calling <b>Free</b>.</p>
+<p>
+    </p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

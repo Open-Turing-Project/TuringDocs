@@ -1,0 +1,105 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>variableReference</title>
+</head>
+<body>
+	<h1>variableReference</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			A <i>variableReference</i> is:<p>
+</p>
+<table><tr valign="top">
+<td width="40">&nbsp;</td>
+<td colspan="8"><font size="+1"><i>variableId</i> { <i>componentSelector</i> }</font></td>
+</tr></table>
+<p></p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			In a Turing program, a variable is declared and given a name (<i>variableId</i>) and then used. Each use is called a <i>variable reference</i>.<p>
+If the variable is an array, collection, record or union, its parts (<i>components</i>) can be selected using subscripts and field names (using <i>componentSelectors</i>). The form of a <i>componentSelector </i>is one of:\</p>
+<p>
+</p>
+<table>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(a)</td>
+<td width="10">&nbsp;</td>
+<td>( <i>expn</i> {, <i>expn</i>} )</td>
+</tr>
+<tr valign="top">
+<td width="40">&nbsp;</td>
+<td>(b)</td>
+<td width="10">&nbsp;</td>
+<td>. <i>fieldId</i>
+</td>
+</tr>
+</table>
+<p>
+Form (a) is used for subscripting (indexing) arrays and collections. The number of array subscripts must be the same as in the array's declaration. A collection has exactly one subscript, which must be a pointer to the collection. Form (b) is used for selecting a field of a record or union.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Following the declarations of <i>k</i>,<i> a </i>and <i>r</i>, each of <i>k</i>,<i> a </i>(<i>k</i>) and <i>r</i>.<i>name </i>are variable references.<p>
+</p>
+
+			
+			
+			<pre><code>        var k : int
+        var a : array 1 .. 100 of real
+        var r :
+            record
+                name : string ( 20 )
+                phone : string ( 8 )
+            end record
+        
+        k := 5
+        a ( k ) := 3.14159
+        r . name := "Steve Cook"</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			A variable reference can contain more than one component selector, for example, when the variable is an array of records. For an example, see the <b>record</b> type. See also <i>constantReference</i> and <b>var</b> declaration.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

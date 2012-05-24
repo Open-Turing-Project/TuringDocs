@@ -1,0 +1,105 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Time.Date</title>
+</head>
+<body>
+	<h1>Time.Date</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>Time.Date</b> : <b>string</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>Time.Date</b> function returns the current date and time as a string. The returned string in the format "<i>dd mmm yy hh:mm:ss</i>", where <i>mmm</i> is the first 3 characters of the month, e.g., "<i>Apr</i>". For example, if the date is Christmas 1989 at 9:02:37 in the morning, <b>Time.Date</b> will return "<i>25 Dec 89 09:02:37</i>". Twenty-four hour time is used, so eleven thirty at night the same day would return "<i>25 Dec 89 23:30:00</i>"<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program greets you and tells you the date and time.<p>
+</p>
+
+			
+			
+			<pre><code>        var theDateTime, theDate, theTime : string
+        theDateTime := Time.Date
+        theDate := theDateTime (1 .. 9)
+        theTime := theDateTime (11 .. *)
+        put "Greetings!!  The date and time today is ", Time.Date</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			Be warned that on some computers, such as IBM PC compatibles or Apple Macintoshes, the date may not be set correctly in the operating system; in that case, the <b>Time.Date </b>procedure will give incorrect results.<p>
+The string form of the date can be converted to a numeric form for comparison purposes using the <b>Time.DateSec</b> function. The numeric form can be converted to a string using the <b>Time.SecDate</b> function. The numeric form of the time can be obtained using the <b>Time.Sec</b> function.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Status</h2>
+			Exported qualified.<p>
+This means that you can only call the function by calling <b>Time.Date</b>, not by calling <b>Date</b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="time_sec.html">Time.Sec</a></b>, <b><a href="time_datesec.html">Time.DateSec</a></b> and <b><a href="time_secdate.html">Time.SecDate</a></b> functions.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>minnat</title>
+</head>
+<body>
+	<h1>minnat</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>minnat</b> : <b>nat</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>minnat</b> function is used to determine the smallest natural number that can be used in a program.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs the smallest natural number.<p>
+</p>
+
+			
+			
+			<pre><code>        put "The smallest natural number that can be used is ", minnat</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			In current Turing and OOT implementations, natural numbers are stored in 4 bytes, i.e., 32 bits. However, the minimum natural number in all implementations is 0. <b>minnat</b> is provided for purposes of symmetry with <b>minint</b>, <b>maxint</b> and <b>maxnat</b>.<p>
+In four bytes it is possible to represent one more value, namely, 2**32 - 1 = 4294967295. This extra value is used in Turing to represent the uninitialized natural number. Although it can be computed, any attempt to assign it to a <b>nat</b> variable is detected as an overflow. You can use this extra value by using the <b>nat4</b> type instead of <b>nat</b>, but this type has no initialization checking.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			<b><a href="minint.html">minint</a></b> and <b><a href="maxnat.html">maxnat</a></b>.<p>
+See also predefined unit <b><a href="limitsmodule.html">Limits</a></b>.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

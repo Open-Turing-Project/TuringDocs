@@ -1,0 +1,93 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>max</title>
+</head>
+<body>
+	<h1>max</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>max</b> ( <i>expn</i> , <i>expn</i> )<p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>max</b> function is used to find the maximum of two numbers (the two <i>expn</i>'s). For example, <b>max</b> ( 5, 7 ) is 7. If both numbers are <b>int</b>, the result is <b>int</b>. If both numbers are <b>nat</b> (natural numbers), the result is <b>nat</b>. But if one or both of the numbers are <b>real</b>, the result is <b>real</b>. See also the <b>min</b> function.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program outputs 85.72.<p>
+</p>
+
+			
+			
+			<pre><code>        var x : real := 74.61
+        var y : real := 85.72
+        put max ( x, y )        % Outputs 85.72</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			This program inputs 10 numbers and outputs their maximum.<p>
+</p>
+
+			
+			
+			<pre><code>        var m, t : real
+        get m           % Input first number
+        for i : 2 .. 10     % Handle remaining 9 numbers
+            get t
+            m := max ( m, t )
+        end for
+        put "The maximum is ", m</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>See also</h2>
+			See also predefined unit <b><a href="mathmodule.html">Math</a></b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>

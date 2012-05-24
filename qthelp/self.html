@@ -1,0 +1,76 @@
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>self</title>
+</head>
+<body>
+	<h1>self</h1>
+	
+		
+		
+
+			<h2>Syntax</h2>
+			<font size="+1"><b>self</b><p>
+</p></font>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Description</h2>
+			The <b>self</b> function produces a pointer to the current object. This function can be used only inside a class declaration. See <b>class</b>.<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Example</h2>
+			Enter the current object onto a list of displayable objects. The module called <i>displayable</i> has exported a procedure called <i>enter</i> whose parameter type is <b>pointer</b> <b>to</b> <b>anyclass</b>. Since <b>self</b> is a pointer to <i>C</i> and <i>C</i> is a descendant of <b>anyclass</b>, it is legal to pass <b>self</b> to <i>displayable.enter</i>.<p>
+</p>
+
+			
+			
+			<pre><code>        class C
+            import displayable
+            
+            displayable.enter ( self ) 
+            
+        end C</code></pre>
+			
+
+			
+			
+		
+	
+		
+		
+
+			<h2>Details</h2>
+			It is illegal to call the exported entries of a class until the current object has been completely initialized, so, many calls to the current object using self will not be legal.<p>
+The notation to call exported subprogram <i>p</i> of an enclosing class <i>C</i> or of its ancestor <i>D</i>, is <i>C.p </i>or <i>D.p</i>. Calls of this form, which can appear only within class <i>C</i>, call the subprogram in <i>C</i> (or in <i>D</i> in the case of <i>D.p</i>) regardless of the object type, or of any overriding, or of the status of initialization.</p>
+<p>
+</p>
+
+			
+			
+
+			
+			
+		
+	
+</body>
+</html>
